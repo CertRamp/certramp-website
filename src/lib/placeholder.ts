@@ -38,3 +38,15 @@ export function plain(value: string | null | undefined, fallback = ""): string {
   if (!value) return fallback;
   return isPlaceholder(value) ? fallback : value;
 }
+
+/**
+ * Whether placeholder badges are rendered. Default: shown (development / review).
+ * Production sets NEXT_PUBLIC_SHOW_PLACEHOLDERS=false in .env.production: then every
+ * element whose content is still a placeholder is left out instead of shown.
+ */
+export const SHOW_PLACEHOLDERS = process.env.NEXT_PUBLIC_SHOW_PLACEHOLDERS !== "false";
+
+/** True when a value should be rendered (real content, or placeholders are switched on). */
+export function isVisible(value: unknown): boolean {
+  return SHOW_PLACEHOLDERS || !isPlaceholder(value);
+}

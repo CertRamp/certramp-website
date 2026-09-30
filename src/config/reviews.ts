@@ -11,7 +11,7 @@
 export interface Review {
   quote: string;
   author: string;
-  /** e.g. "Passed PRINCE2 Foundation" — only if the reviewer said so. */
+  /** e.g. "Passed the CISA exam" — only if the reviewer said so. */
   context?: string;
   /** e.g. "Udemy review, March 2026" */
   source: string;

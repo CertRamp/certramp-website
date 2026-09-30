@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { cn } from "@/lib/cn";
-import { isPlaceholder, placeholderLabel } from "@/lib/placeholder";
+import { isPlaceholder, placeholderLabel, SHOW_PLACEHOLDERS } from "@/lib/placeholder";
 import { Icon } from "./Icon";
 
 /**
@@ -28,7 +28,8 @@ export function Placeholder({ label, block, className }: { label: string; block?
 /** Renders a value, or its placeholder badge if the value is P("..."). */
 export function Val({ value, block, fallback }: { value: string | number | null | undefined; block?: boolean; fallback?: ReactNode }) {
   if (value === null || value === undefined || value === "") return <>{fallback ?? null}</>;
-  if (isPlaceholder(value)) return <Placeholder label={placeholderLabel(value)} block={block} />;
+  if (isPlaceholder(value))
+    return SHOW_PLACEHOLDERS ? <Placeholder label={placeholderLabel(value)} block={block} /> : <>{fallback ?? null}</>;
   return <>{value}</>;
 }
 

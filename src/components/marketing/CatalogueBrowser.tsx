@@ -53,7 +53,7 @@ export function CatalogueBrowser({ certs, categories, languages }: Props) {
               type="search"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search by exam code, name or provider — e.g. AZ-900, CISA, PRINCE2"
+              placeholder="Search by exam code, name or provider — e.g. AZ-900, CISA, SC-200"
               className="h-12 w-full rounded-full border border-line-strong bg-white pl-12 pr-4 text-[0.9375rem] text-ink placeholder:text-muted/80 focus:border-accent-500 focus:outline-none focus:ring-4 focus:ring-accent-500/15"
             />
           </label>

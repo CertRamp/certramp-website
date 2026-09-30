@@ -1,3 +1,4 @@
+import { legalPages } from "./legal";
 import { P } from "@/lib/placeholder";
 
 /**
@@ -20,7 +21,7 @@ export const siteConfig = {
   allowIndexing: process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true",
 
   contact: {
-    email: P("Public contact email address"),
+    email: "hello@certramplearning.com",
   },
 
   /** Your Udemy instructor profile. Leave as P(...) until provided. */
@@ -40,12 +41,11 @@ export const mainNav = [
   { label: "FAQ", href: "/faq" },
 ] as const;
 
-export const legalNav = [
-  { label: "Imprint", href: "/legal/imprint" },
-  { label: "Privacy Policy", href: "/legal/privacy" },
-  { label: "Terms", href: "/legal/terms" },
-  { label: "Cookies", href: "/legal/cookies" },
-] as const;
+/** Footer legal links — only pages marked `listed` in legal.ts. */
+export const legalNav = (["imprint", "privacy", "cookies", "terms"] as const)
+  .map((slug) => legalPages[slug])
+  .filter((p) => p.listed)
+  .map((p) => ({ label: p.slug === "imprint" ? "Imprint" : p.slug === "cookies" ? "Cookies" : p.title, href: `/legal/${p.slug}` }));
 
 /**
  * Build an absolute URL from a site path. Page paths get a trailing slash to

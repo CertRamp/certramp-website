@@ -6,7 +6,7 @@ import { Icon, type IconName } from "@/components/ui/Icon";
 import { Placeholder, Val } from "@/components/ui/Placeholder";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { about } from "@/config/about";
-import { plain } from "@/lib/placeholder";
+import { plain, SHOW_PLACEHOLDERS } from "@/lib/placeholder";
 import { getCatalogueStats } from "@/lib/certifications";
 import { buildMetadata } from "@/lib/seo";
 
@@ -40,6 +40,15 @@ const principles: { icon: IconName; title: string; body: string }[] = [
   },
 ];
 
+function initials(name: string) {
+  return name
+    .split(/\s+/)
+    .map((w) => w[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase();
+}
+
 export default function AboutPage() {
   const stats = getCatalogueStats();
   return (
@@ -56,8 +65,8 @@ export default function AboutPage() {
           <SectionHeader id="what-title" eyebrow="What we do" title="Practice exams with a plan behind them" className="lg:col-span-5" />
           <div className="space-y-5 text-lg leading-relaxed text-body lg:col-span-7">
             <p>
-              CertRamp publishes practice exams on Udemy for {stats.certifications} certifications — from ISACA and PRINCE2
-              to Microsoft, AWS, CompTIA and ISTQB — in {stats.languages} languages. This site is the home of the
+              CertRamp publishes practice exams on Udemy for {stats.certifications} certifications — from ISACA and Microsoft
+              to AWS, CompTIA, PMI and ISTQB — in {stats.languages} languages. This site is the home of the
               brand: the place to find every CertRamp practice exam, and soon to take the CertRamp Exam Simulator
               directly.
             </p>
@@ -124,9 +133,16 @@ export default function AboutPage() {
                 height={480}
                 className="aspect-square w-full max-w-72 rounded-2xl object-cover"
               />
-            ) : (
+            ) : SHOW_PLACEHOLDERS ? (
               <div className="grid aspect-square w-full max-w-72 place-items-center rounded-2xl border-2 border-dashed border-warn-600/40 bg-warn-50 p-6 text-center">
                 <Placeholder label="Founder photo (optional) — set about.founder.photo" />
+              </div>
+            ) : (
+              <div
+                aria-hidden="true"
+                className="grid aspect-square w-full max-w-56 place-items-center rounded-2xl bg-navy-900 font-display text-6xl font-semibold tracking-tight text-white"
+              >
+                {initials(plain(about.founder.name, "CR"))}
               </div>
             )}
           </div>

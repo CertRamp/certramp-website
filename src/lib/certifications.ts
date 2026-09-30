@@ -100,7 +100,7 @@ export interface ResolvedCertification {
 
 /* ── Helpers ───────────────────────────────────────────────────────────── */
 
-/** "prince2-7-foundation" → "PRINCE2_7_FOUNDATION" */
+/** "az-900" → "AZ_900" */
 export function envKeyForSlug(slug: string): string {
   return slug.toUpperCase().replace(/[^A-Z0-9]+/g, "_");
 }

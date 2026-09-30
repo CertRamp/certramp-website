@@ -18,7 +18,7 @@ export const about = {
     photo: null as string | null,
     photoAlt: "Joshua Ravnjak, founder of CertRamp Learning",
   },
-  location: P("Where the business is based, if you want to state it (e.g. Germany)"),
+  location: "Munich, Germany",
   udemyNote: P(
     "Optional factual statement about your Udemy track record (e.g. courses, students, rating) — with source and date",
   ),

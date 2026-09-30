@@ -9,13 +9,14 @@ import { categoryList } from "@/config/categories";
 import { productPolicy } from "@/config/product";
 import { absoluteUrl } from "@/config/site";
 import { getAllCertifications, getCatalogueStats, isIndexable, toCardData } from "@/lib/certifications";
+import { isVisible } from "@/lib/placeholder";
 import { buildMetadata } from "@/lib/seo";
 
 const stats = getCatalogueStats();
 
 export const metadata: Metadata = buildMetadata({
   title: "Practice Exams for IT, Security, Cloud & Project Management",
-  description: `Browse CertRamp practice exams for ${stats.certifications} certifications — Microsoft, AWS, ISACA, PRINCE2, CompTIA, ISTQB and more. Six progressive tests per exam.`,
+  description: `Browse CertRamp practice exams for ${stats.certifications} certifications — Microsoft, AWS, ISACA, CompTIA, ISTQB, PMI and more. Six progressive tests per exam.`,
   path: "/practice-exams",
 });
 
@@ -86,10 +87,12 @@ export default function PracticeExamsPage() {
             </p>
           </div>
         </div>
-        <div className="mt-6 text-sm text-muted">
-          <span className="font-semibold text-ink">What&apos;s the difference? </span>
-          <Val value={productPolicy.udemyVsSimulator} />
-        </div>
+        {isVisible(productPolicy.udemyVsSimulator) && (
+          <div className="mt-6 text-sm text-muted">
+            <span className="font-semibold text-ink">What&apos;s the difference? </span>
+            <Val value={productPolicy.udemyVsSimulator} />
+          </div>
+        )}
       </Section>
 
       <FinalCta

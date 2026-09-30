@@ -30,9 +30,9 @@ const reasons: { icon: IconName; title: string; body: string }[] = [
     body: "We make practice exams, not certifications. No borrowed logos, no implied endorsements, no pass guarantees.",
   },
   {
-    icon: "play",
-    title: "Try before you commit",
-    body: "Start with a free practice test. Move to the full exam simulator only when you want the complete ramp.",
+    icon: "book",
+    title: "Every answer explained",
+    body: "Each question explains why the right answer is right — and why every other option is wrong.",
   },
 ];
 
@@ -54,9 +54,9 @@ export function WhyCertRamp() {
 
 const steps: { title: string; body: string }[] = [
   { title: "Choose your certification", body: "Find the practice exams for the certification you are preparing for." },
-  { title: "Take the free practice test", body: "No commitment. Answer exam-style questions in your browser." },
-  { title: "See where you stand", body: "Get your score and a readiness level that points to your next step." },
-  { title: "Work through all six tests", body: "Move to the full CertRamp Exam Simulator and climb the ramp at your own pace." },
+  { title: "Start with Test 1", body: "The diagnostic shows your baseline across the syllabus before you invest study time." },
+  { title: "See where you stand", body: "Review your score and every explanation to find the gaps worth closing." },
+  { title: "Climb the ramp", body: "Work through Tests 2 to 6 — each one harder, the last one beyond exam level." },
 ];
 
 export function HowItWorksSteps({ invert }: { invert?: boolean }) {

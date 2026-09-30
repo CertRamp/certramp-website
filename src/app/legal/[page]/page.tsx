@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { Icon } from "@/components/ui/Icon";
-import { Val } from "@/components/ui/Placeholder";
-import { legalEntity, legalPages, type LegalPageConfig } from "@/config/legal";
+import { legalPages, type LegalPageConfig } from "@/config/legal";
+import { formatDate } from "@/lib/format";
 import { buildMetadata } from "@/lib/seo";
 
 type Params = { page: string };
@@ -24,15 +24,6 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   return buildMetadata({ title: cfg.title, description: cfg.description, path: `/legal/${cfg.slug}`, noindex: !cfg.reviewed });
 }
 
-const entityLabels: Record<keyof typeof legalEntity, string> = {
-  name: "Name",
-  address: "Address",
-  email: "Email",
-  phone: "Phone",
-  representative: "Represented by",
-  register: "Register entry",
-  vatId: "VAT ID",
-};
 
 export default async function LegalPage({ params }: { params: Promise<Params> }) {
   const { page } = await params;
@@ -59,21 +50,15 @@ export default async function LegalPage({ params }: { params: Promise<Params> })
           </div>
         )}
 
-        {cfg.slug === "imprint" && (
-          <dl className="mt-10 divide-y divide-line rounded-2xl border border-line">
-            {(Object.keys(legalEntity) as (keyof typeof legalEntity)[]).map((k) => (
-              <div key={k} className="grid gap-1 p-4 sm:grid-cols-3 sm:gap-4">
-                <dt className="text-sm font-semibold text-ink">{entityLabels[k]}</dt>
-                <dd className="text-sm sm:col-span-2">
-                  <Val value={legalEntity[k]} />
-                </dd>
-              </div>
-            ))}
-          </dl>
-        )}
-
         {cfg.html ? (
-          <div className="prose-legal mt-10" dangerouslySetInnerHTML={{ __html: cfg.html }} />
+          <>
+            <div className="prose-legal mt-8" dangerouslySetInnerHTML={{ __html: cfg.html }} />
+            {cfg.updated && (
+              <p className="mt-12 text-sm text-muted">
+                Last updated: <time dateTime={cfg.updated}>{formatDate(cfg.updated)}</time>
+              </p>
+            )}
+          </>
         ) : (
           <section className="mt-10" aria-labelledby="checklist-title">
             <h2 id="checklist-title" className="text-xl font-semibold">

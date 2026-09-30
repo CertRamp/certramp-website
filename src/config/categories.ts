@@ -39,7 +39,7 @@ export const categoryList: Category[] = [
     id: "project-management",
     csvName: "Project Management",
     name: "Project Management",
-    description: "PRINCE2, PMI and IPMA project management certifications.",
+    description: "Project management methods, PMI and IPMA certifications.",
     icon: "compass",
   },
   {

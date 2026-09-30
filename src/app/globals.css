@@ -107,6 +107,9 @@
   .prose-legal p {
     @apply mt-3 leading-7;
   }
+  .prose-legal a {
+    @apply text-accent-600 underline underline-offset-2 hover:text-accent-700;
+  }
   /* Subtle engineering-grid texture used on dark sections */
   .bg-grid-dark {
     background-image:

@@ -6,6 +6,8 @@ import { CategoryGrid } from "@/components/marketing/CategoryGrid";
 import { CertificationCard } from "@/components/marketing/CertificationCard";
 import { RampChart } from "@/components/marketing/RampChart";
 import { Reviews } from "@/components/marketing/Reviews";
+import { reviews } from "@/config/reviews";
+import { SHOW_PLACEHOLDERS } from "@/lib/placeholder";
 import { CoreLoop, FinalCta, HowItWorksSteps, WhyCertRamp } from "@/components/marketing/Sections";
 import { ButtonLink, buttonClasses } from "@/components/ui/Button";
 import { FaqList } from "@/components/ui/FaqList";
@@ -20,12 +22,14 @@ export const metadata: Metadata = buildMetadata({
   title: "CertRamp Learning — Progressive Certification Practice Exams",
   absoluteTitle: true,
   description:
-    "Six practice tests that grow with you — from diagnostic to beyond exam level. Independent practice exams for Microsoft, AWS, ISACA, PRINCE2, CompTIA, ISTQB and more.",
+    "Six practice tests that grow with you — from diagnostic to beyond exam level. Independent practice exams for Microsoft, AWS, ISACA, CompTIA, ISTQB, PMI and more.",
   path: "/",
 });
 
 export default function HomePage() {
   const stats = getCatalogueStats();
+  // Genuine reviews only; the placeholder cards are never shown in production.
+  const showReviews = reviews.length > 0 || SHOW_PLACEHOLDERS;
   const all = getAllCertifications();
   const featured = getFeaturedCertifications();
   const freeTestCert = getFirstFreeTest();
@@ -210,15 +214,17 @@ export default function HomePage() {
       </Section>
 
       {/* ── Reviews ──────────────────────────────────────────────────────── */}
-      <Section tone="surface" labelledBy="reviews-title">
-        <SectionHeader id="reviews-title" eyebrow="From candidates" title="What candidates say" />
-        <div className="mt-12">
-          <Reviews />
-        </div>
-      </Section>
+      {showReviews && (
+        <Section tone="surface" labelledBy="reviews-title">
+          <SectionHeader id="reviews-title" eyebrow="From candidates" title="What candidates say" />
+          <div className="mt-12">
+            <Reviews />
+          </div>
+        </Section>
+      )}
 
       {/* ── FAQ ──────────────────────────────────────────────────────────── */}
-      <Section labelledBy="faq-title">
+      <Section tone={showReviews ? "white" : "surface"} labelledBy="faq-title">
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <SectionHeader id="faq-title" eyebrow="FAQ" title="Questions, answered" />

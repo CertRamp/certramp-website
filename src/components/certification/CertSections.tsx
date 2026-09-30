@@ -10,7 +10,7 @@ import { productPolicy } from "@/config/product";
 import type { ResolvedCertification } from "@/lib/certifications";
 import { cn } from "@/lib/cn";
 import { formatDate, formatPrice } from "@/lib/format";
-import { isPlaceholder, placeholderLabel } from "@/lib/placeholder";
+import { isPlaceholder, isVisible, placeholderLabel } from "@/lib/placeholder";
 import { CertCta, OtherLanguageLinks, UdemyCta } from "./CertCta";
 
 export function hasDirectOffer(cert: ResolvedCertification) {
@@ -131,9 +131,11 @@ export function CertOffer({ cert }: { cert: ResolvedCertification }) {
             Find your starting point before you commit. Take the free test in your browser and see where you stand.
           </p>
           <ul className="mt-7 flex-1 space-y-3.5 text-[0.9375rem]">
-            <Bullet>
-              <Val value={productPolicy.freeTestScope} />
-            </Bullet>
+            {isVisible(productPolicy.freeTestScope) && (
+              <Bullet>
+                <Val value={productPolicy.freeTestScope} />
+              </Bullet>
+            )}
             <Bullet>A score and readiness level that points to your next step</Bullet>
             <Bullet>No payment required</Bullet>
           </ul>
@@ -203,7 +205,7 @@ export function CertOffer({ cert }: { cert: ResolvedCertification }) {
 
           <h4 className="mt-8 font-display text-sm font-semibold uppercase tracking-[0.12em] text-white/55">What&apos;s included</h4>
           <ul className="mt-4 flex-1 space-y-3.5 text-[0.9375rem]">
-            {cert.features.map((f, i) => (
+            {cert.features.filter(isVisible).map((f, i) => (
               <Bullet key={i} dark>
                 {isPlaceholder(f) ? (
                   <span className="rounded-md border border-dashed border-amber-300/60 bg-amber-300/10 px-1.5 py-0.5 text-[0.8125rem] font-medium text-amber-200">
@@ -262,9 +264,15 @@ export function QuestionMethodology({ cert }: { cert: ResolvedCertification }) {
       title: "Calibrated to exam level",
       body: `Test 4 is written to reflect the style and difficulty of the real ${cert.name} exam — your clearest readiness check.`,
     },
-    { icon: "book", title: "Explanations", body: <Val value={productPolicy.explanations} /> },
-    { icon: "clock", title: "Exam conditions", body: <Val value={productPolicy.timing} /> },
-    { icon: "chart", title: "Results you can act on", body: <Val value={productPolicy.resultsFeedback} /> },
+    ...(
+      [
+        ["book", "Explanations", productPolicy.explanations],
+        ["clock", "Exam conditions", productPolicy.timing],
+        ["chart", "Results you can act on", productPolicy.resultsFeedback],
+      ] as const
+    )
+      .filter(([, , value]) => isVisible(value))
+      .map(([icon, title, value]) => ({ icon: icon as IconName, title, body: <Val value={value} /> })),
     {
       icon: "shield",
       title: "Independently written",

@@ -144,7 +144,7 @@ export default function HowItWorksPage() {
 
       <FinalCta
         title="Find your starting point"
-        body="Every ramp begins with a diagnostic. Choose your certification and take the free practice test."
+        body="Every ramp begins with a diagnostic. Choose your certification and start with Test 1."
         primary={{ label: "Explore Practice Exams", href: "/practice-exams" }}
         secondary={{ label: "Read the FAQ", href: "/faq" }}
       />

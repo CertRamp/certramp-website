@@ -26,10 +26,12 @@ export const certificationDetails: Record<string, CertificationDetails> = {
    * Exam facts: official sources only, checked 30 Sep 2026. Facts that could
    * only be found on third-party sites are deliberately left out.            */
 
-  "prince2-7-foundation": {
+  // Project management method (7th edition). Trademarked method names are not used on this
+  // website — see the request from PeopleCert (October 2026). Keep all copy neutral.
+  "project-management-foundation-7th-edition": {
     featured: true,
     description:
-      "360 practice questions in six timed mock exams for the PRINCE2 7th edition Foundation exam. Test 1 shows where you stand, Test 4 matches the real 60-question exam, and Tests 5 and 6 push beyond it — with an explanation for every answer option.",
+      "360 practice questions in six timed mock exams for the 7th edition Foundation exam of the widely used process-based project management method. Test 1 shows where you stand, Test 4 matches the real 60-question exam, and Tests 5 and 6 push beyond it — with an explanation for every answer option.",
     examOverview: [
       { label: "Exam provider", value: "PeopleCert" },
       { label: "Format", value: "60 multiple-choice questions, closed book" },
@@ -40,59 +42,58 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     ],
     sources: [
       {
-        label: "PeopleCert — PRINCE2 7 Foundation",
+        label: "PeopleCert — Foundation exam page (7th edition)",
         url: "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-2/PRINCE2-7-foundation-3579",
       },
-      { label: "PRINCE2 — Examination format", url: "https://www.prince2.com/usa/prince2-examination-format" },
+      { label: "Official examination format", url: "https://www.prince2.com/usa/prince2-examination-format" },
     ],
     topics: [
-      { title: "Principles", description: "The seven principles that make a project a PRINCE2 project." },
+      { title: "Principles", description: "The seven principles every project under the method must follow." },
       { title: "Practices", description: "Business case, organizing, plans, quality, risk, issues and progress." },
       { title: "Processes", description: "From starting up a project to closing it — who does what, and when." },
       { title: "People & tailoring", description: "Roles, people management and adapting the method to the context." },
     ],
     faq: [
       {
-        question: "Are these practice exams for PRINCE2 7th edition?",
-        answer:
-          "Yes. The questions are written for the PRINCE2 7th edition Foundation exam, not the earlier 6th edition.",
+        question: "Are these practice exams for the 7th edition?",
+        answer: "Yes. The questions are written for the 7th edition Foundation exam, not the earlier 6th edition.",
       },
     ],
     seo: {
-      title: "PRINCE2 7 Foundation Practice Exams & Mock Tests",
+      title: "PM Foundation (7th Edition) Practice Exams",
       description:
-        "360 PRINCE2 7 Foundation practice questions in six timed mock exams — from a diagnostic start to beyond exam level, with explanations for every option.",
+        "360 practice questions in six timed mock exams for the 7th edition project management Foundation exam — from a diagnostic start to beyond exam level.",
     },
     lastReviewed: CHECKED,
   },
 
-  "prince2-7-practitioner": {
+  "project-management-practitioner-7th-edition": {
     featured: true,
     description:
-      "420 scenario-based practice questions in six full Practitioner mock exams for PRINCE2 7th edition. Practise applying the method to a scenario under time pressure, from your first attempt to beyond exam level, with an explanation for every option.",
+      "420 scenario-based practice questions in six full Practitioner mock exams for the 7th edition of the method. Practise applying it to a scenario under time pressure, from your first attempt to beyond exam level, with an explanation for every option.",
     questionsPerTest: 70,
     examOverview: [
       { label: "Exam provider", value: "PeopleCert" },
       { label: "Format", value: "Scenario-based objective testing — 56 questions and sub-questions worth 70 marks" },
       { label: "Duration", value: "150 minutes" },
       { label: "Pass mark", value: "60%" },
-      { label: "Book", value: "Open book — the official PRINCE2 7 manual only" },
+      { label: "Book", value: "Open book — the official manual only" },
       {
         label: "Prerequisites",
-        value: "PRINCE2 7 Foundation or another qualifying certification (see PeopleCert for the full list)",
+        value: "The 7th edition Foundation or another qualifying certification (see PeopleCert for the full list)",
       },
     ],
     sources: [
       {
-        label: "PeopleCert — PRINCE2 7 Practitioner",
+        label: "PeopleCert — Practitioner exam page (7th edition)",
         url: "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-2/PRINCE2-7-practitioner-3581",
       },
-      { label: "PRINCE2 — Examination format", url: "https://www.prince2.com/usa/prince2-examination-format" },
+      { label: "Official examination format", url: "https://www.prince2.com/usa/prince2-examination-format" },
     ],
     seo: {
-      title: "PRINCE2 7 Practitioner Practice Exams",
+      title: "PM Practitioner (7th Edition) Practice Exams",
       description:
-        "Six full PRINCE2 7 Practitioner mock exams with 420 scenario-based questions. Find out if you can apply the method under exam conditions.",
+        "Six full Practitioner mock exams with 420 scenario-based questions for the 7th edition project management method — apply it under exam conditions.",
     },
     lastReviewed: CHECKED,
   },
@@ -373,14 +374,14 @@ export const certificationDetails: Record<string, CertificationDetails> = {
  * TEMPLATE — full example of everything you can set for one slug.
  * (Illustrative structure only. Do not publish unverified facts.)
  *
- *  "prince2-7-foundation": {
+ *  "az-900": {
  *    featured: true,
  *    description: "Your 2–3 sentence intro for candidates …",
- *    fullName: "PRINCE2 7th Edition Foundation",
+ *    fullName: "Microsoft Azure Fundamentals",
  *    questionsPerTest: 60,
  *    price: { amount: 0, currency: "EUR", note: "incl. VAT" },   // your real price
- *    freeTestUrl: "https://…",        // or env CLASSMARKER_FREE_TEST_URL__PRINCE2_7_FOUNDATION
- *    premiumUrl: "https://…",         // or env CLASSMARKER_PREMIUM_TEST_URL__PRINCE2_7_FOUNDATION
+ *    freeTestUrl: "https://…",        // or env CLASSMARKER_FREE_TEST_URL__AZ_900
+ *    premiumUrl: "https://…",         // or env CLASSMARKER_PREMIUM_TEST_URL__AZ_900
  *    delivery: { freeTest: "embed", simulator: "redirect" },
  *    examOverview: [
  *      { label: "Exam provider", value: "PeopleCert" },
@@ -389,7 +390,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
  *    topics: [{ title: "…", description: "…" }],
  *    features: ["…"],
  *    faq: [{ question: "…", answer: "…" }],
- *    seo: { title: "PRINCE2 7 Foundation Practice Exams", description: "…" },
+ *    seo: { title: "AZ-900 Practice Exams", description: "…" },
  *    lastReviewed: "2026-10-01",
  *  },
  * ─────────────────────────────────────────────────────────────────────────── */

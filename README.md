@@ -118,7 +118,7 @@ delivery: { freeTest: "redirect", simulator: "redirect" },       // or "embed"
 
 - **Option A — `redirect`:** CTAs link straight to the ClassMarker URL (new tab).
 - **Option B — `embed`:** CTAs go to `/practice-exams/[slug]/free-test` or `/exam-simulator`, which show ClassMarker in an iframe under CertRamp branding.
-- **URL resolution:** env var `CLASSMARKER_FREE_TEST_URL__<SLUG>` → value in `certifications.ts` → `null`. `<SLUG>` = slug in UPPER_SNAKE_CASE (`prince2-foundation` → `PRINCE2_FOUNDATION`).
+- **URL resolution:** env var `CLASSMARKER_FREE_TEST_URL__<SLUG>` → value in `certifications.ts` → `null`. `<SLUG>` = slug in UPPER_SNAKE_CASE (`az-900-foundation` → `PRINCE2_FOUNDATION`).
 - **No URL configured → no link.** The button renders disabled with a visible hint. No fake URLs anywhere.
 - **Readiness result:** in ClassMarker, set the free test’s finish redirect to `https://your-domain/practice-exams/<slug>/result` and append the percentage as `?score=`, `?percentage=` or `?pct=` (check which result variables your ClassMarker plan supports). Bands are in `product.ts` and are clearly labelled as CertRamp guidance, not an official pass mark.
 - For branding: use your own logo, colours and custom domain options inside ClassMarker where your plan allows it.
@@ -139,7 +139,7 @@ delivery: { freeTest: "redirect", simulator: "redirect" },       // or "embed"
 | `Title` | Udemy course title (shown on the certification page) |
 | `Certification` | Human-readable grouping key |
 | `Slug` | **URL** `/practice-exams/<slug>` — rows with the same slug form ONE page. Never change after launch. |
-| `Name` | Short name used in headings, e.g. `AZ-900`, `CISA`, `PRINCE2 7 Foundation` |
+| `Name` | Short name used in headings, e.g. `AZ-900`, `CISA`, `PM Foundation (7th Edition)` |
 | `Descriptor` | One line under the name, e.g. `Microsoft Azure Fundamentals` |
 | `Provider` | Must match a key in `src/config/vendors.ts` (unknown providers still work) |
 | `Category` | Must match a `csvName` in `src/config/categories.ts` |
@@ -189,7 +189,7 @@ Every unfinished value is written as `P("…")` and renders as a **dashed amber 
 These are written from the brief, not from confirmed product facts — please check they are true for every product:
 
 - “Original practice questions written by CertRamp” / “not official exam questions” (FAQ, methodology section).
-- “Selected CertRamp practice exams are also available on Udemy” and “CertRamp started by publishing practice exams on Udemy for ISACA, PRINCE2 and IT certifications” (catalogue, About).
+- “Selected CertRamp practice exams are also available on Udemy” and the About page summary of the Udemy catalogue (catalogue, About).
 - Every product has six tests following the Diagnostic → CertRamp Challenge ramp, Test 4 at real exam level, Test 6 above it.
 - The free test requires no payment.
 
@@ -207,3 +207,12 @@ No reviews, pass rates, student numbers, prices, affiliations or endorsements ha
 - Claims: copy scanned for fabricated statistics, guarantees and generic phrases.
 
 Recommended before launch: test ClassMarker embeds in Safari/iOS (third-party cookie restrictions can affect iframes — fall back to `redirect` if needed), run Lighthouse on the deployed URL, and add a Content-Security-Policy in `next.config.ts` once your final third-party domains are known.
+
+
+## Trademark note (PeopleCert)
+
+PeopleCert has asked CertRamp not to use its trademarks (e.g. the names of its project management and IT service management frameworks) in course names. The website follows the same rule: those certification pages use neutral names (`PM Foundation (7th Edition)`, `ITSM Foundation V5`, …). Do not reintroduce these marks in names, headings, slugs, meta data or copy. Links to official PeopleCert pages are fine.
+
+## Placeholders in production
+
+`NEXT_PUBLIC_SHOW_PLACEHOLDERS=false` (set in `.env.production`) hides every element whose content is still a `P("…")` placeholder — FAQ answers, review cards, methodology tiles, About blocks. Locally (`npm run dev`) they are shown as amber badges so you can see what is missing. `npm run check:launch` lists them.

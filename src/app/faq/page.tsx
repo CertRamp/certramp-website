@@ -6,6 +6,7 @@ import { FaqList } from "@/components/ui/FaqList";
 import { Section } from "@/components/ui/Section";
 import { allGlobalFaqItems, globalFaq } from "@/config/faq";
 import { faqSchema } from "@/lib/schema";
+import { isVisible } from "@/lib/placeholder";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
@@ -21,6 +22,8 @@ function slugify(s: string) {
 
 export default function FaqPage() {
   const ld = faqSchema(allGlobalFaqItems());
+  // Groups whose answers are all still placeholders are hidden in production.
+  const groups = globalFaq.filter((g) => g.items.some((i) => isVisible(i.answer)));
   return (
     <>
       <PageHero
@@ -30,7 +33,7 @@ export default function FaqPage() {
         intro="How CertRamp practice exams work, what they are and aren't, and how access works."
       >
         <nav aria-label="FAQ sections" className="mt-8 flex flex-wrap gap-2">
-          {globalFaq.map((g) => (
+          {groups.map((g) => (
             <a
               key={g.group}
               href={`#${slugify(g.group)}`}
@@ -44,7 +47,7 @@ export default function FaqPage() {
 
       <Section>
         <div className="mx-auto max-w-3xl space-y-16">
-          {globalFaq.map((g) => (
+          {groups.map((g) => (
             <section key={g.group} id={slugify(g.group)} aria-labelledby={`${slugify(g.group)}-title`}>
               <h2 id={`${slugify(g.group)}-title`} className="text-2xl font-semibold">
                 {g.group}
@@ -57,7 +60,7 @@ export default function FaqPage() {
 
       <FinalCta
         title="Still deciding?"
-        body="The quickest answer is a free practice test. Pick your certification and see where you stand."
+        body="The quickest answer is Test 1, the diagnostic. Pick your certification and see where you stand."
         primary={{ label: "Explore Practice Exams", href: "/practice-exams" }}
         secondary={{ label: "How CertRamp Works", href: "/how-it-works" }}
       />
