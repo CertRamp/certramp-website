@@ -7,13 +7,12 @@ ErrorDocument 404 /404.html
 DirectorySlash On
 Options -Indexes
 
-# Force HTTPS and the www host (only active once the domain points here).
+# Redirect www to the main host (HTTPS itself is handled by IONOS Deploy Now;
+# checking %{HTTPS} here could loop behind their proxy).
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteCond %{HTTPS} !=on [OR]
-  RewriteCond %{HTTP_HOST} !^www\. [NC]
-  RewriteCond %{HTTP_HOST} ^(?:www\.)?certramplearning\.com$ [NC]
-  RewriteRule ^ https://www.certramplearning.com%{REQUEST_URI} [L,R=301]
+  RewriteCond %{HTTP_HOST} ^www\.certramplearning\.com$ [NC]
+  RewriteRule ^ https://certramplearning.com%{REQUEST_URI} [L,R=301]
 </IfModule>
 
 # Open Graph images are written without a file extension.
