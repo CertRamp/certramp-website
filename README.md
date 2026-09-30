@@ -86,31 +86,26 @@ Requires Node.js ≥ 20.9.
 npm install
 cp .env.example .env.local     # optional
 npm run dev                    # http://localhost:3000
-npm run build && npm start     # production build
+npm run build                  # static site in ./out
+npx serve out                  # preview the static build locally
 npm run lint && npm run typecheck
 npm run check:launch           # lists everything still missing before go-live
 ```
 
 ## 3. Deploy
 
-**Vercel (simplest):** push the repo to GitHub → import in Vercel (framework auto-detected) → add environment variables → deploy. Add your domain in Vercel → Domains.
+The site is a **static export**: `npm run build` writes the complete website to `out/` (all pages pre-rendered, no server needed).
 
-Production environment variables:
+**Current setup: IONOS Deploy Now** (GitHub → IONOS, rebuilds on every push to `main`)
+- Framework/build: Node.js, build command `npm ci && npm run build`, publish directory `out`.
+- Production settings are committed in `.env.production` (public values only): `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_ALLOW_INDEXING`, `NEXT_PUBLIC_ANALYTICS_PROVIDER`.
+- `public/.htaccess` adds security headers, the 404 page, HTTPS + www redirect and the image type for Open Graph images (Apache).
 
-```
-NEXT_PUBLIC_SITE_URL=https://www.your-domain.com
-NEXT_PUBLIC_ALLOW_INDEXING=true          # production only, never on previews
-NEXT_PUBLIC_ANALYTICS_PROVIDER=none      # or gtm | ga4 | plausible
-CLASSMARKER_FREE_TEST_URL__<SLUG>=...
-CLASSMARKER_PREMIUM_TEST_URL__<SLUG>=...
-UDEMY_URL__<SLUG>=...                    # optional
-```
+**Go-live switch:** set `NEXT_PUBLIC_ALLOW_INDEXING=true` in `.env.production` and push — only after Impressum/Datenschutz are final.
 
-Environment variables are read at build time — **redeploy after changing them.**
+**ClassMarker env overrides** (`CLASSMARKER_*__<SLUG>`) are read at build time. Either put the URLs into `src/config/certifications.ts` (simplest) or add them to `.env.production`.
 
-**Any Node host:** `npm ci && npm run build && npm start` (port 3000). Netlify and Cloudflare also support Next.js via their adapters. EU hosting may simplify your privacy policy — discuss with your advisor.
-
----
+**Alternatives:** any static host works with the same `out/` folder (Netlify, Cloudflare Pages, Vercel, classic webspace via FTP).
 
 ## 4. ClassMarker integration
 

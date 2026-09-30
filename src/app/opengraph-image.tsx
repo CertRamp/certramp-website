@@ -11,3 +11,6 @@ export default function Image() {
     subtitle: "Progressive certification practice exams",
   });
 }
+
+/** Generated once at build time (static export). */
+export const dynamic = "force-static";

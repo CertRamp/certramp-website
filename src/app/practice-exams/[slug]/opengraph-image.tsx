@@ -18,3 +18,6 @@ export default async function Image({ params }: { params: Promise<{ slug: string
     subtitle: "Find out if you're really exam-ready.",
   });
 }
+
+/** Generated once at build time (static export). */
+export const dynamic = "force-static";

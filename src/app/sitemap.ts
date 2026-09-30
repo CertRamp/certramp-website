@@ -36,3 +36,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [...staticPages, ...certPages, ...legal];
 }
+
+/** Generated once at build time (static export). */
+export const dynamic = "force-static";

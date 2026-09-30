@@ -47,8 +47,15 @@ export const legalNav = [
   { label: "Cookies", href: "/legal/cookies" },
 ] as const;
 
-/** Build an absolute URL from a site path. */
+/**
+ * Build an absolute URL from a site path. Page paths get a trailing slash to
+ * match the static export (`trailingSlash: true`); file paths (with an
+ * extension), queries and anchors are left as they are.
+ */
 export function absoluteUrl(path = "/"): string {
   if (/^https?:\/\//.test(path)) return path;
-  return `${siteConfig.url}${path.startsWith("/") ? path : `/${path}`}`;
+  let p = path.startsWith("/") ? path : `/${path}`;
+  const isFile = /\.[a-z0-9]+$/i.test(p.split(/[?#]/)[0]);
+  if (!isFile && !/[?#]/.test(p) && !p.endsWith("/")) p = `${p}/`;
+  return `${siteConfig.url}${p}`;
 }

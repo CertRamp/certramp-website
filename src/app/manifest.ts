@@ -13,3 +13,6 @@ export default function manifest(): MetadataRoute.Manifest {
     icons: [{ src: "/icon.svg", sizes: "any", type: "image/svg+xml" }],
   };
 }
+
+/** Generated once at build time (static export). */
+export const dynamic = "force-static";

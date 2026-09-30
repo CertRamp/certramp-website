@@ -21,3 +21,6 @@ export default function robots(): MetadataRoute.Robots {
     host: siteConfig.url,
   };
 }
+
+/** Generated once at build time (static export). */
+export const dynamic = "force-static";
