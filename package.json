@@ -1,0 +1,36 @@
+{
+  "name": "certramp-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CertRamp Learning \u2014 marketing and discovery website for progressive certification practice exams.",
+  "scripts": {
+    "dev": "node scripts/import-courses.mjs && next dev",
+    "prebuild": "node scripts/import-courses.mjs",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "import:courses": "node scripts/import-courses.mjs",
+    "check:launch": "node scripts/check-launch.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "5.3.0",
+    "@fontsource-variable/inter-tight": "5.3.0",
+    "next": "16.3.7",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.7",
+    "tailwindcss": "4.3.3",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=20.9"
+  }
+}

@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+/* ──────────────────────────────────────────────────────────────────────────
+   CertRamp design tokens
+   Midnight navy + white + one electric-blue accent. Restrained, precise.
+   ────────────────────────────────────────────────────────────────────────── */
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: var(--font-inter-tight), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --color-navy-950: #060a1f;
+  --color-navy-900: #0a1130;
+  --color-navy-800: #111a45;
+  --color-navy-700: #1c2760;
+  --color-navy-600: #2c3a7d;
+
+  --color-accent-50: #eef1ff;
+  --color-accent-100: #dfe5ff;
+  --color-accent-200: #bfcaff;
+  --color-accent-300: #9dafff;
+  --color-accent-400: #6b84ff;
+  --color-accent-500: #3a5cff;
+  --color-accent-600: #2745e8;
+  --color-accent-700: #1f36bd;
+
+  --color-ink: #0a1130;
+  --color-body: #2e3654;
+  --color-muted: #5a6382;
+  --color-line: #e3e7f0;
+  --color-line-strong: #cfd5e3;
+  --color-surface: #f5f7fb;
+  --color-surface-2: #eef1f7;
+
+  --color-success-500: #14a37f;
+  --color-success-50: #e8f7f2;
+  --color-warn-600: #b45309;
+  --color-warn-100: #fef3c7;
+  --color-warn-50: #fffbeb;
+
+  --radius-card: 1.25rem;
+
+  --shadow-card: 0 1px 2px rgb(10 17 48 / 0.04), 0 4px 16px -4px rgb(10 17 48 / 0.08);
+  --shadow-lift: 0 2px 4px rgb(10 17 48 / 0.04), 0 16px 40px -12px rgb(10 17 48 / 0.18);
+  --shadow-glow: 0 8px 30px -8px rgb(58 92 255 / 0.55);
+
+  --animate-rise: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@keyframes rise {
+  from {
+    transform: scaleY(0.15);
+    opacity: 0;
+  }
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    scroll-padding-top: 5.5rem;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+  body {
+    @apply bg-white font-sans text-body antialiased;
+    font-feature-settings: "cv11", "ss01";
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-ink;
+    text-wrap: balance;
+    letter-spacing: -0.02em;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent-500;
+  }
+  ::selection {
+    @apply bg-accent-100 text-ink;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10;
+  }
+  .eyebrow {
+    @apply font-display text-[0.8125rem] font-semibold uppercase tracking-[0.14em] text-accent-600;
+  }
+  .prose-legal h2 {
+    @apply mt-10 text-xl font-semibold;
+  }
+  .prose-legal p {
+    @apply mt-3 leading-7;
+  }
+  /* Subtle engineering-grid texture used on dark sections */
+  .bg-grid-dark {
+    background-image:
+      linear-gradient(to right, rgb(255 255 255 / 0.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(255 255 255 / 0.045) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+  .bg-grid-light {
+    background-image:
+      linear-gradient(to right, rgb(10 17 48 / 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(10 17 48 / 0.05) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
