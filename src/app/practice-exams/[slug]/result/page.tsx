@@ -10,8 +10,15 @@ import { buildMetadata } from "@/lib/seo";
 
 type Params = { slug: string };
 
+/**
+ * Only built for certifications that actually have this test configured.
+ * (Static export needs at least one page per route, so a single fallback
+ * page is generated while nothing is configured.)
+ */
 export function generateStaticParams(): Params[] {
-  return getAllCertifications().map((c) => ({ slug: c.slug }));
+  const all = getAllCertifications();
+  const configured = all.filter((cert) => Boolean(cert.cta.freeTest.href));
+  return (configured.length ? configured : all.slice(0, 1)).map((c) => ({ slug: c.slug }));
 }
 export const dynamicParams = false;
 
