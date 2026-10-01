@@ -54,6 +54,12 @@ export interface UdemyCourse {
   language: string;
   questions: number | null;
   udemyUrl: string;
+  /** Instructor referral link (preferred for all links when set). */
+  referralUrl?: string | null;
+  /** Udemy course rating as published on Udemy, with count and the date it was copied. */
+  rating?: number | null;
+  ratingCount?: number | null;
+  ratingDate?: string | null;
 }
 
 /**

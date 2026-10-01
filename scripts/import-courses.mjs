@@ -8,6 +8,12 @@
  * CSV columns (header row required, order does not matter):
  *   #, Title, Certification, Slug, Name, Descriptor, Provider, Category,
  *   Language, Questions, Udemy URL
+ * Optional columns:
+ *   Referral URL   — your Udemy instructor referral link for this course
+ *                    (Udemy → course → Promotions → Referral link). When set, every
+ *                    link on the website uses it instead of the plain Udemy URL.
+ *   Rating, Rating Count, Rating Date — the course rating as shown on Udemy
+ *                    (e.g. 4.92, 25, 2026-10-01). Only shown when all three are set.
  *
  * One row = one Udemy course. Rows with the same Slug are grouped into one
  * certification landing page (/practice-exams/<slug>).
@@ -56,6 +62,7 @@ const col = (name) => {
   if (i === -1) throw new Error(`Column "${name}" missing in ${src}`);
   return i;
 };
+const optCol = (name) => header.findIndex((h) => h.trim().toLowerCase() === name.toLowerCase());
 const C = {
   id: col("#"),
   title: col("Title"),
@@ -68,11 +75,15 @@ const C = {
   language: col("Language"),
   questions: col("Questions"),
   url: col("Udemy URL"),
+  referral: optCol("Referral URL"),
+  rating: optCol("Rating"),
+  ratingCount: optCol("Rating Count"),
+  ratingDate: optCol("Rating Date"),
 };
 
 const errors = [];
 const courses = lines.map((l, n) => {
-  const get = (k) => (l[C[k]] ?? "").trim();
+  const get = (k) => (C[k] === -1 ? "" : (l[C[k]] ?? "").trim());
   const course = {
     id: get("id"),
     title: get("title"),
@@ -85,8 +96,29 @@ const courses = lines.map((l, n) => {
     language: get("language"),
     questions: get("questions") ? Number(get("questions")) : null,
     udemyUrl: get("url"),
+    referralUrl: get("referral") || null,
+    rating: get("rating") ? Number(get("rating").replace(",", ".")) : null,
+    ratingCount: get("ratingCount") ? Number(get("ratingCount")) : null,
+    ratingDate: get("ratingDate") || null,
   };
   const line = n + 2;
+  if (course.referralUrl) {
+    const path = (u) => {
+      try {
+        return new URL(u).pathname.replace(/\/+$/, "");
+      } catch {
+        return null;
+      }
+    };
+    if (!/[?&]referralCode=[A-Za-z0-9]+/.test(course.referralUrl)) errors.push(`line ${line}: Referral URL has no referralCode`);
+    else if (path(course.referralUrl) !== path(course.udemyUrl)) errors.push(`line ${line}: Referral URL belongs to a different course than the Udemy URL`);
+  }
+  const anyRating = course.rating !== null || course.ratingCount !== null || course.ratingDate !== null;
+  if (anyRating) {
+    if (!(course.rating >= 1 && course.rating <= 5)) errors.push(`line ${line}: Rating must be between 1 and 5`);
+    if (!Number.isInteger(course.ratingCount) || course.ratingCount < 1) errors.push(`line ${line}: Rating Count must be a whole number`);
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(course.ratingDate ?? "")) errors.push(`line ${line}: Rating Date must be YYYY-MM-DD`);
+  }
   if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(course.slug)) errors.push(`line ${line}: invalid Slug "${course.slug}"`);
   for (const k of ["title", "name", "provider", "category", "language"]) if (!course[k]) errors.push(`line ${line}: ${k} is empty`);
   if (course.udemyUrl && !/^https:\/\/(www\.)?udemy\.com\//.test(course.udemyUrl)) errors.push(`line ${line}: Udemy URL looks wrong`);

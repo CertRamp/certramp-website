@@ -3,6 +3,8 @@
  *
  * The Privacy Policy and Cookie texts describe what this website actually does today:
  *   - static website hosted by IONOS (server log files)
+ *   - cookieless visitor statistics by IONOS Deploy Now, created from the server logs
+ *     with IP addresses anonymised immediately (enabled in the Deploy Now project settings)
  *   - self-hosted fonts, no third-party scripts, no analytics, no cookies, no local storage
  *   - plain links to Udemy (nothing embedded)
  *   - contact by email
@@ -37,7 +39,7 @@ export const legalEntity = {
   vatId: "DE295182475",
 };
 
-const UPDATED = "2026-09-30";
+const UPDATED = "2026-10-01";
 
 const imprintHtml = `
 <h2>Information pursuant to § 5 DDG (German Digital Services Act)</h2>
@@ -69,33 +71,37 @@ const privacyHtml = `
 <p>This website is hosted by IONOS SE, Elgendorfer Str. 57, 56410 Montabaur, Germany. When you open a page, your browser automatically sends information that the server records in log files: IP address, date and time of the request, the page requested, the referring page (referrer), and browser and operating system information.</p>
 <p>This data is required to deliver the website and to keep it secure and stable, for example to detect and defend against attacks. The legal basis is Art. 6(1)(f) GDPR; our legitimate interest is the secure and reliable operation of the website. The log data is stored only as long as necessary for these purposes and is then deleted or anonymised. We have concluded a data processing agreement with IONOS pursuant to Art. 28 GDPR.</p>
 
-<h2>3. No cookies, no tracking</h2>
-<p>This website does not set cookies and does not use comparable technologies such as local storage. We do not use web analytics, advertising, social media plugins or other tracking tools. Fonts are hosted on our own server, so no connection to third-party font services (such as Google Fonts) is made. See also our <a href="/legal/cookies/">cookie information</a>.</p>
+<h2>3. Visitor statistics</h2>
+<p>Our host IONOS creates anonymous visitor statistics for us from the server log files (IONOS Deploy Now visitor statistics). The following data is evaluated: the referring page (referrer), the page or file requested, browser type and version, operating system, device type, time of access and the IP address in anonymised form. According to IONOS, the IP address is anonymised immediately after transmission, so the statistics are processed without reference to any person. No cookies are set or read, and no script is loaded in your browser for this purpose.</p>
+<p>We use these statistics to understand which pages are used and to improve the website. The legal basis is Art. 6(1)(f) GDPR; our legitimate interest lies in the needs-based design and improvement of our website. The processing is carried out by IONOS on our behalf under the data processing agreement mentioned in section 2.</p>
 
-<h2>4. Contact by email</h2>
+<h2>4. No cookies, no tracking tools</h2>
+<p>This website does not set cookies and does not use comparable technologies such as local storage. Apart from the cookieless visitor statistics described in section 3, we do not use web analytics, advertising, social media plugins or other tracking tools. Fonts are hosted on our own server, so no connection to third-party font services (such as Google Fonts) is made. See also our <a href="/legal/cookies/">cookie information</a>.</p>
+
+<h2>5. Contact by email</h2>
 <p>If you contact us by email, we process the data you send us (usually your email address, your name and the content of your message) to answer your enquiry. The legal basis is Art. 6(1)(b) GDPR where your enquiry relates to a contract or pre-contractual measures, and Art. 6(1)(f) GDPR otherwise; our legitimate interest is responding to enquiries. We delete the data once your enquiry has been dealt with, unless statutory retention obligations (for example under German commercial or tax law) require us to keep it longer.</p>
 
-<h2>5. Links to Udemy and other websites</h2>
+<h2>6. Links to Udemy and other websites</h2>
 <p>This website contains links to our courses on Udemy and to other external websites, such as official certification bodies. These are plain links: no data is transmitted to these providers until you click a link. After you follow a link, the privacy policy of the respective provider applies — for Udemy, see <a href="https://www.udemy.com/terms/privacy/" rel="noopener nofollow">udemy.com/terms/privacy</a>.</p>
 
-<h2>6. Recipients and transfers to third countries</h2>
-<p>We do not sell personal data. Data is only passed to our hosting and email provider IONOS (see section 2) as a processor. Personal data from your visit is not transferred to countries outside the EU/EEA.</p>
+<h2>7. Recipients and transfers to third countries</h2>
+<p>We do not sell personal data. Data is only passed to our hosting and email provider IONOS (see section 2) as a processor (hosting, visitor statistics and email). Personal data from your visit is not transferred to countries outside the EU/EEA.</p>
 
-<h2>7. Your rights</h2>
+<h2>8. Your rights</h2>
 <p>You have the right to access your personal data (Art. 15 GDPR), to rectification (Art. 16), to erasure (Art. 17), to restriction of processing (Art. 18), to data portability (Art. 20) and to object to processing based on legitimate interests (Art. 21). To exercise these rights, send an email to <a href="mailto:hello@certramplearning.com">hello@certramplearning.com</a>.</p>
 <p>You also have the right to lodge a complaint with a data protection supervisory authority. The authority responsible for us is the Bavarian Data Protection Authority (Bayerisches Landesamt für Datenschutzaufsicht, BayLDA), Promenade 18, 91522 Ansbach, Germany.</p>
 
-<h2>8. No automated decision-making</h2>
+<h2>9. No automated decision-making</h2>
 <p>We do not use automated decision-making or profiling within the meaning of Art. 22 GDPR.</p>
 
-<h2>9. Changes to this policy</h2>
+<h2>10. Changes to this policy</h2>
 <p>We update this privacy policy when the website or the legal requirements change. The current version is always available on this page.</p>
 `;
 
 const cookiesHtml = `
 <p><strong>This website does not use cookies.</strong></p>
 <p>We do not store any information on your device and do not read any information from it — neither with cookies nor with comparable technologies such as local storage or tracking pixels. For this reason, no cookie banner is shown and no consent is required.</p>
-<p>We do not use web analytics, advertising or social media tools. Fonts are served from our own server.</p>
+<p>We do not use advertising, social media tools or analytics tools that run in your browser. Our host creates anonymous visitor statistics from the server log files without cookies — see section 3 of our <a href="/legal/privacy/">privacy policy</a>. Fonts are served from our own server.</p>
 <p>If you follow a link to another website, such as Udemy, that website may use cookies under its own cookie and privacy policy.</p>
 <p>Should we introduce cookies or similar technologies in the future, we will update this page and ask for your consent where the law requires it. More details: <a href="/legal/privacy/">privacy policy</a>.</p>
 `;

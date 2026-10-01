@@ -10,7 +10,11 @@
   "category": "AI & Machine Learning",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/aws-certified-ai-business-strategist-aib-c01-practice-exams/"
+  "udemyUrl": "https://www.udemy.com/course/aws-certified-ai-business-strategist-aib-c01-practice-exams/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "99",
@@ -23,7 +27,11 @@
   "category": "AI & Machine Learning",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/aif-c01-aws-certified-ai-practitioner-praxistests/"
+  "udemyUrl": "https://www.udemy.com/course/aif-c01-aws-certified-ai-practitioner-praxistests/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "94",
@@ -36,7 +44,11 @@
   "category": "AI & Machine Learning",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/aws-machine-learning-engineer-mla-c02-practice-exams/"
+  "udemyUrl": "https://www.udemy.com/course/aws-machine-learning-engineer-mla-c02-practice-exams/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "92",
@@ -49,7 +61,11 @@
   "category": "AI & Machine Learning",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/claude-certified-architect-ccar-f-practice-exams-1/"
+  "udemyUrl": "https://www.udemy.com/course/claude-certified-architect-ccar-f-practice-exams-1/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "43",
@@ -62,7 +78,11 @@
   "category": "AI & Machine Learning",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/ccdv-f-claude-certified-developer-foundations-practice-tests/"
+  "udemyUrl": "https://www.udemy.com/course/ccdv-f-claude-certified-developer-foundations-practice-tests/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "50",
@@ -75,7 +95,11 @@
   "category": "AI & Machine Learning",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/google-cloud-professional-agentic-architect-practice-exams-a/"
+  "udemyUrl": "https://www.udemy.com/course/google-cloud-professional-agentic-architect-practice-exams-a/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "9",
@@ -88,7 +112,11 @@
   "category": "AI & Machine Learning",
   "language": "English",
   "questions": 600,
-  "udemyUrl": "https://www.udemy.com/course/aigp-practice-exams-iapp-ai-governance-professional/"
+  "udemyUrl": "https://www.udemy.com/course/aigp-practice-exams-iapp-ai-governance-professional/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "41",
@@ -101,7 +129,11 @@
   "category": "AI & Machine Learning",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/iapp-aigp-prufung-uebungstests-auf-deutsch/"
+  "udemyUrl": "https://www.udemy.com/course/iapp-aigp-prufung-uebungstests-auf-deutsch/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "89",
@@ -114,7 +146,11 @@
   "category": "AI & Machine Learning",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/aair-practice-exams-isaca-advanced-in-ai-risk/"
+  "udemyUrl": "https://www.udemy.com/course/aair-practice-exams-isaca-advanced-in-ai-risk/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "6",
@@ -127,7 +163,11 @@
   "category": "AI & Machine Learning",
   "language": "English",
   "questions": 540,
-  "udemyUrl": "https://www.udemy.com/course/aaism-practice-exams-isaca-ai-security-management/"
+  "udemyUrl": "https://www.udemy.com/course/aaism-practice-exams-isaca-ai-security-management/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "83",
@@ -140,7 +180,11 @@
   "category": "AI & Machine Learning",
   "language": "Spanish",
   "questions": 540,
-  "udemyUrl": "https://www.udemy.com/course/aaism-isaca-6-simulacros-de-examen-540-preguntas/"
+  "udemyUrl": "https://www.udemy.com/course/aaism-isaca-6-simulacros-de-examen-540-preguntas/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "84",
@@ -153,7 +197,11 @@
   "category": "AI & Machine Learning",
   "language": "English",
   "questions": 240,
-  "udemyUrl": "https://www.udemy.com/course/isoiec-42001-foundation-practice-exams-6-aims-mock-tests/"
+  "udemyUrl": "https://www.udemy.com/course/isoiec-42001-foundation-practice-exams-6-aims-mock-tests/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "8",
@@ -166,7 +214,11 @@
   "category": "AI & Machine Learning",
   "language": "English",
   "questions": 240,
-  "udemyUrl": "https://www.udemy.com/course/ai-governance-exam-v5-6-practice-tests-240-questions/"
+  "udemyUrl": "https://www.udemy.com/course/ai-governance-exam-v5-6-practice-tests-240-questions/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "68",
@@ -179,7 +231,11 @@
   "category": "AI & Machine Learning",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/ab-100-practice-tests-agentic-ai-solutions-architect-a/"
+  "udemyUrl": "https://www.udemy.com/course/ab-100-practice-tests-agentic-ai-solutions-architect-a/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "26",
@@ -192,7 +248,11 @@
   "category": "AI & Machine Learning",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/ab-620-practice-exams-copilot-studio-ai-agent-builder/"
+  "udemyUrl": "https://www.udemy.com/course/ab-620-practice-exams-copilot-studio-ai-agent-builder/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "75",
@@ -205,7 +265,11 @@
   "category": "AI & Machine Learning",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/ab-620-uebungstests-microsoft-ai-agent-builder-associate/"
+  "udemyUrl": "https://www.udemy.com/course/ab-620-uebungstests-microsoft-ai-agent-builder-associate/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "42",
@@ -218,7 +282,11 @@
   "category": "AI & Machine Learning",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/ab-730-praxistests-microsoft-ai-business-professional/"
+  "udemyUrl": "https://www.udemy.com/course/ab-730-praxistests-microsoft-ai-business-professional/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "93",
@@ -231,7 +299,11 @@
   "category": "AI & Machine Learning",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/ab-731-practice-exams-microsoft-ai-transformation-leader-m/"
+  "udemyUrl": "https://www.udemy.com/course/ab-731-practice-exams-microsoft-ai-transformation-leader-m/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "11",
@@ -244,7 +316,11 @@
   "category": "AI & Machine Learning",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/ai-103-practice-tests-azure-ai-apps-agents-2026/"
+  "udemyUrl": "https://www.udemy.com/course/ai-103-practice-tests-azure-ai-apps-agents-2026/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "100",
@@ -257,7 +333,11 @@
   "category": "AI & Machine Learning",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/ai-103-praxistests-deutsch-azure-ai-apps-und-agents/"
+  "udemyUrl": "https://www.udemy.com/course/ai-103-praxistests-deutsch-azure-ai-apps-und-agents/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "14",
@@ -270,7 +350,11 @@
   "category": "AI & Machine Learning",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/ai-200-practice-tests-azure-ai-cloud-developer/"
+  "udemyUrl": "https://www.udemy.com/course/ai-200-practice-tests-azure-ai-cloud-developer/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "105",
@@ -283,7 +367,11 @@
   "category": "AI & Machine Learning",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/ai-300-practice-tests-mlops-engineer-associate/"
+  "udemyUrl": "https://www.udemy.com/course/ai-300-practice-tests-mlops-engineer-associate/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "114",
@@ -296,7 +384,11 @@
   "category": "AI & Machine Learning",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/microsoft-ai-901-azure-ai-fundamentals-5-practice-tests/"
+  "udemyUrl": "https://www.udemy.com/course/microsoft-ai-901-azure-ai-fundamentals-5-practice-tests/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "36",
@@ -309,7 +401,11 @@
   "category": "AI & Machine Learning",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/ai-901-praxistests-2026-azure-ai-fundamentals-deutsch/"
+  "udemyUrl": "https://www.udemy.com/course/ai-901-praxistests-2026-azure-ai-fundamentals-deutsch/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "63",
@@ -322,7 +418,11 @@
   "category": "AI & Machine Learning",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/nca-aiio-practice-test-nvidia-ai-infrastructure-operations/"
+  "udemyUrl": "https://www.udemy.com/course/nca-aiio-practice-test-nvidia-ai-infrastructure-operations/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "62",
@@ -335,7 +435,11 @@
   "category": "AI & Machine Learning",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/nca-genl-practice-tests-nvidia-generative-ai-llms-a/"
+  "udemyUrl": "https://www.udemy.com/course/nca-genl-practice-tests-nvidia-generative-ai-llms-a/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "88",
@@ -348,7 +452,11 @@
   "category": "Audit, Risk & Governance",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/cfe-practice-exam-certified-fraud-examiner-mock-tests/"
+  "udemyUrl": "https://www.udemy.com/course/cfe-practice-exam-certified-fraud-examiner-mock-tests/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "49",
@@ -361,7 +469,11 @@
   "category": "Audit, Risk & Governance",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/cia-part-1-practice-exams-internal-audit-fundamentals/"
+  "udemyUrl": "https://www.udemy.com/course/cia-part-1-practice-exams-internal-audit-fundamentals/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "74",
@@ -374,7 +486,11 @@
   "category": "Audit, Risk & Governance",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/cia-part-2-practice-exams-internal-audit-engagement/"
+  "udemyUrl": "https://www.udemy.com/course/cia-part-2-practice-exams-internal-audit-engagement/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "73",
@@ -387,7 +503,11 @@
   "category": "Audit, Risk & Governance",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/cia-part-3-practice-exams-internal-audit-function/"
+  "udemyUrl": "https://www.udemy.com/course/cia-part-3-practice-exams-internal-audit-function/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "111",
@@ -400,7 +520,11 @@
   "category": "Audit, Risk & Governance",
   "language": "English",
   "questions": 450,
-  "udemyUrl": "https://www.udemy.com/course/cobit-2019-foundation-practice-exams-isaca-mock-tests/"
+  "udemyUrl": "https://www.udemy.com/course/cobit-2019-foundation-practice-exams-isaca-mock-tests/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "45",
@@ -413,7 +537,11 @@
   "category": "Audit, Risk & Governance",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/cisa-practice-exams-information-systems-auditor/"
+  "udemyUrl": "https://www.udemy.com/course/cisa-practice-exams-information-systems-auditor/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "90",
@@ -426,7 +554,11 @@
   "category": "Audit, Risk & Governance",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/crisc-practice-exams-isaca-certified-risk-tests/"
+  "udemyUrl": "https://www.udemy.com/course/crisc-practice-exams-isaca-certified-risk-tests/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "58",
@@ -439,7 +571,11 @@
   "category": "Cloud",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/clf-c02-praxistests-deutsch-aws-cloud-practitioner/"
+  "udemyUrl": "https://www.udemy.com/course/clf-c02-praxistests-deutsch-aws-cloud-practitioner/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "55",
@@ -452,7 +588,11 @@
   "category": "Cloud",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/dea-c01-practice-exams-aws-data-engineer-associate/"
+  "udemyUrl": "https://www.udemy.com/course/dea-c01-practice-exams-aws-data-engineer-associate/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "52",
@@ -465,7 +605,11 @@
   "category": "Cloud",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/dop-c02-practice-exams-aws-devops-engineer-pro/"
+  "udemyUrl": "https://www.udemy.com/course/dop-c02-practice-exams-aws-devops-engineer-pro/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "51",
@@ -478,7 +622,11 @@
   "category": "Cloud",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/saa-c03-practice-exams-aws-solutions-architect/"
+  "udemyUrl": "https://www.udemy.com/course/saa-c03-practice-exams-aws-solutions-architect/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "113",
@@ -491,7 +639,11 @@
   "category": "Cloud",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/comptia-cloud-cv0-004-6-practice-exams-2026/"
+  "udemyUrl": "https://www.udemy.com/course/comptia-cloud-cv0-004-6-practice-exams-2026/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "24",
@@ -504,7 +656,11 @@
   "category": "Cloud",
   "language": "French",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/az-104-examens-blancs-administrateur-microsoft-azure/"
+  "udemyUrl": "https://www.udemy.com/course/az-104-examens-blancs-administrateur-microsoft-azure/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "107",
@@ -517,7 +673,11 @@
   "category": "Cloud",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/az-104-praxistests-microsoft-azure-administrator/"
+  "udemyUrl": "https://www.udemy.com/course/az-104-praxistests-microsoft-azure-administrator/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "48",
@@ -530,7 +690,11 @@
   "category": "Cloud",
   "language": "Spanish",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/az-104-simulacros-de-examen-azure-administrator/"
+  "udemyUrl": "https://www.udemy.com/course/az-104-simulacros-de-examen-azure-administrator/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "34",
@@ -543,7 +707,11 @@
   "category": "Cloud",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/az-700-practice-tests-azure-network-engineer-exam/"
+  "udemyUrl": "https://www.udemy.com/course/az-700-practice-tests-azure-network-engineer-exam/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "109",
@@ -556,7 +724,11 @@
   "category": "Cloud",
   "language": "French",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/az-900-microsoft-azure-fundamentals-examens-blancs/"
+  "udemyUrl": "https://www.udemy.com/course/az-900-microsoft-azure-fundamentals-examens-blancs/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "30",
@@ -569,7 +741,11 @@
   "category": "Cloud",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/az-900-praxistests-2026-azure-fundamentals-deutsch/"
+  "udemyUrl": "https://www.udemy.com/course/az-900-praxistests-2026-azure-fundamentals-deutsch/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "95",
@@ -582,7 +758,11 @@
   "category": "Cloud",
   "language": "Spanish",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/az-900-azure-fundamentals-6-examenes-de-practica/"
+  "udemyUrl": "https://www.udemy.com/course/az-900-azure-fundamentals-6-examenes-de-practica/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "78",
@@ -595,7 +775,11 @@
   "category": "IT Service Management",
   "language": "French",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/itil-4-foundation-examens-blancs-et-qcm-corriges/"
+  "udemyUrl": "https://www.udemy.com/course/itil-4-foundation-examens-blancs-et-qcm-corriges/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "17",
@@ -608,7 +792,11 @@
   "category": "IT Service Management",
   "language": "Portuguese",
   "questions": 240,
-  "udemyUrl": "https://www.udemy.com/course/simulados-itsm-foundation-2026-6-exames-completos/"
+  "udemyUrl": "https://www.udemy.com/course/simulados-itsm-foundation-2026-6-exames-completos/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "77",
@@ -621,7 +809,11 @@
   "category": "IT Service Management",
   "language": "Spanish",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/itil-4-foundation-6-simulacros-de-examen-en-espanol/"
+  "udemyUrl": "https://www.udemy.com/course/itil-4-foundation-6-simulacros-de-examen-en-espanol/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "16",
@@ -634,7 +826,11 @@
   "category": "IT Service Management",
   "language": "English",
   "questions": 240,
-  "udemyUrl": "https://www.udemy.com/course/itsm-foundation-v5-practice-exams-2026-240-questions/"
+  "udemyUrl": "https://www.udemy.com/course/itsm-foundation-v5-practice-exams-2026-240-questions/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "56",
@@ -647,7 +843,11 @@
   "category": "IT Service Management",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/itsm-5-foundation-praxistests-it-service-management/"
+  "udemyUrl": "https://www.udemy.com/course/itsm-5-foundation-praxistests-it-service-management/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "103",
@@ -660,7 +860,11 @@
   "category": "IT Service Management",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/itil-5-foundation-praxistests-240-prufungsfragen/"
+  "udemyUrl": "https://www.udemy.com/course/itil-5-foundation-praxistests-240-prufungsfragen/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "13",
@@ -673,7 +877,11 @@
   "category": "IT Service Management",
   "language": "Portuguese",
   "questions": 240,
-  "udemyUrl": "https://www.udemy.com/course/itsm-foundation-v5-6-simulados-240-questoes-comentadas/"
+  "udemyUrl": "https://www.udemy.com/course/itsm-foundation-v5-6-simulados-240-questoes-comentadas/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "7",
@@ -686,7 +894,11 @@
   "category": "IT Service Management",
   "language": "English",
   "questions": 120,
-  "udemyUrl": "https://www.udemy.com/course/itsm-foundation-bridge-v5-practice-exams-120-questions/"
+  "udemyUrl": "https://www.udemy.com/course/itsm-foundation-bridge-v5-practice-exams-120-questions/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "102",
@@ -699,7 +911,11 @@
   "category": "IT Service Management",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/itil-foundation-bridge-version-5-praxistests/"
+  "udemyUrl": "https://www.udemy.com/course/itil-foundation-bridge-version-5-praxistests/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "53",
@@ -712,7 +928,11 @@
   "category": "IT Service Management",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/servicenow-csa-practice-tests-system-administrator/"
+  "udemyUrl": "https://www.udemy.com/course/servicenow-csa-practice-tests-system-administrator/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "38",
@@ -725,7 +945,11 @@
   "category": "Microsoft 365 & Office",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/ab-900-praxistests-microsoft-365-copilot-admin/"
+  "udemyUrl": "https://www.udemy.com/course/ab-900-praxistests-microsoft-365-copilot-admin/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "33",
@@ -738,7 +962,11 @@
   "category": "Microsoft 365 & Office",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/md-102-practice-exam-2026-6-endpoint-administrator-tests/"
+  "udemyUrl": "https://www.udemy.com/course/md-102-practice-exam-2026-6-endpoint-administrator-tests/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "106",
@@ -751,7 +979,11 @@
   "category": "Microsoft 365 & Office",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/mo-200-excel-associate-practice-test-6-exams-2026/"
+  "udemyUrl": "https://www.udemy.com/course/mo-200-excel-associate-practice-test-6-exams-2026/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "29",
@@ -764,7 +996,11 @@
   "category": "Microsoft 365 & Office",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/mo-210-practice-tests-mos-excel-associate-365-apps/"
+  "udemyUrl": "https://www.udemy.com/course/mo-210-practice-tests-mos-excel-associate-365-apps/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "86",
@@ -777,7 +1013,11 @@
   "category": "Microsoft 365 & Office",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/pl-900-power-platform-fundamentals-practice-exams/"
+  "udemyUrl": "https://www.udemy.com/course/pl-900-power-platform-fundamentals-practice-exams/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "64",
@@ -790,7 +1030,11 @@
   "category": "Networking & IT Fundamentals",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/ccna-200-301-practice-exams-v20-cisco-ccna-mock-tests/"
+  "udemyUrl": "https://www.udemy.com/course/ccna-200-301-practice-exams-v20-cisco-ccna-mock-tests/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "85",
@@ -803,7 +1047,11 @@
   "category": "Networking & IT Fundamentals",
   "language": "German",
   "questions": 300,
-  "udemyUrl": "https://www.udemy.com/course/ccna-200-301-v1-1-praxistest-deutsch-300-pruefungsfragen/"
+  "udemyUrl": "https://www.udemy.com/course/ccna-200-301-v1-1-praxistest-deutsch-300-pruefungsfragen/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "71",
@@ -816,7 +1064,11 @@
   "category": "Networking & IT Fundamentals",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/comptia-a-core-1-220-1201-praxistests-deutsch/"
+  "udemyUrl": "https://www.udemy.com/course/comptia-a-core-1-220-1201-praxistests-deutsch/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "70",
@@ -829,7 +1081,11 @@
   "category": "Networking & IT Fundamentals",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/comptia-a-core-2-220-1202-v15-praxistests-deutsch/"
+  "udemyUrl": "https://www.udemy.com/course/comptia-a-core-2-220-1202-v15-praxistests-deutsch/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "69",
@@ -842,7 +1098,11 @@
   "category": "Networking & IT Fundamentals",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/comptia-network-n10-009-praxistests-auf-deutsch/"
+  "udemyUrl": "https://www.udemy.com/course/comptia-network-n10-009-praxistests-auf-deutsch/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "112",
@@ -855,7 +1115,11 @@
   "category": "Other",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/ccat-practice-test-2026-criteria-cognitive-aptitude-test/"
+  "udemyUrl": "https://www.udemy.com/course/ccat-practice-test-2026-criteria-cognitive-aptitude-test/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "54",
@@ -868,7 +1132,11 @@
   "category": "Other",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/ogea-101-practice-exams-togaf-10-foundation-part-1/"
+  "udemyUrl": "https://www.udemy.com/course/ogea-101-practice-exams-togaf-10-foundation-part-1/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "19",
@@ -881,7 +1149,11 @@
   "category": "Project Management",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/capm-practice-exams-pmi-certification-test-prep/"
+  "udemyUrl": "https://www.udemy.com/course/capm-practice-exams-pmi-certification-test-prep/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "18",
@@ -894,7 +1166,11 @@
   "category": "Project Management",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/ipma-level-d-practice-exams-icb4-exam-prep/"
+  "udemyUrl": "https://www.udemy.com/course/ipma-level-d-practice-exams-icb4-exam-prep/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "22",
@@ -907,7 +1183,11 @@
   "category": "Project Management",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/ipma-level-d-ubungsprufungen-icb-4-gpm-zertifizierung/"
+  "udemyUrl": "https://www.udemy.com/course/ipma-level-d-ubungsprufungen-icb-4-gpm-zertifizierung/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "91",
@@ -920,7 +1200,11 @@
   "category": "Project Management",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/pmi-acp-practice-exam-6-mock-tests-new-eco/"
+  "udemyUrl": "https://www.udemy.com/course/pmi-acp-practice-exam-6-mock-tests-new-eco/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "97",
@@ -933,7 +1217,11 @@
   "category": "Project Management",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/pmp-practice-exam-6-full-tests-new-pmp-eco/"
+  "udemyUrl": "https://www.udemy.com/course/pmp-practice-exam-6-full-tests-new-pmp-eco/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "1",
@@ -946,7 +1234,11 @@
   "category": "Project Management",
   "language": "English",
   "questions": 360,
-  "udemyUrl": "https://www.udemy.com/course/prince2-7-foundation-practice-exams-2026-360-questions/"
+  "udemyUrl": "https://www.udemy.com/course/prince2-7-foundation-practice-exams-2026-360-questions/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "80",
@@ -959,7 +1251,11 @@
   "category": "Project Management",
   "language": "French",
   "questions": 360,
-  "udemyUrl": "https://www.udemy.com/course/prince2-7-foundation-6-examens-blancs-360-questions/"
+  "udemyUrl": "https://www.udemy.com/course/prince2-7-foundation-6-examens-blancs-360-questions/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "2",
@@ -972,7 +1268,11 @@
   "category": "Project Management",
   "language": "German",
   "questions": 360,
-  "udemyUrl": "https://www.udemy.com/course/prince2-7-foundation-praxistests-prufungssimulation-2026/"
+  "udemyUrl": "https://www.udemy.com/course/prince2-7-foundation-praxistests-prufungssimulation-2026/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "4",
@@ -985,7 +1285,11 @@
   "category": "Project Management",
   "language": "English",
   "questions": 420,
-  "udemyUrl": "https://www.udemy.com/course/prince2-7-practitioner-practice-exams-420-questions/"
+  "udemyUrl": "https://www.udemy.com/course/prince2-7-practitioner-practice-exams-420-questions/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "59",
@@ -998,7 +1302,11 @@
   "category": "Project Management",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/prince2-7-praxistests-practitioner-zertifizierung/"
+  "udemyUrl": "https://www.udemy.com/course/prince2-7-praxistests-practitioner-zertifizierung/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "61",
@@ -1011,7 +1319,11 @@
   "category": "Project Management",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/prince2-agile-foundation-practice-exams-version-2/"
+  "udemyUrl": "https://www.udemy.com/course/prince2-agile-foundation-practice-exams-version-2/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "32",
@@ -1024,7 +1336,11 @@
   "category": "Security & Privacy",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/comptia-secai-cy0-001-practice-exams-6-full-tests/"
+  "udemyUrl": "https://www.udemy.com/course/comptia-secai-cy0-001-practice-exams-6-full-tests/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "72",
@@ -1037,7 +1353,11 @@
   "category": "Security & Privacy",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/comptia-secai-cy0-001-uebungstests-pruefungsvorbereitung/"
+  "udemyUrl": "https://www.udemy.com/course/comptia-secai-cy0-001-uebungstests-pruefungsvorbereitung/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "108",
@@ -1050,7 +1370,11 @@
   "category": "Security & Privacy",
   "language": "French",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/comptia-security-sy0-701-6-examens-blancs-corriges/"
+  "udemyUrl": "https://www.udemy.com/course/comptia-security-sy0-701-6-examens-blancs-corriges/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "28",
@@ -1063,7 +1387,11 @@
   "category": "Security & Privacy",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/comptia-security-sy0-701-ubungstests-deutsch-2026/"
+  "udemyUrl": "https://www.udemy.com/course/comptia-security-sy0-701-ubungstests-deutsch-2026/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "104",
@@ -1076,7 +1404,11 @@
   "category": "Security & Privacy",
   "language": "Spanish",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/comptia-security-sy0-701-6-simulacros-de-examen/"
+  "udemyUrl": "https://www.udemy.com/course/comptia-security-sy0-701-6-simulacros-de-examen/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "87",
@@ -1089,7 +1421,11 @@
   "category": "Security & Privacy",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/comptia-security-sy0-801-v8-practice-exams-/"
+  "udemyUrl": "https://www.udemy.com/course/comptia-security-sy0-801-v8-practice-exams-/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "57",
@@ -1102,7 +1438,11 @@
   "category": "Security & Privacy",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/gaips-practice-exam-giac-ai-platform-security/"
+  "udemyUrl": "https://www.udemy.com/course/gaips-practice-exam-giac-ai-platform-security/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "31",
@@ -1115,7 +1455,11 @@
   "category": "Security & Privacy",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/cipm-practice-exams-iapp-certified-privacy-manager/"
+  "udemyUrl": "https://www.udemy.com/course/cipm-practice-exams-iapp-certified-privacy-manager/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "35",
@@ -1128,7 +1472,11 @@
   "category": "Security & Privacy",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/cippe-practice-exams-iapp-gdpr-certification-prep/"
+  "udemyUrl": "https://www.udemy.com/course/cippe-practice-exams-iapp-gdpr-certification-prep/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "79",
@@ -1141,7 +1489,11 @@
   "category": "Security & Privacy",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/cism-practice-exams-isaca-certified-infosec-manager/"
+  "udemyUrl": "https://www.udemy.com/course/cism-practice-exams-isaca-certified-infosec-manager/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "46",
@@ -1154,7 +1506,11 @@
   "category": "Security & Privacy",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/isc2-cc-certified-in-cybersecurity-practice-exams-2026/"
+  "udemyUrl": "https://www.udemy.com/course/isc2-cc-certified-in-cybersecurity-practice-exams-2026/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "101",
@@ -1167,7 +1523,11 @@
   "category": "Security & Privacy",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/isc2-cc-praxistests-new-outline-deutsch/"
+  "udemyUrl": "https://www.udemy.com/course/isc2-cc-praxistests-new-outline-deutsch/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "10",
@@ -1180,7 +1540,11 @@
   "category": "Security & Privacy",
   "language": "English",
   "questions": 900,
-  "udemyUrl": "https://www.udemy.com/course/ccsp-practice-exams-new-isc2-cat-exam-outline/"
+  "udemyUrl": "https://www.udemy.com/course/ccsp-practice-exams-new-isc2-cat-exam-outline/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "76",
@@ -1193,7 +1557,11 @@
   "category": "Security & Privacy",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/iso-27001-lead-implementer-practice-exams-treccert-2022/"
+  "udemyUrl": "https://www.udemy.com/course/iso-27001-lead-implementer-practice-exams-treccert-2022/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "39",
@@ -1206,7 +1574,11 @@
   "category": "Security & Privacy",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/iso-27001-lead-implementer-praxistests-2026-treccert/"
+  "udemyUrl": "https://www.udemy.com/course/iso-27001-lead-implementer-praxistests-2026-treccert/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "67",
@@ -1219,7 +1591,11 @@
   "category": "Security & Privacy",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/sc-100-praxistests-microsoft-cybersecurity-architect/"
+  "udemyUrl": "https://www.udemy.com/course/sc-100-praxistests-microsoft-cybersecurity-architect/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "5",
@@ -1232,7 +1608,11 @@
   "category": "Security & Privacy",
   "language": "English",
   "questions": 360,
-  "udemyUrl": "https://www.udemy.com/course/sc-200-practice-tests-2026-security-operations-analyst/"
+  "udemyUrl": "https://www.udemy.com/course/sc-200-practice-tests-2026-security-operations-analyst/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "66",
@@ -1245,7 +1625,11 @@
   "category": "Security & Privacy",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/sc-200-praxistests-security-operations-analyst/"
+  "udemyUrl": "https://www.udemy.com/course/sc-200-praxistests-security-operations-analyst/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "27",
@@ -1258,7 +1642,11 @@
   "category": "Security & Privacy",
   "language": "Portuguese",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/sc-200-simulados-microsoft-security-operations-analyst/"
+  "udemyUrl": "https://www.udemy.com/course/sc-200-simulados-microsoft-security-operations-analyst/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "65",
@@ -1271,7 +1659,11 @@
   "category": "Security & Privacy",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/sc-300-praxistests-deutsch-microsoft-entra-id-pruefung/"
+  "udemyUrl": "https://www.udemy.com/course/sc-300-praxistests-deutsch-microsoft-entra-id-pruefung/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "47",
@@ -1284,7 +1676,11 @@
   "category": "Security & Privacy",
   "language": "Portuguese",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/sc-300-simulados-microsoft-identity-and-access-admin/"
+  "udemyUrl": "https://www.udemy.com/course/sc-300-simulados-microsoft-identity-and-access-admin/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "98",
@@ -1297,7 +1693,11 @@
   "category": "Security & Privacy",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/sc-401-practice-tests-microsoft-information-security-admin/"
+  "udemyUrl": "https://www.udemy.com/course/sc-401-practice-tests-microsoft-information-security-admin/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "23",
@@ -1310,7 +1710,11 @@
   "category": "Security & Privacy",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/sc-500-practice-exams-2026-cloud-ai-security-engineer/"
+  "udemyUrl": "https://www.udemy.com/course/sc-500-practice-exams-2026-cloud-ai-security-engineer/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "110",
@@ -1323,7 +1727,11 @@
   "category": "Security & Privacy",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/microsoft-sc-500-praxistests-deutsch-2026-6-simulationen/"
+  "udemyUrl": "https://www.udemy.com/course/microsoft-sc-500-praxistests-deutsch-2026-6-simulationen/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "44",
@@ -1336,7 +1744,11 @@
   "category": "Security & Privacy",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/sc-900-practice-exams-2026-microsoft-security-fundamentals/"
+  "udemyUrl": "https://www.udemy.com/course/sc-900-practice-exams-2026-microsoft-security-fundamentals/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "21",
@@ -1349,7 +1761,11 @@
   "category": "Security & Privacy",
   "language": "German",
   "questions": 300,
-  "udemyUrl": "https://www.udemy.com/course/sc-900-praxistests-300-fragen-prufungssimulation/"
+  "udemyUrl": "https://www.udemy.com/course/sc-900-praxistests-300-fragen-prufungssimulation/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "20",
@@ -1362,7 +1778,11 @@
   "category": "Software Testing & Requirements",
   "language": "English",
   "questions": 270,
-  "udemyUrl": "https://www.udemy.com/course/ireb-cpre-foundation-pass-the-exam-on-your-1st-attempt/"
+  "udemyUrl": "https://www.udemy.com/course/ireb-cpre-foundation-pass-the-exam-on-your-1st-attempt/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "3",
@@ -1375,7 +1795,11 @@
   "category": "Software Testing & Requirements",
   "language": "German",
   "questions": 270,
-  "udemyUrl": "https://www.udemy.com/course/ireb-cpre-foundation-level-6-praxistests-2026-v33/"
+  "udemyUrl": "https://www.udemy.com/course/ireb-cpre-foundation-level-6-praxistests-2026-v33/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "82",
@@ -1388,7 +1812,11 @@
   "category": "Software Testing & Requirements",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/istqb-ct-ai-v2-0-ai-testing-certification-practice-exams/"
+  "udemyUrl": "https://www.udemy.com/course/istqb-ct-ai-v2-0-ai-testing-certification-practice-exams/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "81",
@@ -1401,7 +1829,11 @@
   "category": "Software Testing & Requirements",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/istqb-ct-ai-v20-praxistests-ai-testing-zertifizierung/"
+  "udemyUrl": "https://www.udemy.com/course/istqb-ct-ai-v20-praxistests-ai-testing-zertifizierung/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "12",
@@ -1414,7 +1846,11 @@
   "category": "Software Testing & Requirements",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/istqb-ct-genai-practice-tests-testing-with-generative-ai/"
+  "udemyUrl": "https://www.udemy.com/course/istqb-ct-genai-practice-tests-testing-with-generative-ai/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "40",
@@ -1427,7 +1863,11 @@
   "category": "Software Testing & Requirements",
   "language": "French",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/istqb-ct-genai-reussissez-lexamen-au-1er-essai/"
+  "udemyUrl": "https://www.udemy.com/course/istqb-ct-genai-reussissez-lexamen-au-1er-essai/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "15",
@@ -1440,7 +1880,11 @@
   "category": "Software Testing & Requirements",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/istqb-ctal-ta-v40-practice-exams-pass-on-your-1st-try/"
+  "udemyUrl": "https://www.udemy.com/course/istqb-ctal-ta-v40-practice-exams-pass-on-your-1st-try/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "60",
@@ -1453,7 +1897,11 @@
   "category": "Software Testing & Requirements",
   "language": "English",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/ctal-tm-practice-exams-istqb-advanced-test-manager/"
+  "udemyUrl": "https://www.udemy.com/course/ctal-tm-practice-exams-istqb-advanced-test-manager/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "37",
@@ -1466,7 +1914,11 @@
   "category": "Software Testing & Requirements",
   "language": "German",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/istqb-certified-tester-foundation-level-5-praxistests/"
+  "udemyUrl": "https://www.udemy.com/course/istqb-certified-tester-foundation-level-5-praxistests/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  },
  {
   "id": "96",
@@ -1479,6 +1931,10 @@
   "category": "Software Testing & Requirements",
   "language": "Portuguese",
   "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/simulados-istqb-ctfl-40-certificacao-foundation-level/"
+  "udemyUrl": "https://www.udemy.com/course/simulados-istqb-ctfl-40-certificacao-foundation-level/",
+  "referralUrl": null,
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  }
 ]

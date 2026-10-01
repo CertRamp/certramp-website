@@ -15,7 +15,7 @@ export const about = {
     role: "Founder, CertRamp Learning",
     bio: "I create realistic practice exams for IT and professional certifications, designed to help you measure your knowledge, identify weak areas and build confidence before the real exam.",
     /** Put the image in /public/images and reference it as "/images/xyz.jpg". */
-    photo: null as string | null,
+    photo: "/images/joshua-ravnjak.jpg" as string | null,
     photoAlt: "Joshua Ravnjak, founder of CertRamp Learning",
   },
   location: "Munich, Germany",

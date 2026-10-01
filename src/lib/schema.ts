@@ -1,3 +1,4 @@
+import { about } from "@/config/about";
 import { absoluteUrl, siteConfig } from "@/config/site";
 import type { FaqItem } from "@/config/types";
 import { isPlaceholder, plain } from "./placeholder";
@@ -20,6 +21,12 @@ export function organizationSchema() {
     url: siteConfig.url,
     logo: absoluteUrl("/icon.svg"),
     description: siteConfig.description,
+    founder: {
+      "@type": "Person",
+      name: about.founder.name,
+      jobTitle: about.founder.role,
+      ...(about.founder.photo ? { image: absoluteUrl(about.founder.photo) } : {}),
+    },
     ...(sameAs.length ? { sameAs } : {}),
   };
 }

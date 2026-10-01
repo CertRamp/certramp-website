@@ -148,6 +148,8 @@ delivery: { freeTest: "redirect", simulator: "redirect" },       // or "embed"
 | `Language` | English, German, French, Spanish, Portuguese |
 | `Questions` | Optional total question count |
 | `Udemy URL` | Course link |
+| `Referral URL` *(optional)* | Your instructor referral link (Udemy → course → Promotions → Referral link). When set, **every** link to this course uses it. The build stops if it has no `referralCode` or points to a different course. |
+| `Rating`, `Rating Count`, `Rating Date` *(optional)* | Course rating as shown on Udemy, e.g. `4.92`, `25`, `2026-10-01`. Shown on the certification page (with a source note) only when all three are set. Never marked up as structured data — Google does not allow third-party ratings in review markup. |
 
 **Add a new course in another language:** add a row with the existing slug → it appears as an extra "Also on Udemy in …" button.
 **Add a new certification:** add a row with a new slug → page, catalogue card, category count, OG image and (once enriched) sitemap entry are generated automatically.

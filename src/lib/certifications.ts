@@ -46,6 +46,8 @@ export interface ResolvedCourse {
   languageLabel: string;
   questions: number | null;
   url: string;
+  /** Udemy rating — only when rating, count and date are all known. */
+  udemyRating: { value: number; count: number; asOf: string } | null;
 }
 
 export interface ResolvedCta {
@@ -190,7 +192,9 @@ function build(): ResolvedCertification[] {
           languageCode: lang.code,
           languageLabel: lang.label,
           questions: c.questions,
-          url: safeUrl(c.udemyUrl) ?? "",
+          url: safeUrl(c.referralUrl) ?? safeUrl(c.udemyUrl) ?? "",
+          udemyRating:
+            c.rating && c.ratingCount && c.ratingDate ? { value: c.rating, count: c.ratingCount, asOf: c.ratingDate } : null,
         };
       })
       .filter((c) => c.url)

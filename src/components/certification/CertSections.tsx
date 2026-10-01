@@ -161,6 +161,18 @@ export function CertOffer({ cert }: { cert: ResolvedCertification }) {
                   <p className="mt-1 text-[0.9375rem] font-medium leading-snug text-ink" lang={c.languageCode}>
                     {c.title}
                   </p>
+                  {c.udemyRating && (
+                    <p className="mt-1.5 flex items-center gap-1.5 text-sm text-muted">
+                      <svg viewBox="0 0 20 20" className="size-4 text-[#e59819]" fill="currentColor" aria-hidden="true">
+                        <path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8L10 1.5z" />
+                      </svg>
+                      <span>
+                        <span className="font-semibold text-ink">{c.udemyRating.value.toLocaleString("en", { maximumFractionDigits: 2 })}</span>
+                        <span className="sr-only"> out of 5</span> · {c.udemyRating.count} {c.udemyRating.count === 1 ? "rating" : "ratings"} on Udemy
+                        <span className="text-muted/80"> (as of {formatDate(c.udemyRating.asOf)})</span>
+                      </span>
+                    </p>
+                  )}
                 </div>
                 <UdemyCta
                   cert={cert}
@@ -174,6 +186,12 @@ export function CertOffer({ cert }: { cert: ResolvedCertification }) {
               </li>
             ))}
           </ul>
+          {cert.courses.some((c) => c.udemyRating) && (
+            <p className="mt-4 text-xs leading-relaxed text-muted">
+              Ratings are collected by Udemy, where only students enrolled in a course can rate it. We show the figures as
+              published on Udemy on the date given.
+            </p>
+          )}
         </div>
       )}
 
