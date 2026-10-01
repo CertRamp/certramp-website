@@ -88,7 +88,12 @@ export interface CertificationDetails {
   premiumUrl?: string;
   delivery?: { freeTest?: DeliveryMode; simulator?: DeliveryMode };
 
-  /** Official exam facts — verify against the vendor's current exam guide; note source + date in `lastReviewed`. */
+  /**
+   * Structured, verified exam facts (preferred). When set, the exam overview,
+   * topics, sources and lastReviewed are derived from it unless given explicitly.
+   */
+  exam?: ExamInfo;
+  /** Official exam facts as free label/value pairs (legacy — prefer `exam`). */
   examOverview?: ExamFact[];
   /** Official sources for the exam facts (shown under the exam overview). */
   sources?: { label: string; url: string }[];
@@ -104,4 +109,118 @@ export interface CertificationDetails {
   seo?: { title?: string; description?: string };
   /** ISO date of the last content review. */
   lastReviewed?: string;
+}
+
+/* ── Structured exam data (single source for landing page, guide and schema) ── */
+
+export interface SourceLink {
+  label: string;
+  /** Omit when only the document name can be cited. */
+  url?: string;
+}
+
+export interface ExamDomain {
+  /** Stable id used by practice questions, e.g. "d1". */
+  id: string;
+  /** Official domain name, e.g. "Cloud Data Security". */
+  name: string;
+  /** Official weighting, e.g. "17%". Leave out unless published by the provider. */
+  weight?: string;
+  /** Official objective headings, e.g. "2.3 Design and apply data security technologies and strategies". */
+  objectives?: string[];
+}
+
+/**
+ * Verified exam facts. Every field is optional except sources + lastVerified:
+ * leave a field out rather than guessing. Values are display strings because
+ * official facts are often ranges ("100–150") or carry conditions.
+ */
+export interface ExamInfo {
+  /** Official certification name, e.g. "Certified Cloud Security Professional". */
+  officialName?: string;
+  examCode?: string;
+  /** e.g. "Exam outline effective 1 August 2026". */
+  examVersion?: string;
+  questionCount?: string;
+  duration?: string;
+  format?: string;
+  passingScore?: string;
+  questionTypes?: string;
+  languages?: string[];
+  delivery?: string;
+  prerequisites?: string;
+  status?: "current" | "retiring" | "retired" | "upcoming";
+  launchDate?: string;
+  retirementDate?: string;
+  officialCertificationUrl?: string;
+  officialExamUrl?: string;
+  domains?: ExamDomain[];
+  sources: SourceLink[];
+  /** ISO date the facts were last checked against the sources. */
+  lastVerified: string;
+}
+
+/* ── Content: exam guides and practice questions (src/content/…) ─────────── */
+
+export interface GuideSection {
+  id: string;
+  heading: string;
+  paragraphs?: string[];
+  bullets?: string[];
+  /** Numbered steps (rendered as an ordered list). */
+  steps?: { title: string; body: string }[];
+}
+
+/** An exam guide at /guides/<slug>/. `slug` must match a certification slug. */
+export interface ExamGuide {
+  slug: string;
+  /** Answer-first summary (2–3 sentences). Shown at the top and used as meta description fallback. */
+  summary: string;
+  whoFor?: string[];
+  sections: GuideSection[];
+  faq: FaqItem[];
+  seo?: { title?: string; description?: string };
+  published: string;
+  updated: string;
+}
+
+export type QuestionDifficulty = "foundation" | "intermediate" | "advanced";
+
+export interface QuestionOption {
+  id: string;
+  text: string;
+  /** Why this option is right or wrong. */
+  rationale: string;
+}
+
+/**
+ * One ORIGINAL practice question. Never copy questions from paid courses,
+ * never publish recalled or leaked exam content, never claim a question
+ * appears on the real exam.
+ */
+export interface PracticeQuestion {
+  /** Stable id — used as the HTML anchor. Never reuse an id for a different question. */
+  id: string;
+  /** ExamDomain.id */
+  domain: string;
+  /** Official objective, e.g. "2.7 Data retention, deletion and archiving". */
+  objective: string;
+  difficulty: QuestionDifficulty;
+  question: string;
+  options: QuestionOption[];
+  /** QuestionOption.id of the correct answer. */
+  answer: string;
+  /** The key takeaway (2–3 sentences). */
+  explanation: string;
+  reference?: SourceLink;
+}
+
+/** Free question set at /practice-questions/<slug>/. */
+export interface PracticeQuestionSet {
+  slug: string;
+  intro: string;
+  questions: PracticeQuestion[];
+  seo?: { title?: string; description?: string };
+  published: string;
+  updated: string;
 }

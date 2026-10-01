@@ -156,7 +156,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       { label: "Passing score", value: "700 or greater" },
       { label: "Prerequisites", value: "No formal prerequisites" },
       { label: "Renewal", value: "Every 12 months, free, via an online assessment on Microsoft Learn" },
-      { label: "Skills outline", value: "Skills measured updated on 21 October 2026 (English exam)" },
+      { label: "Skills outline", value: "Skills measured as of 21 October 2026 (English exam)" },
     ],
     sources: [
       {
@@ -330,31 +330,105 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "isc2-ccsp": {
     description:
-      "900 practice questions across six full-length mock exams, written to the ISC2 CCSP exam outline that took effect on 1 August 2026. Test 1 shows your level, Test 4 is set at real exam level and Test 6 goes beyond it.",
-    examOverview: [
-      { label: "Exam provider", value: "ISC2" },
-      { label: "Format", value: "Computerized adaptive testing (CAT)" },
-      { label: "Questions", value: "100 to 150" },
-      { label: "Duration", value: "3 hours" },
-      { label: "Experience requirement", value: "5 years of cumulative IT experience, incl. security and cloud (see ISC2 for details and waivers)" },
-      { label: "Exam outline", value: "Effective 1 August 2026" },
-    ],
-    sources: [
-      { label: "ISC2 — CCSP exam", url: "https://www.isc2.org/certifications/ccsp/ccsp-exam" },
-      {
-        label: "ISC2 — CCSP exam outline",
-        url: "https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline",
-      },
-      { label: "ISC2 — Computerized adaptive testing", url: "https://www.isc2.org/certifications/computerized-adaptive-testing" },
-    ],
-    topics: [
-      { title: "Cloud Concepts, Architecture and Design" },
-      { title: "Cloud Data Security" },
-      { title: "Cloud Platform and Infrastructure Security" },
-      { title: "Cloud Application Security" },
-      { title: "Cloud Security Operations" },
-      { title: "Legal, Risk and Compliance" },
-    ],
+      "900 practice questions across six full-length mock exams, written to the ISC2 CCSP exam outline that took effect on 1 August 2026. Test 1 shows your level, Test 4 is designed to match exam-level difficulty and Test 6 is deliberately harder.",
+    // Verified 1 Oct 2026 against isc2.org (exam page, exam outline, CAT page).
+    // Domain weights for the 2026 outline could not be confirmed from ISC2 — deliberately omitted.
+    exam: {
+      officialName: "Certified Cloud Security Professional",
+      examVersion: "Exam outline effective 1 August 2026",
+      format: "Computerized adaptive testing (CAT)",
+      questionCount: "100 to 150",
+      duration: "3 hours",
+      languages: ["English", "Chinese", "Japanese", "German"],
+      prerequisites: "5 years cumulative full-time IT experience: 3 in cybersecurity and 1 in one or more CCSP domains (waivers and Associate path: see ISC2)",
+      status: "current",
+      officialCertificationUrl: "https://www.isc2.org/certifications/ccsp",
+      officialExamUrl: "https://www.isc2.org/certifications/ccsp/ccsp-exam",
+      domains: [
+        {
+          id: "d1",
+          name: "Cloud Concepts, Architecture and Design",
+          objectives: [
+            "1.1 Understand cloud computing concepts",
+            "1.2 Describe cloud reference architecture",
+            "1.3 Understand security concepts relevant to cloud computing",
+            "1.4 Understand design principles of secure cloud computing",
+            "1.5 Evaluate Cloud Service Providers",
+            "1.6 Comprehend Artificial Intelligence/Machine Learning",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Cloud Data Security",
+          objectives: [
+            "2.1 Describe cloud data concepts",
+            "2.2 Design and implement cloud data storage architectures",
+            "2.3 Design and apply data security technologies and strategies",
+            "2.4 Implement data discovery",
+            "2.5 Plan and implement data classification",
+            "2.6 Design and implement Information Rights Management",
+            "2.7 Plan and implement data retention, deletion, and archiving policies",
+            "2.8 Design and implement auditability, traceability, and accountability of data events",
+            "2.9 Comprehend data protection of Artificial Intelligence and Machine Learning data",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Cloud Platform and Infrastructure Security",
+          objectives: [
+            "3.1 Comprehend cloud infrastructure and platform components",
+            "3.2 Design a secure data center",
+            "3.3 Analyze risks associated with cloud infrastructure and platforms",
+            "3.4 Plan and implementation of security controls",
+            "3.5 Plan business continuity and disaster recovery",
+          ],
+        },
+        {
+          id: "d4",
+          name: "Cloud Application Security",
+          objectives: [
+            "4.1 Advocate training and awareness for application security",
+            "4.2 Describe the Secure Software Development Life Cycle process",
+            "4.3 Apply the Secure Software Development Life Cycle",
+            "4.4 Apply cloud software assurance and validation",
+            "4.5 Use verified secure software",
+            "4.6 Comprehend and apply the specifics of cloud application architecture",
+            "4.7 Design appropriate Identity and Access Management solutions",
+          ],
+        },
+        {
+          id: "d5",
+          name: "Cloud Security Operations",
+          objectives: [
+            "5.1 Build and implement physical and logical infrastructure for cloud environment",
+            "5.2 Operate and maintain physical and logical infrastructure for cloud environment",
+            "5.3 Implement operational controls and standards",
+            "5.4 Support digital forensics",
+            "5.5 Manage communication with relevant parties",
+            "5.6 Manage security operations",
+          ],
+        },
+        {
+          id: "d6",
+          name: "Legal, Risk and Compliance",
+          objectives: [
+            "6.1 Articulate legal requirements and unique risks within the cloud environment",
+            "6.2 Understand privacy issues",
+            "6.3 Understand audit process, methodologies, and required adaptations for a cloud environment",
+            "6.4 Understand implications of cloud to enterprise risk management",
+            "6.5 Understand outsourcing and cloud contract design",
+          ],
+        },
+      ],
+      sources: [
+        { label: "ISC2 — CCSP exam", url: "https://www.isc2.org/certifications/ccsp/ccsp-exam" },
+        { label: "ISC2 — CCSP exam outline", url: "https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline" },
+        { label: "ISC2 — Computerized adaptive testing", url: "https://www.isc2.org/certifications/computerized-adaptive-testing" },
+        { label: "ISC2 — CCSP certification", url: "https://www.isc2.org/certifications/ccsp" },
+        { label: "ISC2 — CCSP experience requirements", url: "https://www.isc2.org/certifications/ccsp/ccsp-experience-requirements" },
+      ],
+      lastVerified: "2026-10-01",
+    },
     faq: [
       {
         question: "Do the practice exams cover the new CCSP exam outline?",
@@ -366,7 +440,6 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       description:
         "900 CCSP practice questions in six full-length mock exams, written to the ISC2 exam outline effective 1 August 2026 — from diagnostic to beyond exam level.",
     },
-    lastReviewed: CHECKED,
   },
 };
 

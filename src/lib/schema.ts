@@ -92,3 +92,90 @@ export function certificationProductSchema(cert: ResolvedCertification) {
     },
   };
 }
+
+/* ── Certification entity, guides and practice questions ─────────────────── */
+
+/**
+ * The certification itself as an entity (who issues it, official page).
+ * Emitted only for certifications with verified `exam` data.
+ */
+export function credentialSchema(cert: ResolvedCertification) {
+  if (!cert.exam) return null;
+  return {
+    "@type": "EducationalOccupationalCredential",
+    "@id": `${absoluteUrl(cert.path)}#credential`,
+    name: cert.exam.officialName ? `${cert.name} — ${cert.exam.officialName}` : cert.fullName,
+    alternateName: cert.name,
+    credentialCategory: "certification",
+    recognizedBy: { "@type": "Organization", name: cert.vendorName },
+    ...(cert.exam.officialCertificationUrl ? { sameAs: cert.exam.officialCertificationUrl } : {}),
+  };
+}
+
+export function guideArticleSchema(opts: {
+  cert: ResolvedCertification;
+  path: string;
+  headline: string;
+  description: string;
+  published: string;
+  updated: string;
+}) {
+  const credential = credentialSchema(opts.cert);
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": `${absoluteUrl(opts.path)}#article`,
+    headline: opts.headline,
+    description: opts.description,
+    url: absoluteUrl(opts.path),
+    datePublished: opts.published,
+    dateModified: opts.updated,
+    inLanguage: "en",
+    author: { "@id": orgId },
+    publisher: { "@id": orgId },
+    ...(credential ? { about: credential } : {}),
+  };
+}
+
+/**
+ * Practice questions as schema.org Quiz. Mirrors exactly what the page shows:
+ * every option, the correct answer and its explanation.
+ */
+export function quizSchema(opts: {
+  cert: ResolvedCertification;
+  path: string;
+  name: string;
+  description: string;
+  updated: string;
+  questions: { id: string; question: string; options: { id: string; text: string }[]; answer: string; explanation: string }[];
+}) {
+  const credential = credentialSchema(opts.cert);
+  const url = absoluteUrl(opts.path);
+  return {
+    "@context": "https://schema.org",
+    "@type": "Quiz",
+    "@id": `${url}#quiz`,
+    name: opts.name,
+    description: opts.description,
+    url,
+    dateModified: opts.updated,
+    inLanguage: "en",
+    educationalLevel: "Professional certification",
+    learningResourceType: "Practice questions",
+    isAccessibleForFree: true,
+    author: { "@id": orgId },
+    publisher: { "@id": orgId },
+    ...(credential ? { about: credential } : {}),
+    hasPart: opts.questions.map((q) => {
+      const correct = q.options.find((o) => o.id === q.answer)!;
+      return {
+        "@type": "Question",
+        "@id": `${url}#${q.id}`,
+        eduQuestionType: "Multiple choice",
+        text: q.question,
+        suggestedAnswer: q.options.filter((o) => o.id !== q.answer).map((o) => ({ "@type": "Answer", text: o.text })),
+        acceptedAnswer: { "@type": "Answer", text: correct.text, answerExplanation: { "@type": "Comment", text: q.explanation } },
+      };
+    }),
+  };
+}

@@ -19,6 +19,8 @@ Stack: Next.js 16 (App Router, static generation) · TypeScript · Tailwind CSS 
 | `/practice-exams/[slug]/free-test` | Hosts the free ClassMarker test (Option B: embed) | no |
 | `/practice-exams/[slug]/exam-simulator` | Hosts the paid simulator (Option B: embed) | no |
 | `/practice-exams/[slug]/result?score=72` | Readiness result → simulator upsell (ClassMarker finish redirect) | no |
+| `/guides/[slug]` | **Exam guide** — verified exam facts, official domains, study plan, mistakes, FAQ. Only exists when `src/content/guides/<slug>.ts` exists | yes |
+| `/practice-questions/[slug]` | **Free original practice questions** with answers and explanations. Only exists when `src/content/practice-questions/<slug>.ts` exists | yes |
 | `/how-it-works` | The six-test methodology | yes |
 | `/about` | Independent brand, principles, "what we are not", founder | yes |
 | `/faq` | Grouped FAQ with FAQPage schema | yes |
@@ -156,6 +158,28 @@ Then run `npm run build` (the import runs automatically and stops with a clear m
 **How pages behave without enrichment:** public and linked, primary CTA = "View on Udemy" (English course first, other languages as extra buttons), simulator shown as "Coming soon", exam overview shows only provider/area/languages, **`noindex`** until a `description` is added. As soon as `freeTestUrl` / `premiumUrl` exist, the free-test → result → simulator funnel takes over automatically.
 
 **Merged in the CSV:** the two CCNA courses (v2.0 English, v1.1 German) share one page `/practice-exams/ccna-200-301`. Security+ SY0-701 and SY0-801 stay separate (different exam codes).
+
+## 6b. Certification content clusters (exam guide + practice questions)
+
+Each certification can grow into a cluster of three pages that link to each other automatically:
+
+```
+/practice-exams/<slug>/      commercial page (Udemy / ClassMarker)
+/guides/<slug>/              exam guide            (search intent: "<cert> exam", "how to prepare")
+/practice-questions/<slug>/  free sample questions (search intent: "<cert> practice questions")
+```
+
+**Pilot:** `isc2-ccsp` (guide + 24 questions, independently fact-checked on 1 Oct 2026).
+
+**Step by step for the next certification:**
+
+1. **Verified exam data** — in `src/config/certifications.ts` add an `exam` object to the slug (type `ExamInfo` in `src/config/types.ts`): official name, format, question count, duration, languages, domains (+ weights only if officially published), official URLs, `sources` and `lastVerified`. Only official provider sources. Leave out what you cannot verify. The landing page's exam overview, topics and sources are derived from it automatically.
+2. **Guide** — copy `src/content/guides/isc2-ccsp.ts` to `src/content/guides/<slug>.ts` and write the preparation content. Never repeat exam facts there; they come from step 1.
+3. **Questions** — copy `src/content/practice-questions/isc2-ccsp.ts`. Rules: ORIGINAL questions only — never copied from the paid courses, never recalled/leaked exam content, never presented as real exam questions. Every question needs a domain id from step 1, an official objective, an answer, an explanation and a rationale for every option. Have them reviewed before publishing.
+4. **Register** both in `src/content/index.ts`.
+5. `npm run build` — the build fails with a clear message if the slug, a domain id or an answer key is wrong.
+
+Generated automatically: pages, metadata, canonical URLs, sitemap entries, breadcrumbs, cross-links on all three pages, and structured data (`EducationalOccupationalCredential` for the certification, `Article` for the guide, `Quiz` for the questions, `FAQPage`).
 
 ## 7. What you still need to provide
 

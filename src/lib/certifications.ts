@@ -14,6 +14,7 @@ import type {
   CertificationStatus,
   DeliveryMode,
   ExamFact,
+  ExamInfo,
   FaqItem,
   Price,
   Text,
@@ -85,6 +86,8 @@ export interface ResolvedCertification {
   languages: { code: string; label: string }[];
   hasEnglishCourse: boolean;
 
+  /** Structured, verified exam data — null when only free-text facts exist. */
+  exam: ExamInfo | null;
   examOverview: ExamFact[];
   sources: { label: string; url: string }[];
   topics: Topic[];
@@ -133,6 +136,24 @@ const STANDARD_FEATURES: Text[] = [
   "An exam-level test to check real readiness",
   "A CertRamp Challenge test set above exam level",
 ];
+
+/** Display facts derived from structured exam data (only fields that are set). */
+export function examFacts(exam: ExamInfo, vendorName: string): ExamFact[] {
+  const facts: ExamFact[] = [{ label: "Exam provider", value: vendorName }];
+  const add = (label: string, value?: string) => value && facts.push({ label, value });
+  add("Exam code", exam.examCode);
+  add("Format", exam.format);
+  add("Questions", exam.questionCount);
+  add("Duration", exam.duration);
+  add("Passing score", exam.passingScore);
+  add("Question types", exam.questionTypes);
+  add("Exam languages", exam.languages?.join(", "));
+  add("Delivery", exam.delivery);
+  add("Prerequisites", exam.prerequisites);
+  add("Exam version", exam.examVersion);
+  add("Retirement date", exam.retirementDate);
+  return facts;
+}
 
 /* ── Build ─────────────────────────────────────────────────────────────── */
 
@@ -208,9 +229,15 @@ function build(): ResolvedCertification[] {
       primaryCourse,
       languages,
       hasEnglishCourse: resolvedCourses.some((c) => c.language === "English"),
-      examOverview: d.examOverview ?? [],
-      sources: d.sources ?? [],
-      topics: d.topics ?? [],
+      exam: d.exam ?? null,
+      examOverview: d.examOverview ?? (d.exam ? examFacts(d.exam, vendor.name) : []),
+      sources:
+        d.sources ??
+        (d.exam?.sources.filter((s): s is { label: string; url: string } => Boolean(s.url)) ?? []),
+      topics:
+        d.topics ??
+        d.exam?.domains?.map((dom) => ({ title: dom.name, ...(dom.weight ? { description: `${dom.weight} of the exam` } : {}) })) ??
+        [],
       features: [...STANDARD_FEATURES, ...(d.features ?? [])],
       faq: d.faq ?? [],
       disclaimerNote: d.disclaimerNote ?? null,
@@ -220,7 +247,7 @@ function build(): ResolvedCertification[] {
           d.seo?.description ??
           `${first.name} practice exams by CertRamp: six progressive tests for the ${fullName} exam, from a diagnostic start to beyond exam level.`,
       },
-      lastReviewed: d.lastReviewed ?? null,
+      lastReviewed: d.lastReviewed ?? d.exam?.lastVerified ?? null,
       cta: {
         freeTest: resolveCta(free, d.delivery?.freeTest ?? "redirect", `${path}/free-test`, comingSoon),
         simulator: resolveCta(premium, d.delivery?.simulator ?? "redirect", `${path}/exam-simulator`, comingSoon),

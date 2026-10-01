@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { legalPages } from "@/config/legal";
 import { absoluteUrl } from "@/config/site";
 import { getAllCertifications, isIndexable } from "@/lib/certifications";
+import { getAllGuides, getAllQuestionSets, guidePath, questionsPath } from "@/lib/content";
 
 /**
  * sitemap.xml — generated from the certification catalogue.
@@ -34,7 +35,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .filter((p) => p.reviewed)
     .map((p) => ({ url: absoluteUrl(`/legal/${p.slug}`), changeFrequency: "yearly", priority: 0.1 }));
 
-  return [...staticPages, ...certPages, ...legal];
+  const guides: MetadataRoute.Sitemap = getAllGuides().map(({ guide }) => ({
+    url: absoluteUrl(guidePath(guide.slug)),
+    lastModified: guide.updated,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+  const questions: MetadataRoute.Sitemap = getAllQuestionSets().map(({ set }) => ({
+    url: absoluteUrl(questionsPath(set.slug)),
+    lastModified: set.updated,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  return [...staticPages, ...certPages, ...guides, ...questions, ...legal];
 }
 
 /** Generated once at build time (static export). */

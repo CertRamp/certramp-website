@@ -9,6 +9,7 @@ import {
   QuestionMethodology,
 } from "@/components/certification/CertSections";
 import { VendorDisclaimer } from "@/components/certification/VendorDisclaimer";
+import { StudyResources } from "@/components/content/StudyResources";
 import { CertificationCard } from "@/components/marketing/CertificationCard";
 import { MethodologyGrid } from "@/components/marketing/Methodology";
 import { FinalCta } from "@/components/marketing/Sections";
@@ -20,7 +21,8 @@ import { Section, SectionHeader } from "@/components/ui/Section";
 import { certificationFaqTemplate } from "@/config/faq";
 import { getAllCertifications, getCertification, isIndexable, toCardData } from "@/lib/certifications";
 import { fill, formatDate } from "@/lib/format";
-import { certificationProductSchema, faqSchema } from "@/lib/schema";
+import { getResources } from "@/lib/content";
+import { certificationProductSchema, credentialSchema, faqSchema } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
 
 type Params = { slug: string };
@@ -58,6 +60,9 @@ export default async function CertificationPage({ params }: { params: Promise<Pa
   ];
   const faqLd = faqSchema(faq);
   const productLd = certificationProductSchema(cert);
+  const credentialLd = credentialSchema(cert);
+  const resources = getResources(cert.slug);
+  const hasResources = Boolean(resources.guide || resources.questions);
   const related = getAllCertifications()
     .filter((c) => c.categoryId === cert.categoryId && c.slug !== cert.slug)
     .sort((a, b) => Number(b.vendorKey === cert.vendorKey) - Number(a.vendorKey === cert.vendorKey))
@@ -124,6 +129,19 @@ export default async function CertificationPage({ params }: { params: Promise<Pa
           </dl>
         </div>
       </Section>
+
+      {/* Free study resources — only when a guide or question set exists */}
+      {hasResources && (
+        <Section tone="surface" labelledBy="resources-title" className="!py-16 sm:!py-20">
+          <SectionHeader
+            id="resources-title"
+            eyebrow="Free study resources"
+            title={`Free ${cert.name} exam prep`}
+            intro="Start with the exam guide and free practice questions before you take the full practice exams."
+          />
+          <StudyResources cert={cert} current="exam" className="mt-10" />
+        </Section>
+      )}
 
       {/* What you'll practice — only when topics have been provided */}
       {cert.topics.length > 0 && (
@@ -247,6 +265,7 @@ export default async function CertificationPage({ params }: { params: Promise<Pa
       <MobileStickyCta cert={cert} />
 
       {faqLd && <JsonLd data={faqLd} />}
+      {credentialLd && <JsonLd data={{ "@context": "https://schema.org", ...credentialLd }} />}
       {productLd && <JsonLd data={productLd} />}
     </>
   );
