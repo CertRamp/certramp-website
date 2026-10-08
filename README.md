@@ -133,7 +133,7 @@ delivery: { freeTest: "redirect", simulator: "redirect" },       // or "embed"
 
 ## 6. The catalogue: adding courses and certifications (no design changes)
 
-**Source of truth: `data/udemy-courses.csv`** — currently 114 courses → 80 certification pages, 23 providers, 5 languages.
+**Source of truth: `data/udemy-courses.csv`** — currently 116 courses → 81 certification pages, 23 providers, 5 languages.
 
 | Column | Meaning |
 |---|---|
