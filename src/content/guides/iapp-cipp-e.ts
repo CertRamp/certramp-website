@@ -26,7 +26,7 @@ export const iappCippEGuide: ExamGuide = {
       id: "how-the-exam-is-structured",
       heading: "How the exam and blueprint are structured",
       paragraphs: [
-        "Version 1.3.3 of the body of knowledge and exam blueprint took effect on 1 September 2025. Each domain is broken into competencies (for example II.C \"Understand data subjects' rights\") with their own question ranges, and each competency lists performance indicators. The blueprint's widest ranges sit in data security (II.B, 7–11 questions) and data subjects' rights (II.C, 8–12).",
+        "Version 1.3.3 of the body of knowledge and exam blueprint took effect on 1 September 2025. Each domain is broken into competencies (for example II.C \"Understand data subjects' rights\") with their own question ranges, and each competency lists performance indicators. The competencies with the most questions are data subjects' rights (II.C, 8–12) and data security (II.B, 7–11).",
         "You sit the exam through Pearson VUE, at a test centre or online with OnVUE. Halfway through you are offered a 15-minute break; you must submit the first half before the break ends and cannot return to it afterwards. Some questions are scenario-based, describing a fictional organisation and asking how the law applies. The exam is available in English, French and German.",
       ],
     },
