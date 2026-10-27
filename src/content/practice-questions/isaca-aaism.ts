@@ -27,7 +27,7 @@ export const isacaAaismQuestions: PracticeQuestionSet = {
     {
       id: "aaism-d1-ai-inventory",
       domain: "d1",
-      objective: "AI Governance and Program Management",
+      objective: "AI asset and data life cycle management",
       difficulty: "foundation",
       question:
         "A newly appointed AI security manager learns that several business units use AI tools, but nobody can say which ones or what data they process. What should the manager do FIRST?",
@@ -44,8 +44,8 @@ export const isacaAaismQuestions: PracticeQuestionSet = {
     },
     {
       id: "aaism-d1-ownership",
-      domain: "d1",
-      objective: "AI Governance and Program Management",
+      domain: "d2",
+      objective: "AI risk assessment, thresholds, and treatment",
       difficulty: "intermediate",
       question:
         "Marketing wants to deploy a generative AI assistant that drafts customer emails. Who should be accountable for accepting the residual risk of this use case?",
@@ -63,7 +63,7 @@ export const isacaAaismQuestions: PracticeQuestionSet = {
     {
       id: "aaism-d1-policy",
       domain: "d1",
-      objective: "AI Governance and Program Management",
+      objective: "AI-related strategies, policies, and procedures",
       difficulty: "intermediate",
       question:
         "Staff are pasting confidential contract text into public generative AI chat services. Which action BEST addresses the root cause from a governance perspective?",
@@ -81,7 +81,7 @@ export const isacaAaismQuestions: PracticeQuestionSet = {
     {
       id: "aaism-d1-metrics",
       domain: "d1",
-      objective: "AI Governance and Program Management",
+      objective: "AI security program development and management",
       difficulty: "advanced",
       question:
         "The board asks how effective the AI security programme is. Which metric gives the MOST meaningful view for this audience?",
@@ -98,8 +98,8 @@ export const isacaAaismQuestions: PracticeQuestionSet = {
     },
     {
       id: "aaism-d1-third-party",
-      domain: "d1",
-      objective: "AI Governance and Program Management",
+      domain: "d2",
+      objective: "AI vendor and supply chain management",
       difficulty: "intermediate",
       question:
         "Procurement is about to sign a contract with a vendor whose product embeds a third-party large language model. Which contract provision is MOST important from an AI security management perspective?",
@@ -119,7 +119,7 @@ export const isacaAaismQuestions: PracticeQuestionSet = {
     {
       id: "aaism-d2-assessment-timing",
       domain: "d2",
-      objective: "AI Risk Management",
+      objective: "AI risk assessment, thresholds, and treatment",
       difficulty: "foundation",
       question:
         "When is the BEST time to perform the initial risk assessment for a new AI system?",
@@ -137,7 +137,7 @@ export const isacaAaismQuestions: PracticeQuestionSet = {
     {
       id: "aaism-d2-drift",
       domain: "d2",
-      objective: "AI Risk Management",
+      objective: "AI risk assessment, thresholds, and treatment",
       difficulty: "intermediate",
       question:
         "A fraud detection model approved last year now misses a growing share of fraudulent transactions because customer behaviour has changed. How should this risk be handled?",
@@ -155,7 +155,7 @@ export const isacaAaismQuestions: PracticeQuestionSet = {
     {
       id: "aaism-d2-risk-treatment",
       domain: "d2",
-      objective: "AI Risk Management",
+      objective: "AI risk assessment, thresholds, and treatment",
       difficulty: "advanced",
       question:
         "An AI system that recommends loan decisions has a residual risk of unfair outcomes that exceeds the organisation's risk appetite, even after bias testing and retraining. The business still wants to use it. What is the MOST appropriate risk response?",
@@ -173,7 +173,7 @@ export const isacaAaismQuestions: PracticeQuestionSet = {
     {
       id: "aaism-d2-threat-model",
       domain: "d2",
-      objective: "AI Risk Management",
+      objective: "AI threat and vulnerability management",
       difficulty: "intermediate",
       question:
         "A team is threat modelling a customer support chatbot that can look up order details through an internal API. Which threat deserves the HIGHEST priority?",
@@ -193,7 +193,7 @@ export const isacaAaismQuestions: PracticeQuestionSet = {
     {
       id: "aaism-d3-poisoning",
       domain: "d3",
-      objective: "AI Technologies and Controls",
+      objective: "AI life cycle (e.g., model selection, training, and validation)",
       difficulty: "foundation",
       question:
         "An attacker inserts carefully crafted records into a dataset that will later be used to train a spam filter, so that messages containing a certain phrase are classified as legitimate. What is this attack called?",
@@ -211,7 +211,7 @@ export const isacaAaismQuestions: PracticeQuestionSet = {
     {
       id: "aaism-d3-agent-privilege",
       domain: "d3",
-      objective: "AI Technologies and Controls",
+      objective: "AI security architecture and design",
       difficulty: "advanced",
       question:
         "An AI agent reads incoming supplier emails and can create payments in the finance system. Which control MOST effectively limits the impact of a malicious instruction hidden in an email?",
@@ -229,7 +229,7 @@ export const isacaAaismQuestions: PracticeQuestionSet = {
     {
       id: "aaism-d3-model-supply-chain",
       domain: "d3",
-      objective: "AI Technologies and Controls",
+      objective: "AI life cycle (e.g., model selection, training, and validation)",
       difficulty: "intermediate",
       question:
         "Developers want to download pre-trained models from a public model repository for use in production. Which control BEST reduces the supply chain risk?",
@@ -247,7 +247,7 @@ export const isacaAaismQuestions: PracticeQuestionSet = {
     {
       id: "aaism-d3-extraction",
       domain: "d3",
-      objective: "AI Technologies and Controls",
+      objective: "Security controls and monitoring",
       difficulty: "intermediate",
       question:
         "A competitor is suspected of sending large numbers of systematic queries to a public pricing-prediction API in order to recreate the model. Which control is MOST appropriate?",
@@ -265,7 +265,7 @@ export const isacaAaismQuestions: PracticeQuestionSet = {
     {
       id: "aaism-d3-training-data-privacy",
       domain: "d3",
-      objective: "AI Technologies and Controls",
+      objective: "Data management controls",
       difficulty: "advanced",
       question:
         "A model will be trained on customer records that contain personal data, but the use case only needs aggregated behaviour patterns. Which control should be applied FIRST?",
@@ -283,7 +283,7 @@ export const isacaAaismQuestions: PracticeQuestionSet = {
     {
       id: "aaism-d3-output-handling",
       domain: "d3",
-      objective: "AI Technologies and Controls",
+      objective: "Security controls and monitoring",
       difficulty: "intermediate",
       question:
         "An internal web application displays text generated by a language model directly in users' browsers. A tester shows that the model can be induced to produce script code that runs in the browser. What is the BEST fix?",
@@ -295,7 +295,7 @@ export const isacaAaismQuestions: PracticeQuestionSet = {
       ],
       answer: "C",
       explanation:
-        "Insecure output handling turns model responses into classic injection flaws such as cross-site scripting. Applications should never trust model output and must apply the same validation and encoding as for user input.",
+        "Improper output handling (OWASP LLM05:2025) turns model responses into classic injection flaws such as cross-site scripting. Applications should never trust model output and must apply the same validation and encoding as for user input.",
       reference: OUTLINE,
     },
   ],

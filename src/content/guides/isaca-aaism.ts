@@ -26,8 +26,8 @@ export const isacaAaismGuide: ExamGuide = {
       id: "how-it-is-structured",
       heading: "How the exam and certification are structured",
       paragraphs: [
-        "The exam has 90 multiple-choice questions and you have 2.5 hours (150 minutes). It is administered through PSI and can be taken with remote online proctoring or at an approved test centre. Check ISACA's AAISM exam candidate guide for the current scheduling, scoring and retake rules before you book.",
-        "Passing the exam is only the first step. You must hold an active CISM or CISSP, pay a one-time US$50 application processing fee and apply within five years of passing. To keep AAISM you report at least 10 AI-related CPE hours every year (30 over the three-year cycle), pay the annual maintenance fee (US$20 for ISACA members, US$35 for non-members) and show that your CISM or CISSP is still active.",
+        "The exam has 90 multiple-choice questions and you have 2.5 hours (150 minutes). It is administered through PSI with remote online proctoring or at an approved test centre; candidates in India, Mainland China and Hong Kong must test at a test centre. Check ISACA's AAISM exam candidate guide for the current scheduling, scoring and retake rules before you book.",
+        "Passing the exam is only the first step. You must hold an active CISM or CISSP, pay a one-time US$50 application processing fee and apply within five years of passing. To keep AAISM you report at least 10 CPE hours relevant to AAISM every year (30 over the three-year cycle), pay the annual maintenance fee (US$20 for ISACA members, US$35 for non-members) and show that your CISM or CISSP is still active.",
       ],
     },
     {
@@ -93,12 +93,12 @@ export const isacaAaismGuide: ExamGuide = {
     {
       question: "How do I maintain AAISM?",
       answer:
-        "You report at least 10 AI-related CPE hours each year and 30 over the three-year reporting period, pay the annual maintenance fee (US$20 for ISACA members, US$35 for non-members) and submit proof that your CISM or CISSP is still active.",
+        "You report at least 10 CPE hours relevant to AAISM each year and 30 over the three-year reporting period, pay the annual maintenance fee (US$20 for ISACA members, US$35 for non-members) and submit proof that your CISM or CISSP is still active.",
     },
     {
       question: "Can I take the AAISM exam online?",
       answer:
-        "Yes. The exam is administered through PSI and can be taken with remote online proctoring or at an approved test centre.",
+        "Yes, in most regions. The exam is administered through PSI with remote online proctoring or at an approved test centre; candidates in India, Mainland China and Hong Kong must test at a test centre.",
     },
     {
       question: "Are CertRamp's AAISM questions real exam questions?",
