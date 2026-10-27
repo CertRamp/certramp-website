@@ -6,11 +6,6 @@ import type { PracticeQuestionSet } from "@/config/types";
  * Not taken from the paid practice exams, not recalled exam content, and not
  * presented as real exam questions.
  */
-const GUIDE = {
-  label: "Microsoft Learn — AB-620 study guide",
-  url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620",
-};
-
 const MULTI_AGENT = {
   label: "Microsoft Learn — Add other agents in Copilot Studio",
   url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-add-other-agents",
@@ -44,7 +39,7 @@ export const ab620Questions: PracticeQuestionSet = {
       options: [
         { id: "A", text: "No authentication", rationale: "Anyone with the link could use the agent, and you would not know who the user is." },
         { id: "B", text: "Authenticate manually", rationale: "Manual authentication is for channels and identity providers that need custom configuration; it is more work than required here." },
-        { id: "C", text: "Authenticate with Microsoft", rationale: "Correct. Microsoft recommends this option for the Teams and Microsoft 365 channel; it sets up Entra ID authentication automatically." },
+        { id: "C", text: "Authenticate with Microsoft", rationale: "Correct. Microsoft documents this option for the Teams and Microsoft 365 channel; it sets up Entra ID authentication automatically." },
         { id: "D", text: "An API key stored in a global variable", rationale: "API keys authenticate calls to APIs; they do not sign users in to an agent." },
       ],
       answer: "C",
@@ -67,7 +62,7 @@ export const ab620Questions: PracticeQuestionSet = {
       ],
       answer: "A",
       explanation:
-        "Human-in-the-loop flows pause for a person's decision. A multistage approval can route an AI decision to a human reviewer, and approvers can respond in Teams, Outlook or the Power Automate portal.",
+        "Human-in-the-loop flows pause for a person's decision. A multistage approval can route an AI decision to a human reviewer, and approvers can respond in Teams, Outlook or the Power Automate portal. Multistage and AI approvals are currently in preview.",
       reference: { label: "Microsoft Learn — Multistage and AI approvals in agent flows", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-advanced-approvals" },
     },
     {
@@ -116,7 +111,7 @@ export const ab620Questions: PracticeQuestionSet = {
       options: [
         { id: "A", text: "A global variable for the account number and a Power Platform environment variable for the API base URL", rationale: "Correct. Global variables are available in all topics; environment variables hold per-environment values and are read-only in Copilot Studio." },
         { id: "B", text: "Topic variables for both values", rationale: "Topic variables are only available in the topic that creates them." },
-        { id: "C", text: "A system variable for the account number", rationale: "System variables are created automatically by Copilot Studio; you cannot store your own value in one." },
+        { id: "C", text: "A system variable for the account number", rationale: "System variables are built in and hold context about the conversation or user; they are not meant for storing your own values such as an account number." },
         { id: "D", text: "Hard-coding the API base URL in every HTTP node", rationale: "This requires editing the agent after each deployment, which the requirement rules out." },
       ],
       answer: "A",

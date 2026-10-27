@@ -2150,7 +2150,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "ai-200": {
     description:
-      "Practice exams for Microsoft AI-200: Developing AI Cloud Solutions on Azure, the developer associate exam that follows the retired AZ-204. Written to the skills measured as of 7 October 2026 — containers, vector search in Cosmos DB, PostgreSQL and Redis, messaging, Functions, Key Vault and monitoring. Check your level before the 120-minute exam.",
+      "Practice exams for Microsoft AI-200: Developing AI Cloud Solutions on Azure, the new developer associate exam, introduced as AZ-204 retired on 31 July 2026. Written to the skills measured as of 7 October 2026 — containers, vector search in Cosmos DB, PostgreSQL and Redis, messaging, Functions, Key Vault and monitoring. Check your level before the 120-minute exam.",
     fullName: "Developing AI Cloud Solutions on Azure",
     // Verified 27 Oct 2026 against Microsoft Learn (study guide, certification page, retired-exams list).
     // The exam page /exams/ai-200/ could not be retrieved; duration and languages come from the certification page.
@@ -2182,7 +2182,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       lastVerified: "2026-10-27",
     },
     seo: {
-      title: "AI-200 Practice Exams: Azure AI Cloud Developer (ex AZ-204)",
+      title: "AI-200 Practice Exams: Azure AI Cloud Developer Associate (2026)",
       description:
         "AI-200 practice exams for the Oct 2026 skills outline: containers, vector search in Cosmos DB, PostgreSQL and Redis, messaging, Functions and monitoring.",
     },

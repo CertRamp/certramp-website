@@ -9,10 +9,6 @@ const FRAUD_TREE = {
   label: "ACFE — Fraud Tree (Occupational Fraud and Abuse Classification System)",
   url: "https://www.acfe.com/fraud-resources/fraud-risk-tools---coso/-/media/f7c3fc57fa5c46009eda18414bed130f.ashx",
 };
-const EXAM_UPDATE = {
-  label: "ACFE — 2026 CFE Exam Update",
-  url: "https://www.acfe.com/cfe-credential/about-the-cfe-exam/2026-cfe-exam-update",
-};
 const CODE_STANDARDS = {
   label: "ACFE — CFE Code of Professional Standards",
   url: "https://www.acfe.com/~/-/media/E805D87A1E144558BF27A7F4B0B8317B.ashx",

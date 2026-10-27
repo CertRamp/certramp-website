@@ -18,7 +18,7 @@ export const ai200Guide: ExamGuide = {
       id: "what-the-exam-tests",
       heading: "What AI-200 actually tests",
       paragraphs: [
-        "AI-200 has four skill areas: developing containerised solutions (20–25%), developing AI solutions with Azure data management services, connecting to and consuming Azure services (20–25%), and securing, monitoring and troubleshooting Azure solutions (20–25%). For the data area, the current English study guide shows 30–35% in the overview and 25–30% in the section heading; the change log states that its share of the exam increased on 7 October 2026. Check the official page before you plan around either figure.",
+        "AI-200 has four skill areas: developing containerised solutions (20–25%), developing AI solutions with Azure data management services, connecting to and consuming Azure services (20–25%), and securing, monitoring and troubleshooting Azure solutions (20–25%). For the data area, the current English study guide shows 30–35% in the overview and 25–30% in the section heading; the change log states that its share of the exam increased on 7 October 2026. Check the study guide again before your exam, in case Microsoft corrects one of the two figures.",
         "This is not a model-building exam. The AI part is about the data and plumbing an AI application needs: storing embeddings and running vector similarity search in Cosmos DB for NoSQL, Azure Database for PostgreSQL with pgvector and Azure Managed Redis, RAG with metadata filters, and the containers, queues, events and functions around them. Microsoft expects proficiency in Python, Azure SDKs, vector databases and containerised applications.",
       ],
     },

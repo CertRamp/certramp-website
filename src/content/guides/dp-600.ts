@@ -19,7 +19,7 @@ export const dp600Guide: ExamGuide = {
       heading: "What DP-600 actually tests",
       paragraphs: [
         "DP-600 has three skill areas. Preparing data carries the most weight (45–50%): getting data, transforming it into a star schema and querying it with the visual query editor, SQL, KQL and DAX. Maintaining a data analytics solution (security, governance and the development lifecycle) and implementing and managing semantic models are each worth 25–30%.",
-        "Most questions describe a team, a data source and a requirement, and ask for the right Fabric item, setting or query. Typical decisions: lakehouse, warehouse or eventhouse; workspace role or item permission; which deployment rule; which storage mode; Direct Lake on OneLake or on the SQL analytics endpoint; which DAX pattern performs better.",
+        "Expect scenario questions that describe a team, a data source and a requirement, and ask for the right Fabric item, setting or query. Typical decisions: lakehouse, warehouse or eventhouse; workspace role or item permission; which deployment rule; which storage mode; Direct Lake on OneLake or on the SQL analytics endpoint; which DAX pattern performs better.",
       ],
     },
     {

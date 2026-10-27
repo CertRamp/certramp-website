@@ -123,7 +123,7 @@ export const dp600Questions: PracticeQuestionSet = {
       question:
         "An analyst connects to a lakehouse's SQL analytics endpoint and runs an INSERT statement to add correction rows to a Delta table. The statement fails. What is the reason?",
       options: [
-        { id: "A", text: "The SQL analytics endpoint is read-only; data in a lakehouse is written with Spark, pipelines, dataflows or shortcuts", rationale: "Correct. The endpoint supports queries and limited DDL such as views and functions, but no DML." },
+        { id: "A", text: "The SQL analytics endpoint is read-only; data in a lakehouse is written with Spark, pipelines or dataflows, or referenced through shortcuts", rationale: "Correct. The endpoint supports queries and limited DDL such as views and functions, but no DML." },
         { id: "B", text: "The analyst needs the Viewer role to write data", rationale: "Viewer is the most restrictive workspace role; it never grants write access." },
         { id: "C", text: "INSERT works only when the table is not partitioned", rationale: "Partitioning is not the cause; the endpoint does not allow DML at all." },
         { id: "D", text: "The Delta table must first be converted to Parquet", rationale: "Delta tables already store data in Parquet files; conversion is not the issue." },

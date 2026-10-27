@@ -44,7 +44,7 @@ export const ai200Questions: PracticeQuestionSet = {
     {
       id: "ai200-d1-keda-service-bus",
       domain: "d1",
-      objective: "Implement event-driven scaling by using Kubernetes Event‑driven Autoscaling (KEDA) in Container Apps",
+      objective: "Implement event-driven scaling by using Kubernetes Event-driven Autoscaling (KEDA) in Container Apps",
       difficulty: "intermediate",
       question:
         "A worker in Azure Container Apps processes embedding jobs from an Azure Service Bus queue. It has no ingress. It should run no replicas when the queue is empty and add replicas as messages build up. What do you configure?",
