@@ -27,7 +27,7 @@ export const awsMlaC02Guide: ExamGuide = {
       heading: "What changed from MLA-C01",
       paragraphs: [
         "AWS kept the domain structure and the 12 task statements, but broadened them to cover generative AI, agentic AI and foundation models. Its comparison page lists 45 new skill statements, for example vector databases, embedding models, RAG document preparation, Bedrock model selection, LLM-as-a-judge evaluation, agent deployment and state management, token cost monitoring and Bedrock API keys. Seven statements were removed, including SageMaker Neo edge optimisation, model size reduction techniques and bring-your-own-container.",
-        "The weights moved slightly: model development fell from 26% to 24% and deployment and orchestration rose from 22% to 24%. The last day to take MLA-C01 in English was 28 September 2026. AWS has announced general availability of MLA-C02 in all languages for 14 January 2027, when MLA-C01 retires; until then MLA-C01 remains available in Japanese, Korean and Simplified Chinese.",
+        "The weights moved slightly: model development fell from 26% to 24% and deployment and orchestration rose from 22% to 24%. The last day to take MLA-C01 in English was 28 September 2026. AWS's 1 September 2026 announcement gives 14 January 2027 as the start of MLA-C02 general availability in all languages, when MLA-C01 retires; the certification page still lists GA dates as TBD. Until then MLA-C01 remains available in Japanese, Korean and Simplified Chinese.",
       ],
     },
     {
@@ -44,7 +44,7 @@ export const awsMlaC02Guide: ExamGuide = {
         },
         {
           title: "Build a small RAG application on Amazon Bedrock",
-          body: "Create a knowledge base on a few documents, compare chunking strategies, add a guardrail and run an evaluation. This covers a large share of the new content in domains 1–3.",
+          body: "Create a knowledge base on a few documents, compare chunking strategies, add a guardrail and run an evaluation. This covers several of the new skills in domains 1–3.",
         },
         {
           title: "Learn the deployment and cost options as a decision table",
@@ -76,12 +76,12 @@ export const awsMlaC02Guide: ExamGuide = {
     {
       question: "How long is the MLA-C02 exam and what is the passing score?",
       answer:
-        "The beta exam has 85 questions in 170 minutes. The exam guide sets the minimum passing score at 720 on a scaled score of 100–1,000, with compensatory scoring, so you only need to pass the exam overall, not each domain. Beta questions that are not scored do not affect your result.",
+        "The beta exam has 85 questions in 170 minutes. The exam guide sets the minimum passing score at 720 on a scaled score of 100–1,000, with compensatory scoring, so you only need to pass the exam overall, not each domain. Beta questions that are not scored do not affect your result. The exam guide describes 50 scored and 15 unscored questions; AWS has not yet published the question count or duration for the GA exam.",
     },
     {
       question: "Is MLA-C02 replacing MLA-C01?",
       answer:
-        "Yes. The last day to take MLA-C01 in English was 28 September 2026, and MLA-C02 beta delivery began on 29 September 2026. AWS has announced general availability of MLA-C02 for 14 January 2027, when MLA-C01 is retired in all languages. An MLA-C01 certification you already hold stays active until its original expiry date.",
+        "Yes. The last day to take MLA-C01 in English was 28 September 2026, and MLA-C02 beta delivery began on 29 September 2026. AWS's September 2026 announcement gives 14 January 2027 for general availability, when MLA-C01 is retired in all languages (the certification page still shows the GA date as TBD). An MLA-C01 certification you already hold stays active until its original expiry date.",
     },
     {
       question: "Which languages is MLA-C02 available in?",

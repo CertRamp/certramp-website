@@ -47,14 +47,14 @@ export const awsMlaC02Questions: PracticeQuestionSet = {
       question:
         "A fraud model needs the latest customer features at inference time with low latency, and the data science team needs the full feature history to build training datasets. The team wants one managed service for both. What should you use?",
       options: [
-        { id: "A", text: "Amazon SageMaker Feature Store with both the online store and the offline store enabled", rationale: "Correct. The online store serves the latest record for real-time lookup, the offline store keeps historical data in Amazon S3 for training, and SageMaker keeps them in sync." },
+        { id: "A", text: "Amazon SageMaker Feature Store with both the online store and the offline store enabled", rationale: "Correct. The online store serves the latest record for real-time lookup, the offline store keeps the full history in Amazon S3 for training, and by default each ingested record is written to both stores." },
         { id: "B", text: "Amazon SageMaker Feature Store with only the offline store enabled", rationale: "The offline store is for cases where sub-second reads are not needed, such as training and batch inference. It does not meet the low-latency requirement." },
         { id: "C", text: "AWS Glue DataBrew recipes", rationale: "DataBrew prepares and cleans data. It does not serve features to models at inference time." },
         { id: "D", text: "An Amazon S3 bucket queried with Amazon Athena at inference time", rationale: "Athena queries on S3 are not designed for low-latency lookups during real-time inference." },
       ],
       answer: "A",
       explanation:
-        "Feature Store has two stores for two jobs: online for low-latency lookup of the latest values, offline for history used in training and batch inference. Enabling both keeps training and serving features consistent.",
+        "Feature Store has two stores for two jobs: online for low-latency lookup of the latest values, offline for history used in training and batch inference. Ingesting into one feature group with both stores enabled helps keep training and serving features consistent.",
       reference: { label: "Amazon SageMaker AI — Feature Store concepts", url: "https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-concepts.html" },
     },
     {
@@ -124,7 +124,7 @@ export const awsMlaC02Questions: PracticeQuestionSet = {
         { id: "A", text: "A larger instance type so the job finishes sooner", rationale: "A larger instance may shorten the job, but it does not necessarily reduce cost, and it ignores the cheapest compute option available." },
         { id: "B", text: "A real-time endpoint that stays running between training runs", rationale: "Endpoints serve inference. Keeping one running adds cost and does not train the model." },
         { id: "C", text: "Managed spot training with checkpointing to Amazon S3", rationale: "Correct. Managed spot training uses Spot capacity, which AWS says can cut training costs by up to 90% compared with on-demand. Checkpoints let an interrupted job resume instead of restarting." },
-        { id: "D", text: "Managed spot training without checkpointing and with MaxWaitTimeInSeconds equal to MaxRuntimeInSeconds", rationale: "MaxWaitTimeInSeconds must be larger than MaxRuntimeInSeconds, and without checkpoints a 10-hour job would restart from scratch after each interruption." },
+        { id: "D", text: "Managed spot training without checkpointing and with MaxWaitTimeInSeconds equal to MaxRuntimeInSeconds", rationale: "Without checkpoints, every Spot interruption restarts the 10-hour job from the beginning, and a wait time equal to the runtime leaves no time to wait for Spot capacity or to recover from interruptions." },
       ],
       answer: "C",
       explanation:
@@ -155,12 +155,12 @@ export const awsMlaC02Questions: PracticeQuestionSet = {
       objective: "2.3 Analyze and evaluate the performance of ML and AI systems",
       difficulty: "intermediate",
       question:
-        "A team wants to compare two foundation models on 2,000 of its own prompts, scoring each response for quality with explanations. It does not have reference answers and cannot staff a human review team. Which approach fits best?",
+        "A team wants to compare two foundation models on 500 of its own prompts, scoring each response for quality with explanations. It does not have reference answers and cannot staff a human review team. Which approach fits best?",
       options: [
         { id: "A", text: "Calculate ROUGE scores", rationale: "ROUGE compares generated text with reference text. Without reference answers it cannot be calculated." },
-        { id: "B", text: "An Amazon Bedrock model evaluation job with a human work team", rationale: "Human evaluation is valuable, but the team cannot staff reviewers." },
+        { id: "B", text: "Amazon Bedrock model evaluation jobs with a human work team", rationale: "Human evaluation is valuable, but the team cannot staff reviewers." },
         { id: "C", text: "Compare the CloudWatch invocation latency of both models", rationale: "Latency is a useful operational metric, but it says nothing about response quality." },
-        { id: "D", text: "An Amazon Bedrock model evaluation job that uses a model as a judge", rationale: "Correct. In LLM-as-a-judge evaluation, an evaluator model scores each prompt and response pair against the selected metrics and explains its scores." },
+        { id: "D", text: "Amazon Bedrock model evaluation jobs that use a model as a judge, one for each model", rationale: "Correct. In LLM-as-a-judge evaluation, an evaluator model scores each prompt and response pair against the selected metrics and explains its scores. Each job evaluates one generator model, so you run one job per model and compare the results." },
       ],
       answer: "D",
       explanation:
