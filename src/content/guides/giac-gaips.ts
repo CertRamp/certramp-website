@@ -27,7 +27,7 @@ export const giacGaipsGuide: ExamGuide = {
       id: "how-the-exam-works",
       heading: "How the exam is structured",
       paragraphs: [
-        "GAIPS is one proctored, web-based exam of 54 questions in 2 hours. GIAC set the 65% passing score through a psychometric standard-setting study for exam versions released on or after 25 July 2026, and asks candidates to confirm the score for their own attempt in the GIAC Certification Portal. GIAC lists GAIPS as a CyberLive exam, so expect hands-on questions in a virtual machine lab as well as conventional ones.",
+        "GAIPS is one proctored, web-based exam of 54 questions in 2 hours. GIAC set the 65% passing score through a psychometric standard-setting study for exam versions released on or after 25 July 2026, and asks candidates to confirm the score for their own attempt in the GIAC Certification Portal. GIAC tags GAIPS as a CyberLive exam, its hands-on format with performance-based challenges in virtual machine lab environments, so prepare practically as well as theoretically.",
         "Once your application is approved, the attempt is activated in your GIAC account and you have 120 days to sit it, either remotely through ProctorU or at a Pearson VUE test centre. GIAC exams are open book in the sense of hard-copy books and notes only — not open internet or open computer — and you get 15 minutes of break time. The certification is renewed every four years, either by collecting 36 CPE credits or by retaking the exam, plus a renewal fee.",
         "GIAC links the SANS course SEC545: GenAI and LLM Application Security as the associated training. Its five sections run from GenAI and LLM risks through agentic AI security, MLSecOps and AI threat modelling to AI for security.",
       ],
