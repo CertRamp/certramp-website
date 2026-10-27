@@ -7,7 +7,7 @@ import type { ExamGuide } from "@/config/types";
 export const sc500Guide: ExamGuide = {
   slug: "sc-500",
   summary:
-    "SC-500 (Implementing End-to-End Security Controls for Cloud and AI Workloads) is the exam for the Microsoft Certified: Cloud and AI Security Engineer Associate certification, which Microsoft introduced as AZ-500 was retired on 31 August 2026. It tests whether you can secure identities, data, networks, compute and AI workloads in Azure and monitor security posture with Defender for Cloud, Microsoft Sentinel and Security Copilot. You have 120 minutes and need 700 points to pass.",
+    "SC-500 (Implementing End-to-End Security Controls for Cloud and AI Workloads) is the exam for the Microsoft Certified: Cloud and AI Security Engineer Associate certification, which Microsoft introduced in May 2026 ahead of AZ-500's retirement on 31 August 2026. It tests whether you can secure identities, data, networks, compute and AI workloads in Azure and monitor security posture with Defender for Cloud, Microsoft Sentinel and Security Copilot. You have 120 minutes and need 700 points to pass.",
   whoFor: [
     "Azure security engineers who held or were preparing for AZ-500 and need the current credential",
     "Cloud administrators and engineers responsible for securing Azure, hybrid and multicloud environments",
@@ -26,7 +26,7 @@ export const sc500Guide: ExamGuide = {
       id: "how-it-differs",
       heading: "How SC-500 relates to AZ-500",
       paragraphs: [
-        "Microsoft retired the Azure Security Engineer Associate certification, the AZ-500 exam and its renewal assessments on 31 August 2026; it can no longer be earned or renewed. In its partner announcement of 6 May 2026, Microsoft introduced the Cloud and AI Security Engineer Associate (SC-500) certification during the transition and described it as expanding the security engineer role to include cloud and AI model protection. The SC-500 beta was announced for May 2026.",
+        "Microsoft retired the Azure Security Engineer Associate certification, the AZ-500 exam and its renewal assessments on 31 August 2026; it can no longer be earned or renewed. In its partner announcement of 6 May 2026, Microsoft introduced the Cloud and AI Security Engineer Associate (SC-500) certification during the transition and described it as expanding the security engineer role to include cloud and AI model protection. The SC-500 beta opened in May 2026, and Microsoft said training and the exam were expected in July 2026.",
         "The clearest new area is \"Implement security for AI\": data overexposure in SharePoint, Microsoft Purview Data Security Posture Management for Copilot and AI apps, real-time protection for Copilot Studio agents, Microsoft Entra Agent ID, AI Gateway in Azure API Management for Microsoft Foundry, Defender for AI services, guardrails in Foundry and the Data and AI security dashboard in Defender for Cloud. Microsoft Security Copilot workspaces, roles, plugins and agents are also part of the outline. If your material only covers AZ-500, check it against the SC-500 study guide line by line.",
       ],
     },
@@ -52,7 +52,7 @@ export const sc500Guide: ExamGuide = {
         },
         {
           title: "Practise under time pressure",
-          body: "Take timed practice exams in 120 minutes and read every explanation, including for the questions you answered correctly. The exam page says you may have interactive components, so get used to the exam sandbox too.",
+          body: "Take timed practice exams in 120 minutes and read every explanation, including for the questions you answered correctly. The certification page says you may have interactive components, so get used to the exam sandbox too.",
         },
         {
           title: "Book when your results are stable",
@@ -67,7 +67,7 @@ export const sc500Guide: ExamGuide = {
         "Studying from AZ-500 material only. The AI, Security Copilot and Entra Private Access objectives are not covered by older courses.",
         "Confusing private endpoints with service endpoints. A private endpoint gives the PaaS resource a private IP address in your virtual network; a service endpoint does not.",
         "Mixing up Azure RBAC and Microsoft Entra roles. Azure roles control Azure resources; Entra roles control directory objects and settings. The outline asks for custom roles of both kinds.",
-        "Treating Defender for Cloud as one switch. Know what free CSPM, Defender CSPM and the individual workload protection plans (Servers, Storage, Databases, Containers, Key Vault, AI services) add.",
+        "Treating Defender for Cloud as one switch. Know what foundational (free) CSPM, Defender CSPM and the individual workload protection plans (Servers, Storage, Databases, Containers, Key Vault, AI services) add.",
         "Overlooking Sentinel set-up. Workspaces, roles, content hub, connectors, custom log tables, automation and retention all appear in the posture area.",
       ],
     },

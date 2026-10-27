@@ -26,7 +26,7 @@ export const sc900Guide: ExamGuide = {
       id: "october-2026-update",
       heading: "What the 21 October 2026 update changed",
       paragraphs: [
-        "Microsoft lists two minor changes: \"Describe function and identity types of Microsoft Entra ID\" and \"Describe threat protection with Microsoft Defender XDR\". The four skill areas and their weights are otherwise unchanged.",
+        "Microsoft lists two minor changes: \"Describe function and identity types of Microsoft Entra ID\" and \"Describe threat protection with Microsoft Defender XDR\". The skill areas are otherwise unchanged and the published weights are the same as before.",
         "The current outline names workload identities and hybrid identity under Entra ID, and lists Defender for Office 365, Defender for Endpoint, Defender for Cloud Apps, Defender for Identity, Defender Vulnerability Management, Microsoft Threat Intelligence and the Microsoft Defender portal under Defender XDR. Translated versions of the exam are typically updated about eight weeks after the English version.",
       ],
     },

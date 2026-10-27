@@ -13,6 +13,14 @@ const EXAM_UPDATE = {
   label: "ACFE — 2026 CFE Exam Update",
   url: "https://www.acfe.com/cfe-credential/about-the-cfe-exam/2026-cfe-exam-update",
 };
+const CODE_STANDARDS = {
+  label: "ACFE — CFE Code of Professional Standards",
+  url: "https://www.acfe.com/~/-/media/E805D87A1E144558BF27A7F4B0B8317B.ashx",
+};
+const REPORT_NATIONS = {
+  label: "ACFE — Occupational Fraud 2026: A Report to the Nations",
+  url: "https://www.acfe.com/report-to-the-nations",
+};
 const FEM_CHAPTER = {
   label: "ACFE — Fraud Examiners Manual sample chapter: Planning and Conducting a Fraud Examination",
   url: "https://cms.acfe.com/-/media/files/acfe/word-documents/fem_samplechapter_planning_and_conducting_2026.pdf",
@@ -231,7 +239,7 @@ export const cfeQuestions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "Fraud examiners should assume litigation will follow. Recording every transfer of an item of evidence — who, when, where and why — lets the examiner show in court that the evidence presented is the same item that was collected and has not been tampered with.",
-      reference: EXAM_UPDATE,
+      reference: CODE_STANDARDS,
     },
     {
       id: "cfe-d2-two-perspectives",
@@ -290,12 +298,12 @@ export const cfeQuestions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "Fraud prevention programmes rely heavily on deterrence. Surprise audits, proactive data analytics, hotlines and visible follow-up all increase the perception of detection, which discourages employees who might otherwise act on an opportunity.",
-      reference: EXAM_UPDATE,
+      reference: REPORT_NATIONS,
     },
     {
       id: "cfe-d3-vacation-red-flag",
       domain: "d3",
-      objective: "The role of managers and auditors in combatting fraud",
+      objective: "How to manage fraud risk and build an effective fraud prevention program",
       difficulty: "intermediate",
       question:
         "A long-serving accounts payable supervisor has refused to take holidays for three years and insists on handling all queries from one particular vendor personally. Which control most directly addresses this risk?",

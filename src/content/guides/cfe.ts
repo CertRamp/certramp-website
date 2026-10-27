@@ -18,7 +18,7 @@ export const cfeGuide: ExamGuide = {
       id: "what-the-exam-tests",
       heading: "What the CFE exam actually tests",
       paragraphs: [
-        "Fraud Schemes and Financial Crimes covers how fraud schemes and financial crimes against organisations and individuals work, and how fraud examiners prevent and detect them. Expect the occupational fraud schemes of the ACFE Fraud Tree — asset misappropriation, corruption and financial statement fraud — and how each one is concealed and uncovered.",
+        "Fraud Schemes and Financial Crimes covers how fraud schemes and financial crimes against organisations and individuals work, and how fraud examiners prevent and detect them. Expect the occupational fraud schemes of the ACFE Fraud Tree — asset misappropriation, corruption and financial statement fraud — and how each one is concealed and uncovered. It also includes basic accounting principles and financial statement fraud.",
         "Fraud Investigations and Legal Issues covers running an investigation and its legal side: employee rights during investigations, rules and procedures for collecting evidence, gathering and analysing data, conducting interviews, report writing and navigating the legal system. Fraud Prevention and Deterrence covers why people commit fraud, corporate governance, the role of managers and auditors, fraud risk assessment, fraud risk management, building a fraud prevention programme and ethics in fraud examination.",
         "The questions are multiple choice and true/false, and every section is closed book. The ACFE does not publish weights beyond the question counts, but the two 120-question sections together make up most of the exam.",
       ],
@@ -28,7 +28,7 @@ export const cfeGuide: ExamGuide = {
       heading: "What changed with the June 2026 exam",
       paragraphs: [
         "The ACFE launched a new version of the CFE exam on 2 June 2026, based on its 2024 Job Task Analysis. The old four sections (Financial Transactions and Fraud Schemes, Law, Investigation, and Fraud Prevention and Deterrence) were replaced by three sections with new question counts and time limits. The ACFE states that the rigour and difficulty are comparable to the old exam.",
-        "If you passed sections of the old exam, they carry over: Financial Transactions and Fraud Schemes counts towards Fraud Schemes and Financial Crimes, Fraud Prevention and Deterrence carries over directly, and Law and Investigation count towards Fraud Investigations and Legal Issues only if you passed both. The ACFE does not recommend studying with materials bought before March 2026, so check that your prep material targets the new structure.",
+        "If you passed sections of the old exam, they carry over (subject to the ACFE's attempt and result-expiration policies): Financial Transactions and Fraud Schemes counts towards Fraud Schemes and Financial Crimes, Fraud Prevention and Deterrence carries over directly, and Law and Investigation count towards Fraud Investigations and Legal Issues only if you passed both. The ACFE does not recommend studying with materials bought before March 2026, so check that your prep material targets the new structure.",
       ],
     },
     {
@@ -57,7 +57,7 @@ export const cfeGuide: ExamGuide = {
         },
         {
           title: "Plan the 60-day window",
-          body: "Only activate your eligibility when you are ready to sit all sections within 60 days. Book each section separately, ideally about 30 days ahead, and leave room for a retake inside the window.",
+          body: "Only activate your eligibility when you are ready to sit all sections within 60 days. Book each section separately, ideally about 30 days ahead. If you fail a section, the ACFE issues a new 60-day window for the retake once you pay the retake fee.",
         },
       ],
     },
@@ -67,7 +67,7 @@ export const cfeGuide: ExamGuide = {
       bullets: [
         "Mixing up skimming and cash larceny. Skimming takes cash before it is recorded in the books; cash larceny takes it after it has been recorded.",
         "Treating illegal gratuities as bribery. A gratuity rewards a decision after it has been made; a bribe is offered to influence the decision.",
-        "Ignoring the legal side. Fraud Investigations and Legal Issues now combines the old Law and Investigation sections, so evidence rules and legal procedure count as much as interviewing.",
+        "Ignoring the legal side. Fraud Investigations and Legal Issues now combines the old Law and Investigation sections, so evidence rules and legal procedure are tested alongside interviewing and report writing.",
         "Giving opinions on guilt. Fraud examination reports state facts; the CFE Code of Professional Standards says no opinion is expressed on the legal guilt or innocence of any person.",
         "Using pre-2026 material without checking. Section names, question counts and time limits changed on 2 June 2026.",
       ],
@@ -82,7 +82,7 @@ export const cfeGuide: ExamGuide = {
     {
       question: "How long do I have to complete all sections?",
       answer:
-        "Your eligibility window is 60 days. Each section is scheduled separately and must be taken in one sitting, but all sections must be completed within the window. You have up to five attempts per section.",
+        "Your eligibility window is 60 days from activation. Each section is scheduled separately and taken in one sitting. If you need a retake, the ACFE issues a new 60-day window. You have up to five attempts per section, and you must pass all sections within your two-year application window (a one-year extension is available).",
     },
     {
       question: "Can I take the CFE exam online, and in which languages?",

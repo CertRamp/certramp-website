@@ -2036,14 +2036,14 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     exam: {
       officialName: "Microsoft Certified: Cloud and AI Security Engineer Associate",
       examCode: "SC-500",
-      examVersion: "Exam SC-500: Implementing End-to-End Security Controls for Cloud and AI Workloads (study guide last updated 13 May 2026)",
+      examVersion: "Exam SC-500: Implementing End-to-End Security Controls for Cloud and AI Workloads (study guide shows 'Last updated' 13 May 2026; no skills-measured date published)",
       duration: "120 minutes",
       passingScore: "700 or greater (scale 1–1000)",
       languages: ["English", "Japanese", "Chinese (Simplified)", "Chinese (Traditional)", "Korean", "German", "French", "Italian", "Portuguese (Brazil)", "Spanish"],
       delivery: "Proctored exam, scheduled through Pearson VUE; may include interactive components",
       prerequisites: "No formal prerequisites. Microsoft recommends practical experience administering Azure and hybrid environments, strong familiarity with Microsoft Entra ID and familiarity with Microsoft 365 administration. Role-based certifications are renewed annually via a free online assessment on Microsoft Learn.",
       status: "current",
-      launchDate: "Beta available from May 2026 (Microsoft Partner Center announcement, 6 May 2026)",
+      launchDate: "Beta from May 2026; Microsoft stated training and exam were expected in July 2026 (Partner Center announcement, 6 May 2026)",
       officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/",
       domains: [
         { id: "d1", name: "Manage identity, access, and governance", weight: "20–25%", objectives: ["Secure access to resources by using Microsoft Entra ID", "Secure secrets and keys by using Azure Key Vault", "Implement governance to enforce security and regulatory compliance"] },
