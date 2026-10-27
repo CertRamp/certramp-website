@@ -210,7 +210,7 @@ export const ciaPart3Questions: PracticeQuestionSet = {
       ],
       answer: "D",
       explanation:
-        "Effective engagement communications are accurate, objective, clear, concise, constructive, complete and timely. If a final communication turns out to contain a significant error or omission, corrected information must be communicated promptly to everyone who received the original.",
+        "Effective engagement communications are accurate, objective, clear, concise, constructive, complete and timely. If a final communication contains a significant error or omission, the chief audit executive must communicate corrected information promptly to all parties who received the original (Standard 11.4).",
       reference: STANDARDS,
     },
     {
@@ -264,8 +264,8 @@ export const ciaPart3Questions: PracticeQuestionSet = {
       ],
       answer: "B",
       explanation:
-        "The syllabus asks you to recognise the method for deciding whether a risk is unacceptable, the parties involved and the proper sequence of steps. Senior management comes first; the board is informed when the disagreement cannot be resolved.",
-      reference: SYLLABUS,
+        "The syllabus asks you to recognise the method for deciding whether a risk is unacceptable, the parties involved and the proper sequence of steps. Standard 11.5 requires the chief audit executive to discuss the matter with senior management and, if it is not resolved, to escalate it to the board.",
+      reference: STANDARDS,
     },
     {
       id: "cia3-d4-follow-up",

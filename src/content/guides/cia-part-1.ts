@@ -26,7 +26,7 @@ export const ciaPart1Guide: ExamGuide = {
       id: "2025-syllabus",
       heading: "How the 2025 syllabus is structured",
       paragraphs: [
-        "The IIA revised the CIA exam to align it more closely with the Global Internal Audit Standards, which internal audit functions were required to adopt from 9 January 2025. Part 1 is now called Internal Audit Fundamentals, replacing the 2019 title Essentials of Internal Auditing, and the old separate sections on independence and objectivity, proficiency and due care, and quality assurance have been reorganised.",
+        "The IIA revised the CIA exam to align it more closely with the Global Internal Audit Standards, which became effective on 9 January 2025. Part 1 is now called Internal Audit Fundamentals, replacing the 2019 title Essentials of Internal Auditing, and the old separate sections on independence and objectivity, proficiency and due care, and quality assurance have been reorganised.",
         "Ethics and Professionalism now mirrors the five principles of the Standards' ethics domain: integrity, objectivity, competency, due professional care and confidentiality. Some languages remained on the 2019 syllabus for a transition period, so check on theiia.org which syllabus applies to the language you test in.",
       ],
     },

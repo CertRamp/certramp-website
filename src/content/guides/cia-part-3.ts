@@ -19,7 +19,7 @@ export const ciaPart3Guide: ExamGuide = {
       heading: "What CIA Part 3 actually tests",
       paragraphs: [
         "The 2025 syllabus for Part 3 has four sections: Engagement Results and Monitoring (45%), Internal Audit Operations (25%), Internal Audit Plan (15%) and Quality of the Internal Audit Function (15%).",
-        "Questions are written largely from the chief audit executive's point of view: how to build the audit plan, coordinate with other assurance providers, measure performance, run the quality assurance and improvement programme, communicate results, assess residual risk, handle risk acceptance and follow up on action plans.",
+        "Many topics are framed around the chief audit executive's responsibilities: how to build the audit plan, coordinate with other assurance providers, measure performance, run the quality assurance and improvement programme, communicate results, assess residual risk, handle risk acceptance and follow up on action plans.",
       ],
     },
     {
@@ -27,7 +27,7 @@ export const ciaPart3Guide: ExamGuide = {
       heading: "How the 2025 syllabus is structured",
       paragraphs: [
         "Part 3 is now called Internal Audit Function. Under the 2019 syllabus, Part 3 was Business Knowledge for Internal Auditing and covered business acumen, information security, IT and financial management. The 2025 version replaces that with the function-level content of the Global Internal Audit Standards.",
-        "If you studied for the old Part 3, expect very different material. The syllabus now covers topics such as the applicability of Topical Requirements, disclosure of nonconformance with the Standards, residual risk ratings and the sequence for communicating risk acceptance.",
+        "If you studied for the old Part 3, expect very different material. The syllabus now covers topics such as the applicability of Topical Requirements, disclosure of nonconformance with the Standards, residual risk assessment and engagement rating scales, and the sequence for communicating risk acceptance.",
       ],
     },
     {

@@ -27,7 +27,7 @@ export const ciaPart2Guide: ExamGuide = {
       heading: "How the 2025 syllabus is structured",
       paragraphs: [
         "Part 2 is now called Internal Audit Engagement, replacing the 2019 title Practice of Internal Auditing. The 2019 version also covered managing the internal audit activity; under the 2025 syllabus that material sits largely in Part 3, and Part 2 concentrates on the single engagement.",
-        "The syllabus follows the engagement principles of the Global Internal Audit Standards: plan engagements effectively, conduct engagement work, and communicate. It explicitly includes data analytics — structured and unstructured data, the analytics process, and diagnostic, predictive, prescriptive, anomaly detection and text analysis techniques.",
+        "The syllabus follows the engagement principles of the Global Internal Audit Standards: plan engagements effectively, conduct engagement work, and communicate with stakeholders during the engagement. It explicitly includes data analytics — structured and unstructured data, the analytics process, and diagnostic, predictive, prescriptive, anomaly detection and text analysis techniques.",
       ],
     },
     {

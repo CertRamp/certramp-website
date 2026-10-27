@@ -128,7 +128,7 @@ export const ciaPart1Questions: PracticeQuestionSet = {
         "An auditor joined internal audit from the accounts payable department eight months ago, where she supervised supplier payments. The chief audit executive wants to assign her to an assurance engagement on accounts payable. What is the most appropriate response?",
       options: [
         { id: "A", text: "Assign her as planned, since she knows the process best", rationale: "Process knowledge is useful, but it does not remove the presumed impairment." },
-        { id: "B", text: "Assign her, but ask her to sign an annual declaration of independence", rationale: "A declaration does not cure a known impairment." },
+        { id: "B", text: "Assign her, but ask her to sign an annual declaration of objectivity", rationale: "A declaration does not cure a known impairment." },
         { id: "C", text: "Assign a different auditor to the assurance engagement", rationale: "Correct. The Standards presume objectivity is impaired when an auditor provides assurance on an activity they were responsible for within the previous 12 months." },
         { id: "D", text: "Proceed, provided her former manager approves the work programme", rationale: "Involving the auditee's management makes objectivity worse, not better." },
       ],
