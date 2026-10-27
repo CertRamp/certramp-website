@@ -2,7 +2,7 @@
   "name": "certramp-website",
   "version": "1.0.0",
   "private": true,
-  "description": "CertRamp Learning \u2014 marketing and discovery website for progressive certification practice exams.",
+  "description": "CertRamp Learning — marketing and discovery website for progressive certification practice exams.",
   "scripts": {
     "dev": "node scripts/import-courses.mjs && next dev",
     "prebuild": "node scripts/import-courses.mjs",
@@ -28,6 +28,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.7",
+    "sharp": "0.35.5",
     "tailwindcss": "4.3.3",
     "typescript": "^5"
   },

@@ -103,34 +103,35 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     description:
       "270 practice questions for the CPRE Foundation Level exam on syllabus 3.3: six full exams of 45 questions in 75 minutes, modelled on the real exam format. Test 1 shows your level at a 60% bar, Test 6 goes beyond the real exam at 80%.",
     questionsPerTest: 45,
-    examOverview: [
-      { label: "Exam provider", value: "IREB, via licensed certification bodies" },
-      { label: "Format", value: "Approx. 45 questions — single choice, multiple choice and true/false" },
-      { label: "Duration", value: "75 minutes (90 minutes for non-native speakers)" },
-      { label: "Pass mark", value: "70% of total points" },
-      { label: "Prerequisites", value: "None" },
-      { label: "Syllabus", value: "Version 3.3.0 (April 2026)" },
-    ],
-    sources: [
-      { label: "IREB — CPRE download centre", url: "https://cpre.ireb.org/en/knowledge-and-resources/downloads" },
-      {
-        label: "IREB — CPRE Foundation Level syllabus 3.3.0 (PDF)",
-        url: "https://hub.ireb.org/media/pages/resources/cpre-foundation-level-syllabus/9c084b1cfd-1787039954/cpre_foundationlevel_syllabus_en_v.3.3.0.pdf",
-      },
-      {
-        label: "IREB — Examination regulations 5.6.2 (PDF)",
-        url: "https://hub.ireb.org/media/pages/resources/cpre-foundation-level-and-agile-primer-examination-regulations/a7858da873-1787039946/cpre_fl_and_primer_examination_regulations_en_v5.6.2.pdf",
-      },
-    ],
-    topics: [
-      { title: "Introduction and overview of RE" },
-      { title: "Fundamental principles of RE" },
-      { title: "Work products and documentation practices" },
-      { title: "Practices for requirements elaboration" },
-      { title: "Process and working structure" },
-      { title: "Management practices for requirements" },
-      { title: "Tool support" },
-    ],
+    // Verified 27 Oct 2026 against IREB syllabus 3.3.0, exam regulations 5.6.2 and fact sheet.
+    exam: {
+      officialName: "Certified Professional for Requirements Engineering (CPRE) — Foundation Level",
+      examVersion: "Syllabus 3.3.0 (1 April 2026)",
+      questionCount: "Approx. 45",
+      questionTypes: "Multiple choice: single choice (A), pick several (P) and true/false (K); 1–3 points per question",
+      duration: "75 minutes (90 minutes for non-native speakers, on written request)",
+      passingScore: "At least 70% of the total points",
+      delivery: "Through IREB-licensed certification bodies, at exam centres or — with some bodies — remotely",
+      prerequisites: "None",
+      status: "current",
+      officialCertificationUrl: "https://cpre.ireb.org/en",
+      domains: [
+        { id: "d1", name: "Introduction and Overview of Requirements Engineering" },
+        { id: "d2", name: "Fundamental Principles of Requirements Engineering" },
+        { id: "d3", name: "Work Products and Documentation Practices" },
+        { id: "d4", name: "Practices for Requirements Elaboration" },
+        { id: "d5", name: "Process and Working Structure" },
+        { id: "d6", name: "Management Practices for Requirements" },
+        { id: "d7", name: "Tool Support" },
+      ],
+      sources: [
+        { label: "IREB — CPRE Foundation Level syllabus 3.3.0 (PDF)", url: "https://hub.ireb.org/media/pages/resources/cpre-foundation-level-syllabus/9c084b1cfd-1787039954/cpre_foundationlevel_syllabus_en_v.3.3.0.pdf" },
+        { label: "IREB — Examination regulations 5.6.2 (PDF)", url: "https://hub.ireb.org/media/pages/resources/cpre-foundation-level-and-agile-primer-examination-regulations/a7858da873-1787039946/cpre_fl_and_primer_examination_regulations_en_v5.6.2.pdf" },
+        { label: "IREB — CPRE Foundation Level fact sheet (PDF)", url: "https://hub.ireb.org/media/pages/resources/cpre-foundation-level-fact-sheet/2c800f6747-1787039938/factsheet-cpre-fl-en.pdf" },
+        { label: "IREB — Certification bodies", url: "https://cpre.ireb.org/en/training-certification/certification-bodies" },
+      ],
+      lastVerified: "2026-10-27",
+    },
     features: ["Timed tests modelled on the real format: 45 questions in 75 minutes"],
     faq: [
       {
@@ -143,42 +144,40 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       description:
         "270 CPRE Foundation Level practice questions on syllabus 3.3: six timed exams of 45 questions in 75 minutes, from a 60% start to beyond exam level.",
     },
-    lastReviewed: CHECKED,
   },
 
   "sc-200": {
     featured: true,
     description:
       "360 practice questions in six progressive mock exams for Microsoft SC-200: Security Operations Analyst. Find out where you stand on security operations, incident response and threat hunting before you book the real exam.",
-    examOverview: [
-      { label: "Exam provider", value: "Microsoft, delivered by Pearson VUE" },
-      { label: "Duration", value: "100 minutes" },
-      { label: "Passing score", value: "700 or greater" },
-      { label: "Prerequisites", value: "No formal prerequisites" },
-      { label: "Renewal", value: "Every 12 months, free, via an online assessment on Microsoft Learn" },
-      { label: "Skills outline", value: "Skills measured as of 21 October 2026 (English exam)" },
-    ],
-    sources: [
-      {
-        label: "Microsoft Learn — SC-200 study guide",
-        url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200",
-      },
-      {
-        label: "Microsoft Learn — Security Operations Analyst Associate",
-        url: "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/",
-      },
-    ],
-    topics: [
-      { title: "Manage a security operations environment", description: "40–45% of the exam" },
-      { title: "Respond to security incidents", description: "35–40% of the exam" },
-      { title: "Perform threat hunting", description: "20–25% of the exam" },
-    ],
+    // Verified 27 Oct 2026 against Microsoft Learn (study guide + certification page).
+    exam: {
+      officialName: "Microsoft Certified: Security Operations Analyst Associate",
+      examCode: "SC-200",
+      examVersion: "Skills measured as of 21 October 2026",
+      duration: "100 minutes",
+      passingScore: "700 or greater (scale 1–1000)",
+      languages: ["English", "Japanese", "Chinese (Simplified)", "Korean", "French", "German", "Spanish", "Portuguese (Brazil)", "Chinese (Traditional)", "Italian"],
+      delivery: "Proctored exam via Pearson VUE, at a test centre or online",
+      prerequisites: "No formal prerequisites. Renewal every 12 months via a free online assessment on Microsoft Learn.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/",
+      domains: [
+        { id: "d1", name: "Manage a security operations environment", weight: "40–45%", objectives: ["Configure automation for Microsoft Defender XDR and Microsoft Sentinel", "Configure the Microsoft Sentinel SIEM and platform", "Ingest data into the Microsoft Sentinel SIEM and platform", "Configure detections"] },
+        { id: "d2", name: "Respond to security incidents", weight: "35–40%", objectives: ["Respond to alerts and incidents in Microsoft Defender XDR", "Respond to alerts and incidents in Microsoft Defender for Endpoint", "Investigate Microsoft 365 activities to identify threats"] },
+        { id: "d3", name: "Perform threat hunting", weight: "20–25%", objectives: ["Detect threats by using Microsoft Defender XDR", "Detect threats by using the Microsoft Sentinel platform"] },
+      ],
+      sources: [
+        { label: "Microsoft Learn — SC-200 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200" },
+        { label: "Microsoft Learn — Security Operations Analyst Associate", url: "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/" },
+      ],
+      lastVerified: "2026-10-27",
+    },
     seo: {
       title: "SC-200 Practice Exams: Security Operations Analyst",
       description:
         "360 Microsoft SC-200 practice questions in six progressive mock exams — security operations, incident response and threat hunting, with full explanations.",
     },
-    lastReviewed: CHECKED,
   },
 
   "isaca-aaism": {
@@ -441,6 +440,120 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         "900 CCSP practice questions in six full-length mock exams, written to the ISC2 exam outline effective 1 August 2026 — from diagnostic to beyond exam level.",
     },
   },
+
+  /* ── Content batch October 2026 (top Udemy earners, Aug–Oct 2026) ─────────
+   * Exam facts verified 27 Oct 2026 against Microsoft Learn. Prices are left
+   * out on purpose: Microsoft only states "based on country or region".     */
+
+  "pl-900": {
+    description:
+      "Practice exams for Microsoft PL-900: Power Platform Fundamentals, written to the skills measured as of 24 July 2026 — Dataverse, Power Apps, Power Automate, administration and the new Copilot Studio agents. Find your gaps before the 45-minute exam.",
+    fullName: "Microsoft Power Platform Fundamentals",
+    exam: {
+      officialName: "Microsoft Certified: Power Platform Fundamentals",
+      examCode: "PL-900",
+      examVersion: "Skills measured as of 24 July 2026",
+      duration: "45 minutes",
+      passingScore: "700 or greater (scale 1–1000)",
+      languages: ["English", "Spanish", "German", "Chinese (Simplified)", "French", "Korean", "Japanese", "Portuguese (Brazil)", "Russian", "Arabic (Saudi Arabia)", "Chinese (Traditional)", "Italian"],
+      delivery: "Proctored exam via Pearson VUE, at a test centre or online",
+      prerequisites: "None. Fundamentals certifications do not expire.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/exams/pl-900/",
+      domains: [
+        { id: "d1", name: "Describe the business value of Microsoft Power Platform", weight: "5–10%", objectives: ["Describe the business value of Microsoft Power Platform services"] },
+        { id: "d2", name: "Manage the Microsoft Power Platform environment", weight: "20–25%", objectives: ["Describe Microsoft Dataverse", "Describe Microsoft Power Platform administration and governance"] },
+        { id: "d3", name: "Demonstrate the capabilities of Power Apps", weight: "20–25%", objectives: ["Describe Power Apps capabilities and use cases", "Describe how to build basic apps by using Power Apps"] },
+        { id: "d4", name: "Demonstrate the capabilities of Power Automate", weight: "20–25%", objectives: ["Describe Power Automate use cases and capabilities", "Describe how to build basic flows by using Power Automate"] },
+        { id: "d5", name: "Describe features and capabilities of agents in Microsoft Copilot Studio", weight: "20–25%", objectives: ["Describe how to build agents in Copilot Studio", "Describe how to manage agents in Copilot Studio"] },
+      ],
+      sources: [
+        { label: "Microsoft Learn — PL-900 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900" },
+        { label: "Microsoft Learn — Power Platform Fundamentals certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/" },
+        { label: "Microsoft Learn — Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "PL-900 Practice Exams: Power Platform Fundamentals (2026)",
+      description:
+        "PL-900 practice exams for the July 2026 skills outline: Dataverse, Power Apps, Power Automate, administration and Copilot Studio agents, with explanations.",
+    },
+  },
+
+  "md-102": {
+    description:
+      "Practice exams for Microsoft MD-102: Endpoint Administrator, written to the skills measured as of 27 October 2026 — Intune enrollment, Autopilot, compliance, endpoint security, app management and Security Copilot agents. Check your level before the 100-minute exam.",
+    fullName: "Microsoft 365 Endpoint Administrator",
+    exam: {
+      officialName: "Microsoft 365 Certified: Endpoint Administrator Associate",
+      examCode: "MD-102",
+      examVersion: "Skills measured as of 27 October 2026",
+      duration: "100 minutes",
+      passingScore: "700 or greater (scale 1–1000)",
+      languages: ["English", "Chinese (Simplified)", "German", "Spanish", "French", "Japanese", "Portuguese (Brazil)"],
+      delivery: "Proctored exam via Pearson VUE, at a test centre or online",
+      prerequisites: "No formal prerequisites. Renewal every 12 months via a free online assessment.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/exams/md-102",
+      domains: [
+        { id: "d1", name: "Prepare infrastructure for devices", weight: "20–25%", objectives: ["Add devices to Microsoft Entra ID", "Enroll devices to Microsoft Intune", "Implement identity and compliance"] },
+        { id: "d2", name: "Manage and maintain devices", weight: "25–30%", objectives: ["Deploy and upgrade Windows clients by using cloud-based tools", "Plan and implement device configuration profiles", "Implement Microsoft Intune Suite add-on capabilities", "Perform remote actions on devices"] },
+        { id: "d3", name: "Protect devices", weight: "15–20%", objectives: ["Configure endpoint security", "Manage device updates"] },
+        { id: "d4", name: "Manage and secure applications", weight: "15–20%", objectives: ["Deploy and update apps", "Plan and implement app protection and app configuration policies"] },
+        { id: "d5", name: "Optimize endpoint operations by using automation, monitoring, and reporting", weight: "10–15%", objectives: ["Automate management tasks", "Monitor and optimize health"] },
+      ],
+      sources: [
+        { label: "Microsoft Learn — MD-102 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102" },
+        { label: "Microsoft Learn — Endpoint Administrator Associate", url: "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "MD-102 Practice Exams: Endpoint Administrator (Oct 2026)",
+      description:
+        "MD-102 practice exams for the skills measured as of 27 Oct 2026: Intune, Autopilot, compliance, endpoint security, apps and automation, with explanations.",
+    },
+  },
+
+  "ai-103": {
+    description:
+      "Practice exams for Microsoft AI-103: Developing AI Apps and Agents on Azure, the successor to the retired AI-102. Written to the skills measured as of 16 April 2026 — Foundry, generative AI and agents, RAG, vision, language and document extraction.",
+    fullName: "Developing AI Apps and Agents on Azure",
+    exam: {
+      officialName: "Microsoft Certified: Azure AI Apps and Agents Developer Associate",
+      examCode: "AI-103",
+      examVersion: "Skills measured as of 16 April 2026",
+      duration: "120 minutes",
+      passingScore: "700 or greater (scale 1–1000)",
+      languages: ["English", "Chinese (Simplified)", "Chinese (Traditional)", "French", "German", "Japanese", "Korean", "Italian", "Portuguese (Brazil)", "Spanish"],
+      delivery: "Proctored exam via Pearson VUE, at a test centre or online",
+      prerequisites: "No formal prerequisites. Microsoft expects experience developing apps with Python. Renewal every 12 months via a free online assessment.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/",
+      domains: [
+        { id: "d1", name: "Plan and manage an Azure AI solution", weight: "25–30%", objectives: ["Choose the appropriate Foundry services for generative AI and agents", "Set up AI solutions in Foundry", "Manage, monitor, and secure AI systems", "Implement responsible AI across generative AI and agentic systems"] },
+        { id: "d2", name: "Implement generative AI and agentic solutions", weight: "30–35%", objectives: ["Build generative applications by using Foundry", "Build agents by using Foundry", "Optimize and operationalize generative AI systems"] },
+        { id: "d3", name: "Implement computer vision solutions", weight: "10–15%", objectives: ["Design and implement image- and video-generation solutions", "Design and implement multimodal understanding workflows", "Implement responsible AI for multimodal content"] },
+        { id: "d4", name: "Implement text analysis solutions", weight: "10–15%", objectives: ["Apply language model text analysis", "Implement speech solutions"] },
+        { id: "d5", name: "Implement information extraction solutions", weight: "10–15%", objectives: ["Build retrieval and grounding pipelines", "Extract content from documents"] },
+      ],
+      sources: [
+        { label: "Microsoft Learn — AI-103 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103" },
+        { label: "Microsoft Learn — Azure AI Apps and Agents Developer Associate", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/" },
+        { label: "Microsoft Learn — Retired certification exams (AI-102: 30 June 2026)", url: "https://learn.microsoft.com/en-us/credentials/retired-certification-exams" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "AI-103 Practice Exams: Azure AI Apps and Agents (ex AI-102)",
+      description:
+        "AI-103 practice exams for Developing AI Apps and Agents on Azure: Foundry, generative AI, agents, RAG, vision, language and document extraction.",
+    },
+  },
+
 };
 
 /* ───────────────────────────────────────────────────────────────────────────
