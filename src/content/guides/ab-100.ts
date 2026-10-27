@@ -27,7 +27,7 @@ export const ab100Guide: ExamGuide = {
       heading: "What the 16 November 2026 update changes",
       paragraphs: [
         "Microsoft's change log shows a shift in weighting: the planning and design areas each gain a larger share of the exam, while the deployment area shrinks. Within the areas, three sub-sections have minor changes: \"Design overall AI strategy for business solutions\", \"Design AI and agents for business solutions\" and \"Design the ALM process for AI-powered business solutions\".",
-        "The outline names current products and features, including Microsoft Foundry, Foundry Tools, model router, Agent2Agent (A2A) and Model Context Protocol (MCP), computer use and agent flows in Copilot Studio. Localised versions of the exam are updated about eight weeks after the English version. Microsoft notes that most questions cover generally available features, but commonly used preview features can appear.",
+        "The audience profile and skills outline name current products and features, including Microsoft Foundry, Foundry Tools, model router, Agent2Agent (A2A) and Model Context Protocol (MCP), computer use and agent flows in Copilot Studio. Localised versions of the exam are updated about eight weeks after the English version. Microsoft notes that most questions cover generally available features, but commonly used preview features can appear.",
       ],
     },
     {

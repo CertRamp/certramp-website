@@ -9,6 +9,10 @@
  * Pages, sitemap entries, internal links and structured data follow automatically.
  */
 import type { ExamGuide, PracticeQuestionSet } from "@/config/types";
+import { istqbCtalTaGuide } from "./guides/istqb-ctal-ta";
+import { istqbCtalTaQuestions } from "./practice-questions/istqb-ctal-ta";
+import { istqbCtGenaiGuide } from "./guides/istqb-ct-genai";
+import { istqbCtGenaiQuestions } from "./practice-questions/istqb-ct-genai";
 import { isacaAaismGuide } from "./guides/isaca-aaism";
 import { isacaAaismQuestions } from "./practice-questions/isaca-aaism";
 import { iappAigpGuide } from "./guides/iapp-aigp";
@@ -57,6 +61,8 @@ import { nvidiaNcaGenlGuide } from "./guides/nvidia-nca-genl";
 import { nvidiaNcaGenlQuestions } from "./practice-questions/nvidia-nca-genl";
 
 export const guides: ExamGuide[] = [
+  istqbCtalTaGuide,
+  istqbCtGenaiGuide,
   isacaAaismGuide,
   iappAigpGuide,
   iappCipmGuide,
@@ -83,6 +89,8 @@ export const guides: ExamGuide[] = [
 ];
 
 export const questionSets: PracticeQuestionSet[] = [
+  istqbCtalTaQuestions,
+  istqbCtGenaiQuestions,
   isacaAaismQuestions,
   iappAigpQuestions,
   iappCipmQuestions,

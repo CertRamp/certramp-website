@@ -148,7 +148,7 @@ export const sc300Questions: PracticeQuestionSet = {
       ],
       answer: "D",
       explanation:
-        "A useful rule of thumb: sign-in risk is usually remediated with MFA, user risk with a secure password change. Both depend on users having registered for MFA beforehand.",
+        "A useful rule of thumb: sign-in risk is usually remediated with MFA, user risk with a secure password change. Both depend on users having registered for MFA beforehand. In current Conditional Access policies this is configured with the Require risk remediation grant control, which prompts password users for MFA followed by a secure password change.",
       reference: GUIDE,
     },
     {
@@ -272,7 +272,7 @@ export const sc300Questions: PracticeQuestionSet = {
         "Administrators should hold the Exchange Administrator role only when they need it, for a limited time, after giving a justification and getting approval. How should you assign the role in Privileged Identity Management?",
       options: [
         { id: "A", text: "As a permanent active assignment", rationale: "An active assignment grants the role all the time with no activation step." },
-        { id: "B", text: "Through a dynamic group that has the role assigned permanently", rationale: "This still grants the role permanently and adds no activation, justification or approval." },
+        { id: "B", text: "Through a dynamic group that has the role assigned permanently", rationale: "Dynamic membership groups cannot be assigned Microsoft Entra roles, and a permanent group assignment would add no activation, justification or approval anyway." },
         { id: "C", text: "As a Conditional Access authentication context", rationale: "Authentication context can strengthen requirements for sensitive actions, but it does not make a role assignment just-in-time." },
         { id: "D", text: "As an eligible assignment with role settings that require justification and approval on activation", rationale: "Correct. Eligible users must activate the role when needed, and PIM role settings can require justification, MFA and approval, with a limited activation duration." },
       ],

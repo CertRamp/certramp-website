@@ -1292,7 +1292,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     exam: {
       officialName: "Microsoft Certified: Identity and Access Administrator Associate",
       examCode: "SC-300",
-      examVersion: "Skills measured as of 28 October 2026 (English exam updated on 28 October 2026)",
+      examVersion: "Skills measured as of 28 October 2026 (English exam update on 28 October 2026)",
       duration: "100 minutes",
       passingScore: "700 or greater (scale 1–1000)",
       languages: ["English", "German", "Spanish", "French", "Italian", "Japanese", "Korean", "Portuguese (Brazil)", "Chinese (Simplified)", "Chinese (Traditional)"],
@@ -1303,7 +1303,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-300/",
       domains: [
         { id: "d1", name: "Implement and manage user identities", weight: "20–25%", objectives: ["Configure and manage a Microsoft Entra tenant", "Create, configure, and manage Microsoft Entra identities", "Implement and manage identities for external users and tenants", "Implement and manage hybrid identity"] },
-        { id: "d2", name: "Implement authentication and access management", weight: "25–30%", objectives: ["Plan, implement, and manage Microsoft Entra user authentication", "Plan, implement, and manage Microsoft Entra Conditional Access", "Manage risk by using Microsoft Entra ID Protection", "Implement Global Secure Access"] },
+        { id: "d2", name: "Implement authentication and access management", weight: "25–30% (detailed section of the study guide says 20–25%)", objectives: ["Plan, implement, and manage Microsoft Entra user authentication", "Plan, implement, and manage Microsoft Entra Conditional Access", "Manage risk by using Microsoft Entra ID Protection", "Implement Global Secure Access"] },
         { id: "d3", name: "Plan and implement workload identities", weight: "20–25%", objectives: ["Plan and implement identities for applications and Azure workloads", "Plan, implement, and monitor the integration of enterprise applications", "Plan and implement app registrations", "Manage and monitor app access by using Microsoft Defender for Cloud Apps"] },
         { id: "d4", name: "Plan and automate identity governance", weight: "20–25%", objectives: ["Plan and implement entitlement management in Microsoft Entra", "Plan, implement, and manage access reviews in Microsoft Entra", "Plan and implement privileged access", "Monitor identity activity by using logs, workbooks, and reports"] },
       ],

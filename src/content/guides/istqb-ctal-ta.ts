@@ -28,7 +28,7 @@ export const istqbCtalTaGuide: ExamGuide = {
       heading: "How the exam is structured and scored",
       paragraphs: [
         "All 45 questions are multiple choice. Points depend on the K-level of the learning objective: the 18 K2 questions are worth 1 point, the 21 K3 questions 2 points and the 6 K4 questions 3 points. There are no K1 questions, but the syllabus states that knowledge of the keywords listed for each chapter is also examined at K1 level.",
-        "Exams are offered by ISTQB Member Boards and Exam Providers, which also set any experience requirements and handle the 25% time extension for candidates whose native language is not the exam language.",
+        "Exams are offered by ISTQB Member Boards and Exam Providers, which also set the practical experience criteria. Candidates whose native language is not the exam language get 25% extra time.",
       ],
     },
     {

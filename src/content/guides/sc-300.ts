@@ -24,7 +24,7 @@ export const sc300Guide: ExamGuide = {
     },
     {
       id: "october-2026-update",
-      heading: "What the 28 October 2026 update changed",
+      heading: "What the 28 October 2026 update changes",
       paragraphs: [
         "Microsoft classified the October 2026 changes as minor. Three sub-areas were adjusted: \"Plan, implement, and manage Microsoft Entra user authentication\", \"Implement Global Secure Access\" and \"Plan and implement privileged access\". The other areas and the audience profile are unchanged.",
         "The current outline expects you to know modern authentication methods (certificate-based authentication, Temporary Access Pass, Microsoft Authenticator and passkeys), Global Secure Access with Microsoft Entra Private Access and Internet Access, and PIM for Microsoft Entra roles, Azure resources and groups. Localised versions of the exam are updated about eight weeks after the English version.",
@@ -84,7 +84,7 @@ export const sc300Guide: ExamGuide = {
         "The Identity and Access Administrator Associate certification has a renewal frequency of 12 months. You renew it for free by passing an online assessment on Microsoft Learn during the six-month renewal window.",
     },
     {
-      question: "Which skills changed on 28 October 2026?",
+      question: "Which skills change on 28 October 2026?",
       answer:
         "Microsoft lists minor changes in \"Plan, implement, and manage Microsoft Entra user authentication\", \"Implement Global Secure Access\" and \"Plan and implement privileged access\". All other areas are unchanged.",
     },

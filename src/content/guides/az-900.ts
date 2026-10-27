@@ -40,7 +40,7 @@ export const az900Guide: ExamGuide = {
         },
         {
           title: "Work through the Microsoft Learn paths",
-          body: "Follow the free AZ-900 learning paths on Microsoft Learn. They cover the outline closely and include sandbox exercises where you can create resources without your own subscription.",
+          body: "Follow the free AZ-900 learning paths on Microsoft Learn. They cover the outline closely. For the hands-on exercises you need your own Azure subscription, such as a free trial, because Microsoft Learn sandboxes are no longer available.",
         },
         {
           title: "Learn the comparisons, not just the names",

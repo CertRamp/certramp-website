@@ -258,7 +258,7 @@ export const ab100Questions: PracticeQuestionSet = {
       ],
       answer: "A",
       explanation:
-        "Structured evaluation catches regressions early. Combine quality checks against expected answers with the safety evaluators, and keep responsible AI reviews in place as well.",
+        "Structured evaluation catches regressions early. Combine quality test methods such as General quality and Compare meaning with the Content safety test method, and keep responsible AI reviews in place as well.",
       reference: { label: "Microsoft Learn — Agent evaluation in Copilot Studio", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-intro" },
     },
     {
