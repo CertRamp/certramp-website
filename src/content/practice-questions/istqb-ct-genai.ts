@@ -57,7 +57,7 @@ export const istqbCtGenaiQuestions: PracticeQuestionSet = {
       ],
       answer: "A",
       explanation:
-        "LLMs split input into tokens and can only consider a limited amount of preceding text — the context window. Larger windows help with long documents but increase processing cost and time, so splitting or summarising input is often necessary.",
+        "LLMs split input into tokens and can only consider a limited amount of preceding text — the context window. Larger windows help with long documents but increase computational complexity and processing time, so splitting or summarising input is often necessary.",
       reference: CERT_PAGE,
     },
     {
@@ -75,7 +75,7 @@ export const istqbCtGenaiQuestions: PracticeQuestionSet = {
       ],
       answer: "B",
       explanation:
-        "AI chatbots offer direct, conversational interaction suited to routine and exploratory tasks. LLM-powered testing applications embed the model through APIs, which gives more customisation, consistency and scalability for well-defined tasks.",
+        "AI chatbots offer direct, conversational interaction suited to routine and exploratory tasks. LLM-powered testing applications embed the model through APIs, which gives more customisation and scalability for well-defined tasks.",
       reference: CERT_PAGE,
     },
 
@@ -90,7 +90,7 @@ export const istqbCtGenaiQuestions: PracticeQuestionSet = {
       options: [
         { id: "A", text: "Role", rationale: "The role is \"You are an experienced test analyst\"." },
         { id: "B", text: "Output format", rationale: "The output format is \"Return a numbered list\"." },
-        { id: "C", text: "Constraints", rationale: "Correct. Constraints restrict how the instruction is applied to the input data — here, to the cancellation rules only." },
+        { id: "C", text: "Constraints", rationale: "Correct. Constraints set restrictions or special considerations the LLM must follow — here, only the cancellation rules." },
         { id: "D", text: "Context", rationale: "The context is the background information \"Our app is a hotel booking system\"." },
       ],
       answer: "C",
@@ -270,7 +270,7 @@ export const istqbCtGenaiQuestions: PracticeQuestionSet = {
     {
       id: "genai-d5-shadow-ai",
       domain: "d5",
-      objective: "5.1 Roadmap for Adoption of GenAI",
+      objective: "GenAI-5.1.1 Recall the risks of shadow AI",
       difficulty: "foundation",
       question:
         "Before any official GenAI strategy exists, several testers paste requirements and test data into personal accounts of public AI chatbots. What is the main risk of this \"shadow AI\" use?",
@@ -282,13 +282,13 @@ export const istqbCtGenaiQuestions: PracticeQuestionSet = {
       ],
       answer: "B",
       explanation:
-        "Shadow AI is the use of GenAI tools without the organisation's approval or oversight. It is one reason to define a GenAI strategy and adoption roadmap early, with approved tools and clear rules for handling data.",
+        "Shadow AI is staff using personal or unapproved GenAI tools outside the organisation's policies. It risks data exposure, compliance breaches and intellectual-property disputes, which is why a GenAI strategy defines approved tools and rules for sensitive data.",
       reference: CERT_PAGE,
     },
     {
       id: "genai-d5-change",
       domain: "d5",
-      objective: "5.2 Manage Change when Adopting GenAI",
+      objective: "GenAI-5.2.2 Recall strategies for cultivating AI skills within test teams to support the adoption of Generative AI in test activities",
       difficulty: "intermediate",
       question:
         "A test organisation has selected an approved LLM-powered tool. Several experienced testers are sceptical and keep working the old way. Which action best supports the change?",
@@ -296,11 +296,11 @@ export const istqbCtGenaiQuestions: PracticeQuestionSet = {
         { id: "A", text: "Make the tool mandatory immediately and measure each tester's usage", rationale: "Enforcement without building skills and trust tends to increase resistance rather than adoption." },
         { id: "B", text: "Wait until the sceptical testers leave the team", rationale: "Ignoring resistance does not manage the change and loses experienced staff." },
         { id: "C", text: "Replace manual test design entirely so the old way is no longer possible", rationale: "Removing human test design ignores the need for human verification of GenAI output." },
-        { id: "D", text: "Build skills through training and hands-on practice, share early results and involve the testers in defining how the tool is used", rationale: "Correct. Developing the team's knowledge and skills and involving the people affected are core to managing change when adopting GenAI." },
+        { id: "D", text: "Build skills through hands-on practice with the tool on real test tasks, guided learning, and a community of practice that shares prompts and lessons learned", rationale: "Correct. The syllabus recommends building GenAI capability through hands-on practice, guided learning, communities of practice and shared prompt libraries, not through theory or mandates alone." },
       ],
       answer: "D",
       explanation:
-        "Adopting GenAI changes tasks and roles in the test organisation. Successful change management builds the necessary skills, involves the people affected and demonstrates value, while keeping humans responsible for verifying GenAI output.",
+        "Adopting GenAI changes testers' tasks and responsibilities; without structured change management, tools are underused, misused or resisted. Capability grows from basic prompting to reusable, test-specific prompt patterns, while testers stay accountable for reviewing GenAI output.",
       reference: CERT_PAGE,
     },
   ],

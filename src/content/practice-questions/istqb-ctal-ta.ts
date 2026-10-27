@@ -231,7 +231,7 @@ export const istqbCtalTaQuestions: PracticeQuestionSet = {
     {
       id: "ta-d4-adaptability",
       domain: "d4",
-      objective: "4.3 Flexibility Testing (TA-4.3.1)",
+      objective: "TA-4.3.1 Explain how the test analyst contributes to adaptability and installability testing",
       difficulty: "foundation",
       question:
         "A business application must run without changes on three different cloud service platforms. The test analyst identifies the target environments and designs tests for combinations of them. Which quality (sub-)characteristic is being tested?",
@@ -249,14 +249,14 @@ export const istqbCtalTaQuestions: PracticeQuestionSet = {
     {
       id: "ta-d4-usability",
       domain: "d4",
-      objective: "4.2 Usability Testing (TA-4.2.1)",
+      objective: "TA-4.2.1 Explain how the test analyst contributes to usability testing",
       difficulty: "intermediate",
       question:
         "A team wants to evaluate how easily first-time customers can complete an online loan application. Which approach is most appropriate?",
       options: [
         { id: "A", text: "Testers who know the application well complete the form as quickly as possible", rationale: "Experienced testers do not represent first-time customers and will not show their difficulties." },
         { id: "B", text: "A developer guides customers through each step and answers their questions", rationale: "Guiding participants hides the very problems the test is supposed to find." },
-        { id: "C", text: "Representative users perform realistic tasks based on personas while being observed without help", rationale: "Correct. Usability testing needs representative users, realistic scenarios (for example from personas or operational profiles) and observation rather than guidance." },
+        { id: "C", text: "Representative users perform realistic tasks while being observed without help", rationale: "Correct. Usability testing needs representative users performing realistic tasks, observed rather than guided." },
         { id: "D", text: "An automated script measures the response time of each page", rationale: "Response time is a performance characteristic, not usability." },
       ],
       answer: "C",
@@ -269,7 +269,7 @@ export const istqbCtalTaQuestions: PracticeQuestionSet = {
     {
       id: "ta-d5-ddp",
       domain: "d5",
-      objective: "5.3.1 Analyzing Test Results to Improve Defect Detection (TA-5.3.1)",
+      objective: "TA-5.3.1 Analyze test results to identify potential improvements to defect detection",
       difficulty: "advanced",
       question:
         "During system testing, 40 defects were found. Later, 10 further defects that system testing should have detected were found in acceptance testing and production. What is the defect detection percentage (DDP) of system testing, and what does it tell you?",
@@ -287,7 +287,7 @@ export const istqbCtalTaQuestions: PracticeQuestionSet = {
     {
       id: "ta-d5-role-based-review",
       domain: "d5",
-      objective: "5.2.2 Applying Review Techniques (TA-5.2.2)",
+      objective: "TA-5.2.2 Apply a review technique to a test basis to find defects",
       difficulty: "intermediate",
       question:
         "Reviewers of a banking app's requirements each take on a specific persona — a first-time customer, a branch employee and a customer with impaired vision — and evaluate the requirements from that viewpoint. Which review technique is being applied?",

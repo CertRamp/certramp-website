@@ -1507,9 +1507,8 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     description:
       "Practice exams for the ISTQB Certified Tester Advanced Level Test Analyst (CTAL-TA), written to syllabus v4.0 — test analyst tasks, risk-based testing, data-, behaviour- and rule-based test techniques, quality characteristics and defect prevention. Check your level before the 45-question, 120-minute exam.",
     fullName: "ISTQB Certified Tester Advanced Level Test Analyst",
-    // Verified 27 Oct 2026 against istqb.org (certification page, CTAL-TA v4.0 syllabus, Exam Structures and Rules v1.2,
-    // Exam Structure and Rules Tables v1.18, v4.0 FAQ and v3.1 retirement page).
-    // LO wording for chapters 4–5 could not be read from the syllabus; section headings and LO codes/K-levels are used instead.
+    // Verified 27 Oct 2026 against istqb.org (certification page, CTAL-TA v4.0 syllabus, LO new vs. old syllabus,
+    // Exam Structures and Rules v1.2, Exam Structure and Rules Tables v1.19, v4.0 FAQ and v3.1 retirement page).
     exam: {
       officialName: "ISTQB Certified Tester Advanced Level Test Analyst (CTAL-TA)",
       examCode: "CTAL-TA",
@@ -1577,10 +1576,10 @@ export const certificationDetails: Record<string, CertificationDetails> = {
           name: "Testing Quality Characteristics",
           weight: "4 questions, 4 of 78 points",
           objectives: [
-            "4.1 Functional Testing (TA-4.1.1, K2)",
-            "4.2 Usability Testing (TA-4.2.1, K2)",
-            "4.3 Flexibility Testing (TA-4.3.1, K2)",
-            "4.4 Compatibility Testing (TA-4.4.1, K2)",
+            "TA-4.1.1 (K2) Differentiate between functional correctness, functional appropriateness, and functional completeness testing",
+            "TA-4.2.1 (K2) Explain how the test analyst contributes to usability testing",
+            "TA-4.3.1 (K2) Explain how the test analyst contributes to adaptability and installability testing",
+            "TA-4.4.1 (K2) Explain how the test analyst contributes to interoperability testing",
           ],
         },
         {
@@ -1588,18 +1587,19 @@ export const certificationDetails: Record<string, CertificationDetails> = {
           name: "Software Defect Prevention",
           weight: "8 questions, 16 of 78 points",
           objectives: [
-            "5.1 Defect Prevention Practices (TA-5.1.1, K2)",
-            "5.2.1 Using Models to Detect Defects (TA-5.2.1, K3)",
-            "5.2.2 Applying Review Techniques (TA-5.2.2, K3)",
-            "5.3.1 Analyzing Test Results to Improve Defect Detection (TA-5.3.1, K4)",
-            "5.3.2 Supporting Root Cause Analysis with Defect Classification (TA-5.3.2, K2)",
+            "TA-5.1.1 (K2) Explain how the test analyst can contribute to defect prevention",
+            "TA-5.2.1 (K3) Use a model of the test object to detect defects in a specification",
+            "TA-5.2.2 (K3) Apply a review technique to a test basis to find defects",
+            "TA-5.3.1 (K4) Analyze test results to identify potential improvements to defect detection",
+            "TA-5.3.2 (K2) Explain how defect classification supports root cause analysis",
           ],
         },
       ],
       sources: [
         { label: "ISTQB — Certified Tester Advanced Level Test Analyst (CTAL-TA)", url: "https://istqb.org/certifications/certified-tester-advanced-level-test-analyst/" },
         { label: "ISTQB — CTAL-TA Syllabus v4.0 (PDF)", url: "https://www.istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf" },
-        { label: "ISTQB — Exam Structure and Rules Tables v1.18 (PDF)", url: "https://istqb.org/wp-content/uploads/2026/05/ISTQB_Exam-Structure-and-Rules-Tables_v1.18.pdf" },
+        { label: "ISTQB — CTAL-TA Learning Objectives, new vs. old syllabus (PDF)", url: "https://istqb.org/?sdm_process_download=1&download_id=6363" },
+        { label: "ISTQB — Exam Structure and Rules Tables v1.19 (PDF)", url: "https://istqb.org/?sdm_process_download=1&download_id=3832" },
         { label: "ISTQB — Exam Structures and Rules v1.2 (PDF)", url: "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB_Exam-Structures-and-Rules_v1.2.pdf" },
         { label: "ISTQB — CTAL-TA v4.0 FAQ", url: "https://istqb.org/help/test-analyst/" },
         { label: "ISTQB — CTAL-TA v3.1 retirement", url: "https://istqb.org/certifications/certified-tester-advanced-level-test-analyst-retiring/" },
@@ -1618,8 +1618,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       "Practice exams for the ISTQB Certified Tester Testing with Generative AI (CT-GenAI), written to syllabus v1.1 — GenAI and LLM basics, prompt engineering for test tasks, hallucinations and data privacy risks, RAG and agents, and adopting GenAI in a test organisation. Check your level before the 40-question, 60-minute exam.",
     fullName: "ISTQB Certified Tester Testing with Generative AI",
     // Verified 27 Oct 2026 against istqb.org (certification page, v1.1 announcement, Exam Structures and Rules v1.2,
-    // Exam Structure and Rules Tables v1.18) and the ISTQB CT-GenAI syllabus (v1.0 EN, v1.1 FR revision history).
-    // LO wording for chapter 5 could not be read; section headings and LO codes/K-levels are used instead.
+    // Exam Structure and Rules Tables v1.19) and the ISTQB CT-GenAI syllabus (v1.0 EN, v1.1 FR revision history).
     exam: {
       officialName: "ISTQB Certified Tester Testing with Generative AI (CT-GenAI)",
       examCode: "CT-GenAI",
@@ -1697,8 +1696,13 @@ export const certificationDetails: Record<string, CertificationDetails> = {
           name: "Deploying and Integrating GenAI in Test Organizations",
           weight: "7 questions, 7 of 46 points",
           objectives: [
-            "5.1 Roadmap for Adoption of GenAI (GenAI-5.1.1 K1, 5.1.2 K2, 5.1.3 K2, 5.1.4 K1)",
-            "5.2 Manage Change when Adopting GenAI (GenAI-5.2.1 K2, 5.2.2 K1, 5.2.3 K1)",
+            "GenAI-5.1.1 (K1) Recall the risks of shadow AI",
+            "GenAI-5.1.2 (K2) Explain the key aspects to consider when defining a Generative AI strategy for software testing",
+            "GenAI-5.1.3 (K2) Summarize key criteria for selecting LLMs/SLMs for software test tasks in a given context",
+            "GenAI-5.1.4 (K1) Recall key phases in the adoption of Generative AI in a test organization",
+            "GenAI-5.2.1 (K2) Explain the essential skills and knowledge areas required for testers to work effectively with generative AI in test processes",
+            "GenAI-5.2.2 (K1) Recall strategies for cultivating AI skills within test teams to support the adoption of Generative AI in test activities",
+            "GenAI-5.2.3 (K1) Recognize how test processes and responsibilities shift within a test organization when adopting Generative AI",
           ],
         },
       ],
@@ -1706,7 +1710,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { label: "ISTQB — Certified Tester Testing with Generative AI (CT-GenAI)", url: "https://istqb.org/certifications/gen-ai/" },
         { label: "ISTQB — Minor update to CT-GenAI (v1.1)", url: "https://istqb.org/istqb-announces-minor-update-to-certified-tester-testing-with-generative-ai-ct-genai/" },
         { label: "ISTQB — CT-GenAI launch press release", url: "https://istqb.org/istqb-certified-tester-specialist-level-testing-with-generative-ai-ct-genai-press-release/" },
-        { label: "ISTQB — Exam Structure and Rules Tables v1.18 (PDF)", url: "https://istqb.org/wp-content/uploads/2026/05/ISTQB_Exam-Structure-and-Rules-Tables_v1.18.pdf" },
+        { label: "ISTQB — Exam Structure and Rules Tables v1.19 (PDF)", url: "https://istqb.org/?sdm_process_download=1&download_id=3832" },
         { label: "ISTQB — Exam Structures and Rules v1.2 (PDF)", url: "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB_Exam-Structures-and-Rules_v1.2.pdf" },
       ],
       lastVerified: "2026-10-27",

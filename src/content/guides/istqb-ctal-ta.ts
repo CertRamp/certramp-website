@@ -35,7 +35,7 @@ export const istqbCtalTaGuide: ExamGuide = {
       id: "whats-new-in-v4",
       heading: "What changed from v3.1 to v4.0",
       paragraphs: [
-        "ISTQB released v4.0 on 2 May 2025 and describes the syllabus as rewritten from scratch. New or reworked topics include CRUD, random, crowd and metamorphic testing, quality criteria for test cases, test environment and test data requirements, the test oracle problem, the benefits and risks of automating test design, and a whole chapter on defect prevention: using models to find defects in specifications, analysing test results and supporting root cause analysis with defect classification.",
+        "The ISTQB General Assembly approved v4.0 on 2 May 2025 and ISTQB announced it on 16 May 2025. ISTQB describes the syllabus as rewritten from scratch. New or reworked topics include CRUD, random, crowd and metamorphic testing, quality criteria for test cases, test environment and test data requirements, the test oracle problem, the benefits and risks of automating test design, and a whole chapter on defect prevention: using models to find defects in specifications, analysing test results and supporting root cause analysis with defect classification.",
         "Chapter 4 now treats functional, usability, flexibility (for example adaptability) and compatibility (for example interoperability) testing in four short sections. English v3.1 training and exams ended on 16 May 2026; in other languages v3.1 remains available until 16 November 2026. Existing v3.1 certificates stay valid for life.",
       ],
     },
