@@ -9,6 +9,20 @@
  * Pages, sitemap entries, internal links and structured data follow automatically.
  */
 import type { ExamGuide, PracticeQuestionSet } from "@/config/types";
+import { awsMlaC02Guide } from "./guides/aws-mla-c02";
+import { awsMlaC02Questions } from "./practice-questions/aws-mla-c02";
+import { cfeGuide } from "./guides/cfe";
+import { cfeQuestions } from "./practice-questions/cfe";
+import { giacGaipsGuide } from "./guides/giac-gaips";
+import { giacGaipsQuestions } from "./practice-questions/giac-gaips";
+import { ccna200301Guide } from "./guides/ccna-200-301";
+import { ccna200301Questions } from "./practice-questions/ccna-200-301";
+import { sc900Guide } from "./guides/sc-900";
+import { sc900Questions } from "./practice-questions/sc-900";
+import { sc500Guide } from "./guides/sc-500";
+import { sc500Questions } from "./practice-questions/sc-500";
+import { capmGuide } from "./guides/capm";
+import { capmQuestions } from "./practice-questions/capm";
 import { istqbCtalTaGuide } from "./guides/istqb-ctal-ta";
 import { istqbCtalTaQuestions } from "./practice-questions/istqb-ctal-ta";
 import { istqbCtGenaiGuide } from "./guides/istqb-ct-genai";
@@ -61,6 +75,13 @@ import { nvidiaNcaGenlGuide } from "./guides/nvidia-nca-genl";
 import { nvidiaNcaGenlQuestions } from "./practice-questions/nvidia-nca-genl";
 
 export const guides: ExamGuide[] = [
+  awsMlaC02Guide,
+  cfeGuide,
+  giacGaipsGuide,
+  ccna200301Guide,
+  sc900Guide,
+  sc500Guide,
+  capmGuide,
   istqbCtalTaGuide,
   istqbCtGenaiGuide,
   isacaAaismGuide,
@@ -89,6 +110,13 @@ export const guides: ExamGuide[] = [
 ];
 
 export const questionSets: PracticeQuestionSet[] = [
+  awsMlaC02Questions,
+  cfeQuestions,
+  giacGaipsQuestions,
+  ccna200301Questions,
+  sc900Questions,
+  sc500Questions,
+  capmQuestions,
   istqbCtalTaQuestions,
   istqbCtGenaiQuestions,
   isacaAaismQuestions,

@@ -1722,6 +1722,431 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     },
   },
 
+
+  /* ── Content batch 4, October 2026 — exam facts verified 27 Oct 2026 against the
+   * official provider sources listed in each entry. ──────────────────────── */
+
+  "aws-mla-c02": {
+    description:
+      "Practice exams for AWS MLA-C02: AWS Certified Machine Learning Engineer – Associate, written to the official MLA-C02 exam guide that replaces MLA-C01. Covers data preparation, model and foundation model development, deployment and orchestration, and operating, monitoring and securing ML and AI solutions — including Amazon SageMaker AI, Amazon Bedrock, RAG and agents.",
+    fullName: "AWS Certified Machine Learning Engineer – Associate",
+    exam: {
+      officialName: "AWS Certified Machine Learning Engineer – Associate",
+      examCode: "MLA-C02",
+      examVersion: "MLA-C02 exam guide (beta exam; successor to MLA-C01)",
+      questionCount: "85 questions in the beta exam; the exam guide specifies 50 scored and 15 unscored questions",
+      duration: "170 minutes (beta exam)",
+      format: "Multiple choice and multiple response",
+      passingScore: "720 (scaled score 100–1,000, compensatory scoring)",
+      questionTypes:
+        "Multiple choice (one correct response and three distractors) and multiple response (two or more correct responses out of five or more options; all correct responses must be selected). Unanswered questions are scored as incorrect; there is no penalty for guessing. Unscored questions are not identified.",
+      languages: ["English (beta exam); Japanese, Korean and Simplified Chinese at general availability"],
+      delivery: "Pearson VUE testing centre or online proctored exam",
+      prerequisites:
+        "No formal prerequisites. AWS recommends at least 1 year of experience using Amazon SageMaker AI, Amazon Bedrock and other AWS services for ML engineering, at least 1 year in a related role (for example backend developer, DevOps developer, data engineer or data scientist), and experience with both traditional ML and generative AI. The certification is valid for 3 years.",
+      status: "current",
+      launchDate:
+        "Beta registration opened 1 September 2026; beta exam delivery began 29 September 2026. AWS announced general availability for 14 January 2027 (the certification page currently lists GA dates as TBD).",
+      officialCertificationUrl: "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/",
+      officialExamUrl:
+        "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html",
+      domains: [
+        {
+          id: "d1",
+          name: "Data Preparation for ML and AI",
+          weight: "28%",
+          objectives: [
+            "1.1 Collect and store data",
+            "1.2 Perform data transformation, feature engineering, and pre-processing",
+            "1.3 Validate data quality and manage bias",
+          ],
+        },
+        {
+          id: "d2",
+          name: "ML Model and Foundation Model (FM) Development",
+          weight: "24%",
+          objectives: [
+            "2.1 Choose appropriate modeling approaches for ML and AI solutions",
+            "2.2 Train, fine-tune, and customize models for ML and AI solutions",
+            "2.3 Analyze and evaluate the performance of ML and AI systems",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Deployment and Orchestration of ML and AI Workflows",
+          weight: "24%",
+          objectives: [
+            "3.1 Manage deployment infrastructure for ML and AI model types",
+            "3.2 Provision and configure resources for ML and AI workloads based on existing architecture and requirements",
+            "3.3 Implement automated orchestration and continuous integration and continuous delivery (CI/CD) pipelines for MLOps and AI workloads",
+          ],
+        },
+        {
+          id: "d4",
+          name: "Operating, Monitoring, and Securing ML and AI Solutions",
+          weight: "24%",
+          objectives: [
+            "4.1 Monitor ML and AI model inference and performance",
+            "4.2 Optimize and manage ML and AI infrastructure costs and performance",
+            "4.3 Secure ML and AI workloads and model endpoints",
+          ],
+        },
+      ],
+      sources: [
+        { label: "AWS — AWS Certified Machine Learning Engineer – Associate", url: "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/" },
+        { label: "AWS — MLA-C02 exam guide", url: "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html" },
+        { label: "AWS — Comparison of MLA-C01 and MLA-C02", url: "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/mla-02-comparison.html" },
+        { label: "AWS Training and Certification Blog — Certification updates: September 2026 (1 September 2026)", url: "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "MLA-C02 Practice Exams: AWS ML Engineer Associate (2026)",
+      description:
+        "MLA-C02 practice exams for AWS Certified Machine Learning Engineer – Associate: data prep, SageMaker AI, Bedrock, RAG, agents, MLOps and security, explained.",
+    },
+  },
+
+  "cfe": {
+    description:
+      "Practice exams for the ACFE Certified Fraud Examiner (CFE) exam, written to the new three-section exam that launched on 2 June 2026 — Fraud Schemes and Financial Crimes, Fraud Investigations and Legal Issues, and Fraud Prevention and Deterrence. Find your weak areas before you start your 60-day eligibility window, where you need at least 75% in every section.",
+    fullName: "Certified Fraud Examiner (CFE)",
+    exam: {
+      officialName: "Certified Fraud Examiner (CFE)",
+      examCode: "CFE Exam",
+      examVersion: "New exam version based on the 2024 Job Task Analysis, launched 2 June 2026",
+      questionCount: "310 in total: 120 (Fraud Schemes and Financial Crimes), 120 (Fraud Investigations and Legal Issues), 70 (Fraud Prevention and Deterrence)",
+      duration: "6.5 hours in total: 2.5 hours, 2.5 hours and 1.5 hours; each section is a separately timed exam taken in one sitting",
+      format: "Three separately administered, closed-book sections; all sections must be completed within a 60-day eligibility window",
+      passingScore: "At least 75% of the questions in each section answered correctly",
+      questionTypes: "Multiple choice and true/false",
+      languages: ["English"],
+      delivery: "Live-proctored: online via Prometric ProProctor or at a Prometric testing centre; paper-based only at in-person CFE Exam Review Courses delivered by the ACFE",
+      prerequisites: "ACFE Associate Membership and 40 eligibility points (education and fraud-related experience) to sit the exam; 50 points and at least two years of fraud-related professional experience to be certified. Up to five attempts per section. CFEs earn at least 20 CPE credits per annual compliance period (at least 10 on fraud detection and deterrence, 2 on ethics).",
+      status: "current",
+      launchDate: "2026-06-02",
+      officialCertificationUrl: "https://www.acfe.com/cfe-credential/how-to-earn-your-cfe-credential",
+      officialExamUrl: "https://www.acfe.com/cfe-credential/about-the-cfe-exam",
+      domains: [
+        { id: "d1", name: "Fraud Schemes and Financial Crimes", objectives: ["Types of fraud schemes and financial crimes committed against organizations and individuals", "Measures fraud examiners can take to prevent and detect fraud schemes and financial crimes"] },
+        { id: "d2", name: "Fraud Investigations and Legal Issues", objectives: ["How to conduct a fraud investigation", "Employee rights during investigations", "Rules and procedures for collecting evidence", "Gathering and analyzing data", "Conducting interviews", "Report writing", "How to navigate the legal system"] },
+        { id: "d3", name: "Fraud Prevention and Deterrence", objectives: ["Why people commit fraud", "Corporate governance", "The role of managers and auditors in combatting fraud", "How to conduct a fraud risk assessment", "How to manage fraud risk and build an effective fraud prevention program", "Ethical considerations in fraud examination"] },
+      ],
+      sources: [
+        { label: "ACFE — 2026 CFE Exam Update (sections, questions, time, transition)", url: "https://www.acfe.com/cfe-credential/about-the-cfe-exam/2026-cfe-exam-update" },
+        { label: "ACFE — About the CFE Exam (delivery, 60-day window)", url: "https://www.acfe.com/cfe-credential/about-the-cfe-exam" },
+        { label: "ACFE — CFE Exam FAQs (passing score, language, retakes)", url: "https://www.acfe.com/cfe-credential/about-the-cfe-exam/cfe-exam-faqs" },
+        { label: "ACFE — CFE Exam Content Outline", url: "https://www.acfe.com/cfe-credential/about-the-cfe-exam/exam-blueprint" },
+        { label: "ACFE — CFE Credential Eligibility", url: "https://www.acfe.com/cfe-credential/eligibility" },
+        { label: "ACFE — CPE requirements", url: "https://www.acfe.com/cfe-credential/continuing-professional-education-cpe-requirements" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "CFE Practice Exams: Certified Fraud Examiner (2026 Exam)",
+      description:
+        "CFE practice exams for the three-section ACFE exam launched June 2026: fraud schemes, investigations and legal issues, prevention and deterrence.",
+    },
+  },
+
+  "giac-gaips": {
+    description:
+      "Practice exams for GIAC AI Platform Security (GAIPS), written against GIAC's eight published exam certification objectives — agentic systems, LLM foundations, application architecture, infrastructure, risk management, MLOps, retrieval and model customisation. Test yourself before the 54-question, 2-hour exam.",
+    fullName: "GIAC AI Platform Security (GAIPS)",
+    exam: {
+      officialName: "GIAC AI Platform Security (GAIPS)",
+      examCode: "GAIPS",
+      examVersion: "Exam version released on or after 25 July 2026",
+      questionCount: "54",
+      duration: "2 hours",
+      passingScore: "65% (exam versions released on or after 25 July 2026; confirm in the GIAC Certification Portal)",
+      format: "1 proctored, web-based exam; open book (hard-copy books and notes only, not open internet or open computer); CyberLive hands-on format; 15 minutes of break time",
+      delivery: "Remotely proctored via ProctorU or on site at a Pearson VUE test centre; 120 days from activation to complete the attempt",
+      prerequisites: "Renewal every 4 years by earning 36 CPE credits or retaking the exam, plus a renewal fee.",
+      status: "current",
+      officialCertificationUrl: "https://www.giac.org/certifications/ai-security-platform-security-gaips",
+      domains: [
+        { id: "d1", name: "Agentic Systems and AI Integrations" },
+        { id: "d2", name: "AI and LLM Foundations" },
+        { id: "d3", name: "AI Application Architecture and Development Frameworks" },
+        { id: "d4", name: "AI Infrastructure and Deployment Security" },
+        { id: "d5", name: "AI Risk Management and Strategic Application" },
+        { id: "d6", name: "Development Pipelines and MLOps Security" },
+        { id: "d7", name: "Knowledge Augmentation and Retrieval" },
+        { id: "d8", name: "Model Customization and Alignment" },
+      ],
+      sources: [
+        { label: "GIAC — AI Platform Security (GAIPS)", url: "https://www.giac.org/certifications/ai-security-platform-security-gaips" },
+        { label: "GIAC — Proctored exams and open book guidelines", url: "https://www.giac.org/knowledge-base/proctor" },
+        { label: "GIAC — How to renew", url: "https://giac.org/renewal/how-to-renew" },
+        { label: "SANS — SEC545: GenAI and LLM Application Security", url: "https://www.sans.org/cyber-security-courses/genai-llm-application-security-5day" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "GIAC GAIPS Practice Exams: AI Platform Security (2026)",
+      description:
+        "GIAC GAIPS practice exams for all eight objectives: agentic AI, LLM foundations, RAG, MLOps, infrastructure and AI risk management, with explanations.",
+    },
+  },
+
+  "ccna-200-301": {
+    description:
+      "Practice exams for Cisco CCNA 200-301 (Implementing and Administering Cisco Solutions). v1.1 can be taken until 2 February 2027 and v2.0 goes live on 3 February 2027; the domains below follow the official v2.0 exam topics — addressing and subnetting, switching, OSPF, NAT, ACLs, Layer 2 security and AI in network operations. Check your level before the 120-minute exam.",
+    fullName: "Cisco Certified Network Associate (CCNA)",
+    exam: {
+      officialName: "Cisco Certified Network Associate (CCNA)",
+      examCode: "200-301 CCNA",
+      examVersion: "v1.1 until 2 February 2027; v2.0 from 3 February 2027 (domains shown: v2.0 exam topics)",
+      duration: "120 minutes",
+      format: "Graded pass/fail",
+      languages: ["English", "Japanese"],
+      prerequisites: "None. The CCNA is valid for three years; recertify by passing qualifying exams or by earning 30 Continuing Education credits.",
+      status: "current",
+      launchDate: "3 February 2027 (v2.0, first day of testing)",
+      retirementDate: "2 February 2027 (v1.1, last day of testing)",
+      officialCertificationUrl: "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html",
+      officialExamUrl: "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html",
+      domains: [
+        {
+          id: "d1",
+          name: "Network Infrastructure and Connectivity",
+          weight: "25%",
+          objectives: [
+            "1.1 Diagnose interface and cable (copper and fiber) issues",
+            "1.2 Describe the role and function of hypervisors, virtual machines, and containers",
+            "1.3 Troubleshoot IPv4 address configuration, assignment, and subnetting (public and private)",
+            "1.4 Troubleshoot IPv6 address configuration, assignment, and prefix sizing (unicast and modified EUI 64)",
+            "1.5 Describe wireless principles",
+            "1.6 Troubleshoot wired and wireless client connectivity",
+            "1.7 Troubleshoot DHCPv4 client, server, and relay on IOS devices",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Switching and Network Access",
+          weight: "25%",
+          objectives: [
+            "2.1 Configure network infrastructure connectivity (switch-to-switch and switch-to-router)",
+            "2.2 Configure Layer 2 switch port attributes for edge-host connectivity (VLAN, PoE, port channel, and LACP)",
+            "2.3 Validate the accuracy of network documentation using CDP and LLDP",
+            "2.4 Troubleshoot basic Layer 2/Layer 3 connectivity and device operations using show commands, ping, traceroute and packet captures",
+            "2.5 Configure operations of the Rapid Per VLAN Spanning Tree Protocol (Rapid PVST+)",
+          ],
+        },
+        {
+          id: "d3",
+          name: "IP Routing",
+          weight: "20%",
+          objectives: [
+            "3.1 Interpret a routing table to identify the next hop for a packet (routing protocol, prefix/mask, administrative distance, metric, and default route)",
+            "3.2 Troubleshoot IPv4 and IPv6 static routing",
+            "3.3 Configure single area OSPFv2 for IPv4 and OSPFv3 for IPv6",
+            "3.4 Interpret the operational status of First Hop Redundancy Protocols (HSRP and VRRP)",
+          ],
+        },
+        {
+          id: "d4",
+          name: "Network Services and Security",
+          weight: "20%",
+          objectives: [
+            "4.1 Configure network devices with local usernames and as an AAA client (TACACS+ and RADIUS) for management",
+            "4.2 Manage device configuration and software files using secure file transfer operations with SFTP/SCP",
+            "4.3 Configure NAT/PAT on IOS XE routers",
+            "4.4 Diagnose issues with DNS records (A, AAAA, CNAME, MX, NS, and PTR)",
+            "4.5 Describe IPsec remote access and site-to-site VPNs (protocols and transport modes)",
+            "4.6 Configure IPv4 access control lists (standard, extended, numbered, and named ACLs)",
+            "4.7 Configure Layer 2 security features",
+          ],
+        },
+        {
+          id: "d5",
+          name: "AI, and Network Operations and Management",
+          weight: "10%",
+          objectives: [
+            "5.1 Describe the role of agentic AI in network operations",
+            "5.2 Select a prompt to send to a generative AI system to support network operations",
+            "5.3 Describe network management approaches (device-based, cloud-based, controller-based, automation-based, and infrastructure as code)",
+            "5.4 Describe the function of SNMP in network operations",
+            "5.5 Use configuration management mechanisms such as Ansible to execute commands",
+            "5.6 Interpret syslog message content, severity levels, and facilities",
+          ],
+        },
+      ],
+      sources: [
+        { label: "Cisco — 200-301 CCNA v2.0 exam topics (PDF)", url: "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf" },
+        { label: "Cisco — 200-301 CCNA v1.1 exam topics (PDF)", url: "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf" },
+        { label: "Cisco Learning blog — Stay on track: get certified before the CCNA refresh", url: "https://blogs.cisco.com/learning/stay-on-track-get-certified-before-the-ccna-refresh" },
+        { label: "Cisco — CCNA certification", url: "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html" },
+        { label: "Cisco — 200-301 CCNA exam", url: "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "CCNA 200-301 Practice Exams: v1.1 & v2.0 (2026–2027)",
+      description:
+        "CCNA 200-301 practice exams for the v2.0 exam topics (live 3 Feb 2027) and v1.1: subnetting, switching, OSPF, NAT, ACLs, security and AI, with explanations.",
+    },
+  },
+
+  "sc-900": {
+    description:
+      "Practice exams for Microsoft SC-900: Security, Compliance, and Identity Fundamentals, written to the skills measured as of 21 October 2026 — security and identity concepts, Microsoft Entra, Defender for Cloud, Sentinel, Defender XDR and Microsoft Purview. Find your gaps before the 45-minute exam.",
+    fullName: "Microsoft Security, Compliance, and Identity Fundamentals",
+    // Verified 27 Oct 2026 against Microsoft Learn (study guide, certification page, exam page, renewal page).
+    exam: {
+      officialName: "Microsoft Certified: Security, Compliance, and Identity Fundamentals",
+      examCode: "SC-900",
+      examVersion: "Skills measured as of 21 October 2026",
+      duration: "45 minutes",
+      passingScore: "700 or greater (scale 1–1000)",
+      languages: ["English", "Japanese", "Chinese (Simplified)", "Korean", "French", "Spanish", "Portuguese (Brazil)", "Russian", "Arabic (Saudi Arabia)", "Indonesian (Indonesia)", "German", "Chinese (Traditional)", "Italian"],
+      delivery: "Proctored exam, scheduled through Pearson VUE",
+      prerequisites: "None. Fundamentals certifications do not expire.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-900/",
+      domains: [
+        { id: "d1", name: "Describe the concepts of security, compliance, and identity", weight: "10–15%", objectives: ["Describe security and compliance concepts", "Define identity concepts"] },
+        { id: "d2", name: "Describe the capabilities of Microsoft Entra", weight: "25–30%", objectives: ["Describe function and identity types of Microsoft Entra ID", "Describe authentication capabilities of Microsoft Entra ID", "Describe access management capabilities of Microsoft Entra ID", "Describe identity protection and governance capabilities of Microsoft Entra"] },
+        { id: "d3", name: "Describe the capabilities of Microsoft security solutions", weight: "35–40%", objectives: ["Describe core infrastructure security services in Azure", "Describe security management capabilities of Azure", "Describe capabilities of Microsoft Sentinel", "Describe threat protection with Microsoft Defender XDR"] },
+        { id: "d4", name: "Describe the capabilities of Microsoft compliance solutions", weight: "20–25%", objectives: ["Describe Microsoft Service Trust Portal and privacy principles", "Describe compliance management capabilities of Microsoft Purview", "Describe information protection, data lifecycle management, and data governance capabilities of Microsoft Purview", "Describe insider risk, eDiscovery, and audit capabilities in Microsoft Purview"] },
+      ],
+      sources: [
+        { label: "Microsoft Learn — SC-900 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900" },
+        { label: "Microsoft Learn — Security, Compliance, and Identity Fundamentals certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/" },
+        { label: "Microsoft Learn — Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "SC-900 Practice Exams: Security, Compliance & Identity",
+      description:
+        "SC-900 practice exams for the Oct 2026 skills outline: security concepts, Microsoft Entra, Defender, Sentinel and Purview, with full explanations.",
+    },
+  },
+
+  "sc-500": {
+    description:
+      "Practice exams for Microsoft SC-500: Implementing End-to-End Security Controls for Cloud and AI Workloads, the exam for the Cloud and AI Security Engineer Associate certification that follows the retired AZ-500. Written to the current SC-500 study guide — identity and governance, storage, databases and networking, compute and AI security, Defender for Cloud, Sentinel and Security Copilot.",
+    fullName: "Microsoft Cloud and AI Security Engineer Associate",
+    // Verified 27 Oct 2026 against Microsoft Learn (study guide, certification page, retired exams list,
+    // Partner Center announcement of 6 May 2026, renewal page). The study guide publishes no
+    // "skills measured as of" date and no change log; its visible date is 13 May 2026.
+    exam: {
+      officialName: "Microsoft Certified: Cloud and AI Security Engineer Associate",
+      examCode: "SC-500",
+      examVersion: "Exam SC-500: Implementing End-to-End Security Controls for Cloud and AI Workloads (study guide last updated 13 May 2026)",
+      duration: "120 minutes",
+      passingScore: "700 or greater (scale 1–1000)",
+      languages: ["English", "Japanese", "Chinese (Simplified)", "Chinese (Traditional)", "Korean", "German", "French", "Italian", "Portuguese (Brazil)", "Spanish"],
+      delivery: "Proctored exam, scheduled through Pearson VUE; may include interactive components",
+      prerequisites: "No formal prerequisites. Microsoft recommends practical experience administering Azure and hybrid environments, strong familiarity with Microsoft Entra ID and familiarity with Microsoft 365 administration. Role-based certifications are renewed annually via a free online assessment on Microsoft Learn.",
+      status: "current",
+      launchDate: "Beta available from May 2026 (Microsoft Partner Center announcement, 6 May 2026)",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/",
+      domains: [
+        { id: "d1", name: "Manage identity, access, and governance", weight: "20–25%", objectives: ["Secure access to resources by using Microsoft Entra ID", "Secure secrets and keys by using Azure Key Vault", "Implement governance to enforce security and regulatory compliance"] },
+        { id: "d2", name: "Secure storage, databases, and networking", weight: "25–30%", objectives: ["Implement security for storage accounts", "Implement security for databases", "Implement security for Azure network services"] },
+        { id: "d3", name: "Secure compute", weight: "20–25%", objectives: ["Implement security for AI", "Implement security for servers and virtual machines (VMs)", "Implement security for application platform services"] },
+        { id: "d4", name: "Manage and monitor security posture", weight: "20–25%", objectives: ["Manage security posture by using Defender for Cloud", "Implement activity and event collection in Microsoft Sentinel", "Implement Microsoft Security Copilot"] },
+      ],
+      sources: [
+        { label: "Microsoft Learn — SC-500 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500" },
+        { label: "Microsoft Learn — Cloud and AI Security Engineer Associate", url: "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/" },
+        { label: "Microsoft Partner Center — May 2026 announcements (AZ-500 transitions to SC-500)", url: "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may" },
+        { label: "Microsoft Learn — Azure Security Engineer Associate (retired 31 August 2026)", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-security-engineer/" },
+        { label: "Microsoft Learn — Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "SC-500 Practice Exams: Cloud & AI Security Engineer",
+      description:
+        "SC-500 practice exams for the AZ-500 successor: Entra ID, Key Vault, network and storage security, AI and VM security, Defender for Cloud and Sentinel.",
+    },
+  },
+
+  "capm": {
+    description:
+      "Practice exams for the PMI Certified Associate in Project Management (CAPM), written to PMI's CAPM Examination Content Outline (2023 exam update) — project fundamentals, predictive and agile methods, and business analysis. Check your level before the 150-question, 3-hour exam.",
+    fullName: "Certified Associate in Project Management (CAPM)",
+    exam: {
+      officialName: "Certified Associate in Project Management (CAPM)",
+      examVersion: "CAPM Examination Content Outline, 2023 exam update (exam launched 25 July 2023; aligned with the PMBOK Guide, Seventh Edition)",
+      questionCount: "150 questions (135 scored, 15 unscored pretest questions)",
+      duration: "3 hours, with a 10-minute break after question 75",
+      questionTypes: "Multiple choice, drag-and-drop (enhanced matching), hot spot and animation or comic-strip items (online candidates see comic-strip items only)",
+      languages: ["English", "Spanish", "French", "Arabic", "German", "Portuguese (Brazil)", "Italian", "Japanese", "Chinese (Simplified, Mainland China only)"],
+      delivery: "Pearson VUE test centre or online proctored; paper-based only in Mainland China",
+      prerequisites: "High school diploma, GED or global equivalent, plus 23 hours of project management education completed by the time of the exam. One-year eligibility period with up to three attempts. Renewal every 3 years with 15 PDUs.",
+      status: "current",
+      officialCertificationUrl: "https://www.pmi.org/certifications/certified-associate-capm",
+      domains: [
+        {
+          id: "d1",
+          name: "Project Management Fundamentals and Core Concepts",
+          weight: "36%",
+          objectives: [
+            "Demonstrate an understanding of the various project life cycles and processes",
+            "Demonstrate an understanding of project management planning",
+            "Demonstrate an understanding of project roles and responsibilities",
+            "Determine how to follow and execute planned strategies or frameworks (e.g., communication, risks, etc.)",
+            "Demonstrate an understanding of common problem-solving tools and techniques",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Predictive, Plan-Based Methodologies",
+          weight: "17%",
+          objectives: [
+            "Explain when it is appropriate to use a predictive, plan-based approach",
+            "Demonstrate an understanding of a project management plan schedule",
+            "Determine how to document project controls of predictive, plan-based projects",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Agile Frameworks/Methodologies",
+          weight: "20%",
+          objectives: [
+            "Explain when it is appropriate to use an adaptive approach",
+            "Determine how to plan project iterations",
+            "Determine how to document project controls for an adaptive project",
+            "Explain the components of an adaptive plan",
+            "Determine how to prepare and execute task management steps",
+          ],
+        },
+        {
+          id: "d4",
+          name: "Business Analysis Frameworks",
+          weight: "27%",
+          objectives: [
+            "Demonstrate an understanding of business analysis (BA) roles and responsibilities",
+            "Determine how to conduct stakeholder communication",
+            "Determine how to gather requirements",
+            "Demonstrate an understanding of product roadmaps",
+            "Determine how project methodologies influence business analysis processes",
+            "Validate requirements through product delivery",
+          ],
+        },
+      ],
+      sources: [
+        { label: "PMI — CAPM Examination Content Outline (2023 exam update)", url: "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/capm-exam-content-outline-english.pdf" },
+        { label: "PMI — CAPM 2023 Exam Update FAQ", url: "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/faq-capm-exam-change-2023-final-chapters-volunteers.pdf" },
+        { label: "PMI — Certification Handbook (revised June 2026)", url: "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/generic-certification-handbook.pdf" },
+        { label: "PMI — Continuing Certification Requirements Handbook (April 2026)", url: "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/ccr-certification-requirements-handbook.pdf" },
+        { label: "PMI — CAPM certification", url: "https://www.pmi.org/certifications/certified-associate-capm" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "CAPM Practice Exams: PMI Certified Associate (2026)",
+      description:
+        "CAPM practice exams for PMI's current content outline: project fundamentals, predictive and agile methods and business analysis, with full explanations.",
+    },
+  },
+
 };
 
 /* ───────────────────────────────────────────────────────────────────────────
