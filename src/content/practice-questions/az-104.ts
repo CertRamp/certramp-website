@@ -106,7 +106,7 @@ export const az104Questions: PracticeQuestionSet = {
         "You issue several service SAS tokens for a blob container to a partner. You need the ability to revoke all of them at once later without regenerating the storage account keys. What should you do when creating the tokens?",
       options: [
         { id: "A", text: "Create them as account SAS tokens", rationale: "An account SAS cannot be linked to a stored access policy; revoking it requires rotating the key that signed it." },
-        { id: "B", text: "Associate them with a stored access policy on the container", rationale: "Correct. Changing or deleting the stored access policy revokes every service SAS linked to it." },
+        { id: "B", text: "Associate them with a stored access policy on the container", rationale: "Correct. Deleting the stored access policy, renaming it, or setting its expiry time in the past revokes every service SAS linked to it." },
         { id: "C", text: "Set a very long expiry time", rationale: "A long expiry makes the problem worse and does not provide revocation." },
         { id: "D", text: "Enable blob versioning", rationale: "Versioning keeps previous versions of blobs; it does not control SAS validity." },
       ],
@@ -260,7 +260,7 @@ export const az104Questions: PracticeQuestionSet = {
       ],
       answer: "C",
       explanation:
-        "Evaluating effective security rules means following priority order: the lowest number is checked first and the first matching rule wins. Moving the allow rule below 100 would let HTTPS through.",
+        "Evaluating effective security rules means following priority order: the lowest number is checked first and the first matching rule wins. To let HTTPS through, give the allow rule a lower number than the deny rule (for example, allow 443 at 100 and move the deny rule to 110).",
       reference: GUIDE,
     },
 

@@ -146,7 +146,7 @@ export const ai901Questions: PracticeQuestionSet = {
       ],
       answer: "D",
       explanation:
-        "Speech recognition is speech to text; speech synthesis is text to speech. Many exam scenarios simply test whether you can tell the direction apart.",
+        "Speech recognition is speech to text; speech synthesis is text to speech. Make sure you can tell the two directions apart in a scenario.",
       reference: GUIDE,
     },
 
@@ -249,7 +249,7 @@ export const ai901Questions: PracticeQuestionSet = {
       question:
         "An insurance app lets customers upload a photo of car damage and ask \"What parts look damaged?\". Which approach uses the photo directly in the conversation?",
       options: [
-        { id: "A", text: "Send the image as text with speech synthesis", rationale: "Speech synthesis produces audio and cannot interpret images." },
+        { id: "A", text: "Convert the photo's caption to audio with speech synthesis", rationale: "Speech synthesis produces audio and cannot interpret images." },
         { id: "B", text: "Include the image in the prompt to a deployed multimodal model", rationale: "Correct. Multimodal models can interpret visual input in prompts and answer questions about it." },
         { id: "C", text: "Use an image-generation model to create a new picture of the car", rationale: "Image generation creates new images; it does not analyse the uploaded one." },
         { id: "D", text: "Run sentiment analysis on the image file name", rationale: "The file name says nothing about the damage, and sentiment analysis does not answer questions." },

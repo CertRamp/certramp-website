@@ -19,7 +19,7 @@ export const az104Guide: ExamGuide = {
       heading: "What AZ-104 actually tests",
       paragraphs: [
         "AZ-104 has five skill areas. Managing Azure identities and governance (20–25%) and deploying and managing compute (20–25%) carry the highest weights. Storage (15–20%) and virtual networking (15–20%) follow, and monitoring and maintaining Azure resources accounts for 10–15%.",
-        "Most questions describe an administration task and ask for the right setting, service or next step. Typical decisions: which role at which scope, Azure Policy or a resource lock, which storage redundancy or access method, availability zones or availability sets, service endpoint or private endpoint, and which vault and policy for backup or Site Recovery.",
+        "Many questions describe an administration task and ask for the right setting, service or next step. Typical decisions: which role at which scope, Azure Policy or a resource lock, which storage redundancy or access method, availability zones or availability sets, service endpoint or private endpoint, and which vault and policy for backup or Site Recovery.",
       ],
     },
     {
@@ -91,7 +91,7 @@ export const az104Guide: ExamGuide = {
     {
       question: "Can I retake AZ-104 if I fail?",
       answer:
-        "Yes. Microsoft states that you can retake an exam 24 hours after the first attempt; waiting times for later retakes vary.",
+        "Yes. Microsoft states that you must wait 24 hours before your first retake and 14 days between later attempts, with up to five attempts in 12 months.",
     },
     {
       question: "Are CertRamp's AZ-104 questions real exam questions?",
