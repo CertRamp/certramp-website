@@ -2,35 +2,35 @@ import type { PracticeQuestionSet } from "@/config/types";
 
 /**
  * Free Google Cloud Professional Agentic Architect sample questions — ORIGINAL
- * questions written by CertRamp against the five skill areas Google publishes
- * for the exam and the current Gemini Enterprise Agent Platform documentation.
- * Not taken from the paid practice exams, not recalled exam content, and not
- * presented as real exam questions.
+ * questions written by CertRamp against the official exam guide (five sections)
+ * and the current Gemini Enterprise Agent Platform documentation. Not taken
+ * from the paid practice exams, not recalled exam content, and not presented
+ * as real exam questions.
  */
 export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
   slug: "google-cloud-agentic-architect",
   intro:
-    "15 original Google Cloud Professional Agentic Architect practice questions across the five skill areas Google lists for the exam, using the current Gemini Enterprise Agent Platform product names. Each one comes with the answer, a short explanation and the reason every other option is wrong.",
+    "15 original Google Cloud Professional Agentic Architect practice questions across the five sections of the official exam guide, weighted roughly like the real exam and using the current Gemini Enterprise Agent Platform product names. Each one comes with the answer, a short explanation and the reason every other option is wrong.",
   published: "2026-10-27",
   updated: "2026-10-27",
   seo: {
     title: "Google Agentic Architect Practice Questions & Answers (2026)",
     description:
-      "15 free, original Professional Agentic Architect practice questions on ADK, Agent Studio, Agent Runtime, evaluation, A2A and agent security, with explanations.",
+      "15 free, original Professional Agentic Architect practice questions on ADK, RAG, coding agents, evaluation, Agent Runtime and agent security, with explanations.",
   },
   questions: [
-    /* ── Skill area 1: Build agents using low-code tools ──────────────────── */
+    /* ── Section 1: Building agents using low-code tools (~13%) ───────────── */
     {
       id: "gcpaa-d1-workflow-builder",
       domain: "d1",
-      objective: "Build agents using low-code tools",
+      objective: "1.1 Configuring agentic workflows and behavior using low-code tools",
       difficulty: "foundation",
       question:
         "A finance team without developers wants to create its own agent in the Gemini Enterprise web app. The agent should run a recurring multi-step process, pull data through connectors that administrators have approved, and wait for a manager's approval before the final step. What should the team use?",
       options: [
         { id: "A", text: "A custom ADK agent deployed to Google Kubernetes Engine", rationale: "This works technically, but it requires developers and cluster operations, which the team does not have." },
         { id: "B", text: "A fine-tuned model from Model Garden", rationale: "Fine-tuning changes model behaviour; it does not provide scheduling, connectors or approval steps." },
-        { id: "C", text: "Workflow Builder in Gemini Enterprise", rationale: "Correct. Workflow Builder is the no-code, low-code way to build chat agents and workflows in the Gemini Enterprise web app, with scheduling, human approvals and administrator-controlled connectors." },
+        { id: "C", text: "Workflow Builder in Gemini Enterprise (called Agent Designer in the exam guide)", rationale: "Correct. Workflow Builder is the no-code, low-code way to build chat agents and workflows in the Gemini Enterprise web app, with recurring schedules, steps that combine AI automation with human intervention, and connectors governed by administrative policies." },
         { id: "D", text: "A Vector Search index", rationale: "Vector Search stores and queries embeddings; it is a building block, not an agent-building tool." },
       ],
       answer: "C",
@@ -41,10 +41,10 @@ export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
     {
       id: "gcpaa-d1-studio-get-code",
       domain: "d1",
-      objective: "Build agents using low-code tools",
+      objective: "1.1 Configuring agentic workflows and behavior using low-code tools",
       difficulty: "intermediate",
       question:
-        "A product manager prototyped an agent in Agent Studio. Developers now want to continue the work in their own editor, under version control, and add custom logic. What is the most efficient next step?",
+        "A product manager prototyped an agent in Agent Studio (Preview) on Gemini Enterprise Agent Platform. Developers now want to continue the work in their own editor, under version control, and add custom logic. What is the most efficient next step?",
       options: [
         { id: "A", text: "Use Get code in Agent Studio to generate the agent's Python code and continue development from it", rationale: "Correct. Agent Studio can generate the agent's Python code so developers can carry the prototype into their own tooling." },
         { id: "B", text: "Rebuild the agent from scratch with the same instructions copied by hand", rationale: "This throws away work that Agent Studio can export directly." },
@@ -53,71 +53,107 @@ export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
       ],
       answer: "A",
       explanation:
-        "Low-code and code-first tools are meant to work together. Prototype quickly in Agent Studio, then export the generated code when the agent needs custom logic, testing and a normal development workflow.",
-      reference: { label: "Agent Platform — Design agents in Agent Studio", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/agent-studio/design-agents" },
-    },
-    {
-      id: "gcpaa-d1-remote-subagent",
-      domain: "d1",
-      objective: "Build agents using low-code tools",
-      difficulty: "intermediate",
-      question:
-        "In Agent Studio you are designing a parent agent for employee questions. Another team has already deployed a travel-booking agent that is listed in Agent Registry. How should your parent agent use it?",
-      options: [
-        { id: "A", text: "Copy the travel agent's instructions into the parent agent's instructions", rationale: "This duplicates the prompt but not the other agent's tools, data or deployment, and the two copies will drift apart." },
-        { id: "B", text: "Attach the travel agent's documentation as a reference file", rationale: "Reference files give the parent agent knowledge, not the ability to delegate tasks to another agent." },
-        { id: "C", text: "Add the travel agent as an MCP server", rationale: "MCP servers expose tools. The travel service here is an agent, which Agent Studio adds as a subagent." },
-        { id: "D", text: "Add it as a remote subagent from Agent Registry so the parent can route travel requests to it", rationale: "Correct. Agent Studio can register agents from Agent Registry as remote subagents, and the parent agent routes tasks to them based on their Agent Card." },
-      ],
-      answer: "D",
-      explanation:
-        "Reusing deployed agents as subagents keeps ownership with the team that built them. The parent only needs the remote agent's Agent Card to decide when to delegate.",
+        "Low-code and code-first tools are meant to work together. Prototype quickly in a visual tool, then export the generated code when the agent needs custom logic, testing and a normal development workflow.",
       reference: { label: "Agent Platform — Design agents in Agent Studio", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/agent-studio/design-agents" },
     },
 
-    /* ── Skill area 2: Use coding agents for application development ──────── */
+    /* ── Section 2: Using coding agents for application development (~17%) ── */
     {
-      id: "gcpaa-d2-approval",
+      id: "gcpaa-d2-mcp-read-only",
       domain: "d2",
-      objective: "Use coding agents for application development",
-      difficulty: "foundation",
+      objective: "2.1 Using coding agents effectively",
+      difficulty: "advanced",
       question:
-        "Your team uses Gemini Code Assist agent mode in VS Code. Policy says the agent may read the codebase freely, but no file may be changed without a developer explicitly allowing it. How do you meet this policy?",
+        "Developers connect their coding agents to Google Cloud remote MCP servers so the agents can inspect project resources. Security requires that, in this project, no MCP tool that creates, modifies or deletes resources can be called, while read-only tools keep working. What should you configure?",
       options: [
-        { id: "A", text: "Enable the setting to always allow agent actions", rationale: "This does the opposite: the agent would modify files without asking." },
-        { id: "B", text: "Keep per-request approval for tools that modify files and do not turn on always-allow", rationale: "Correct. In agent mode, tool requests that modify files or change resources need the developer's permission unless Gemini has been set to always allow them." },
-        { id: "C", text: "Add a sentence to a Markdown context file asking the agent not to edit files", rationale: "Context files guide behaviour, but they are not an enforcement mechanism." },
-        { id: "D", text: "Remove all MCP server configuration", rationale: "MCP servers add tools; removing them does not stop the built-in file-editing tools." },
+        { id: "A", text: "Remove the MCP Tool User role from all developers", rationale: "Without the mcp.tools.call permission no MCP tool can be called at all, so the read-only tools would stop working too." },
+        { id: "B", text: "An IAM deny policy on MCP tool calls with a condition that matches tools that are not read-only", rationale: "Correct. IAM deny policies for Google Cloud MCP servers can use the tool.isReadOnly attribute to block every tool that is not read-only." },
+        { id: "C", text: "An instruction in the coding agent's rules telling it never to change resources", rationale: "Rules guide the agent's behaviour, but they are not an enforcement control." },
+        { id: "D", text: "A Model Armor template on the agent's prompts", rationale: "Model Armor screens content such as prompt injection and sensitive data; it does not decide which MCP tools may be called." },
       ],
       answer: "B",
       explanation:
-        "Coding agents are controlled through approvals of plans and tool use. Read-only requests may run without asking, while changes need permission unless you deliberately grant always-allow, which is exactly what this policy forbids.",
-      reference: { label: "Gemini Code Assist — Agent mode overview", url: "https://docs.cloud.google.com/gemini/docs/codeassist/agent-mode" },
+        "Calling a Google Cloud MCP tool needs both the mcp.tools.call permission and access to the underlying resource. IAM deny policies can then narrow MCP use by service, tool, OAuth client or whether a tool is read-only.",
+      reference: { label: "Google Cloud MCP servers — Control MCP use with IAM", url: "https://docs.cloud.google.com/mcp/control-mcp-use-iam" },
     },
     {
-      id: "gcpaa-d2-mcp",
+      id: "gcpaa-d2-antigravity-skill",
       domain: "d2",
-      objective: "Use coding agents for application development",
+      objective: "2.2 Customizing coding agents for enterprise workflows",
       difficulty: "intermediate",
       question:
-        "Developers want the Gemini Code Assist agent to look up tickets in the company's internal issue tracker while it works on a change. The tracker team already provides an MCP server. What is the right approach?",
+        "Your team wants every developer's Antigravity agent to follow the company's release-notes procedure, including a helper script, whenever someone asks it to prepare a release. The procedure must be versioned with the repository and shared with the team. What should you create?",
       options: [
-        { id: "A", text: "Paste a recent export of all tickets into every prompt", rationale: "This is stale, bloats the context and does not let the agent query the tracker." },
-        { id: "B", text: "Fine-tune a model on the ticket history", rationale: "Fine-tuning does not give live access to current tickets and is far more effort than needed." },
-        { id: "C", text: "Ask developers to copy ticket text into code comments", rationale: "This is manual and error-prone; the agent still cannot query the tracker itself." },
-        { id: "D", text: "Configure the issue tracker's MCP server in agent mode so its functions become tools the agent can call", rationale: "Correct. Agent mode can be extended with local or remote MCP servers, whose functions are available to the agent as tools." },
+        { id: "A", text: "A global skill in each developer's home directory", rationale: "Global skills are available across all projects on one workstation, but they are not versioned with the repository or automatically shared." },
+        { id: "B", text: "A long paragraph pasted into each conversation", rationale: "This is manual, easy to forget and cannot bundle the helper script." },
+        { id: "C", text: "A new MCP server that returns the procedure as text", rationale: "MCP servers expose tools and data; a skill is the intended way to package task instructions and scripts for the agent." },
+        { id: "D", text: "A workspace skill: a folder under .agents/skills in the repository with a SKILL.md whose description says when to use it, plus the script", rationale: "Correct. Workspace skills live in the repository, are committed to version control, and the agent loads a skill when its description matches the task." },
       ],
       answer: "D",
       explanation:
-        "MCP is the standard way to give a coding agent access to external systems. Once configured, the agent can call the server's tools, subject to the same approval rules as its other tools.",
-      reference: { label: "Gemini Code Assist — Agent mode overview", url: "https://docs.cloud.google.com/gemini/docs/codeassist/agent-mode" },
+        "Antigravity skills are folders with a required SKILL.md and optional scripts and resources. The agent first sees only each skill's name and description and reads the full instructions when the description looks relevant, so a clear description is what makes the skill trigger.",
+      reference: { label: "Google Antigravity — Agent Skills", url: "https://antigravity.google/docs/skills/" },
     },
 
-    /* ── Skill area 3: Develop custom agents ──────────────────────────────── */
+    /* ── Section 3: Developing custom agents (~33%) ───────────────────────── */
+    {
+      id: "gcpaa-d3-model-connector",
+      domain: "d3",
+      objective: "3.1 Designing and building agentic workflows in code",
+      difficulty: "intermediate",
+      question:
+        "For data-residency reasons, an ADK agent must use an open-weight model that your team serves itself with vLLM, instead of a Gemini model. How do you configure the agent?",
+      options: [
+        { id: "A", text: "This is not possible, because ADK agents only work with Gemini models", rationale: "ADK is model-agnostic; it supports Gemini by name and other models through connectors." },
+        { id: "B", text: "Instantiate a model connector such as LiteLlm pointing at the vLLM endpoint and pass it as the LlmAgent's model parameter", rationale: "Correct. For models outside Google's direct integrations, ADK uses wrapper classes such as LiteLlm, which also cover self-hosted options like vLLM." },
+        { id: "C", text: "Wrap the vLLM server in an AgentTool", rationale: "AgentTool wraps another agent as a tool; it does not set the model that powers the agent's reasoning." },
+        { id: "D", text: "Fine-tune Gemini on the open model's outputs", rationale: "This changes nothing about where inference runs and does not meet the requirement to use the self-hosted model." },
+      ],
+      answer: "B",
+      explanation:
+        "Model choice (open or proprietary, self-hosted or managed) is part of designing agents in code. ADK resolves Gemini and Agent Platform endpoint models from a string, and uses connectors such as LiteLlm for other providers and self-hosted servers.",
+      reference: { label: "ADK — Models", url: "https://adk.dev/agents/models/" },
+    },
+    {
+      id: "gcpaa-d3-memory-bank",
+      domain: "d3",
+      objective: "3.1 Designing and building agentic workflows in code",
+      difficulty: "intermediate",
+      question:
+        "A shopping assistant built with ADK should remember a returning customer's dietary preferences in future conversations without replaying every past conversation. Which service fits best?",
+      options: [
+        { id: "A", text: "Agent Platform Sessions only", rationale: "Sessions store the chronological history of a single interaction; on their own they do not carry distilled facts across sessions." },
+        { id: "B", text: "A larger context window", rationale: "This still requires replaying old conversations and does not persist anything between sessions." },
+        { id: "C", text: "Agent Platform Memory Bank, scoped to the customer's user ID", rationale: "Correct. Memory Bank uses an LLM to extract and consolidate facts from conversations and makes them available across sessions, scoped to a user." },
+        { id: "D", text: "Cloud Trace", rationale: "Cloud Trace records request traces for observability, not user preferences." },
+      ],
+      answer: "C",
+      explanation:
+        "Sessions are short-term memory for one conversation; Memory Bank is long-term memory across conversations. Relevant memories can be retrieved by similarity search and inserted into the prompt.",
+      reference: { label: "Agent Platform — Memory Bank", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/memory-bank" },
+    },
+    {
+      id: "gcpaa-d3-rag-engine",
+      domain: "d3",
+      objective: "3.2 Integrating enterprise domain knowledge",
+      difficulty: "intermediate",
+      question:
+        "An HR agent must answer questions from several thousand internal policy documents in Cloud Storage. The documents change every week, and answers must be grounded in the current versions to reduce hallucinations. Which approach fits best?",
+      options: [
+        { id: "A", text: "Fine-tune a model on the policy documents every month", rationale: "Fine-tuning is slow to refresh, would lag behind weekly changes and does not ground answers in retrieved sources." },
+        { id: "B", text: "Paste all policy documents into the agent's system instruction", rationale: "Thousands of documents will not fit sensibly into a prompt, and every request would pay for all of them." },
+        { id: "C", text: "Import the documents into a RAG Engine corpus and retrieve relevant chunks as context for each question", rationale: "Correct. RAG Engine ingests data such as Cloud Storage files, chunks and embeds it into an indexed corpus, and retrieves relevant information to ground the model's answer." },
+        { id: "D", text: "Store the documents in Agent Platform Memory Bank", rationale: "Memory Bank holds facts distilled from user conversations, scoped to users; it is not a document knowledge base." },
+      ],
+      answer: "C",
+      explanation:
+        "Retrieval-augmented generation adds private knowledge to the model's context at query time. The pipeline is ingestion, chunking, embedding, indexing and retrieval, and you can choose the vector database behind the corpus.",
+      reference: { label: "Agent Platform — RAG Engine overview", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/rag-engine/rag-overview" },
+    },
     {
       id: "gcpaa-d3-agent-card",
       domain: "d3",
-      objective: "Develop custom agents",
+      objective: "3.3 Orchestrating and coordinating agentic workflows",
       difficulty: "foundation",
       question:
         "Your ADK agent must call a partner's agent through the Agent2Agent (A2A) protocol. Before sending a request, it needs to know the remote agent's skills, service endpoint and required authentication. Where does it get this information?",
@@ -135,7 +171,7 @@ export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
     {
       id: "gcpaa-d3-loop-agent",
       domain: "d3",
-      objective: "Develop custom agents",
+      objective: "3.3 Orchestrating and coordinating agentic workflows",
       difficulty: "advanced",
       question:
         "In ADK, a writer agent drafts a document and a critic agent reviews it. The pair should repeat until the critic approves the draft, but never more than five rounds. Which design meets this requirement reliably?",
@@ -147,51 +183,15 @@ export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
       ],
       answer: "C",
       explanation:
-        "Workflow agents give deterministic control flow, but a LoopAgent does not decide by itself when to stop. Combine a hard iteration limit with an explicit termination signal from a sub-agent.",
+        "Workflow agents give deterministic control flow, but a LoopAgent does not decide by itself when to stop. Combine a hard iteration limit with an explicit termination signal from a sub-agent; ADK 2.0 adds graph-based workflows for more complex routing.",
       reference: { label: "ADK — Loop agents", url: "https://adk.dev/agents/workflow-agents/loop-agents/" },
     },
-    {
-      id: "gcpaa-d3-agent-tool",
-      domain: "d3",
-      objective: "Develop custom agents",
-      difficulty: "intermediate",
-      question:
-        "An ADK coordinator agent needs a specialist agent to calculate a quote, then use that quote in its own reply to the user. The coordinator must stay in charge of the conversation. How should you connect the specialist?",
-      options: [
-        { id: "A", text: "Register it as a sub-agent and let the coordinator transfer the conversation to it", rationale: "With LLM-driven transfer, control passes to the sub-agent, which then handles the user directly." },
-        { id: "B", text: "Wrap the specialist in an AgentTool and give it to the coordinator as a tool", rationale: "Correct. With AgentTool, the coordinator calls the specialist like any other tool, gets the result back and keeps control." },
-        { id: "C", text: "Run both agents in a ParallelAgent", rationale: "Parallel branches run independently; the coordinator could not use the quote while it is being calculated." },
-        { id: "D", text: "Store the specialist's instructions in Memory Bank", rationale: "Memory Bank holds facts about users across sessions, not callable agents." },
-      ],
-      answer: "B",
-      explanation:
-        "ADK supports two ways to involve another agent: transfer, which hands over the conversation, and AgentTool, which treats the agent as a callable tool. Use AgentTool when the caller must combine the result into its own answer.",
-      reference: { label: "ADK — About ADK", url: "https://adk.dev/get-started/about/" },
-    },
-    {
-      id: "gcpaa-d3-parallel-state",
-      domain: "d3",
-      objective: "Develop custom agents",
-      difficulty: "advanced",
-      question:
-        "Three ADK research agents run in a ParallelAgent, and a synthesis agent must then combine their findings. During testing, the results are sometimes missing or overwritten. What is the best design?",
-      options: [
-        { id: "A", text: "Let each research agent read the other branches' conversation history while they run", rationale: "Parallel branches do not automatically share conversation history or state during execution." },
-        { id: "B", text: "Have all three research agents write to the same state key", rationale: "Each write replaces the previous one, which is exactly what causes overwritten results." },
-        { id: "C", text: "Replace the ParallelAgent with a LoopAgent", rationale: "A loop repeats sub-agents; it does not solve how results are collected." },
-        { id: "D", text: "Give each research agent its own output_key, and run the synthesis agent after the ParallelAgent inside a SequentialAgent", rationale: "Correct. Each branch writes to a distinct key, and the synthesis agent reads all keys once every branch has finished." },
-      ],
-      answer: "D",
-      explanation:
-        "ParallelAgent branches are independent and their completion order is not deterministic. Write each branch's result to its own state key and combine them in a later step.",
-      reference: { label: "ADK — Parallel agents", url: "https://adk.dev/agents/workflow-agents/parallel-agents/" },
-    },
 
-    /* ── Skill area 4: Evaluate and deploy agentic workflows ──────────────── */
+    /* ── Section 4: Evaluating and deploying agentic workflows (~22%) ─────── */
     {
       id: "gcpaa-d4-tool-use-eval",
       domain: "d4",
-      objective: "Evaluate and deploy agentic workflows",
+      objective: "4.1 Evaluating agents in development and in production",
       difficulty: "intermediate",
       question:
         "A support agent gives good final answers in tests, but in production it sometimes calls the refund tool when it should only look up an order. You want to catch this before release across realistic multi-turn conversations. What should you add?",
@@ -207,27 +207,9 @@ export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
       reference: { label: "Agent Platform — Evaluate your agents", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/optimize/evaluation/evaluate-agents" },
     },
     {
-      id: "gcpaa-d4-memory-bank",
-      domain: "d4",
-      objective: "Evaluate and deploy agentic workflows",
-      difficulty: "intermediate",
-      question:
-        "A shopping assistant deployed on Agent Runtime should remember a returning customer's dietary preferences in future conversations without replaying every past conversation. Which service fits best?",
-      options: [
-        { id: "A", text: "Agent Platform Sessions only", rationale: "Sessions store the chronological history of a single interaction; on their own they do not carry distilled facts across sessions." },
-        { id: "B", text: "A larger context window", rationale: "This still requires replaying old conversations and does not persist anything between sessions." },
-        { id: "C", text: "Agent Platform Memory Bank, scoped to the customer's user ID", rationale: "Correct. Memory Bank uses an LLM to extract and consolidate facts from conversations and makes them available across sessions, scoped to a user." },
-        { id: "D", text: "Cloud Trace", rationale: "Cloud Trace records request traces for observability, not user preferences." },
-      ],
-      answer: "C",
-      explanation:
-        "Sessions are short-term memory for one conversation; Memory Bank is long-term memory across conversations. Relevant memories can be retrieved by similarity search and inserted into the prompt.",
-      reference: { label: "Agent Platform — Memory Bank", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/memory-bank" },
-    },
-    {
       id: "gcpaa-d4-agent-runtime",
       domain: "d4",
-      objective: "Evaluate and deploy agentic workflows",
+      objective: "4.2 Deploying and scaling production workloads",
       difficulty: "foundation",
       question:
         "You have built an agent with ADK in Python and want a fully managed runtime to deploy, operate and scale it, without running clusters or virtual machines yourself. Which option fits best?",
@@ -242,30 +224,48 @@ export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
         "ADK agents can run locally, on Agent Runtime, on Cloud Run or on GKE. When the requirement is a managed, agent-specific runtime with minimal operations, Agent Runtime is the intended choice.",
       reference: { label: "Agent Platform — Agent Runtime", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/runtime" },
     },
-
-    /* ── Skill area 5: Secure and govern agentic workflows ────────────────── */
     {
-      id: "gcpaa-d5-agent-identity",
-      domain: "d5",
-      objective: "Secure and govern agentic workflows",
-      difficulty: "intermediate",
+      id: "gcpaa-d4-traces",
+      domain: "d4",
+      objective: "4.2 Deploying and scaling production workloads",
+      difficulty: "advanced",
       question:
-        "Several agents share one service account, so audit logs cannot tell which agent accessed a BigQuery dataset, and every agent has the combined permissions of all of them. What should you implement?",
+        "Users report that a production agent sometimes takes minutes to answer and burns many tokens. You suspect it gets stuck in a reasoning loop, calling the same tool again and again. What is the best first diagnostic step?",
       options: [
-        { id: "A", text: "Create a long-lived service account key for each agent", rationale: "Long-lived keys add a credential-leak risk and are exactly what managed agent identities avoid." },
-        { id: "B", text: "Grant the shared service account the Owner role to simplify troubleshooting", rationale: "This makes over-permissioning worse." },
-        { id: "C", text: "Agent Identity, giving each agent its own identity and granting only the roles that agent needs", rationale: "Correct. Agent Identity provides a SPIFFE-based identity per agent that is not shared by default, which supports least privilege and per-agent auditing." },
-        { id: "D", text: "An API key embedded in each agent's code", rationale: "API keys do not provide a per-agent IAM identity and are easy to leak." },
+        { id: "A", text: "Increase the maximum number of instances", rationale: "More capacity does not change what a single session does and would only spread the cost." },
+        { id: "B", text: "Raise the model's temperature", rationale: "This makes behaviour less predictable and does not tell you why the loop happens." },
+        { id: "C", text: "Clear the agent's Memory Bank", rationale: "Deleting memories removes data without any evidence that memory causes the problem." },
+        { id: "D", text: "Inspect the affected sessions' traces in Agent Platform observability, which show each step's spans with inputs and outputs", rationale: "Correct. Traces show the step-by-step execution of a session, so you can see which tool is called repeatedly and with what inputs, alongside token and latency metrics." },
       ],
-      answer: "C",
+      answer: "D",
       explanation:
-        "Per-agent identities remove over-permissioned shared accounts and make actions attributable. You can add Principal Access Boundary policies to cap what each agent can reach.",
-      reference: { label: "Agent Platform — Agent Identity overview", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/agent-identity-overview" },
+        "Troubleshooting reasoning loops starts with evidence from traces, logs and metrics. Once you see the repeated step, fix it with clearer tool descriptions, a termination condition or a deterministic workflow.",
+      reference: { label: "Agent Platform — Observability overview", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/optimize/observability/overview" },
+    },
+
+    /* ── Section 5: Securing and governing agentic workflows (~15%) ───────── */
+    {
+      id: "gcpaa-d5-oauth-user-auth",
+      domain: "d5",
+      objective: "5.1 Configuring agent security and governance",
+      difficulty: "advanced",
+      question:
+        "An ADK agent has a tool that reads files from each user's own Google Drive. Each user must only ever reach the files they personally have access to. How should the tool authenticate?",
+      options: [
+        { id: "A", text: "With the agent's own service account, granted access to every user's files", rationale: "With agent auth, all users share the agent's access, so one user could reach another user's files." },
+        { id: "B", text: "With an API key stored in the agent's code", rationale: "An API key does not represent the individual user and is easy to leak." },
+        { id: "C", text: "By asking users for their password and storing it in session state", rationale: "Collecting passwords is insecure and not how delegated access works." },
+        { id: "D", text: "With an OAuth 2.0 auth scheme on the tool, so ADK pauses, the client obtains the user's consent, and ADK retries the call with the user's token", rationale: "Correct. With user auth over OAuth 2.0, the agent acts with the user's identity; ADK signals the client with an adk_request_credential event and retries the tool call after the token exchange." },
+      ],
+      answer: "D",
+      explanation:
+        "Choose between agent auth and user auth deliberately. When access must follow the individual user's permissions, use OAuth 2.0 and request only the scopes the tool needs.",
+      reference: { label: "ADK — Authenticating with tools", url: "https://adk.dev/tools-custom/authentication/" },
     },
     {
       id: "gcpaa-d5-model-armor",
       domain: "d5",
-      objective: "Secure and govern agentic workflows",
+      objective: "5.2 Implementing secure agent behavior and execution",
       difficulty: "intermediate",
       question:
         "An agent reads web pages and customer emails through its tools. Security wants prompts and tool responses screened for prompt injection, jailbreak attempts and sensitive data such as credit card numbers. Which service is designed for this?",
@@ -283,7 +283,7 @@ export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
     {
       id: "gcpaa-d5-before-tool-callback",
       domain: "d5",
-      objective: "Secure and govern agentic workflows",
+      objective: "5.2 Implementing secure agent behavior and execution",
       difficulty: "advanced",
       question:
         "An ADK agent uses a third-party database tool that you cannot modify. The agent must only ever run read-only SELECT queries. Which control enforces this before the query reaches the database?",

@@ -1468,7 +1468,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "google-cloud-agentic-architect": {
     description:
-      "Practice exams for the Google Cloud Professional Agentic Architect certification, written against the five skill areas Google publishes for the exam and the current Gemini Enterprise Agent Platform product names — low-code agents, coding agents, ADK, evaluation and deployment, and agent security. Check your level before the 3-hour multiple-choice exam (beta format, about 80 questions).",
+      "Practice exams for the Google Cloud Professional Agentic Architect certification, written against the five sections of the official exam guide and the current Gemini Enterprise Agent Platform product names — low-code agents, coding agents, custom agents with ADK, evaluation and deployment, and agent security. Check your level before the 3-hour multiple-choice exam (beta format, about 80 questions).",
     fullName: "Google Cloud Certified Professional Agentic Architect",
     exam: {
       officialName: "Professional Agentic Architect",
@@ -1483,11 +1483,11 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       status: "current",
       officialCertificationUrl: "https://cloud.google.com/learn/certification/agentic-architect",
       domains: [
-        { id: "d1", name: "Build agents using low-code tools" },
-        { id: "d2", name: "Use coding agents for application development" },
-        { id: "d3", name: "Develop custom agents" },
-        { id: "d4", name: "Evaluate and deploy agentic workflows" },
-        { id: "d5", name: "Secure and govern agentic workflows" },
+        { id: "d1", name: "Building agents using low-code tools", weight: "~13%", objectives: ["1.1 Configuring agentic workflows and behavior using low-code tools", "1.2 Connecting enterprise data to Gemini Enterprise"] },
+        { id: "d2", name: "Using coding agents for application development", weight: "~17%", objectives: ["2.1 Using coding agents effectively", "2.2 Customizing coding agents for enterprise workflows"] },
+        { id: "d3", name: "Developing custom agents", weight: "~33%", objectives: ["3.1 Designing and building agentic workflows in code", "3.2 Integrating enterprise domain knowledge", "3.3 Orchestrating and coordinating agentic workflows"] },
+        { id: "d4", name: "Evaluating and deploying agentic workflows", weight: "~22%", objectives: ["4.1 Evaluating agents in development and in production", "4.2 Deploying and scaling production workloads"] },
+        { id: "d5", name: "Securing and governing agentic workflows", weight: "~15%", objectives: ["5.1 Configuring agent security and governance", "5.2 Implementing secure agent behavior and execution"] },
       ],
       sources: [
         { label: "Google Cloud — Professional Agentic Architect certification", url: "https://cloud.google.com/learn/certification/agentic-architect" },
@@ -1499,7 +1499,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     seo: {
       title: "Google Cloud Agentic Architect Practice Exams (PAA 2026)",
       description:
-        "Professional Agentic Architect practice exams for all five skill areas: Agent Studio, coding agents, ADK, evaluation, Agent Runtime and agent security.",
+        "Professional Agentic Architect practice exams for all five exam guide sections: low-code agents, coding agents, ADK, evaluation, deployment and security.",
     },
   },
 
