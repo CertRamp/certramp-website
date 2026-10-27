@@ -27,7 +27,7 @@ export const sc200Guide: ExamGuide = {
       heading: "What the 21 October 2026 update changed",
       paragraphs: [
         "Microsoft classified the October 2026 change as minor: only the area \"Ingest data into the Microsoft Sentinel SIEM and platform\" was adjusted. The outline as a whole reflects the current Sentinel platform, including data lake and analytics tiers, KQL jobs in the data lake, summary rules, Sentinel Graph and notebooks with the Sentinel MCP Server.",
-        "Agentic AI also appears in the response area: investigating incidents with the embedded Microsoft Security Copilot. If your material still talks only about the classic Log Analytics workspace and the old Microsoft 365 Defender portal names, check it against the current study guide.",
+        "Agentic AI also appears in the response area: investigating incidents with the embedded Microsoft Security Copilot. If your material still talks only about the classic Log Analytics workspace and the old Microsoft 365 Defender portal names, check it against the current study guide. Translated versions of the exam are updated about eight weeks after the English version.",
       ],
     },
     {
@@ -39,8 +39,8 @@ export const sc200Guide: ExamGuide = {
           body: "Go through every bullet of the official SC-200 skills list and mark it as known, unsure or new. Spend time in proportion to the weights — the first area alone is up to 45%.",
         },
         {
-          title: "Build a free lab",
-          body: "Use a Microsoft 365 developer or trial tenant and an Azure subscription to connect a Sentinel workspace, onboard a test device to Defender for Endpoint and generate a few test alerts. Seeing the portals once makes the scenario questions much easier.",
+          title: "Build a lab",
+          body: "Use a Microsoft 365 E5 trial tenant (or a developer sandbox if your Visual Studio subscription qualifies) and an Azure subscription to connect a Sentinel workspace, onboard a test device to Defender for Endpoint and generate a few test alerts. Watch Sentinel ingestion costs outside the free trial. Seeing the portals once makes the scenario questions much easier.",
         },
         {
           title: "Learn KQL properly",

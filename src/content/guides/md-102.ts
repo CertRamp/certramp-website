@@ -26,7 +26,7 @@ export const md102Guide: ExamGuide = {
       id: "october-2026-update",
       heading: "What the 27 October 2026 update changed",
       paragraphs: [
-        "Microsoft rates the October 2026 update as minor. The area \"Manage applications\" was renamed \"Manage and secure applications\", and seven sub-skills received minor changes — among them enrollment, Windows deployment with cloud-based tools, configuration profiles, the Intune Suite add-ons, remote actions, app deployment and health monitoring.",
+        "Microsoft rates the October 2026 update as minor. The area \"Manage applications\" was renamed \"Manage and secure applications\", and seven sub-skills received minor changes — namely enrollment, Windows deployment with cloud-based tools, configuration profiles, the Intune Suite add-ons, remote actions, app deployment and health monitoring.",
         "The current outline expects you to know newer capabilities such as Autopilot device preparation policies, Windows 365 Cloud PC provisioning, Endpoint Privilege Management, Cloud PKI, multi-admin approval, Windows Autopatch with Hotpatch, device queries with KQL and Security Copilot agents in Intune. Translated exams follow about eight weeks after English.",
       ],
     },
@@ -40,11 +40,11 @@ export const md102Guide: ExamGuide = {
         },
         {
           title: "Set up a lab tenant",
-          body: "Use a Microsoft 365 trial or developer tenant with Intune. Enroll at least one Windows device and one phone, create a compliance policy, a configuration profile and an app protection policy.",
+          body: "Use a Microsoft 365 E5 or Intune trial tenant (or a developer sandbox if you qualify through a Visual Studio subscription). Enroll at least one Windows device and one phone, create a compliance policy, a configuration profile and an app protection policy.",
         },
         {
           title: "Walk through Autopilot end to end",
-          body: "Register a device, create a deployment profile or device preparation policy and an Enrollment Status Page, and watch a deployment. Autopilot is one of the most heavily tested topics.",
+          body: "Register a device, create a deployment profile or device preparation policy and an Enrollment Status Page, and watch a deployment. Autopilot has its own sub-skill with several bullets in the study guide.",
         },
         {
           title: "Learn the decision points",

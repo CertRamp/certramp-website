@@ -267,9 +267,9 @@ export const sc200Questions: PracticeQuestionSet = {
       objective: "Detect threats by using Microsoft Defender XDR",
       difficulty: "intermediate",
       question:
-        "Which KQL statement counts failed sign-ins per account and returns only accounts with more than 20 failures?",
+        "In Advanced Hunting, which query against IdentityLogonEvents counts failed sign-ins per account and returns only accounts with more than 20 failures?",
       options: [
-        { id: "A", text: "| where ActionType == \"LogonFailed\" | summarize Failures = count() by AccountName | where Failures > 20", rationale: "Correct. Filter the failures first, aggregate per account with summarize, then filter the aggregated result." },
+        { id: "A", text: "IdentityLogonEvents | where ActionType == \"LogonFailed\" | summarize Failures = count() by AccountName | where Failures > 20", rationale: "Correct. Filter the failures first, aggregate per account with summarize, then filter the aggregated result." },
         { id: "B", text: "| summarize Failures = count() | where AccountName > 20", rationale: "There is no grouping by account, and AccountName is not a number." },
         { id: "C", text: "| project AccountName | take 20", rationale: "This only returns 20 rows; it does not count anything." },
         { id: "D", text: "| where Failures > 20 | summarize count() by AccountName", rationale: "Failures does not exist before the summarize step, so the filter fails." },

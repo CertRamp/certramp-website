@@ -298,7 +298,7 @@ export const md102Questions: PracticeQuestionSet = {
       ],
       answer: "A",
       explanation:
-        "Automating Intune management with PowerShell and Microsoft Graph is a named skill. Anything you can do in the admin center is available through Graph.",
+        "Automating Intune management with PowerShell and Microsoft Graph is a named skill. Almost everything you do in the admin center is also available through the Microsoft Graph API (many Intune endpoints are in the beta version).",
       reference: GUIDE,
     },
   ],
