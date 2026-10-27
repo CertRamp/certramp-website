@@ -66,7 +66,7 @@ export const ipmaLevelDGuide: ExamGuide = {
       id: "common-mistakes",
       heading: "Common preparation mistakes",
       bullets: [
-        "Learning only the Practice methods. ICB4 gives People and Perspective equal standing, and all three areas are assessed.",
+        "Learning only the Practice methods. Level D assesses knowledge of all 28 ICB4 competence elements, including People and Perspective.",
         "Using your company's terms instead of ICB4 terms. The assessment follows the ICB4 elements and their wording.",
         "Confusing scope with requirements and objectives. Scope defines the deliverables and work; requirements and objectives say what the stakeholders need and what the project must achieve.",
         "Treating risk as threats only. ICB4 calls the element risk and opportunity, and positive uncertainty must be managed too.",
@@ -88,12 +88,12 @@ export const ipmaLevelDGuide: ExamGuide = {
     {
       question: "How long is the IPMA Level D certificate valid?",
       answer:
-        "Five years. To recertify with PM-ZERT, you document at least 175 hours of continuing professional development since your last certification and submit your application through the certification portal before the certificate expires.",
+        "Five years. To recertify with PM-ZERT, you document at least 175 hours of continuing professional development since your last certification and submit your documents through the certification portal at least six weeks before the certificate expires.",
     },
     {
       question: "Can I take IPMA Level D in English?",
       answer:
-        "Yes. PM-ZERT runs certifications in German and English, with German as the default. Other IPMA member associations set their own languages and formats.",
+        "Yes. PM-ZERT runs certifications in German and English, with German as the default; if you want English, contact PM-ZERT by email before you apply. Other IPMA member associations set their own languages and formats.",
     },
     {
       question: "Are CertRamp's IPMA Level D questions real exam questions?",

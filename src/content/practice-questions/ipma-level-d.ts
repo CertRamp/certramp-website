@@ -14,7 +14,7 @@ const ICB4 = {
 export const ipmaLevelDQuestions: PracticeQuestionSet = {
   slug: "ipma-level-d",
   intro:
-    "15 original IPMA Level D practice questions across the three ICB4 competence areas — Perspective, People and Practice — weighted roughly by the number of competence elements in each area. Each one comes with the answer, a short explanation and the reason every other option is wrong.",
+    "15 original IPMA Level D practice questions across the three ICB4 competence areas — Perspective, People and Practice — covering all three areas. Each one comes with the answer, a short explanation and the reason every other option is wrong.",
   published: "2026-10-27",
   updated: "2026-10-27",
   seo: {

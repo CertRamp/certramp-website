@@ -170,7 +170,7 @@ export const iappCippEQuestions: PracticeQuestionSet = {
         { id: "A", text: "Legitimate interests (Article 6(1)(f))", rationale: "Correct. The last subparagraph of Article 6(1) states that point (f) does not apply to processing carried out by public authorities in the performance of their tasks." },
         { id: "B", text: "Performance of a task carried out in the public interest or in the exercise of official authority (Article 6(1)(e))", rationale: "This is the typical basis for public authorities carrying out their tasks, provided the task is laid down by law." },
         { id: "C", text: "Compliance with a legal obligation (Article 6(1)(c))", rationale: "Public authorities can rely on legal obligations set out in Union or Member State law." },
-        { id: "D", text: "Protection of vital interests (Article 6(1)(d))", rationale: "Vital interests is available to any controller where processing is needed to protect someone's life, although it should be used only where no other basis fits." },
+        { id: "D", text: "Protection of vital interests (Article 6(1)(d))", rationale: "Vital interests is available to any controller where processing is needed to protect someone's life, although Recital 46 says processing for another person's vital interests should in principle take place only where no other basis is manifestly available." },
       ],
       answer: "A",
       explanation:
@@ -233,7 +233,7 @@ export const iappCippEQuestions: PracticeQuestionSet = {
       ],
       answer: "C",
       explanation:
-        "Indicators such as an EU language, euro pricing and delivery to Member States show an intention to offer goods to individuals in the Union. The Article 27 representative is not required for occasional, low-risk processing that does not include large-scale special category data, or for public authorities.",
+        "Indicators such as an EU language, euro pricing and delivery to Member States show an intention to offer goods to individuals in the Union. The Article 27 representative is not required where processing is occasional, does not include large-scale processing of special category or criminal offence data, and is unlikely to result in a risk to individuals, or for public authorities.",
       reference: gdpr("Articles 3 and 27"),
     },
     {
@@ -284,7 +284,7 @@ export const iappCippEQuestions: PracticeQuestionSet = {
         "An employer plans to monitor employees' use of company email for security reasons and wants all staff to sign a consent form. What is the main problem with this approach?",
       options: [
         { id: "A", text: "Consent must be given in writing on paper, not electronically", rationale: "The GDPR does not require paper; consent can be given by any clear affirmative act, including electronically." },
-        { id: "B", text: "Because of the imbalance of power, employee consent is rarely freely given, so another lawful basis is normally more appropriate", rationale: "Correct. Recital 43 warns against consent where there is a clear imbalance, and employees may fear consequences of refusing. Legitimate interests with a proportionality assessment is the more usual basis." },
+        { id: "B", text: "Because of the imbalance of power, employee consent is rarely freely given, so another lawful basis is normally more appropriate", rationale: "Correct. Recital 43 and EDPB Guidelines 05/2020 on consent warn that consent is unlikely to be freely given where there is a clear imbalance, as in employment, because employees may fear the consequences of refusing. Legitimate interests with a proportionality assessment is the more usual basis." },
         { id: "C", text: "Email monitoring is prohibited outright by the GDPR", rationale: "The GDPR does not ban workplace monitoring; it must be lawful, necessary, proportionate and transparent." },
         { id: "D", text: "Consent cannot be withdrawn once given in an employment context", rationale: "Article 7(3) allows consent to be withdrawn at any time, which is one reason it is unreliable in employment." },
       ],

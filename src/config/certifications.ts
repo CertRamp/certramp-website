@@ -568,7 +568,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       examVersion: "IPMA Individual Competence Baseline ICB4; PM-ZERT Level D guide version 24 (valid from 1 August 2026)",
       duration: "Germany (PM-ZERT): two written exams of 90 minutes each, or one 90-minute written exam plus a report",
       format:
-        "Germany (PM-ZERT): Path 1 — one 90-minute written exam plus a report of up to 25 pages (plus up to 15 pages of appendix) and a feedback meeting of up to 20 minutes; Path 2 — two 90-minute written exams. The path is chosen on application and cannot be changed.",
+        "Germany (PM-ZERT): Path 1 — one 90-minute written exam plus a report of up to 25 pages (plus up to 15 pages of appendix) and a feedback meeting of up to 20 minutes; Path 2 — two 90-minute written exams. The path cannot be changed after admission.",
       passingScore: "Germany (PM-ZERT): 23 competence elements rated as fulfilled across all exam parts",
       languages: ["German", "English"],
       delivery: "Germany (PM-ZERT): in person or online via video conference (Zoom or Teams)",
@@ -807,7 +807,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       officialName: "Certified Information Privacy Professional/Europe (CIPP/E)",
       examVersion: "Body of knowledge and exam blueprint 1.3.3, effective 1 September 2025",
       questionCount: "90 multiple-choice questions",
-      duration: "2.5 hours, with a 15-minute break halfway through",
+      duration: "2.5 hours, with an optional 15-minute break offered halfway through",
       format: "Multiple choice, including scenario-based questions",
       passingScore: "300 or above (scale 100–500)",
       languages: ["English", "French", "German"],

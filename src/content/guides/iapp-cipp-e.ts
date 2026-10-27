@@ -7,7 +7,7 @@ import type { ExamGuide } from "@/config/types";
 export const iappCippEGuide: ExamGuide = {
   slug: "iapp-cipp-e",
   summary:
-    "The IAPP CIPP/E (Certified Information Privacy Professional/Europe) tests whether you know European data protection law — above all the GDPR — well enough to apply it to real situations. The exam has 90 multiple-choice questions in 2.5 hours with a 15-minute break, you need 300 on the IAPP scale of 100–500 to pass, and it follows body of knowledge 1.3.3, effective 1 September 2025.",
+    "The IAPP CIPP/E (Certified Information Privacy Professional/Europe) tests whether you know European data protection law — above all the GDPR — well enough to apply it to real situations. The exam has 90 multiple-choice questions in 2.5 hours with an optional 15-minute break, you need 300 on the IAPP scale of 100–500 to pass, and it follows body of knowledge 1.3.3, effective 1 September 2025.",
   whoFor: [
     "Privacy, compliance and legal professionals who advise on the GDPR",
     "Data protection officers and privacy team members in organisations that process EU personal data",
@@ -27,7 +27,7 @@ export const iappCippEGuide: ExamGuide = {
       heading: "How the exam and blueprint are structured",
       paragraphs: [
         "Version 1.3.3 of the body of knowledge and exam blueprint took effect on 1 September 2025. Each domain is broken into competencies (for example II.C \"Understand data subjects' rights\") with their own question ranges, and each competency lists performance indicators. The competencies with the most questions are data subjects' rights (II.C, 8–12) and data security (II.B, 7–11).",
-        "You sit the exam through Pearson VUE, at a test centre or online with OnVUE. Halfway through you are offered a 15-minute break; you must submit the first half before the break ends and cannot return to it afterwards. Some questions are scenario-based, describing a fictional organisation and asking how the law applies. The exam is available in English, French and German.",
+        "You sit the exam through Pearson VUE, at a test centre or online with OnVUE. Halfway through you are offered an optional 15-minute break. Whether or not you take it, you must finish and submit the first half first, and you cannot return to it afterwards. Some questions are scenario-based, describing a fictional organisation and asking how the law applies. The exam is available in English, French and German.",
       ],
     },
     {
@@ -76,7 +76,7 @@ export const iappCippEGuide: ExamGuide = {
     {
       question: "How long is the CIPP/E exam and what is the passing score?",
       answer:
-        "The exam has 90 multiple-choice questions and an allotted time of 2.5 hours, with a 15-minute break halfway through. All core IAPP exams are scored on a scale of 100–500, and you need 300 or above to pass.",
+        "The exam has 90 multiple-choice questions and an allotted time of 2.5 hours, with an optional 15-minute break offered halfway through. All core IAPP exams are scored on a scale of 100–500, and you need 300 or above to pass.",
     },
     {
       question: "Which version of the CIPP/E body of knowledge applies?",
