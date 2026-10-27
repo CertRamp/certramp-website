@@ -80,7 +80,7 @@ export const irebCpreQuestions: PracticeQuestionSet = {
     {
       id: "cpre-c2-context-boundary",
       domain: "d2",
-      objective: "EO 2.2.2 Explain the principles and why they are important",
+      objective: "EO 4.1.1 Determine the boundaries of the system to focus on the relevant requirements",
       difficulty: "intermediate",
       question:
         "In a project for an online shop, the payment provider's system will not be changed but provides an interface the shop uses. How is the payment provider's system classified?",
@@ -88,11 +88,11 @@ export const irebCpreQuestions: PracticeQuestionSet = {
         { id: "A", text: "Inside the system boundary", rationale: "Inside the system boundary are the parts that can be changed within the project; the payment system cannot." },
         { id: "B", text: "Part of the system context, between the system boundary and the context boundary", rationale: "Correct. It is relevant to the system and interacts with it, but it is outside the system and cannot be changed in the project." },
         { id: "C", text: "Outside the context boundary (irrelevant environment)", rationale: "It is relevant because the shop interacts with it, so it belongs to the context." },
-        { id: "D", text: "A stakeholder", rationale: "A stakeholder is a person or organisation with an interest in the system. An external system is a context element, not a stakeholder." },
+        { id: "D", text: "A stakeholder", rationale: "A stakeholder is a person or organisation who influences the requirements or is impacted by the system. The question asks about the provider's system, which is a context element, not a stakeholder." },
       ],
       answer: "B",
       explanation:
-        "The system boundary separates the system from its context; the context boundary separates the relevant context from the irrelevant environment. External systems the system interacts with lie between the two.",
+        "The system boundary separates the system from its context; the context boundary separates the RE-relevant part of the environment from the rest of the world. External systems the system interacts with lie between the two.",
       reference: SYLLABUS,
     },
 
@@ -128,13 +128,13 @@ export const irebCpreQuestions: PracticeQuestionSet = {
       ],
       answer: "A",
       explanation:
-        "Quality criteria for single requirements: adequate, necessary, unambiguous, complete, understandable, verifiable. Criteria such as consistent, non-redundant, complete, modifiable, traceable and conformant apply to work products.",
+        "Quality criteria for single requirements: adequate, necessary, unambiguous, complete (self-contained), understandable, verifiable. Criteria for work products: consistent, non-redundant, complete (no known relevant requirements missing), modifiable, traceable, conformant.",
       reference: SYLLABUS,
     },
     {
       id: "cpre-c3-model-choice",
       domain: "d3",
-      objective: "EO 3.4.4 Select an appropriate model type",
+      objective: "EO 3.4.4 Understand how to select an appropriate model type for specifying requirements in a given situation",
       difficulty: "intermediate",
       question:
         "You want to specify the steps of a business process, including decisions and steps that run in parallel. Which model type is most suitable?",
@@ -160,19 +160,19 @@ export const irebCpreQuestions: PracticeQuestionSet = {
         "Customers of a banking app take it for granted that they can see their account balance. They would never mention it, but would be very dissatisfied without it. In the Kano model, this is a…",
       options: [
         { id: "A", text: "Delighter", rationale: "Delighters are unexpected features that create enthusiasm; their absence does not cause dissatisfaction." },
-        { id: "B", text: "Satisfier", rationale: "Satisfiers are explicitly requested; more of them increases satisfaction roughly proportionally." },
-        { id: "C", text: "Dissatisfier", rationale: "Correct. Dissatisfiers are implicitly expected, so stakeholders rarely state them, but missing them causes strong dissatisfaction." },
+        { id: "B", text: "Satisfier", rationale: "Satisfiers (conscious requirements, performance factors) are explicitly demanded; the more of them, the higher the satisfaction." },
+        { id: "C", text: "Dissatisfier", rationale: "Correct. Dissatisfiers (subconscious requirements, basic factors) are taken for granted, so stakeholders rarely mention them, but missing them causes strong dissatisfaction." },
         { id: "D", text: "Constraint", rationale: "This is a category of requirements, not a Kano category." },
       ],
       answer: "C",
       explanation:
-        "The Kano model helps you look for requirements stakeholders will not tell you about: dissatisfiers through observation and existing systems, delighters through creativity techniques.",
+        "The Kano model helps you find requirements stakeholders will not mention: gathering techniques help elicit satisfiers and dissatisfiers, while design and idea-generating techniques often lead to delighters.",
       reference: SYLLABUS,
     },
     {
       id: "cpre-c4-elicitation",
       domain: "d4",
-      objective: "EO 4.2.3 Choose a proper elicitation technique for a given situation",
+      objective: "EO 4.2.3 Understand how to choose a proper elicitation technique for a given situation",
       difficulty: "intermediate",
       question:
         "Warehouse staff have performed their picking process for years. They find it hard to explain the details because many steps have become routine. Which elicitation approach is most suitable?",
@@ -184,7 +184,7 @@ export const irebCpreQuestions: PracticeQuestionSet = {
       ],
       answer: "B",
       explanation:
-        "The syllabus groups gathering techniques into questioning, collaboration, observation and artifact-based techniques. Observation is the choice when knowledge is tacit or routine.",
+        "The syllabus groups gathering techniques into questioning, collaboration, observation and artifact-based techniques. Observation is a good fit when stakeholders cannot easily put routine, implicit knowledge into words.",
       reference: SYLLABUS,
     },
     {
@@ -209,7 +209,7 @@ export const irebCpreQuestions: PracticeQuestionSet = {
     {
       id: "cpre-c5-facets",
       domain: "d5",
-      objective: "EO 5.3.1 Know typical RE process configurations",
+      objective: "EO 5.3.3 For simple settings, select and apply an appropriate RE process configuration",
       difficulty: "advanced",
       question:
         "A company develops a product for an anonymous mass market, works iteratively and explores the requirements step by step. Which RE process configuration fits best?",
@@ -252,14 +252,14 @@ export const irebCpreQuestions: PracticeQuestionSet = {
       question:
         "Before a release, the team freezes a stable, approved set of requirements in specific versions as the basis for planning and contracts. What is this called?",
       options: [
-        { id: "A", text: "A baseline", rationale: "Correct. A baseline is a stable, released configuration of requirements that serves as a reference, for example for release planning or effort estimation." },
+        { id: "A", text: "A baseline", rationale: "Correct. A baseline is a stable, change-controlled configuration of work products, used for example for release planning or other delivery milestones." },
         { id: "B", text: "A view", rationale: "Views show selected or aggregated parts of the requirements; they do not freeze an approved state." },
         { id: "C", text: "An attribute", rationale: "Attributes describe properties of individual requirements, such as status or priority." },
         { id: "D", text: "A persona", rationale: "Personas describe fictional stakeholder types." },
       ],
       answer: "A",
       explanation:
-        "A configuration is a consistent set of requirements in specific versions; a baseline is a configuration that has been released as a stable reference.",
+        "A requirements configuration is a consistent set of work products that contain requirements; a baseline is a stable, change-controlled configuration that serves as a reference, for example for release planning.",
       reference: SYLLABUS,
     },
     {

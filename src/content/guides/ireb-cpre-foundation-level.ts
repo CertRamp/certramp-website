@@ -8,7 +8,7 @@ import type { ExamGuide } from "@/config/types";
 export const irebCpreGuide: ExamGuide = {
   slug: "ireb-cpre-foundation-level",
   summary:
-    "The IREB CPRE Foundation Level is the international entry certification for requirements engineering. The exam has about 45 multiple-choice questions in 75 minutes (90 minutes for non-native speakers on request), and you pass with at least 70% of the points. Since April 2026 it is based on syllabus 3.3.0 with seven chapters.",
+    "The IREB CPRE Foundation Level is the international entry certification for requirements engineering. The exam has about 45 multiple-choice questions in 75 minutes (90 minutes for non-native speakers on request), and you pass with at least 70% of the points. It is based on syllabus 3.3.0 (dated 1 April 2026) with seven chapters.",
   whoFor: [
     "Business analysts, product owners and requirements engineers",
     "Developers, testers and architects who work with requirements every day",
@@ -27,7 +27,7 @@ export const irebCpreGuide: ExamGuide = {
       id: "where-to-focus",
       heading: "Where to focus",
       paragraphs: [
-        "The syllabus gives no exam weights per chapter, but it does give training times, and these show where the depth is. Chapter 3 (work products and documentation practices) has seven hours and chapter 4 (practices for requirements elaboration) four and a half — together almost two thirds of the 17 h 45 min total. Both are at cognitive level L3, which means you must apply the content, for example writing a requirement with a template or choosing an elicitation technique.",
+        "The syllabus gives no exam weights per chapter, but it does give training times, and these show where the depth is. Chapter 3 (work products and documentation practices) has seven hours and chapter 4 (practices for requirements elaboration) four and a half — together almost two thirds of the 17 h 45 min total. Both are at cognitive level L3, which means you must apply the content, for example writing a requirement with a template or identifying stakeholders and writing a stakeholder list.",
         "Do not neglect the short chapters. The nine principles of chapter 2, the process facets and configurations of chapter 5 and the traceability and prioritisation topics of chapter 6 produce many compact, easy-to-score questions if you know the terms exactly.",
       ],
     },
@@ -45,11 +45,11 @@ export const irebCpreGuide: ExamGuide = {
         },
         {
           title: "Practise the L3 skills",
-          body: "Write requirements with the EARS and Rupp templates, a user story in the Cohn format and a use case with a form template. Draw a simple UML class and activity diagram and a context diagram.",
+          body: "Write requirements with phrase templates (e.g. EARS or Rupp's template), a user story in the Cohn format and a use case with a form template. Draw a simple UML class diagram and UML activity diagram, and practise reading context diagrams and state machines.",
         },
         {
           title: "Learn the decision tables",
-          body: "Which elicitation technique for which situation, which conflict resolution technique, which validation technique, which process configuration — these choices make up a large share of the questions.",
+          body: "Which elicitation technique for which situation, which conflict resolution technique, which validation technique, which process configuration: practise these choices, because they test the L2 and L3 objectives.",
         },
         {
           title: "Practise with timed exams",
@@ -82,7 +82,7 @@ export const irebCpreGuide: ExamGuide = {
     {
       question: "How long is the exam?",
       answer:
-        "75 minutes. Candidates taking the exam in a language other than their native language can request 90 minutes in writing, either with the exam application or before the exam starts.",
+        "75 minutes. Candidates taking the exam in a language other than their native language can request 90 minutes in writing with a justification, ideally with the exam application and at the latest before the exam starts.",
     },
     {
       question: "Which syllabus is current?",
