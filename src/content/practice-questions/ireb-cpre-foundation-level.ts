@@ -31,12 +31,12 @@ export const irebCpreQuestions: PracticeQuestionSet = {
       question:
         "\"The system shall display the search results within two seconds for 95% of all queries.\" Which kind of requirement is this?",
       options: [
-        { id: "A", text: "Functional requirement", rationale: "A functional requirement describes a result or behaviour the system provides, such as performing the search itself — not how fast it happens." },
-        { id: "B", text: "Quality requirement", rationale: "Correct. The statement describes a quality — here performance — that the system shall have." },
+        { id: "A", text: "Quality requirement", rationale: "Correct. The statement describes a quality — here performance — that the system shall have." },
+        { id: "B", text: "Functional requirement", rationale: "A functional requirement describes a result or behaviour the system provides, such as performing the search itself — not how fast it happens." },
         { id: "C", text: "Constraint", rationale: "A constraint restricts the solution space beyond what is needed for functional and quality requirements, for example a mandated technology or law." },
         { id: "D", text: "Glossary entry", rationale: "A glossary defines terms; this is a requirement." },
       ],
-      answer: "B",
+      answer: "A",
       explanation:
         "IREB distinguishes functional requirements, quality requirements and constraints. Response times, availability, security and usability are typical quality requirements.",
       reference: SYLLABUS,
@@ -48,12 +48,12 @@ export const irebCpreQuestions: PracticeQuestionSet = {
       difficulty: "foundation",
       question: "Which list names the major tasks of requirements engineering according to the CPRE syllabus?",
       options: [
-        { id: "A", text: "Elicitation, documentation, validation, management", rationale: "Correct. These are the four major RE tasks; the RE process must be tailored to perform them in a given situation." },
-        { id: "B", text: "Design, implementation, testing, deployment", rationale: "These are development activities, not the RE tasks." },
-        { id: "C", text: "Planning, budgeting, staffing, controlling", rationale: "These are project management activities." },
-        { id: "D", text: "Coding, reviewing, merging, releasing", rationale: "These are software engineering activities." },
+        { id: "A", text: "Design, implementation, testing, deployment", rationale: "These are development activities, not the RE tasks." },
+        { id: "B", text: "Planning, budgeting, staffing, controlling", rationale: "These are project management activities." },
+        { id: "C", text: "Coding, reviewing, merging, releasing", rationale: "These are software engineering activities." },
+        { id: "D", text: "Elicitation, documentation, validation, management", rationale: "Correct. These are the four major RE tasks; the RE process must be tailored to perform them in a given situation." },
       ],
-      answer: "A",
+      answer: "D",
       explanation:
         "Elicitation, documentation, validation and management are the major RE tasks. The syllabus stresses that there is no single RE process: it has to be tailored to the context.",
       reference: SYLLABUS,
@@ -105,11 +105,11 @@ export const irebCpreQuestions: PracticeQuestionSet = {
       question: "Which statement follows the user story template described by Cohn?",
       options: [
         { id: "A", text: "The system shall export reports as PDF.", rationale: "This is a classic 'shall' requirement, not a user story." },
-        { id: "B", text: "As a sales manager, I want to export reports as PDF so that I can send them to customers.", rationale: "Correct. Role, goal and benefit: As a <role>, I want <requirement> so that <benefit>." },
-        { id: "C", text: "When the user clicks Export, the system shall create a PDF.", rationale: "This follows an EARS-like event-driven pattern, not the user story template." },
+        { id: "B", text: "When the user clicks Export, the system shall create a PDF.", rationale: "This follows an EARS-like event-driven pattern, not the user story template." },
+        { id: "C", text: "As a sales manager, I want to export reports as PDF so that I can send them to customers.", rationale: "Correct. Role, goal and benefit: As a <role>, I want <requirement> so that <benefit>." },
         { id: "D", text: "Export: PDF, priority high, owner: sales.", rationale: "These are attributes, not a user story." },
       ],
-      answer: "B",
+      answer: "C",
       explanation:
         "Phrase templates in the syllabus include EARS and the template by Rupp for individual requirements, and Cohn's template for user stories. Form templates are used for use cases.",
       reference: SYLLABUS,
@@ -140,11 +140,11 @@ export const irebCpreQuestions: PracticeQuestionSet = {
         "You want to specify the steps of a business process, including decisions and steps that run in parallel. Which model type is most suitable?",
       options: [
         { id: "A", text: "UML class diagram", rationale: "Class diagrams specify data and the objects in a domain with their relationships, not process steps." },
-        { id: "B", text: "UML activity diagram", rationale: "Correct. Activity diagrams model functions and business processes with actions, decisions and parallel flows." },
-        { id: "C", text: "Context diagram", rationale: "A context diagram shows the system in its environment and the interfaces, not the internal process flow." },
-        { id: "D", text: "Glossary", rationale: "A glossary defines terms; it is not a model of a process." },
+        { id: "B", text: "Context diagram", rationale: "A context diagram shows the system in its environment and the interfaces, not the internal process flow." },
+        { id: "C", text: "Glossary", rationale: "A glossary defines terms; it is not a model of a process." },
+        { id: "D", text: "UML activity diagram", rationale: "Correct. Activity diagrams model functions and business processes with actions, decisions and parallel flows." },
       ],
-      answer: "B",
+      answer: "D",
       explanation:
         "Match the model to the aspect: structure and data → class diagram; function and flow → activity or process model; state and behaviour → state machine; context → context diagram.",
       reference: SYLLABUS,
@@ -160,11 +160,11 @@ export const irebCpreQuestions: PracticeQuestionSet = {
         "Customers of a banking app take it for granted that they can see their account balance. They would never mention it, but would be very dissatisfied without it. In the Kano model, this is a…",
       options: [
         { id: "A", text: "Delighter", rationale: "Delighters are unexpected features that create enthusiasm; their absence does not cause dissatisfaction." },
-        { id: "B", text: "Satisfier", rationale: "Satisfiers (conscious requirements, performance factors) are explicitly demanded; the more of them, the higher the satisfaction." },
-        { id: "C", text: "Dissatisfier", rationale: "Correct. Dissatisfiers (subconscious requirements, basic factors) are taken for granted, so stakeholders rarely mention them, but missing them causes strong dissatisfaction." },
+        { id: "B", text: "Dissatisfier", rationale: "Correct. Dissatisfiers (subconscious requirements, basic factors) are taken for granted, so stakeholders rarely mention them, but missing them causes strong dissatisfaction." },
+        { id: "C", text: "Satisfier", rationale: "Satisfiers (conscious requirements, performance factors) are explicitly demanded; the more of them, the higher the satisfaction." },
         { id: "D", text: "Constraint", rationale: "This is a category of requirements, not a Kano category." },
       ],
-      answer: "C",
+      answer: "B",
       explanation:
         "The Kano model helps you find requirements stakeholders will not mention: gathering techniques help elicit satisfiers and dissatisfiers, while design and idea-generating techniques often lead to delighters.",
       reference: SYLLABUS,
@@ -178,11 +178,11 @@ export const irebCpreQuestions: PracticeQuestionSet = {
         "Warehouse staff have performed their picking process for years. They find it hard to explain the details because many steps have become routine. Which elicitation approach is most suitable?",
       options: [
         { id: "A", text: "A questionnaire sent by email", rationale: "Questionnaires capture what people can articulate; routine, implicit knowledge is often missed." },
-        { id: "B", text: "Observation of the staff at work", rationale: "Correct. Observation techniques reveal implicit, routine knowledge that people cannot easily put into words." },
-        { id: "C", text: "Brainstorming new features", rationale: "Brainstorming generates new ideas; it does not reveal how the current process actually works." },
+        { id: "B", text: "Brainstorming new features", rationale: "Brainstorming generates new ideas; it does not reveal how the current process actually works." },
+        { id: "C", text: "Observation of the staff at work", rationale: "Correct. Observation techniques reveal implicit, routine knowledge that people cannot easily put into words." },
         { id: "D", text: "Reading the marketing brochure", rationale: "Brochures rarely describe the real operational process." },
       ],
-      answer: "B",
+      answer: "C",
       explanation:
         "The syllabus groups gathering techniques into questioning, collaboration, observation and artifact-based techniques. Observation is a good fit when stakeholders cannot easily put routine, implicit knowledge into words.",
       reference: SYLLABUS,
@@ -215,11 +215,11 @@ export const irebCpreQuestions: PracticeQuestionSet = {
         "A company develops a product for an anonymous mass market, works iteratively and explores the requirements step by step. Which RE process configuration fits best?",
       options: [
         { id: "A", text: "Contractual RE process", rationale: "Contractual configurations suit customer-specific development where a specification forms the basis of a contract." },
-        { id: "B", text: "Product-oriented RE process", rationale: "Correct. A market-oriented, iterative and explorative setting points to a product-oriented configuration." },
-        { id: "C", text: "Participatory RE process", rationale: "Participatory configurations suit customer-specific development with close, continuous collaboration with known stakeholders." },
-        { id: "D", text: "No RE process is needed", rationale: "Every development needs RE; only its configuration differs." },
+        { id: "B", text: "Participatory RE process", rationale: "Participatory configurations suit customer-specific development with close, continuous collaboration with known stakeholders." },
+        { id: "C", text: "No RE process is needed", rationale: "Every development needs RE; only its configuration differs." },
+        { id: "D", text: "Product-oriented RE process", rationale: "Correct. A market-oriented, iterative and explorative setting points to a product-oriented configuration." },
       ],
-      answer: "B",
+      answer: "D",
       explanation:
         "The facets time (linear/iterative), purpose (prescriptive/explorative) and target (customer-specific/market-oriented) lead to typical configurations: participatory, contractual and product-oriented.",
       reference: SYLLABUS,
@@ -252,12 +252,12 @@ export const irebCpreQuestions: PracticeQuestionSet = {
       question:
         "Before a release, the team freezes a stable, approved set of requirements in specific versions as the basis for planning and contracts. What is this called?",
       options: [
-        { id: "A", text: "A baseline", rationale: "Correct. A baseline is a stable, change-controlled configuration of work products, used for example for release planning or other delivery milestones." },
-        { id: "B", text: "A view", rationale: "Views show selected or aggregated parts of the requirements; they do not freeze an approved state." },
+        { id: "A", text: "A view", rationale: "Views show selected or aggregated parts of the requirements; they do not freeze an approved state." },
+        { id: "B", text: "A baseline", rationale: "Correct. A baseline is a stable, change-controlled configuration of work products, used for example for release planning or other delivery milestones." },
         { id: "C", text: "An attribute", rationale: "Attributes describe properties of individual requirements, such as status or priority." },
         { id: "D", text: "A persona", rationale: "Personas describe fictional stakeholder types." },
       ],
-      answer: "A",
+      answer: "B",
       explanation:
         "A requirements configuration is a consistent set of work products that contain requirements; a baseline is a stable, change-controlled configuration that serves as a reference, for example for release planning.",
       reference: SYLLABUS,
@@ -270,11 +270,11 @@ export const irebCpreQuestions: PracticeQuestionSet = {
       question: "In an agile project, who typically decides how a requested change to the requirements is handled?",
       options: [
         { id: "A", text: "A Change Control Board that meets monthly", rationale: "A formal Change Control Board is typical of linear, plan-driven approaches." },
-        { id: "B", text: "The product owner, by updating and reprioritising the backlog", rationale: "Correct. In agile approaches, changes are handled through the backlog, which the product owner maintains and prioritises." },
-        { id: "C", text: "Each developer individually", rationale: "Uncoordinated changes by individual developers are not a change management approach." },
-        { id: "D", text: "Nobody — requirements cannot change in agile projects", rationale: "Agile approaches explicitly embrace change." },
+        { id: "B", text: "Each developer individually", rationale: "Uncoordinated changes by individual developers are not a change management approach." },
+        { id: "C", text: "Nobody — requirements cannot change in agile projects", rationale: "Agile approaches explicitly embrace change." },
+        { id: "D", text: "The product owner, by updating and reprioritising the backlog", rationale: "Correct. In agile approaches, changes are handled through the backlog, which the product owner maintains and prioritises." },
       ],
-      answer: "B",
+      answer: "D",
       explanation:
         "The syllabus contrasts change handling: Change Control Boards with defined procedures in linear approaches, and backlog management by the product owner in agile approaches.",
       reference: SYLLABUS,
@@ -288,12 +288,12 @@ export const irebCpreQuestions: PracticeQuestionSet = {
       difficulty: "foundation",
       question: "Which approach is most advisable when introducing a new requirements management tool in an organisation?",
       options: [
-        { id: "A", text: "Buy the tool with the most features and roll it out to everyone at once", rationale: "Feature count does not guarantee fit, and a big-bang rollout without preparation is risky." },
-        { id: "B", text: "Clarify the RE process and needs first, consider all costs and try the tool in a pilot before broad rollout", rationale: "Correct. A tool should support a defined process; costs beyond licences (training, administration) and a pilot reduce the risk of a bad fit." },
+        { id: "A", text: "Clarify the RE process and needs first, consider all costs and try the tool in a pilot before broad rollout", rationale: "Correct. A tool should support a defined process; costs beyond licences (training, administration) and a pilot reduce the risk of a bad fit." },
+        { id: "B", text: "Buy the tool with the most features and roll it out to everyone at once", rationale: "Feature count does not guarantee fit, and a big-bang rollout without preparation is risky." },
         { id: "C", text: "Let each team choose its own tool without coordination", rationale: "This undermines shared work products, traceability and reporting." },
         { id: "D", text: "Introduce the tool first and define the process later", rationale: "A tool cannot fix an undefined process; the process should come first." },
       ],
-      answer: "B",
+      answer: "A",
       explanation:
         "When introducing RE tools, think about the process the tool should support, the full costs, training, a step-by-step introduction and evaluating the tool in practice.",
       reference: SYLLABUS,

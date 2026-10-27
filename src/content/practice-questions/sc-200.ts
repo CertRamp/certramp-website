@@ -32,11 +32,11 @@ export const sc200Questions: PracticeQuestionSet = {
         "Your SOC wants every new Microsoft Sentinel incident from a specific analytics rule to be assigned to the Tier 1 queue and tagged automatically, without building a Logic Apps workflow. What should you create?",
       options: [
         { id: "A", text: "A playbook", rationale: "Playbooks are Logic Apps workflows. They are the right tool for complex actions, but the requirement explicitly avoids building one." },
-        { id: "B", text: "An automation rule", rationale: "Correct. Automation rules can change incident properties such as owner, status, severity and tags directly, and can also run playbooks when needed." },
-        { id: "C", text: "A workbook", rationale: "Workbooks visualise data; they do not act on incidents." },
+        { id: "B", text: "A workbook", rationale: "Workbooks visualise data; they do not act on incidents." },
+        { id: "C", text: "An automation rule", rationale: "Correct. Automation rules can change incident properties such as owner, status, severity and tags directly, and can also run playbooks when needed." },
         { id: "D", text: "A data collection rule", rationale: "Data collection rules control which data the Azure Monitor Agent collects, not how incidents are handled." },
       ],
-      answer: "B",
+      answer: "C",
       explanation:
         "Automation rules are the central, lightweight way to triage incidents in Sentinel. Use them for assignment, tagging, status changes and suppression, and let them call playbooks when you need workflows that reach other systems.",
       reference: GUIDE,
@@ -67,12 +67,12 @@ export const sc200Questions: PracticeQuestionSet = {
       question:
         "You need to collect only selected Windows Security event IDs from a group of Azure virtual machines into Microsoft Sentinel. What do you configure?",
       options: [
-        { id: "A", text: "The Windows Security Events via AMA connector with a data collection rule", rationale: "Correct. The Azure Monitor Agent uses data collection rules, which define which machines and which events (for example via XPath filters) are collected." },
-        { id: "B", text: "The Syslog via AMA connector", rationale: "Syslog is the logging mechanism of Linux and network devices, not Windows Security events." },
-        { id: "C", text: "A Sentinel workbook", rationale: "Workbooks display data that is already ingested; they do not collect it." },
-        { id: "D", text: "A threat intelligence connector", rationale: "Threat intelligence connectors import indicators, not Windows event logs." },
+        { id: "A", text: "The Syslog via AMA connector", rationale: "Syslog is the logging mechanism of Linux and network devices, not Windows Security events." },
+        { id: "B", text: "A Sentinel workbook", rationale: "Workbooks display data that is already ingested; they do not collect it." },
+        { id: "C", text: "A threat intelligence connector", rationale: "Threat intelligence connectors import indicators, not Windows event logs." },
+        { id: "D", text: "The Windows Security Events via AMA connector with a data collection rule", rationale: "Correct. The Azure Monitor Agent uses data collection rules, which define which machines and which events (for example via XPath filters) are collected." },
       ],
-      answer: "A",
+      answer: "D",
       explanation:
         "With the Azure Monitor Agent, the data collection rule is where you scope collection — which machines, which event sets or which individual events. Filtering at collection time also keeps ingestion costs down.",
       reference: GUIDE,
@@ -121,12 +121,12 @@ export const sc200Questions: PracticeQuestionSet = {
       question:
         "Your manager asks which attacker tactics and techniques your current Microsoft Sentinel detections cover and where the gaps are. Which feature helps you answer this most directly?",
       options: [
-        { id: "A", text: "The MITRE ATT&CK view of your detection coverage", rationale: "Correct. Sentinel maps analytics rules and hunting queries to MITRE ATT&CK tactics and techniques, which shows covered and uncovered areas." },
-        { id: "B", text: "The incident queue", rationale: "The queue shows incidents that occurred, not the coverage of your detection rules." },
-        { id: "C", text: "Data collection rules", rationale: "These control data collection; they say nothing about which techniques are detected." },
-        { id: "D", text: "Device groups in Defender for Endpoint", rationale: "Device groups organise devices for permissions and automation levels, not detection coverage." },
+        { id: "A", text: "The incident queue", rationale: "The queue shows incidents that occurred, not the coverage of your detection rules." },
+        { id: "B", text: "Data collection rules", rationale: "These control data collection; they say nothing about which techniques are detected." },
+        { id: "C", text: "Device groups in Defender for Endpoint", rationale: "Device groups organise devices for permissions and automation levels, not detection coverage." },
+        { id: "D", text: "The MITRE ATT&CK view of your detection coverage", rationale: "Correct. Sentinel maps analytics rules and hunting queries to MITRE ATT&CK tactics and techniques, which shows covered and uncovered areas." },
       ],
-      answer: "A",
+      answer: "D",
       explanation:
         "Analysing attack vector coverage with the MITRE ATT&CK matrix is a named skill in the outline. It turns 'do we detect enough?' into a concrete list of techniques without coverage.",
       reference: GUIDE,
@@ -159,12 +159,12 @@ export const sc200Questions: PracticeQuestionSet = {
       question:
         "For a forensic review you need a snapshot of a device's autoruns, installed programs, network connections, scheduled tasks and event logs, collected through the Defender portal. Which action provides this?",
       options: [
-        { id: "A", text: "Collect investigation package", rationale: "Correct. The investigation package gathers forensic data such as autoruns, installed programs, network connections, scheduled tasks and logs into one downloadable file." },
-        { id: "B", text: "Restrict app execution", rationale: "This blocks non-Microsoft-signed apps; it does not collect data." },
-        { id: "C", text: "Device timeline export of the last hour only", rationale: "The timeline shows events, but it is not the package of system state described." },
+        { id: "A", text: "Restrict app execution", rationale: "This blocks non-Microsoft-signed apps; it does not collect data." },
+        { id: "B", text: "Device timeline export of the last hour only", rationale: "The timeline shows events, but it is not the package of system state described." },
+        { id: "C", text: "Collect investigation package", rationale: "Correct. The investigation package gathers forensic data such as autoruns, installed programs, network connections, scheduled tasks and logs into one downloadable file." },
         { id: "D", text: "Offboard the device", rationale: "Offboarding stops monitoring and would destroy your visibility." },
       ],
-      answer: "A",
+      answer: "C",
       explanation:
         "Collecting an investigation package and running live response are the two main ways to obtain evidence from a device in Defender for Endpoint.",
       reference: GUIDE,
@@ -178,11 +178,11 @@ export const sc200Questions: PracticeQuestionSet = {
         "Microsoft Entra ID Protection flags a user as high risk after sign-ins from an unfamiliar country, and your investigation confirms the account was compromised. What is the most appropriate first remediation?",
       options: [
         { id: "A", text: "Dismiss the user risk", rationale: "Dismissing risk is for false positives; here the compromise is confirmed." },
-        { id: "B", text: "Confirm the user as compromised, revoke sessions and require a secure password reset", rationale: "Correct. This invalidates the attacker's sessions and credentials and feeds the confirmed compromise back into Entra ID Protection." },
-        { id: "C", text: "Lower the user's sign-in risk policy threshold for everyone", rationale: "Policy tuning may help later, but it does not remediate this account." },
-        { id: "D", text: "Wait for the next sign-in to see whether the risk repeats", rationale: "Waiting leaves the attacker active in the account." },
+        { id: "B", text: "Lower the user's sign-in risk policy threshold for everyone", rationale: "Policy tuning may help later, but it does not remediate this account." },
+        { id: "C", text: "Wait for the next sign-in to see whether the risk repeats", rationale: "Waiting leaves the attacker active in the account." },
+        { id: "D", text: "Confirm the user as compromised, revoke sessions and require a secure password reset", rationale: "Correct. This invalidates the attacker's sessions and credentials and feeds the confirmed compromise back into Entra ID Protection." },
       ],
-      answer: "B",
+      answer: "D",
       explanation:
         "For compromised identities, the response combines cutting off access (revoking sessions, resetting credentials, possibly blocking sign-in) with telling the system the risk was real, so its detections learn from it.",
       reference: GUIDE,
@@ -195,12 +195,12 @@ export const sc200Questions: PracticeQuestionSet = {
       question:
         "You suspect an attacker used a compromised account to read emails and create an inbox forwarding rule. Which tool lets you search Microsoft 365 user and admin activities such as mailbox access and rule creation?",
       options: [
-        { id: "A", text: "Microsoft Purview Audit", rationale: "Correct. Purview Audit records user and admin activities across Microsoft 365 services, including Exchange mailbox actions and inbox rule changes." },
-        { id: "B", text: "Microsoft Intune device compliance reports", rationale: "Compliance reports show device state, not mailbox activities." },
-        { id: "C", text: "Defender for Endpoint device timeline", rationale: "The timeline shows events on a device, not activities inside Exchange Online." },
+        { id: "A", text: "Microsoft Intune device compliance reports", rationale: "Compliance reports show device state, not mailbox activities." },
+        { id: "B", text: "Defender for Endpoint device timeline", rationale: "The timeline shows events on a device, not activities inside Exchange Online." },
+        { id: "C", text: "Microsoft Purview Audit", rationale: "Correct. Purview Audit records user and admin activities across Microsoft 365 services, including Exchange mailbox actions and inbox rule changes." },
         { id: "D", text: "Azure Cost Management", rationale: "Cost Management has no security audit data." },
       ],
-      answer: "A",
+      answer: "C",
       explanation:
         "The outline lists three Microsoft 365 investigation tools: Purview Audit for activity records, eDiscovery content search for the content itself, and Microsoft Graph activity logs for API calls.",
       reference: GUIDE,
@@ -269,12 +269,12 @@ export const sc200Questions: PracticeQuestionSet = {
       question:
         "In Advanced Hunting, which query against IdentityLogonEvents counts failed sign-ins per account and returns only accounts with more than 20 failures?",
       options: [
-        { id: "A", text: "IdentityLogonEvents | where ActionType == \"LogonFailed\" | summarize Failures = count() by AccountName | where Failures > 20", rationale: "Correct. Filter the failures first, aggregate per account with summarize, then filter the aggregated result." },
-        { id: "B", text: "| summarize Failures = count() | where AccountName > 20", rationale: "There is no grouping by account, and AccountName is not a number." },
-        { id: "C", text: "| project AccountName | take 20", rationale: "This only returns 20 rows; it does not count anything." },
-        { id: "D", text: "| where Failures > 20 | summarize count() by AccountName", rationale: "Failures does not exist before the summarize step, so the filter fails." },
+        { id: "A", text: "| summarize Failures = count() | where AccountName > 20", rationale: "There is no grouping by account, and AccountName is not a number." },
+        { id: "B", text: "| project AccountName | take 20", rationale: "This only returns 20 rows; it does not count anything." },
+        { id: "C", text: "| where Failures > 20 | summarize count() by AccountName", rationale: "Failures does not exist before the summarize step, so the filter fails." },
+        { id: "D", text: "IdentityLogonEvents | where ActionType == \"LogonFailed\" | summarize Failures = count() by AccountName | where Failures > 20", rationale: "Correct. Filter the failures first, aggregate per account with summarize, then filter the aggregated result." },
       ],
-      answer: "A",
+      answer: "D",
       explanation:
         "The pattern filter → summarize … by … → filter on the aggregate appears in many hunting and detection queries, such as brute-force or password-spray detection.",
       reference: GUIDE,
@@ -287,12 +287,12 @@ export const sc200Questions: PracticeQuestionSet = {
       question:
         "Hunters regularly need hourly aggregates of a very large, verbose log source. Querying the raw data each time is slow and expensive. Which Microsoft Sentinel feature produces pre-aggregated results in a table that can be queried efficiently?",
       options: [
-        { id: "A", text: "Summary rules", rationale: "Correct. Summary rules run scheduled aggregations and write the results to a summary table, which makes later queries faster and cheaper." },
-        { id: "B", text: "Watchlists", rationale: "Watchlists store small reference data, not aggregated log results." },
-        { id: "C", text: "Automation rules", rationale: "Automation rules act on incidents; they do not aggregate log data." },
+        { id: "A", text: "Watchlists", rationale: "Watchlists store small reference data, not aggregated log results." },
+        { id: "B", text: "Automation rules", rationale: "Automation rules act on incidents; they do not aggregate log data." },
+        { id: "C", text: "Summary rules", rationale: "Correct. Summary rules run scheduled aggregations and write the results to a summary table, which makes later queries faster and cheaper." },
         { id: "D", text: "Device groups", rationale: "Device groups belong to Defender for Endpoint management, not log aggregation." },
       ],
-      answer: "A",
+      answer: "C",
       explanation:
         "The outline asks you to create and manage summary rule tables and KQL jobs in the data lake. Both help to work with large volumes efficiently instead of querying raw data again and again.",
       reference: GUIDE,

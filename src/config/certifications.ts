@@ -554,6 +554,525 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     },
   },
 
+
+  /* ── Content batch 2, October 2026 — exam facts verified 27 Oct 2026 against the
+   * official provider sources listed in each entry. ──────────────────────── */
+
+  "ipma-level-d": {
+    description:
+      "Practice exams for IPMA Level D (Certified Project Management Associate), written against the 28 project management competence elements of the IPMA Individual Competence Baseline ICB4 — Perspective, People and Practice. Available in English and German, they help you prepare for the written exams, including the PM-ZERT (GPM) format in Germany.",
+    fullName: "IPMA Level D — Certified Project Management Associate",
+    // Verified 27 Oct 2026. Format details are for Germany (PM-ZERT / GPM); other IPMA member associations differ.
+    exam: {
+      officialName: "IPMA Level D — Certified Project Management Associate",
+      examVersion: "IPMA Individual Competence Baseline ICB4; PM-ZERT Level D guide version 24 (valid from 1 August 2026)",
+      duration: "Germany (PM-ZERT): two written exams of 90 minutes each, or one 90-minute written exam plus a report",
+      format:
+        "Germany (PM-ZERT): Path 1 — one 90-minute written exam plus a report of up to 25 pages (plus up to 15 pages of appendix) and a feedback meeting of up to 20 minutes; Path 2 — two 90-minute written exams. The path is chosen on application and cannot be changed.",
+      passingScore: "Germany (PM-ZERT): 23 competence elements rated as fulfilled across all exam parts",
+      languages: ["German", "English"],
+      delivery: "Germany (PM-ZERT): in person or online via video conference (Zoom or Teams)",
+      prerequisites:
+        "None — no project management experience or vocational training required (PM-ZERT). Certificate valid for five years; recertification with at least 175 hours of continuing professional development.",
+      status: "current",
+      officialCertificationUrl: "https://www.pm-zert.de/zertifizierungsprodukte/projektmanagement/ipma-level-d",
+      domains: [
+        {
+          id: "d1",
+          name: "Perspective competences",
+          objectives: [
+            "4.3.1 Strategy",
+            "4.3.2 Governance, structures and processes",
+            "4.3.3 Compliance, standards and regulations",
+            "4.3.4 Power and interest",
+            "4.3.5 Culture and values",
+          ],
+        },
+        {
+          id: "d2",
+          name: "People competences",
+          objectives: [
+            "4.4.1 Self-reflection and self-management",
+            "4.4.2 Personal integrity and reliability",
+            "4.4.3 Personal communication",
+            "4.4.4 Relations and engagement",
+            "4.4.5 Leadership",
+            "4.4.6 Teamwork",
+            "4.4.7 Conflict and crisis",
+            "4.4.8 Resourcefulness",
+            "4.4.9 Negotiation",
+            "4.4.10 Results orientation",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Practice competences",
+          objectives: [
+            "4.5.1 Project design",
+            "4.5.2 Requirements and objectives",
+            "4.5.3 Scope",
+            "4.5.4 Time",
+            "4.5.5 Organisation and information",
+            "4.5.6 Quality",
+            "4.5.7 Finance",
+            "4.5.8 Resources",
+            "4.5.9 Procurement",
+            "4.5.10 Plan and control",
+            "4.5.11 Risk and opportunity",
+            "4.5.12 Stakeholders",
+            "4.5.13 Change and transformation",
+          ],
+        },
+      ],
+      sources: [
+        { label: "PM-ZERT — IPMA Level D certification", url: "https://www.pm-zert.de/zertifizierungsprodukte/projektmanagement/ipma-level-d" },
+        { label: "PM-ZERT — Leitfaden Zertifizierung Level D, V24 (PDF)", url: "https://www.pm-zert.de/fileadmin/pm_zert_upload/Zertifizierung/Projektmanagement/Ab_September_2024/Z01D_Leitfaden-Level-D_V24.pdf" },
+        { label: "PM-ZERT — Leitfaden Allgemein für Zertifizierungen, V18 (PDF)", url: "https://www.pm-zert.de/fileadmin/pm_zert_upload/Zertifizierung/Projektmanagement/Ab_September_2024/Z01_Leitfaden-Allgemein-Zertifizierung.pdf" },
+        { label: "PM-ZERT — Leitfaden Online-Zertifizierung, V10 (PDF)", url: "https://www.pm-zert.de/fileadmin/pm_zert_upload/Zertifizierung/Projektmanagement/Ab_September_2024/Z01O_Leitfaden-Online-Zertifizierung.pdf" },
+        { label: "PM-ZERT — Leitfaden Level D Rezertifizierung, V07 (PDF)", url: "https://www.pm-zert.de/fileadmin/pm_zert_upload/Zertifizierung/Rezertifizierung/Ab_September_2024/Z01DRZ_Leitfaden-Rezertifzierung-Level-D.pdf" },
+        { label: "PM-ZERT (GPM) — General guide Level D–A, ICB4 competence elements (PDF)", url: "https://www.gpm-ipma.de/fileadmin/pm_zert_upload/Zertifizierung/Projektmanagement/Z01_PM_General_Guide_ICB4.pdf" },
+        { label: "IPMA — Individual certification", url: "https://ipma.world/individuals/certification/" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "IPMA Level D Practice Exams: ICB4 Exam Prep (2026)",
+      description:
+        "IPMA Level D practice exams on the ICB4 competence elements — Perspective, People and Practice — in English and German, with full explanations.",
+    },
+  },
+
+  "aws-aib-c01": {
+    description:
+      "Practice exams for AWS AIB-C01: AWS Certified AI Business Strategist, written to the official AIB-C01 exam guide — AI fundamentals, AI strategy and business value, governance and responsible AI, and business readiness and transformation. Test your business judgement before the beta exam, with no coding required.",
+    fullName: "AWS Certified AI Business Strategist",
+    exam: {
+      officialName: "AWS Certified AI Business Strategist",
+      examCode: "AIB-C01",
+      examVersion: "AIB-C01 exam guide (beta exam)",
+      questionCount: "85 questions (beta exam)",
+      duration: "170 minutes for the beta exam (AWS certification page); the exam guide states 130 minutes",
+      format: "Multiple choice and multiple response",
+      passingScore: "700 (scaled score 100–1,000, compensatory scoring)",
+      questionTypes: "Multiple choice (one correct response out of four options) and multiple response (two or more correct responses out of five or more options). Unanswered questions are scored as incorrect; there is no penalty for guessing.",
+      languages: ["English", "Japanese"],
+      delivery: "Pearson VUE testing centre or online proctored exam",
+      prerequisites: "None. No coding or hands-on AWS implementation experience required. AWS recommends about six months of experience working with or alongside AI initiatives and basic familiarity with AI concepts and AWS AI services at a business level.",
+      status: "current",
+      launchDate: "Beta registration opened 1 September 2026; beta exam delivery began 29 September 2026",
+      officialCertificationUrl: "https://aws.amazon.com/certification/certified-ai-business-strategist/",
+      officialExamUrl: "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html",
+      domains: [
+        { id: "d1", name: "AI Fundamentals and Literacy", weight: "24%", objectives: ["1.1 Describe core AI concepts and define terminology", "1.2 Identify and select appropriate AI solution types", "1.3 Apply GenAI concepts and techniques"] },
+        { id: "d2", name: "AI Strategy and Business Value Creation", weight: "28%", objectives: ["2.1 Develop AI strategies that align with business objectives", "2.2 Measure and demonstrate AI business value", "2.3 Position AI for competitive advantage"] },
+        { id: "d3", name: "AI Governance and Responsible AI Leadership", weight: "24%", objectives: ["3.1 Apply responsible AI principles to business decisions", "3.2 Establish AI governance structures and ensure regulatory compliance", "3.3 Identify enterprise AI risks and direct mitigation strategies"] },
+        { id: "d4", name: "Business Readiness, Leadership, and AI Transformation", weight: "24%", objectives: ["4.1 Assess AI business readiness and maturity", "4.2 Establish data and infrastructure foundations for AI", "4.3 Lead enterprise-wide change and build AI-ready workforce capabilities", "4.4 Scale AI from pilots to enterprise-wide deployments"] },
+      ],
+      sources: [
+        { label: "AWS — AWS Certified AI Business Strategist (beta exam)", url: "https://aws.amazon.com/certification/certified-ai-business-strategist/" },
+        { label: "AWS — AIB-C01 exam guide", url: "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html" },
+        { label: "AWS Training and Certification Blog — Introducing AWS Certified AI Business Strategist (1 September 2026)", url: "https://aws.amazon.com/blogs/training-and-certification/introducing-aws-certified-ai-business-strategist-built-for-the-people-who-scale-ai/" },
+        { label: "AWS — Before testing policies (beta exams)", url: "https://aws.amazon.com/certification/policies/before-testing/" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "AIB-C01 Practice Exams: AWS AI Business Strategist (2026)",
+      description:
+        "AIB-C01 practice exams for AWS Certified AI Business Strategist: AI literacy, strategy and ROI, responsible AI governance and transformation, with explanations.",
+    },
+  },
+
+  "cia-part-1": {
+    description:
+      "Practice exams for CIA Part 1: Internal Audit Fundamentals, written to The IIA's 2025 CIA syllabus and the Global Internal Audit Standards — foundations of internal auditing, ethics and professionalism, governance, risk management and control, and fraud risks. Test yourself against the 125-question, 150-minute format before exam day.",
+    fullName: "CIA Part 1: Internal Audit Fundamentals",
+    exam: {
+      officialName: "Certified Internal Auditor (CIA) — Part 1: Internal Audit Fundamentals",
+      examCode: "CIA Part 1",
+      examVersion: "2025 CIA exam syllabus (Expanded Test Specifications V2.09.2024), aligned with the Global Internal Audit Standards",
+      questionCount: "125",
+      duration: "150 minutes",
+      passingScore: "600 or higher (scaled score, reporting scale 250–750)",
+      delivery: "Computer-based testing at Pearson VUE test centres",
+      prerequisites: "Programme eligibility depends on education and experience (for example 1 year of internal audit experience with a master's degree, 2 years with a bachelor's). All three parts must be passed within 3 years of applying. Part 1 is waived for active IAP holders.",
+      status: "current",
+      officialCertificationUrl: "https://www.theiia.org/en/certifications/cia/",
+      officialExamUrl: "https://www.theiia.org/globalassets/site/certifications/certified-internal-auditor/cia-exam-why-how-and-what-is-changing/cia-part-1-syllabus.pdf",
+      domains: [
+        { id: "d1", name: "Foundations of Internal Auditing", weight: "35%", objectives: ["A.1 Describe the Purpose of Internal Auditing according to the Global Internal Audit Standards", "A.2 Explain the internal audit mandate and responsibilities of the board and chief audit executive", "A.3 Recognize the requirements of an internal audit charter", "A.4 Interpret the differences between assurance services and advisory services provided by the internal audit function", "A.5 Describe the types of assurance services performed by the internal audit function", "A.6 Describe the types of advisory services performed by the internal audit function", "A.7 Identify situations where the independence of the internal audit function may be impaired", "A.8 Recognize the internal audit function's role in the organization's risk management process"] },
+        { id: "d2", name: "Ethics and Professionalism", weight: "20%", objectives: ["B.1 Demonstrate integrity", "B.2 Assess whether an individual internal auditor has any impairments to objectivity", "B.3 Analyze policies that promote objectivity and potential options to mitigate impairments", "B.4 Apply the knowledge, skills, and competencies required (whether developed or procured) to fulfill the responsibilities of the internal audit function", "B.5 Demonstrate due professional care", "B.6 Maintain confidentiality and use information appropriately during engagements"] },
+        { id: "d3", name: "Governance, Risk Management, and Control", weight: "30%", objectives: ["C.1 Describe the concept of organizational governance", "C.2 Recognize the impact of organizational culture on the overall control environment and individual engagement risks and controls", "C.3 Recognize ethical and compliance-related issues", "C.4 Interpret fundamental concepts of risk type", "C.5 Interpret fundamental concepts of the risk management process", "C.6 Describe risk management within organizational processes and functions", "C.7 Interpret internal control concepts and types of controls", "C.8 Recognize the importance of the design, effectiveness, and efficiency of internal controls (financial and nonfinancial)"] },
+        { id: "d4", name: "Fraud Risks", weight: "15%", objectives: ["D.1 Describe concepts of fraud risks and types of fraud", "D.2 Determine whether fraud risks require special consideration during an engagement", "D.3 Evaluate the potential for fraud and how the organization detects and manages fraud risks", "D.4 Describe controls to prevent and detect fraud", "D.5 Recognize techniques and the internal audit function's role related to fraud investigation"] },
+      ],
+      sources: [
+        { label: "The IIA — CIA Part 1 syllabus (Expanded Test Specifications)", url: "https://www.theiia.org/globalassets/site/certifications/certified-internal-auditor/cia-exam-why-how-and-what-is-changing/cia-part-1-syllabus.pdf" },
+        { label: "The IIA — Certified Internal Auditor (eligibility, programme time limits, languages)", url: "https://www.theiia.org/en/certifications/cia/" },
+        { label: "The IIA — CIA exam syllabus (2025)", url: "https://www.theiia.org/en/certifications/cia/exam-prep-resources/exam-syllabus/" },
+        { label: "The IIA — CIA Exam: Why and How It's Changing (questions and minutes per part)", url: "https://www.theiia.org/globalassets/site/certifications/certified-internal-auditor/cia-exam-why-how-and-what-is-changing/cia-exam-why-and-how-it-is-changing2.pdf" },
+        { label: "The IIA — Certification Candidate Handbook (scoring, retakes, Pearson VUE)", url: "https://www.theiia.org/globalassets/site/certifications/certification-candidate-handbook.pdf" },
+        { label: "The IIA — Global Internal Audit Standards", url: "https://www.theiia.org/en/standards/" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "CIA Part 1 Practice Exams: Internal Audit Fundamentals (2026)",
+      description:
+        "CIA Part 1 practice exams for the 2025 syllabus: Global Internal Audit Standards, ethics, governance, risk, control and fraud, with full explanations.",
+    },
+  },
+
+  "cia-part-2": {
+    description:
+      "Practice exams for CIA Part 2: Internal Audit Engagement, written to The IIA's 2025 CIA syllabus and the Global Internal Audit Standards — engagement planning, gathering and evaluating evidence, data analytics, workpapers and supervision. Test yourself against the 100-question, 120-minute format before exam day.",
+    fullName: "CIA Part 2: Internal Audit Engagement",
+    exam: {
+      officialName: "Certified Internal Auditor (CIA) — Part 2: Internal Audit Engagement",
+      examCode: "CIA Part 2",
+      examVersion: "2025 CIA exam syllabus (Expanded Test Specifications V2.09.2024), aligned with the Global Internal Audit Standards",
+      questionCount: "100",
+      duration: "120 minutes",
+      passingScore: "600 or higher (scaled score, reporting scale 250–750)",
+      delivery: "Computer-based testing at Pearson VUE test centres",
+      prerequisites: "Programme eligibility depends on education and experience (for example 1 year of internal audit experience with a master's degree, 2 years with a bachelor's). All three parts must be passed within 3 years of applying.",
+      status: "current",
+      officialCertificationUrl: "https://www.theiia.org/en/certifications/cia/",
+      officialExamUrl: "https://www.theiia.org/globalassets/site/certifications/certified-internal-auditor/cia-exam-why-how-and-what-is-changing/cia-part-2-syllabus.pdf",
+      domains: [
+        { id: "d1", name: "Engagement Planning", weight: "50%", objectives: ["A.1 Determine engagement objectives and scope", "A.2 Determine evaluation criteria based on relevant information gathered", "A.3 Plan the engagement to assess key risks and controls", "A.4 Determine the appropriate approach for an engagement", "A.5 Complete a detailed risk assessment of each activity under review", "A.6 Determine engagement procedures and prepare the engagement work program", "A.7 Determine the level of resources and skills needed for the engagement"] },
+        { id: "d2", name: "Information Gathering, Analysis, and Evaluation", weight: "40%", objectives: ["B.1 Identify sources of information to support engagement objectives and procedures", "B.2 Evaluate the relevance, sufficiency, and reliability of evidence gathered to support engagement objectives", "B.3 Evaluate technology options that internal auditors may use to develop and support engagement findings and conclusions", "B.4 Apply appropriate analytical approaches and process mapping techniques", "B.5 Apply analytical review techniques", "B.6 Determine whether there is a difference between evaluation criteria and existing conditions and evaluate the significance of each finding", "B.7 Prepare workpapers, including relevant information to support conclusions and engagement results", "B.8 Summarize and develop engagement conclusions"] },
+        { id: "d3", name: "Engagement Supervision and Communication", weight: "10%", objectives: ["C.1 Apply appropriate supervision throughout the engagement", "C.2 Apply appropriate communication with stakeholders throughout the engagement"] },
+      ],
+      sources: [
+        { label: "The IIA — CIA Part 2 syllabus (Expanded Test Specifications)", url: "https://www.theiia.org/globalassets/site/certifications/certified-internal-auditor/cia-exam-why-how-and-what-is-changing/cia-part-2-syllabus.pdf" },
+        { label: "The IIA — Certified Internal Auditor (eligibility, programme time limits, languages)", url: "https://www.theiia.org/en/certifications/cia/" },
+        { label: "The IIA — CIA exam syllabus (2025)", url: "https://www.theiia.org/en/certifications/cia/exam-prep-resources/exam-syllabus/" },
+        { label: "The IIA — CIA Exam: Why and How It's Changing (questions and minutes per part)", url: "https://www.theiia.org/globalassets/site/certifications/certified-internal-auditor/cia-exam-why-how-and-what-is-changing/cia-exam-why-and-how-it-is-changing2.pdf" },
+        { label: "The IIA — Certification Candidate Handbook (scoring, retakes, Pearson VUE)", url: "https://www.theiia.org/globalassets/site/certifications/certification-candidate-handbook.pdf" },
+        { label: "The IIA — Global Internal Audit Standards", url: "https://www.theiia.org/en/standards/" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "CIA Part 2 Practice Exams: Internal Audit Engagement (2026)",
+      description:
+        "CIA Part 2 practice exams for the 2025 syllabus: engagement planning, evidence, data analytics, findings and supervision, with full explanations.",
+    },
+  },
+
+  "cia-part-3": {
+    description:
+      "Practice exams for CIA Part 3: Internal Audit Function, written to The IIA's 2025 CIA syllabus and the Global Internal Audit Standards — internal audit operations, the risk-based audit plan, quality assurance, and communicating results and monitoring action plans. Test yourself against the 100-question, 120-minute format before exam day.",
+    fullName: "CIA Part 3: Internal Audit Function",
+    exam: {
+      officialName: "Certified Internal Auditor (CIA) — Part 3: Internal Audit Function",
+      examCode: "CIA Part 3",
+      examVersion: "2025 CIA exam syllabus (Expanded Test Specifications V2.09.2024), aligned with the Global Internal Audit Standards",
+      questionCount: "100",
+      duration: "120 minutes",
+      passingScore: "600 or higher (scaled score, reporting scale 250–750)",
+      delivery: "Computer-based testing at Pearson VUE test centres",
+      prerequisites: "Programme eligibility depends on education and experience (for example 1 year of internal audit experience with a master's degree, 2 years with a bachelor's). All three parts must be passed within 3 years of applying.",
+      status: "current",
+      officialCertificationUrl: "https://www.theiia.org/en/certifications/cia/",
+      officialExamUrl: "https://www.theiia.org/globalassets/site/certifications/certified-internal-auditor/cia-exam-why-how-and-what-is-changing/cia-part-3-syllabus.pdf",
+      domains: [
+        { id: "d1", name: "Internal Audit Operations", weight: "25%", objectives: ["A.1 Describe methodologies for the planning, organizing, directing, and monitoring of internal audit operations", "A.2 Describe key activities for managing financial, human, and IT resources within the internal audit function", "A.3 Describe the key elements required to align internal audit strategy to stakeholder expectations", "A.4 Recognize the chief audit executive's responsibilities for building relationships and communicating with senior management and the board about various matters"] },
+        { id: "d2", name: "Internal Audit Plan", weight: "15%", objectives: ["B.1 Identify sources of potential engagements", "B.2 Describe the processes to develop a risk-based audit plan", "B.3 Recognize the importance for internal auditors to coordinate with other assurance providers and leverage their work"] },
+        { id: "d3", name: "Quality of the Internal Audit Function", weight: "15%", objectives: ["C.1 Describe the required elements of the quality assurance and improvement program", "C.2 Identify appropriate disclosure of nonconformance with The IIA's Global Internal Audit Standards", "C.3 Recognize practical methods for establishing internal audit key performance indicators or scorecard metrics that the chief audit executive communicates to senior management and the board"] },
+        { id: "d4", name: "Engagement Results and Monitoring", weight: "45%", objectives: ["D.1 Recognize attributes of effective engagement results communication", "D.2 Demonstrate effective communication of engagement results", "D.3 Determine whether to develop recommendations, request action plans from management, or collaborate with management to agree on actions", "D.4 Describe the engagement closing communication and reporting process", "D.5 Describe the chief audit executive's responsibility for assessing residual risk for the engagement", "D.6 Describe the process for communicating risk acceptance (when management has accepted a level of risk that may be unacceptable to the organization)", "D.7 Describe the process for monitoring and confirming the implementation of management action plans", "D.8 Describe the escalation process if management has not adequately implemented an action plan"] },
+      ],
+      sources: [
+        { label: "The IIA — CIA Part 3 syllabus (Expanded Test Specifications)", url: "https://www.theiia.org/globalassets/site/certifications/certified-internal-auditor/cia-exam-why-how-and-what-is-changing/cia-part-3-syllabus.pdf" },
+        { label: "The IIA — Certified Internal Auditor (eligibility, programme time limits, languages)", url: "https://www.theiia.org/en/certifications/cia/" },
+        { label: "The IIA — CIA exam syllabus (2025)", url: "https://www.theiia.org/en/certifications/cia/exam-prep-resources/exam-syllabus/" },
+        { label: "The IIA — CIA Exam: Why and How It's Changing (questions and minutes per part)", url: "https://www.theiia.org/globalassets/site/certifications/certified-internal-auditor/cia-exam-why-how-and-what-is-changing/cia-exam-why-and-how-it-is-changing2.pdf" },
+        { label: "The IIA — Certification Candidate Handbook (scoring, retakes, Pearson VUE)", url: "https://www.theiia.org/globalassets/site/certifications/certification-candidate-handbook.pdf" },
+        { label: "The IIA — Global Internal Audit Standards", url: "https://www.theiia.org/en/standards/" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "CIA Part 3 Practice Exams: Internal Audit Function (2026)",
+      description:
+        "CIA Part 3 practice exams for the 2025 syllabus: audit operations, the audit plan, quality, reporting, risk acceptance and follow-up, with explanations.",
+    },
+  },
+
+  "iapp-cipp-e": {
+    description:
+      "Practice exams for the IAPP CIPP/E, written against body of knowledge and exam blueprint version 1.3.3 (effective 1 September 2025): European data protection history and institutions, GDPR concepts, data subject rights, lawful processing, international transfers, accountability and enforcement, and the workplace, marketing and online rules. Find your gaps before the 90-question exam.",
+    fullName: "IAPP Certified Information Privacy Professional/Europe (CIPP/E)",
+    exam: {
+      officialName: "Certified Information Privacy Professional/Europe (CIPP/E)",
+      examVersion: "Body of knowledge and exam blueprint 1.3.3, effective 1 September 2025",
+      questionCount: "90 multiple-choice questions",
+      duration: "2.5 hours, with a 15-minute break halfway through",
+      format: "Multiple choice, including scenario-based questions",
+      passingScore: "300 or above (scale 100–500)",
+      languages: ["English", "French", "German"],
+      delivery: "Pearson VUE, at a test centre or online via OnVUE remote proctoring",
+      prerequisites: "No formal prerequisites stated. Maintenance: 20 CPE credits per two-year term plus the certification maintenance fee (included in IAPP membership).",
+      status: "current",
+      officialCertificationUrl: "https://iapp.org/certify/cippe/",
+      officialExamUrl: "https://store.iapp.org/cipp-e-exam/",
+      domains: [
+        {
+          id: "d1",
+          name: "Introduction to European Data Protection",
+          weight: "7–13 questions",
+          objectives: [
+            "I.A Understand the origins and historical context of European data protection laws",
+            "I.B Understand the roles and functions of significant European Union institutions",
+            "I.C Understand the legislative framework underpinning the principles of European data protection",
+          ],
+        },
+        {
+          id: "d2",
+          name: "European Data Protection Law and Regulation",
+          weight: "18–28 questions",
+          objectives: [
+            "II.A Understand basic GDPR data protection concepts",
+            "II.B Understand the requirements involved in maintaining the security of personal data",
+            "II.C Understand data subjects' rights",
+          ],
+        },
+        {
+          id: "d3",
+          name: "European Data Processing",
+          weight: "13–21 questions",
+          objectives: [
+            "III.A Understand the principles of European data processing",
+            "III.B Know what constitutes a lawful processing basis",
+            "III.C Understand information provision obligations",
+            "III.D Understand the principles of, and the risks involved in, international data transfers",
+          ],
+        },
+        {
+          id: "d4",
+          name: "European Data Protection: Scope and Accountability",
+          weight: "8–18 questions",
+          objectives: [
+            "IV.A Understand issues related to the territorial and material scope of the GDPR",
+            "IV.B Understand the various accountability requirements under the GDPR",
+            "IV.C Understand the European data protection supervision and enforcement structure",
+            "IV.D Understand the consequences for GDPR violations",
+          ],
+        },
+        {
+          id: "d5",
+          name: "Compliance with European Data Protection Law and Regulation",
+          weight: "8–16 questions",
+          objectives: [
+            "V.A Understand how to comply with European data protection laws and regulations in the workplace, specifically as they relate to employment relationships",
+            "V.B Understand how to comply with European data protection laws and regulations related to surveillance activities",
+            "V.C Understand how to comply with European data protection laws and regulations related to direct marketing",
+            "V.D Understand how to comply with European data protection laws and regulations related to internet technology and communications",
+          ],
+        },
+      ],
+      sources: [
+        { label: "IAPP — CIPP/E certification", url: "https://iapp.org/certify/cippe/" },
+        { label: "IAPP store — CIPP/E exam", url: "https://store.iapp.org/cipp-e-exam/" },
+        {
+          label: "IAPP — CIPP/E body of knowledge and exam blueprint 1.3.3 (PDF)",
+          url: "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blte39ae9567661b3d2/IAPP_Training-CIPPE_BOK.pdf",
+        },
+        {
+          label: "IAPP — Certification candidate handbook (PDF)",
+          url: "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blteb8b5d531fd78971/IAPP-Certification_Handbook.pdf",
+        },
+        {
+          label: "IAPP — CPE policy (PDF)",
+          url: "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt25df7f1b0d8c84f7/CPE_Policy.pdf",
+        },
+        { label: "IAPP store — Certification maintenance fee", url: "https://store.iapp.org/certification-maintenance-fee" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "CIPP/E Practice Exams: IAPP GDPR Privacy Professional (2026)",
+      description:
+        "CIPP/E practice exams for body of knowledge 1.3.3: GDPR concepts, data subject rights, lawful bases, transfers, accountability and fines, with explanations.",
+    },
+  },
+
+  "ai-901": {
+    description:
+      "Practice exams for Microsoft AI-901: Azure AI Fundamentals, the successor to AI-900, written to the skills measured as of 15 April 2026 — responsible AI, generative AI and agents, speech, vision and information extraction with Microsoft Foundry. Find your gaps before you book.",
+    fullName: "Microsoft Azure AI Fundamentals",
+    exam: {
+      officialName: "Microsoft Certified: Azure AI Fundamentals",
+      examCode: "AI-901",
+      examVersion: "Skills measured as of 15 April 2026",
+      passingScore: "700 or greater (scale 1–1000)",
+      languages: ["English", "Arabic (Saudi Arabia)", "Chinese (Simplified)", "Chinese (Traditional)", "French", "German", "Indonesian (Indonesia)", "Italian", "Japanese", "Korean", "Portuguese (Brazil)", "Russian", "Spanish"],
+      prerequisites: "None. Microsoft expects conceptual knowledge of AI solutions in Azure, knowledge of Python coding syntax and familiarity with Azure resources. Fundamentals certifications do not expire.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-901/",
+      domains: [
+        { id: "d1", name: "Identify AI concepts and capabilities", weight: "40–45%", objectives: ["Describe principles of responsible AI", "Identify AI model components and configurations", "Identify AI workloads"] },
+        { id: "d2", name: "Implement AI solutions by using Microsoft Foundry", weight: "55–60%", objectives: ["Implement generative AI apps and agents by using Foundry", "Implement AI solutions for text and speech by using Foundry", "Implement AI solutions with computer vision and image-generation capabilities by using Foundry", "Implement AI solutions for information extraction by using Foundry"] },
+      ],
+      sources: [
+        { label: "Microsoft Learn — AI-901 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901" },
+        { label: "Microsoft Learn — Exam AI-901", url: "https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-901/" },
+        { label: "Microsoft Learn — Azure AI Fundamentals certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/" },
+        { label: "Microsoft Learn — Retired certification exams (AI-900: 30 June 2026)", url: "https://learn.microsoft.com/en-us/credentials/retired-certification-exams" },
+        { label: "Microsoft Learn — Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "AI-901 Practice Exams: Azure AI Fundamentals (2026)",
+      description:
+        "AI-901 practice exams for the April 2026 skills outline: responsible AI, generative AI, agents, speech, vision and Microsoft Foundry, with explanations.",
+    },
+  },
+
+  "az-104": {
+    description:
+      "Practice exams for Microsoft AZ-104: Azure Administrator, written to the skills measured as of 17 April 2026 — Entra ID and governance, storage, VMs, containers and App Service, virtual networking, monitoring and backup. Check your level before the 100-minute exam.",
+    fullName: "Microsoft Azure Administrator",
+    exam: {
+      officialName: "Microsoft Certified: Azure Administrator Associate",
+      examCode: "AZ-104",
+      examVersion: "Skills measured as of 17 April 2026",
+      duration: "100 minutes",
+      passingScore: "700 or greater (scale 1–1000)",
+      languages: ["English", "Chinese (Simplified)", "Korean", "Japanese", "French", "Spanish", "German", "Portuguese (Brazil)", "Chinese (Traditional)", "Italian"],
+      delivery: "Proctored exam; may include interactive components",
+      prerequisites: "No formal prerequisites. Microsoft expects experience with PowerShell, Azure CLI, the Azure portal, ARM templates or Bicep, and Microsoft Entra ID. Renewal every 12 months via a free online assessment.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/exams/az-104/",
+      domains: [
+        { id: "d1", name: "Manage Azure identities and governance", weight: "20–25%", objectives: ["Manage Microsoft Entra users and groups", "Manage access to Azure resources", "Manage Azure subscriptions and governance"] },
+        { id: "d2", name: "Implement and manage storage", weight: "15–20%", objectives: ["Configure access to storage", "Configure and manage storage accounts", "Configure Azure Files and Azure Blob Storage"] },
+        { id: "d3", name: "Deploy and manage Azure compute resources", weight: "20–25%", objectives: ["Automate deployment of resources by using Azure Resource Manager (ARM) templates or Bicep files", "Create and configure virtual machines", "Provision and manage containers in the Azure portal", "Create and configure Azure App Service"] },
+        { id: "d4", name: "Implement and manage virtual networking", weight: "15–20%", objectives: ["Configure and manage virtual networks in Azure", "Configure secure access to virtual networks", "Configure name resolution and load balancing"] },
+        { id: "d5", name: "Monitor and maintain Azure resources", weight: "10–15%", objectives: ["Monitor resources in Azure", "Implement backup and recovery"] },
+      ],
+      sources: [
+        { label: "Microsoft Learn — AZ-104 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104" },
+        { label: "Microsoft Learn — Azure Administrator Associate certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/" },
+        { label: "Microsoft Learn — Exam duration and exam experience", url: "https://learn.microsoft.com/en-us/credentials/support/exam-duration-exam-experience" },
+        { label: "Microsoft Learn — Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "AZ-104 Practice Exams: Azure Administrator (2026)",
+      description:
+        "AZ-104 practice exams for the April 2026 skills outline: identity and governance, storage, compute, networking, monitoring and backup, with explanations.",
+    },
+  },
+
+  "nvidia-nca-genl": {
+    description:
+      "Practice exams for the NVIDIA-Certified Associate: Generative AI LLMs (NCA-GENL), written to the five weighted exam topics NVIDIA publishes — core ML and AI knowledge, data analysis, experimentation, software development and trustworthy AI. Check your understanding of transformers, RAG, prompt engineering, fine-tuning and NVIDIA inference tooling before the 1-hour exam.",
+    fullName: "NVIDIA-Certified Associate: Generative AI LLMs",
+    // Verified 27 Oct 2026 against nvidia.com (exam page, certification FAQ) and the
+    // official NCA-GENL study guide PDF (footer "Jan25"). Delivery details come from the
+    // general certification FAQ; the exam page itself only names Certiverse for registration.
+    exam: {
+      officialName: "NVIDIA-Certified Associate: Generative AI LLMs",
+      examCode: "NCA-GENL",
+      questionCount: "50–60",
+      duration: "1 hour",
+      format: "Multiple choice",
+      passingScore: "Pass/fail — NVIDIA does not report a score",
+      languages: ["English"],
+      delivery: "Registration via a Certiverse account; NVIDIA's FAQ describes remotely proctored online exams (secure browser, camera and audio monitoring, no breaks)",
+      prerequisites: "No formal prerequisites; a basic understanding of generative AI and large language models is recommended. Valid for two years; recertify by retaking the exam.",
+      status: "current",
+      officialCertificationUrl: "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/",
+      officialExamUrl: "https://www.certiverse.com/#/checkout/nvidia/store-exam/NCA-GENL",
+      domains: [
+        {
+          id: "d1",
+          name: "Core Machine Learning and AI Knowledge",
+          weight: "30%",
+          objectives: [
+            "Assist in deployment and evaluation of model scalability, performance, and reliability under the supervision of senior team members.",
+            "Awareness of the process of extracting insights from large datasets using data mining, data visualization, and similar techniques.",
+            "Build LLM use cases such as retrieval-augmented generation (RAG), chatbots, and summarizers.",
+            "Curate and embed content datasets for RAGs.",
+            "Familiarity with the fundamentals of machine learning (e.g., feature engineering, model comparison, cross validation).",
+            "Familiarity with the capabilities of Python natural language packages (spaCy, NumPy, vector databases, etc.).",
+            "Read research papers (articles, conference papers, etc.) to identify emerging LLM trends and technologies.",
+            "Select and use models to create text embeddings.",
+            "Use prompt engineering principles to create prompts to achieve desired results.",
+            "Use Python packages (spaCy, NumPy, Keras, etc.) to implement specific traditional machine learning analyses.",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Data Analysis",
+          weight: "14%",
+          objectives: [
+            "Awareness of the process of extracting insights from large datasets using data mining, data visualization, and similar techniques.",
+            "Compare models using statistical performance metrics, such as loss functions or proportion of explained variance.",
+            "Conduct data analysis under the supervision of a senior team member.",
+            "Create graphs, charts, or other visualizations to convey the results of data analysis using specialized software.",
+            "Identify relationships and trends or any factors that could affect the results of research.",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Experimentation",
+          weight: "22%",
+          objectives: [
+            "Assist in model training and training optimization under the supervision of a senior team member.",
+            "Assist in preparing (e.g., scraping, tokenization) large datasets for pretraining, fine-tuning, and RLHF.",
+            "Assist in the design and conduct of hardware or software tests for LLM applications.",
+            "Assist in the evaluation of current or emerging technologies to consider factors such as cost, portability, compatibility, or usability.",
+            "Awareness of, and/or participation in, data collection from human subjects (e.g., RLHF).",
+            "Evaluate and refine existing models / benchmarking.",
+            "Executes experimentation to evaluate models and pipelines.",
+          ],
+        },
+        {
+          id: "d4",
+          name: "Software Development",
+          weight: "24%",
+          objectives: [
+            "Assist in the deployment and evaluations of model scalability, performance, and reliability under the supervision of a senior team member.",
+            "Build LLM use cases such as RAGs, chatbots, and summarizers.",
+            "Familiarity with the capabilities of Python natural language packages (spaCy, NumPy, vector databases, etc.).",
+            "Identify system data, hardware, or software components required to meet user needs.",
+            "Monitor functioning of data collection, experiments, and other software processes.",
+            "Use Python packages (spaCy, NumPy, Keras, etc.) to implement specific traditional machine learning analyses.",
+            "Write software components or scripts under the supervision of a senior team member.",
+          ],
+        },
+        {
+          id: "d5",
+          name: "Trustworthy AI",
+          weight: "10%",
+          objectives: [
+            "Describe the ethical principles of trustworthy AI.",
+            "Describe the balance between data privacy and the importance of data consent.",
+            "Describe how to use NVIDIA and other technologies to improve AI trustworthiness.",
+            "Describe how to minimize bias in AI systems.",
+          ],
+        },
+      ],
+      sources: [
+        { label: "NVIDIA — NCA-GENL Generative AI LLMs certification exam", url: "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/" },
+        { label: "NVIDIA — Certification FAQs and exam policies", url: "https://www.nvidia.com/en-us/learn/certification/" },
+        { label: "NVIDIA — NCA-GENL exam study guide (PDF)", url: "https://dam-cdn.nvd.orangelogic.com/AssetLink/ik3amm6oy7871nv371600i4h7drvex5m.pdf" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "NCA-GENL Practice Exams: NVIDIA Generative AI LLMs (2026)",
+      description:
+        "NVIDIA NCA-GENL practice exams across all five weighted topics: ML fundamentals, RAG, prompting, LoRA, RLHF, inference tooling and trustworthy AI.",
+    },
+  },
+
 };
 
 /* ───────────────────────────────────────────────────────────────────────────

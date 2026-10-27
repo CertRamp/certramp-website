@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/ui/Link";
 import { Icon, type IconName } from "@/components/ui/Icon";
 import type { ResolvedCertification } from "@/lib/certifications";
 import { getResources } from "@/lib/content";

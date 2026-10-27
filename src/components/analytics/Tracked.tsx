@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/ui/Link";
 import { useEffect, type ReactNode } from "react";
 import { track, type AnalyticsEvent, type AnalyticsProps } from "@/lib/analytics";
 

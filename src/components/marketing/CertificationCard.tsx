@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/ui/Link";
 import type { CertificationStatus } from "@/config/types";
 import type { CertificationCardData } from "@/lib/certifications";
 import { cn } from "@/lib/cn";

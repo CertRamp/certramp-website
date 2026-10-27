@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/ui/Link";
 import { categoryList } from "@/config/categories";
 import type { ResolvedCertification } from "@/lib/certifications";
 import { Icon } from "@/components/ui/Icon";

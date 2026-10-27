@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/ui/Link";
 import { Logo } from "@/components/brand/Logo";
 import { Val } from "@/components/ui/Placeholder";
 import { categoryList } from "@/config/categories";

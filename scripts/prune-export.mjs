@@ -3,10 +3,10 @@
  * Runs after `next build` (npm "postbuild"). Keeps the static export under the
  * IONOS Deploy Now size quota (50 MB) as the catalogue and content grow.
  *
- * 1. Removes `__next._full.txt`. Next.js writes this file for every page as an
- *    internal by-product (an identical copy of `index.txt`), but the browser never
- *    requests it on a static host: client navigation loads `index.txt` and
- *    prefetching loads the `__next._tree/_index/<segment>.txt` files.
+ * 1. Removes the per-segment RSC files `__next.*.txt` (incl. `__next._full.txt`).
+ *    They are only used for link prefetching, which is switched off site-wide in
+ *    src/components/ui/Link.tsx. Client-side navigation loads each page's
+ *    `index.txt`, which is kept.
  * 2. Re-encodes the generated Open Graph images (`opengraph-image`, 1200×630 PNG)
  *    as palette PNGs. They are flat graphics (solid colours, text, bars), so the
  *    result is visually identical at roughly a quarter of the size.
@@ -24,7 +24,7 @@ function walk(dir) {
     const p = join(dir, name);
     const s = statSync(p);
     if (s.isDirectory()) walk(p);
-    else if (name === "__next._full.txt") {
+    else if (name.startsWith("__next.") && name.endsWith(".txt")) {
       stats.full++;
       stats.fullBytes += s.size;
       unlinkSync(p);
@@ -48,5 +48,5 @@ for (const p of ogFiles) {
 }
 
 const mb = (b) => (b / 1e6).toFixed(1);
-console.log(`✓ pruned ${stats.full} unused __next._full.txt files (${mb(stats.fullBytes)} MB) from out/`);
+console.log(`✓ pruned ${stats.full} unused __next.*.txt prefetch files (${mb(stats.fullBytes)} MB) from out/`);
 console.log(`✓ compressed ${stats.og} Open Graph images (${mb(stats.ogBefore)} MB → ${mb(stats.ogAfter)} MB)`);

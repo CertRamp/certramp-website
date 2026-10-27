@@ -21,8 +21,42 @@ import { ccspQuestions } from "./practice-questions/isc2-ccsp";
 import { md102Questions } from "./practice-questions/md-102";
 import { pl900Questions } from "./practice-questions/pl-900";
 import { sc200Questions } from "./practice-questions/sc-200";
+import { ipmaLevelDGuide } from "./guides/ipma-level-d";
+import { ipmaLevelDQuestions } from "./practice-questions/ipma-level-d";
+import { awsAibC01Guide } from "./guides/aws-aib-c01";
+import { awsAibC01Questions } from "./practice-questions/aws-aib-c01";
+import { ciaPart1Guide } from "./guides/cia-part-1";
+import { ciaPart1Questions } from "./practice-questions/cia-part-1";
+import { ciaPart2Guide } from "./guides/cia-part-2";
+import { ciaPart2Questions } from "./practice-questions/cia-part-2";
+import { ciaPart3Guide } from "./guides/cia-part-3";
+import { ciaPart3Questions } from "./practice-questions/cia-part-3";
+import { iappCippEGuide } from "./guides/iapp-cipp-e";
+import { iappCippEQuestions } from "./practice-questions/iapp-cipp-e";
+import { ai901Guide } from "./guides/ai-901";
+import { ai901Questions } from "./practice-questions/ai-901";
+import { az104Guide } from "./guides/az-104";
+import { az104Questions } from "./practice-questions/az-104";
+import { nvidiaNcaGenlGuide } from "./guides/nvidia-nca-genl";
+import { nvidiaNcaGenlQuestions } from "./practice-questions/nvidia-nca-genl";
 
-export const guides: ExamGuide[] = [ccspGuide, sc200Guide, irebCpreGuide, pl900Guide, md102Guide, ai103Guide];
+export const guides: ExamGuide[] = [
+  ccspGuide,
+  sc200Guide,
+  irebCpreGuide,
+  pl900Guide,
+  md102Guide,
+  ai103Guide,
+  ipmaLevelDGuide,
+  awsAibC01Guide,
+  ciaPart1Guide,
+  ciaPart2Guide,
+  ciaPart3Guide,
+  iappCippEGuide,
+  ai901Guide,
+  az104Guide,
+  nvidiaNcaGenlGuide,
+];
 
 export const questionSets: PracticeQuestionSet[] = [
   ccspQuestions,
@@ -31,4 +65,13 @@ export const questionSets: PracticeQuestionSet[] = [
   pl900Questions,
   md102Questions,
   ai103Questions,
+  ipmaLevelDQuestions,
+  awsAibC01Questions,
+  ciaPart1Questions,
+  ciaPart2Questions,
+  ciaPart3Questions,
+  iappCippEQuestions,
+  ai901Questions,
+  az104Questions,
+  nvidiaNcaGenlQuestions,
 ];

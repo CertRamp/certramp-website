@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/ui/Link";
 import { ClassMarkerEmbed } from "@/components/certification/ClassMarkerEmbed";
 import { CertCta, UdemyCta } from "@/components/certification/CertCta";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
