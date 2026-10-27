@@ -2076,7 +2076,8 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       examVersion: "CAPM Examination Content Outline, 2023 exam update (exam launched 25 July 2023; aligned with the PMBOK Guide, Seventh Edition)",
       questionCount: "150 questions (135 scored, 15 unscored pretest questions)",
       duration: "3 hours, with a 10-minute break after question 75",
-      questionTypes: "Multiple choice, drag-and-drop (enhanced matching), hot spot and animation or comic-strip items (online candidates see comic-strip items only)",
+      questionTypes: "Multiple choice, drag-and-drop (enhanced matching), hot spot and animation or comic-strip items (online-proctored candidates get comic-strip items instead of animations)",
+      // Languages per PMI's 2023 CAPM exam update FAQ — check PMI's current translation list before booking.
       languages: ["English", "Spanish", "French", "Arabic", "German", "Portuguese (Brazil)", "Italian", "Japanese", "Chinese (Simplified, Mainland China only)"],
       delivery: "Pearson VUE test centre or online proctored; paper-based only in Mainland China",
       prerequisites: "High school diploma, GED or global equivalent, plus 23 hours of project management education completed by the time of the exam. One-year eligibility period with up to three attempts. Renewal every 3 years with 15 PDUs.",

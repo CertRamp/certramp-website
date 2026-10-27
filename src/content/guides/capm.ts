@@ -21,7 +21,7 @@ export const capmGuide: ExamGuide = {
       heading: "What the CAPM exam actually tests",
       paragraphs: [
         "The CAPM Examination Content Outline (2023 exam update) has four domains. Project Management Fundamentals and Core Concepts carries 36%: life cycles, planning, roles, executing planned strategies and problem-solving techniques. Business Analysis Frameworks follows with 27%, Agile Frameworks/Methodologies with 20% and Predictive, Plan-Based Methodologies with 17%.",
-        "The questions check understanding rather than memorised process tables. Typical tasks: tell a risk from an issue, pick the right register or artefact, calculate a schedule or cost variance, find the critical path, decide whether a predictive or adaptive approach fits, choose a requirements-gathering technique, or say who owns the product backlog. PMI states that the exam is aligned with the PMBOK Guide, Seventh Edition, and that every question is supported by at least two references.",
+        "The questions check understanding rather than memorised process tables. Typical tasks: tell a risk from an issue, pick the right register or artefact, calculate a schedule or cost variance, find the critical path, decide whether a predictive or adaptive approach fits, choose a requirements-gathering technique, or say who owns the product backlog. PMI's outline draws on industry practice such as the PMBOK Guide, Seventh Edition, but notes noticeable differences from it; every question is supported by at least two references.",
       ],
     },
     {
@@ -29,7 +29,7 @@ export const capmGuide: ExamGuide = {
       heading: "How the exam is structured",
       paragraphs: [
         "The exam has 150 questions in 3 hours. 15 of them are unscored pretest questions placed at random, so treat every question as if it counts. After question 75 there is a 10-minute break; once you start it, you cannot go back to the first half. The optional tutorial and survey are not part of the 3 hours.",
-        "Besides multiple choice, the outline lists drag-and-drop (matching), hot spot and animation or comic-strip items; online candidates see comic-strip items only. You can test at a Pearson VUE test centre or online with a proctor (in Mainland China the exam is paper-based). After your application is approved you have one year and up to three attempts to pass. The certification is then maintained in three-year cycles with 15 professional development units (PDUs).",
+        "Besides multiple choice, the outline lists drag-and-drop (matching), hot spot and animation or comic-strip items; online-proctored candidates get comic-strip items instead of animations. You can test at a Pearson VUE test centre or online with a proctor (in Mainland China the exam is paper-based). After your application is approved you have one year and up to three attempts to pass. The certification is then maintained in three-year cycles with 15 professional development units (PDUs).",
       ],
     },
     {
@@ -58,7 +58,7 @@ export const capmGuide: ExamGuide = {
         },
         {
           title: "Book when your results are stable",
-          body: "Apply and book once you pass several practice exams with a margin. Remember that the one-year eligibility period starts when your application is approved.",
+          body: "Apply and book once you pass several practice exams with a margin. Remember that the one-year eligibility period starts when your application is approved (or, if audited, when you pass the audit).",
         },
       ],
     },
@@ -67,7 +67,7 @@ export const capmGuide: ExamGuide = {
       heading: "Common preparation mistakes",
       bullets: [
         "Underestimating business analysis. At 27% it carries more weight than either the agile or the predictive domain, and many project management courses cover it only briefly.",
-        "Studying only one approach. The outline expects you to know when predictive, adaptive or hybrid approaches fit — not just how one of them works.",
+        "Studying only one approach. The outline expects you to know when a predictive or an adaptive approach fits — not just how one of them works.",
         "Confusing risks and issues. A risk is an uncertain future event; an issue is something that is already happening. They live in different logs.",
         "Mixing up roles. The sponsor funds and champions the project, the project manager leads the work and the product owner manages the backlog — expect questions on exactly these boundaries.",
         "Skipping the calculations. Critical path and variance questions are quick points if you practise them, and easy to lose under time pressure if you do not.",
@@ -93,7 +93,7 @@ export const capmGuide: ExamGuide = {
     {
       question: "Which PMBOK Guide edition is the CAPM based on?",
       answer:
-        "The current CAPM Examination Content Outline (2023 exam update) states that the exam is aligned with the PMBOK Guide, Seventh Edition. Check PMI's CAPM page before you book in case the outline changes.",
+        "The current CAPM Examination Content Outline (2023 exam update) lists the PMBOK Guide, Seventh Edition, among its references and draws on it. Check PMI's CAPM page before you book in case the outline changes.",
     },
     {
       question: "Are CertRamp's CAPM questions real exam questions?",
