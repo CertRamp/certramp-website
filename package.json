@@ -7,6 +7,7 @@
     "dev": "node scripts/import-courses.mjs && next dev",
     "prebuild": "node scripts/import-courses.mjs",
     "build": "next build",
+    "postbuild": "node scripts/prune-export.mjs",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
