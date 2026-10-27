@@ -27,7 +27,7 @@ export const pl900Guide: ExamGuide = {
       heading: "What changed with the July 2026 skills update",
       paragraphs: [
         "The skills measured as of 24 July 2026 put a clear focus on AI. Copilot Studio now has its own skill area (20–25%) covering topics, knowledge sources, tools including MCP servers and agent flows, publishing through channels, Microsoft Agent 365, usage monitoring and agent evaluations.",
-        "AI also runs through the other areas: creating tables, canvas apps, model-driven apps and flows with AI, the vibe experience for AI-powered apps, Plan designer and code apps. If you prepared with older material that only covers Power BI and classic app building, you are missing a large part of today's exam.",
+        "AI also runs through the other areas: creating tables, canvas apps, model-driven apps, cloud flows and desktop flows with AI, and the vibe experience for AI-powered apps. Power Apps also adds Plan designer and code apps. The update removed the separate Power Pages skill area (Power Pages now appears only as a business-value bullet) and replaced the hands-on 'build a canvas app / model-driven app' objectives with describing how AI builds them. If you prepared with older material focused on building apps by hand, Power Pages site creation or Power BI, you are missing a large part of today's exam.",
       ],
     },
     {
@@ -63,7 +63,7 @@ export const pl900Guide: ExamGuide = {
         "Using outdated material. Older courses still focus on Power BI and Power Virtual Agents; the current exam is about Dataverse, apps, flows and Copilot Studio agents.",
         "Mixing up canvas and model-driven apps. Canvas apps start from the design of the screen; model-driven apps start from the data model in Dataverse.",
         "Confusing cloud flows with desktop flows. Desktop flows (robotic process automation) automate clicks in desktop and legacy applications; cloud flows connect services through connectors.",
-        "Ignoring administration. Environments, the security model and ALM with pipelines are worth a large share of the points and are easy to overlook for business users.",
+        "Ignoring administration. Administration and governance (environments, the security model, monitoring and ALM with pipelines) shares a 20–25% area with Dataverse and is easy to overlook for business users.",
         "Learning only definitions. Most questions ask which option fits a scenario, so practise choosing, not just recognising terms.",
       ],
     },
@@ -86,7 +86,7 @@ export const pl900Guide: ExamGuide = {
     {
       question: "Is Power BI still part of PL-900?",
       answer:
-        "The skills measured as of 24 July 2026 do not list Power BI as a separate skill area. The five areas are business value, environment management (Dataverse and administration), Power Apps, Power Automate and Copilot Studio agents.",
+        "No. Power BI was already absent from the outline before the 24 July 2026 update, and the current skills measured do not list it. The five areas are business value, environment management (Dataverse and administration), Power Apps, Power Automate and Copilot Studio agents.",
     },
     {
       question: "Are CertRamp's PL-900 questions real exam questions?",

@@ -69,7 +69,7 @@ export const ai103Questions: PracticeQuestionSet = {
       options: [
         { id: "A", text: "The model has been deleted; redeploy it", rationale: "A deleted deployment would return a different error, not throttling at peak times." },
         { id: "B", text: "The deployment's rate limits (tokens or requests per minute) are exceeded; implement retries with backoff and review quota and capacity", rationale: "Correct. HTTP 429 means too many requests. Handle it with retry and backoff, and adjust quota, capacity or load distribution." },
-        { id: "C", text: "The content filter blocked the prompts", rationale: "Content filtering returns a filtering result, not a rate-limit status." },
+        { id: "C", text: "The content filter blocked the prompts", rationale: "A filtered prompt returns HTTP 400 with the error code content_filter (or a completion with finish_reason content_filter), not HTTP 429." },
         { id: "D", text: "The managed identity has expired", rationale: "Authentication problems return 401 or 403, not 429." },
       ],
       answer: "B",
@@ -130,7 +130,7 @@ export const ai103Questions: PracticeQuestionSet = {
       ],
       answer: "B",
       explanation:
-        "Defining roles, goals and tool schemas and integrating APIs as tools are core agent skills in the outline. The model chooses the tool; your code executes it and returns the result.",
+        "Defining roles, goals and tool schemas and integrating APIs as tools are core agent skills in the outline. With a function tool, the model chooses the tool and its arguments; your code executes it and returns the result. OpenAPI tools let the service call the API directly.",
       reference: GUIDE,
     },
     {
