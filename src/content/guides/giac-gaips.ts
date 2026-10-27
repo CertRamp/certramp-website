@@ -38,7 +38,7 @@ export const giacGaipsGuide: ExamGuide = {
       steps: [
         {
           title: "Map yourself against the eight objectives",
-          body: "Read GIAC's outcome statement for each objective and mark it as known, unsure or new. Agentic systems, RAG and MLOps are areas where many application security professionals have the least hands-on experience.",
+          body: "Read GIAC's outcome statement for each objective and mark it as known, unsure or new. Agentic systems, RAG and MLOps are often newer territory for application security professionals.",
         },
         {
           title: "Learn the shared vocabulary",

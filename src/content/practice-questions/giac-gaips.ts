@@ -19,7 +19,7 @@ const NIST_AML = {
 export const giacGaipsQuestions: PracticeQuestionSet = {
   slug: "giac-gaips",
   intro:
-    "15 original GIAC GAIPS practice questions across all eight exam certification objectives published by GIAC. GIAC does not publish weightings, so the questions are spread evenly. Each one comes with the answer, a short explanation and the reason every other option is wrong.",
+    "15 original GIAC GAIPS practice questions across all eight exam certification objectives published by GIAC. GIAC does not publish weightings, so the questions are spread across all eight objectives (two each, one for Model Customization and Alignment). Each one comes with the answer, a short explanation and the reason every other option is wrong.",
   published: "2026-10-27",
   updated: "2026-10-27",
   seo: {
@@ -45,7 +45,7 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "Token passthrough lets clients bypass controls that rely on the token audience, muddies the audit trail and breaks trust boundaries. The fix is audience validation: an MCP server only accepts tokens issued for itself and obtains its own tokens for downstream APIs.",
-      reference: { label: "Model Context Protocol — Security Best Practices", url: "https://modelcontextprotocol.io/specification/2025-06-18/basic/security_best_practices" },
+      reference: { label: "Model Context Protocol — Security Best Practices", url: "https://modelcontextprotocol.io/specification/2025-11-25/basic/security_best_practices" },
     },
     {
       id: "gaips-d1-excessive-agency",
@@ -115,7 +115,7 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
       options: [
         { id: "A", text: "Ask the model in the system prompt to produce only safe SELECT statements", rationale: "Prompt instructions can be bypassed; they are not a reliable control over what reaches the database." },
         { id: "B", text: "Increase the model's temperature to make outputs less predictable", rationale: "Randomness does nothing to make generated SQL safe." },
-        { id: "C", text: "Treat model output as untrusted: use parameterised queries and a least-privilege database account", rationale: "Correct. OWASP recommends a zero-trust approach to model output, with parameterised queries for database operations, combined with least privilege on the downstream system." },
+        { id: "C", text: "Treat model output as untrusted: use parameterised queries and a least-privilege database account", rationale: "Correct. OWASP recommends a zero-trust approach to model output and parameterised queries or prepared statements for database operations; a least-privilege database account further limits the impact." },
         { id: "D", text: "Cache the model's responses so the same query is not generated twice", rationale: "Caching affects cost and latency, not injection risk." },
       ],
       answer: "C",
@@ -306,7 +306,7 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
         { id: "A", text: "LoRA adapters cannot be evaluated with benchmarks at all", rationale: "Adapters can be benchmarked; the issue is what benchmarks may fail to reveal." },
         { id: "B", text: "LoRA adapters always replace the full base model weights", rationale: "LoRA adapters are small add-on weights applied to a base model; they do not replace it." },
         { id: "C", text: "Benchmarks only measure speed, not output quality", rationale: "Benchmarks typically measure task performance; this is not the reason." },
-        { id: "D", text: "A malicious adapter can carry a backdoor that behaves normally until a specific trigger appears, so you also need provenance and integrity checks", rationale: "Correct. OWASP warns that a malicious LoRA adapter can compromise the base model and that poisoned models may act as sleeper agents until triggered." },
+        { id: "D", text: "A malicious adapter can carry a backdoor that behaves normally until a specific trigger appears, so you also need provenance and integrity checks", rationale: "Correct. OWASP warns that a malicious LoRA adapter compromises the integrity of the base model, and that fine-tuned models can pass safety benchmarks while hiding very targeted triggers." },
       ],
       answer: "D",
       explanation:

@@ -1862,7 +1862,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       passingScore: "65% (exam versions released on or after 25 July 2026; confirm in the GIAC Certification Portal)",
       format: "1 proctored, web-based exam; open book (hard-copy books and notes only, not open internet or open computer); CyberLive hands-on format; 15 minutes of break time",
       delivery: "Remotely proctored via ProctorU or on site at a Pearson VUE test centre; 120 days from activation to complete the attempt",
-      prerequisites: "Renewal every 4 years by earning 36 CPE credits or retaking the exam, plus a renewal fee.",
+      prerequisites: "None. Certification renewed every 4 years by earning 36 CPE credits or retaking the exam, plus a renewal fee.",
       status: "current",
       officialCertificationUrl: "https://www.giac.org/certifications/ai-security-platform-security-gaips",
       domains: [
