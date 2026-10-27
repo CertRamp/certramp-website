@@ -25,7 +25,7 @@ export const categoryList: Category[] = [
     id: "security-privacy",
     csvName: "Security & Privacy",
     name: "Security & Privacy",
-    description: "Cybersecurity, information security management and data privacy.",
+    description: "Cybersecurity, network and cloud security, security management and data privacy.",
     icon: "lock",
   },
   {
@@ -53,7 +53,7 @@ export const categoryList: Category[] = [
     id: "cloud",
     csvName: "Cloud",
     name: "Cloud",
-    description: "AWS, Microsoft Azure and vendor-neutral cloud certifications.",
+    description: "AWS, Azure, Google Cloud, Kubernetes, DevOps and data platform certifications.",
     icon: "server",
   },
   {
@@ -81,7 +81,7 @@ export const categoryList: Category[] = [
     id: "architecture-aptitude",
     csvName: "Other",
     name: "Architecture & Aptitude",
-    description: "Enterprise architecture and pre-employment aptitude tests.",
+    description: "Enterprise and platform architecture, professional practice and aptitude tests.",
     icon: "target",
   },
 ];

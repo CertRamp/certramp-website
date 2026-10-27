@@ -14,7 +14,7 @@ Stack: Next.js 16 (App Router, static generation) · TypeScript · Tailwind CSS 
 | URL | Purpose | Indexed |
 |---|---|---|
 | `/` | Home: hero, categories, featured exams, methodology, how it works, why, reviews, FAQ, CTA | yes |
-| `/practice-exams` | Catalogue of 80 certifications in 10 categories, with search and language filter | yes |
+| `/practice-exams` | Catalogue of 109 certifications in 10 categories, with search and language filter | yes |
 | `/practice-exams/[slug]` | **Certification landing page template** — one per slug in `data/udemy-courses.csv` (80 pages) | once it has a `description` |
 | `/practice-exams/[slug]/free-test` | Hosts the free ClassMarker test (Option B: embed) | no |
 | `/practice-exams/[slug]/exam-simulator` | Hosts the paid simulator (Option B: embed) | no |
@@ -40,7 +40,7 @@ src/
     certifications.ts     optional details per certification (description, ClassMarker URLs, price …)
     types.ts              data model for a certification
     categories.ts         the 10 catalogue categories (mapped from the CSV "Category" column)
-    vendors.ts            the 23 providers + optional trademark notices
+    vendors.ts            the 30 providers + optional trademark notices
     product.ts            simulator conditions (attempts, access, explanations…) + readiness bands
     methodology.ts        the six tests
     faq.ts                site-wide FAQ + generic per-certification FAQ
@@ -133,7 +133,7 @@ delivery: { freeTest: "redirect", simulator: "redirect" },       // or "embed"
 
 ## 6. The catalogue: adding courses and certifications (no design changes)
 
-**Source of truth: `data/udemy-courses.csv`** — currently 116 courses → 81 certification pages, 23 providers, 5 languages.
+**Source of truth: `data/udemy-courses.csv`** — currently 147 courses → 109 certification pages, 30 providers, 5 languages.
 
 | Column | Meaning |
 |---|---|
