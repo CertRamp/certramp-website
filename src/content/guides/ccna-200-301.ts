@@ -7,7 +7,7 @@ import type { ExamGuide } from "@/config/types";
 export const ccna200301Guide: ExamGuide = {
   slug: "ccna-200-301",
   summary:
-    "CCNA 200-301 (Implementing and Administering Cisco Solutions) is a 120-minute exam that tests whether you can build, run and troubleshoot a small to medium network: addressing and subnetting, switching, routing, network services, security and network operations. Two versions matter right now: v1.1 can be taken until 2 February 2027, and v2.0, with five new topic areas and a stronger focus on troubleshooting and AI in operations, goes live on 3 February 2027.",
+    "CCNA 200-301 (Implementing and Administering Cisco Solutions) is a 120-minute exam that tests whether you can build, run and troubleshoot a small to medium network: addressing and subnetting, switching, routing, network services, security and network operations. Two versions matter right now: v1.1 can be taken until 2 February 2027, and v2.0, which regroups the content into five domains with more troubleshooting and AI in operations, goes live on 3 February 2027.",
   whoFor: [
     "Network, support and helpdesk staff who want a recognised first Cisco certification",
     "Career changers and students building a foundation in routing, switching and IP addressing",
@@ -18,7 +18,7 @@ export const ccna200301Guide: ExamGuide = {
       id: "versions",
       heading: "v1.1 or v2.0: which exam will you take?",
       paragraphs: [
-        "The exam code stays 200-301 and the certification is still CCNA, but the exam topics change. Cisco states that the last day of testing for 200-301 CCNA v1.1 is 2 February 2027 and that CCNA v2.0 goes live for testing on 3 February 2027. Your exam date decides which outline you study: book before 3 February 2027 and you sit v1.1; book on or after it and you sit v2.0.",
+        "The exam code stays 200-301 and the certification is still CCNA, but the exam topics change. Cisco states that the last day of testing for 200-301 CCNA v1.1 is 2 February 2027 and that CCNA v2.0 goes live for testing on 3 February 2027. Your exam date decides which outline you study: test on or before 2 February 2027 and you sit v1.1; test on or after 3 February 2027 and you sit v2.0.",
         "v1.1 has six domains: Network Fundamentals (20%), Network Access (20%), IP Connectivity (25%), IP Services (10%), Security Fundamentals (15%) and Automation and Programmability (10%). v2.0 regroups the content into five: Network Infrastructure and Connectivity (25%), Switching and Network Access (25%), IP Routing (20%), Network Services and Security (20%) and AI, and Network Operations and Management (10%).",
         "Much of the core carries over: IPv4 subnetting, IPv6 addressing, wireless principles, VLANs and trunks, EtherChannel with LACP, Rapid PVST+, static routing, single-area OSPF, NAT, IPv4 ACLs, Layer 2 security, SNMP, syslog and Ansible. Our free questions below cover only these shared topics and show both the v2.0 and the v1.1 topic number.",
       ],
@@ -67,7 +67,7 @@ export const ccna200301Guide: ExamGuide = {
       id: "common-mistakes",
       heading: "Common preparation mistakes",
       bullets: [
-        "Studying the wrong outline. Material written for v1.1 is still useful for v2.0, but it misses new topics such as OSPFv3, HSRP/VRRP status, DNS records and agentic AI.",
+        "Studying the wrong outline. Material written for v1.1 is still useful for v2.0, but it misses new topics such as OSPFv3, the operational status of HSRP and VRRP (v1.1 only described FHRP concepts), DNS records and agentic AI.",
         "Relying on a subnetting calculator. You will not have one in the exam, and slow arithmetic costs time on every addressing question.",
         "Replacing the allowed VLAN list on a trunk. switchport trunk allowed vlan 30 overwrites the list; switchport trunk allowed vlan add 30 extends it.",
         "Forgetting the implicit deny. Every IPv4 ACL ends with an invisible deny, so an ACL with only deny statements blocks all traffic.",

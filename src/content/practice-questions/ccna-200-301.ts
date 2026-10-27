@@ -47,7 +47,7 @@ export const ccna200301Questions: PracticeQuestionSet = {
     {
       id: "ccna-d1-ipv6-eui64",
       domain: "d1",
-      objective: "1.4 Troubleshoot IPv6 address configuration, assignment, and prefix sizing (unicast and modified EUI 64) (v1.1: 1.8)",
+      objective: "1.4 Troubleshoot IPv6 address configuration, assignment, and prefix sizing (unicast and modified EUI 64) (v1.1: 1.8, 1.9.d)",
       difficulty: "advanced",
       question:
         "A router interface with MAC address 001A.2B3C.4D5E is configured with ipv6 address 2001:DB8:ACAD:1::/64 eui-64. Which IPv6 address does the interface get?",
@@ -65,7 +65,7 @@ export const ccna200301Questions: PracticeQuestionSet = {
     {
       id: "ccna-d1-wifi-channels",
       domain: "d1",
-      objective: "1.5 Describe wireless principles — 1.5.a Band and channel selection (v1.1: 1.11)",
+      objective: "1.5 Describe wireless principles — 1.5.a Band and channel selection (v1.1: 1.11.a)",
       difficulty: "foundation",
       question:
         "You are deploying three neighbouring access points in the 2.4 GHz band (20 MHz channels, North American channel set) and want to avoid co-channel and adjacent-channel interference. Which channel plan should you use?",
@@ -103,7 +103,7 @@ export const ccna200301Questions: PracticeQuestionSet = {
     {
       id: "ccna-d2-trunk-allowed",
       domain: "d2",
-      objective: "2.1 Configure network infrastructure connectivity (switch-to-switch and switch-to-router) — 2.1.b Layer 2 802.1Q trunk interfaces (v1.1: 2.2)",
+      objective: "2.1 Configure network infrastructure connectivity (switch-to-switch and switch-to-router) — 2.1.b Layer 2 802.1Q trunk interfaces (v1.1: 2.2.a)",
       difficulty: "intermediate",
       question:
         "An 802.1Q trunk between two switches currently allows VLANs 10 and 20. You must also carry the new VLAN 30 without interrupting VLANs 10 and 20. Which interface command do you enter on both switches?",
@@ -151,7 +151,7 @@ export const ccna200301Questions: PracticeQuestionSet = {
       ],
       answer: "D",
       explanation:
-        "PortFast lets edge ports skip the listening and learning states; BPDU guard protects them by shutting the port if a switch appears. Together they are the standard configuration for ports facing end hosts.",
+        "PortFast moves edge ports straight to forwarding without waiting for STP convergence; BPDU guard protects them by err-disabling the port if a BPDU arrives. Together they are the standard configuration for ports facing end hosts.",
       reference: V2,
     },
 
@@ -159,7 +159,7 @@ export const ccna200301Questions: PracticeQuestionSet = {
     {
       id: "ccna-d3-longest-match",
       domain: "d3",
-      objective: "3.1 Interpret a routing table to identify the next hop for a packet (routing protocol, prefix/mask, administrative distance, metric, and default route) (v1.1: 3.1, 3.2)",
+      objective: "3.1 Interpret a routing table to identify the next hop for a packet (routing protocol, prefix/mask, administrative distance, metric, and default route) (v1.1: 3.1, 3.2.a)",
       difficulty: "intermediate",
       question:
         "A router has these routes: S 10.1.0.0/16 [1/0] via 192.0.2.1; O 10.1.1.0/24 [110/20] via 192.0.2.5; O 10.0.0.0/8 [110/30] via 192.0.2.9; S* 0.0.0.0/0 [1/0] via 192.0.2.13. Where does it forward a packet to 10.1.1.50?",
@@ -177,7 +177,7 @@ export const ccna200301Questions: PracticeQuestionSet = {
     {
       id: "ccna-d3-floating-static",
       domain: "d3",
-      objective: "3.2 Troubleshoot IPv4 and IPv6 static routing — 3.2.d Floating static (v1.1: 3.3)",
+      objective: "3.2 Troubleshoot IPv4 and IPv6 static routing — 3.2.d Floating static (v1.1: 3.3.d)",
       difficulty: "advanced",
       question:
         "A router learns its default route from OSPF. You want a backup default route via 198.51.100.1 that is used only if the OSPF default route disappears. Which command achieves this?",
