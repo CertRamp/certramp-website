@@ -20,7 +20,7 @@ export const nvidiaNcaGenlGuide: ExamGuide = {
       paragraphs: [
         "NVIDIA publishes five topic areas with fixed weights: Core Machine Learning and AI Knowledge (30%), Software Development (24%), Experimentation (22%), Data Analysis (14%) and Trustworthy AI (10%). The topic bullets are written for an associate who works under the supervision of a senior team member, so the exam tests understanding and sound judgement rather than deep research expertise.",
         "In practice that means transformer and attention basics, prompt engineering, text embeddings and retrieval-augmented generation (RAG), fine-tuning approaches such as LoRA, tokenisation and dataset preparation, RLHF, model evaluation and benchmarking, classical machine learning fundamentals such as cross-validation, and the statistics used to compare models. Trustworthy AI covers ethical principles, privacy and consent, bias and the technologies used to make AI systems more trustworthy.",
-        "The suggested readings on the exam page point to NVIDIA tooling as well as general sources: TensorRT and TensorRT-LLM, Triton Inference Server, NeMo, RAPIDS cuDF and cuML, alongside papers such as \"Attention Is All You Need\", the LoRA and BERT papers, and the Hugging Face LLM course.",
+        "The suggested readings on the exam page point to NVIDIA tooling as well as general sources: TensorRT, Triton Inference Server, NeMo, RAPIDS cuDF and cuML, alongside papers such as \"Attention Is All You Need\", the LoRA and BERT papers, and the Hugging Face LLM course.",
       ],
     },
     {
@@ -53,7 +53,7 @@ export const nvidiaNcaGenlGuide: ExamGuide = {
         },
         {
           title: "Cover deployment and trustworthy AI",
-          body: "Understand what Triton Inference Server and TensorRT-LLM do, why quantisation, KV caching and in-flight batching matter, and how guardrails, bias checks and data consent make an LLM system more trustworthy.",
+          body: "Understand what Triton Inference Server and TensorRT do, why quantisation, KV caching and in-flight batching matter, and how guardrails, bias checks and data consent make an LLM system more trustworthy.",
         },
         {
           title: "Practise under time pressure",
@@ -69,7 +69,7 @@ export const nvidiaNcaGenlGuide: ExamGuide = {
         "Confusing fine-tuning methods. Full fine-tuning updates all weights, LoRA trains small low-rank matrices on a frozen model, and p-tuning learns virtual tokens; prompt engineering changes no weights at all.",
         "Treating RAG as retraining. RAG retrieves relevant content at query time and adds it to the prompt; the model's weights stay unchanged.",
         "Mixing up NVIDIA components. Know which tool trains or customises models, which optimises inference and which serves models in production.",
-        "Skipping Trustworthy AI because it is only 10%. The questions are usually short and conceptual, so they are easy marks if you have read NVIDIA's trustworthy AI material.",
+        "Skipping Trustworthy AI because it is only 10%. Its four objectives are narrow (ethical principles, privacy and consent, trustworthiness technologies, bias), so a short review of NVIDIA's trustworthy AI readings covers them.",
       ],
     },
   ],
@@ -92,7 +92,7 @@ export const nvidiaNcaGenlGuide: ExamGuide = {
     {
       question: "Are there prerequisites?",
       answer:
-        "There are no formal prerequisites. NVIDIA recommends a basic understanding of generative AI and large language models.",
+        "There are no formal prerequisites. NVIDIA recommends a basic understanding of generative AI and large language models; its study guide additionally recommends Python programming skills and a solid understanding of neural networks and deep learning.",
     },
     {
       question: "Are CertRamp's NCA-GENL questions real exam questions?",

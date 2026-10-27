@@ -20,7 +20,7 @@ export const awsAibC01Guide: ExamGuide = {
       paragraphs: [
         "The exam guide has four content domains. AI Strategy and Business Value Creation carries 28% of the scored content; AI Fundamentals and Literacy, AI Governance and Responsible AI Leadership, and Business Readiness, Leadership, and AI Transformation carry 24% each. AWS states that the exam prioritises strategic decision-making over technical implementation.",
         "Expect business scenarios rather than configuration steps. Typical decisions: AI or rule-based automation, RAG or fine-tuning, build, buy or partner, which KPIs and baselines prove value, when to scale, pause or stop an initiative, which safeguards need human oversight, and how to close readiness gaps across people, process, technology and governance.",
-        "AWS services appear only at a strategic level: Amazon Bedrock, Amazon SageMaker AI and Amazon Quick, plus the AWS Cloud Adoption Framework, the shared responsibility model, AI pricing models and cost tools such as AWS Pricing Calculator, AWS Cost Explorer and AWS Marketplace. Coding, model tuning, data engineering and administering AWS services are explicitly out of scope.",
+        "AWS services appear only at a strategic level: Amazon Bedrock, Amazon SageMaker AI and Amazon Quick, plus the AWS Cloud Adoption Framework, the AWS shared responsibility model, AI pricing structures (consumption-based, instance-based, seat-based), AWS Pricing Calculator, AWS Cost Explorer and AWS Marketplace. Coding, model tuning, data engineering and administering AWS services are explicitly out of scope.",
       ],
     },
     {
@@ -49,7 +49,7 @@ export const awsAibC01Guide: ExamGuide = {
         },
         {
           title: "Study governance and responsible AI",
-          body: "Review the responsible AI dimensions (fairness, explainability, privacy, safety, transparency, robustness), risk classification, cross-functional governance boards, human oversight and guardrails, IP and harmful content risks. Read the AWS Well-Architected Responsible AI Lens and look at the ISO/IEC 42001 and ISO/IEC 23053 scope.",
+          body: "Review the responsible AI dimensions (fairness, explainability, privacy, safety, transparency, robustness), risk classification, cross-functional governance boards, human oversight and guardrails, IP and harmful content risks. As background reading, use the AWS Well-Architected Responsible AI Lens, and look at the ISO/IEC 42001 and ISO/IEC 23053 scope.",
         },
         {
           title: "Learn the transformation playbook",

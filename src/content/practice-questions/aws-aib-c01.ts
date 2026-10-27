@@ -77,7 +77,7 @@ export const awsAibC01Questions: PracticeQuestionSet = {
       objective: "1.3 Apply GenAI concepts and techniques",
       difficulty: "intermediate",
       question:
-        "A legal team pastes a 600-page contract bundle into a generative AI chat and asks for a summary. The summary ignores clauses that appear near the start of the bundle. What is the most likely cause?",
+        "A legal team pastes a 600-page contract bundle into a generative AI chat and asks for a summary. The summary ignores clauses from large parts of the bundle. What is the most likely cause?",
       options: [
         { id: "A", text: "The input exceeded the model's context window, so part of the text was not processed", rationale: "Correct. A model can only consider a limited number of tokens at once; text beyond that limit is truncated or dropped." },
         { id: "B", text: "The model has drifted since it was trained", rationale: "Model drift describes performance changes over time as real-world data changes; it does not explain missing parts of one long input." },
