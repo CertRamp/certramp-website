@@ -8,7 +8,7 @@ import type { ExamGuide } from "@/config/types";
 export const googleCloudAgenticArchitectGuide: ExamGuide = {
   slug: "google-cloud-agentic-architect",
   summary:
-    "The Google Cloud Professional Agentic Architect certification tests whether you can design, build, evaluate, deploy and secure AI agents on Google Cloud, from low-code tools and coding agents to custom agents built with the Agent Development Kit. The beta exam has about 80 multiple-choice questions in 3 hours, delivered by Pearson online or at a test centre, and passing candidates must then complete hands-on labs in Google Skills. Google says the GA exam launches in mid-November 2026.",
+    "The Google Cloud Professional Agentic Architect certification tests whether you can design, build, evaluate, deploy and secure AI agents on Google Cloud, from low-code tools and coding agents to custom agents built with the Agent Development Kit. The beta exam has about 80 multiple-choice questions in 3 hours, delivered by Pearson, online-proctored or onsite-proctored,, and passing candidates must then complete hands-on labs in Google Skills. Google says the GA exam launches in mid-November 2026.",
   whoFor: [
     "Developers and architects who build agentic solutions on Google Cloud",
     "Engineers moving from classic generative AI apps to multi-agent systems with ADK and Agent Runtime",
@@ -54,7 +54,7 @@ export const googleCloudAgenticArchitectGuide: ExamGuide = {
         },
         {
           title: "Deploy, evaluate and secure",
-          body: "Deploy an ADK agent to Agent Runtime, add Sessions and Memory Bank, run a multi-turn evaluation of task success and tool use, and inspect traces. Then add Agent Identity, IAM policies, OAuth 2.0 for user-delegated tool calls and Model Armor. Use the free tier and new-customer credits Google offers, and delete resources afterwards.",
+          body: "Deploy an ADK agent to Agent Runtime, add Sessions and Memory Bank, run a multi-turn evaluation of task success and tool use, and inspect traces. Then add Agent Identity, IAM policies, OAuth 2.0 for user-delegated tool calls and Model Armor. Use a sandbox project with budget alerts, and delete resources afterwards.",
         },
         {
           title: "Practise under time pressure, then book",

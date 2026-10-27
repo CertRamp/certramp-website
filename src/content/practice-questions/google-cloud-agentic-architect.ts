@@ -235,7 +235,7 @@ export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
         { id: "A", text: "Increase the maximum number of instances", rationale: "More capacity does not change what a single session does and would only spread the cost." },
         { id: "B", text: "Raise the model's temperature", rationale: "This makes behaviour less predictable and does not tell you why the loop happens." },
         { id: "C", text: "Clear the agent's Memory Bank", rationale: "Deleting memories removes data without any evidence that memory causes the problem." },
-        { id: "D", text: "Inspect the affected sessions' traces in Agent Platform observability, which show each step's spans with inputs and outputs", rationale: "Correct. Traces show the step-by-step execution of a session, so you can see which tool is called repeatedly and with what inputs, alongside token and latency metrics." },
+        { id: "D", text: "Inspect the affected sessions' traces in the agent's Observability tab in Gemini Enterprise Agent Platform, which show each step's spans with inputs and outputs", rationale: "Correct. Traces show the step-by-step execution of a session, so you can see which tool is called repeatedly and with what inputs, alongside token and latency metrics." },
       ],
       answer: "D",
       explanation:
@@ -259,7 +259,7 @@ export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
       ],
       answer: "D",
       explanation:
-        "Choose between agent auth and user auth deliberately. When access must follow the individual user's permissions, use OAuth 2.0 and request only the scopes the tool needs.",
+        "Choose between agent auth and user auth deliberately. When access must follow the individual user's permissions, use OAuth 2.0, and keep scopes as narrow as the tool allows, because delegated scopes are often broader than the agent needs.",
       reference: { label: "ADK — Authenticating with tools", url: "https://adk.dev/tools-custom/authentication/" },
     },
     {
