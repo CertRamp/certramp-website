@@ -184,30 +184,51 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     featured: true,
     description:
       "540 practice questions in six mock exams for ISACA AAISM — Advanced in AI Security Management. Six tests of rising difficulty across AI governance, AI risk and AI security controls, with an explanation for every option.",
-    examOverview: [
-      { label: "Exam provider", value: "ISACA, delivered through PSI" },
-      { label: "Questions", value: "90, across three job practice domains" },
-      { label: "Prerequisites", value: "An active CISM or CISSP" },
-      { label: "Delivery", value: "PSI test centre, or remote proctoring where available" },
-    ],
-    sources: [
-      { label: "ISACA — AAISM", url: "https://www.isaca.org/credentialing/aaism" },
-      {
-        label: "ISACA — AAISM exam content outline",
-        url: "https://www.isaca.org/credentialing/aaism/aaism-exam-content-outline",
-      },
-    ],
-    topics: [
-      { title: "AI Governance and Program Management", description: "31% of the exam" },
-      { title: "AI Risk Management", description: "31% of the exam" },
-      { title: "AI Technologies and Controls", description: "38% of the exam" },
-    ],
+    fullName: "ISACA Advanced in AI Security Management (AAISM)",
+    exam: {
+      officialName: "ISACA Advanced in AI Security Management (AAISM)",
+      questionCount: "90 multiple-choice questions",
+      duration: "2.5 hours (150 minutes)",
+      format: "Multiple choice",
+      delivery: "Administered through PSI — remotely proctored online or at an approved test centre",
+      prerequisites:
+        "An active CISM or CISSP. After passing: a one-time US$50 application processing fee and an application within five years of passing the exam. Maintenance: at least 10 AI-related CPE hours each year and 30 over the three-year cycle, an annual maintenance fee (US$20 for ISACA members, US$35 for non-members) and proof of an active CISM or CISSP.",
+      status: "current",
+      officialCertificationUrl: "https://www.isaca.org/credentialing/aaism",
+      officialExamUrl: "https://www.isaca.org/credentialing/aaism/aaism-exam-content-outline",
+      domains: [
+        { id: "d1", name: "AI Governance and Program Management", weight: "31%" },
+        { id: "d2", name: "AI Risk Management", weight: "31%" },
+        { id: "d3", name: "AI Technologies and Controls", weight: "38%" },
+      ],
+      sources: [
+        { label: "ISACA — Get AAISM certified", url: "https://www.isaca.org/credentialing/aaism/get-aaism-certified" },
+        { label: "ISACA — Maintain AAISM certification", url: "https://www.isaca.org/credentialing/aaism/maintain-aaism-certification" },
+        {
+          label: "ISACA Now blog — AAISM FAQs",
+          url: "https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2025/isaca-advanced-in-ai-security-management-aaism-faqs",
+        },
+        {
+          label: "ISACA press release — AAISM launch (2025)",
+          url: "https://www.isaca.org/about-us/newsroom/press-releases/2025/isaca-introduces-first-and-only-ai-centric-security-management-certification",
+        },
+        {
+          label: "ISACA Madrid Chapter — AAISM certification (questions, duration, domain weights, delivery)",
+          url: "https://engage.isaca.org/madridchapter/certificaciones/certiaaism",
+        },
+        {
+          label: "ISACA Engage — AAISM beta exam (150 minutes, PSI scheduling)",
+          url: "https://engage.isaca.org/volunteeropportunities/opportunities-list-public/volunteer-opportunity-details?VolunteerOpportunityKey=d7efd869-6467-45bc-81d2-01971787be05",
+        },
+        { label: "ISACA — AAISM exam content outline", url: "https://www.isaca.org/credentialing/aaism/aaism-exam-content-outline" },
+      ],
+      lastVerified: "2026-10-27",
+    },
     seo: {
       title: "AAISM Practice Exams: ISACA AI Security Management",
       description:
         "540 ISACA AAISM practice questions in six progressive mock exams covering AI governance, AI risk management and AI technologies and controls.",
     },
-    lastReviewed: CHECKED,
   },
 
   "itsm-foundation-bridge-v5": {
@@ -264,39 +285,87 @@ export const certificationDetails: Record<string, CertificationDetails> = {
   "iapp-aigp": {
     description:
       "600 practice questions in six full mock exams for the IAPP AIGP — Artificial Intelligence Governance Professional. Practise all four domains of the AIGP body of knowledge, from your baseline to beyond exam level.",
-    examOverview: [
-      { label: "Exam provider", value: "IAPP, delivered by Pearson VUE" },
-      { label: "Questions", value: "100 multiple-choice questions" },
-      { label: "Duration", value: "2.75 hours, including a 15-minute break" },
-      { label: "Passing score", value: "300 on the IAPP scale of 100–500" },
-      { label: "Prerequisites", value: "No formal education or experience requirements" },
-      { label: "Delivery", value: "Online (OnVUE) or at a test centre" },
-      { label: "Body of Knowledge", value: "Version 2.1, effective 2 February 2026" },
-    ],
-    sources: [
-      { label: "IAPP — AIGP exam", url: "https://store.iapp.org/aigp-exam/" },
-      { label: "IAPP — AIGP certification", url: "https://iapp.org/certify/aigp" },
-      {
-        label: "IAPP — Certification candidate handbook (PDF)",
-        url: "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blteb8b5d531fd78971/IAPP-Certification_Handbook.pdf",
-      },
-      {
-        label: "IAPP — AIGP body of knowledge 2.1 (PDF)",
-        url: "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt0d33152fd20bc134/AIGP_Cert%20BOK.pdf",
-      },
-    ],
-    topics: [
-      { title: "Foundations of AI governance" },
-      { title: "How laws, standards and frameworks apply to AI" },
-      { title: "Governing AI development" },
-      { title: "Governing AI deployment and use" },
-    ],
+    fullName: "IAPP Artificial Intelligence Governance Professional (AIGP)",
+    exam: {
+      officialName: "Artificial Intelligence Governance Professional (AIGP)",
+      examVersion: "Body of knowledge and exam blueprint 2.1, effective 2 February 2026",
+      questionCount: "100 questions",
+      duration: "2.75 hours, with an optional 15-minute break offered halfway through",
+      format: "Multiple choice; some questions may be scenario-based",
+      passingScore: "300 or above (scale 100–500)",
+      languages: ["English"],
+      delivery: "Pearson VUE, at a test centre or online via OnVUE remote proctoring",
+      prerequisites: "No formal prerequisites stated. Maintenance: 20 continuing education credits per two-year term, corresponding to the AIGP body of knowledge, plus the certification maintenance fee (included in IAPP membership).",
+      status: "current",
+      officialCertificationUrl: "https://iapp.org/certify/aigp",
+      officialExamUrl: "https://store.iapp.org/aigp-exam/",
+      domains: [
+        {
+          id: "d1",
+          name: "Understanding the foundations of AI governance",
+          weight: "16–20 questions",
+          objectives: [
+            "I.A Understand what AI is and why it needs governance",
+            "I.B Establish and communicate organizational expectations for AI governance",
+            "I.C Establish policies and procedures to apply throughout the AI life cycle",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Understanding how laws, standards and frameworks apply to AI",
+          weight: "19–23 questions",
+          objectives: [
+            "II.A Understand how existing data privacy laws apply to AI",
+            "II.B Understand how other types of existing laws apply to AI",
+            "II.C Understand the main elements of AI-specific laws",
+            "II.D Understand the main industry standards and tools that apply to AI",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Understanding how to govern AI development",
+          weight: "21–25 questions",
+          objectives: [
+            "III.A Govern the designing and building of the AI system",
+            "III.B Govern the collection and use of data in training and testing the AI model and system",
+            "III.C Govern the release, monitoring and maintenance of the AI system",
+          ],
+        },
+        {
+          id: "d4",
+          name: "Understanding how to govern AI deployment and use",
+          weight: "21–25 questions",
+          objectives: [
+            "IV.A Evaluate key factors and risks relevant to the decision to deploy the AI system",
+            "IV.B Perform key activities to assess the AI system",
+            "IV.C Govern the deployment and use of the AI system",
+          ],
+        },
+      ],
+      sources: [
+        { label: "IAPP — AIGP certification", url: "https://iapp.org/certify/aigp" },
+        { label: "IAPP store — AIGP exam", url: "https://store.iapp.org/aigp-exam/" },
+        {
+          label: "IAPP — AIGP body of knowledge and exam blueprint 2.1 (PDF)",
+          url: "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt0d33152fd20bc134/AIGP_Cert%20BOK.pdf",
+        },
+        {
+          label: "IAPP — Certification candidate handbook (PDF)",
+          url: "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blteb8b5d531fd78971/IAPP-Certification_Handbook.pdf",
+        },
+        {
+          label: "IAPP — CPE policy (PDF)",
+          url: "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt25df7f1b0d8c84f7/CPE_Policy.pdf",
+        },
+        { label: "IAPP store — Certification maintenance fee", url: "https://store.iapp.org/certification-maintenance-fee" },
+      ],
+      lastVerified: "2026-10-27",
+    },
     seo: {
       title: "AIGP Practice Exams: IAPP AI Governance Professional",
       description:
         "600 IAPP AIGP practice questions in six full mock exams across all four domains of the AIGP body of knowledge, with explanations for every option.",
     },
-    lastReviewed: CHECKED,
   },
 
   "ai-governance-v5": {
@@ -1070,6 +1139,366 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       title: "NCA-GENL Practice Exams: NVIDIA Generative AI LLMs (2026)",
       description:
         "NVIDIA NCA-GENL practice exams across all five weighted topics: ML fundamentals, RAG, prompting, LoRA, RLHF, inference tooling and trustworthy AI.",
+    },
+  },
+
+
+  /* ── Content batch 3, October 2026 — exam facts verified 27 Oct 2026 against the
+   * official provider sources listed in each entry. ──────────────────────── */
+
+  "comptia-security-plus-sy0-701": {
+    description:
+      "Practice exams for CompTIA Security+ SY0-701 (V7), written to the official exam objectives (version 5.0) — security controls, threats and mitigations, architecture, security operations and governance. SY0-701 retires on 11 June 2027 in English and 13 August 2027 in the other languages; its successor SY0-801 (V8) launches on 17 November 2026.",
+    fullName: "CompTIA Security+ (SY0-701)",
+    exam: {
+      officialName: "CompTIA Security+",
+      examCode: "SY0-701",
+      examVersion: "Security+ V7, exam objectives version 5.0",
+      questionCount: "Maximum of 90",
+      duration: "90 minutes",
+      passingScore: "750 (on a scale of 100–900)",
+      questionTypes: "Multiple-choice and performance-based",
+      languages: ["English", "Japanese", "Portuguese", "Spanish", "Thai"],
+      prerequisites: "Recommended experience: CompTIA Network+ and two years of experience working in a security/systems administrator job role. Valid for three years; renew with 50 CEUs.",
+      status: "retiring",
+      launchDate: "7 November 2023",
+      retirementDate: "English: 11 June 2027; Japanese, Portuguese, Spanish and Thai: 13 August 2027",
+      officialCertificationUrl: "https://www.comptia.org/en-us/certifications/security/",
+      officialExamUrl: "https://www.comptia.org/en-us/certifications/security/v7/",
+      domains: [
+        {
+          id: "d1",
+          name: "General Security Concepts",
+          weight: "12%",
+          objectives: [
+            "1.1 Compare and contrast various types of security controls.",
+            "1.2 Summarize fundamental security concepts.",
+            "1.3 Explain the importance of change management processes and the impact to security.",
+            "1.4 Explain the importance of using appropriate cryptographic solutions.",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Threats, Vulnerabilities, and Mitigations",
+          weight: "22%",
+          objectives: [
+            "2.1 Compare and contrast common threat actors and motivations.",
+            "2.2 Explain common threat vectors and attack surfaces.",
+            "2.3 Explain various types of vulnerabilities.",
+            "2.4 Given a scenario, analyze indicators of malicious activity.",
+            "2.5 Explain the purpose of mitigation techniques used to secure the enterprise.",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Security Architecture",
+          weight: "18%",
+          objectives: [
+            "3.1 Compare and contrast security implications of different architecture models.",
+            "3.2 Given a scenario, apply security principles to secure enterprise infrastructure.",
+            "3.3 Compare and contrast concepts and strategies to protect data.",
+            "3.4 Explain the importance of resilience and recovery in security architecture.",
+          ],
+        },
+        {
+          id: "d4",
+          name: "Security Operations",
+          weight: "28%",
+          objectives: [
+            "4.1 Given a scenario, apply common security techniques to computing resources.",
+            "4.2 Explain the security implications of proper hardware, software, and data asset management.",
+            "4.3 Explain various activities associated with vulnerability management.",
+            "4.4 Explain security alerting and monitoring concepts and tools.",
+            "4.5 Given a scenario, modify enterprise capabilities to enhance security.",
+            "4.6 Given a scenario, implement and maintain identity and access management.",
+            "4.7 Explain the importance of automation and orchestration related to secure operations.",
+            "4.8 Explain appropriate incident response activities.",
+            "4.9 Given a scenario, use data sources to support an investigation.",
+          ],
+        },
+        {
+          id: "d5",
+          name: "Security Program Management and Oversight",
+          weight: "20%",
+          objectives: [
+            "5.1 Summarize elements of effective security governance.",
+            "5.2 Explain elements of the risk management process.",
+            "5.3 Explain the processes associated with third-party risk assessment and management.",
+            "5.4 Summarize elements of effective security compliance.",
+            "5.5 Explain types and purposes of audits and assessments.",
+            "5.6 Given a scenario, implement security awareness practices.",
+          ],
+        },
+      ],
+      sources: [
+        { label: "CompTIA — Security+ V7 (SY0-701) exam details", url: "https://www.comptia.org/en-us/certifications/security/v7/" },
+        { label: "CompTIA — Security+ SY0-701 Exam Objectives, version 5.0 (PDF)" },
+        { label: "CompTIA — Security+ V8 (SY0-801), launching 17 November 2026", url: "https://www.comptia.org/en-us/certifications/security/v8/" },
+        { label: "CompTIA — How long does the Security+ certification last?", url: "https://www.comptia.org/en-us/blog/how-long-does-the-comptia-security-certification-last/" },
+        { label: "CompTIA — CE renewal cycle", url: "https://www.comptia.org/en-us/resources/ce/learn/how-to-renew/ce-renewal-cycle/" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "Security+ SY0-701 Practice Exams (V7, 2026)",
+      description:
+        "CompTIA Security+ SY0-701 practice exams for the five official domains, with explanations. Max 90 questions, 90 minutes, pass mark 750; retires June 2027.",
+    },
+  },
+
+  "az-900": {
+    description:
+      "Practice exams for Microsoft AZ-900: Azure Fundamentals, written to the skills measured as of 20 July 2026 — cloud concepts, Azure architecture and services, and management and governance. Find your gaps before the 45-minute exam.",
+    fullName: "Microsoft Azure Fundamentals",
+    // Verified 27 Oct 2026 against Microsoft Learn (study guide, certification page, exam page, renewal page).
+    exam: {
+      officialName: "Microsoft Certified: Azure Fundamentals",
+      examCode: "AZ-900",
+      examVersion: "Skills measured as of 20 July 2026",
+      duration: "45 minutes",
+      passingScore: "700 or greater (scale 1–1000)",
+      languages: ["English", "Japanese", "Chinese (Simplified)", "Korean", "Spanish", "German", "French", "Indonesian (Indonesia)", "Arabic (Saudi Arabia)", "Chinese (Traditional)", "Italian", "Portuguese (Brazil)", "Russian"],
+      delivery: "Proctored exam scheduled through Pearson VUE; students and educators can schedule through Certiport",
+      prerequisites: "None. Fundamentals certifications do not expire.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/exams/az-900/",
+      domains: [
+        { id: "d1", name: "Describe cloud concepts", weight: "25–30%", objectives: ["Describe cloud computing", "Describe the benefits of using cloud services", "Describe cloud service types"] },
+        { id: "d2", name: "Describe Azure architecture and services", weight: "35–40%", objectives: ["Describe the core architectural components of Azure", "Describe Azure compute and networking services", "Describe Azure storage services", "Describe Azure identity, access, and security"] },
+        { id: "d3", name: "Describe Azure management and governance", weight: "30–35%", objectives: ["Describe cost management in Azure", "Describe features and tools in Azure for governance and compliance", "Describe features and tools for managing and deploying Azure resources", "Describe monitoring tools in Azure"] },
+      ],
+      sources: [
+        { label: "Microsoft Learn — AZ-900 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900" },
+        { label: "Microsoft Learn — Azure Fundamentals certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/" },
+        { label: "Microsoft Learn — Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "AZ-900 Practice Exams: Azure Fundamentals (2026)",
+      description:
+        "AZ-900 practice exams for the July 2026 skills outline: cloud concepts, Azure architecture, storage, identity, governance and monitoring, with explanations.",
+    },
+  },
+
+  "sc-300": {
+    description:
+      "Practice exams for Microsoft SC-300: Identity and Access Administrator, written to the skills measured as of 28 October 2026 — Microsoft Entra user and hybrid identities, authentication and Conditional Access, Global Secure Access, workload identities and identity governance. Check your level before the 100-minute exam.",
+    fullName: "Microsoft Identity and Access Administrator",
+    // Verified 27 Oct 2026 against Microsoft Learn (study guide + certification page).
+    // Note: the study guide's "Skills at a glance" gives d2 as 25–30%, its detailed heading says 20–25%; the summary figure is used.
+    exam: {
+      officialName: "Microsoft Certified: Identity and Access Administrator Associate",
+      examCode: "SC-300",
+      examVersion: "Skills measured as of 28 October 2026 (English exam updated on 28 October 2026)",
+      duration: "100 minutes",
+      passingScore: "700 or greater (scale 1–1000)",
+      languages: ["English", "German", "Spanish", "French", "Italian", "Japanese", "Korean", "Portuguese (Brazil)", "Chinese (Simplified)", "Chinese (Traditional)"],
+      delivery: "Proctored exam scheduled through Pearson VUE",
+      prerequisites: "No formal prerequisites. Microsoft recommends familiarity with Azure, Microsoft 365, AD DS, PowerShell and KQL. Renewal every 12 months via a free online assessment on Microsoft Learn.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-300/",
+      domains: [
+        { id: "d1", name: "Implement and manage user identities", weight: "20–25%", objectives: ["Configure and manage a Microsoft Entra tenant", "Create, configure, and manage Microsoft Entra identities", "Implement and manage identities for external users and tenants", "Implement and manage hybrid identity"] },
+        { id: "d2", name: "Implement authentication and access management", weight: "25–30%", objectives: ["Plan, implement, and manage Microsoft Entra user authentication", "Plan, implement, and manage Microsoft Entra Conditional Access", "Manage risk by using Microsoft Entra ID Protection", "Implement Global Secure Access"] },
+        { id: "d3", name: "Plan and implement workload identities", weight: "20–25%", objectives: ["Plan and implement identities for applications and Azure workloads", "Plan, implement, and monitor the integration of enterprise applications", "Plan and implement app registrations", "Manage and monitor app access by using Microsoft Defender for Cloud Apps"] },
+        { id: "d4", name: "Plan and automate identity governance", weight: "20–25%", objectives: ["Plan and implement entitlement management in Microsoft Entra", "Plan, implement, and manage access reviews in Microsoft Entra", "Plan and implement privileged access", "Monitor identity activity by using logs, workbooks, and reports"] },
+      ],
+      sources: [
+        { label: "Microsoft Learn — SC-300 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300" },
+        { label: "Microsoft Learn — Identity and Access Administrator Associate", url: "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/" },
+        { label: "Microsoft Learn — Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "SC-300 Practice Exams: Identity and Access Administrator",
+      description:
+        "SC-300 practice exams for the Oct 2026 skills outline: Entra ID, Conditional Access, Global Secure Access, workload identities, PIM and governance, explained.",
+    },
+  },
+
+  "ab-100": {
+    description:
+      "Practice exams for Microsoft AB-100: Agentic AI Business Solutions Architect, written to the skills measured as of 16 November 2026 — AI strategy and ROI, agent design in Copilot Studio, Microsoft 365 Copilot and Microsoft Foundry, ALM, testing and responsible AI. Find your gaps before you book the Expert-level exam.",
+    fullName: "Agentic AI Business Solutions Architect",
+    // Verified 27 Oct 2026 against Microsoft Learn (study guide, exam page, certification page).
+    // Exam duration is not stated on any AB-100 page, so it is left out.
+    exam: {
+      officialName: "Microsoft Certified: Agentic AI Business Solutions Architect Expert",
+      examCode: "AB-100",
+      examVersion: "Skills measured as of 16 November 2026 (English exam update on 16 November 2026)",
+      passingScore: "700 or greater (scale 1–1000)",
+      languages: ["English", "Arabic (Saudi Arabia)", "Japanese", "Chinese (Simplified)", "Chinese (Traditional)", "Korean", "German", "French", "Indonesian (Indonesia)", "Italian", "Portuguese (Brazil)", "Russian", "Spanish"],
+      delivery: "Proctored exam scheduled through Pearson VUE",
+      prerequisites: "To earn the Expert certification you must pass AB-100 and hold at least one of the prerequisite associate certifications listed by Microsoft (for example Power Platform Developer, Azure AI Apps and Agents Developer or a Dynamics 365 associate). Renewal every 12 months via a free online assessment on Microsoft Learn.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/",
+      domains: [
+        { id: "d1", name: "Plan AI-powered business solutions", weight: "35–40%", objectives: ["Analyze requirements for AI-powered business solutions", "Design overall AI strategy for business solutions", "Evaluate the costs and benefits of an AI-powered business solution"] },
+        { id: "d2", name: "Design AI-powered business solutions", weight: "30–35%", objectives: ["Design AI and agents for business solutions", "Design extensibility of AI solutions", "Orchestrate configuration for prebuilt agents and apps"] },
+        { id: "d3", name: "Deploy AI-powered business solutions", weight: "20–25%", objectives: ["Analyze, monitor, and tune AI-powered business solutions", "Manage the testing of AI-powered business solutions", "Design the ALM process for AI-powered business solutions", "Design responsible AI, security, governance, risk management, and compliance"] },
+      ],
+      sources: [
+        { label: "Microsoft Learn — AB-100 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100" },
+        { label: "Microsoft Learn — Exam AB-100", url: "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/" },
+        { label: "Microsoft Learn — Agentic AI Business Solutions Architect Expert", url: "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/" },
+        { label: "Microsoft Learn — Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "AB-100 Practice Exams: Agentic AI Business Solutions Architect",
+      description:
+        "AB-100 practice exams for the Nov 2026 skills outline: AI strategy, ROI, agent design in Copilot Studio and Foundry, ALM, testing and responsible AI.",
+    },
+  },
+
+  "iapp-cipm": {
+    description:
+      "Practice exams for the IAPP CIPM, written against body of knowledge and exam blueprint version 4.2.0 (effective 1 September 2025): building a privacy programme framework and governance, assessing data and vendors, protecting personal data, measuring and auditing the programme, and handling rights requests and incidents. Find your gaps before the 90-question exam.",
+    fullName: "IAPP Certified Information Privacy Manager (CIPM)",
+    exam: {
+      officialName: "Certified Information Privacy Manager (CIPM)",
+      examVersion: "Body of knowledge and exam blueprint 4.2.0, effective 1 September 2025",
+      questionCount: "90 multiple-choice questions",
+      duration: "2.5 hours, with an optional 15-minute break offered halfway through",
+      format: "Multiple choice; some questions may be scenario-based",
+      passingScore: "300 or above (scale 100–500)",
+      languages: ["English", "French", "German", "Chinese", "Brazilian Portuguese"],
+      delivery: "Pearson VUE, at a test centre or online via OnVUE remote proctoring",
+      prerequisites: "No formal prerequisites stated. Maintenance: 20 CPE credits per two-year term plus the certification maintenance fee (included in IAPP membership).",
+      status: "current",
+      officialCertificationUrl: "https://iapp.org/certify/cipm",
+      officialExamUrl: "https://store.iapp.org/cipm-exam/",
+      domains: [
+        {
+          id: "d1",
+          name: "Privacy Program: Developing a Framework",
+          weight: "14–18 questions",
+          objectives: [
+            "I.A Define program scope and develop a privacy strategy",
+            "I.B Communicate organizational vision and mission statement",
+            "I.C Indicate in-scope laws, regulations and standards applicable to the program",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Privacy Program: Establishing Program Governance",
+          weight: "12–16 questions",
+          objectives: [
+            "II.A Create policies and processes to be followed across all stages of the privacy program life cycle",
+            "II.B Clarify roles and responsibilities",
+            "II.C Define privacy metrics for oversight and governance",
+            "II.D Establish training and awareness activities",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Privacy Program Operational Life Cycle: Assessing Data",
+          weight: "12–16 questions",
+          objectives: [
+            "III.A Document data governance systems",
+            "III.B Evaluate processors and third-party vendors",
+            "III.C Evaluate physical and environmental controls",
+            "III.D Evaluate technical controls",
+            "III.E Evaluate risks associated with shared data in mergers, acquisitions and divestitures",
+          ],
+        },
+        {
+          id: "d4",
+          name: "Privacy Program Operational Life Cycle: Protecting Personal Data",
+          weight: "9–13 questions",
+          objectives: [
+            "IV.A Apply information security practices and policies",
+            "IV.B Integrate the main principles of Privacy by Design (PbD)",
+            "IV.C Apply organizational guidelines for data use and ensure technical controls are enforced",
+          ],
+        },
+        {
+          id: "d5",
+          name: "Privacy Program Operational Life Cycle: Sustaining Program Performance",
+          weight: "7–9 questions",
+          objectives: [
+            "V.A Use metrics to measure the performance of the privacy program",
+            "V.B Audit the privacy program",
+            "V.C Manage continuous assessment of the privacy program",
+          ],
+        },
+        {
+          id: "d6",
+          name: "Privacy Program Operational Life Cycle: Responding to Requests and Incidents",
+          weight: "10–14 questions",
+          objectives: [
+            "VI.A Respond to data subject access requests and privacy rights",
+            "VI.B Follow organizational incident handling and response procedures",
+            "VI.C Evaluate and modify current incident response plan",
+          ],
+        },
+      ],
+      sources: [
+        { label: "IAPP — CIPM certification", url: "https://iapp.org/certify/cipm" },
+        { label: "IAPP store — CIPM exam", url: "https://store.iapp.org/cipm-exam/" },
+        {
+          label: "IAPP — CIPM body of knowledge and exam blueprint 4.2.0 (PDF)",
+          url: "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt39d7942c0a9a9f0f/CIPM_BoK_EBP.pdf",
+        },
+        {
+          label: "IAPP — Certification candidate handbook (PDF)",
+          url: "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blteb8b5d531fd78971/IAPP-Certification_Handbook.pdf",
+        },
+        {
+          label: "IAPP — CPE policy (PDF)",
+          url: "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt25df7f1b0d8c84f7/CPE_Policy.pdf",
+        },
+        { label: "IAPP store — Certification maintenance fee", url: "https://store.iapp.org/certification-maintenance-fee" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "CIPM Practice Exams: IAPP Certified Privacy Manager (2026)",
+      description:
+        "CIPM practice exams for body of knowledge 4.2.0: privacy programme framework, governance, data assessment, protection, metrics, audits, DSARs and incidents.",
+    },
+  },
+
+  "google-cloud-agentic-architect": {
+    description:
+      "Practice exams for the Google Cloud Professional Agentic Architect certification, written against the five skill areas Google publishes for the exam and the current Gemini Enterprise Agent Platform product names — low-code agents, coding agents, ADK, evaluation and deployment, and agent security. Check your level before the 3-hour multiple-choice exam (beta format, about 80 questions).",
+    fullName: "Google Cloud Certified Professional Agentic Architect",
+    exam: {
+      officialName: "Professional Agentic Architect",
+      examVersion: "Beta exam; Google states the GA exam launches in mid-November 2026",
+      questionCount: "About 80 (beta exam)",
+      duration: "3 hours (beta exam)",
+      format: "Part 1: proctored multiple-choice exam. Part 2: PAA hands-on labs in Google Skills, unlocked after passing Part 1",
+      questionTypes: "Multiple choice",
+      languages: ["English"],
+      delivery: "Part 1 delivered by Pearson, online-proctored or onsite-proctored; Part 2 labs in Google Skills",
+      prerequisites: "None. Recommended: 3+ years of hands-on experience building, testing, deploying and managing cloud solutions, including 1+ years building agentic solutions using Google Cloud. Certification valid for 1 year.",
+      status: "current",
+      officialCertificationUrl: "https://cloud.google.com/learn/certification/agentic-architect",
+      domains: [
+        { id: "d1", name: "Build agents using low-code tools" },
+        { id: "d2", name: "Use coding agents for application development" },
+        { id: "d3", name: "Develop custom agents" },
+        { id: "d4", name: "Evaluate and deploy agentic workflows" },
+        { id: "d5", name: "Secure and govern agentic workflows" },
+      ],
+      sources: [
+        { label: "Google Cloud — Professional Agentic Architect certification", url: "https://cloud.google.com/learn/certification/agentic-architect" },
+        { label: "Google Cloud — Professional Agentic Architect exam guide (PDF)", url: "https://services.google.com/fh/files/misc/professional_agentic_architect_exam_guide_english.pdf" },
+        { label: "Google Cloud — Gemini Enterprise Agent Platform name changes", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/vertex-ai-name-changes" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "Google Cloud Agentic Architect Practice Exams (PAA 2026)",
+      description:
+        "Professional Agentic Architect practice exams for all five skill areas: Agent Studio, coding agents, ADK, evaluation, Agent Runtime and agent security.",
     },
   },
 

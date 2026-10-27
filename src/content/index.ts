@@ -9,6 +9,22 @@
  * Pages, sitemap entries, internal links and structured data follow automatically.
  */
 import type { ExamGuide, PracticeQuestionSet } from "@/config/types";
+import { isacaAaismGuide } from "./guides/isaca-aaism";
+import { isacaAaismQuestions } from "./practice-questions/isaca-aaism";
+import { iappAigpGuide } from "./guides/iapp-aigp";
+import { iappAigpQuestions } from "./practice-questions/iapp-aigp";
+import { iappCipmGuide } from "./guides/iapp-cipm";
+import { iappCipmQuestions } from "./practice-questions/iapp-cipm";
+import { comptiaSecurityPlusSy0701Guide } from "./guides/comptia-security-plus-sy0-701";
+import { comptiaSecurityPlusSy0701Questions } from "./practice-questions/comptia-security-plus-sy0-701";
+import { az900Guide } from "./guides/az-900";
+import { az900Questions } from "./practice-questions/az-900";
+import { sc300Guide } from "./guides/sc-300";
+import { sc300Questions } from "./practice-questions/sc-300";
+import { ab100Guide } from "./guides/ab-100";
+import { ab100Questions } from "./practice-questions/ab-100";
+import { googleCloudAgenticArchitectGuide } from "./guides/google-cloud-agentic-architect";
+import { googleCloudAgenticArchitectQuestions } from "./practice-questions/google-cloud-agentic-architect";
 import { ai103Guide } from "./guides/ai-103";
 import { irebCpreGuide } from "./guides/ireb-cpre-foundation-level";
 import { ccspGuide } from "./guides/isc2-ccsp";
@@ -41,6 +57,14 @@ import { nvidiaNcaGenlGuide } from "./guides/nvidia-nca-genl";
 import { nvidiaNcaGenlQuestions } from "./practice-questions/nvidia-nca-genl";
 
 export const guides: ExamGuide[] = [
+  isacaAaismGuide,
+  iappAigpGuide,
+  iappCipmGuide,
+  comptiaSecurityPlusSy0701Guide,
+  az900Guide,
+  sc300Guide,
+  ab100Guide,
+  googleCloudAgenticArchitectGuide,
   ccspGuide,
   sc200Guide,
   irebCpreGuide,
@@ -59,6 +83,14 @@ export const guides: ExamGuide[] = [
 ];
 
 export const questionSets: PracticeQuestionSet[] = [
+  isacaAaismQuestions,
+  iappAigpQuestions,
+  iappCipmQuestions,
+  comptiaSecurityPlusSy0701Questions,
+  az900Questions,
+  sc300Questions,
+  ab100Questions,
+  googleCloudAgenticArchitectQuestions,
   ccspQuestions,
   sc200Questions,
   irebCpreQuestions,
