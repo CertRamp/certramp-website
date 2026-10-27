@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
+import { AnalyticsScript } from "@/components/analytics/AnalyticsScript";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -42,6 +43,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </main>
         <SiteFooter />
         <JsonLd data={[organizationSchema(), websiteSchema()]} />
+        <AnalyticsScript />
       </body>
     </html>
   );

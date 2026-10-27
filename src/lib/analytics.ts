@@ -7,6 +7,8 @@
  *   NEXT_PUBLIC_ANALYTICS_PROVIDER=gtm        → window.dataLayer.push({ event, ...props })
  *   NEXT_PUBLIC_ANALYTICS_PROVIDER=ga4        → window.gtag("event", name, props)
  *   NEXT_PUBLIC_ANALYTICS_PROVIDER=plausible  → window.plausible(name, { props })
+ *   NEXT_PUBLIC_ANALYTICS_PROVIDER=umami      → window.umami.track(name, props)
+ *     (script loaded by <AnalyticsScript> once NEXT_PUBLIC_UMAMI_WEBSITE_ID is set)
  *   NEXT_PUBLIC_ANALYTICS_PROVIDER=none       → no-op (logs to console in development)
  *
  * Every event is also dispatched as a DOM CustomEvent "certramp:analytics",
@@ -22,17 +24,26 @@ export type AnalyticsProps = {
   [key: string]: string | number | boolean | undefined;
 };
 
-type Provider = "none" | "gtm" | "ga4" | "plausible";
+type Provider = "none" | "gtm" | "ga4" | "plausible" | "umami";
 
 declare global {
   interface Window {
     dataLayer?: Record<string, unknown>[];
     gtag?: (...args: unknown[]) => void;
     plausible?: (event: string, options?: { props?: Record<string, unknown> }) => void;
+    umami?: { track: (event: string, data?: Record<string, unknown>) => void };
   }
 }
 
-const provider = (process.env.NEXT_PUBLIC_ANALYTICS_PROVIDER || "none") as Provider;
+export const analyticsProvider = (process.env.NEXT_PUBLIC_ANALYTICS_PROVIDER || "none") as Provider;
+const provider = analyticsProvider;
+
+/** Umami Cloud settings — analytics is only active when a website ID is set. */
+export const umami = {
+  websiteId: process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID || "",
+  scriptUrl: process.env.NEXT_PUBLIC_UMAMI_SCRIPT_URL || "https://cloud.umami.is/script.js",
+};
+export const umamiEnabled = analyticsProvider === "umami" && umami.websiteId !== "";
 
 export function track(event: AnalyticsEvent, props: AnalyticsProps = {}): void {
   if (typeof window === "undefined") return;
@@ -47,6 +58,9 @@ export function track(event: AnalyticsEvent, props: AnalyticsProps = {}): void {
         break;
       case "ga4":
         window.gtag?.("event", event, clean);
+        break;
+      case "umami":
+        window.umami?.track(event, clean);
         break;
       case "plausible":
         window.plausible?.(event, { props: clean });
