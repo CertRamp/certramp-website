@@ -22,8 +22,8 @@ const GDPR = {
 };
 
 const NIST_RMF = {
-  label: "NIST — AI Risk Management Framework",
-  url: "https://www.nist.gov/itl/ai-risk-management-framework",
+  label: "NIST AI 100-1, AI Risk Management Framework 1.0, Section 5 (Figure 5)",
+  url: "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
 };
 
 export const iappAigpQuestions: PracticeQuestionSet = {
@@ -54,7 +54,7 @@ export const iappAigpQuestions: PracticeQuestionSet = {
       ],
       answer: "B",
       explanation:
-        "Inference is what makes a system \"AI\" for regulatory purposes: the system derives how to generate outputs from inputs and data. Autonomy and adaptiveness vary between systems, which is why both definitions describe them as possible rather than essential features.",
+        "Inference is what makes a system \"AI\" for regulatory purposes: the system derives how to generate outputs from inputs and data. Both definitions accept varying levels of autonomy, so full independence from humans is not required, and adaptiveness after deployment is optional (\"may exhibit\").",
       reference: aiAct("Article 3(1)"),
     },
     {
@@ -281,8 +281,8 @@ export const iappAigpQuestions: PracticeQuestionSet = {
     },
     {
       id: "aigp-d4-human-oversight",
-      domain: "d4",
-      objective: "IV.C Govern the deployment and use of the AI system",
+      domain: "d2",
+      objective: "II.C Understand the main elements of AI-specific laws",
       difficulty: "advanced",
       question:
         "A company deploys a high-risk AI system under the EU AI Act to support decisions about access to essential services. Which obligation does the AI Act place on the company as deployer regarding human oversight?",

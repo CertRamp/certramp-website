@@ -26,8 +26,8 @@ export const iappAigpGuide: ExamGuide = {
       id: "how-the-exam-is-structured",
       heading: "How the exam and blueprint are structured",
       paragraphs: [
-        "Version 2.1 of the body of knowledge and exam blueprint took effect on 2 February 2026 and supersedes version 2.0.1. Each domain is broken into competencies (for example II.C \"Understand the main elements of AI-specific laws\") with their own question ranges, and each competency lists performance indicators. The competencies with the widest question ranges are IV.C, governing the deployment and use of the AI system (9–11), and III.C, governing the release, monitoring and maintenance of the AI system (8–10).",
-        "You sit the exam through Pearson VUE, at a test centre or online with OnVUE, and it is offered in English. Halfway through you are offered a 15-minute break; whether or not you take it, you must finish and submit the first half first and cannot return to it afterwards. IAPP exams use multiple-choice questions, and you may be asked to read a scenario and answer several questions about it.",
+        "Version 2.1 of the body of knowledge and exam blueprint took effect on 2 February 2026 and supersedes version 2.0.1. Each domain is broken into competencies (for example II.C \"Understand the main elements of AI-specific laws\") with their own question ranges, and each competency lists performance indicators. The competencies with the most questions are IV.C, governing the deployment and use of the AI system (9–11), and III.C, governing the release, monitoring and maintenance of the AI system (8–10).",
+        "You sit the exam through Pearson VUE, at a test centre or online with OnVUE, and it is offered in English. Halfway through you are offered a 15-minute break; whether or not you take it, you must finish and submit the first half first and cannot return to it afterwards. IAPP exams use multiple-choice questions, some with more than one correct answer, and you may be asked to read a scenario and answer several questions about it.",
       ],
     },
     {

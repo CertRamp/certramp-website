@@ -27,7 +27,7 @@ export const iappCipmGuide: ExamGuide = {
       heading: "How the exam and blueprint are structured",
       paragraphs: [
         "Version 4.2.0 of the body of knowledge and exam blueprint took effect on 1 September 2025 and supersedes version 4.1.0. Each domain is broken into competencies (for example II.A \"Create policies and processes to be followed across all stages of the privacy program life cycle\") with their own question ranges, and each competency lists performance indicators. Among the performance indicators is understanding the privacy risks posed by the use of AI in the business environment (I.C).",
-        "You sit the exam through Pearson VUE, at a test centre or online with OnVUE, in English, French, German, Chinese or Brazilian Portuguese. Halfway through you are offered a 15-minute break; whether or not you take it, you must finish and submit the first half first and cannot return to it afterwards. You may be asked to read a scenario about a fictional organisation and answer several questions about it.",
+        "You sit the exam through Pearson VUE, at a test centre or online with OnVUE, in English, French, German, Simplified Chinese or Brazilian Portuguese. Halfway through you are offered a 15-minute break; whether or not you take it, you must finish and submit the first half first and cannot return to it afterwards. You may be asked to read a scenario about a fictional organisation and answer several questions about it.",
       ],
     },
     {
@@ -86,12 +86,12 @@ export const iappCipmGuide: ExamGuide = {
     {
       question: "How do I keep the CIPM certification?",
       answer:
-        "You need 20 continuing privacy education (CPE) credits per two-year certification term and the certification maintenance fee. The fee is included in IAPP membership; the IAPP store lists it at USD 250 per two-year term for those without membership.",
+        "You need 20 continuing professional education (CPE) credits per two-year certification term and the certification maintenance fee. The fee is included in IAPP membership; the IAPP store lists it at USD 250 per two-year term for those without membership.",
     },
     {
       question: "In which languages can I take the CIPM?",
       answer:
-        "English, French, German, Chinese and Brazilian Portuguese. The IAPP states that the translations were made by professional firms without machine translation.",
+        "English, French, German, Simplified Chinese and Brazilian Portuguese. The IAPP states that the translations were made by professional firms without machine translation.",
     },
     {
       question: "Are CertRamp's CIPM questions real exam questions?",
