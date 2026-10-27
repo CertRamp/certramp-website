@@ -1503,6 +1503,221 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     },
   },
 
+  "istqb-ctal-ta": {
+    description:
+      "Practice exams for the ISTQB Certified Tester Advanced Level Test Analyst (CTAL-TA), written to syllabus v4.0 — test analyst tasks, risk-based testing, data-, behaviour- and rule-based test techniques, quality characteristics and defect prevention. Check your level before the 45-question, 120-minute exam.",
+    fullName: "ISTQB Certified Tester Advanced Level Test Analyst",
+    // Verified 27 Oct 2026 against istqb.org (certification page, CTAL-TA v4.0 syllabus, Exam Structures and Rules v1.2,
+    // Exam Structure and Rules Tables v1.18, v4.0 FAQ and v3.1 retirement page).
+    // LO wording for chapters 4–5 could not be read from the syllabus; section headings and LO codes/K-levels are used instead.
+    exam: {
+      officialName: "ISTQB Certified Tester Advanced Level Test Analyst (CTAL-TA)",
+      examCode: "CTAL-TA",
+      examVersion: "Syllabus v4.0 (released 2 May 2025)",
+      questionCount: "45",
+      duration: "120 minutes (150 minutes with the 25% extension if the exam language is not your native language)",
+      format: "45 multiple-choice questions worth 78 points in total",
+      passingScore: "51 of 78 points (65%)",
+      questionTypes: "Multiple choice; 18 K2 questions worth 1 point, 21 K3 questions worth 2 points and 6 K4 questions worth 3 points",
+      delivery: "Through ISTQB Member Boards and Exam Providers",
+      prerequisites: "ISTQB Certified Tester Foundation Level (CTFL) certificate (v4.0 preferred, earlier versions accepted). ISTQB also expects sufficient practical experience; the criteria are set by the Member Board or Exam Provider. ISTQB certificates are valid for life.",
+      status: "current",
+      officialCertificationUrl: "https://istqb.org/certifications/certified-tester-advanced-level-test-analyst/",
+      domains: [
+        {
+          id: "d1",
+          name: "The Tasks of the Test Analyst in the Test Process",
+          weight: "8 questions, 9 of 78 points",
+          objectives: [
+            "TA-1.1.1 (K2) Summarize the involvement of the test analyst in various software development lifecycles",
+            "TA-1.2.1 (K2) Summarize the tasks performed by the test analyst as part of test analysis",
+            "TA-1.2.2 (K2) Summarize the tasks performed by the test analyst as part of test design",
+            "TA-1.2.3 (K2) Summarize the tasks performed by the test analyst as part of test implementation",
+            "TA-1.2.4 (K2) Summarize the tasks performed by the test analyst as part of test execution",
+            "TA-1.3.1 (K2) Differentiate between high-level test cases and low-level test cases",
+            "TA-1.3.2 (K2) Explain the quality criteria for test cases",
+            "TA-1.3.3 (K2) Give examples of test environment requirements",
+            "TA-1.3.4 (K2) Explain the test oracle problem and potential solutions",
+            "TA-1.3.5 (K2) Give examples of test data requirements",
+            "TA-1.3.6 (K3) Use keyword-driven testing to develop test scripts",
+            "TA-1.3.7 (K2) Summarize the types of tools to manage the testware",
+          ],
+        },
+        {
+          id: "d2",
+          name: "The Tasks of the Test Analyst in Risk-Based Testing",
+          weight: "3 questions, 7 of 78 points",
+          objectives: [
+            "TA-2.1.1 (K2) Summarize the test analyst's contribution to product risk analysis",
+            "TA-2.2.1 (K4) Analyze the impact of changes to determine the scope of regression testing",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Test Analysis and Test Design",
+          weight: "22 questions, 42 of 78 points",
+          objectives: [
+            "TA-3.1.1 (K3) Apply domain testing",
+            "TA-3.1.2 (K3) Apply combinatorial testing",
+            "TA-3.1.3 (K2) Summarize the benefits and limitations of random testing",
+            "TA-3.2.1 (K2) Explain CRUD testing",
+            "TA-3.2.2 (K3) Apply state transition testing",
+            "TA-3.2.3 (K3) Apply scenario-based testing",
+            "TA-3.3.1 (K3) Apply decision table testing",
+            "TA-3.3.2 (K3) Apply metamorphic testing",
+            "TA-3.4.1 (K3) Prepare test charters for session-based testing",
+            "TA-3.4.2 (K3) Prepare checklists that support experience-based testing",
+            "TA-3.4.3 (K2) Give examples of the benefits and limitations of crowd testing",
+            "TA-3.5.1 (K4) Select appropriate test techniques to mitigate product risks for a given situation",
+            "TA-3.5.2 (K2) Explain the benefits and risks of automating the test design",
+          ],
+        },
+        {
+          id: "d4",
+          name: "Testing Quality Characteristics",
+          weight: "4 questions, 4 of 78 points",
+          objectives: [
+            "4.1 Functional Testing (TA-4.1.1, K2)",
+            "4.2 Usability Testing (TA-4.2.1, K2)",
+            "4.3 Flexibility Testing (TA-4.3.1, K2)",
+            "4.4 Compatibility Testing (TA-4.4.1, K2)",
+          ],
+        },
+        {
+          id: "d5",
+          name: "Software Defect Prevention",
+          weight: "8 questions, 16 of 78 points",
+          objectives: [
+            "5.1 Defect Prevention Practices (TA-5.1.1, K2)",
+            "5.2.1 Using Models to Detect Defects (TA-5.2.1, K3)",
+            "5.2.2 Applying Review Techniques (TA-5.2.2, K3)",
+            "5.3.1 Analyzing Test Results to Improve Defect Detection (TA-5.3.1, K4)",
+            "5.3.2 Supporting Root Cause Analysis with Defect Classification (TA-5.3.2, K2)",
+          ],
+        },
+      ],
+      sources: [
+        { label: "ISTQB — Certified Tester Advanced Level Test Analyst (CTAL-TA)", url: "https://istqb.org/certifications/certified-tester-advanced-level-test-analyst/" },
+        { label: "ISTQB — CTAL-TA Syllabus v4.0 (PDF)", url: "https://www.istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf" },
+        { label: "ISTQB — Exam Structure and Rules Tables v1.18 (PDF)", url: "https://istqb.org/wp-content/uploads/2026/05/ISTQB_Exam-Structure-and-Rules-Tables_v1.18.pdf" },
+        { label: "ISTQB — Exam Structures and Rules v1.2 (PDF)", url: "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB_Exam-Structures-and-Rules_v1.2.pdf" },
+        { label: "ISTQB — CTAL-TA v4.0 FAQ", url: "https://istqb.org/help/test-analyst/" },
+        { label: "ISTQB — CTAL-TA v3.1 retirement", url: "https://istqb.org/certifications/certified-tester-advanced-level-test-analyst-retiring/" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "ISTQB CTAL-TA v4.0 Practice Exams: Test Analyst (2026)",
+      description:
+        "CTAL-TA v4.0 practice exams: test analyst tasks, risk-based testing, test techniques, quality characteristics and defect prevention, with explanations.",
+    },
+  },
+
+  "istqb-ct-genai": {
+    description:
+      "Practice exams for the ISTQB Certified Tester Testing with Generative AI (CT-GenAI), written to syllabus v1.1 — GenAI and LLM basics, prompt engineering for test tasks, hallucinations and data privacy risks, RAG and agents, and adopting GenAI in a test organisation. Check your level before the 40-question, 60-minute exam.",
+    fullName: "ISTQB Certified Tester Testing with Generative AI",
+    // Verified 27 Oct 2026 against istqb.org (certification page, v1.1 announcement, Exam Structures and Rules v1.2,
+    // Exam Structure and Rules Tables v1.18) and the ISTQB CT-GenAI syllabus (v1.0 EN, v1.1 FR revision history).
+    // LO wording for chapter 5 could not be read; section headings and LO codes/K-levels are used instead.
+    exam: {
+      officialName: "ISTQB Certified Tester Testing with Generative AI (CT-GenAI)",
+      examCode: "CT-GenAI",
+      examVersion: "Syllabus v1.1 (minor update of 27 April 2026; learning objectives unchanged from v1.0 of 25 July 2025)",
+      questionCount: "40",
+      duration: "60 minutes (75 minutes with the 25% extension if the exam language is not your native language)",
+      format: "40 multiple-choice questions worth 46 points in total",
+      passingScore: "30 of 46 points (65%)",
+      questionTypes: "Multiple choice; 8 K1 and 26 K2 questions worth 1 point, 6 K3 questions worth 2 points",
+      delivery: "Through ISTQB Member Boards and Exam Providers",
+      prerequisites: "ISTQB Certified Tester Foundation Level (CTFL) certificate",
+      status: "current",
+      officialCertificationUrl: "https://istqb.org/certifications/gen-ai/",
+      domains: [
+        {
+          id: "d1",
+          name: "Introduction to GenAI for Software Testing",
+          weight: "7 questions, 7 of 46 points",
+          objectives: [
+            "GenAI-1.1.1 (K1) Recall different types of AI: symbolic AI, classical machine learning, deep learning, and generative AI",
+            "GenAI-1.1.2 (K2) Explain the basics of generative AI and large language models",
+            "GenAI-1.1.3 (K2) Distinguish between foundation, instruction-tuned and reasoning LLMs",
+            "GenAI-1.1.4 (K2) Summarize the basic principles of multimodal LLMs and vision-language models",
+            "GenAI-1.2.1 (K2) Give examples of key LLM capabilities for test tasks",
+            "GenAI-1.2.2 (K2) Compare interaction models when using GenAI for software testing",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Prompt Engineering for Effective Software Testing",
+          weight: "11 questions, 16 of 46 points",
+          objectives: [
+            "GenAI-2.1.1 (K2) Give examples of the structure of prompts used in generative AI for software testing",
+            "GenAI-2.1.2 (K2) Differentiate core prompting techniques for software testing",
+            "GenAI-2.1.3 (K2) Distinguish between system prompts and user prompts",
+            "GenAI-2.2.1 (K3) Apply generative AI to test analysis tasks",
+            "GenAI-2.2.2 (K3) Apply generative AI to test design and test implementation tasks",
+            "GenAI-2.2.3 (K3) Apply generative AI to automated regression testing",
+            "GenAI-2.2.4 (K3) Apply generative AI to test control and monitoring tasks",
+            "GenAI-2.2.5 (K3) Select and apply appropriate prompting techniques for a given context and test task",
+            "GenAI-2.3.1 (K2) Understand the metrics for evaluating the results of Generative AI on test tasks",
+            "GenAI-2.3.2 (K2) Give examples of techniques for evaluating and iteratively refining prompts",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Managing Risks of GenAI in Software Testing Process",
+          weight: "10 questions, 11 of 46 points",
+          objectives: [
+            "GenAI-3.1.1 (K1) Recall the definitions of hallucinations, reasoning errors and biases in Generative AI systems",
+            "GenAI-3.1.2 (K3) Identify hallucinations, reasoning errors and biases in LLM output",
+            "GenAI-3.1.3 (K2) Summarize mitigation techniques for GenAI hallucinations, reasoning errors and biases in software test tasks",
+            "GenAI-3.1.4 (K1) Recall mitigation techniques for non-deterministic behavior of LLMs",
+            "GenAI-3.2.1 (K2) Explain key data privacy and security risks associated with using generative AI in software testing",
+            "GenAI-3.2.2 (K2) Give examples of data privacy and vulnerabilities in using Generative AI in software testing",
+            "GenAI-3.2.3 (K2) Summarize mitigation strategies to protect data privacy and enhance security in Generative AI for software testing",
+            "GenAI-3.3.1 (K2) Explain the impact of task characteristics and model usage on the energy consumption of Generative AI in software testing",
+            "GenAI-3.4.1 (K1) Recall examples of AI regulations, standards and best practice frameworks relevant to Generative AI in software testing",
+          ],
+        },
+        {
+          id: "d4",
+          name: "LLM-Powered Solutions for Software Testing",
+          weight: "5 questions, 5 of 46 points",
+          objectives: [
+            "GenAI-4.1.1 (K2) Explain key architectural components and concepts of LLM-powered test infrastructure",
+            "GenAI-4.1.2 (K2) Summarize Retrieval-Augmented Generation",
+            "GenAI-4.1.3 (K2) Explain the role and application of LLM-powered agents in automating test processes",
+            "GenAI-4.2.1 (K2) Explain the fine-tuning of language models for specific test tasks",
+            "GenAI-4.2.2 (K2) Explain LLMOps and its role in deploying and managing LLMs for test tasks",
+          ],
+        },
+        {
+          id: "d5",
+          name: "Deploying and Integrating GenAI in Test Organizations",
+          weight: "7 questions, 7 of 46 points",
+          objectives: [
+            "5.1 Roadmap for Adoption of GenAI (GenAI-5.1.1 K1, 5.1.2 K2, 5.1.3 K2, 5.1.4 K1)",
+            "5.2 Manage Change when Adopting GenAI (GenAI-5.2.1 K2, 5.2.2 K1, 5.2.3 K1)",
+          ],
+        },
+      ],
+      sources: [
+        { label: "ISTQB — Certified Tester Testing with Generative AI (CT-GenAI)", url: "https://istqb.org/certifications/gen-ai/" },
+        { label: "ISTQB — Minor update to CT-GenAI (v1.1)", url: "https://istqb.org/istqb-announces-minor-update-to-certified-tester-testing-with-generative-ai-ct-genai/" },
+        { label: "ISTQB — CT-GenAI launch press release", url: "https://istqb.org/istqb-certified-tester-specialist-level-testing-with-generative-ai-ct-genai-press-release/" },
+        { label: "ISTQB — Exam Structure and Rules Tables v1.18 (PDF)", url: "https://istqb.org/wp-content/uploads/2026/05/ISTQB_Exam-Structure-and-Rules-Tables_v1.18.pdf" },
+        { label: "ISTQB — Exam Structures and Rules v1.2 (PDF)", url: "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB_Exam-Structures-and-Rules_v1.2.pdf" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "ISTQB CT-GenAI v1.1 Practice Exams: Testing with GenAI",
+      description:
+        "CT-GenAI v1.1 practice exams: LLM basics, prompt engineering for testing, hallucinations, data privacy, RAG, agents and GenAI adoption, with explanations.",
+    },
+  },
+
 };
 
 /* ───────────────────────────────────────────────────────────────────────────
