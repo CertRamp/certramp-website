@@ -2,7 +2,7 @@ import type { PracticeQuestionSet } from "@/config/types";
 
 /**
  * Free CompTIA Security+ SY0-701 sample questions — ORIGINAL questions written by
- * CertRamp against the SY0-701 exam objectives (version 5.0). Not taken from the paid
+ * CertRamp against the SY0-701 exam objectives (V7). Not taken from the paid
  * practice exams, not recalled exam content, and not presented as real exam questions.
  */
 const OBJECTIVES = {
@@ -13,7 +13,7 @@ const OBJECTIVES = {
 export const comptiaSecurityPlusSy0701Questions: PracticeQuestionSet = {
   slug: "comptia-security-plus-sy0-701",
   intro:
-    "15 original CompTIA Security+ SY0-701 practice questions across the five domains of the official exam objectives (version 5.0), weighted roughly like the real exam. Each one comes with the answer, a short explanation and the reason every other option is wrong.",
+    "15 original CompTIA Security+ SY0-701 practice questions across the five domains of the official exam objectives (V7), weighted roughly like the real exam. Each one comes with the answer, a short explanation and the reason every other option is wrong.",
   published: "2026-10-27",
   updated: "2026-10-27",
   seo: {

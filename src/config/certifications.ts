@@ -1149,12 +1149,12 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "comptia-security-plus-sy0-701": {
     description:
-      "Practice exams for CompTIA Security+ SY0-701 (V7), written to the official exam objectives (version 5.0) — security controls, threats and mitigations, architecture, security operations and governance. SY0-701 retires on 11 June 2027 in English and 13 August 2027 in the other languages; its successor SY0-801 (V8) launches on 17 November 2026.",
+      "Practice exams for CompTIA Security+ SY0-701 (V7), written to the official exam objectives (V7) — security controls, threats and mitigations, architecture, security operations and governance. SY0-701 retires on 11 June 2027 in English and 13 August 2027 in the other languages; its successor SY0-801 (V8) is expected to launch on or around 17 November 2026.",
     fullName: "CompTIA Security+ (SY0-701)",
     exam: {
       officialName: "CompTIA Security+",
       examCode: "SY0-701",
-      examVersion: "Security+ V7, exam objectives version 5.0",
+      examVersion: "Security+ V7 (exam objectives document version 7.0)",
       questionCount: "Maximum of 90",
       duration: "90 minutes",
       passingScore: "750 (on a scale of 100–900)",
@@ -1233,8 +1233,8 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       ],
       sources: [
         { label: "CompTIA — Security+ V7 (SY0-701) exam details", url: "https://www.comptia.org/en-us/certifications/security/v7/" },
-        { label: "CompTIA — Security+ SY0-701 Exam Objectives, version 5.0 (PDF)" },
-        { label: "CompTIA — Security+ V8 (SY0-801), launching 17 November 2026", url: "https://www.comptia.org/en-us/certifications/security/v8/" },
+        { label: "CompTIA — Security+ SY0-701 V7 Exam Objectives (PDF)", url: "https://lecbyo.files.cmp.optimizely.com/download/cf25ec24b8a511ef9ecbb69c0f9687be" },
+        { label: "CompTIA — Security+ V8 (SY0-801), expected on or around 17 November 2026", url: "https://www.comptia.org/en-us/certifications/security/v8/" },
         { label: "CompTIA — How long does the Security+ certification last?", url: "https://www.comptia.org/en-us/blog/how-long-does-the-comptia-security-certification-last/" },
         { label: "CompTIA — CE renewal cycle", url: "https://www.comptia.org/en-us/resources/ce/learn/how-to-renew/ce-renewal-cycle/" },
       ],

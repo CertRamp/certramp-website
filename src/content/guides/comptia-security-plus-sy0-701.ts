@@ -7,7 +7,7 @@ import type { ExamGuide } from "@/config/types";
 export const comptiaSecurityPlusSy0701Guide: ExamGuide = {
   slug: "comptia-security-plus-sy0-701",
   summary:
-    "CompTIA Security+ SY0-701 (Security+ V7) tests core security skills across five domains, from security controls and threats to security operations and governance. You get a maximum of 90 multiple-choice and performance-based questions in 90 minutes and need 750 on a scale of 100–900. The successor exam SY0-801 (V8) launches on 17 November 2026, and SY0-701 retires on 11 June 2027 in English and on 13 August 2027 in Japanese, Portuguese, Spanish and Thai.",
+    "CompTIA Security+ SY0-701 (Security+ V7) tests core security skills across five domains, from security controls and threats to security operations and governance. You get a maximum of 90 multiple-choice and performance-based questions in 90 minutes and need 750 on a scale of 100–900. The successor exam SY0-801 (V8) is expected to launch on or around 17 November 2026, and SY0-701 retires on 11 June 2027 in English and on 13 August 2027 in Japanese, Portuguese, Spanish and Thai.",
   whoFor: [
     "Systems and network administrators moving into a security role",
     "Junior security analysts and SOC staff who want a broad, vendor-neutral foundation",
@@ -26,7 +26,7 @@ export const comptiaSecurityPlusSy0701Guide: ExamGuide = {
       id: "sy0-701-vs-sy0-801",
       heading: "SY0-701 or SY0-801: which version should you take?",
       paragraphs: [
-        "CompTIA is replacing Security+ V7 (SY0-701, launched 7 November 2023) with Security+ V8 (SY0-801), which launches on 17 November 2026. SY0-701 stays available until it retires: 11 June 2027 for the English exam and 13 August 2027 for the Japanese, Portuguese, Spanish and Thai exams. Both versions keep the same format — a maximum of 90 questions, 90 minutes and a passing score of 750 on a scale of 100–900.",
+        "CompTIA is replacing Security+ V7 (SY0-701, launched 7 November 2023) with Security+ V8 (SY0-801), which is expected to launch on or around 17 November 2026. SY0-701 stays available until it retires: 11 June 2027 for the English exam and 13 August 2027 for the Japanese, Portuguese, Spanish and Thai exams. Both versions keep the same format — a maximum of 90 questions, 90 minutes and a passing score of 750 on a scale of 100–900.",
         "The V8 objectives use the same five-domain structure with different weights (16%, 24%, 19%, 27% and 14%), and domain 2 is renamed \"Threats, Vulnerabilities, and Attacks\". At launch CompTIA lists SY0-801 in English only. If you are well into SY0-701 preparation and can sit the exam before the retirement date, staying on SY0-701 is reasonable; if you are just starting and plan to test in English late in the transition, prepare for SY0-801 instead (CertRamp has a separate SY0-801 page).",
       ],
     },
@@ -36,7 +36,7 @@ export const comptiaSecurityPlusSy0701Guide: ExamGuide = {
       steps: [
         {
           title: "Download the official objectives",
-          body: "Get the SY0-701 exam objectives (version 5.0) from CompTIA and mark each of the 28 objectives as known, unsure or new. Weight your time by domain — Security Operations alone is 28%.",
+          body: "Get the SY0-701 exam objectives (V7) from CompTIA and mark each of the 28 objectives as known, unsure or new. Weight your time by domain — Security Operations alone is 28%.",
         },
         {
           title: "Fix your timeline against the retirement date",
@@ -81,7 +81,7 @@ export const comptiaSecurityPlusSy0701Guide: ExamGuide = {
     {
       question: "When does SY0-701 retire, and what replaces it?",
       answer:
-        "The English SY0-701 exam retires on 11 June 2027; the Japanese, Portuguese, Spanish and Thai versions retire on 13 August 2027. Its successor, Security+ V8 (SY0-801), launches on 17 November 2026 and is listed in English only at launch.",
+        "The English SY0-701 exam retires on 11 June 2027; the Japanese, Portuguese, Spanish and Thai versions retire on 13 August 2027. Its successor, Security+ V8 (SY0-801), is expected to launch on or around 17 November 2026 and is listed in English only at launch.",
     },
     {
       question: "In which languages is SY0-701 available?",
