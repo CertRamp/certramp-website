@@ -9,6 +9,12 @@
  * Pages, sitemap entries, internal links and structured data follow automatically.
  */
 import type { ExamGuide, PracticeQuestionSet } from "@/config/types";
+import { ai200Guide } from "./guides/ai-200";
+import { ai200Questions } from "./practice-questions/ai-200";
+import { dp600Guide } from "./guides/dp-600";
+import { dp600Questions } from "./practice-questions/dp-600";
+import { ab620Guide } from "./guides/ab-620";
+import { ab620Questions } from "./practice-questions/ab-620";
 import { awsMlaC02Guide } from "./guides/aws-mla-c02";
 import { awsMlaC02Questions } from "./practice-questions/aws-mla-c02";
 import { cfeGuide } from "./guides/cfe";
@@ -75,6 +81,9 @@ import { nvidiaNcaGenlGuide } from "./guides/nvidia-nca-genl";
 import { nvidiaNcaGenlQuestions } from "./practice-questions/nvidia-nca-genl";
 
 export const guides: ExamGuide[] = [
+  ai200Guide,
+  dp600Guide,
+  ab620Guide,
   awsMlaC02Guide,
   cfeGuide,
   giacGaipsGuide,
@@ -110,6 +119,9 @@ export const guides: ExamGuide[] = [
 ];
 
 export const questionSets: PracticeQuestionSet[] = [
+  ai200Questions,
+  dp600Questions,
+  ab620Questions,
   awsMlaC02Questions,
   cfeQuestions,
   giacGaipsQuestions,

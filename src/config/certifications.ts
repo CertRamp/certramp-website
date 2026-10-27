@@ -2147,6 +2147,120 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     },
   },
 
+  "ai-200": {
+    description:
+      "Practice exams for Microsoft AI-200: Developing AI Cloud Solutions on Azure, the developer associate exam that follows the retired AZ-204. Written to the skills measured as of 7 October 2026 — containers, vector search in Cosmos DB, PostgreSQL and Redis, messaging, Functions, Key Vault and monitoring. Check your level before the 120-minute exam.",
+    fullName: "Developing AI Cloud Solutions on Azure",
+    // Verified 27 Oct 2026 against Microsoft Learn (study guide, certification page, retired-exams list).
+    // The exam page /exams/ai-200/ could not be retrieved; duration and languages come from the certification page.
+    // Weight of d2 left out: the English study guide shows 30–35% under "Skills at a glance" but 25–30% in the
+    // section heading (change log: "% of exam increased" on 7 Oct 2026). Re-check before adding a figure.
+    exam: {
+      officialName: "Microsoft Certified: Azure AI Cloud Developer Associate",
+      examCode: "AI-200",
+      examVersion: "Skills measured as of 7 October 2026",
+      duration: "120 minutes",
+      passingScore: "700 or greater (scale 1–1000)",
+      languages: ["English", "Arabic (Saudi Arabia)", "Chinese (Simplified)", "Chinese (Traditional)", "French", "German", "Indonesian (Indonesia)", "Italian", "Japanese", "Korean", "Portuguese (Brazil)", "Russian", "Spanish"],
+      delivery: "Proctored exam; may include interactive components",
+      prerequisites: "No formal prerequisites. Microsoft expects proficiency in Python, Azure SDKs, Azure data management services, vector databases, messaging and eventing, monitoring and containerised applications. Renewal every 12 months via a free online assessment on Microsoft Learn.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/",
+      domains: [
+        { id: "d1", name: "Develop containerized solutions on Azure", weight: "20–25%", objectives: ["Implement container application hosting", "Implement container-orchestrated solutions"] },
+        { id: "d2", name: "Develop AI solutions by using Azure data management services", objectives: ["Develop AI solutions by using Azure Cosmos DB for NoSQL", "Develop AI solutions by using Azure Database for PostgreSQL", "Integrate Azure Managed Redis in AI solutions"] },
+        { id: "d3", name: "Connect to and consume Azure services", weight: "20–25%", objectives: ["Develop event- and message-based AI solutions", "Develop and implement Azure Functions"] },
+        { id: "d4", name: "Secure, monitor, and troubleshoot Azure solutions", weight: "20–25%", objectives: ["Implement secure Azure solutions", "Monitor and troubleshoot Azure solutions"] },
+      ],
+      sources: [
+        { label: "Microsoft Learn — AI-200 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200" },
+        { label: "Microsoft Learn — Azure AI Cloud Developer Associate", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/" },
+        { label: "Microsoft Learn — Retired certification exams (AZ-204: 31 July 2026)", url: "https://learn.microsoft.com/en-us/credentials/retired-certification-exams" },
+        { label: "Microsoft Learn — Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "AI-200 Practice Exams: Azure AI Cloud Developer (ex AZ-204)",
+      description:
+        "AI-200 practice exams for the Oct 2026 skills outline: containers, vector search in Cosmos DB, PostgreSQL and Redis, messaging, Functions and monitoring.",
+    },
+  },
+
+  "dp-600": {
+    description:
+      "Practice exams for Microsoft DP-600: Implementing Analytics Solutions Using Microsoft Fabric, written to the skills measured as of 19 October 2026 — security and governance, deployment pipelines, lakehouses, warehouses and eventhouses, SQL, KQL and DAX, and semantic models with Direct Lake. Find your gaps before the 100-minute exam.",
+    fullName: "Microsoft Fabric Analytics Engineer",
+    // Verified 27 Oct 2026 against Microsoft Learn (study guide, exam page, certification page).
+    exam: {
+      officialName: "Microsoft Certified: Fabric Analytics Engineer Associate",
+      examCode: "DP-600",
+      examVersion: "Skills measured as of 19 October 2026",
+      duration: "100 minutes",
+      passingScore: "700 or greater (scale 1–1000)",
+      languages: ["English", "Japanese", "Chinese (Simplified)", "German", "French", "Spanish", "Portuguese (Brazil)"],
+      delivery: "Proctored exam; may include interactive components",
+      prerequisites: "No formal prerequisites. Microsoft expects expertise in designing, creating and managing semantic models, warehouses or lakehouses, and querying with SQL, KQL and DAX. Renewal every 12 months via a free online assessment on Microsoft Learn.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-600/",
+      domains: [
+        { id: "d1", name: "Maintain a data analytics solution", weight: "25–30%", objectives: ["Implement security and governance", "Maintain the analytics development lifecycle"] },
+        { id: "d2", name: "Prepare data", weight: "45–50%", objectives: ["Get data", "Transform data", "Query and analyze data"] },
+        { id: "d3", name: "Implement and manage semantic models", weight: "25–30%", objectives: ["Design and build semantic models", "Optimize enterprise-scale semantic models"] },
+      ],
+      sources: [
+        { label: "Microsoft Learn — DP-600 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600" },
+        { label: "Microsoft Learn — Exam DP-600", url: "https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-600/" },
+        { label: "Microsoft Learn — Fabric Analytics Engineer Associate", url: "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/" },
+        { label: "Microsoft Learn — Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "DP-600 Practice Exams: Fabric Analytics Engineer (Oct 2026)",
+      description:
+        "DP-600 practice exams for the skills measured as of 19 Oct 2026: Fabric lakehouses, warehouses, SQL, KQL, DAX, semantic models and Direct Lake.",
+    },
+  },
+
+  "ab-620": {
+    description:
+      "Practice exams for Microsoft AB-620: Designing and Building Integrated AI Agent Solutions in Copilot Studio, written against the current Microsoft study guide (last updated 16 October 2026) — agent planning, agent flows and topics, MCP and REST tools, multi-agent solutions, Azure integration, evaluation and ALM. Check your level before the 120-minute exam.",
+    fullName: "AI Agent Builder Associate (Copilot Studio)",
+    // Verified 27 Oct 2026 against Microsoft Learn (study guide, certification page).
+    // The exam page /exams/ab-620/ could not be retrieved; duration and languages come from the certification page.
+    // The study guide shows no "skills measured as of" date and no change log, so only its last-updated date is cited.
+    exam: {
+      officialName: "Microsoft Certified: AI Agent Builder Associate",
+      examCode: "AB-620",
+      examVersion: "Study guide last updated 16 October 2026 (no \"skills measured as of\" date published)",
+      duration: "120 minutes",
+      passingScore: "700 or greater (scale 1–1000)",
+      languages: ["English", "Arabic (Saudi Arabia)", "Chinese (Simplified)", "Chinese (Traditional)", "French", "German", "Indonesian (Indonesia)", "Italian", "Japanese", "Korean", "Portuguese (Brazil)", "Russian", "Spanish"],
+      delivery: "Proctored exam; may include interactive components",
+      prerequisites: "No formal prerequisites. Microsoft expects familiarity with Power Fx, Dataverse, Power Platform environments, Microsoft 365 Copilot, Microsoft Foundry and adaptive cards, intermediate generative AI knowledge (RAG, MCP, A2A), REST APIs and experience configuring agents in Copilot Studio. Renewal every 12 months via a free online assessment on Microsoft Learn.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/",
+      domains: [
+        { id: "d1", name: "Plan and configure agent solutions", weight: "30–35%", objectives: ["Plan an agent solution", "Create and monitor agent flows in Copilot Studio", "Configure topics"] },
+        { id: "d2", name: "Integrate and extend agents in Copilot Studio", weight: "40–45%", objectives: ["Connect to enterprise knowledge sources", "Add tools to agents", "Configure multi-agent collaboration from Copilot Studio", "Integrate agents with Azure"] },
+        { id: "d3", name: "Test and manage agents", weight: "20–25%", objectives: ["Evaluate agent performance", "Implement application lifecycle management (ALM) for agents in Copilot Studio"] },
+      ],
+      sources: [
+        { label: "Microsoft Learn — AB-620 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620" },
+        { label: "Microsoft Learn — AI Agent Builder Associate", url: "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/" },
+        { label: "Microsoft Learn — Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
+      ],
+      lastVerified: "2026-10-27",
+    },
+    seo: {
+      title: "AB-620 Practice Exams: AI Agent Builder Associate (2026)",
+      description:
+        "AB-620 practice exams for Copilot Studio: agent flows, topics, MCP and REST tools, multi-agent solutions, Azure integration, evaluation and ALM.",
+    },
+  },
+
 };
 
 /* ───────────────────────────────────────────────────────────────────────────
