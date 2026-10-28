@@ -94,7 +94,7 @@ export const ai200De: DeContent = {
         id: "az-204-vs-ai-200",
         heading: "AI-200 und die eingestellte AZ-204",
         paragraphs: [
-          "Microsoft führt AZ-204 (Microsoft Certified: Azure Developer Associate) als am 31. Juli 2026 eingestellt. Wenn Sie die Zertifizierung bereits erworben haben, bleibt sie in Ihrem Microsoft-Learn-Transkript, Sie können sie aber nicht mehr verlängern. AI-200 ist die Developer-Associate-Prüfung, die jetzt ähnliche Themen abdeckt.",
+          "Microsoft führt AZ-204 (Microsoft Certified: Azure Developer Associate) in der Liste der eingestellten Prüfungen mit dem 31. Juli 2026. Wenn Sie die Zertifizierung bereits erworben haben, bleibt sie in Ihrem Microsoft-Learn-Transkript, Sie können sie aber nicht mehr verlängern. AI-200 ist die Developer-Associate-Prüfung, die jetzt ähnliche Themen abdeckt.",
           "Im Vergleich zu AZ-204 hat sich das Gewicht in Richtung Datendienste mit Vektorsuche, Container (Container Registry Tasks, Container Apps mit KEDA-Skalierung, AKS) und Observability mit OpenTelemetry und KQL verschoben. Messaging (Service Bus, Event Grid), Azure Functions, Key Vault und App Configuration bleiben. Am 7. Oktober 2026 hat sich nur der Bereich Datenverwaltung geändert (sein Gewicht wurde erhöht); seine drei Unterbereiche sind unverändert. Übersetzte Fassungen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
         ],
       },
@@ -116,7 +116,7 @@ export const ai200De: DeContent = {
           },
           {
             title: "Messaging und Functions verbinden",
-            body: "Fügen Sie ein Service-Bus-Topic mit Abonnements, ein Event-Grid-Abonnement mit Filtern und eine Azure Function mit Trigger und Bindungen hinzu. Machen Sie absichtlich eine Nachricht kaputt, um die Dead-Letter-Warteschlange in Aktion zu sehen.",
+            body: "Fügen Sie ein Service-Bus-Topic mit Abonnements, ein Event-Grid-Abonnement mit Filtern und eine Azure Function mit Trigger und Bindungen hinzu. Senden Sie absichtlich eine fehlerhafte Nachricht, um die Dead-Letter-Warteschlange in Aktion zu sehen.",
           },
           {
             title: "Absichern und beobachten",
@@ -144,7 +144,7 @@ export const ai200De: DeContent = {
       {
         question: "Wie lange dauert die AI-200-Prüfung, und wie hoch ist die Bestehensgrenze?",
         answer:
-          "Sie haben 120 Minuten Zeit. Microsoft verlangt zum Bestehen 700 oder mehr. Microsoft veröffentlicht für AI-200 keine genaue Fragenanzahl; laut Microsoft haben die meisten seiner Zertifizierungsprüfungen zwischen 40 und 60 Fragen.",
+          "Sie haben 120 Minuten Zeit. Microsoft verlangt zum Bestehen 700 oder mehr Punkte. Microsoft veröffentlicht für AI-200 keine genaue Fragenanzahl; laut Microsoft haben die meisten seiner Zertifizierungsprüfungen zwischen 40 und 60 Fragen.",
       },
       {
         question: "Ersetzt AI-200 die Prüfung AZ-204?",
@@ -164,7 +164,7 @@ export const ai200De: DeContent = {
       {
         question: "Gibt es die Prüfung auf Deutsch?",
         answer:
-          "Ja. Microsoft bietet AI-200 unter anderem auf Deutsch an. Übersetzte Fassungen werden etwa acht Wochen nach der englischen Version aktualisiert; prüfen Sie daher kurz nach einem Update wie dem vom 7. Oktober 2026 den englischen Studienleitfaden.",
+          "Ja. Microsoft bietet AI-200 unter anderem auf Deutsch an. Übersetzte Fassungen werden etwa acht Wochen nach der englischen Version aktualisiert.",
       },
       {
         question: "Sind die CertRamp-Fragen echte Prüfungsfragen?",
@@ -275,12 +275,12 @@ export const ai200De: DeContent = {
         objective: "Optimieren der Abfrageperformance und des Verbrauchs von Anforderungseinheiten (RUs) mithilfe von Indizierungsrichtlinien und Konsistenzstufen",
         difficulty: "intermediate",
         question:
-          "Eine Chatanwendung speichert den Gesprächsverlauf jedes Benutzers in Azure Cosmos DB. Ein Benutzer muss die Nachricht, die er gerade geschrieben hat, immer sehen; andere Benutzer dürfen sie etwas später sehen. Außerdem sollen die RU-Kosten für Lesevorgänge niedrig bleiben. Welche Konsistenzstufe passt am besten?",
+          "Eine Chatanwendung speichert den Gesprächsverlauf aller Benutzerinnen und Benutzer in Azure Cosmos DB. Eine Person muss die Nachricht, die sie gerade geschrieben hat, immer sehen; andere Benutzerinnen und Benutzer dürfen sie etwas später sehen. Außerdem sollen die RU-Kosten für Lesevorgänge niedrig bleiben. Welche Konsistenzstufe passt am besten?",
         options: [
           { id: "A", text: "Stark (Strong)", rationale: "Strong erfüllt die Anforderung, aber Lesevorgänge nutzen zwei Replikate und kosten etwa doppelt so viele RUs wie Session-Lesevorgänge." },
           { id: "B", text: "Begrenzte Veraltung (Bounded Staleness)", rationale: "Auch Lesevorgänge mit begrenzter Veraltung nutzen zwei Replikate und kosten daher mehr als Session-Lesevorgänge." },
           { id: "C", text: "Sitzung (Session)", rationale: "Richtig. Sitzungskonsistenz garantiert innerhalb einer Clientsitzung, dass eigene Schreibvorgänge gelesen werden (Read Your Writes), und nutzt Lesevorgänge über ein einzelnes Replikat." },
-          { id: "D", text: "Letztlich (Eventual)", rationale: "Eventual ist günstig, garantiert aber nicht, dass ein Benutzer seinen eigenen Schreibvorgang liest." },
+          { id: "D", text: "Letztlich (Eventual)", rationale: "Eventual ist günstig, garantiert aber nicht, dass eine Person ihren eigenen Schreibvorgang liest." },
         ],
         answer: "C",
         explanation:
