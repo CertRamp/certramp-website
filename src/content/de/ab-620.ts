@@ -48,7 +48,7 @@ export const ab620De: DeContent = {
     {
       id: "d1",
       name: "Planen und Konfigurieren von Agentlösungen",
-      weight: "30–35%",
+      weight: "30–35 %",
       objectives: [
         "Planen einer Agentlösung",
         "Erstellen und Überwachen von Agentabläufen in Copilot Studio",
@@ -58,7 +58,7 @@ export const ab620De: DeContent = {
     {
       id: "d2",
       name: "Integrieren und Erweitern von Agents in Copilot Studio",
-      weight: "40–45%",
+      weight: "40–45 %",
       objectives: [
         "Herstellen einer Verbindung mit Unternehmenswissensquellen",
         "Hinzufügen von Tools zu Agenten",
@@ -69,7 +69,7 @@ export const ab620De: DeContent = {
     {
       id: "d3",
       name: "Testen und Verwalten von Agents",
-      weight: "20–25%",
+      weight: "20–25 %",
       objectives: [
         "Bewerten Sie die Agentenleistung (Evaluate agent performance)",
         "Implementieren der Anwendungslebenszyklusverwaltung (Application Lifecycle Management, ALM) für Agents in Copilot Studio",

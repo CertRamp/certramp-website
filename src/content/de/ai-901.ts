@@ -35,7 +35,7 @@ export const ai901De: DeContent = {
     {
       id: "d1",
       name: "Identifizieren von KI-Konzepten und Funktionen",
-      weight: "40–45%",
+      weight: "40–45 %",
       objectives: [
         "Beschreiben von Prinzipien verantwortungsvoller KI",
         "Identifizieren von KI-Modellkomponenten und -konfigurationen",
@@ -45,7 +45,7 @@ export const ai901De: DeContent = {
     {
       id: "d2",
       name: "Implementieren von KI-Lösungen mithilfe von Microsoft Foundry",
-      weight: "55–60%",
+      weight: "55–60 %",
       objectives: [
         "Implementieren von generativen KI-Apps und -Agents mithilfe von Foundry",
         "Implementieren von KI-Lösungen für Text und Sprache mithilfe von Foundry",
