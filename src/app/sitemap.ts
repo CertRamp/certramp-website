@@ -4,6 +4,7 @@ import { absoluteUrl } from "@/config/site";
 import { getAllCertifications, isIndexable } from "@/lib/certifications";
 import { getAllGuides, getAllQuestionSets, guidePath, questionsPath } from "@/lib/content";
 import { deGuidePath, deHubPath, deQuestionsPath, getAllDe } from "@/lib/content-de";
+import { deExamChangesPath, examChangesPath, lastVerified } from "@/lib/exam-changes";
 
 /**
  * sitemap.xml — generated from the certification catalogue.
@@ -20,6 +21,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     { url: absoluteUrl("/"), changeFrequency: "weekly", priority: 1, lastModified: latest },
     { url: absoluteUrl("/practice-exams"), changeFrequency: "weekly", priority: 0.9, lastModified: latest },
+    { url: absoluteUrl(examChangesPath), changeFrequency: "weekly", priority: 0.9, lastModified: lastVerified() },
+    { url: absoluteUrl(deExamChangesPath), changeFrequency: "weekly", priority: 0.8, lastModified: lastVerified() },
     { url: absoluteUrl("/how-it-works"), changeFrequency: "monthly", priority: 0.6 },
     { url: absoluteUrl("/about"), changeFrequency: "yearly", priority: 0.4 },
     { url: absoluteUrl("/faq"), changeFrequency: "monthly", priority: 0.5 },
