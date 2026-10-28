@@ -3,6 +3,7 @@ import { legalPages } from "@/config/legal";
 import { absoluteUrl } from "@/config/site";
 import { getAllCertifications, isIndexable } from "@/lib/certifications";
 import { getAllGuides, getAllQuestionSets, guidePath, questionsPath } from "@/lib/content";
+import { deGuidePath, deHubPath, deQuestionsPath, getAllDe } from "@/lib/content-de";
 
 /**
  * sitemap.xml — generated from the certification catalogue.
@@ -48,7 +49,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...certPages, ...guides, ...questions, ...legal];
+  const de = getAllDe();
+  const german: MetadataRoute.Sitemap = de.length
+    ? [
+        { url: absoluteUrl(deHubPath), changeFrequency: "monthly", priority: 0.7 },
+        ...de.flatMap(({ de: d }) => [
+          { url: absoluteUrl(deGuidePath(d.slug)), lastModified: d.guide.updated, changeFrequency: "monthly" as const, priority: 0.8 },
+          { url: absoluteUrl(deQuestionsPath(d.slug)), lastModified: d.questions.updated, changeFrequency: "monthly" as const, priority: 0.8 },
+        ]),
+      ]
+    : [];
+
+  return [...staticPages, ...certPages, ...guides, ...questions, ...german, ...legal];
 }
 
 /** Generated once at build time (static export). */

@@ -11,10 +11,24 @@ type Current = "exam" | "guide" | "questions";
  * practice exams ↔ exam guide ↔ practice questions. Renders nothing when the
  * certification has no free resources yet.
  */
-export function StudyResources({ cert, current, className }: { cert: ResolvedCertification; current: Current; className?: string }) {
+export function StudyResources({
+  cert,
+  current,
+  className,
+}: {
+  cert: ResolvedCertification;
+  current: Current;
+  className?: string;
+}) {
   const r = getResources(cert.slug);
   if (!r.guide && !r.questions) return null;
-  const items: { key: Current; href: string; icon: IconName; title: string; body: string }[] = [];
+  const items: {
+    key: Current;
+    href: string;
+    icon: IconName;
+    title: string;
+    body: string;
+  }[] = [];
   if (r.guide)
     items.push({
       key: "guide",
@@ -52,11 +66,18 @@ export function StudyResources({ cert, current, className }: { cert: ResolvedCer
               <span className="flex size-10 items-center justify-center rounded-xl bg-accent-50 text-accent-600">
                 <Icon name={i.icon} className="size-5" />
               </span>
-              <span className="mt-4 font-display text-lg font-semibold text-ink">{i.title}</span>
-              <span className="mt-2 flex-1 text-[0.9375rem] leading-relaxed text-muted">{i.body}</span>
+              <span className="mt-4 font-display text-lg font-semibold text-ink">
+                {i.title}
+              </span>
+              <span className="mt-2 flex-1 text-[0.9375rem] leading-relaxed text-muted">
+                {i.body}
+              </span>
               <span className="mt-4 inline-flex items-center gap-1.5 font-display text-sm font-semibold text-accent-600">
                 Open
-                <Icon name="arrow-right" className="size-4 transition-transform group-hover:translate-x-0.5" />
+                <Icon
+                  name="arrow-right"
+                  className="size-4 transition-transform group-hover:translate-x-0.5"
+                />
               </span>
             </Link>
           </li>

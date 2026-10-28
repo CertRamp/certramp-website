@@ -3,6 +3,7 @@ import { Logo } from "@/components/brand/Logo";
 import { Val } from "@/components/ui/Placeholder";
 import { categoryList } from "@/config/categories";
 import { legalNav, mainNav, siteConfig } from "@/config/site";
+import { deHubPath, getAllDe } from "@/lib/content-de";
 import { isPlaceholder } from "@/lib/placeholder";
 
 export function SiteFooter() {
@@ -57,6 +58,13 @@ export function SiteFooter() {
                   </Link>
                 </li>
               ))}
+            {getAllDe().length > 0 && (
+              <li>
+                <Link className="hover:text-white" href={deHubPath} lang="de" hrefLang="de">
+                  Auf Deutsch
+                </Link>
+              </li>
+            )}
             <li>
               {isPlaceholder(siteConfig.contact.email) ? (
                 <span className="text-xs">

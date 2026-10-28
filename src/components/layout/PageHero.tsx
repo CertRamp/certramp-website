@@ -8,8 +8,11 @@ export function PageHero({
   title,
   intro,
   children,
+  home,
 }: {
   crumbs: Crumb[];
+  /** Override the first breadcrumb (German pages). */
+  home?: Crumb;
   eyebrow?: string;
   title: ReactNode;
   intro?: ReactNode;
@@ -23,7 +26,7 @@ export function PageHero({
         aria-hidden="true"
       />
       <div className="container-page relative pb-16 pt-10 sm:pb-20 sm:pt-12">
-        <Breadcrumbs items={crumbs} invert />
+        <Breadcrumbs items={crumbs} invert home={home} />
         <div className="mt-10 max-w-3xl">
           {eyebrow && <p className="eyebrow text-accent-300">{eyebrow}</p>}
           <h1 className="mt-3 text-4xl font-semibold leading-[1.05] text-white sm:text-5xl lg:text-6xl">{title}</h1>

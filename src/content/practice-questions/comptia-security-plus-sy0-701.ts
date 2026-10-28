@@ -258,7 +258,7 @@ export const comptiaSecurityPlusSy0701Questions: PracticeQuestionSet = {
         { id: "A", text: "50,000", rationale: "This is the single loss expectancy (200,000 × 0.25); it has not been multiplied by the annualised rate of occurrence." },
         { id: "B", text: "40,000", rationale: "This multiplies the full asset value by the annual rate (200,000 × 0.2) and ignores the exposure factor." },
         { id: "C", text: "10,000", rationale: "Correct. SLE = 200,000 × 0.25 = 50,000. ARO = 1/5 = 0.2. ALE = 50,000 × 0.2 = 10,000." },
-        { id: "D", text: "2,500", rationale: "This applies the exposure factor twice or otherwise misuses the formula." },
+        { id: "D", text: "2,500", rationale: "This applies the exposure factor a second time (200,000 × 0.25 × 0.25 × 0.2 = 2,500). The exposure factor belongs in the SLE only once." },
       ],
       answer: "C",
       explanation:

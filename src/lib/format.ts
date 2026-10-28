@@ -8,8 +8,8 @@ export function formatPrice(price: Price): string {
   }).format(price.amount);
 }
 
-export function formatDate(iso: string): string {
-  return new Intl.DateTimeFormat("en", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" }).format(new Date(iso));
+export function formatDate(iso: string, locale: "en" | "de" = "en"): string {
+  return new Intl.DateTimeFormat(locale, { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" }).format(new Date(iso));
 }
 
 /** Replace {name}-style tokens in copy templates. */

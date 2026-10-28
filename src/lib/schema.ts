@@ -126,6 +126,7 @@ export function guideArticleSchema(opts: {
   description: string;
   published: string;
   updated: string;
+  inLanguage?: string;
 }) {
   const credential = credentialSchema(opts.cert);
   return {
@@ -137,7 +138,7 @@ export function guideArticleSchema(opts: {
     url: absoluteUrl(opts.path),
     datePublished: opts.published,
     dateModified: opts.updated,
-    inLanguage: "en",
+    inLanguage: opts.inLanguage ?? "en",
     author: { "@id": orgId },
     publisher: { "@id": orgId },
     ...(credential ? { about: credential } : {}),
@@ -155,6 +156,7 @@ export function quizSchema(opts: {
   description: string;
   updated: string;
   questions: { id: string; question: string; options: { id: string; text: string }[]; answer: string; explanation: string }[];
+  inLanguage?: string;
 }) {
   const credential = credentialSchema(opts.cert);
   const url = absoluteUrl(opts.path);
@@ -166,7 +168,7 @@ export function quizSchema(opts: {
     description: opts.description,
     url,
     dateModified: opts.updated,
-    inLanguage: "en",
+    inLanguage: opts.inLanguage ?? "en",
     educationalLevel: "Professional certification",
     learningResourceType: "Practice questions",
     isAccessibleForFree: true,
@@ -178,7 +180,7 @@ export function quizSchema(opts: {
       return {
         "@type": "Question",
         "@id": `${url}#${q.id}`,
-        eduQuestionType: "Multiple choice",
+        eduQuestionType: opts.inLanguage === "de" ? "Multiple Choice" : "Multiple choice",
         text: q.question,
         suggestedAnswer: q.options.filter((o) => o.id !== q.answer).map((o) => ({ "@type": "Answer", text: o.text })),
         acceptedAnswer: { "@type": "Answer", text: correct.text, answerExplanation: { "@type": "Comment", text: q.explanation } },
