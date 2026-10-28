@@ -37,7 +37,7 @@ function linksFor(slugs: string[]): ChangeLink[] {
     if (!cert) continue;
     const res = getResources(slug);
     const de = getDeLinks(slug);
-    if (res.questions) links.push({ label: { en: `Free ${cert.name} questions`, de: `${cert.name}: kostenlose Übungsfragen` }, href: res.questions.path });
+    if (res.questions) links.push({ label: { en: `Free ${cert.name} questions`, de: `${cert.name}: kostenlose Übungsfragen (englisch)` }, href: res.questions.path });
     if (de) links.push({ label: { en: `${cert.name} questions in German`, de: `${cert.name}: Übungsfragen auf Deutsch` }, href: de.questions });
     if (res.guide) links.push({ label: { en: `${cert.name} exam guide`, de: `${cert.name}: Prüfungsleitfaden (englisch)` }, href: res.guide.path });
     links.push({ label: { en: `${cert.name} practice exams`, de: `${cert.name}: Übungsprüfungen` }, href: cert.path });

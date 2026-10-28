@@ -3,6 +3,7 @@ import Link from "@/components/ui/Link";
 import { PageHero } from "@/components/layout/PageHero";
 import { Section } from "@/components/ui/Section";
 import { deGuidePath, deHubPath, deQuestionsPath, getAllDe } from "@/lib/content-de";
+import { deExamChangesPath } from "@/lib/exam-changes";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
@@ -30,7 +31,14 @@ export default function DeHubPage() {
             Zertifizierungen, zu denen es CertRamp-Übungsprüfungen auf Deutsch gibt.
           </p>
         }
-      />
+      >
+        <p className="mt-6 text-sm text-white/70">
+          Neu:{" "}
+          <Link href={deExamChangesPath} className="font-semibold text-white underline underline-offset-2">
+            Welche Prüfungen 2026/27 auslaufen oder sich ändern
+          </Link>
+        </p>
+      </PageHero>
       <Section>
         <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {items.map(({ de, name, cert }) => (
