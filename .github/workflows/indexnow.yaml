@@ -1,0 +1,48 @@
+# Notifies IndexNow (Bing, Yandex, Seznam, Naver …) about new and changed pages
+# after each successful IONOS Deploy Now deployment. See scripts/indexnow.mjs.
+name: "IndexNow: submit changed URLs"
+
+on:
+  workflow_run:
+    workflows: ["Deploy Now: Deploy to IONOS"]
+    types: [completed]
+  workflow_dispatch:
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
+jobs:
+  submit:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: v22.x
+
+      - name: Restore last submission state
+        uses: actions/cache/restore@v4
+        with:
+          path: .indexnow-state.json
+          key: indexnow-state-${{ github.run_id }}
+          restore-keys: indexnow-state-
+
+      - name: Submit new and changed URLs
+        env:
+          SITE: https://certramplearning.com
+          INDEXNOW_KEY: ac7b11c58867e47a6efdf3d7d74ee1c0
+          STATE_FILE: .indexnow-state.json
+        run: |
+          sleep 30
+          node scripts/indexnow.mjs
+
+      - name: Save submission state
+        uses: actions/cache/save@v4
+        with:
+          path: .indexnow-state.json
+          key: indexnow-state-${{ github.run_id }}
