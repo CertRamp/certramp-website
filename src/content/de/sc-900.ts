@@ -7,7 +7,7 @@ import type { DeContent } from "@/config/types";
  * the official German Microsoft Learn study guide (de-de).
  */
 const GUIDE = {
-  label: "Microsoft Learn — Studienleitfaden für SC-900",
+  label: "Microsoft Learn — Studienleitfaden für SC-900 (englische Fassung)",
   url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900",
 };
 
@@ -79,7 +79,7 @@ export const sc900De: DeContent = {
     whoFor: [
       "Fachliche Stakeholder, die verstehen müssen, wie Microsoft Sicherheit, Compliance und Identität angeht",
       "Angehende oder erfahrene IT-Fachkräfte, die in die IT-Sicherheit einsteigen oder sich in Richtung SC-200, SC-300 oder SC-500 entwickeln",
-      "Studierende und Auszubildende, die eine erste Microsoft-Sicherheitszertifizierung anstreben",
+      "Studierende, die eine erste Microsoft-Sicherheitszertifizierung anstreben",
     ],
     sections: [
       {
@@ -87,7 +87,7 @@ export const sc900De: DeContent = {
         heading: "Was SC-900 tatsächlich prüft",
         paragraphs: [
           "SC-900 umfasst vier Fähigkeitsbereiche. Am stärksten gewichtet sind die Microsoft-Sicherheitslösungen (35–40 %): Sicherheitsdienste der Azure-Infrastruktur wie Azure Firewall, Netzwerksicherheitsgruppen (NSGs), Azure Bastion und Key Vault sowie Defender for Cloud, Microsoft Sentinel und die Defender-XDR-Dienste. Microsoft Entra macht 25–30 % aus, die Compliancelösungen von Microsoft Purview 20–25 % und die Grundkonzepte von Sicherheit, Compliance und Identität 10–15 %.",
-          "Jedes Lernziel beginnt mit „Beschreiben“ oder „Definieren“ (im Original „Describe“ bzw. „Define“). Sie müssen nichts Schritt für Schritt konfigurieren; Sie sollen erkennen, was ein Konzept bedeutet und welches Produkt oder Feature ein beschriebenes Problem löst. Typische Entscheidungen: Conditional Access oder Privileged Identity Management, Vertraulichkeitsbezeichnung oder Aufbewahrungsbezeichnung, Azure Firewall oder Netzwerksicherheitsgruppe, SIEM oder SOAR.",
+          "Jedes Lernziel beginnt im englischen Original mit „Describe“ oder „Define“ (Beschreiben bzw. Definieren). Sie müssen nichts Schritt für Schritt konfigurieren; Sie sollen erkennen, was ein Konzept bedeutet und welches Produkt oder Feature ein beschriebenes Problem löst. Typische Entscheidungen: Conditional Access oder Privileged Identity Management, Vertraulichkeitsbezeichnung oder Aufbewahrungsbezeichnung, Azure Firewall oder Netzwerksicherheitsgruppe, SIEM oder SOAR.",
         ],
       },
       {
@@ -103,23 +103,23 @@ export const sc900De: DeContent = {
         heading: "Ein Vorbereitungsplan in fünf Schritten",
         steps: [
           {
-            title: "Den eigenen Stand am Studienleitfaden messen",
+            title: "Gleichen Sie Ihren Stand mit dem Studienleitfaden ab",
             body: "Gehen Sie jeden Punkt der offiziellen SC-900-Liste der gemessenen Fähigkeiten durch und markieren Sie ihn als bekannt, unsicher oder neu. Allein der Bereich Sicherheitslösungen macht bis zu 40 % aus und verdient daher den größten Teil Ihrer Zeit.",
           },
           {
-            title: "Zuerst die Konzepte klären",
+            title: "Klären Sie zuerst die Konzepte",
             body: "Geteilte Verantwortung, Defense-in-Depth, Zero Trust, Verschlüsselung versus Hashing, Authentifizierung versus Autorisierung sowie Verbund (Federation) sind das Vokabular, auf dem der Rest der Prüfung aufbaut. Stellen Sie sicher, dass Sie jeden Begriff in einem Satz erklären können.",
           },
           {
-            title: "Die Microsoft-Learn-Lernpfade durcharbeiten",
+            title: "Arbeiten Sie die Microsoft-Learn-Lernpfade durch",
             body: "Folgen Sie den kostenlosen SC-900-Lernpfaden zu Entra, zur Sicherheit mit Azure und Defender sowie zu Microsoft Purview. Notieren Sie für jedes Produkt das eine Problem, das es löst – genau das prüfen die Fragen meist.",
           },
           {
-            title: "Einmal einen Blick in die Portale werfen",
+            title: "Werfen Sie einmal einen Blick in die Portale",
             body: "Mit einem kostenlosen Azure-Konto und einer Microsoft 365-Testversion sehen Sie Entra ID, Defender for Cloud, das Defender-Portal und das Purview-Portal. Wenn Sie wissen, wo Secure Score, Conditional Access oder Vertraulichkeitsbezeichnungen zu finden sind, lassen sich die Formulierungen der Fragen deutlich leichter nachvollziehen.",
           },
           {
-            title: "Unter Zeitdruck üben, dann buchen",
+            title: "Üben Sie unter Zeitdruck und buchen Sie dann",
             body: "Legen Sie Übungsprüfungen mit 45 Minuten Zeitlimit ab und lesen Sie jede Erklärung, auch bei Fragen, die Sie richtig beantwortet haben. Buchen Sie die Prüfung, sobald Sie mehrere Übungsprüfungen mit Abstand bestehen.",
           },
         ],
@@ -294,7 +294,7 @@ export const sc900De: DeContent = {
           { id: "A", text: "Benannte Standorte für Conditional Access", rationale: "Benannte Standorte beschreiben vertrauenswürdige Netzwerke oder Länder für Conditional Access; den Inhalt von Kennwörtern prüfen sie nicht." },
           { id: "B", text: "Zugriffsüberprüfungen", rationale: "Bei Zugriffsüberprüfungen geht es darum, ob Benutzer ihren Zugriff noch benötigen, nicht um die Qualität von Kennwörtern." },
           { id: "C", text: "Eine Anmelderisikorichtlinie von Microsoft Entra ID Protection", rationale: "Anmelderisikorichtlinien reagieren auf verdächtige Anmeldungen; sie verhindern nicht, dass schwache Kennwörter festgelegt werden." },
-          { id: "D", text: "Microsoft Entra Password Protection mit einer benutzerdefinierten Liste gesperrter Kennwörter", rationale: "Richtig. Password Protection blockiert bekannte schwache Kennwörter und lässt Sie organisationsspezifische Begriffe in eine benutzerdefinierte Liste gesperrter Kennwörter aufnehmen." },
+          { id: "D", text: "Microsoft Entra Password Protection (Kennwortschutz) mit einer benutzerdefinierten Liste gesperrter Kennwörter", rationale: "Richtig. Password Protection blockiert bekannte schwache Kennwörter und lässt Sie organisationsspezifische Begriffe in eine benutzerdefinierte Liste gesperrter Kennwörter aufnehmen." },
         ],
         answer: "D",
         explanation:
@@ -408,7 +408,7 @@ export const sc900De: DeContent = {
         ],
         answer: "A",
         explanation:
-          "Der Hinweis „lokales Active Directory“ (on-premises Active Directory) deutet auf Defender for Identity. Entra ID Protection ist das Gegenstück in der Cloud für riskante Benutzer und Anmeldungen in Microsoft Entra ID.",
+          "Der Hinweis „lokales Active Directory“ (on-premises Active Directory) deutet auf Defender for Identity hin. Entra ID Protection ist das Gegenstück in der Cloud für riskante Benutzer und Anmeldungen in Microsoft Entra ID.",
         reference: GUIDE,
       },
 

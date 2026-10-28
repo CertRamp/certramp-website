@@ -29,7 +29,7 @@ export const ai901De: DeContent = {
       value:
         "Keine. Microsoft erwartet konzeptionelles Wissen über KI-Lösungen in Azure, Kenntnisse der Python-Syntax und Vertrautheit mit Azure-Ressourcen. Fundamentals-Zertifizierungen laufen nicht ab.",
     },
-    { label: "Prüfungsversion", value: "Skills measured (gemessene Fähigkeiten) mit Stand vom 15. April 2026" },
+    { label: "Prüfungsversion", value: "Gemessene Fähigkeiten ab dem 15. April 2026" },
   ],
   domains: [
     {
@@ -59,7 +59,7 @@ export const ai901De: DeContent = {
   guide: {
     slug: "ai-901",
     summary:
-      "AI-901 (Microsoft Azure AI Fundamentals) ist die Prüfung für die Zertifizierung Microsoft Certified: Azure AI Fundamentals und hat AI-900 abgelöst, die am 30. Juni 2026 eingestellt wurde. Geprüft werden KI-Konzepte und verantwortungsvolle KI (40–45 %) sowie der Aufbau einfacher KI-Lösungen mit Microsoft Foundry (55–60 %), auf Grundlage der Skills measured mit Stand vom 15. April 2026. Zum Bestehen brauchen Sie 700 Punkte, und Fundamentals-Zertifizierungen laufen nicht ab.",
+      "AI-901 (Microsoft Azure AI Fundamentals) ist die Prüfung für die Zertifizierung Microsoft Certified: Azure AI Fundamentals und hat AI-900 abgelöst, die am 30. Juni 2026 eingestellt wurde. Geprüft werden KI-Konzepte und verantwortungsvolle KI (40–45 %) sowie der Aufbau einfacher KI-Lösungen mit Microsoft Foundry (55–60 %), auf Grundlage der gemessenen Fähigkeiten ab dem 15. April 2026. Zum Bestehen brauchen Sie 700 Punkte, und Fundamentals-Zertifizierungen laufen nicht ab.",
     whoFor: [
       "Einsteigerinnen und Einsteiger in die Entwicklung von KI-Lösungen, die eine erste Azure-KI-Zertifizierung anstreben",
       "Entwicklerinnen und Entwickler mit etwas Python-Erfahrung, die Microsoft Foundry, generative KI und Agents kennenlernen möchten",
@@ -88,7 +88,7 @@ export const ai901De: DeContent = {
         steps: [
           {
             title: "Eigenen Stand am Studienleitfaden messen",
-            body: "Gehen Sie jeden Punkt der offiziellen AI-901-Fähigkeitenliste durch und markieren Sie ihn als bekannt, unsicher oder neu. Der Implementierungsbereich mit Foundry macht 55–60 % aus, planen Sie also den Großteil Ihrer Zeit dafür ein.",
+            body: "Gehen Sie jeden Punkt der offiziellen Liste der gemessenen Fähigkeiten für AI-901 durch und markieren Sie ihn als bekannt, unsicher oder neu. Der Implementierungsbereich mit Foundry macht 55–60 % aus, planen Sie also den Großteil Ihrer Zeit dafür ein.",
           },
           {
             title: "Die Konzepte genau lernen",
@@ -99,12 +99,12 @@ export const ai901De: DeContent = {
             body: "Stellen Sie ein Chatmodell bereit, testen Sie Systemprompts im Playground, erstellen Sie einen einzelnen Agent und rufen Sie eine Bereitstellung aus einem kurzen Python-Skript mit dem Foundry SDK auf. Probieren Sie einen multimodalen Prompt mit einem Bild und eine Extraktionsaufgabe mit Content Understanding aus.",
           },
           {
-            title: "Die Microsoft-Learn-Schulungen durcharbeiten",
-            body: "Nutzen Sie das kostenlose AI-901-Lernmaterial auf Microsoft Learn und gleichen Sie jedes Modul mit der aktuellen Fähigkeitenübersicht ab.",
+            title: "Die Microsoft-Learn-Lernpfade durcharbeiten",
+            body: "Nutzen Sie die kostenlosen AI-901-Lernpfade auf Microsoft Learn und gleichen Sie jedes Modul mit den aktuellen gemessenen Fähigkeiten ab.",
           },
           {
             title: "Unter Zeitdruck üben",
-            body: "Absolvieren Sie zeitgebundene Übungsprüfungen und lesen Sie jede Erklärung, auch bei Fragen, die Sie richtig beantwortet haben. Buchen Sie die Prüfung, sobald Sie mehrere Übungsprüfungen mit Abstand bestehen.",
+            body: "Absolvieren Sie Übungsprüfungen auf Zeit und lesen Sie jede Erklärung, auch bei Fragen, die Sie richtig beantwortet haben. Buchen Sie die Prüfung, sobald Sie mehrere Übungsprüfungen mit Abstand bestehen.",
           },
         ],
       },
@@ -149,13 +149,13 @@ export const ai901De: DeContent = {
       {
         question: "Sind die CertRamp-Fragen echte Prüfungsfragen?",
         answer:
-          "Nein. Alle CertRamp-Fragen sind eigene Übungsfragen, die nach der von Microsoft veröffentlichten Fähigkeitenübersicht geschrieben wurden. Sie stammen nicht aus der echten Prüfung.",
+          "Nein. Alle CertRamp-Fragen sind eigene Übungsfragen, die nach den von Microsoft veröffentlichten gemessenen Fähigkeiten geschrieben wurden. Sie stammen nicht aus der echten Prüfung.",
       },
     ],
     seo: {
       title: "AI-901 Prüfungsvorbereitung 2026: Azure AI Fundamentals",
       description:
-        "AI-901 Leitfaden auf Deutsch: Skills measured ab 15. April 2026, verantwortungsvolle KI, Microsoft Foundry, Bestehensgrenze 700 und 5-Schritte-Lernplan.",
+        "AI-901-Leitfaden auf Deutsch: gemessene Fähigkeiten ab 15. April 2026, verantwortungsvolle KI, Microsoft Foundry, Bestehensgrenze 700, 5-Schritte-Lernplan.",
     },
     published: "2026-10-28",
     updated: "2026-10-28",
@@ -165,7 +165,7 @@ export const ai901De: DeContent = {
   questions: {
     slug: "ai-901",
     intro:
-      "15 eigene AI-901-Übungsfragen zu den zwei Fähigkeitsbereichen des Microsoft-Studienleitfadens (Skills measured mit Stand vom 15. April 2026), ungefähr wie in der echten Prüfung gewichtet. Zu jeder Frage gibt es die Antwort, eine kurze Erklärung und die Begründung, warum jede andere Option falsch ist.",
+      "15 eigene AI-901-Übungsfragen zu den zwei Fähigkeitsbereichen des Microsoft-Studienleitfadens (gemessene Fähigkeiten ab dem 15. April 2026), ungefähr wie in der echten Prüfung gewichtet. Zu jeder Frage gibt es die Antwort, eine kurze Erklärung und die Begründung, warum jede andere Option falsch ist.",
     published: "2026-10-28",
     updated: "2026-10-28",
     seo: {
@@ -183,9 +183,9 @@ export const ai901De: DeContent = {
         question:
           "Der Kreditassistent einer Bank teilt Antragstellenden mit, dass ein KI-System an ihrer Entscheidung beteiligt war, und erklärt in verständlicher Sprache, welche Faktoren das System berücksichtigt hat. Welches Prinzip verantwortungsvoller KI wird damit hauptsächlich umgesetzt?",
         options: [
-          { id: "A", text: "Inklusivität", rationale: "Bei Inklusivität geht es darum, KI so zu gestalten, dass sie Menschen mit unterschiedlichsten Fähigkeiten und Hintergründen unterstützt und für sie funktioniert." },
+          { id: "A", text: "Inklusion", rationale: "Bei Inklusion geht es darum, KI so zu gestalten, dass sie Menschen mit unterschiedlichsten Fähigkeiten und Hintergründen unterstützt und für sie funktioniert." },
           { id: "B", text: "Zuverlässigkeit und Sicherheit", rationale: "Zuverlässigkeit und Sicherheit betreffen konsistentes, sicheres Verhalten unter erwarteten und unerwarteten Bedingungen, nicht das Erklären von Entscheidungen." },
-          { id: "C", text: "Transparenz", rationale: "Richtig. Transparenz bedeutet, dass Menschen verstehen, dass KI eingesetzt wird und wie sie zu ihren Ergebnissen kommt und wo ihre Grenzen liegen." },
+          { id: "C", text: "Transparenz", rationale: "Richtig. Transparenz bedeutet, dass Menschen verstehen, dass KI eingesetzt wird, wie sie zu ihren Ergebnissen kommt und wo ihre Grenzen liegen." },
           { id: "D", text: "Datenschutz und Sicherheit", rationale: "Datenschutz und Sicherheit betreffen den Schutz personenbezogener Daten und des Systems, nicht die Erklärung, wie Entscheidungen zustande kommen." },
         ],
         answer: "C",
@@ -219,7 +219,7 @@ export const ai901De: DeContent = {
         question:
           "Ein Unternehmen richtet ein Prüfgremium ein, das jedes KI-System vor der Freigabe abnimmt und für das Verhalten jedes Systems im Produktivbetrieb verantwortlich bleibt. Welches Prinzip verantwortungsvoller KI wird dadurch am direktesten unterstützt?",
         options: [
-          { id: "A", text: "Inklusivität", rationale: "Bei Inklusivität geht es darum, Menschen aller Fähigkeiten und Hintergründe gerecht zu werden, nicht um Governance und Zuständigkeit." },
+          { id: "A", text: "Inklusion", rationale: "Bei Inklusion geht es darum, Menschen aller Fähigkeiten und Hintergründe gerecht zu werden, nicht um Governance und Zuständigkeit." },
           { id: "B", text: "Verantwortlichkeit", rationale: "Richtig. Verantwortlichkeit bedeutet, dass Menschen – nicht das KI-System – für Entwurf, Bereitstellung und Betrieb verantwortlich bleiben." },
           { id: "C", text: "Zuverlässigkeit und Sicherheit", rationale: "Ein Prüfgremium kann die Zuverlässigkeit prüfen, das entscheidende Merkmal ist hier aber die menschliche Verantwortung für das System." },
           { id: "D", text: "Fairness", rationale: "Bei Fairness geht es um die gleichberechtigte Behandlung der vom System betroffenen Menschen." },
@@ -274,13 +274,13 @@ export const ai901De: DeContent = {
           "Eine Hotelkette möchte automatisch erkennen, ob jede Online-Bewertung positiv, negativ oder neutral ist. Welche Textanalysetechnik passt?",
         options: [
           { id: "A", text: "Stimmungsanalyse (Sentimentanalyse)", rationale: "Richtig. Die Stimmungsanalyse ordnet die in einem Text geäußerte Meinung als positiv, negativ, neutral oder gemischt ein." },
-          { id: "B", text: "Schlüsselwortextraktion", rationale: "Die Schlüsselwortextraktion liefert die wichtigsten Begriffe eines Textes, nicht ob die Meinung positiv oder negativ ist." },
+          { id: "B", text: "Stichwortextraktion", rationale: "Die Stichwortextraktion liefert die wichtigsten Begriffe eines Textes, nicht ob die Meinung positiv oder negativ ist." },
           { id: "C", text: "Entitätserkennung", rationale: "Die Entitätserkennung findet Dinge wie Personen, Orte und Datumsangaben im Text." },
           { id: "D", text: "Sprachsynthese", rationale: "Die Sprachsynthese wandelt Text in Audio um; sie analysiert keine Meinungen." },
         ],
         answer: "A",
         explanation:
-          "Der Studienleitfaden nennt Schlüsselwortextraktion, Entitätserkennung, Stimmungsanalyse und Zusammenfassung als gängige Textanalysetechniken. Wählen Sie die Technik passend zu der Ausgabe, die das Unternehmen braucht.",
+          "Der Studienleitfaden nennt Stichwortextraktion, Entitätserkennung, Stimmungsanalyse und Zusammenfassung als gängige Textanalysetechniken. Wählen Sie die Technik passend zu der Ausgabe, die das Unternehmen braucht.",
         reference: GUIDE,
       },
       {

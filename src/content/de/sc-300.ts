@@ -88,7 +88,7 @@ export const sc300De: DeContent = {
   guide: {
     slug: "sc-300",
     summary:
-      "SC-300 (Microsoft Identity and Access Administrator) prüft, ob Sie Identitäts- und Zugriffsverwaltung mit Microsoft Entra implementieren und betreiben können: Benutzer- und Hybrididentitäten, Authentifizierung und Conditional Access, Workload-Identitäten und Unternehmensanwendungen sowie Identity Governance. Die Prüfung dauert 100 Minuten, zum Bestehen benötigen Sie 700 Punkte, und die englische Prüfung wechselt auf die gemessenen Fähigkeiten ab dem 28. Oktober 2026.",
+      "SC-300 (Microsoft Identity and Access Administrator) prüft, ob Sie Identitäts- und Zugriffsverwaltung mit Microsoft Entra implementieren und betreiben können: Benutzer- und Hybrididentitäten, Authentifizierung und bedingter Zugriff (Conditional Access), Workload-Identitäten und Unternehmensanwendungen sowie Identity Governance. Die Prüfung dauert 100 Minuten, zum Bestehen benötigen Sie 700 Punkte, und die englische Prüfung wird am 28. Oktober 2026 auf die neue Liste der gemessenen Fähigkeiten umgestellt.",
     whoFor: [
       "Identitäts- und Zugriffsadministratoren, die Microsoft Entra ID im Tagesgeschäft betreuen",
       "Microsoft 365- und Azure-Administratoren, die für Anmeldesicherheit, Conditional Access oder App-Integration zuständig sind",
@@ -100,7 +100,7 @@ export const sc300De: DeContent = {
         heading: "Was SC-300 tatsächlich prüft",
         paragraphs: [
           "SC-300 umfasst vier Fähigkeitsbereiche: Benutzeridentitäten implementieren und verwalten, Authentifizierung und Zugriffsverwaltung implementieren, Workload-Identitäten planen und implementieren sowie Identity Governance planen und automatisieren. Jeder Bereich macht etwa ein Viertel der Prüfung aus. Der Studienleitfaden von Microsoft gibt für Authentifizierung und Zugriffsverwaltung in der Zusammenfassung 25–30 % und im Detailabschnitt 20–25 % an; planen Sie diesen Bereich daher mindestens so umfangreich ein wie die anderen.",
-          "Die meisten Fragen beschreiben eine Anforderung einer Organisation und fragen nach dem passenden Entra-Feature oder der passenden Einstellung. Typische Entscheidungen: Verwaltungseinheit oder mandantenweite Rolle, Kennworthashsynchronisierung oder Passthrough-Authentifizierung, welche Bedingung und welche Kontrolle in Conditional Access, system- oder benutzerseitig zugewiesene verwaltete Identität, Zugriffspaket oder Zugriffsüberprüfung sowie berechtigte oder aktive PIM-Zuweisung.",
+          "Die meisten Fragen beschreiben eine Anforderung einer Organisation und fragen nach der passenden Entra-Funktion oder der passenden Einstellung. Typische Entscheidungen: Verwaltungseinheit oder mandantenweite Rolle, Kennworthashsynchronisierung oder Passthrough-Authentifizierung, welche Bedingung und welches Steuerelement im bedingten Zugriff (Conditional Access), system- oder benutzerseitig zugewiesene verwaltete Identität, Zugriffspaket oder Zugriffsüberprüfung sowie berechtigte oder aktive PIM-Zuweisung.",
         ],
       },
       {
@@ -108,7 +108,7 @@ export const sc300De: DeContent = {
         heading: "Was sich mit dem Update vom 28. Oktober 2026 ändert",
         paragraphs: [
           "Microsoft stuft die Änderungen vom Oktober 2026 als geringfügig ein. Angepasst wurden drei Unterbereiche: „Planen, Implementieren und Verwalten der Microsoft Entra-Benutzerauthentifizierung“ (Plan, implement, and manage Microsoft Entra user authentication), „Implementieren des globalen sicheren Zugriffs“ (Implement Global Secure Access) und „Planen und Implementieren von privilegiertem Zugriff“ (Plan and implement privileged access). Die übrigen Bereiche und das Zielgruppenprofil bleiben unverändert.",
-          "Die aktuelle Gliederung erwartet, dass Sie moderne Authentifizierungsmethoden kennen (zertifikatbasierte Authentifizierung, Temporary Access Pass, Microsoft Authenticator und Passkeys), außerdem Global Secure Access mit Microsoft Entra Private Access und Internet Access sowie PIM für Microsoft Entra-Rollen, Azure-Ressourcen und Gruppen. Lokalisierte Fassungen der Prüfung werden etwa acht Wochen nach der englischen Version aktualisiert.",
+          "Die aktuelle Gliederung erwartet, dass Sie moderne Authentifizierungsmethoden kennen (zertifikatbasierte Authentifizierung, Temporary Access Pass, Microsoft Authenticator und Passkeys), außerdem den globalen sicheren Zugriff (Global Secure Access) mit Microsoft Entra Private Access und Internet Access sowie PIM für Microsoft Entra-Rollen, Azure-Ressourcen und Gruppen. Lokalisierte Fassungen der Prüfung werden etwa acht Wochen nach der englischen Version aktualisiert.",
         ],
       },
       {
@@ -216,8 +216,8 @@ export const sc300De: DeContent = {
         question:
           "Regionale Supportmitarbeitende in Deutschland sollen Kennwörter nur für Benutzer der deutschen Tochtergesellschaft zurücksetzen können, nicht für andere Benutzer im Mandanten. Was sollten Sie konfigurieren?",
         options: [
-          { id: "A", text: "Die Rolle Helpdesk Administrator mit Mandantenbereich zuweisen", rationale: "Eine mandantenweite Zuweisung würde den Mitarbeitenden erlauben, Kennwörter aller infrage kommenden Benutzer zurückzusetzen, nicht nur die der deutschen." },
-          { id: "B", text: "Eine Verwaltungseinheit für die deutschen Benutzer erstellen und die Rolle Helpdesk Administrator auf diese Einheit begrenzt zuweisen", rationale: "Richtig. Verwaltungseinheiten beschränken die Berechtigungen einer Rolle auf die Benutzer, Gruppen oder Geräte, die Sie ihnen hinzufügen." },
+          { id: "A", text: "Die Rolle „Helpdeskadministrator“ mit Mandantenbereich zuweisen", rationale: "Eine mandantenweite Zuweisung würde den Mitarbeitenden erlauben, Kennwörter aller infrage kommenden Benutzer zurückzusetzen, nicht nur die der deutschen." },
+          { id: "B", text: "Eine Verwaltungseinheit für die deutschen Benutzer erstellen und die Rolle „Helpdeskadministrator“ auf diese Einheit begrenzt zuweisen", rationale: "Richtig. Verwaltungseinheiten beschränken die Berechtigungen einer Rolle auf die Benutzer, Gruppen oder Geräte, die Sie ihnen hinzufügen." },
           { id: "C", text: "Eine Conditional-Access-Richtlinie für die deutschen Benutzer erstellen", rationale: "Conditional Access steuert, wie sich Benutzer anmelden; administrative Berechtigungen delegiert es nicht." },
           { id: "D", text: "Eine dynamische Gruppe für die deutschen Benutzer erstellen", rationale: "Eine Gruppe allein schränkt den Bereich einer Administratorrolle nicht ein." },
         ],
@@ -255,7 +255,7 @@ export const sc300De: DeContent = {
           { id: "A", text: "Passthrough-Authentifizierung", rationale: "Richtig. Bei der Passthrough-Authentifizierung prüfen lokale Agents das Kennwort bei der Anmeldung gegen Active Directory, sodass der lokale Kontostatus und lokale Richtlinien bei der Anmeldung durchgesetzt werden." },
           { id: "B", text: "Nur Kennworthashsynchronisierung", rationale: "Bei der Kennworthashsynchronisierung werden Anmeldungen in Microsoft Entra ID gegen einen synchronisierten Hash geprüft, nicht zum Anmeldezeitpunkt gegen die Domänencontroller." },
           { id: "C", text: "Reine Cloudkonten mit Self-Service-Kennwortzurücksetzung", rationale: "Reine Cloudkonten sind überhaupt nicht an das lokale Active Directory gebunden." },
-          { id: "D", text: "Temporary Access Pass", rationale: "Ein Temporary Access Pass (befristeter Zugriffspass) ist ein zeitlich begrenzter Passcode für Onboarding oder Wiederherstellung, keine hybride Anmeldemethode." },
+          { id: "D", text: "Temporary Access Pass", rationale: "Ein Temporary Access Pass (temporärer Zugriffspass) ist ein zeitlich begrenzter Passcode für Onboarding oder Wiederherstellung, keine hybride Anmeldemethode." },
         ],
         answer: "A",
         explanation:
@@ -324,7 +324,7 @@ export const sc300De: DeContent = {
         objective: "Risikomanagement mithilfe von Microsoft Entra ID Protection",
         difficulty: "intermediate",
         question:
-          "Microsoft Entra ID Protection erkennt bei einigen Benutzern kompromittierte Anmeldeinformationen und stuft ihr Benutzerrisiko als hoch ein. Diese Benutzer sollen das Problem bei der nächsten Anmeldung selbst beheben, ohne den Helpdesk einzuschalten. Welche Kontrolle sollte die risikobasierte Conditional-Access-Richtlinie verlangen?",
+          "Microsoft Entra ID Protection erkennt bei einigen Benutzern kompromittierte Anmeldeinformationen und stuft ihr Benutzerrisiko als hoch ein. Diese Benutzer sollen das Problem bei der nächsten Anmeldung selbst beheben, ohne den Helpdesk einzuschalten. Welches Gewährungssteuerelement sollte die risikobasierte Richtlinie für bedingten Zugriff verlangen?",
         options: [
           { id: "A", text: "Zugriff dauerhaft blockieren", rationale: "Eine Blockierung stoppt den Angreifer, verhindert aber auch die Selbstbehebung und erfordert ein Eingreifen des Administrators." },
           { id: "B", text: "Nur ein konformes Gerät", rationale: "Ein konformes Gerät ändert nichts am kompromittierten Kennwort; das Risiko bleibt bestehen." },
@@ -389,7 +389,7 @@ export const sc300De: DeContent = {
         ],
         answer: "C",
         explanation:
-          "Die Gliederung nennt „Design and implement integration for on-premises apps by using Microsoft Entra Application Proxy“. Der Connector baut nur ausgehende Verbindungen auf, deshalb sind keine eingehenden Ports nötig.",
+          "Die Gliederung nennt die Integration lokaler Apps mithilfe des Microsoft Entra-Anwendungsproxys (Design and implement integration for on-premises apps by using Microsoft Entra Application Proxy). Der Connector baut nur ausgehende Verbindungen auf, deshalb sind keine eingehenden Ports nötig.",
         reference: GUIDE,
       },
       {
@@ -454,7 +454,7 @@ export const sc300De: DeContent = {
         objective: "Planen und Implementieren von privilegiertem Zugriff",
         difficulty: "intermediate",
         question:
-          "Administratoren sollen die Rolle Exchange Administrator nur dann innehaben, wenn sie sie benötigen – zeitlich begrenzt, nach Angabe einer Begründung und nach Genehmigung. Wie sollten Sie die Rolle in Privileged Identity Management zuweisen?",
+          "Administratoren sollen die Rolle „Exchange-Administrator“ nur dann innehaben, wenn sie sie benötigen – zeitlich begrenzt, nach Angabe einer Begründung und nach Genehmigung. Wie sollten Sie die Rolle in Privileged Identity Management zuweisen?",
         options: [
           { id: "A", text: "Als dauerhafte aktive Zuweisung", rationale: "Eine aktive Zuweisung gewährt die Rolle ständig, ohne Aktivierungsschritt." },
           { id: "B", text: "Über eine dynamische Gruppe, der die Rolle dauerhaft zugewiesen ist", rationale: "Gruppen mit dynamischer Mitgliedschaft können keine Microsoft Entra-Rollen zugewiesen werden, und eine dauerhafte Gruppenzuweisung brächte ohnehin weder Aktivierung noch Begründung oder Genehmigung." },

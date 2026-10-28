@@ -37,7 +37,7 @@ export const az900De: DeContent = {
     {
       id: "d1",
       name: "Beschreiben von Cloudkonzepten",
-      weight: "25–30%",
+      weight: "25–30 %",
       objectives: [
         "Cloud-Computing beschreiben",
         "Beschreiben Sie die Vorteile der Verwendung von Cloud-Diensten",
@@ -47,7 +47,7 @@ export const az900De: DeContent = {
     {
       id: "d2",
       name: "Beschreiben der Azure-Architektur und -Dienste",
-      weight: "35–40%",
+      weight: "35–40 %",
       objectives: [
         "Beschreiben der wichtigsten Architekturkomponenten von Azure",
         "Azure-Compute- und Netzwerkdienste beschreiben",
@@ -58,7 +58,7 @@ export const az900De: DeContent = {
     {
       id: "d3",
       name: "Azure-Verwaltung und -Governance beschreiben",
-      weight: "30–35%",
+      weight: "30–35 %",
       objectives: [
         "Beschreiben Sie die Kostenverwaltung in Azure",
         "Grundlegendes zu Azure-Features und -Tools für Governance und Compliance",
@@ -128,7 +128,7 @@ export const az900De: DeContent = {
           "Die Prüfung als reine Theorieprüfung behandeln. Viele Fragen beschreiben eine geschäftliche Anforderung und fragen, welcher Azure-Dienst oder welches Feature dazu passt.",
           "Governance-Tools verwechseln. Azure Policy setzt Regeln für Ressourceneigenschaften durch, RBAC steuert, wer was tun darf, und Ressourcensperren verhindern das Löschen oder Ändern selbst für berechtigte Benutzer.",
           "Verfügbarkeitszonen mit Regionen und Regionspaaren verwechseln. Zonen schützen vor dem Ausfall eines Rechenzentrums innerhalb einer Region; Regionspaare helfen bei regionsweiten Ausfällen.",
-          "Speicherebenen ohne ihre Zielkonflikte lernen. Sie sollten wissen, welche Ebenen online sind und welche offline ist und dass kältere Ebenen niedrigere Speicherkosten gegen höhere Zugriffskosten tauschen.",
+          "Speicherebenen ohne ihre Vor- und Nachteile lernen. Sie sollten wissen, welche Ebenen online sind und welche offline ist und dass kältere Ebenen niedrigere Speicherkosten gegen höhere Zugriffskosten tauschen.",
           "Den Bereich Überwachung vernachlässigen. Azure Advisor, Azure Service Health und Azure Monitor beantworten jeweils eine andere Frage.",
         ],
       },
@@ -360,7 +360,7 @@ export const az900De: DeContent = {
         question:
           "Benutzer sollen die Multi-Faktor-Authentifizierung nur dann durchlaufen müssen, wenn sie sich von außerhalb des Unternehmensnetzwerks anmelden. Welches Feature setzt das durch?",
         options: [
-          { id: "A", text: "Rollenbasierte Zugriffssteuerung von Azure (Azure RBAC)", rationale: "RBAC legt fest, was ein angemeldeter Benutzer mit Azure-Ressourcen tun darf; Anmeldebedingungen wie den Standort wertet es nicht aus." },
+          { id: "A", text: "Rollenbasierte Zugriffssteuerung in Azure (Azure RBAC)", rationale: "RBAC legt fest, was ein angemeldeter Benutzer mit Azure-Ressourcen tun darf; Anmeldebedingungen wie den Standort wertet es nicht aus." },
           { id: "B", text: "Ressourcensperren", rationale: "Ressourcensperren schützen Ressourcen vor dem Löschen oder Ändern; mit Anmeldungen haben sie nichts zu tun." },
           { id: "C", text: "Microsoft Entra Conditional Access", rationale: "Richtig. Conditional Access wertet bei der Anmeldung Signale wie Benutzer, Standort und Gerät aus und kann MFA verlangen, den Zugriff erlauben oder blockieren." },
           { id: "D", text: "Azure Policy", rationale: "Azure Policy wertet Ressourceneigenschaften aus, nicht Benutzeranmeldungen." },
@@ -399,7 +399,7 @@ export const az900De: DeContent = {
           "Aus Gründen der Datenresidenz möchte Ihr Unternehmen sicherstellen, dass neue Ressourcen nur in zwei bestimmten Azure-Regionen erstellt werden können. Welcher Dienst setzt das durch?",
         options: [
           { id: "A", text: "Azure Advisor", rationale: "Advisor gibt Empfehlungen; er verhindert nicht, dass Ressourcen erstellt werden." },
-          { id: "B", text: "Rollenbasierte Zugriffssteuerung von Azure (Azure RBAC)", rationale: "RBAC steuert, wer Ressourcen erstellen darf, nicht welche Eigenschaften wie den Standort sie haben dürfen." },
+          { id: "B", text: "Rollenbasierte Zugriffssteuerung in Azure (Azure RBAC)", rationale: "RBAC steuert, wer Ressourcen erstellen darf, nicht welche Eigenschaften wie den Standort sie haben dürfen." },
           { id: "C", text: "Microsoft Defender for Cloud", rationale: "Defender for Cloud bewertet und verbessert den Sicherheitsstatus; es ist nicht das Werkzeug, um zulässige Standorte durchzusetzen." },
           { id: "D", text: "Azure Policy", rationale: "Richtig. Azure Policy prüft Ressourceneigenschaften anhand von Regeln und kann das Erstellen nicht konformer Ressourcen verweigern, zum Beispiel mit einer Regel für zulässige Standorte." },
         ],
@@ -416,7 +416,7 @@ export const az900De: DeContent = {
         question:
           "Die Finanzabteilung möchte die Azure-Kosten pro Abteilung sehen, obwohl Ressourcen mehrerer Abteilungen sich dieselben Ressourcengruppen teilen. Wie lässt sich das am einfachsten ermöglichen?",
         options: [
-          { id: "A", text: "Jeder Ressource ein Abteilungs-Tag hinzufügen und die Kosten nach diesem Tag gruppieren", rationale: "Richtig. Tags sind Name-Wert-Paare an Ressourcen, mit denen Sie Ressourcen organisieren und Kosten filtern und gruppieren können." },
+          { id: "A", text: "Jeder Ressource ein Abteilungs-Tag hinzufügen und die Kosten nach diesem Tag gruppieren", rationale: "Richtig. Tags sind Name/Wert-Paare an Ressourcen, mit denen Sie Ressourcen organisieren und Kosten filtern und gruppieren können." },
           { id: "B", text: "Eine ReadOnly-Sperre auf jede Ressourcengruppe anwenden", rationale: "Sperren verhindern Änderungen; sie helfen nicht bei der Kostenzuordnung." },
           { id: "C", text: "Für jede Abteilung einen eigenen Microsoft Entra-Mandanten erstellen", rationale: "Das ist eine große organisatorische Änderung und für die Kostenauswertung nicht nötig." },
           { id: "D", text: "Den Preisrechner verwenden", rationale: "Der Preisrechner schätzt die Kosten geplanter Ressourcen; er zeigt keine tatsächlichen Ausgaben pro Abteilung." },

@@ -41,7 +41,7 @@ export const ab620De: DeContent = {
     },
     {
       label: "Prüfungsversion",
-      value: "Studienleitfaden zuletzt aktualisiert am 16. Oktober 2026 (kein Datum „Skills measured as of“ veröffentlicht)",
+      value: "Studienleitfaden zuletzt aktualisiert am 16. Oktober 2026 (kein Stichtag für die gemessenen Fähigkeiten veröffentlicht)",
     },
   ],
   domains: [
@@ -71,7 +71,7 @@ export const ab620De: DeContent = {
       name: "Testen und Verwalten von Agents",
       weight: "20–25%",
       objectives: [
-        "Bewerten Sie die Agentenleistung",
+        "Bewerten Sie die Agentenleistung (Evaluate agent performance)",
         "Implementieren der Anwendungslebenszyklusverwaltung (Application Lifecycle Management, ALM) für Agents in Copilot Studio",
       ],
     },
@@ -110,7 +110,7 @@ export const ab620De: DeContent = {
         steps: [
           {
             title: "Eigenen Stand am Studienleitfaden messen",
-            body: "Gehen Sie jeden Punkt der offiziellen AB-620-Fähigkeitenliste durch und markieren Sie ihn als bekannt, unsicher oder neu. Verwenden Sie die meiste Zeit auf die Integration, die allein bis zu 45 % ausmacht.",
+            body: "Gehen Sie jeden Punkt der offiziellen Liste der gemessenen Fähigkeiten für AB-620 durch und markieren Sie ihn als bekannt, unsicher oder neu. Verwenden Sie die meiste Zeit auf die Integration, die allein bis zu 45 % ausmacht.",
           },
           {
             title: "Eine Copilot-Studio-Umgebung einrichten",
@@ -130,7 +130,7 @@ export const ab620De: DeContent = {
           },
           {
             title: "Unter Zeitdruck üben",
-            body: "Absolvieren Sie zeitgebundene Übungsprüfungen in 120 Minuten, lesen Sie jede Erklärung und nutzen Sie die kostenlose Practice Assessment von Microsoft. Buchen Sie, wenn Ihre Ergebnisse stabil sind, und planen Sie die kostenlose jährliche Verlängerungsbewertung ein.",
+            body: "Absolvieren Sie Übungsprüfungen auf Zeit (120 Minuten), lesen Sie jede Erklärung und nutzen Sie die kostenlose Übungsbewertung (Practice Assessment) von Microsoft. Buchen Sie, wenn Ihre Ergebnisse stabil sind, und planen Sie die kostenlose jährliche Verlängerungsbewertung ein.",
           },
         ],
       },
@@ -175,7 +175,7 @@ export const ab620De: DeContent = {
       {
         question: "Sind die CertRamp-Fragen echte Prüfungsfragen?",
         answer:
-          "Nein. Alle CertRamp-Fragen sind eigene Übungsfragen, die nach der von Microsoft veröffentlichten Fähigkeitenübersicht geschrieben wurden. Sie stammen nicht aus der echten Prüfung.",
+          "Nein. Alle CertRamp-Fragen sind eigene Übungsfragen, die nach den von Microsoft veröffentlichten gemessenen Fähigkeiten geschrieben wurden. Sie stammen nicht aus der echten Prüfung.",
       },
     ],
     seo: {
@@ -222,13 +222,13 @@ export const ab620De: DeContent = {
       {
         id: "ab620-d1-hitl-approval",
         domain: "d1",
-        objective: "Erstellen eines Mensch-in-der-Schleife-Agentenflusses",
+        objective: "Erstellen eines Mensch-in-der-Schleife-Agentenflusses (Create a human-in-the-loop agent flow)",
         difficulty: "intermediate",
         question:
           "Ein Agent-Flow verarbeitet Lieferantenrechnungen. Rechnungen über einem Schwellenwert müssen zuerst von einem KI-Modell bewertet und dann von einer Finanzmanagerin oder einem Finanzmanager genehmigt werden, bevor die Zahlung fortgesetzt wird. Welche Aktion passt am besten?",
         options: [
           { id: "A", text: "Eine mehrstufige Genehmigung mit einer KI-Stufe, gefolgt von einer manuellen Stufe", rationale: "Richtig. Mehrstufige Genehmigungen in Agent-Flows kombinieren KI-Stufen, manuelle Stufen und Bedingungen, und der Flow wartet, bis die Genehmigung abgeschlossen ist." },
-          { id: "B", text: "Ein Send-HTTP-request-Knoten in einem Thema", rationale: "Damit wird aus einem Thema eine API aufgerufen; es gibt keinen Genehmigungsprozess und kein Warten auf eine menschliche Entscheidung." },
+          { id: "B", text: "Ein Knoten „HTTP-Anforderung senden“ (Send HTTP request) in einem Thema", rationale: "Damit wird aus einem Thema eine API aufgerufen; es gibt keinen Genehmigungsprozess und kein Warten auf eine menschliche Entscheidung." },
           { id: "C", text: "Ein Knoten für generative Antworten, verankert in der Rechnungsrichtlinie", rationale: "Generative Antworten erzeugen Antworten aus Wissen; sie holen keine Genehmigung einer Führungskraft ein." },
           { id: "D", text: "Eine geplante Aktualisierung der Wissensquelle", rationale: "Das Aktualisieren von Wissen hat nichts mit der Genehmigung einer Rechnung zu tun." },
         ],
@@ -240,19 +240,19 @@ export const ab620De: DeContent = {
       {
         id: "ab620-d1-http-node",
         domain: "d1",
-        objective: "Konfigurieren erweiterter Agent-Antworten mit API- und Senden von HTTP-Anforderungen",
+        objective: "Konfigurieren erweiterter Agent-Antworten mit API- und Senden von HTTP-Anforderungen (Configure advanced agent responses with API and Send HTTP requests)",
         difficulty: "intermediate",
         question:
-          "In einem Thema rufen Sie mit dem Knoten Send HTTP request eine externe Bestell-API auf. Spätere Knoten sollen Felder aus der JSON-Antwort mit IntelliSense im Power-Fx-Editor nutzen können. Was sollten Sie tun?",
+          "In einem Thema rufen Sie mit dem Knoten „HTTP-Anforderung senden“ (Send HTTP request) eine externe Bestell-API auf. Spätere Knoten sollen Felder aus der JSON-Antwort mit IntelliSense im Power-Fx-Editor nutzen können. Was sollten Sie tun?",
         options: [
-          { id: "A", text: "Den Body auf Raw content setzen", rationale: "Die Body-Einstellung steuert, was Sie senden, nicht wie die Antwort typisiert wird." },
+          { id: "A", text: "Den Body auf „Rohinhalt“ (Raw content) setzen", rationale: "Die Body-Einstellung steuert, was Sie senden, nicht wie die Antwort typisiert wird." },
           { id: "B", text: "Die Antwort als Zeichenfolge speichern und mit einem benutzerdefinierten Prompt parsen", rationale: "Das fügt einen unnötigen Modellaufruf hinzu und verliert die typisierte Struktur." },
           { id: "C", text: "Einen Authorization-Header hinzufügen", rationale: "Header können für die Authentifizierung nötig sein, sie typisieren aber nicht die Antwort." },
-          { id: "D", text: "Das Antwortschema aus Beispiel-JSON generieren und die Antwort in einer Variable speichern", rationale: "Richtig. Get schema from sample JSON erstellt eine typisierte Power-Fx-Variable, die spätere Knoten nutzen können." },
+          { id: "D", text: "Das Antwortschema aus Beispiel-JSON generieren und die Antwort in einer Variable speichern", rationale: "Richtig. „Schema aus Beispiel-JSON abrufen“ (Get schema from sample JSON) erstellt eine typisierte Power-Fx-Variable, die spätere Knoten nutzen können." },
         ],
         answer: "D",
         explanation:
-          "Der Knoten Send HTTP request unterstützt GET, POST, PATCH, PUT und DELETE, benutzerdefinierte Header sowie JSON- oder Raw-Bodys. Eine Beispielantwort macht aus dem Ergebnis eine strukturierte Variable statt reinem Text.",
+          "Der Knoten „HTTP-Anforderung senden“ (Send HTTP request) unterstützt GET, POST, PATCH, PUT und DELETE, benutzerdefinierte Header sowie JSON- oder Raw-Bodys. Eine Beispielantwort macht aus dem Ergebnis eine strukturierte Variable statt reinem Text.",
         reference: { label: "Microsoft Learn — HTTP-Anforderungen in Copilot Studio", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/authoring-http-node" },
       },
       {
@@ -337,7 +337,7 @@ export const ab620De: DeContent = {
         question:
           "Ein Agent soll Schadensmeldungen in eine ältere Windows-Desktopanwendung eingeben, die weder API noch Connector hat. Was sollten Sie konfigurieren?",
         options: [
-          { id: "A", text: "Einen Send-HTTP-request-Knoten, der auf die ausführbare Datei der Anwendung zeigt", rationale: "HTTP-Anforderungen rufen Web-APIs auf; die Anwendung hat keine." },
+          { id: "A", text: "Einen Knoten „HTTP-Anforderung senden“ (Send HTTP request), der auf die ausführbare Datei der Anwendung zeigt", rationale: "HTTP-Anforderungen rufen Web-APIs auf; die Anwendung hat keine." },
           { id: "B", text: "Azure AI Search als Wissensquelle", rationale: "Wissensquellen dienen dem Grounding von Antworten; sie können keine Anwendung bedienen." },
           { id: "C", text: "Das Tool für Computerverwendung (Computer Use) auf einem dafür eingerichteten Windows-Rechner, mit aktivierter generativer Orchestrierung", rationale: "Richtig. Computerverwendung bedient Websites und Desktop-Apps mit virtueller Maus und Tastatur, wenn keine API vorhanden ist." },
           { id: "D", text: "Einen Fabric-Daten-Agent", rationale: "Fabric-Daten-Agents beantworten Fragen zu Fabric-Daten; sie bedienen keine Desktopanwendungen." },
@@ -424,15 +424,15 @@ export const ab620De: DeContent = {
       {
         id: "ab620-d3-test-set-import",
         domain: "d3",
-        objective: "Testsatz erstellen",
+        objective: "Testsatz erstellen (Create a test set)",
         difficulty: "foundation",
         question:
-          "Sie haben 80 echte Benutzerfragen mit den Antworten, die der Fachbereich erwartet, in einer Tabelle. Sie möchten Ihren Agent damit evaluieren. Wie erstellen Sie den Testsatz am schnellsten?",
+          "Sie haben 80 echte Benutzerfragen mit den Antworten, die der Fachbereich erwartet, in einer Tabellenkalkulation. Sie möchten Ihren Agent damit evaluieren. Wie erstellen Sie den Testsatz am schnellsten?",
         options: [
           { id: "A", text: "Sie als CSV-Datei mit den Überschriften Question und Expected response speichern und importieren", rationale: "Richtig. Importierte Testsätze verwenden eine CSV- oder Textdatei mit diesen Überschriften, mit bis zu 100 Fragen." },
           { id: "B", text: "Jede Frage in den Testchat eingeben und auf Fehler warten", rationale: "Manuelles Chatten ergibt keinen wiederholbaren Testsatz mit erwarteten Antworten." },
           { id: "C", text: "Fragen aus den Themen des Agents generieren", rationale: "Generierte Fragen wären nicht Ihre 80 echten Fragen mit den erwarteten Antworten." },
-          { id: "D", text: "Die Tabelle als Wissensquelle hochladen", rationale: "Damit würden die Inhalte dem Wissen des Agents hinzugefügt, statt ihn zu testen." },
+          { id: "D", text: "Die Tabellenkalkulation als Wissensquelle hochladen", rationale: "Damit würden die Inhalte dem Wissen des Agents hinzugefügt, statt ihn zu testen." },
         ],
         answer: "A",
         explanation:
@@ -447,14 +447,14 @@ export const ab620De: DeContent = {
         question:
           "Die Antworten Ihres Agents dürfen anders formuliert sein als die erwarteten Antworten, solange sie dasselbe aussagen. Welche Testmethode sollten Sie wählen?",
         options: [
-          { id: "A", text: "Exact match", rationale: "Exact match (exakte Übereinstimmung) lässt jede Antwort durchfallen, die nicht Wort für Wort identisch ist." },
-          { id: "B", text: "Keyword match", rationale: "Keyword match (Schlüsselwortübereinstimmung) prüft bestimmte Wörter oder Ausdrücke, nicht die Gesamtbedeutung." },
-          { id: "C", text: "Tool use", rationale: "Tool use (Toolnutzung) prüft, ob die erwarteten Tools oder Themen verwendet wurden, nicht den Inhalt der Antwort." },
-          { id: "D", text: "Compare meaning", rationale: "Richtig. Compare meaning (Bedeutungsvergleich) bewertet, wie gut die Bedeutung der Antwort mit der erwarteten Antwort übereinstimmt." },
+          { id: "A", text: "Exact match", rationale: "Exact match (Genaue Übereinstimmung) lässt jede Antwort durchfallen, die nicht Wort für Wort identisch ist." },
+          { id: "B", text: "Keyword match", rationale: "Keyword match (Schlüsselwort-Übereinstimmung) prüft bestimmte Wörter oder Ausdrücke, nicht die Gesamtbedeutung." },
+          { id: "C", text: "Tool use", rationale: "Tool use (Werkzeuggebrauch) prüft, ob die erwarteten Tools oder Themen verwendet wurden, nicht den Inhalt der Antwort." },
+          { id: "D", text: "Compare meaning", rationale: "Richtig. Compare meaning (Bedeutung vergleichen) bewertet, wie gut die Bedeutung der Antwort mit der erwarteten Antwort übereinstimmt." },
         ],
         answer: "D",
         explanation:
-          "Copilot Studio bietet die Methoden General quality, Content safety, Compare meaning, Tool use, Keyword match, Text similarity, Exact match und benutzerdefinierte Methoden. Methoden, die mit einem erwarteten Wert vergleichen, liefern Invalid, wenn dieser Wert fehlt.",
+          "Copilot Studio bietet die Methoden General quality, Content safety, Compare meaning, Tool use, Keyword match, Text similarity, Exact match und benutzerdefinierte Methoden. Methoden, die mit einem erwarteten Wert vergleichen, liefern ein ungültiges Ergebnis (Invalid), wenn dieser Wert fehlt.",
         reference: EVALUATION,
       },
       {

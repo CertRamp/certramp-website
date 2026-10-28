@@ -38,7 +38,7 @@ export const az104De: DeContent = {
     {
       id: "d1",
       name: "Verwalten von Azure-Identitäten und Governance",
-      weight: "20–25%",
+      weight: "20–25 %",
       objectives: [
         "Verwalten von Microsoft Entra-Benutzer*innen und -Gruppen",
         "Verwalten des Zugriffs auf Azure-Ressourcen",
@@ -48,7 +48,7 @@ export const az104De: DeContent = {
     {
       id: "d2",
       name: "Implementieren und Verwalten von Speicher",
-      weight: "15–20%",
+      weight: "15–20 %",
       objectives: [
         "Konfigurieren des Zugriffs auf Speicher",
         "Konfigurieren und Verwalten von Speicherkonten",
@@ -58,7 +58,7 @@ export const az104De: DeContent = {
     {
       id: "d3",
       name: "Bereitstellen und Verwalten von Azure-Computeressourcen",
-      weight: "20–25%",
+      weight: "20–25 %",
       objectives: [
         "Automatisieren der Bereitstellung von Ressourcen mithilfe von ARM-Vorlagen (Azure Resource Manager) oder Bicep-Dateien",
         "Erstellen und Konfigurieren von VMs",
@@ -69,7 +69,7 @@ export const az104De: DeContent = {
     {
       id: "d4",
       name: "Implementieren und Verwalten virtueller Netzwerke",
-      weight: "15–20%",
+      weight: "15–20 %",
       objectives: [
         "Konfiguration und Verwaltung virtueller Netzwerke in Azure",
         "Konfigurieren des sicheren Zugriffs auf virtuelle Netzwerke",
@@ -79,7 +79,7 @@ export const az104De: DeContent = {
     {
       id: "d5",
       name: "Überwachen und Verwalten von Azure-Ressourcen",
-      weight: "10–15%",
+      weight: "10–15 %",
       objectives: ["Überwachen von Ressourcen in Azure", "Implementieren von Sicherung und Wiederherstellung"],
     },
   ],
@@ -92,7 +92,7 @@ export const az104De: DeContent = {
     whoFor: [
       "Cloud- und Systemadministratoren, die Azure-Abonnements im Tagesgeschäft betreuen",
       "IT-Fachleute mit Erfahrung in Servern, Netzwerken und Virtualisierung, die zu Azure wechseln",
-      "Engineers, die bereits mit dem Azure-Portal, PowerShell, Azure CLI und ARM-Vorlagen oder Bicep-Dateien arbeiten",
+      "Technische Fachkräfte, die bereits mit dem Azure-Portal, PowerShell, Azure CLI und ARM-Vorlagen oder Bicep-Dateien arbeiten",
     ],
     sections: [
       {
@@ -107,8 +107,8 @@ export const az104De: DeContent = {
         id: "april-2026-update",
         heading: "Was sich mit dem Update vom 17. April 2026 geändert hat",
         paragraphs: [
-          "Microsoft hat alle Änderungen im Update vom April 2026 als geringfügig eingestuft. Sie betrafen das Zielgruppenprofil und fünf Lernzielgruppen der Gliederung: Azure Files und Blob Storage, virtuelle Maschinen, Container im Azure-Portal, virtuelle Netzwerke und Überwachung. Für Identitäten und Governance gibt es keinen Eintrag im Änderungsprotokoll.",
-          "Die aktuelle Gliederung enthält zum Beispiel die Verschlüsselung auf dem Host für virtuelle Maschinen, Azure Container Apps neben Container Instances, Backup-Tresore neben Recovery Services-Tresoren sowie Network Watcher mit Connection Monitor. Übersetzte Fassungen der Prüfung werden etwa acht Wochen nach der englischen Version aktualisiert; prüfen Sie daher den Studienleitfaden, wenn Ihr Material älter ist.",
+          "Microsoft hat alle Änderungen im Update vom April 2026 als geringfügig eingestuft. Sie betrafen das Zielgruppenprofil und fünf Gruppen von Lernzielen der Gliederung: Azure Files und Blob Storage, virtuelle Maschinen, Container im Azure-Portal, virtuelle Netzwerke und Überwachung. Für Identitäten und Governance gibt es keinen Eintrag im Änderungsprotokoll.",
+          "Die aktuelle Gliederung enthält zum Beispiel die Verschlüsselung auf dem Host für virtuelle Maschinen, Azure Container Apps neben Container Instances, Azure Backup-Tresore neben Recovery Services-Tresoren sowie Network Watcher mit dem Verbindungsmonitor (Connection Monitor). Übersetzte Fassungen der Prüfung werden etwa acht Wochen nach der englischen Version aktualisiert; prüfen Sie daher den Studienleitfaden, wenn Ihr Material älter ist.",
         ],
       },
       {
@@ -167,7 +167,7 @@ export const az104De: DeContent = {
       {
         question: "Was hat sich am 17. April 2026 geändert?",
         answer:
-          "Microsoft nennt nur geringfügige Änderungen: das Zielgruppenprofil und die Lernzielgruppen für Azure Files und Blob Storage, virtuelle Maschinen, Container, virtuelle Netzwerke und Überwachung. Für Identitäten und Governance gibt es keinen Eintrag im Änderungsprotokoll.",
+          "Microsoft nennt nur geringfügige Änderungen: das Zielgruppenprofil und die Gruppen von Lernzielen für Azure Files und Blob Storage, virtuelle Maschinen, Container, virtuelle Netzwerke und Überwachung. Für Identitäten und Governance gibt es keinen Eintrag im Änderungsprotokoll.",
       },
       {
         question: "Kann ich AZ-104 wiederholen, wenn ich nicht bestehe?",
@@ -216,10 +216,10 @@ export const az104De: DeContent = {
         question:
           "Ein Entwickler muss alle Ressourcen in der Ressourcengruppe RG-Dev erstellen und verwalten können, darf aber anderen Benutzern keinen Zugriff gewähren. Der Zugriff darf für keine andere Ressourcengruppe gelten. Was sollten Sie tun?",
         options: [
-          { id: "A", text: "Die Rolle Owner im Bereich des Abonnements zuweisen", rationale: "Owner kann anderen Zugriff gewähren, und der Abonnementbereich umfasst jede Ressourcengruppe." },
-          { id: "B", text: "Die Rolle Contributor im Bereich der Ressourcengruppe RG-Dev zuweisen", rationale: "Richtig. Contributor kann alle Ressourcen verwalten, aber keine Rollen zuweisen, und der Ressourcengruppenbereich beschränkt dies auf RG-Dev." },
-          { id: "C", text: "Die Rolle Reader im Bereich der Ressourcengruppe RG-Dev zuweisen", rationale: "Reader kann Ressourcen nur anzeigen; der Entwickler könnte nichts erstellen oder ändern." },
-          { id: "D", text: "Die Rolle User Access Administrator im Bereich RG-Dev zuweisen", rationale: "Diese Rolle verwaltet nur Zugriffszuweisungen – genau das, was der Entwickler nicht tun darf." },
+          { id: "A", text: "Die Rolle Owner (Besitzer) im Bereich des Abonnements zuweisen", rationale: "Owner kann anderen Zugriff gewähren, und der Abonnementbereich umfasst jede Ressourcengruppe." },
+          { id: "B", text: "Die Rolle Contributor (Mitwirkender) im Bereich der Ressourcengruppe RG-Dev zuweisen", rationale: "Richtig. Contributor kann alle Ressourcen verwalten, aber keine Rollen zuweisen, und der Ressourcengruppenbereich beschränkt dies auf RG-Dev." },
+          { id: "C", text: "Die Rolle Reader (Leser) im Bereich der Ressourcengruppe RG-Dev zuweisen", rationale: "Reader kann Ressourcen nur anzeigen; der Entwickler könnte nichts erstellen oder ändern." },
+          { id: "D", text: "Die Rolle User Access Administrator (Benutzerzugriffsadministrator) im Bereich RG-Dev zuweisen", rationale: "Diese Rolle verwaltet nur Zugriffszuweisungen – genau das, was der Entwickler nicht tun darf." },
         ],
         answer: "B",
         explanation:
@@ -254,12 +254,12 @@ export const az104De: DeContent = {
         options: [
           { id: "A", text: "Eine CanNotDelete-Sperre (Delete) auf der Ressourcengruppe", rationale: "Richtig. Eine Löschsperre erlaubt das Lesen und Ändern von Ressourcen, verhindert aber das Löschen." },
           { id: "B", text: "Eine ReadOnly-Sperre auf der Ressourcengruppe", rationale: "Eine ReadOnly-Sperre würde auch die erforderlichen Konfigurationsänderungen blockieren." },
-          { id: "C", text: "Die Rolle Reader für alle Administratoren", rationale: "Mit Reader könnten Administratoren überhaupt keine Einstellungen mehr ändern." },
+          { id: "C", text: "Die Rolle Reader (Leser) für alle Administratoren", rationale: "Mit Reader könnten Administratoren überhaupt keine Einstellungen mehr ändern." },
           { id: "D", text: "Ein Tag namens DoNotDelete", rationale: "Tags setzen für sich genommen nichts durch." },
         ],
         answer: "A",
         explanation:
-          "Azure kennt zwei Sperrebenen: CanNotDelete (im Portal als Delete angezeigt) und ReadOnly. Sperren gelten für alle Benutzer, auch für Owner, bis die Sperre entfernt wird.",
+          "Azure kennt zwei Sperrebenen: CanNotDelete (im Portal als Delete angezeigt) und ReadOnly. Sperren gelten für alle Benutzer, auch für Owner (Besitzer), bis die Sperre entfernt wird.",
         reference: GUIDE,
       },
       {
@@ -383,7 +383,7 @@ export const az104De: DeContent = {
           "Sie müssen eine neue Version einer App Service-Web-App in Azure testen und sie dann ohne Ausfallzeit in die Produktion übernehmen, mit der Möglichkeit, bei Problemen schnell zurückzuwechseln. Was sollten Sie verwenden?",
         options: [
           { id: "A", text: "Einen zweiten App Service-Plan in einer anderen Region", rationale: "Damit entsteht eine separate Bereitstellung, aber kein integrierter Austausch und kein schnelles Rollback." },
-          { id: "B", text: "Den App Service-Plan auf mehr Instanzen horizontal hochskalieren", rationale: "Skalieren erhöht die Kapazität; es trennt Test- und Produktionsversion nicht voneinander." },
+          { id: "B", text: "Den App Service-Plan auf mehr Instanzen aufskalieren (horizontal skalieren)", rationale: "Skalieren erhöht die Kapazität; es trennt Test- und Produktionsversion nicht voneinander." },
           { id: "C", text: "Einen Stagingslot und einen Slotaustausch (Swap)", rationale: "Richtig. Sie stellen in einem Stagingslot bereit, wärmen ihn vor, tauschen ihn mit der Produktion und können bei Bedarf zurücktauschen." },
           { id: "D", text: "Eine App Service-Sicherung", rationale: "Sicherungen dienen der Wiederherstellung einer App, nicht Releases ohne Ausfallzeit." },
         ],
@@ -418,12 +418,12 @@ export const az104De: DeContent = {
         objective: "Konfigurieren des sicheren Zugriffs auf virtuelle Netzwerke",
         difficulty: "advanced",
         question:
-          "Eine Azure SQL-Datenbank muss aus Ihrem virtuellen Netzwerk und von lokal über ein VPN über eine private IP-Adresse erreichbar sein, und der öffentliche Netzwerkzugriff muss deaktiviert werden. Was sollten Sie konfigurieren?",
+          "Eine Azure SQL-Datenbank muss aus Ihrem virtuellen Netzwerk und über ein VPN aus Ihrem lokalen Netzwerk unter einer privaten IP-Adresse erreichbar sein, und der öffentliche Netzwerkzugriff muss deaktiviert werden. Was sollten Sie konfigurieren?",
         options: [
           { id: "A", text: "Einen Dienstendpunkt für Microsoft.Sql im Subnetz", rationale: "Dienstendpunkte halten den Datenverkehr im Azure-Backbone, aber der Dienst nutzt weiterhin seinen öffentlichen Endpunkt, und für lokale Clients gibt es keine private IP-Adresse." },
           { id: "B", text: "Eine NSG-Regel, die Port 1433 zulässt", rationale: "Eine NSG filtert Datenverkehr, gibt der Datenbank aber keine private Adresse." },
           { id: "C", text: "Azure Bastion", rationale: "Bastion bietet RDP- und SSH-Zugriff auf VMs, keinen privaten Zugriff auf PaaS-Dienste." },
-          { id: "D", text: "Einen privaten Endpunkt für die Datenbank im virtuellen Netzwerk", rationale: "Richtig. Ein privater Endpunkt gibt dem Dienst eine private IP-Adresse in Ihrem VNet, die aus per Peering verbundenen Netzwerken und von lokal erreichbar ist." },
+          { id: "D", text: "Einen privaten Endpunkt für die Datenbank im virtuellen Netzwerk", rationale: "Richtig. Ein privater Endpunkt gibt dem Dienst eine private IP-Adresse in Ihrem VNet, die aus per Peering verbundenen Netzwerken und aus dem lokalen Netzwerk erreichbar ist." },
         ],
         answer: "D",
         explanation:
