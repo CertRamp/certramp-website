@@ -98,7 +98,7 @@ export const iappAigpDe: DeContent = {
   guide: {
     slug: "iapp-aigp",
     summary:
-      "Die IAPP AIGP (Artificial Intelligence Governance Professional) prüft, ob Sie KI über ihren gesamten Lebenszyklus steuern können: Governance-Strukturen und Richtlinien aufbauen, Datenschutzrecht, KI-spezifische und sonstige Gesetze sowie Standards anwenden und sowohl die Entwicklung als auch den Einsatz von KI-Systemen beaufsichtigen. Die Prüfung umfasst 100 Fragen in 2,75 Stunden mit einer optionalen 15-minütigen Pause. Zum Bestehen benötigen Sie 300 Punkte auf der IAPP-Skala von 100–500, und sie folgt dem Body of Knowledge 2.1, gültig ab 2. Februar 2026.",
+      "Die IAPP AIGP (Artificial Intelligence Governance Professional) prüft, ob Sie KI über ihren gesamten Lebenszyklus steuern können: Governance-Strukturen und Richtlinien aufbauen, Datenschutzrecht, KI-spezifische und sonstige Gesetze sowie Standards anwenden und sowohl die Entwicklung als auch den Einsatz von KI-Systemen beaufsichtigen. Die Prüfung umfasst 100 Fragen in 2,75 Stunden mit einer optionalen 15-minütigen Pause. Zum Bestehen benötigen Sie 300 Punkte auf der IAPP-Skala von 100–500. Die Prüfung folgt dem Body of Knowledge 2.1, gültig ab 2. Februar 2026.",
     whoFor: [
       "Fachleute aus Datenschutz, Recht und Compliance, die Verantwortung für KI übernehmen",
       "Verantwortliche für Risikomanagement, Governance und Ethik, die ein KI-Governance-Programm aufbauen oder betreiben",
@@ -131,7 +131,7 @@ export const iappAigpDe: DeContent = {
           },
           {
             title: "KI-Grundlagen aus Governance-Sicht lernen",
-            body: "Sie müssen keine Modelle bauen, aber Sie müssen die wichtigsten Arten von KI kennen, wissen, wie Machine-Learning-Systeme trainiert, getestet und überwacht werden, und die typischen Risiken und Schäden verstehen – Verzerrung (Bias), Intransparenz, Drift sowie Sicherheits- und Datenschutzversagen.",
+            body: "Sie müssen keine Modelle bauen, aber Sie müssen die wichtigsten Arten von KI kennen, wissen, wie Machine-Learning-Systeme trainiert, getestet und überwacht werden, und die typischen Risiken und Schäden verstehen – Verzerrung (Bias), Intransparenz, Drift sowie Sicherheits- und Datenschutzmängel.",
           },
           {
             title: "Die zentralen Rechts- und Rahmenwerkstexte lesen",
@@ -139,7 +139,7 @@ export const iappAigpDe: DeContent = {
           },
           {
             title: "Ein KI-System durch seinen Lebenszyklus begleiten",
-            body: "Nehmen Sie einen Beispiel-Anwendungsfall und verfolgen Sie ihn vom Business Case und der Folgenabschätzung über Data Governance, Tests, Freigabe und Überwachung. Wiederholen Sie das Ganze dann aus Sicht des Betreibers: Sorgfaltsprüfung des Anbieters (Due Diligence), Vertragsbedingungen, menschliche Aufsicht und Außerbetriebnahme.",
+            body: "Nehmen Sie einen Beispiel-Anwendungsfall und verfolgen Sie ihn vom Business Case und der Folgenabschätzung über Data Governance, Tests, Freigabe und Überwachung. Wiederholen Sie das Ganze dann aus Sicht des Betreibers: Due-Diligence-Prüfung des Lieferanten, Vertragsbedingungen, menschliche Aufsicht und Außerbetriebnahme.",
           },
           {
             title: "Unter Zeitdruck üben",
@@ -147,7 +147,7 @@ export const iappAigpDe: DeContent = {
           },
           {
             title: "Buchen, wenn Ihre Ergebnisse stabil sind",
-            body: "Buchen Sie die Prüfung, sobald Sie mehrere Übungsprüfungen mit Abstand bestehen. Die Prüfung muss innerhalb eines Jahres nach dem Kauf abgelegt werden, und nach der Zertifizierung benötigen Sie 20 Weiterbildungspunkte pro zweijähriger Zertifizierungsperiode.",
+            body: "Buchen Sie die Prüfung, sobald Sie mehrere Übungsprüfungen mit sicherem Abstand bestehen. Die Prüfung muss innerhalb eines Jahres nach dem Kauf abgelegt werden, und nach der Zertifizierung benötigen Sie 20 Weiterbildungspunkte pro zweijähriger Zertifizierungsperiode.",
           },
         ],
       },
@@ -158,7 +158,7 @@ export const iappAigpDe: DeContent = {
           "Nur die KI-Verordnung der EU lernen. Sie ist wichtig, aber die rechtliche Domäne umfasst auch Datenschutzrecht, Recht des geistigen Eigentums, Antidiskriminierungsrecht und Produkthaftungsrecht sowie Standards und Rahmenwerke.",
           "Die Pflichten von Anbieter und Betreiber verwechseln. Viele Fragen hängen davon ab, welcher Akteur in der KI-Wertschöpfungskette für eine bestimmte Pflicht verantwortlich ist.",
           "Governance als einmalige Freigabe verstehen. Der Body of Knowledge erwartet Überwachung, Wartung, erneutes Training, Vorfallbehandlung und Außerbetriebnahme über den gesamten Lebenszyklus.",
-          "Die Anbieterseite auslassen. Domäne IV behandelt den Kauf und die Lizenzierung von KI, einschließlich Vertragsbedingungen, Lieferantenrisiken und Folgenabschätzungen für Systeme Dritter.",
+          "Die Beschaffungsseite auslassen. Domäne IV behandelt den Kauf und die Lizenzierung von KI, einschließlich Vertragsbedingungen, Lieferantenrisiken und Folgenabschätzungen für Systeme Dritter.",
           "Die vier Funktionen des NIST AI RMF durcheinanderbringen. Sie sollten wissen, was Govern, Map, Measure und Manage jeweils abdecken und dass Govern funktionsübergreifend wirkt.",
         ],
       },
@@ -198,7 +198,7 @@ export const iappAigpDe: DeContent = {
     seo: {
       title: "AIGP Prüfungsvorbereitung 2026: Domänen & Lernplan",
       description:
-        "IAPP AIGP Leitfaden zum Body of Knowledge 2.1: 100 Fragen, 2,75 Stunden, Bestehensgrenze 300 von 500, die vier Domänen und ein Lernplan.",
+        "IAPP-AIGP-Leitfaden zum Body of Knowledge 2.1: 100 Fragen, 2,75 Stunden, Bestehensgrenze 300 von 500, die vier Domänen und ein Lernplan in sechs Schritten.",
     },
     published: "2026-10-28",
     updated: "2026-10-28",
@@ -227,9 +227,9 @@ export const iappAigpDe: DeContent = {
           "Die OECD und die KI-Verordnung der EU definieren ein KI-System ähnlich. Welches Merkmal in diesen Definitionen grenzt ein KI-System am deutlichsten von herkömmlicher, regelbasierter Software ab?",
         options: [
           { id: "A", text: "Es läuft auf Cloud-Infrastruktur und verarbeitet große Datenmengen", rationale: "Wo Software läuft und wie viele Daten sie verarbeitet, ist nicht Teil der Definition; herkömmliche Software kann beides." },
-          { id: "B", text: "Es leitet aus den erhaltenen Eingaben ab, wie Ausgaben wie Vorhersagen, Inhalte, Empfehlungen oder Entscheidungen erstellt werden", rationale: "Richtig. Die Fähigkeit, abzuleiten, wie Ausgaben erzeugt werden, statt nur von Menschen geschriebene Regeln auszuführen, ist das Kernelement beider Definitionen." },
+          { id: "B", text: "Es leitet aus den erhaltenen Eingaben ab, wie Ausgaben wie etwa Vorhersagen, Inhalte, Empfehlungen oder Entscheidungen erstellt werden", rationale: "Richtig. Die Fähigkeit, abzuleiten, wie Ausgaben erzeugt werden, statt nur von Menschen geschriebene Regeln auszuführen, ist das Kernelement beider Definitionen." },
           { id: "C", text: "Es kann ohne jede menschliche Beteiligung arbeiten", rationale: "Die Definitionen sprechen von unterschiedlichen Graden der Autonomie. Vollständige Autonomie ist nicht erforderlich, und viele KI-Systeme arbeiten mit einem Menschen in der Entscheidungsschleife (Human in the Loop)." },
-          { id: "D", text: "Es lernt nach der Inbetriebnahme stets weiter", rationale: "Anpassungsfähigkeit nach der Inbetriebnahme kann ein KI-System aufweisen; sie ist aber keine zwingende Voraussetzung der Definition." },
+          { id: "D", text: "Es lernt nach der Betriebsaufnahme stets weiter", rationale: "Anpassungsfähigkeit nach der Betriebsaufnahme kann ein KI-System aufweisen; sie ist aber keine zwingende Voraussetzung der Definition." },
         ],
         answer: "B",
         explanation:
@@ -285,7 +285,7 @@ export const iappAigpDe: DeContent = {
           { id: "A", text: "Keiner – Daten, die das Unternehmen bereits besitzt, dürfen für jeden internen Zweck weiterverwendet werden", rationale: "Der Grundsatz der Zweckbindung erlaubt keine unbeschränkte Weiterverwendung personenbezogener Daten für neue Zwecke." },
           { id: "B", text: "Die Protokolle anonymisieren, indem nur die Kundennamen entfernt werden", rationale: "Das bloße Entfernen von Namen macht Freitext-Protokolle selten anonym; andere Identifikatoren und Kontextinformationen bleiben in der Regel erhalten." },
           { id: "C", text: "Eine Genehmigung der Aufsichtsbehörde einholen", rationale: "Die DSGVO verlangt für einen neuen Verarbeitungszweck keine vorherige Genehmigung der Aufsichtsbehörde (eine vorherige Konsultation ist nur in bestimmten Fällen mit hohem Risiko nach einer Datenschutz-Folgenabschätzung vorgesehen)." },
-          { id: "D", text: "Prüfen, ob der neue Zweck mit dem ursprünglichen vereinbar ist, eine Rechtsgrundlage bestimmen und die betroffenen Personen transparent informieren", rationale: "Richtig. Die Weiterverwendung für das Modelltraining ist ein weiterer Zweck, der den Grundsatz der Zweckbindung erfüllen, eine Rechtsgrundlage haben und den betroffenen Personen erläutert werden muss." },
+          { id: "D", text: "Prüfen, ob der neue Zweck mit dem ursprünglichen vereinbar ist, eine Rechtsgrundlage bestimmen und die betroffenen Personen transparent informieren", rationale: "Richtig. Die Weiterverarbeitung für das Modelltraining dient einem weiteren Zweck, der den Grundsatz der Zweckbindung erfüllen, eine Rechtsgrundlage haben und den betroffenen Personen erläutert werden muss." },
         ],
         answer: "D",
         explanation:
@@ -375,7 +375,7 @@ export const iappAigpDe: DeContent = {
           "Bei einer Prüfung kann das Entwicklungsteam nicht nachweisen, woher Teile seines Trainingsdatensatzes stammen oder zu welchen Bedingungen sie beschafft wurden. Welche Governance-Praxis schließt diese Lücke am direktesten?",
         options: [
           { id: "A", text: "Den Trainingsdatensatz vergrößern", rationale: "Mehr Daten erklären nicht, woher die vorhandenen Daten stammen, und fügen womöglich weitere Daten unbekannter Herkunft hinzu." },
-          { id: "B", text: "Datenherkunft und -verlauf (Provenance und Lineage) festhalten und dokumentieren, einschließlich der Quelle und der Rechte zur Nutzung jedes Datensatzes", rationale: "Richtig. Dokumentierte Lineage und Provenance zeigen, woher Daten stammen, wie sie umgewandelt wurden und ob die Organisation sie für das Training verwenden darf." },
+          { id: "B", text: "Datenherkunft und -verlauf (Provenance und Lineage) festhalten und dokumentieren, einschließlich der Quelle und der rechtmäßigen Nutzungsrechte für jeden Datensatz", rationale: "Richtig. Dokumentierte Lineage und Provenance zeigen, woher Daten stammen, wie sie umgewandelt wurden und ob die Organisation sie für das Training verwenden darf." },
           { id: "C", text: "Den Trainingsdatensatz im Ruhezustand verschlüsseln", rationale: "Verschlüsselung schützt die Vertraulichkeit, sagt aber nichts über Herkunft oder Nutzungsrechte aus." },
           { id: "D", text: "Das Modell häufiger neu trainieren", rationale: "Die Häufigkeit des erneuten Trainings beseitigt keine Unklarheit über die Daten, mit denen das Modell trainiert wird." },
         ],
