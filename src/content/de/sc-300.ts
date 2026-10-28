@@ -34,7 +34,7 @@ export const sc300De: DeContent = {
     },
     {
       label: "Prüfungsversion",
-      value: "Gemessene Qualifikationen ab dem 28. Oktober 2026 (Aktualisierung der englischen Prüfung am 28. Oktober 2026)",
+      value: "Gemessene Fähigkeiten ab dem 28. Oktober 2026 (Aktualisierung der englischen Prüfung am 28. Oktober 2026)",
     },
   ],
   domains: [
@@ -88,7 +88,7 @@ export const sc300De: DeContent = {
   guide: {
     slug: "sc-300",
     summary:
-      "SC-300 (Microsoft Identity and Access Administrator) prüft, ob Sie Identitäts- und Zugriffsverwaltung mit Microsoft Entra implementieren und betreiben können: Benutzer- und Hybrididentitäten, Authentifizierung und Conditional Access, Workload-Identitäten und Unternehmensanwendungen sowie Identity Governance. Die Prüfung dauert 100 Minuten, zum Bestehen benötigen Sie 700 Punkte, und die englische Prüfung wechselt auf die gemessenen Qualifikationen ab dem 28. Oktober 2026.",
+      "SC-300 (Microsoft Identity and Access Administrator) prüft, ob Sie Identitäts- und Zugriffsverwaltung mit Microsoft Entra implementieren und betreiben können: Benutzer- und Hybrididentitäten, Authentifizierung und Conditional Access, Workload-Identitäten und Unternehmensanwendungen sowie Identity Governance. Die Prüfung dauert 100 Minuten, zum Bestehen benötigen Sie 700 Punkte, und die englische Prüfung wechselt auf die gemessenen Fähigkeiten ab dem 28. Oktober 2026.",
     whoFor: [
       "Identitäts- und Zugriffsadministratoren, die Microsoft Entra ID im Tagesgeschäft betreuen",
       "Microsoft 365- und Azure-Administratoren, die für Anmeldesicherheit, Conditional Access oder App-Integration zuständig sind",
@@ -99,7 +99,7 @@ export const sc300De: DeContent = {
         id: "what-the-exam-tests",
         heading: "Was SC-300 tatsächlich prüft",
         paragraphs: [
-          "SC-300 umfasst vier Qualifikationsbereiche: Benutzeridentitäten implementieren und verwalten, Authentifizierung und Zugriffsverwaltung implementieren, Workload-Identitäten planen und implementieren sowie Identity Governance planen und automatisieren. Jeder Bereich macht etwa ein Viertel der Prüfung aus. Der Studienleitfaden von Microsoft gibt für Authentifizierung und Zugriffsverwaltung in der Zusammenfassung 25–30 % und im Detailabschnitt 20–25 % an; planen Sie diesen Bereich daher mindestens so umfangreich ein wie die anderen.",
+          "SC-300 umfasst vier Fähigkeitsbereiche: Benutzeridentitäten implementieren und verwalten, Authentifizierung und Zugriffsverwaltung implementieren, Workload-Identitäten planen und implementieren sowie Identity Governance planen und automatisieren. Jeder Bereich macht etwa ein Viertel der Prüfung aus. Der Studienleitfaden von Microsoft gibt für Authentifizierung und Zugriffsverwaltung in der Zusammenfassung 25–30 % und im Detailabschnitt 20–25 % an; planen Sie diesen Bereich daher mindestens so umfangreich ein wie die anderen.",
           "Die meisten Fragen beschreiben eine Anforderung einer Organisation und fragen nach dem passenden Entra-Feature oder der passenden Einstellung. Typische Entscheidungen: Verwaltungseinheit oder mandantenweite Rolle, Kennworthashsynchronisierung oder Passthrough-Authentifizierung, welche Bedingung und welche Kontrolle in Conditional Access, system- oder benutzerseitig zugewiesene verwaltete Identität, Zugriffspaket oder Zugriffsüberprüfung sowie berechtigte oder aktive PIM-Zuweisung.",
         ],
       },
@@ -117,7 +117,7 @@ export const sc300De: DeContent = {
         steps: [
           {
             title: "Den eigenen Stand am Studienleitfaden messen",
-            body: "Gehen Sie jeden Punkt der offiziellen SC-300-Qualifikationsliste durch und markieren Sie ihn als bekannt, unsicher oder neu. Die vier Bereiche sind ähnlich gewichtet, lassen Sie also keinen aus.",
+            body: "Gehen Sie jeden Punkt der offiziellen SC-300-Liste der gemessenen Fähigkeiten durch und markieren Sie ihn als bekannt, unsicher oder neu. Die vier Bereiche sind ähnlich gewichtet, lassen Sie also keinen aus.",
           },
           {
             title: "Einen Labormandanten aufbauen",
@@ -128,7 +128,7 @@ export const sc300De: DeContent = {
             body: "Laden Sie einen Gast ein, gewähren Sie ihm Zugriff über ein Zugriffspaket, überprüfen Sie diesen Zugriff und lassen Sie ihn ablaufen. Aktivieren Sie anschließend eine Rolle mit PIM und lesen Sie den Überwachungsverlauf. Wer den ganzen Zyklus einmal gesehen hat, beantwortet Governance-Fragen deutlich leichter.",
           },
           {
-            title: "Die Microsoft Learn-Lernpfade durcharbeiten",
+            title: "Die Microsoft-Learn-Lernpfade durcharbeiten",
             body: "Folgen Sie den kostenlosen SC-300-Lernpfaden und gleichen Sie jedes Modul mit der aktuellen Gliederung ab, insbesondere Global Secure Access und Workload-Identitäten.",
           },
           {
@@ -148,7 +148,7 @@ export const sc300De: DeContent = {
           "Microsoft Entra-Rollen und Azure RBAC-Rollen verwechseln. Entra-Rollen verwalten das Verzeichnis und Microsoft 365, Azure-Rollen verwalten Azure-Ressourcen. PIM deckt beide ab, sie werden aber getrennt konfiguriert.",
           "Conditional Access nur als „MFA erzwingen“ lernen. Sie sollten Zuweisungen, Bedingungen, Gewährungs- und Sitzungssteuerungen, den Nur-Bericht-Modus, die fortlaufende Zugriffsevaluierung (Continuous Access Evaluation), den Authentifizierungskontext und geschützte Aktionen kennen.",
           "Hybrididentität als Randthema behandeln. Entra Connect Sync, Cloud Sync, Kennworthashsynchronisierung, Passthrough-Authentifizierung und nahtloses SSO stehen alle in der Gliederung.",
-          "Workload-Identitäten überspringen. Verwaltete Identitäten, Dienstprinzipale, App-Registrierungen, Einwilligung (Consent) und Defender for Cloud Apps bilden einen ganzen Qualifikationsbereich.",
+          "Workload-Identitäten überspringen. Verwaltete Identitäten, Dienstprinzipale, App-Registrierungen, Einwilligung (Consent) und Defender for Cloud Apps bilden einen ganzen Fähigkeitsbereich.",
           "Governance-Werkzeuge verwechseln. Die Berechtigungsverwaltung (Entitlement Management) gewährt Zugriff über Zugriffspakete; Zugriffsüberprüfungen prüfen, ob bestehender Zugriff noch benötigt wird; PIM steuert, wann privilegierte Rollen aktiv sind.",
         ],
       },
@@ -165,7 +165,7 @@ export const sc300De: DeContent = {
           "Die Zertifizierung Identity and Access Administrator Associate muss alle 12 Monate verlängert werden. Sie verlängern sie kostenlos, indem Sie innerhalb des sechsmonatigen Verlängerungszeitraums eine Online-Bewertung auf Microsoft Learn bestehen.",
       },
       {
-        question: "Welche Qualifikationen ändern sich am 28. Oktober 2026?",
+        question: "Welche gemessenen Fähigkeiten ändern sich am 28. Oktober 2026?",
         answer:
           "Microsoft nennt geringfügige Änderungen in „Planen, Implementieren und Verwalten der Microsoft Entra-Benutzerauthentifizierung“, „Implementieren des globalen sicheren Zugriffs“ und „Planen und Implementieren von privilegiertem Zugriff“. Alle anderen Bereiche bleiben unverändert.",
       },
@@ -182,7 +182,7 @@ export const sc300De: DeContent = {
       {
         question: "Sind die CertRamp-Fragen echte Prüfungsfragen?",
         answer:
-          "Nein. Alle CertRamp-Fragen sind eigene Übungsfragen, die nach der von Microsoft veröffentlichten Qualifikationsgliederung geschrieben wurden. Sie stammen nicht aus der echten Prüfung.",
+          "Nein. Alle CertRamp-Fragen sind eigene Übungsfragen, die nach der von Microsoft veröffentlichten Gliederung der gemessenen Fähigkeiten geschrieben wurden. Sie stammen nicht aus der echten Prüfung.",
       },
     ],
     seo: {
@@ -198,13 +198,13 @@ export const sc300De: DeContent = {
   questions: {
     slug: "sc-300",
     intro:
-      "15 eigene SC-300-Übungsfragen zu den vier Qualifikationsbereichen des Microsoft-Studienleitfadens (gemessene Qualifikationen ab dem 28. Oktober 2026), ungefähr wie in der echten Prüfung gewichtet. Zu jeder Frage gibt es die Lösung, eine kurze Erklärung und die Begründung, warum jede andere Antwortoption falsch ist.",
+      "15 eigene SC-300-Übungsfragen zu den vier Fähigkeitsbereichen des Microsoft-Studienleitfadens (gemessene Fähigkeiten ab dem 28. Oktober 2026), ungefähr wie in der echten Prüfung gewichtet. Zu jeder Frage gibt es die Lösung, eine kurze Erklärung und die Begründung, warum jede andere Antwortoption falsch ist.",
     published: "2026-10-28",
     updated: "2026-10-28",
     seo: {
       title: "SC-300 Übungsfragen mit Lösungen & Erklärungen (2026)",
       description:
-        "15 kostenlose, eigene SC-300 Prüfungsfragen zu Microsoft Entra ID, Conditional Access, Workload-Identitäten, PIM und Governance – jeweils erklärt.",
+        "15 kostenlose, eigene SC-300-Übungsfragen zu Microsoft Entra ID, Conditional Access, Workload-Identitäten, PIM und Governance – jeweils erklärt.",
     },
     questions: [
       /* ── Bereich 1: Implementieren und Verwalten von Benutzeridentitäten ── */

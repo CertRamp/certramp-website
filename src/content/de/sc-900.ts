@@ -27,7 +27,7 @@ export const sc900De: DeContent = {
     },
     { label: "Durchführung", value: "Beaufsichtigte Prüfung, Terminbuchung über Pearson VUE" },
     { label: "Voraussetzungen", value: "Keine. Fundamentals-Zertifizierungen laufen nicht ab." },
-    { label: "Prüfungsversion", value: "Gemessene Qualifikationen ab dem 21. Oktober 2026" },
+    { label: "Prüfungsversion", value: "Gemessene Fähigkeiten ab dem 21. Oktober 2026" },
   ],
   domains: [
     {
@@ -75,7 +75,7 @@ export const sc900De: DeContent = {
   guide: {
     slug: "sc-900",
     summary:
-      "SC-900 (Microsoft Security, Compliance, and Identity Fundamentals) prüft, ob Sie Konzepte zu Sicherheit, Compliance und Identität sowie die zugehörigen Microsoft-Lösungen beschreiben können: Microsoft Entra, Defender for Cloud, Microsoft Sentinel, Defender XDR und Microsoft Purview. Die Prüfung dauert 45 Minuten, zum Bestehen benötigen Sie 700 Punkte, und die Liste der gemessenen Qualifikationen wurde zuletzt am 21. Oktober 2026 aktualisiert. Fundamentals-Zertifizierungen laufen nicht ab.",
+      "SC-900 (Microsoft Security, Compliance, and Identity Fundamentals) prüft, ob Sie Konzepte zu Sicherheit, Compliance und Identität sowie die zugehörigen Microsoft-Lösungen beschreiben können: Microsoft Entra, Defender for Cloud, Microsoft Sentinel, Defender XDR und Microsoft Purview. Die Prüfung dauert 45 Minuten, zum Bestehen benötigen Sie 700 Punkte, und die Liste der gemessenen Fähigkeiten wurde zuletzt am 21. Oktober 2026 aktualisiert. Fundamentals-Zertifizierungen laufen nicht ab.",
     whoFor: [
       "Fachliche Stakeholder, die verstehen müssen, wie Microsoft Sicherheit, Compliance und Identität angeht",
       "Angehende oder erfahrene IT-Fachkräfte, die in die IT-Sicherheit einsteigen oder sich in Richtung SC-200, SC-300 oder SC-500 entwickeln",
@@ -86,7 +86,7 @@ export const sc900De: DeContent = {
         id: "what-the-exam-tests",
         heading: "Was SC-900 tatsächlich prüft",
         paragraphs: [
-          "SC-900 umfasst vier Qualifikationsbereiche. Am stärksten gewichtet sind die Microsoft-Sicherheitslösungen (35–40 %): Sicherheitsdienste der Azure-Infrastruktur wie Azure Firewall, Netzwerksicherheitsgruppen (NSGs), Azure Bastion und Key Vault sowie Defender for Cloud, Microsoft Sentinel und die Defender-XDR-Dienste. Microsoft Entra macht 25–30 % aus, die Compliancelösungen von Microsoft Purview 20–25 % und die Grundkonzepte von Sicherheit, Compliance und Identität 10–15 %.",
+          "SC-900 umfasst vier Fähigkeitsbereiche. Am stärksten gewichtet sind die Microsoft-Sicherheitslösungen (35–40 %): Sicherheitsdienste der Azure-Infrastruktur wie Azure Firewall, Netzwerksicherheitsgruppen (NSGs), Azure Bastion und Key Vault sowie Defender for Cloud, Microsoft Sentinel und die Defender-XDR-Dienste. Microsoft Entra macht 25–30 % aus, die Compliancelösungen von Microsoft Purview 20–25 % und die Grundkonzepte von Sicherheit, Compliance und Identität 10–15 %.",
           "Jedes Lernziel beginnt mit „Beschreiben“ oder „Definieren“ (im Original „Describe“ bzw. „Define“). Sie müssen nichts Schritt für Schritt konfigurieren; Sie sollen erkennen, was ein Konzept bedeutet und welches Produkt oder Feature ein beschriebenes Problem löst. Typische Entscheidungen: Conditional Access oder Privileged Identity Management, Vertraulichkeitsbezeichnung oder Aufbewahrungsbezeichnung, Azure Firewall oder Netzwerksicherheitsgruppe, SIEM oder SOAR.",
         ],
       },
@@ -94,7 +94,7 @@ export const sc900De: DeContent = {
         id: "october-2026-update",
         heading: "Was sich mit dem Update vom 21. Oktober 2026 geändert hat",
         paragraphs: [
-          "Microsoft nennt zwei kleinere Änderungen: „Beschreiben der Funktion und der Identitätstypen von Microsoft Entra ID“ (Describe function and identity types of Microsoft Entra ID) und „Bedrohungsschutz mit Microsoft Defender XDR beschreiben“ (Describe threat protection with Microsoft Defender XDR). Ansonsten bleiben die Qualifikationsbereiche unverändert, und die veröffentlichten Gewichtungen sind dieselben wie zuvor.",
+          "Microsoft nennt zwei kleinere Änderungen: „Beschreiben der Funktion und der Identitätstypen von Microsoft Entra ID“ (Describe function and identity types of Microsoft Entra ID) und „Bedrohungsschutz mit Microsoft Defender XDR beschreiben“ (Describe threat protection with Microsoft Defender XDR). Ansonsten bleiben die Fähigkeitsbereiche unverändert, und die veröffentlichten Gewichtungen sind dieselben wie zuvor.",
           "Die aktuelle Gliederung nennt unter Entra ID Workload-Identitäten und Hybrididentität und führt unter Defender XDR Defender for Office 365, Defender for Endpoint, Defender for Cloud Apps, Defender for Identity, Defender Vulnerability Management, Microsoft Threat Intelligence und das Microsoft Defender-Portal auf. Übersetzte Fassungen der Prüfung werden in der Regel etwa acht Wochen nach der englischen Version aktualisiert.",
         ],
       },
@@ -104,14 +104,14 @@ export const sc900De: DeContent = {
         steps: [
           {
             title: "Den eigenen Stand am Studienleitfaden messen",
-            body: "Gehen Sie jeden Punkt der offiziellen SC-900-Qualifikationsliste durch und markieren Sie ihn als bekannt, unsicher oder neu. Allein der Bereich Sicherheitslösungen macht bis zu 40 % aus und verdient daher den größten Teil Ihrer Zeit.",
+            body: "Gehen Sie jeden Punkt der offiziellen SC-900-Liste der gemessenen Fähigkeiten durch und markieren Sie ihn als bekannt, unsicher oder neu. Allein der Bereich Sicherheitslösungen macht bis zu 40 % aus und verdient daher den größten Teil Ihrer Zeit.",
           },
           {
             title: "Zuerst die Konzepte klären",
             body: "Geteilte Verantwortung, Defense-in-Depth, Zero Trust, Verschlüsselung versus Hashing, Authentifizierung versus Autorisierung sowie Verbund (Federation) sind das Vokabular, auf dem der Rest der Prüfung aufbaut. Stellen Sie sicher, dass Sie jeden Begriff in einem Satz erklären können.",
           },
           {
-            title: "Die Microsoft Learn-Lernpfade durcharbeiten",
+            title: "Die Microsoft-Learn-Lernpfade durcharbeiten",
             body: "Folgen Sie den kostenlosen SC-900-Lernpfaden zu Entra, zur Sicherheit mit Azure und Defender sowie zu Microsoft Purview. Notieren Sie für jedes Produkt das eine Problem, das es löst – genau das prüfen die Fragen meist.",
           },
           {
@@ -148,9 +148,9 @@ export const sc900De: DeContent = {
           "Nein. Laut Microsoft laufen Fundamentals-Zertifizierungen nicht ab, daher gibt es für SC-900 keine Verlängerungsbewertung.",
       },
       {
-        question: "Welche Qualifikationen haben sich am 21. Oktober 2026 geändert?",
+        question: "Welche gemessenen Fähigkeiten haben sich am 21. Oktober 2026 geändert?",
         answer:
-          "Microsoft nennt kleinere Änderungen in „Beschreiben der Funktion und der Identitätstypen von Microsoft Entra ID“ und „Bedrohungsschutz mit Microsoft Defender XDR beschreiben“. Die Qualifikationsbereiche und ihre Gewichtungen bleiben gleich.",
+          "Microsoft nennt kleinere Änderungen in „Beschreiben der Funktion und der Identitätstypen von Microsoft Entra ID“ und „Bedrohungsschutz mit Microsoft Defender XDR beschreiben“. Die Fähigkeitsbereiche und ihre Gewichtungen bleiben gleich.",
       },
       {
         question: "Brauche ich technische Erfahrung, um SC-900 zu bestehen?",
@@ -165,7 +165,7 @@ export const sc900De: DeContent = {
       {
         question: "Sind die CertRamp-Fragen echte Prüfungsfragen?",
         answer:
-          "Nein. Alle CertRamp-Fragen sind eigene Übungsfragen, die nach der von Microsoft veröffentlichten Qualifikationsgliederung geschrieben wurden. Sie stammen nicht aus der echten Prüfung.",
+          "Nein. Alle CertRamp-Fragen sind eigene Übungsfragen, die nach der von Microsoft veröffentlichten Gliederung der gemessenen Fähigkeiten geschrieben wurden. Sie stammen nicht aus der echten Prüfung.",
       },
     ],
     seo: {
@@ -181,13 +181,13 @@ export const sc900De: DeContent = {
   questions: {
     slug: "sc-900",
     intro:
-      "15 eigene SC-900-Übungsfragen zu den vier Qualifikationsbereichen des Microsoft-Studienleitfadens (gemessene Qualifikationen ab dem 21. Oktober 2026), ungefähr wie in der echten Prüfung gewichtet. Zu jeder Frage gibt es die Lösung, eine kurze Erklärung und die Begründung, warum jede andere Antwortoption falsch ist.",
+      "15 eigene SC-900-Übungsfragen zu den vier Fähigkeitsbereichen des Microsoft-Studienleitfadens (gemessene Fähigkeiten ab dem 21. Oktober 2026), ungefähr wie in der echten Prüfung gewichtet. Zu jeder Frage gibt es die Lösung, eine kurze Erklärung und die Begründung, warum jede andere Antwortoption falsch ist.",
     published: "2026-10-28",
     updated: "2026-10-28",
     seo: {
       title: "SC-900 Übungsfragen mit Lösungen & Erklärungen (2026)",
       description:
-        "15 kostenlose, eigene SC-900 Prüfungsfragen zu Sicherheitskonzepten, Microsoft Entra, Defender, Sentinel und Purview – jeweils ausführlich erklärt.",
+        "15 kostenlose, eigene SC-900-Übungsfragen zu Sicherheitskonzepten, Microsoft Entra, Defender, Sentinel und Purview – jeweils ausführlich erklärt.",
     },
     questions: [
       /* ── Bereich 1: Konzepte Sicherheit, Compliance und Identität ── */
