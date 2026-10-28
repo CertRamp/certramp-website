@@ -10,6 +10,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { FaqList } from "@/components/ui/FaqList";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { getAllGuides, getGuide, getResources, guidePath } from "@/lib/content";
+import { getDeLinks } from "@/lib/content-de";
 import { getCertification } from "@/lib/certifications";
 import { formatDate } from "@/lib/format";
 import { faqSchema, guideArticleSchema } from "@/lib/schema";
@@ -38,6 +39,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     description: guide.seo?.description ?? guide.summary,
     path: guidePath(cert.slug),
     ogType: "article",
+    ...(getDeLinks(cert.slug) ? { languages: { en: guidePath(cert.slug), de: getDeLinks(cert.slug)!.guide } } : {}),
   });
 }
 
@@ -70,6 +72,14 @@ export default async function GuidePage({ params }: { params: Promise<Params> })
       >
         <p className="mt-6 text-sm text-white/60">
           Updated {formatDate(guide.updated)} · Exam information verified {formatDate(exam.lastVerified)} against official {cert.vendorName} sources
+          {getDeLinks(cert.slug) && (
+            <>
+              {" "}·{" "}
+              <Link href={getDeLinks(cert.slug)!.guide} hrefLang="de" lang="de" className="underline underline-offset-2 hover:text-white">
+                Auf Deutsch lesen
+              </Link>
+            </>
+          )}
         </p>
       </PageHero>
 

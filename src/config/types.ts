@@ -230,3 +230,31 @@ export interface PracticeQuestionSet {
   published: string;
   updated: string;
 }
+
+/* ── German-language content (src/content/de/…) ───────────────────────────── */
+
+/**
+ * German edition of a certification's guide and free questions, published at
+ * /de/leitfaden/<slug>/ and /de/uebungsfragen/<slug>/. It is a faithful
+ * translation of the verified English content — exam facts must match the
+ * `exam` record in certifications.ts (same numbers, dates and weights).
+ */
+export interface DeContent {
+  /** Certification slug — must exist in the CSV and have a German Udemy course. */
+  slug: string;
+  /** German display name, e.g. "IREB CPRE Foundation Level". Defaults to the certification name. */
+  name?: string;
+  /** One German sentence on whether the official exam is offered in German. Shown in the guide hero. */
+  languageNote: string;
+  /** Exam facts in German (labels and values), translated from the verified English facts. */
+  facts: ExamFact[];
+  /**
+   * Domains with German (or official German) names. Ids and weights must match
+   * exam.domains in certifications.ts.
+   */
+  domains: ExamDomain[];
+  /** German guide (all text in German). */
+  guide: ExamGuide;
+  /** German question set (all text in German; domain ids as in `domains`). */
+  questions: PracticeQuestionSet;
+}

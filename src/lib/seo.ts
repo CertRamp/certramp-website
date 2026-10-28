@@ -12,6 +12,10 @@ interface PageSeo {
   /** Use the title verbatim without the brand template. */
   absoluteTitle?: boolean;
   ogType?: "website" | "article";
+  /** Page language (default English). */
+  locale?: "en" | "de";
+  /** Language alternates for hreflang, e.g. { en: "/guides/x", de: "/de/leitfaden/x" }. */
+  languages?: { en?: string; de?: string };
 }
 
 /**
@@ -19,13 +23,23 @@ interface PageSeo {
  * and robots directives. Indexing is globally disabled unless
  * NEXT_PUBLIC_ALLOW_INDEXING=true, so previews never leak into search results.
  */
-export function buildMetadata({ title, description, path, noindex, absoluteTitle, ogType = "website" }: PageSeo): Metadata {
+export function buildMetadata({ title, description, path, noindex, absoluteTitle, ogType = "website", locale = "en", languages }: PageSeo): Metadata {
   const index = siteConfig.allowIndexing && !noindex;
   const fullTitle = absoluteTitle ? title : `${title} | ${siteConfig.name}`;
   return {
     title: absoluteTitle ? { absolute: title } : title,
     description,
-    alternates: { canonical: absoluteUrl(path) },
+    alternates: {
+      canonical: absoluteUrl(path),
+      ...(languages
+        ? {
+            languages: {
+              ...(languages.en ? { en: absoluteUrl(languages.en), "x-default": absoluteUrl(languages.en) } : {}),
+              ...(languages.de ? { de: absoluteUrl(languages.de) } : {}),
+            },
+          }
+        : {}),
+    },
     robots: index
       ? { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 } }
       : { index: false, follow: true, googleBot: { index: false, follow: true } },
@@ -35,7 +49,7 @@ export function buildMetadata({ title, description, path, noindex, absoluteTitle
       siteName: siteConfig.name,
       title: fullTitle,
       description,
-      locale: "en_US",
+      locale: locale === "de" ? "de_DE" : "en_US",
     },
     twitter: {
       card: "summary_large_image",

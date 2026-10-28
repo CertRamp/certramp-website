@@ -10,11 +10,22 @@ export interface Crumb {
 }
 
 /** Visible breadcrumb trail + matching BreadcrumbList structured data. */
-export function Breadcrumbs({ items, invert, className }: { items: Crumb[]; invert?: boolean; className?: string }) {
-  const all = [{ name: "Home", path: "/" }, ...items];
+export function Breadcrumbs({
+  items,
+  invert,
+  className,
+  home = { name: "Home", path: "/" },
+}: {
+  items: Crumb[];
+  invert?: boolean;
+  className?: string;
+  /** First crumb; German pages start at the German hub. */
+  home?: Crumb;
+}) {
+  const all = [home, ...items];
   return (
     <>
-      <nav aria-label="Breadcrumb" className={cn("text-sm", className)}>
+      <nav aria-label={home.path === "/" ? "Breadcrumb" : "Brotkrumen-Navigation"} className={cn("text-sm", className)}>
         <ol className="flex flex-wrap items-center gap-1.5">
           {all.map((c, i) => {
             const last = i === all.length - 1;

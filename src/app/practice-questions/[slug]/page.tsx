@@ -11,6 +11,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { Icon } from "@/components/ui/Icon";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { getAllQuestionSets, getQuestionSet, getResources, questionsPath } from "@/lib/content";
+import { getDeLinks } from "@/lib/content-de";
 import { getCertification } from "@/lib/certifications";
 import { formatDate } from "@/lib/format";
 import { quizSchema } from "@/lib/schema";
@@ -38,6 +39,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     title: set.seo?.title ?? `${cert.name} Practice Questions`,
     description: set.seo?.description ?? set.intro,
     path: questionsPath(cert.slug),
+    ...(getDeLinks(cert.slug) ? { languages: { en: questionsPath(cert.slug), de: getDeLinks(cert.slug)!.questions } } : {}),
   });
 }
 
@@ -65,6 +67,14 @@ export default async function PracticeQuestionsPage({ params }: { params: Promis
         <p className="mt-6 text-sm text-white/60">
           Written for {exam.examVersion ? `the ${exam.examVersion.charAt(0).toLowerCase()}${exam.examVersion.slice(1)}` : `the current ${cert.name} exam`} ·
           Updated {formatDate(set.updated)}
+          {getDeLinks(cert.slug) && (
+            <>
+              {" "}·{" "}
+              <Link href={getDeLinks(cert.slug)!.questions} hrefLang="de" lang="de" className="underline underline-offset-2 hover:text-white">
+                Übungsfragen auf Deutsch
+              </Link>
+            </>
+          )}
         </p>
       </PageHero>
 
