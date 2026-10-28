@@ -9,8 +9,8 @@ import type { DeContent } from "@/config/types";
  * ORIGINAL CertRamp questions — not real exam questions.
  */
 const SYLLABUS = {
-  label: "IREB – Lehrplan CPRE Foundation Level 3.3.0 (englische Fassung)",
-  url: "https://hub.ireb.org/media/pages/resources/cpre-foundation-level-syllabus/9c084b1cfd-1787039954/cpre_foundationlevel_syllabus_en_v.3.3.0.pdf",
+  label: "IREB – Lehrplan CPRE Foundation Level 3.3.0",
+  url: "https://hub.ireb.org/media/pages/resources/cpre-foundation-level-syllabus/75982ed82f-1787039955/cpre_foundationlevel_syllabus_de_v.3.3.0.pdf",
 };
 
 export const irebCpreDe: DeContent = {
@@ -26,7 +26,7 @@ export const irebCpreDe: DeContent = {
     {
       label: "Fragetypen",
       value:
-        "Multiple Choice: Einfachauswahl (A), Auswahl mehrerer Antworten (P) und Richtig/Falsch-Sets (K); 1–3 Punkte pro Frage",
+        "Multiple Choice: Einfachauswahl (A-Fragen), Mehrfachauswahl (P-Fragen) und Richtig/Falsch-Fragen (K-Fragen); 1–3 Punkte pro Frage",
     },
     {
       label: "Durchführung",
@@ -60,8 +60,8 @@ export const irebCpreDe: DeContent = {
         id: "exam-format",
         heading: "So läuft die Prüfung ab",
         paragraphs: [
-          "Die Prüfung wird von IREB-lizenzierten Zertifizierungsstellen durchgeführt, entweder direkt im Anschluss an eine Schulung oder als eigenständige Prüfung in einem Prüfungszentrum; einige Stellen bieten auch Remote-Prüfungen an. Formale Voraussetzungen gibt es nicht, der Lehrplan setzt jedoch Grundkenntnisse in plangetriebener und agiler Systementwicklung voraus.",
-          "Alle Fragen sind Multiple-Choice-Fragen, und zwar in drei Arten: Einfachauswahl (A), Fragen, bei denen Sie mehrere Antworten wählen (P), und Richtig/Falsch-Sets (K). Eine Frage bringt ein bis drei Punkte; die Punktzahl steht im Fragenkopf. Da P- und K-Fragen aus mehreren Teilen bestehen, lesen Sie jede Aussage sorgfältig – lückenhaftes Wissen kostet hier schnell Punkte.",
+          "Die Prüfung wird von IREB-lizenzierten Zertifizierungsstellen durchgeführt, entweder direkt im Anschluss an eine Schulung oder als eigenständige Prüfung in einem Prüfungszentrum; einige Stellen bieten auch Remote-Prüfungen an. Formale Voraussetzungen gibt es nicht, der Lehrplan setzt jedoch Grundkenntnisse in der Systementwicklung mit planbasierten und agilen Ansätzen voraus.",
+          "Alle Fragen sind Multiple-Choice-Fragen, und zwar in drei Arten: Einfachauswahl (A-Fragen), Mehrfachauswahl (P-Fragen) und Richtig/Falsch-Fragen (K-Fragen). Eine Frage bringt ein bis drei Punkte; die Punktzahl steht im Fragenkopf. Da P- und K-Fragen aus mehreren Teilen bestehen, lesen Sie jede Aussage sorgfältig – lückenhaftes Wissen kostet hier schnell Punkte.",
         ],
       },
       {
@@ -138,7 +138,7 @@ export const irebCpreDe: DeContent = {
       {
         question: "Gibt es die Prüfung auf Deutsch?",
         answer:
-          "Ja. Laut IREB-Factsheet wird die Prüfung unter anderem auf Deutsch angeboten. Welche Sprachen und Termine konkret verfügbar sind, erfahren Sie bei Ihrer Zertifizierungsstelle. Wenn Sie die Prüfung nicht in Ihrer Muttersprache ablegen, können Sie 90 statt 75 Minuten beantragen.",
+          "Ja. Laut IREB-Factsheet wird die Prüfung unter anderem auf Deutsch angeboten. Welche Sprachen und Termine konkret verfügbar sind, erfahren Sie bei Ihrer Zertifizierungsstelle. Wenn Sie die Prüfung nicht in Ihrer Muttersprache ablegen, können Sie schriftlich und mit Begründung 90 statt 75 Minuten beantragen.",
       },
       {
         question: "Sind die CertRamp-Fragen echte Prüfungsfragen?",
@@ -175,7 +175,7 @@ export const irebCpreDe: DeContent = {
         objective: "LZ 1.1.2 Die verschiedenen Arten von Anforderungen verstehen",
         difficulty: "foundation",
         question:
-          "„Das System soll die Suchergebnisse bei 95 % aller Anfragen innerhalb von zwei Sekunden anzeigen.“ Um welche Art von Anforderung handelt es sich?",
+          "„Das System muss die Suchergebnisse bei 95 % aller Anfragen innerhalb von zwei Sekunden anzeigen.“ Um welche Art von Anforderung handelt es sich?",
         options: [
           { id: "A", text: "Qualitätsanforderung", rationale: "Richtig. Die Aussage beschreibt eine Qualität – hier die Performance –, die das System haben soll." },
           { id: "B", text: "Funktionale Anforderung", rationale: "Eine funktionale Anforderung beschreibt ein Ergebnis oder Verhalten, das das System liefert, etwa die Suche selbst – nicht, wie schnell sie erfolgt." },
@@ -184,7 +184,7 @@ export const irebCpreDe: DeContent = {
         ],
         answer: "A",
         explanation:
-          "IREB unterscheidet funktionale Anforderungen, Qualitätsanforderungen und Randbedingungen. Antwortzeiten, Verfügbarkeit, Sicherheit und Benutzbarkeit sind typische Qualitätsanforderungen.",
+          "IREB unterscheidet funktionale Anforderungen, Qualitätsanforderungen und Randbedingungen. Antwortzeiten, Verfügbarkeit, Security (Informationssicherheit) und Benutzbarkeit sind typische Qualitätsanforderungen.",
         reference: SYLLABUS,
       },
       {
@@ -212,7 +212,7 @@ export const irebCpreDe: DeContent = {
         domain: "d2",
         objective: "LZ 2.1.1 Aufzählen der Prinzipien des RE",
         difficulty: "foundation",
-        question: "Welche der folgenden Aussagen ist KEINES der neun Prinzipien des Requirements Engineering im CPRE-Lehrplan?",
+        question: "Was gehört NICHT zu den neun Prinzipien des Requirements Engineering im CPRE-Lehrplan?",
         options: [
           { id: "A", text: "Wertorientierung", rationale: "Das ist Prinzip 1: Anforderungen sind Mittel zum Zweck, kein Selbstzweck." },
           { id: "B", text: "Gemeinsames Verständnis", rationale: "Das ist Prinzip 3." },
@@ -251,8 +251,8 @@ export const irebCpreDe: DeContent = {
         difficulty: "foundation",
         question: "Welche Aussage folgt der User-Story-Schablone nach Cohn?",
         options: [
-          { id: "A", text: "Das System soll Berichte als PDF exportieren.", rationale: "Das ist eine klassische „soll“-Anforderung, keine User Story." },
-          { id: "B", text: "Wenn der Benutzer auf Export klickt, soll das System ein PDF erzeugen.", rationale: "Das folgt einem EARS-ähnlichen, ereignisgesteuerten Muster, nicht der User-Story-Schablone." },
+          { id: "A", text: "Das System muss Berichte als PDF exportieren.", rationale: "Das ist eine klassische „muss“-Anforderung, keine User Story." },
+          { id: "B", text: "Wenn der Benutzer auf Export klickt, muss das System ein PDF erzeugen.", rationale: "Das folgt einem EARS-ähnlichen, ereignisgesteuerten Muster, nicht der User-Story-Schablone." },
           { id: "C", text: "Als Vertriebsleiterin möchte ich Berichte als PDF exportieren, damit ich sie an Kunden senden kann.", rationale: "Richtig. Rolle, Ziel und Nutzen: Als <Rolle> möchte ich <Anforderung>, damit <Nutzen>." },
           { id: "D", text: "Export: PDF, Priorität hoch, Verantwortlich: Vertrieb.", rationale: "Das sind Attribute, keine User Story." },
         ],
@@ -341,7 +341,7 @@ export const irebCpreDe: DeContent = {
         domain: "d4",
         objective: "LZ 4.4.2 Sich an die vier wichtigen Aspekte für die Anforderungsvalidierung erinnern",
         difficulty: "advanced",
-        question: "Welche der folgenden Aussagen ist einer der vier wichtigen Aspekte der Anforderungsvalidierung im CPRE-Lehrplan?",
+        question: "Welcher der folgenden Punkte ist einer der vier wichtigen Aspekte der Anforderungsvalidierung im CPRE-Lehrplan?",
         options: [
           { id: "A", text: "Trennung von Fehlererkennung und Fehlerkorrektur", rationale: "Richtig. Fehler finden und Fehler beheben sind getrennte Tätigkeiten, damit die Validierung fokussiert und gründlich bleibt." },
           { id: "B", text: "Nur einmal validieren, am Ende des Projekts", rationale: "Der Lehrplan fordert wiederholte Validierung, nicht eine einzige Prüfung am Ende." },
@@ -379,7 +379,7 @@ export const irebCpreDe: DeContent = {
       {
         id: "cpre-c6-traceability",
         domain: "d6",
-        objective: "EO 6.6.1 Name reasons for requirements traceability",
+        objective: "Lehrplan 3.3.0, Abschnitt 6.6 Verfolgbarkeit (LZ 6.6.1)",
         difficulty: "foundation",
         question:
           "Ein Gesetz ändert sich, und das Team muss schnell herausfinden, welche Anforderungen, Entwurfselemente und Testfälle betroffen sind. Welche Praktik macht das möglich?",
@@ -397,7 +397,7 @@ export const irebCpreDe: DeContent = {
       {
         id: "cpre-c6-baseline",
         domain: "d6",
-        objective: "EO 6.4.1 Know the use of requirements configurations and baselines",
+        objective: "Lehrplan 3.3.0, Abschnitt 6.4 Konfigurationen und Basislinien (LZ 6.4.1)",
         difficulty: "intermediate",
         question:
           "Vor einem Release friert das Team einen stabilen, freigegebenen Satz von Anforderungen in bestimmten Versionen als Grundlage für Planung und Verträge ein. Wie nennt man das?",
@@ -415,11 +415,11 @@ export const irebCpreDe: DeContent = {
       {
         id: "cpre-c6-change-agile",
         domain: "d6",
-        objective: "EO 6.7.1 Know how to handle changes in linear and agile approaches",
+        objective: "Lehrplan 3.3.0, Abschnitt 6.7 Umgang mit Änderungen (LZ 6.7.1)",
         difficulty: "intermediate",
         question: "Wer entscheidet in einem agilen Projekt typischerweise, wie mit einer beantragten Änderung der Anforderungen umgegangen wird?",
         options: [
-          { id: "A", text: "Ein Change Control Board, das monatlich tagt", rationale: "Ein formales Change Control Board ist typisch für lineare, plangetriebene Vorgehensweisen." },
+          { id: "A", text: "Ein Change Control Board (Änderungsausschuss), das monatlich tagt", rationale: "Ein formales Change Control Board ist typisch für lineare, planbasierte Vorgehensweisen." },
           { id: "B", text: "Jeder Entwickler für sich", rationale: "Unkoordinierte Änderungen durch einzelne Entwickler sind kein Vorgehen zum Umgang mit Änderungen." },
           { id: "C", text: "Niemand – in agilen Projekten können sich Anforderungen nicht ändern", rationale: "Agile Vorgehensweisen begrüßen Änderungen ausdrücklich." },
           { id: "D", text: "Der Product Owner, indem er das Backlog aktualisiert und neu priorisiert", rationale: "Richtig. In agilen Vorgehensweisen werden Änderungen über das Backlog behandelt, das der Product Owner pflegt und priorisiert." },
@@ -434,7 +434,7 @@ export const irebCpreDe: DeContent = {
       {
         id: "cpre-c7-introduction",
         domain: "d7",
-        objective: "EO 7.2.1 Explain what to consider when introducing RE tools",
+        objective: "Lehrplan 3.3.0, Abschnitt 7.2 Werkzeugeinführung (LZ 7.2.1)",
         difficulty: "foundation",
         question: "Welches Vorgehen ist bei der Einführung eines neuen Requirements-Management-Werkzeugs in einer Organisation am ehesten zu empfehlen?",
         options: [
