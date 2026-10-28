@@ -36,6 +36,7 @@ export const siteConfig = {
 /** Main navigation — order here is the order in the header. */
 export const mainNav = [
   { label: "Practice Exams", href: "/practice-exams" },
+  { label: "Exam Changes", href: "/exam-changes" },
   { label: "How It Works", href: "/how-it-works" },
   { label: "About", href: "/about" },
   { label: "FAQ", href: "/faq" },
