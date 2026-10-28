@@ -106,17 +106,17 @@ export const ccna200301De: DeContent = {
     summary:
       "CCNA 200-301 (Implementing and Administering Cisco Solutions) ist eine 120-minütige Prüfung, die zeigt, ob Sie ein kleines bis mittelgroßes Netzwerk aufbauen, betreiben und Fehler darin beheben können: Adressierung und Subnetting, Switching, Routing, Netzwerkdienste, Sicherheit und Netzwerkbetrieb. Derzeit sind zwei Versionen relevant: v1.1 kann bis zum 2. Februar 2027 abgelegt werden, und v2.0 – die die Inhalte in fünf Domänen neu gliedert, mit mehr Troubleshooting und KI im Netzwerkbetrieb – startet am 3. Februar 2027.",
     whoFor: [
-      "Mitarbeitende aus Netzwerk, Support und Helpdesk, die eine anerkannte erste Cisco-Zertifizierung anstreben",
-      "Quereinsteigerinnen, Quereinsteiger und Studierende, die eine Grundlage in Routing, Switching und IP-Adressierung aufbauen",
-      "Systemadministratoren und Security-Analysten, die verstehen müssen, wie Unternehmensnetzwerke wirklich funktionieren",
+      "Mitarbeiterinnen und Mitarbeiter aus Netzwerk, Support und Helpdesk, die eine anerkannte erste Cisco-Zertifizierung anstreben",
+      "Quereinsteigerinnen und Quereinsteiger sowie Studentinnen und Studenten, die eine Grundlage in Routing, Switching und IP-Adressierung aufbauen",
+      "Systemadministratorinnen und -administratoren sowie Security-Analystinnen und -Analysten, die verstehen müssen, wie Unternehmensnetzwerke wirklich funktionieren",
     ],
     sections: [
       {
         id: "versions",
         heading: "v1.1 oder v2.0: Welche Prüfung legen Sie ab?",
         paragraphs: [
-          "Der Prüfungscode bleibt 200-301 und die Zertifizierung heißt weiterhin CCNA, aber die Exam Topics ändern sich. Laut Cisco ist der letzte Prüfungstag für 200-301 CCNA v1.1 der 2. Februar 2027, und CCNA v2.0 steht ab dem 3. Februar 2027 zur Prüfung bereit. Ihr Prüfungstermin entscheidet, welche Gliederung Sie lernen: Prüfen Sie am oder vor dem 2. Februar 2027, legen Sie v1.1 ab; prüfen Sie am oder nach dem 3. Februar 2027, legen Sie v2.0 ab.",
-          "v1.1 hat sechs Domänen: Network Fundamentals (Netzwerkgrundlagen, 20 %), Network Access (Netzwerkzugang, 20 %), IP Connectivity (IP-Konnektivität, 25 %), IP Services (IP-Dienste, 10 %), Security Fundamentals (Sicherheitsgrundlagen, 15 %) sowie Automation and Programmability (Automatisierung und Programmierbarkeit, 10 %). v2.0 gliedert die Inhalte in fünf Domänen neu: Network Infrastructure and Connectivity (25 %), Switching and Network Access (25 %), IP Routing (20 %), Network Services and Security (20 %) sowie AI, and Network Operations and Management (10 %).",
+          "Der Prüfungscode bleibt 200-301 und die Zertifizierung heißt weiterhin CCNA, aber die Exam Topics ändern sich. Laut Cisco ist der letzte Prüfungstag für 200-301 CCNA v1.1 der 2. Februar 2027, und CCNA v2.0 steht ab dem 3. Februar 2027 zur Prüfung bereit. Ihr Prüfungstermin entscheidet, welche Gliederung Sie lernen: Legen Sie die Prüfung am oder vor dem 2. Februar 2027 ab, ist es v1.1; ab dem 3. Februar 2027 ist es v2.0.",
+          "v1.1 hat sechs Domänen: Network Fundamentals (Netzwerkgrundlagen, 20 %), Network Access (Netzwerkzugang, 20 %), IP Connectivity (IP-Konnektivität, 25 %), IP Services (IP-Dienste, 10 %), Security Fundamentals (Sicherheitsgrundlagen, 15 %) sowie Automation and Programmability (Automatisierung und Programmierbarkeit, 10 %). v2.0 gliedert die Inhalte in fünf Domänen neu: Network Infrastructure and Connectivity (Netzwerkinfrastruktur und Konnektivität, 25 %), Switching and Network Access (Switching und Netzwerkzugang, 25 %), IP Routing (IP-Routing, 20 %), Network Services and Security (Netzwerkdienste und Sicherheit, 20 %) sowie AI, and Network Operations and Management (KI sowie Netzwerkbetrieb und -management, 10 %).",
           "Ein Großteil des Kerns bleibt erhalten: IPv4-Subnetting, IPv6-Adressierung, WLAN-Grundlagen, VLANs und Trunks, EtherChannel mit LACP, Rapid PVST+, statisches Routing, Single-Area-OSPF, NAT, IPv4-ACLs, Layer-2-Sicherheit, SNMP, Syslog und Ansible. Unsere kostenlosen Fragen unten behandeln nur diese gemeinsamen Themen und nennen jeweils die Themennummer aus v2.0 und aus v1.1.",
         ],
       },
@@ -156,7 +156,7 @@ export const ccna200301De: DeContent = {
           },
           {
             title: "Üben Sie unter Zeitdruck",
-            body: "Absolvieren Sie zeitlich begrenzte Übungsprüfungen in 120 Minuten und lesen Sie jede Erklärung – auch zu den Fragen, die Sie richtig beantwortet haben. Buchen Sie die Prüfung, sobald Sie regelmäßig mit Abstand bestehen.",
+            body: "Absolvieren Sie zeitlich begrenzte Übungsprüfungen in 120 Minuten und lesen Sie jede Erklärung – auch zu den Fragen, die Sie richtig beantwortet haben. Buchen Sie die Prüfung, sobald Sie regelmäßig mit sicherem Abstand bestehen.",
           },
         ],
       },
@@ -186,7 +186,7 @@ export const ccna200301De: DeContent = {
       {
         question: "In welchen Sprachen wird die CCNA-Prüfung angeboten?",
         answer:
-          "Laut Cisco wird die Prüfung 200-301 CCNA auf Englisch und Japanisch angeboten. Eine deutsche Version der Prüfung gibt es nicht, auch wenn Sie sich mit deutschsprachigem Material vorbereiten.",
+          "Laut Cisco wird die Prüfung 200-301 CCNA auf Englisch und Japanisch angeboten.",
       },
       {
         question: "Gibt es die Prüfung auf Deutsch?",
@@ -345,7 +345,7 @@ export const ccna200301De: DeContent = {
           "Ein Access-Port ist mit spanning-tree portfast und spanning-tree bpduguard enable konfiguriert. Ein Benutzer schließt an diesen Port einen kleinen Switch an, der beginnt, BPDUs zu senden. Was passiert mit dem Access-Port?",
         options: [
           { id: "A", text: "Er wird zum Root-Port", rationale: "BPDU Guard lässt den Port nicht an der Topologie teilnehmen; er schaltet den Port ab." },
-          { id: "B", text: "Er leitet weiter Datenverkehr weiter, ignoriert aber die BPDUs", rationale: "Das Ignorieren von BPDUs entspricht eher dem Verhalten von BPDU Filter, nicht von BPDU Guard." },
+          { id: "B", text: "Er leitet weiterhin Datenverkehr weiter, ignoriert aber die BPDUs", rationale: "Das Ignorieren von BPDUs entspricht eher dem Verhalten von BPDU Filter, nicht von BPDU Guard." },
           { id: "C", text: "Er wechselt in den Zustand Blocking, bis keine BPDUs mehr eintreffen, und erholt sich dann automatisch", rationale: "Das beschreibt Root Guard, der den Port in den Zustand root-inconsistent versetzt und ihn wiederherstellt, sobald keine überlegenen BPDUs mehr eintreffen." },
           { id: "D", text: "Er wird in den Zustand err-disabled versetzt", rationale: "Richtig. Empfängt ein Port mit aktiviertem BPDU Guard eine BPDU, setzt der Switch ihn auf err-disabled. Er bleibt deaktiviert, bis ein Administrator ihn wieder aktiviert oder errdisable recovery konfiguriert ist." },
         ],
@@ -384,7 +384,7 @@ export const ccna200301De: DeContent = {
         options: [
           { id: "A", text: "ip route 0.0.0.0 0.0.0.0 198.51.100.1", rationale: "Ohne Angabe einer Distanz hat die statische Route die administrative Distanz 1 und würde die OSPF-Route sofort ersetzen." },
           { id: "B", text: "ip route 0.0.0.0 0.0.0.0 198.51.100.1 100", rationale: "100 ist niedriger als die 110 von OSPF, daher würde die statische Route weiterhin der OSPF-Route vorgezogen." },
-          { id: "C", text: "ip route 0.0.0.0 0.0.0.0 198.51.100.1 120", rationale: "Richtig. Eine administrative Distanz von 120 ist höher als die 110 von OSPF, daher bleibt die statische Route aus der Routing-Tabelle heraus, bis die OSPF-Default-Route verloren geht." },
+          { id: "C", text: "ip route 0.0.0.0 0.0.0.0 198.51.100.1 120", rationale: "Richtig. Eine administrative Distanz von 120 ist höher als die 110 von OSPF, daher wird die statische Route erst in die Routing-Tabelle eingetragen, wenn die OSPF-Default-Route verloren geht." },
           { id: "D", text: "ip route 0.0.0.0 255.255.255.255 198.51.100.1 120", rationale: "Eine Maske von 255.255.255.255 mit dem Netz 0.0.0.0 ist eine Host-Route zu 0.0.0.0, keine Default-Route." },
         ],
         answer: "C",
@@ -439,9 +439,9 @@ export const ccna200301De: DeContent = {
           "Hosts in 10.1.20.0/24 dürfen den HTTPS-Dienst auf dem Server 10.1.50.10 nicht erreichen. Jeder andere Datenverkehr muss erlaubt sein. Welche erweiterte ACL erfüllt die Anforderung?",
         options: [
           { id: "A", text: "access-list 110 deny tcp 10.1.20.0 0.0.0.255 host 10.1.50.10 eq 443", rationale: "Ohne permit-Anweisung blockiert das implizite Deny am Ende der ACL auch jeden anderen Datenverkehr." },
-          { id: "B", text: "access-list 110 deny tcp 10.1.20.0 255.255.255.0 host 10.1.50.10 eq 443, gefolgt von access-list 110 permit ip any any", rationale: "ACLs verwenden Wildcard-Masken. 255.255.255.0 als Wildcard trifft die falschen Adressen; die richtige Wildcard für ein /24 ist 0.0.0.255." },
+          { id: "B", text: "access-list 110 deny tcp 10.1.20.0 255.255.255.0 host 10.1.50.10 eq 443, gefolgt von access-list 110 permit ip any any", rationale: "ACLs verwenden Wildcard-Masken. 255.255.255.0 als Wildcard erfasst die falschen Adressen; die richtige Wildcard für ein /24 ist 0.0.0.255." },
           { id: "C", text: "access-list 10 deny 10.1.20.0 0.0.0.255, gefolgt von access-list 10 permit any", rationale: "Eine Standard-ACL filtert nur nach der Quelladresse. Sie würde den gesamten Datenverkehr aus dem Subnetz blockieren, nicht nur HTTPS zu einem Server." },
-          { id: "D", text: "access-list 110 deny tcp 10.1.20.0 0.0.0.255 host 10.1.50.10 eq 443, gefolgt von access-list 110 permit ip any any", rationale: "Richtig. Die erste Zeile trifft TCP-Datenverkehr aus dem Subnetz zu Port 443 auf dem Server; die permit-Anweisung erlaubt alles andere, statt es im impliziten Deny enden zu lassen." },
+          { id: "D", text: "access-list 110 deny tcp 10.1.20.0 0.0.0.255 host 10.1.50.10 eq 443, gefolgt von access-list 110 permit ip any any", rationale: "Richtig. Die erste Zeile erfasst TCP-Datenverkehr aus dem Subnetz zu Port 443 auf dem Server; die permit-Anweisung erlaubt alles andere, statt es im impliziten Deny enden zu lassen." },
         ],
         answer: "D",
         explanation:

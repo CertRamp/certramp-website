@@ -105,10 +105,10 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
   guide: {
     slug: "comptia-security-plus-sy0-701",
     summary:
-      "CompTIA Security+ SY0-701 (Security+ V7) prüft grundlegende Sicherheitskompetenzen in fünf Domänen – von Sicherheitskontrollen und Bedrohungen bis zu Security Operations und Governance. Sie erhalten maximal 90 Multiple-Choice- und performancebasierte Fragen in 90 Minuten und benötigen 750 Punkte auf einer Skala von 100–900. Die Nachfolgeprüfung SY0-801 (V8) erscheint voraussichtlich am oder um den 17. November 2026; SY0-701 läuft am 11. Juni 2027 auf Englisch und am 13. August 2027 auf Japanisch, Portugiesisch, Spanisch und Thai aus.",
+      "CompTIA Security+ SY0-701 (Security+ V7) prüft grundlegende Sicherheitskompetenzen in fünf Domänen – von Sicherheitskontrollen und Bedrohungen bis zu Security Operations und Governance. Sie erhalten maximal 90 Multiple-Choice- und performancebasierte Fragen in 90 Minuten und benötigen 750 Punkte auf einer Skala von 100–900. Die Nachfolgeprüfung SY0-801 (V8) erscheint voraussichtlich um den 17. November 2026; SY0-701 läuft am 11. Juni 2027 auf Englisch und am 13. August 2027 auf Japanisch, Portugiesisch, Spanisch und Thai aus.",
     whoFor: [
-      "System- und Netzwerkadministratoren, die in eine Security-Rolle wechseln",
-      "Junior-Security-Analysten und SOC-Mitarbeitende, die ein breites, herstellerneutrales Fundament suchen",
+      "System- und Netzwerkadministratorinnen und -administratoren, die in eine Security-Rolle wechseln",
+      "Junior-Security-Analystinnen und -Analysten sowie SOC-Mitarbeiterinnen und -Mitarbeiter, die ein breites, herstellerneutrales Fundament suchen",
       "Kandidatinnen und Kandidaten, die bereits mit der Vorbereitung auf SY0-701 begonnen haben und die Prüfung vor dem Auslaufen 2027 ablegen können",
     ],
     sections: [
@@ -124,8 +124,8 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
         id: "sy0-701-vs-sy0-801",
         heading: "SY0-701 oder SY0-801: Welche Version sollten Sie ablegen?",
         paragraphs: [
-          "CompTIA ersetzt Security+ V7 (SY0-701, gestartet am 7. November 2023) durch Security+ V8 (SY0-801), die voraussichtlich am oder um den 17. November 2026 erscheint. SY0-701 bleibt bis zum Auslaufen verfügbar: bis 11. Juni 2027 für die englische Prüfung und bis 13. August 2027 für die japanische, portugiesische, spanische und thailändische Prüfung. Beide Versionen behalten dasselbe Format – maximal 90 Fragen, 90 Minuten und eine Bestehensgrenze von 750 auf einer Skala von 100–900.",
-          "Die Prüfungsziele von V8 verwenden dieselbe Struktur mit fünf Domänen, aber andere Gewichtungen (16 %, 24 %, 19 %, 27 % und 14 %), und Domäne 2 heißt nun „Threats, Vulnerabilities, and Attacks“. Zum Start führt CompTIA SY0-801 nur auf Englisch. Wenn Sie in der Vorbereitung auf SY0-701 schon weit sind und die Prüfung vor dem Auslaufdatum ablegen können, ist es sinnvoll, bei SY0-701 zu bleiben. Wenn Sie gerade erst anfangen und spät in der Übergangsphase auf Englisch prüfen wollen, bereiten Sie sich stattdessen auf SY0-801 vor (CertRamp hat eine eigene Seite zu SY0-801).",
+          "CompTIA ersetzt Security+ V7 (SY0-701, gestartet am 7. November 2023) durch Security+ V8 (SY0-801), die voraussichtlich um den 17. November 2026 erscheint. SY0-701 bleibt bis zum Auslaufen verfügbar: bis 11. Juni 2027 für die englische Prüfung und bis 13. August 2027 für die japanische, portugiesische, spanische und thailändische Prüfung. Beide Versionen behalten dasselbe Format – maximal 90 Fragen, 90 Minuten und eine Bestehensgrenze von 750 auf einer Skala von 100–900.",
+          "Die Prüfungsziele von V8 verwenden dieselbe Struktur mit fünf Domänen, aber andere Gewichtungen (16 %, 24 %, 19 %, 27 % und 14 %), und Domäne 2 heißt nun „Threats, Vulnerabilities, and Attacks“. Zum Start führt CompTIA SY0-801 nur auf Englisch. Wenn Sie in der Vorbereitung auf SY0-701 schon weit sind und die Prüfung vor dem Auslaufdatum ablegen können, ist es sinnvoll, bei SY0-701 zu bleiben. Wenn Sie gerade erst anfangen und die Prüfung spät in der Übergangsphase auf Englisch ablegen wollen, bereiten Sie sich stattdessen auf SY0-801 vor (CertRamp hat eine eigene Seite zu SY0-801).",
         ],
       },
       {
@@ -154,7 +154,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
           },
           {
             title: "Buchen Sie, wenn Ihre Ergebnisse stabil sind",
-            body: "Buchen Sie die Prüfung, sobald Sie mehrere Übungsprüfungen mit Abstand bestehen. Planen Sie die Verlängerung von Anfang an mit ein: Die Zertifizierung ist drei Jahre gültig und erfordert 50 CEUs.",
+            body: "Buchen Sie die Prüfung, sobald Sie mehrere Übungsprüfungen mit sicherem Abstand bestehen. Planen Sie die Verlängerung von Anfang an mit ein: Die Zertifizierung ist drei Jahre gültig und erfordert 50 CEUs.",
           },
         ],
       },
@@ -163,7 +163,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
         heading: "Häufige Fehler bei der Vorbereitung",
         bullets: [
           "Mit den falschen Prüfungszielen lernen. Material zu SY0-801 hat andere Gewichtungen und eine umbenannte Domäne 2; prüfen Sie, ob Ihre Unterlagen SY0-701 angeben.",
-          "Die Prüfung zu spät ansetzen. Ein nicht bestandener Versuch kurz vor dem 11. Juni 2027 (Englisch) lässt möglicherweise keine Zeit mehr für eine Wiederholung in SY0-701.",
+          "Die Prüfung zu spät ansetzen. Ein nicht bestandener Versuch kurz vor dem 11. Juni 2027 (Englisch) lässt möglicherweise keine Zeit mehr für eine Wiederholungsprüfung mit SY0-701.",
           "Performancebasierte Fragen unterschätzen. Sie prüfen angewandte Fähigkeiten – reines Lesen reicht nicht.",
           "Governance als Nebensache behandeln. Security Program Management and Oversight macht 20 % von SY0-701 aus – Risikomanagement, Drittparteienrisiken, Compliance, Audits und Awareness zählen alle.",
           "Listen auswendig lernen, ohne das „Warum“ zu verstehen. Szenariofragen belohnen das Wissen, wann eine Kontrolle oder Technik passt, nicht nur ihren Namen.",
@@ -179,7 +179,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
       {
         question: "Wann läuft SY0-701 aus und was ersetzt die Prüfung?",
         answer:
-          "Die englische Prüfung SY0-701 läuft am 11. Juni 2027 aus; die japanische, portugiesische, spanische und thailändische Version am 13. August 2027. Die Nachfolgeprüfung Security+ V8 (SY0-801) erscheint voraussichtlich am oder um den 17. November 2026 und wird zum Start nur auf Englisch angeboten.",
+          "Die englische Prüfung SY0-701 läuft am 11. Juni 2027 aus; die japanische, portugiesische, spanische und thailändische Version am 13. August 2027. Die Nachfolgeprüfung Security+ V8 (SY0-801) erscheint voraussichtlich um den 17. November 2026 und wird zum Start nur auf Englisch angeboten.",
       },
       {
         question: "In welchen Sprachen ist SY0-701 verfügbar?",
@@ -360,12 +360,12 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
         objective: "3.3 Compare and contrast concepts and strategies to protect data.",
         difficulty: "foundation",
         question:
-          "Eine nationale Vorschrift besagt, dass personenbezogene Daten der Bürgerinnen und Bürger eines Landes dessen Gesetzen unterliegen und innerhalb seiner Grenzen gespeichert und verarbeitet werden müssen. Welches Konzept wird hier beschrieben?",
+          "Eine nationale Vorschrift besagt, dass personenbezogene Daten über die Bürgerinnen und Bürger des Landes dessen Gesetzen unterliegen und innerhalb der Landesgrenzen gespeichert und verarbeitet werden müssen. Welches Konzept wird hier beschrieben?",
         options: [
           { id: "A", text: "Datenmaskierung (Data Masking)", rationale: "Maskierung verbirgt Teile von Datenwerten; sie sagt nichts darüber aus, wo Daten aufbewahrt werden müssen." },
           { id: "B", text: "Datenklassifizierung (Data Classification)", rationale: "Klassifizierung kennzeichnet Daten nach ihrer Sensibilität, etwa vertraulich oder öffentlich, nicht nach Rechtsordnung." },
           { id: "C", text: "Datensouveränität (Data Sovereignty)", rationale: "Richtig. Datensouveränität bedeutet, dass Daten den Gesetzen des Landes unterliegen, in dem sie erhoben oder gespeichert werden – daraus ergeben sich Standortanforderungen wie diese." },
-          { id: "D", text: "Daten in Übertragung (Data in Transit)", rationale: "Daten in Übertragung sind ein Datenzustand (Bewegung über ein Netzwerk), kein rechtliches Konzept." },
+          { id: "D", text: "Daten während der Übertragung (Data in Transit)", rationale: "Daten während der Übertragung sind ein Datenzustand (Bewegung über ein Netzwerk), kein rechtliches Konzept." },
         ],
         answer: "C",
         explanation:
@@ -457,13 +457,13 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
           "Ein Server im Wert von 200.000 würde bei einem Hochwasser 25 % seines Werts verlieren. Ein Hochwasser wird einmal alle fünf Jahre erwartet. Wie hoch ist die jährliche Verlusterwartung (Annualized Loss Expectancy, ALE)?",
         options: [
           { id: "A", text: "50.000", rationale: "Das ist die einmalige Verlusterwartung (Single Loss Expectancy, SLE: 200.000 × 0,25); sie wurde nicht mit der jährlichen Eintrittsrate multipliziert." },
-          { id: "B", text: "40.000", rationale: "Hier wird der volle Anlagewert mit der jährlichen Rate multipliziert (200.000 × 0,2) und der Gefährdungsfaktor ignoriert." },
+          { id: "B", text: "40.000", rationale: "Hier wird der volle Anlagewert mit der jährlichen Rate multipliziert (200.000 × 0,2) und der Expositionsfaktor (Exposure Factor, EF) ignoriert." },
           { id: "C", text: "10.000", rationale: "Richtig. SLE = 200.000 × 0,25 = 50.000. ARO = 1/5 = 0,2. ALE = 50.000 × 0,2 = 10.000." },
-          { id: "D", text: "2.500", rationale: "Hier wird der Gefährdungsfaktor doppelt angewendet oder die Formel anderweitig falsch verwendet." },
+          { id: "D", text: "2.500", rationale: "Hier wird der Expositionsfaktor ein zweites Mal angewendet (200.000 × 0,25 × 0,25 × 0,2 = 2.500). Der Expositionsfaktor geht nur einmal in die SLE ein." },
         ],
         answer: "C",
         explanation:
-          "Die quantitative Risikoanalyse verwendet SLE = Anlagewert × Gefährdungsfaktor (Exposure Factor) und ALE = SLE × ARO (Annualized Rate of Occurrence, jährliche Eintrittsrate). Ein Ereignis, das einmal alle fünf Jahre eintritt, hat eine ARO von 0,2.",
+          "Die quantitative Risikoanalyse verwendet SLE = Anlagewert × Expositionsfaktor und ALE = SLE × ARO (Annualized Rate of Occurrence, jährliche Eintrittsrate). Ein Ereignis, das einmal alle fünf Jahre eintritt, hat eine ARO von 0,2.",
         reference: OBJECTIVES,
       },
       {
