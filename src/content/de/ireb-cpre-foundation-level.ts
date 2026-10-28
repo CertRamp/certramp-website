@@ -149,7 +149,7 @@ export const irebCpreDe: DeContent = {
     seo: {
       title: "IREB CPRE Foundation Level: Prüfungsvorbereitung (3.3.0)",
       description:
-        "CPRE Foundation Level Prüfungsvorbereitung zum Lehrplan 3.3.0: ca. 45 Fragen, 75 Minuten, 70 % zum Bestehen, alle sieben Kapitel und ein 6-Schritte-Lernplan.",
+        "CPRE Foundation Level Prüfungsvorbereitung zum Lehrplan 3.3.0: ca. 45 Fragen, 75 Minuten, 70 % zum Bestehen, alle sieben Kapitel und ein Lernplan.",
     },
     published: "2026-10-28",
     updated: "2026-10-28",
@@ -165,7 +165,7 @@ export const irebCpreDe: DeContent = {
     seo: {
       title: "CPRE Foundation Level Übungsfragen mit Lösungen (3.3.0)",
       description:
-        "15 kostenlose IREB CPRE Foundation Level Übungsfragen zum Lehrplan 3.3.0 – Prinzipien, Schablonen, Ermittlung, Validierung, Verfolgbarkeit – mit Erklärungen.",
+        "15 kostenlose IREB CPRE Foundation Level Übungsfragen (Lehrplan 3.3.0): Prinzipien, Schablonen, Ermittlung, Validierung, Verfolgbarkeit – mit Erklärung.",
     },
     questions: [
       /* ── Kapitel 1: Einführung und Überblick ──────────────────────────── */

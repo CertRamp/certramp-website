@@ -111,6 +111,8 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       questionTypes: "Multiple choice: single choice (A), pick several (P) and true/false (K); 1–3 points per question",
       duration: "75 minutes (90 minutes for non-native speakers, on written request)",
       passingScore: "At least 70% of the total points",
+      // Languages per IREB fact sheet 1.0.0 (exam language list).
+      languages: ["English", "German", "Chinese", "Spanish", "French", "Italian", "Persian", "Dutch", "Polish", "Portuguese (Brazil)", "Russian", "Swedish"],
       delivery: "Through IREB-licensed certification bodies, at exam centres or — with some bodies — remotely",
       prerequisites: "None",
       status: "current",

@@ -11,11 +11,13 @@ import { az104De } from "./az-104";
 import { az900De } from "./az-900";
 import { ccna200301De } from "./ccna-200-301";
 import { comptiaSecurityPlusSy0701De } from "./comptia-security-plus-sy0-701";
+import { ipmaLevelDDe } from "./ipma-level-d";
 import { irebCpreDe } from "./ireb-cpre-foundation-level";
 import { sc300De } from "./sc-300";
 import { sc900De } from "./sc-900";
 
 export const deContents: DeContent[] = [
+  ipmaLevelDDe,
   ab620De,
   ai901De,
   az104De,
