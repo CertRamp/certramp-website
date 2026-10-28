@@ -177,7 +177,7 @@ export const ai103De: DeContent = {
       },
     ],
     seo: {
-      title: "AI-103 Prüfungsvorbereitung 2026: KI-Apps & Agents (ex AI-102)",
+      title: "AI-103 Prüfungsvorbereitung: KI-Apps & Agents (ex AI-102)",
       description:
         "AI-103-Leitfaden auf Deutsch: Nachfolger von AI-102, 120 Minuten, Bestehensgrenze 700, Foundry, Agents, RAG, Vision und Sprache – mit 6-Schritte-Lernplan.",
     },
@@ -195,7 +195,7 @@ export const ai103De: DeContent = {
     seo: {
       title: "AI-103 Übungsfragen mit Antworten und Erklärungen (2026)",
       description:
-        "15 kostenlose, eigene AI-103 Übungsfragen zu Microsoft Foundry, RAG, Agents, verantwortungsvoller KI, Vision, Sprache und Dokumentextraktion – mit Erklärung.",
+        "15 kostenlose, eigene AI-103 Übungsfragen zu Microsoft Foundry, RAG, Agents, verantwortungsvoller KI, Vision, Sprache und Dokumentextraktion – erklärt.",
     },
     questions: [
       /* ── Bereich 1: Planen und Verwalten einer Azure-KI-Lösung ────────────── */
