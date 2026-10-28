@@ -25,9 +25,12 @@ interface PageSeo {
  */
 export function buildMetadata({ title, description, path, noindex, absoluteTitle, ogType = "website", locale = "en", languages }: PageSeo): Metadata {
   const index = siteConfig.allowIndexing && !noindex;
-  const fullTitle = absoluteTitle ? title : `${title} | ${siteConfig.name}`;
+  const branded = `${title} | ${siteConfig.name}`;
+  // Search engines truncate titles beyond ~70 characters: drop the brand suffix when it would not fit.
+  const useAbsolute = absoluteTitle || branded.length > 70;
+  const fullTitle = useAbsolute ? title : branded;
   return {
-    title: absoluteTitle ? { absolute: title } : title,
+    title: useAbsolute ? { absolute: title } : title,
     description,
     alternates: {
       canonical: absoluteUrl(path),
