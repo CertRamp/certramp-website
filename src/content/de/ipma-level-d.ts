@@ -19,7 +19,7 @@ export const ipmaLevelDDe: DeContent = {
   languageNote:
     "Die Prüfung wird auch auf Deutsch angeboten – bei PM-ZERT ist Deutsch die Standardsprache, Englisch ist ebenfalls möglich.",
   facts: [
-    { label: "Prüfungsanbieter", value: "IPMA / GPM" },
+    { label: "Prüfungsanbieter", value: "IPMA / PM-ZERT (GPM)" },
     {
       label: "Format",
       value:
@@ -114,8 +114,8 @@ export const ipmaLevelDDe: DeContent = {
         id: "what-the-exam-tests",
         heading: "Was IPMA Level D tatsächlich prüft",
         paragraphs: [
-          "Level D prüft das Wissen zu den Kompetenzelementen des Bereichs Projektmanagement in der ICB4. Für Projekte definiert die ICB4 28 Kompetenzelemente in drei Bereichen: Kontext-Kompetenzen (5 Elemente, etwa Strategie, Governance sowie Macht und Interessen), Persönliche und Soziale Kompetenzen (10 Elemente, etwa Führung, Teamarbeit sowie Konflikte und Krisen) und Technische Kompetenzen (13 Elemente, etwa Leistungsumfang und Lieferobjekte, Ablauf und Termine, Chancen und Risiken sowie Stakeholder).",
-          "Rechnen Sie mit Fragen, in denen Sie ein Konzept erklären und auf eine Projektsituation anwenden: einen Projektstrukturplan erstellen, einen Terminplan aufstellen, ein Risiko bewerten, Stakeholder analysieren oder einen Konflikt im Team lösen. Die Fragen folgen der Terminologie der ICB4, lernen Sie die Elemente also unter ihren offiziellen Namen.",
+          "Level D prüft das Wissen zu den Kompetenzelementen der ICB4 für Projektmanagement. Für Projekte definiert die ICB4 28 Kompetenzelemente in drei Bereichen: Kontext-Kompetenzen (5 Elemente, etwa Strategie, Governance sowie Macht und Interessen), Persönliche und Soziale Kompetenzen (10 Elemente, etwa Führung, Teamarbeit sowie Konflikte und Krisen) und Technische Kompetenzen (13 Elemente, etwa Leistungsumfang und Lieferobjekte, Ablauf und Termine, Chancen und Risiken sowie Stakeholder).",
+          "Rechnen Sie mit Fragen, in denen Sie ein Konzept erklären und auf eine Projektsituation anwenden: einen Projektstrukturplan erstellen, einen Terminplan aufstellen, ein Risiko bewerten, Stakeholder analysieren oder einen Konflikt im Team lösen. Die Fragen folgen der Terminologie der ICB4; lernen Sie die Elemente daher unter ihren offiziellen Namen.",
         ],
       },
       {
@@ -123,7 +123,7 @@ export const ipmaLevelDDe: DeContent = {
         heading: "So funktioniert die Zertifizierung in Deutschland (PM-ZERT)",
         paragraphs: [
           "Die IPMA-Zertifizierung wird von nationalen Zertifizierungsstellen durchgeführt, und das Format unterscheidet sich von Land zu Land. Die Angaben hier stammen von PM-ZERT, der Zertifizierungsstelle der GPM in Deutschland (Leitfaden Level D, Version 24, gültig ab 1. August 2026).",
-          "Sie wählen Ihren Pfad bei der Antragstellung und können später nicht mehr wechseln. Pfad 1 besteht aus einer 90-minütigen schriftlichen Prüfung plus einem Report von bis zu 25 Seiten (plus bis zu 15 Seiten Anhang) über ein Projekt, der mindestens zwei Wochen vor der Prüfung hochgeladen und in einem Feedbackgespräch von bis zu 20 Minuten besprochen wird. Pfad 2 besteht aus zwei schriftlichen Prüfungen von je 90 Minuten. Inhaber des GPM-Basiszertifikats können mit einer einzigen 90-minütigen Prüfung auf Level D aufstocken.",
+          "Sie wählen Ihren Pfad bei der Antragstellung und können später nicht mehr wechseln. Pfad 1 besteht aus einer 90-minütigen schriftlichen Prüfung plus einem Report von bis zu 25 Seiten (plus bis zu 15 Seiten Anhang) über ein Projekt, der mindestens zwei Wochen vor der Prüfung hochgeladen und in einem Feedbackgespräch von bis zu 20 Minuten besprochen wird. Pfad 2 besteht aus zwei schriftlichen Prüfungen von je 90 Minuten. Inhaber des GPM-Basiszertifikats können über eine Höherzertifizierung mit einer einzigen 90-minütigen Prüfung Level D erreichen.",
           "Über alle Prüfungsteile hinweg müssen 23 Kompetenzelemente als erfüllt bewertet werden. Jeder Prüfungsteil kann innerhalb von 12 Monaten einmal wiederholt werden, und das gesamte Verfahren muss innerhalb von 18 Monaten nach der Zulassung abgeschlossen sein. Geprüft wird auf Deutsch oder Englisch, in Präsenz oder online per Videokonferenz.",
         ],
       },
@@ -144,7 +144,7 @@ export const ipmaLevelDDe: DeContent = {
             body: "Zeichnen Sie einen Projektstrukturplan, einen Netzplan mit kritischem Pfad, eine Stakeholder-Landkarte, ein Risikoregister mit Eintrittswahrscheinlichkeit und Auswirkung sowie einen einfachen Kostenplan. Bearbeiten Sie jede dieser Methoden an einem kleinen Beispielprojekt, bis sie zur Routine wird.",
           },
           {
-            title: "Persönliche, soziale und Kontext-Kompetenzen nicht auslassen",
+            title: "Persönliche und Soziale Kompetenzen sowie Kontext-Kompetenzen nicht auslassen",
             body: "Führungsstile, Teamentwicklung, Konflikteskalation, Verhandlung, Kommunikation, Governance und Organisationskultur gehören alle zur ICB4. Notieren Sie zu jedem Element ein kurzes Beispiel aus Ihrer eigenen Erfahrung.",
           },
           {
@@ -304,7 +304,7 @@ export const ipmaLevelDDe: DeContent = {
         objective: "4.4.5 Führung",
         difficulty: "intermediate",
         question:
-          "Ein neues Teammitglied ist hoch motiviert, hat die ihr übertragene Aufgabe aber noch nie ausgeführt. Welcher Führungsansatz passt in dieser Phase am besten?",
+          "Eine neue Kollegin im Team ist hoch motiviert, hat die ihr übertragene Aufgabe aber noch nie ausgeführt. Welcher Führungsansatz passt in dieser Phase am besten?",
         options: [
           { id: "A", text: "Die Aufgabe vollständig delegieren und das Ergebnis am Ende prüfen", rationale: "Vollständige Delegation passt zu Personen, die sowohl fähig als auch willens sind. Ohne Erfahrung bliebe sie ohne die Anleitung, die sie braucht." },
           { id: "B", text: "Klare Anweisungen geben und eng begleiten, bis sie die nötigen Fähigkeiten aufgebaut hat", rationale: "Richtig. Situationsgerechte Führung heißt, mehr anzuleiten, solange die Kompetenz noch gering ist, und sich zurückzunehmen, wenn sie wächst." },
@@ -362,7 +362,7 @@ export const ipmaLevelDDe: DeContent = {
         options: [
           { id: "A", text: "Die Teammitglieder bitten, die wichtigsten Punkte in eigenen Worten zusammenzufassen", rationale: "Richtig. Die Bitte um eine Zusammenfassung prüft das Verständnis und gibt dem Projektleiter Rückmeldung, ob die Botschaft wie beabsichtigt angekommen ist." },
           { id: "B", text: "Die Botschaft lauter wiederholen", rationale: "Lautstärke verbessert das Verständnis nicht." },
-          { id: "C", text: "Denselben Text noch einmal per E-Mail senden, ohne nach Fragen zu fragen", rationale: "Wiederholte Einwegkommunikation zeigt nicht, ob die Botschaft verstanden wurde." },
+          { id: "C", text: "Denselben Text noch einmal per E-Mail senden, ohne zu Rückfragen aufzufordern", rationale: "Wiederholte Einwegkommunikation zeigt nicht, ob die Botschaft verstanden wurde." },
           { id: "D", text: "Davon ausgehen, dass Schweigen Zustimmung bedeutet", rationale: "Schweigen kann Verwirrung, Ablehnung oder Unsicherheit bedeuten; es ist keine Bestätigung." },
         ],
         answer: "A",
