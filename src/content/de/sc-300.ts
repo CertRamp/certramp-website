@@ -8,7 +8,7 @@ import type { DeContent } from "@/config/types";
  * "Qualifikationen auf einen Blick" wording and weight are used, as in English.
  */
 const GUIDE = {
-  label: "Microsoft Learn — Studienleitfaden für SC-300",
+  label: "Microsoft Learn — Studienleitfaden für SC-300 (englische Fassung)",
   url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
 };
 
