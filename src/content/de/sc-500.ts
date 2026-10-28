@@ -8,8 +8,8 @@ import type { DeContent } from "@/config/types";
  * lower-case typo there ("einhaltung") is corrected.
  */
 const GUIDE = {
-  label: "Microsoft Learn — Studienleitfaden für SC-500 (englische Fassung)",
-  url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500",
+  label: "Microsoft Learn – Studienleitfaden für SC-500",
+  url: "https://learn.microsoft.com/de-de/credentials/certifications/resources/study-guides/sc-500",
 };
 
 export const sc500De: DeContent = {
@@ -106,8 +106,8 @@ export const sc500De: DeContent = {
         id: "how-it-differs",
         heading: "Wie SC-500 mit AZ-500 zusammenhängt",
         paragraphs: [
-          "Microsoft hat die Zertifizierung Azure Security Engineer Associate, die Prüfung AZ-500 und die zugehörigen Verlängerungsbewertungen am 31. August 2026 eingestellt; sie kann weder neu erworben noch verlängert werden. In seiner Partnerankündigung vom 6. Mai 2026 hat Microsoft die Zertifizierung Cloud and AI Security Engineer Associate (SC-500) im Rahmen des Übergangs vorgestellt und beschrieben, dass sie die Rolle des Security Engineers um den Schutz von Cloud- und KI-Modellen erweitert. Die Betaversion von SC-500 startete im Mai 2026; Training und Prüfung wurden laut Microsoft für Juli 2026 erwartet.",
-          "Der deutlichste neue Bereich ist „Implementieren von Sicherheit für KI“ (Implement security for AI): Datenüberexposition in SharePoint, Microsoft Purview Data Security Posture Management für Copilot und KI-Apps, Echtzeitschutz für Copilot Studio-Agents, Microsoft Entra Agent ID, AI Gateway in Azure API Management für Microsoft Foundry, Defender for AI Services, Guardrails in Foundry und das Data and AI security dashboard in Defender for Cloud. Auch Arbeitsbereiche, Rollen, Plug-ins und Agents von Microsoft Security Copilot gehören zur Gliederung. Wenn Ihr Lernmaterial nur AZ-500 abdeckt, gleichen Sie es Zeile für Zeile mit dem SC-500-Studienleitfaden ab.",
+          "Microsoft hat die Zertifizierung Azure Security Engineer Associate, die Prüfung AZ-500 und die zugehörigen Verlängerungsbewertungen am 31. August 2026 eingestellt; sie kann weder neu erworben noch verlängert werden. In seiner Partnerankündigung vom 6. Mai 2026 hat Microsoft die Zertifizierung Cloud and AI Security Engineer Associate (SC-500) im Rahmen des Übergangs vorgestellt und beschrieben, dass sie die Rolle des Security Engineers um den Schutz von Cloud-Umgebungen und KI-Modellen erweitert. Die Betaversion von SC-500 startete im Mai 2026; Training und Prüfung wurden laut Microsoft für Juli 2026 erwartet.",
+          "Der deutlichste neue Bereich ist „Implementieren von Sicherheit für KI“ (Implement security for AI): übermäßige Freigabe von Daten (Oversharing) in SharePoint, Microsoft Purview Data Security Posture Management für Copilot und KI-Apps, Echtzeitschutz für Copilot Studio-Agents, Microsoft Entra Agent ID, AI Gateway in Azure API Management für Microsoft Foundry, Defender for AI Services, Guardrails in Foundry und das Data and AI security dashboard in Defender for Cloud. Auch Arbeitsbereiche, Rollen, Plug-ins und Agents von Microsoft Security Copilot gehören zur Gliederung. Wenn Ihr Lernmaterial nur AZ-500 abdeckt, gleichen Sie es Zeile für Zeile mit dem SC-500-Studienleitfaden ab.",
         ],
       },
       {
@@ -136,7 +136,7 @@ export const sc500De: DeContent = {
           },
           {
             title: "Buchen, wenn Ihre Ergebnisse stabil sind",
-            body: "Buchen Sie die Prüfung, sobald Sie mehrere Übungsprüfungen mit Abstand bestehen. Planen Sie die kostenlose jährliche Verlängerungsbewertung auf Microsoft Learn gleich mit ein.",
+            body: "Buchen Sie die Prüfung, sobald Sie mehrere Übungsprüfungen mit sicherem Abstand bestehen. Planen Sie die kostenlose jährliche Verlängerungsbewertung auf Microsoft Learn gleich mit ein.",
           },
         ],
       },
@@ -166,7 +166,7 @@ export const sc500De: DeContent = {
       {
         question: "Wie verlängere ich die Zertifizierung Cloud and AI Security Engineer Associate?",
         answer:
-          "Wie andere rollenbasierte Microsoft-Zertifizierungen wird sie jährlich kostenlos verlängert, indem Sie innerhalb des sechsmonatigen Zeitraums vor dem Ablauf eine Online-Bewertung auf Microsoft Learn bestehen.",
+          "Wie bei anderen rollenbasierten Microsoft-Zertifizierungen verlängern Sie sie jährlich kostenlos, indem Sie innerhalb des sechsmonatigen Zeitraums vor dem Ablauf eine Online-Bewertung auf Microsoft Learn bestehen.",
       },
       {
         question: "Brauche ich für SC-500 eine Zertifizierung als Voraussetzung?",
@@ -187,7 +187,7 @@ export const sc500De: DeContent = {
     seo: {
       title: "SC-500 Prüfungsvorbereitung 2026: AZ-500-Nachfolger",
       description:
-        "SC-500 Leitfaden: 120 Minuten, Bestehensgrenze 700, die vier Fähigkeitsbereiche, der Nachfolger von AZ-500, neue KI-Sicherheitsziele und ein Lernplan.",
+        "SC-500-Leitfaden: 120 Minuten, Bestehensgrenze 700, die vier Fähigkeitsbereiche, der Nachfolger von AZ-500, neue KI-Sicherheitsziele und ein Lernplan.",
     },
     published: "2026-10-28",
     updated: "2026-10-28",
@@ -415,7 +415,7 @@ export const sc500De: DeContent = {
         objective: "Implementieren von Sicherheit für Server und virtuelle Computer (VMs)",
         difficulty: "intermediate",
         question:
-          "Neue Azure-VMs sollen mit sicherem Start (Secure Boot), einem virtuellen TPM und Überwachung der Startintegrität gegen Bootkits und Rootkits geschützt sein. Welche Einstellung sollten Sie beim Erstellen der VMs wählen?",
+          "Neue Azure-VMs sollen gegen Bootkits und Rootkits geschützt sein – mit sicherem Start (Secure Boot), einem virtuellen TPM und Überwachung der Startintegrität. Welche Einstellung sollten Sie beim Erstellen der VMs wählen?",
         options: [
           { id: "A", text: "Sicherheitstyp „Standard“ mit Azure Disk Encryption", rationale: "Die Datenträgerverschlüsselung schützt ruhende Daten; der Sicherheitstyp „Standard“ bietet weder sicheren Start noch vTPM." },
           { id: "B", text: "Sicherheitstyp „Vertrauenswürdiger Start“ (Trusted launch)", rationale: "Richtig. Der vertrauenswürdige Start aktiviert auf VMs der Generation 2 sicheren Start, ein virtuelles TPM und die Überwachung der Startintegrität." },
@@ -435,7 +435,7 @@ export const sc500De: DeContent = {
         objective: "Verwalten des Sicherheitsstatus mithilfe von Defender for Cloud",
         difficulty: "advanced",
         question:
-          "Das Sicherheitsteam möchte in Defender for Cloud sehen, wie ein Angreifer eine aus dem Internet erreichbare VM mit einer bekannten Sicherheitslücke ausnutzen könnte, um zu einem Speicherkonto mit sensiblen Daten zu gelangen. Welche Funktion und welcher Plan bieten das?",
+          "Das Sicherheitsteam möchte in Defender for Cloud sehen, wie ein Angreifer über eine aus dem Internet erreichbare VM mit einer bekannten Sicherheitslücke eine Angriffskette bis zu einem Speicherkonto mit sensiblen Daten aufbauen könnte. Welche Funktion und welcher Plan bieten das?",
         options: [
           { id: "A", text: "Die Angriffspfadanalyse, die den Plan Defender CSPM erfordert", rationale: "Richtig. Die Angriffspfadanalyse ist eine Funktion von Defender CSPM, die den Cloudsicherheitsgraphen nutzt, um ausnutzbare Pfade zu kritischen Ressourcen zu zeigen." },
           { id: "B", text: "Die Sicherheitsbewertung (Secure Score), verfügbar mit dem grundlegenden CSPM", rationale: "Die Sicherheitsbewertung fasst den Status zusammen, zeigt aber keine mehrstufigen Pfade zwischen Ressourcen." },

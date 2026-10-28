@@ -7,8 +7,8 @@ import type { DeContent } from "@/config/types";
  * the official German Microsoft Learn study guide (de-de).
  */
 const GUIDE = {
-  label: "Microsoft Learn — Studienleitfaden für SC-200 (englische Fassung)",
-  url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200",
+  label: "Microsoft Learn – Studienleitfaden für SC-200",
+  url: "https://learn.microsoft.com/de-de/credentials/certifications/resources/study-guides/sc-200",
 };
 
 export const sc200De: DeContent = {
@@ -103,7 +103,7 @@ export const sc200De: DeContent = {
           },
           {
             title: "Eine Laborumgebung aufbauen",
-            body: "Verwenden Sie einen Microsoft 365 E5-Testmandanten (oder eine Entwickler-Sandbox, falls Ihr Visual Studio-Abonnement dafür berechtigt) und ein Azure-Abonnement, um einen Sentinel-Arbeitsbereich anzubinden, ein Testgerät in Defender for Endpoint zu onboarden und einige Testwarnungen zu erzeugen. Behalten Sie außerhalb der kostenlosen Testphase die Kosten für die Datenaufnahme in Sentinel im Blick. Wer die Portale einmal gesehen hat, beantwortet Szenariofragen deutlich leichter.",
+            body: "Verwenden Sie einen Microsoft 365 E5-Testmandanten (oder eine Entwickler-Sandbox, falls Ihr Visual Studio-Abonnement dafür berechtigt) und ein Azure-Abonnement, um einen Sentinel-Arbeitsbereich anzubinden, ein Testgerät in Defender for Endpoint aufzunehmen (Onboarding) und einige Testwarnungen zu erzeugen. Behalten Sie außerhalb der kostenlosen Testphase die Kosten für die Datenaufnahme in Sentinel im Blick. Wer die Portale einmal gesehen hat, beantwortet Szenariofragen deutlich leichter.",
           },
           {
             title: "KQL richtig lernen",
@@ -119,7 +119,7 @@ export const sc200De: DeContent = {
           },
           {
             title: "Buchen, wenn Ihre Ergebnisse stabil sind",
-            body: "Buchen Sie die Prüfung, sobald Sie mehrere Übungsprüfungen mit Abstand bestehen. Planen Sie die kostenlose jährliche Verlängerungsbewertung auf Microsoft Learn gleich mit ein.",
+            body: "Buchen Sie die Prüfung, sobald Sie mehrere Übungsprüfungen mit sicherem Abstand bestehen. Planen Sie die kostenlose jährliche Verlängerungsbewertung auf Microsoft Learn gleich mit ein.",
           },
         ],
       },
@@ -154,7 +154,7 @@ export const sc200De: DeContent = {
       {
         question: "Gibt es die Prüfung auf Deutsch?",
         answer:
-          "Ja. SC-200 wird auch auf Deutsch angeboten. Lokalisierte Fassungen werden laut Microsoft etwa acht Wochen nach der englischen Version aktualisiert, sodass die deutsche Fassung nach dem Update vom 21. Oktober 2026 vorübergehend noch der vorherigen Gliederung folgen kann.",
+          "Ja. SC-200 wird auch auf Deutsch angeboten. Lokalisierte Fassungen werden laut Microsoft etwa acht Wochen nach der englischen Version aktualisiert.",
       },
       {
         question: "Sind die CertRamp-Fragen echte Prüfungsfragen?",
@@ -165,7 +165,7 @@ export const sc200De: DeContent = {
     seo: {
       title: "SC-200 Prüfungsvorbereitung 2026: Inhalte & Lernplan",
       description:
-        "SC-200 Leitfaden zum Stand 21.10.2026: 100 Minuten, Bestehensgrenze 700, Defender XDR, Sentinel, KQL-Hunting und ein Lernplan in sechs Schritten.",
+        "SC-200-Leitfaden zum Stand 21.10.2026: 100 Minuten, Bestehensgrenze 700, Defender XDR, Sentinel, KQL-Hunting und ein Lernplan in sechs Schritten.",
     },
     published: "2026-10-28",
     updated: "2026-10-28",
@@ -281,7 +281,7 @@ export const sc200De: DeContent = {
         objective: "Konfigurieren von Erkennungen",
         difficulty: "foundation",
         question:
-          "Ihre Vorgesetzte möchte wissen, welche Taktiken und Techniken von Angreifern Ihre aktuellen Microsoft Sentinel-Erkennungen abdecken und wo die Lücken liegen. Welches Feature hilft Ihnen am direktesten, diese Frage zu beantworten?",
+          "Ihre Führungskraft möchte wissen, welche Taktiken und Techniken von Angreifern Ihre aktuellen Microsoft Sentinel-Erkennungen abdecken und wo die Lücken liegen. Welches Feature hilft Ihnen am direktesten, diese Frage zu beantworten?",
         options: [
           { id: "A", text: "Die Vorfallwarteschlange", rationale: "Die Warteschlange zeigt aufgetretene Vorfälle, nicht die Abdeckung Ihrer Erkennungsregeln." },
           { id: "B", text: "Datensammlungsregeln", rationale: "Sie steuern die Datensammlung und sagen nichts darüber aus, welche Techniken erkannt werden." },
@@ -373,7 +373,7 @@ export const sc200De: DeContent = {
         objective: "Reagieren auf Warnungen und Vorfälle in Microsoft Defender XDR",
         difficulty: "advanced",
         question:
-          "Während einer sich schnell ausbreitenden Business-E-Mail-Kompromittierung (BEC) deaktiviert Microsoft Defender XDR automatisch das kompromittierte Benutzerkonto und dämmt betroffene Geräte ein, bevor ein Analyst den Vorfall überhaupt öffnet. Welche Funktion hat das getan?",
+          "Während einer sich schnell ausbreitenden Kompromittierung geschäftlicher E-Mails (Business Email Compromise, BEC) deaktiviert Microsoft Defender XDR automatisch das kompromittierte Benutzerkonto und dämmt betroffene Geräte ein, bevor ein Analyst den Vorfall überhaupt öffnet. Welche Funktion hat das getan?",
         options: [
           { id: "A", text: "Automatische Angriffsunterbrechung (Automatic attack disruption)", rationale: "Richtig. Die automatische Angriffsunterbrechung nutzt Signale mit hoher Konfidenz aus Defender XDR, um kompromittierte Benutzer und Geräte während Angriffen wie Ransomware oder BEC automatisch einzudämmen." },
           { id: "B", text: "Eine Sentinel-Arbeitsmappe", rationale: "Arbeitsmappen zeigen nur Daten an; sie führen keine Aktionen aus." },
@@ -411,7 +411,7 @@ export const sc200De: DeContent = {
         objective: "Erkennen von Bedrohungen mithilfe von Microsoft Defender XDR",
         difficulty: "foundation",
         question:
-          "Sie möchten in der erweiterten Suche (Advanced Hunting) alle Geräte finden, auf denen powershell.exe mit einer codierten Befehlszeile gestartet wurde. Welche Tabelle fragen Sie ab?",
+          "Sie möchten in der erweiterten Bedrohungssuche (Advanced Hunting) alle Geräte finden, auf denen powershell.exe mit einer codierten Befehlszeile gestartet wurde. Welche Tabelle fragen Sie ab?",
         options: [
           { id: "A", text: "DeviceProcessEvents", rationale: "Richtig. DeviceProcessEvents zeichnet das Erstellen von Prozessen auf, einschließlich Dateiname und Befehlszeile." },
           { id: "B", text: "EmailEvents", rationale: "EmailEvents enthält Informationen zur E-Mail-Zustellung, keine Prozesse." },
@@ -429,7 +429,7 @@ export const sc200De: DeContent = {
         objective: "Erkennen von Bedrohungen mithilfe von Microsoft Defender XDR",
         difficulty: "intermediate",
         question:
-          "Welche Abfrage auf IdentityLogonEvents zählt in der erweiterten Suche (Advanced Hunting) die fehlgeschlagenen Anmeldungen pro Konto und gibt nur Konten mit mehr als 20 Fehlschlägen zurück?",
+          "Welche Abfrage auf IdentityLogonEvents zählt in der erweiterten Bedrohungssuche (Advanced Hunting) die fehlgeschlagenen Anmeldungen pro Konto und gibt nur Konten mit mehr als 20 Fehlschlägen zurück?",
         options: [
           { id: "A", text: "| summarize Failures = count() | where AccountName > 20", rationale: "Es gibt keine Gruppierung nach Konto, und AccountName ist keine Zahl." },
           { id: "B", text: "| project AccountName | take 20", rationale: "Das gibt nur 20 Zeilen zurück und zählt nichts." },
