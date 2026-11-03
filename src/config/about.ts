@@ -19,9 +19,9 @@ export const about = {
     /** Day job, shown under the name. The employer is deliberately not named. */
     position: "Senior Consultant, digital transformation and AI",
     positionDe: "Senior Consultant für digitale Transformation und KI",
-    bio: "I have more than 12 years of professional experience and work as a senior consultant in an IT management consultancy, focusing on digital transformation, AI and requirements engineering in the insurance industry. I also hold certifications in requirements engineering, IT service management and agile frameworks myself. Every CertRamp practice exam builds on that experience: the way real exams phrase things, where candidates usually slip, and what it takes to be ready on exam day.",
+    bio: "I have more than 12 years of professional experience and work as a senior consultant in an IT management consultancy, focusing on digital transformation, AI and requirements engineering in the insurance industry. I have earned many certifications myself, so I know what exam preparation feels like. That is why every CertRamp practice exam follows the same progression: an easy start to see where you stand, then real exam level, then beyond it. You walk into the exam with a buffer and a good feeling.",
     bioDe:
-      "Ich habe über 12 Jahre Berufserfahrung und arbeite als Senior Consultant in einer IT-Unternehmensberatung, mit Schwerpunkt auf digitaler Transformation, KI und Requirements Engineering in der Versicherungsbranche. Selbst habe ich Zertifizierungen in Requirements Engineering, IT-Service-Management und agilen Frameworks abgelegt. Diese Erfahrung steckt in jeder CertRamp-Übungsprüfung: wie echte Prüfungen formulieren, wo Kandidaten typischerweise stolpern und was es braucht, um am Prüfungstag bereit zu sein.",
+      "Ich habe über 12 Jahre Berufserfahrung und arbeite als Senior Consultant in einer IT-Unternehmensberatung, mit Schwerpunkt auf digitaler Transformation, KI und Requirements Engineering in der Versicherungsbranche. Viele Zertifizierungen habe ich selbst abgelegt und weiß, wie sich Prüfungsvorbereitung anfühlt. Deshalb folgt jede CertRamp-Übungsprüfung derselben Progression: ein leichter Einstieg zur Standortbestimmung, dann echtes Prüfungsniveau, dann darüber hinaus. So gehen Sie mit Puffer und einem guten Gefühl in die Prüfung.",
     /** Selected certifications, by their official names. Keep them factual. */
     credentials: [
       "IREB® CPRE Foundation Level",
@@ -33,8 +33,6 @@ export const about = {
     ],
     moreCredentials: "Plus further certifications from Microsoft and Anthropic (Claude).",
     moreCredentialsDe: "Dazu weitere Zertifizierungen von Microsoft und Anthropic (Claude).",
-    education: ["B.A. Management and Digitalisation", "Fachwirt for Insurance and Finance (German professional qualification)"],
-    educationDe: ["B.A. Management und Digitalisierung", "Fachwirt für Versicherungen und Finanzen"],
     trademarkNote:
       "ITIL® is a registered trademark of PeopleCert. IREB® is a registered trademark of IREB e.V. SAFe® is a registered trademark of Scaled Agile, Inc. PSM and PSPO are trademarks of Scrum.org.",
     trademarkNoteDe:

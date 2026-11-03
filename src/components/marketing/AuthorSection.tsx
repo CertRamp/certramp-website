@@ -15,8 +15,7 @@ const copy = {
     bookCta: "View on Amazon",
     bookNote: "My CPRE Foundation Level exam-prep book (in German) follows the same progressive approach.",
     bookNoteProminent: "Prefer paper? The same progressive approach is available as a book (in German) with six practice exams and 270 questions.",
-    credentialsLabel: "Selected certifications",
-    educationLabel: "Education",
+    credentialsLabel: "Selected certifications"
   },
   de: {
     eyebrow: "Wer die Prüfungen schreibt",
@@ -25,8 +24,7 @@ const copy = {
     bookCta: "Bei Amazon ansehen",
     bookNote: "Mein Buch zur CPRE Foundation Level folgt demselben aufbauenden Prinzip.",
     bookNoteProminent: "Lieber auf Papier? Dasselbe aufbauende Prinzip gibt es als Buch mit sechs Übungsprüfungen und 270 Fragen.",
-    credentialsLabel: "Ausgewählte Zertifizierungen",
-    educationLabel: "Ausbildung",
+    credentialsLabel: "Ausgewählte Zertifizierungen"
   },
 } as const;
 
@@ -65,7 +63,6 @@ export function AuthorSection({
   const position = lang === "de" ? f.positionDe : f.position;
   const bio = lang === "de" ? f.bioDe : f.bio;
   const more = lang === "de" ? f.moreCredentialsDe : f.moreCredentials;
-  const education = lang === "de" ? f.educationDe : f.education;
 
   return (
     <Section tone={tone === "navy" ? "white" : tone} labelledBy={`author-title-${location}`} className="!py-16 sm:!py-20">
@@ -100,8 +97,6 @@ export function AuthorSection({
               ))}
             </ul>
             <p className="mt-3 text-sm text-muted">{more}</p>
-            <p className="mt-5 text-sm font-medium text-muted">{t.educationLabel}</p>
-            <p className="mt-1 text-sm text-body">{education.join(" · ")}</p>
             <p className="mt-5 text-xs text-muted">{lang === "de" ? f.trademarkNoteDe : f.trademarkNote}</p>
           </div>
 
