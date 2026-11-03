@@ -88,7 +88,7 @@ export const sc300De: DeContent = {
   guide: {
     slug: "sc-300",
     summary:
-      "SC-300 (Microsoft Identity and Access Administrator) prüft, ob Sie Identitäts- und Zugriffsverwaltung mit Microsoft Entra implementieren und betreiben können: Benutzer- und Hybrididentitäten, Authentifizierung und bedingter Zugriff (Conditional Access), Workload-Identitäten und Unternehmensanwendungen sowie Identity Governance. Die Prüfung dauert 100 Minuten, zum Bestehen benötigen Sie 700 Punkte, und die englische Prüfung wird am 28. Oktober 2026 auf die neue Liste der gemessenen Fähigkeiten umgestellt.",
+      "SC-300 (Microsoft Identity and Access Administrator) prüft, ob du Identitäts- und Zugriffsverwaltung mit Microsoft Entra implementieren und betreiben können: Benutzer- und Hybrididentitäten, Authentifizierung und bedingter Zugriff (Conditional Access), Workload-Identitäten und Unternehmensanwendungen sowie Identity Governance. Die Prüfung dauert 100 Minuten, zum Bestehen benötigst du 700 Punkte, und die englische Prüfung wird am 28. Oktober 2026 auf die neue Liste der gemessenen Fähigkeiten umgestellt.",
     whoFor: [
       "Identitäts- und Zugriffsadministratoren, die Microsoft Entra ID im Tagesgeschäft betreuen",
       "Microsoft 365- und Azure-Administratoren, die für Anmeldesicherheit, Conditional Access oder App-Integration zuständig sind",
@@ -99,7 +99,7 @@ export const sc300De: DeContent = {
         id: "what-the-exam-tests",
         heading: "Was SC-300 tatsächlich prüft",
         paragraphs: [
-          "SC-300 umfasst vier Fähigkeitsbereiche: Benutzeridentitäten implementieren und verwalten, Authentifizierung und Zugriffsverwaltung implementieren, Workload-Identitäten planen und implementieren sowie Identity Governance planen und automatisieren. Jeder Bereich macht etwa ein Viertel der Prüfung aus. Der Studienleitfaden von Microsoft gibt für Authentifizierung und Zugriffsverwaltung in der Zusammenfassung 25–30 % und im Detailabschnitt 20–25 % an; planen Sie diesen Bereich daher mindestens so umfangreich ein wie die anderen.",
+          "SC-300 umfasst vier Fähigkeitsbereiche: Benutzeridentitäten implementieren und verwalten, Authentifizierung und Zugriffsverwaltung implementieren, Workload-Identitäten planen und implementieren sowie Identity Governance planen und automatisieren. Jeder Bereich macht etwa ein Viertel der Prüfung aus. Der Studienleitfaden von Microsoft gibt für Authentifizierung und Zugriffsverwaltung in der Zusammenfassung 25–30 % und im Detailabschnitt 20–25 % an; plane diesen Bereich daher mindestens so umfangreich ein wie die anderen.",
           "Die meisten Fragen beschreiben eine Anforderung einer Organisation und fragen nach der passenden Entra-Funktion oder der passenden Einstellung. Typische Entscheidungen: Verwaltungseinheit oder mandantenweite Rolle, Kennworthashsynchronisierung oder Passthrough-Authentifizierung, welche Bedingung und welches Steuerelement im bedingten Zugriff (Conditional Access), system- oder benutzerseitig zugewiesene verwaltete Identität, Zugriffspaket oder Zugriffsüberprüfung sowie berechtigte oder aktive PIM-Zuweisung.",
         ],
       },
@@ -108,7 +108,7 @@ export const sc300De: DeContent = {
         heading: "Was sich mit dem Update vom 28. Oktober 2026 ändert",
         paragraphs: [
           "Microsoft stuft die Änderungen vom Oktober 2026 als geringfügig ein. Angepasst wurden drei Unterbereiche: „Planen, Implementieren und Verwalten der Microsoft Entra-Benutzerauthentifizierung“ (Plan, implement, and manage Microsoft Entra user authentication), „Implementieren des globalen sicheren Zugriffs“ (Implement Global Secure Access) und „Planen und Implementieren von privilegiertem Zugriff“ (Plan and implement privileged access). Die übrigen Bereiche und das Zielgruppenprofil bleiben unverändert.",
-          "Die aktuelle Gliederung erwartet, dass Sie moderne Authentifizierungsmethoden kennen (zertifikatbasierte Authentifizierung, Temporary Access Pass, Microsoft Authenticator und Passkeys), außerdem den globalen sicheren Zugriff (Global Secure Access) mit Microsoft Entra Private Access und Internet Access sowie PIM für Microsoft Entra-Rollen, Azure-Ressourcen und Gruppen. Lokalisierte Fassungen der Prüfung werden etwa acht Wochen nach der englischen Version aktualisiert.",
+          "Die aktuelle Gliederung erwartet, dass du moderne Authentifizierungsmethoden kennen (zertifikatbasierte Authentifizierung, Temporary Access Pass, Microsoft Authenticator und Passkeys), außerdem den globalen sicheren Zugriff (Global Secure Access) mit Microsoft Entra Private Access und Internet Access sowie PIM für Microsoft Entra-Rollen, Azure-Ressourcen und Gruppen. Lokalisierte Fassungen der Prüfung werden etwa acht Wochen nach der englischen Version aktualisiert.",
         ],
       },
       {
@@ -117,27 +117,27 @@ export const sc300De: DeContent = {
         steps: [
           {
             title: "Den eigenen Stand am Studienleitfaden messen",
-            body: "Gehen Sie jeden Punkt der offiziellen SC-300-Liste der gemessenen Fähigkeiten durch und markieren Sie ihn als bekannt, unsicher oder neu. Die vier Bereiche sind ähnlich gewichtet, lassen Sie also keinen aus.",
+            body: "Geh jeden Punkt der offiziellen SC-300-Liste der gemessenen Fähigkeiten durch und markiere ihn als bekannt, unsicher oder neu. Die vier Bereiche sind ähnlich gewichtet, lass also keinen aus.",
           },
           {
             title: "Einen Labormandanten aufbauen",
-            body: "Verwenden Sie einen Microsoft 365 E5-Testmandanten (oder eine Entwickler-Sandbox, falls Ihr Visual Studio-Abonnement dafür berechtigt), damit Microsoft Entra ID P2-Features wie PIM, ID Protection und Zugriffsüberprüfungen verfügbar sind. Legen Sie Testbenutzer, Gruppen, Verwaltungseinheiten und einige Conditional-Access-Richtlinien im Nur-Bericht-Modus (Report-only) an.",
+            body: "Verwende einen Microsoft 365 E5-Testmandanten (oder eine Entwickler-Sandbox, falls dein Visual Studio-Abonnement dafür berechtigt), damit Microsoft Entra ID P2-Features wie PIM, ID Protection und Zugriffsüberprüfungen verfügbar sind. Lege Testbenutzer, Gruppen, Verwaltungseinheiten und einige Conditional-Access-Richtlinien im Nur-Bericht-Modus (Report-only) an.",
           },
           {
             title: "Den Identitätslebenszyklus vollständig durchspielen",
-            body: "Laden Sie einen Gast ein, gewähren Sie ihm Zugriff über ein Zugriffspaket, überprüfen Sie diesen Zugriff und lassen Sie ihn ablaufen. Aktivieren Sie anschließend eine Rolle mit PIM und lesen Sie den Überwachungsverlauf. Wer den ganzen Zyklus einmal gesehen hat, beantwortet Governance-Fragen deutlich leichter.",
+            body: "Lade einen Gast ein, gewähre ihm Zugriff über ein Zugriffspaket, überprüfe diesen Zugriff und lass ihn ablaufen. Aktiviere anschließend eine Rolle mit PIM und lies den Überwachungsverlauf. Wer den ganzen Zyklus einmal gesehen hat, beantwortet Governance-Fragen deutlich leichter.",
           },
           {
             title: "Die Microsoft-Learn-Lernpfade durcharbeiten",
-            body: "Folgen Sie den kostenlosen SC-300-Lernpfaden und gleichen Sie jedes Modul mit der aktuellen Gliederung ab, insbesondere Global Secure Access und Workload-Identitäten.",
+            body: "Folge den kostenlosen SC-300-Lernpfaden und gleiche jedes Modul mit der aktuellen Gliederung ab, insbesondere Global Secure Access und Workload-Identitäten.",
           },
           {
             title: "Unter Zeitdruck üben",
-            body: "Legen Sie Übungsprüfungen mit 40–60 Fragen in 100 Minuten ab und lesen Sie jede Erklärung, auch bei Fragen, die Sie richtig beantwortet haben.",
+            body: "Lege Übungsprüfungen mit 40–60 Fragen in 100 Minuten ab und lies jede Erklärung, auch bei Fragen, die du richtig beantwortet haben.",
           },
           {
-            title: "Buchen, wenn Ihre Ergebnisse stabil sind",
-            body: "Buchen Sie die Prüfung, sobald Sie mehrere Übungsprüfungen mit Abstand bestehen. Planen Sie die kostenlose jährliche Verlängerungsbewertung auf Microsoft Learn gleich mit ein.",
+            title: "Buchen, wenn deine Ergebnisse stabil sind",
+            body: "Buche die Prüfung, sobald du mehrere Übungsprüfungen mit Abstand bestehst. Plane die kostenlose jährliche Verlängerungsbewertung auf Microsoft Learn gleich mit ein.",
           },
         ],
       },
@@ -146,7 +146,7 @@ export const sc300De: DeContent = {
         heading: "Häufige Fehler bei der Vorbereitung",
         bullets: [
           "Microsoft Entra-Rollen und Azure RBAC-Rollen verwechseln. Entra-Rollen verwalten das Verzeichnis und Microsoft 365, Azure-Rollen verwalten Azure-Ressourcen. PIM deckt beide ab, sie werden aber getrennt konfiguriert.",
-          "Conditional Access nur als „MFA erzwingen“ lernen. Sie sollten Zuweisungen, Bedingungen, Gewährungs- und Sitzungssteuerungen, den Nur-Bericht-Modus, die fortlaufende Zugriffsevaluierung (Continuous Access Evaluation), den Authentifizierungskontext und geschützte Aktionen kennen.",
+          "Conditional Access nur als „MFA erzwingen“ lernen. Du solltest Zuweisungen, Bedingungen, Gewährungs- und Sitzungssteuerungen, den Nur-Bericht-Modus, die fortlaufende Zugriffsevaluierung (Continuous Access Evaluation), den Authentifizierungskontext und geschützte Aktionen kennen.",
           "Hybrididentität als Randthema behandeln. Entra Connect Sync, Cloud Sync, Kennworthashsynchronisierung, Passthrough-Authentifizierung und nahtloses SSO stehen alle in der Gliederung.",
           "Workload-Identitäten überspringen. Verwaltete Identitäten, Dienstprinzipale, App-Registrierungen, Einwilligung (Consent) und Defender for Cloud Apps bilden einen ganzen Fähigkeitsbereich.",
           "Governance-Werkzeuge verwechseln. Die Berechtigungsverwaltung (Entitlement Management) gewährt Zugriff über Zugriffspakete; Zugriffsüberprüfungen prüfen, ob bestehender Zugriff noch benötigt wird; PIM steuert, wann privilegierte Rollen aktiv sind.",
@@ -157,12 +157,12 @@ export const sc300De: DeContent = {
       {
         question: "Wie lange dauert die SC-300-Prüfung und wie hoch ist die Bestehensgrenze?",
         answer:
-          "Sie haben 100 Minuten Zeit. Microsoft verlangt zum Bestehen 700 Punkte oder mehr. Die genaue Fragenzahl für SC-300 veröffentlicht Microsoft nicht; laut Microsoft haben die meisten seiner Zertifizierungsprüfungen zwischen 40 und 60 Fragen.",
+          "Du hast 100 Minuten Zeit. Microsoft verlangt zum Bestehen 700 Punkte oder mehr. Die genaue Fragenzahl für SC-300 veröffentlicht Microsoft nicht; laut Microsoft haben die meisten seiner Zertifizierungsprüfungen zwischen 40 und 60 Fragen.",
       },
       {
         question: "Wie verlängere ich die SC-300-Zertifizierung?",
         answer:
-          "Die Zertifizierung Identity and Access Administrator Associate muss alle 12 Monate verlängert werden. Sie verlängern sie kostenlos, indem Sie innerhalb des sechsmonatigen Verlängerungszeitraums eine Online-Bewertung auf Microsoft Learn bestehen.",
+          "Die Zertifizierung Identity and Access Administrator Associate muss alle 12 Monate verlängert werden. Du verlängerst sie kostenlos, indem du innerhalb des sechsmonatigen Verlängerungszeitraums eine Online-Bewertung auf Microsoft Learn bestehst.",
       },
       {
         question: "Welche gemessenen Fähigkeiten ändern sich am 28. Oktober 2026?",
@@ -214,10 +214,10 @@ export const sc300De: DeContent = {
         objective: "Konfigurieren und Verwalten eines Microsoft Entra-Mandanten",
         difficulty: "intermediate",
         question:
-          "Regionale Supportmitarbeitende in Deutschland sollen Kennwörter nur für Benutzer der deutschen Tochtergesellschaft zurücksetzen können, nicht für andere Benutzer im Mandanten. Was sollten Sie konfigurieren?",
+          "Regionale Supportmitarbeitende in Deutschland sollen Kennwörter nur für Benutzer der deutschen Tochtergesellschaft zurücksetzen können, nicht für andere Benutzer im Mandanten. Was solltest du konfigurieren?",
         options: [
           { id: "A", text: "Die Rolle „Helpdeskadministrator“ mit Mandantenbereich zuweisen", rationale: "Eine mandantenweite Zuweisung würde den Mitarbeitenden erlauben, Kennwörter aller infrage kommenden Benutzer zurückzusetzen, nicht nur die der deutschen." },
-          { id: "B", text: "Eine Verwaltungseinheit für die deutschen Benutzer erstellen und die Rolle „Helpdeskadministrator“ auf diese Einheit begrenzt zuweisen", rationale: "Richtig. Verwaltungseinheiten beschränken die Berechtigungen einer Rolle auf die Benutzer, Gruppen oder Geräte, die Sie ihnen hinzufügen." },
+          { id: "B", text: "Eine Verwaltungseinheit für die deutschen Benutzer erstellen und die Rolle „Helpdeskadministrator“ auf diese Einheit begrenzt zuweisen", rationale: "Richtig. Verwaltungseinheiten beschränken die Berechtigungen einer Rolle auf die Benutzer, Gruppen oder Geräte, die du ihnen hinzufügst." },
           { id: "C", text: "Eine Conditional-Access-Richtlinie für die deutschen Benutzer erstellen", rationale: "Conditional Access steuert, wie sich Benutzer anmelden; administrative Berechtigungen delegiert es nicht." },
           { id: "D", text: "Eine dynamische Gruppe für die deutschen Benutzer erstellen", rationale: "Eine Gruppe allein schränkt den Bereich einer Administratorrolle nicht ein." },
         ],
@@ -232,7 +232,7 @@ export const sc300De: DeContent = {
         objective: "Implementieren und Verwalten von Identitäten für externe Benutzer und Mandanten",
         difficulty: "advanced",
         question:
-          "Ihre Organisation nutzt nach einer Übernahme drei Microsoft Entra-Mandanten. Benutzer aus dem Hauptmandanten sollen automatisch Konten in den beiden anderen Mandanten erhalten, und diese Konten sollen aktualisiert und entfernt werden, wenn sich Benutzer ändern oder ausscheiden. Welches Feature sollten Sie implementieren?",
+          "Deine Organisation nutzt nach einer Übernahme drei Microsoft Entra-Mandanten. Benutzer aus dem Hauptmandanten sollen automatisch Konten in den beiden anderen Mandanten erhalten, und diese Konten sollen aktualisiert und entfernt werden, wenn sich Benutzer ändern oder ausscheiden. Welches Feature solltest du implementieren?",
         options: [
           { id: "A", text: "Die Benutzer einzeln als B2B-Gäste einladen", rationale: "Manuelle Einladungen erstellen zwar Konten, halten sie aber nicht automatisch aktuell und entfernen sie nicht automatisch." },
           { id: "B", text: "Microsoft Entra Connect Sync", rationale: "Entra Connect Sync synchronisiert vom lokalen Active Directory nach Microsoft Entra ID, nicht zwischen Entra-Mandanten." },
@@ -268,7 +268,7 @@ export const sc300De: DeContent = {
         objective: "Erstellen, Konfigurieren und Verwalten von Microsoft Entra-Identitäten",
         difficulty: "foundation",
         question:
-          "Alle Benutzer, deren Attribut „department“ den Wert „Finance“ hat, sollen Mitglied einer Sicherheitsgruppe sein, und die Mitgliedschaft soll sich automatisch anpassen, wenn sich die Abteilung eines Benutzers ändert. Was sollten Sie erstellen?",
+          "Alle Benutzer, deren Attribut „department“ den Wert „Finance“ hat, sollen Mitglied einer Sicherheitsgruppe sein, und die Mitgliedschaft soll sich automatisch anpassen, wenn sich die Abteilung eines Benutzers ändert. Was solltest du erstellen?",
         options: [
           { id: "A", text: "Eine Sicherheitsgruppe mit zugewiesener Mitgliedschaft", rationale: "Bei zugewiesener Mitgliedschaft fügt ein Administrator Mitglieder manuell hinzu und entfernt sie manuell." },
           { id: "B", text: "Eine Verwaltungseinheit", rationale: "Verwaltungseinheiten begrenzen die Verwaltung; sie dienen nicht wie eine Sicherheitsgruppe dazu, Zugriff zu gewähren." },
@@ -306,16 +306,16 @@ export const sc300De: DeContent = {
         objective: "Planen, Implementieren und Verwalten des bedingten Zugriffs für Microsoft Entra",
         difficulty: "foundation",
         question:
-          "Sie haben eine Conditional-Access-Richtlinie geschrieben, die Legacy-Authentifizierung blockiert. Bevor Sie sie durchsetzen, möchten Sie sehen, welche Benutzer und Anmeldungen betroffen wären, ohne jemanden zu blockieren. Was sollten Sie tun?",
+          "Du hast eine Conditional-Access-Richtlinie geschrieben, die Legacy-Authentifizierung blockiert. Bevor du sie durchsetzt, möchtest du sehen, welche Benutzer und Anmeldungen betroffen wären, ohne jemanden zu blockieren. Was solltest du tun?",
         options: [
           { id: "A", text: "Die Richtlinie in den Nur-Bericht-Modus setzen und die Ergebnisse in den Anmeldeprotokollen auswerten", rationale: "Richtig. Im Nur-Bericht-Modus (Report-only) wird die Richtlinie bei jeder Anmeldung ausgewertet und das Ergebnis protokolliert, aber nicht durchgesetzt." },
           { id: "B", text: "Die Richtlinie für alle Benutzer aktivieren und auf Helpdesk-Tickets warten", rationale: "Damit wird die Richtlinie sofort durchgesetzt, und Benutzer könnten ausgesperrt werden." },
-          { id: "C", text: "Die Sicherheitsstandards aktivieren", rationale: "Die Sicherheitsstandards sind eine eigene Basiskonfiguration und zeigen nicht die Auswirkungen Ihrer benutzerdefinierten Richtlinie." },
+          { id: "C", text: "Die Sicherheitsstandards aktivieren", rationale: "Die Sicherheitsstandards sind eine eigene Basiskonfiguration und zeigen nicht die Auswirkungen deiner benutzerdefinierten Richtlinie." },
           { id: "D", text: "Eine Zugriffsüberprüfung für die Richtlinie erstellen", rationale: "Zugriffsüberprüfungen prüfen den Zugriff auf Gruppen, Apps oder Rollen; Conditional-Access-Richtlinien simulieren sie nicht." },
         ],
         answer: "A",
         explanation:
-          "Das Testen und die Fehlerbehebung von Richtlinien gehören zur Gliederung. Mit dem Nur-Bericht-Modus, dem What If-Tool und den Anmeldeprotokollen messen Sie die Auswirkungen, bevor Sie eine Richtlinie einschalten.",
+          "Das Testen und die Fehlerbehebung von Richtlinien gehören zur Gliederung. Mit dem Nur-Bericht-Modus, dem What If-Tool und den Anmeldeprotokollen misst du die Auswirkungen, bevor du eine Richtlinie einschaltest.",
         reference: GUIDE,
       },
       {
@@ -342,10 +342,10 @@ export const sc300De: DeContent = {
         objective: "Implementieren des globalen sicheren Zugriffs",
         difficulty: "advanced",
         question:
-          "Mitarbeitende im Homeoffice nutzen derzeit ein VPN, um interne Dateiserver und Fachanwendungen über FQDN und IP-Adresse zu erreichen. Das Unternehmen möchte das VPN ablösen und Conditional Access auf diesen Datenverkehr anwenden. Welche Lösung sollten Sie bereitstellen?",
+          "Mitarbeitende im Homeoffice nutzen derzeit ein VPN, um interne Dateiserver und Fachanwendungen über FQDN und IP-Adresse zu erreichen. Das Unternehmen möchte das VPN ablösen und Conditional Access auf diesen Datenverkehr anwenden. Welche Lösung solltest du bereitstellen?",
         options: [
           { id: "A", text: "Microsoft Entra Internet Access", rationale: "Internet Access sichert den Zugriff auf Internet- und SaaS-Ziele, nicht auf private interne Ressourcen." },
-          { id: "B", text: "Microsoft Entra Private Access mit dem Global Secure Access-Client und privaten Netzwerkconnectors", rationale: "Richtig. Mit Private Access definieren Sie private FQDNs und IP-Bereiche, vermitteln Verbindungen über private Netzwerkconnectors und schützen den Zugriff mit Conditional Access, als Ersatz für ein VPN." },
+          { id: "B", text: "Microsoft Entra Private Access mit dem Global Secure Access-Client und privaten Netzwerkconnectors", rationale: "Richtig. Mit Private Access definierst du private FQDNs und IP-Bereiche, vermittelst Verbindungen über private Netzwerkconnectors und schützt den Zugriff mit Conditional Access, als Ersatz für ein VPN." },
           { id: "C", text: "Mandantenübergreifende Zugriffseinstellungen", rationale: "Diese steuern die Zusammenarbeit mit anderen Entra-Mandanten, nicht den Zugriff auf interne Server." },
           { id: "D", text: "Self-Service-Kennwortzurücksetzung", rationale: "Bei SSPR geht es um die Wiederherstellung von Kennwörtern; Netzwerkzugriff bietet es nicht." },
         ],
@@ -364,7 +364,7 @@ export const sc300De: DeContent = {
         question:
           "Zwanzig virtuelle Computer einer horizontal skalierten Anwendung benötigen alle dieselben Berechtigungen, um Geheimnisse aus einem Azure Key Vault zu lesen. Die Computer werden häufig erstellt und gelöscht. Welcher Identitätsansatz lässt sich am einfachsten verwalten?",
         options: [
-          { id: "A", text: "Eine benutzerseitig zugewiesene verwaltete Identität, die allen virtuellen Computern zugeordnet ist", rationale: "Richtig. Eine benutzerseitig zugewiesene verwaltete Identität hat einen eigenen Lebenszyklus und kann von vielen Ressourcen gemeinsam genutzt werden; Sie gewähren den Key Vault-Zugriff also nur einmal." },
+          { id: "A", text: "Eine benutzerseitig zugewiesene verwaltete Identität, die allen virtuellen Computern zugeordnet ist", rationale: "Richtig. Eine benutzerseitig zugewiesene verwaltete Identität hat einen eigenen Lebenszyklus und kann von vielen Ressourcen gemeinsam genutzt werden; du gewährst den Key Vault-Zugriff also nur einmal." },
           { id: "B", text: "Eine systemseitig zugewiesene verwaltete Identität auf jedem virtuellen Computer", rationale: "Systemseitig zugewiesene Identitäten sind jeweils an genau eine Ressource gebunden; jeder neue Computer bräuchte eine eigene Zugriffsberechtigung, und die Identität wird mit dem Computer gelöscht." },
           { id: "C", text: "Ein Dienstprinzipal mit einem auf jedem Computer gespeicherten geheimen Clientschlüssel", rationale: "Geheimnisse auf Computern müssen rotiert und geschützt werden: genau das vermeiden verwaltete Identitäten." },
           { id: "D", text: "Ein gemeinsames Benutzerkonto, dessen Kennwort in einem Skript gespeichert ist", rationale: "Ein Benutzerkonto mit gespeichertem Kennwort für eine Workload zu verwenden ist unsicher und schwer zu verwalten." },
@@ -398,11 +398,11 @@ export const sc300De: DeContent = {
         objective: "Planen und Implementieren von Anwendungsregistrierungen",
         difficulty: "advanced",
         question:
-          "Sie registrieren einen Hintergrunddienst, der jede Nacht ohne angemeldeten Benutzer läuft und über Microsoft Graph die Kalender aller Benutzer lesen muss. Welche Berechtigungskonfiguration ist erforderlich?",
+          "Du registrierst einen Hintergrunddienst, der jede Nacht ohne angemeldeten Benutzer läuft und über Microsoft Graph die Kalender aller Benutzer lesen muss. Welche Berechtigungskonfiguration ist erforderlich?",
         options: [
           { id: "A", text: "Delegierte Berechtigungen mit Benutzereinwilligung", rationale: "Delegierte Berechtigungen handeln im Namen eines angemeldeten Benutzers, dieser Dienst läuft aber ohne einen." },
           { id: "B", text: "Anwendungsberechtigungen mit Administratoreinwilligung", rationale: "Richtig. Dienste, die ohne angemeldeten Benutzer laufen, verwenden Anwendungsberechtigungen, für die ein Administrator die Einwilligung erteilen muss." },
-          { id: "C", text: "Eine App-Rolle, die jedem Benutzer zugewiesen wird", rationale: "App-Rollen beschreiben Rollen innerhalb Ihrer eigenen Anwendung; Zugriff auf Microsoft Graph-Daten gewähren sie nicht." },
+          { id: "C", text: "Eine App-Rolle, die jedem Benutzer zugewiesen wird", rationale: "App-Rollen beschreiben Rollen innerhalb deiner eigenen Anwendung; Zugriff auf Microsoft Graph-Daten gewähren sie nicht." },
           { id: "D", text: "Eine Conditional-Access-Richtlinie für die App", rationale: "Conditional Access steuert die Zugriffsbedingungen; API-Berechtigungen gewährt es nicht." },
         ],
         answer: "B",
@@ -418,7 +418,7 @@ export const sc300De: DeContent = {
         objective: "Planen und Implementieren der Berechtigungsverwaltung in Microsoft Entra",
         difficulty: "intermediate",
         question:
-          "Mitarbeitende eines Partnerunternehmens benötigen für ein sechsmonatiges Projekt Zugriff auf ein Team in Teams, eine SharePoint-Website und eine App. Sie sollen den Zugriff selbst beantragen, eine Projektleitung soll ihn genehmigen, und der Zugriff soll automatisch enden. Was sollten Sie erstellen?",
+          "Mitarbeitende eines Partnerunternehmens benötigen für ein sechsmonatiges Projekt Zugriff auf ein Team in Teams, eine SharePoint-Website und eine App. Sie sollen den Zugriff selbst beantragen, eine Projektleitung soll ihn genehmigen, und der Zugriff soll automatisch enden. Was solltest du erstellen?",
         options: [
           { id: "A", text: "Eine Gasteinladung für jede Person, mit späterer manueller Entfernung", rationale: "Manuelle Einladungen und Entfernungen bieten weder Self-Service-Anträge noch Genehmigung oder automatischen Ablauf." },
           { id: "B", text: "Eine dynamische Gruppe auf Basis der E-Mail-Domäne des Partners", rationale: "Eine dynamische Gruppe bietet weder einen Antrags- und Genehmigungsprozess noch einen automatischen Ablauf." },
@@ -427,7 +427,7 @@ export const sc300De: DeContent = {
         ],
         answer: "D",
         explanation:
-          "Die Berechtigungsverwaltung deckt den gesamten Zugriffslebenszyklus für interne und externe Benutzer ab. Über verbundene Organisationen legen Sie fest, welche Partnerbenutzer ein Paket anfordern können, und der Ablauf entfernt den Zugriff ohne manuelles Aufräumen.",
+          "Die Berechtigungsverwaltung deckt den gesamten Zugriffslebenszyklus für interne und externe Benutzer ab. Über verbundene Organisationen legst du fest, welche Partnerbenutzer ein Paket anfordern können, und der Ablauf entfernt den Zugriff ohne manuelles Aufräumen.",
         reference: GUIDE,
       },
       {
@@ -436,7 +436,7 @@ export const sc300De: DeContent = {
         objective: "Planen, Implementieren und Verwalten der Zugriffsüberprüfung in Microsoft Entra",
         difficulty: "foundation",
         question:
-          "Die Auditoren verlangen, dass die Gruppenbesitzer die Mitgliedschaft von Gastbenutzern in einer sensiblen Microsoft 365-Gruppe jedes Quartal bestätigen und dass der Zugriff entfernt wird, wenn er nicht bestätigt wird. Was sollten Sie konfigurieren?",
+          "Die Auditoren verlangen, dass die Gruppenbesitzer die Mitgliedschaft von Gastbenutzern in einer sensiblen Microsoft 365-Gruppe jedes Quartal bestätigen und dass der Zugriff entfernt wird, wenn er nicht bestätigt wird. Was solltest du konfigurieren?",
         options: [
           { id: "A", text: "Eine wiederkehrende Zugriffsüberprüfung der Gruppe, auf Gastbenutzer beschränkt, mit automatischer Anwendung der Ergebnisse", rationale: "Richtig. Zugriffsüberprüfungen können vierteljährlich wiederkehren, sich auf Gäste beschränken, Gruppenbesitzer als Prüfer einsetzen und, je nach Einstellungen, abgelehnten oder nicht überprüften Zugriff automatisch entfernen." },
           { id: "B", text: "Eine Conditional-Access-Richtlinie für Gastbenutzer", rationale: "Conditional Access steuert Anmeldebedingungen; ob ein Zugriff noch benötigt wird, bestätigt es nicht." },
@@ -454,7 +454,7 @@ export const sc300De: DeContent = {
         objective: "Planen und Implementieren von privilegiertem Zugriff",
         difficulty: "intermediate",
         question:
-          "Administratoren sollen die Rolle „Exchange-Administrator“ nur dann innehaben, wenn sie sie benötigen: zeitlich begrenzt, nach Angabe einer Begründung und nach Genehmigung. Wie sollten Sie die Rolle in Privileged Identity Management zuweisen?",
+          "Administratoren sollen die Rolle „Exchange-Administrator“ nur dann innehaben, wenn sie sie benötigen: zeitlich begrenzt, nach Angabe einer Begründung und nach Genehmigung. Wie solltest du die Rolle in Privileged Identity Management zuweisen?",
         options: [
           { id: "A", text: "Als dauerhafte aktive Zuweisung", rationale: "Eine aktive Zuweisung gewährt die Rolle ständig, ohne Aktivierungsschritt." },
           { id: "B", text: "Über eine dynamische Gruppe, der die Rolle dauerhaft zugewiesen ist", rationale: "Gruppen mit dynamischer Mitgliedschaft können keine Microsoft Entra-Rollen zugewiesen werden, und eine dauerhafte Gruppenzuweisung brächte ohnehin weder Aktivierung noch Begründung oder Genehmigung." },
@@ -472,16 +472,16 @@ export const sc300De: DeContent = {
         objective: "Überwachen von Identitätsaktivitäten mithilfe von Protokollen, Arbeitsmappen und Berichten",
         difficulty: "intermediate",
         question:
-          "Das Sicherheitsteam möchte die Anmelde- und Überwachungsprotokolle von Microsoft Entra länger aufbewahren als mit der integrierten Aufbewahrung und sie zusammen mit anderen Protokollen per KQL abfragen. Was sollten Sie konfigurieren?",
+          "Das Sicherheitsteam möchte die Anmelde- und Überwachungsprotokolle von Microsoft Entra länger aufbewahren als mit der integrierten Aufbewahrung und sie zusammen mit anderen Protokollen per KQL abfragen. Was solltest du konfigurieren?",
         options: [
           { id: "A", text: "Eine Zugriffsüberprüfung der Protokolle", rationale: "Zugriffsüberprüfungen prüfen Zugriffsrechte; Protokolle speichern oder weiterleiten können sie nicht." },
           { id: "B", text: "Identity Secure Score", rationale: "Secure Score misst den Sicherheitsstatus; Protokolle exportiert er nicht." },
-          { id: "C", text: "Diagnoseeinstellungen, die die Protokolle an einen Log Analytics-Arbeitsbereich senden", rationale: "Richtig. Diagnoseeinstellungen leiten Entra-Protokolle an Ziele wie einen Log Analytics-Arbeitsbereich weiter, wo Sie sie länger aufbewahren und mit KQL abfragen können." },
+          { id: "C", text: "Diagnoseeinstellungen, die die Protokolle an einen Log Analytics-Arbeitsbereich senden", rationale: "Richtig. Diagnoseeinstellungen leiten Entra-Protokolle an Ziele wie einen Log Analytics-Arbeitsbereich weiter, wo du sie länger aufbewahren und mit KQL abfragen kannst." },
           { id: "D", text: "Ein täglicher CSV-Download aus dem Bereich der Anmeldeprotokolle", rationale: "Manuelle Downloads sind fehleranfällig und ermöglichen keine KQL-Abfragen zusammen mit anderen Protokollen." },
         ],
         answer: "C",
         explanation:
-          "Diagnoseeinstellungen können Protokolle an einen Log Analytics-Arbeitsbereich, ein Speicherkonto oder Azure Event Hubs senden. Log Analytics ist die richtige Wahl, wenn Sie KQL-Abfragen und Arbeitsmappen nutzen möchten.",
+          "Diagnoseeinstellungen können Protokolle an einen Log Analytics-Arbeitsbereich, ein Speicherkonto oder Azure Event Hubs senden. Log Analytics ist die richtige Wahl, wenn du KQL-Abfragen und Arbeitsmappen nutzen möchtest.",
         reference: GUIDE,
       },
     ],

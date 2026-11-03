@@ -88,7 +88,7 @@ export const az104De: DeContent = {
   guide: {
     slug: "az-104",
     summary:
-      "AZ-104 (Microsoft Azure Administrator) prüft, ob Sie eine Azure-Umgebung implementieren, verwalten und überwachen können: Identitäten und Governance, Speicher, Compute, virtuelle Netzwerke sowie Überwachung mit Sicherung und Wiederherstellung. Die Prüfung dauert 100 Minuten, zum Bestehen brauchen Sie 700 Punkte, und die Liste der gemessenen Fähigkeiten wurde zuletzt am 17. April 2026 aktualisiert.",
+      "AZ-104 (Microsoft Azure Administrator) prüft, ob du eine Azure-Umgebung implementieren, verwalten und überwachen kannst: Identitäten und Governance, Speicher, Compute, virtuelle Netzwerke sowie Überwachung mit Sicherung und Wiederherstellung. Die Prüfung dauert 100 Minuten, zum Bestehen brauchst du 700 Punkte, und die Liste der gemessenen Fähigkeiten wurde zuletzt am 17. April 2026 aktualisiert.",
     whoFor: [
       "Cloud- und Systemadministratoren, die Azure-Abonnements im Tagesgeschäft betreuen",
       "IT-Fachleute mit Erfahrung in Servern, Netzwerken und Virtualisierung, die zu Azure wechseln",
@@ -108,7 +108,7 @@ export const az104De: DeContent = {
         heading: "Was sich mit dem Update vom 17. April 2026 geändert hat",
         paragraphs: [
           "Microsoft hat alle Änderungen im Update vom April 2026 als geringfügig eingestuft. Sie betrafen das Zielgruppenprofil und fünf Gruppen von Lernzielen der Gliederung: Azure Files und Blob Storage, virtuelle Maschinen, Container im Azure-Portal, virtuelle Netzwerke und Überwachung. Für Identitäten und Governance gibt es keinen Eintrag im Änderungsprotokoll.",
-          "Die aktuelle Gliederung enthält zum Beispiel die Verschlüsselung auf dem Host für virtuelle Maschinen, Azure Container Apps neben Container Instances, Azure Backup-Tresore neben Recovery Services-Tresoren sowie Network Watcher mit dem Verbindungsmonitor (Connection Monitor). Übersetzte Fassungen der Prüfung werden etwa acht Wochen nach der englischen Version aktualisiert; prüfen Sie daher den Studienleitfaden, wenn Ihr Material älter ist.",
+          "Die aktuelle Gliederung enthält zum Beispiel die Verschlüsselung auf dem Host für virtuelle Maschinen, Azure Container Apps neben Container Instances, Azure Backup-Tresore neben Recovery Services-Tresoren sowie Network Watcher mit dem Verbindungsmonitor (Connection Monitor). Übersetzte Fassungen der Prüfung werden etwa acht Wochen nach der englischen Version aktualisiert; prüfe daher den Studienleitfaden, wenn dein Material älter ist.",
         ],
       },
       {
@@ -116,28 +116,28 @@ export const az104De: DeContent = {
         heading: "Ein Vorbereitungsplan in sechs Schritten",
         steps: [
           {
-            title: "Gleichen Sie Ihren Stand mit dem Studienleitfaden ab",
-            body: "Gehen Sie jeden Punkt der offiziellen AZ-104-Fähigkeitenliste durch und markieren Sie ihn als bekannt, unsicher oder neu. Teilen Sie Ihre Zeit nach den veröffentlichten Prozentsätzen ein: Identitäten und Governance sowie Compute machen jeweils bis zu 25 % aus.",
+            title: "Gleiche deinen Stand mit dem Studienleitfaden ab",
+            body: "Gehe jeden Punkt der offiziellen AZ-104-Fähigkeitenliste durch und markiere ihn als bekannt, unsicher oder neu. Teile deine Zeit nach den veröffentlichten Prozentsätzen ein: Identitäten und Governance sowie Compute machen jeweils bis zu 25 % aus.",
           },
           {
-            title: "Richten Sie ein Lab-Abonnement ein",
-            body: "Verwenden Sie ein kostenloses Azure-Konto oder ein Sandbox-Abonnement und legen Sie von Anfang an Budgets und Warnungen fest. Erstellen Sie Benutzer und Gruppen, weisen Sie Rollen in verschiedenen Bereichen zu, wenden Sie eine Richtlinie und eine Sperre an und löschen Sie die Ressourcengruppen am Ende jeder Sitzung.",
+            title: "Richte ein Lab-Abonnement ein",
+            body: "Verwende ein kostenloses Azure-Konto oder ein Sandbox-Abonnement und lege von Anfang an Budgets und Warnungen fest. Erstelle Benutzer und Gruppen, weise Rollen in verschiedenen Bereichen zu, wende eine Richtlinie und eine Sperre an und lösche die Ressourcengruppen am Ende jeder Sitzung.",
           },
           {
-            title: "Erledigen Sie jede Aufgabe auf drei Wegen",
-            body: "Üben Sie wichtige Aufgaben im Portal, mit Azure CLI oder PowerShell und mit einer ARM-Vorlage oder Bicep-Datei. Die Gliederung erwartet, dass Sie Vorlagen interpretieren, ändern, bereitstellen und exportieren können.",
+            title: "Erledige jede Aufgabe auf drei Wegen",
+            body: "Übe wichtige Aufgaben im Portal, mit Azure CLI oder PowerShell und mit einer ARM-Vorlage oder Bicep-Datei. Die Gliederung erwartet, dass du Vorlagen interpretieren, ändern, bereitstellen und exportieren kannst.",
           },
           {
-            title: "Konzentrieren Sie sich auf Netzwerke und Speicherzugriff",
-            body: "Bauen Sie zwei per Peering verbundene virtuelle Netzwerke mit NSGs, einer benutzerdefinierten Route, einem Load Balancer und Azure Bastion auf. Vergleichen Sie beim Speicher SAS-Token, gespeicherte Zugriffsrichtlinien, Zugriffsschlüssel, Firewalls und private Endpunkte.",
+            title: "Konzentriere dich auf Netzwerke und Speicherzugriff",
+            body: "Baue zwei per Peering verbundene virtuelle Netzwerke mit NSGs, einer benutzerdefinierten Route, einem Load Balancer und Azure Bastion auf. Vergleiche beim Speicher SAS-Token, gespeicherte Zugriffsrichtlinien, Zugriffsschlüssel, Firewalls und private Endpunkte.",
           },
           {
-            title: "Üben Sie unter Zeitdruck",
-            body: "Absolvieren Sie zeitlich begrenzte Übungsprüfungen mit 40–60 Fragen in 100 Minuten und lesen Sie jede Erklärung, auch bei den Fragen, die Sie richtig beantwortet haben.",
+            title: "Übe unter Zeitdruck",
+            body: "Absolviere zeitlich begrenzte Übungsprüfungen mit 40–60 Fragen in 100 Minuten und lies jede Erklärung, auch bei den Fragen, die du richtig beantwortet hast.",
           },
           {
-            title: "Buchen Sie und planen Sie die Verlängerung",
-            body: "Buchen Sie, sobald Sie mehrere Übungsprüfungen mit Abstand bestehen. Die Zertifizierung ist 12 Monate gültig und wird mit einer kostenlosen Onlinebewertung auf Microsoft Learn verlängert.",
+            title: "Buche und plane die Verlängerung",
+            body: "Buche, sobald du mehrere Übungsprüfungen mit Abstand bestehst. Die Zertifizierung ist 12 Monate gültig und wird mit einer kostenlosen Onlinebewertung auf Microsoft Learn verlängert.",
           },
         ],
       },
@@ -147,8 +147,8 @@ export const az104De: DeContent = {
         bullets: [
           "Azure RBAC mit Microsoft Entra-Rollen verwechseln. Azure-Rollen steuern den Zugriff auf Ressourcen; Entra-Rollen steuern Verzeichnisaufgaben wie die Benutzerverwaltung.",
           "Azure Policy und Ressourcensperren durcheinanderbringen. Policy prüft Ressourceneigenschaften und setzt sie durch; Sperren verhindern das Löschen oder Ändern unabhängig von Berechtigungen.",
-          "Dienstendpunkte und private Endpunkte verwechseln. Ein privater Endpunkt gibt dem PaaS-Dienst eine private IP-Adresse in Ihrem virtuellen Netzwerk; ein Dienstendpunkt tut das nicht.",
-          "Nur das Portal lernen. Fragen zu Vorlagen, CLI und PowerShell setzen voraus, dass Sie Code lesen und erkennen, was er bereitstellt.",
+          "Dienstendpunkte und private Endpunkte verwechseln. Ein privater Endpunkt gibt dem PaaS-Dienst eine private IP-Adresse in deinem virtuellen Netzwerk; ein Dienstendpunkt tut das nicht.",
+          "Nur das Portal lernen. Fragen zu Vorlagen, CLI und PowerShell setzen voraus, dass du Code liest und erkennst, was er bereitstellt.",
           "Sicherung und Wiederherstellung auslassen. Recovery Services-Tresore, Backup-Tresore, Sicherungsrichtlinien und das Failover mit Site Recovery kommen alle in der Gliederung vor.",
         ],
       },
@@ -157,12 +157,12 @@ export const az104De: DeContent = {
       {
         question: "Wie lange dauert die AZ-104-Prüfung und wie hoch ist die Bestehensgrenze?",
         answer:
-          "Die Zertifizierungsseite von Microsoft nennt 100 Minuten. Zum Bestehen brauchen Sie 700 Punkte oder mehr. Die genaue Anzahl der Fragen für AZ-104 veröffentlicht Microsoft nicht; laut Microsoft haben die meisten Zertifizierungsprüfungen zwischen 40 und 60 Fragen.",
+          "Die Zertifizierungsseite von Microsoft nennt 100 Minuten. Zum Bestehen brauchst du 700 Punkte oder mehr. Die genaue Anzahl der Fragen für AZ-104 veröffentlicht Microsoft nicht; laut Microsoft haben die meisten Zertifizierungsprüfungen zwischen 40 und 60 Fragen.",
       },
       {
         question: "Wie verlängere ich die Zertifizierung Azure Administrator?",
         answer:
-          "Die Zertifizierung Azure Administrator Associate ist 12 Monate gültig. Sie verlängern sie kostenlos, indem Sie innerhalb des sechsmonatigen Verlängerungszeitraums eine Onlinebewertung auf Microsoft Learn bestehen; damit verlängert sich die Gültigkeit um ein Jahr ab dem Ablaufdatum.",
+          "Die Zertifizierung Azure Administrator Associate ist 12 Monate gültig. Du verlängerst sie kostenlos, indem du innerhalb des sechsmonatigen Verlängerungszeitraums eine Onlinebewertung auf Microsoft Learn bestehst; damit verlängert sich die Gültigkeit um ein Jahr ab dem Ablaufdatum.",
       },
       {
         question: "Was hat sich am 17. April 2026 geändert?",
@@ -172,12 +172,12 @@ export const az104De: DeContent = {
       {
         question: "Kann ich AZ-104 wiederholen, wenn ich nicht bestehe?",
         answer:
-          "Ja. Laut Microsoft müssen Sie vor der ersten Wiederholung 24 Stunden warten und zwischen späteren Versuchen 14 Tage, bei höchstens fünf Versuchen innerhalb von 12 Monaten.",
+          "Ja. Laut Microsoft musst du vor der ersten Wiederholung 24 Stunden warten und zwischen späteren Versuchen 14 Tage, bei höchstens fünf Versuchen innerhalb von 12 Monaten.",
       },
       {
         question: "Gibt es die Prüfung auf Deutsch?",
         answer:
-          "Ja. Microsoft bietet AZ-104 unter anderem auf Deutsch an. Übersetzte Fassungen werden etwa acht Wochen nach der englischen Version aktualisiert; prüfen Sie daher kurz nach einem Update den Studienleitfaden.",
+          "Ja. Microsoft bietet AZ-104 unter anderem auf Deutsch an. Übersetzte Fassungen werden etwa acht Wochen nach der englischen Version aktualisiert; prüfe daher kurz nach einem Update den Studienleitfaden.",
       },
       {
         question: "Sind die CertRamp-Fragen echte Prüfungsfragen?",
@@ -214,7 +214,7 @@ export const az104De: DeContent = {
         objective: "Verwalten des Zugriffs auf Azure-Ressourcen",
         difficulty: "intermediate",
         question:
-          "Ein Entwickler muss alle Ressourcen in der Ressourcengruppe RG-Dev erstellen und verwalten können, darf aber anderen Benutzern keinen Zugriff gewähren. Der Zugriff darf für keine andere Ressourcengruppe gelten. Was sollten Sie tun?",
+          "Ein Entwickler muss alle Ressourcen in der Ressourcengruppe RG-Dev erstellen und verwalten können, darf aber anderen Benutzern keinen Zugriff gewähren. Der Zugriff darf für keine andere Ressourcengruppe gelten. Was solltest du tun?",
         options: [
           { id: "A", text: "Die Rolle Owner (Besitzer) im Bereich des Abonnements zuweisen", rationale: "Owner kann anderen Zugriff gewähren, und der Abonnementbereich umfasst jede Ressourcengruppe." },
           { id: "B", text: "Die Rolle Contributor (Mitwirkender) im Bereich der Ressourcengruppe RG-Dev zuweisen", rationale: "Richtig. Contributor kann alle Ressourcen verwalten, aber keine Rollen zuweisen, und der Ressourcengruppenbereich beschränkt dies auf RG-Dev." },
@@ -223,7 +223,7 @@ export const az104De: DeContent = {
         ],
         answer: "B",
         explanation:
-          "Wählen Sie die integrierte Rolle mit den geringsten Rechten und den engsten Bereich, der die Anforderung erfüllt. Rollenzuweisungen werden nach unten vererbt, daher würde eine Zuweisung auf Abonnementebene jede Ressourcengruppe erreichen.",
+          "Wähle die integrierte Rolle mit den geringsten Rechten und den engsten Bereich, der die Anforderung erfüllt. Rollenzuweisungen werden nach unten vererbt, daher würde eine Zuweisung auf Abonnementebene jede Ressourcengruppe erreichen.",
         reference: GUIDE,
       },
       {
@@ -232,7 +232,7 @@ export const az104De: DeContent = {
         objective: "Verwalten von Azure-Abonnements und Governance",
         difficulty: "intermediate",
         question:
-          "Ihre Organisation verlangt, dass neue Ressourcen nur in den Regionen West Europe und North Europe erstellt werden können. Anforderungen für andere Regionen müssen blockiert werden. Was sollten Sie verwenden?",
+          "Deine Organisation verlangt, dass neue Ressourcen nur in den Regionen West Europe und North Europe erstellt werden können. Anforderungen für andere Regionen müssen blockiert werden. Was solltest du verwenden?",
         options: [
           { id: "A", text: "Eine ReadOnly-Ressourcensperre auf dem Abonnement", rationale: "Eine ReadOnly-Sperre blockiert Änderungen an allen Ressourcen unabhängig von der Region; sie kann nicht einige Regionen erlauben und andere verweigern." },
           { id: "B", text: "Ein Tag namens Region an jeder Ressourcengruppe", rationale: "Tags sind Metadaten; für sich genommen blockieren sie keine Bereitstellungen." },
@@ -250,7 +250,7 @@ export const az104De: DeContent = {
         objective: "Verwalten von Azure-Abonnements und Governance",
         difficulty: "foundation",
         question:
-          "Eine Produktionsressourcengruppe enthält kritische Ressourcen. Administratoren müssen die Einstellungen dieser Ressourcen weiterhin ändern können, aber niemand soll sie versehentlich löschen können. Was sollten Sie konfigurieren?",
+          "Eine Produktionsressourcengruppe enthält kritische Ressourcen. Administratoren müssen die Einstellungen dieser Ressourcen weiterhin ändern können, aber niemand soll sie versehentlich löschen können. Was solltest du konfigurieren?",
         options: [
           { id: "A", text: "Eine CanNotDelete-Sperre (Delete) auf der Ressourcengruppe", rationale: "Richtig. Eine Löschsperre erlaubt das Lesen und Ändern von Ressourcen, verhindert aber das Löschen." },
           { id: "B", text: "Eine ReadOnly-Sperre auf der Ressourcengruppe", rationale: "Eine ReadOnly-Sperre würde auch die erforderlichen Konfigurationsänderungen blockieren." },
@@ -268,7 +268,7 @@ export const az104De: DeContent = {
         objective: "Verwalten von Microsoft Entra-Benutzer*innen und -Gruppen",
         difficulty: "foundation",
         question:
-          "Der Helpdesk verbringt viel Zeit damit, vergessene Kennwörter zurückzusetzen. Eine Pilotgruppe von Benutzern soll ihre Kennwörter nach Bestätigung ihrer Identität selbst zurücksetzen können. Was sollten Sie in Microsoft Entra ID konfigurieren?",
+          "Der Helpdesk verbringt viel Zeit damit, vergessene Kennwörter zurückzusetzen. Eine Pilotgruppe von Benutzern soll ihre Kennwörter nach Bestätigung ihrer Identität selbst zurücksetzen können. Was solltest du in Microsoft Entra ID konfigurieren?",
         options: [
           { id: "A", text: "Azure Policy", rationale: "Azure Policy regelt Azure-Ressourcen, nicht das Zurücksetzen von Benutzerkennwörtern." },
           { id: "B", text: "Eine Ressourcensperre auf dem Verzeichnis", rationale: "Ressourcensperren gelten für Azure-Ressourcen und haben mit Kennwörtern nichts zu tun." },
@@ -288,10 +288,10 @@ export const az104De: DeContent = {
         objective: "Konfigurieren des Zugriffs auf Speicher",
         difficulty: "advanced",
         question:
-          "Sie stellen einem Partner mehrere Dienst-SAS-Token für einen Blobcontainer aus. Sie müssen später alle auf einmal widerrufen können, ohne die Schlüssel des Speicherkontos neu zu generieren. Was sollten Sie beim Erstellen der Token tun?",
+          "Du stellst einem Partner mehrere Dienst-SAS-Token für einen Blobcontainer aus. Du musst später alle auf einmal widerrufen können, ohne die Schlüssel des Speicherkontos neu zu generieren. Was solltest du beim Erstellen der Token tun?",
         options: [
           { id: "A", text: "Sie als Konto-SAS-Token erstellen", rationale: "Eine Konto-SAS kann nicht mit einer gespeicherten Zugriffsrichtlinie verknüpft werden; um sie zu widerrufen, muss der Schlüssel rotiert werden, mit dem sie signiert wurde." },
-          { id: "B", text: "Sie mit einer gespeicherten Zugriffsrichtlinie auf dem Container verknüpfen", rationale: "Richtig. Wenn Sie die gespeicherte Zugriffsrichtlinie löschen, umbenennen oder ihre Ablaufzeit in die Vergangenheit setzen, wird jede damit verknüpfte Dienst-SAS widerrufen." },
+          { id: "B", text: "Sie mit einer gespeicherten Zugriffsrichtlinie auf dem Container verknüpfen", rationale: "Richtig. Wenn du die gespeicherte Zugriffsrichtlinie löschst, umbenennst oder ihre Ablaufzeit in die Vergangenheit setzt, wird jede damit verknüpfte Dienst-SAS widerrufen." },
           { id: "C", text: "Eine sehr lange Ablaufzeit festlegen", rationale: "Eine lange Ablaufzeit verschärft das Problem und ermöglicht keinen Widerruf." },
           { id: "D", text: "Die Blobversionsverwaltung aktivieren", rationale: "Die Versionsverwaltung bewahrt frühere Versionen von Blobs auf; sie steuert nicht die Gültigkeit von SAS-Token." },
         ],
@@ -315,7 +315,7 @@ export const az104De: DeContent = {
         ],
         answer: "C",
         explanation:
-          "Merken Sie sich die zwei Dimensionen: Zonen innerhalb der primären Region (ZRS) und eine Kopie in einer sekundären Region (GRS). GZRS kombiniert beides; RA-GZRS ergänzt den Lesezugriff auf die sekundäre Region.",
+          "Merk dir die zwei Dimensionen: Zonen innerhalb der primären Region (ZRS) und eine Kopie in einer sekundären Region (GRS). GZRS kombiniert beides; RA-GZRS ergänzt den Lesezugriff auf die sekundäre Region.",
         reference: GUIDE,
       },
       {
@@ -324,7 +324,7 @@ export const az104De: DeContent = {
         objective: "Konfigurieren von Azure Files und Azure Blob Storage",
         difficulty: "intermediate",
         question:
-          "Protokolldateien in einem Blobcontainer werden im ersten Monat häufig gelesen, danach selten, und müssen nach einem Jahr gelöscht werden. Das soll automatisch und mit minimalen Kosten geschehen. Was sollten Sie konfigurieren?",
+          "Protokolldateien in einem Blobcontainer werden im ersten Monat häufig gelesen, danach selten, und müssen nach einem Jahr gelöscht werden. Das soll automatisch und mit minimalen Kosten geschehen. Was solltest du konfigurieren?",
         options: [
           { id: "A", text: "Eine Richtlinie für die Blob-Lebenszyklusverwaltung, die Blobs nach Alter in kältere Ebenen verschiebt und nach 365 Tagen löscht", rationale: "Richtig. Regeln der Lebenszyklusverwaltung können Blobs automatisch anhand ihres Alters in andere Ebenen verschieben und löschen." },
           { id: "B", text: "Vorläufiges Löschen (Soft Delete) für Blobs mit einer Aufbewahrungsdauer von 365 Tagen", rationale: "Vorläufiges Löschen hält gelöschte Blobs nur wiederherstellbar; es verschiebt oder löscht Daten nicht automatisch." },
@@ -344,7 +344,7 @@ export const az104De: DeContent = {
         objective: "Erstellen und Konfigurieren von VMs",
         difficulty: "intermediate",
         question:
-          "Zwei virtuelle Maschinen führen dieselbe Webanwendung aus. Die Lösung muss weiterlaufen, wenn ein komplettes Rechenzentrum in der Region nicht mehr verfügbar ist. Wie sollten Sie die VMs bereitstellen?",
+          "Zwei virtuelle Maschinen führen dieselbe Webanwendung aus. Die Lösung muss weiterlaufen, wenn ein komplettes Rechenzentrum in der Region nicht mehr verfügbar ist. Wie solltest du die VMs bereitstellen?",
         options: [
           { id: "A", text: "In derselben Verfügbarkeitsgruppe", rationale: "Verfügbarkeitsgruppen verteilen VMs auf Fehler- und Updatedomänen innerhalb eines Rechenzentrums, sodass ein vollständiger Ausfall des Rechenzentrums beide treffen würde." },
           { id: "B", text: "In unterschiedlichen Ressourcengruppen", rationale: "Ressourcengruppen sind eine Verwaltungsgrenze, keine physische Grenze." },
@@ -353,7 +353,7 @@ export const az104De: DeContent = {
         ],
         answer: "D",
         explanation:
-          "Verfügbarkeitsgruppen schützen vor Hardwareausfällen auf Rack-Ebene und vor Wartungen; Verfügbarkeitszonen schützen vor dem Verlust eines ganzen Rechenzentrums. Wählen Sie die Option, die zu dem im Szenario beschriebenen Ausfall passt.",
+          "Verfügbarkeitsgruppen schützen vor Hardwareausfällen auf Rack-Ebene und vor Wartungen; Verfügbarkeitszonen schützen vor dem Verlust eines ganzen Rechenzentrums. Wähle die Option, die zu dem im Szenario beschriebenen Ausfall passt.",
         reference: GUIDE,
       },
       {
@@ -362,16 +362,16 @@ export const az104De: DeContent = {
         objective: "Automatisieren der Bereitstellung von Ressourcen mithilfe von ARM-Vorlagen (Azure Resource Manager) oder Bicep-Dateien",
         difficulty: "intermediate",
         question:
-          "Ihr Team hat eine vorhandene ARM-Vorlage im JSON-Format und möchte sie künftig als Bicep-Datei pflegen. Wie fangen Sie am effizientesten an?",
+          "Dein Team hat eine vorhandene ARM-Vorlage im JSON-Format und möchte sie künftig als Bicep-Datei pflegen. Wie fängst du am effizientesten an?",
         options: [
           { id: "A", text: "Die Vorlage von Hand in PowerShell neu schreiben", rationale: "PowerShell-Skripte sind kein Bicep, und das manuelle Neuschreiben ist langsam und fehleranfällig." },
           { id: "B", text: "Die ARM-Vorlage mit den Bicep-Tools in eine Bicep-Datei dekompilieren und das Ergebnis prüfen", rationale: "Richtig. Die Bicep-CLI kann JSON-Vorlagen in Bicep dekompilieren; die Ausgabe sollte geprüft und bereinigt werden." },
           { id: "C", text: "Die .json-Datei in .bicep umbenennen", rationale: "Bicep hat eine eigene Syntax; das Umbenennen der Datei konvertiert sie nicht." },
-          { id: "D", text: "Die Vorlage bereitstellen und dann löschen", rationale: "Durch die Bereitstellung entsteht keine Bicep-Datei, die Sie pflegen könnten." },
+          { id: "D", text: "Die Vorlage bereitstellen und dann löschen", rationale: "Durch die Bereitstellung entsteht keine Bicep-Datei, die du pflegen könntest." },
         ],
         answer: "B",
         explanation:
-          "Die Gliederung umfasst das Exportieren einer Bereitstellung als ARM-Vorlage und das Konvertieren einer ARM-Vorlage in eine Bicep-Datei. Das Dekompilieren liefert einen Ausgangspunkt, Sie sollten aber trotzdem Namen, Parameter und etwaige Warnungen prüfen.",
+          "Die Gliederung umfasst das Exportieren einer Bereitstellung als ARM-Vorlage und das Konvertieren einer ARM-Vorlage in eine Bicep-Datei. Das Dekompilieren liefert einen Ausgangspunkt, du solltest aber trotzdem Namen, Parameter und etwaige Warnungen prüfen.",
         reference: GUIDE,
       },
       {
@@ -380,11 +380,11 @@ export const az104De: DeContent = {
         objective: "Erstellen und Konfigurieren von Azure App Service",
         difficulty: "intermediate",
         question:
-          "Sie müssen eine neue Version einer App Service-Web-App in Azure testen und sie dann ohne Ausfallzeit in die Produktion übernehmen, mit der Möglichkeit, bei Problemen schnell zurückzuwechseln. Was sollten Sie verwenden?",
+          "Du musst eine neue Version einer App Service-Web-App in Azure testen und sie dann ohne Ausfallzeit in die Produktion übernehmen, mit der Möglichkeit, bei Problemen schnell zurückzuwechseln. Was solltest du verwenden?",
         options: [
           { id: "A", text: "Einen zweiten App Service-Plan in einer anderen Region", rationale: "Damit entsteht eine separate Bereitstellung, aber kein integrierter Austausch und kein schnelles Rollback." },
           { id: "B", text: "Den App Service-Plan auf mehr Instanzen aufskalieren (horizontal skalieren)", rationale: "Skalieren erhöht die Kapazität; es trennt Test- und Produktionsversion nicht voneinander." },
-          { id: "C", text: "Einen Stagingslot und einen Slotaustausch (Swap)", rationale: "Richtig. Sie stellen in einem Stagingslot bereit, wärmen ihn vor, tauschen ihn mit der Produktion und können bei Bedarf zurücktauschen." },
+          { id: "C", text: "Einen Stagingslot und einen Slotaustausch (Swap)", rationale: "Richtig. Du stellst in einem Stagingslot bereit, wärmst ihn vor, tauschst ihn mit der Produktion und kannst bei Bedarf zurücktauschen." },
           { id: "D", text: "Eine App Service-Sicherung", rationale: "Sicherungen dienen der Wiederherstellung einer App, nicht Releases ohne Ausfallzeit." },
         ],
         answer: "C",
@@ -409,7 +409,7 @@ export const az104De: DeContent = {
         ],
         answer: "A",
         explanation:
-          "Ein Peering verbindet genau zwei virtuelle Netzwerke. Um über einen Hub zu routen, brauchen Sie ein virtuelles Netzwerkgerät (NVA) oder ein Gateway mit benutzerdefinierten Routen; andernfalls verbinden Sie die Netzwerke direkt per Peering.",
+          "Ein Peering verbindet genau zwei virtuelle Netzwerke. Um über einen Hub zu routen, brauchst du ein virtuelles Netzwerkgerät (NVA) oder ein Gateway mit benutzerdefinierten Routen; andernfalls verbinde die Netzwerke direkt per Peering.",
         reference: GUIDE,
       },
       {
@@ -418,16 +418,16 @@ export const az104De: DeContent = {
         objective: "Konfigurieren des sicheren Zugriffs auf virtuelle Netzwerke",
         difficulty: "advanced",
         question:
-          "Eine Azure SQL-Datenbank muss aus Ihrem virtuellen Netzwerk und über ein VPN aus Ihrem lokalen Netzwerk unter einer privaten IP-Adresse erreichbar sein, und der öffentliche Netzwerkzugriff muss deaktiviert werden. Was sollten Sie konfigurieren?",
+          "Eine Azure SQL-Datenbank muss aus deinem virtuellen Netzwerk und über ein VPN aus deinem lokalen Netzwerk unter einer privaten IP-Adresse erreichbar sein, und der öffentliche Netzwerkzugriff muss deaktiviert werden. Was solltest du konfigurieren?",
         options: [
           { id: "A", text: "Einen Dienstendpunkt für Microsoft.Sql im Subnetz", rationale: "Dienstendpunkte halten den Datenverkehr im Azure-Backbone, aber der Dienst nutzt weiterhin seinen öffentlichen Endpunkt, und für lokale Clients gibt es keine private IP-Adresse." },
           { id: "B", text: "Eine NSG-Regel, die Port 1433 zulässt", rationale: "Eine NSG filtert Datenverkehr, gibt der Datenbank aber keine private Adresse." },
           { id: "C", text: "Azure Bastion", rationale: "Bastion bietet RDP- und SSH-Zugriff auf VMs, keinen privaten Zugriff auf PaaS-Dienste." },
-          { id: "D", text: "Einen privaten Endpunkt für die Datenbank im virtuellen Netzwerk", rationale: "Richtig. Ein privater Endpunkt gibt dem Dienst eine private IP-Adresse in Ihrem VNet, die aus per Peering verbundenen Netzwerken und aus dem lokalen Netzwerk erreichbar ist." },
+          { id: "D", text: "Einen privaten Endpunkt für die Datenbank im virtuellen Netzwerk", rationale: "Richtig. Ein privater Endpunkt gibt dem Dienst eine private IP-Adresse in deinem VNet, die aus per Peering verbundenen Netzwerken und aus dem lokalen Netzwerk erreichbar ist." },
         ],
         answer: "D",
         explanation:
-          "Private Endpunkte holen den PaaS-Dienst in Ihren Adressraum, sodass der öffentliche Zugriff abgeschaltet werden kann. Planen Sie DNS so, dass Clients den Dienstnamen in die private IP-Adresse auflösen.",
+          "Private Endpunkte holen den PaaS-Dienst in deinen Adressraum, sodass der öffentliche Zugriff abgeschaltet werden kann. Plane DNS so, dass Clients den Dienstnamen in die private IP-Adresse auflösen.",
         reference: GUIDE,
       },
       {
@@ -445,7 +445,7 @@ export const az104De: DeContent = {
         ],
         answer: "C",
         explanation:
-          "Um effektive Sicherheitsregeln auszuwerten, folgen Sie der Prioritätsreihenfolge: Die niedrigste Nummer wird zuerst geprüft, und die erste passende Regel gewinnt. Damit HTTPS durchkommt, geben Sie der Zulassungsregel eine niedrigere Nummer als der Verweigerungsregel (zum Beispiel 443 mit 100 zulassen und die Verweigerungsregel auf 110 verschieben).",
+          "Um effektive Sicherheitsregeln auszuwerten, folge der Prioritätsreihenfolge: Die niedrigste Nummer wird zuerst geprüft, und die erste passende Regel gewinnt. Damit HTTPS durchkommt, gib der Zulassungsregel eine niedrigere Nummer als der Verweigerungsregel (zum Beispiel 443 mit 100 zulassen und die Verweigerungsregel auf 110 verschieben).",
         reference: GUIDE,
       },
 
@@ -456,7 +456,7 @@ export const az104De: DeContent = {
         objective: "Überwachen von Ressourcen in Azure",
         difficulty: "foundation",
         question:
-          "Wenn die CPU-Auslastung einer Produktions-VM 15 Minuten lang über 90 % liegt, muss das Betriebsteam eine E-Mail und eine SMS erhalten. Was konfigurieren Sie in Azure Monitor?",
+          "Wenn die CPU-Auslastung einer Produktions-VM 15 Minuten lang über 90 % liegt, muss das Betriebsteam eine E-Mail und eine SMS erhalten. Was konfigurierst du in Azure Monitor?",
         options: [
           { id: "A", text: "Eine Diagnoseeinstellung, die Metriken an ein Speicherkonto sendet", rationale: "Diagnoseeinstellungen leiten Daten weiter; sie benachrichtigen niemanden." },
           { id: "B", text: "Eine Metrikwarnungsregel mit einer Aktionsgruppe, die E-Mail- und SMS-Benachrichtigungen enthält", rationale: "Richtig. Die Warnungsregel definiert die Bedingung; die Aktionsgruppe legt fest, wer wie benachrichtigt wird." },
@@ -474,7 +474,7 @@ export const az104De: DeContent = {
         objective: "Implementieren von Sicherung und Wiederherstellung",
         difficulty: "intermediate",
         question:
-          "Geschäftskritische Azure-VMs müssen kontinuierlich in eine sekundäre Region repliziert werden, damit Sie innerhalb von Minuten ein Failover durchführen können, wenn die primäre Region nicht verfügbar ist. Welchen Dienst sollten Sie konfigurieren?",
+          "Geschäftskritische Azure-VMs müssen kontinuierlich in eine sekundäre Region repliziert werden, damit du innerhalb von Minuten ein Failover durchführen kannst, wenn die primäre Region nicht verfügbar ist. Welchen Dienst solltest du konfigurieren?",
         options: [
           { id: "A", text: "Azure Backup mit einer täglichen Sicherungsrichtlinie", rationale: "Tägliche Sicherungen ermöglichen eine Wiederherstellung, aber keine kontinuierliche Replikation und kein schnelles regionales Failover." },
           { id: "B", text: "Vorläufiges Löschen (Soft Delete) für Blobs", rationale: "Vorläufiges Löschen schützt Blobs vor versehentlichem Löschen, nicht VMs vor regionalen Ausfällen." },

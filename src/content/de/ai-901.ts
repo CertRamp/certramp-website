@@ -59,7 +59,7 @@ export const ai901De: DeContent = {
   guide: {
     slug: "ai-901",
     summary:
-      "AI-901 (Microsoft Azure AI Fundamentals) ist die Prüfung für die Zertifizierung Microsoft Certified: Azure AI Fundamentals und hat AI-900 abgelöst, die am 30. Juni 2026 eingestellt wurde. Geprüft werden KI-Konzepte und verantwortungsvolle KI (40–45 %) sowie der Aufbau einfacher KI-Lösungen mit Microsoft Foundry (55–60 %), auf Grundlage der gemessenen Fähigkeiten ab dem 15. April 2026. Zum Bestehen brauchen Sie 700 Punkte, und Fundamentals-Zertifizierungen laufen nicht ab.",
+      "AI-901 (Microsoft Azure AI Fundamentals) ist die Prüfung für die Zertifizierung Microsoft Certified: Azure AI Fundamentals und hat AI-900 abgelöst, die am 30. Juni 2026 eingestellt wurde. Geprüft werden KI-Konzepte und verantwortungsvolle KI (40–45 %) sowie der Aufbau einfacher KI-Lösungen mit Microsoft Foundry (55–60 %), auf Grundlage der gemessenen Fähigkeiten ab dem 15. April 2026. Zum Bestehen brauchst du 700 Punkte, und Fundamentals-Zertifizierungen laufen nicht ab.",
     whoFor: [
       "Einsteigerinnen und Einsteiger in die Entwicklung von KI-Lösungen, die eine erste Azure-KI-Zertifizierung anstreben",
       "Entwicklerinnen und Entwickler mit etwas Python-Erfahrung, die Microsoft Foundry, generative KI und Agents kennenlernen möchten",
@@ -71,7 +71,7 @@ export const ai901De: DeContent = {
         heading: "Was AI-901 tatsächlich prüft",
         paragraphs: [
           "AI-901 hat zwei Fähigkeitsbereiche. „Identifizieren von KI-Konzepten und Funktionen“ (Identify AI concepts and capabilities, 40–45 %) umfasst die sechs Prinzipien verantwortungsvoller KI, die Funktionsweise generativer KI-Modelle, die Auswahl eines Modells samt Bereitstellungsoptionen und Parametern sowie das Erkennen gängiger Workloads: generative und agentische KI, Textanalyse, Sprache, Computer Vision und Informationsextraktion.",
-          "„Implementieren von KI-Lösungen mithilfe von Microsoft Foundry“ (Implement AI solutions by using Microsoft Foundry, 55–60 %) ist der größere Bereich. Erwartet wird, dass Sie System- und Benutzerprompts schreiben, ein Modell bereitstellen und im Foundry-Portal nutzen, schlanke Client-Apps mit dem Foundry SDK erstellen, einen einzelnen Agent erstellen und testen sowie Azure Speech, multimodale Modelle, Bildgenerierung und Azure Content Understanding in Foundry Tools einsetzen.",
+          "„Implementieren von KI-Lösungen mithilfe von Microsoft Foundry“ (Implement AI solutions by using Microsoft Foundry, 55–60 %) ist der größere Bereich. Erwartet wird, dass du System- und Benutzerprompts schreibst, ein Modell bereitstellst und im Foundry-Portal nutzt, schlanke Client-Apps mit dem Foundry SDK erstellst, einen einzelnen Agent erstellst und testest sowie Azure Speech, multimodale Modelle, Bildgenerierung und Azure Content Understanding in Foundry Tools einsetzt.",
         ],
       },
       {
@@ -79,7 +79,7 @@ export const ai901De: DeContent = {
         heading: "AI-901 im Vergleich zur eingestellten AI-900",
         paragraphs: [
           "AI-900 wurde am 30. Juni 2026 eingestellt. Für die Zertifizierung Microsoft Certified: Azure AI Fundamentals legen Kandidatinnen und Kandidaten jetzt AI-901 ab. Der Name der Zertifizierung bleibt gleich, die Prüfung ist aber praxisnäher: Mehr als die Hälfte der Fähigkeiten betrifft die Implementierung von Lösungen in Microsoft Foundry statt der bloßen Beschreibung von Diensten.",
-          "Laut der Zertifizierungsseite von Microsoft sollten Kandidatinnen und Kandidaten konzeptionelles Wissen über KI-Lösungen in Azure, Kenntnisse der Python-Syntax und von Programmiertechniken sowie Vertrautheit mit Azure-Ressourcen, REST-APIs, SDKs und CLIs mitbringen. Wenn Ihre Unterlagen auf älteren AI-900-Themen wie klassischem Machine Learning in Azure aufbauen, gleichen Sie sie mit dem aktuellen AI-901-Studienleitfaden ab.",
+          "Laut der Zertifizierungsseite von Microsoft sollten Kandidatinnen und Kandidaten konzeptionelles Wissen über KI-Lösungen in Azure, Kenntnisse der Python-Syntax und von Programmiertechniken sowie Vertrautheit mit Azure-Ressourcen, REST-APIs, SDKs und CLIs mitbringen. Wenn deine Unterlagen auf älteren AI-900-Themen wie klassischem Machine Learning in Azure aufbauen, gleiche sie mit dem aktuellen AI-901-Studienleitfaden ab.",
         ],
       },
       {
@@ -88,23 +88,23 @@ export const ai901De: DeContent = {
         steps: [
           {
             title: "Eigenen Stand am Studienleitfaden messen",
-            body: "Gehen Sie jeden Punkt der offiziellen Liste der gemessenen Fähigkeiten für AI-901 durch und markieren Sie ihn als bekannt, unsicher oder neu. Der Implementierungsbereich mit Foundry macht 55–60 % aus, planen Sie also den Großteil Ihrer Zeit dafür ein.",
+            body: "Gehe jeden Punkt der offiziellen Liste der gemessenen Fähigkeiten für AI-901 durch und markiere ihn als bekannt, unsicher oder neu. Der Implementierungsbereich mit Foundry macht 55–60 % aus, plane also den Großteil deiner Zeit dafür ein.",
           },
           {
             title: "Die Konzepte genau lernen",
-            body: "Sie sollten die sechs Prinzipien verantwortungsvoller KI in einem Szenario auseinanderhalten, grob erklären können, wie ein generatives Modell seine Ausgabe erzeugt, und für einen geschäftlichen Bedarf den passenden Workload benennen können: Textanalyse, Sprache, Computer Vision, Bildgenerierung oder Informationsextraktion.",
+            body: "Du solltest die sechs Prinzipien verantwortungsvoller KI in einem Szenario auseinanderhalten, grob erklären können, wie ein generatives Modell seine Ausgabe erzeugt, und für einen geschäftlichen Bedarf den passenden Workload benennen können: Textanalyse, Sprache, Computer Vision, Bildgenerierung oder Informationsextraktion.",
           },
           {
             title: "In Microsoft Foundry praktisch arbeiten",
-            body: "Stellen Sie ein Chatmodell bereit, testen Sie Systemprompts im Playground, erstellen Sie einen einzelnen Agent und rufen Sie eine Bereitstellung aus einem kurzen Python-Skript mit dem Foundry SDK auf. Probieren Sie einen multimodalen Prompt mit einem Bild und eine Extraktionsaufgabe mit Content Understanding aus.",
+            body: "Stelle ein Chatmodell bereit, teste Systemprompts im Playground, erstelle einen einzelnen Agent und rufe eine Bereitstellung aus einem kurzen Python-Skript mit dem Foundry SDK auf. Probiere einen multimodalen Prompt mit einem Bild und eine Extraktionsaufgabe mit Content Understanding aus.",
           },
           {
             title: "Die Microsoft-Learn-Lernpfade durcharbeiten",
-            body: "Nutzen Sie die kostenlosen AI-901-Lernpfade auf Microsoft Learn und gleichen Sie jedes Modul mit den aktuellen gemessenen Fähigkeiten ab.",
+            body: "Nutze die kostenlosen AI-901-Lernpfade auf Microsoft Learn und gleiche jedes Modul mit den aktuellen gemessenen Fähigkeiten ab.",
           },
           {
             title: "Unter Zeitdruck üben",
-            body: "Absolvieren Sie Übungsprüfungen auf Zeit und lesen Sie jede Erklärung, auch bei Fragen, die Sie richtig beantwortet haben. Buchen Sie die Prüfung, sobald Sie mehrere Übungsprüfungen mit Abstand bestehen.",
+            body: "Absolviere Übungsprüfungen auf Zeit und lies jede Erklärung, auch bei Fragen, die du richtig beantwortet hast. Buche die Prüfung, sobald du mehrere Übungsprüfungen mit Abstand bestehst.",
           },
         ],
       },
@@ -113,7 +113,7 @@ export const ai901De: DeContent = {
         heading: "Häufige Fehler bei der Vorbereitung",
         bullets: [
           "Nur mit AI-900-Material lernen. Die Nachfolgeprüfung legt mehr Gewicht auf das Entwickeln mit Microsoft Foundry, auf Agents und auf generative Modelle.",
-          "Die Prinzipien verantwortungsvoller KI verwechseln. Transparenz, Verantwortlichkeit und Fairness werden leicht verwechselt: lernen Sie, wie jedes Prinzip in einer konkreten Situation aussieht.",
+          "Die Prinzipien verantwortungsvoller KI verwechseln. Transparenz, Verantwortlichkeit und Fairness werden leicht verwechselt: lerne, wie jedes Prinzip in einer konkreten Situation aussieht.",
           "Systemprompt und Benutzerprompt verwechseln. Verhalten, Tonfall und Grenzen für das gesamte Gespräch gehören in den Systemprompt.",
           "Modell und Agent gleichsetzen. Ein Agent kombiniert ein Modell mit Anweisungen und Tools, damit er Aktionen ausführen kann.",
           "Die praktischen Teile überspringen. Ein Modell bereitzustellen, es im Portal zu testen und aus Code aufzurufen, macht die Szenariofragen deutlich leichter.",
@@ -124,12 +124,12 @@ export const ai901De: DeContent = {
       {
         question: "Wie hoch ist die Bestehensgrenze für AI-901, und wie lange dauert die Prüfung?",
         answer:
-          "Microsoft verlangt zum Bestehen 700 oder mehr. Die AI-901-Prüfungsseite nennt keine Dauer; die Microsoft-Seite zur Prüfungsdauer gibt für Fundamentals-Prüfungen 45 Minuten Prüfungszeit (65 Minuten Gesamtzeit am Platz) an. Prüfen Sie bei der Anmeldung, welche Prüfungszeit Ihnen angezeigt wird.",
+          "Microsoft verlangt zum Bestehen 700 oder mehr. Die AI-901-Prüfungsseite nennt keine Dauer; die Microsoft-Seite zur Prüfungsdauer gibt für Fundamentals-Prüfungen 45 Minuten Prüfungszeit (65 Minuten Gesamtzeit am Platz) an. Prüfe bei der Anmeldung, welche Prüfungszeit dir angezeigt wird.",
       },
       {
         question: "Kann ich AI-900 noch ablegen?",
         answer:
-          "Nein. AI-900 wurde am 30. Juni 2026 eingestellt. Für Microsoft Certified: Azure AI Fundamentals legen Sie jetzt AI-901 ab.",
+          "Nein. AI-900 wurde am 30. Juni 2026 eingestellt. Für Microsoft Certified: Azure AI Fundamentals legst du jetzt AI-901 ab.",
       },
       {
         question: "Läuft die Zertifizierung Azure AI Fundamentals ab?",
@@ -280,7 +280,7 @@ export const ai901De: DeContent = {
         ],
         answer: "A",
         explanation:
-          "Der Studienleitfaden nennt Stichwortextraktion, Entitätserkennung, Stimmungsanalyse und Zusammenfassung als gängige Textanalysetechniken. Wählen Sie die Technik passend zu der Ausgabe, die das Unternehmen braucht.",
+          "Der Studienleitfaden nennt Stichwortextraktion, Entitätserkennung, Stimmungsanalyse und Zusammenfassung als gängige Textanalysetechniken. Wähle die Technik passend zu der Ausgabe, die das Unternehmen braucht.",
         reference: GUIDE,
       },
       {
@@ -298,7 +298,7 @@ export const ai901De: DeContent = {
         ],
         answer: "D",
         explanation:
-          "Spracherkennung ist Speech-to-Text, Sprachsynthese ist Text-to-Speech. Stellen Sie sicher, dass Sie die beiden Richtungen in einem Szenario auseinanderhalten können.",
+          "Spracherkennung ist Speech-to-Text, Sprachsynthese ist Text-to-Speech. Stelle sicher, dass du die beiden Richtungen in einem Szenario auseinanderhalten kannst.",
         reference: GUIDE,
       },
 
@@ -309,7 +309,7 @@ export const ai901De: DeContent = {
         objective: "Implementieren von generativen KI-Apps und -Agents mithilfe von Foundry",
         difficulty: "foundation",
         question:
-          "Sie entwickeln eine Support-Chat-App auf Basis eines in Microsoft Foundry bereitgestellten Modells. Der Assistent soll immer höflich antworten, nur über die Produkte Ihres Unternehmens sprechen und themenfremde Anfragen ablehnen. Wo sollten Sie diese Anweisungen hinterlegen?",
+          "Du entwickelst eine Support-Chat-App auf Basis eines in Microsoft Foundry bereitgestellten Modells. Der Assistent soll immer höflich antworten, nur über die Produkte deines Unternehmens sprechen und themenfremde Anfragen ablehnen. Wo solltest du diese Anweisungen hinterlegen?",
         options: [
           { id: "A", text: "Im Systemprompt", rationale: "Richtig. Der Systemprompt legt Rolle, Tonfall und Grenzen des Modells für das gesamte Gespräch fest." },
           { id: "B", text: "In jedem Benutzerprompt, vom Kunden eingegeben", rationale: "Man kann sich nicht darauf verlassen, dass Kunden Anweisungen hinzufügen, und sie könnten diese ändern oder entfernen." },
@@ -327,7 +327,7 @@ export const ai901De: DeContent = {
         objective: "Implementieren von generativen KI-Apps und -Agents mithilfe von Foundry",
         difficulty: "intermediate",
         question:
-          "Ein schlanker Python-Chatclient soll ein Modell aus dem Foundry-Modellkatalog aufrufen. Was muss in Ihrem Foundry-Projekt vorhanden sein, bevor der Client Prompts an das Modell senden kann?",
+          "Ein schlanker Python-Chatclient soll ein Modell aus dem Foundry-Modellkatalog aufrufen. Was muss in deinem Foundry-Projekt vorhanden sein, bevor der Client Prompts an das Modell senden kann?",
         options: [
           { id: "A", text: "Eine feinabgestimmte (fine-tuned) Version des Modells", rationale: "Feinabstimmung ist optional; Basismodelle können direkt verwendet werden." },
           { id: "B", text: "Eine Bereitstellung (Deployment) des Modells", rationale: "Richtig. Der Client ruft eine Modellbereitstellung über deren Endpunkt auf; ein Katalogeintrag allein kann nicht aufgerufen werden." },
@@ -336,7 +336,7 @@ export const ai901De: DeContent = {
         ],
         answer: "B",
         explanation:
-          "In Foundry stellen Sie zuerst ein Modell bereit, testen es im Portal und rufen die Bereitstellung dann mit dem Foundry SDK aus Code auf. Der Code verweist auf die Bereitstellung, nicht nur auf das Modell im Katalog.",
+          "In Foundry stellst du zuerst ein Modell bereit, testest es im Portal und rufst die Bereitstellung dann mit dem Foundry SDK aus Code auf. Der Code verweist auf die Bereitstellung, nicht nur auf das Modell im Katalog.",
         reference: GUIDE,
       },
       {
@@ -354,7 +354,7 @@ export const ai901De: DeContent = {
         ],
         answer: "C",
         explanation:
-          "Der Unterschied zwischen einer Chat-App und einem Agent ist die Fähigkeit, Tools zu nutzen und zu handeln. Der Studienleitfaden erwartet, dass Sie im Foundry-Portal eine Lösung mit einem einzelnen Agent erstellen und testen.",
+          "Der Unterschied zwischen einer Chat-App und einem Agent ist die Fähigkeit, Tools zu nutzen und zu handeln. Der Studienleitfaden erwartet, dass du im Foundry-Portal eine Lösung mit einem einzelnen Agent erstellst und testest.",
         reference: GUIDE,
       },
       {
@@ -408,7 +408,7 @@ export const ai901De: DeContent = {
         ],
         answer: "B",
         explanation:
-          "Visuelle Eingaben in Prompts zu interpretieren ist eine ausdrücklich genannte AI-901-Fähigkeit. Trennen Sie das Verstehen von Bildern (multimodale Eingabe) vom Erzeugen von Bildern (generative Bildmodelle).",
+          "Visuelle Eingaben in Prompts zu interpretieren ist eine ausdrücklich genannte AI-901-Fähigkeit. Trenne das Verstehen von Bildern (multimodale Eingabe) vom Erzeugen von Bildern (generative Bildmodelle).",
         reference: GUIDE,
       },
       {
@@ -426,7 +426,7 @@ export const ai901De: DeContent = {
         ],
         answer: "C",
         explanation:
-          "Neue visuelle Ausgaben mit generativen Modellen zu erstellen, gehört zu den Vision-Fähigkeiten. Verantwortungsvolle KI gilt auch hier: Prüfen Sie generierte Bilder vor der Verwendung.",
+          "Neue visuelle Ausgaben mit generativen Modellen zu erstellen, gehört zu den Vision-Fähigkeiten. Verantwortungsvolle KI gilt auch hier: Prüfe generierte Bilder vor der Verwendung.",
         reference: GUIDE,
       },
       {
@@ -444,7 +444,7 @@ export const ai901De: DeContent = {
         ],
         answer: "D",
         explanation:
-          "Die Fähigkeiten zur Informationsextraktion drehen sich um Azure Content Understanding. Es funktioniert mit Dokumenten, Bildern, Audio und Video, und der Studienleitfaden erwartet, dass Sie eine schlanke Anwendung erstellen, die es nutzt.",
+          "Die Fähigkeiten zur Informationsextraktion drehen sich um Azure Content Understanding. Es funktioniert mit Dokumenten, Bildern, Audio und Video, und der Studienleitfaden erwartet, dass du eine schlanke Anwendung erstellst, die es nutzt.",
         reference: GUIDE,
       },
     ],

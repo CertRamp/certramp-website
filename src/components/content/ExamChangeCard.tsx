@@ -27,7 +27,7 @@ const t = {
       "outline-update": "Neue Gliederung",
     },
     successor: "Nachfolger",
-    meaning: "Was das für Sie bedeutet",
+    meaning: "Was das für dich bedeutet",
     source: "Offizielle Quelle",
     checked: "geprüft am",
     newTab: "öffnet in neuem Tab",

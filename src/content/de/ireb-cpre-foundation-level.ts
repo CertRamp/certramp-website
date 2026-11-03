@@ -17,7 +17,7 @@ export const irebCpreDe: DeContent = {
   slug: "ireb-cpre-foundation-level",
   name: "IREB CPRE Foundation Level",
   languageNote:
-    "Die Prüfung wird laut IREB-Factsheet auch auf Deutsch angeboten; Sie legen sie bei einer IREB-lizenzierten Zertifizierungsstelle ab.",
+    "Die Prüfung wird laut IREB-Factsheet auch auf Deutsch angeboten; du legst sie bei einer IREB-lizenzierten Zertifizierungsstelle ab.",
   facts: [
     { label: "Prüfungsanbieter", value: "IREB" },
     { label: "Fragen", value: "Ca. 45" },
@@ -49,7 +49,7 @@ export const irebCpreDe: DeContent = {
   guide: {
     slug: "ireb-cpre-foundation-level",
     summary:
-      "Der IREB CPRE Foundation Level ist das internationale Einstiegszertifikat für Requirements Engineering. Die Prüfung umfasst ca. 45 Multiple-Choice-Fragen in 75 Minuten (90 Minuten für Nicht-Muttersprachler auf Antrag), und Sie bestehen mit mindestens 70 % der Punkte. Grundlage ist der Lehrplan 3.3.0 (Stand 1. April 2026) mit sieben Kapiteln.",
+      "Der IREB CPRE Foundation Level ist das internationale Einstiegszertifikat für Requirements Engineering. Die Prüfung umfasst ca. 45 Multiple-Choice-Fragen in 75 Minuten (90 Minuten für Nicht-Muttersprachler auf Antrag), und du bestehst mit mindestens 70 % der Punkte. Grundlage ist der Lehrplan 3.3.0 (Stand 1. April 2026) mit sieben Kapiteln.",
     whoFor: [
       "Business-Analysten, Product Owner und Requirements Engineers",
       "Entwickler, Tester und Architekten, die täglich mit Anforderungen arbeiten",
@@ -61,15 +61,15 @@ export const irebCpreDe: DeContent = {
         heading: "So läuft die Prüfung ab",
         paragraphs: [
           "Die Prüfung wird von IREB-lizenzierten Zertifizierungsstellen durchgeführt, entweder direkt im Anschluss an eine Schulung oder als eigenständige Prüfung in einem Prüfungszentrum; einige Stellen bieten auch Remote-Prüfungen an. Formale Voraussetzungen gibt es nicht, der Lehrplan setzt jedoch Grundkenntnisse in der Systementwicklung mit planbasierten und agilen Ansätzen voraus.",
-          "Alle Fragen sind Multiple-Choice-Fragen, und zwar in drei Arten: Einfachauswahl (A-Fragen), Mehrfachauswahl (P-Fragen) und Richtig/Falsch-Fragen (K-Fragen). Eine Frage bringt ein bis drei Punkte; die Punktzahl steht im Fragenkopf. Da P- und K-Fragen aus mehreren Teilen bestehen, lesen Sie jede Aussage sorgfältig: lückenhaftes Wissen kostet hier schnell Punkte.",
+          "Alle Fragen sind Multiple-Choice-Fragen, und zwar in drei Arten: Einfachauswahl (A-Fragen), Mehrfachauswahl (P-Fragen) und Richtig/Falsch-Fragen (K-Fragen). Eine Frage bringt ein bis drei Punkte; die Punktzahl steht im Fragenkopf. Da P- und K-Fragen aus mehreren Teilen bestehen, lies jede Aussage sorgfältig: lückenhaftes Wissen kostet hier schnell Punkte.",
         ],
       },
       {
         id: "where-to-focus",
-        heading: "Worauf Sie sich konzentrieren sollten",
+        heading: "Worauf du dich konzentrieren solltest",
         paragraphs: [
-          "Der Lehrplan nennt keine Prüfungsgewichtung pro Kapitel, wohl aber Schulungszeiten, und diese zeigen, wo die Tiefe liegt. Kapitel 3 (Arbeitsprodukte und Dokumentationspraktiken) hat sieben Stunden und Kapitel 4 (Praktiken für die Erarbeitung von Anforderungen) viereinhalb: zusammen fast zwei Drittel der insgesamt 17 Std. 45 Min. Beide liegen auf der kognitiven Stufe K3 (Anwenden; im englischen Lehrplan L3). Sie müssen die Inhalte also anwenden können, zum Beispiel eine Anforderung mit einer Schablone formulieren oder Stakeholder identifizieren und eine Stakeholder-Liste erstellen.",
-          "Vernachlässigen Sie die kurzen Kapitel nicht. Die neun Prinzipien aus Kapitel 2, die Facetten und Konfigurationen des RE-Prozesses aus Kapitel 5 sowie Verfolgbarkeit und Priorisierung aus Kapitel 6 liefern viele kompakte Fragen, bei denen Sie leicht punkten, wenn Sie die Begriffe genau kennen.",
+          "Der Lehrplan nennt keine Prüfungsgewichtung pro Kapitel, wohl aber Schulungszeiten, und diese zeigen, wo die Tiefe liegt. Kapitel 3 (Arbeitsprodukte und Dokumentationspraktiken) hat sieben Stunden und Kapitel 4 (Praktiken für die Erarbeitung von Anforderungen) viereinhalb: zusammen fast zwei Drittel der insgesamt 17 Std. 45 Min. Beide liegen auf der kognitiven Stufe K3 (Anwenden; im englischen Lehrplan L3). Du musst die Inhalte also anwenden können, zum Beispiel eine Anforderung mit einer Schablone formulieren oder Stakeholder identifizieren und eine Stakeholder-Liste erstellen.",
+          "Vernachlässige die kurzen Kapitel nicht. Die neun Prinzipien aus Kapitel 2, die Facetten und Konfigurationen des RE-Prozesses aus Kapitel 5 sowie Verfolgbarkeit und Priorisierung aus Kapitel 6 liefern viele kompakte Fragen, bei denen du leicht punktest, wenn du die Begriffe genau kennst.",
         ],
       },
       {
@@ -78,27 +78,27 @@ export const irebCpreDe: DeContent = {
         steps: [
           {
             title: "Lehrplan 3.3.0 vollständig lesen",
-            body: "Laden Sie den kostenlosen Lehrplan bei IREB herunter. Er legt genau fest, was geprüft werden kann, einschließlich aller Lernziele. Achten Sie darauf, dass Ihr Buch oder Kurs der Version 3.3.0 folgt.",
+            body: "Lade den kostenlosen Lehrplan bei IREB herunter. Er legt genau fest, was geprüft werden kann, einschließlich aller Lernziele. Achte darauf, dass dein Buch oder Kurs der Version 3.3.0 folgt.",
           },
           {
             title: "Begriffe präzise lernen",
-            body: "Legen Sie sich ein eigenes Glossar an: Arten von Anforderungen, die neun Prinzipien, Qualitätskriterien, Konfliktarten, Arten von Sichten, Verfolgbarkeit. Viele Fragen hängen an der genauen Bedeutung eines Begriffs.",
+            body: "Lege dir ein eigenes Glossar an: Arten von Anforderungen, die neun Prinzipien, Qualitätskriterien, Konfliktarten, Arten von Sichten, Verfolgbarkeit. Viele Fragen hängen an der genauen Bedeutung eines Begriffs.",
           },
           {
             title: "Die K3-Fertigkeiten üben",
-            body: "Formulieren Sie Anforderungen mit Satzschablonen (z. B. EARS oder der Satzschablone nach Rupp), eine User Story im Format nach Cohn und einen Use Case mit einer Formularvorlage. Zeichnen Sie ein einfaches UML-Klassendiagramm und ein UML-Aktivitätsdiagramm, und üben Sie das Lesen von Kontextdiagrammen und Zustandsmaschinen.",
+            body: "Formuliere Anforderungen mit Satzschablonen (z. B. EARS oder der Satzschablone nach Rupp), eine User Story im Format nach Cohn und einen Use Case mit einer Formularvorlage. Zeichne ein einfaches UML-Klassendiagramm und ein UML-Aktivitätsdiagramm, und übe das Lesen von Kontextdiagrammen und Zustandsmaschinen.",
           },
           {
             title: "Die Entscheidungstabellen lernen",
-            body: "Welche Ermittlungstechnik in welcher Situation, welche Technik zur Konfliktlösung, welche Validierungstechnik, welche Prozesskonfiguration: Üben Sie diese Entscheidungen, denn sie prüfen die Lernziele der Stufen K2 und K3.",
+            body: "Welche Ermittlungstechnik in welcher Situation, welche Technik zur Konfliktlösung, welche Validierungstechnik, welche Prozesskonfiguration: Übe diese Entscheidungen, denn sie prüfen die Lernziele der Stufen K2 und K3.",
           },
           {
             title: "Mit Zeitlimit üben",
-            body: "Bearbeiten Sie vollständige Übungsprüfungen mit 45 Fragen in 75 Minuten, einschließlich der mehrteiligen Fragetypen P und K, und lesen Sie jede Erklärung.",
+            body: "Bearbeite vollständige Übungsprüfungen mit 45 Fragen in 75 Minuten, einschließlich der mehrteiligen Fragetypen P und K, und lies jede Erklärung.",
           },
           {
             title: "Mit Puffer buchen",
-            body: "Sie brauchen 70 %. Buchen Sie die Prüfung, sobald Sie in mehreren Übungsprüfungen deutlich darüber liegen, damit am Prüfungstag nicht ein paar knifflige Fragen über das Ergebnis entscheiden.",
+            body: "Du brauchst 70 %. Buche die Prüfung, sobald du in mehreren Übungsprüfungen deutlich darüber liegst, damit am Prüfungstag nicht ein paar knifflige Fragen über das Ergebnis entscheiden.",
           },
         ],
       },
@@ -106,11 +106,11 @@ export const irebCpreDe: DeContent = {
         id: "common-mistakes",
         heading: "Typische Fehler bei der Vorbereitung",
         bullets: [
-          "Mit Material für ältere Lehrplanversionen lernen. Prüfen Sie, ob Ihre Quellen den Lehrplan 3.3.0 abdecken.",
-          "Aus der eigenen Projekterfahrung antworten statt nach dem Lehrplan. Die Prüfung folgt den Definitionen von IREB, die vom Sprachgebrauch in Ihrem Unternehmen abweichen können.",
+          "Mit Material für ältere Lehrplanversionen lernen. Prüfe, ob deine Quellen den Lehrplan 3.3.0 abdecken.",
+          "Aus der eigenen Projekterfahrung antworten statt nach dem Lehrplan. Die Prüfung folgt den Definitionen von IREB, die vom Sprachgebrauch in deinem Unternehmen abweichen können.",
           "Die Qualitätskriterien für einzelne Anforderungen mit denen für Arbeitsprodukte verwechseln.",
           "Systemgrenze und Kontextgrenze verwechseln oder Erhebungstechniken mit Entwurfs- und Ideenfindungstechniken.",
-          "K- und P-Fragen zu schnell beantworten. Jede Aussage zählt, also bewerten Sie jede Option für sich.",
+          "K- und P-Fragen zu schnell beantworten. Jede Aussage zählt, also bewerte jede Option für sich.",
         ],
       },
     ],
@@ -118,7 +118,7 @@ export const irebCpreDe: DeContent = {
       {
         question: "Wie viele Fragen hat die Prüfung zum CPRE Foundation Level?",
         answer:
-          "Laut IREB-Prüfungsordnung ca. 45 Multiple-Choice-Fragen. Jede Frage bringt ein bis drei Punkte, und Sie benötigen mindestens 70 % der Gesamtpunktzahl, um zu bestehen.",
+          "Laut IREB-Prüfungsordnung ca. 45 Multiple-Choice-Fragen. Jede Frage bringt ein bis drei Punkte, und du benötigst mindestens 70 % der Gesamtpunktzahl, um zu bestehen.",
       },
       {
         question: "Wie lange dauert die Prüfung?",
@@ -138,7 +138,7 @@ export const irebCpreDe: DeContent = {
       {
         question: "Gibt es die Prüfung auf Deutsch?",
         answer:
-          "Ja. Laut IREB-Factsheet wird die Prüfung unter anderem auf Deutsch angeboten. Welche Sprachen und Termine konkret verfügbar sind, erfahren Sie bei Ihrer Zertifizierungsstelle. Wenn Sie die Prüfung nicht in Ihrer Muttersprache ablegen, können Sie schriftlich und mit Begründung 90 statt 75 Minuten beantragen.",
+          "Ja. Laut IREB-Factsheet wird die Prüfung unter anderem auf Deutsch angeboten. Welche Sprachen und Termine konkret verfügbar sind, erfährst du bei deiner Zertifizierungsstelle. Wenn du die Prüfung nicht in deiner Muttersprache ablegst, kannst du schriftlich und mit Begründung 90 statt 75 Minuten beantragen.",
       },
       {
         question: "Sind die CertRamp-Fragen echte Prüfungsfragen?",
@@ -286,7 +286,7 @@ export const irebCpreDe: DeContent = {
           "LZ 3.4.4 Verstehen, wie man einen geeigneten Modelltyp zur Spezifizierung von Anforderungen in einer bestimmten Situation auswählt",
         difficulty: "intermediate",
         question:
-          "Sie möchten die Schritte eines Geschäftsprozesses spezifizieren, einschließlich Entscheidungen und parallel ablaufender Schritte. Welcher Modelltyp ist am besten geeignet?",
+          "Du möchtest die Schritte eines Geschäftsprozesses spezifizieren, einschließlich Entscheidungen und parallel ablaufender Schritte. Welcher Modelltyp ist am besten geeignet?",
         options: [
           { id: "A", text: "UML-Klassendiagramm", rationale: "Klassendiagramme spezifizieren Daten und die Objekte einer Domäne mit ihren Beziehungen, keine Prozessschritte." },
           { id: "B", text: "Kontextdiagramm", rationale: "Ein Kontextdiagramm zeigt das System in seiner Umgebung und die Schnittstellen, nicht den internen Prozessablauf." },
@@ -295,7 +295,7 @@ export const irebCpreDe: DeContent = {
         ],
         answer: "D",
         explanation:
-          "Wählen Sie das Modell passend zum Aspekt: Struktur und Daten → Klassendiagramm; Funktion und Ablauf → Aktivitäts- oder Prozessmodell; Zustand und Verhalten → Zustandsmaschine; Kontext → Kontextdiagramm.",
+          "Wähle das Modell passend zum Aspekt: Struktur und Daten → Klassendiagramm; Funktion und Ablauf → Aktivitäts- oder Prozessmodell; Zustand und Verhalten → Zustandsmaschine; Kontext → Kontextdiagramm.",
         reference: SYLLABUS,
       },
 
@@ -315,7 +315,7 @@ export const irebCpreDe: DeContent = {
         ],
         answer: "B",
         explanation:
-          "Das Kano-Modell hilft Ihnen, Anforderungen zu finden, die Stakeholder nicht erwähnen: Erhebungstechniken helfen, Leistungs- und Basisfaktoren zu ermitteln, während Entwurfs- und Ideenfindungstechniken oft zu Begeisterungsfaktoren führen.",
+          "Das Kano-Modell hilft dir, Anforderungen zu finden, die Stakeholder nicht erwähnen: Erhebungstechniken helfen, Leistungs- und Basisfaktoren zu ermitteln, während Entwurfs- und Ideenfindungstechniken oft zu Begeisterungsfaktoren führen.",
         reference: SYLLABUS,
       },
       {
@@ -445,7 +445,7 @@ export const irebCpreDe: DeContent = {
         ],
         answer: "A",
         explanation:
-          "Bei der Einführung von RE-Werkzeugen sollten Sie an den Prozess denken, den das Werkzeug unterstützen soll, an die Gesamtkosten, an Schulungen, an eine schrittweise Einführung und an die Erprobung des Werkzeugs in der Praxis.",
+          "Bei der Einführung von RE-Werkzeugen solltest du an den Prozess denken, den das Werkzeug unterstützen soll, an die Gesamtkosten, an Schulungen, an eine schrittweise Einführung und an die Erprobung des Werkzeugs in der Praxis.",
         reference: SYLLABUS,
       },
     ],

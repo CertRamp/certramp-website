@@ -43,7 +43,7 @@ export const sc900De: DeContent = {
       objectives: [
         "Beschreiben der Funktion und der Identitätstypen von Microsoft Entra ID",
         "Beschreiben der Authentifizierungsfunktionen von Microsoft Entra ID",
-        "Beschreiben Sie die Funktionen zur Zugriffsverwaltung von Microsoft Entra ID",
+        "Beschreibe die Funktionen zur Zugriffsverwaltung von Microsoft Entra ID",
         "Beschreiben der Identitätsschutz- und Governancefunktionen von Microsoft Entra",
       ],
     },
@@ -75,7 +75,7 @@ export const sc900De: DeContent = {
   guide: {
     slug: "sc-900",
     summary:
-      "SC-900 (Microsoft Security, Compliance, and Identity Fundamentals) prüft, ob Sie Konzepte zu Sicherheit, Compliance und Identität sowie die zugehörigen Microsoft-Lösungen beschreiben können: Microsoft Entra, Defender for Cloud, Microsoft Sentinel, Defender XDR und Microsoft Purview. Die Prüfung dauert 45 Minuten, zum Bestehen benötigen Sie 700 Punkte, und die Liste der gemessenen Fähigkeiten wurde zuletzt am 21. Oktober 2026 aktualisiert. Fundamentals-Zertifizierungen laufen nicht ab.",
+      "SC-900 (Microsoft Security, Compliance, and Identity Fundamentals) prüft, ob du Konzepte zu Sicherheit, Compliance und Identität sowie die zugehörigen Microsoft-Lösungen beschreiben kannst: Microsoft Entra, Defender for Cloud, Microsoft Sentinel, Defender XDR und Microsoft Purview. Die Prüfung dauert 45 Minuten, zum Bestehen benötigst du 700 Punkte, und die Liste der gemessenen Fähigkeiten wurde zuletzt am 21. Oktober 2026 aktualisiert. Fundamentals-Zertifizierungen laufen nicht ab.",
     whoFor: [
       "Fachliche Stakeholder, die verstehen müssen, wie Microsoft Sicherheit, Compliance und Identität angeht",
       "Angehende oder erfahrene IT-Fachkräfte, die in die IT-Sicherheit einsteigen oder sich in Richtung SC-200, SC-300 oder SC-500 entwickeln",
@@ -87,7 +87,7 @@ export const sc900De: DeContent = {
         heading: "Was SC-900 tatsächlich prüft",
         paragraphs: [
           "SC-900 umfasst vier Fähigkeitsbereiche. Am stärksten gewichtet sind die Microsoft-Sicherheitslösungen (35–40 %): Sicherheitsdienste der Azure-Infrastruktur wie Azure Firewall, Netzwerksicherheitsgruppen (NSGs), Azure Bastion und Key Vault sowie Defender for Cloud, Microsoft Sentinel und die Defender-XDR-Dienste. Microsoft Entra macht 25–30 % aus, die Compliancelösungen von Microsoft Purview 20–25 % und die Grundkonzepte von Sicherheit, Compliance und Identität 10–15 %.",
-          "Jedes Lernziel beginnt im englischen Original mit „Describe“ oder „Define“ (Beschreiben bzw. Definieren). Sie müssen nichts Schritt für Schritt konfigurieren; Sie sollen erkennen, was ein Konzept bedeutet und welches Produkt oder Feature ein beschriebenes Problem löst. Typische Entscheidungen: Conditional Access oder Privileged Identity Management, Vertraulichkeitsbezeichnung oder Aufbewahrungsbezeichnung, Azure Firewall oder Netzwerksicherheitsgruppe, SIEM oder SOAR.",
+          "Jedes Lernziel beginnt im englischen Original mit „Describe“ oder „Define“ (Beschreiben bzw. Definieren). Du musst nichts Schritt für Schritt konfigurieren; du sollst erkennen, was ein Konzept bedeutet und welches Produkt oder Feature ein beschriebenes Problem löst. Typische Entscheidungen: Conditional Access oder Privileged Identity Management, Vertraulichkeitsbezeichnung oder Aufbewahrungsbezeichnung, Azure Firewall oder Netzwerksicherheitsgruppe, SIEM oder SOAR.",
         ],
       },
       {
@@ -103,24 +103,24 @@ export const sc900De: DeContent = {
         heading: "Ein Vorbereitungsplan in fünf Schritten",
         steps: [
           {
-            title: "Gleichen Sie Ihren Stand mit dem Studienleitfaden ab",
-            body: "Gehen Sie jeden Punkt der offiziellen SC-900-Liste der gemessenen Fähigkeiten durch und markieren Sie ihn als bekannt, unsicher oder neu. Allein der Bereich Sicherheitslösungen macht bis zu 40 % aus und verdient daher den größten Teil Ihrer Zeit.",
+            title: "Gleiche deinen Stand mit dem Studienleitfaden ab",
+            body: "Gehe jeden Punkt der offiziellen SC-900-Liste der gemessenen Fähigkeiten durch und markiere ihn als bekannt, unsicher oder neu. Allein der Bereich Sicherheitslösungen macht bis zu 40 % aus und verdient daher den größten Teil deiner Zeit.",
           },
           {
-            title: "Klären Sie zuerst die Konzepte",
-            body: "Geteilte Verantwortung, Defense-in-Depth, Zero Trust, Verschlüsselung versus Hashing, Authentifizierung versus Autorisierung sowie Verbund (Federation) sind das Vokabular, auf dem der Rest der Prüfung aufbaut. Stellen Sie sicher, dass Sie jeden Begriff in einem Satz erklären können.",
+            title: "Kläre zuerst die Konzepte",
+            body: "Geteilte Verantwortung, Defense-in-Depth, Zero Trust, Verschlüsselung versus Hashing, Authentifizierung versus Autorisierung sowie Verbund (Federation) sind das Vokabular, auf dem der Rest der Prüfung aufbaut. Stelle sicher, dass du jeden Begriff in einem Satz erklären kannst.",
           },
           {
-            title: "Arbeiten Sie die Microsoft-Learn-Lernpfade durch",
-            body: "Folgen Sie den kostenlosen SC-900-Lernpfaden zu Entra, zur Sicherheit mit Azure und Defender sowie zu Microsoft Purview. Notieren Sie für jedes Produkt das eine Problem, das es löst: genau das prüfen die Fragen meist.",
+            title: "Arbeite die Microsoft-Learn-Lernpfade durch",
+            body: "Folge den kostenlosen SC-900-Lernpfaden zu Entra, zur Sicherheit mit Azure und Defender sowie zu Microsoft Purview. Notiere für jedes Produkt das eine Problem, das es löst: genau das prüfen die Fragen meist.",
           },
           {
-            title: "Werfen Sie einmal einen Blick in die Portale",
-            body: "Mit einem kostenlosen Azure-Konto und einer Microsoft 365-Testversion sehen Sie Entra ID, Defender for Cloud, das Defender-Portal und das Purview-Portal. Wenn Sie wissen, wo Secure Score, Conditional Access oder Vertraulichkeitsbezeichnungen zu finden sind, lassen sich die Formulierungen der Fragen deutlich leichter nachvollziehen.",
+            title: "Wirf einmal einen Blick in die Portale",
+            body: "Mit einem kostenlosen Azure-Konto und einer Microsoft 365-Testversion siehst du Entra ID, Defender for Cloud, das Defender-Portal und das Purview-Portal. Wenn du weißt, wo Secure Score, Conditional Access oder Vertraulichkeitsbezeichnungen zu finden sind, lassen sich die Formulierungen der Fragen deutlich leichter nachvollziehen.",
           },
           {
-            title: "Üben Sie unter Zeitdruck und buchen Sie dann",
-            body: "Legen Sie Übungsprüfungen mit 45 Minuten Zeitlimit ab und lesen Sie jede Erklärung, auch bei Fragen, die Sie richtig beantwortet haben. Buchen Sie die Prüfung, sobald Sie mehrere Übungsprüfungen mit Abstand bestehen.",
+            title: "Übe unter Zeitdruck und buche dann",
+            body: "Lege Übungsprüfungen mit 45 Minuten Zeitlimit ab und lies jede Erklärung, auch bei Fragen, die du richtig beantwortet hast. Buche die Prüfung, sobald du mehrere Übungsprüfungen mit Abstand bestehst.",
           },
         ],
       },
@@ -131,7 +131,7 @@ export const sc900De: DeContent = {
           "Eine Fundamentals-Prüfung für trivial halten. Die Produktpalette ist breit, und ähnlich klingende Features werden leicht verwechselt.",
           "Vertraulichkeitsbezeichnungen mit Aufbewahrungsbezeichnungen verwechseln. Vertraulichkeitsbezeichnungen (Sensitivity Labels) klassifizieren und schützen Inhalte (zum Beispiel durch Verschlüsselung); Aufbewahrungsbezeichnungen (Retention Labels) legen fest, wie lange Inhalte aufbewahrt oder wann sie gelöscht werden.",
           "Conditional Access, Privileged Identity Management und ID Protection durcheinanderbringen. Conditional Access setzt Anmeldebedingungen durch, PIM vergibt privilegierte Rollen just in time, und ID Protection erkennt riskante Benutzer und Anmeldungen.",
-          "Die Defender-Produkte nicht auseinanderhalten. Sie sollten wissen, welches Produkt E-Mail, Endpunkte, Cloud-Apps, lokale Identitäten und Cloud-Workloads schützt.",
+          "Die Defender-Produkte nicht auseinanderhalten. Du solltest wissen, welches Produkt E-Mail, Endpunkte, Cloud-Apps, lokale Identitäten und Cloud-Workloads schützt.",
           "Den Compliance-Bereich überspringen. Service Trust Portal, Compliance-Manager, DLP, Datensatzverwaltung, Insider-Risikomanagement, eDiscovery und Audit machen zusammen bis zu einem Viertel der Prüfung aus.",
         ],
       },
@@ -140,7 +140,7 @@ export const sc900De: DeContent = {
       {
         question: "Wie lange dauert die SC-900-Prüfung und wie hoch ist die Bestehensgrenze?",
         answer:
-          "Sie haben 45 Minuten Zeit. Microsoft verlangt zum Bestehen 700 Punkte oder mehr. Die genaue Fragenzahl für SC-900 veröffentlicht Microsoft nicht; laut Microsoft haben die meisten seiner Zertifizierungsprüfungen zwischen 40 und 60 Fragen.",
+          "Du hast 45 Minuten Zeit. Microsoft verlangt zum Bestehen 700 Punkte oder mehr. Die genaue Fragenzahl für SC-900 veröffentlicht Microsoft nicht; laut Microsoft haben die meisten seiner Zertifizierungsprüfungen zwischen 40 und 60 Fragen.",
       },
       {
         question: "Läuft die SC-900-Zertifizierung ab?",
@@ -197,7 +197,7 @@ export const sc900De: DeContent = {
         objective: "Beschreiben von Sicherheits- und Compliancekonzepten",
         difficulty: "foundation",
         question:
-          "Ihre Organisation verlagert ihr E-Mail-System in ein SaaS-Angebot (Software as a Service). Was bleibt nach dem Modell der geteilten Verantwortung immer in der Verantwortung des Kunden?",
+          "Deine Organisation verlagert ihr E-Mail-System in ein SaaS-Angebot (Software as a Service). Was bleibt nach dem Modell der geteilten Verantwortung immer in der Verantwortung des Kunden?",
         options: [
           { id: "A", text: "Die physische Sicherheit des Rechenzentrums", rationale: "Die physische Sicherheit des Rechenzentrums geht bei SaaS, PaaS und IaaS vollständig auf den Cloudanbieter über." },
           { id: "B", text: "Die im Dienst gespeicherten Informationen und Daten", rationale: "Richtig. Unabhängig vom Dienstmodell bleibt der Kunde für seine Informationen und Daten, seine Geräte sowie seine Konten und Identitäten verantwortlich." },
@@ -206,7 +206,7 @@ export const sc900De: DeContent = {
         ],
         answer: "B",
         explanation:
-          "Je weiter Sie sich vom lokalen Betrieb (On-Premises) in Richtung SaaS bewegen, desto mehr übernimmt der Anbieter. Informationen und Daten, Geräte sowie Konten und Identitäten verbleiben in jedem Modell beim Kunden.",
+          "Je weiter du dich vom lokalen Betrieb (On-Premises) in Richtung SaaS bewegst, desto mehr übernimmt der Anbieter. Informationen und Daten, Geräte sowie Konten und Identitäten verbleiben in jedem Modell beim Kunden.",
         reference: GUIDE,
       },
       {
@@ -215,12 +215,12 @@ export const sc900De: DeContent = {
         objective: "Definieren von Identitätskonzepten",
         difficulty: "intermediate",
         question:
-          "Mitarbeitende eines Partnerunternehmens sollen sich bei der Webanwendung Ihrer Organisation mit den Anmeldeinformationen anmelden, die sie bereits in ihrem eigenen Unternehmen verwenden. Ihre Organisation soll für sie keine Kennwörter anlegen oder verwalten. Welches Identitätskonzept macht das möglich?",
+          "Mitarbeitende eines Partnerunternehmens sollen sich bei der Webanwendung deiner Organisation mit den Anmeldeinformationen anmelden, die sie bereits in ihrem eigenen Unternehmen verwenden. Deine Organisation soll für sie keine Kennwörter anlegen oder verwalten. Welches Identitätskonzept macht das möglich?",
         options: [
           { id: "A", text: "Verzeichnissynchronisierung", rationale: "Bei der Synchronisierung werden Identitäten von einem Verzeichnis in ein anderes kopiert. Hier sollen sich die Benutzer des Partners aber weiterhin bei ihrem eigenen Identitätsanbieter authentifizieren." },
           { id: "B", text: "Mehrstufige Authentifizierung", rationale: "MFA verstärkt eine Anmeldung durch zusätzliche Faktoren; sie stellt keine Vertrauensbeziehung zwischen zwei Organisationen her." },
           { id: "C", text: "Rollenbasierte Zugriffssteuerung", rationale: "RBAC legt fest, was ein angemeldeter Benutzer tun darf. Sie ermöglicht keine Authentifizierung mit den Anmeldeinformationen einer anderen Organisation." },
-          { id: "D", text: "Verbund (Federation)", rationale: "Richtig. Ein Verbund schafft eine Vertrauensbeziehung zwischen Identitätsanbietern, sodass Ihre Anwendung die vom Identitätsanbieter des Partners durchgeführte Authentifizierung akzeptiert." },
+          { id: "D", text: "Verbund (Federation)", rationale: "Richtig. Ein Verbund schafft eine Vertrauensbeziehung zwischen Identitätsanbietern, sodass deine Anwendung die vom Identitätsanbieter des Partners durchgeführte Authentifizierung akzeptiert." },
         ],
         answer: "D",
         explanation:
@@ -250,7 +250,7 @@ export const sc900De: DeContent = {
       {
         id: "sc900-d2-conditional-access",
         domain: "d2",
-        objective: "Beschreiben Sie die Funktionen zur Zugriffsverwaltung von Microsoft Entra ID",
+        objective: "Beschreibe die Funktionen zur Zugriffsverwaltung von Microsoft Entra ID",
         difficulty: "foundation",
         question:
           "Benutzer sollen die mehrstufige Authentifizierung durchlaufen, wenn sie sich von außerhalb des Firmennetzwerks bei Microsoft 365 anmelden, nicht aber bei der Anmeldung aus dem Büro. Welches Microsoft Entra-Feature setzt das durch?",
@@ -289,16 +289,16 @@ export const sc900De: DeContent = {
         objective: "Beschreiben der Authentifizierungsfunktionen von Microsoft Entra ID",
         difficulty: "intermediate",
         question:
-          "Ihr Sicherheitsteam möchte verhindern, dass Benutzer Kennwörter wählen, die den Firmennamen oder die Namen lokaler Sportvereine enthalten. Welche Funktion sollten Sie verwenden?",
+          "Dein Sicherheitsteam möchte verhindern, dass Benutzer Kennwörter wählen, die den Firmennamen oder die Namen lokaler Sportvereine enthalten. Welche Funktion solltest du verwenden?",
         options: [
           { id: "A", text: "Benannte Standorte für Conditional Access", rationale: "Benannte Standorte beschreiben vertrauenswürdige Netzwerke oder Länder für Conditional Access; den Inhalt von Kennwörtern prüfen sie nicht." },
           { id: "B", text: "Zugriffsüberprüfungen", rationale: "Bei Zugriffsüberprüfungen geht es darum, ob Benutzer ihren Zugriff noch benötigen, nicht um die Qualität von Kennwörtern." },
           { id: "C", text: "Eine Anmelderisikorichtlinie von Microsoft Entra ID Protection", rationale: "Anmelderisikorichtlinien reagieren auf verdächtige Anmeldungen; sie verhindern nicht, dass schwache Kennwörter festgelegt werden." },
-          { id: "D", text: "Microsoft Entra Password Protection (Kennwortschutz) mit einer benutzerdefinierten Liste gesperrter Kennwörter", rationale: "Richtig. Password Protection blockiert bekannte schwache Kennwörter und lässt Sie organisationsspezifische Begriffe in eine benutzerdefinierte Liste gesperrter Kennwörter aufnehmen." },
+          { id: "D", text: "Microsoft Entra Password Protection (Kennwortschutz) mit einer benutzerdefinierten Liste gesperrter Kennwörter", rationale: "Richtig. Password Protection blockiert bekannte schwache Kennwörter und lässt dich organisationsspezifische Begriffe in eine benutzerdefinierte Liste gesperrter Kennwörter aufnehmen." },
         ],
         answer: "D",
         explanation:
-          "Password Protection kombiniert eine globale Liste gesperrter Kennwörter mit einer benutzerdefinierten Liste für Begriffe, die für Ihre Organisation typisch sind. Sie gehört zu den Funktionen für Kennwortschutz und -verwaltung, die in der Gliederung genannt werden.",
+          "Password Protection kombiniert eine globale Liste gesperrter Kennwörter mit einer benutzerdefinierten Liste für Begriffe, die für deine Organisation typisch sind. Sie gehört zu den Funktionen für Kennwortschutz und -verwaltung, die in der Gliederung genannt werden.",
         reference: GUIDE,
       },
 
@@ -336,7 +336,7 @@ export const sc900De: DeContent = {
         ],
         answer: "A",
         explanation:
-          "Ordnen Sie die Schicht der Bedrohung zu: NSGs und Azure Firewall steuern den Netzwerkverkehr, DDoS Protection fängt Überlastungsangriffe ab, und die WAF schützt die Anwendungsschicht von Web-Apps.",
+          "Ordne die Schicht der Bedrohung zu: NSGs und Azure Firewall steuern den Netzwerkverkehr, DDoS Protection fängt Überlastungsangriffe ab, und die WAF schützt die Anwendungsschicht von Web-Apps.",
         reference: GUIDE,
       },
       {
@@ -345,7 +345,7 @@ export const sc900De: DeContent = {
         objective: "Beschreiben der Sicherheitsverwaltungsfunktionen von Azure",
         difficulty: "foundation",
         question:
-          "Ihre Führungskraft möchte eine einzige Kennzahl für den Sicherheitsstatus Ihrer Azure-Ressourcen, zusammen mit Empfehlungen, wie er sich verbessern lässt. Welcher Dienst bietet das?",
+          "Deine Führungskraft möchte eine einzige Kennzahl für den Sicherheitsstatus deiner Azure-Ressourcen, zusammen mit Empfehlungen, wie er sich verbessern lässt. Welcher Dienst bietet das?",
         options: [
           { id: "A", text: "Microsoft Sentinel", rationale: "Sentinel ist eine SIEM- und SOAR-Lösung zum Erkennen und Abwehren von Bedrohungen, keine Bewertung des Sicherheitsstatus von Azure-Ressourcen." },
           { id: "B", text: "Microsoft Purview Compliance-Manager", rationale: "Der Compliance-Manager liefert eine Compliancebewertung für regulatorische Anforderungen, keine Bewertung des Sicherheitsstatus mit Empfehlungen zur Härtung von Ressourcen." },
@@ -354,7 +354,7 @@ export const sc900De: DeContent = {
         ],
         answer: "D",
         explanation:
-          "Defender for Cloud verbindet Posture Management (Secure Score, Empfehlungen, Standards) mit Plänen zum Schutz von Workloads. Verwechseln Sie den Secure Score nicht mit der Compliancebewertung in Microsoft Purview.",
+          "Defender for Cloud verbindet Posture Management (Secure Score, Empfehlungen, Standards) mit Plänen zum Schutz von Workloads. Verwechsle den Secure Score nicht mit der Compliancebewertung in Microsoft Purview.",
         reference: GUIDE,
       },
       {
@@ -363,7 +363,7 @@ export const sc900De: DeContent = {
         objective: "Beschreiben der Funktionen von Microsoft Sentinel",
         difficulty: "intermediate",
         question:
-          "Wenn ein Incident mit hohem Schweregrad erstellt wird, soll Ihr SOC automatisch einen Workflow ausführen, der das betroffene Benutzerkonto deaktiviert und ein Ticket im Service-Desk-Tool eröffnet. Welches Konzept beschreibt das?",
+          "Wenn ein Incident mit hohem Schweregrad erstellt wird, soll dein SOC automatisch einen Workflow ausführen, der das betroffene Benutzerkonto deaktiviert und ein Ticket im Service-Desk-Tool eröffnet. Welches Konzept beschreibt das?",
         options: [
           { id: "A", text: "Security Information and Event Management (SIEM)", rationale: "SIEM sammelt und korreliert Daten, um Bedrohungen zu erkennen. Die hier beschriebene automatisierte Reaktion geht darüber hinaus." },
           { id: "B", text: "Security Orchestration Automated Response (SOAR)", rationale: "Richtig. Bei SOAR geht es um die Orchestrierung und Automatisierung der Reaktion auf Incidents. In Microsoft Sentinel geschieht das mit Automatisierungsregeln und Playbooks." },
@@ -381,7 +381,7 @@ export const sc900De: DeContent = {
         objective: "Bedrohungsschutz mit Microsoft Defender XDR beschreiben",
         difficulty: "foundation",
         question:
-          "Ihre Organisation möchte, dass E-Mail-Anhänge vor der Zustellung in einer sicheren Umgebung geöffnet und URLs in Nachrichten genau in dem Moment geprüft werden, in dem ein Benutzer sie auswählt. Welcher Microsoft Defender XDR-Dienst bietet das?",
+          "Deine Organisation möchte, dass E-Mail-Anhänge vor der Zustellung in einer sicheren Umgebung geöffnet und URLs in Nachrichten genau in dem Moment geprüft werden, in dem ein Benutzer sie auswählt. Welcher Microsoft Defender XDR-Dienst bietet das?",
         options: [
           { id: "A", text: "Microsoft Defender for Identity", rationale: "Defender for Identity nutzt Signale aus dem lokalen Active Directory, um Identitätsangriffe zu erkennen; E-Mails scannt es nicht." },
           { id: "B", text: "Microsoft Defender for Cloud Apps", rationale: "Defender for Cloud Apps ist ein Cloud Access Security Broker für SaaS-Apps, kein Dienst zum Scannen von E-Mails." },
@@ -399,7 +399,7 @@ export const sc900De: DeContent = {
         objective: "Bedrohungsschutz mit Microsoft Defender XDR beschreiben",
         difficulty: "advanced",
         question:
-          "Sie müssen Pass-the-Hash-Angriffe und andere Versuche von Lateral Movement gegen Ihre lokalen Active Directory Domain Services erkennen. Welcher Dienst ist dafür vorgesehen?",
+          "Du musst Pass-the-Hash-Angriffe und andere Versuche von Lateral Movement gegen deine lokalen Active Directory Domain Services erkennen. Welcher Dienst ist dafür vorgesehen?",
         options: [
           { id: "A", text: "Microsoft Defender for Identity", rationale: "Richtig. Defender for Identity nutzt Signale aus dem lokalen Active Directory, um kompromittierte Identitäten, Lateral Movement und andere fortgeschrittene Angriffe zu erkennen." },
           { id: "B", text: "Microsoft Defender for Cloud Apps", rationale: "Defender for Cloud Apps konzentriert sich auf die Nutzung von Cloudanwendungen und Schatten-IT, nicht auf lokale Domänencontroller." },
@@ -419,11 +419,11 @@ export const sc900De: DeContent = {
         objective: "Beschreiben des Service Trust-Portals von Microsoft und der Datenschutzprinzipien",
         difficulty: "foundation",
         question:
-          "Ein externer Auditor fordert die unabhängigen Prüfberichte von Microsoft zu dessen Clouddiensten an, etwa ISO- und SOC-Berichte. Wo finden Sie diese?",
+          "Ein externer Auditor fordert die unabhängigen Prüfberichte von Microsoft zu dessen Clouddiensten an, etwa ISO- und SOC-Berichte. Wo findest du diese?",
         options: [
-          { id: "A", text: "Microsoft Purview Compliance-Manager", rationale: "Der Compliance-Manager hilft Ihnen, Ihre eigene Compliance zu bewerten und zu verbessern; er ist nicht die Bibliothek der Microsoft-Prüfberichte." },
+          { id: "A", text: "Microsoft Purview Compliance-Manager", rationale: "Der Compliance-Manager hilft dir, deine eigene Compliance zu bewerten und zu verbessern; er ist nicht die Bibliothek der Microsoft-Prüfberichte." },
           { id: "B", text: "Das Service Trust Portal", rationale: "Richtig. Das Service Trust Portal veröffentlicht die Prüfberichte von Microsoft, Compliance-Dokumente und weitere Ressourcen dazu, wie Microsoft-Clouddienste Daten schützen." },
-          { id: "C", text: "Microsoft Purview Audit", rationale: "Purview Audit zeichnet Benutzer- und Administratoraktivitäten in Ihrem Mandanten auf, nicht die Prüfberichte unabhängiger Dritter über Microsoft." },
+          { id: "C", text: "Microsoft Purview Audit", rationale: "Purview Audit zeichnet Benutzer- und Administratoraktivitäten in deinem Mandanten auf, nicht die Prüfberichte unabhängiger Dritter über Microsoft." },
           { id: "D", text: "Das Microsoft Defender-Portal", rationale: "Das Defender-Portal dient dem Sicherheitsbetrieb (Security Operations), nicht der Compliance-Dokumentation." },
         ],
         answer: "B",
@@ -438,7 +438,7 @@ export const sc900De: DeContent = {
           "Beschreiben der Funktionen von Microsoft Purview zum Schutz von Informationen, zur Verwaltung des Datenlebenszyklus und zur Datenverwaltung",
         difficulty: "intermediate",
         question:
-          "Benutzer sollen daran gehindert werden, Kreditkartennummern per E-Mail und in Teams-Chats an externe Empfänger zu senden, und dabei einen Richtlinientipp mit der Begründung sehen. Was sollten Sie implementieren?",
+          "Benutzer sollen daran gehindert werden, Kreditkartennummern per E-Mail und in Teams-Chats an externe Empfänger zu senden, und dabei einen Richtlinientipp mit der Begründung sehen. Was solltest du implementieren?",
         options: [
           { id: "A", text: "Eine Aufbewahrungsbezeichnung", rationale: "Aufbewahrungsbezeichnungen steuern, wie lange Inhalte aufbewahrt oder wann sie gelöscht werden, nicht ob sie geteilt werden dürfen." },
           { id: "B", text: "Insider-Risikomanagement", rationale: "Das Insider-Risikomanagement korreliert Signale, um riskantes Benutzerverhalten zu erkennen; es ist nicht die Kontrolle, die eine bestimmte Nachricht mit vertraulichen Daten blockiert." },
@@ -456,9 +456,9 @@ export const sc900De: DeContent = {
         objective: "Beschreiben von Insiderrisiko-, eDiscovery- und Auditfunktionen in Microsoft Purview",
         difficulty: "intermediate",
         question:
-          "Ihre Rechtsabteilung bereitet sich auf einen Rechtsstreit vor. Sie muss die Postfächer und OneDrive-Inhalte von fünf Mitarbeitenden sichern (Hold), diese Inhalte durchsuchen und die Ergebnisse für die Anwälte exportieren. Welche Microsoft Purview-Lösung sollte sie verwenden?",
+          "Deine Rechtsabteilung bereitet sich auf einen Rechtsstreit vor. Sie muss die Postfächer und OneDrive-Inhalte von fünf Mitarbeitenden sichern (Hold), diese Inhalte durchsuchen und die Ergebnisse für die Anwälte exportieren. Welche Microsoft Purview-Lösung sollte sie verwenden?",
         options: [
-          { id: "A", text: "eDiscovery", rationale: "Richtig. Mit eDiscovery in Microsoft Purview können Sie Inhalte in die Aufbewahrung (Hold) versetzen, durchsuchen und die Ergebnisse für rechtliche und investigative Fälle exportieren." },
+          { id: "A", text: "eDiscovery", rationale: "Richtig. Mit eDiscovery in Microsoft Purview kannst du Inhalte in die Aufbewahrung (Hold) versetzen, durchsuchen und die Ergebnisse für rechtliche und investigative Fälle exportieren." },
           { id: "B", text: "Compliance-Manager", rationale: "Der Compliance-Manager verfolgt regulatorische Kontrollen und Verbesserungsmaßnahmen; Inhalte sichert oder exportiert er nicht." },
           { id: "C", text: "Inhalts-Explorer", rationale: "Der Inhalts-Explorer zeigt, wo vertrauliche oder bezeichnete Inhalte gespeichert sind, ist aber kein fallbasiertes Werkzeug für Aufbewahrungen und Exporte." },
           { id: "D", text: "Vertraulichkeitsbezeichnungen", rationale: "Vertraulichkeitsbezeichnungen klassifizieren und schützen Inhalte; für Gerichtsverfahren sichern sie sie nicht." },

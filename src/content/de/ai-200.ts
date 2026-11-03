@@ -75,7 +75,7 @@ export const ai200De: DeContent = {
   guide: {
     slug: "ai-200",
     summary:
-      "AI-200 (Developing AI Cloud Solutions on Azure) führt zur Zertifizierung Microsoft Certified: Azure AI Cloud Developer Associate und deckt das Back-End von KI-Lösungen ab: Container, vektorfähige Datendienste, Messaging, Functions, Sicherheit und Überwachung. Microsoft hat AZ-204 (Azure Developer Associate) am 31. Juli 2026 eingestellt. AI-200 dauert 120 Minuten, zum Bestehen brauchen Sie 700 Punkte, und die Liste der gemessenen Fähigkeiten wurde zuletzt am 7. Oktober 2026 aktualisiert.",
+      "AI-200 (Developing AI Cloud Solutions on Azure) führt zur Zertifizierung Microsoft Certified: Azure AI Cloud Developer Associate und deckt das Back-End von KI-Lösungen ab: Container, vektorfähige Datendienste, Messaging, Functions, Sicherheit und Überwachung. Microsoft hat AZ-204 (Azure Developer Associate) am 31. Juli 2026 eingestellt. AI-200 dauert 120 Minuten, zum Bestehen brauchst du 700 Punkte, und die Liste der gemessenen Fähigkeiten wurde zuletzt am 7. Oktober 2026 aktualisiert.",
     whoFor: [
       "Back-End- und Cloud-Entwicklerinnen und -Entwickler, die die Dienste hinter KI-Anwendungen in Azure entwickeln, überwiegend mit Python",
       "Entwicklerinnen und Entwickler, die sich auf AZ-204 vorbereitet haben oder die Zertifizierung besitzen und die aktuelle Developer-Associate-Zertifizierung anstreben",
@@ -86,7 +86,7 @@ export const ai200De: DeContent = {
         id: "what-the-exam-tests",
         heading: "Was AI-200 tatsächlich prüft",
         paragraphs: [
-          "AI-200 hat vier Fähigkeitsbereiche: Entwickeln containerisierter Lösungen (20–25 %), Entwickeln von KI-Lösungen mit Azure-Datenverwaltungsdiensten, Verbinden mit und Nutzen von Azure-Diensten (20–25 %) sowie Sichern, Überwachen und Beheben von Problemen in Azure-Lösungen (20–25 %). Für den Datenbereich zeigt der aktuelle englische Studienleitfaden in der Übersicht 30–35 % und in der Abschnittsüberschrift 25–30 %; laut Änderungsprotokoll wurde sein Prüfungsanteil am 7. Oktober 2026 erhöht. Prüfen Sie den Studienleitfaden vor Ihrer Prüfung noch einmal, falls Microsoft eine der beiden Angaben korrigiert.",
+          "AI-200 hat vier Fähigkeitsbereiche: Entwickeln containerisierter Lösungen (20–25 %), Entwickeln von KI-Lösungen mit Azure-Datenverwaltungsdiensten, Verbinden mit und Nutzen von Azure-Diensten (20–25 %) sowie Sichern, Überwachen und Beheben von Problemen in Azure-Lösungen (20–25 %). Für den Datenbereich zeigt der aktuelle englische Studienleitfaden in der Übersicht 30–35 % und in der Abschnittsüberschrift 25–30 %; laut Änderungsprotokoll wurde sein Prüfungsanteil am 7. Oktober 2026 erhöht. Prüfe den Studienleitfaden vor deiner Prüfung noch einmal, falls Microsoft eine der beiden Angaben korrigiert.",
           "Dies ist keine Prüfung zum Erstellen von Modellen. Der KI-Teil betrifft die Daten und die Infrastruktur, die eine KI-Anwendung braucht: Embeddings speichern und Vektorähnlichkeitssuchen in Cosmos DB for NoSQL, Azure Database for PostgreSQL mit pgvector und Azure Managed Redis ausführen, RAG mit Metadatenfiltern sowie die Container, Warteschlangen, Ereignisse und Funktionen drumherum. Microsoft erwartet sichere Kenntnisse in Python, Azure SDKs, Vektordatenbanken und containerisierten Anwendungen.",
         ],
       },
@@ -94,7 +94,7 @@ export const ai200De: DeContent = {
         id: "az-204-vs-ai-200",
         heading: "AI-200 und die eingestellte AZ-204",
         paragraphs: [
-          "Microsoft führt AZ-204 (Microsoft Certified: Azure Developer Associate) in der Liste der eingestellten Prüfungen mit dem 31. Juli 2026. Wenn Sie die Zertifizierung bereits erworben haben, bleibt sie in Ihrem Microsoft-Learn-Transkript, Sie können sie aber nicht mehr verlängern. AI-200 ist die Developer-Associate-Prüfung, die jetzt ähnliche Themen abdeckt.",
+          "Microsoft führt AZ-204 (Microsoft Certified: Azure Developer Associate) in der Liste der eingestellten Prüfungen mit dem 31. Juli 2026. Wenn du die Zertifizierung bereits erworben hast, bleibt sie in deinem Microsoft-Learn-Transkript, du kannst sie aber nicht mehr verlängern. AI-200 ist die Developer-Associate-Prüfung, die jetzt ähnliche Themen abdeckt.",
           "Im Vergleich zu AZ-204 hat sich das Gewicht in Richtung Datendienste mit Vektorsuche, Container (Container Registry Tasks, Container Apps mit KEDA-Skalierung, AKS) und Observability mit OpenTelemetry und KQL verschoben. Messaging (Service Bus, Event Grid), Azure Functions, Key Vault und App Configuration bleiben. Am 7. Oktober 2026 hat sich nur der Bereich Datenverwaltung geändert (sein Gewicht wurde erhöht); seine drei Unterbereiche sind unverändert. Übersetzte Fassungen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
         ],
       },
@@ -104,27 +104,27 @@ export const ai200De: DeContent = {
         steps: [
           {
             title: "Eigenen Stand am Studienleitfaden messen",
-            body: "Gehen Sie jeden Punkt der offiziellen AI-200-Fähigkeitenliste durch und markieren Sie ihn als bekannt, unsicher oder neu. Wer von AZ-204 kommt, findet meist die Punkte zu Vektorsuche und Container-Orchestrierung am neuesten.",
+            body: "Gehe jeden Punkt der offiziellen AI-200-Fähigkeitenliste durch und markiere ihn als bekannt, unsicher oder neu. Wer von AZ-204 kommt, findet meist die Punkte zu Vektorsuche und Container-Orchestrierung am neuesten.",
           },
           {
             title: "Ein kleines RAG-Back-End von Anfang bis Ende bauen",
-            body: "Speichern Sie Embeddings in Cosmos DB for NoSQL und in PostgreSQL mit pgvector, führen Sie in beiden eine Ähnlichkeitsabfrage aus und ergänzen Sie Azure Managed Redis als Cache. Wenn Sie das einmal gemacht haben, werden Indextypen, Vektorrichtlinien und Konsistenzstufen greifbar.",
+            body: "Speichere Embeddings in Cosmos DB for NoSQL und in PostgreSQL mit pgvector, führe in beiden eine Ähnlichkeitsabfrage aus und ergänze Azure Managed Redis als Cache. Wenn du das einmal gemacht hast, werden Indextypen, Vektorrichtlinien und Konsistenzstufen greifbar.",
           },
           {
             title: "Containerisieren und bereitstellen",
-            body: "Erstellen Sie das Image mit ACR Tasks, stellen Sie es in Container Apps mit einer warteschlangenbasierten Skalierungsregel und einer zweiten Revision bereit und probieren Sie dasselbe Image mit einem Manifest auf AKS aus. Üben Sie, Protokolle und Ereignisse zu lesen, wenn etwas nicht startet.",
+            body: "Erstelle das Image mit ACR Tasks, stelle es in Container Apps mit einer warteschlangenbasierten Skalierungsregel und einer zweiten Revision bereit und probiere dasselbe Image mit einem Manifest auf AKS aus. Übe, Protokolle und Ereignisse zu lesen, wenn etwas nicht startet.",
           },
           {
             title: "Messaging und Functions verbinden",
-            body: "Fügen Sie ein Service-Bus-Topic mit Abonnements, ein Event-Grid-Abonnement mit Filtern und eine Azure Function mit Trigger und Bindungen hinzu. Senden Sie absichtlich eine fehlerhafte Nachricht, um die Dead-Letter-Warteschlange in Aktion zu sehen.",
+            body: "Füge ein Service-Bus-Topic mit Abonnements, ein Event-Grid-Abonnement mit Filtern und eine Azure Function mit Trigger und Bindungen hinzu. Sende absichtlich eine fehlerhafte Nachricht, um die Dead-Letter-Warteschlange in Aktion zu sehen.",
           },
           {
             title: "Absichern und beobachten",
-            body: "Verschieben Sie Geheimnisse mit verwalteter Identität in Key Vault, legen Sie Einstellungen und Featureflags in App Configuration ab, instrumentieren Sie die Dienste mit OpenTelemetry und fragen Sie Traces mit KQL in Application Insights ab.",
+            body: "Verschiebe Geheimnisse mit verwalteter Identität in Key Vault, lege Einstellungen und Featureflags in App Configuration ab, instrumentiere die Dienste mit OpenTelemetry und frage Traces mit KQL in Application Insights ab.",
           },
           {
             title: "Unter Zeitdruck üben",
-            body: "Absolvieren Sie Übungsprüfungen auf Zeit, lesen Sie jede Erklärung und nutzen Sie die kostenlose Übungsbewertung (Practice Assessment) von Microsoft. Buchen Sie, sobald Ihre Ergebnisse stabil sind, und planen Sie die kostenlose jährliche Verlängerungsbewertung ein.",
+            body: "Absolviere Übungsprüfungen auf Zeit, lies jede Erklärung und nutze die kostenlose Übungsbewertung (Practice Assessment) von Microsoft. Buche, sobald deine Ergebnisse stabil sind, und plane die kostenlose jährliche Verlängerungsbewertung ein.",
           },
         ],
       },
@@ -135,7 +135,7 @@ export const ai200De: DeContent = {
           "Nur mit AZ-204-Material lernen. Vieles davon hilft weiterhin, aber Vektorsuche, Managed Redis, KEDA-Skalierung und OpenTelemetry werden dort nicht in derselben Tiefe behandelt.",
           "„KI“ mit Modelltraining gleichsetzen. AI-200 prüft die Datendienste und die Infrastruktur rund um KI-Anwendungen, nicht das Erstellen oder Feinabstimmen von Modellen.",
           "Cosmos-DB-Einstellungen verwechseln. Indizierungsrichtlinie, Vektorrichtlinie und Konsistenzstufe lösen jeweils ein anderes Problem, und die RU-Kosten eines Lesevorgangs hängen von der Konsistenzstufe ab.",
-          "Warteschlangen mit Topics und Event Grid mit Service Bus verwechseln. Sie sollten wissen, welcher Dienst Befehle transportiert und welcher auf Ereignisse reagiert, und wie Wiederholungsversuche und Dead-Lettering jeweils funktionieren.",
+          "Warteschlangen mit Topics und Event Grid mit Service Bus verwechseln. Du solltest wissen, welcher Dienst Befehle transportiert und welcher auf Ereignisse reagiert, und wie Wiederholungsversuche und Dead-Lettering jeweils funktionieren.",
           "Geheimnisse am falschen Ort ablegen. Geheimnisse gehören in Key Vault; App Configuration ist für Einstellungen und Featureflags gedacht.",
         ],
       },
@@ -144,22 +144,22 @@ export const ai200De: DeContent = {
       {
         question: "Wie lange dauert die AI-200-Prüfung, und wie hoch ist die Bestehensgrenze?",
         answer:
-          "Sie haben 120 Minuten Zeit. Microsoft verlangt zum Bestehen 700 oder mehr Punkte. Microsoft veröffentlicht für AI-200 keine genaue Fragenanzahl; laut Microsoft haben die meisten seiner Zertifizierungsprüfungen zwischen 40 und 60 Fragen.",
+          "Du hast 120 Minuten Zeit. Microsoft verlangt zum Bestehen 700 oder mehr Punkte. Microsoft veröffentlicht für AI-200 keine genaue Fragenanzahl; laut Microsoft haben die meisten seiner Zertifizierungsprüfungen zwischen 40 und 60 Fragen.",
       },
       {
         question: "Ersetzt AI-200 die Prüfung AZ-204?",
         answer:
-          "AZ-204 und die Zertifizierung Azure Developer Associate wurden am 31. Juli 2026 eingestellt, und AI-200 führt zur neuen Zertifizierung Azure AI Cloud Developer Associate. Die Gliederungen überschneiden sich (Messaging, Functions, Key Vault, Container), aber AI-200 ergänzt Vektorsuche in Cosmos DB, PostgreSQL und Redis, Container-Orchestrierung und OpenTelemetry. Eine bereits erworbene AZ-204-Zertifizierung bleibt in Ihrem Transkript.",
+          "AZ-204 und die Zertifizierung Azure Developer Associate wurden am 31. Juli 2026 eingestellt, und AI-200 führt zur neuen Zertifizierung Azure AI Cloud Developer Associate. Die Gliederungen überschneiden sich (Messaging, Functions, Key Vault, Container), aber AI-200 ergänzt Vektorsuche in Cosmos DB, PostgreSQL und Redis, Container-Orchestrierung und OpenTelemetry. Eine bereits erworbene AZ-204-Zertifizierung bleibt in deinem Transkript.",
       },
       {
         question: "Wie verlängere ich die Zertifizierung Azure AI Cloud Developer Associate?",
         answer:
-          "Microsoft-Associate-Zertifizierungen laufen jährlich ab. Sie verlängern kostenlos, indem Sie innerhalb des sechsmonatigen Verlängerungszeitraums vor dem Ablauf eine Onlinebewertung auf Microsoft Learn bestehen; damit verlängert sich die Zertifizierung um ein Jahr.",
+          "Microsoft-Associate-Zertifizierungen laufen jährlich ab. Du verlängerst kostenlos, indem du innerhalb des sechsmonatigen Verlängerungszeitraums vor dem Ablauf eine Onlinebewertung auf Microsoft Learn bestehst; damit verlängert sich die Zertifizierung um ein Jahr.",
       },
       {
         question: "In welchen Sprachen gibt es AI-200?",
         answer:
-          "Englisch, Arabisch (Saudi-Arabien), Chinesisch (vereinfacht), Chinesisch (traditionell), Französisch, Deutsch, Indonesisch (Indonesien), Italienisch, Japanisch, Koreanisch, Portugiesisch (Brasilien), Russisch und Spanisch. Wenn die Prüfung nicht in Ihrer bevorzugten Sprache verfügbar ist, können Sie 30 Minuten zusätzliche Zeit beantragen.",
+          "Englisch, Arabisch (Saudi-Arabien), Chinesisch (vereinfacht), Chinesisch (traditionell), Französisch, Deutsch, Indonesisch (Indonesien), Italienisch, Japanisch, Koreanisch, Portugiesisch (Brasilien), Russisch und Spanisch. Wenn die Prüfung nicht in deiner bevorzugten Sprache verfügbar ist, kannst du 30 Minuten zusätzliche Zeit beantragen.",
       },
       {
         question: "Gibt es die Prüfung auf Deutsch?",
@@ -201,7 +201,7 @@ export const ai200De: DeContent = {
         objective: "Erstellen und Ausführen von Images mithilfe von Azure Container Registry Tasks",
         difficulty: "intermediate",
         question:
-          "Ihre Anwendungsimages in Azure Container Registry basieren auf einem gemeinsamen Python-Basisimage. Jedes Mal, wenn das Basisimage gepatcht und in die Registry gepusht wird, müssen alle abhängigen Anwendungsimages automatisch neu erstellt werden. Was sollten Sie konfigurieren?",
+          "Deine Anwendungsimages in Azure Container Registry basieren auf einem gemeinsamen Python-Basisimage. Jedes Mal, wenn das Basisimage gepatcht und in die Registry gepusht wird, müssen alle abhängigen Anwendungsimages automatisch neu erstellt werden. Was solltest du konfigurieren?",
         options: [
           { id: "A", text: "Einen Webhook in der Registry, der eine E-Mail an das Entwicklungsteam sendet", rationale: "Eine Benachrichtigung setzt weiterhin voraus, dass jemand die Images von Hand neu erstellt." },
           { id: "B", text: "Georeplikation der Registry", rationale: "Georeplikation kopiert Images in andere Regionen; sie erstellt nichts neu." },
@@ -219,7 +219,7 @@ export const ai200De: DeContent = {
         objective: "Implementieren der ereignisgesteuerten Skalierung mithilfe von Kubernetes Event-driven Autoscaling (KEDA) in Container Apps",
         difficulty: "intermediate",
         question:
-          "Ein Worker in Azure Container Apps verarbeitet Embedding-Aufträge aus einer Azure-Service-Bus-Warteschlange. Er hat keinen Ingress. Bei leerer Warteschlange sollen keine Replikate laufen, und bei wachsender Nachrichtenzahl sollen Replikate hinzukommen. Was konfigurieren Sie?",
+          "Ein Worker in Azure Container Apps verarbeitet Embedding-Aufträge aus einer Azure-Service-Bus-Warteschlange. Er hat keinen Ingress. Bei leerer Warteschlange sollen keine Replikate laufen, und bei wachsender Nachrichtenzahl sollen Replikate hinzukommen. Was konfigurierst du?",
         options: [
           { id: "A", text: "Eine benutzerdefinierte Skalierungsregel vom Typ azure-servicebus mit einer Mindestanzahl von 0 Replikaten", rationale: "Richtig. Container Apps nutzt für benutzerdefinierte Regeln KEDA-Scaler; eine Service-Bus-Regel skaliert nach der Warteschlangenlänge, und ein Minimum von 0 erlaubt das Herunterskalieren auf null." },
           { id: "B", text: "Eine HTTP-Skalierungsregel mit einer Mindestanzahl von 0 Replikaten", rationale: "HTTP-Regeln skalieren nach gleichzeitigen Anfragen. Der Worker hat keinen Ingress, würde also nie Anfragen erhalten und nicht wieder starten." },
@@ -228,7 +228,7 @@ export const ai200De: DeContent = {
         ],
         answer: "A",
         explanation:
-          "Container Apps unterstützt HTTP-, TCP- und benutzerdefinierte (KEDA-basierte) Skalierungsregeln. Für Warteschlangen-Worker ohne Ingress verwenden Sie eine ereignisgesteuerte Regel wie azure-servicebus; ohne benutzerdefinierte Regel oder ein Minimum von mindestens einem Replikat kann eine App ohne Ingress auf null skalieren und nie wieder starten.",
+          "Container Apps unterstützt HTTP-, TCP- und benutzerdefinierte (KEDA-basierte) Skalierungsregeln. Für Warteschlangen-Worker ohne Ingress verwende eine ereignisgesteuerte Regel wie azure-servicebus; ohne benutzerdefinierte Regel oder ein Minimum von mindestens einem Replikat kann eine App ohne Ingress auf null skalieren und nie wieder starten.",
         reference: { label: "Microsoft Learn: Festlegen von Skalierungsregeln in Azure Container Apps", url: "https://learn.microsoft.com/en-us/azure/container-apps/scale-app" },
       },
       {
@@ -237,16 +237,16 @@ export const ai200De: DeContent = {
         objective: "Bereitstellen von Anwendungen für Azure Container Apps, einschließlich Umgebungskonfiguration und Revisionsverwaltung",
         difficulty: "advanced",
         question:
-          "Sie möchten 20 % des Produktionsdatenverkehrs an eine neue Version einer API in Azure Container Apps senden und 80 % auf der aktuellen Version lassen, bis Sie sicher sind. Was muss zutreffen?",
+          "Du möchtest 20 % des Produktionsdatenverkehrs an eine neue Version einer API in Azure Container Apps senden und 80 % auf der aktuellen Version lassen, bis du sicher bist. Was muss zutreffen?",
         options: [
           { id: "A", text: "Die App nutzt den Modus für einzelne Revisionen, und das neue Image wird mit einem Revisionssuffix bereitgestellt", rationale: "Im Modus für einzelne Revisionen wird der gesamte Datenverkehr auf die neue Revision verlagert, sobald sie bereit ist; zwei aktive Revisionen mit Aufteilung gibt es dort nicht." },
           { id: "B", text: "Die neue Version wird bereitgestellt, indem nur ein Geheimniswert geändert wird", rationale: "Geheimniswerte sind Änderungen im Anwendungsbereich und erzeugen keine neue Revision." },
           { id: "C", text: "Zwei getrennte Container-Apps teilen sich denselben Ingress-Hostnamen", rationale: "Die Aufteilung des Datenverkehrs wird zwischen Revisionen einer Container-App konfiguriert, nicht zwischen getrennten Apps." },
-          { id: "D", text: "Die App nutzt den Modus für mehrere Revisionen, und der Datenverkehr wird zwischen den beiden aktiven Revisionen aufgeteilt", rationale: "Richtig. Im Modus für mehrere Revisionen bleiben mehrere Revisionen aktiv, und Sie können jeder einen prozentualen Anteil des Datenverkehrs zuweisen." },
+          { id: "D", text: "Die App nutzt den Modus für mehrere Revisionen, und der Datenverkehr wird zwischen den beiden aktiven Revisionen aufgeteilt", rationale: "Richtig. Im Modus für mehrere Revisionen bleiben mehrere Revisionen aktiv, und du kannst jeder einen prozentualen Anteil des Datenverkehrs zuweisen." },
         ],
         answer: "D",
         explanation:
-          "Änderungen an der Vorlage, etwa am Containerimage oder an Skalierungsregeln, erzeugen eine neue Revision. Im Modus für mehrere Revisionen entscheiden Sie dann, wie der Datenverkehr aufgeteilt wird, was Canary- und Blue-Green-Releases ermöglicht.",
+          "Änderungen an der Vorlage, etwa am Containerimage oder an Skalierungsregeln, erzeugen eine neue Revision. Im Modus für mehrere Revisionen entscheidest du dann, wie der Datenverkehr aufgeteilt wird, was Canary- und Blue-Green-Releases ermöglicht.",
         reference: { label: "Microsoft Learn: Revisionen in Azure Container Apps", url: "https://learn.microsoft.com/en-us/azure/container-apps/revisions" },
       },
 
@@ -257,7 +257,7 @@ export const ai200De: DeContent = {
         objective: "Speichern und Abrufen von Einbettungen und Ausführen der Vektorähnlichkeitssuche für semantischen Abruf",
         difficulty: "intermediate",
         question:
-          "Sie speichern Produktbeschreibungen und deren Embeddings in Azure Cosmos DB for NoSQL. Sie müssen die zehn Elemente zurückgeben, die einem Abfrage-Embedding am ähnlichsten sind. Was brauchen Sie?",
+          "Du speicherst Produktbeschreibungen und deren Embeddings in Azure Cosmos DB for NoSQL. Du musst die zehn Elemente zurückgeben, die einem Abfrage-Embedding am ähnlichsten sind. Was brauchst du?",
         options: [
           { id: "A", text: "Einen zusammengesetzten Index auf der Embedding-Eigenschaft und ein ORDER BY nach der Element-ID", rationale: "Zusammengesetzte Indizes beschleunigen gewöhnliche Filter und Sortierungen; sie berechnen keine Vektorähnlichkeit." },
           { id: "B", text: "Eine Container-Vektorrichtlinie für den Embedding-Pfad und eine Abfrage mit der Systemfunktion VectorDistance", rationale: "Richtig. Die Vektorrichtlinie teilt der Engine mit, wo die Vektoren liegen, welchen Datentyp und wie viele Dimensionen sie haben und welche Distanzfunktion gilt; VectorDistance berechnet die Ähnlichkeit in der Abfrage." },
@@ -266,7 +266,7 @@ export const ai200De: DeContent = {
         ],
         answer: "B",
         explanation:
-          "Vektorsuche in Cosmos DB for NoSQL braucht eine Vektorrichtlinie auf dem Container, idealerweise einen Vektorindex (flat, quantizedFlat oder diskANN), und eine Abfrage, die nach VectorDistance sortiert. Bestehende Einstellungen der Vektorrichtlinie lassen sich nicht direkt bearbeiten; Sie entfernen sie und fügen sie neu hinzu.",
+          "Vektorsuche in Cosmos DB for NoSQL braucht eine Vektorrichtlinie auf dem Container, idealerweise einen Vektorindex (flat, quantizedFlat oder diskANN), und eine Abfrage, die nach VectorDistance sortiert. Bestehende Einstellungen der Vektorrichtlinie lassen sich nicht direkt bearbeiten; du entfernst sie und fügst sie neu hinzu.",
         reference: { label: "Microsoft Learn: Vektorsuche in Azure Cosmos DB for NoSQL", url: "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/vector-search" },
       },
       {
@@ -293,11 +293,11 @@ export const ai200De: DeContent = {
         objective: "Implementieren eines Änderungsfeedprozessors zum Erkennen und Verarbeiten neuer oder aktualisierter Elemente",
         difficulty: "foundation",
         question:
-          "Sie nutzen den Änderungsfeedprozessor, um Embeddings zu erzeugen, sobald Dokumente in einen Cosmos-DB-Container eingefügt oder dort aktualisiert werden. Mehrere Instanzen des Workers laufen parallel. Was koordiniert, welche Instanz welchen Teil des Feeds verarbeitet, und speichert den Fortschritt?",
+          "Du nutzt den Änderungsfeedprozessor, um Embeddings zu erzeugen, sobald Dokumente in einen Cosmos-DB-Container eingefügt oder dort aktualisiert werden. Mehrere Instanzen des Workers laufen parallel. Was koordiniert, welche Instanz welchen Teil des Feeds verarbeitet, und speichert den Fortschritt?",
         options: [
           { id: "A", text: "Der Leasecontainer", rationale: "Richtig. Der Leasecontainer speichert den Zustand und koordiniert die Verarbeitung über die Worker hinweg, mit einem Lease pro Partitionsschlüsselbereich." },
           { id: "B", text: "Der überwachte Container", rationale: "Der überwachte Container ist die Quelle der Änderungen, nicht der Speicher des Verarbeitungszustands." },
-          { id: "C", text: "Der Delegat", rationale: "Der Delegat ist Ihr Code, der jeden Batch von Änderungen verarbeitet; er koordiniert keine Worker." },
+          { id: "C", text: "Der Delegat", rationale: "Der Delegat ist dein Code, der jeden Batch von Änderungen verarbeitet; er koordiniert keine Worker." },
           { id: "D", text: "Eine Service-Bus-Dead-Letter-Warteschlange", rationale: "Dead-Letter-Warteschlangen enthalten fehlgeschlagene Nachrichten in Service Bus; sie spielen für den Änderungsfeedprozessor keine Rolle." },
         ],
         answer: "A",
@@ -311,7 +311,7 @@ export const ai200De: DeContent = {
         objective: "Implementieren von Indizierungsstrategien, einschließlich der Optimierung der Abfragelatenz und der Reduzierung des Rechenaufwands von pgvector",
         difficulty: "advanced",
         question:
-          "In Azure Database for PostgreSQL legen Sie eine neue, noch leere Tabelle für Dokument-Embeddings an. Sie möchten jetzt einen Index für die ungefähre Nächste-Nachbarn-Suche (Approximate Nearest Neighbour) erstellen, mit dem besten Verhältnis von Geschwindigkeit zu Trefferquote (Recall) bei Abfragen. Welcher pgvector-Indextyp passt?",
+          "In Azure Database for PostgreSQL legst du eine neue, noch leere Tabelle für Dokument-Embeddings an. Du möchtest jetzt einen Index für die ungefähre Nächste-Nachbarn-Suche (Approximate Nearest Neighbour) erstellen, mit dem besten Verhältnis von Geschwindigkeit zu Trefferquote (Recall) bei Abfragen. Welcher pgvector-Indextyp passt?",
         options: [
           { id: "A", text: "Kein Index, damit jede Abfrage eine exakte Suche durchführt", rationale: "Ohne Index führt pgvector eine exakte Suche mit perfektem Recall durch, allerdings auf Kosten der Abfrageleistung." },
           { id: "B", text: "IVFFlat", rationale: "IVFFlat wird schneller erstellt und braucht weniger Arbeitsspeicher, hat aber einen Trainingsschritt auf vorhandenen Daten und ein schlechteres Verhältnis von Geschwindigkeit zu Recall." },
@@ -329,7 +329,7 @@ export const ai200De: DeContent = {
         objective: "Implementieren der Vektorindizierung zum Aktivieren der Ähnlichkeitssuche",
         difficulty: "advanced",
         question:
-          "Sie möchten eine vorhandene Azure-Managed-Redis-Instanz als semantischen Cache mit Vektorähnlichkeitssuche nutzen. Die Instanz wurde ohne Module erstellt. Was müssen Sie tun?",
+          "Du möchtest eine vorhandene Azure-Managed-Redis-Instanz als semantischen Cache mit Vektorähnlichkeitssuche nutzen. Die Instanz wurde ohne Module erstellt. Was musst du tun?",
         options: [
           { id: "A", text: "Das Modul RediSearch über das Azure-Portal in die laufende Instanz laden", rationale: "Module lassen sich nicht manuell in eine vorhandene Azure-Managed-Redis-Instanz laden." },
           { id: "B", text: "Eine neue Instanz erstellen und das Modul RediSearch bei der Erstellung aktivieren", rationale: "Richtig. Module müssen bei der Erstellung der Instanz hinzugefügt werden, und RediSearch stellt die Abfragen für die Vektorähnlichkeit bereit." },
@@ -349,16 +349,16 @@ export const ai200De: DeContent = {
         objective: "Verarbeitung von Warteschlangen- und Back-End-Vorgängen mithilfe von Azure Service Bus, einschließlich der Verarbeitung von Dead-Letter-Warteschlangen, Nachrichten, Themen und Abonnements",
         difficulty: "intermediate",
         question:
-          "Einige Nachrichten in einer Azure-Service-Bus-Warteschlange schlagen wegen fehlerhafter Nutzdaten wiederholt fehl. Nach der standardmäßigen Anzahl von Zustellversuchen verschwinden sie aus der Warteschlange. Wo sind sie, und wie verarbeiten Sie sie?",
+          "Einige Nachrichten in einer Azure-Service-Bus-Warteschlange schlagen wegen fehlerhafter Nutzdaten wiederholt fehl. Nach der standardmäßigen Anzahl von Zustellversuchen verschwinden sie aus der Warteschlange. Wo sind sie, und wie verarbeitest du sie?",
         options: [
-          { id: "A", text: "Sie wurden gelöscht; erhöhen Sie die Gültigkeitsdauer (Time-to-Live), um sie zu behalten", rationale: "Sie werden nicht gelöscht. Nachrichten, die die maximale Zustellanzahl überschreiten, werden verschoben, nicht verworfen." },
-          { id: "B", text: "Sie wurden an Azure Event Grid weitergeleitet; abonnieren Sie das Topic", rationale: "Service Bus leitet fehlgeschlagene Nachrichten nicht an Event Grid weiter." },
-          { id: "C", text: "Sie wurden in die Dead-Letter-Unterwarteschlange der Warteschlange verschoben; erstellen Sie einen Empfänger für diese Unterwarteschlange und schließen Sie jede Nachricht nach der Bearbeitung ab", rationale: "Richtig. Nach Überschreiten der maximalen Zustellanzahl (Standard: 10) wird die Nachricht in die Dead-Letter-Warteschlange verschoben, wo sie bleibt, bis sie empfangen und abgeschlossen wird." },
+          { id: "A", text: "Sie wurden gelöscht; erhöhe die Gültigkeitsdauer (Time-to-Live), um sie zu behalten", rationale: "Sie werden nicht gelöscht. Nachrichten, die die maximale Zustellanzahl überschreiten, werden verschoben, nicht verworfen." },
+          { id: "B", text: "Sie wurden an Azure Event Grid weitergeleitet; abonniere das Topic", rationale: "Service Bus leitet fehlgeschlagene Nachrichten nicht an Event Grid weiter." },
+          { id: "C", text: "Sie wurden in die Dead-Letter-Unterwarteschlange der Warteschlange verschoben; erstelle einen Empfänger für diese Unterwarteschlange und schließe jede Nachricht nach der Bearbeitung ab", rationale: "Richtig. Nach Überschreiten der maximalen Zustellanzahl (Standard: 10) wird die Nachricht in die Dead-Letter-Warteschlange verschoben, wo sie bleibt, bis sie empfangen und abgeschlossen wird." },
           { id: "D", text: "Sie laufen in der Dead-Letter-Warteschlange nach 24 Stunden automatisch ab", rationale: "Es gibt keine automatische Bereinigung der Dead-Letter-Warteschlange, und die Gültigkeitsdauer wird dort nicht berücksichtigt." },
         ],
         answer: "C",
         explanation:
-          "Jede Warteschlange und jedes Abonnement hat eine eigene Dead-Letter-Unterwarteschlange. Mit dem .NET SDK setzen Sie die Empfängeroption SubQueue auf DeadLetter, prüfen DeadLetterReason (zum Beispiel MaxDeliveryCountExceeded) und schließen die Nachricht ab, um sie zu entfernen.",
+          "Jede Warteschlange und jedes Abonnement hat eine eigene Dead-Letter-Unterwarteschlange. Mit dem .NET SDK setzt du die Empfängeroption SubQueue auf DeadLetter, prüfst DeadLetterReason (zum Beispiel MaxDeliveryCountExceeded) und schließt die Nachricht ab, um sie zu entfernen.",
         reference: { label: "Microsoft Learn: Service-Bus-Dead-Letter-Warteschlangen", url: "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dead-letter-queues" },
       },
       {
@@ -367,7 +367,7 @@ export const ai200De: DeContent = {
         objective: "Implementieren von ereignisgesteuerten Workflows mithilfe von Azure Event Grid, einschließlich Filtern, benutzerdefinierten Ereignissen und Wiederholungen",
         difficulty: "intermediate",
         question:
-          "Eine Azure Function soll nur ausgeführt werden, wenn eine neue PDF-Datei in ein Speicherkonto hochgeladen wird, nicht bei Löschvorgängen und nicht für andere Dateitypen. Wie konfigurieren Sie das Event-Grid-Abonnement?",
+          "Eine Azure Function soll nur ausgeführt werden, wenn eine neue PDF-Datei in ein Speicherkonto hochgeladen wird, nicht bei Löschvorgängen und nicht für andere Dateitypen. Wie konfigurierst du das Event-Grid-Abonnement?",
         options: [
           { id: "A", text: "Nach dem Ereignistyp BlobCreated filtern und einen Betrefffilter „endet mit“ .pdf festlegen", rationale: "Richtig. Die Filterung nach Ereignistyp beschränkt die Zustellung auf Erstellungsereignisse, und der Betrefffilter auf Blobs, deren Name auf .pdf endet." },
           { id: "B", text: "Alle Ereignistypen abonnieren und unerwünschte Ereignisse im Funktionscode verwerfen", rationale: "Das funktioniert, löst die Funktion aber bei jedem Ereignis aus, was die Anforderung vermeiden will." },
@@ -389,12 +389,12 @@ export const ai200De: DeContent = {
         options: [
           { id: "A", text: "Zwei Trigger: ein Warteschlangentrigger und ein Cosmos-DB-Trigger", rationale: "Eine Funktion muss genau einen Trigger haben, und ein Cosmos-DB-Trigger reagiert auf Änderungen, statt Dokumente zu schreiben." },
           { id: "B", text: "Ein HTTP-Trigger, der die Warteschlange abfragt und die Cosmos-DB-REST-API aufruft", rationale: "Polling und manuelle API-Aufrufe sind genau der fest programmierte Zugriff, den Bindungen vermeiden." },
-          { id: "C", text: "Ein Timertrigger ohne Bindungen", rationale: "Ein Timer läuft nach Zeitplan, nicht pro Nachricht, und ohne Bindungen brauchen Sie weiterhin eigenen Verbindungscode." },
+          { id: "C", text: "Ein Timertrigger ohne Bindungen", rationale: "Ein Timer läuft nach Zeitplan, nicht pro Nachricht, und ohne Bindungen brauchst du weiterhin eigenen Verbindungscode." },
           { id: "D", text: "Ein Warteschlangentrigger mit einer Cosmos-DB-Ausgabebindung", rationale: "Richtig. Der Trigger startet die Funktion für jede Nachricht, und die Ausgabebindung schreibt das Dokument." },
         ],
         answer: "D",
         explanation:
-          "Jede Funktion hat genau einen Trigger und beliebig viele optionale Eingabe- und Ausgabebindungen. Bindungen übergeben Daten über Parameter hinein und über Rückgabewerte oder Ausgabeparameter hinaus, sodass Sie keinen dienstspezifischen Verbindungscode schreiben.",
+          "Jede Funktion hat genau einen Trigger und beliebig viele optionale Eingabe- und Ausgabebindungen. Bindungen übergeben Daten über Parameter hinein und über Rückgabewerte oder Ausgabeparameter hinaus, sodass du keinen dienstspezifischen Verbindungscode schreibst.",
         reference: { label: "Microsoft Learn: Trigger und Bindungen in Azure Functions", url: "https://learn.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings" },
       },
       {
@@ -403,7 +403,7 @@ export const ai200De: DeContent = {
         objective: "Verarbeitung von Warteschlangen- und Back-End-Vorgängen mithilfe von Azure Service Bus, einschließlich der Verarbeitung von Dead-Letter-Warteschlangen, Nachrichten, Themen und Abonnements",
         difficulty: "intermediate",
         question:
-          "Wenn eine Bestellung aufgegeben wird, müssen drei unabhängige Back-End-Dienste (Abrechnung, Versand und ein KI-Empfehlungsdienst) jeweils eine eigene Kopie der Bestellnachricht erhalten und sie in ihrem eigenen Tempo verarbeiten. Was sollten Sie verwenden?",
+          "Wenn eine Bestellung aufgegeben wird, müssen drei unabhängige Back-End-Dienste (Abrechnung, Versand und ein KI-Empfehlungsdienst) jeweils eine eigene Kopie der Bestellnachricht erhalten und sie in ihrem eigenen Tempo verarbeiten. Was solltest du verwenden?",
         options: [
           { id: "A", text: "Eine einzelne Service-Bus-Warteschlange, aus der alle drei Dienste lesen", rationale: "Bei einer Warteschlange wird jede Nachricht nur von einem Empfänger verarbeitet, sodass jeder Dienst nur einen Teil der Bestellungen sehen würde." },
           { id: "B", text: "Ein Service-Bus-Topic mit einem Abonnement pro Dienst", rationale: "Richtig. Jedes Abonnement erhält eine eigene Kopie jeder an das Topic gesendeten Nachricht, und jeder Dienst verarbeitet sein Abonnement unabhängig." },
@@ -450,7 +450,7 @@ export const ai200De: DeContent = {
         ],
         answer: "C",
         explanation:
-          "Verwenden Sie App Configuration für Einstellungen und Featureflags und Key Vault für Geheimnisse. Bezeichnungen (Labels) in App Configuration helfen, Varianten desselben Schlüssels zu verwalten, zum Beispiel pro Umgebung.",
+          "Verwende App Configuration für Einstellungen und Featureflags und Key Vault für Geheimnisse. Bezeichnungen (Labels) in App Configuration helfen, Varianten desselben Schlüssels zu verwalten, zum Beispiel pro Umgebung.",
         reference: { label: "Microsoft Learn: Was ist Azure App Configuration?", url: "https://learn.microsoft.com/en-us/azure/azure-app-configuration/overview" },
       },
       {
@@ -459,7 +459,7 @@ export const ai200De: DeContent = {
         objective: "Nachverfolgen verteilter Systeme mithilfe von OpenTelemetry-SDKs",
         difficulty: "intermediate",
         question:
-          "Sie instrumentieren eine Python-API und ihren Hintergrund-Worker mit der Microsoft-OpenTelemetry-Distribution, um Traces an Application Insights zu senden. Welchen Weg empfiehlt Microsoft für die Produktion, um das Ziel anzugeben?",
+          "Du instrumentierst eine Python-API und ihren Hintergrund-Worker mit der Microsoft-OpenTelemetry-Distribution, um Traces an Application Insights zu senden. Welchen Weg empfiehlt Microsoft für die Produktion, um das Ziel anzugeben?",
         options: [
           { id: "A", text: "Den Application-Insights-Instrumentierungsschlüssel fest im Quellcode hinterlegen", rationale: "Schlüssel im Quellcode lassen sich schwer rotieren und sind nicht die empfohlene Konfiguration." },
           { id: "B", text: "Die Umgebungsvariable APPLICATIONINSIGHTS_CONNECTION_STRING setzen", rationale: "Richtig. Die Distribution liest die Application-Insights-Verbindungszeichenfolge aus dieser Umgebungsvariablen, was Microsoft für die Produktion empfiehlt." },
@@ -468,7 +468,7 @@ export const ai200De: DeContent = {
         ],
         answer: "B",
         explanation:
-          "Die OpenTelemetry-Distribution sammelt Traces, Metriken und Protokolle und exportiert sie nach Azure Monitor. Wenn beide Dienste instrumentiert sind, können Sie eine Anfrage über korrelierte Traces durch API und Worker verfolgen und sie anschließend mit KQL analysieren.",
+          "Die OpenTelemetry-Distribution sammelt Traces, Metriken und Protokolle und exportiert sie nach Azure Monitor. Wenn beide Dienste instrumentiert sind, kannst du eine Anfrage über korrelierte Traces durch API und Worker verfolgen und sie anschließend mit KQL analysieren.",
         reference: { label: "Microsoft Learn: Aktivieren von OpenTelemetry in Application Insights", url: "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable" },
       },
     ],

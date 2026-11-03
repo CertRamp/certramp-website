@@ -92,8 +92,8 @@ export default async function DeQuestionsPage({ params }: { params: Promise<Para
               <Icon name="info" className="mt-0.5 size-4 shrink-0" />
               <p>
                 Dies sind eigene Übungsfragen von CertRamp, geschrieben nach der offiziellen Prüfungsgliederung von {cert.vendorName}.
-                Es sind keine echten Prüfungsfragen und sie stammen aus keiner Prüfung. Beantworten Sie jede Frage zuerst selbst und
-                öffnen Sie dann die Lösung mit der Erklärung zu jeder Option.
+                Es sind keine echten Prüfungsfragen und sie stammen aus keiner Prüfung. Beantworte jede Frage zuerst selbst und
+                öffne dann die Lösung mit der Erklärung zu jeder Option.
               </p>
             </div>
 

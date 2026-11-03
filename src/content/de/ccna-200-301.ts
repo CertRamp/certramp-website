@@ -16,7 +16,7 @@ export const ccna200301De: DeContent = {
   slug: "ccna-200-301",
   name: "Cisco CCNA 200-301",
   languageNote:
-    "Die offizielle CCNA-Prüfung 200-301 gibt es nicht auf Deutsch: Cisco bietet sie nur auf Englisch und Japanisch an; unsere Übungsprüfungen helfen Ihnen, die Inhalte auf Deutsch zu verstehen.",
+    "Die offizielle CCNA-Prüfung 200-301 gibt es nicht auf Deutsch: Cisco bietet sie nur auf Englisch und Japanisch an; unsere Übungsprüfungen helfen dir, die Inhalte auf Deutsch zu verstehen.",
   facts: [
     { label: "Prüfungsanbieter", value: "Cisco" },
     { label: "Prüfungscode", value: "200-301 CCNA" },
@@ -104,7 +104,7 @@ export const ccna200301De: DeContent = {
   guide: {
     slug: "ccna-200-301",
     summary:
-      "CCNA 200-301 (Implementing and Administering Cisco Solutions) ist eine 120-minütige Prüfung, die zeigt, ob Sie ein kleines bis mittelgroßes Netzwerk aufbauen, betreiben und Fehler darin beheben können: Adressierung und Subnetting, Switching, Routing, Netzwerkdienste, Sicherheit und Netzwerkbetrieb. Derzeit sind zwei Versionen relevant: v1.1 kann bis zum 2. Februar 2027 abgelegt werden, und v2.0 (die die Inhalte in fünf Domänen neu gliedert, mit mehr Troubleshooting und KI im Netzwerkbetrieb) startet am 3. Februar 2027.",
+      "CCNA 200-301 (Implementing and Administering Cisco Solutions) ist eine 120-minütige Prüfung, die zeigt, ob du ein kleines bis mittelgroßes Netzwerk aufbauen, betreiben und Fehler darin beheben kannst: Adressierung und Subnetting, Switching, Routing, Netzwerkdienste, Sicherheit und Netzwerkbetrieb. Derzeit sind zwei Versionen relevant: v1.1 kann bis zum 2. Februar 2027 abgelegt werden, und v2.0 (die die Inhalte in fünf Domänen neu gliedert, mit mehr Troubleshooting und KI im Netzwerkbetrieb) startet am 3. Februar 2027.",
     whoFor: [
       "Mitarbeiterinnen und Mitarbeiter aus Netzwerk, Support und Helpdesk, die eine anerkannte erste Cisco-Zertifizierung anstreben",
       "Quereinsteigerinnen und Quereinsteiger sowie Studentinnen und Studenten, die eine Grundlage in Routing, Switching und IP-Adressierung aufbauen",
@@ -113,9 +113,9 @@ export const ccna200301De: DeContent = {
     sections: [
       {
         id: "versions",
-        heading: "v1.1 oder v2.0: Welche Prüfung legen Sie ab?",
+        heading: "v1.1 oder v2.0: Welche Prüfung legst du ab?",
         paragraphs: [
-          "Der Prüfungscode bleibt 200-301 und die Zertifizierung heißt weiterhin CCNA, aber die Exam Topics ändern sich. Laut Cisco ist der letzte Prüfungstag für 200-301 CCNA v1.1 der 2. Februar 2027, und CCNA v2.0 steht ab dem 3. Februar 2027 zur Prüfung bereit. Ihr Prüfungstermin entscheidet, welche Gliederung Sie lernen: Legen Sie die Prüfung am oder vor dem 2. Februar 2027 ab, ist es v1.1; ab dem 3. Februar 2027 ist es v2.0.",
+          "Der Prüfungscode bleibt 200-301 und die Zertifizierung heißt weiterhin CCNA, aber die Exam Topics ändern sich. Laut Cisco ist der letzte Prüfungstag für 200-301 CCNA v1.1 der 2. Februar 2027, und CCNA v2.0 steht ab dem 3. Februar 2027 zur Prüfung bereit. Dein Prüfungstermin entscheidet, welche Gliederung du lernst: Lege die Prüfung am oder vor dem 2. Februar 2027 ab, ist es v1.1; ab dem 3. Februar 2027 ist es v2.0.",
           "v1.1 hat sechs Domänen: Network Fundamentals (Netzwerkgrundlagen, 20 %), Network Access (Netzwerkzugang, 20 %), IP Connectivity (IP-Konnektivität, 25 %), IP Services (IP-Dienste, 10 %), Security Fundamentals (Sicherheitsgrundlagen, 15 %) sowie Automation and Programmability (Automatisierung und Programmierbarkeit, 10 %). v2.0 gliedert die Inhalte in fünf Domänen neu: Network Infrastructure and Connectivity (Netzwerkinfrastruktur und Konnektivität, 25 %), Switching and Network Access (Switching und Netzwerkzugang, 25 %), IP Routing (IP-Routing, 20 %), Network Services and Security (Netzwerkdienste und Sicherheit, 20 %) sowie AI, and Network Operations and Management (KI sowie Netzwerkbetrieb und -management, 10 %).",
           "Ein Großteil des Kerns bleibt erhalten: IPv4-Subnetting, IPv6-Adressierung, WLAN-Grundlagen, VLANs und Trunks, EtherChannel mit LACP, Rapid PVST+, statisches Routing, Single-Area-OSPF, NAT, IPv4-ACLs, Layer-2-Sicherheit, SNMP, Syslog und Ansible. Unsere kostenlosen Fragen unten behandeln nur diese gemeinsamen Themen und nennen jeweils die Themennummer aus v2.0 und aus v1.1.",
         ],
@@ -127,7 +127,7 @@ export const ccna200301De: DeContent = {
           "Mehr Troubleshooting. Viele Themen in v2.0 beginnen mit „Troubleshoot“, „Diagnose“ oder „Interpret“: IPv4- und IPv6-Adressierung, Client-Konnektivität, DHCPv4, statisches Routing, DNS-Einträge und Syslog-Meldungen.",
           "Neue oder erweiterte Themen sind unter anderem OSPFv3 für IPv6, der Betriebsstatus von HSRP und VRRP, DNS-Eintragstypen (A, AAAA, CNAME, MX, NS und PTR), Dateiübertragung mit SFTP/SCP, AAA mit TACACS+ und RADIUS sowie Storm Control und RA Guard als Layer-2-Sicherheitsfunktionen.",
           "KI im Betrieb. Domäne 5.0 behandelt die Rolle agentischer KI und die Auswahl eines Prompts für ein generatives KI-System. Cisco weist außerdem darauf hin, dass manche Fragen verlangen können, die Ausgabe agentischer KI und digitaler Netzwerkassistenten zu bewerten.",
-          "Themen, die in der Gliederung von v1.1, aber nicht in der von v2.0 vorkommen, sind unter anderem QoS-Per-Hop-Behavior, NTP, TFTP/FTP, TCP im Vergleich zu UDP, REST-APIs und JSON-codierte Daten. Lernen Sie sie, wenn Sie v1.1 ablegen; wenn Sie v2.0 ablegen, prüfen Sie das PDF zu v2.0, bevor Sie etwas auslassen.",
+          "Themen, die in der Gliederung von v1.1, aber nicht in der von v2.0 vorkommen, sind unter anderem QoS-Per-Hop-Behavior, NTP, TFTP/FTP, TCP im Vergleich zu UDP, REST-APIs und JSON-codierte Daten. Lerne sie, wenn du v1.1 ablegst; wenn du v2.0 ablegst, prüfe das PDF zu v2.0, bevor du etwas auslässt.",
         ],
       },
       {
@@ -135,28 +135,28 @@ export const ccna200301De: DeContent = {
         heading: "Ein Vorbereitungsplan in sechs Schritten",
         steps: [
           {
-            title: "Wählen Sie Ihre Version und laden Sie deren Exam Topics herunter",
-            body: "Legen Sie sich auf einen Termin vor oder nach dem 3. Februar 2027 fest und laden Sie das passende PDF mit den Exam Topics von Cisco herunter. Markieren Sie jedes Thema als „beherrscht“, „unsicher“ oder „neu“ und verteilen Sie Ihre Zeit entsprechend den Domänengewichten.",
+            title: "Wähle deine Version und lade deren Exam Topics herunter",
+            body: "Lege dich auf einen Termin vor oder nach dem 3. Februar 2027 fest und lade das passende PDF mit den Exam Topics von Cisco herunter. Markiere jedes Thema als „beherrscht“, „unsicher“ oder „neu“ und verteile deine Zeit entsprechend den Domänengewichten.",
           },
           {
-            title: "Machen Sie Subnetting zur Routine",
-            body: "Üben Sie IPv4-Subnetting, bis Sie Netzadresse, Broadcast-Adresse und nutzbaren Adressbereich jedes Präfixes in unter einer Minute bestimmen können; nehmen Sie dann IPv6-Präfixe und Modified EUI-64 hinzu. Adressierung taucht in fast jedem Routing-, ACL- und Troubleshooting-Szenario auf.",
+            title: "Mache Subnetting zur Routine",
+            body: "Übe IPv4-Subnetting, bis du Netzadresse, Broadcast-Adresse und nutzbaren Adressbereich jedes Präfixes in unter einer Minute bestimmen kannst; nimm dann IPv6-Präfixe und Modified EUI-64 hinzu. Adressierung taucht in fast jedem Routing-, ACL- und Troubleshooting-Szenario auf.",
           },
           {
-            title: "Bauen Sie ein Lab auf",
-            body: "Nutzen Sie Cisco Packet Tracer, Cisco Modeling Labs oder echte Geräte, um VLANs, Trunks, EtherChannel, Rapid PVST+, statische Routen, OSPF, NAT und ACLs zu konfigurieren. Bauen Sie dann absichtlich Fehler ein und beheben Sie sie mit show-Befehlen, ping und traceroute.",
+            title: "Baue ein Lab auf",
+            body: "Nutze Cisco Packet Tracer, Cisco Modeling Labs oder echte Geräte, um VLANs, Trunks, EtherChannel, Rapid PVST+, statische Routen, OSPF, NAT und ACLs zu konfigurieren. Baue dann absichtlich Fehler ein und behebe sie mit show-Befehlen, ping und traceroute.",
           },
           {
-            title: "Lernen Sie, Ausgaben zu lesen",
-            body: "Gewöhnen Sie sich an show ip route, show interfaces, show spanning-tree, show ip ospf neighbor, show ip nat translations und Syslog-Meldungen. Viele Fragen zeigen Ihnen eine Ausgabe und fragen, was sie bedeutet oder was zu ändern ist.",
+            title: "Lerne, Ausgaben zu lesen",
+            body: "Gewöhne dich an show ip route, show interfaces, show spanning-tree, show ip ospf neighbor, show ip nat translations und Syslog-Meldungen. Viele Fragen zeigen dir eine Ausgabe und fragen, was sie bedeutet oder was zu ändern ist.",
           },
           {
-            title: "Decken Sie Dienste, Sicherheit und Betrieb ab",
-            body: "Arbeiten Sie DHCP, DNS, NAT, ACLs, Port Security, DHCP Snooping, AAA, SNMP und Syslog durch. Für v2.0 kommen die Themen zu KI und Netzwerkmanagement hinzu; für v1.1 QoS, REST-APIs und JSON.",
+            title: "Decke Dienste, Sicherheit und Betrieb ab",
+            body: "Arbeite DHCP, DNS, NAT, ACLs, Port Security, DHCP Snooping, AAA, SNMP und Syslog durch. Für v2.0 kommen die Themen zu KI und Netzwerkmanagement hinzu; für v1.1 QoS, REST-APIs und JSON.",
           },
           {
-            title: "Üben Sie unter Zeitdruck",
-            body: "Absolvieren Sie zeitlich begrenzte Übungsprüfungen in 120 Minuten und lesen Sie jede Erklärung, auch zu den Fragen, die Sie richtig beantwortet haben. Buchen Sie die Prüfung, sobald Sie regelmäßig mit sicherem Abstand bestehen.",
+            title: "Übe unter Zeitdruck",
+            body: "Absolviere zeitlich begrenzte Übungsprüfungen in 120 Minuten und lies jede Erklärung, auch zu den Fragen, die du richtig beantwortet hast. Buche die Prüfung, sobald du regelmäßig mit sicherem Abstand bestehst.",
           },
         ],
       },
@@ -165,7 +165,7 @@ export const ccna200301De: DeContent = {
         heading: "Häufige Fehler bei der Vorbereitung",
         bullets: [
           "Die falsche Gliederung lernen. Material für v1.1 ist auch für v2.0 nützlich, deckt aber neue Themen nicht ab, etwa OSPFv3, den Betriebsstatus von HSRP und VRRP (v1.1 beschrieb nur FHRP-Konzepte), DNS-Einträge und agentische KI.",
-          "Sich auf einen Subnetzrechner verlassen. In der Prüfung haben Sie keinen, und langsames Rechnen kostet bei jeder Adressierungsfrage Zeit.",
+          "Sich auf einen Subnetzrechner verlassen. In der Prüfung hast du keinen, und langsames Rechnen kostet bei jeder Adressierungsfrage Zeit.",
           "Die Liste der erlaubten VLANs auf einem Trunk ersetzen. switchport trunk allowed vlan 30 überschreibt die Liste; switchport trunk allowed vlan add 30 erweitert sie.",
           "Das implizite Deny vergessen. Jede IPv4-ACL endet mit einem unsichtbaren Deny: eine ACL, die nur deny-Anweisungen enthält, blockiert daher den gesamten Datenverkehr.",
           "Administrative Distanz und Metrik verwechseln. Zuerst wählt der Longest Prefix Match die Route aus; die administrative Distanz entscheidet nur zwischen Routen zum selben Präfix aus unterschiedlichen Quellen.",
@@ -176,7 +176,7 @@ export const ccna200301De: DeContent = {
       {
         question: "Sollte ich CCNA v1.1 jetzt ablegen oder auf v2.0 warten?",
         answer:
-          "Das hängt von Ihrem Zeitplan ab. v1.1 kann bis zum 2. Februar 2027 abgelegt werden; v2.0 startet am 3. Februar 2027. Wenn Sie bereits gut auf v1.1 vorbereitet sind, vermeiden Sie mit einer Prüfung vor der Umstellung, neue Themen lernen zu müssen. Wenn Sie bei null anfangen und Ihr Prüfungstermin nach Anfang Februar 2027 liegt, lernen Sie die Exam Topics von v2.0. Beide führen zur selben CCNA-Zertifizierung.",
+          "Das hängt von deinem Zeitplan ab. v1.1 kann bis zum 2. Februar 2027 abgelegt werden; v2.0 startet am 3. Februar 2027. Wenn du bereits gut auf v1.1 vorbereitet bist, vermeide mit einer Prüfung vor der Umstellung, neue Themen lernen zu müssen. Wenn du bei null anfängst und dein Prüfungstermin nach Anfang Februar 2027 liegt, lerne die Exam Topics von v2.0. Beide führen zur selben CCNA-Zertifizierung.",
       },
       {
         question: "Wie lange dauert die CCNA-Prüfung und was kostet sie?",
@@ -191,12 +191,12 @@ export const ccna200301De: DeContent = {
       {
         question: "Gibt es die Prüfung auf Deutsch?",
         answer:
-          "Nein. Die CCNA-Prüfung 200-301 wird nur auf Englisch und Japanisch angeboten; Sie legen sie in der Regel auf Englisch ab. Unsere deutschsprachigen Übungsfragen helfen Ihnen, die Inhalte auf Deutsch zu verstehen: Befehle, Ausgaben und Fachbegriffe sollten Sie dennoch auf Englisch beherrschen.",
+          "Nein. Die CCNA-Prüfung 200-301 wird nur auf Englisch und Japanisch angeboten; du legst sie in der Regel auf Englisch ab. Unsere deutschsprachigen Übungsfragen helfen dir, die Inhalte auf Deutsch zu verstehen: Befehle, Ausgaben und Fachbegriffe solltest du dennoch auf Englisch beherrschen.",
       },
       {
         question: "Wie lange ist die CCNA gültig und wie rezertifiziere ich mich?",
         answer:
-          "Die CCNA-Zertifizierung ist drei Jahre gültig. Sie können sich rezertifizieren, indem Sie vor Ablauf Ihrer Zertifizierung die aktuelle CCNA-Prüfung oder eine qualifizierende Cisco-Prüfung auf höherem Niveau bestehen oder 30 Continuing-Education-Credits (CE) über anerkannte Cisco-Schulungen sammeln.",
+          "Die CCNA-Zertifizierung ist drei Jahre gültig. Du kannst dich rezertifizieren, indem du vor Ablauf deiner Zertifizierung die aktuelle CCNA-Prüfung oder eine qualifizierende Cisco-Prüfung auf höherem Niveau bestehst oder 30 Continuing-Education-Credits (CE) über anerkannte Cisco-Schulungen sammelst.",
       },
       {
         question: "Sind die CertRamp-Fragen echte Prüfungsfragen?",
@@ -216,7 +216,7 @@ export const ccna200301De: DeContent = {
   questions: {
     slug: "ccna-200-301",
     intro:
-      "15 eigene Übungsfragen zu CCNA 200-301, gegliedert nach den fünf Domänen der Exam Topics v2.0 und ungefähr so gewichtet wie diese. Jede Frage behandelt ein Thema, das sowohl in v2.0 als auch in v1.1 vorkommt, die Fragen sind also unabhängig davon nützlich, welche Version Sie ablegen; bei jedem Prüfungsziel stehen beide Themennummern. Zu jeder Frage gibt es die Lösung, eine kurze Erklärung und die Begründung, warum jede andere Option falsch ist.",
+      "15 eigene Übungsfragen zu CCNA 200-301, gegliedert nach den fünf Domänen der Exam Topics v2.0 und ungefähr so gewichtet wie diese. Jede Frage behandelt ein Thema, das sowohl in v2.0 als auch in v1.1 vorkommt, die Fragen sind also unabhängig davon nützlich, welche Version du ablegst; bei jedem Prüfungsziel stehen beide Themennummern. Zu jeder Frage gibt es die Lösung, eine kurze Erklärung und die Begründung, warum jede andere Option falsch ist.",
     published: "2026-10-28",
     updated: "2026-10-28",
     seo: {
@@ -268,7 +268,7 @@ export const ccna200301De: DeContent = {
         objective: "1.5 Describe wireless principles, 1.5.a Band and channel selection (v1.1: 1.11.a)",
         difficulty: "foundation",
         question:
-          "Sie installieren drei benachbarte Access Points im 2,4-GHz-Band (20-MHz-Kanäle, nordamerikanischer Kanalsatz) und möchten Gleichkanal- und Nachbarkanalstörungen vermeiden. Welchen Kanalplan sollten Sie verwenden?",
+          "Du installierst drei benachbarte Access Points im 2,4-GHz-Band (20-MHz-Kanäle, nordamerikanischer Kanalsatz) und möchtest Gleichkanal- und Nachbarkanalstörungen vermeiden. Welchen Kanalplan solltest du verwenden?",
         options: [
           { id: "A", text: "1, 2 und 3", rationale: "Benachbarte 2,4-GHz-Kanäle überlappen stark und würden sich gegenseitig stören." },
           { id: "B", text: "6, 6 und 6", rationale: "Derselbe Kanal auf benachbarten APs verursacht Gleichkanalstörungen." },
@@ -295,7 +295,7 @@ export const ccna200301De: DeContent = {
         ],
         answer: "B",
         explanation:
-          "Bei einem Duplex-Mismatch protokolliert die Halbduplex-Seite typischerweise Late Collisions, während die Vollduplex-Seite FCS/CRC-Fehler und Runts sieht. Beheben Sie das, indem Sie beide Enden gleich einstellen, idealerweise beide auf Autonegotiation.",
+          "Bei einem Duplex-Mismatch protokolliert die Halbduplex-Seite typischerweise Late Collisions, während die Vollduplex-Seite FCS/CRC-Fehler und Runts sieht. Behebe das, indem du beide Enden gleich einstellst, idealerweise beide auf Autonegotiation.",
         reference: V2,
       },
 
@@ -306,7 +306,7 @@ export const ccna200301De: DeContent = {
         objective: "2.1 Configure network infrastructure connectivity (switch-to-switch and switch-to-router), 2.1.b Layer 2 802.1Q trunk interfaces (v1.1: 2.2.a)",
         difficulty: "intermediate",
         question:
-          "Ein 802.1Q-Trunk zwischen zwei Switches erlaubt derzeit die VLANs 10 und 20. Sie müssen zusätzlich das neue VLAN 30 übertragen, ohne VLAN 10 und 20 zu unterbrechen. Welchen Schnittstellenbefehl geben Sie auf beiden Switches ein?",
+          "Ein 802.1Q-Trunk zwischen zwei Switches erlaubt derzeit die VLANs 10 und 20. Du musst zusätzlich das neue VLAN 30 übertragen, ohne VLAN 10 und 20 zu unterbrechen. Welchen Schnittstellenbefehl gibst du auf beiden Switches ein?",
         options: [
           { id: "A", text: "switchport trunk allowed vlan 30", rationale: "Damit wird die Liste der erlaubten VLANs durch VLAN 30 allein ersetzt, sodass VLAN 10 und 20 den Trunk nicht mehr passieren würden." },
           { id: "B", text: "switchport trunk native vlan 30", rationale: "Damit wird das native (ungetaggte) VLAN geändert; VLAN 30 wird dadurch nicht in die Liste der erlaubten VLANs aufgenommen." },
@@ -315,7 +315,7 @@ export const ccna200301De: DeContent = {
         ],
         answer: "C",
         explanation:
-          "Das vergessene Schlüsselwort add ist eine häufige Ursache für Ausfälle: Ohne add wird die Liste der erlaubten VLANs überschrieben. Prüfen Sie das Ergebnis mit show interfaces trunk.",
+          "Das vergessene Schlüsselwort add ist eine häufige Ursache für Ausfälle: Ohne add wird die Liste der erlaubten VLANs überschrieben. Prüfe das Ergebnis mit show interfaces trunk.",
         reference: V2,
       },
       {
@@ -333,7 +333,7 @@ export const ccna200301De: DeContent = {
         ],
         answer: "A",
         explanation:
-          "Root Bridge wird der Switch mit der niedrigsten Bridge-ID: zuerst die Priorität (einschließlich der Extended System ID, also der VLAN-Nummer), dann die MAC-Adresse. Um die Root Bridge gezielt festzulegen, verwenden Sie spanning-tree vlan 10 root primary oder setzen eine niedrigere Priorität.",
+          "Root Bridge wird der Switch mit der niedrigsten Bridge-ID: zuerst die Priorität (einschließlich der Extended System ID, also der VLAN-Nummer), dann die MAC-Adresse. Um die Root Bridge gezielt festzulegen, verwendest du spanning-tree vlan 10 root primary oder setzt eine niedrigere Priorität.",
         reference: V2,
       },
       {
@@ -380,7 +380,7 @@ export const ccna200301De: DeContent = {
         objective: "3.2 Troubleshoot IPv4 and IPv6 static routing, 3.2.d Floating static (v1.1: 3.3.d)",
         difficulty: "advanced",
         question:
-          "Ein Router lernt seine Default-Route über OSPF. Sie möchten eine Backup-Default-Route über 198.51.100.1, die nur verwendet wird, wenn die OSPF-Default-Route wegfällt. Mit welchem Befehl erreichen Sie das?",
+          "Ein Router lernt seine Default-Route über OSPF. Du möchtest eine Backup-Default-Route über 198.51.100.1, die nur verwendet wird, wenn die OSPF-Default-Route wegfällt. Mit welchem Befehl erreichst du das?",
         options: [
           { id: "A", text: "ip route 0.0.0.0 0.0.0.0 198.51.100.1", rationale: "Ohne Angabe einer Distanz hat die statische Route die administrative Distanz 1 und würde die OSPF-Route sofort ersetzen." },
           { id: "B", text: "ip route 0.0.0.0 0.0.0.0 198.51.100.1 100", rationale: "100 ist niedriger als die 110 von OSPF, daher würde die statische Route weiterhin der OSPF-Route vorgezogen." },
@@ -427,7 +427,7 @@ export const ccna200301De: DeContent = {
         ],
         answer: "B",
         explanation:
-          "Statisches NAT ist die richtige Wahl, wenn externe Hosts Verbindungen zu einem internen Host aufbauen müssen. Die Syntax lautet ip nat inside source static <inside local> <inside global>; prüfen Sie die Zuordnung mit show ip nat translations.",
+          "Statisches NAT ist die richtige Wahl, wenn externe Hosts Verbindungen zu einem internen Host aufbauen müssen. Die Syntax lautet ip nat inside source static <inside local> <inside global>; prüfe die Zuordnung mit show ip nat translations.",
         reference: V2,
       },
       {
@@ -445,7 +445,7 @@ export const ccna200301De: DeContent = {
         ],
         answer: "D",
         explanation:
-          "Erweiterte ACLs können Protokoll, Quelle, Ziel und Port abgleichen und werden in der Regel nahe der Quelle platziert. Denken Sie an die Wildcard-Maske und an das implizite deny any am Ende jeder ACL.",
+          "Erweiterte ACLs können Protokoll, Quelle, Ziel und Port abgleichen und werden in der Regel nahe der Quelle platziert. Denke an die Wildcard-Maske und an das implizite deny any am Ende jeder ACL.",
         reference: V2,
       },
       {
@@ -454,7 +454,7 @@ export const ccna200301De: DeContent = {
         objective: "4.7 Configure Layer 2 security features, 4.7.a DHCP snooping (v1.1: 5.7)",
         difficulty: "intermediate",
         question:
-          "Clients in VLAN 20 erhalten IP-Adressen von einem nicht autorisierten DHCP-Server (Rogue DHCP Server), den jemand an einen Access-Port angeschlossen hat. Der legitime DHCP-Server ist über den Uplink des Switches erreichbar. Wie unterbinden Sie das?",
+          "Clients in VLAN 20 erhalten IP-Adressen von einem nicht autorisierten DHCP-Server (Rogue DHCP Server), den jemand an einen Access-Port angeschlossen hat. Der legitime DHCP-Server ist über den Uplink des Switches erreichbar. Wie unterbindest du das?",
         options: [
           { id: "A", text: "Port Security mit maximal einer MAC-Adresse auf jedem Port aktivieren", rationale: "Port Security begrenzt die Zahl der MAC-Adressen pro Port, aber ein Rogue-Server mit einer einzigen MAC-Adresse könnte weiterhin Leases vergeben." },
           { id: "B", text: "PortFast auf allen Access-Ports aktivieren", rationale: "PortFast beschleunigt die STP-Konvergenz an Edge-Ports; gegen DHCP-Nachrichten bewirkt es nichts." },
@@ -463,7 +463,7 @@ export const ccna200301De: DeContent = {
         ],
         answer: "C",
         explanation:
-          "Auf Cisco-Switches sind nach dem Aktivieren von DHCP Snooping alle Ports nicht vertrauenswürdig; Sie müssen also die Ports als trusted festlegen, die zu legitimen DHCP-Servern führen. Die dabei aufgebaute Binding-Tabelle wird auch von Dynamic ARP Inspection genutzt.",
+          "Auf Cisco-Switches sind nach dem Aktivieren von DHCP Snooping alle Ports nicht vertrauenswürdig; du musst also die Ports als trusted festlegen, die zu legitimen DHCP-Servern führen. Die dabei aufgebaute Binding-Tabelle wird auch von Dynamic ARP Inspection genutzt.",
         reference: V2,
       },
 
@@ -492,7 +492,7 @@ export const ccna200301De: DeContent = {
         objective: "5.5 Use configuration management mechanisms such as Ansible to execute commands (v1.1: 6.6)",
         difficulty: "foundation",
         question:
-          "Ihr Team möchte mit Ansible dieselbe Konfigurationsänderung auf 200 Cisco-IOS-XE-Switches ausrollen. Welche Aussage über Ansible ist richtig?",
+          "Dein Team möchte mit Ansible dieselbe Konfigurationsänderung auf 200 Cisco-IOS-XE-Switches ausrollen. Welche Aussage über Ansible ist richtig?",
         options: [
           { id: "A", text: "Auf jedem Switch muss ein Ansible-Agent installiert werden, bevor er verwaltet werden kann", rationale: "Ansible ist agentenlos; auf den verwalteten Netzwerkgeräten muss nichts installiert werden." },
           { id: "B", text: "Ansible ist agentenlos, verbindet sich mit Netzwerkgeräten in der Regel über SSH und beschreibt Aufgaben in YAML-Playbooks", rationale: "Richtig. Ein Control Node führt in YAML geschriebene Playbooks aus und verbindet sich über SSH (oder APIs) mit den Geräten, ohne dass dort ein Agent dauerhaft läuft." },

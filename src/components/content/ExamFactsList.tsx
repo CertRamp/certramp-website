@@ -48,7 +48,7 @@ const t = {
   de: {
     verified: "Prüfungsangaben zuletzt geprüft am",
     newTab: "öffnet in neuem Tab",
-    note: "Prüfungsdetails können sich ändern. Prüfen Sie sie vor der Buchung immer beim offiziellen Anbieter.",
+    note: "Prüfungsdetails können sich ändern. Prüf sie vor der Buchung immer beim offiziellen Anbieter.",
   },
 } as const;
 

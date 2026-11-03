@@ -45,7 +45,7 @@ export const examChangesCopy = {
       "Welche IT-Zertifizierungsprüfungen 2026 und 2027 eingestellt, ersetzt oder überarbeitet werden: Microsoft, AWS, CompTIA, Cisco, ISC2, ISACA u. a., mit Quellen.",
     eyebrow: "Prüfungsänderungen im Überblick",
     intro:
-      "Auslaufende Prüfungen, Nachfolger, neue Prüfungsversionen und überarbeitete Gliederungen bei Microsoft, AWS, CompTIA, Cisco, Google Cloud, ISC2, ISACA, IAPP, ISTQB und weiteren Anbietern. Jeder Eintrag verweist auf die offizielle Quelle des Anbieters und sagt, was die Änderung für Ihre Vorbereitung bedeutet.",
+      "Auslaufende Prüfungen, Nachfolger, neue Prüfungsversionen und überarbeitete Gliederungen bei Microsoft, AWS, CompTIA, Cisco, Google Cloud, ISC2, ISACA, IAPP, ISTQB und weiteren Anbietern. Jeder Eintrag verweist auf die offizielle Quelle des Anbieters und sagt, was die Änderung für deine Vorbereitung bedeutet.",
     checked: "Zuletzt mit den offiziellen Quellen abgeglichen",
     upcoming: "Demnächst",
     upcomingIntro: "Änderungen mit einem Datum in der Zukunft, das nächste zuerst.",
@@ -53,7 +53,7 @@ export const examChangesCopy = {
     recentIntro: "Änderungen, die 2026 bereits in Kraft getreten sind, die neueste zuerst.",
     filter: "Nach Anbieter filtern",
     all: "Alle Anbieter",
-    note: "Anbieter ändern Termine und Gliederungen oft kurzfristig. Prüfen Sie das Datum vor der Buchung immer auf der offiziellen Seite. Haben wir eine Änderung übersehen? Schreiben Sie an",
+    note: "Anbieter ändern Termine und Gliederungen oft kurzfristig. Prüf das Datum vor der Buchung immer auf der offiziellen Seite. Haben wir eine Änderung übersehen? Schreib an",
     other: "In English",
     otherPath: examChangesPath,
     home: { name: "Auf Deutsch", path: deHubPath },

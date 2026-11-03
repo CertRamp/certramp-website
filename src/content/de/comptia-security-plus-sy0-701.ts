@@ -16,7 +16,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
   slug: "comptia-security-plus-sy0-701",
   name: "CompTIA Security+ SY0-701",
   languageNote:
-    "Die offizielle Prüfung SY0-701 gibt es nicht auf Deutsch: CompTIA bietet sie auf Englisch, Japanisch, Portugiesisch, Spanisch und Thai an; unsere Übungsprüfungen helfen Ihnen, die Inhalte auf Deutsch zu verstehen.",
+    "Die offizielle Prüfung SY0-701 gibt es nicht auf Deutsch: CompTIA bietet sie auf Englisch, Japanisch, Portugiesisch, Spanisch und Thai an; unsere Übungsprüfungen helfen dir, die Inhalte auf Deutsch zu verstehen.",
   facts: [
     { label: "Prüfungsanbieter", value: "CompTIA" },
     { label: "Prüfungscode", value: "SY0-701" },
@@ -105,7 +105,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
   guide: {
     slug: "comptia-security-plus-sy0-701",
     summary:
-      "CompTIA Security+ SY0-701 (Security+ V7) prüft grundlegende Sicherheitskompetenzen in fünf Domänen, von Sicherheitskontrollen und Bedrohungen bis zu Security Operations und Governance. Sie erhalten maximal 90 Multiple-Choice- und performancebasierte Fragen in 90 Minuten und benötigen 750 Punkte auf einer Skala von 100–900. Die Nachfolgeprüfung SY0-801 (V8) erscheint voraussichtlich um den 17. November 2026; SY0-701 läuft am 11. Juni 2027 auf Englisch und am 13. August 2027 auf Japanisch, Portugiesisch, Spanisch und Thai aus.",
+      "CompTIA Security+ SY0-701 (Security+ V7) prüft grundlegende Sicherheitskompetenzen in fünf Domänen, von Sicherheitskontrollen und Bedrohungen bis zu Security Operations und Governance. Du erhältst maximal 90 Multiple-Choice- und performancebasierte Fragen in 90 Minuten und benötigst 750 Punkte auf einer Skala von 100–900. Die Nachfolgeprüfung SY0-801 (V8) erscheint voraussichtlich um den 17. November 2026; SY0-701 läuft am 11. Juni 2027 auf Englisch und am 13. August 2027 auf Japanisch, Portugiesisch, Spanisch und Thai aus.",
     whoFor: [
       "System- und Netzwerkadministratorinnen und -administratoren, die in eine Security-Rolle wechseln",
       "Junior-Security-Analystinnen und -Analysten sowie SOC-Mitarbeiterinnen und -Mitarbeiter, die ein breites, herstellerneutrales Fundament suchen",
@@ -116,16 +116,16 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
         id: "what-the-exam-tests",
         heading: "Was SY0-701 tatsächlich prüft",
         paragraphs: [
-          "Die Prüfungsziele von SY0-701 umfassen fünf Domänen: General Security Concepts (allgemeine Sicherheitskonzepte, 12 %), Threats, Vulnerabilities, and Mitigations (Bedrohungen, Schwachstellen und Gegenmaßnahmen, 22 %), Security Architecture (Sicherheitsarchitektur, 18 %), Security Operations (Sicherheitsbetrieb, 28 %) sowie Security Program Management and Oversight (Steuerung und Überwachung des Sicherheitsprogramms, 20 %). Security Operations hat das höchste Gewicht: Identity and Access Management, Schwachstellenmanagement, Monitoring, Incident Response und Untersuchungen verdienen deshalb einen großen Teil Ihrer Lernzeit.",
-          "Viele Prüfungsziele beginnen mit „Given a scenario“, etwa Indikatoren für bösartige Aktivitäten analysieren, Unternehmensinfrastruktur absichern oder Identity and Access Management umsetzen. Andere verlangen, Konzepte zu vergleichen und gegenüberzustellen oder zu erklären. Rechnen Sie damit, für eine kurze Situation die passende Kontrolle, den Angriffstyp, die Technologie oder den nächsten Schritt auszuwählen, statt Definitionen aufzusagen.",
+          "Die Prüfungsziele von SY0-701 umfassen fünf Domänen: General Security Concepts (allgemeine Sicherheitskonzepte, 12 %), Threats, Vulnerabilities, and Mitigations (Bedrohungen, Schwachstellen und Gegenmaßnahmen, 22 %), Security Architecture (Sicherheitsarchitektur, 18 %), Security Operations (Sicherheitsbetrieb, 28 %) sowie Security Program Management and Oversight (Steuerung und Überwachung des Sicherheitsprogramms, 20 %). Security Operations hat das höchste Gewicht: Identity and Access Management, Schwachstellenmanagement, Monitoring, Incident Response und Untersuchungen verdienen deshalb einen großen Teil deiner Lernzeit.",
+          "Viele Prüfungsziele beginnen mit „Given a scenario“, etwa Indikatoren für bösartige Aktivitäten analysieren, Unternehmensinfrastruktur absichern oder Identity and Access Management umsetzen. Andere verlangen, Konzepte zu vergleichen und gegenüberzustellen oder zu erklären. Rechne damit, für eine kurze Situation die passende Kontrolle, den Angriffstyp, die Technologie oder den nächsten Schritt auszuwählen, statt Definitionen aufzusagen.",
         ],
       },
       {
         id: "sy0-701-vs-sy0-801",
-        heading: "SY0-701 oder SY0-801: Welche Version sollten Sie ablegen?",
+        heading: "SY0-701 oder SY0-801: Welche Version solltest du ablegen?",
         paragraphs: [
           "CompTIA ersetzt Security+ V7 (SY0-701, gestartet am 7. November 2023) durch Security+ V8 (SY0-801), die voraussichtlich um den 17. November 2026 erscheint. SY0-701 bleibt bis zum Auslaufen verfügbar: bis 11. Juni 2027 für die englische Prüfung und bis 13. August 2027 für die japanische, portugiesische, spanische und thailändische Prüfung. Beide Versionen behalten dasselbe Format: maximal 90 Fragen, 90 Minuten und eine Bestehensgrenze von 750 auf einer Skala von 100–900.",
-          "Die Prüfungsziele von V8 verwenden dieselbe Struktur mit fünf Domänen, aber andere Gewichtungen (16 %, 24 %, 19 %, 27 % und 14 %), und Domäne 2 heißt nun „Threats, Vulnerabilities, and Attacks“. Zum Start führt CompTIA SY0-801 nur auf Englisch. Wenn Sie in der Vorbereitung auf SY0-701 schon weit sind und die Prüfung vor dem Auslaufdatum ablegen können, ist es sinnvoll, bei SY0-701 zu bleiben. Wenn Sie gerade erst anfangen und die Prüfung spät in der Übergangsphase auf Englisch ablegen wollen, bereiten Sie sich stattdessen auf SY0-801 vor (CertRamp hat eine eigene Seite zu SY0-801).",
+          "Die Prüfungsziele von V8 verwenden dieselbe Struktur mit fünf Domänen, aber andere Gewichtungen (16 %, 24 %, 19 %, 27 % und 14 %), und Domäne 2 heißt nun „Threats, Vulnerabilities, and Attacks“. Zum Start führt CompTIA SY0-801 nur auf Englisch. Wenn du in der Vorbereitung auf SY0-701 schon weit bist und die Prüfung vor dem Auslaufdatum ablegen kannst, ist es sinnvoll, bei SY0-701 zu bleiben. Wenn du gerade erst anfängst und die Prüfung spät in der Übergangsphase auf Englisch ablegen willst, bereite dich stattdessen auf SY0-801 vor (CertRamp hat eine eigene Seite zu SY0-801).",
         ],
       },
       {
@@ -133,28 +133,28 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
         heading: "Ein Vorbereitungsplan in sechs Schritten",
         steps: [
           {
-            title: "Laden Sie die offiziellen Prüfungsziele herunter",
-            body: "Holen Sie sich die SY0-701 Exam Objectives (V7) von CompTIA und markieren Sie jedes der 28 Prüfungsziele als „beherrscht“, „unsicher“ oder „neu“. Verteilen Sie Ihre Zeit nach Domänengewicht: allein Security Operations macht 28 % aus.",
+            title: "Lade die offiziellen Prüfungsziele herunter",
+            body: "Hol dir die SY0-701 Exam Objectives (V7) von CompTIA und markiere jedes der 28 Prüfungsziele als „beherrscht“, „unsicher“ oder „neu“. Verteile deine Zeit nach Domänengewicht: allein Security Operations macht 28 % aus.",
           },
           {
-            title: "Legen Sie Ihren Zeitplan mit Blick auf das Auslaufdatum fest",
-            body: "Wählen Sie einen Prüfungstermin deutlich vor dem Auslaufen von SY0-701 (11. Juni 2027 auf Englisch, 13. August 2027 in den anderen Sprachen), damit eine Wiederholung in derselben Version noch möglich ist.",
+            title: "Lege deinen Zeitplan mit Blick auf das Auslaufdatum fest",
+            body: "Wähle einen Prüfungstermin deutlich vor dem Auslaufen von SY0-701 (11. Juni 2027 auf Englisch, 13. August 2027 in den anderen Sprachen), damit eine Wiederholung in derselben Version noch möglich ist.",
           },
           {
-            title: "Lernen Sie das Vokabular in Vergleichspaaren",
-            body: "Viele Prüfungsziele lauten „compare and contrast“. Lernen Sie Kontrollen, Angriffe und Technologien im direkten Vergleich: präventiv vs. detektiv, Tokenisierung vs. Maskierung, Hot vs. Warm vs. Cold Site, SAML vs. OAuth, SPF vs. DKIM vs. DMARC.",
+            title: "Lerne das Vokabular in Vergleichspaaren",
+            body: "Viele Prüfungsziele lauten „compare and contrast“. Lerne Kontrollen, Angriffe und Technologien im direkten Vergleich: präventiv vs. detektiv, Tokenisierung vs. Maskierung, Hot vs. Warm vs. Cold Site, SAML vs. OAuth, SPF vs. DKIM vs. DMARC.",
           },
           {
-            title: "Sammeln Sie praktische Erfahrung für die Szenario-Ziele",
-            body: "Nutzen Sie ein kleines Lab oder kostenlose Tools, um Logs zu lesen, einen Schwachstellenscan auszuführen, eine Firewall-Regel zu konfigurieren und Zertifikate zu prüfen. Performancebasierte Fragen fallen deutlich leichter, wenn Sie die echten Artefakte schon einmal gesehen haben.",
+            title: "Sammle praktische Erfahrung für die Szenario-Ziele",
+            body: "Nutze ein kleines Lab oder kostenlose Tools, um Logs zu lesen, einen Schwachstellenscan auszuführen, eine Firewall-Regel zu konfigurieren und Zertifikate zu prüfen. Performancebasierte Fragen fallen deutlich leichter, wenn du die echten Artefakte schon einmal gesehen haben.",
           },
           {
-            title: "Üben Sie unter Zeitdruck",
-            body: "Absolvieren Sie zeitlich begrenzte Übungsprüfungen mit bis zu 90 Fragen in 90 Minuten. Lesen Sie jede Erklärung (auch zu den Fragen, die Sie richtig beantwortet haben) und notieren Sie, zu welchem Prüfungsziel jeder Fehler gehört.",
+            title: "Übe unter Zeitdruck",
+            body: "Absolviere zeitlich begrenzte Übungsprüfungen mit bis zu 90 Fragen in 90 Minuten. Lies jede Erklärung (auch zu den Fragen, die du richtig beantwortet hast) und notiere, zu welchem Prüfungsziel jeder Fehler gehört.",
           },
           {
-            title: "Buchen Sie, wenn Ihre Ergebnisse stabil sind",
-            body: "Buchen Sie die Prüfung, sobald Sie mehrere Übungsprüfungen mit sicherem Abstand bestehen. Planen Sie die Verlängerung von Anfang an mit ein: Die Zertifizierung ist drei Jahre gültig und erfordert 50 CEUs.",
+            title: "Buche, wenn deine Ergebnisse stabil sind",
+            body: "Buche die Prüfung, sobald du mehrere Übungsprüfungen mit sicherem Abstand bestehst. Plane die Verlängerung von Anfang an mit ein: Die Zertifizierung ist drei Jahre gültig und erfordert 50 CEUs.",
           },
         ],
       },
@@ -162,7 +162,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
         id: "common-mistakes",
         heading: "Häufige Fehler bei der Vorbereitung",
         bullets: [
-          "Mit den falschen Prüfungszielen lernen. Material zu SY0-801 hat andere Gewichtungen und eine umbenannte Domäne 2; prüfen Sie, ob Ihre Unterlagen SY0-701 angeben.",
+          "Mit den falschen Prüfungszielen lernen. Material zu SY0-801 hat andere Gewichtungen und eine umbenannte Domäne 2; prüfe, ob deine Unterlagen SY0-701 angeben.",
           "Die Prüfung zu spät ansetzen. Ein nicht bestandener Versuch kurz vor dem 11. Juni 2027 (Englisch) lässt möglicherweise keine Zeit mehr für eine Wiederholungsprüfung mit SY0-701.",
           "Performancebasierte Fragen unterschätzen. Sie prüfen angewandte Fähigkeiten: reines Lesen reicht nicht.",
           "Governance als Nebensache behandeln. Security Program Management and Oversight macht 20 % von SY0-701 aus: Risikomanagement, Drittparteienrisiken, Compliance, Audits und Awareness zählen alle.",
@@ -174,7 +174,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
       {
         question: "Wie lange dauert die Security+-Prüfung SY0-701 und wie hoch ist die Bestehensgrenze?",
         answer:
-          "Sie haben 90 Minuten für maximal 90 Fragen, eine Mischung aus Multiple-Choice- und performancebasierten Fragen. Die Bestehensgrenze liegt bei 750 auf einer Skala von 100–900.",
+          "Du hast 90 Minuten für maximal 90 Fragen, eine Mischung aus Multiple-Choice- und performancebasierten Fragen. Die Bestehensgrenze liegt bei 750 auf einer Skala von 100–900.",
       },
       {
         question: "Wann läuft SY0-701 aus und was ersetzt die Prüfung?",
@@ -189,12 +189,12 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
       {
         question: "Gibt es die Prüfung auf Deutsch?",
         answer:
-          "Nein. SY0-701 wird nicht auf Deutsch angeboten; Sie legen sie in einer der verfügbaren Sprachen ab, für Teilnehmende aus Deutschland, Österreich und der Schweiz in der Regel auf Englisch. Unsere deutschsprachigen Übungsfragen helfen Ihnen, die Inhalte auf Deutsch zu verstehen, die Fachbegriffe der Prüfung sollten Sie dennoch auf Englisch kennen.",
+          "Nein. SY0-701 wird nicht auf Deutsch angeboten; du legst sie in einer der verfügbaren Sprachen ab, für Teilnehmende aus Deutschland, Österreich und der Schweiz in der Regel auf Englisch. Unsere deutschsprachigen Übungsfragen helfen dir, die Inhalte auf Deutsch zu verstehen, die Fachbegriffe der Prüfung solltest du dennoch auf Englisch kennen.",
       },
       {
         question: "Wie halte ich Security+ aktuell?",
         answer:
-          "Security+ ist ab dem Tag des Bestehens drei Jahre gültig. Zur Verlängerung benötigen Sie 50 Continuing Education Units (CEUs), etwa über einen CompTIA-CertMaster-CE-Kurs, anrechenbare Aktivitäten oder andere Zertifizierungen, oder Sie bestehen die jeweils aktuelle Version der Security+-Prüfung.",
+          "Security+ ist ab dem Tag des Bestehens drei Jahre gültig. Zur Verlängerung benötigst du 50 Continuing Education Units (CEUs), etwa über einen CompTIA-CertMaster-CE-Kurs, anrechenbare Aktivitäten oder andere Zertifizierungen, oder du bestehst die jeweils aktuelle Version der Security+-Prüfung.",
       },
       {
         question: "Sind die CertRamp-Fragen echte Prüfungsfragen?",
@@ -277,7 +277,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
         ],
         answer: "A",
         explanation:
-          "Spraying kehrt das übliche Brute-Force-Muster um: viele Konten, wenige Passwörter. Achten Sie auf viele unterschiedliche Benutzernamen aus einer Quelle, ein wiederholtes Passwort und Versuche, die unter der Sperrschwelle bleiben.",
+          "Spraying kehrt das übliche Brute-Force-Muster um: viele Konten, wenige Passwörter. Achte auf viele unterschiedliche Benutzernamen aus einer Quelle, ein wiederholtes Passwort und Versuche, die unter der Sperrschwelle bleiben.",
         reference: OBJECTIVES,
       },
       {
@@ -313,7 +313,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
         ],
         answer: "B",
         explanation:
-          "Wenn ein verwundbares System weder gepatcht noch stillgelegt werden kann, begrenzen Sie, wer mit ihm kommunizieren kann. Segmentierung, Isolation und Access Control Lists sind der übliche kompensierende Ansatz für Legacy-Systeme und Operational Technology.",
+          "Wenn ein verwundbares System weder gepatcht noch stillgelegt werden kann, begrenze, wer mit ihm kommunizieren kann. Segmentierung, Isolation und Access Control Lists sind der übliche kompensierende Ansatz für Legacy-Systeme und Operational Technology.",
         reference: OBJECTIVES,
       },
 
@@ -333,7 +333,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
         ],
         answer: "D",
         explanation:
-          "Bei Ausweichstandorten stehen Kosten und Wiederherstellungszeit gegeneinander: Hot ist am schnellsten und teuersten, Cold am günstigsten und langsamsten, Warm liegt dazwischen. Wählen Sie den Standort passend zur geforderten Wiederherstellungszeit und zum Budget.",
+          "Bei Ausweichstandorten stehen Kosten und Wiederherstellungszeit gegeneinander: Hot ist am schnellsten und teuersten, Cold am günstigsten und langsamsten, Warm liegt dazwischen. Wähle den Standort passend zur geforderten Wiederherstellungszeit und zum Budget.",
         reference: OBJECTIVES,
       },
       {
