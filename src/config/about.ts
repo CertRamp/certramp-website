@@ -17,25 +17,28 @@ export const about = {
     role: "Founder, CertRamp Learning",
     roleDe: "Gründer von CertRamp Learning",
     /** Day job, shown under the name. The employer is deliberately not named. */
-    position: "Senior Consultant at a large IT management consultancy",
-    positionDe: "Senior Consultant bei einer großen IT-Unternehmensberatung",
-    bio: "I have worked in IT consulting for more than 12 years and hold a wide range of certifications myself. Every CertRamp practice exam is written with that experience: the way real exams phrase things, where candidates usually slip, and what it takes to be ready on exam day.",
+    position: "Senior Consultant, digital transformation and AI",
+    positionDe: "Senior Consultant für digitale Transformation und KI",
+    bio: "I have more than 12 years of professional experience and work as a senior consultant in an IT management consultancy, focusing on digital transformation, AI and requirements engineering in the insurance industry. I also hold certifications in requirements engineering, IT service management and agile frameworks myself. Every CertRamp practice exam builds on that experience: the way real exams phrase things, where candidates usually slip, and what it takes to be ready on exam day.",
     bioDe:
-      "Ich arbeite seit über 12 Jahren in der IT-Beratung und habe selbst zahlreiche Zertifizierungen abgelegt. Diese Erfahrung steckt in jeder CertRamp-Übungsprüfung: wie echte Prüfungen formulieren, wo Kandidaten typischerweise stolpern und was es braucht, um am Prüfungstag bereit zu sein.",
-    /** Short credential tags. Keep them factual. */
+      "Ich habe über 12 Jahre Berufserfahrung und arbeite als Senior Consultant in einer IT-Unternehmensberatung, mit Schwerpunkt auf digitaler Transformation, KI und Requirements Engineering in der Versicherungsbranche. Selbst habe ich Zertifizierungen in Requirements Engineering, IT-Service-Management und agilen Frameworks abgelegt. Diese Erfahrung steckt in jeder CertRamp-Übungsprüfung: wie echte Prüfungen formulieren, wo Kandidaten typischerweise stolpern und was es braucht, um am Prüfungstag bereit zu sein.",
+    /** Selected certifications, by their official names. Keep them factual. */
     credentials: [
       "IREB® CPRE Foundation Level",
       "ITIL® 4 Foundation",
-      "Scrum.org",
-      "Scaled Agile, Inc.",
-      "GASQ",
-      "Microsoft",
-      "Anthropic Claude",
+      "Professional Scrum Master I (PSM I)",
+      "Professional Scrum Product Owner I (PSPO I)",
+      "Certified SAFe® 6 Scrum Master",
+      "Certified AI-Empowered SAFe® 6 Product Owner/Product Manager",
     ],
-    credentialsNote: "Certifications from Scrum.org, Scaled Agile, Inc., PeopleCert, GASQ, Microsoft and Anthropic, among others.",
-    credentialsNoteDe: "Zertifizierungen u. a. von Scrum.org, Scaled Agile, Inc., PeopleCert, GASQ, Microsoft und Anthropic.",
-    trademarkNote: "ITIL® is a registered trademark of PeopleCert. IREB® is a registered trademark of IREB e.V.",
-    trademarkNoteDe: "ITIL® ist eine eingetragene Marke von PeopleCert. IREB® ist eine eingetragene Marke des IREB e.V.",
+    moreCredentials: "Plus further certifications from Microsoft and Anthropic (Claude).",
+    moreCredentialsDe: "Dazu weitere Zertifizierungen von Microsoft und Anthropic (Claude).",
+    education: ["B.A. Management and Digitalisation", "Fachwirt for Insurance and Finance (German professional qualification)"],
+    educationDe: ["B.A. Management und Digitalisierung", "Fachwirt für Versicherungen und Finanzen"],
+    trademarkNote:
+      "ITIL® is a registered trademark of PeopleCert. IREB® is a registered trademark of IREB e.V. SAFe® is a registered trademark of Scaled Agile, Inc. PSM and PSPO are trademarks of Scrum.org.",
+    trademarkNoteDe:
+      "ITIL® ist eine eingetragene Marke von PeopleCert. IREB® ist eine eingetragene Marke des IREB e.V. SAFe® ist eine eingetragene Marke von Scaled Agile, Inc. PSM und PSPO sind Marken von Scrum.org.",
     /** Put the image in /public/images and reference it as "/images/xyz.jpg". */
     photo: "/images/joshua-ravnjak.jpg" as string | null,
     photoAlt: "Joshua Ravnjak, founder of CertRamp Learning",

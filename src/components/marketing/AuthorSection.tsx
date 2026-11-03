@@ -15,7 +15,8 @@ const copy = {
     bookCta: "View on Amazon",
     bookNote: "My CPRE Foundation Level exam-prep book (in German) follows the same progressive approach.",
     bookNoteProminent: "Prefer paper? The same progressive approach is available as a book (in German) with six practice exams and 270 questions.",
-    credentialsLabel: "Certifications include",
+    credentialsLabel: "Selected certifications",
+    educationLabel: "Education",
   },
   de: {
     eyebrow: "Wer die Prüfungen schreibt",
@@ -24,7 +25,8 @@ const copy = {
     bookCta: "Bei Amazon ansehen",
     bookNote: "Mein Buch zur CPRE Foundation Level folgt demselben aufbauenden Prinzip.",
     bookNoteProminent: "Lieber auf Papier? Dasselbe aufbauende Prinzip gibt es als Buch mit sechs Übungsprüfungen und 270 Fragen.",
-    credentialsLabel: "Zertifizierungen, u. a.",
+    credentialsLabel: "Ausgewählte Zertifizierungen",
+    educationLabel: "Ausbildung",
   },
 } as const;
 
@@ -62,7 +64,8 @@ export function AuthorSection({
   const prominent = certSlug === book.certSlug;
   const position = lang === "de" ? f.positionDe : f.position;
   const bio = lang === "de" ? f.bioDe : f.bio;
-  const note = lang === "de" ? f.credentialsNoteDe : f.credentialsNote;
+  const more = lang === "de" ? f.moreCredentialsDe : f.moreCredentials;
+  const education = lang === "de" ? f.educationDe : f.education;
 
   return (
     <Section tone={tone === "navy" ? "white" : tone} labelledBy={`author-title-${location}`} className="!py-16 sm:!py-20">
@@ -89,14 +92,17 @@ export function AuthorSection({
             </div>
             <p className="mt-5 leading-relaxed text-body">{bio}</p>
             <p className="mt-5 text-sm font-medium text-muted">{t.credentialsLabel}</p>
-            <ul className="mt-2 flex flex-wrap gap-2" aria-label={note}>
+            <ul className="mt-2 flex flex-wrap gap-2">
               {f.credentials.map((c) => (
                 <li key={c} className="rounded-full border border-line bg-surface px-3 py-1 text-sm text-body">
                   {c}
                 </li>
               ))}
             </ul>
-            <p className="mt-4 text-xs text-muted">{lang === "de" ? f.trademarkNoteDe : f.trademarkNote}</p>
+            <p className="mt-3 text-sm text-muted">{more}</p>
+            <p className="mt-5 text-sm font-medium text-muted">{t.educationLabel}</p>
+            <p className="mt-1 text-sm text-body">{education.join(" · ")}</p>
+            <p className="mt-5 text-xs text-muted">{lang === "de" ? f.trademarkNoteDe : f.trademarkNote}</p>
           </div>
 
           {/* Book */}
@@ -121,7 +127,7 @@ export function AuthorSection({
                 </p>
               </div>
             </div>
-            <p className={cn("mt-5 flex-1 text-[0.9375rem] leading-relaxed", prominent ? "text-white/75" : "text-muted")}>
+            <p className={cn("mt-5 text-[0.9375rem] leading-relaxed", prominent ? "text-white/75" : "text-muted")}>
               {prominent ? t.bookNoteProminent : t.bookNote}
             </p>
             <TrackedLink
