@@ -7,27 +7,27 @@ import type { PracticeQuestionSet } from "@/config/types";
  * presented as real exam questions.
  */
 const EXAM = {
-  label: "NVIDIA — NCA-GENL Generative AI LLMs certification exam",
+  label: "NVIDIA: NCA-GENL Generative AI LLMs certification exam",
   url: "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/",
 };
 const PROMPTING = {
-  label: "NVIDIA Technical Blog — An introduction to LLMs: prompt engineering and p-tuning",
+  label: "NVIDIA Technical Blog (An introduction to LLMs: prompt engineering and p-tuning)",
   url: "https://developer.nvidia.com/blog/an-introduction-to-large-language-models-prompt-engineering-and-p-tuning/",
 };
 const RAG = {
-  label: "NVIDIA Blog — What is retrieval-augmented generation?",
+  label: "NVIDIA Blog: What is retrieval-augmented generation?",
   url: "https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/",
 };
 const INFERENCE = {
-  label: "NVIDIA Technical Blog — Mastering LLM techniques: inference optimization",
+  label: "NVIDIA Technical Blog (Mastering LLM techniques: inference optimization)",
   url: "https://developer.nvidia.com/blog/mastering-llm-techniques-inference-optimization/",
 };
 const TRITON = {
-  label: "NVIDIA Docs — Triton Inference Server quickstart",
+  label: "NVIDIA Docs: Triton Inference Server quickstart",
   url: "https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/getting_started/quickstart.html",
 };
 const GUARDRAILS = {
-  label: "NVIDIA Docs — NeMo Guardrails",
+  label: "NVIDIA Docs: NeMo Guardrails",
   url: "https://docs.nvidia.com/nemo/guardrails/latest/index.html",
 };
 
@@ -60,7 +60,7 @@ export const nvidiaNcaGenlQuestions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "Because self-attention relates every token to every other token directly, transformers process a sequence in parallel instead of step by step. This made much larger training runs practical and is the basis of today's LLMs.",
-      reference: { label: "arXiv — Attention Is All You Need (suggested reading on the NCA-GENL page)", url: "https://arxiv.org/abs/1706.03762" },
+      reference: { label: "arXiv: Attention Is All You Need (suggested reading on the NCA-GENL page)", url: "https://arxiv.org/abs/1706.03762" },
     },
     {
       id: "genl-d1-embedding-mismatch",
@@ -226,7 +226,7 @@ export const nvidiaNcaGenlQuestions: PracticeQuestionSet = {
       answer: "D",
       explanation:
         "LoRA is a parameter-efficient fine-tuning (PEFT) method. Its paper reports about 10,000 times fewer trainable parameters and about three times less GPU memory than full fine-tuning of GPT-3 175B, with no additional inference latency.",
-      reference: { label: "arXiv — LoRA: Low-Rank Adaptation of Large Language Models (suggested reading on the NCA-GENL page)", url: "https://arxiv.org/abs/2106.09685" },
+      reference: { label: "arXiv, LoRA: Low-Rank Adaptation of Large Language Models (suggested reading on the NCA-GENL page)", url: "https://arxiv.org/abs/2106.09685" },
     },
 
     /* ── Topic 4: Software Development (24%) ───────────────────────────────── */

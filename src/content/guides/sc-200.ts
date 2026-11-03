@@ -36,7 +36,7 @@ export const sc200Guide: ExamGuide = {
       steps: [
         {
           title: "Map yourself against the study guide",
-          body: "Go through every bullet of the official SC-200 skills list and mark it as known, unsure or new. Spend time in proportion to the weights — the first area alone is up to 45%.",
+          body: "Go through every bullet of the official SC-200 skills list and mark it as known, unsure or new. Spend time in proportion to the weights: the first area alone is up to 45%.",
         },
         {
           title: "Build a lab",
@@ -64,7 +64,7 @@ export const sc200Guide: ExamGuide = {
       id: "common-mistakes",
       heading: "Common preparation mistakes",
       bullets: [
-        "Underestimating configuration. The biggest area is about setting things up — connectors, retention, roles, rules and automation — not only about reacting to alerts.",
+        "Underestimating configuration. The biggest area is about setting things up (connectors, retention, roles, rules and automation) not only about reacting to alerts.",
         "Confusing automation rules with playbooks. Automation rules handle incidents centrally and can run playbooks; playbooks are Logic Apps workflows that perform actions.",
         "Learning KQL only by reading. Hunting questions expect you to recognise what a query does and which table to use.",
         "Mixing up portals and product names. Know which task happens in the Defender portal, which in Sentinel and which in Microsoft Purview.",

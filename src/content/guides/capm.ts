@@ -38,7 +38,7 @@ export const capmGuide: ExamGuide = {
       steps: [
         {
           title: "Read the content outline first",
-          body: "Download the CAPM Examination Content Outline and go through every task and enabler. Mark each one as known, unsure or new, and plan your time by the domain weights — fundamentals and business analysis together make up 63%.",
+          body: "Download the CAPM Examination Content Outline and go through every task and enabler. Mark each one as known, unsure or new, and plan your time by the domain weights: fundamentals and business analysis together make up 63%.",
         },
         {
           title: "Complete your 23 hours of education",
@@ -67,9 +67,9 @@ export const capmGuide: ExamGuide = {
       heading: "Common preparation mistakes",
       bullets: [
         "Underestimating business analysis. At 27% it carries more weight than either the agile or the predictive domain, and many project management courses cover it only briefly.",
-        "Studying only one approach. The outline expects you to know when a predictive or an adaptive approach fits — not just how one of them works.",
+        "Studying only one approach. The outline expects you to know when a predictive or an adaptive approach fits, not just how one of them works.",
         "Confusing risks and issues. A risk is an uncertain future event; an issue is something that is already happening. They live in different logs.",
-        "Mixing up roles. The sponsor funds and champions the project, the project manager leads the work and the product owner manages the backlog — expect questions on exactly these boundaries.",
+        "Mixing up roles. The sponsor funds and champions the project, the project manager leads the work and the product owner manages the backlog: expect questions on exactly these boundaries.",
         "Skipping the calculations. Critical path and variance questions are quick points if you practise them, and easy to lose under time pressure if you do not.",
       ],
     },

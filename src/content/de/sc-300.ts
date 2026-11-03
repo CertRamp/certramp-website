@@ -8,7 +8,7 @@ import type { DeContent } from "@/config/types";
  * "Qualifikationen auf einen Blick" wording and weight are used, as in English.
  */
 const GUIDE = {
-  label: "Microsoft Learn — Studienleitfaden für SC-300 (englische Fassung)",
+  label: "Microsoft Learn: Studienleitfaden für SC-300 (englische Fassung)",
   url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
 };
 
@@ -204,7 +204,7 @@ export const sc300De: DeContent = {
     seo: {
       title: "SC-300 Übungsfragen mit Lösungen & Erklärungen (2026)",
       description:
-        "15 kostenlose, eigene SC-300-Übungsfragen zu Microsoft Entra ID, Conditional Access, Workload-Identitäten, PIM und Governance – jeweils erklärt.",
+        "15 kostenlose, eigene SC-300-Übungsfragen zu Microsoft Entra ID, Conditional Access, Workload-Identitäten, PIM und Governance: jeweils erklärt.",
     },
     questions: [
       /* ── Bereich 1: Implementieren und Verwalten von Benutzeridentitäten ── */
@@ -224,7 +224,7 @@ export const sc300De: DeContent = {
         answer: "B",
         explanation:
           "Verwaltungseinheiten (Administrative Units) sind der Standardweg, um die Verwaltung für einen Teil der Organisation zu delegieren, etwa für eine Region oder Abteilung. Wird eine Rolle ohne Verwaltungseinheit als Bereich zugewiesen, gilt sie für den gesamten Mandanten.",
-        reference: { label: "Microsoft Learn — Verwaltungseinheiten in Microsoft Entra ID", url: "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/administrative-units" },
+        reference: { label: "Microsoft Learn: Verwaltungseinheiten in Microsoft Entra ID", url: "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/administrative-units" },
       },
       {
         id: "sc300-d1-cross-tenant-sync",
@@ -242,7 +242,7 @@ export const sc300De: DeContent = {
         answer: "D",
         explanation:
           "Die mandantenübergreifende Synchronisierung ist für Organisationen mit mehreren Mandanten gedacht. Sie erstellt B2B-Collaboration-Benutzer in den Zielmandanten, standardmäßig als externe Mitglieder, und hält sie mit dem Quellmandanten synchron.",
-        reference: { label: "Microsoft Learn — Übersicht über die mandantenübergreifende Synchronisierung", url: "https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview" },
+        reference: { label: "Microsoft Learn: Übersicht über die mandantenübergreifende Synchronisierung", url: "https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview" },
       },
       {
         id: "sc300-d1-pta",
@@ -298,7 +298,7 @@ export const sc300De: DeContent = {
         answer: "C",
         explanation:
           "Der Temporary Access Pass ist der Standardeinstieg für kennwortloses Onboarding und für die Wiederherstellung, wenn ein Benutzer eine starke Methode verliert. Er kann innerhalb seiner Gültigkeitsdauer für einmalige oder mehrfache Verwendung konfiguriert werden.",
-        reference: { label: "Microsoft Learn — Temporary Access Pass", url: "https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-temporary-access-pass" },
+        reference: { label: "Microsoft Learn: Temporary Access Pass", url: "https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-temporary-access-pass" },
       },
       {
         id: "sc300-d2-report-only",
@@ -345,14 +345,14 @@ export const sc300De: DeContent = {
           "Mitarbeitende im Homeoffice nutzen derzeit ein VPN, um interne Dateiserver und Fachanwendungen über FQDN und IP-Adresse zu erreichen. Das Unternehmen möchte das VPN ablösen und Conditional Access auf diesen Datenverkehr anwenden. Welche Lösung sollten Sie bereitstellen?",
         options: [
           { id: "A", text: "Microsoft Entra Internet Access", rationale: "Internet Access sichert den Zugriff auf Internet- und SaaS-Ziele, nicht auf private interne Ressourcen." },
-          { id: "B", text: "Microsoft Entra Private Access mit dem Global Secure Access-Client und privaten Netzwerkconnectors", rationale: "Richtig. Mit Private Access definieren Sie private FQDNs und IP-Bereiche, vermitteln Verbindungen über private Netzwerkconnectors und schützen den Zugriff mit Conditional Access – als Ersatz für ein VPN." },
+          { id: "B", text: "Microsoft Entra Private Access mit dem Global Secure Access-Client und privaten Netzwerkconnectors", rationale: "Richtig. Mit Private Access definieren Sie private FQDNs und IP-Bereiche, vermitteln Verbindungen über private Netzwerkconnectors und schützen den Zugriff mit Conditional Access, als Ersatz für ein VPN." },
           { id: "C", text: "Mandantenübergreifende Zugriffseinstellungen", rationale: "Diese steuern die Zusammenarbeit mit anderen Entra-Mandanten, nicht den Zugriff auf interne Server." },
           { id: "D", text: "Self-Service-Kennwortzurücksetzung", rationale: "Bei SSPR geht es um die Wiederherstellung von Kennwörtern; Netzwerkzugriff bietet es nicht." },
         ],
         answer: "B",
         explanation:
           "Global Secure Access hat getrennte Datenverkehrsprofile: Private Access für interne Ressourcen, Internet Access für Internet- und SaaS-Datenverkehr und das Microsoft-Datenverkehrsprofil für Microsoft 365. Benutzer verbinden sich über den Global Secure Access-Client.",
-        reference: { label: "Microsoft Learn — Microsoft Entra Private Access", url: "https://learn.microsoft.com/en-us/entra/global-secure-access/concept-private-access" },
+        reference: { label: "Microsoft Learn: Microsoft Entra Private Access", url: "https://learn.microsoft.com/en-us/entra/global-secure-access/concept-private-access" },
       },
 
       /* ── Bereich 3: Planen und Implementieren von Workloadidentitäten ── */
@@ -366,13 +366,13 @@ export const sc300De: DeContent = {
         options: [
           { id: "A", text: "Eine benutzerseitig zugewiesene verwaltete Identität, die allen virtuellen Computern zugeordnet ist", rationale: "Richtig. Eine benutzerseitig zugewiesene verwaltete Identität hat einen eigenen Lebenszyklus und kann von vielen Ressourcen gemeinsam genutzt werden; Sie gewähren den Key Vault-Zugriff also nur einmal." },
           { id: "B", text: "Eine systemseitig zugewiesene verwaltete Identität auf jedem virtuellen Computer", rationale: "Systemseitig zugewiesene Identitäten sind jeweils an genau eine Ressource gebunden; jeder neue Computer bräuchte eine eigene Zugriffsberechtigung, und die Identität wird mit dem Computer gelöscht." },
-          { id: "C", text: "Ein Dienstprinzipal mit einem auf jedem Computer gespeicherten geheimen Clientschlüssel", rationale: "Geheimnisse auf Computern müssen rotiert und geschützt werden – genau das vermeiden verwaltete Identitäten." },
+          { id: "C", text: "Ein Dienstprinzipal mit einem auf jedem Computer gespeicherten geheimen Clientschlüssel", rationale: "Geheimnisse auf Computern müssen rotiert und geschützt werden: genau das vermeiden verwaltete Identitäten." },
           { id: "D", text: "Ein gemeinsames Benutzerkonto, dessen Kennwort in einem Skript gespeichert ist", rationale: "Ein Benutzerkonto mit gespeichertem Kennwort für eine Workload zu verwenden ist unsicher und schwer zu verwalten." },
         ],
         answer: "A",
         explanation:
-          "Systemseitig zugewiesene Identitäten teilen den Lebenszyklus ihrer Ressource und können nicht gemeinsam genutzt werden. Benutzerseitig zugewiesene Identitäten sind unabhängig und können mehr als einer Ressource zugeordnet werden – ideal für Gruppen austauschbarer Computer.",
-        reference: { label: "Microsoft Learn — Verwaltete Identitäten für Azure-Ressourcen", url: "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview" },
+          "Systemseitig zugewiesene Identitäten teilen den Lebenszyklus ihrer Ressource und können nicht gemeinsam genutzt werden. Benutzerseitig zugewiesene Identitäten sind unabhängig und können mehr als einer Ressource zugeordnet werden: ideal für Gruppen austauschbarer Computer.",
+        reference: { label: "Microsoft Learn: Verwaltete Identitäten für Azure-Ressourcen", url: "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview" },
       },
       {
         id: "sc300-d3-app-proxy",
@@ -438,7 +438,7 @@ export const sc300De: DeContent = {
         question:
           "Die Auditoren verlangen, dass die Gruppenbesitzer die Mitgliedschaft von Gastbenutzern in einer sensiblen Microsoft 365-Gruppe jedes Quartal bestätigen und dass der Zugriff entfernt wird, wenn er nicht bestätigt wird. Was sollten Sie konfigurieren?",
         options: [
-          { id: "A", text: "Eine wiederkehrende Zugriffsüberprüfung der Gruppe, auf Gastbenutzer beschränkt, mit automatischer Anwendung der Ergebnisse", rationale: "Richtig. Zugriffsüberprüfungen können vierteljährlich wiederkehren, sich auf Gäste beschränken, Gruppenbesitzer als Prüfer einsetzen und – je nach Einstellungen – abgelehnten oder nicht überprüften Zugriff automatisch entfernen." },
+          { id: "A", text: "Eine wiederkehrende Zugriffsüberprüfung der Gruppe, auf Gastbenutzer beschränkt, mit automatischer Anwendung der Ergebnisse", rationale: "Richtig. Zugriffsüberprüfungen können vierteljährlich wiederkehren, sich auf Gäste beschränken, Gruppenbesitzer als Prüfer einsetzen und, je nach Einstellungen, abgelehnten oder nicht überprüften Zugriff automatisch entfernen." },
           { id: "B", text: "Eine Conditional-Access-Richtlinie für Gastbenutzer", rationale: "Conditional Access steuert Anmeldebedingungen; ob ein Zugriff noch benötigt wird, bestätigt es nicht." },
           { id: "C", text: "Nutzungsbedingungen", rationale: "Bei Nutzungsbedingungen akzeptieren Benutzer ein Dokument; Besitzer bestätigen damit keinen Zugriff." },
           { id: "D", text: "Eine Verwaltungseinheit für Gastbenutzer", rationale: "Verwaltungseinheiten begrenzen die Verwaltung; Zugriff überprüfen sie nicht." },
@@ -454,7 +454,7 @@ export const sc300De: DeContent = {
         objective: "Planen und Implementieren von privilegiertem Zugriff",
         difficulty: "intermediate",
         question:
-          "Administratoren sollen die Rolle „Exchange-Administrator“ nur dann innehaben, wenn sie sie benötigen – zeitlich begrenzt, nach Angabe einer Begründung und nach Genehmigung. Wie sollten Sie die Rolle in Privileged Identity Management zuweisen?",
+          "Administratoren sollen die Rolle „Exchange-Administrator“ nur dann innehaben, wenn sie sie benötigen: zeitlich begrenzt, nach Angabe einer Begründung und nach Genehmigung. Wie sollten Sie die Rolle in Privileged Identity Management zuweisen?",
         options: [
           { id: "A", text: "Als dauerhafte aktive Zuweisung", rationale: "Eine aktive Zuweisung gewährt die Rolle ständig, ohne Aktivierungsschritt." },
           { id: "B", text: "Über eine dynamische Gruppe, der die Rolle dauerhaft zugewiesen ist", rationale: "Gruppen mit dynamischer Mitgliedschaft können keine Microsoft Entra-Rollen zugewiesen werden, und eine dauerhafte Gruppenzuweisung brächte ohnehin weder Aktivierung noch Begründung oder Genehmigung." },
@@ -464,7 +464,7 @@ export const sc300De: DeContent = {
         answer: "D",
         explanation:
           "Berechtigte und aktive Zuweisungen gewähren dieselben Rechte; der Unterschied ist, dass berechtigte Benutzer die Rolle zuerst aktivieren müssen. Die zeitlich begrenzte Just-in-Time-Aktivierung mit Genehmigung ist der Kerngedanke von PIM.",
-        reference: { label: "Microsoft Learn — Was ist Privileged Identity Management?", url: "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure" },
+        reference: { label: "Microsoft Learn: Was ist Privileged Identity Management?", url: "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure" },
       },
       {
         id: "sc300-d4-diagnostic-settings",

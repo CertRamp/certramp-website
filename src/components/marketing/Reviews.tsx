@@ -30,7 +30,7 @@ export function Reviews() {
         {proofPoints.length === 0 && (
           <p className="mt-4 text-sm text-muted">
             <span className="rounded-md border border-dashed border-warn-600/50 bg-warn-50 px-1.5 py-0.5 font-medium text-warn-600">
-              Placeholder: verified proof points (e.g. Udemy students or rating, with source and date) — optional
+              Placeholder: verified proof points (e.g. Udemy students or rating, with source and date), optional
             </span>
           </p>
         )}

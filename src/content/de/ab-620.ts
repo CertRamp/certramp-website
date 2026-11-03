@@ -10,12 +10,12 @@ import type { DeContent } from "@/config/types";
  * Studio (nodes, settings, test methods) stay in English.
  */
 const MULTI_AGENT = {
-  label: "Microsoft Learn — Andere Agents in Copilot Studio hinzufügen",
+  label: "Microsoft Learn: Andere Agents in Copilot Studio hinzufügen",
   url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/authoring-add-other-agents",
 };
 
 const EVALUATION = {
-  label: "Microsoft Learn — Agent-Evaluierung in Copilot Studio",
+  label: "Microsoft Learn: Agent-Evaluierung in Copilot Studio",
   url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/analytics-agent-evaluation-overview",
 };
 
@@ -81,7 +81,7 @@ export const ab620De: DeContent = {
   guide: {
     slug: "ab-620",
     summary:
-      "AB-620 (Designing and Building Integrated AI Agent Solutions in Copilot Studio) führt zur Zertifizierung Microsoft Certified: AI Agent Builder Associate. Geprüft wird, ob Sie Agents für Unternehmen in Microsoft Copilot Studio planen, erstellen, integrieren, testen und bereitstellen können – Agent-Flows, Themen (Topics), MCP- und REST-Tools, Multi-Agent-Lösungen, Azure-Integration, Evaluierung und ALM. Die Prüfung dauert 120 Minuten, und zum Bestehen brauchen Sie 700 Punkte.",
+      "AB-620 (Designing and Building Integrated AI Agent Solutions in Copilot Studio) führt zur Zertifizierung Microsoft Certified: AI Agent Builder Associate. Geprüft wird, ob Sie Agents für Unternehmen in Microsoft Copilot Studio planen, erstellen, integrieren, testen und bereitstellen können: Agent-Flows, Themen (Topics), MCP- und REST-Tools, Multi-Agent-Lösungen, Azure-Integration, Evaluierung und ALM. Die Prüfung dauert 120 Minuten, und zum Bestehen brauchen Sie 700 Punkte.",
     whoFor: [
       "Professionelle Entwicklerinnen und Entwickler sowie fortgeschrittene Builder, die benutzerdefinierte Agents in Copilot Studio erstellen, erweitern und integrieren",
       "IT-Anwendungsentwickler, Beraterinnen und Berater sowie ISV-Partner, die Agent-Lösungen für Organisationen oder Kunden umsetzen",
@@ -217,7 +217,7 @@ export const ab620De: DeContent = {
         answer: "C",
         explanation:
           "Copilot Studio bietet No authentication, Authenticate with Microsoft und Authenticate manually. Wählen Sie die einfachste Option, die die Anforderungen an Kanal und Identität erfüllt; die manuelle Authentifizierung ist für andere Kanäle oder benutzerdefinierte Identitätsanbieter gedacht.",
-        reference: { label: "Microsoft Learn — Benutzerauthentifizierung in Copilot Studio konfigurieren", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/configuration-end-user-authentication" },
+        reference: { label: "Microsoft Learn: Benutzerauthentifizierung in Copilot Studio konfigurieren", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/configuration-end-user-authentication" },
       },
       {
         id: "ab620-d1-hitl-approval",
@@ -235,7 +235,7 @@ export const ab620De: DeContent = {
         answer: "A",
         explanation:
           "Human-in-the-Loop-Flows halten für die Entscheidung einer Person an. Eine mehrstufige Genehmigung kann eine KI-Entscheidung an eine prüfende Person weiterleiten, und Genehmigende können in Teams, Outlook oder im Power-Automate-Portal antworten. Mehrstufige und KI-Genehmigungen sind derzeit in der Vorschau.",
-        reference: { label: "Microsoft Learn — Mehrstufige und KI-Genehmigungen in Agent-Flows", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/flows-advanced-approvals" },
+        reference: { label: "Microsoft Learn: Mehrstufige und KI-Genehmigungen in Agent-Flows", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/flows-advanced-approvals" },
       },
       {
         id: "ab620-d1-http-node",
@@ -253,7 +253,7 @@ export const ab620De: DeContent = {
         answer: "D",
         explanation:
           "Der Knoten „HTTP-Anforderung senden“ (Send HTTP request) unterstützt GET, POST, PATCH, PUT und DELETE, benutzerdefinierte Header sowie JSON- oder Raw-Bodys. Eine Beispielantwort macht aus dem Ergebnis eine strukturierte Variable statt reinem Text.",
-        reference: { label: "Microsoft Learn — HTTP-Anforderungen in Copilot Studio", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/authoring-http-node" },
+        reference: { label: "Microsoft Learn: HTTP-Anforderungen in Copilot Studio", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/authoring-http-node" },
       },
       {
         id: "ab620-d1-adaptive-card",
@@ -271,7 +271,7 @@ export const ab620De: DeContent = {
         answer: "B",
         explanation:
           "Verwenden Sie den Adaptive-Card-Knoten für interaktive Karten, die eine Übermittlung erwarten. Für Karten, die nur Informationen anzeigen, nutzen Sie Message- oder Question-Knoten; prüfen Sie die erzeugten Ausgabevariablen mit Edit Schema.",
-        reference: { label: "Microsoft Learn — Mit adaptiven Karten fragen", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/authoring-ask-with-adaptive-card" },
+        reference: { label: "Microsoft Learn, Mit adaptiven Karten fragen", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/authoring-ask-with-adaptive-card" },
       },
       {
         id: "ab620-d1-variables",
@@ -289,7 +289,7 @@ export const ab620De: DeContent = {
         answer: "A",
         explanation:
           "Copilot Studio kennt Themen-, globale, System- und Umgebungsvariablen. Umgebungsvariablen werden in Power Platform festgelegt und mit Lösungen transportiert, sodass jede Umgebung ihren eigenen Wert haben kann.",
-        reference: { label: "Microsoft Learn — Mit Variablen in Copilot Studio arbeiten", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/authoring-variables-about" },
+        reference: { label: "Microsoft Learn, Mit Variablen in Copilot Studio arbeiten", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/authoring-variables-about" },
       },
 
       /* ── Bereich 2: Integrieren und Erweitern von Agents in Copilot Studio ── */
@@ -309,7 +309,7 @@ export const ab620De: DeContent = {
         answer: "D",
         explanation:
           "MCP definiert Ressourcen, Tools und Prompts. Copilot Studio nutzt Tools und Ressourcen; der Server liefert Namen, Beschreibungen, Ein- und Ausgaben, sodass der Orchestrator entscheiden kann, wann er welches Tool aufruft.",
-        reference: { label: "Microsoft Learn — Agent mit Model Context Protocol erweitern", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/agent-extend-action-mcp" },
+        reference: { label: "Microsoft Learn: Agent mit Model Context Protocol erweitern", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/agent-extend-action-mcp" },
       },
       {
         id: "ab620-d2-rest-api",
@@ -327,7 +327,7 @@ export const ab620De: DeContent = {
         answer: "B",
         explanation:
           "Um ein REST-API-Tool hinzuzufügen, brauchen Sie die OpenAPI-Spezifikation und die Authentifizierungsdetails. Die v2-Anforderung ergibt sich daraus, wie Power Platform API-Spezifikationen verarbeitet.",
-        reference: { label: "Microsoft Learn — REST-API-Tools zu Agents hinzufügen", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/agent-extend-action-rest-api" },
+        reference: { label: "Microsoft Learn: REST-API-Tools zu Agents hinzufügen", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/agent-extend-action-rest-api" },
       },
       {
         id: "ab620-d2-computer-use",
@@ -345,7 +345,7 @@ export const ab620De: DeContent = {
         answer: "C",
         explanation:
           "Computerverwendung läuft auf einem Windows-Rechner, den Sie einrichten und im Tool auswählen. Beim Testen sehen Sie ein schrittweises Protokoll und eine Vorschau des Rechners; in Unterhaltungen teilt das Tool Begründungsnachrichten und Screenshots.",
-        reference: { label: "Microsoft Learn — Computerverwendung in Copilot Studio", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/computer-use" },
+        reference: { label: "Microsoft Learn: Computerverwendung in Copilot Studio", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/computer-use" },
       },
       {
         id: "ab620-d2-azure-ai-search",
@@ -363,7 +363,7 @@ export const ab620De: DeContent = {
         answer: "A",
         explanation:
           "Azure AI Search muss über eine formelle Datenverbindung hinzugefügt werden, zum Beispiel mit Microsoft-Entra-ID-Authentifizierung. Quellenangaben brauchen ein URL-Feld im Index, und Benutzer können sie nur öffnen, wenn sie Zugriff auf die zugrunde liegende Quelle haben.",
-        reference: { label: "Microsoft Learn — Azure AI Search als Wissensquelle hinzufügen", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/knowledge-azure-ai-search" },
+        reference: { label: "Microsoft Learn: Azure AI Search als Wissensquelle hinzufügen", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/knowledge-azure-ai-search" },
       },
       {
         id: "ab620-d2-a2a",
@@ -417,7 +417,7 @@ export const ab620De: DeContent = {
         answer: "C",
         explanation:
           "Unter Settings > Advanced fügen Sie die Verbindungszeichenfolge hinzu und können optional Nachrichtendetails und Ereignisse der Knotenausführung protokollieren. Unterhaltungen im Testbereich sind mit designMode gekennzeichnet, sodass Sie sie herausfiltern können.",
-        reference: { label: "Microsoft Learn — Telemetrie mit Application Insights erfassen", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry" },
+        reference: { label: "Microsoft Learn: Telemetrie mit Application Insights erfassen", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry" },
       },
 
       /* ── Bereich 3: Testen und Verwalten von Agents ──────────────────────── */
@@ -437,7 +437,7 @@ export const ab620De: DeContent = {
         answer: "A",
         explanation:
           "Testsätze können aus Wissen oder Themen generiert, aus dem letzten Testchat erstellt, manuell geschrieben oder importiert werden. Erwartete Antworten sind beim Import optional, werden aber für vergleichsbasierte Testmethoden benötigt.",
-        reference: { label: "Microsoft Learn — Testsatz erstellen", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/analytics-agent-evaluation-create" },
+        reference: { label: "Microsoft Learn: Testsatz erstellen", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/analytics-agent-evaluation-create" },
       },
       {
         id: "ab620-d3-evaluation-method",
@@ -473,7 +473,7 @@ export const ab620De: DeContent = {
         answer: "C",
         explanation:
           "Pipelines stellen Lösungen samt Konfiguration wie Verbindungsreferenzen und Umgebungsvariablen bereit. Legen Sie Agents von Anfang an in Lösungen an, damit ALM, Umgebungsvariablen und Pipelines wie vorgesehen funktionieren.",
-        reference: { label: "Microsoft Learn — Übersicht über Pipelines in Power Platform", url: "https://learn.microsoft.com/de-de/power-platform/alm/pipelines" },
+        reference: { label: "Microsoft Learn: Übersicht über Pipelines in Power Platform", url: "https://learn.microsoft.com/de-de/power-platform/alm/pipelines" },
       },
     ],
   },

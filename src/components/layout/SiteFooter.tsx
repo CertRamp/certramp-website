@@ -15,7 +15,7 @@ export function SiteFooter() {
       </h2>
       <div className="container-page grid gap-12 py-16 lg:grid-cols-12 lg:py-20">
         <div className="lg:col-span-4">
-          <Link href="/" className="inline-block rounded-lg" aria-label="CertRamp Learning — home">
+          <Link href="/" className="inline-block rounded-lg" aria-label="CertRamp Learning: home">
             <Logo invert />
           </Link>
           <p className="mt-5 max-w-xs font-display text-lg font-semibold leading-snug text-white">

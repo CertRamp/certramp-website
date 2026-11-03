@@ -36,7 +36,7 @@ export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "When business users need to build their own agents, start with the low-code tools. Workflow Builder combines AI steps with human approvals and recurring schedules, while administrator policies limit which connectors and tools those agents can use.",
-      reference: { label: "Gemini Enterprise — Workflow Builder overview", url: "https://docs.cloud.google.com/gemini/enterprise/docs/agent-designer" },
+      reference: { label: "Gemini Enterprise: Workflow Builder overview", url: "https://docs.cloud.google.com/gemini/enterprise/docs/agent-designer" },
     },
     {
       id: "gcpaa-d1-studio-get-code",
@@ -54,7 +54,7 @@ export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
       answer: "A",
       explanation:
         "Low-code and code-first tools are meant to work together. Prototype quickly in a visual tool, then export the generated code when the agent needs custom logic, testing and a normal development workflow.",
-      reference: { label: "Agent Platform — Design agents in Agent Studio", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/agent-studio/design-agents" },
+      reference: { label: "Agent Platform: Design agents in Agent Studio", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/agent-studio/design-agents" },
     },
 
     /* ── Section 2: Using coding agents for application development (~17%) ── */
@@ -74,7 +74,7 @@ export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "Calling a Google Cloud MCP tool needs both the mcp.tools.call permission and access to the underlying resource. IAM deny policies can then narrow MCP use by service, tool, OAuth client or whether a tool is read-only.",
-      reference: { label: "Google Cloud MCP servers — Control MCP use with IAM", url: "https://docs.cloud.google.com/mcp/control-mcp-use-iam" },
+      reference: { label: "Google Cloud MCP servers: Control MCP use with IAM", url: "https://docs.cloud.google.com/mcp/control-mcp-use-iam" },
     },
     {
       id: "gcpaa-d2-antigravity-skill",
@@ -92,7 +92,7 @@ export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
       answer: "D",
       explanation:
         "Antigravity skills are folders with a required SKILL.md and optional scripts and resources. The agent first sees only each skill's name and description and reads the full instructions when the description looks relevant, so a clear description is what makes the skill trigger.",
-      reference: { label: "Google Antigravity — Agent Skills", url: "https://antigravity.google/docs/skills/" },
+      reference: { label: "Google Antigravity: Agent Skills", url: "https://antigravity.google/docs/skills/" },
     },
 
     /* ── Section 3: Developing custom agents (~33%) ───────────────────────── */
@@ -112,7 +112,7 @@ export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "Model choice (open or proprietary, self-hosted or managed) is part of designing agents in code. ADK resolves Gemini and Agent Platform endpoint models from a string, and uses connectors such as LiteLlm for other providers and self-hosted servers.",
-      reference: { label: "ADK — Models", url: "https://adk.dev/agents/models/" },
+      reference: { label: "ADK: Models", url: "https://adk.dev/agents/models/" },
     },
     {
       id: "gcpaa-d3-memory-bank",
@@ -130,7 +130,7 @@ export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "Sessions are short-term memory for one conversation; Memory Bank is long-term memory across conversations. Relevant memories can be retrieved by similarity search and inserted into the prompt.",
-      reference: { label: "Agent Platform — Memory Bank", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/memory-bank" },
+      reference: { label: "Agent Platform: Memory Bank", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/memory-bank" },
     },
     {
       id: "gcpaa-d3-rag-engine",
@@ -148,7 +148,7 @@ export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "Retrieval-augmented generation adds private knowledge to the model's context at query time. The pipeline is ingestion, chunking, embedding, indexing and retrieval, and you can choose the vector database behind the corpus.",
-      reference: { label: "Agent Platform — RAG Engine overview", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/rag-engine/rag-overview" },
+      reference: { label: "Agent Platform: RAG Engine overview", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/rag-engine/rag-overview" },
     },
     {
       id: "gcpaa-d3-agent-card",
@@ -166,7 +166,7 @@ export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
       answer: "A",
       explanation:
         "A2A discovery starts with the Agent Card. A client fetches it, checks whether the agent's skills fit the task, and uses the endpoint and security schemes it declares to send the request.",
-      reference: { label: "A2A Protocol — Agent discovery", url: "https://a2a-protocol.org/latest/topics/agent-discovery/" },
+      reference: { label: "A2A Protocol: Agent discovery", url: "https://a2a-protocol.org/latest/topics/agent-discovery/" },
     },
     {
       id: "gcpaa-d3-loop-agent",
@@ -184,7 +184,7 @@ export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "Workflow agents give deterministic control flow, but a LoopAgent does not decide by itself when to stop. Combine a hard iteration limit with an explicit termination signal from a sub-agent; ADK 2.0 adds graph-based workflows for more complex routing.",
-      reference: { label: "ADK — Loop agents", url: "https://adk.dev/agents/workflow-agents/loop-agents/" },
+      reference: { label: "ADK: Loop agents", url: "https://adk.dev/agents/workflow-agents/loop-agents/" },
     },
 
     /* ── Section 4: Evaluating and deploying agentic workflows (~22%) ─────── */
@@ -204,7 +204,7 @@ export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
       answer: "A",
       explanation:
         "Agents must be evaluated on how they reach an answer, not only on the answer itself. Multi-turn evaluation of tool use catches wrong or unsafe tool calls that final-response checks miss.",
-      reference: { label: "Agent Platform — Evaluate your agents", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/optimize/evaluation/evaluate-agents" },
+      reference: { label: "Agent Platform: Evaluate your agents", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/optimize/evaluation/evaluate-agents" },
     },
     {
       id: "gcpaa-d4-agent-runtime",
@@ -222,7 +222,7 @@ export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "ADK agents can run locally, on Agent Runtime, on Cloud Run or on GKE. When the requirement is a managed, agent-specific runtime with minimal operations, Agent Runtime is the intended choice.",
-      reference: { label: "Agent Platform — Agent Runtime", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/runtime" },
+      reference: { label: "Agent Platform: Agent Runtime", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/runtime" },
     },
     {
       id: "gcpaa-d4-traces",
@@ -240,7 +240,7 @@ export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
       answer: "D",
       explanation:
         "Troubleshooting reasoning loops starts with evidence from traces, logs and metrics. Once you see the repeated step, fix it with clearer tool descriptions, a termination condition or a deterministic workflow.",
-      reference: { label: "Agent Platform — Observability overview", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/optimize/observability/overview" },
+      reference: { label: "Agent Platform: Observability overview", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/optimize/observability/overview" },
     },
 
     /* ── Section 5: Securing and governing agentic workflows (~15%) ───────── */
@@ -260,7 +260,7 @@ export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
       answer: "D",
       explanation:
         "Choose between agent auth and user auth deliberately. When access must follow the individual user's permissions, use OAuth 2.0, and keep scopes as narrow as the tool allows, because delegated scopes are often broader than the agent needs.",
-      reference: { label: "ADK — Authenticating with tools", url: "https://adk.dev/tools-custom/authentication/" },
+      reference: { label: "ADK: Authenticating with tools", url: "https://adk.dev/tools-custom/authentication/" },
     },
     {
       id: "gcpaa-d5-model-armor",
@@ -296,7 +296,7 @@ export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "Deterministic guardrails belong in code, not in the prompt. When you cannot change a tool, a before_tool_callback can validate its parameters; combine it with least-privilege database credentials for defence in depth.",
-      reference: { label: "ADK — Safety and security for AI agents", url: "https://adk.dev/safety/" },
+      reference: { label: "ADK: Safety and security for AI agents", url: "https://adk.dev/safety/" },
     },
   ],
 };

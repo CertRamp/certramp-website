@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AuthorSection } from "@/components/marketing/AuthorSection";
 import Link from "@/components/ui/Link";
 import { notFound } from "next/navigation";
 import { ExamFactsList } from "@/components/content/ExamFactsList";
@@ -186,7 +187,7 @@ export default async function GuidePage({ params }: { params: Promise<Params> })
               <section aria-labelledby="try-questions" className="rounded-[1.5rem] bg-navy-900 p-8 text-white sm:p-10">
                 <h2 id="try-questions" className="text-2xl font-semibold text-white sm:text-3xl">Test yourself now</h2>
                 <p className="mt-3 max-w-2xl leading-relaxed text-white/70">
-                  Try {resources.questions.count} free, original {cert.name} practice questions — every one with the answer and an
+                  Try {resources.questions.count} free, original {cert.name} practice questions, every one with the answer and an
                   explanation for each option.
                 </p>
                 <div className="mt-6 flex flex-col gap-3 sm:flex-row">
@@ -213,6 +214,8 @@ export default async function GuidePage({ params }: { params: Promise<Params> })
         <SectionHeader id="more-title" eyebrow="Keep preparing" title={`More ${cert.name} preparation`} />
         <StudyResources cert={cert} current="guide" className="mt-10" />
       </Section>
+
+      <AuthorSection tone="white" certSlug={cert.slug} location="guide" />
 
       <section aria-label="Disclaimer" className="bg-white py-14">
         <div className="container-page">

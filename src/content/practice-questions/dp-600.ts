@@ -6,7 +6,7 @@ import type { PracticeQuestionSet } from "@/config/types";
  * not recalled exam content, and not presented as real exam questions.
  */
 const GUIDE = {
-  label: "Microsoft Learn — DP-600 study guide",
+  label: "Microsoft Learn: DP-600 study guide",
   url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600",
 };
 
@@ -39,7 +39,7 @@ export const dp600Questions: PracticeQuestionSet = {
       answer: "A",
       explanation:
         "Fabric offers three endorsement badges: promoted, certified and master data. Promotion is self-service for anyone with write permission; certification and master data are restricted to users the Fabric administrator designates.",
-      reference: { label: "Microsoft Learn — Endorsement overview", url: "https://learn.microsoft.com/en-us/fabric/governance/endorsement-overview" },
+      reference: { label: "Microsoft Learn: Endorsement overview", url: "https://learn.microsoft.com/en-us/fabric/governance/endorsement-overview" },
     },
     {
       id: "dp600-d1-workspace-role",
@@ -57,7 +57,7 @@ export const dp600Questions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "Least privilege drives most workspace-role questions. Contributor is the usual role for builders; Member adds the right to share and add people; Viewer is read-only.",
-      reference: { label: "Microsoft Learn — Roles in workspaces in Microsoft Fabric", url: "https://learn.microsoft.com/en-us/fabric/fundamentals/roles-workspaces" },
+      reference: { label: "Microsoft Learn: Roles in workspaces in Microsoft Fabric", url: "https://learn.microsoft.com/en-us/fabric/fundamentals/roles-workspaces" },
     },
     {
       id: "dp600-d1-deployment-rule",
@@ -75,7 +75,7 @@ export const dp600Questions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "Deployment rules let one item carry stage-specific settings. Semantic models support data source and parameter rules; notebooks support default lakehouse rules.",
-      reference: { label: "Microsoft Learn — Create deployment rules", url: "https://learn.microsoft.com/en-us/fabric/cicd/deployment-pipelines/create-rules" },
+      reference: { label: "Microsoft Learn: Create deployment rules", url: "https://learn.microsoft.com/en-us/fabric/cicd/deployment-pipelines/create-rules" },
     },
     {
       id: "dp600-d1-pbids",
@@ -93,7 +93,7 @@ export const dp600Questions: PracticeQuestionSet = {
       answer: "D",
       explanation:
         "PBIDS files are small JSON files that describe one data source. They contain no authentication, table or schema information, which makes them a safe way to standardise how authors connect.",
-      reference: { label: "Microsoft Learn — Data sources in Power BI Desktop (PBIDS files)", url: "https://learn.microsoft.com/en-us/power-bi/connect-data/desktop-data-sources" },
+      reference: { label: "Microsoft Learn: Data sources in Power BI Desktop (PBIDS files)", url: "https://learn.microsoft.com/en-us/power-bi/connect-data/desktop-data-sources" },
     },
 
     /* ── Domain 2: Prepare data ───────────────────────────────────────────── */
@@ -113,7 +113,7 @@ export const dp600Questions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "Microsoft's decision guide is simple: Spark skills or unstructured data point to a lakehouse; T-SQL skills and multi-table transactions point to a warehouse.",
-      reference: { label: "Microsoft Learn — Choose between warehouse and lakehouse", url: "https://learn.microsoft.com/en-us/fabric/fundamentals/decision-guide-lakehouse-warehouse" },
+      reference: { label: "Microsoft Learn: Choose between warehouse and lakehouse", url: "https://learn.microsoft.com/en-us/fabric/fundamentals/decision-guide-lakehouse-warehouse" },
     },
     {
       id: "dp600-d2-sql-endpoint-readonly",
@@ -131,7 +131,7 @@ export const dp600Questions: PracticeQuestionSet = {
       answer: "A",
       explanation:
         "Every lakehouse has a system-generated, read-only SQL analytics endpoint for T-SQL querying. If SQL developers need to write with T-SQL, use a warehouse, or write to the lakehouse with Spark or a pipeline.",
-      reference: { label: "Microsoft Learn — Choose between warehouse and lakehouse", url: "https://learn.microsoft.com/en-us/fabric/fundamentals/decision-guide-lakehouse-warehouse" },
+      reference: { label: "Microsoft Learn: Choose between warehouse and lakehouse", url: "https://learn.microsoft.com/en-us/fabric/fundamentals/decision-guide-lakehouse-warehouse" },
     },
     {
       id: "dp600-d2-onelake-eventhouse",
@@ -149,7 +149,7 @@ export const dp600Questions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "OneLake availability can be enabled per database or per table. The data then appears in OneLake as Delta tables that lakehouses, warehouses, notebooks and Power BI Direct Lake can use.",
-      reference: { label: "Microsoft Learn — Eventhouse OneLake availability", url: "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-house-onelake-availability" },
+      reference: { label: "Microsoft Learn: Eventhouse OneLake availability", url: "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-house-onelake-availability" },
     },
     {
       id: "dp600-d2-denormalise",
@@ -241,7 +241,7 @@ export const dp600Questions: PracticeQuestionSet = {
       answer: "D",
       explanation:
         "Direct Lake on SQL analytics endpoints can fall back to DirectQuery, for example for SQL views or SQL-based granular access control. Direct Lake on OneLake has no DirectQuery fallback; use a lakehouse materialised view or another storage mode instead.",
-      reference: { label: "Microsoft Learn — Direct Lake overview", url: "https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-overview" },
+      reference: { label: "Microsoft Learn: Direct Lake overview", url: "https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-overview" },
     },
     {
       id: "dp600-d3-incremental-refresh",
@@ -259,7 +259,7 @@ export const dp600Questions: PracticeQuestionSet = {
       answer: "A",
       explanation:
         "Incremental refresh filters by RangeStart and RangeEnd in Power Query. If the filter does not fold, Power BI may have to retrieve all rows, which makes refreshes slow or exhausts resources.",
-      reference: { label: "Microsoft Learn — Incremental refresh overview", url: "https://learn.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-overview" },
+      reference: { label: "Microsoft Learn: Incremental refresh overview", url: "https://learn.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-overview" },
     },
     {
       id: "dp600-d3-calculation-groups",
@@ -277,7 +277,7 @@ export const dp600Questions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "SELECTEDMEASURE() is a placeholder for the measure in a calculation item expression. Calculation groups can significantly reduce the number of measures, and dynamic format strings help when items such as YoY% need a different format.",
-      reference: { label: "Microsoft Learn — Calculation groups", url: "https://learn.microsoft.com/en-us/power-bi/transform-model/calculation-groups" },
+      reference: { label: "Microsoft Learn: Calculation groups", url: "https://learn.microsoft.com/en-us/power-bi/transform-model/calculation-groups" },
     },
     {
       id: "dp600-d3-large-format",
@@ -295,7 +295,7 @@ export const dp600Questions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "The large semantic model storage format lifts the default size limit up to the capacity size and is recommended when you use XMLA-based tools for write operations. It also brings on-demand loading of evicted models.",
-      reference: { label: "Microsoft Learn — Large semantic models in Power BI Premium and Fabric", url: "https://learn.microsoft.com/en-us/power-bi/enterprise/service-premium-large-models" },
+      reference: { label: "Microsoft Learn: Large semantic models in Power BI Premium and Fabric", url: "https://learn.microsoft.com/en-us/power-bi/enterprise/service-premium-large-models" },
     },
   ],
 };

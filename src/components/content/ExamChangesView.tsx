@@ -21,7 +21,7 @@ export const examChangesCopy = {
     title: "IT Certification Exam Changes 2026–2027",
     seoTitle: "IT Certification Exam Changes 2026–2027: Retirements & New Versions",
     description:
-      "Which IT certification exams retire, get replaced or get a new outline in 2026 and 2027 — Microsoft, AWS, CompTIA, Cisco, ISC2, ISACA and more, with official sources.",
+      "Which IT certification exams retire, get replaced or get a new outline in 2026 and 2027: Microsoft, AWS, CompTIA, Cisco, ISC2, ISACA and more, with official sources.",
     eyebrow: "Exam change tracker",
     intro:
       "Retirements, replacements, new exam versions and outline updates for Microsoft, AWS, CompTIA, Cisco, Google Cloud, ISC2, ISACA, IAPP, ISTQB and more. Every entry links to the official vendor source and says what the change means if you are studying now.",
@@ -42,7 +42,7 @@ export const examChangesCopy = {
     title: "Prüfungsänderungen 2026–2027 bei IT-Zertifizierungen",
     seoTitle: "IT-Zertifizierungen: Prüfungsänderungen 2026–2027",
     description:
-      "Welche IT-Zertifizierungsprüfungen 2026 und 2027 eingestellt, ersetzt oder überarbeitet werden – Microsoft, AWS, CompTIA, Cisco, ISC2, ISACA u. a., mit Quellen.",
+      "Welche IT-Zertifizierungsprüfungen 2026 und 2027 eingestellt, ersetzt oder überarbeitet werden: Microsoft, AWS, CompTIA, Cisco, ISC2, ISACA u. a., mit Quellen.",
     eyebrow: "Prüfungsänderungen im Überblick",
     intro:
       "Auslaufende Prüfungen, Nachfolger, neue Prüfungsversionen und überarbeitete Gliederungen bei Microsoft, AWS, CompTIA, Cisco, Google Cloud, ISC2, ISACA, IAPP, ISTQB und weiteren Anbietern. Jeder Eintrag verweist auf die offizielle Quelle des Anbieters und sagt, was die Änderung für Ihre Vorbereitung bedeutet.",

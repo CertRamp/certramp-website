@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "@/components/ui/Link";
 import { PageHero } from "@/components/layout/PageHero";
 import { Section } from "@/components/ui/Section";
+import { AuthorSection } from "@/components/marketing/AuthorSection";
 import { deGuidePath, deHubPath, deQuestionsPath, getAllDe } from "@/lib/content-de";
 import { deExamChangesPath } from "@/lib/exam-changes";
 import { buildMetadata } from "@/lib/seo";
@@ -9,7 +10,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Prüfungsvorbereitung auf Deutsch: Leitfäden & Übungsfragen",
   description:
-    "Kostenlose Prüfungsleitfäden und Übungsfragen mit Lösungen auf Deutsch – für IT-Zertifizierungen von Microsoft, CompTIA, Cisco, IREB, IPMA und mehr.",
+    "Kostenlose Prüfungsleitfäden und Übungsfragen mit Lösungen auf Deutsch, für IT-Zertifizierungen von Microsoft, CompTIA, Cisco, IREB, IPMA und mehr.",
   path: deHubPath,
   locale: "de",
 });
@@ -27,7 +28,7 @@ export default function DeHubPage() {
         title="Prüfungsvorbereitung auf Deutsch"
         intro={
           <p>
-            Leitfäden zu Format, Inhalten und Lernplan sowie kostenlose Übungsfragen mit Lösungen und Erklärungen – für
+            Leitfäden zu Format, Inhalten und Lernplan sowie kostenlose Übungsfragen mit Lösungen und Erklärungen, für
             Zertifizierungen, zu denen es CertRamp-Übungsprüfungen auf Deutsch gibt.
           </p>
         }
@@ -58,6 +59,7 @@ export default function DeHubPage() {
           ))}
         </ul>
       </Section>
+      <AuthorSection lang="de" tone="surface" location="de-hub" />
     </div>
   );
 }

@@ -6,7 +6,7 @@ import type { PracticeQuestionSet } from "@/config/types";
  * not recalled exam content, and not presented as real exam questions.
  */
 const GUIDE = {
-  label: "Microsoft Learn — AZ-900 study guide",
+  label: "Microsoft Learn: AZ-900 study guide",
   url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900",
 };
 
@@ -19,7 +19,7 @@ export const az900Questions: PracticeQuestionSet = {
   seo: {
     title: "AZ-900 Practice Questions with Answers & Explanations (2026)",
     description:
-      "15 free, original AZ-900 practice questions on cloud concepts, Azure architecture, storage, identity, governance and monitoring — each with a full explanation.",
+      "15 free, original AZ-900 practice questions on cloud concepts, Azure architecture, storage, identity, governance and monitoring, each with a full explanation.",
   },
   questions: [
     /* ── Domain 1: Describe cloud concepts ────────────────────────────────── */
@@ -149,7 +149,7 @@ export const az900Questions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "LRS and ZRS protect within one region; GRS and GZRS add a copy in a secondary region. Only the read-access variants (RA-GRS and RA-GZRS) let the application read from the secondary region.",
-      reference: { label: "Microsoft Learn — Azure Storage redundancy", url: "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy" },
+      reference: { label: "Microsoft Learn: Azure Storage redundancy", url: "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy" },
     },
     {
       id: "az900-d2-archive-tier",
@@ -167,7 +167,7 @@ export const az900Questions: PracticeQuestionSet = {
       answer: "D",
       explanation:
         "Hot, cool and cold are online tiers; archive is offline and has the lowest storage cost. Reading archived data requires rehydration, which can take hours.",
-      reference: { label: "Microsoft Learn — Access tiers for blob data", url: "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview" },
+      reference: { label: "Microsoft Learn: Access tiers for blob data", url: "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview" },
     },
     {
       id: "az900-d2-expressroute",
@@ -223,7 +223,7 @@ export const az900Questions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "Resource locks apply even to users with high permissions. CanNotDelete still allows changes; ReadOnly blocks both changes and deletion.",
-      reference: { label: "Microsoft Learn — Lock your resources", url: "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources" },
+      reference: { label: "Microsoft Learn: Lock your resources", url: "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources" },
     },
     {
       id: "az900-d3-policy",

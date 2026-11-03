@@ -7,7 +7,7 @@ import type { DeContent } from "@/config/types";
  * the official German Microsoft Learn study guide (de-de).
  */
 const GUIDE = {
-  label: "Microsoft Learn — Studienleitfaden für SC-900 (englische Fassung)",
+  label: "Microsoft Learn: Studienleitfaden für SC-900 (englische Fassung)",
   url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900",
 };
 
@@ -112,7 +112,7 @@ export const sc900De: DeContent = {
           },
           {
             title: "Arbeiten Sie die Microsoft-Learn-Lernpfade durch",
-            body: "Folgen Sie den kostenlosen SC-900-Lernpfaden zu Entra, zur Sicherheit mit Azure und Defender sowie zu Microsoft Purview. Notieren Sie für jedes Produkt das eine Problem, das es löst – genau das prüfen die Fragen meist.",
+            body: "Folgen Sie den kostenlosen SC-900-Lernpfaden zu Entra, zur Sicherheit mit Azure und Defender sowie zu Microsoft Purview. Notieren Sie für jedes Produkt das eine Problem, das es löst: genau das prüfen die Fragen meist.",
           },
           {
             title: "Werfen Sie einmal einen Blick in die Portale",
@@ -187,7 +187,7 @@ export const sc900De: DeContent = {
     seo: {
       title: "SC-900 Übungsfragen mit Lösungen & Erklärungen (2026)",
       description:
-        "15 kostenlose, eigene SC-900-Übungsfragen zu Sicherheitskonzepten, Microsoft Entra, Defender, Sentinel und Purview – jeweils ausführlich erklärt.",
+        "15 kostenlose, eigene SC-900-Übungsfragen zu Sicherheitskonzepten, Microsoft Entra, Defender, Sentinel und Purview: jeweils ausführlich erklärt.",
     },
     questions: [
       /* ── Bereich 1: Konzepte Sicherheit, Compliance und Identität ── */
@@ -271,7 +271,7 @@ export const sc900De: DeContent = {
         objective: "Beschreiben der Identitätsschutz- und Governancefunktionen von Microsoft Entra",
         difficulty: "intermediate",
         question:
-          "Administratoren sollen die Rolle „Globaler Administrator“ (Global Administrator) nur dann innehaben, wenn sie sie benötigen – zeitlich begrenzt und nach Genehmigung –, und jede Aktivierung soll protokolliert werden. Welche Funktion stellt das bereit?",
+          "Administratoren sollen die Rolle „Globaler Administrator“ (Global Administrator) nur dann innehaben, wenn sie sie benötigen, zeitlich begrenzt und nach Genehmigung, und jede Aktivierung soll protokolliert werden. Welche Funktion stellt das bereit?",
         options: [
           { id: "A", text: "Microsoft Entra ID Protection", rationale: "ID Protection erkennt riskante Benutzer und Anmeldungen; eine zeitlich begrenzte Rollenaktivierung bietet es nicht." },
           { id: "B", text: "Microsoft Entra Privileged Identity Management", rationale: "Richtig. PIM bietet die Just-in-Time-Aktivierung privilegierter Rollen mit zeitlicher Begrenzung, Genehmigungsworkflows, Begründung und Überwachungsverlauf." },

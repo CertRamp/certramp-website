@@ -40,7 +40,7 @@ export const ai901Guide: ExamGuide = {
         },
         {
           title: "Learn the concepts precisely",
-          body: "Be able to tell the six responsible AI principles apart in a scenario, explain at a high level how a generative model produces output, and name the right workload — text analysis, speech, vision, image generation or information extraction — for a business need.",
+          body: "Be able to tell the six responsible AI principles apart in a scenario, explain at a high level how a generative model produces output, and name the right workload (text analysis, speech, vision, image generation or information extraction) for a business need.",
         },
         {
           title: "Build in Microsoft Foundry",
@@ -61,7 +61,7 @@ export const ai901Guide: ExamGuide = {
       heading: "Common preparation mistakes",
       bullets: [
         "Studying from AI-900 material only. The successor exam puts more weight on building with Microsoft Foundry, agents and generative models.",
-        "Mixing up the responsible AI principles. Transparency, accountability and fairness are easy to confuse — learn what each one looks like in a concrete situation.",
+        "Mixing up the responsible AI principles. Transparency, accountability and fairness are easy to confuse: learn what each one looks like in a concrete situation.",
         "Confusing the system prompt with the user prompt. Behaviour, tone and boundaries for the whole conversation belong in the system prompt.",
         "Treating a model and an agent as the same thing. An agent combines a model with instructions and tools so that it can take actions.",
         "Skipping the hands-on parts. Deploying a model, testing it in the portal and calling it from code make the scenario questions much easier.",

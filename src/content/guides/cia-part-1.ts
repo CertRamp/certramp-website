@@ -48,7 +48,7 @@ export const ciaPart1Guide: ExamGuide = {
         },
         {
           title: "Practise judgement questions",
-          body: "For objectivity and independence, train yourself to spot the impairment, then choose the response the Standards require — disclosure, reassignment or third-party assurance.",
+          body: "For objectivity and independence, train yourself to spot the impairment, then choose the response the Standards require: disclosure, reassignment or third-party assurance.",
         },
         {
           title: "Take timed practice exams",

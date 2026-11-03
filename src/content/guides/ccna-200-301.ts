@@ -27,7 +27,7 @@ export const ccna200301Guide: ExamGuide = {
       id: "whats-new-v2",
       heading: "What changes in v2.0",
       bullets: [
-        "More troubleshooting. Many v2.0 topics start with \"Troubleshoot\", \"Diagnose\" or \"Interpret\" — IPv4 and IPv6 addressing, client connectivity, DHCPv4, static routing, DNS records and syslog messages.",
+        "More troubleshooting. Many v2.0 topics start with \"Troubleshoot\", \"Diagnose\" or \"Interpret\": IPv4 and IPv6 addressing, client connectivity, DHCPv4, static routing, DNS records and syslog messages.",
         "New or expanded topics include OSPFv3 for IPv6, the operational status of HSRP and VRRP, DNS record types (A, AAAA, CNAME, MX, NS and PTR), SFTP/SCP file transfer, AAA with TACACS+ and RADIUS, and storm control and RA guard as Layer 2 security features.",
         "AI in operations. Domain 5.0 covers the role of agentic AI and choosing a prompt for a generative AI system. Cisco also notes that some questions may ask you to evaluate output from agentic AI and digital network assistants.",
         "Topics that appear in the v1.1 outline but not in the v2.0 outline include QoS per-hop behaviour, NTP, TFTP/FTP, TCP versus UDP, REST APIs and JSON-encoded data. Learn them if you sit v1.1; check the v2.0 PDF before skipping anything if you sit v2.0.",

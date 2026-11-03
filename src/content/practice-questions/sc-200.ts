@@ -6,7 +6,7 @@ import type { PracticeQuestionSet } from "@/config/types";
  * not recalled exam content, and not presented as real exam questions.
  */
 const GUIDE = {
-  label: "Microsoft Learn — SC-200 study guide",
+  label: "Microsoft Learn: SC-200 study guide",
   url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200",
 };
 
@@ -19,7 +19,7 @@ export const sc200Questions: PracticeQuestionSet = {
   seo: {
     title: "SC-200 Practice Questions with Answers & Explanations (2026)",
     description:
-      "15 free, original SC-200 practice questions on Microsoft Sentinel, Defender XDR, incident response and KQL threat hunting — each with a full explanation.",
+      "15 free, original SC-200 practice questions on Microsoft Sentinel, Defender XDR, incident response and KQL threat hunting, each with a full explanation.",
   },
   questions: [
     /* ── Domain 1: Manage a security operations environment ───────────────── */
@@ -74,7 +74,7 @@ export const sc200Questions: PracticeQuestionSet = {
       ],
       answer: "D",
       explanation:
-        "With the Azure Monitor Agent, the data collection rule is where you scope collection — which machines, which event sets or which individual events. Filtering at collection time also keeps ingestion costs down.",
+        "With the Azure Monitor Agent, the data collection rule is where you scope collection, which machines, which event sets or which individual events. Filtering at collection time also keeps ingestion costs down.",
       reference: GUIDE,
     },
     {

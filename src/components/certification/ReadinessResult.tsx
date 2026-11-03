@@ -43,7 +43,7 @@ export function ReadinessResult({ certName }: { certName: string }) {
 
       <h2 className="mt-12 text-xl font-semibold">How to read your score</h2>
       <p className="mt-2 text-sm text-muted">
-        CertRamp study guidance only — this is not an official pass mark and does not predict your exam result.
+        CertRamp study guidance only: this is not an official pass mark and does not predict your exam result.
       </p>
       <ol className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {readinessBands.map((b) => (

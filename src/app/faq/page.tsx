@@ -10,7 +10,7 @@ import { isVisible } from "@/lib/placeholder";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "FAQ — Practice Exams, Access & the Exam Simulator",
+  title: "FAQ: Practice Exams, Access & the Exam Simulator",
   description:
     "Answers about CertRamp practice exams: how the six-test ramp works, official exams vs. practice tests, attempts, explanations, mobile access and Udemy vs. the Exam Simulator.",
   path: "/faq",

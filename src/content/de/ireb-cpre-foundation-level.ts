@@ -9,7 +9,7 @@ import type { DeContent } from "@/config/types";
  * ORIGINAL CertRamp questions — not real exam questions.
  */
 const SYLLABUS = {
-  label: "IREB – Lehrplan CPRE Foundation Level 3.3.0",
+  label: "IREB: Lehrplan CPRE Foundation Level 3.3.0",
   url: "https://hub.ireb.org/media/pages/resources/cpre-foundation-level-syllabus/75982ed82f-1787039955/cpre_foundationlevel_syllabus_de_v.3.3.0.pdf",
 };
 
@@ -30,7 +30,7 @@ export const irebCpreDe: DeContent = {
     },
     {
       label: "Durchführung",
-      value: "Über IREB-lizenzierte Zertifizierungsstellen, in Prüfungszentren oder – bei einigen Stellen – remote",
+      value: "Über IREB-lizenzierte Zertifizierungsstellen, in Prüfungszentren oder, bei einigen Stellen, remote",
     },
     { label: "Voraussetzungen", value: "Keine" },
     { label: "Prüfungsversion", value: "Lehrplan 3.3.0 (1. April 2026)" },
@@ -61,14 +61,14 @@ export const irebCpreDe: DeContent = {
         heading: "So läuft die Prüfung ab",
         paragraphs: [
           "Die Prüfung wird von IREB-lizenzierten Zertifizierungsstellen durchgeführt, entweder direkt im Anschluss an eine Schulung oder als eigenständige Prüfung in einem Prüfungszentrum; einige Stellen bieten auch Remote-Prüfungen an. Formale Voraussetzungen gibt es nicht, der Lehrplan setzt jedoch Grundkenntnisse in der Systementwicklung mit planbasierten und agilen Ansätzen voraus.",
-          "Alle Fragen sind Multiple-Choice-Fragen, und zwar in drei Arten: Einfachauswahl (A-Fragen), Mehrfachauswahl (P-Fragen) und Richtig/Falsch-Fragen (K-Fragen). Eine Frage bringt ein bis drei Punkte; die Punktzahl steht im Fragenkopf. Da P- und K-Fragen aus mehreren Teilen bestehen, lesen Sie jede Aussage sorgfältig – lückenhaftes Wissen kostet hier schnell Punkte.",
+          "Alle Fragen sind Multiple-Choice-Fragen, und zwar in drei Arten: Einfachauswahl (A-Fragen), Mehrfachauswahl (P-Fragen) und Richtig/Falsch-Fragen (K-Fragen). Eine Frage bringt ein bis drei Punkte; die Punktzahl steht im Fragenkopf. Da P- und K-Fragen aus mehreren Teilen bestehen, lesen Sie jede Aussage sorgfältig: lückenhaftes Wissen kostet hier schnell Punkte.",
         ],
       },
       {
         id: "where-to-focus",
         heading: "Worauf Sie sich konzentrieren sollten",
         paragraphs: [
-          "Der Lehrplan nennt keine Prüfungsgewichtung pro Kapitel, wohl aber Schulungszeiten, und diese zeigen, wo die Tiefe liegt. Kapitel 3 (Arbeitsprodukte und Dokumentationspraktiken) hat sieben Stunden und Kapitel 4 (Praktiken für die Erarbeitung von Anforderungen) viereinhalb – zusammen fast zwei Drittel der insgesamt 17 Std. 45 Min. Beide liegen auf der kognitiven Stufe K3 (Anwenden; im englischen Lehrplan L3). Sie müssen die Inhalte also anwenden können, zum Beispiel eine Anforderung mit einer Schablone formulieren oder Stakeholder identifizieren und eine Stakeholder-Liste erstellen.",
+          "Der Lehrplan nennt keine Prüfungsgewichtung pro Kapitel, wohl aber Schulungszeiten, und diese zeigen, wo die Tiefe liegt. Kapitel 3 (Arbeitsprodukte und Dokumentationspraktiken) hat sieben Stunden und Kapitel 4 (Praktiken für die Erarbeitung von Anforderungen) viereinhalb: zusammen fast zwei Drittel der insgesamt 17 Std. 45 Min. Beide liegen auf der kognitiven Stufe K3 (Anwenden; im englischen Lehrplan L3). Sie müssen die Inhalte also anwenden können, zum Beispiel eine Anforderung mit einer Schablone formulieren oder Stakeholder identifizieren und eine Stakeholder-Liste erstellen.",
           "Vernachlässigen Sie die kurzen Kapitel nicht. Die neun Prinzipien aus Kapitel 2, die Facetten und Konfigurationen des RE-Prozesses aus Kapitel 5 sowie Verfolgbarkeit und Priorisierung aus Kapitel 6 liefern viele kompakte Fragen, bei denen Sie leicht punkten, wenn Sie die Begriffe genau kennen.",
         ],
       },
@@ -123,7 +123,7 @@ export const irebCpreDe: DeContent = {
       {
         question: "Wie lange dauert die Prüfung?",
         answer:
-          "75 Minuten. Wer die Prüfung nicht in seiner Muttersprache ablegt, kann schriftlich und mit Begründung 90 Minuten beantragen – idealerweise zusammen mit der Prüfungsanmeldung, spätestens vor Prüfungsbeginn.",
+          "75 Minuten. Wer die Prüfung nicht in seiner Muttersprache ablegt, kann schriftlich und mit Begründung 90 Minuten beantragen, idealerweise zusammen mit der Prüfungsanmeldung, spätestens vor Prüfungsbeginn.",
       },
       {
         question: "Welcher Lehrplan ist aktuell?",
@@ -165,7 +165,7 @@ export const irebCpreDe: DeContent = {
     seo: {
       title: "CPRE Foundation Level Übungsfragen mit Lösungen (3.3.0)",
       description:
-        "15 kostenlose IREB CPRE Foundation Level Übungsfragen (Lehrplan 3.3.0): Prinzipien, Schablonen, Ermittlung, Validierung, Verfolgbarkeit – mit Erklärung.",
+        "15 kostenlose IREB CPRE Foundation Level Übungsfragen (Lehrplan 3.3.0): Prinzipien, Schablonen, Ermittlung, Validierung, Verfolgbarkeit, mit Erklärung.",
     },
     questions: [
       /* ── Kapitel 1: Einführung und Überblick ──────────────────────────── */
@@ -177,8 +177,8 @@ export const irebCpreDe: DeContent = {
         question:
           "„Das System muss die Suchergebnisse bei 95 % aller Anfragen innerhalb von zwei Sekunden anzeigen.“ Um welche Art von Anforderung handelt es sich?",
         options: [
-          { id: "A", text: "Qualitätsanforderung", rationale: "Richtig. Die Aussage beschreibt eine Qualität – hier die Performance –, die das System haben soll." },
-          { id: "B", text: "Funktionale Anforderung", rationale: "Eine funktionale Anforderung beschreibt ein Ergebnis oder Verhalten, das das System liefert, etwa die Suche selbst – nicht, wie schnell sie erfolgt." },
+          { id: "A", text: "Qualitätsanforderung", rationale: "Richtig. Die Aussage beschreibt eine Qualität, hier die Performance, die das System haben soll." },
+          { id: "B", text: "Funktionale Anforderung", rationale: "Eine funktionale Anforderung beschreibt ein Ergebnis oder Verhalten, das das System liefert, etwa die Suche selbst, nicht, wie schnell sie erfolgt." },
           { id: "C", text: "Randbedingung (Constraint)", rationale: "Eine Randbedingung begrenzt den Lösungsraum über das hinaus, was für funktionale Anforderungen und Qualitätsanforderungen nötig ist, zum Beispiel eine vorgeschriebene Technologie oder ein Gesetz." },
           { id: "D", text: "Glossareintrag", rationale: "Ein Glossar definiert Begriffe; hier handelt es sich um eine Anforderung." },
         ],
@@ -221,7 +221,7 @@ export const irebCpreDe: DeContent = {
         ],
         answer: "C",
         explanation:
-          "Die neun Prinzipien sind: Wertorientierung, Stakeholder, gemeinsames Verständnis, Kontext, Problem – Anforderung – Lösung, Validierung, Evolution, Innovation sowie systematische und disziplinierte Arbeit.",
+          "Die neun Prinzipien sind: Wertorientierung, Stakeholder, gemeinsames Verständnis, Kontext, Problem, Anforderung, Lösung, Validierung, Evolution, Innovation sowie systematische und disziplinierte Arbeit.",
         reference: SYLLABUS,
       },
       {
@@ -421,7 +421,7 @@ export const irebCpreDe: DeContent = {
         options: [
           { id: "A", text: "Ein Change Control Board (Änderungsausschuss), das monatlich tagt", rationale: "Ein formales Change Control Board ist typisch für lineare, planbasierte Vorgehensweisen." },
           { id: "B", text: "Jeder Entwickler für sich", rationale: "Unkoordinierte Änderungen durch einzelne Entwickler sind kein Vorgehen zum Umgang mit Änderungen." },
-          { id: "C", text: "Niemand – in agilen Projekten können sich Anforderungen nicht ändern", rationale: "Agile Vorgehensweisen begrüßen Änderungen ausdrücklich." },
+          { id: "C", text: "Niemand, in agilen Projekten können sich Anforderungen nicht ändern", rationale: "Agile Vorgehensweisen begrüßen Änderungen ausdrücklich." },
           { id: "D", text: "Der Product Owner, indem er das Backlog aktualisiert und neu priorisiert", rationale: "Richtig. In agilen Vorgehensweisen werden Änderungen über das Backlog behandelt, das der Product Owner pflegt und priorisiert." },
         ],
         answer: "D",

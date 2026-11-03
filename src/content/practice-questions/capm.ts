@@ -8,7 +8,7 @@ import type { PracticeQuestionSet } from "@/config/types";
  * the Project Management Institute, used here only to name the exam.
  */
 const ECO = {
-  label: "PMI — CAPM Examination Content Outline (2023 exam update)",
+  label: "PMI: CAPM Examination Content Outline (2023 exam update)",
   url: "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/capm-exam-content-outline-english.pdf",
 };
 
@@ -21,7 +21,7 @@ export const capmQuestions: PracticeQuestionSet = {
   seo: {
     title: "CAPM Practice Questions with Answers & Explanations (2026)",
     description:
-      "15 free, original CAPM practice questions on project fundamentals, predictive and agile methods and business analysis — each with a full explanation.",
+      "15 free, original CAPM practice questions on project fundamentals, predictive and agile methods and business analysis, each with a full explanation.",
   },
   questions: [
     /* ── Domain 1: Project Management Fundamentals and Core Concepts ──────── */

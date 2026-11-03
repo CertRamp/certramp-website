@@ -6,7 +6,7 @@ import type { PracticeQuestionSet } from "@/config/types";
  * not recalled exam content, and not presented as real exam questions.
  */
 const GUIDE = {
-  label: "Microsoft Learn — SC-300 study guide",
+  label: "Microsoft Learn: SC-300 study guide",
   url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
 };
 
@@ -19,7 +19,7 @@ export const sc300Questions: PracticeQuestionSet = {
   seo: {
     title: "SC-300 Practice Questions with Answers & Explanations (2026)",
     description:
-      "15 free, original SC-300 practice questions on Microsoft Entra ID, Conditional Access, workload identities, PIM and identity governance — each fully explained.",
+      "15 free, original SC-300 practice questions on Microsoft Entra ID, Conditional Access, workload identities, PIM and identity governance, each fully explained.",
   },
   questions: [
     /* ── Domain 1: Implement and manage user identities ───────────────────── */
@@ -39,7 +39,7 @@ export const sc300Questions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "Administrative units are the standard way to delegate administration to part of an organisation, such as a region or department. If a role is assigned without an administrative unit scope, it applies to the whole tenant.",
-      reference: { label: "Microsoft Learn — Administrative units in Microsoft Entra ID", url: "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/administrative-units" },
+      reference: { label: "Microsoft Learn: Administrative units in Microsoft Entra ID", url: "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/administrative-units" },
     },
     {
       id: "sc300-d1-cross-tenant-sync",
@@ -57,7 +57,7 @@ export const sc300Questions: PracticeQuestionSet = {
       answer: "D",
       explanation:
         "Cross-tenant synchronization is built for multitenant organisations. It creates B2B collaboration users in the target tenants, by default as external members, and keeps them in line with the source tenant.",
-      reference: { label: "Microsoft Learn — Cross-tenant synchronization overview", url: "https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview" },
+      reference: { label: "Microsoft Learn: Cross-tenant synchronization overview", url: "https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview" },
     },
     {
       id: "sc300-d1-pta",
@@ -113,7 +113,7 @@ export const sc300Questions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "The Temporary Access Pass is the standard bootstrap for passwordless onboarding and for recovery when a user loses a strong method. It can be configured for one-time or multiple use within its lifetime.",
-      reference: { label: "Microsoft Learn — Temporary Access Pass", url: "https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-temporary-access-pass" },
+      reference: { label: "Microsoft Learn: Temporary Access Pass", url: "https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-temporary-access-pass" },
     },
     {
       id: "sc300-d2-report-only",
@@ -167,7 +167,7 @@ export const sc300Questions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "Global Secure Access has separate traffic profiles: Private Access for internal resources, Internet Access for internet and SaaS traffic, and the Microsoft traffic profile for Microsoft 365. Users connect through the Global Secure Access client.",
-      reference: { label: "Microsoft Learn — Microsoft Entra Private Access", url: "https://learn.microsoft.com/en-us/entra/global-secure-access/concept-private-access" },
+      reference: { label: "Microsoft Learn: Microsoft Entra Private Access", url: "https://learn.microsoft.com/en-us/entra/global-secure-access/concept-private-access" },
     },
 
     /* ── Domain 3: Plan and implement workload identities ─────────────────── */
@@ -187,7 +187,7 @@ export const sc300Questions: PracticeQuestionSet = {
       answer: "A",
       explanation:
         "System-assigned identities share the lifecycle of their resource and cannot be shared. User-assigned identities are independent and can be associated with more than one resource, which suits groups of interchangeable machines.",
-      reference: { label: "Microsoft Learn — Managed identities for Azure resources", url: "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview" },
+      reference: { label: "Microsoft Learn: Managed identities for Azure resources", url: "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview" },
     },
     {
       id: "sc300-d3-app-proxy",
@@ -279,7 +279,7 @@ export const sc300Questions: PracticeQuestionSet = {
       answer: "D",
       explanation:
         "Eligible and active assignments give the same privileges; the difference is that eligible users must activate first. Just-in-time, time-bound activation with approval is the core idea of PIM.",
-      reference: { label: "Microsoft Learn — What is Privileged Identity Management?", url: "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure" },
+      reference: { label: "Microsoft Learn: What is Privileged Identity Management?", url: "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure" },
     },
     {
       id: "sc300-d4-diagnostic-settings",

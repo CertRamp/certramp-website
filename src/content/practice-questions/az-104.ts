@@ -6,7 +6,7 @@ import type { PracticeQuestionSet } from "@/config/types";
  * not recalled exam content, and not presented as real exam questions.
  */
 const GUIDE = {
-  label: "Microsoft Learn — AZ-104 study guide",
+  label: "Microsoft Learn: AZ-104 study guide",
   url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104",
 };
 
@@ -19,7 +19,7 @@ export const az104Questions: PracticeQuestionSet = {
   seo: {
     title: "AZ-104 Practice Questions with Answers & Explanations (2026)",
     description:
-      "15 free, original AZ-104 practice questions on Entra ID, RBAC, Azure Policy, storage, VMs, networking and backup — each with a full explanation.",
+      "15 free, original AZ-104 practice questions on Entra ID, RBAC, Azure Policy, storage, VMs, networking and backup, each with a full explanation.",
   },
   questions: [
     /* ── Domain 1: Manage Azure identities and governance ─────────────────── */

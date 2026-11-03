@@ -10,17 +10,17 @@ import type { DeContent } from "@/config/types";
  * ORIGINAL CertRamp questions — not real exam questions.
  */
 const BOK = {
-  label: "IAPP — AIGP Body of Knowledge und Exam Blueprint 2.1 (PDF, Englisch)",
+  label: "IAPP: AIGP Body of Knowledge und Exam Blueprint 2.1 (PDF, Englisch)",
   url: "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt0d33152fd20bc134/AIGP_Cert%20BOK.pdf",
 };
 
 const aiAct = (articles: string) => ({
-  label: `KI-Verordnung (Verordnung (EU) 2024/1689), ${articles} — EUR-Lex`,
+  label: `KI-Verordnung (Verordnung (EU) 2024/1689), ${articles}: EUR-Lex`,
   url: "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
 });
 
 const GDPR = {
-  label: "DSGVO (Verordnung (EU) 2016/679), Artikel 5, 6 und 13 — EUR-Lex",
+  label: "DSGVO (Verordnung (EU) 2016/679), Artikel 5, 6 und 13: EUR-Lex",
   url: "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
 };
 
@@ -110,7 +110,7 @@ export const iappAigpDe: DeContent = {
         heading: "Was die AIGP tatsächlich prüft",
         paragraphs: [
           "Der Body of Knowledge umfasst vier Domänen: Understanding the foundations of AI governance (Grundlagen der KI-Governance, 16–20 Fragen), Understanding how laws, standards and frameworks apply to AI (Anwendung von Gesetzen, Standards und Rahmenwerken auf KI, 19–23), Understanding how to govern AI development (Steuerung der KI-Entwicklung, 21–25) und Understanding how to govern AI deployment and use (Steuerung von Einsatz und Nutzung von KI, 21–25). Der Prüfungsplan (Exam Blueprint) nennt pro Domäne eine Mindest- und Höchstzahl an Fragen statt eines Prozentsatzes.",
-          "Zwei der vier Domänen betrachten den KI-Lebenszyklus aus zwei Blickwinkeln: aus Sicht der Organisation, die ein KI-System konzipiert, trainiert und freigibt, und aus Sicht der Organisation, die sich entscheidet, ein solches System einzusetzen und zu nutzen – oft von einem Anbieter bezogen. Darum herum stehen die Grundlagen (was KI ist, ihre Risiken und Schäden, Rollen, Schulung und Richtlinien) und die rechtliche Domäne: bestehendes Datenschutzrecht, Recht des geistigen Eigentums und Antidiskriminierungsrecht, KI-spezifische Gesetze wie die KI-Verordnung der EU (EU AI Act) sowie Standards und Rahmenwerke wie die OECD-KI-Grundsätze, das NIST AI Risk Management Framework und die ISO-Normen zu KI.",
+          "Zwei der vier Domänen betrachten den KI-Lebenszyklus aus zwei Blickwinkeln: aus Sicht der Organisation, die ein KI-System konzipiert, trainiert und freigibt, und aus Sicht der Organisation, die sich entscheidet, ein solches System einzusetzen und zu nutzen, oft von einem Anbieter bezogen. Darum herum stehen die Grundlagen (was KI ist, ihre Risiken und Schäden, Rollen, Schulung und Richtlinien) und die rechtliche Domäne: bestehendes Datenschutzrecht, Recht des geistigen Eigentums und Antidiskriminierungsrecht, KI-spezifische Gesetze wie die KI-Verordnung der EU (EU AI Act) sowie Standards und Rahmenwerke wie die OECD-KI-Grundsätze, das NIST AI Risk Management Framework und die ISO-Normen zu KI.",
         ],
       },
       {
@@ -131,7 +131,7 @@ export const iappAigpDe: DeContent = {
           },
           {
             title: "KI-Grundlagen aus Governance-Sicht lernen",
-            body: "Sie müssen keine Modelle bauen, aber Sie müssen die wichtigsten Arten von KI kennen, wissen, wie Machine-Learning-Systeme trainiert, getestet und überwacht werden, und die typischen Risiken und Schäden verstehen – Verzerrung (Bias), Intransparenz, Drift sowie Sicherheits- und Datenschutzmängel.",
+            body: "Sie müssen keine Modelle bauen, aber Sie müssen die wichtigsten Arten von KI kennen, wissen, wie Machine-Learning-Systeme trainiert, getestet und überwacht werden, und die typischen Risiken und Schäden verstehen: Verzerrung (Bias), Intransparenz, Drift sowie Sicherheits- und Datenschutzmängel.",
           },
           {
             title: "Die zentralen Rechts- und Rahmenwerkstexte lesen",
@@ -143,7 +143,7 @@ export const iappAigpDe: DeContent = {
           },
           {
             title: "Unter Zeitdruck üben",
-            body: "Legen Sie Übungsprüfungen mit 100 Fragen in 2,75 Stunden ab, einschließlich Szenariofragen, und lesen Sie jede Erklärung – auch bei Fragen, die Sie richtig beantwortet haben.",
+            body: "Legen Sie Übungsprüfungen mit 100 Fragen in 2,75 Stunden ab, einschließlich Szenariofragen, und lesen Sie jede Erklärung, auch bei Fragen, die Sie richtig beantwortet haben.",
           },
           {
             title: "Buchen, wenn Ihre Ergebnisse stabil sind",
@@ -182,7 +182,7 @@ export const iappAigpDe: DeContent = {
       {
         question: "Brauche ich einen technischen Hintergrund, um die AIGP zu bestehen?",
         answer:
-          "Die IAPP legt keine formalen Voraussetzungen für die Prüfung fest. Der Body of Knowledge konzentriert sich auf Governance – Richtlinien, Gesetze, Risiken und die Aufsicht über den Lebenszyklus –, erwartet aber, dass Sie die wichtigsten Arten von KI kennen und verstehen, wie Systeme gebaut, getestet und überwacht werden.",
+          "Die IAPP legt keine formalen Voraussetzungen für die Prüfung fest. Der Body of Knowledge konzentriert sich auf Governance (Richtlinien, Gesetze, Risiken und die Aufsicht über den Lebenszyklus), erwartet aber, dass Sie die wichtigsten Arten von KI kennen und verstehen, wie Systeme gebaut, getestet und überwacht werden.",
       },
       {
         question: "Gibt es die Prüfung auf Deutsch?",
@@ -214,7 +214,7 @@ export const iappAigpDe: DeContent = {
     seo: {
       title: "AIGP Übungsfragen mit Lösungen & Erklärungen (2026)",
       description:
-        "15 kostenlose, eigene IAPP-AIGP-Übungsfragen zu KI-Governance, KI-Verordnung, NIST AI RMF, KI-Entwicklung und -Einsatz – jeweils ausführlich erklärt.",
+        "15 kostenlose, eigene IAPP-AIGP-Übungsfragen zu KI-Governance, KI-Verordnung, NIST AI RMF, KI-Entwicklung und -Einsatz: jeweils ausführlich erklärt.",
     },
     questions: [
       /* ── Domäne I: Understanding the foundations of AI governance ── */
@@ -282,7 +282,7 @@ export const iappAigpDe: DeContent = {
         question:
           "Ein Unternehmen, das der DSGVO unterliegt, möchte Chatprotokolle aus dem Kundensupport, die ursprünglich zur Bearbeitung von Kundenanfragen erhoben wurden, zum Feintuning eines Sprachmodells verwenden. Welcher Schritt ist vorher erforderlich?",
         options: [
-          { id: "A", text: "Keiner – Daten, die das Unternehmen bereits besitzt, dürfen für jeden internen Zweck weiterverwendet werden", rationale: "Der Grundsatz der Zweckbindung erlaubt keine unbeschränkte Weiterverwendung personenbezogener Daten für neue Zwecke." },
+          { id: "A", text: "Keiner: Daten, die das Unternehmen bereits besitzt, dürfen für jeden internen Zweck weiterverwendet werden", rationale: "Der Grundsatz der Zweckbindung erlaubt keine unbeschränkte Weiterverwendung personenbezogener Daten für neue Zwecke." },
           { id: "B", text: "Die Protokolle anonymisieren, indem nur die Kundennamen entfernt werden", rationale: "Das bloße Entfernen von Namen macht Freitext-Protokolle selten anonym; andere Identifikatoren und Kontextinformationen bleiben in der Regel erhalten." },
           { id: "C", text: "Eine Genehmigung der Aufsichtsbehörde einholen", rationale: "Die DSGVO verlangt für einen neuen Verarbeitungszweck keine vorherige Genehmigung der Aufsichtsbehörde (eine vorherige Konsultation ist nur in bestimmten Fällen mit hohem Risiko nach einer Datenschutz-Folgenabschätzung vorgesehen)." },
           { id: "D", text: "Prüfen, ob der neue Zweck mit dem ursprünglichen vereinbar ist, eine Rechtsgrundlage bestimmen und die betroffenen Personen transparent informieren", rationale: "Richtig. Die Weiterverarbeitung für das Modelltraining dient einem weiteren Zweck, der den Grundsatz der Zweckbindung erfüllen, eine Rechtsgrundlage haben und den betroffenen Personen erläutert werden muss." },
@@ -437,7 +437,7 @@ export const iappAigpDe: DeContent = {
         ],
         answer: "A",
         explanation:
-          "Bereitstellungsentscheidungen hängen vom Modelltyp und der Bereitstellungsoption ebenso ab wie von den Geschäftszielen. Wenn Daten unter der Kontrolle der Organisation bleiben müssen, ist der Eigenbetrieb die Option, die die Anforderung erfüllt – um den Preis, das Modell selbst betreiben zu müssen.",
+          "Bereitstellungsentscheidungen hängen vom Modelltyp und der Bereitstellungsoption ebenso ab wie von den Geschäftszielen. Wenn Daten unter der Kontrolle der Organisation bleiben müssen, ist der Eigenbetrieb die Option, die die Anforderung erfüllt: um den Preis, das Modell selbst betreiben zu müssen.",
         reference: BOK,
       },
       {
@@ -484,7 +484,7 @@ export const iappAigpDe: DeContent = {
         question:
           "Ein Einzelhändler steht kurz vor dem Start eines KI-Chatbots, der Kundenfragen auf seiner Website beantwortet. Was sollte der Plan für die externe Kommunikation im Rahmen der Governance des Einsatzes enthalten?",
         options: [
-          { id: "A", text: "Nichts – die Kommunikation mit Kunden liegt in der Verantwortung des Anbieters", rationale: "Der Einzelhändler setzt den Chatbot gegenüber seinen eigenen Kunden ein und ist dafür verantwortlich, wie er über dessen Nutzung kommuniziert." },
+          { id: "A", text: "Nichts, die Kommunikation mit Kunden liegt in der Verantwortung des Anbieters", rationale: "Der Einzelhändler setzt den Chatbot gegenüber seinen eigenen Kunden ein und ist dafür verantwortlich, wie er über dessen Nutzung kommuniziert." },
           { id: "B", text: "Nur eine Marketingankündigung der neuen Funktion", rationale: "Werbebotschaften sagen Kunden nicht, was sie über die Interaktion mit einem KI-System wissen müssen." },
           { id: "C", text: "Einen klaren Hinweis, dass Kunden mit einem KI-System interagieren, auf dessen Zweck und Grenzen sowie darauf, wie sie einen Menschen erreichen oder ein Anliegen vorbringen können", rationale: "Richtig. Transparente externe Kommunikation umfasst die Tatsache der KI-Nutzung, ihren Zweck, ihre Grenzen und die Wege zu Hilfe, Beschwerde oder Abhilfe." },
           { id: "D", text: "Die vollständige technische Dokumentation und die Modellgewichte", rationale: "Die Veröffentlichung technischer Interna ist für Kunden weder nötig noch nützlich und kann vertrauliche Informationen preisgeben." },

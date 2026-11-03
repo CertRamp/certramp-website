@@ -6,7 +6,7 @@ import type { PracticeQuestionSet } from "@/config/types";
  * not recalled exam content, and not presented as real exam questions.
  */
 const GUIDE = {
-  label: "Microsoft Learn — AB-100 study guide",
+  label: "Microsoft Learn: AB-100 study guide",
   url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100",
 };
 
@@ -19,7 +19,7 @@ export const ab100Questions: PracticeQuestionSet = {
   seo: {
     title: "AB-100 Practice Questions with Answers & Explanations (2026)",
     description:
-      "15 free, original AB-100 practice questions on AI strategy, agent design in Copilot Studio and Foundry, ALM, testing and AI security — each fully explained.",
+      "15 free, original AB-100 practice questions on AI strategy, agent design in Copilot Studio and Foundry, ALM, testing and AI security, each fully explained.",
   },
   questions: [
     /* ── Domain 1: Plan AI-powered business solutions ─────────────────────── */
@@ -57,7 +57,7 @@ export const ab100Questions: PracticeQuestionSet = {
       answer: "D",
       explanation:
         "Extending Microsoft 365 Copilot is faster and inherits its security and compliance. A custom agent is justified when you need your own models, custom orchestration or behaviour that Copilot's orchestrator does not support.",
-      reference: { label: "Microsoft Learn — Agents for Microsoft 365 Copilot", url: "https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agents-overview" },
+      reference: { label: "Microsoft Learn: Agents for Microsoft 365 Copilot", url: "https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agents-overview" },
     },
     {
       id: "ab100-d1-model-router",
@@ -75,7 +75,7 @@ export const ab100Questions: PracticeQuestionSet = {
       answer: "A",
       explanation:
         "The study guide lists \"Implement a model router to intelligently route requests to the most suitable model\" under cost and benefit evaluation. Routing modes let you favour balance, cost or quality.",
-      reference: { label: "Microsoft Learn — Model router for Microsoft Foundry", url: "https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/model-router" },
+      reference: { label: "Microsoft Learn: Model router for Microsoft Foundry", url: "https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/model-router" },
     },
     {
       id: "ab100-d1-build-buy-extend",
@@ -129,7 +129,7 @@ export const ab100Questions: PracticeQuestionSet = {
       answer: "D",
       explanation:
         "Generative orchestration makes good descriptions the most important design artefact. It is also required for features such as Model Context Protocol tools and event triggers.",
-      reference: { label: "Microsoft Learn — Generative orchestration in Copilot Studio", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-generative-actions" },
+      reference: { label: "Microsoft Learn: Generative orchestration in Copilot Studio", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-generative-actions" },
     },
 
     /* ── Domain 2: Design AI-powered business solutions ───────────────────── */
@@ -149,7 +149,7 @@ export const ab100Questions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "The outline names \"Design topics for Copilot Studio, including fallback\". By default the Fallback topic asks the user to rephrase up to twice before escalating, and it can store the unrecognised input for later analysis.",
-      reference: { label: "Microsoft Learn — Configure the system fallback topic", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-system-fallback-topic" },
+      reference: { label: "Microsoft Learn: Configure the system fallback topic", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-system-fallback-topic" },
     },
     {
       id: "ab100-d2-computer-use",
@@ -167,7 +167,7 @@ export const ab100Questions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "Use APIs and connectors where they exist. When the only interface is a screen, computer use can select buttons, menus and fields, which suits tasks such as data entry and invoice processing.",
-      reference: { label: "Microsoft Learn — Computer use in Copilot Studio", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use" },
+      reference: { label: "Microsoft Learn: Computer use in Copilot Studio", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use" },
     },
     {
       id: "ab100-d2-mcp",
@@ -185,7 +185,7 @@ export const ab100Questions: PracticeQuestionSet = {
       answer: "A",
       explanation:
         "MCP is an open protocol for exposing tools, resources and prompts to agents. Designing agent extensibility with MCP lets one server serve many agents, with the server's names and descriptions guiding when tools are used.",
-      reference: { label: "Microsoft Learn — Extend your agent with Model Context Protocol", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp" },
+      reference: { label: "Microsoft Learn: Extend your agent with Model Context Protocol", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp" },
     },
     {
       id: "ab100-d2-autonomous-trigger",
@@ -203,7 +203,7 @@ export const ab100Questions: PracticeQuestionSet = {
       answer: "D",
       explanation:
         "Autonomous agents are driven by events rather than conversations. Event triggers need generative orchestration, and each trigger payload counts towards billing, which belongs in the cost analysis.",
-      reference: { label: "Microsoft Learn — Event triggers in Copilot Studio", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-triggers-about" },
+      reference: { label: "Microsoft Learn: Event triggers in Copilot Studio", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-triggers-about" },
     },
     {
       id: "ab100-d2-declarative-agent",
@@ -221,7 +221,7 @@ export const ab100Questions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "Extending Microsoft 365 Copilot with a declarative agent is the fastest, lowest-risk option when users work inside Microsoft 365 apps and the agent mainly needs instructions and knowledge.",
-      reference: { label: "Microsoft Learn — Agents for Microsoft 365 Copilot", url: "https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agents-overview" },
+      reference: { label: "Microsoft Learn: Agents for Microsoft 365 Copilot", url: "https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agents-overview" },
     },
 
     /* ── Domain 3: Deploy AI-powered business solutions ───────────────────── */
@@ -241,7 +241,7 @@ export const ab100Questions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "Copilot Studio analytics give a built-in overview; Application Insights adds detailed, queryable telemetry. Decide deliberately which conversation details and sensitive properties to log.",
-      reference: { label: "Microsoft Learn — Capture telemetry with Application Insights", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry" },
+      reference: { label: "Microsoft Learn: Capture telemetry with Application Insights", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry" },
     },
     {
       id: "ab100-d3-agent-evaluation",
@@ -259,7 +259,7 @@ export const ab100Questions: PracticeQuestionSet = {
       answer: "A",
       explanation:
         "Structured evaluation catches regressions early. Combine quality test methods such as General quality and Compare meaning with the Content safety test method, and keep responsible AI reviews in place as well.",
-      reference: { label: "Microsoft Learn — Agent evaluation in Copilot Studio", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-intro" },
+      reference: { label: "Microsoft Learn: Agent evaluation in Copilot Studio", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-intro" },
     },
     {
       id: "ab100-d3-alm-solutions",
@@ -277,7 +277,7 @@ export const ab100Questions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "Copilot Studio agents live in Power Platform solutions. Develop unmanaged, export managed, and keep the unmanaged export in source control as the source of truth.",
-      reference: { label: "Microsoft Learn — Solution concepts for ALM", url: "https://learn.microsoft.com/en-us/power-platform/alm/solution-concepts-alm" },
+      reference: { label: "Microsoft Learn: Solution concepts for ALM", url: "https://learn.microsoft.com/en-us/power-platform/alm/solution-concepts-alm" },
     },
     {
       id: "ab100-d3-prompt-shields",
@@ -295,7 +295,7 @@ export const ab100Questions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "Prompt manipulation comes in two forms: direct attacks in the user's prompt and indirect attacks hidden in content the model processes. Grounding on emails or web pages calls for defences against the indirect kind, combined with least-privilege access to data.",
-      reference: { label: "Microsoft Learn — Prompt Shields", url: "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection" },
+      reference: { label: "Microsoft Learn: Prompt Shields", url: "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection" },
     },
   ],
 };

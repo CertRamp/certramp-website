@@ -40,8 +40,8 @@ export function VendorDisclaimer({
             className="font-display text-base font-semibold tracking-normal text-ink"
           >
             {locale === "de"
-              ? "Unabhängiges Übungsmaterial – Hinweis"
-              : "Independent practice material — disclaimer"}
+              ? "Unabhängiges Übungsmaterial: Hinweis"
+              : "Independent practice material: disclaimer"}
           </h2>
           {locale === "de" ? (
             <p>

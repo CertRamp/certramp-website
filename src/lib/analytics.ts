@@ -15,7 +15,7 @@
  * so you can wire up any other tool without touching components.
  */
 
-export type AnalyticsEvent = "free_test_clicked" | "premium_exam_clicked" | "udemy_clicked" | "exam_page_viewed";
+export type AnalyticsEvent = "free_test_clicked" | "premium_exam_clicked" | "udemy_clicked" | "exam_page_viewed" | "book_clicked";
 
 export type AnalyticsProps = {
   certification?: string;

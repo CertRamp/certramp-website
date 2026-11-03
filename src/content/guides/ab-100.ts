@@ -52,7 +52,7 @@ export const ab100Guide: ExamGuide = {
         },
         {
           title: "Practise under time pressure",
-          body: "Take timed practice exams and read every explanation, including for the questions you answered correctly. Focus on why the wrong options are wrong — that is where architect questions are decided.",
+          body: "Take timed practice exams and read every explanation, including for the questions you answered correctly. Focus on why the wrong options are wrong: that is where architect questions are decided.",
         },
         {
           title: "Book when your results are stable",

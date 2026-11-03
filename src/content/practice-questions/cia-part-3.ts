@@ -6,11 +6,11 @@ import type { PracticeQuestionSet } from "@/config/types";
  * not recalled exam content, and not presented as real exam questions.
  */
 const SYLLABUS = {
-  label: "The IIA — CIA Part 3 syllabus (Internal Audit Function)",
+  label: "The IIA: CIA Part 3 syllabus (Internal Audit Function)",
   url: "https://www.theiia.org/globalassets/site/certifications/certified-internal-auditor/cia-exam-why-how-and-what-is-changing/cia-part-3-syllabus.pdf",
 };
 const STANDARDS = {
-  label: "The IIA — Global Internal Audit Standards",
+  label: "The IIA: Global Internal Audit Standards",
   url: "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
 };
 
@@ -23,7 +23,7 @@ export const ciaPart3Questions: PracticeQuestionSet = {
   seo: {
     title: "CIA Part 3 Practice Questions with Answers (2026)",
     description:
-      "15 free, original CIA Part 3 practice questions on internal audit operations, the audit plan, quality, reporting and follow-up — each with a full explanation.",
+      "15 free, original CIA Part 3 practice questions on internal audit operations, the audit plan, quality, reporting and follow-up, each with a full explanation.",
   },
   questions: [
     /* ── Section A: Internal Audit Operations (25%) ───────────────────────── */

@@ -28,7 +28,7 @@ export const istqbCtGenaiGuide: ExamGuide = {
       heading: "How the exam is structured and what v1.1 changed",
       paragraphs: [
         "All 40 questions are multiple choice. The 8 K1 and 26 K2 questions are worth 1 point each, and the 6 K3 questions 2 points each. Exams are offered by ISTQB Member Boards and Exam Providers; candidates whose native language is not the exam language get 25% extra time.",
-        "ISTQB approved CT-GenAI v1.0 on 25 July 2025 and announced v1.1 as a minor update on 27 April 2026. v1.1 brings corrections, terminology updates, refined descriptions of evaluation metrics, clarified risk content and more context on LLM-powered agents. ISTQB states that it does not change the structure, the learning objectives or the scope, so v1.0 material still covers the same objectives — but check terminology against v1.1.",
+        "ISTQB approved CT-GenAI v1.0 on 25 July 2025 and announced v1.1 as a minor update on 27 April 2026. v1.1 brings corrections, terminology updates, refined descriptions of evaluation metrics, clarified risk content and more context on LLM-powered agents. ISTQB states that it does not change the structure, the learning objectives or the scope, so v1.0 material still covers the same objectives, but check terminology against v1.1.",
       ],
     },
     {
@@ -65,7 +65,7 @@ export const istqbCtGenaiGuide: ExamGuide = {
       id: "common-mistakes",
       heading: "Common preparation mistakes",
       bullets: [
-        "Relying on everyday ChatGPT experience. The exam uses ISTQB terminology — for example prompt chaining, meta prompting, system prompt and LLM-powered testing application — and expects the syllabus definitions.",
+        "Relying on everyday ChatGPT experience. The exam uses ISTQB terminology (for example prompt chaining, meta prompting, system prompt and LLM-powered testing application) and expects the syllabus definitions.",
         "Confusing hallucinations with reasoning errors. A hallucination is invented content; a reasoning error is a flawed logical step or calculation.",
         "Mixing up RAG and fine-tuning. RAG adds retrieved information to the prompt at run time; fine-tuning changes the model by further training.",
         "Underestimating chapter 3. Risk management has 10 of the 40 questions, including data privacy, energy consumption and regulations.",

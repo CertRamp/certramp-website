@@ -12,7 +12,7 @@ import type { DeContent } from "@/config/types";
  * "Agenten" → "Agents").
  */
 const GUIDE = {
-  label: "Microsoft Learn — AI-103-Studienleitfaden",
+  label: "Microsoft Learn: AI-103-Studienleitfaden",
   url: "https://learn.microsoft.com/de-de/credentials/certifications/resources/study-guides/ai-103",
 };
 
@@ -107,7 +107,7 @@ export const ai103De: DeContent = {
         heading: "Was AI-103 tatsächlich prüft",
         paragraphs: [
           "Rechnen Sie eher mit Entwurfs- und Implementierungsentscheidungen als mit Definitionen: welches Modell oder welcher Foundry-Dienst zu einer Aufgabe passt, wie Sie Retrieval und Indizierung einrichten, wie Sie Bereitstellungen mit verwalteter Identität (Managed Identity) und privaten Netzwerken absichern, wie Sie einem Agent Tools, Gedächtnis (Memory) und Genehmigungsschritte hinzufügen und wie Sie Qualität, Sicherheit und Kosten überwachen.",
-          "Verantwortungsvolle KI zieht sich durch die meisten Bereiche – Inhaltsfilter und Guardrails, Sicherheitsevaluierungen, Tracing und Audit, die Aufsicht über autonome Agents und die Abwehr von Prompt-Injection, auch durch in Bildern verborgenen Text. Microsoft weist darauf hin, dass überwiegend allgemein verfügbare (GA) Funktionen geprüft werden, häufig genutzte Previewfunktionen aber vorkommen können.",
+          "Verantwortungsvolle KI zieht sich durch die meisten Bereiche: Inhaltsfilter und Guardrails, Sicherheitsevaluierungen, Tracing und Audit, die Aufsicht über autonome Agents und die Abwehr von Prompt-Injection, auch durch in Bildern verborgenen Text. Microsoft weist darauf hin, dass überwiegend allgemein verfügbare (GA) Funktionen geprüft werden, häufig genutzte Previewfunktionen aber vorkommen können.",
         ],
       },
       {
@@ -116,7 +116,7 @@ export const ai103De: DeContent = {
         steps: [
           {
             title: "Den AI-103-Studienleitfaden Zeile für Zeile lesen",
-            body: "Markieren Sie jeden Punkt als bekannt, unsicher oder neu. Wenn Sie für AI-102 gelernt haben, achten Sie besonders auf Agents, Multi-Agent-Orchestrierung, Evaluierung und Observability – diese Themen sind neu oder deutlich umfangreicher.",
+            body: "Markieren Sie jeden Punkt als bekannt, unsicher oder neu. Wenn Sie für AI-102 gelernt haben, achten Sie besonders auf Agents, Multi-Agent-Orchestrierung, Evaluierung und Observability: diese Themen sind neu oder deutlich umfangreicher.",
           },
           {
             title: "In Microsoft Foundry praktisch arbeiten",
@@ -128,7 +128,7 @@ export const ai103De: DeContent = {
           },
           {
             title: "Die kleineren Bereiche abdecken",
-            body: "Nehmen Sie sich gezielt Zeit für die drei kleineren Bereiche – maschinelles Sehen, Textanalyse (einschließlich Sprache und Übersetzung) und Informationsextraktion (einschließlich Content Understanding). Jeder hat 10–15 %, zusammen machen sie also 30–45 % der Prüfung aus.",
+            body: "Nehmen Sie sich gezielt Zeit für die drei kleineren Bereiche: maschinelles Sehen, Textanalyse (einschließlich Sprache und Übersetzung) und Informationsextraktion (einschließlich Content Understanding). Jeder hat 10–15 %, zusammen machen sie also 30–45 % der Prüfung aus.",
           },
           {
             title: "Unter Prüfungsbedingungen üben",
@@ -182,7 +182,7 @@ export const ai103De: DeContent = {
     seo: {
       title: "AI-103 Prüfungsvorbereitung: KI-Apps & Agents (ex AI-102)",
       description:
-        "AI-103-Leitfaden auf Deutsch: Nachfolgerin von AI-102, 120 Minuten, Bestehensgrenze 700, Foundry, Agents, RAG, Vision und Sprache – 6-Schritte-Lernplan.",
+        "AI-103-Leitfaden auf Deutsch: Nachfolgerin von AI-102, 120 Minuten, Bestehensgrenze 700, Foundry, Agents, RAG, Vision und Sprache (6-Schritte-Lernplan).",
     },
     published: "2026-10-28",
     updated: "2026-10-28",
@@ -198,7 +198,7 @@ export const ai103De: DeContent = {
     seo: {
       title: "AI-103 Übungsfragen mit Antworten und Erklärungen (2026)",
       description:
-        "15 kostenlose, eigene AI-103 Übungsfragen zu Microsoft Foundry, RAG, Agents, verantwortungsvoller KI, Vision, Sprache und Dokumentextraktion – erklärt.",
+        "15 kostenlose, eigene AI-103 Übungsfragen zu Microsoft Foundry, RAG, Agents, verantwortungsvoller KI, Vision, Sprache und Dokumentextraktion: erklärt.",
     },
     questions: [
       /* ── Bereich 1: Planen und Verwalten einer Azure-KI-Lösung ────────────── */
@@ -291,7 +291,7 @@ export const ai103De: DeContent = {
         ],
         answer: "A",
         explanation:
-          "RAG ist das Standardmuster, um Antworten in sich ändernden privaten Inhalten zu verankern (Grounding). Wenn sich Dokumente ändern, genügt es, den Index zu aktualisieren – ein Modelltraining ist nicht nötig.",
+          "RAG ist das Standardmuster, um Antworten in sich ändernden privaten Inhalten zu verankern (Grounding). Wenn sich Dokumente ändern, genügt es, den Index zu aktualisieren: ein Modelltraining ist nicht nötig.",
         reference: GUIDE,
       },
       {
@@ -358,12 +358,12 @@ export const ai103De: DeContent = {
         options: [
           { id: "A", text: "Eine größere Modellbereitstellung", rationale: "Das könnte die Leistung verändern, zeigt aber nicht, wo die Zeit verloren geht." },
           { id: "B", text: "Einen strengeren Inhaltsfilter", rationale: "Inhaltsfilter liefern keine Zeit- oder Tokenanalysen." },
-          { id: "C", text: "Tracing für die Anwendung und den Agent", rationale: "Richtig. Tracing zeichnet jeden Schritt einer Anfrage auf – Modellaufrufe, Toolaufrufe, Retrieval – mit Zeiten und Tokenverbrauch." },
+          { id: "C", text: "Tracing für die Anwendung und den Agent", rationale: "Richtig. Tracing zeichnet jeden Schritt einer Anfrage auf (Modellaufrufe, Toolaufrufe, Retrieval) mit Zeiten und Tokenverbrauch." },
           { id: "D", text: "Einen neuen Vektorindex", rationale: "Den Index neu aufzubauen, erklärt die Latenz nicht." },
         ],
         answer: "C",
         explanation:
-          "Observability – Tracing, Tokenanalysen, Sicherheitssignale und Aufschlüsselungen der Latenz – ist ein ausdrücklich genanntes Lernziel. Erst messen, dann den langsamsten Schritt optimieren.",
+          "Observability (Tracing, Tokenanalysen, Sicherheitssignale und Aufschlüsselungen der Latenz) ist ein ausdrücklich genanntes Lernziel. Erst messen, dann den langsamsten Schritt optimieren.",
         reference: GUIDE,
       },
 
@@ -396,7 +396,7 @@ export const ai103De: DeContent = {
         options: [
           { id: "A", text: "Ein Problem mit Ratenlimits", rationale: "Ratenlimits betreffen das Anfragevolumen, nicht schädliche Inhalte." },
           { id: "B", text: "Modelldrift", rationale: "Drift beschreibt eine sich über die Zeit verändernde Modellleistung, keinen Angriff in einer einzelnen Eingabe." },
-          { id: "C", text: "Indirekte Prompt-Injection über eingebetteten Text in einem Bild", rationale: "Richtig. Anweisungen, die in vom Modell verarbeiteten Inhalten versteckt sind – auch Text in Bildern –, können versuchen, die Anweisungen des Systems zu überschreiben." },
+          { id: "C", text: "Indirekte Prompt-Injection über eingebetteten Text in einem Bild", rationale: "Richtig. Anweisungen, die in vom Modell verarbeiteten Inhalten versteckt sind, auch Text in Bildern, können versuchen, die Anweisungen des Systems zu überschreiben." },
           { id: "D", text: "Ausschließlich ein Urheberrechtsproblem", rationale: "Das Hauptrisiko ist hier die Manipulation des Modellverhaltens." },
         ],
         answer: "C",

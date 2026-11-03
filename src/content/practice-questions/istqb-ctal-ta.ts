@@ -7,14 +7,14 @@ import type { PracticeQuestionSet } from "@/config/types";
  * presented as real exam questions.
  */
 const SYLLABUS = {
-  label: "ISTQB — CTAL-TA Syllabus v4.0",
+  label: "ISTQB: CTAL-TA Syllabus v4.0",
   url: "https://www.istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
 };
 
 export const istqbCtalTaQuestions: PracticeQuestionSet = {
   slug: "istqb-ctal-ta",
   intro:
-    "15 original CTAL-TA practice questions across all five chapters of the ISTQB Advanced Level Test Analyst syllabus v4.0, weighted roughly like the real exam — with the most questions on test analysis and test design. Each one comes with the answer, a short explanation and the reason every other option is wrong.",
+    "15 original CTAL-TA practice questions across all five chapters of the ISTQB Advanced Level Test Analyst syllabus v4.0, weighted roughly like the real exam, with the most questions on test analysis and test design. Each one comes with the answer, a short explanation and the reason every other option is wrong.",
   published: "2026-10-27",
   updated: "2026-10-27",
   seo: {
@@ -57,7 +57,7 @@ export const istqbCtalTaQuestions: PracticeQuestionSet = {
       ],
       answer: "C",
       explanation:
-        "The test oracle problem arises when expected results are hard or impossible to determine. Partial oracles — such as relations between source and follow-up test results, plausibility checks or comparison with another implementation — let you detect failures without knowing the exact result.",
+        "The test oracle problem arises when expected results are hard or impossible to determine. Partial oracles (such as relations between source and follow-up test results, plausibility checks or comparison with another implementation) let you detect failures without knowing the exact result.",
       reference: SYLLABUS,
     },
     {
@@ -133,7 +133,7 @@ export const istqbCtalTaQuestions: PracticeQuestionSet = {
       ],
       answer: "C",
       explanation:
-        "Pairwise coverage requires every value of each parameter to be combined with every value of every other parameter at least once. The lower bound is the product of the two largest parameter value counts — here 2 × 2 = 4 — compared with 8 for all combinations.",
+        "Pairwise coverage requires every value of each parameter to be combined with every value of every other parameter at least once. The lower bound is the product of the two largest parameter value counts, here 2 × 2 = 4, compared with 8 for all combinations.",
       reference: SYLLABUS,
     },
     {
@@ -274,10 +274,10 @@ export const istqbCtalTaQuestions: PracticeQuestionSet = {
       question:
         "During system testing, 40 defects were found. Later, 10 further defects that system testing should have detected were found in acceptance testing and production. What is the defect detection percentage (DDP) of system testing, and what does it tell you?",
       options: [
-        { id: "A", text: "80% — system testing contained most, but not all, of the defects it was responsible for", rationale: "Correct. DDP = defects found in the phase / (found + escaped) = 40 / (40 + 10) = 80%, a measure of phase containment." },
-        { id: "B", text: "25% — the escaped defects are a quarter of the defects found", rationale: "10 / 40 is the ratio of escaped to found defects, not DDP." },
-        { id: "C", text: "75% — system testing found three in four defects", rationale: "This is (40 − 10) / 40. DDP divides the defects found in the phase by the sum of found and escaped defects." },
-        { id: "D", text: "100% — all 40 defects found in system testing were fixed", rationale: "Fixing defects does not change how many escaped; DDP measures detection, not correction." },
+        { id: "A", text: "80%: system testing contained most, but not all, of the defects it was responsible for", rationale: "Correct. DDP = defects found in the phase / (found + escaped) = 40 / (40 + 10) = 80%, a measure of phase containment." },
+        { id: "B", text: "25%: the escaped defects are a quarter of the defects found", rationale: "10 / 40 is the ratio of escaped to found defects, not DDP." },
+        { id: "C", text: "75%: system testing found three in four defects", rationale: "This is (40 − 10) / 40. DDP divides the defects found in the phase by the sum of found and escaped defects." },
+        { id: "D", text: "100%, all 40 defects found in system testing were fixed", rationale: "Fixing defects does not change how many escaped; DDP measures detection, not correction." },
       ],
       answer: "A",
       explanation:
@@ -290,7 +290,7 @@ export const istqbCtalTaQuestions: PracticeQuestionSet = {
       objective: "TA-5.2.2 Apply a review technique to a test basis to find defects",
       difficulty: "intermediate",
       question:
-        "Reviewers of a banking app's requirements each take on a specific persona — a first-time customer, a branch employee and a customer with impaired vision — and evaluate the requirements from that viewpoint. Which review technique is being applied?",
+        "Reviewers of a banking app's requirements each take on a specific persona (a first-time customer, a branch employee and a customer with impaired vision) and evaluate the requirements from that viewpoint. Which review technique is being applied?",
       options: [
         { id: "A", text: "Ad hoc review", rationale: "Ad hoc reviews have no structure or assigned viewpoints, which often leads to duplicate findings." },
         { id: "B", text: "Checklist-based review", rationale: "Checklist-based reviews work through predefined questions, not assigned personas." },

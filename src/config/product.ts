@@ -16,7 +16,7 @@ export const productPolicy = {
 
   /** e.g. "Yes — every question includes an explanation of the correct answer and why the other options are wrong." */
   explanations:
-    "Yes. Every question comes with an explanation for each answer option — why the correct answer is right and why each of the other options is wrong.",
+    "Yes. Every question comes with an explanation for each answer option: why the correct answer is right and why each of the other options is wrong.",
 
   /** e.g. "Yes — tests run in any modern mobile browser." Confirm in ClassMarker on real devices first. */
   mobileAccess: P("Whether the exam simulator works on phones and tablets"),
@@ -54,21 +54,21 @@ export const readinessBands = [
     max: 49,
     label: "Building",
     summary: "You have gaps to close before exam level. Start with the foundation tests and review every explanation.",
-    nextStep: "Begin with Test 2 — Foundation.",
+    nextStep: "Begin with Test 2: Foundation.",
   },
   {
     min: 50,
     max: 69,
     label: "Developing",
     summary: "You have a working base. Focus on the areas you missed and progress through the development tests.",
-    nextStep: "Work through Test 3 — Development.",
+    nextStep: "Work through Test 3: Development.",
   },
   {
     min: 70,
     max: 84,
     label: "Approaching exam level",
     summary: "You are close. Test yourself under exam-level conditions and target your weak areas.",
-    nextStep: "Take Test 4 — Exam Level.",
+    nextStep: "Take Test 4: Exam Level.",
   },
   {
     min: 85,

@@ -7,7 +7,7 @@ import type { DeContent } from "@/config/types";
  * the official German Microsoft Learn study guide (de-de).
  */
 const GUIDE = {
-  label: "Microsoft Learn – Studienleitfaden für SC-200",
+  label: "Microsoft Learn: Studienleitfaden für SC-200",
   url: "https://learn.microsoft.com/de-de/credentials/certifications/resources/study-guides/sc-200",
 };
 
@@ -99,7 +99,7 @@ export const sc200De: DeContent = {
         steps: [
           {
             title: "Den eigenen Stand am Studienleitfaden messen",
-            body: "Gehen Sie jeden Punkt der offiziellen SC-200-Liste der gemessenen Fähigkeiten durch und markieren Sie ihn als bekannt, unsicher oder neu. Verteilen Sie Ihre Zeit entsprechend der Gewichtung – allein der erste Bereich macht bis zu 45 % aus.",
+            body: "Gehen Sie jeden Punkt der offiziellen SC-200-Liste der gemessenen Fähigkeiten durch und markieren Sie ihn als bekannt, unsicher oder neu. Verteilen Sie Ihre Zeit entsprechend der Gewichtung: allein der erste Bereich macht bis zu 45 % aus.",
           },
           {
             title: "Eine Laborumgebung aufbauen",
@@ -127,7 +127,7 @@ export const sc200De: DeContent = {
         id: "common-mistakes",
         heading: "Häufige Fehler bei der Vorbereitung",
         bullets: [
-          "Die Konfiguration unterschätzen. Im größten Bereich geht es um das Einrichten – Connectors, Aufbewahrung, Rollen, Regeln und Automatisierung –, nicht nur um die Reaktion auf Warnungen.",
+          "Die Konfiguration unterschätzen. Im größten Bereich geht es um das Einrichten (Connectors, Aufbewahrung, Rollen, Regeln und Automatisierung), nicht nur um die Reaktion auf Warnungen.",
           "Automatisierungsregeln und Playbooks verwechseln. Automatisierungsregeln behandeln Vorfälle zentral und können Playbooks ausführen; Playbooks sind Logic Apps-Workflows, die Aktionen durchführen.",
           "KQL nur durch Lesen lernen. Hunting-Fragen erwarten, dass Sie erkennen, was eine Abfrage tut und welche Tabelle Sie verwenden müssen.",
           "Portale und Produktnamen durcheinanderbringen. Sie sollten wissen, welche Aufgabe im Defender-Portal, welche in Sentinel und welche in Microsoft Purview erledigt wird.",
@@ -181,7 +181,7 @@ export const sc200De: DeContent = {
     seo: {
       title: "SC-200 Übungsfragen mit Lösungen & Erklärungen (2026)",
       description:
-        "15 kostenlose, eigene SC-200-Übungsfragen zu Microsoft Sentinel, Defender XDR, Incident Response und KQL-Threat-Hunting – jeweils ausführlich erklärt.",
+        "15 kostenlose, eigene SC-200-Übungsfragen zu Microsoft Sentinel, Defender XDR, Incident Response und KQL-Threat-Hunting: jeweils ausführlich erklärt.",
     },
     questions: [
       /* ── Bereich 1: Verwalten einer Sicherheitsbetriebsumgebung ── */
@@ -236,7 +236,7 @@ export const sc200De: DeContent = {
         ],
         answer: "D",
         explanation:
-          "Beim Azure Monitor-Agent legen Sie den Umfang der Sammlung in der Datensammlungsregel fest – welche Computer, welche Ereignissätze oder welche einzelnen Ereignisse. Wer schon beim Sammeln filtert, hält auch die Kosten für die Datenaufnahme niedrig.",
+          "Beim Azure Monitor-Agent legen Sie den Umfang der Sammlung in der Datensammlungsregel fest: welche Computer, welche Ereignissätze oder welche einzelnen Ereignisse. Wer schon beim Sammeln filtert, hält auch die Kosten für die Datenaufnahme niedrig.",
         reference: GUIDE,
       },
       {

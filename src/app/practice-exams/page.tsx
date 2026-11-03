@@ -16,7 +16,7 @@ const stats = getCatalogueStats();
 
 export const metadata: Metadata = buildMetadata({
   title: "Practice Exams for IT, Security, Cloud & Project Management",
-  description: `Browse CertRamp practice exams for ${stats.certifications} certifications — Microsoft, AWS, ISACA, CompTIA, ISTQB, PMI and more. Six progressive tests per exam.`,
+  description: `Browse CertRamp practice exams for ${stats.certifications} certifications: Microsoft, AWS, ISACA, CompTIA, ISTQB, PMI and more. Six progressive tests per exam.`,
   path: "/practice-exams",
 });
 
@@ -35,7 +35,7 @@ export default function PracticeExamsPage() {
         crumbs={[{ name: "Practice Exams", path: "/practice-exams" }]}
         eyebrow="Practice exams"
         title="Find your certification. Find your level."
-        intro={`${stats.certifications} certifications from ${stats.providers} providers. Every one follows the same six-test ramp — from a diagnostic starting point to a challenge beyond exam level.`}
+        intro={`${stats.certifications} certifications from ${stats.providers} providers. Every one follows the same six-test ramp, from a diagnostic starting point to a challenge beyond exam level.`}
       >
         <nav aria-label="Categories" className="mt-8 flex flex-wrap gap-2">
           {usedCategories.map((c) => (
@@ -72,7 +72,7 @@ export default function PracticeExamsPage() {
           <div className="rounded-[var(--radius-card)] border border-line bg-white p-7">
             <p className="font-display text-lg font-semibold text-ink">CertRamp on Udemy</p>
             <p className="mt-2 leading-relaxed text-muted">
-              Every certification above is available as a CertRamp practice exam course on Udemy — {stats.courses} courses
+              Every certification above is available as a CertRamp practice exam course on Udemy: {stats.courses} courses
               in {stats.languages} languages. The link is on each certification page.
             </p>
           </div>
@@ -82,7 +82,7 @@ export default function PracticeExamsPage() {
               {!simulatorLive && <Badge tone="neutral">Coming soon</Badge>}
             </div>
             <p className="mt-2 leading-relaxed text-muted">
-              The full six-test ramp, taken online directly with CertRamp — starting with a free practice test that shows
+              The full six-test ramp, taken online directly with CertRamp: starting with a free practice test that shows
               where you stand.
             </p>
           </div>

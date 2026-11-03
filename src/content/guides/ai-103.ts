@@ -27,7 +27,7 @@ export const ai103Guide: ExamGuide = {
       heading: "What AI-103 actually tests",
       paragraphs: [
         "Expect design and implementation decisions rather than definitions: which model or Foundry service fits a task, how to set up retrieval and indexing, how to secure deployments with managed identity and private networking, how to add tools, memory and approval steps to an agent, and how to monitor quality, safety and cost.",
-        "Responsible AI runs through most areas — content filters and guardrails, safety evaluations, tracing and audit, oversight of autonomous agents and defending against prompt injection, including text hidden in images. Microsoft notes that mostly generally available features are tested, with commonly used preview features possible.",
+        "Responsible AI runs through most areas: content filters and guardrails, safety evaluations, tracing and audit, oversight of autonomous agents and defending against prompt injection, including text hidden in images. Microsoft notes that mostly generally available features are tested, with commonly used preview features possible.",
       ],
     },
     {
@@ -36,7 +36,7 @@ export const ai103Guide: ExamGuide = {
       steps: [
         {
           title: "Read the AI-103 study guide line by line",
-          body: "Mark every bullet as known, unsure or new. If you studied for AI-102, look especially at agents, multi-agent orchestration, evaluation and observability — these are new or much bigger.",
+          body: "Mark every bullet as known, unsure or new. If you studied for AI-102, look especially at agents, multi-agent orchestration, evaluation and observability: these are new or much bigger.",
         },
         {
           title: "Build in Microsoft Foundry",
@@ -48,7 +48,7 @@ export const ai103Guide: ExamGuide = {
         },
         {
           title: "Cover the smaller areas",
-          body: "Spend focused time on the three smaller areas — computer vision, text analysis (including speech and translation) and information extraction (including Content Understanding). Each is 10–15%, so together they make up 30–45% of the exam.",
+          body: "Spend focused time on the three smaller areas: computer vision, text analysis (including speech and translation) and information extraction (including Content Understanding). Each is 10–15%, so together they make up 30–45% of the exam.",
         },
         {
           title: "Practise under exam conditions",
@@ -95,7 +95,7 @@ export const ai103Guide: ExamGuide = {
   seo: {
     title: "AI-103 Exam Guide 2026: AI Apps & Agents on Azure (ex AI-102)",
     description:
-      "AI-103 guide: what replaced AI-102, 120 minutes, passing score 700, Foundry, generative AI and agents, RAG, vision and language — plus a six-step study plan.",
+      "AI-103 guide: what replaced AI-102, 120 minutes, passing score 700, Foundry, generative AI and agents, RAG, vision and language, plus a six-step study plan.",
   },
   published: "2026-10-27",
   updated: "2026-10-27",

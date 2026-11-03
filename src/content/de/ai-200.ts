@@ -12,7 +12,7 @@ import type { DeContent } from "@/config/types";
  * (28 Oct 2026), so the reference points to the current English study guide.
  */
 const GUIDE = {
-  label: "Microsoft Learn — AI-200-Studienleitfaden (englisch)",
+  label: "Microsoft Learn: AI-200-Studienleitfaden (englisch)",
   url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200",
 };
 
@@ -149,7 +149,7 @@ export const ai200De: DeContent = {
       {
         question: "Ersetzt AI-200 die Prüfung AZ-204?",
         answer:
-          "AZ-204 und die Zertifizierung Azure Developer Associate wurden am 31. Juli 2026 eingestellt, und AI-200 führt zur neuen Zertifizierung Azure AI Cloud Developer Associate. Die Gliederungen überschneiden sich – Messaging, Functions, Key Vault, Container –, aber AI-200 ergänzt Vektorsuche in Cosmos DB, PostgreSQL und Redis, Container-Orchestrierung und OpenTelemetry. Eine bereits erworbene AZ-204-Zertifizierung bleibt in Ihrem Transkript.",
+          "AZ-204 und die Zertifizierung Azure Developer Associate wurden am 31. Juli 2026 eingestellt, und AI-200 führt zur neuen Zertifizierung Azure AI Cloud Developer Associate. Die Gliederungen überschneiden sich (Messaging, Functions, Key Vault, Container), aber AI-200 ergänzt Vektorsuche in Cosmos DB, PostgreSQL und Redis, Container-Orchestrierung und OpenTelemetry. Eine bereits erworbene AZ-204-Zertifizierung bleibt in Ihrem Transkript.",
       },
       {
         question: "Wie verlängere ich die Zertifizierung Azure AI Cloud Developer Associate?",
@@ -211,7 +211,7 @@ export const ai200De: DeContent = {
         answer: "C",
         explanation:
           "ACR Tasks unterstützen drei automatische Trigger: Quellcode-Commits (oder Pull Requests), Basisimage-Updates und Zeitgeber. Basisimage-Trigger sind der Standardweg, Anwendungsimages ohne separate Pipeline gepatcht zu halten.",
-        reference: { label: "Microsoft Learn — Übersicht über Azure Container Registry Tasks", url: "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-overview" },
+        reference: { label: "Microsoft Learn: Übersicht über Azure Container Registry Tasks", url: "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-overview" },
       },
       {
         id: "ai200-d1-keda-service-bus",
@@ -229,7 +229,7 @@ export const ai200De: DeContent = {
         answer: "A",
         explanation:
           "Container Apps unterstützt HTTP-, TCP- und benutzerdefinierte (KEDA-basierte) Skalierungsregeln. Für Warteschlangen-Worker ohne Ingress verwenden Sie eine ereignisgesteuerte Regel wie azure-servicebus; ohne benutzerdefinierte Regel oder ein Minimum von mindestens einem Replikat kann eine App ohne Ingress auf null skalieren und nie wieder starten.",
-        reference: { label: "Microsoft Learn — Festlegen von Skalierungsregeln in Azure Container Apps", url: "https://learn.microsoft.com/en-us/azure/container-apps/scale-app" },
+        reference: { label: "Microsoft Learn: Festlegen von Skalierungsregeln in Azure Container Apps", url: "https://learn.microsoft.com/en-us/azure/container-apps/scale-app" },
       },
       {
         id: "ai200-d1-revisions",
@@ -247,7 +247,7 @@ export const ai200De: DeContent = {
         answer: "D",
         explanation:
           "Änderungen an der Vorlage, etwa am Containerimage oder an Skalierungsregeln, erzeugen eine neue Revision. Im Modus für mehrere Revisionen entscheiden Sie dann, wie der Datenverkehr aufgeteilt wird, was Canary- und Blue-Green-Releases ermöglicht.",
-        reference: { label: "Microsoft Learn — Revisionen in Azure Container Apps", url: "https://learn.microsoft.com/en-us/azure/container-apps/revisions" },
+        reference: { label: "Microsoft Learn: Revisionen in Azure Container Apps", url: "https://learn.microsoft.com/en-us/azure/container-apps/revisions" },
       },
 
       /* ── Bereich 2: Entwickeln von KI-Lösungen mithilfe von Azure-Datenverwaltungsdiensten ── */
@@ -267,7 +267,7 @@ export const ai200De: DeContent = {
         answer: "B",
         explanation:
           "Vektorsuche in Cosmos DB for NoSQL braucht eine Vektorrichtlinie auf dem Container, idealerweise einen Vektorindex (flat, quantizedFlat oder diskANN), und eine Abfrage, die nach VectorDistance sortiert. Bestehende Einstellungen der Vektorrichtlinie lassen sich nicht direkt bearbeiten; Sie entfernen sie und fügen sie neu hinzu.",
-        reference: { label: "Microsoft Learn — Vektorsuche in Azure Cosmos DB for NoSQL", url: "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/vector-search" },
+        reference: { label: "Microsoft Learn: Vektorsuche in Azure Cosmos DB for NoSQL", url: "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/vector-search" },
       },
       {
         id: "ai200-d2-cosmos-session",
@@ -285,7 +285,7 @@ export const ai200De: DeContent = {
         answer: "C",
         explanation:
           "Sitzungskonsistenz bietet innerhalb einer Sitzung Read Your Writes und Write Follows Reads. Lesevorgänge mit Strong und Bounded Staleness nutzen ein Minderheitsquorum aus zwei Replikaten, sodass ihr Lesedurchsatz bei gleichen RUs nur halb so hoch ist wie bei den schwächeren Stufen.",
-        reference: { label: "Microsoft Learn — Konsistenzstufen in Azure Cosmos DB", url: "https://learn.microsoft.com/en-us/azure/cosmos-db/consistency-levels" },
+        reference: { label: "Microsoft Learn: Konsistenzstufen in Azure Cosmos DB", url: "https://learn.microsoft.com/en-us/azure/cosmos-db/consistency-levels" },
       },
       {
         id: "ai200-d2-change-feed-lease",
@@ -303,7 +303,7 @@ export const ai200De: DeContent = {
         answer: "A",
         explanation:
           "Der Änderungsfeedprozessor hat vier Bestandteile: den überwachten Container, den Leasecontainer, die Compute-Instanz und den Delegaten. Leases ermöglichen es den Instanzen, die Arbeit aufzuteilen und nach einem Neustart am letzten Prüfpunkt fortzufahren.",
-        reference: { label: "Microsoft Learn — Änderungsfeedprozessor in Azure Cosmos DB", url: "https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-processor" },
+        reference: { label: "Microsoft Learn: Änderungsfeedprozessor in Azure Cosmos DB", url: "https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-processor" },
       },
       {
         id: "ai200-d2-pgvector-hnsw",
@@ -321,7 +321,7 @@ export const ai200De: DeContent = {
         answer: "D",
         explanation:
           "pgvector bietet exakte Suche ohne Index und ungefähre Suche mit IVFFlat oder HNSW. IVFFlat partitioniert vorhandene Daten mit k-Means und wird daher am besten nach dem Laden der Daten erstellt; HNSW kann von Anfang an erstellt werden.",
-        reference: { label: "Microsoft Learn — Optimieren der Leistung bei Verwendung von pgvector", url: "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-optimize-performance-pgvector" },
+        reference: { label: "Microsoft Learn: Optimieren der Leistung bei Verwendung von pgvector", url: "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-optimize-performance-pgvector" },
       },
       {
         id: "ai200-d2-redis-vector",
@@ -339,7 +339,7 @@ export const ai200De: DeContent = {
         answer: "B",
         explanation:
           "RediSearch ergänzt Azure Managed Redis um Sekundärindizierung und Vektorähnlichkeitssuche wie KNN. Das Modul muss bei der Erstellung der Instanz ausgewählt werden und erfordert die Enterprise-Clusteringrichtlinie und die Entfernungsrichtlinie NoEviction.",
-        reference: { label: "Microsoft Learn — Verwenden von Redis-Modulen mit Azure Managed Redis", url: "https://learn.microsoft.com/en-us/azure/redis/redis-modules" },
+        reference: { label: "Microsoft Learn: Verwenden von Redis-Modulen mit Azure Managed Redis", url: "https://learn.microsoft.com/en-us/azure/redis/redis-modules" },
       },
 
       /* ── Bereich 3: Verbindung zu Azure-Diensten herstellen und nutzen ────── */
@@ -359,7 +359,7 @@ export const ai200De: DeContent = {
         answer: "C",
         explanation:
           "Jede Warteschlange und jedes Abonnement hat eine eigene Dead-Letter-Unterwarteschlange. Mit dem .NET SDK setzen Sie die Empfängeroption SubQueue auf DeadLetter, prüfen DeadLetterReason (zum Beispiel MaxDeliveryCountExceeded) und schließen die Nachricht ab, um sie zu entfernen.",
-        reference: { label: "Microsoft Learn — Service-Bus-Dead-Letter-Warteschlangen", url: "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dead-letter-queues" },
+        reference: { label: "Microsoft Learn: Service-Bus-Dead-Letter-Warteschlangen", url: "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dead-letter-queues" },
       },
       {
         id: "ai200-d3-event-grid-filter",
@@ -367,7 +367,7 @@ export const ai200De: DeContent = {
         objective: "Implementieren von ereignisgesteuerten Workflows mithilfe von Azure Event Grid, einschließlich Filtern, benutzerdefinierten Ereignissen und Wiederholungen",
         difficulty: "intermediate",
         question:
-          "Eine Azure Function soll nur ausgeführt werden, wenn eine neue PDF-Datei in ein Speicherkonto hochgeladen wird – nicht bei Löschvorgängen und nicht für andere Dateitypen. Wie konfigurieren Sie das Event-Grid-Abonnement?",
+          "Eine Azure Function soll nur ausgeführt werden, wenn eine neue PDF-Datei in ein Speicherkonto hochgeladen wird, nicht bei Löschvorgängen und nicht für andere Dateitypen. Wie konfigurieren Sie das Event-Grid-Abonnement?",
         options: [
           { id: "A", text: "Nach dem Ereignistyp BlobCreated filtern und einen Betrefffilter „endet mit“ .pdf festlegen", rationale: "Richtig. Die Filterung nach Ereignistyp beschränkt die Zustellung auf Erstellungsereignisse, und der Betrefffilter auf Blobs, deren Name auf .pdf endet." },
           { id: "B", text: "Alle Ereignistypen abonnieren und unerwünschte Ereignisse im Funktionscode verwerfen", rationale: "Das funktioniert, löst die Funktion aber bei jedem Ereignis aus, was die Anforderung vermeiden will." },
@@ -377,7 +377,7 @@ export const ai200De: DeContent = {
         answer: "A",
         explanation:
           "Event-Grid-Abonnements können nach Ereignistyp, nach Betreff („beginnt mit“ oder „endet mit“) und mit erweiterten Filtern auf Datenfeldern filtern. Die Filterung im Abonnement spart Ausführungen und hält den Handlercode einfach.",
-        reference: { label: "Microsoft Learn — Ereignisfilterung in Event Grid", url: "https://learn.microsoft.com/en-us/azure/event-grid/event-filtering" },
+        reference: { label: "Microsoft Learn: Ereignisfilterung in Event Grid", url: "https://learn.microsoft.com/en-us/azure/event-grid/event-filtering" },
       },
       {
         id: "ai200-d3-functions-bindings",
@@ -395,7 +395,7 @@ export const ai200De: DeContent = {
         answer: "D",
         explanation:
           "Jede Funktion hat genau einen Trigger und beliebig viele optionale Eingabe- und Ausgabebindungen. Bindungen übergeben Daten über Parameter hinein und über Rückgabewerte oder Ausgabeparameter hinaus, sodass Sie keinen dienstspezifischen Verbindungscode schreiben.",
-        reference: { label: "Microsoft Learn — Trigger und Bindungen in Azure Functions", url: "https://learn.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings" },
+        reference: { label: "Microsoft Learn: Trigger und Bindungen in Azure Functions", url: "https://learn.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings" },
       },
       {
         id: "ai200-d3-service-bus-topics",
@@ -433,7 +433,7 @@ export const ai200De: DeContent = {
         answer: "D",
         explanation:
           "Key-Vault-Verweise nutzen die verwaltete Identität der App, die Lesezugriff auf Geheimnisse braucht. App Service speichert referenzierte Werte zwischen und ruft sie alle 24 Stunden neu ab; jede Konfigurationsänderung startet die App neu und ruft sie sofort neu ab.",
-        reference: { label: "Microsoft Learn — Verwenden von Key-Vault-Verweisen in App Service", url: "https://learn.microsoft.com/en-us/azure/app-service/app-service-key-vault-references" },
+        reference: { label: "Microsoft Learn: Verwenden von Key-Vault-Verweisen in App Service", url: "https://learn.microsoft.com/en-us/azure/app-service/app-service-key-vault-references" },
       },
       {
         id: "ai200-d4-app-configuration",
@@ -451,7 +451,7 @@ export const ai200De: DeContent = {
         answer: "C",
         explanation:
           "Verwenden Sie App Configuration für Einstellungen und Featureflags und Key Vault für Geheimnisse. Bezeichnungen (Labels) in App Configuration helfen, Varianten desselben Schlüssels zu verwalten, zum Beispiel pro Umgebung.",
-        reference: { label: "Microsoft Learn — Was ist Azure App Configuration?", url: "https://learn.microsoft.com/en-us/azure/azure-app-configuration/overview" },
+        reference: { label: "Microsoft Learn: Was ist Azure App Configuration?", url: "https://learn.microsoft.com/en-us/azure/azure-app-configuration/overview" },
       },
       {
         id: "ai200-d4-opentelemetry",
@@ -469,7 +469,7 @@ export const ai200De: DeContent = {
         answer: "B",
         explanation:
           "Die OpenTelemetry-Distribution sammelt Traces, Metriken und Protokolle und exportiert sie nach Azure Monitor. Wenn beide Dienste instrumentiert sind, können Sie eine Anfrage über korrelierte Traces durch API und Worker verfolgen und sie anschließend mit KQL analysieren.",
-        reference: { label: "Microsoft Learn — Aktivieren von OpenTelemetry in Application Insights", url: "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable" },
+        reference: { label: "Microsoft Learn: Aktivieren von OpenTelemetry in Application Insights", url: "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable" },
       },
     ],
   },

@@ -6,7 +6,7 @@ import type { PracticeQuestionSet } from "@/config/types";
  * practice exams, not recalled exam content, and not presented as real exam questions.
  */
 const OBJECTIVES = {
-  label: "CompTIA — Security+ V7 (SY0-701) exam details and objectives",
+  label: "CompTIA: Security+ V7 (SY0-701) exam details and objectives",
   url: "https://www.comptia.org/en-us/certifications/security/v7/",
 };
 
@@ -19,7 +19,7 @@ export const comptiaSecurityPlusSy0701Questions: PracticeQuestionSet = {
   seo: {
     title: "Security+ SY0-701 Practice Questions with Answers (2026)",
     description:
-      "15 free, original Security+ SY0-701 practice questions on security controls, threats, architecture, operations and governance — each with a full explanation.",
+      "15 free, original Security+ SY0-701 practice questions on security controls, threats, architecture, operations and governance, each with a full explanation.",
   },
   questions: [
     /* ── Domain 1: General Security Concepts (12%) ───────────────────────── */
@@ -201,7 +201,7 @@ export const comptiaSecurityPlusSy0701Questions: PracticeQuestionSet = {
       options: [
         { id: "A", text: "Preparation", rationale: "Preparation happens before an incident occurs." },
         { id: "B", text: "Lessons learned", rationale: "Lessons learned comes at the end, after recovery." },
-        { id: "C", text: "Eradication", rationale: "Correct. Isolation is containment; the next step is eradication — removing the malware and its persistence from the affected systems." },
+        { id: "C", text: "Eradication", rationale: "Correct. Isolation is containment; the next step is eradication: removing the malware and its persistence from the affected systems." },
         { id: "D", text: "Detection", rationale: "Detection has already happened; the team is responding to a known incident." },
       ],
       answer: "C",
@@ -236,7 +236,7 @@ export const comptiaSecurityPlusSy0701Questions: PracticeQuestionSet = {
         "A vulnerability scan flags a web server for a flaw in a software version that, after manual checking, is not installed on that server. How should the analyst classify the finding?",
       options: [
         { id: "A", text: "True positive", rationale: "A true positive is a real vulnerability that was correctly reported. Here the vulnerability is not present." },
-        { id: "B", text: "False negative", rationale: "A false negative is a real vulnerability the scanner missed — the opposite situation." },
+        { id: "B", text: "False negative", rationale: "A false negative is a real vulnerability the scanner missed: the opposite situation." },
         { id: "C", text: "Exception", rationale: "An exception is a documented decision to accept a real vulnerability, not a classification for an incorrect finding." },
         { id: "D", text: "False positive", rationale: "Correct. The scanner reported a vulnerability that does not exist on the system." },
       ],

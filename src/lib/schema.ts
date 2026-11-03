@@ -85,7 +85,7 @@ export function certificationProductSchema(cert: ResolvedCertification) {
     "@context": "https://schema.org",
     "@type": "Product",
     "@id": `${url}#product`,
-    name: `${cert.name} Practice Exams — CertRamp Exam Simulator`,
+    name: `${cert.name} Practice Exams: CertRamp Exam Simulator`,
     description: plain(cert.description, cert.seo.description),
     brand: { "@type": "Brand", name: siteConfig.name },
     category: "Certification exam preparation",
@@ -111,7 +111,7 @@ export function credentialSchema(cert: ResolvedCertification) {
   return {
     "@type": "EducationalOccupationalCredential",
     "@id": `${absoluteUrl(cert.path)}#credential`,
-    name: cert.exam.officialName ? `${cert.name} — ${cert.exam.officialName}` : cert.fullName,
+    name: cert.exam.officialName ? `${cert.name}: ${cert.exam.officialName}` : cert.fullName,
     alternateName: cert.name,
     credentialCategory: "certification",
     recognizedBy: { "@type": "Organization", name: cert.vendorName },

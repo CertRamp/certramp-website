@@ -10,9 +10,9 @@ import { cn } from "@/lib/cn";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "How It Works — Six Tests That Grow With You",
+  title: "How It Works: Six Tests That Grow With You",
   description:
-    "The CertRamp methodology: six practice tests of rising difficulty — Diagnostic, Foundation, Development, Exam Level, Advanced and the CertRamp Challenge.",
+    "The CertRamp methodology: six practice tests of rising difficulty (Diagnostic, Foundation, Development, Exam Level, Advanced and the CertRamp Challenge).",
   path: "/how-it-works",
 });
 
@@ -116,7 +116,7 @@ export default function HowItWorksPage() {
           id="loop-title"
           eyebrow="How to use it"
           title="Practice. Measure. Improve. Repeat."
-          intro="The ramp works best as a loop. Don't rush through all six tests — use each result to decide what to revise next."
+          intro="The ramp works best as a loop. Don't rush through all six tests: use each result to decide what to revise next."
         />
         <ol className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {loop.map((l, i) => (

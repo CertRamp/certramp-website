@@ -8,7 +8,7 @@ import type { DeContent } from "@/config/types";
  * in CompTIA's official English wording (no official German version of SY0-701 exists).
  */
 const OBJECTIVES = {
-  label: "CompTIA — Security+ V7 (SY0-701): Prüfungsdetails und Prüfungsziele (Englisch)",
+  label: "CompTIA, Security+ V7 (SY0-701): Prüfungsdetails und Prüfungsziele (Englisch)",
   url: "https://www.comptia.org/en-us/certifications/security/v7/",
 };
 
@@ -16,7 +16,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
   slug: "comptia-security-plus-sy0-701",
   name: "CompTIA Security+ SY0-701",
   languageNote:
-    "Die offizielle Prüfung SY0-701 gibt es nicht auf Deutsch – CompTIA bietet sie auf Englisch, Japanisch, Portugiesisch, Spanisch und Thai an; unsere Übungsprüfungen helfen Ihnen, die Inhalte auf Deutsch zu verstehen.",
+    "Die offizielle Prüfung SY0-701 gibt es nicht auf Deutsch: CompTIA bietet sie auf Englisch, Japanisch, Portugiesisch, Spanisch und Thai an; unsere Übungsprüfungen helfen Ihnen, die Inhalte auf Deutsch zu verstehen.",
   facts: [
     { label: "Prüfungsanbieter", value: "CompTIA" },
     { label: "Prüfungscode", value: "SY0-701" },
@@ -105,7 +105,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
   guide: {
     slug: "comptia-security-plus-sy0-701",
     summary:
-      "CompTIA Security+ SY0-701 (Security+ V7) prüft grundlegende Sicherheitskompetenzen in fünf Domänen – von Sicherheitskontrollen und Bedrohungen bis zu Security Operations und Governance. Sie erhalten maximal 90 Multiple-Choice- und performancebasierte Fragen in 90 Minuten und benötigen 750 Punkte auf einer Skala von 100–900. Die Nachfolgeprüfung SY0-801 (V8) erscheint voraussichtlich um den 17. November 2026; SY0-701 läuft am 11. Juni 2027 auf Englisch und am 13. August 2027 auf Japanisch, Portugiesisch, Spanisch und Thai aus.",
+      "CompTIA Security+ SY0-701 (Security+ V7) prüft grundlegende Sicherheitskompetenzen in fünf Domänen, von Sicherheitskontrollen und Bedrohungen bis zu Security Operations und Governance. Sie erhalten maximal 90 Multiple-Choice- und performancebasierte Fragen in 90 Minuten und benötigen 750 Punkte auf einer Skala von 100–900. Die Nachfolgeprüfung SY0-801 (V8) erscheint voraussichtlich um den 17. November 2026; SY0-701 läuft am 11. Juni 2027 auf Englisch und am 13. August 2027 auf Japanisch, Portugiesisch, Spanisch und Thai aus.",
     whoFor: [
       "System- und Netzwerkadministratorinnen und -administratoren, die in eine Security-Rolle wechseln",
       "Junior-Security-Analystinnen und -Analysten sowie SOC-Mitarbeiterinnen und -Mitarbeiter, die ein breites, herstellerneutrales Fundament suchen",
@@ -116,15 +116,15 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
         id: "what-the-exam-tests",
         heading: "Was SY0-701 tatsächlich prüft",
         paragraphs: [
-          "Die Prüfungsziele von SY0-701 umfassen fünf Domänen: General Security Concepts (allgemeine Sicherheitskonzepte, 12 %), Threats, Vulnerabilities, and Mitigations (Bedrohungen, Schwachstellen und Gegenmaßnahmen, 22 %), Security Architecture (Sicherheitsarchitektur, 18 %), Security Operations (Sicherheitsbetrieb, 28 %) sowie Security Program Management and Oversight (Steuerung und Überwachung des Sicherheitsprogramms, 20 %). Security Operations hat das höchste Gewicht – Identity and Access Management, Schwachstellenmanagement, Monitoring, Incident Response und Untersuchungen verdienen deshalb einen großen Teil Ihrer Lernzeit.",
-          "Viele Prüfungsziele beginnen mit „Given a scenario“ – etwa Indikatoren für bösartige Aktivitäten analysieren, Unternehmensinfrastruktur absichern oder Identity and Access Management umsetzen. Andere verlangen, Konzepte zu vergleichen und gegenüberzustellen oder zu erklären. Rechnen Sie damit, für eine kurze Situation die passende Kontrolle, den Angriffstyp, die Technologie oder den nächsten Schritt auszuwählen, statt Definitionen aufzusagen.",
+          "Die Prüfungsziele von SY0-701 umfassen fünf Domänen: General Security Concepts (allgemeine Sicherheitskonzepte, 12 %), Threats, Vulnerabilities, and Mitigations (Bedrohungen, Schwachstellen und Gegenmaßnahmen, 22 %), Security Architecture (Sicherheitsarchitektur, 18 %), Security Operations (Sicherheitsbetrieb, 28 %) sowie Security Program Management and Oversight (Steuerung und Überwachung des Sicherheitsprogramms, 20 %). Security Operations hat das höchste Gewicht: Identity and Access Management, Schwachstellenmanagement, Monitoring, Incident Response und Untersuchungen verdienen deshalb einen großen Teil Ihrer Lernzeit.",
+          "Viele Prüfungsziele beginnen mit „Given a scenario“, etwa Indikatoren für bösartige Aktivitäten analysieren, Unternehmensinfrastruktur absichern oder Identity and Access Management umsetzen. Andere verlangen, Konzepte zu vergleichen und gegenüberzustellen oder zu erklären. Rechnen Sie damit, für eine kurze Situation die passende Kontrolle, den Angriffstyp, die Technologie oder den nächsten Schritt auszuwählen, statt Definitionen aufzusagen.",
         ],
       },
       {
         id: "sy0-701-vs-sy0-801",
         heading: "SY0-701 oder SY0-801: Welche Version sollten Sie ablegen?",
         paragraphs: [
-          "CompTIA ersetzt Security+ V7 (SY0-701, gestartet am 7. November 2023) durch Security+ V8 (SY0-801), die voraussichtlich um den 17. November 2026 erscheint. SY0-701 bleibt bis zum Auslaufen verfügbar: bis 11. Juni 2027 für die englische Prüfung und bis 13. August 2027 für die japanische, portugiesische, spanische und thailändische Prüfung. Beide Versionen behalten dasselbe Format – maximal 90 Fragen, 90 Minuten und eine Bestehensgrenze von 750 auf einer Skala von 100–900.",
+          "CompTIA ersetzt Security+ V7 (SY0-701, gestartet am 7. November 2023) durch Security+ V8 (SY0-801), die voraussichtlich um den 17. November 2026 erscheint. SY0-701 bleibt bis zum Auslaufen verfügbar: bis 11. Juni 2027 für die englische Prüfung und bis 13. August 2027 für die japanische, portugiesische, spanische und thailändische Prüfung. Beide Versionen behalten dasselbe Format: maximal 90 Fragen, 90 Minuten und eine Bestehensgrenze von 750 auf einer Skala von 100–900.",
           "Die Prüfungsziele von V8 verwenden dieselbe Struktur mit fünf Domänen, aber andere Gewichtungen (16 %, 24 %, 19 %, 27 % und 14 %), und Domäne 2 heißt nun „Threats, Vulnerabilities, and Attacks“. Zum Start führt CompTIA SY0-801 nur auf Englisch. Wenn Sie in der Vorbereitung auf SY0-701 schon weit sind und die Prüfung vor dem Auslaufdatum ablegen können, ist es sinnvoll, bei SY0-701 zu bleiben. Wenn Sie gerade erst anfangen und die Prüfung spät in der Übergangsphase auf Englisch ablegen wollen, bereiten Sie sich stattdessen auf SY0-801 vor (CertRamp hat eine eigene Seite zu SY0-801).",
         ],
       },
@@ -134,7 +134,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
         steps: [
           {
             title: "Laden Sie die offiziellen Prüfungsziele herunter",
-            body: "Holen Sie sich die SY0-701 Exam Objectives (V7) von CompTIA und markieren Sie jedes der 28 Prüfungsziele als „beherrscht“, „unsicher“ oder „neu“. Verteilen Sie Ihre Zeit nach Domänengewicht – allein Security Operations macht 28 % aus.",
+            body: "Holen Sie sich die SY0-701 Exam Objectives (V7) von CompTIA und markieren Sie jedes der 28 Prüfungsziele als „beherrscht“, „unsicher“ oder „neu“. Verteilen Sie Ihre Zeit nach Domänengewicht: allein Security Operations macht 28 % aus.",
           },
           {
             title: "Legen Sie Ihren Zeitplan mit Blick auf das Auslaufdatum fest",
@@ -150,7 +150,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
           },
           {
             title: "Üben Sie unter Zeitdruck",
-            body: "Absolvieren Sie zeitlich begrenzte Übungsprüfungen mit bis zu 90 Fragen in 90 Minuten. Lesen Sie jede Erklärung – auch zu den Fragen, die Sie richtig beantwortet haben – und notieren Sie, zu welchem Prüfungsziel jeder Fehler gehört.",
+            body: "Absolvieren Sie zeitlich begrenzte Übungsprüfungen mit bis zu 90 Fragen in 90 Minuten. Lesen Sie jede Erklärung (auch zu den Fragen, die Sie richtig beantwortet haben) und notieren Sie, zu welchem Prüfungsziel jeder Fehler gehört.",
           },
           {
             title: "Buchen Sie, wenn Ihre Ergebnisse stabil sind",
@@ -164,8 +164,8 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
         bullets: [
           "Mit den falschen Prüfungszielen lernen. Material zu SY0-801 hat andere Gewichtungen und eine umbenannte Domäne 2; prüfen Sie, ob Ihre Unterlagen SY0-701 angeben.",
           "Die Prüfung zu spät ansetzen. Ein nicht bestandener Versuch kurz vor dem 11. Juni 2027 (Englisch) lässt möglicherweise keine Zeit mehr für eine Wiederholungsprüfung mit SY0-701.",
-          "Performancebasierte Fragen unterschätzen. Sie prüfen angewandte Fähigkeiten – reines Lesen reicht nicht.",
-          "Governance als Nebensache behandeln. Security Program Management and Oversight macht 20 % von SY0-701 aus – Risikomanagement, Drittparteienrisiken, Compliance, Audits und Awareness zählen alle.",
+          "Performancebasierte Fragen unterschätzen. Sie prüfen angewandte Fähigkeiten: reines Lesen reicht nicht.",
+          "Governance als Nebensache behandeln. Security Program Management and Oversight macht 20 % von SY0-701 aus: Risikomanagement, Drittparteienrisiken, Compliance, Audits und Awareness zählen alle.",
           "Listen auswendig lernen, ohne das „Warum“ zu verstehen. Szenariofragen belohnen das Wissen, wann eine Kontrolle oder Technik passt, nicht nur ihren Namen.",
         ],
       },
@@ -189,12 +189,12 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
       {
         question: "Gibt es die Prüfung auf Deutsch?",
         answer:
-          "Nein. SY0-701 wird nicht auf Deutsch angeboten; Sie legen sie in einer der verfügbaren Sprachen ab, für Teilnehmende aus Deutschland, Österreich und der Schweiz in der Regel auf Englisch. Unsere deutschsprachigen Übungsfragen helfen Ihnen, die Inhalte auf Deutsch zu verstehen – die Fachbegriffe der Prüfung sollten Sie dennoch auf Englisch kennen.",
+          "Nein. SY0-701 wird nicht auf Deutsch angeboten; Sie legen sie in einer der verfügbaren Sprachen ab, für Teilnehmende aus Deutschland, Österreich und der Schweiz in der Regel auf Englisch. Unsere deutschsprachigen Übungsfragen helfen Ihnen, die Inhalte auf Deutsch zu verstehen, die Fachbegriffe der Prüfung sollten Sie dennoch auf Englisch kennen.",
       },
       {
         question: "Wie halte ich Security+ aktuell?",
         answer:
-          "Security+ ist ab dem Tag des Bestehens drei Jahre gültig. Zur Verlängerung benötigen Sie 50 Continuing Education Units (CEUs) – etwa über einen CompTIA-CertMaster-CE-Kurs, anrechenbare Aktivitäten oder andere Zertifizierungen – oder Sie bestehen die jeweils aktuelle Version der Security+-Prüfung.",
+          "Security+ ist ab dem Tag des Bestehens drei Jahre gültig. Zur Verlängerung benötigen Sie 50 Continuing Education Units (CEUs), etwa über einen CompTIA-CertMaster-CE-Kurs, anrechenbare Aktivitäten oder andere Zertifizierungen, oder Sie bestehen die jeweils aktuelle Version der Security+-Prüfung.",
       },
       {
         question: "Sind die CertRamp-Fragen echte Prüfungsfragen?",
@@ -220,7 +220,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
     seo: {
       title: "Security+ SY0-701 Übungsfragen mit Lösungen (2026)",
       description:
-        "15 kostenlose, eigene Übungsfragen zu Security+ SY0-701: Sicherheitskontrollen, Bedrohungen, Architektur, Betrieb und Governance – jeweils mit Erklärung.",
+        "15 kostenlose, eigene Übungsfragen zu Security+ SY0-701: Sicherheitskontrollen, Bedrohungen, Architektur, Betrieb und Governance (jeweils mit Erklärung).",
     },
     questions: [
       /* ── Domäne 1: General Security Concepts (12 %) ─────────────────────── */
@@ -233,7 +233,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
           "Ein Unternehmen bringt an jedem Eingang Schilder an, die darauf hinweisen, dass das Gelände videoüberwacht wird und Eindringlinge strafrechtlich verfolgt werden. Welche Art von Kontrolle stellen die Schilder in erster Linie dar?",
         options: [
           { id: "A", text: "Präventiv (Preventive)", rationale: "Eine präventive Kontrolle verhindert eine Handlung physisch oder technisch, etwa eine verschlossene Tür. Ein Schild hält niemanden vom Betreten ab." },
-          { id: "B", text: "Abschreckend (Deterrent)", rationale: "Richtig. Die Schilder sollen einen Angreifer davon abhalten, es überhaupt zu versuchen – genau das ist der Zweck einer abschreckenden Kontrolle." },
+          { id: "B", text: "Abschreckend (Deterrent)", rationale: "Richtig. Die Schilder sollen einen Angreifer davon abhalten, es überhaupt zu versuchen: genau das ist der Zweck einer abschreckenden Kontrolle." },
           { id: "C", text: "Kompensierend (Compensating)", rationale: "Eine kompensierende Kontrolle ersetzt eine Kontrolle, die nicht umgesetzt werden kann. Hier wird nichts ersetzt." },
           { id: "D", text: "Korrigierend (Corrective)", rationale: "Korrigierende Kontrollen beheben oder begrenzen Schäden nach einem Vorfall, etwa die Wiederherstellung aus einem Backup." },
         ],
@@ -257,7 +257,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
         ],
         answer: "D",
         explanation:
-          "Tokenisierung entfernt den sensiblen Wert vollständig aus den Systemen der Anwendung, weil sich das Token mathematisch nicht zurückrechnen lässt. Nur der Token-Vault kann es wieder zuordnen – dadurch sinkt die Zahl der Systeme, die Kartendaten enthalten.",
+          "Tokenisierung entfernt den sensiblen Wert vollständig aus den Systemen der Anwendung, weil sich das Token mathematisch nicht zurückrechnen lässt. Nur der Token-Vault kann es wieder zuordnen: dadurch sinkt die Zahl der Systeme, die Kartendaten enthalten.",
         reference: OBJECTIVES,
       },
 
@@ -270,7 +270,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
         question:
           "Die Authentifizierungsprotokolle zeigen, dass eine externe IP-Adresse innerhalb einer Stunde versucht, sich bei 400 verschiedenen Benutzerkonten anzumelden. Jedes Konto erhält nur einen oder zwei Versuche, alle mit dem Passwort „Autumn2026!“. Kein Konto wird gesperrt. Um welchen Angriff handelt es sich am wahrscheinlichsten?",
         options: [
-          { id: "A", text: "Password Spraying", rationale: "Richtig. Ein oder wenige gängige Passwörter gegen viele Konten, langsam genug, um keine Sperre auszulösen – das ist das typische Muster von Password Spraying." },
+          { id: "A", text: "Password Spraying", rationale: "Richtig. Ein oder wenige gängige Passwörter gegen viele Konten, langsam genug, um keine Sperre auszulösen, das ist das typische Muster von Password Spraying." },
           { id: "B", text: "Brute-Force-Angriff auf ein einzelnes Konto", rationale: "Ein Brute-Force-Angriff probiert viele Passwörter gegen ein Konto aus und würde in der Regel eine Kontosperre auslösen." },
           { id: "C", text: "Rechteausweitung (Privilege Escalation)", rationale: "Eine Rechteausweitung findet statt, nachdem bereits Zugriff erlangt wurde; hier handelt es sich um fehlgeschlagene Anmeldeversuche." },
           { id: "D", text: "Geburtstagsangriff (Birthday Attack)", rationale: "Ein Geburtstagsangriff zielt auf Hash-Kollisionen, nicht auf Online-Anmeldungen." },
@@ -326,7 +326,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
         question:
           "Ein Unternehmen braucht einen Ausweichstandort, der innerhalb eines Tages nach einer Katastrophe betriebsbereit ist. Das Budget schließt einen vollständig gespiegelten Standort aus, ein leerer Standort bräuchte jedoch Wochen, bis er ausgestattet wäre. Welche Option passt am besten?",
         options: [
-          { id: "A", text: "Hot Site", rationale: "Eine Hot Site ist mit aktuellen Daten nahezu sofort einsatzbereit, aber sie ist die teuerste Option – und die schließt das Budget aus." },
+          { id: "A", text: "Hot Site", rationale: "Eine Hot Site ist mit aktuellen Daten nahezu sofort einsatzbereit, aber sie ist die teuerste Option, und die schließt das Budget aus." },
           { id: "B", text: "Cold Site", rationale: "Eine Cold Site bietet nur Räumlichkeiten und Strom; ihre Ausstattung würde weit länger als einen Tag dauern." },
           { id: "C", text: "Snapshot der Hauptserver", rationale: "Snapshots helfen bei der Wiederherstellung von Systemen, sind aber kein Ausweichstandort." },
           { id: "D", text: "Warm Site", rationale: "Richtig. Bei einer Warm Site sind Hardware und Netzanbindung vorhanden; Daten und Konfiguration müssen auf den aktuellen Stand gebracht werden, was typischerweise Stunden bis zu einem Tag dauert." },
@@ -364,7 +364,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
         options: [
           { id: "A", text: "Datenmaskierung (Data Masking)", rationale: "Maskierung verbirgt Teile von Datenwerten; sie sagt nichts darüber aus, wo Daten aufbewahrt werden müssen." },
           { id: "B", text: "Datenklassifizierung (Data Classification)", rationale: "Klassifizierung kennzeichnet Daten nach ihrer Sensibilität, etwa vertraulich oder öffentlich, nicht nach Rechtsordnung." },
-          { id: "C", text: "Datensouveränität (Data Sovereignty)", rationale: "Richtig. Datensouveränität bedeutet, dass Daten den Gesetzen des Landes unterliegen, in dem sie erhoben oder gespeichert werden – daraus ergeben sich Standortanforderungen wie diese." },
+          { id: "C", text: "Datensouveränität (Data Sovereignty)", rationale: "Richtig. Datensouveränität bedeutet, dass Daten den Gesetzen des Landes unterliegen, in dem sie erhoben oder gespeichert werden: daraus ergeben sich Standortanforderungen wie diese." },
           { id: "D", text: "Daten während der Übertragung (Data in Transit)", rationale: "Daten während der Übertragung sind ein Datenzustand (Bewegung über ein Netzwerk), kein rechtliches Konzept." },
         ],
         answer: "C",
@@ -402,7 +402,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
         options: [
           { id: "A", text: "Vorbereitung (Preparation)", rationale: "Die Vorbereitung findet statt, bevor ein Vorfall eintritt." },
           { id: "B", text: "Lessons Learned", rationale: "Lessons Learned kommt am Ende, nach der Wiederherstellung." },
-          { id: "C", text: "Beseitigung (Eradication)", rationale: "Richtig. Die Isolation ist die Eindämmung; als Nächstes folgt die Beseitigung – das Entfernen der Malware und ihrer Persistenzmechanismen von den betroffenen Systemen." },
+          { id: "C", text: "Beseitigung (Eradication)", rationale: "Richtig. Die Isolation ist die Eindämmung; als Nächstes folgt die Beseitigung, das Entfernen der Malware und ihrer Persistenzmechanismen von den betroffenen Systemen." },
           { id: "D", text: "Erkennung (Detection)", rationale: "Die Erkennung ist bereits erfolgt; das Team reagiert auf einen bekannten Vorfall." },
         ],
         answer: "C",
@@ -437,7 +437,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
           "Ein Schwachstellenscan meldet bei einem Webserver eine Lücke in einer Softwareversion, die laut manueller Prüfung auf diesem Server gar nicht installiert ist. Wie sollte der Analyst den Befund einordnen?",
         options: [
           { id: "A", text: "True Positive", rationale: "Ein True Positive ist eine echte Schwachstelle, die korrekt gemeldet wurde. Hier ist die Schwachstelle nicht vorhanden." },
-          { id: "B", text: "False Negative", rationale: "Ein False Negative ist eine echte Schwachstelle, die der Scanner übersehen hat – also die umgekehrte Situation." },
+          { id: "B", text: "False Negative", rationale: "Ein False Negative ist eine echte Schwachstelle, die der Scanner übersehen hat, also die umgekehrte Situation." },
           { id: "C", text: "Ausnahme (Exception)", rationale: "Eine Ausnahme ist eine dokumentierte Entscheidung, eine echte Schwachstelle zu akzeptieren, keine Einordnung für einen falschen Befund." },
           { id: "D", text: "False Positive", rationale: "Richtig. Der Scanner hat eine Schwachstelle gemeldet, die auf dem System nicht existiert." },
         ],
@@ -493,7 +493,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
           "Ein Unternehmen beauftragt eine Firma mit einem Penetrationstest und gibt den Testern bewusst keine Netzwerkpläne, Zugangsdaten oder Systemdetails, damit der Test einen externen Angreifer simuliert. Um welche Art von Test handelt es sich?",
         options: [
           { id: "A", text: "Bekannte Umgebung (Known Environment)", rationale: "Bei einem Test in bekannter Umgebung erhalten die Tester vollständige Informationen über das Ziel." },
-          { id: "B", text: "Unbekannte Umgebung (Unknown Environment)", rationale: "Richtig. Die Tester beginnen ohne Informationen über das Ziel – genau wie ein externer Angreifer." },
+          { id: "B", text: "Unbekannte Umgebung (Unknown Environment)", rationale: "Richtig. Die Tester beginnen ohne Informationen über das Ziel: genau wie ein externer Angreifer." },
           { id: "C", text: "Teilweise bekannte Umgebung (Partially Known Environment)", rationale: "Bei einem Test in teilweise bekannter Umgebung erhalten die Tester einige Informationen, etwa einen Netzwerkbereich oder ein Benutzerkonto." },
           { id: "D", text: "Passive Aufklärung (Passive Reconnaissance)", rationale: "Passive Aufklärung ist eine Technik zur Informationsbeschaffung, keine Art von Penetrationstest, die sich danach richtet, wie viel den Testern mitgeteilt wird." },
         ],

@@ -7,12 +7,12 @@ import type { PracticeQuestionSet } from "@/config/types";
  * presented as real exam questions.
  */
 const BOK = {
-  label: "IAPP — CIPP/E body of knowledge and exam blueprint 1.3.3 (PDF)",
+  label: "IAPP: CIPP/E body of knowledge and exam blueprint 1.3.3 (PDF)",
   url: "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blte39ae9567661b3d2/IAPP_Training-CIPPE_BOK.pdf",
 };
 
 const gdpr = (articles: string) => ({
-  label: `GDPR (Regulation (EU) 2016/679), ${articles} — EUR-Lex`,
+  label: `GDPR (Regulation (EU) 2016/679), ${articles}: EUR-Lex`,
   url: "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
 });
 
@@ -25,7 +25,7 @@ export const iappCippEQuestions: PracticeQuestionSet = {
   seo: {
     title: "CIPP/E Practice Questions with Answers & Explanations (2026)",
     description:
-      "15 free, original CIPP/E practice questions on GDPR concepts, data subject rights, lawful bases, transfers and fines — each with a full explanation.",
+      "15 free, original CIPP/E practice questions on GDPR concepts, data subject rights, lawful bases, transfers and fines, each with a full explanation.",
   },
   questions: [
     /* ── Domain I: Introduction to European Data Protection ─────────────────── */
@@ -62,7 +62,7 @@ export const iappCippEQuestions: PracticeQuestionSet = {
       ],
       answer: "C",
       explanation:
-        "In the ordinary legislative procedure the Commission proposes, and the European Parliament and the Council of the EU negotiate and adopt. Keep the European Council (heads of state or government) and the Council of the EU (ministers) apart — they are different bodies.",
+        "In the ordinary legislative procedure the Commission proposes, and the European Parliament and the Council of the EU negotiate and adopt. Keep the European Council (heads of state or government) and the Council of the EU (ministers) apart: they are different bodies.",
       reference: BOK,
     },
 
@@ -212,7 +212,7 @@ export const iappCippEQuestions: PracticeQuestionSet = {
       explanation:
         "Schrems II (2020) struck down the Privacy Shield but kept standard contractual clauses, on condition that exporters assess the destination country and add supplementary measures where necessary. If effective protection cannot be ensured, the transfer must be suspended or ended. This assessment is what is now commonly called a transfer impact assessment.",
       reference: {
-        label: "CJEU, Case C-311/18 (Schrems II) — EUR-Lex",
+        label: "CJEU, Case C-311/18 (Schrems II): EUR-Lex",
         url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62018CJ0311",
       },
     },
@@ -311,7 +311,7 @@ export const iappCippEQuestions: PracticeQuestionSet = {
       explanation:
         "Article 5(3) requires consent for storing or accessing information on a user's device, except where it is solely for transmitting a communication or strictly necessary for a service the user explicitly requested. Where consent is needed, it must meet the GDPR standard: freely given, specific, informed and unambiguous.",
       reference: {
-        label: "ePrivacy Directive 2002/58/EC, Article 5(3) — EUR-Lex",
+        label: "ePrivacy Directive 2002/58/EC, Article 5(3): EUR-Lex",
         url: "https://eur-lex.europa.eu/eli/dir/2002/58/oj",
       },
     },

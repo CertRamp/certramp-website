@@ -8,7 +8,7 @@ import type { DeContent } from "@/config/types";
  * lower-case typo there ("einhaltung") is corrected.
  */
 const GUIDE = {
-  label: "Microsoft Learn – Studienleitfaden für SC-500",
+  label: "Microsoft Learn: Studienleitfaden für SC-500",
   url: "https://learn.microsoft.com/de-de/credentials/certifications/resources/study-guides/sc-500",
 };
 
@@ -203,7 +203,7 @@ export const sc500De: DeContent = {
     seo: {
       title: "SC-500 Übungsfragen mit Lösungen & Erklärungen (2026)",
       description:
-        "15 kostenlose, eigene SC-500-Übungsfragen zu Entra ID, Key Vault, Netzwerksicherheit, KI- und VM-Sicherheit, Defender for Cloud und Sentinel – erklärt.",
+        "15 kostenlose, eigene SC-500-Übungsfragen zu Entra ID, Key Vault, Netzwerksicherheit, KI- und VM-Sicherheit, Defender for Cloud und Sentinel: erklärt.",
     },
     questions: [
       /* ── Bereich 1: Verwalten von Identität, Zugriff und Governance ── */
@@ -249,7 +249,7 @@ export const sc500De: DeContent = {
         objective: "Implementieren von Governance zur Durchsetzung der Sicherheit und Einhaltung gesetzlicher Vorschriften",
         difficulty: "foundation",
         question:
-          "Administratoren sollen die Konfiguration eines virtuellen Produktionsnetzwerks weiterhin ändern können, aber niemand – nicht einmal ein Owner – soll es versehentlich löschen können, ohne zuvor einen Schutz zu entfernen. Was sollten Sie anwenden?",
+          "Administratoren sollen die Konfiguration eines virtuellen Produktionsnetzwerks weiterhin ändern können, aber niemand, nicht einmal ein Owner, soll es versehentlich löschen können, ohne zuvor einen Schutz zu entfernen. Was sollten Sie anwenden?",
         options: [
           { id: "A", text: "Eine ReadOnly-Ressourcensperre", rationale: "ReadOnly verhindert das Löschen, blockiert aber auch Konfigurationsänderungen, die Administratoren weiterhin vornehmen müssen." },
           { id: "B", text: "Eine Azure Policy-Zuweisung mit der Auswirkung „Audit“", rationale: "Audit meldet nur Nichtkonformität; verhindert wird dadurch nichts." },
@@ -415,7 +415,7 @@ export const sc500De: DeContent = {
         objective: "Implementieren von Sicherheit für Server und virtuelle Computer (VMs)",
         difficulty: "intermediate",
         question:
-          "Neue Azure-VMs sollen gegen Bootkits und Rootkits geschützt sein – mit sicherem Start (Secure Boot), einem virtuellen TPM und Überwachung der Startintegrität. Welche Einstellung sollten Sie beim Erstellen der VMs wählen?",
+          "Neue Azure-VMs sollen gegen Bootkits und Rootkits geschützt sein, mit sicherem Start (Secure Boot), einem virtuellen TPM und Überwachung der Startintegrität. Welche Einstellung sollten Sie beim Erstellen der VMs wählen?",
         options: [
           { id: "A", text: "Sicherheitstyp „Standard“ mit Azure Disk Encryption", rationale: "Die Datenträgerverschlüsselung schützt ruhende Daten; der Sicherheitstyp „Standard“ bietet weder sicheren Start noch vTPM." },
           { id: "B", text: "Sicherheitstyp „Vertrauenswürdiger Start“ (Trusted launch)", rationale: "Richtig. Der vertrauenswürdige Start aktiviert auf VMs der Generation 2 sicheren Start, ein virtuelles TPM und die Überwachung der Startintegrität." },

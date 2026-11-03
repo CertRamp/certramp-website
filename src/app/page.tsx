@@ -5,6 +5,7 @@ import { MethodologyGrid } from "@/components/marketing/Methodology";
 import { CategoryGrid } from "@/components/marketing/CategoryGrid";
 import { CertificationCard } from "@/components/marketing/CertificationCard";
 import { RampChart } from "@/components/marketing/RampChart";
+import { AuthorSection } from "@/components/marketing/AuthorSection";
 import { Reviews } from "@/components/marketing/Reviews";
 import { reviews } from "@/config/reviews";
 import { SHOW_PLACEHOLDERS } from "@/lib/placeholder";
@@ -19,10 +20,10 @@ import { getAllCertifications, getCatalogueStats, getFeaturedCertifications, get
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "CertRamp Learning — Progressive Certification Practice Exams",
+  title: "CertRamp Learning: Progressive Certification Practice Exams",
   absoluteTitle: true,
   description:
-    "Six practice tests that grow with you — from diagnostic to beyond exam level. Independent practice exams for Microsoft, AWS, ISACA, CompTIA, ISTQB, PMI and more.",
+    "Six practice tests that grow with you, from diagnostic to beyond exam level. Independent practice exams for Microsoft, AWS, ISACA, CompTIA, ISTQB, PMI and more.",
   path: "/",
 });
 
@@ -167,7 +168,7 @@ export default function HomePage() {
             id="method-title"
             eyebrow="The CertRamp methodology"
             title="Six tests that grow with you"
-            intro="Difficulty rises with every test. You start by finding your level, reach real exam level at Test 4, then go beyond it — so exam day is not the hardest test you take."
+            intro="Difficulty rises with every test. You start by finding your level, reach real exam level at Test 4, then go beyond it, so exam day is not the hardest test you take."
             className="lg:col-span-7"
           />
           <div className="lg:col-span-5 lg:justify-self-end">
@@ -223,8 +224,10 @@ export default function HomePage() {
         </Section>
       )}
 
+      <AuthorSection tone="surface" location="home" />
+
       {/* ── FAQ ──────────────────────────────────────────────────────────── */}
-      <Section tone={showReviews ? "white" : "surface"} labelledBy="faq-title">
+      <Section tone="white" labelledBy="faq-title">
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <SectionHeader id="faq-title" eyebrow="FAQ" title="Questions, answered" />

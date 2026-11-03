@@ -7,7 +7,7 @@ import type { ExamGuide } from "@/config/types";
 export const isacaAaismGuide: ExamGuide = {
   slug: "isaca-aaism",
   summary:
-    "ISACA AAISM (Advanced in AI Security Management) tests whether an experienced security manager can govern, risk-assess and secure AI systems across the organisation. The exam has 90 multiple-choice questions in 2.5 hours across three domains — AI Governance and Program Management (31%), AI Risk Management (31%) and AI Technologies and Controls (38%) — and only holders of an active CISM or CISSP can earn the credential.",
+    "ISACA AAISM (Advanced in AI Security Management) tests whether an experienced security manager can govern, risk-assess and secure AI systems across the organisation. The exam has 90 multiple-choice questions in 2.5 hours across three domains, AI Governance and Program Management (31%), AI Risk Management (31%) and AI Technologies and Controls (38%), and only holders of an active CISM or CISSP can earn the credential.",
   whoFor: [
     "CISM holders who want to extend their security management practice to AI systems",
     "CISSP holders responsible for AI security architecture, controls or assurance",
@@ -19,7 +19,7 @@ export const isacaAaismGuide: ExamGuide = {
       heading: "What AAISM actually tests",
       paragraphs: [
         "AAISM has three domains. AI Technologies and Controls carries the largest share at 38%; AI Governance and Program Management and AI Risk Management are worth 31% each. ISACA positions the credential as an advanced, AI-centric extension of security management, so it assumes you already know the fundamentals of CISM or CISSP.",
-        "The exam takes a management view. Expect situations in which you have to choose the right governance structure, risk response or control for an AI system — for example, who should own an AI use case, when to run an AI risk assessment, or which control limits prompt injection, data poisoning or model theft. Deep coding or data science skills are not the focus; knowing what each AI threat means for the business and how to control it is.",
+        "The exam takes a management view. Expect situations in which you have to choose the right governance structure, risk response or control for an AI system, for example, who should own an AI use case, when to run an AI risk assessment, or which control limits prompt injection, data poisoning or model theft. Deep coding or data science skills are not the focus; knowing what each AI threat means for the business and how to control it is.",
       ],
     },
     {
@@ -44,7 +44,7 @@ export const isacaAaismGuide: ExamGuide = {
         },
         {
           title: "Learn the AI life cycle and its threats",
-          body: "Understand how data is collected, models are trained, evaluated, deployed and monitored. For each stage, know the typical threats — data poisoning, prompt injection, evasion with adversarial inputs, model extraction, privacy attacks on training data, and supply chain risks in pre-trained models — and the control that fits.",
+          body: "Understand how data is collected, models are trained, evaluated, deployed and monitored. For each stage, know the typical threats: data poisoning, prompt injection, evasion with adversarial inputs, model extraction, privacy attacks on training data, and supply chain risks in pre-trained models, and the control that fits.",
         },
         {
           title: "Work through ISACA's official resources",
@@ -64,7 +64,7 @@ export const isacaAaismGuide: ExamGuide = {
       id: "question-style",
       heading: "How to approach the questions",
       paragraphs: [
-        "Prepare for questions that ask for the best, first or most important action. Several options are often technically possible; the right one is usually the answer that follows governance and risk principles — clear ownership, a risk assessment before a decision, controls proportional to the risk — rather than the most technical fix.",
+        "Prepare for questions that ask for the best, first or most important action. Several options are often technically possible; the right one is usually the answer that follows governance and risk principles (clear ownership, a risk assessment before a decision, controls proportional to the risk) rather than the most technical fix.",
       ],
     },
     {

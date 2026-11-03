@@ -31,7 +31,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
   "project-management-foundation-7th-edition": {
     featured: true,
     description:
-      "360 practice questions in six timed mock exams for the 7th edition Foundation exam of the widely used process-based project management method. Test 1 shows where you stand, Test 4 matches the real 60-question exam, and Tests 5 and 6 push beyond it — with an explanation for every answer option.",
+      "360 practice questions in six timed mock exams for the 7th edition Foundation exam of the widely used process-based project management method. Test 1 shows where you stand, Test 4 matches the real 60-question exam, and Tests 5 and 6 push beyond it, with an explanation for every answer option.",
     examOverview: [
       { label: "Exam provider", value: "PeopleCert" },
       { label: "Format", value: "60 multiple-choice questions, closed book" },
@@ -42,7 +42,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     ],
     sources: [
       {
-        label: "PeopleCert — Foundation exam page (7th edition)",
+        label: "PeopleCert: Foundation exam page (7th edition)",
         url: "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-2/PRINCE2-7-foundation-3579",
       },
       { label: "Official examination format", url: "https://www.prince2.com/usa/prince2-examination-format" },
@@ -50,7 +50,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     topics: [
       { title: "Principles", description: "The seven principles every project under the method must follow." },
       { title: "Practices", description: "Business case, organizing, plans, quality, risk, issues and progress." },
-      { title: "Processes", description: "From starting up a project to closing it — who does what, and when." },
+      { title: "Processes", description: "From starting up a project to closing it, who does what, and when." },
       { title: "People & tailoring", description: "Roles, people management and adapting the method to the context." },
     ],
     faq: [
@@ -62,7 +62,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     seo: {
       title: "PM Foundation (7th Edition) Practice Exams",
       description:
-        "360 practice questions in six timed mock exams for the 7th edition project management Foundation exam — from a diagnostic start to beyond exam level.",
+        "360 practice questions in six timed mock exams for the 7th edition project management Foundation exam, from a diagnostic start to beyond exam level.",
     },
     lastReviewed: CHECKED,
   },
@@ -74,10 +74,10 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     questionsPerTest: 70,
     examOverview: [
       { label: "Exam provider", value: "PeopleCert" },
-      { label: "Format", value: "Scenario-based objective testing — 56 questions and sub-questions worth 70 marks" },
+      { label: "Format", value: "Scenario-based objective testing: 56 questions and sub-questions worth 70 marks" },
       { label: "Duration", value: "150 minutes" },
       { label: "Pass mark", value: "60%" },
-      { label: "Book", value: "Open book — the official manual only" },
+      { label: "Book", value: "Open book: the official manual only" },
       {
         label: "Prerequisites",
         value: "The 7th edition Foundation or another qualifying certification (see PeopleCert for the full list)",
@@ -85,7 +85,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     ],
     sources: [
       {
-        label: "PeopleCert — Practitioner exam page (7th edition)",
+        label: "PeopleCert: Practitioner exam page (7th edition)",
         url: "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-2/PRINCE2-7-practitioner-3581",
       },
       { label: "Official examination format", url: "https://www.prince2.com/usa/prince2-examination-format" },
@@ -93,7 +93,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     seo: {
       title: "PM Practitioner (7th Edition) Practice Exams",
       description:
-        "Six full Practitioner mock exams with 420 scenario-based questions for the 7th edition project management method — apply it under exam conditions.",
+        "Six full Practitioner mock exams with 420 scenario-based questions for the 7th edition project management method: apply it under exam conditions.",
     },
     lastReviewed: CHECKED,
   },
@@ -105,7 +105,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     questionsPerTest: 45,
     // Verified 27 Oct 2026 against IREB syllabus 3.3.0, exam regulations 5.6.2 and fact sheet.
     exam: {
-      officialName: "Certified Professional for Requirements Engineering (CPRE) — Foundation Level",
+      officialName: "Certified Professional for Requirements Engineering (CPRE): Foundation Level",
       examVersion: "Syllabus 3.3.0 (1 April 2026)",
       questionCount: "Approx. 45",
       questionTypes: "Multiple choice: single choice (A), pick several (P) and true/false (K); 1–3 points per question",
@@ -113,7 +113,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       passingScore: "At least 70% of the total points",
       // Languages per IREB fact sheet 1.0.0 (exam language list).
       languages: ["English", "German", "Chinese", "Spanish", "French", "Italian", "Persian", "Dutch", "Polish", "Portuguese (Brazil)", "Russian", "Swedish"],
-      delivery: "Through IREB-licensed certification bodies, at exam centres or — with some bodies — remotely",
+      delivery: "Through IREB-licensed certification bodies, at exam centres or, with some bodies, remotely",
       prerequisites: "None",
       status: "current",
       officialCertificationUrl: "https://cpre.ireb.org/en",
@@ -127,10 +127,10 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { id: "d7", name: "Tool Support" },
       ],
       sources: [
-        { label: "IREB — CPRE Foundation Level syllabus 3.3.0 (PDF)", url: "https://hub.ireb.org/media/pages/resources/cpre-foundation-level-syllabus/9c084b1cfd-1787039954/cpre_foundationlevel_syllabus_en_v.3.3.0.pdf" },
-        { label: "IREB — Examination regulations 5.6.2 (PDF)", url: "https://hub.ireb.org/media/pages/resources/cpre-foundation-level-and-agile-primer-examination-regulations/a7858da873-1787039946/cpre_fl_and_primer_examination_regulations_en_v5.6.2.pdf" },
-        { label: "IREB — CPRE Foundation Level fact sheet (PDF)", url: "https://hub.ireb.org/media/pages/resources/cpre-foundation-level-fact-sheet/2c800f6747-1787039938/factsheet-cpre-fl-en.pdf" },
-        { label: "IREB — Certification bodies", url: "https://cpre.ireb.org/en/training-certification/certification-bodies" },
+        { label: "IREB: CPRE Foundation Level syllabus 3.3.0 (PDF)", url: "https://hub.ireb.org/media/pages/resources/cpre-foundation-level-syllabus/9c084b1cfd-1787039954/cpre_foundationlevel_syllabus_en_v.3.3.0.pdf" },
+        { label: "IREB: Examination regulations 5.6.2 (PDF)", url: "https://hub.ireb.org/media/pages/resources/cpre-foundation-level-and-agile-primer-examination-regulations/a7858da873-1787039946/cpre_fl_and_primer_examination_regulations_en_v5.6.2.pdf" },
+        { label: "IREB: CPRE Foundation Level fact sheet (PDF)", url: "https://hub.ireb.org/media/pages/resources/cpre-foundation-level-fact-sheet/2c800f6747-1787039938/factsheet-cpre-fl-en.pdf" },
+        { label: "IREB: Certification bodies", url: "https://cpre.ireb.org/en/training-certification/certification-bodies" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -170,29 +170,29 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { id: "d3", name: "Perform threat hunting", weight: "20–25%", objectives: ["Detect threats by using Microsoft Defender XDR", "Detect threats by using the Microsoft Sentinel platform"] },
       ],
       sources: [
-        { label: "Microsoft Learn — SC-200 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200" },
-        { label: "Microsoft Learn — Security Operations Analyst Associate", url: "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/" },
+        { label: "Microsoft Learn: SC-200 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200" },
+        { label: "Microsoft Learn: Security Operations Analyst Associate", url: "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/" },
       ],
       lastVerified: "2026-10-27",
     },
     seo: {
       title: "SC-200 Practice Exams: Security Operations Analyst",
       description:
-        "360 Microsoft SC-200 practice questions in six progressive mock exams — security operations, incident response and threat hunting, with full explanations.",
+        "360 Microsoft SC-200 practice questions in six progressive mock exams: security operations, incident response and threat hunting, with full explanations.",
     },
   },
 
   "isaca-aaism": {
     featured: true,
     description:
-      "540 practice questions in six mock exams for ISACA AAISM — Advanced in AI Security Management. Six tests of rising difficulty across AI governance, AI risk and AI security controls, with an explanation for every option.",
+      "540 practice questions in six mock exams for ISACA AAISM: Advanced in AI Security Management. Six tests of rising difficulty across AI governance, AI risk and AI security controls, with an explanation for every option.",
     fullName: "ISACA Advanced in AI Security Management (AAISM)",
     exam: {
       officialName: "ISACA Advanced in AI Security Management (AAISM)",
       questionCount: "90 multiple-choice questions",
       duration: "2.5 hours (150 minutes)",
       format: "Multiple choice",
-      delivery: "Administered through PSI — remotely proctored online or at an approved test centre (test centre only in India, Mainland China and Hong Kong)",
+      delivery: "Administered through PSI: remotely proctored online or at an approved test centre (test centre only in India, Mainland China and Hong Kong)",
       prerequisites:
         "An active CISM or CISSP. After passing: a one-time US$50 application processing fee and an application within five years of passing the exam. Maintenance: at least 10 CPE hours relevant to AAISM each year and 30 over the three-year cycle, an annual maintenance fee (US$20 for ISACA members, US$35 for non-members) and proof of an active CISM or CISSP.",
       status: "current",
@@ -204,26 +204,26 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { id: "d3", name: "AI Technologies and Controls", weight: "38%", objectives: ["AI security architecture and design", "AI life cycle (e.g., model selection, training, and validation)", "Data management controls", "Privacy, ethical, trust, and safety controls", "Security controls and monitoring"] },
       ],
       sources: [
-        { label: "ISACA — Get AAISM certified", url: "https://www.isaca.org/credentialing/aaism/get-aaism-certified" },
-        { label: "ISACA — Maintain AAISM certification", url: "https://www.isaca.org/credentialing/aaism/maintain-aaism-certification" },
+        { label: "ISACA: Get AAISM certified", url: "https://www.isaca.org/credentialing/aaism/get-aaism-certified" },
+        { label: "ISACA: Maintain AAISM certification", url: "https://www.isaca.org/credentialing/aaism/maintain-aaism-certification" },
         {
-          label: "ISACA Now blog — AAISM FAQs",
+          label: "ISACA Now blog: AAISM FAQs",
           url: "https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2025/isaca-advanced-in-ai-security-management-aaism-faqs",
         },
         {
-          label: "ISACA press release — AAISM launch (2025)",
+          label: "ISACA press release: AAISM launch (2025)",
           url: "https://www.isaca.org/about-us/newsroom/press-releases/2025/isaca-introduces-first-and-only-ai-centric-security-management-certification",
         },
         {
-          label: "ISACA Madrid Chapter — AAISM certification (questions, duration, domain weights, delivery)",
+          label: "ISACA Madrid Chapter: AAISM certification (questions, duration, domain weights, delivery)",
           url: "https://engage.isaca.org/madridchapter/certificaciones/certiaaism",
         },
         {
-          label: "ISACA Engage — AAISM beta exam (150 minutes, PSI scheduling)",
+          label: "ISACA Engage: AAISM beta exam (150 minutes, PSI scheduling)",
           url: "https://engage.isaca.org/volunteeropportunities/opportunities-list-public/volunteer-opportunity-details?VolunteerOpportunityKey=d7efd869-6467-45bc-81d2-01971787be05",
         },
-        { label: "ISACA — AAISM exam content outline", url: "https://www.isaca.org/credentialing/aaism/aaism-exam-content-outline" },
-        { label: "ISACA — Exam candidate guides", url: "https://www.isaca.org/credentialing/exam-candidate-guides" },
+        { label: "ISACA: AAISM exam content outline", url: "https://www.isaca.org/credentialing/aaism/aaism-exam-content-outline" },
+        { label: "ISACA: Exam candidate guides", url: "https://www.isaca.org/credentialing/exam-candidate-guides" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -236,7 +236,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "itsm-foundation-bridge-v5": {
     description:
-      "120 practice questions in six short mock exams for the version 5 Foundation Bridge exam — built for certificate holders upgrading from version 4. Focus on what changed, from a diagnostic start to beyond exam level.",
+      "120 practice questions in six short mock exams for the version 5 Foundation Bridge exam: built for certificate holders upgrading from version 4. Focus on what changed, from a diagnostic start to beyond exam level.",
     examOverview: [
       { label: "Exam provider", value: "PeopleCert" },
       { label: "Format", value: "20 multiple-choice questions, closed book" },
@@ -246,13 +246,13 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       { label: "Availability", value: "The Bridge exam is scheduled to be withdrawn on 31 December 2027" },
     ],
     sources: [
-      { label: "PeopleCert — Foundation Bridge (Version 5) exam page", url: "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-foundation-bridge-version-5-4158" },
-      { label: "PeopleCert — certification FAQ", url: "https://www.peoplecert.org/help-and-support/faq-itil" },
+      { label: "PeopleCert: Foundation Bridge (Version 5) exam page", url: "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-foundation-bridge-version-5-4158" },
+      { label: "PeopleCert: certification FAQ", url: "https://www.peoplecert.org/help-and-support/faq-itil" },
     ],
     seo: {
       title: "Foundation Bridge V5 Practice Exams",
       description:
-        "120 practice questions in six mock exams for the version 5 Foundation Bridge exam — for version 4 certificate holders upgrading to version 5.",
+        "120 practice questions in six mock exams for the version 5 Foundation Bridge exam, for version 4 certificate holders upgrading to version 5.",
     },
     lastReviewed: CHECKED,
   },
@@ -268,8 +268,8 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       { label: "Pass mark", value: "65%" },
     ],
     sources: [
-      { label: "PeopleCert — Foundation (Version 5) exam page", url: "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-5-foundation-version-50-4154" },
-      { label: "PeopleCert — certification FAQ", url: "https://www.peoplecert.org/help-and-support/faq-itil" },
+      { label: "PeopleCert: Foundation (Version 5) exam page", url: "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-5-foundation-version-50-4154" },
+      { label: "PeopleCert: certification FAQ", url: "https://www.peoplecert.org/help-and-support/faq-itil" },
     ],
     topics: [
       { title: "Product and service management concepts" },
@@ -280,14 +280,14 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     seo: {
       title: "ITSM Foundation V5 Practice Exams",
       description:
-        "240 practice questions in six mock exams for the version 5 IT service management Foundation exam — 40 questions per test, rising to beyond exam level.",
+        "240 practice questions in six mock exams for the version 5 IT service management Foundation exam: 40 questions per test, rising to beyond exam level.",
     },
     lastReviewed: CHECKED,
   },
 
   "iapp-aigp": {
     description:
-      "600 practice questions in six full mock exams for the IAPP AIGP — Artificial Intelligence Governance Professional. Practise all four domains of the AIGP body of knowledge, from your baseline to beyond exam level.",
+      "600 practice questions in six full mock exams for the IAPP AIGP: Artificial Intelligence Governance Professional. Practise all four domains of the AIGP body of knowledge, from your baseline to beyond exam level.",
     fullName: "IAPP Artificial Intelligence Governance Professional (AIGP)",
     exam: {
       officialName: "Artificial Intelligence Governance Professional (AIGP)",
@@ -346,21 +346,21 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         },
       ],
       sources: [
-        { label: "IAPP — AIGP certification", url: "https://iapp.org/certify/aigp" },
-        { label: "IAPP store — AIGP exam", url: "https://store.iapp.org/aigp-exam/" },
+        { label: "IAPP: AIGP certification", url: "https://iapp.org/certify/aigp" },
+        { label: "IAPP store: AIGP exam", url: "https://store.iapp.org/aigp-exam/" },
         {
-          label: "IAPP — AIGP body of knowledge and exam blueprint 2.1 (PDF)",
+          label: "IAPP: AIGP body of knowledge and exam blueprint 2.1 (PDF)",
           url: "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt0d33152fd20bc134/AIGP_Cert%20BOK.pdf",
         },
         {
-          label: "IAPP — Certification candidate handbook (PDF)",
+          label: "IAPP: Certification candidate handbook (PDF)",
           url: "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blteb8b5d531fd78971/IAPP-Certification_Handbook.pdf",
         },
         {
-          label: "IAPP — CPE policy (PDF)",
+          label: "IAPP: CPE policy (PDF)",
           url: "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt25df7f1b0d8c84f7/CPE_Policy.pdf",
         },
-        { label: "IAPP store — Certification maintenance fee", url: "https://store.iapp.org/certification-maintenance-fee" },
+        { label: "IAPP store: Certification maintenance fee", url: "https://store.iapp.org/certification-maintenance-fee" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -382,8 +382,8 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       { label: "Prerequisites", value: "None" },
     ],
     sources: [
-      { label: "PeopleCert — AI Governance (Version 5) exam page", url: "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-ai-governance-version-5-4234" },
-      { label: "PeopleCert — certification FAQ", url: "https://www.peoplecert.org/help-and-support/faq-itil" },
+      { label: "PeopleCert: AI Governance (Version 5) exam page", url: "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-ai-governance-version-5-4234" },
+      { label: "PeopleCert: certification FAQ", url: "https://www.peoplecert.org/help-and-support/faq-itil" },
     ],
     topics: [
       { title: "AI fundamentals, benefits and risks" },
@@ -394,7 +394,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     seo: {
       title: "AI Governance V5 Practice Exams",
       description:
-        "240 practice questions in six mock exams for PeopleCert's version 5 AI Governance exam — AI risk, governance models and regulation.",
+        "240 practice questions in six mock exams for PeopleCert's version 5 AI Governance exam: AI risk, governance models and regulation.",
     },
     lastReviewed: CHECKED,
   },
@@ -492,11 +492,11 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         },
       ],
       sources: [
-        { label: "ISC2 — CCSP exam", url: "https://www.isc2.org/certifications/ccsp/ccsp-exam" },
-        { label: "ISC2 — CCSP exam outline", url: "https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline" },
-        { label: "ISC2 — Computerized adaptive testing", url: "https://www.isc2.org/certifications/computerized-adaptive-testing" },
-        { label: "ISC2 — CCSP certification", url: "https://www.isc2.org/certifications/ccsp" },
-        { label: "ISC2 — CCSP experience requirements", url: "https://www.isc2.org/certifications/ccsp/ccsp-experience-requirements" },
+        { label: "ISC2: CCSP exam", url: "https://www.isc2.org/certifications/ccsp/ccsp-exam" },
+        { label: "ISC2: CCSP exam outline", url: "https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline" },
+        { label: "ISC2: Computerized adaptive testing", url: "https://www.isc2.org/certifications/computerized-adaptive-testing" },
+        { label: "ISC2: CCSP certification", url: "https://www.isc2.org/certifications/ccsp" },
+        { label: "ISC2: CCSP experience requirements", url: "https://www.isc2.org/certifications/ccsp/ccsp-experience-requirements" },
       ],
       lastVerified: "2026-10-01",
     },
@@ -509,7 +509,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     seo: {
       title: "CCSP Practice Exams (New 2026 ISC2 Exam Outline)",
       description:
-        "900 CCSP practice questions in six full-length mock exams, written to the ISC2 exam outline effective 1 August 2026 — from diagnostic to beyond exam level.",
+        "900 CCSP practice questions in six full-length mock exams, written to the ISC2 exam outline effective 1 August 2026, from diagnostic to beyond exam level.",
     },
   },
 
@@ -519,7 +519,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "pl-900": {
     description:
-      "Practice exams for Microsoft PL-900: Power Platform Fundamentals, written to the skills measured as of 24 July 2026 — Dataverse, Power Apps, Power Automate, administration and the new Copilot Studio agents. Find your gaps before the 45-minute exam.",
+      "Practice exams for Microsoft PL-900: Power Platform Fundamentals, written to the skills measured as of 24 July 2026 (Dataverse, Power Apps, Power Automate, administration and the new Copilot Studio agents). Find your gaps before the 45-minute exam.",
     fullName: "Microsoft Power Platform Fundamentals",
     exam: {
       officialName: "Microsoft Certified: Power Platform Fundamentals",
@@ -541,9 +541,9 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { id: "d5", name: "Describe features and capabilities of agents in Microsoft Copilot Studio", weight: "20–25%", objectives: ["Describe how to build agents in Copilot Studio", "Describe how to manage agents in Copilot Studio"] },
       ],
       sources: [
-        { label: "Microsoft Learn — PL-900 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900" },
-        { label: "Microsoft Learn — Power Platform Fundamentals certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/" },
-        { label: "Microsoft Learn — Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
+        { label: "Microsoft Learn: PL-900 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900" },
+        { label: "Microsoft Learn: Power Platform Fundamentals certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/" },
+        { label: "Microsoft Learn: Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -556,7 +556,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "md-102": {
     description:
-      "Practice exams for Microsoft MD-102: Endpoint Administrator, written to the skills measured as of 27 October 2026 — Intune enrollment, Autopilot, compliance, endpoint security, app management and Security Copilot agents. Check your level before the 100-minute exam.",
+      "Practice exams for Microsoft MD-102: Endpoint Administrator, written to the skills measured as of 27 October 2026 (Intune enrollment, Autopilot, compliance, endpoint security, app management and Security Copilot agents). Check your level before the 100-minute exam.",
     fullName: "Microsoft 365 Endpoint Administrator",
     exam: {
       officialName: "Microsoft 365 Certified: Endpoint Administrator Associate",
@@ -578,8 +578,8 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { id: "d5", name: "Optimize endpoint operations by using automation, monitoring, and reporting", weight: "10–15%", objectives: ["Automate management tasks", "Monitor and optimize health"] },
       ],
       sources: [
-        { label: "Microsoft Learn — MD-102 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102" },
-        { label: "Microsoft Learn — Endpoint Administrator Associate", url: "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/" },
+        { label: "Microsoft Learn: MD-102 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102" },
+        { label: "Microsoft Learn: Endpoint Administrator Associate", url: "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -592,7 +592,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "ai-103": {
     description:
-      "Practice exams for Microsoft AI-103: Developing AI Apps and Agents on Azure, the successor to the retired AI-102. Written to the skills measured as of 16 April 2026 — Foundry, generative AI and agents, RAG, vision, language and document extraction.",
+      "Practice exams for Microsoft AI-103: Developing AI Apps and Agents on Azure, the successor to the retired AI-102. Written to the skills measured as of 16 April 2026: Foundry, generative AI and agents, RAG, vision, language and document extraction.",
     fullName: "Developing AI Apps and Agents on Azure",
     exam: {
       officialName: "Microsoft Certified: Azure AI Apps and Agents Developer Associate",
@@ -613,9 +613,9 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { id: "d5", name: "Implement information extraction solutions", weight: "10–15%", objectives: ["Build retrieval and grounding pipelines", "Extract content from documents"] },
       ],
       sources: [
-        { label: "Microsoft Learn — AI-103 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103" },
-        { label: "Microsoft Learn — Azure AI Apps and Agents Developer Associate", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/" },
-        { label: "Microsoft Learn — Retired certification exams (AI-102: 30 June 2026)", url: "https://learn.microsoft.com/en-us/credentials/retired-certification-exams" },
+        { label: "Microsoft Learn: AI-103 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103" },
+        { label: "Microsoft Learn: Azure AI Apps and Agents Developer Associate", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/" },
+        { label: "Microsoft Learn, Retired certification exams (AI-102: 30 June 2026)", url: "https://learn.microsoft.com/en-us/credentials/retired-certification-exams" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -632,20 +632,20 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "ipma-level-d": {
     description:
-      "Practice exams for IPMA Level D (Certified Project Management Associate), written against the 28 project management competence elements of the IPMA Individual Competence Baseline ICB4 — Perspective, People and Practice. Available in English and German, they help you prepare for the written exams, including the PM-ZERT (GPM) format in Germany.",
-    fullName: "IPMA Level D — Certified Project Management Associate",
+      "Practice exams for IPMA Level D (Certified Project Management Associate), written against the 28 project management competence elements of the IPMA Individual Competence Baseline ICB4: Perspective, People and Practice. Available in English and German, they help you prepare for the written exams, including the PM-ZERT (GPM) format in Germany.",
+    fullName: "IPMA Level D: Certified Project Management Associate",
     // Verified 27 Oct 2026. Format details are for Germany (PM-ZERT / GPM); other IPMA member associations differ.
     exam: {
-      officialName: "IPMA Level D — Certified Project Management Associate",
+      officialName: "IPMA Level D: Certified Project Management Associate",
       examVersion: "IPMA Individual Competence Baseline ICB4; PM-ZERT Level D guide version 24 (valid from 1 August 2026)",
       duration: "Germany (PM-ZERT): two written exams of 90 minutes each, or one 90-minute written exam plus a report",
       format:
-        "Germany (PM-ZERT): Path 1 — one 90-minute written exam plus a report of up to 25 pages (plus up to 15 pages of appendix) and a feedback meeting of up to 20 minutes; Path 2 — two 90-minute written exams. The path cannot be changed after admission.",
+        "Germany (PM-ZERT): Path 1: one 90-minute written exam plus a report of up to 25 pages (plus up to 15 pages of appendix) and a feedback meeting of up to 20 minutes; Path 2: two 90-minute written exams. The path cannot be changed after admission.",
       passingScore: "Germany (PM-ZERT): 23 competence elements rated as fulfilled across all exam parts",
       languages: ["German", "English"],
       delivery: "Germany (PM-ZERT): in person or online via video conference (Zoom or Teams)",
       prerequisites:
-        "None — no project management experience or vocational training required (PM-ZERT). Certificate valid for five years; recertification with at least 175 hours of continuing professional development.",
+        "None, no project management experience or vocational training required (PM-ZERT). Certificate valid for five years; recertification with at least 175 hours of continuing professional development.",
       status: "current",
       officialCertificationUrl: "https://www.pm-zert.de/zertifizierungsprodukte/projektmanagement/ipma-level-d",
       domains: [
@@ -697,26 +697,26 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         },
       ],
       sources: [
-        { label: "PM-ZERT — IPMA Level D certification", url: "https://www.pm-zert.de/zertifizierungsprodukte/projektmanagement/ipma-level-d" },
-        { label: "PM-ZERT — Leitfaden Zertifizierung Level D, V24 (PDF)", url: "https://www.pm-zert.de/fileadmin/pm_zert_upload/Zertifizierung/Projektmanagement/Ab_September_2024/Z01D_Leitfaden-Level-D_V24.pdf" },
-        { label: "PM-ZERT — Leitfaden Allgemein für Zertifizierungen, V18 (PDF)", url: "https://www.pm-zert.de/fileadmin/pm_zert_upload/Zertifizierung/Projektmanagement/Ab_September_2024/Z01_Leitfaden-Allgemein-Zertifizierung.pdf" },
-        { label: "PM-ZERT — Leitfaden Online-Zertifizierung, V10 (PDF)", url: "https://www.pm-zert.de/fileadmin/pm_zert_upload/Zertifizierung/Projektmanagement/Ab_September_2024/Z01O_Leitfaden-Online-Zertifizierung.pdf" },
-        { label: "PM-ZERT — Leitfaden Level D Rezertifizierung, V07 (PDF)", url: "https://www.pm-zert.de/fileadmin/pm_zert_upload/Zertifizierung/Rezertifizierung/Ab_September_2024/Z01DRZ_Leitfaden-Rezertifzierung-Level-D.pdf" },
-        { label: "PM-ZERT (GPM) — General guide Level D–A, ICB4 competence elements (PDF)", url: "https://www.gpm-ipma.de/fileadmin/pm_zert_upload/Zertifizierung/Projektmanagement/Z01_PM_General_Guide_ICB4.pdf" },
-        { label: "IPMA — Individual certification", url: "https://ipma.world/individuals/certification/" },
+        { label: "PM-ZERT: IPMA Level D certification", url: "https://www.pm-zert.de/zertifizierungsprodukte/projektmanagement/ipma-level-d" },
+        { label: "PM-ZERT: Leitfaden Zertifizierung Level D, V24 (PDF)", url: "https://www.pm-zert.de/fileadmin/pm_zert_upload/Zertifizierung/Projektmanagement/Ab_September_2024/Z01D_Leitfaden-Level-D_V24.pdf" },
+        { label: "PM-ZERT: Leitfaden Allgemein für Zertifizierungen, V18 (PDF)", url: "https://www.pm-zert.de/fileadmin/pm_zert_upload/Zertifizierung/Projektmanagement/Ab_September_2024/Z01_Leitfaden-Allgemein-Zertifizierung.pdf" },
+        { label: "PM-ZERT: Leitfaden Online-Zertifizierung, V10 (PDF)", url: "https://www.pm-zert.de/fileadmin/pm_zert_upload/Zertifizierung/Projektmanagement/Ab_September_2024/Z01O_Leitfaden-Online-Zertifizierung.pdf" },
+        { label: "PM-ZERT: Leitfaden Level D Rezertifizierung, V07 (PDF)", url: "https://www.pm-zert.de/fileadmin/pm_zert_upload/Zertifizierung/Rezertifizierung/Ab_September_2024/Z01DRZ_Leitfaden-Rezertifzierung-Level-D.pdf" },
+        { label: "PM-ZERT (GPM): General guide Level D–A, ICB4 competence elements (PDF)", url: "https://www.gpm-ipma.de/fileadmin/pm_zert_upload/Zertifizierung/Projektmanagement/Z01_PM_General_Guide_ICB4.pdf" },
+        { label: "IPMA: Individual certification", url: "https://ipma.world/individuals/certification/" },
       ],
       lastVerified: "2026-10-27",
     },
     seo: {
       title: "IPMA Level D Practice Exams: ICB4 Exam Prep (2026)",
       description:
-        "IPMA Level D practice exams on the ICB4 competence elements — Perspective, People and Practice — in English and German, with full explanations.",
+        "IPMA Level D practice exams on the ICB4 competence elements (Perspective, People and Practice) in English and German, with full explanations.",
     },
   },
 
   "aws-aib-c01": {
     description:
-      "Practice exams for AWS AIB-C01: AWS Certified AI Business Strategist, written to the official AIB-C01 exam guide — AI fundamentals, AI strategy and business value, governance and responsible AI, and business readiness and transformation. Test your business judgement before the beta exam, with no coding required.",
+      "Practice exams for AWS AIB-C01: AWS Certified AI Business Strategist, written to the official AIB-C01 exam guide (AI fundamentals, AI strategy and business value, governance and responsible AI, and business readiness and transformation). Test your business judgement before the beta exam, with no coding required.",
     fullName: "AWS Certified AI Business Strategist",
     exam: {
       officialName: "AWS Certified AI Business Strategist",
@@ -741,10 +741,10 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { id: "d4", name: "Business Readiness, Leadership, and AI Transformation", weight: "24%", objectives: ["4.1 Assess AI business readiness and maturity", "4.2 Establish data and infrastructure foundations for AI", "4.3 Lead enterprise-wide change and build AI-ready workforce capabilities", "4.4 Scale AI from pilots to enterprise-wide deployments"] },
       ],
       sources: [
-        { label: "AWS — AWS Certified AI Business Strategist (beta exam)", url: "https://aws.amazon.com/certification/certified-ai-business-strategist/" },
-        { label: "AWS — AIB-C01 exam guide", url: "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html" },
-        { label: "AWS Training and Certification Blog — Introducing AWS Certified AI Business Strategist (1 September 2026)", url: "https://aws.amazon.com/blogs/training-and-certification/introducing-aws-certified-ai-business-strategist-built-for-the-people-who-scale-ai/" },
-        { label: "AWS — Before testing policies (beta exams)", url: "https://aws.amazon.com/certification/policies/before-testing/" },
+        { label: "AWS: AWS Certified AI Business Strategist (beta exam)", url: "https://aws.amazon.com/certification/certified-ai-business-strategist/" },
+        { label: "AWS: AIB-C01 exam guide", url: "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html" },
+        { label: "AWS Training and Certification Blog: Introducing AWS Certified AI Business Strategist (1 September 2026)", url: "https://aws.amazon.com/blogs/training-and-certification/introducing-aws-certified-ai-business-strategist-built-for-the-people-who-scale-ai/" },
+        { label: "AWS, Before testing policies (beta exams)", url: "https://aws.amazon.com/certification/policies/before-testing/" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -757,10 +757,10 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "cia-part-1": {
     description:
-      "Practice exams for CIA Part 1: Internal Audit Fundamentals, written to The IIA's 2025 CIA syllabus and the Global Internal Audit Standards — foundations of internal auditing, ethics and professionalism, governance, risk management and control, and fraud risks. Test yourself against the 125-question, 150-minute format before exam day.",
+      "Practice exams for CIA Part 1: Internal Audit Fundamentals, written to The IIA's 2025 CIA syllabus and the Global Internal Audit Standards (foundations of internal auditing, ethics and professionalism, governance, risk management and control, and fraud risks). Test yourself against the 125-question, 150-minute format before exam day.",
     fullName: "CIA Part 1: Internal Audit Fundamentals",
     exam: {
-      officialName: "Certified Internal Auditor (CIA) — Part 1: Internal Audit Fundamentals",
+      officialName: "Certified Internal Auditor (CIA), Part 1: Internal Audit Fundamentals",
       examCode: "CIA Part 1",
       examVersion: "2025 CIA exam syllabus (Expanded Test Specifications V2.09.2024), aligned with the Global Internal Audit Standards",
       questionCount: "125",
@@ -778,12 +778,12 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { id: "d4", name: "Fraud Risks", weight: "15%", objectives: ["D.1 Describe concepts of fraud risks and types of fraud", "D.2 Determine whether fraud risks require special consideration during an engagement", "D.3 Evaluate the potential for fraud and how the organization detects and manages fraud risks", "D.4 Describe controls to prevent and detect fraud", "D.5 Recognize techniques and the internal audit function's role related to fraud investigation"] },
       ],
       sources: [
-        { label: "The IIA — CIA Part 1 syllabus (Expanded Test Specifications)", url: "https://www.theiia.org/globalassets/site/certifications/certified-internal-auditor/cia-exam-why-how-and-what-is-changing/cia-part-1-syllabus.pdf" },
-        { label: "The IIA — Certified Internal Auditor (eligibility, programme time limits, languages)", url: "https://www.theiia.org/en/certifications/cia/" },
-        { label: "The IIA — CIA exam syllabus (2025)", url: "https://www.theiia.org/en/certifications/cia/exam-prep-resources/exam-syllabus/" },
-        { label: "The IIA — CIA Exam: Why and How It's Changing (questions and minutes per part)", url: "https://www.theiia.org/globalassets/site/certifications/certified-internal-auditor/cia-exam-why-how-and-what-is-changing/cia-exam-why-and-how-it-is-changing2.pdf" },
-        { label: "The IIA — Certification Candidate Handbook (scoring, retakes, Pearson VUE)", url: "https://www.theiia.org/globalassets/site/certifications/certification-candidate-handbook.pdf" },
-        { label: "The IIA — Global Internal Audit Standards", url: "https://www.theiia.org/en/standards/" },
+        { label: "The IIA: CIA Part 1 syllabus (Expanded Test Specifications)", url: "https://www.theiia.org/globalassets/site/certifications/certified-internal-auditor/cia-exam-why-how-and-what-is-changing/cia-part-1-syllabus.pdf" },
+        { label: "The IIA: Certified Internal Auditor (eligibility, programme time limits, languages)", url: "https://www.theiia.org/en/certifications/cia/" },
+        { label: "The IIA: CIA exam syllabus (2025)", url: "https://www.theiia.org/en/certifications/cia/exam-prep-resources/exam-syllabus/" },
+        { label: "The IIA, CIA Exam: Why and How It's Changing (questions and minutes per part)", url: "https://www.theiia.org/globalassets/site/certifications/certified-internal-auditor/cia-exam-why-how-and-what-is-changing/cia-exam-why-and-how-it-is-changing2.pdf" },
+        { label: "The IIA: Certification Candidate Handbook (scoring, retakes, Pearson VUE)", url: "https://www.theiia.org/globalassets/site/certifications/certification-candidate-handbook.pdf" },
+        { label: "The IIA: Global Internal Audit Standards", url: "https://www.theiia.org/en/standards/" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -796,10 +796,10 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "cia-part-2": {
     description:
-      "Practice exams for CIA Part 2: Internal Audit Engagement, written to The IIA's 2025 CIA syllabus and the Global Internal Audit Standards — engagement planning, gathering and evaluating evidence, data analytics, workpapers and supervision. Test yourself against the 100-question, 120-minute format before exam day.",
+      "Practice exams for CIA Part 2: Internal Audit Engagement, written to The IIA's 2025 CIA syllabus and the Global Internal Audit Standards (engagement planning, gathering and evaluating evidence, data analytics, workpapers and supervision). Test yourself against the 100-question, 120-minute format before exam day.",
     fullName: "CIA Part 2: Internal Audit Engagement",
     exam: {
-      officialName: "Certified Internal Auditor (CIA) — Part 2: Internal Audit Engagement",
+      officialName: "Certified Internal Auditor (CIA), Part 2: Internal Audit Engagement",
       examCode: "CIA Part 2",
       examVersion: "2025 CIA exam syllabus (Expanded Test Specifications V2.09.2024), aligned with the Global Internal Audit Standards",
       questionCount: "100",
@@ -816,12 +816,12 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { id: "d3", name: "Engagement Supervision and Communication", weight: "10%", objectives: ["C.1 Apply appropriate supervision throughout the engagement", "C.2 Apply appropriate communication with stakeholders throughout the engagement"] },
       ],
       sources: [
-        { label: "The IIA — CIA Part 2 syllabus (Expanded Test Specifications)", url: "https://www.theiia.org/globalassets/site/certifications/certified-internal-auditor/cia-exam-why-how-and-what-is-changing/cia-part-2-syllabus.pdf" },
-        { label: "The IIA — Certified Internal Auditor (eligibility, programme time limits, languages)", url: "https://www.theiia.org/en/certifications/cia/" },
-        { label: "The IIA — CIA exam syllabus (2025)", url: "https://www.theiia.org/en/certifications/cia/exam-prep-resources/exam-syllabus/" },
-        { label: "The IIA — CIA Exam: Why and How It's Changing (questions and minutes per part)", url: "https://www.theiia.org/globalassets/site/certifications/certified-internal-auditor/cia-exam-why-how-and-what-is-changing/cia-exam-why-and-how-it-is-changing2.pdf" },
-        { label: "The IIA — Certification Candidate Handbook (scoring, retakes, Pearson VUE)", url: "https://www.theiia.org/globalassets/site/certifications/certification-candidate-handbook.pdf" },
-        { label: "The IIA — Global Internal Audit Standards", url: "https://www.theiia.org/en/standards/" },
+        { label: "The IIA: CIA Part 2 syllabus (Expanded Test Specifications)", url: "https://www.theiia.org/globalassets/site/certifications/certified-internal-auditor/cia-exam-why-how-and-what-is-changing/cia-part-2-syllabus.pdf" },
+        { label: "The IIA: Certified Internal Auditor (eligibility, programme time limits, languages)", url: "https://www.theiia.org/en/certifications/cia/" },
+        { label: "The IIA: CIA exam syllabus (2025)", url: "https://www.theiia.org/en/certifications/cia/exam-prep-resources/exam-syllabus/" },
+        { label: "The IIA, CIA Exam: Why and How It's Changing (questions and minutes per part)", url: "https://www.theiia.org/globalassets/site/certifications/certified-internal-auditor/cia-exam-why-how-and-what-is-changing/cia-exam-why-and-how-it-is-changing2.pdf" },
+        { label: "The IIA: Certification Candidate Handbook (scoring, retakes, Pearson VUE)", url: "https://www.theiia.org/globalassets/site/certifications/certification-candidate-handbook.pdf" },
+        { label: "The IIA: Global Internal Audit Standards", url: "https://www.theiia.org/en/standards/" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -834,10 +834,10 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "cia-part-3": {
     description:
-      "Practice exams for CIA Part 3: Internal Audit Function, written to The IIA's 2025 CIA syllabus and the Global Internal Audit Standards — internal audit operations, the risk-based audit plan, quality assurance, and communicating results and monitoring action plans. Test yourself against the 100-question, 120-minute format before exam day.",
+      "Practice exams for CIA Part 3: Internal Audit Function, written to The IIA's 2025 CIA syllabus and the Global Internal Audit Standards (internal audit operations, the risk-based audit plan, quality assurance, and communicating results and monitoring action plans). Test yourself against the 100-question, 120-minute format before exam day.",
     fullName: "CIA Part 3: Internal Audit Function",
     exam: {
-      officialName: "Certified Internal Auditor (CIA) — Part 3: Internal Audit Function",
+      officialName: "Certified Internal Auditor (CIA), Part 3: Internal Audit Function",
       examCode: "CIA Part 3",
       examVersion: "2025 CIA exam syllabus (Expanded Test Specifications V2.09.2024), aligned with the Global Internal Audit Standards",
       questionCount: "100",
@@ -855,12 +855,12 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { id: "d4", name: "Engagement Results and Monitoring", weight: "45%", objectives: ["D.1 Recognize attributes of effective engagement results communication", "D.2 Demonstrate effective communication of engagement results", "D.3 Determine whether to develop recommendations, request action plans from management, or collaborate with management to agree on actions", "D.4 Describe the engagement closing communication and reporting process", "D.5 Describe the chief audit executive's responsibility for assessing residual risk for the engagement", "D.6 Describe the process for communicating risk acceptance (when management has accepted a level of risk that may be unacceptable to the organization)", "D.7 Describe the process for monitoring and confirming the implementation of management action plans", "D.8 Describe the escalation process if management has not adequately implemented an action plan"] },
       ],
       sources: [
-        { label: "The IIA — CIA Part 3 syllabus (Expanded Test Specifications)", url: "https://www.theiia.org/globalassets/site/certifications/certified-internal-auditor/cia-exam-why-how-and-what-is-changing/cia-part-3-syllabus.pdf" },
-        { label: "The IIA — Certified Internal Auditor (eligibility, programme time limits, languages)", url: "https://www.theiia.org/en/certifications/cia/" },
-        { label: "The IIA — CIA exam syllabus (2025)", url: "https://www.theiia.org/en/certifications/cia/exam-prep-resources/exam-syllabus/" },
-        { label: "The IIA — CIA Exam: Why and How It's Changing (questions and minutes per part)", url: "https://www.theiia.org/globalassets/site/certifications/certified-internal-auditor/cia-exam-why-how-and-what-is-changing/cia-exam-why-and-how-it-is-changing2.pdf" },
-        { label: "The IIA — Certification Candidate Handbook (scoring, retakes, Pearson VUE)", url: "https://www.theiia.org/globalassets/site/certifications/certification-candidate-handbook.pdf" },
-        { label: "The IIA — Global Internal Audit Standards", url: "https://www.theiia.org/en/standards/" },
+        { label: "The IIA: CIA Part 3 syllabus (Expanded Test Specifications)", url: "https://www.theiia.org/globalassets/site/certifications/certified-internal-auditor/cia-exam-why-how-and-what-is-changing/cia-part-3-syllabus.pdf" },
+        { label: "The IIA: Certified Internal Auditor (eligibility, programme time limits, languages)", url: "https://www.theiia.org/en/certifications/cia/" },
+        { label: "The IIA: CIA exam syllabus (2025)", url: "https://www.theiia.org/en/certifications/cia/exam-prep-resources/exam-syllabus/" },
+        { label: "The IIA, CIA Exam: Why and How It's Changing (questions and minutes per part)", url: "https://www.theiia.org/globalassets/site/certifications/certified-internal-auditor/cia-exam-why-how-and-what-is-changing/cia-exam-why-and-how-it-is-changing2.pdf" },
+        { label: "The IIA: Certification Candidate Handbook (scoring, retakes, Pearson VUE)", url: "https://www.theiia.org/globalassets/site/certifications/certification-candidate-handbook.pdf" },
+        { label: "The IIA: Global Internal Audit Standards", url: "https://www.theiia.org/en/standards/" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -944,21 +944,21 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         },
       ],
       sources: [
-        { label: "IAPP — CIPP/E certification", url: "https://iapp.org/certify/cippe/" },
-        { label: "IAPP store — CIPP/E exam", url: "https://store.iapp.org/cipp-e-exam/" },
+        { label: "IAPP: CIPP/E certification", url: "https://iapp.org/certify/cippe/" },
+        { label: "IAPP store: CIPP/E exam", url: "https://store.iapp.org/cipp-e-exam/" },
         {
-          label: "IAPP — CIPP/E body of knowledge and exam blueprint 1.3.3 (PDF)",
+          label: "IAPP: CIPP/E body of knowledge and exam blueprint 1.3.3 (PDF)",
           url: "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blte39ae9567661b3d2/IAPP_Training-CIPPE_BOK.pdf",
         },
         {
-          label: "IAPP — Certification candidate handbook (PDF)",
+          label: "IAPP: Certification candidate handbook (PDF)",
           url: "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blteb8b5d531fd78971/IAPP-Certification_Handbook.pdf",
         },
         {
-          label: "IAPP — CPE policy (PDF)",
+          label: "IAPP: CPE policy (PDF)",
           url: "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt25df7f1b0d8c84f7/CPE_Policy.pdf",
         },
-        { label: "IAPP store — Certification maintenance fee", url: "https://store.iapp.org/certification-maintenance-fee" },
+        { label: "IAPP store: Certification maintenance fee", url: "https://store.iapp.org/certification-maintenance-fee" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -971,7 +971,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "ai-901": {
     description:
-      "Practice exams for Microsoft AI-901: Azure AI Fundamentals, the successor to AI-900, written to the skills measured as of 15 April 2026 — responsible AI, generative AI and agents, speech, vision and information extraction with Microsoft Foundry. Find your gaps before you book.",
+      "Practice exams for Microsoft AI-901: Azure AI Fundamentals, the successor to AI-900, written to the skills measured as of 15 April 2026 (responsible AI, generative AI and agents, speech, vision and information extraction with Microsoft Foundry). Find your gaps before you book.",
     fullName: "Microsoft Azure AI Fundamentals",
     exam: {
       officialName: "Microsoft Certified: Azure AI Fundamentals",
@@ -988,11 +988,11 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { id: "d2", name: "Implement AI solutions by using Microsoft Foundry", weight: "55–60%", objectives: ["Implement generative AI apps and agents by using Foundry", "Implement AI solutions for text and speech by using Foundry", "Implement AI solutions with computer vision and image-generation capabilities by using Foundry", "Implement AI solutions for information extraction by using Foundry"] },
       ],
       sources: [
-        { label: "Microsoft Learn — AI-901 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901" },
-        { label: "Microsoft Learn — Exam AI-901", url: "https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-901/" },
-        { label: "Microsoft Learn — Azure AI Fundamentals certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/" },
-        { label: "Microsoft Learn — Retired certification exams (AI-900: 30 June 2026)", url: "https://learn.microsoft.com/en-us/credentials/retired-certification-exams" },
-        { label: "Microsoft Learn — Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
+        { label: "Microsoft Learn: AI-901 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901" },
+        { label: "Microsoft Learn: Exam AI-901", url: "https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-901/" },
+        { label: "Microsoft Learn: Azure AI Fundamentals certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/" },
+        { label: "Microsoft Learn, Retired certification exams (AI-900: 30 June 2026)", url: "https://learn.microsoft.com/en-us/credentials/retired-certification-exams" },
+        { label: "Microsoft Learn: Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -1005,7 +1005,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "az-104": {
     description:
-      "Practice exams for Microsoft AZ-104: Azure Administrator, written to the skills measured as of 17 April 2026 — Entra ID and governance, storage, VMs, containers and App Service, virtual networking, monitoring and backup. Check your level before the 100-minute exam.",
+      "Practice exams for Microsoft AZ-104: Azure Administrator, written to the skills measured as of 17 April 2026 (Entra ID and governance, storage, VMs, containers and App Service, virtual networking, monitoring and backup). Check your level before the 100-minute exam.",
     fullName: "Microsoft Azure Administrator",
     exam: {
       officialName: "Microsoft Certified: Azure Administrator Associate",
@@ -1027,10 +1027,10 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { id: "d5", name: "Monitor and maintain Azure resources", weight: "10–15%", objectives: ["Monitor resources in Azure", "Implement backup and recovery"] },
       ],
       sources: [
-        { label: "Microsoft Learn — AZ-104 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104" },
-        { label: "Microsoft Learn — Azure Administrator Associate certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/" },
-        { label: "Microsoft Learn — Exam duration and exam experience", url: "https://learn.microsoft.com/en-us/credentials/support/exam-duration-exam-experience" },
-        { label: "Microsoft Learn — Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
+        { label: "Microsoft Learn: AZ-104 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104" },
+        { label: "Microsoft Learn: Azure Administrator Associate certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/" },
+        { label: "Microsoft Learn: Exam duration and exam experience", url: "https://learn.microsoft.com/en-us/credentials/support/exam-duration-exam-experience" },
+        { label: "Microsoft Learn: Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -1043,7 +1043,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "nvidia-nca-genl": {
     description:
-      "Practice exams for the NVIDIA-Certified Associate: Generative AI LLMs (NCA-GENL), written to the five weighted exam topics NVIDIA publishes — core ML and AI knowledge, data analysis, experimentation, software development and trustworthy AI. Check your understanding of transformers, RAG, prompt engineering, fine-tuning and NVIDIA inference tooling before the 1-hour exam.",
+      "Practice exams for the NVIDIA-Certified Associate: Generative AI LLMs (NCA-GENL), written to the five weighted exam topics NVIDIA publishes (core ML and AI knowledge, data analysis, experimentation, software development and trustworthy AI). Check your understanding of transformers, RAG, prompt engineering, fine-tuning and NVIDIA inference tooling before the 1-hour exam.",
     fullName: "NVIDIA-Certified Associate: Generative AI LLMs",
     // Verified 27 Oct 2026 against nvidia.com (exam page, certification FAQ) and the
     // official NCA-GENL study guide PDF (footer "Jan25"). Delivery details come from the
@@ -1054,7 +1054,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       questionCount: "50–60",
       duration: "1 hour",
       format: "Multiple choice",
-      passingScore: "Pass/fail — NVIDIA does not report a score",
+      passingScore: "Pass/fail: NVIDIA does not report a score",
       languages: ["English"],
       delivery: "Registration via a Certiverse account; NVIDIA's FAQ describes remotely proctored online exams (secure browser, camera and audio monitoring, no breaks)",
       prerequisites: "No formal prerequisites; a basic understanding of generative AI and large language models is recommended. Valid for two years; recertify by retaking the exam.",
@@ -1132,9 +1132,9 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         },
       ],
       sources: [
-        { label: "NVIDIA — NCA-GENL Generative AI LLMs certification exam", url: "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/" },
-        { label: "NVIDIA — Certification FAQs and exam policies", url: "https://www.nvidia.com/en-us/learn/certification/" },
-        { label: "NVIDIA — NCA-GENL exam study guide (PDF)", url: "https://dam-cdn.nvd.orangelogic.com/AssetLink/ik3amm6oy7871nv371600i4h7drvex5m.pdf" },
+        { label: "NVIDIA: NCA-GENL Generative AI LLMs certification exam", url: "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/" },
+        { label: "NVIDIA: Certification FAQs and exam policies", url: "https://www.nvidia.com/en-us/learn/certification/" },
+        { label: "NVIDIA: NCA-GENL exam study guide (PDF)", url: "https://dam-cdn.nvd.orangelogic.com/AssetLink/ik3amm6oy7871nv371600i4h7drvex5m.pdf" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -1151,7 +1151,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "comptia-security-plus-sy0-701": {
     description:
-      "Practice exams for CompTIA Security+ SY0-701 (V7), written to the official exam objectives (V7) — security controls, threats and mitigations, architecture, security operations and governance. SY0-701 retires on 11 June 2027 in English and 13 August 2027 in the other languages; its successor SY0-801 (V8) is expected to launch on or around 17 November 2026.",
+      "Practice exams for CompTIA Security+ SY0-701 (V7), written to the official exam objectives (V7): security controls, threats and mitigations, architecture, security operations and governance. SY0-701 retires on 11 June 2027 in English and 13 August 2027 in the other languages; its successor SY0-801 (V8) is expected to launch on or around 17 November 2026.",
     fullName: "CompTIA Security+ (SY0-701)",
     exam: {
       officialName: "CompTIA Security+",
@@ -1234,11 +1234,11 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         },
       ],
       sources: [
-        { label: "CompTIA — Security+ V7 (SY0-701) exam details", url: "https://www.comptia.org/en-us/certifications/security/v7/" },
-        { label: "CompTIA — Security+ SY0-701 V7 Exam Objectives (PDF)", url: "https://lecbyo.files.cmp.optimizely.com/download/cf25ec24b8a511ef9ecbb69c0f9687be" },
-        { label: "CompTIA — Security+ V8 (SY0-801), expected on or around 17 November 2026", url: "https://www.comptia.org/en-us/certifications/security/v8/" },
-        { label: "CompTIA — How long does the Security+ certification last?", url: "https://www.comptia.org/en-us/blog/how-long-does-the-comptia-security-certification-last/" },
-        { label: "CompTIA — CE renewal cycle", url: "https://www.comptia.org/en-us/resources/ce/learn/how-to-renew/ce-renewal-cycle/" },
+        { label: "CompTIA: Security+ V7 (SY0-701) exam details", url: "https://www.comptia.org/en-us/certifications/security/v7/" },
+        { label: "CompTIA: Security+ SY0-701 V7 Exam Objectives (PDF)", url: "https://lecbyo.files.cmp.optimizely.com/download/cf25ec24b8a511ef9ecbb69c0f9687be" },
+        { label: "CompTIA: Security+ V8 (SY0-801), expected on or around 17 November 2026", url: "https://www.comptia.org/en-us/certifications/security/v8/" },
+        { label: "CompTIA: How long does the Security+ certification last?", url: "https://www.comptia.org/en-us/blog/how-long-does-the-comptia-security-certification-last/" },
+        { label: "CompTIA: CE renewal cycle", url: "https://www.comptia.org/en-us/resources/ce/learn/how-to-renew/ce-renewal-cycle/" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -1251,7 +1251,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "az-900": {
     description:
-      "Practice exams for Microsoft AZ-900: Azure Fundamentals, written to the skills measured as of 20 July 2026 — cloud concepts, Azure architecture and services, and management and governance. Find your gaps before the 45-minute exam.",
+      "Practice exams for Microsoft AZ-900: Azure Fundamentals, written to the skills measured as of 20 July 2026 (cloud concepts, Azure architecture and services, and management and governance). Find your gaps before the 45-minute exam.",
     fullName: "Microsoft Azure Fundamentals",
     // Verified 27 Oct 2026 against Microsoft Learn (study guide, certification page, exam page, renewal page).
     exam: {
@@ -1272,9 +1272,9 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { id: "d3", name: "Describe Azure management and governance", weight: "30–35%", objectives: ["Describe cost management in Azure", "Describe features and tools in Azure for governance and compliance", "Describe features and tools for managing and deploying Azure resources", "Describe monitoring tools in Azure"] },
       ],
       sources: [
-        { label: "Microsoft Learn — AZ-900 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900" },
-        { label: "Microsoft Learn — Azure Fundamentals certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/" },
-        { label: "Microsoft Learn — Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
+        { label: "Microsoft Learn: AZ-900 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900" },
+        { label: "Microsoft Learn: Azure Fundamentals certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/" },
+        { label: "Microsoft Learn: Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -1287,7 +1287,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "sc-300": {
     description:
-      "Practice exams for Microsoft SC-300: Identity and Access Administrator, written to the skills measured as of 28 October 2026 — Microsoft Entra user and hybrid identities, authentication and Conditional Access, Global Secure Access, workload identities and identity governance. Check your level before the 100-minute exam.",
+      "Practice exams for Microsoft SC-300: Identity and Access Administrator, written to the skills measured as of 28 October 2026 (Microsoft Entra user and hybrid identities, authentication and Conditional Access, Global Secure Access, workload identities and identity governance). Check your level before the 100-minute exam.",
     fullName: "Microsoft Identity and Access Administrator",
     // Verified 27 Oct 2026 against Microsoft Learn (study guide + certification page).
     // Note: the study guide's "Skills at a glance" gives d2 as 25–30%, its detailed heading says 20–25%; the summary figure is used.
@@ -1310,9 +1310,9 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { id: "d4", name: "Plan and automate identity governance", weight: "20–25%", objectives: ["Plan and implement entitlement management in Microsoft Entra", "Plan, implement, and manage access reviews in Microsoft Entra", "Plan and implement privileged access", "Monitor identity activity by using logs, workbooks, and reports"] },
       ],
       sources: [
-        { label: "Microsoft Learn — SC-300 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300" },
-        { label: "Microsoft Learn — Identity and Access Administrator Associate", url: "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/" },
-        { label: "Microsoft Learn — Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
+        { label: "Microsoft Learn: SC-300 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300" },
+        { label: "Microsoft Learn: Identity and Access Administrator Associate", url: "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/" },
+        { label: "Microsoft Learn: Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -1325,7 +1325,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "ab-100": {
     description:
-      "Practice exams for Microsoft AB-100: Agentic AI Business Solutions Architect, written to the skills measured as of 16 November 2026 — AI strategy and ROI, agent design in Copilot Studio, Microsoft 365 Copilot and Microsoft Foundry, ALM, testing and responsible AI. Find your gaps before you book the Expert-level exam.",
+      "Practice exams for Microsoft AB-100: Agentic AI Business Solutions Architect, written to the skills measured as of 16 November 2026 (AI strategy and ROI, agent design in Copilot Studio, Microsoft 365 Copilot and Microsoft Foundry, ALM, testing and responsible AI). Find your gaps before you book the Expert-level exam.",
     fullName: "Agentic AI Business Solutions Architect",
     // Verified 27 Oct 2026 against Microsoft Learn (study guide, exam page, certification page).
     // Exam duration is not stated on any AB-100 page, so it is left out.
@@ -1346,10 +1346,10 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { id: "d3", name: "Deploy AI-powered business solutions", weight: "20–25%", objectives: ["Analyze, monitor, and tune AI-powered business solutions", "Manage the testing of AI-powered business solutions", "Design the ALM process for AI-powered business solutions", "Design responsible AI, security, governance, risk management, and compliance"] },
       ],
       sources: [
-        { label: "Microsoft Learn — AB-100 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100" },
-        { label: "Microsoft Learn — Exam AB-100", url: "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/" },
-        { label: "Microsoft Learn — Agentic AI Business Solutions Architect Expert", url: "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/" },
-        { label: "Microsoft Learn — Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
+        { label: "Microsoft Learn, AB-100 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100" },
+        { label: "Microsoft Learn: Exam AB-100", url: "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/" },
+        { label: "Microsoft Learn: Agentic AI Business Solutions Architect Expert", url: "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/" },
+        { label: "Microsoft Learn: Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -1443,21 +1443,21 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         },
       ],
       sources: [
-        { label: "IAPP — CIPM certification", url: "https://iapp.org/certify/cipm" },
-        { label: "IAPP store — CIPM exam", url: "https://store.iapp.org/cipm-exam/" },
+        { label: "IAPP: CIPM certification", url: "https://iapp.org/certify/cipm" },
+        { label: "IAPP store: CIPM exam", url: "https://store.iapp.org/cipm-exam/" },
         {
-          label: "IAPP — CIPM body of knowledge and exam blueprint 4.2.0 (PDF)",
+          label: "IAPP: CIPM body of knowledge and exam blueprint 4.2.0 (PDF)",
           url: "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt39d7942c0a9a9f0f/CIPM_BoK_EBP.pdf",
         },
         {
-          label: "IAPP — Certification candidate handbook (PDF)",
+          label: "IAPP: Certification candidate handbook (PDF)",
           url: "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blteb8b5d531fd78971/IAPP-Certification_Handbook.pdf",
         },
         {
-          label: "IAPP — CPE policy (PDF)",
+          label: "IAPP: CPE policy (PDF)",
           url: "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt25df7f1b0d8c84f7/CPE_Policy.pdf",
         },
-        { label: "IAPP store — Certification maintenance fee", url: "https://store.iapp.org/certification-maintenance-fee" },
+        { label: "IAPP store: Certification maintenance fee", url: "https://store.iapp.org/certification-maintenance-fee" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -1470,7 +1470,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "google-cloud-agentic-architect": {
     description:
-      "Practice exams for the Google Cloud Professional Agentic Architect certification, written against the five sections of the official exam guide and the current Gemini Enterprise Agent Platform product names — low-code agents, coding agents, custom agents with ADK, evaluation and deployment, and agent security. Check your level before the 3-hour multiple-choice exam (beta format, about 80 questions).",
+      "Practice exams for the Google Cloud Professional Agentic Architect certification, written against the five sections of the official exam guide and the current Gemini Enterprise Agent Platform product names: low-code agents, coding agents, custom agents with ADK, evaluation and deployment, and agent security. Check your level before the 3-hour multiple-choice exam (beta format, about 80 questions).",
     fullName: "Google Cloud Certified Professional Agentic Architect",
     exam: {
       officialName: "Professional Agentic Architect",
@@ -1492,9 +1492,9 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { id: "d5", name: "Securing and governing agentic workflows", weight: "~15%", objectives: ["5.1 Configuring agent security and governance", "5.2 Implementing secure agent behavior and execution"] },
       ],
       sources: [
-        { label: "Google Cloud — Professional Agentic Architect certification", url: "https://cloud.google.com/learn/certification/agentic-architect" },
-        { label: "Google Cloud — Professional Agentic Architect exam guide (PDF)", url: "https://services.google.com/fh/files/misc/professional_agentic_architect_exam_guide_english.pdf" },
-        { label: "Google Cloud — Gemini Enterprise Agent Platform name changes", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/vertex-ai-name-changes" },
+        { label: "Google Cloud: Professional Agentic Architect certification", url: "https://cloud.google.com/learn/certification/agentic-architect" },
+        { label: "Google Cloud: Professional Agentic Architect exam guide (PDF)", url: "https://services.google.com/fh/files/misc/professional_agentic_architect_exam_guide_english.pdf" },
+        { label: "Google Cloud: Gemini Enterprise Agent Platform name changes", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/vertex-ai-name-changes" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -1507,7 +1507,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "istqb-ctal-ta": {
     description:
-      "Practice exams for the ISTQB Certified Tester Advanced Level Test Analyst (CTAL-TA), written to syllabus v4.0 — test analyst tasks, risk-based testing, data-, behaviour- and rule-based test techniques, quality characteristics and defect prevention. Check your level before the 45-question, 120-minute exam.",
+      "Practice exams for the ISTQB Certified Tester Advanced Level Test Analyst (CTAL-TA), written to syllabus v4.0: test analyst tasks, risk-based testing, data-, behaviour- and rule-based test techniques, quality characteristics and defect prevention. Check your level before the 45-question, 120-minute exam.",
     fullName: "ISTQB Certified Tester Advanced Level Test Analyst",
     // Verified 27 Oct 2026 against istqb.org (certification page, CTAL-TA v4.0 syllabus, LO new vs. old syllabus,
     // Exam Structures and Rules v1.2, Exam Structure and Rules Tables v1.19, v4.0 FAQ and v3.1 retirement page).
@@ -1598,13 +1598,13 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         },
       ],
       sources: [
-        { label: "ISTQB — Certified Tester Advanced Level Test Analyst (CTAL-TA)", url: "https://istqb.org/certifications/certified-tester-advanced-level-test-analyst/" },
-        { label: "ISTQB — CTAL-TA Syllabus v4.0 (PDF)", url: "https://www.istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf" },
-        { label: "ISTQB — CTAL-TA Learning Objectives, new vs. old syllabus (PDF)", url: "https://istqb.org/?sdm_process_download=1&download_id=6363" },
-        { label: "ISTQB — Exam Structure and Rules Tables v1.19 (PDF)", url: "https://istqb.org/?sdm_process_download=1&download_id=3832" },
-        { label: "ISTQB — Exam Structures and Rules v1.2 (PDF)", url: "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB_Exam-Structures-and-Rules_v1.2.pdf" },
-        { label: "ISTQB — CTAL-TA v4.0 FAQ", url: "https://istqb.org/help/test-analyst/" },
-        { label: "ISTQB — CTAL-TA v3.1 retirement", url: "https://istqb.org/certifications/certified-tester-advanced-level-test-analyst-retiring/" },
+        { label: "ISTQB: Certified Tester Advanced Level Test Analyst (CTAL-TA)", url: "https://istqb.org/certifications/certified-tester-advanced-level-test-analyst/" },
+        { label: "ISTQB: CTAL-TA Syllabus v4.0 (PDF)", url: "https://www.istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf" },
+        { label: "ISTQB: CTAL-TA Learning Objectives, new vs. old syllabus (PDF)", url: "https://istqb.org/?sdm_process_download=1&download_id=6363" },
+        { label: "ISTQB: Exam Structure and Rules Tables v1.19 (PDF)", url: "https://istqb.org/?sdm_process_download=1&download_id=3832" },
+        { label: "ISTQB: Exam Structures and Rules v1.2 (PDF)", url: "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB_Exam-Structures-and-Rules_v1.2.pdf" },
+        { label: "ISTQB: CTAL-TA v4.0 FAQ", url: "https://istqb.org/help/test-analyst/" },
+        { label: "ISTQB: CTAL-TA v3.1 retirement", url: "https://istqb.org/certifications/certified-tester-advanced-level-test-analyst-retiring/" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -1617,7 +1617,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "istqb-ct-genai": {
     description:
-      "Practice exams for the ISTQB Certified Tester Testing with Generative AI (CT-GenAI), written to syllabus v1.1 — GenAI and LLM basics, prompt engineering for test tasks, hallucinations and data privacy risks, RAG and agents, and adopting GenAI in a test organisation. Check your level before the 40-question, 60-minute exam.",
+      "Practice exams for the ISTQB Certified Tester Testing with Generative AI (CT-GenAI), written to syllabus v1.1: GenAI and LLM basics, prompt engineering for test tasks, hallucinations and data privacy risks, RAG and agents, and adopting GenAI in a test organisation. Check your level before the 40-question, 60-minute exam.",
     fullName: "ISTQB Certified Tester Testing with Generative AI",
     // Verified 27 Oct 2026 against istqb.org (certification page, v1.1 announcement, Exam Structures and Rules v1.2,
     // Exam Structure and Rules Tables v1.19) and the ISTQB CT-GenAI syllabus (v1.0 EN, v1.1 FR revision history).
@@ -1709,11 +1709,11 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         },
       ],
       sources: [
-        { label: "ISTQB — Certified Tester Testing with Generative AI (CT-GenAI)", url: "https://istqb.org/certifications/gen-ai/" },
-        { label: "ISTQB — Minor update to CT-GenAI (v1.1)", url: "https://istqb.org/istqb-announces-minor-update-to-certified-tester-testing-with-generative-ai-ct-genai/" },
-        { label: "ISTQB — CT-GenAI launch press release", url: "https://istqb.org/istqb-certified-tester-specialist-level-testing-with-generative-ai-ct-genai-press-release/" },
-        { label: "ISTQB — Exam Structure and Rules Tables v1.19 (PDF)", url: "https://istqb.org/?sdm_process_download=1&download_id=3832" },
-        { label: "ISTQB — Exam Structures and Rules v1.2 (PDF)", url: "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB_Exam-Structures-and-Rules_v1.2.pdf" },
+        { label: "ISTQB: Certified Tester Testing with Generative AI (CT-GenAI)", url: "https://istqb.org/certifications/gen-ai/" },
+        { label: "ISTQB: Minor update to CT-GenAI (v1.1)", url: "https://istqb.org/istqb-announces-minor-update-to-certified-tester-testing-with-generative-ai-ct-genai/" },
+        { label: "ISTQB: CT-GenAI launch press release", url: "https://istqb.org/istqb-certified-tester-specialist-level-testing-with-generative-ai-ct-genai-press-release/" },
+        { label: "ISTQB: Exam Structure and Rules Tables v1.19 (PDF)", url: "https://istqb.org/?sdm_process_download=1&download_id=3832" },
+        { label: "ISTQB: Exam Structures and Rules v1.2 (PDF)", url: "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB_Exam-Structures-and-Rules_v1.2.pdf" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -1730,10 +1730,10 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "aws-mla-c02": {
     description:
-      "Practice exams for AWS MLA-C02: AWS Certified Machine Learning Engineer – Associate, written to the official MLA-C02 exam guide that replaces MLA-C01. Covers data preparation, model and foundation model development, deployment and orchestration, and operating, monitoring and securing ML and AI solutions — including Amazon SageMaker AI, Amazon Bedrock, RAG and agents.",
-    fullName: "AWS Certified Machine Learning Engineer – Associate",
+      "Practice exams for AWS MLA-C02: AWS Certified Machine Learning Engineer (Associate, written to the official MLA-C02 exam guide that replaces MLA-C01). Covers data preparation, model and foundation model development, deployment and orchestration, and operating, monitoring and securing ML and AI solutions, including Amazon SageMaker AI, Amazon Bedrock, RAG and agents.",
+    fullName: "AWS Certified Machine Learning Engineer: Associate",
     exam: {
-      officialName: "AWS Certified Machine Learning Engineer – Associate",
+      officialName: "AWS Certified Machine Learning Engineer: Associate",
       examCode: "MLA-C02",
       examVersion: "MLA-C02 exam guide (beta exam; successor to MLA-C01)",
       questionCount: "85 questions in the beta exam; the exam guide specifies 50 scored and 15 unscored questions",
@@ -1795,23 +1795,23 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         },
       ],
       sources: [
-        { label: "AWS — AWS Certified Machine Learning Engineer – Associate", url: "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/" },
-        { label: "AWS — MLA-C02 exam guide", url: "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html" },
-        { label: "AWS — Comparison of MLA-C01 and MLA-C02", url: "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/mla-02-comparison.html" },
-        { label: "AWS Training and Certification Blog — Certification updates: September 2026 (1 September 2026)", url: "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/" },
+        { label: "AWS, AWS Certified Machine Learning Engineer, Associate", url: "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/" },
+        { label: "AWS: MLA-C02 exam guide", url: "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html" },
+        { label: "AWS: Comparison of MLA-C01 and MLA-C02", url: "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/mla-02-comparison.html" },
+        { label: "AWS Training and Certification Blog, Certification updates: September 2026 (1 September 2026)", url: "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/" },
       ],
       lastVerified: "2026-10-27",
     },
     seo: {
       title: "MLA-C02 Practice Exams: AWS ML Engineer Associate (2026)",
       description:
-        "MLA-C02 practice exams for AWS Certified Machine Learning Engineer – Associate: data prep, SageMaker AI, Bedrock, RAG, agents, MLOps and security, explained.",
+        "MLA-C02 practice exams for AWS Certified Machine Learning Engineer (Associate: data prep, SageMaker AI, Bedrock, RAG, agents, MLOps and security, explained).",
     },
   },
 
   "cfe": {
     description:
-      "Practice exams for the ACFE Certified Fraud Examiner (CFE) exam, written to the new three-section exam that launched on 2 June 2026 — Fraud Schemes and Financial Crimes, Fraud Investigations and Legal Issues, and Fraud Prevention and Deterrence. Find your weak areas before you start your 60-day eligibility window, where you need at least 75% in every section.",
+      "Practice exams for the ACFE Certified Fraud Examiner (CFE) exam, written to the new three-section exam that launched on 2 June 2026: Fraud Schemes and Financial Crimes, Fraud Investigations and Legal Issues, and Fraud Prevention and Deterrence. Find your weak areas before you start your 60-day eligibility window, where you need at least 75% in every section.",
     fullName: "Certified Fraud Examiner (CFE)",
     exam: {
       officialName: "Certified Fraud Examiner (CFE)",
@@ -1835,12 +1835,12 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { id: "d3", name: "Fraud Prevention and Deterrence", objectives: ["Why people commit fraud", "Corporate governance", "The role of managers and auditors in combatting fraud", "How to conduct a fraud risk assessment", "How to manage fraud risk and build an effective fraud prevention program", "Ethical considerations in fraud examination"] },
       ],
       sources: [
-        { label: "ACFE — 2026 CFE Exam Update (sections, questions, time, transition)", url: "https://www.acfe.com/cfe-credential/about-the-cfe-exam/2026-cfe-exam-update" },
-        { label: "ACFE — About the CFE Exam (delivery, 60-day window)", url: "https://www.acfe.com/cfe-credential/about-the-cfe-exam" },
-        { label: "ACFE — CFE Exam FAQs (passing score, language, retakes)", url: "https://www.acfe.com/cfe-credential/about-the-cfe-exam/cfe-exam-faqs" },
-        { label: "ACFE — CFE Exam Content Outline", url: "https://www.acfe.com/cfe-credential/about-the-cfe-exam/exam-blueprint" },
-        { label: "ACFE — CFE Credential Eligibility", url: "https://www.acfe.com/cfe-credential/eligibility" },
-        { label: "ACFE — CPE requirements", url: "https://www.acfe.com/cfe-credential/continuing-professional-education-cpe-requirements" },
+        { label: "ACFE: 2026 CFE Exam Update (sections, questions, time, transition)", url: "https://www.acfe.com/cfe-credential/about-the-cfe-exam/2026-cfe-exam-update" },
+        { label: "ACFE: About the CFE Exam (delivery, 60-day window)", url: "https://www.acfe.com/cfe-credential/about-the-cfe-exam" },
+        { label: "ACFE: CFE Exam FAQs (passing score, language, retakes)", url: "https://www.acfe.com/cfe-credential/about-the-cfe-exam/cfe-exam-faqs" },
+        { label: "ACFE: CFE Exam Content Outline", url: "https://www.acfe.com/cfe-credential/about-the-cfe-exam/exam-blueprint" },
+        { label: "ACFE: CFE Credential Eligibility", url: "https://www.acfe.com/cfe-credential/eligibility" },
+        { label: "ACFE: CPE requirements", url: "https://www.acfe.com/cfe-credential/continuing-professional-education-cpe-requirements" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -1853,7 +1853,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "giac-gaips": {
     description:
-      "Practice exams for GIAC AI Platform Security (GAIPS), written against GIAC's eight published exam certification objectives — agentic systems, LLM foundations, application architecture, infrastructure, risk management, MLOps, retrieval and model customisation. Test yourself before the 54-question, 2-hour exam.",
+      "Practice exams for GIAC AI Platform Security (GAIPS), written against GIAC's eight published exam certification objectives: agentic systems, LLM foundations, application architecture, infrastructure, risk management, MLOps, retrieval and model customisation. Test yourself before the 54-question, 2-hour exam.",
     fullName: "GIAC AI Platform Security (GAIPS)",
     exam: {
       officialName: "GIAC AI Platform Security (GAIPS)",
@@ -1878,10 +1878,10 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { id: "d8", name: "Model Customization and Alignment" },
       ],
       sources: [
-        { label: "GIAC — AI Platform Security (GAIPS)", url: "https://www.giac.org/certifications/ai-security-platform-security-gaips" },
-        { label: "GIAC — Proctored exams and open book guidelines", url: "https://www.giac.org/knowledge-base/proctor" },
-        { label: "GIAC — How to renew", url: "https://giac.org/renewal/how-to-renew" },
-        { label: "SANS — SEC545: GenAI and LLM Application Security", url: "https://www.sans.org/cyber-security-courses/genai-llm-application-security-5day" },
+        { label: "GIAC: AI Platform Security (GAIPS)", url: "https://www.giac.org/certifications/ai-security-platform-security-gaips" },
+        { label: "GIAC: Proctored exams and open book guidelines", url: "https://www.giac.org/knowledge-base/proctor" },
+        { label: "GIAC: How to renew", url: "https://giac.org/renewal/how-to-renew" },
+        { label: "SANS (SEC545: GenAI and LLM Application Security)", url: "https://www.sans.org/cyber-security-courses/genai-llm-application-security-5day" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -1894,7 +1894,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "ccna-200-301": {
     description:
-      "Practice exams for Cisco CCNA 200-301 (Implementing and Administering Cisco Solutions). v1.1 can be taken until 2 February 2027 and v2.0 goes live on 3 February 2027; the domains below follow the official v2.0 exam topics — addressing and subnetting, switching, OSPF, NAT, ACLs, Layer 2 security and AI in network operations. Check your level before the 120-minute exam.",
+      "Practice exams for Cisco CCNA 200-301 (Implementing and Administering Cisco Solutions). v1.1 can be taken until 2 February 2027 and v2.0 goes live on 3 February 2027; the domains below follow the official v2.0 exam topics: addressing and subnetting, switching, OSPF, NAT, ACLs, Layer 2 security and AI in network operations. Check your level before the 120-minute exam.",
     fullName: "Cisco Certified Network Associate (CCNA)",
     exam: {
       officialName: "Cisco Certified Network Associate (CCNA)",
@@ -1976,11 +1976,11 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         },
       ],
       sources: [
-        { label: "Cisco — 200-301 CCNA v2.0 exam topics (PDF)", url: "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf" },
-        { label: "Cisco — 200-301 CCNA v1.1 exam topics (PDF)", url: "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf" },
-        { label: "Cisco Learning blog — Stay on track: get certified before the CCNA refresh", url: "https://blogs.cisco.com/learning/stay-on-track-get-certified-before-the-ccna-refresh" },
-        { label: "Cisco — CCNA certification", url: "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html" },
-        { label: "Cisco — 200-301 CCNA exam", url: "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html" },
+        { label: "Cisco: 200-301 CCNA v2.0 exam topics (PDF)", url: "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf" },
+        { label: "Cisco: 200-301 CCNA v1.1 exam topics (PDF)", url: "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf" },
+        { label: "Cisco Learning blog (Stay on track: get certified before the CCNA refresh)", url: "https://blogs.cisco.com/learning/stay-on-track-get-certified-before-the-ccna-refresh" },
+        { label: "Cisco: CCNA certification", url: "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html" },
+        { label: "Cisco: 200-301 CCNA exam", url: "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -1993,7 +1993,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "sc-900": {
     description:
-      "Practice exams for Microsoft SC-900: Security, Compliance, and Identity Fundamentals, written to the skills measured as of 21 October 2026 — security and identity concepts, Microsoft Entra, Defender for Cloud, Sentinel, Defender XDR and Microsoft Purview. Find your gaps before the 45-minute exam.",
+      "Practice exams for Microsoft SC-900: Security, Compliance, and Identity Fundamentals, written to the skills measured as of 21 October 2026 (security and identity concepts, Microsoft Entra, Defender for Cloud, Sentinel, Defender XDR and Microsoft Purview). Find your gaps before the 45-minute exam.",
     fullName: "Microsoft Security, Compliance, and Identity Fundamentals",
     // Verified 27 Oct 2026 against Microsoft Learn (study guide, certification page, exam page, renewal page).
     exam: {
@@ -2015,9 +2015,9 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { id: "d4", name: "Describe the capabilities of Microsoft compliance solutions", weight: "20–25%", objectives: ["Describe Microsoft Service Trust Portal and privacy principles", "Describe compliance management capabilities of Microsoft Purview", "Describe information protection, data lifecycle management, and data governance capabilities of Microsoft Purview", "Describe insider risk, eDiscovery, and audit capabilities in Microsoft Purview"] },
       ],
       sources: [
-        { label: "Microsoft Learn — SC-900 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900" },
-        { label: "Microsoft Learn — Security, Compliance, and Identity Fundamentals certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/" },
-        { label: "Microsoft Learn — Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
+        { label: "Microsoft Learn: SC-900 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900" },
+        { label: "Microsoft Learn: Security, Compliance, and Identity Fundamentals certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/" },
+        { label: "Microsoft Learn: Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -2030,7 +2030,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "sc-500": {
     description:
-      "Practice exams for Microsoft SC-500: Implementing End-to-End Security Controls for Cloud and AI Workloads, the exam for the Cloud and AI Security Engineer Associate certification that follows the retired AZ-500. Written to the current SC-500 study guide — identity and governance, storage, databases and networking, compute and AI security, Defender for Cloud, Sentinel and Security Copilot.",
+      "Practice exams for Microsoft SC-500: Implementing End-to-End Security Controls for Cloud and AI Workloads, the exam for the Cloud and AI Security Engineer Associate certification that follows the retired AZ-500. Written to the current SC-500 study guide: identity and governance, storage, databases and networking, compute and AI security, Defender for Cloud, Sentinel and Security Copilot.",
     fullName: "Microsoft Cloud and AI Security Engineer Associate",
     // Verified 27 Oct 2026 against Microsoft Learn (study guide, certification page, retired exams list,
     // Partner Center announcement of 6 May 2026, renewal page). The study guide publishes no
@@ -2054,11 +2054,11 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { id: "d4", name: "Manage and monitor security posture", weight: "20–25%", objectives: ["Manage security posture by using Defender for Cloud", "Implement activity and event collection in Microsoft Sentinel", "Implement Microsoft Security Copilot"] },
       ],
       sources: [
-        { label: "Microsoft Learn — SC-500 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500" },
-        { label: "Microsoft Learn — Cloud and AI Security Engineer Associate", url: "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/" },
-        { label: "Microsoft Partner Center — May 2026 announcements (AZ-500 transitions to SC-500)", url: "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may" },
-        { label: "Microsoft Learn — Azure Security Engineer Associate (retired 31 August 2026)", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-security-engineer/" },
-        { label: "Microsoft Learn — Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
+        { label: "Microsoft Learn: SC-500 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500" },
+        { label: "Microsoft Learn: Cloud and AI Security Engineer Associate", url: "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/" },
+        { label: "Microsoft Partner Center: May 2026 announcements (AZ-500 transitions to SC-500)", url: "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may" },
+        { label: "Microsoft Learn: Azure Security Engineer Associate (retired 31 August 2026)", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-security-engineer/" },
+        { label: "Microsoft Learn: Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -2071,7 +2071,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "capm": {
     description:
-      "Practice exams for the PMI Certified Associate in Project Management (CAPM), written to PMI's CAPM Examination Content Outline (2023 exam update) — project fundamentals, predictive and agile methods, and business analysis. Check your level before the 150-question, 3-hour exam.",
+      "Practice exams for the PMI Certified Associate in Project Management (CAPM), written to PMI's CAPM Examination Content Outline (2023 exam update): project fundamentals, predictive and agile methods, and business analysis. Check your level before the 150-question, 3-hour exam.",
     fullName: "Certified Associate in Project Management (CAPM)",
     exam: {
       officialName: "Certified Associate in Project Management (CAPM)",
@@ -2135,11 +2135,11 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         },
       ],
       sources: [
-        { label: "PMI — CAPM Examination Content Outline (2023 exam update)", url: "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/capm-exam-content-outline-english.pdf" },
-        { label: "PMI — CAPM 2023 Exam Update FAQ", url: "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/faq-capm-exam-change-2023-final-chapters-volunteers.pdf" },
-        { label: "PMI — Certification Handbook (revised June 2026)", url: "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/generic-certification-handbook.pdf" },
-        { label: "PMI — Continuing Certification Requirements Handbook (April 2026)", url: "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/ccr-certification-requirements-handbook.pdf" },
-        { label: "PMI — CAPM certification", url: "https://www.pmi.org/certifications/certified-associate-capm" },
+        { label: "PMI: CAPM Examination Content Outline (2023 exam update)", url: "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/capm-exam-content-outline-english.pdf" },
+        { label: "PMI: CAPM 2023 Exam Update FAQ", url: "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/faq-capm-exam-change-2023-final-chapters-volunteers.pdf" },
+        { label: "PMI: Certification Handbook (revised June 2026)", url: "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/generic-certification-handbook.pdf" },
+        { label: "PMI: Continuing Certification Requirements Handbook (April 2026)", url: "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/ccr-certification-requirements-handbook.pdf" },
+        { label: "PMI: CAPM certification", url: "https://www.pmi.org/certifications/certified-associate-capm" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -2152,7 +2152,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "ai-200": {
     description:
-      "Practice exams for Microsoft AI-200: Developing AI Cloud Solutions on Azure, the new developer associate exam, introduced as AZ-204 retired on 31 July 2026. Written to the skills measured as of 7 October 2026 — containers, vector search in Cosmos DB, PostgreSQL and Redis, messaging, Functions, Key Vault and monitoring. Check your level before the 120-minute exam.",
+      "Practice exams for Microsoft AI-200: Developing AI Cloud Solutions on Azure, the new developer associate exam, introduced as AZ-204 retired on 31 July 2026. Written to the skills measured as of 7 October 2026: containers, vector search in Cosmos DB, PostgreSQL and Redis, messaging, Functions, Key Vault and monitoring. Check your level before the 120-minute exam.",
     fullName: "Developing AI Cloud Solutions on Azure",
     // Verified 27 Oct 2026 against Microsoft Learn (study guide, certification page, retired-exams list).
     // The exam page /exams/ai-200/ could not be retrieved; duration and languages come from the certification page.
@@ -2176,10 +2176,10 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { id: "d4", name: "Secure, monitor, and troubleshoot Azure solutions", weight: "20–25%", objectives: ["Implement secure Azure solutions", "Monitor and troubleshoot Azure solutions"] },
       ],
       sources: [
-        { label: "Microsoft Learn — AI-200 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200" },
-        { label: "Microsoft Learn — Azure AI Cloud Developer Associate", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/" },
-        { label: "Microsoft Learn — Retired certification exams (AZ-204: 31 July 2026)", url: "https://learn.microsoft.com/en-us/credentials/retired-certification-exams" },
-        { label: "Microsoft Learn — Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
+        { label: "Microsoft Learn: AI-200 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200" },
+        { label: "Microsoft Learn: Azure AI Cloud Developer Associate", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/" },
+        { label: "Microsoft Learn, Retired certification exams (AZ-204: 31 July 2026)", url: "https://learn.microsoft.com/en-us/credentials/retired-certification-exams" },
+        { label: "Microsoft Learn: Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -2192,7 +2192,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "dp-600": {
     description:
-      "Practice exams for Microsoft DP-600: Implementing Analytics Solutions Using Microsoft Fabric, written to the skills measured as of 19 October 2026 — security and governance, deployment pipelines, lakehouses, warehouses and eventhouses, SQL, KQL and DAX, and semantic models with Direct Lake. Find your gaps before the 100-minute exam.",
+      "Practice exams for Microsoft DP-600: Implementing Analytics Solutions Using Microsoft Fabric, written to the skills measured as of 19 October 2026 (security and governance, deployment pipelines, lakehouses, warehouses and eventhouses, SQL, KQL and DAX, and semantic models with Direct Lake). Find your gaps before the 100-minute exam.",
     fullName: "Microsoft Fabric Analytics Engineer",
     // Verified 27 Oct 2026 against Microsoft Learn (study guide, exam page, certification page).
     exam: {
@@ -2213,10 +2213,10 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { id: "d3", name: "Implement and manage semantic models", weight: "25–30%", objectives: ["Design and build semantic models", "Optimize enterprise-scale semantic models"] },
       ],
       sources: [
-        { label: "Microsoft Learn — DP-600 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600" },
-        { label: "Microsoft Learn — Exam DP-600", url: "https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-600/" },
-        { label: "Microsoft Learn — Fabric Analytics Engineer Associate", url: "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/" },
-        { label: "Microsoft Learn — Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
+        { label: "Microsoft Learn: DP-600 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600" },
+        { label: "Microsoft Learn: Exam DP-600", url: "https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-600/" },
+        { label: "Microsoft Learn: Fabric Analytics Engineer Associate", url: "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/" },
+        { label: "Microsoft Learn: Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
       ],
       lastVerified: "2026-10-27",
     },
@@ -2229,7 +2229,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "ab-620": {
     description:
-      "Practice exams for Microsoft AB-620: Designing and Building Integrated AI Agent Solutions in Copilot Studio, written against the current Microsoft study guide (last updated 16 October 2026) — agent planning, agent flows and topics, MCP and REST tools, multi-agent solutions, Azure integration, evaluation and ALM. Check your level before the 120-minute exam.",
+      "Practice exams for Microsoft AB-620: Designing and Building Integrated AI Agent Solutions in Copilot Studio, written against the current Microsoft study guide (last updated 16 October 2026). Covers agent planning, agent flows and topics, MCP and REST tools, multi-agent solutions, Azure integration, evaluation and ALM. Check your level before the 120-minute exam.",
     fullName: "AI Agent Builder Associate (Copilot Studio)",
     // Verified 27 Oct 2026 against Microsoft Learn (study guide, certification page).
     // The exam page /exams/ab-620/ could not be retrieved; duration and languages come from the certification page.
@@ -2251,9 +2251,9 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { id: "d3", name: "Test and manage agents", weight: "20–25%", objectives: ["Evaluate agent performance", "Implement application lifecycle management (ALM) for agents in Copilot Studio"] },
       ],
       sources: [
-        { label: "Microsoft Learn — AB-620 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620" },
-        { label: "Microsoft Learn — AI Agent Builder Associate", url: "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/" },
-        { label: "Microsoft Learn — Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
+        { label: "Microsoft Learn, AB-620 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620" },
+        { label: "Microsoft Learn: AI Agent Builder Associate", url: "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/" },
+        { label: "Microsoft Learn: Renew your certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification" },
       ],
       lastVerified: "2026-10-27",
     },

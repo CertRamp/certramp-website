@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AuthorSection } from "@/components/marketing/AuthorSection";
 import Link from "@/components/ui/Link";
 import { notFound } from "next/navigation";
 import { CertCta, UdemyCta } from "@/components/certification/CertCta";
@@ -147,7 +148,7 @@ export default async function PracticeQuestionsPage({ params }: { params: Promis
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-white/70">
             The full CertRamp {cert.name} practice exams
             {cert.questionCount ? ` have ${cert.questionCount} questions in ${cert.practiceExamCount} tests` : ` have ${cert.practiceExamCount} tests`} that
-            grow with you — from a diagnostic start to an exam-level Test 4 and a challenge set beyond the exam, with an explanation
+            grow with you, from a diagnostic start to an exam-level Test 4 and a challenge set beyond the exam, with an explanation
             for every option.
           </p>
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -168,6 +169,8 @@ export default async function PracticeQuestionsPage({ params }: { params: Promis
         <SectionHeader id="more-title" eyebrow="Keep preparing" title={`More ${cert.name} preparation`} />
         <StudyResources cert={cert} current="questions" className="mt-10" />
       </Section>
+
+      <AuthorSection tone="white" certSlug={cert.slug} location="questions" />
 
       <section aria-label="Disclaimer" className="bg-white py-14">
         <div className="container-page">

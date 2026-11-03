@@ -6,19 +6,19 @@ import type { PracticeQuestionSet } from "@/config/types";
  * paid practice exams, not recalled exam content, and not presented as real exam questions.
  */
 const FRAUD_TREE = {
-  label: "ACFE — Fraud Tree (Occupational Fraud and Abuse Classification System)",
+  label: "ACFE: Fraud Tree (Occupational Fraud and Abuse Classification System)",
   url: "https://www.acfe.com/fraud-resources/fraud-risk-tools---coso/-/media/f7c3fc57fa5c46009eda18414bed130f.ashx",
 };
 const CODE_STANDARDS = {
-  label: "ACFE — CFE Code of Professional Standards",
+  label: "ACFE: CFE Code of Professional Standards",
   url: "https://www.acfe.com/~/-/media/E805D87A1E144558BF27A7F4B0B8317B.ashx",
 };
 const REPORT_NATIONS = {
-  label: "ACFE — Occupational Fraud 2026: A Report to the Nations",
+  label: "ACFE (Occupational Fraud 2026: A Report to the Nations)",
   url: "https://www.acfe.com/report-to-the-nations",
 };
 const FEM_CHAPTER = {
-  label: "ACFE — Fraud Examiners Manual sample chapter: Planning and Conducting a Fraud Examination",
+  label: "ACFE (Fraud Examiners Manual sample chapter: Planning and Conducting a Fraud Examination)",
   url: "https://cms.acfe.com/-/media/files/acfe/word-documents/fem_samplechapter_planning_and_conducting_2026.pdf",
 };
 
@@ -31,7 +31,7 @@ export const cfeQuestions: PracticeQuestionSet = {
   seo: {
     title: "CFE Practice Questions with Answers & Explanations (2026)",
     description:
-      "15 free, original CFE practice questions on fraud schemes, investigations, legal issues and fraud prevention — each with a full explanation.",
+      "15 free, original CFE practice questions on fraud schemes, investigations, legal issues and fraud prevention, each with a full explanation.",
   },
   questions: [
     /* ── Section 1: Fraud Schemes and Financial Crimes ────────────────────── */
@@ -61,10 +61,10 @@ export const cfeQuestions: PracticeQuestionSet = {
       question:
         "A payroll clerk adds a fictitious person to the payroll system and has the salary paid into a bank account she controls. Which category of fraudulent disbursement is this?",
       options: [
-        { id: "A", text: "Payroll scheme — ghost employee", rationale: "Correct. A ghost employee is someone on the payroll who does not work for the organisation, with the pay going to the fraudster." },
-        { id: "B", text: "Expense reimbursement scheme — fictitious expenses", rationale: "Expense reimbursement schemes involve claims for business expenses, not salary payments." },
-        { id: "C", text: "Billing scheme — shell company", rationale: "A shell company scheme uses a fictitious vendor and false invoices, not a fictitious employee." },
-        { id: "D", text: "Payroll scheme — commission scheme", rationale: "Commission schemes inflate the commission of a real salesperson; no fictitious person is involved." },
+        { id: "A", text: "Payroll scheme: ghost employee", rationale: "Correct. A ghost employee is someone on the payroll who does not work for the organisation, with the pay going to the fraudster." },
+        { id: "B", text: "Expense reimbursement scheme: fictitious expenses", rationale: "Expense reimbursement schemes involve claims for business expenses, not salary payments." },
+        { id: "C", text: "Billing scheme: shell company", rationale: "A shell company scheme uses a fictitious vendor and false invoices, not a fictitious employee." },
+        { id: "D", text: "Payroll scheme: commission scheme", rationale: "Commission schemes inflate the commission of a real salesperson; no fictitious person is involved." },
       ],
       answer: "A",
       explanation:
@@ -97,10 +97,10 @@ export const cfeQuestions: PracticeQuestionSet = {
       question:
         "After a procurement manager awards a contract to a supplier through a fair and properly documented process, the supplier gives her an expensive holiday as a thank-you. Nothing was promised beforehand. In the Fraud Tree, this is best classified as:",
       options: [
-        { id: "A", text: "Bribery — invoice kickback", rationale: "Bribery involves offering something of value to influence a decision. Here nothing was offered before the decision." },
+        { id: "A", text: "Bribery: invoice kickback", rationale: "Bribery involves offering something of value to influence a decision. Here nothing was offered before the decision." },
         { id: "B", text: "An illegal gratuity", rationale: "Correct. An illegal gratuity is something of value given to reward a decision after it has been made, with no prior agreement to influence it." },
         { id: "C", text: "Economic extortion", rationale: "Economic extortion involves a demand by the employee, backed by a threat. The supplier offered the gift voluntarily." },
-        { id: "D", text: "A conflict of interest — sales scheme", rationale: "A conflict of interest requires an undisclosed personal or economic interest in the transaction, which the scenario does not describe." },
+        { id: "D", text: "A conflict of interest: sales scheme", rationale: "A conflict of interest requires an undisclosed personal or economic interest in the transaction, which the scenario does not describe." },
       ],
       answer: "B",
       explanation:
@@ -133,10 +133,10 @@ export const cfeQuestions: PracticeQuestionSet = {
       question:
         "Near year-end, management records revenue for goods that will only be shipped and accepted by the customer in the next financial year, so that the current year's earnings target is met. In the Fraud Tree, this is an example of:",
       options: [
-        { id: "A", text: "Net worth/net income overstatement — timing differences", rationale: "Correct. Recognising revenue in the wrong (earlier) period is a timing difference that overstates current-period income." },
-        { id: "B", text: "Net worth/net income overstatement — concealed liabilities and expenses", rationale: "Concealed liabilities and expenses involve omitting or capitalising costs, not bringing revenue forward." },
-        { id: "C", text: "Net worth/net income understatement — understated revenues", rationale: "The scheme increases current-year revenue, so it is an overstatement, not an understatement." },
-        { id: "D", text: "Asset misappropriation — false sales and shipping", rationale: "False sales and shipping is used to conceal the theft of inventory; here no asset is stolen, the financial statements are misstated." },
+        { id: "A", text: "Net worth/net income overstatement: timing differences", rationale: "Correct. Recognising revenue in the wrong (earlier) period is a timing difference that overstates current-period income." },
+        { id: "B", text: "Net worth/net income overstatement: concealed liabilities and expenses", rationale: "Concealed liabilities and expenses involve omitting or capitalising costs, not bringing revenue forward." },
+        { id: "C", text: "Net worth/net income understatement: understated revenues", rationale: "The scheme increases current-year revenue, so it is an overstatement, not an understatement." },
+        { id: "D", text: "Asset misappropriation: false sales and shipping", rationale: "False sales and shipping is used to conceal the theft of inventory; here no asset is stolen, the financial statements are misstated." },
       ],
       answer: "A",
       explanation:
@@ -215,7 +215,7 @@ export const cfeQuestions: PracticeQuestionSet = {
       explanation:
         "Reports should be clear, accurate and unbiased and should let the facts speak for themselves. Stating that someone is guilty could expose the examiner and the organisation to legal risk and is prohibited by the CFE Code of Professional Standards.",
       reference: {
-        label: "ACFE — CFE Code of Professional Standards",
+        label: "ACFE: CFE Code of Professional Standards",
         url: "https://www.acfe.com/~/-/media/E805D87A1E144558BF27A7F4B0B8317B.ashx",
       },
     },
@@ -234,7 +234,7 @@ export const cfeQuestions: PracticeQuestionSet = {
       ],
       answer: "B",
       explanation:
-        "Fraud examiners should assume litigation will follow. Recording every transfer of an item of evidence — who, when, where and why — lets the examiner show in court that the evidence presented is the same item that was collected and has not been tampered with.",
+        "Fraud examiners should assume litigation will follow. Recording every transfer of an item of evidence (who, when, where and why) lets the examiner show in court that the evidence presented is the same item that was collected and has not been tampered with.",
       reference: CODE_STANDARDS,
     },
     {
@@ -274,7 +274,7 @@ export const cfeQuestions: PracticeQuestionSet = {
       explanation:
         "Donald Cressey's fraud triangle holds that fraud is likely when pressure, perceived opportunity and rationalisation come together. Of the three, opportunity is the element an organisation can influence most directly through controls.",
       reference: {
-        label: "ACFE — Fraud 101: What is fraud?",
+        label: "ACFE (Fraud 101: What is fraud)?",
         url: "https://www.acfe.com/fraud-resources/fraud-101-what-is-fraud",
       },
     },
@@ -313,7 +313,7 @@ export const cfeQuestions: PracticeQuestionSet = {
       explanation:
         "Refusal to take vacations and an unusually close relationship with a vendor or customer are behavioural red flags the ACFE tracks in its Report to the Nations. Mandatory vacations and job rotation are classic controls because they force another person to handle the work and see any irregularities.",
       reference: {
-        label: "ACFE — Occupational Fraud 2026: A Report to the Nations",
+        label: "ACFE (Occupational Fraud 2026: A Report to the Nations)",
         url: "https://www.acfe.com/report-to-the-nations",
       },
     },

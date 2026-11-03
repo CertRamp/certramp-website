@@ -7,7 +7,7 @@ import type { ExamGuide } from "@/config/types";
 export const ab620Guide: ExamGuide = {
   slug: "ab-620",
   summary:
-    "AB-620 (Designing and Building Integrated AI Agent Solutions in Copilot Studio) leads to the Microsoft Certified: AI Agent Builder Associate certification. It tests whether you can plan, build, integrate, test and deploy enterprise agents in Microsoft Copilot Studio — agent flows, topics, MCP and REST tools, multi-agent solutions, Azure integration, evaluation and ALM. The exam takes 120 minutes and you need 700 points to pass.",
+    "AB-620 (Designing and Building Integrated AI Agent Solutions in Copilot Studio) leads to the Microsoft Certified: AI Agent Builder Associate certification. It tests whether you can plan, build, integrate, test and deploy enterprise agents in Microsoft Copilot Studio: agent flows, topics, MCP and REST tools, multi-agent solutions, Azure integration, evaluation and ALM. The exam takes 120 minutes and you need 700 points to pass.",
   whoFor: [
     "Professional developers and advanced builders who build, extend and integrate custom agents in Copilot Studio",
     "IT application developers, consultants and ISV partners delivering agent solutions for organisations or customers",

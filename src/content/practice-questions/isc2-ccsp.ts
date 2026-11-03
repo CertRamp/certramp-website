@@ -18,7 +18,7 @@ export const ccspQuestions: PracticeQuestionSet = {
   seo: {
     title: "CCSP Practice Questions with Answers & Explanations (2026)",
     description:
-      "24 free, original CCSP practice questions across all six domains of the 2026 ISC2 exam outline — each with the answer and an explanation for every option.",
+      "24 free, original CCSP practice questions across all six domains of the 2026 ISC2 exam outline, each with the answer and an explanation for every option.",
   },
   questions: [
     /* ── Domain 1: Cloud Concepts, Architecture and Design ─────────────── */
@@ -37,7 +37,7 @@ export const ccspQuestions: PracticeQuestionSet = {
       ],
       answer: "C",
       explanation:
-        "NIST SP 800-145 lists five essential characteristics. Measured service is the one that makes usage transparent to both provider and customer — and therefore billable and chargeable.",
+        "NIST SP 800-145 lists five essential characteristics. Measured service is the one that makes usage transparent to both provider and customer, and therefore billable and chargeable.",
       reference: { label: "NIST SP 800-145, The NIST Definition of Cloud Computing", url: "https://csrc.nist.gov/pubs/sp/800/145/final" },
     },
     {
@@ -111,7 +111,7 @@ export const ccspQuestions: PracticeQuestionSet = {
       ],
       answer: "B",
       explanation:
-        "Classification drives everything downstream — encryption, access, retention, deletion. The earliest point, creation, is therefore the right one.",
+        "Classification drives everything downstream: encryption, access, retention, deletion. The earliest point, creation, is therefore the right one.",
       reference: OUTLINE,
     },
     {
@@ -123,7 +123,7 @@ export const ccspQuestions: PracticeQuestionSet = {
         "An analytics platform must not hold real card numbers. The numbers are to be replaced with substitute values that have no mathematical relationship to the originals, while an authorised payment system can still look up the original through a separate, secured store. Which technique fits?",
       options: [
         { id: "A", text: "Hashing", rationale: "A hash is mathematically derived from the original and cannot be reversed to look up the original value." },
-        { id: "B", text: "Format-preserving encryption", rationale: "The ciphertext is mathematically derived from the original using a key — exactly what the requirement excludes." },
+        { id: "B", text: "Format-preserving encryption", rationale: "The ciphertext is mathematically derived from the original using a key: exactly what the requirement excludes." },
         { id: "C", text: "Static data masking", rationale: "Masking replaces or hides values permanently; there is no secured store to look up the original." },
         { id: "D", text: "Tokenization", rationale: "Correct. In vault-based tokenization, tokens are random substitutes and the mapping to the original lives only in a separate, secured token vault." },
       ],
@@ -140,7 +140,7 @@ export const ccspQuestions: PracticeQuestionSet = {
       question:
         "A customer leaves a public IaaS provider and must make sure its data on the provider's shared storage cannot be recovered. Physical destruction of the disks is not possible. What is the BEST approach?",
       options: [
-        { id: "A", text: "Cryptographic erasure — destroying the keys used to encrypt the data", rationale: "Correct. If all copies were encrypted and every copy of the key is destroyed, the remaining ciphertext is unreadable." },
+        { id: "A", text: "Cryptographic erasure: destroying the keys used to encrypt the data", rationale: "Correct. If all copies were encrypted and every copy of the key is destroyed, the remaining ciphertext is unreadable." },
         { id: "B", text: "Degaussing the storage media", rationale: "The customer has no physical access to multi-tenant media, and degaussing does not work on SSDs anyway." },
         { id: "C", text: "Deleting the volumes through the provider's console", rationale: "A logical delete may leave recoverable data remnants on the underlying storage." },
         { id: "D", text: "Overwriting the volumes several times", rationale: "On virtualised, distributed storage the customer cannot verify that every physical copy and block was overwritten." },
@@ -159,13 +159,13 @@ export const ccspQuestions: PracticeQuestionSet = {
         "Legal informs the security team that mailbox data of three employees is subject to a legal hold. The retention policy would automatically delete part of that data next week. What should the team do?",
       options: [
         { id: "A", text: "Let the retention policy run, because policies must be applied consistently", rationale: "Deleting data under a legal hold can amount to destruction of evidence; the hold takes precedence." },
-        { id: "B", text: "Archive the data to cheaper storage and delete the originals", rationale: "Changing location is fine only if integrity and the chain of custody are preserved — deleting originals as part of a workaround risks both." },
+        { id: "B", text: "Archive the data to cheaper storage and delete the originals", rationale: "Changing location is fine only if integrity and the chain of custody are preserved: deleting originals as part of a workaround risks both." },
         { id: "C", text: "Suspend deletion for the data in scope of the hold until Legal releases it", rationale: "Correct. A legal hold overrides normal retention and deletion for the data it covers." },
         { id: "D", text: "Delete the data now and restore it from backup if the court asks", rationale: "Backups may not exist or be complete, and intentional deletion would still breach the hold." },
       ],
       answer: "C",
       explanation:
-        "Retention policies must provide a way to exempt data from deletion when a legal hold applies — and to release it again when the hold ends.",
+        "Retention policies must provide a way to exempt data from deletion when a legal hold applies, and to release it again when the hold ends.",
       reference: OUTLINE,
     },
 
@@ -203,8 +203,8 @@ export const ccspQuestions: PracticeQuestionSet = {
       ],
       answer: "C",
       explanation:
-        "The key words are 'planned maintenance without affecting operations' — concurrent maintainability, which is Tier III. Fault tolerance would point to Tier IV.",
-      reference: { label: "Uptime Institute — Tier Classification System", url: "https://uptimeinstitute.com/tiers" },
+        "The key words are 'planned maintenance without affecting operations': concurrent maintainability, which is Tier III. Fault tolerance would point to Tier IV.",
+      reference: { label: "Uptime Institute: Tier Classification System", url: "https://uptimeinstitute.com/tiers" },
     },
     {
       id: "ccsp-d3-risk-mitigation",
@@ -234,7 +234,7 @@ export const ccspQuestions: PracticeQuestionSet = {
       options: [
         { id: "A", text: "Tabletop exercise", rationale: "A tabletop walks through the plan in discussion; no systems are actually brought up." },
         { id: "B", text: "Parallel test", rationale: "Correct. Recovery systems are activated and run alongside production, which is not interrupted." },
-        { id: "C", text: "Full interruption test", rationale: "Here production is actually shut down and operations move to the recovery site — the most disruptive option." },
+        { id: "C", text: "Full interruption test", rationale: "Here production is actually shut down and operations move to the recovery site: the most disruptive option." },
         { id: "D", text: "Checklist review", rationale: "A checklist review only verifies that the plan's contents and contact details are complete and current." },
       ],
       answer: "B",
@@ -277,7 +277,7 @@ export const ccspQuestions: PracticeQuestionSet = {
       ],
       answer: "D",
       explanation:
-        "Third-party and open-source components are part of the software supply chain. SCA — ideally together with a software bill of materials — makes that supply chain visible.",
+        "Third-party and open-source components are part of the software supply chain. SCA, ideally together with a software bill of materials, makes that supply chain visible.",
       reference: OUTLINE,
     },
     {
@@ -380,7 +380,7 @@ export const ccspQuestions: PracticeQuestionSet = {
       question:
         "An EU-based company uses a SaaS provider to process its customers' personal data on its behalf. A personal data breach occurs at the provider. Under the GDPR, who is responsible for notifying the supervisory authority?",
       options: [
-        { id: "A", text: "The SaaS provider, because the breach happened on its systems", rationale: "As a processor, the provider must inform the controller without undue delay — the notification to the authority is the controller's duty." },
+        { id: "A", text: "The SaaS provider, because the breach happened on its systems", rationale: "As a processor, the provider must inform the controller without undue delay: the notification to the authority is the controller's duty." },
         { id: "B", text: "The customer, as the controller", rationale: "Correct. Under GDPR Article 33, the controller notifies the supervisory authority; the processor must inform the controller." },
         { id: "C", text: "Nobody, if the data was stored outside the EU", rationale: "GDPR obligations can apply regardless of where the data is stored." },
         { id: "D", text: "The affected data subjects themselves", rationale: "Data subjects must be informed by the controller when the breach is likely to result in a high risk (Article 34), but they do not notify the authority." },
@@ -421,7 +421,7 @@ export const ccspQuestions: PracticeQuestionSet = {
         { id: "A", text: "The retailer is the controller and the CRM provider is the processor", rationale: "Correct. The retailer decides why and how the data is processed; the provider processes it on the retailer's behalf." },
         { id: "B", text: "The retailer is the processor and the CRM provider is the controller", rationale: "The roles are reversed: the party that decides purposes and means is the controller." },
         { id: "C", text: "Both are joint controllers", rationale: "Joint control requires both to determine purposes and means together, which is not the case here." },
-        { id: "D", text: "The CRM provider is the data subject", rationale: "Data subjects are the individuals the data is about — here, the retailer's customers." },
+        { id: "D", text: "The CRM provider is the data subject", rationale: "Data subjects are the individuals the data is about: here, the retailer's customers." },
       ],
       answer: "A",
       explanation:
@@ -438,11 +438,11 @@ export const ccspQuestions: PracticeQuestionSet = {
         { id: "A", text: "ISO/IEC 27017", rationale: "ISO/IEC 27017 gives information security controls for cloud services." },
         { id: "B", text: "ISO/IEC 27018", rationale: "ISO/IEC 27018 covers the protection of personally identifiable information in public clouds." },
         { id: "C", text: "ISO/IEC 27050", rationale: "Correct. The ISO/IEC 27050 series addresses electronic discovery." },
-        { id: "D", text: "ISO/IEC 27037", rationale: "ISO/IEC 27037 covers identifying, collecting, acquiring and preserving digital evidence — related, but not eDiscovery." },
+        { id: "D", text: "ISO/IEC 27037", rationale: "ISO/IEC 27037 covers identifying, collecting, acquiring and preserving digital evidence: related, but not eDiscovery." },
       ],
       answer: "C",
       explanation:
-        "Several 270xx standards appear in cloud security work. Knowing which one covers what — 27017 cloud controls, 27018 PII in public cloud, 27037 evidence handling, 27050 eDiscovery — helps you pick the right standard in a scenario.",
+        "Several 270xx standards appear in cloud security work. Knowing which one covers what (27017 cloud controls, 27018 PII in public cloud, 27037 evidence handling, 27050 eDiscovery) helps you pick the right standard in a scenario.",
       reference: OUTLINE,
     },
     {

@@ -6,19 +6,19 @@ import type { PracticeQuestionSet } from "@/config/types";
  * not recalled exam content, and not presented as real exam questions.
  */
 const D1 = {
-  label: "AWS — AIB-C01 exam guide, Domain 1: AI Fundamentals and Literacy",
+  label: "AWS (AIB-C01 exam guide, Domain 1: AI Fundamentals and Literacy)",
   url: "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01-domain1.html",
 };
 const D2 = {
-  label: "AWS — AIB-C01 exam guide, Domain 2: AI Strategy and Business Value Creation",
+  label: "AWS (AIB-C01 exam guide, Domain 2: AI Strategy and Business Value Creation)",
   url: "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01-domain2.html",
 };
 const D3 = {
-  label: "AWS — AIB-C01 exam guide, Domain 3: AI Governance and Responsible AI Leadership",
+  label: "AWS (AIB-C01 exam guide, Domain 3: AI Governance and Responsible AI Leadership)",
   url: "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01-domain3.html",
 };
 const D4 = {
-  label: "AWS — AIB-C01 exam guide, Domain 4: Business Readiness, Leadership, and AI Transformation",
+  label: "AWS (AIB-C01 exam guide, Domain 4: Business Readiness, Leadership, and AI Transformation)",
   url: "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01-domain4.html",
 };
 
@@ -272,7 +272,7 @@ export const awsAibC01Questions: PracticeQuestionSet = {
       ],
       answer: "D",
       explanation:
-        "Data readiness — quality, accessibility and the effect of silos — often decides whether an AI initiative can succeed. Data strategy, ownership and sharing frameworks come before model choice.",
+        "Data readiness (quality, accessibility and the effect of silos) often decides whether an AI initiative can succeed. Data strategy, ownership and sharing frameworks come before model choice.",
       reference: D4,
     },
     {

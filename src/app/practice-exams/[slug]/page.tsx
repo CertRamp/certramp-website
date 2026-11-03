@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AuthorSection } from "@/components/marketing/AuthorSection";
 import { notFound } from "next/navigation";
 import {
   CertHero,
@@ -231,6 +232,8 @@ export default async function CertificationPage({ params }: { params: Promise<Pa
       )}
 
       {/* Disclaimer */}
+      <AuthorSection tone="surface" certSlug={cert.slug} location="exam-page" />
+
       <section aria-label="Disclaimer" className="bg-white pb-4 pt-16 sm:pt-20">
         <div className="container-page">
           <VendorDisclaimer

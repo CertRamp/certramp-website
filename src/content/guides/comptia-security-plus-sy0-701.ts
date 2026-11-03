@@ -19,14 +19,14 @@ export const comptiaSecurityPlusSy0701Guide: ExamGuide = {
       heading: "What SY0-701 actually tests",
       paragraphs: [
         "The SY0-701 objectives have five domains: General Security Concepts (12%), Threats, Vulnerabilities, and Mitigations (22%), Security Architecture (18%), Security Operations (28%) and Security Program Management and Oversight (20%). Security Operations carries the highest weight, so identity and access management, vulnerability management, monitoring, incident response and investigations deserve a large share of your time.",
-        "Many objectives start with \"Given a scenario\" — for example analysing indicators of malicious activity, securing enterprise infrastructure or implementing identity and access management. Others ask you to compare and contrast or explain concepts. Expect to choose the right control, attack type, technology or next step for a short situation rather than recite definitions.",
+        "Many objectives start with \"Given a scenario\", for example analysing indicators of malicious activity, securing enterprise infrastructure or implementing identity and access management. Others ask you to compare and contrast or explain concepts. Expect to choose the right control, attack type, technology or next step for a short situation rather than recite definitions.",
       ],
     },
     {
       id: "sy0-701-vs-sy0-801",
       heading: "SY0-701 or SY0-801: which version should you take?",
       paragraphs: [
-        "CompTIA is replacing Security+ V7 (SY0-701, launched 7 November 2023) with Security+ V8 (SY0-801), which is expected to launch on or around 17 November 2026. SY0-701 stays available until it retires: 11 June 2027 for the English exam and 13 August 2027 for the Japanese, Portuguese, Spanish and Thai exams. Both versions keep the same format — a maximum of 90 questions, 90 minutes and a passing score of 750 on a scale of 100–900.",
+        "CompTIA is replacing Security+ V7 (SY0-701, launched 7 November 2023) with Security+ V8 (SY0-801), which is expected to launch on or around 17 November 2026. SY0-701 stays available until it retires: 11 June 2027 for the English exam and 13 August 2027 for the Japanese, Portuguese, Spanish and Thai exams. Both versions keep the same format: a maximum of 90 questions, 90 minutes and a passing score of 750 on a scale of 100–900.",
         "The V8 objectives use the same five-domain structure with different weights (16%, 24%, 19%, 27% and 14%), and domain 2 is renamed \"Threats, Vulnerabilities, and Attacks\". At launch CompTIA lists SY0-801 in English only. If you are well into SY0-701 preparation and can sit the exam before the retirement date, staying on SY0-701 is reasonable; if you are just starting and plan to test in English late in the transition, prepare for SY0-801 instead (CertRamp has a separate SY0-801 page).",
       ],
     },
@@ -36,7 +36,7 @@ export const comptiaSecurityPlusSy0701Guide: ExamGuide = {
       steps: [
         {
           title: "Download the official objectives",
-          body: "Get the SY0-701 exam objectives (V7) from CompTIA and mark each of the 28 objectives as known, unsure or new. Weight your time by domain — Security Operations alone is 28%.",
+          body: "Get the SY0-701 exam objectives (V7) from CompTIA and mark each of the 28 objectives as known, unsure or new. Weight your time by domain: Security Operations alone is 28%.",
         },
         {
           title: "Fix your timeline against the retirement date",
@@ -67,7 +67,7 @@ export const comptiaSecurityPlusSy0701Guide: ExamGuide = {
         "Using the wrong objectives. SY0-801 material has different weights and a renamed domain 2; check that your resources say SY0-701.",
         "Leaving the exam too late. A failed attempt shortly before 11 June 2027 (English) may leave no time for a resit on SY0-701.",
         "Under-preparing for performance-based questions. They test applied skills, so reading alone is not enough.",
-        "Treating governance as an afterthought. Security Program Management and Oversight is 20% of SY0-701 — risk management, third-party risk, compliance, audits and awareness all count.",
+        "Treating governance as an afterthought. Security Program Management and Oversight is 20% of SY0-701: risk management, third-party risk, compliance, audits and awareness all count.",
         "Memorising lists without the \"why\". Scenario questions reward knowing when a control or technique fits, not just its name.",
       ],
     },
@@ -91,7 +91,7 @@ export const comptiaSecurityPlusSy0701Guide: ExamGuide = {
     {
       question: "How do I keep Security+ current?",
       answer:
-        "Security+ is valid for three years from the date you pass. To renew, you need 50 continuing education units (CEUs) — for example through a CompTIA CertMaster CE course, qualifying activities or other certifications — or you can pass the latest version of the Security+ exam.",
+        "Security+ is valid for three years from the date you pass. To renew, you need 50 continuing education units (CEUs), for example through a CompTIA CertMaster CE course, qualifying activities or other certifications, or you can pass the latest version of the Security+ exam.",
     },
     {
       question: "Are CertRamp's Security+ SY0-701 questions real exam questions?",

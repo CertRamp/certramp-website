@@ -6,11 +6,11 @@ import type { PracticeQuestionSet } from "@/config/types";
  * not recalled exam content, and not presented as real exam questions.
  */
 const SYLLABUS = {
-  label: "The IIA — CIA Part 1 syllabus (Internal Audit Fundamentals)",
+  label: "The IIA: CIA Part 1 syllabus (Internal Audit Fundamentals)",
   url: "https://www.theiia.org/globalassets/site/certifications/certified-internal-auditor/cia-exam-why-how-and-what-is-changing/cia-part-1-syllabus.pdf",
 };
 const STANDARDS = {
-  label: "The IIA — Global Internal Audit Standards",
+  label: "The IIA: Global Internal Audit Standards",
   url: "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
 };
 
@@ -23,7 +23,7 @@ export const ciaPart1Questions: PracticeQuestionSet = {
   seo: {
     title: "CIA Part 1 Practice Questions with Answers (2026)",
     description:
-      "15 free, original CIA Part 1 practice questions on the Global Internal Audit Standards, ethics, governance, risk, control and fraud — each with a full explanation.",
+      "15 free, original CIA Part 1 practice questions on the Global Internal Audit Standards, ethics, governance, risk, control and fraud, each with a full explanation.",
   },
   questions: [
     /* ── Section A: Foundations of Internal Auditing (35%) ────────────────── */
@@ -36,7 +36,7 @@ export const ciaPart1Questions: PracticeQuestionSet = {
         "The head of procurement asks internal audit to help her team design approval steps for a new purchasing system. The nature and scope of the work will be agreed with her, and her team will decide which suggestions to adopt. How should this engagement be classified?",
       options: [
         { id: "A", text: "An assurance engagement, because internal audit evaluates controls", rationale: "Assurance engagements provide an objective assessment to stakeholders, with scope set by internal audit. Here the requester shapes the scope and receives advice." },
-        { id: "B", text: "An advisory engagement", rationale: "Correct. The work is requested by management, its nature and scope are agreed with them, and management keeps responsibility for decisions — the hallmarks of an advisory service." },
+        { id: "B", text: "An advisory engagement", rationale: "Correct. The work is requested by management, its nature and scope are agreed with them, and management keeps responsibility for decisions: the hallmarks of an advisory service." },
         { id: "C", text: "A compliance audit", rationale: "Compliance audits assess conformance with laws, regulations or policies. Nothing is being tested against requirements here." },
         { id: "D", text: "A fraud investigation", rationale: "There is no allegation or indication of fraud to investigate." },
       ],

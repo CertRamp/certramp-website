@@ -14,7 +14,7 @@ export const siteConfig = {
   tagline: "Practice harder. Enter confident.",
   philosophy: "Six Tests That Grow With You",
   description:
-    "Independent, progressive practice exams for IT, project management, cybersecurity and governance certifications. Six tests that grow with you — from diagnostic to beyond exam level.",
+    "Independent, progressive practice exams for IT, project management, cybersecurity and governance certifications. Six tests that grow with you, from diagnostic to beyond exam level.",
   url: rawSiteUrl.replace(/\/+$/, ""),
   locale: "en",
   /** Only the real production deployment should set NEXT_PUBLIC_ALLOW_INDEXING=true. */

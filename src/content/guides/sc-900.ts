@@ -44,7 +44,7 @@ export const sc900Guide: ExamGuide = {
         },
         {
           title: "Work through the Microsoft Learn paths",
-          body: "Follow the free SC-900 learning paths for Entra, Azure and Defender security, and Microsoft Purview. For each product, write down the one problem it solves — that is usually what the question tests.",
+          body: "Follow the free SC-900 learning paths for Entra, Azure and Defender security, and Microsoft Purview. For each product, write down the one problem it solves: that is usually what the question tests.",
         },
         {
           title: "Look at the portals once",

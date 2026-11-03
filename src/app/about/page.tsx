@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { PageHero } from "@/components/layout/PageHero";
+import { AuthorSection } from "@/components/marketing/AuthorSection";
 import { FinalCta } from "@/components/marketing/Sections";
+import { Val } from "@/components/ui/Placeholder";
 import { Icon, type IconName } from "@/components/ui/Icon";
-import { Placeholder, Val } from "@/components/ui/Placeholder";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { about } from "@/config/about";
-import { plain, SHOW_PLACEHOLDERS } from "@/lib/placeholder";
 import { getCatalogueStats } from "@/lib/certifications";
 import { buildMetadata } from "@/lib/seo";
 
@@ -26,7 +25,7 @@ const principles: { icon: IconName; title: string; body: string }[] = [
   {
     icon: "target",
     title: "Honest measurement",
-    body: "A practice test is only useful if it tells you the truth about your readiness — including when you are not ready yet.",
+    body: "A practice test is only useful if it tells you the truth about your readiness, including when you are not ready yet.",
   },
   {
     icon: "chart",
@@ -39,15 +38,6 @@ const principles: { icon: IconName; title: string; body: string }[] = [
     body: "We have no official role in any certification. We say so clearly, and we never imply otherwise.",
   },
 ];
-
-function initials(name: string) {
-  return name
-    .split(/\s+/)
-    .map((w) => w[0])
-    .join("")
-    .slice(0, 2)
-    .toUpperCase();
-}
 
 export default function AboutPage() {
   const stats = getCatalogueStats();
@@ -65,13 +55,13 @@ export default function AboutPage() {
           <SectionHeader id="what-title" eyebrow="What we do" title="Practice exams with a plan behind them" className="lg:col-span-5" />
           <div className="space-y-5 text-lg leading-relaxed text-body lg:col-span-7">
             <p>
-              CertRamp publishes practice exams on Udemy for {stats.certifications} certifications — from ISACA and Microsoft
-              to AWS, CompTIA, PMI and ISTQB — in {stats.languages} languages. This site is the home of the
+              CertRamp publishes practice exams on Udemy for {stats.certifications} certifications, from ISACA and Microsoft
+              to AWS, CompTIA, PMI and ISTQB, in {stats.languages} languages. This site is the home of the
               brand: the place to find every CertRamp practice exam, and soon to take the CertRamp Exam Simulator
               directly.
             </p>
             <p>
-              Every product follows the same idea — six tests that grow with you. You start by finding your level, build
+              Every product follows the same idea: six tests that grow with you. You start by finding your level, build
               up to real exam level, then go beyond it.
             </p>
             <div>
@@ -121,50 +111,7 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      <Section tone="surface" labelledBy="people-title">
-        <SectionHeader id="people-title" eyebrow="The people behind CertRamp" title="Who writes the exams" />
-        <div className="mt-12 grid gap-8 rounded-[1.5rem] border border-line bg-white p-7 sm:p-10 md:grid-cols-12 md:items-center">
-          <div className="md:col-span-4">
-            {about.founder.photo ? (
-              <Image
-                src={about.founder.photo}
-                alt={plain(about.founder.photoAlt, "Portrait of the CertRamp founder")}
-                width={480}
-                height={480}
-                className="aspect-square w-full max-w-72 rounded-2xl object-cover"
-              />
-            ) : SHOW_PLACEHOLDERS ? (
-              <div className="grid aspect-square w-full max-w-72 place-items-center rounded-2xl border-2 border-dashed border-warn-600/40 bg-warn-50 p-6 text-center">
-                <Placeholder label="Founder photo (optional) — set about.founder.photo" />
-              </div>
-            ) : (
-              <div
-                aria-hidden="true"
-                className="grid aspect-square w-full max-w-56 place-items-center rounded-2xl bg-navy-900 font-display text-6xl font-semibold tracking-tight text-white"
-              >
-                {initials(plain(about.founder.name, "CR"))}
-              </div>
-            )}
-          </div>
-          <div className="space-y-3 md:col-span-8">
-            <p className="font-display text-2xl font-semibold text-ink">
-              <Val value={about.founder.name} />
-            </p>
-            <p className="font-medium text-accent-600">
-              <Val value={about.founder.role} />
-            </p>
-            <div className="leading-relaxed text-muted">
-              <Val value={about.founder.bio} block />
-            </div>
-            <div className="pt-2 text-sm text-muted">
-              Based in: <Val value={about.location} />
-            </div>
-            <div className="text-sm text-muted">
-              <Val value={about.udemyNote} block />
-            </div>
-          </div>
-        </div>
-      </Section>
+      <AuthorSection tone="surface" location="about" />
 
       <FinalCta />
     </>

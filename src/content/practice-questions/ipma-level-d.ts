@@ -7,20 +7,20 @@ import type { PracticeQuestionSet } from "@/config/types";
  * and not presented as real exam questions.
  */
 const ICB4 = {
-  label: "PM-ZERT (GPM) — General guide for IPMA Level D–A, ICB4 competence elements (PDF)",
+  label: "PM-ZERT (GPM): General guide for IPMA Level D–A, ICB4 competence elements (PDF)",
   url: "https://www.gpm-ipma.de/fileadmin/pm_zert_upload/Zertifizierung/Projektmanagement/Z01_PM_General_Guide_ICB4.pdf",
 };
 
 export const ipmaLevelDQuestions: PracticeQuestionSet = {
   slug: "ipma-level-d",
   intro:
-    "15 original IPMA Level D practice questions across the three ICB4 competence areas — Perspective, People and Practice — covering all three areas. Each one comes with the answer, a short explanation and the reason every other option is wrong.",
+    "15 original IPMA Level D practice questions across the three ICB4 competence areas (Perspective, People and Practice) covering all three areas. Each one comes with the answer, a short explanation and the reason every other option is wrong.",
   published: "2026-10-27",
   updated: "2026-10-27",
   seo: {
     title: "IPMA Level D Practice Questions with Answers (ICB4)",
     description:
-      "15 free, original IPMA Level D practice questions on ICB4 — stakeholders, risk, planning, leadership, conflict and governance — each with a full explanation.",
+      "15 free, original IPMA Level D practice questions on ICB4 (stakeholders, risk, planning, leadership, conflict and governance) each with a full explanation.",
   },
   questions: [
     /* ── Area 1: Perspective competences ──────────────────────────────────── */

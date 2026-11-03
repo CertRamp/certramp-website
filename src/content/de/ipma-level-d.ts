@@ -9,7 +9,7 @@ import type { DeContent } from "@/config/types";
  * ORIGINAL CertRamp questions — not real exam questions.
  */
 const ICB4 = {
-  label: "PM-ZERT (GPM) – General Guide für IPMA Level D–A, ICB4-Kompetenzelemente (PDF)",
+  label: "PM-ZERT (GPM): General Guide für IPMA Level D–A, ICB4-Kompetenzelemente (PDF)",
   url: "https://www.gpm-ipma.de/fileadmin/pm_zert_upload/Zertifizierung/Projektmanagement/Z01_PM_General_Guide_ICB4.pdf",
 };
 
@@ -17,13 +17,13 @@ export const ipmaLevelDDe: DeContent = {
   slug: "ipma-level-d",
   name: "IPMA Level D (ICB4)",
   languageNote:
-    "Die Prüfung wird auch auf Deutsch angeboten – bei PM-ZERT ist Deutsch die Standardsprache, Englisch ist ebenfalls möglich.",
+    "Die Prüfung wird auch auf Deutsch angeboten, bei PM-ZERT ist Deutsch die Standardsprache, Englisch ist ebenfalls möglich.",
   facts: [
     { label: "Prüfungsanbieter", value: "IPMA / PM-ZERT (GPM)" },
     {
       label: "Format",
       value:
-        "Deutschland (PM-ZERT): Pfad 1 – eine 90-minütige schriftliche Prüfung plus ein Report von bis zu 25 Seiten (plus bis zu 15 Seiten Anhang) und ein Feedbackgespräch von bis zu 20 Minuten; Pfad 2 – zwei 90-minütige schriftliche Prüfungen. Der Pfad kann nach der Zulassung nicht mehr gewechselt werden.",
+        "Deutschland (PM-ZERT): Pfad 1: eine 90-minütige schriftliche Prüfung plus ein Report von bis zu 25 Seiten (plus bis zu 15 Seiten Anhang) und ein Feedbackgespräch von bis zu 20 Minuten; Pfad 2: zwei 90-minütige schriftliche Prüfungen. Der Pfad kann nach der Zulassung nicht mehr gewechselt werden.",
     },
     {
       label: "Dauer",
@@ -42,7 +42,7 @@ export const ipmaLevelDDe: DeContent = {
     {
       label: "Voraussetzungen",
       value:
-        "Keine – weder Projektmanagementerfahrung noch Berufsausbildung erforderlich (PM-ZERT). Das Zertifikat ist fünf Jahre gültig; Rezertifizierung mit mindestens 175 Stunden Weiterbildung.",
+        "Keine: weder Projektmanagementerfahrung noch Berufsausbildung erforderlich (PM-ZERT). Das Zertifikat ist fünf Jahre gültig; Rezertifizierung mit mindestens 175 Stunden Weiterbildung.",
     },
     {
       label: "Prüfungsversion",
@@ -214,13 +214,13 @@ export const ipmaLevelDDe: DeContent = {
   questions: {
     slug: "ipma-level-d",
     intro:
-      "15 eigene Übungsfragen zu IPMA Level D aus allen drei ICB4-Kompetenzbereichen – Kontext-Kompetenzen, Persönliche und Soziale Kompetenzen sowie Technische Kompetenzen. Zu jeder Frage gibt es die Lösung, eine kurze Erklärung und die Begründung, warum jede andere Option falsch ist.",
+      "15 eigene Übungsfragen zu IPMA Level D aus allen drei ICB4-Kompetenzbereichen: Kontext-Kompetenzen, Persönliche und Soziale Kompetenzen sowie Technische Kompetenzen. Zu jeder Frage gibt es die Lösung, eine kurze Erklärung und die Begründung, warum jede andere Option falsch ist.",
     published: "2026-10-28",
     updated: "2026-10-28",
     seo: {
       title: "IPMA Level D Übungsfragen mit Lösungen (ICB4)",
       description:
-        "15 kostenlose IPMA Level D Übungsfragen zur ICB4 – Stakeholder, Risiken, Planung, Führung, Konflikte und Governance – jeweils mit ausführlicher Erklärung.",
+        "15 kostenlose IPMA Level D Übungsfragen zur ICB4 (Stakeholder, Risiken, Planung, Führung, Konflikte und Governance) jeweils mit ausführlicher Erklärung.",
     },
     questions: [
       /* ── Bereich 1: Kontext-Kompetenzen ───────────────────────────────── */

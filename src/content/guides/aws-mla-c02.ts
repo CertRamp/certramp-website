@@ -7,7 +7,7 @@ import type { ExamGuide } from "@/config/types";
 export const awsMlaC02Guide: ExamGuide = {
   slug: "aws-mla-c02",
   summary:
-    "MLA-C02 (AWS Certified Machine Learning Engineer – Associate) tests whether you can prepare data, build, deploy, operate and secure both traditional ML models and foundation models on AWS, using Amazon SageMaker AI, Amazon Bedrock and related services. It replaces MLA-C01: the English beta has run since 29 September 2026 with 85 questions in 170 minutes, and the passing score is 720 on a scale of 100–1,000.",
+    "MLA-C02 (AWS Certified Machine Learning Engineer: Associate) tests whether you can prepare data, build, deploy, operate and secure both traditional ML models and foundation models on AWS, using Amazon SageMaker AI, Amazon Bedrock and related services. It replaces MLA-C01: the English beta has run since 29 September 2026 with 85 questions in 170 minutes, and the passing score is 720 on a scale of 100–1,000.",
   whoFor: [
     "ML and MLOps engineers who train, deploy and monitor models on Amazon SageMaker AI",
     "Developers, data engineers and data scientists adding generative AI, RAG or agents with Amazon Bedrock",
@@ -91,7 +91,7 @@ export const awsMlaC02Guide: ExamGuide = {
     {
       question: "How long is the certification valid?",
       answer:
-        "AWS Certified Machine Learning Engineer – Associate is valid for 3 years. To recertify, you pass the latest version of the exam before your certification expires.",
+        "AWS Certified Machine Learning Engineer: Associate is valid for 3 years. To recertify, you pass the latest version of the exam before your certification expires.",
     },
     {
       question: "Are CertRamp's MLA-C02 questions real exam questions?",

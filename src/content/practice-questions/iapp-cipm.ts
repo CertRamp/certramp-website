@@ -7,7 +7,7 @@ import type { PracticeQuestionSet } from "@/config/types";
  * presented as real exam questions.
  */
 const BOK = {
-  label: "IAPP — CIPM body of knowledge and exam blueprint 4.2.0 (PDF)",
+  label: "IAPP: CIPM body of knowledge and exam blueprint 4.2.0 (PDF)",
   url: "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt39d7942c0a9a9f0f/CIPM_BoK_EBP.pdf",
 };
 
@@ -20,7 +20,7 @@ export const iappCipmQuestions: PracticeQuestionSet = {
   seo: {
     title: "CIPM Practice Questions with Answers & Explanations (2026)",
     description:
-      "15 free, original IAPP CIPM practice questions on privacy programme governance, data assessment, metrics, audits, DSARs and incident response — fully explained.",
+      "15 free, original IAPP CIPM practice questions on privacy programme governance, data assessment, metrics, audits, DSARs and incident response: fully explained.",
   },
   questions: [
     /* ── Domain I: Privacy Program: Developing a Framework ──────────────────── */

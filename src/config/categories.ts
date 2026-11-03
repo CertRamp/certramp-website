@@ -88,7 +88,7 @@ export const categoryList: Category[] = [
 
 export function getCategoryByCsvName(csvName: string): Category {
   const c = categoryList.find((x) => x.csvName === csvName);
-  if (!c) throw new Error(`Unknown category "${csvName}" in data/udemy-courses.csv — add it to src/config/categories.ts`);
+  if (!c) throw new Error(`Unknown category "${csvName}" in data/udemy-courses.csv: add it to src/config/categories.ts`);
   return c;
 }
 

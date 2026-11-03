@@ -7,12 +7,12 @@ import type { PracticeQuestionSet } from "@/config/types";
  * and not presented as real exam questions.
  */
 const OWASP = (id: string, name: string, path: string) => ({
-  label: `OWASP Top 10 for LLM Applications 2025 — ${id} ${name}`,
+  label: `OWASP Top 10 for LLM Applications 2025: ${id} ${name}`,
   url: `https://genai.owasp.org/llmrisk/${path}/`,
 });
 
 const NIST_AML = {
-  label: "NIST AI 100-2 E2025 — Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations",
+  label: "NIST AI 100-2 E2025 (Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations)",
   url: "https://csrc.nist.gov/pubs/ai/100/2/e2025/final",
 };
 
@@ -25,7 +25,7 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
   seo: {
     title: "GIAC GAIPS Practice Questions with Answers (2026)",
     description:
-      "15 free, original GIAC GAIPS practice questions on agentic AI, prompt injection, RAG, MLSecOps and AI risk management — each with a full explanation.",
+      "15 free, original GIAC GAIPS practice questions on agentic AI, prompt injection, RAG, MLSecOps and AI risk management, each with a full explanation.",
   },
   questions: [
     /* ── d1: Agentic Systems and AI Integrations ──────────────────────────── */
@@ -45,7 +45,7 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "Token passthrough lets clients bypass controls that rely on the token audience, muddies the audit trail and breaks trust boundaries. The fix is audience validation: an MCP server only accepts tokens issued for itself and obtains its own tokens for downstream APIs.",
-      reference: { label: "Model Context Protocol — Security Best Practices", url: "https://modelcontextprotocol.io/specification/2025-11-25/basic/security_best_practices" },
+      reference: { label: "Model Context Protocol: Security Best Practices", url: "https://modelcontextprotocol.io/specification/2025-11-25/basic/security_best_practices" },
     },
     {
       id: "gaips-d1-excessive-agency",
@@ -197,7 +197,7 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "MAESTRO was published by the Cloud Security Alliance to address threats that traditional methods miss in agentic systems. Its layers cover foundation models, data operations, agent frameworks, deployment and infrastructure, evaluation and observability, security and compliance, and the agent ecosystem.",
-      reference: { label: "Cloud Security Alliance — Agentic AI Threat Modeling Framework: MAESTRO", url: "https://cloudsecurityalliance.org/blog/2025/02/06/agentic-ai-threat-modeling-framework-maestro" },
+      reference: { label: "Cloud Security Alliance (Agentic AI Threat Modeling Framework: MAESTRO)", url: "https://cloudsecurityalliance.org/blog/2025/02/06/agentic-ai-threat-modeling-framework-maestro" },
     },
     {
       id: "gaips-d5-ai-rmf",
@@ -215,7 +215,7 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
       answer: "A",
       explanation:
         "The NIST AI RMF 1.0 (January 2023) defines Govern, Map, Measure and Manage. NIST also published a Generative AI Profile (NIST AI 600-1) in July 2024 that applies the framework to generative AI risks.",
-      reference: { label: "NIST — AI Risk Management Framework", url: "https://www.nist.gov/itl/ai-risk-management-framework" },
+      reference: { label: "NIST: AI Risk Management Framework", url: "https://www.nist.gov/itl/ai-risk-management-framework" },
     },
 
     /* ── d6: Development Pipelines and MLOps Security ─────────────────────── */
@@ -235,7 +235,7 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
       answer: "D",
       explanation:
         "Model files are code-adjacent artefacts. Load models only from trusted sources, prefer serialisation formats that do not execute code, verify integrity with signatures or hashes, and scan files before they enter the pipeline.",
-      reference: { label: "Hugging Face — Pickle Scanning", url: "https://huggingface.co/docs/hub/security-pickle" },
+      reference: { label: "Hugging Face: Pickle Scanning", url: "https://huggingface.co/docs/hub/security-pickle" },
     },
     {
       id: "gaips-d6-data-provenance",

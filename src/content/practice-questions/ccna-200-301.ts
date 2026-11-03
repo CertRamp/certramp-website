@@ -9,7 +9,7 @@ import type { PracticeQuestionSet } from "@/config/types";
  * presented as real exam questions.
  */
 const V2 = {
-  label: "Cisco — 200-301 CCNA v2.0 exam topics (PDF)",
+  label: "Cisco: 200-301 CCNA v2.0 exam topics (PDF)",
   url: "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf",
 };
 
@@ -22,7 +22,7 @@ export const ccna200301Questions: PracticeQuestionSet = {
   seo: {
     title: "CCNA 200-301 Practice Questions with Answers (v1.1 & v2.0)",
     description:
-      "15 free, original CCNA 200-301 practice questions on subnetting, IPv6, VLANs, STP, OSPF, NAT, ACLs and Layer 2 security — valid for v1.1 and v2.0.",
+      "15 free, original CCNA 200-301 practice questions on subnetting, IPv6, VLANs, STP, OSPF, NAT, ACLs and Layer 2 security: valid for v1.1 and v2.0.",
   },
   questions: [
     /* ── Domain 1: Network Infrastructure and Connectivity ────────────────── */
@@ -65,7 +65,7 @@ export const ccna200301Questions: PracticeQuestionSet = {
     {
       id: "ccna-d1-wifi-channels",
       domain: "d1",
-      objective: "1.5 Describe wireless principles — 1.5.a Band and channel selection (v1.1: 1.11.a)",
+      objective: "1.5 Describe wireless principles, 1.5.a Band and channel selection (v1.1: 1.11.a)",
       difficulty: "foundation",
       question:
         "You are deploying three neighbouring access points in the 2.4 GHz band (20 MHz channels, North American channel set) and want to avoid co-channel and adjacent-channel interference. Which channel plan should you use?",
@@ -103,7 +103,7 @@ export const ccna200301Questions: PracticeQuestionSet = {
     {
       id: "ccna-d2-trunk-allowed",
       domain: "d2",
-      objective: "2.1 Configure network infrastructure connectivity (switch-to-switch and switch-to-router) — 2.1.b Layer 2 802.1Q trunk interfaces (v1.1: 2.2.a)",
+      objective: "2.1 Configure network infrastructure connectivity (switch-to-switch and switch-to-router), 2.1.b Layer 2 802.1Q trunk interfaces (v1.1: 2.2.a)",
       difficulty: "intermediate",
       question:
         "An 802.1Q trunk between two switches currently allows VLANs 10 and 20. You must also carry the new VLAN 30 without interrupting VLANs 10 and 20. Which interface command do you enter on both switches?",
@@ -121,7 +121,7 @@ export const ccna200301Questions: PracticeQuestionSet = {
     {
       id: "ccna-d2-root-bridge",
       domain: "d2",
-      objective: "2.5 Configure operations of the Rapid Per VLAN Spanning Tree Protocol (Rapid PVST+) — 2.5.a Root port, root bridge (primary/secondary), and other port names (v1.1: 2.5.a)",
+      objective: "2.5 Configure operations of the Rapid Per VLAN Spanning Tree Protocol (Rapid PVST+), 2.5.a Root port, root bridge (primary/secondary), and other port names (v1.1: 2.5.a)",
       difficulty: "intermediate",
       question:
         "For VLAN 10, three switches advertise these bridge IDs: SW1 priority 32778, MAC 0011.2233.4401; SW2 priority 24586, MAC 0011.2233.4499; SW3 priority 24586, MAC 0011.2233.4410. Which switch becomes the root bridge for VLAN 10?",
@@ -139,7 +139,7 @@ export const ccna200301Questions: PracticeQuestionSet = {
     {
       id: "ccna-d2-bpdu-guard",
       domain: "d2",
-      objective: "2.5 Configure operations of the Rapid Per VLAN Spanning Tree Protocol (Rapid PVST+) — 2.5.d Root guard, loop guard, and BPDU guard (v1.1: 2.5.d)",
+      objective: "2.5 Configure operations of the Rapid Per VLAN Spanning Tree Protocol (Rapid PVST+), 2.5.d Root guard, loop guard, and BPDU guard (v1.1: 2.5.d)",
       difficulty: "foundation",
       question:
         "An access port is configured with spanning-tree portfast and spanning-tree bpduguard enable. A user plugs a small switch into that port, and the switch starts sending BPDUs. What happens to the access port?",
@@ -177,7 +177,7 @@ export const ccna200301Questions: PracticeQuestionSet = {
     {
       id: "ccna-d3-floating-static",
       domain: "d3",
-      objective: "3.2 Troubleshoot IPv4 and IPv6 static routing — 3.2.d Floating static (v1.1: 3.3.d)",
+      objective: "3.2 Troubleshoot IPv4 and IPv6 static routing, 3.2.d Floating static (v1.1: 3.3.d)",
       difficulty: "advanced",
       question:
         "A router learns its default route from OSPF. You want a backup default route via 198.51.100.1 that is used only if the OSPF default route disappears. Which command achieves this?",
@@ -195,7 +195,7 @@ export const ccna200301Questions: PracticeQuestionSet = {
     {
       id: "ccna-d3-ospf-dr",
       domain: "d3",
-      objective: "3.3 Configure single area OSPFv2 for IPv4 and OSPFv3 for IPv6 — 3.3.c Broadcast (DR/BDR selection) (v1.1: 3.4.c)",
+      objective: "3.3 Configure single area OSPFv2 for IPv4 and OSPFv3 for IPv6, 3.3.c Broadcast (DR/BDR selection) (v1.1: 3.4.c)",
       difficulty: "advanced",
       question:
         "Four routers on one Ethernet segment start OSPF at the same time. R1: priority 1, router ID 10.0.0.1. R2: priority 0, router ID 10.0.0.9. R3: priority 1, router ID 10.0.0.5. R4: priority 1, router ID 10.0.0.3. Which routers become DR and BDR?",
@@ -251,7 +251,7 @@ export const ccna200301Questions: PracticeQuestionSet = {
     {
       id: "ccna-d4-dhcp-snooping",
       domain: "d4",
-      objective: "4.7 Configure Layer 2 security features — 4.7.a DHCP snooping (v1.1: 5.7)",
+      objective: "4.7 Configure Layer 2 security features, 4.7.a DHCP snooping (v1.1: 5.7)",
       difficulty: "intermediate",
       question:
         "Clients in VLAN 20 are receiving IP addresses from a rogue DHCP server that someone connected to an access port. The legitimate DHCP server is reached through the switch's uplink. How do you stop this?",

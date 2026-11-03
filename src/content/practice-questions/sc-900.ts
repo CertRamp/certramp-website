@@ -6,7 +6,7 @@ import type { PracticeQuestionSet } from "@/config/types";
  * not recalled exam content, and not presented as real exam questions.
  */
 const GUIDE = {
-  label: "Microsoft Learn — SC-900 study guide",
+  label: "Microsoft Learn: SC-900 study guide",
   url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900",
 };
 
@@ -19,7 +19,7 @@ export const sc900Questions: PracticeQuestionSet = {
   seo: {
     title: "SC-900 Practice Questions with Answers & Explanations (2026)",
     description:
-      "15 free, original SC-900 practice questions on security concepts, Microsoft Entra, Defender, Sentinel and Purview — each with a full explanation.",
+      "15 free, original SC-900 practice questions on security concepts, Microsoft Entra, Defender, Sentinel and Purview, each with a full explanation.",
   },
   questions: [
     /* ── Domain 1: Describe the concepts of security, compliance, and identity ── */

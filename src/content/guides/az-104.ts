@@ -36,7 +36,7 @@ export const az104Guide: ExamGuide = {
       steps: [
         {
           title: "Map yourself against the study guide",
-          body: "Go through every bullet of the official AZ-104 skills list and mark it as known, unsure or new. Weight your time by the published percentages — identities and governance and compute are each up to 25%.",
+          body: "Go through every bullet of the official AZ-104 skills list and mark it as known, unsure or new. Weight your time by the published percentages: identities and governance and compute are each up to 25%.",
         },
         {
           title: "Build a lab subscription",

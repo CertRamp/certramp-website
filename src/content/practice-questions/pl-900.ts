@@ -6,7 +6,7 @@ import type { PracticeQuestionSet } from "@/config/types";
  * not recalled exam content, and not presented as real exam questions.
  */
 const GUIDE = {
-  label: "Microsoft Learn — PL-900 study guide",
+  label: "Microsoft Learn: PL-900 study guide",
   url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900",
 };
 
@@ -19,7 +19,7 @@ export const pl900Questions: PracticeQuestionSet = {
   seo: {
     title: "PL-900 Practice Questions with Answers & Explanations (2026)",
     description:
-      "15 free, original PL-900 practice questions on Power Apps, Power Automate, Dataverse, administration and Copilot Studio agents — each with a full explanation.",
+      "15 free, original PL-900 practice questions on Power Apps, Power Automate, Dataverse, administration and Copilot Studio agents, each with a full explanation.",
   },
   questions: [
     /* ── Domain 1: Business value ─────────────────────────────────────────── */
@@ -256,7 +256,7 @@ export const pl900Questions: PracticeQuestionSet = {
         "An agent in Copilot Studio should answer employee questions using the company's travel policy, which is stored on a SharePoint site. What should the maker add to the agent?",
       options: [
         { id: "A", text: "The SharePoint site as a knowledge source", rationale: "Correct. Knowledge sources let the agent generate answers from content such as SharePoint sites, files and public websites." },
-        { id: "B", text: "A channel", rationale: "Channels define where the agent is published, such as Teams or a website — not where its answers come from." },
+        { id: "B", text: "A channel", rationale: "Channels define where the agent is published, such as Teams or a website, not where its answers come from." },
         { id: "C", text: "A desktop flow", rationale: "A desktop flow automates user interface actions; it is not the way to ground answers in documents." },
         { id: "D", text: "A Power Pages site", rationale: "Power Pages could host the agent, but it does not provide the policy content as knowledge." },
       ],
@@ -276,7 +276,7 @@ export const pl900Questions: PracticeQuestionSet = {
         { id: "A", text: "Adding more knowledge sources", rationale: "Knowledge sources improve answers but do not let the agent create records in another system." },
         { id: "B", text: "Publishing to another channel", rationale: "Channels change where the agent is available, not what it can do." },
         { id: "C", text: "Creating a Dataverse view", rationale: "A view lists data; it does not let the agent take actions." },
-        { id: "D", text: "Adding a tool, for example an agent flow or a connector action", rationale: "Correct. Tools — including agent flows, connector actions and MCP servers — let agents perform actions in other systems." },
+        { id: "D", text: "Adding a tool, for example an agent flow or a connector action", rationale: "Correct. Tools (including agent flows, connector actions and MCP servers) let agents perform actions in other systems." },
       ],
       answer: "D",
       explanation:

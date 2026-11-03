@@ -18,7 +18,7 @@ export const cfeGuide: ExamGuide = {
       id: "what-the-exam-tests",
       heading: "What the CFE exam actually tests",
       paragraphs: [
-        "Fraud Schemes and Financial Crimes covers how fraud schemes and financial crimes against organisations and individuals work, and how fraud examiners prevent and detect them. Expect the occupational fraud schemes of the ACFE Fraud Tree — asset misappropriation, corruption and financial statement fraud — and how each one is concealed and uncovered. It also includes basic accounting principles and financial statement fraud.",
+        "Fraud Schemes and Financial Crimes covers how fraud schemes and financial crimes against organisations and individuals work, and how fraud examiners prevent and detect them. Expect the occupational fraud schemes of the ACFE Fraud Tree (asset misappropriation, corruption and financial statement fraud) and how each one is concealed and uncovered. It also includes basic accounting principles and financial statement fraud.",
         "Fraud Investigations and Legal Issues covers running an investigation and its legal side: employee rights during investigations, rules and procedures for collecting evidence, gathering and analysing data, conducting interviews, report writing and navigating the legal system. Fraud Prevention and Deterrence covers why people commit fraud, corporate governance, the role of managers and auditors, fraud risk assessment, fraud risk management, building a fraud prevention programme and ethics in fraud examination.",
         "The questions are multiple choice and true/false, and every section is closed book. The ACFE does not publish weights beyond the question counts, but the two 120-question sections together make up most of the exam.",
       ],

@@ -26,7 +26,7 @@ export const md102Guide: ExamGuide = {
       id: "october-2026-update",
       heading: "What the 27 October 2026 update changed",
       paragraphs: [
-        "Microsoft rates the October 2026 update as minor. The area \"Manage applications\" was renamed \"Manage and secure applications\", and seven sub-skills received minor changes — namely enrollment, Windows deployment with cloud-based tools, configuration profiles, the Intune Suite add-ons, remote actions, app deployment and health monitoring.",
+        "Microsoft rates the October 2026 update as minor. The area \"Manage applications\" was renamed \"Manage and secure applications\", and seven sub-skills received minor changes: namely enrollment, Windows deployment with cloud-based tools, configuration profiles, the Intune Suite add-ons, remote actions, app deployment and health monitoring.",
         "The current outline expects you to know newer capabilities such as Autopilot device preparation policies, Windows 365 Cloud PC provisioning, Endpoint Privilege Management, Cloud PKI, multi-admin approval, Windows Autopatch with Hotpatch, device queries with KQL and Security Copilot agents in Intune. Translated exams follow about eight weeks after English.",
       ],
     },

@@ -20,7 +20,7 @@ export const ccspGuide: ExamGuide = {
       heading: "How the adaptive exam works",
       paragraphs: [
         "ISC2 delivers the CCSP exam as a computerized adaptive test (CAT). According to ISC2, every candidate starts with an item well below the passing standard, and with each answer the computer's estimate of the candidate's ability becomes more precise. The exam therefore does not have a fixed length: you will see between 100 and 150 items within the three-hour limit.",
-        "For preparation this has two consequences. First, you cannot plan around a fixed number of questions — practise keeping a steady pace instead. Three hours for up to 150 items leaves a little over a minute per item. Second, items are drawn from all six domains of the outline, so plan to cover every domain rather than relying on your strongest ones.",
+        "For preparation this has two consequences. First, you cannot plan around a fixed number of questions: practise keeping a steady pace instead. Three hours for up to 150 items leaves a little over a minute per item. Second, items are drawn from all six domains of the outline, so plan to cover every domain rather than relying on your strongest ones.",
       ],
     },
     {
@@ -49,7 +49,7 @@ export const ccspGuide: ExamGuide = {
         },
         {
           title: "Practise after every domain",
-          body: "Answer domain-specific questions straight after studying and read every explanation — including for the questions you got right.",
+          body: "Answer domain-specific questions straight after studying and read every explanation, including for the questions you got right.",
         },
         {
           title: "Simulate the real exam",
@@ -57,7 +57,7 @@ export const ccspGuide: ExamGuide = {
         },
         {
           title: "Close the last gaps, then book",
-          body: "Book the exam once you score consistently above your target on exam-level practice tests — not after a single good result.",
+          body: "Book the exam once you score consistently above your target on exam-level practice tests, not after a single good result.",
         },
       ],
     },
@@ -68,7 +68,7 @@ export const ccspGuide: ExamGuide = {
         "Studying one cloud provider's services instead of vendor-neutral concepts. The CCSP tests principles that apply across providers.",
         "Neglecting Domain 6. Legal, privacy, audit and contract topics are unfamiliar to many technical candidates and need dedicated time.",
         "Memorising definitions without applying them. Practise choosing the best option in a scenario, not just recognising a term.",
-        "Answering as a hands-on engineer only. Many questions are about risk, governance and responsibility — think about who is accountable.",
+        "Answering as a hands-on engineer only. Many questions are about risk, governance and responsibility: think about who is accountable.",
         "Skipping the explanations. The reasoning behind wrong options is where most of the learning happens.",
         "Only practising in short sessions. A three-hour adaptive exam needs stamina that only full-length practice builds.",
       ],
@@ -77,7 +77,7 @@ export const ccspGuide: ExamGuide = {
       id: "question-style",
       heading: "How to approach scenario questions",
       bullets: [
-        "Identify the role you are asked to take — customer, provider, auditor or manager.",
+        "Identify the role you are asked to take: customer, provider, auditor or manager.",
         "Look for qualifiers such as BEST, FIRST, MOST and PRIMARY; several options may be correct, but only one fits the qualifier.",
         "Map the scenario to the cloud service model (IaaS, PaaS, SaaS) before deciding who is responsible.",
         "Prefer answers that address the root cause or follow due process over quick technical fixes.",

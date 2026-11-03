@@ -13,12 +13,12 @@ export const globalFaq: { group: string; items: FaqItem[] }[] = [
       {
         question: "What is CertRamp?",
         answer:
-          "CertRamp Learning is an independent exam-preparation brand. We create progressive practice exams for professional certifications in IT, project management, cybersecurity and governance — six tests per certification that increase in difficulty, so you can measure where you stand and build up to exam level.",
+          "CertRamp Learning is an independent exam-preparation brand. We create progressive practice exams for professional certifications in IT, project management, cybersecurity and governance: six tests per certification that increase in difficulty, so you can measure where you stand and build up to exam level.",
       },
       {
         question: "Are these official certification exams?",
         answer:
-          "No. CertRamp practice exams are independent study material written by CertRamp. They are not official exams and are not affiliated with, endorsed by or sponsored by any certification body. Passing a CertRamp test does not award a certification — certifications are issued only by the organisation that owns them.",
+          "No. CertRamp practice exams are independent study material written by CertRamp. They are not official exams and are not affiliated with, endorsed by or sponsored by any certification body. Passing a CertRamp test does not award a certification: certifications are issued only by the organisation that owns them.",
       },
       {
         question: "Where do I take the real certification exam?",
@@ -33,12 +33,12 @@ export const globalFaq: { group: string; items: FaqItem[] }[] = [
       {
         question: "How do the practice exams work?",
         answer:
-          "Each certification has six practice tests that grow with you. Test 1 is a diagnostic that shows your starting point. Tests 2 and 3 build and strengthen your knowledge. Test 4 is set at real exam level. Tests 5 and 6 go further — targeting weak areas and finally going beyond exam difficulty. Take them in order, review your results, and repeat.",
+          "Each certification has six practice tests that grow with you. Test 1 is a diagnostic that shows your starting point. Tests 2 and 3 build and strengthen your knowledge. Test 4 is set at real exam level. Tests 5 and 6 go further: targeting weak areas and finally going beyond exam difficulty. Take them in order, review your results, and repeat.",
       },
       {
         question: "Where do I take the practice exams?",
         answer:
-          "CertRamp practice exams are available as Udemy courses today — you take them on Udemy, in the browser or the Udemy app. The CertRamp Exam Simulator, offered directly by CertRamp, will run online in your browser with nothing to install.",
+          "CertRamp practice exams are available as Udemy courses today: you take them on Udemy, in the browser or the Udemy app. The CertRamp Exam Simulator, offered directly by CertRamp, will run online in your browser with nothing to install.",
       },
       {
         question: "What does the free practice test include?",
@@ -108,7 +108,7 @@ export const certificationFaqTemplate: FaqItem[] = [
   {
     question: "Which test should I start with?",
     answer:
-      "Start with Test 1, the diagnostic. It shows your baseline across the syllabus. Then work through the tests in order — each one is harder than the last.",
+      "Start with Test 1, the diagnostic. It shows your baseline across the syllabus. Then work through the tests in order, each one is harder than the last.",
   },
   {
     question: "How do I know if I'm ready for the {name} exam?",

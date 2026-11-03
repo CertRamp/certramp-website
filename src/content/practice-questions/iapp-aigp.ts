@@ -7,17 +7,17 @@ import type { PracticeQuestionSet } from "@/config/types";
  * presented as real exam questions.
  */
 const BOK = {
-  label: "IAPP — AIGP body of knowledge and exam blueprint 2.1 (PDF)",
+  label: "IAPP: AIGP body of knowledge and exam blueprint 2.1 (PDF)",
   url: "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt0d33152fd20bc134/AIGP_Cert%20BOK.pdf",
 };
 
 const aiAct = (articles: string) => ({
-  label: `EU AI Act (Regulation (EU) 2024/1689), ${articles} — EUR-Lex`,
+  label: `EU AI Act (Regulation (EU) 2024/1689), ${articles}: EUR-Lex`,
   url: "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
 });
 
 const GDPR = {
-  label: "GDPR (Regulation (EU) 2016/679), Articles 5, 6 and 13 — EUR-Lex",
+  label: "GDPR (Regulation (EU) 2016/679), Articles 5, 6 and 13: EUR-Lex",
   url: "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
 };
 
@@ -35,7 +35,7 @@ export const iappAigpQuestions: PracticeQuestionSet = {
   seo: {
     title: "AIGP Practice Questions with Answers & Explanations (2026)",
     description:
-      "15 free, original IAPP AIGP practice questions on AI governance, the EU AI Act, NIST AI RMF, AI development and deployment — each with a full explanation.",
+      "15 free, original IAPP AIGP practice questions on AI governance, the EU AI Act, NIST AI RMF, AI development and deployment, each with a full explanation.",
   },
   questions: [
     /* ── Domain I: Understanding the foundations of AI governance ───────────── */
@@ -103,7 +103,7 @@ export const iappAigpQuestions: PracticeQuestionSet = {
       question:
         "A company subject to the GDPR wants to use customer support chat transcripts, originally collected to resolve customer queries, to fine-tune a language model. Which step is required before it does so?",
       options: [
-        { id: "A", text: "None — data the company already holds can be reused for any internal purpose", rationale: "The purpose limitation principle does not allow unrestricted reuse of personal data for new purposes." },
+        { id: "A", text: "None: data the company already holds can be reused for any internal purpose", rationale: "The purpose limitation principle does not allow unrestricted reuse of personal data for new purposes." },
         { id: "B", text: "Anonymise the transcripts by removing customer names only", rationale: "Removing names alone rarely makes free-text transcripts anonymous; other identifiers and context usually remain." },
         { id: "C", text: "Obtain approval from the supervisory authority", rationale: "The GDPR does not require prior approval from the supervisory authority for a new processing purpose (prior consultation applies only in specific high-risk cases after a DPIA)." },
         { id: "D", text: "Assess whether the new purpose is compatible with the original one, identify a lawful basis and provide transparent information to the individuals", rationale: "Correct. Reuse for model training is a further purpose that must meet purpose limitation, have a lawful basis and be explained to data subjects." },
@@ -305,7 +305,7 @@ export const iappAigpQuestions: PracticeQuestionSet = {
       question:
         "A retailer is about to launch an AI chatbot that answers customer questions on its website. As part of governing the deployment, what should the external communication plan include?",
       options: [
-        { id: "A", text: "Nothing — customer-facing communication is the vendor's responsibility", rationale: "The retailer deploys the chatbot to its own customers and is responsible for how it communicates about its use." },
+        { id: "A", text: "Nothing: customer-facing communication is the vendor's responsibility", rationale: "The retailer deploys the chatbot to its own customers and is responsible for how it communicates about its use." },
         { id: "B", text: "Only a marketing announcement of the new feature", rationale: "Promotional messages do not tell customers what they need to know about interacting with an AI system." },
         { id: "C", text: "Clear disclosure that customers are interacting with an AI system, its purpose and limitations, and how to reach a human or raise a concern", rationale: "Correct. Transparent external communication covers the fact of AI use, what it is for, its limits and the channels for help, complaints or redress." },
         { id: "D", text: "The full technical documentation and model weights", rationale: "Publishing technical internals is neither necessary nor useful for customers and may expose confidential information." },

@@ -8,7 +8,7 @@ import type { DeContent } from "@/config/types";
  * follow the official German study guide on learn.microsoft.com (de-de).
  */
 const GUIDE = {
-  label: "Microsoft Learn — Studienleitfaden für die Prüfung AZ-104",
+  label: "Microsoft Learn: Studienleitfaden für die Prüfung AZ-104",
   url: "https://learn.microsoft.com/de-de/credentials/certifications/resources/study-guides/az-104",
 };
 
@@ -117,7 +117,7 @@ export const az104De: DeContent = {
         steps: [
           {
             title: "Gleichen Sie Ihren Stand mit dem Studienleitfaden ab",
-            body: "Gehen Sie jeden Punkt der offiziellen AZ-104-Fähigkeitenliste durch und markieren Sie ihn als bekannt, unsicher oder neu. Teilen Sie Ihre Zeit nach den veröffentlichten Prozentsätzen ein – Identitäten und Governance sowie Compute machen jeweils bis zu 25 % aus.",
+            body: "Gehen Sie jeden Punkt der offiziellen AZ-104-Fähigkeitenliste durch und markieren Sie ihn als bekannt, unsicher oder neu. Teilen Sie Ihre Zeit nach den veröffentlichten Prozentsätzen ein: Identitäten und Governance sowie Compute machen jeweils bis zu 25 % aus.",
           },
           {
             title: "Richten Sie ein Lab-Abonnement ein",
@@ -204,7 +204,7 @@ export const az104De: DeContent = {
     seo: {
       title: "AZ-104 Übungsfragen mit Lösungen und Erklärungen (2026)",
       description:
-        "15 kostenlose, eigene AZ-104 Übungsfragen zu Entra ID, RBAC, Azure Policy, Speicher, VMs, Netzwerken und Sicherung – jeweils mit ausführlicher Erklärung.",
+        "15 kostenlose, eigene AZ-104 Übungsfragen zu Entra ID, RBAC, Azure Policy, Speicher, VMs, Netzwerken und Sicherung: jeweils mit ausführlicher Erklärung.",
     },
     questions: [
       /* ── Bereich 1: Verwalten von Azure-Identitäten und Governance ─────── */
@@ -219,7 +219,7 @@ export const az104De: DeContent = {
           { id: "A", text: "Die Rolle Owner (Besitzer) im Bereich des Abonnements zuweisen", rationale: "Owner kann anderen Zugriff gewähren, und der Abonnementbereich umfasst jede Ressourcengruppe." },
           { id: "B", text: "Die Rolle Contributor (Mitwirkender) im Bereich der Ressourcengruppe RG-Dev zuweisen", rationale: "Richtig. Contributor kann alle Ressourcen verwalten, aber keine Rollen zuweisen, und der Ressourcengruppenbereich beschränkt dies auf RG-Dev." },
           { id: "C", text: "Die Rolle Reader (Leser) im Bereich der Ressourcengruppe RG-Dev zuweisen", rationale: "Reader kann Ressourcen nur anzeigen; der Entwickler könnte nichts erstellen oder ändern." },
-          { id: "D", text: "Die Rolle User Access Administrator (Benutzerzugriffsadministrator) im Bereich RG-Dev zuweisen", rationale: "Diese Rolle verwaltet nur Zugriffszuweisungen – genau das, was der Entwickler nicht tun darf." },
+          { id: "D", text: "Die Rolle User Access Administrator (Benutzerzugriffsadministrator) im Bereich RG-Dev zuweisen", rationale: "Diese Rolle verwaltet nur Zugriffszuweisungen: genau das, was der Entwickler nicht tun darf." },
         ],
         answer: "B",
         explanation:
@@ -297,7 +297,7 @@ export const az104De: DeContent = {
         ],
         answer: "B",
         explanation:
-          "Eine gespeicherte Zugriffsrichtlinie legt Start, Ablauf und Berechtigungen auf Containerseite fest. Dienst-SAS-Token, die darauf verweisen, lassen sich zentral widerrufen – bei Ad-hoc-Token ist das ohne Schlüsselrotation nicht möglich.",
+          "Eine gespeicherte Zugriffsrichtlinie legt Start, Ablauf und Berechtigungen auf Containerseite fest. Dienst-SAS-Token, die darauf verweisen, lassen sich zentral widerrufen, bei Ad-hoc-Token ist das ohne Schlüsselrotation nicht möglich.",
         reference: GUIDE,
       },
       {

@@ -64,7 +64,7 @@ export default async function LegalPage({ params }: { params: Promise<Params> })
             <h2 id="checklist-title" className="text-xl font-semibold">
               To prepare for this page
             </h2>
-            <p className="mt-2 text-sm text-muted">A checklist for you and your legal advisor — not legal text.</p>
+            <p className="mt-2 text-sm text-muted">A checklist for you and your legal advisor, not legal text.</p>
             <ul className="mt-5 space-y-3">
               {cfg.checklist.map((item) => (
                 <li key={item} className="flex items-start gap-3 text-[0.9375rem]">

@@ -20,14 +20,14 @@ export const irebCpreGuide: ExamGuide = {
       heading: "How the exam works",
       paragraphs: [
         "The exam is run by IREB-licensed certification bodies, either right after a training course or as a stand-alone exam at an exam centre; some bodies also offer remote exams. There are no formal prerequisites, although the syllabus expects basic knowledge of plan-driven and agile system development.",
-        "All questions are multiple choice, in three kinds: single choice (A), questions where you pick several answers (P), and true/false sets (K). A question is worth one to three points, shown in its header. Because P and K questions have several parts, read every statement carefully — partial knowledge costs points quickly.",
+        "All questions are multiple choice, in three kinds: single choice (A), questions where you pick several answers (P), and true/false sets (K). A question is worth one to three points, shown in its header. Because P and K questions have several parts, read every statement carefully: partial knowledge costs points quickly.",
       ],
     },
     {
       id: "where-to-focus",
       heading: "Where to focus",
       paragraphs: [
-        "The syllabus gives no exam weights per chapter, but it does give training times, and these show where the depth is. Chapter 3 (work products and documentation practices) has seven hours and chapter 4 (practices for requirements elaboration) four and a half — together almost two thirds of the 17 h 45 min total. Both are at cognitive level L3, which means you must apply the content, for example writing a requirement with a template or identifying stakeholders and writing a stakeholder list.",
+        "The syllabus gives no exam weights per chapter, but it does give training times, and these show where the depth is. Chapter 3 (work products and documentation practices) has seven hours and chapter 4 (practices for requirements elaboration) four and a half: together almost two thirds of the 17 h 45 min total. Both are at cognitive level L3, which means you must apply the content, for example writing a requirement with a template or identifying stakeholders and writing a stakeholder list.",
         "Do not neglect the short chapters. The nine principles of chapter 2, the process facets and configurations of chapter 5 and the traceability and prioritisation topics of chapter 6 produce many compact, easy-to-score questions if you know the terms exactly.",
       ],
     },

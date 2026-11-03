@@ -6,7 +6,7 @@ import type { PracticeQuestionSet } from "@/config/types";
  * recalled exam content, and not presented as real exam questions.
  */
 const GUIDE_BASE = "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02";
-const D2 = { label: "AWS — MLA-C02 exam guide, Content Domain 2", url: `${GUIDE_BASE}/machine-learning-engineer-associate-02-domain2.html` };
+const D2 = { label: "AWS: MLA-C02 exam guide, Content Domain 2", url: `${GUIDE_BASE}/machine-learning-engineer-associate-02-domain2.html` };
 
 export const awsMlaC02Questions: PracticeQuestionSet = {
   slug: "aws-mla-c02",
@@ -17,7 +17,7 @@ export const awsMlaC02Questions: PracticeQuestionSet = {
   seo: {
     title: "MLA-C02 Practice Questions with Answers & Explanations (2026)",
     description:
-      "15 free, original MLA-C02 practice questions on SageMaker AI, Bedrock, RAG, agents, MLOps, monitoring and security — each with a full explanation.",
+      "15 free, original MLA-C02 practice questions on SageMaker AI, Bedrock, RAG, agents, MLOps, monitoring and security, each with a full explanation.",
   },
   questions: [
     /* ── Domain 1: Data Preparation for ML and AI ─────────────────────────── */
@@ -37,7 +37,7 @@ export const awsMlaC02Questions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "The exam guide asks you to choose data formats such as Parquet, JSON, CSV and ORC based on access patterns. When queries touch a few columns of wide tables, a columnar format like Parquet or ORC is the standard choice.",
-      reference: { label: "Amazon Athena — Use columnar storage formats", url: "https://docs.aws.amazon.com/athena/latest/ug/columnar-storage.html" },
+      reference: { label: "Amazon Athena: Use columnar storage formats", url: "https://docs.aws.amazon.com/athena/latest/ug/columnar-storage.html" },
     },
     {
       id: "mlac02-d1-feature-store",
@@ -55,7 +55,7 @@ export const awsMlaC02Questions: PracticeQuestionSet = {
       answer: "A",
       explanation:
         "Feature Store has two stores for two jobs: online for low-latency lookup of the latest values, offline for history used in training and batch inference. Ingesting into one feature group with both stores enabled helps keep training and serving features consistent.",
-      reference: { label: "Amazon SageMaker AI — Feature Store concepts", url: "https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-concepts.html" },
+      reference: { label: "Amazon SageMaker AI: Feature Store concepts", url: "https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-concepts.html" },
     },
     {
       id: "mlac02-d1-hierarchical-chunking",
@@ -73,7 +73,7 @@ export const awsMlaC02Questions: PracticeQuestionSet = {
       answer: "D",
       explanation:
         "Preparing documents for RAG, including chunking strategies, is a named skill in the exam guide. Hierarchical chunking separates the unit used for matching (child) from the unit passed to the model (parent).",
-      reference: { label: "Amazon Bedrock — How content chunking works for knowledge bases", url: "https://docs.aws.amazon.com/bedrock/latest/userguide/kb-chunking.html" },
+      reference: { label: "Amazon Bedrock: How content chunking works for knowledge bases", url: "https://docs.aws.amazon.com/bedrock/latest/userguide/kb-chunking.html" },
     },
     {
       id: "mlac02-d1-clarify-ci",
@@ -91,7 +91,7 @@ export const awsMlaC02Questions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "Clarify's pre-training metrics are model-agnostic and run on the data alone. A CI value near −1 or 1 signals strong imbalance between facets, which you may want to fix by rebalancing the sample before training.",
-      reference: { label: "Amazon SageMaker AI — Class Imbalance (CI)", url: "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-bias-metric-class-imbalance.html" },
+      reference: { label: "Amazon SageMaker AI: Class Imbalance (CI)", url: "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-bias-metric-class-imbalance.html" },
     },
 
     /* ── Domain 2: ML Model and Foundation Model (FM) Development ──────────── */
@@ -111,7 +111,7 @@ export const awsMlaC02Questions: PracticeQuestionSet = {
       answer: "A",
       explanation:
         "The exam guide expects you to apply AWS AI services to specific business problems and to weigh managed services against custom models. When a managed service already does the job, it is usually the lowest-effort answer.",
-      reference: { label: "Amazon Textract — What is Amazon Textract?", url: "https://docs.aws.amazon.com/textract/latest/dg/what-is.html" },
+      reference: { label: "Amazon Textract: What is Amazon Textract?", url: "https://docs.aws.amazon.com/textract/latest/dg/what-is.html" },
     },
     {
       id: "mlac02-d2-spot-training",
@@ -129,7 +129,7 @@ export const awsMlaC02Questions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "Spot training trades guaranteed capacity for lower cost, which suits jobs that are not time-critical. Managed spot training does not fall back to on-demand instances, so checkpointing and a sensible wait time are essential.",
-      reference: { label: "Amazon SageMaker AI — Managed Spot Training", url: "https://docs.aws.amazon.com/sagemaker/latest/dg/model-managed-spot-training.html" },
+      reference: { label: "Amazon SageMaker AI: Managed Spot Training", url: "https://docs.aws.amazon.com/sagemaker/latest/dg/model-managed-spot-training.html" },
     },
     {
       id: "mlac02-d2-overfitting",
@@ -165,7 +165,7 @@ export const awsMlaC02Questions: PracticeQuestionSet = {
       answer: "D",
       explanation:
         "The exam guide names LLM-as-a-judge frameworks, human-in-the-loop evaluation and NLP metrics such as BLEU and ROUGE. Pick the method that fits what you have: references, reviewers or neither.",
-      reference: { label: "Amazon Bedrock — Model evaluation jobs that use a model as a judge", url: "https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation-judge.html" },
+      reference: { label: "Amazon Bedrock: Model evaluation jobs that use a model as a judge", url: "https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation-judge.html" },
     },
 
     /* ── Domain 3: Deployment and Orchestration of ML and AI Workflows ──────── */
@@ -185,7 +185,7 @@ export const awsMlaC02Questions: PracticeQuestionSet = {
       answer: "A",
       explanation:
         "Choosing between real-time, serverless, asynchronous and batch inference is a core deployment decision. Large payloads, long processing and near-real-time expectations point to asynchronous inference.",
-      reference: { label: "Amazon SageMaker AI — Asynchronous inference", url: "https://docs.aws.amazon.com/sagemaker/latest/dg/async-inference.html" },
+      reference: { label: "Amazon SageMaker AI: Asynchronous inference", url: "https://docs.aws.amazon.com/sagemaker/latest/dg/async-inference.html" },
     },
     {
       id: "mlac02-d3-custom-model-import",
@@ -203,7 +203,7 @@ export const awsMlaC02Questions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "The exam guide names Amazon Bedrock Custom Model Import for deploying models built outside AWS. Check the supported architectures and file requirements, and remember that SageMaker AI is the alternative when you need full control of hosting.",
-      reference: { label: "Amazon Bedrock — Custom Model Import", url: "https://docs.aws.amazon.com/bedrock/latest/userguide/model-customization-import-model.html" },
+      reference: { label: "Amazon Bedrock: Custom Model Import", url: "https://docs.aws.amazon.com/bedrock/latest/userguide/model-customization-import-model.html" },
     },
     {
       id: "mlac02-d3-agent-memory",
@@ -211,7 +211,7 @@ export const awsMlaC02Questions: PracticeQuestionSet = {
       objective: "3.2 Provision and configure resources for ML and AI workloads based on existing architecture and requirements",
       difficulty: "intermediate",
       question:
-        "A travel booking agent runs on Amazon Bedrock AgentCore. It must remember the context within a conversation and also recall user preferences, such as a preferred seat, in later sessions — without the team building its own storage layer. What should you use?",
+        "A travel booking agent runs on Amazon Bedrock AgentCore. It must remember the context within a conversation and also recall user preferences, such as a preferred seat, in later sessions, without the team building its own storage layer. What should you use?",
       options: [
         { id: "A", text: "A larger context window on the model", rationale: "A larger context window helps within one request, but it does not persist preferences across separate sessions." },
         { id: "B", text: "AgentCore Memory with short-term and long-term memory", rationale: "Correct. Short-term memory keeps turn-by-turn context within a session, and long-term memory extracts and stores insights such as user preferences across sessions." },
@@ -221,7 +221,7 @@ export const awsMlaC02Questions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "Implementing agent state management systems is a new skill in MLA-C02. AgentCore Memory provides managed short-term and long-term memory, so agents are not stateless between interactions.",
-      reference: { label: "Amazon Bedrock AgentCore — Memory", url: "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory.html" },
+      reference: { label: "Amazon Bedrock AgentCore: Memory", url: "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory.html" },
     },
     {
       id: "mlac02-d3-model-registry",
@@ -239,7 +239,7 @@ export const awsMlaC02Questions: PracticeQuestionSet = {
       answer: "D",
       explanation:
         "The exam guide lists managing model versions for repeatability and audits, for example with SageMaker Model Registry. The approval status becomes the gate between training and deployment.",
-      reference: { label: "Amazon SageMaker AI — Update the approval status of a model", url: "https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-approve.html" },
+      reference: { label: "Amazon SageMaker AI: Update the approval status of a model", url: "https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-approve.html" },
     },
 
     /* ── Domain 4: Operating, Monitoring, and Securing ML and AI Solutions ─── */
@@ -259,7 +259,7 @@ export const awsMlaC02Questions: PracticeQuestionSet = {
       answer: "A",
       explanation:
         "Monitoring model performance in production with A/B testing is a named skill. Weighted production variants give you a controlled split, and per-variant CloudWatch metrics show how each version behaves.",
-      reference: { label: "Amazon SageMaker AI — Test models with production variants", url: "https://docs.aws.amazon.com/sagemaker/latest/dg/model-ab-testing.html" },
+      reference: { label: "Amazon SageMaker AI: Test models with production variants", url: "https://docs.aws.amazon.com/sagemaker/latest/dg/model-ab-testing.html" },
     },
     {
       id: "mlac02-d4-serverless",
@@ -277,7 +277,7 @@ export const awsMlaC02Questions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "Matching capacity to the traffic pattern is a core cost skill. Intermittent, unpredictable traffic with tolerance for cold starts points to serverless inference; predictable bursts may justify Provisioned Concurrency.",
-      reference: { label: "Amazon SageMaker AI — Serverless Inference", url: "https://docs.aws.amazon.com/sagemaker/latest/dg/serverless-endpoints.html" },
+      reference: { label: "Amazon SageMaker AI: Serverless Inference", url: "https://docs.aws.amazon.com/sagemaker/latest/dg/serverless-endpoints.html" },
     },
     {
       id: "mlac02-d4-guardrails-pii",
@@ -295,7 +295,7 @@ export const awsMlaC02Questions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "The exam guide names Amazon Bedrock Guardrails for safeguards and sensitive data protection. Choose mask when the response should still be delivered, and block when any detection should stop the response.",
-      reference: { label: "Amazon Bedrock — Remove PII from conversations by using sensitive information filters", url: "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-sensitive-filters.html" },
+      reference: { label: "Amazon Bedrock: Remove PII from conversations by using sensitive information filters", url: "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-sensitive-filters.html" },
     },
   ],
 };

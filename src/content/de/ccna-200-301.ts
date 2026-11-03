@@ -8,7 +8,7 @@ import type { DeContent } from "@/config/types";
  * Cisco's official English wording (no official German version of the exam exists).
  */
 const V2 = {
-  label: "Cisco — 200-301 CCNA v2.0 Exam Topics (PDF, Englisch)",
+  label: "Cisco: 200-301 CCNA v2.0 Exam Topics (PDF, Englisch)",
   url: "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf",
 };
 
@@ -16,7 +16,7 @@ export const ccna200301De: DeContent = {
   slug: "ccna-200-301",
   name: "Cisco CCNA 200-301",
   languageNote:
-    "Die offizielle CCNA-Prüfung 200-301 gibt es nicht auf Deutsch – Cisco bietet sie nur auf Englisch und Japanisch an; unsere Übungsprüfungen helfen Ihnen, die Inhalte auf Deutsch zu verstehen.",
+    "Die offizielle CCNA-Prüfung 200-301 gibt es nicht auf Deutsch: Cisco bietet sie nur auf Englisch und Japanisch an; unsere Übungsprüfungen helfen Ihnen, die Inhalte auf Deutsch zu verstehen.",
   facts: [
     { label: "Prüfungsanbieter", value: "Cisco" },
     { label: "Prüfungscode", value: "200-301 CCNA" },
@@ -104,7 +104,7 @@ export const ccna200301De: DeContent = {
   guide: {
     slug: "ccna-200-301",
     summary:
-      "CCNA 200-301 (Implementing and Administering Cisco Solutions) ist eine 120-minütige Prüfung, die zeigt, ob Sie ein kleines bis mittelgroßes Netzwerk aufbauen, betreiben und Fehler darin beheben können: Adressierung und Subnetting, Switching, Routing, Netzwerkdienste, Sicherheit und Netzwerkbetrieb. Derzeit sind zwei Versionen relevant: v1.1 kann bis zum 2. Februar 2027 abgelegt werden, und v2.0 – die die Inhalte in fünf Domänen neu gliedert, mit mehr Troubleshooting und KI im Netzwerkbetrieb – startet am 3. Februar 2027.",
+      "CCNA 200-301 (Implementing and Administering Cisco Solutions) ist eine 120-minütige Prüfung, die zeigt, ob Sie ein kleines bis mittelgroßes Netzwerk aufbauen, betreiben und Fehler darin beheben können: Adressierung und Subnetting, Switching, Routing, Netzwerkdienste, Sicherheit und Netzwerkbetrieb. Derzeit sind zwei Versionen relevant: v1.1 kann bis zum 2. Februar 2027 abgelegt werden, und v2.0 (die die Inhalte in fünf Domänen neu gliedert, mit mehr Troubleshooting und KI im Netzwerkbetrieb) startet am 3. Februar 2027.",
     whoFor: [
       "Mitarbeiterinnen und Mitarbeiter aus Netzwerk, Support und Helpdesk, die eine anerkannte erste Cisco-Zertifizierung anstreben",
       "Quereinsteigerinnen und Quereinsteiger sowie Studentinnen und Studenten, die eine Grundlage in Routing, Switching und IP-Adressierung aufbauen",
@@ -124,7 +124,7 @@ export const ccna200301De: DeContent = {
         id: "whats-new-v2",
         heading: "Was sich mit v2.0 ändert",
         bullets: [
-          "Mehr Troubleshooting. Viele Themen in v2.0 beginnen mit „Troubleshoot“, „Diagnose“ oder „Interpret“ – IPv4- und IPv6-Adressierung, Client-Konnektivität, DHCPv4, statisches Routing, DNS-Einträge und Syslog-Meldungen.",
+          "Mehr Troubleshooting. Viele Themen in v2.0 beginnen mit „Troubleshoot“, „Diagnose“ oder „Interpret“: IPv4- und IPv6-Adressierung, Client-Konnektivität, DHCPv4, statisches Routing, DNS-Einträge und Syslog-Meldungen.",
           "Neue oder erweiterte Themen sind unter anderem OSPFv3 für IPv6, der Betriebsstatus von HSRP und VRRP, DNS-Eintragstypen (A, AAAA, CNAME, MX, NS und PTR), Dateiübertragung mit SFTP/SCP, AAA mit TACACS+ und RADIUS sowie Storm Control und RA Guard als Layer-2-Sicherheitsfunktionen.",
           "KI im Betrieb. Domäne 5.0 behandelt die Rolle agentischer KI und die Auswahl eines Prompts für ein generatives KI-System. Cisco weist außerdem darauf hin, dass manche Fragen verlangen können, die Ausgabe agentischer KI und digitaler Netzwerkassistenten zu bewerten.",
           "Themen, die in der Gliederung von v1.1, aber nicht in der von v2.0 vorkommen, sind unter anderem QoS-Per-Hop-Behavior, NTP, TFTP/FTP, TCP im Vergleich zu UDP, REST-APIs und JSON-codierte Daten. Lernen Sie sie, wenn Sie v1.1 ablegen; wenn Sie v2.0 ablegen, prüfen Sie das PDF zu v2.0, bevor Sie etwas auslassen.",
@@ -156,7 +156,7 @@ export const ccna200301De: DeContent = {
           },
           {
             title: "Üben Sie unter Zeitdruck",
-            body: "Absolvieren Sie zeitlich begrenzte Übungsprüfungen in 120 Minuten und lesen Sie jede Erklärung – auch zu den Fragen, die Sie richtig beantwortet haben. Buchen Sie die Prüfung, sobald Sie regelmäßig mit sicherem Abstand bestehen.",
+            body: "Absolvieren Sie zeitlich begrenzte Übungsprüfungen in 120 Minuten und lesen Sie jede Erklärung, auch zu den Fragen, die Sie richtig beantwortet haben. Buchen Sie die Prüfung, sobald Sie regelmäßig mit sicherem Abstand bestehen.",
           },
         ],
       },
@@ -164,10 +164,10 @@ export const ccna200301De: DeContent = {
         id: "common-mistakes",
         heading: "Häufige Fehler bei der Vorbereitung",
         bullets: [
-          "Die falsche Gliederung lernen. Material für v1.1 ist auch für v2.0 nützlich, deckt aber neue Themen nicht ab – etwa OSPFv3, den Betriebsstatus von HSRP und VRRP (v1.1 beschrieb nur FHRP-Konzepte), DNS-Einträge und agentische KI.",
+          "Die falsche Gliederung lernen. Material für v1.1 ist auch für v2.0 nützlich, deckt aber neue Themen nicht ab, etwa OSPFv3, den Betriebsstatus von HSRP und VRRP (v1.1 beschrieb nur FHRP-Konzepte), DNS-Einträge und agentische KI.",
           "Sich auf einen Subnetzrechner verlassen. In der Prüfung haben Sie keinen, und langsames Rechnen kostet bei jeder Adressierungsfrage Zeit.",
           "Die Liste der erlaubten VLANs auf einem Trunk ersetzen. switchport trunk allowed vlan 30 überschreibt die Liste; switchport trunk allowed vlan add 30 erweitert sie.",
-          "Das implizite Deny vergessen. Jede IPv4-ACL endet mit einem unsichtbaren Deny – eine ACL, die nur deny-Anweisungen enthält, blockiert daher den gesamten Datenverkehr.",
+          "Das implizite Deny vergessen. Jede IPv4-ACL endet mit einem unsichtbaren Deny: eine ACL, die nur deny-Anweisungen enthält, blockiert daher den gesamten Datenverkehr.",
           "Administrative Distanz und Metrik verwechseln. Zuerst wählt der Longest Prefix Match die Route aus; die administrative Distanz entscheidet nur zwischen Routen zum selben Präfix aus unterschiedlichen Quellen.",
         ],
       },
@@ -191,7 +191,7 @@ export const ccna200301De: DeContent = {
       {
         question: "Gibt es die Prüfung auf Deutsch?",
         answer:
-          "Nein. Die CCNA-Prüfung 200-301 wird nur auf Englisch und Japanisch angeboten; Sie legen sie in der Regel auf Englisch ab. Unsere deutschsprachigen Übungsfragen helfen Ihnen, die Inhalte auf Deutsch zu verstehen – Befehle, Ausgaben und Fachbegriffe sollten Sie dennoch auf Englisch beherrschen.",
+          "Nein. Die CCNA-Prüfung 200-301 wird nur auf Englisch und Japanisch angeboten; Sie legen sie in der Regel auf Englisch ab. Unsere deutschsprachigen Übungsfragen helfen Ihnen, die Inhalte auf Deutsch zu verstehen: Befehle, Ausgaben und Fachbegriffe sollten Sie dennoch auf Englisch beherrschen.",
       },
       {
         question: "Wie lange ist die CCNA gültig und wie rezertifiziere ich mich?",
@@ -216,13 +216,13 @@ export const ccna200301De: DeContent = {
   questions: {
     slug: "ccna-200-301",
     intro:
-      "15 eigene Übungsfragen zu CCNA 200-301, gegliedert nach den fünf Domänen der Exam Topics v2.0 und ungefähr so gewichtet wie diese. Jede Frage behandelt ein Thema, das sowohl in v2.0 als auch in v1.1 vorkommt – die Fragen sind also unabhängig davon nützlich, welche Version Sie ablegen; bei jedem Prüfungsziel stehen beide Themennummern. Zu jeder Frage gibt es die Lösung, eine kurze Erklärung und die Begründung, warum jede andere Option falsch ist.",
+      "15 eigene Übungsfragen zu CCNA 200-301, gegliedert nach den fünf Domänen der Exam Topics v2.0 und ungefähr so gewichtet wie diese. Jede Frage behandelt ein Thema, das sowohl in v2.0 als auch in v1.1 vorkommt, die Fragen sind also unabhängig davon nützlich, welche Version Sie ablegen; bei jedem Prüfungsziel stehen beide Themennummern. Zu jeder Frage gibt es die Lösung, eine kurze Erklärung und die Begründung, warum jede andere Option falsch ist.",
     published: "2026-10-28",
     updated: "2026-10-28",
     seo: {
       title: "CCNA 200-301 Übungsfragen mit Lösungen (v1.1 & v2.0)",
       description:
-        "15 kostenlose, eigene CCNA-200-301-Übungsfragen zu Subnetting, IPv6, VLANs, STP, OSPF, NAT, ACLs und Layer-2-Sicherheit – passend für v1.1 und v2.0.",
+        "15 kostenlose, eigene CCNA-200-301-Übungsfragen zu Subnetting, IPv6, VLANs, STP, OSPF, NAT, ACLs und Layer-2-Sicherheit: passend für v1.1 und v2.0.",
     },
     questions: [
       /* ── Domäne 1: Network Infrastructure and Connectivity ───────────────── */
@@ -265,7 +265,7 @@ export const ccna200301De: DeContent = {
       {
         id: "ccna-d1-wifi-channels",
         domain: "d1",
-        objective: "1.5 Describe wireless principles — 1.5.a Band and channel selection (v1.1: 1.11.a)",
+        objective: "1.5 Describe wireless principles, 1.5.a Band and channel selection (v1.1: 1.11.a)",
         difficulty: "foundation",
         question:
           "Sie installieren drei benachbarte Access Points im 2,4-GHz-Band (20-MHz-Kanäle, nordamerikanischer Kanalsatz) und möchten Gleichkanal- und Nachbarkanalstörungen vermeiden. Welchen Kanalplan sollten Sie verwenden?",
@@ -277,7 +277,7 @@ export const ccna200301De: DeContent = {
         ],
         answer: "D",
         explanation:
-          "2,4-GHz-Kanäle liegen 5 MHz auseinander, sind aber etwa 20–22 MHz breit, sodass nur die Kanäle 1, 6 und 11 nicht überlappen. Das 5-GHz-Band bietet deutlich mehr nicht überlappende Kanäle – ein Grund, warum es in dichten Umgebungen bevorzugt wird.",
+          "2,4-GHz-Kanäle liegen 5 MHz auseinander, sind aber etwa 20–22 MHz breit, sodass nur die Kanäle 1, 6 und 11 nicht überlappen. Das 5-GHz-Band bietet deutlich mehr nicht überlappende Kanäle: ein Grund, warum es in dichten Umgebungen bevorzugt wird.",
         reference: V2,
       },
       {
@@ -303,7 +303,7 @@ export const ccna200301De: DeContent = {
       {
         id: "ccna-d2-trunk-allowed",
         domain: "d2",
-        objective: "2.1 Configure network infrastructure connectivity (switch-to-switch and switch-to-router) — 2.1.b Layer 2 802.1Q trunk interfaces (v1.1: 2.2.a)",
+        objective: "2.1 Configure network infrastructure connectivity (switch-to-switch and switch-to-router), 2.1.b Layer 2 802.1Q trunk interfaces (v1.1: 2.2.a)",
         difficulty: "intermediate",
         question:
           "Ein 802.1Q-Trunk zwischen zwei Switches erlaubt derzeit die VLANs 10 und 20. Sie müssen zusätzlich das neue VLAN 30 übertragen, ohne VLAN 10 und 20 zu unterbrechen. Welchen Schnittstellenbefehl geben Sie auf beiden Switches ein?",
@@ -321,7 +321,7 @@ export const ccna200301De: DeContent = {
       {
         id: "ccna-d2-root-bridge",
         domain: "d2",
-        objective: "2.5 Configure operations of the Rapid Per VLAN Spanning Tree Protocol (Rapid PVST+) — 2.5.a Root port, root bridge (primary/secondary), and other port names (v1.1: 2.5.a)",
+        objective: "2.5 Configure operations of the Rapid Per VLAN Spanning Tree Protocol (Rapid PVST+), 2.5.a Root port, root bridge (primary/secondary), and other port names (v1.1: 2.5.a)",
         difficulty: "intermediate",
         question:
           "Für VLAN 10 kündigen drei Switches diese Bridge-IDs an: SW1 Priorität 32778, MAC 0011.2233.4401; SW2 Priorität 24586, MAC 0011.2233.4499; SW3 Priorität 24586, MAC 0011.2233.4410. Welcher Switch wird Root Bridge für VLAN 10?",
@@ -339,7 +339,7 @@ export const ccna200301De: DeContent = {
       {
         id: "ccna-d2-bpdu-guard",
         domain: "d2",
-        objective: "2.5 Configure operations of the Rapid Per VLAN Spanning Tree Protocol (Rapid PVST+) — 2.5.d Root guard, loop guard, and BPDU guard (v1.1: 2.5.d)",
+        objective: "2.5 Configure operations of the Rapid Per VLAN Spanning Tree Protocol (Rapid PVST+), 2.5.d Root guard, loop guard, and BPDU guard (v1.1: 2.5.d)",
         difficulty: "foundation",
         question:
           "Ein Access-Port ist mit spanning-tree portfast und spanning-tree bpduguard enable konfiguriert. Ein Benutzer schließt an diesen Port einen kleinen Switch an, der beginnt, BPDUs zu senden. Was passiert mit dem Access-Port?",
@@ -377,7 +377,7 @@ export const ccna200301De: DeContent = {
       {
         id: "ccna-d3-floating-static",
         domain: "d3",
-        objective: "3.2 Troubleshoot IPv4 and IPv6 static routing — 3.2.d Floating static (v1.1: 3.3.d)",
+        objective: "3.2 Troubleshoot IPv4 and IPv6 static routing, 3.2.d Floating static (v1.1: 3.3.d)",
         difficulty: "advanced",
         question:
           "Ein Router lernt seine Default-Route über OSPF. Sie möchten eine Backup-Default-Route über 198.51.100.1, die nur verwendet wird, wenn die OSPF-Default-Route wegfällt. Mit welchem Befehl erreichen Sie das?",
@@ -395,7 +395,7 @@ export const ccna200301De: DeContent = {
       {
         id: "ccna-d3-ospf-dr",
         domain: "d3",
-        objective: "3.3 Configure single area OSPFv2 for IPv4 and OSPFv3 for IPv6 — 3.3.c Broadcast (DR/BDR selection) (v1.1: 3.4.c)",
+        objective: "3.3 Configure single area OSPFv2 for IPv4 and OSPFv3 for IPv6, 3.3.c Broadcast (DR/BDR selection) (v1.1: 3.4.c)",
         difficulty: "advanced",
         question:
           "Vier Router in einem Ethernet-Segment starten OSPF gleichzeitig. R1: Priorität 1, Router-ID 10.0.0.1. R2: Priorität 0, Router-ID 10.0.0.9. R3: Priorität 1, Router-ID 10.0.0.5. R4: Priorität 1, Router-ID 10.0.0.3. Welche Router werden DR und BDR?",
@@ -451,7 +451,7 @@ export const ccna200301De: DeContent = {
       {
         id: "ccna-d4-dhcp-snooping",
         domain: "d4",
-        objective: "4.7 Configure Layer 2 security features — 4.7.a DHCP snooping (v1.1: 5.7)",
+        objective: "4.7 Configure Layer 2 security features, 4.7.a DHCP snooping (v1.1: 5.7)",
         difficulty: "intermediate",
         question:
           "Clients in VLAN 20 erhalten IP-Adressen von einem nicht autorisierten DHCP-Server (Rogue DHCP Server), den jemand an einen Access-Port angeschlossen hat. Der legitime DHCP-Server ist über den Uplink des Switches erreichbar. Wie unterbinden Sie das?",

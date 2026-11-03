@@ -7,14 +7,14 @@ import type { PracticeQuestionSet } from "@/config/types";
  * presented as real exam questions.
  */
 const CERT_PAGE = {
-  label: "ISTQB — CT-GenAI certification page (syllabus v1.1)",
+  label: "ISTQB: CT-GenAI certification page (syllabus v1.1)",
   url: "https://istqb.org/certifications/gen-ai/",
 };
 
 export const istqbCtGenaiQuestions: PracticeQuestionSet = {
   slug: "istqb-ct-genai",
   intro:
-    "15 original CT-GenAI practice questions across all five chapters of the ISTQB Testing with Generative AI syllabus v1.1, weighted roughly like the real exam — with the most questions on prompt engineering and GenAI risks. Each one comes with the answer, a short explanation and the reason every other option is wrong.",
+    "15 original CT-GenAI practice questions across all five chapters of the ISTQB Testing with Generative AI syllabus v1.1, weighted roughly like the real exam, with the most questions on prompt engineering and GenAI risks. Each one comes with the answer, a short explanation and the reason every other option is wrong.",
   published: "2026-10-27",
   updated: "2026-10-27",
   seo: {
@@ -57,7 +57,7 @@ export const istqbCtGenaiQuestions: PracticeQuestionSet = {
       ],
       answer: "A",
       explanation:
-        "LLMs split input into tokens and can only consider a limited amount of preceding text — the context window. Larger windows help with long documents but increase computational complexity and processing time, so splitting or summarising input is often necessary.",
+        "LLMs split input into tokens and can only consider a limited amount of preceding text: the context window. Larger windows help with long documents but increase computational complexity and processing time, so splitting or summarising input is often necessary.",
       reference: CERT_PAGE,
     },
     {
@@ -90,7 +90,7 @@ export const istqbCtGenaiQuestions: PracticeQuestionSet = {
       options: [
         { id: "A", text: "Role", rationale: "The role is \"You are an experienced test analyst\"." },
         { id: "B", text: "Output format", rationale: "The output format is \"Return a numbered list\"." },
-        { id: "C", text: "Constraints", rationale: "Correct. Constraints set restrictions or special considerations the LLM must follow — here, only the cancellation rules." },
+        { id: "C", text: "Constraints", rationale: "Correct. Constraints set restrictions or special considerations the LLM must follow: here, only the cancellation rules." },
         { id: "D", text: "Context", rationale: "The context is the background information \"Our app is a hotel booking system\"." },
       ],
       answer: "C",
@@ -142,7 +142,7 @@ export const istqbCtGenaiQuestions: PracticeQuestionSet = {
       question:
         "An LLM generates 50 automated test scripts. The team measures that 42 of them run successfully in the CI pipeline without manual changes. Which evaluation metric are they measuring?",
       options: [
-        { id: "A", text: "Execution success rate", rationale: "Correct. This metric is the share of generated tests or scripts that execute successfully — here 84%." },
+        { id: "A", text: "Execution success rate", rationale: "Correct. This metric is the share of generated tests or scripts that execute successfully: here 84%." },
         { id: "B", text: "Recall", rationale: "Recall is about finding all relevant instances, such as covering every equivalence partition, not about scripts running." },
         { id: "C", text: "Diversity", rationale: "Diversity measures how varied the generated inputs and scenarios are." },
         { id: "D", text: "Time efficiency", rationale: "Time efficiency compares the time needed with GenAI against manual creation." },
@@ -164,7 +164,7 @@ export const istqbCtGenaiQuestions: PracticeQuestionSet = {
       options: [
         { id: "A", text: "A reasoning error", rationale: "A reasoning error is a flaw in logical steps, such as a wrong calculation or conclusion; here content has been invented." },
         { id: "B", text: "A bias", rationale: "Bias means systematically favouring certain information or assumptions; a single invented feature is better described otherwise." },
-        { id: "C", text: "A hallucination", rationale: "Correct. The output contains content that is factually incorrect or not grounded in the input — a hallucination." },
+        { id: "C", text: "A hallucination", rationale: "Correct. The output contains content that is factually incorrect or not grounded in the input: a hallucination." },
         { id: "D", text: "Non-deterministic behaviour", rationale: "Non-determinism means the output varies between runs; it does not describe invented content." },
       ],
       answer: "C",

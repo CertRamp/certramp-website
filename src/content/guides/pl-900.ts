@@ -18,7 +18,7 @@ export const pl900Guide: ExamGuide = {
       id: "what-the-exam-tests",
       heading: "What PL-900 actually tests",
       paragraphs: [
-        "PL-900 is a fundamentals exam. It checks whether you understand what each part of Microsoft Power Platform does and when to use it — not whether you can build a complex solution. Most skills in the official study guide start with \"Describe\": describe the value of Power Apps, describe tables and relationships in Dataverse, describe use cases for cloud and desktop flows.",
+        "PL-900 is a fundamentals exam. It checks whether you understand what each part of Microsoft Power Platform does and when to use it, not whether you can build a complex solution. Most skills in the official study guide start with \"Describe\": describe the value of Power Apps, describe tables and relationships in Dataverse, describe use cases for cloud and desktop flows.",
         "In practice, many questions give you a short business situation and ask which tool, app type or feature fits it best. You need to know the differences between canvas and model-driven apps, between cloud and desktop flows, and between Dataverse and a traditional database well enough to choose correctly under time pressure.",
       ],
     },
@@ -52,7 +52,7 @@ export const pl900Guide: ExamGuide = {
         },
         {
           title: "Book when you score consistently",
-          body: "Book the exam once you pass several practice tests with a margin — not after a single good result.",
+          body: "Book the exam once you pass several practice tests with a margin, not after a single good result.",
         },
       ],
     },

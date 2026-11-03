@@ -6,11 +6,11 @@ import type { PracticeQuestionSet } from "@/config/types";
  * not recalled exam content, and not presented as real exam questions.
  */
 const SYLLABUS = {
-  label: "The IIA — CIA Part 2 syllabus (Internal Audit Engagement)",
+  label: "The IIA: CIA Part 2 syllabus (Internal Audit Engagement)",
   url: "https://www.theiia.org/globalassets/site/certifications/certified-internal-auditor/cia-exam-why-how-and-what-is-changing/cia-part-2-syllabus.pdf",
 };
 const STANDARDS = {
-  label: "The IIA — Global Internal Audit Standards",
+  label: "The IIA: Global Internal Audit Standards",
   url: "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
 };
 
@@ -23,7 +23,7 @@ export const ciaPart2Questions: PracticeQuestionSet = {
   seo: {
     title: "CIA Part 2 Practice Questions with Answers (2026)",
     description:
-      "15 free, original CIA Part 2 practice questions on engagement planning, evidence, data analytics, findings and supervision — each with a full explanation.",
+      "15 free, original CIA Part 2 practice questions on engagement planning, evidence, data analytics, findings and supervision, each with a full explanation.",
   },
   questions: [
     /* ── Section A: Engagement Planning (50%) ─────────────────────────────── */
@@ -37,7 +37,7 @@ export const ciaPart2Questions: PracticeQuestionSet = {
       options: [
         { id: "A", text: "To determine whether payroll controls ensure that only valid employees are paid", rationale: "This states what the engagement aims to achieve, so it is an objective." },
         { id: "B", text: "To evaluate whether overtime payments comply with company policy", rationale: "This is also an objective: it describes what will be evaluated and why." },
-        { id: "C", text: "Payroll processing at the two UK sites for the period 1 January to 30 June", rationale: "Correct. Scope sets the boundaries of the engagement — which processes, locations and period are covered." },
+        { id: "C", text: "Payroll processing at the two UK sites for the period 1 January to 30 June", rationale: "Correct. Scope sets the boundaries of the engagement, which processes, locations and period are covered." },
         { id: "D", text: "To provide assurance that payroll data is accurate and complete", rationale: "This is an objective expressed as the assurance to be provided." },
       ],
       answer: "C",
@@ -233,7 +233,7 @@ export const ciaPart2Questions: PracticeQuestionSet = {
       question:
         "Policy requires a signed contract before any supplier is paid. Testing shows that 3 of 60 payments were made before contracts were signed. In the language of findings, what does the 3-of-60 result represent?",
       options: [
-        { id: "A", text: "The criteria", rationale: "The criteria are the policy requirement — the expected state." },
+        { id: "A", text: "The criteria", rationale: "The criteria are the policy requirement: the expected state." },
         { id: "B", text: "The cause", rationale: "The cause would be why the payments were made early, which is not yet known." },
         { id: "C", text: "The effect", rationale: "The effect is the risk or consequence of the gap, such as paying on disputed terms." },
         { id: "D", text: "The condition", rationale: "Correct. The condition is what the auditor actually found, which is then compared with the criteria." },

@@ -6,7 +6,7 @@ import type { PracticeQuestionSet } from "@/config/types";
  * not recalled exam content, and not presented as real exam questions.
  */
 const GUIDE = {
-  label: "Microsoft Learn — AI-103 study guide",
+  label: "Microsoft Learn: AI-103 study guide",
   url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103",
 };
 
@@ -19,7 +19,7 @@ export const ai103Questions: PracticeQuestionSet = {
   seo: {
     title: "AI-103 Practice Questions with Answers & Explanations (2026)",
     description:
-      "15 free, original AI-103 practice questions on Microsoft Foundry, RAG, agents, responsible AI, vision, language and document extraction — with explanations.",
+      "15 free, original AI-103 practice questions on Microsoft Foundry, RAG, agents, responsible AI, vision, language and document extraction, with explanations.",
   },
   questions: [
     /* ── Domain 1: Plan and manage an Azure AI solution ───────────────────── */
@@ -112,7 +112,7 @@ export const ai103Questions: PracticeQuestionSet = {
       ],
       answer: "A",
       explanation:
-        "RAG is the standard pattern for grounding answers in changing private content. Updating the index is enough when documents change — no model training required.",
+        "RAG is the standard pattern for grounding answers in changing private content. Updating the index is enough when documents change, no model training required.",
       reference: GUIDE,
     },
     {
@@ -179,12 +179,12 @@ export const ai103Questions: PracticeQuestionSet = {
       options: [
         { id: "A", text: "A larger model deployment", rationale: "This might change performance but does not show where the time goes." },
         { id: "B", text: "A stricter content filter", rationale: "Content filters do not provide timing or token analytics." },
-        { id: "C", text: "Tracing for the application and agent", rationale: "Correct. Tracing records each step of a request — model calls, tool calls, retrieval — with timings and token usage." },
+        { id: "C", text: "Tracing for the application and agent", rationale: "Correct. Tracing records each step of a request (model calls, tool calls, retrieval) with timings and token usage." },
         { id: "D", text: "A new vector index", rationale: "Rebuilding the index does not explain the latency." },
       ],
       answer: "C",
       explanation:
-        "Observability — tracing, token analytics, safety signals and latency breakdowns — is a named objective. Measure first, then optimise the slowest step.",
+        "Observability (tracing, token analytics, safety signals and latency breakdowns) is a named objective. Measure first, then optimise the slowest step.",
       reference: GUIDE,
     },
 
@@ -217,7 +217,7 @@ export const ai103Questions: PracticeQuestionSet = {
       options: [
         { id: "A", text: "A rate-limit problem", rationale: "Rate limits concern request volume, not malicious content." },
         { id: "B", text: "Model drift", rationale: "Drift describes changing model performance over time, not an attack in a single input." },
-        { id: "C", text: "Indirect prompt injection through embedded text in an image", rationale: "Correct. Instructions hidden in content the model processes — including text in images — can try to override the system's instructions." },
+        { id: "C", text: "Indirect prompt injection through embedded text in an image", rationale: "Correct. Instructions hidden in content the model processes, including text in images, can try to override the system's instructions." },
         { id: "D", text: "A copyright problem only", rationale: "The main risk here is manipulation of the model's behaviour." },
       ],
       answer: "C",

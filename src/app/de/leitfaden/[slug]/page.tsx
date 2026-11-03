@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AuthorSection } from "@/components/marketing/AuthorSection";
 import Link from "@/components/ui/Link";
 import { notFound } from "next/navigation";
 import { UdemyCta } from "@/components/certification/CertCta";
@@ -167,7 +168,7 @@ export default async function DeGuidePage({ params }: { params: Promise<Params> 
                 Jetzt testen
               </h2>
               <p className="mt-3 max-w-2xl leading-relaxed text-white/70">
-                {de.questions.questions.length} kostenlose, eigene Übungsfragen zu {name} – jede mit Lösung und einer Erklärung zu
+                {de.questions.questions.length} kostenlose, eigene Übungsfragen zu {name}, jede mit Lösung und einer Erklärung zu
                 jeder Antwortoption.
               </p>
               <div className="mt-6 flex flex-col gap-3 sm:flex-row">
@@ -190,6 +191,8 @@ export default async function DeGuidePage({ params }: { params: Promise<Params> 
           </div>
         </div>
       </Section>
+
+      <AuthorSection lang="de" tone="surface" certSlug={cert.slug} location="de-guide" />
 
       <section aria-label="Hinweis" className="bg-white py-14">
         <div className="container-page">

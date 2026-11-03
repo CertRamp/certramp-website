@@ -7,7 +7,7 @@ import type { PracticeQuestionSet } from "@/config/types";
  * as real exam questions.
  */
 const OUTLINE = {
-  label: "ISACA — AAISM exam content outline",
+  label: "ISACA: AAISM exam content outline",
   url: "https://www.isaca.org/credentialing/aaism/aaism-exam-content-outline",
 };
 
@@ -20,7 +20,7 @@ export const isacaAaismQuestions: PracticeQuestionSet = {
   seo: {
     title: "AAISM Practice Questions with Answers & Explanations (2026)",
     description:
-      "15 free, original ISACA AAISM practice questions on AI governance, AI risk management and AI security controls — each with a full explanation.",
+      "15 free, original ISACA AAISM practice questions on AI governance, AI risk management and AI security controls, each with a full explanation.",
   },
   questions: [
     /* ── Domain 1: AI Governance and Program Management (31%) ─────────────── */
@@ -179,7 +179,7 @@ export const isacaAaismQuestions: PracticeQuestionSet = {
         "A team is threat modelling a customer support chatbot that can look up order details through an internal API. Which threat deserves the HIGHEST priority?",
       options: [
         { id: "A", text: "The chatbot occasionally gives an unhelpful answer about store opening hours", rationale: "A quality issue with low impact." },
-        { id: "B", text: "A user manipulates the chatbot through crafted prompts into retrieving other customers' order details", rationale: "Correct. Prompt injection combined with access to an internal API can lead to unauthorised disclosure of personal data — high likelihood for an internet-facing system and high impact." },
+        { id: "B", text: "A user manipulates the chatbot through crafted prompts into retrieving other customers' order details", rationale: "Correct. Prompt injection combined with access to an internal API can lead to unauthorised disclosure of personal data: high likelihood for an internet-facing system and high impact." },
         { id: "C", text: "The chatbot's response time increases slightly at peak hours", rationale: "A performance concern, not a priority security threat." },
         { id: "D", text: "Users dislike the chatbot's tone", rationale: "A user experience issue with no security impact." },
       ],
@@ -270,7 +270,7 @@ export const isacaAaismQuestions: PracticeQuestionSet = {
       question:
         "A model will be trained on customer records that contain personal data, but the use case only needs aggregated behaviour patterns. Which control should be applied FIRST?",
       options: [
-        { id: "A", text: "Data minimisation — remove or de-identify personal data fields that the use case does not need before training", rationale: "Correct. Removing unnecessary personal data at the source reduces privacy risk, including the risk of the model memorising and later revealing it, and is cheaper than compensating controls downstream." },
+        { id: "A", text: "Data minimisation: remove or de-identify personal data fields that the use case does not need before training", rationale: "Correct. Removing unnecessary personal data at the source reduces privacy risk, including the risk of the model memorising and later revealing it, and is cheaper than compensating controls downstream." },
         { id: "B", text: "Train the model first and filter personal data from its outputs later", rationale: "Output filtering is a useful additional layer, but it leaves personal data inside the model and is easier to bypass." },
         { id: "C", text: "Make the model available only during business hours", rationale: "Time-based restrictions do not address the presence of personal data in training." },
         { id: "D", text: "Increase the number of training epochs", rationale: "More training can increase memorisation; it is not a privacy control." },

@@ -7,12 +7,12 @@ import type { PracticeQuestionSet } from "@/config/types";
  * presented as real exam questions.
  */
 const MULTI_AGENT = {
-  label: "Microsoft Learn — Add other agents in Copilot Studio",
+  label: "Microsoft Learn: Add other agents in Copilot Studio",
   url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-add-other-agents",
 };
 
 const EVALUATION = {
-  label: "Microsoft Learn — Agent evaluation in Copilot Studio",
+  label: "Microsoft Learn: Agent evaluation in Copilot Studio",
   url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-overview",
 };
 
@@ -45,7 +45,7 @@ export const ab620Questions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "Copilot Studio offers no authentication, Authenticate with Microsoft and Authenticate manually. Pick the simplest option that meets the channel and identity requirements; manual authentication is for other channels or custom identity providers.",
-      reference: { label: "Microsoft Learn — Configure user authentication in Copilot Studio", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/configuration-end-user-authentication" },
+      reference: { label: "Microsoft Learn: Configure user authentication in Copilot Studio", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/configuration-end-user-authentication" },
     },
     {
       id: "ab620-d1-hitl-approval",
@@ -63,7 +63,7 @@ export const ab620Questions: PracticeQuestionSet = {
       answer: "A",
       explanation:
         "Human-in-the-loop flows pause for a person's decision. A multistage approval can route an AI decision to a human reviewer, and approvers can respond in Teams, Outlook or the Power Automate portal. Multistage and AI approvals are currently in preview.",
-      reference: { label: "Microsoft Learn — Multistage and AI approvals in agent flows", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-advanced-approvals" },
+      reference: { label: "Microsoft Learn: Multistage and AI approvals in agent flows", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-advanced-approvals" },
     },
     {
       id: "ab620-d1-http-node",
@@ -81,7 +81,7 @@ export const ab620Questions: PracticeQuestionSet = {
       answer: "D",
       explanation:
         "The Send HTTP request node supports GET, POST, PATCH, PUT and DELETE, custom headers and JSON or raw bodies. Providing a sample response turns the result into a structured variable instead of plain text.",
-      reference: { label: "Microsoft Learn — Make HTTP requests in Copilot Studio", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-http-node" },
+      reference: { label: "Microsoft Learn: Make HTTP requests in Copilot Studio", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-http-node" },
     },
     {
       id: "ab620-d1-adaptive-card",
@@ -99,7 +99,7 @@ export const ab620Questions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "Use the Adaptive Card node for interactive cards that expect a submission. For cards that only display information, use Message or Question nodes; check the generated output variables with Edit Schema.",
-      reference: { label: "Microsoft Learn — Ask with Adaptive Cards", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-ask-with-adaptive-card" },
+      reference: { label: "Microsoft Learn: Ask with Adaptive Cards", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-ask-with-adaptive-card" },
     },
     {
       id: "ab620-d1-variables",
@@ -117,7 +117,7 @@ export const ab620Questions: PracticeQuestionSet = {
       answer: "A",
       explanation:
         "Copilot Studio has topic, global, system and environment variables. Environment variables are set in Power Platform and travel with solutions, so each environment can hold its own value.",
-      reference: { label: "Microsoft Learn — Work with variables in Copilot Studio", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-variables-about" },
+      reference: { label: "Microsoft Learn: Work with variables in Copilot Studio", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-variables-about" },
     },
 
     /* ── Domain 2: Integrate and extend agents in Copilot Studio ──────────── */
@@ -137,7 +137,7 @@ export const ab620Questions: PracticeQuestionSet = {
       answer: "D",
       explanation:
         "MCP defines resources, tools and prompts. Copilot Studio uses tools and resources; the server supplies names, descriptions, inputs and outputs, so the orchestrator can decide when to call each tool.",
-      reference: { label: "Microsoft Learn — Extend your agent with Model Context Protocol", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp" },
+      reference: { label: "Microsoft Learn: Extend your agent with Model Context Protocol", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp" },
     },
     {
       id: "ab620-d2-rest-api",
@@ -155,7 +155,7 @@ export const ab620Questions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "To add a REST API tool you need the OpenAPI specification and the authentication details. The v2 requirement comes from how Power Platform processes API specifications.",
-      reference: { label: "Microsoft Learn — Add REST API tools to agents", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-rest-api" },
+      reference: { label: "Microsoft Learn: Add REST API tools to agents", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-rest-api" },
     },
     {
       id: "ab620-d2-computer-use",
@@ -173,7 +173,7 @@ export const ab620Questions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "Computer use runs on a Windows machine you set up and select in the tool. During testing you see a step-by-step log and a preview of the machine; in conversations it shares reasoning messages and screenshots.",
-      reference: { label: "Microsoft Learn — Computer use in Copilot Studio", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use" },
+      reference: { label: "Microsoft Learn: Computer use in Copilot Studio", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use" },
     },
     {
       id: "ab620-d2-azure-ai-search",
@@ -191,7 +191,7 @@ export const ab620Questions: PracticeQuestionSet = {
       answer: "A",
       explanation:
         "Azure AI Search must be added through a formal data connection, for example with Microsoft Entra ID authentication. Citations need a URL field in the index, and users can open them only if they have access to the underlying source.",
-      reference: { label: "Microsoft Learn — Add Azure AI Search as a knowledge source", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-azure-ai-search" },
+      reference: { label: "Microsoft Learn: Add Azure AI Search as a knowledge source", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-azure-ai-search" },
     },
     {
       id: "ab620-d2-a2a",
@@ -245,7 +245,7 @@ export const ab620Questions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "In Settings > Advanced you add the connection string and can optionally log message details and node execution events. Test-canvas conversations are flagged with designMode so you can filter them out.",
-      reference: { label: "Microsoft Learn — Capture telemetry with Application Insights", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry" },
+      reference: { label: "Microsoft Learn: Capture telemetry with Application Insights", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry" },
     },
 
     /* ── Domain 3: Test and manage agents ─────────────────────────────────── */
@@ -265,7 +265,7 @@ export const ab620Questions: PracticeQuestionSet = {
       answer: "A",
       explanation:
         "Test sets can be generated from knowledge or topics, built from the latest test chat, written manually or imported. Expected responses are optional for import but needed for comparison-based test methods.",
-      reference: { label: "Microsoft Learn — Create a test set", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-create" },
+      reference: { label: "Microsoft Learn: Create a test set", url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-create" },
     },
     {
       id: "ab620-d3-evaluation-method",
@@ -301,7 +301,7 @@ export const ab620Questions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "Pipelines deploy solutions plus configuration such as connection references and environment variables. Keep agents in solutions from the start so that ALM, environment variables and pipelines work as intended.",
-      reference: { label: "Microsoft Learn — Overview of pipelines in Power Platform", url: "https://learn.microsoft.com/en-us/power-platform/alm/pipelines" },
+      reference: { label: "Microsoft Learn: Overview of pipelines in Power Platform", url: "https://learn.microsoft.com/en-us/power-platform/alm/pipelines" },
     },
   ],
 };

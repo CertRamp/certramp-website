@@ -8,7 +8,7 @@ import type { DeContent } from "@/config/types";
  * follow the official German (de-de) AI-901 study guide on Microsoft Learn.
  */
 const GUIDE = {
-  label: "Microsoft Learn — AI-901-Studienleitfaden",
+  label: "Microsoft Learn: AI-901-Studienleitfaden",
   url: "https://learn.microsoft.com/de-de/credentials/certifications/resources/study-guides/ai-901",
 };
 
@@ -92,7 +92,7 @@ export const ai901De: DeContent = {
           },
           {
             title: "Die Konzepte genau lernen",
-            body: "Sie sollten die sechs Prinzipien verantwortungsvoller KI in einem Szenario auseinanderhalten, grob erklären können, wie ein generatives Modell seine Ausgabe erzeugt, und für einen geschäftlichen Bedarf den passenden Workload benennen können – Textanalyse, Sprache, Computer Vision, Bildgenerierung oder Informationsextraktion.",
+            body: "Sie sollten die sechs Prinzipien verantwortungsvoller KI in einem Szenario auseinanderhalten, grob erklären können, wie ein generatives Modell seine Ausgabe erzeugt, und für einen geschäftlichen Bedarf den passenden Workload benennen können: Textanalyse, Sprache, Computer Vision, Bildgenerierung oder Informationsextraktion.",
           },
           {
             title: "In Microsoft Foundry praktisch arbeiten",
@@ -113,7 +113,7 @@ export const ai901De: DeContent = {
         heading: "Häufige Fehler bei der Vorbereitung",
         bullets: [
           "Nur mit AI-900-Material lernen. Die Nachfolgeprüfung legt mehr Gewicht auf das Entwickeln mit Microsoft Foundry, auf Agents und auf generative Modelle.",
-          "Die Prinzipien verantwortungsvoller KI verwechseln. Transparenz, Verantwortlichkeit und Fairness werden leicht verwechselt – lernen Sie, wie jedes Prinzip in einer konkreten Situation aussieht.",
+          "Die Prinzipien verantwortungsvoller KI verwechseln. Transparenz, Verantwortlichkeit und Fairness werden leicht verwechselt: lernen Sie, wie jedes Prinzip in einer konkreten Situation aussieht.",
           "Systemprompt und Benutzerprompt verwechseln. Verhalten, Tonfall und Grenzen für das gesamte Gespräch gehören in den Systemprompt.",
           "Modell und Agent gleichsetzen. Ein Agent kombiniert ein Modell mit Anweisungen und Tools, damit er Aktionen ausführen kann.",
           "Die praktischen Teile überspringen. Ein Modell bereitzustellen, es im Portal zu testen und aus Code aufzurufen, macht die Szenariofragen deutlich leichter.",
@@ -171,7 +171,7 @@ export const ai901De: DeContent = {
     seo: {
       title: "AI-901 Übungsfragen mit Antworten und Erklärungen (2026)",
       description:
-        "15 kostenlose, eigene AI-901 Übungsfragen zu verantwortungsvoller KI, generativer KI, Agents, Sprache, Vision und Microsoft Foundry – mit Erklärung.",
+        "15 kostenlose, eigene AI-901 Übungsfragen zu verantwortungsvoller KI, generativer KI, Agents, Sprache, Vision und Microsoft Foundry, mit Erklärung.",
     },
     questions: [
       /* ── Bereich 1: Identifizieren von KI-Konzepten und Funktionen ────────── */
@@ -220,7 +220,7 @@ export const ai901De: DeContent = {
           "Ein Unternehmen richtet ein Prüfgremium ein, das jedes KI-System vor der Freigabe abnimmt und für das Verhalten jedes Systems im Produktivbetrieb verantwortlich bleibt. Welches Prinzip verantwortungsvoller KI wird dadurch am direktesten unterstützt?",
         options: [
           { id: "A", text: "Inklusion", rationale: "Bei Inklusion geht es darum, Menschen aller Fähigkeiten und Hintergründe gerecht zu werden, nicht um Governance und Zuständigkeit." },
-          { id: "B", text: "Verantwortlichkeit", rationale: "Richtig. Verantwortlichkeit bedeutet, dass Menschen – nicht das KI-System – für Entwurf, Bereitstellung und Betrieb verantwortlich bleiben." },
+          { id: "B", text: "Verantwortlichkeit", rationale: "Richtig. Verantwortlichkeit bedeutet, dass Menschen, nicht das KI-System, für Entwurf, Bereitstellung und Betrieb verantwortlich bleiben." },
           { id: "C", text: "Zuverlässigkeit und Sicherheit", rationale: "Ein Prüfgremium kann die Zuverlässigkeit prüfen, das entscheidende Merkmal ist hier aber die menschliche Verantwortung für das System." },
           { id: "D", text: "Fairness", rationale: "Bei Fairness geht es um die gleichberechtigte Behandlung der vom System betroffenen Menschen." },
         ],
@@ -291,7 +291,7 @@ export const ai901De: DeContent = {
         question:
           "Ein Bahnunternehmen möchte schriftliche Verspätungsmeldungen automatisch mit natürlich klingender Stimme über die Bahnhofslautsprecher vorlesen lassen. Welche KI-Fähigkeit wird benötigt?",
         options: [
-          { id: "A", text: "Spracherkennung", rationale: "Die Spracherkennung wandelt gesprochenes Audio in Text um – also die umgekehrte Richtung." },
+          { id: "A", text: "Spracherkennung", rationale: "Die Spracherkennung wandelt gesprochenes Audio in Text um, also die umgekehrte Richtung." },
           { id: "B", text: "Bildgenerierung", rationale: "Die Bildgenerierung erzeugt Bilder, kein Audio." },
           { id: "C", text: "Entitätserkennung", rationale: "Die Entitätserkennung analysiert Text; sie erzeugt keine Sprache." },
           { id: "D", text: "Sprachsynthese", rationale: "Richtig. Die Sprachsynthese (Text-to-Speech) erzeugt gesprochenes Audio aus Text." },

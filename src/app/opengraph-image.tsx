@@ -1,6 +1,6 @@
 import { ogSize, renderOgImage } from "@/lib/og";
 
-export const alt = "CertRamp Learning — Practice harder. Enter confident.";
+export const alt = "CertRamp Learning: Practice harder. Enter confident.";
 export const size = ogSize;
 export const contentType = "image/png";
 

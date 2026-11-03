@@ -52,7 +52,7 @@ export const iappCipmGuide: ExamGuide = {
         },
         {
           title: "Practise under time pressure",
-          body: "Take timed practice exams of 90 questions in 2.5 hours, including scenario questions, and read every explanation — including for the questions you answered correctly.",
+          body: "Take timed practice exams of 90 questions in 2.5 hours, including scenario questions, and read every explanation, including for the questions you answered correctly.",
         },
         {
           title: "Book when your results are stable",
@@ -65,7 +65,7 @@ export const iappCipmGuide: ExamGuide = {
       heading: "Common preparation mistakes",
       bullets: [
         "Studying it like a law exam. The CIPM asks what a programme manager should do next, not which article says what.",
-        "Picking the technical fix. Many questions reward the governance step — assigning ownership, updating a policy, consulting stakeholders — over a single technical control.",
+        "Picking the technical fix. Many questions reward the governance step (assigning ownership, updating a policy, consulting stakeholders) over a single technical control.",
         "Neglecting metrics and audits. Domain V is small, but metrics also appear in governance (II.C), and you need to know which metric suits which audience and objective.",
         "Treating incident response as notification only. The body of knowledge covers containment, remediation, an incident register and post-incident reviews that improve the plan.",
         "Forgetting mergers, acquisitions and divestitures. Due diligence on shared data and post-transaction risk mitigation appear in more than one domain.",

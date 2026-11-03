@@ -68,7 +68,7 @@ const imprintHtml = `
 const analyticsSection = umamiEnabled
   ? `
 <h2>4. Web analytics with Umami</h2>
-<p>To understand how visitors use this website — for example which pages are visited and which links to our courses on Udemy are clicked — we use the web analytics service Umami Cloud, provided by Umami Software, Inc. Umami works <strong>without cookies</strong> and without comparable technologies such as local storage, and does not create user profiles across websites. When you open a page, a small script sends the following information to Umami: the page visited, the referring page (referrer), the time of the visit, browser, operating system, device type, screen size, language, the country derived from your IP address, and clicks on the links mentioned above. Your IP address is not stored in the analytics data. The statistics are evaluated only in aggregated form; we cannot identify individual visitors.</p>
+<p>To understand how visitors use this website, for example which pages are visited and which links to our courses on Udemy are clicked, we use the web analytics service Umami Cloud, provided by Umami Software, Inc. Umami works <strong>without cookies</strong> and without comparable technologies such as local storage, and does not create user profiles across websites. When you open a page, a small script sends the following information to Umami: the page visited, the referring page (referrer), the time of the visit, browser, operating system, device type, screen size, language, the country derived from your IP address, and clicks on the links mentioned above. Your IP address is not stored in the analytics data. The statistics are evaluated only in aggregated form; we cannot identify individual visitors.</p>
 <p>The legal basis is Art. 6(1)(f) GDPR; our legitimate interest lies in the needs-based design and improvement of our website and in measuring which content is useful to visitors. Umami processes the data on our behalf under a data processing agreement pursuant to Art. 28 GDPR. We have chosen data storage in the EU; however, Umami Software, Inc. is based in the USA, so access to data from the USA cannot be ruled out. Analytics data is retained for a maximum of six months. If your browser sends a "Do Not Track" signal, no data is collected. You can object to the processing at any time (Art. 21 GDPR) by contacting us.</p>
 
 <h2>5. No cookies, no other tracking tools</h2>
@@ -102,7 +102,7 @@ ${analyticsSection}
 <p>If you contact us by email, we process the data you send us (usually your email address, your name and the content of your message) to answer your enquiry. The legal basis is Art. 6(1)(b) GDPR where your enquiry relates to a contract or pre-contractual measures, and Art. 6(1)(f) GDPR otherwise; our legitimate interest is responding to enquiries. We delete the data once your enquiry has been dealt with, unless statutory retention obligations (for example under German commercial or tax law) require us to keep it longer.</p>
 
 <h2>${6+n}. Links to Udemy and other websites</h2>
-<p>This website contains links to our courses on Udemy and to other external websites, such as official certification bodies. These are plain links: no data is transmitted to these providers until you click a link. After you follow a link, the privacy policy of the respective provider applies — for Udemy, see <a href="https://www.udemy.com/terms/privacy/" rel="noopener nofollow">udemy.com/terms/privacy</a>.</p>
+<p>This website contains links to our courses on Udemy and to other external websites, such as official certification bodies. These are plain links: no data is transmitted to these providers until you click a link. After you follow a link, the privacy policy of the respective provider applies, for Udemy, see <a href="https://www.udemy.com/terms/privacy/" rel="noopener nofollow">udemy.com/terms/privacy</a>.</p>
 
 <h2>${7+n}. Recipients and transfers to third countries</h2>
 ${recipients}
@@ -120,11 +120,11 @@ ${recipients}
 
 const cookiesHtml = `
 <p><strong>This website does not use cookies.</strong></p>
-<p>We do not store any information on your device and do not read any information from it — neither with cookies nor with comparable technologies such as local storage or tracking pixels. For this reason, no cookie banner is shown and no consent is required.</p>
+<p>We do not store any information on your device and do not read any information from it: neither with cookies nor with comparable technologies such as local storage or tracking pixels. For this reason, no cookie banner is shown and no consent is required.</p>
 ${
   umamiEnabled
-    ? `<p>We do not use advertising or social media tools. For visitor statistics we use our host's server log statistics and the cookieless web analytics service Umami, which stores nothing on your device — see sections 3 and 4 of our <a href="/legal/privacy/">privacy policy</a>. Fonts are served from our own server.</p>`
-    : `<p>We do not use advertising, social media tools or analytics tools that run in your browser. Our host creates anonymous visitor statistics from the server log files without cookies — see section 3 of our <a href="/legal/privacy/">privacy policy</a>. Fonts are served from our own server.</p>`
+    ? `<p>We do not use advertising or social media tools. For visitor statistics we use our host's server log statistics and the cookieless web analytics service Umami, which stores nothing on your device: see sections 3 and 4 of our <a href="/legal/privacy/">privacy policy</a>. Fonts are served from our own server.</p>`
+    : `<p>We do not use advertising, social media tools or analytics tools that run in your browser. Our host creates anonymous visitor statistics from the server log files without cookies: see section 3 of our <a href="/legal/privacy/">privacy policy</a>. Fonts are served from our own server.</p>`
 }
 <p>If you follow a link to another website, such as Udemy, that website may use cookies under its own cookie and privacy policy.</p>
 <p>Should we introduce cookies or similar technologies in the future, we will update this page and ask for your consent where the law requires it. More details: <a href="/legal/privacy/">privacy policy</a>.</p>

@@ -40,7 +40,7 @@ export const iappAigpGuide: ExamGuide = {
         },
         {
           title: "Learn the AI basics in governance terms",
-          body: "You do not need to build models, but you must know the main types of AI, how machine learning systems are trained, tested and monitored, and the typical risks and harms — bias, opacity, drift, security and privacy failures.",
+          body: "You do not need to build models, but you must know the main types of AI, how machine learning systems are trained, tested and monitored, and the typical risks and harms: bias, opacity, drift, security and privacy failures.",
         },
         {
           title: "Read the core legal and framework texts",
@@ -52,7 +52,7 @@ export const iappAigpGuide: ExamGuide = {
         },
         {
           title: "Practise under time pressure",
-          body: "Take timed practice exams of 100 questions in 2.75 hours, including scenario questions, and read every explanation — including for the questions you answered correctly.",
+          body: "Take timed practice exams of 100 questions in 2.75 hours, including scenario questions, and read every explanation, including for the questions you answered correctly.",
         },
         {
           title: "Book when your results are stable",
@@ -91,7 +91,7 @@ export const iappAigpGuide: ExamGuide = {
     {
       question: "Do I need a technical background to pass the AIGP?",
       answer:
-        "The IAPP does not set formal prerequisites for the exam. The body of knowledge focuses on governance — policies, laws, risk and life-cycle oversight — but expects you to understand the main types of AI and how systems are built, tested and monitored.",
+        "The IAPP does not set formal prerequisites for the exam. The body of knowledge focuses on governance (policies, laws, risk and life-cycle oversight), but expects you to understand the main types of AI and how systems are built, tested and monitored.",
     },
     {
       question: "Are CertRamp's AIGP questions real exam questions?",

@@ -6,7 +6,7 @@ import type { PracticeQuestionSet } from "@/config/types";
  * not recalled exam content, and not presented as real exam questions.
  */
 const GUIDE = {
-  label: "Microsoft Learn — AI-200 study guide",
+  label: "Microsoft Learn: AI-200 study guide",
   url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200",
 };
 
@@ -39,7 +39,7 @@ export const ai200Questions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "ACR Tasks support three automatic triggers: source code commits (or pull requests), base image updates and timers. Base image triggers are the standard way to keep application images patched without a separate pipeline.",
-      reference: { label: "Microsoft Learn — Azure Container Registry tasks overview", url: "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-overview" },
+      reference: { label: "Microsoft Learn: Azure Container Registry tasks overview", url: "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-overview" },
     },
     {
       id: "ai200-d1-keda-service-bus",
@@ -57,7 +57,7 @@ export const ai200Questions: PracticeQuestionSet = {
       answer: "A",
       explanation:
         "Container Apps supports HTTP, TCP and custom (KEDA-based) scale rules. For queue workers without ingress, use an event-driven rule such as azure-servicebus; without a custom rule or a minimum of at least one replica, an app without ingress can scale to zero and never start again.",
-      reference: { label: "Microsoft Learn — Set scaling rules in Azure Container Apps", url: "https://learn.microsoft.com/en-us/azure/container-apps/scale-app" },
+      reference: { label: "Microsoft Learn: Set scaling rules in Azure Container Apps", url: "https://learn.microsoft.com/en-us/azure/container-apps/scale-app" },
     },
     {
       id: "ai200-d1-revisions",
@@ -75,7 +75,7 @@ export const ai200Questions: PracticeQuestionSet = {
       answer: "D",
       explanation:
         "Changes to the template, such as the container image or scale rules, create a new revision. In multiple revision mode you then decide how traffic is divided, which supports canary and blue-green releases.",
-      reference: { label: "Microsoft Learn — Revisions in Azure Container Apps", url: "https://learn.microsoft.com/en-us/azure/container-apps/revisions" },
+      reference: { label: "Microsoft Learn: Revisions in Azure Container Apps", url: "https://learn.microsoft.com/en-us/azure/container-apps/revisions" },
     },
 
     /* ── Domain 2: Develop AI solutions by using Azure data management services ─ */
@@ -95,7 +95,7 @@ export const ai200Questions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "Vector search in Cosmos DB for NoSQL needs a vector policy on the container, ideally a vector index (flat, quantizedFlat or diskANN), and a query that orders by VectorDistance. Existing vector policy settings cannot be edited in place; you drop and re-add them.",
-      reference: { label: "Microsoft Learn — Vector search in Azure Cosmos DB for NoSQL", url: "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/vector-search" },
+      reference: { label: "Microsoft Learn: Vector search in Azure Cosmos DB for NoSQL", url: "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/vector-search" },
     },
     {
       id: "ai200-d2-cosmos-session",
@@ -113,7 +113,7 @@ export const ai200Questions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "Session consistency gives read-your-writes and write-follows-reads within a session. Strong and bounded staleness reads use a minority quorum of two replicas, so for the same RUs their read throughput is half that of the weaker levels.",
-      reference: { label: "Microsoft Learn — Consistency levels in Azure Cosmos DB", url: "https://learn.microsoft.com/en-us/azure/cosmos-db/consistency-levels" },
+      reference: { label: "Microsoft Learn: Consistency levels in Azure Cosmos DB", url: "https://learn.microsoft.com/en-us/azure/cosmos-db/consistency-levels" },
     },
     {
       id: "ai200-d2-change-feed-lease",
@@ -131,7 +131,7 @@ export const ai200Questions: PracticeQuestionSet = {
       answer: "A",
       explanation:
         "The change feed processor has four parts: the monitored container, the lease container, the compute instance and the delegate. Leases let instances share the work and resume from the last checkpoint after a restart.",
-      reference: { label: "Microsoft Learn — Change feed processor in Azure Cosmos DB", url: "https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-processor" },
+      reference: { label: "Microsoft Learn: Change feed processor in Azure Cosmos DB", url: "https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-processor" },
     },
     {
       id: "ai200-d2-pgvector-hnsw",
@@ -149,7 +149,7 @@ export const ai200Questions: PracticeQuestionSet = {
       answer: "D",
       explanation:
         "pgvector offers exact search without an index and approximate search with IVFFlat or HNSW. IVFFlat partitions existing data with k-means, so it is best created after loading data; HNSW can be created up front.",
-      reference: { label: "Microsoft Learn — Optimise performance when using pgvector", url: "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-optimize-performance-pgvector" },
+      reference: { label: "Microsoft Learn: Optimise performance when using pgvector", url: "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-optimize-performance-pgvector" },
     },
     {
       id: "ai200-d2-redis-vector",
@@ -167,7 +167,7 @@ export const ai200Questions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "RediSearch adds secondary indexing and vector similarity search such as KNN to Azure Managed Redis. It must be chosen when the instance is created and requires the Enterprise clustering policy and the NoEviction eviction policy.",
-      reference: { label: "Microsoft Learn — Use Redis modules with Azure Managed Redis", url: "https://learn.microsoft.com/en-us/azure/redis/redis-modules" },
+      reference: { label: "Microsoft Learn: Use Redis modules with Azure Managed Redis", url: "https://learn.microsoft.com/en-us/azure/redis/redis-modules" },
     },
 
     /* ── Domain 3: Connect to and consume Azure services ──────────────────── */
@@ -187,7 +187,7 @@ export const ai200Questions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "Every queue and subscription has its own dead-letter sub-queue. With the .NET SDK you set the receiver's SubQueue option to DeadLetter, inspect DeadLetterReason (for example MaxDeliveryCountExceeded) and complete the message to remove it.",
-      reference: { label: "Microsoft Learn — Service Bus dead-letter queues", url: "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dead-letter-queues" },
+      reference: { label: "Microsoft Learn: Service Bus dead-letter queues", url: "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dead-letter-queues" },
     },
     {
       id: "ai200-d3-event-grid-filter",
@@ -205,7 +205,7 @@ export const ai200Questions: PracticeQuestionSet = {
       answer: "A",
       explanation:
         "Event Grid subscriptions can filter by event type, by subject (begins with or ends with) and with advanced filters on data fields. Filtering at the subscription saves executions and keeps handler code simple.",
-      reference: { label: "Microsoft Learn — Event Grid event filtering", url: "https://learn.microsoft.com/en-us/azure/event-grid/event-filtering" },
+      reference: { label: "Microsoft Learn: Event Grid event filtering", url: "https://learn.microsoft.com/en-us/azure/event-grid/event-filtering" },
     },
     {
       id: "ai200-d3-functions-bindings",
@@ -223,7 +223,7 @@ export const ai200Questions: PracticeQuestionSet = {
       answer: "D",
       explanation:
         "Each function has exactly one trigger and any number of optional input and output bindings. Bindings pass data in through parameters and out through return values or output parameters, so you do not write service-specific plumbing.",
-      reference: { label: "Microsoft Learn — Azure Functions triggers and bindings", url: "https://learn.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings" },
+      reference: { label: "Microsoft Learn: Azure Functions triggers and bindings", url: "https://learn.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings" },
     },
     {
       id: "ai200-d3-service-bus-topics",
@@ -261,7 +261,7 @@ export const ai200Questions: PracticeQuestionSet = {
       answer: "D",
       explanation:
         "Key Vault references use the app's managed identity, which needs read access to secrets. App Service caches referenced values and refetches them every 24 hours; any configuration change restarts the app and refetches them immediately.",
-      reference: { label: "Microsoft Learn — Use Key Vault references in App Service", url: "https://learn.microsoft.com/en-us/azure/app-service/app-service-key-vault-references" },
+      reference: { label: "Microsoft Learn: Use Key Vault references in App Service", url: "https://learn.microsoft.com/en-us/azure/app-service/app-service-key-vault-references" },
     },
     {
       id: "ai200-d4-app-configuration",
@@ -279,7 +279,7 @@ export const ai200Questions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "Use App Configuration for settings and feature flags, and Key Vault for secrets. Labels in App Configuration help you keep variants of the same key, for example per environment.",
-      reference: { label: "Microsoft Learn — What is Azure App Configuration?", url: "https://learn.microsoft.com/en-us/azure/azure-app-configuration/overview" },
+      reference: { label: "Microsoft Learn: What is Azure App Configuration?", url: "https://learn.microsoft.com/en-us/azure/azure-app-configuration/overview" },
     },
     {
       id: "ai200-d4-opentelemetry",
@@ -297,7 +297,7 @@ export const ai200Questions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "The OpenTelemetry distro collects traces, metrics and logs and exports them to Azure Monitor. With both services instrumented, correlated traces let you follow one request across the API and the worker, and you can then analyse them with KQL.",
-      reference: { label: "Microsoft Learn — Enable OpenTelemetry in Application Insights", url: "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable" },
+      reference: { label: "Microsoft Learn: Enable OpenTelemetry in Application Insights", url: "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable" },
     },
   ],
 };

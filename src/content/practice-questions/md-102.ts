@@ -6,7 +6,7 @@ import type { PracticeQuestionSet } from "@/config/types";
  * not recalled exam content, and not presented as real exam questions.
  */
 const GUIDE = {
-  label: "Microsoft Learn — MD-102 study guide",
+  label: "Microsoft Learn: MD-102 study guide",
   url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102",
 };
 
@@ -19,7 +19,7 @@ export const md102Questions: PracticeQuestionSet = {
   seo: {
     title: "MD-102 Practice Questions with Answers & Explanations (2026)",
     description:
-      "15 free, original MD-102 practice questions on Intune enrollment, Autopilot, compliance, endpoint security, app protection and automation — with explanations.",
+      "15 free, original MD-102 practice questions on Intune enrollment, Autopilot, compliance, endpoint security, app protection and automation, with explanations.",
   },
   questions: [
     /* ── Domain 1: Prepare infrastructure for devices ─────────────────────── */
@@ -204,7 +204,7 @@ export const md102Questions: PracticeQuestionSet = {
       ],
       answer: "A",
       explanation:
-        "ASR rules reduce common attack paths. Start them in audit mode, check for business impact, then switch to block — a typical exam scenario.",
+        "ASR rules reduce common attack paths. Start them in audit mode, check for business impact, then switch to block: a typical exam scenario.",
       reference: GUIDE,
     },
 
@@ -220,7 +220,7 @@ export const md102Questions: PracticeQuestionSet = {
         { id: "A", text: "A device compliance policy", rationale: "Compliance policies require enrolled devices, which is not the case here." },
         { id: "B", text: "A device configuration profile", rationale: "Configuration profiles need an enrolled device." },
         { id: "C", text: "A Windows Autopilot profile", rationale: "Autopilot is for Windows device provisioning, not phones." },
-        { id: "D", text: "An app protection policy (MAM) for the managed apps", rationale: "Correct. App protection policies protect company data at the app level — for example blocking copy-and-paste to unmanaged apps — even without device enrollment." },
+        { id: "D", text: "An app protection policy (MAM) for the managed apps", rationale: "Correct. App protection policies protect company data at the app level, for example blocking copy-and-paste to unmanaged apps, even without device enrollment." },
       ],
       answer: "D",
       explanation:

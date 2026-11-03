@@ -51,7 +51,7 @@ export function CertHero({ cert }: { cert: ResolvedCertification }) {
             </p>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/70">
               {cert.description ??
-                `Six progressive practice exams for the ${cert.fullName} exam — from a diagnostic that shows where you stand to a challenge set above exam level.`}
+                `Six progressive practice exams for the ${cert.fullName} exam, from a diagnostic that shows where you stand to a challenge set above exam level.`}
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-start">
@@ -116,7 +116,7 @@ function HeroStat({ label, value }: { label: string; value: string | number }) {
 }
 
 /* ─────────────────────────────────────────────────────────────────────────
-   OFFER — how to get the practice exams
+   OFFER: how to get the practice exams
    ───────────────────────────────────────────────────────────────────────── */
 export function CertOffer({ cert }: { cert: ResolvedCertification }) {
   const direct = hasDirectOffer(cert);
@@ -280,7 +280,7 @@ export function QuestionMethodology({ cert }: { cert: ResolvedCertification }) {
     {
       icon: "target",
       title: "Calibrated to exam level",
-      body: `Test 4 is written to reflect the style and difficulty of the real ${cert.name} exam — your clearest readiness check.`,
+      body: `Test 4 is written to reflect the style and difficulty of the real ${cert.name} exam: your clearest readiness check.`,
     },
     ...(
       [

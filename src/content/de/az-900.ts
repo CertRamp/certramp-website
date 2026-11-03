@@ -8,7 +8,7 @@ import type { DeContent } from "@/config/types";
  * follow the official German study guide on learn.microsoft.com (de-de).
  */
 const GUIDE = {
-  label: "Microsoft Learn — Studienleitfaden für die Prüfung AZ-900",
+  label: "Microsoft Learn: Studienleitfaden für die Prüfung AZ-900",
   url: "https://learn.microsoft.com/de-de/credentials/certifications/resources/study-guides/az-900",
 };
 
@@ -184,7 +184,7 @@ export const az900De: DeContent = {
     seo: {
       title: "AZ-900 Übungsfragen mit Lösungen und Erklärungen (2026)",
       description:
-        "15 kostenlose, eigene AZ-900 Übungsfragen zu Cloudkonzepten, Azure-Architektur, Speicher, Identität, Governance und Überwachung – jeweils mit Erklärung.",
+        "15 kostenlose, eigene AZ-900 Übungsfragen zu Cloudkonzepten, Azure-Architektur, Speicher, Identität, Governance und Überwachung: jeweils mit Erklärung.",
     },
     questions: [
       /* ── Bereich 1: Beschreiben von Cloudkonzepten ─────────────────────── */
@@ -289,7 +289,7 @@ export const az900De: DeContent = {
           "Ihre Organisation hat 12 Abonnements und möchte eine Azure Policy-Zuweisung auf alle gleichzeitig anwenden. Auf welcher Ebene sollten Sie sie zuweisen?",
         options: [
           { id: "A", text: "Auf einer Verwaltungsgruppe, die die Abonnements enthält", rationale: "Richtig. Verwaltungsgruppen stehen über den Abonnements, und dort zugewiesene Richtlinien und Zugriffsrechte werden von jedem enthaltenen Abonnement geerbt." },
-          { id: "B", text: "Auf jeder Ressourcengruppe einzeln", rationale: "Das funktioniert grundsätzlich, bedeutet aber viele einzelne Zuweisungen – genau das möchte die Organisation vermeiden." },
+          { id: "B", text: "Auf jeder Ressourcengruppe einzeln", rationale: "Das funktioniert grundsätzlich, bedeutet aber viele einzelne Zuweisungen: genau das möchte die Organisation vermeiden." },
           { id: "C", text: "Auf einem einzelnen virtuellen Netzwerk", rationale: "Ein virtuelles Netzwerk ist eine Ressource, kein Bereich, der Abonnements enthält." },
           { id: "D", text: "Auf einer Verfügbarkeitszone", rationale: "Verfügbarkeitszonen sind physische Standorte, kein Governance-Bereich." },
         ],
@@ -314,7 +314,7 @@ export const az900De: DeContent = {
         answer: "C",
         explanation:
           "LRS und ZRS schützen innerhalb einer Region; GRS und GZRS fügen eine Kopie in einer sekundären Region hinzu. Nur die Varianten mit Lesezugriff (RA-GRS und RA-GZRS) erlauben der Anwendung, aus der sekundären Region zu lesen.",
-        reference: { label: "Microsoft Learn — Azure Storage-Redundanz", url: "https://learn.microsoft.com/de-de/azure/storage/common/storage-redundancy" },
+        reference: { label: "Microsoft Learn: Azure Storage-Redundanz", url: "https://learn.microsoft.com/de-de/azure/storage/common/storage-redundancy" },
       },
       {
         id: "az900-d2-archive-tier",
@@ -332,7 +332,7 @@ export const az900De: DeContent = {
         answer: "D",
         explanation:
           "Hot, Cool und Cold sind Onlineebenen; Archive ist offline und hat die niedrigsten Speicherkosten. Das Lesen archivierter Daten erfordert eine Aktivierung (Rehydrierung), die Stunden dauern kann.",
-        reference: { label: "Microsoft Learn — Zugriffsebenen für Blobdaten", url: "https://learn.microsoft.com/de-de/azure/storage/blobs/access-tiers-overview" },
+        reference: { label: "Microsoft Learn: Zugriffsebenen für Blobdaten", url: "https://learn.microsoft.com/de-de/azure/storage/blobs/access-tiers-overview" },
       },
       {
         id: "az900-d2-expressroute",
@@ -388,7 +388,7 @@ export const az900De: DeContent = {
         answer: "B",
         explanation:
           "Ressourcensperren gelten auch für Benutzer mit hohen Berechtigungen. CanNotDelete erlaubt weiterhin Änderungen; ReadOnly blockiert sowohl Änderungen als auch das Löschen.",
-        reference: { label: "Microsoft Learn — Sperren von Ressourcen", url: "https://learn.microsoft.com/de-de/azure/azure-resource-manager/management/lock-resources" },
+        reference: { label: "Microsoft Learn: Sperren von Ressourcen", url: "https://learn.microsoft.com/de-de/azure/azure-resource-manager/management/lock-resources" },
       },
       {
         id: "az900-d3-policy",

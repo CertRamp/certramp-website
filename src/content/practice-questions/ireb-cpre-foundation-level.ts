@@ -6,7 +6,7 @@ import type { PracticeQuestionSet } from "@/config/types";
  * not recalled exam content, and not presented as real exam questions.
  */
 const SYLLABUS = {
-  label: "IREB — CPRE Foundation Level syllabus 3.3.0",
+  label: "IREB: CPRE Foundation Level syllabus 3.3.0",
   url: "https://hub.ireb.org/media/pages/resources/cpre-foundation-level-syllabus/9c084b1cfd-1787039954/cpre_foundationlevel_syllabus_en_v.3.3.0.pdf",
 };
 
@@ -19,7 +19,7 @@ export const irebCpreQuestions: PracticeQuestionSet = {
   seo: {
     title: "CPRE Foundation Level Practice Questions with Answers (3.3.0)",
     description:
-      "15 free, original IREB CPRE Foundation Level practice questions on syllabus 3.3.0 — principles, templates, elicitation, validation, traceability — with explanations.",
+      "15 free, original IREB CPRE Foundation Level practice questions on syllabus 3.3.0 (principles, templates, elicitation, validation, traceability) with explanations.",
   },
   questions: [
     /* ── Chapter 1: Introduction and overview ─────────────────────────────── */
@@ -31,8 +31,8 @@ export const irebCpreQuestions: PracticeQuestionSet = {
       question:
         "\"The system shall display the search results within two seconds for 95% of all queries.\" Which kind of requirement is this?",
       options: [
-        { id: "A", text: "Quality requirement", rationale: "Correct. The statement describes a quality — here performance — that the system shall have." },
-        { id: "B", text: "Functional requirement", rationale: "A functional requirement describes a result or behaviour the system provides, such as performing the search itself — not how fast it happens." },
+        { id: "A", text: "Quality requirement", rationale: "Correct. The statement describes a quality, here performance, that the system shall have." },
+        { id: "B", text: "Functional requirement", rationale: "A functional requirement describes a result or behaviour the system provides, such as performing the search itself, not how fast it happens." },
         { id: "C", text: "Constraint", rationale: "A constraint restricts the solution space beyond what is needed for functional and quality requirements, for example a mandated technology or law." },
         { id: "D", text: "Glossary entry", rationale: "A glossary defines terms; this is a requirement." },
       ],
@@ -74,7 +74,7 @@ export const irebCpreQuestions: PracticeQuestionSet = {
       ],
       answer: "C",
       explanation:
-        "The nine principles are value-orientation, stakeholders, shared understanding, context, problem – requirement – solution, validation, evolution, innovation, and systematic and disciplined work.",
+        "The nine principles are value-orientation, stakeholders, shared understanding, context, problem, requirement, solution, validation, evolution, innovation, and systematic and disciplined work.",
       reference: SYLLABUS,
     },
     {
@@ -271,7 +271,7 @@ export const irebCpreQuestions: PracticeQuestionSet = {
       options: [
         { id: "A", text: "A Change Control Board that meets monthly", rationale: "A formal Change Control Board is typical of linear, plan-driven approaches." },
         { id: "B", text: "Each developer individually", rationale: "Uncoordinated changes by individual developers are not a change management approach." },
-        { id: "C", text: "Nobody — requirements cannot change in agile projects", rationale: "Agile approaches explicitly embrace change." },
+        { id: "C", text: "Nobody: requirements cannot change in agile projects", rationale: "Agile approaches explicitly embrace change." },
         { id: "D", text: "The product owner, by updating and reprioritising the backlog", rationale: "Correct. In agile approaches, changes are handled through the backlog, which the product owner maintains and prioritises." },
       ],
       answer: "D",

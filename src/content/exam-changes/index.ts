@@ -29,7 +29,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "AZ-204 can no longer be taken or renewed; developers starting now should prepare for AI-200.",
     "source": {
-      "label": "Microsoft Partner Center – July 2026 announcements (Specialization skilling updates, 30 July 2026)",
+      "label": "Microsoft Partner Center: July 2026 announcements (Specialization skilling updates, 30 July 2026)",
       "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-july"
     },
     "verified": "2026-10-28",
@@ -66,7 +66,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "AZ-500 can no longer be taken or renewed; book SC-500 instead.",
     "source": {
-      "label": "Microsoft Partner Center – August 2026 announcements (FY27 August skilling updates)",
+      "label": "Microsoft Partner Center: August 2026 announcements (FY27 August skilling updates)",
       "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-august"
     },
     "verified": "2026-10-28",
@@ -101,7 +101,7 @@ export const examChanges: ExamChange[] = [
     "certramp": [],
     "candidateAdvice": "PL-200 can no longer be taken; candidates for this role should prepare for AB-410.",
     "source": {
-      "label": "Microsoft Partner Center – August 2026 announcements (FY27 August skilling updates)",
+      "label": "Microsoft Partner Center: August 2026 announcements (FY27 August skilling updates)",
       "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-august"
     },
     "verified": "2026-10-28",
@@ -136,7 +136,7 @@ export const examChanges: ExamChange[] = [
     "certramp": [],
     "candidateAdvice": "MB-280 can no longer be taken; candidates for this role should prepare for AB-210.",
     "source": {
-      "label": "Microsoft Partner Center – July 2026 announcements (Specialization skilling updates, 30 July 2026)",
+      "label": "Microsoft Partner Center: July 2026 announcements (Specialization skilling updates, 30 July 2026)",
       "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-july"
     },
     "verified": "2026-10-28",
@@ -169,7 +169,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "The Windows Server certification now requires only AZ-802, offered in English only.",
     "source": {
-      "label": "Microsoft Learn – Windows Server Administrator Associate certification",
+      "label": "Microsoft Learn: Windows Server Administrator Associate certification",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/"
     },
     "verified": "2026-10-28",
@@ -205,7 +205,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "New registrations are only possible for AB-400, which is offered in English only; PL-400 can be taken until 30 October 2026 only if it was booked by 16 October.",
     "source": {
-      "label": "Microsoft Learn – Exam PL-400",
+      "label": "Microsoft Learn: Exam PL-400",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/pl-400/"
     },
     "verified": "2026-10-28",
@@ -238,7 +238,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Take MS-102 by 30 November 2026 if you want this certification; renewal is also not possible after that date.",
     "source": {
-      "label": "Microsoft Learn – Exam MS-102 (retirement notice)",
+      "label": "Microsoft Learn: Exam MS-102 (retirement notice)",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ms-102/"
     },
     "verified": "2026-10-28",
@@ -270,7 +270,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Exams taken from 16 November 2026 follow the new outline; before that date the current outline applies (localized versions update about eight weeks after English).",
     "source": {
-      "label": "Microsoft Learn – AB-100 study guide (change log)",
+      "label": "Microsoft Learn: AB-100 study guide (change log)",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100"
     },
     "verified": "2026-10-28",
@@ -302,7 +302,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Study the 'skills measured as of' version in the official study guide; localized versions are updated about eight weeks after the English exam.",
     "source": {
-      "label": "Microsoft Learn – SC-300 study guide (change log)",
+      "label": "Microsoft Learn: SC-300 study guide (change log)",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300"
     },
     "verified": "2026-10-28",
@@ -334,7 +334,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Study the 'skills measured as of' version in the official study guide; localized versions are updated about eight weeks after the English exam.",
     "source": {
-      "label": "Microsoft Learn – SC-401 study guide (change log)",
+      "label": "Microsoft Learn: SC-401 study guide (change log)",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401"
     },
     "verified": "2026-10-28",
@@ -366,7 +366,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Study the 'skills measured as of' version in the official study guide; localized versions are updated about eight weeks after the English exam.",
     "source": {
-      "label": "Microsoft Learn – MD-102 study guide (change log)",
+      "label": "Microsoft Learn: MD-102 study guide (change log)",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102"
     },
     "verified": "2026-10-28",
@@ -398,7 +398,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Study the 'skills measured as of' version in the official study guide; localized versions are updated about eight weeks after the English exam.",
     "source": {
-      "label": "Microsoft Learn – SC-200 study guide (change log)",
+      "label": "Microsoft Learn: SC-200 study guide (change log)",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200"
     },
     "verified": "2026-10-28",
@@ -430,7 +430,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Study the 'skills measured as of' version in the official study guide; localized versions are updated about eight weeks after the English exam.",
     "source": {
-      "label": "Microsoft Learn – SC-900 study guide (change log)",
+      "label": "Microsoft Learn: SC-900 study guide (change log)",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900"
     },
     "verified": "2026-10-28",
@@ -462,7 +462,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Study the 'skills measured as of' version in the official study guide; localized versions are updated about eight weeks after the English exam.",
     "source": {
-      "label": "Microsoft Learn – SC-100 study guide (change log)",
+      "label": "Microsoft Learn: SC-100 study guide (change log)",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-100"
     },
     "verified": "2026-10-28",
@@ -494,12 +494,12 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Study the outline dated 20 October 2026; the objective on creating Microsoft 365 Copilot agents was removed, and objectives on using prebuilt Copilot agents and Microsoft Copilot Cowork were added.",
     "source": {
-      "label": "Microsoft Learn – AB-730 study guide (change log)",
+      "label": "Microsoft Learn: AB-730 study guide (change log)",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-730"
     },
     "verified": "2026-10-28",
     "de": {
-      "summary": "Prüfungsinhalte von AB-730 aktualisiert: umfassende Überarbeitung – Lernziele zur Agent-Erstellung entfernt, neuer Bereich „Drive business outcomes by using agents“ hinzugefügt.",
+      "summary": "Prüfungsinhalte von AB-730 aktualisiert: umfassende Überarbeitung (Lernziele zur Agent-Erstellung entfernt, neuer Bereich „Drive business outcomes by using agents“ hinzugefügt).",
       "candidateAdvice": "Lernen Sie anhand der Prüfungsgliederung vom 20. Oktober 2026; das Lernziel zum Erstellen von Microsoft 365 Copilot-Agents wurde entfernt, Lernziele zur Nutzung vorgefertigter Copilot-Agents und zu Microsoft Copilot Cowork wurden hinzugefügt.",
       "dateLabels": [
         "Skills measured as of (englische Prüfung; andere Sprachen ca. acht Wochen später)"
@@ -526,7 +526,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Study the 'skills measured as of' version in the official study guide; localized versions are updated about eight weeks after the English exam.",
     "source": {
-      "label": "Microsoft Learn – DP-600 study guide (change log)",
+      "label": "Microsoft Learn: DP-600 study guide (change log)",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600"
     },
     "verified": "2026-10-28",
@@ -558,7 +558,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Study the 'skills measured as of' version in the official study guide; localized versions are updated about eight weeks after the English exam.",
     "source": {
-      "label": "Microsoft Learn – DP-750 study guide (change log)",
+      "label": "Microsoft Learn: DP-750 study guide (change log)",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750"
     },
     "verified": "2026-10-28",
@@ -590,7 +590,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Study the 'skills measured as of' version in the official study guide; localized versions are updated about eight weeks after the English exam.",
     "source": {
-      "label": "Microsoft Learn – AB-900 study guide (change log)",
+      "label": "Microsoft Learn: AB-900 study guide (change log)",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900"
     },
     "verified": "2026-10-28",
@@ -622,7 +622,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Study the 'skills measured as of' version in the official study guide; localized versions are updated about eight weeks after the English exam.",
     "source": {
-      "label": "Microsoft Learn – AI-200 study guide (change log)",
+      "label": "Microsoft Learn: AI-200 study guide (change log)",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200"
     },
     "verified": "2026-10-28",
@@ -654,7 +654,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Study the 'skills measured as of' version in the official study guide; localized versions are updated about eight weeks after the English exam.",
     "source": {
-      "label": "Microsoft Learn – AZ-700 study guide (change log)",
+      "label": "Microsoft Learn: AZ-700 study guide (change log)",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700"
     },
     "verified": "2026-10-28",
@@ -686,7 +686,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Study the outline dated 24 July 2026; the Power Pages objectives and the canvas and model-driven app-building objectives were removed, and a Copilot Studio agents domain was added.",
     "source": {
-      "label": "Microsoft Learn – PL-900 study guide (change log)",
+      "label": "Microsoft Learn: PL-900 study guide (change log)",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900"
     },
     "verified": "2026-10-28",
@@ -718,7 +718,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Study the 'skills measured as of' version in the official study guide; localized versions are updated about eight weeks after the English exam.",
     "source": {
-      "label": "Microsoft Learn – AB-731 study guide (change log)",
+      "label": "Microsoft Learn: AB-731 study guide (change log)",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-731"
     },
     "verified": "2026-10-28",
@@ -750,7 +750,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Study the 'skills measured as of' version in the official study guide; localized versions are updated about eight weeks after the English exam.",
     "source": {
-      "label": "Microsoft Learn – AZ-900 study guide (change log)",
+      "label": "Microsoft Learn: AZ-900 study guide (change log)",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
     },
     "verified": "2026-10-28",
@@ -782,7 +782,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Study the outline dated 7 August 2026 in the official GH-300 study guide.",
     "source": {
-      "label": "Microsoft Learn – GH-300 study guide (change log)",
+      "label": "Microsoft Learn: GH-300 study guide (change log)",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300"
     },
     "verified": "2026-10-28",
@@ -812,7 +812,7 @@ export const examChanges: ExamChange[] = [
     "certramp": [],
     "candidateAdvice": "Use only GH-500 study material written for the July 2026 outline.",
     "source": {
-      "label": "Microsoft Learn – GH-500 study guide (change log)",
+      "label": "Microsoft Learn: GH-500 study guide (change log)",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-500"
     },
     "verified": "2026-10-28",
@@ -842,7 +842,7 @@ export const examChanges: ExamChange[] = [
     "certramp": [],
     "candidateAdvice": "Use only GH-100 study material written for the July 2026 outline.",
     "source": {
-      "label": "Microsoft Learn – GH-100 study guide (change log)",
+      "label": "Microsoft Learn: GH-100 study guide (change log)",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-100"
     },
     "verified": "2026-10-28",
@@ -878,7 +878,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "AI-102 can no longer be taken; candidates for this role should prepare for AI-103.",
     "source": {
-      "label": "Microsoft Partner Center – June 2026 announcements (Specialization skilling updates, 30 June 2026)",
+      "label": "Microsoft Partner Center: June 2026 announcements (Specialization skilling updates, 30 June 2026)",
       "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-june"
     },
     "verified": "2026-10-28",
@@ -911,7 +911,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "To earn Azure AI Fundamentals you must now pass AI-901.",
     "source": {
-      "label": "Microsoft Learn – Exam AI-900 (retirement notice)",
+      "label": "Microsoft Learn: Exam AI-900 (retirement notice)",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-900/"
     },
     "verified": "2026-10-28",
@@ -947,7 +947,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "DP-100 can no longer be taken; candidates for this role should prepare for AI-300.",
     "source": {
-      "label": "Microsoft Partner Center – June 2026 announcements (Specialization skilling updates, 30 June 2026)",
+      "label": "Microsoft Partner Center: June 2026 announcements (Specialization skilling updates, 30 June 2026)",
       "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-june"
     },
     "verified": "2026-10-28",
@@ -978,7 +978,7 @@ export const examChanges: ExamChange[] = [
     "certramp": [],
     "candidateAdvice": "MS-900 can no longer be taken; Microsoft's partner program lists AB-900 (Copilot and Agent Administration Fundamentals) as the option replacing it for partner skilling, but this is not an official exam replacement.",
     "source": {
-      "label": "Microsoft Learn – Retired certification exams",
+      "label": "Microsoft Learn: Retired certification exams",
       "url": "https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams"
     },
     "verified": "2026-10-28",
@@ -1008,7 +1008,7 @@ export const examChanges: ExamChange[] = [
     "certramp": [],
     "candidateAdvice": "Study the 'skills measured as of' version in the official study guide; localized versions are updated about eight weeks after the English exam.",
     "source": {
-      "label": "Microsoft Learn – DP-700 study guide (change log)",
+      "label": "Microsoft Learn: DP-700 study guide (change log)",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700"
     },
     "verified": "2026-10-28",
@@ -1038,7 +1038,7 @@ export const examChanges: ExamChange[] = [
     "certramp": [],
     "candidateAdvice": "Study the 'skills measured as of' version in the official study guide; localized versions are updated about eight weeks after the English exam.",
     "source": {
-      "label": "Microsoft Learn – DP-900 study guide (change log)",
+      "label": "Microsoft Learn: DP-900 study guide (change log)",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900"
     },
     "verified": "2026-10-28",
@@ -1068,7 +1068,7 @@ export const examChanges: ExamChange[] = [
     "certramp": [],
     "candidateAdvice": "Study the 'skills measured as of' version in the official study guide; localized versions are updated about eight weeks after the English exam.",
     "source": {
-      "label": "Microsoft Learn – AZ-400 study guide (change log)",
+      "label": "Microsoft Learn: AZ-400 study guide (change log)",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400"
     },
     "verified": "2026-10-28",
@@ -1084,7 +1084,7 @@ export const examChanges: ExamChange[] = [
     "id": "aws-mla-c01",
     "vendor": "AWS",
     "exam": "MLA-C01",
-    "examName": "AWS Certified Machine Learning Engineer – Associate",
+    "examName": "AWS Certified Machine Learning Engineer: Associate",
     "change": "new-version",
     "summary": "MLA-C02 replaces MLA-C01; the English MLA-C01 exam has ended and MLA-C02 is in beta, with general availability given as 14 January 2027 in the AWS blog (the certification page still says TBD).",
     "dates": [
@@ -1106,13 +1106,13 @@ export const examChanges: ExamChange[] = [
       }
     ],
     "successor": "MLA-C02",
-    "successorName": "AWS Certified Machine Learning Engineer – Associate",
+    "successorName": "AWS Certified Machine Learning Engineer: Associate",
     "certramp": [
       "aws-mla-c02"
     ],
     "candidateAdvice": "English candidates can only book the MLA-C02 beta now; Japanese, Korean and Simplified Chinese candidates can take MLA-C01 until MLA-C02 reaches general availability (14 January 2027 per the AWS blog).",
     "source": {
-      "label": "AWS Training and Certification Blog – Certification updates: September 2026",
+      "label": "AWS Training and Certification Blog (Certification updates: September 2026)",
       "url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/"
     },
     "verified": "2026-10-28",
@@ -1131,7 +1131,7 @@ export const examChanges: ExamChange[] = [
     "id": "aws-sap-c02",
     "vendor": "AWS",
     "exam": "SAP-C02",
-    "examName": "AWS Certified Solutions Architect – Professional",
+    "examName": "AWS Certified Solutions Architect: Professional",
     "change": "new-version",
     "summary": "SAP-C03 replaces SAP-C02 as a standard (non-beta) exam in all currently supported languages.",
     "dates": [
@@ -1149,20 +1149,20 @@ export const examChanges: ExamChange[] = [
       }
     ],
     "successor": "SAP-C03",
-    "successorName": "AWS Certified Solutions Architect – Professional",
+    "successorName": "AWS Certified Solutions Architect: Professional",
     "certramp": [
       "aws-sap-c02",
       "aws-sap-c03"
     ],
     "candidateAdvice": "Exams taken on or before 16 November 2026 use SAP-C02; exams from 17 November 2026 use SAP-C03, so study the version that matches your booked date.",
     "source": {
-      "label": "AWS Training and Certification Blog – Certification updates: September 2026",
+      "label": "AWS Training and Certification Blog (Certification updates: September 2026)",
       "url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/"
     },
     "verified": "2026-10-28",
     "de": {
       "summary": "SAP-C03 ersetzt SAP-C02 als reguläre Prüfung (keine Beta) in allen derzeit unterstützten Sprachen.",
-      "candidateAdvice": "Prüfungen bis einschließlich 16. November 2026 erfolgen nach SAP-C02, Prüfungen ab dem 17. November 2026 nach SAP-C03 – lernen Sie daher für die Version, die zu Ihrem gebuchten Termin passt.",
+      "candidateAdvice": "Prüfungen bis einschließlich 16. November 2026 erfolgen nach SAP-C02, Prüfungen ab dem 17. November 2026 nach SAP-C03: lernen Sie daher für die Version, die zu Ihrem gebuchten Termin passt.",
       "dateLabels": [
         "Anmeldung für SAP-C03 öffnet",
         "Letzter Prüfungstag für SAP-C02",
@@ -1174,7 +1174,7 @@ export const examChanges: ExamChange[] = [
     "id": "aws-dva-c02",
     "vendor": "AWS",
     "exam": "DVA-C02",
-    "examName": "AWS Certified Developer – Associate",
+    "examName": "AWS Certified Developer: Associate",
     "change": "new-version",
     "summary": "DVA-C03 replaces DVA-C02 as a standard (non-beta) exam in all currently supported languages.",
     "dates": [
@@ -1192,19 +1192,19 @@ export const examChanges: ExamChange[] = [
       }
     ],
     "successor": "DVA-C03",
-    "successorName": "AWS Certified Developer – Associate",
+    "successorName": "AWS Certified Developer: Associate",
     "certramp": [
       "aws-dva-c03"
     ],
     "candidateAdvice": "Exams taken on or before 30 November 2026 use DVA-C02; exams from 1 December 2026 use DVA-C03, so study the version that matches your booked date.",
     "source": {
-      "label": "AWS Training and Certification Blog – Certification updates: September 2026",
+      "label": "AWS Training and Certification Blog (Certification updates: September 2026)",
       "url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/"
     },
     "verified": "2026-10-28",
     "de": {
       "summary": "DVA-C03 ersetzt DVA-C02 als reguläre Prüfung (keine Beta) in allen derzeit unterstützten Sprachen.",
-      "candidateAdvice": "Prüfungen bis einschließlich 30. November 2026 erfolgen nach DVA-C02, Prüfungen ab dem 1. Dezember 2026 nach DVA-C03 – lernen Sie daher für die Version, die zu Ihrem gebuchten Termin passt.",
+      "candidateAdvice": "Prüfungen bis einschließlich 30. November 2026 erfolgen nach DVA-C02, Prüfungen ab dem 1. Dezember 2026 nach DVA-C03: lernen Sie daher für die Version, die zu Ihrem gebuchten Termin passt.",
       "dateLabels": [
         "Anmeldung für DVA-C03 öffnet",
         "Letzter Prüfungstag für DVA-C02",
@@ -1216,9 +1216,9 @@ export const examChanges: ExamChange[] = [
     "id": "aws-ans-c01",
     "vendor": "AWS",
     "exam": "ANS-C01",
-    "examName": "AWS Certified Advanced Networking – Specialty",
+    "examName": "AWS Certified Advanced Networking: Specialty",
     "change": "retiring",
-    "summary": "The Advanced Networking – Specialty exam retires with no named replacement; certifications already earned stay active for their standard three-year period.",
+    "summary": "The Advanced Networking: Specialty exam retires with no named replacement; certifications already earned stay active for their standard three-year period.",
     "dates": [
       {
         "label": "Last day to take the exam",
@@ -1230,15 +1230,15 @@ export const examChanges: ExamChange[] = [
     "certramp": [
       "aws-ans-c01"
     ],
-    "candidateAdvice": "You must pass ANS-C01 by 31 December 2026 to earn this certification; AWS will not issue new Advanced Networking – Specialty certifications after the retirement.",
+    "candidateAdvice": "You must pass ANS-C01 by 31 December 2026 to earn this certification; AWS will not issue new Advanced Networking: Specialty certifications after the retirement.",
     "source": {
-      "label": "AWS – AWS Certified Advanced Networking – Specialty",
+      "label": "AWS, AWS Certified Advanced Networking, Specialty",
       "url": "https://aws.amazon.com/certification/certified-advanced-networking-specialty/"
     },
     "verified": "2026-10-28",
     "de": {
-      "summary": "Die Prüfung Advanced Networking – Specialty wird ohne benannten Nachfolger eingestellt; bereits erworbene Zertifizierungen bleiben für ihre reguläre Dauer von drei Jahren gültig.",
-      "candidateAdvice": "Sie müssen ANS-C01 bis zum 31. Dezember 2026 bestehen, um diese Zertifizierung zu erwerben; nach der Einstellung stellt AWS keine neuen Advanced Networking – Specialty-Zertifizierungen mehr aus.",
+      "summary": "Die Prüfung Advanced Networking: Specialty wird ohne benannten Nachfolger eingestellt; bereits erworbene Zertifizierungen bleiben für ihre reguläre Dauer von drei Jahren gültig.",
+      "candidateAdvice": "Sie müssen ANS-C01 bis zum 31. Dezember 2026 bestehen, um diese Zertifizierung zu erwerben; nach der Einstellung stellt AWS keine neuen Advanced Networking: Specialty-Zertifizierungen mehr aus.",
       "dateLabels": [
         "Letzter Prüfungstag"
       ]
@@ -1248,9 +1248,9 @@ export const examChanges: ExamChange[] = [
     "id": "aws-scs-c03",
     "vendor": "AWS",
     "exam": "SCS-C03",
-    "examName": "AWS Certified Security – Specialty",
+    "examName": "AWS Certified Security: Specialty",
     "change": "retiring",
-    "summary": "The Simplified Chinese, Spanish (Latin America) and Portuguese (Brazil) versions of the Security – Specialty exam will be retired; English, Japanese and Korean remain.",
+    "summary": "The Simplified Chinese, Spanish (Latin America) and Portuguese (Brazil) versions of the Security: Specialty exam will be retired; English, Japanese and Korean remain.",
     "dates": [
       {
         "label": "Simplified Chinese, Spanish (Latin America) and Portuguese (Brazil) versions retired after this date",
@@ -1264,12 +1264,12 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "If you want to take the exam in Simplified Chinese, Spanish (Latin America) or Portuguese (Brazil), book it by 31 December 2026; after that only the remaining languages are offered.",
     "source": {
-      "label": "AWS – AWS Certified Security – Specialty (Languages offered)",
+      "label": "AWS, AWS Certified Security, Specialty (Languages offered)",
       "url": "https://aws.amazon.com/certification/certified-security-specialty/"
     },
     "verified": "2026-10-28",
     "de": {
-      "summary": "Die Sprachversionen vereinfachtes Chinesisch, Spanisch (Lateinamerika) und Portugiesisch (Brasilien) der Prüfung Security – Specialty werden eingestellt; Englisch, Japanisch und Koreanisch bleiben erhalten.",
+      "summary": "Die Sprachversionen vereinfachtes Chinesisch, Spanisch (Lateinamerika) und Portugiesisch (Brasilien) der Prüfung Security: Specialty werden eingestellt; Englisch, Japanisch und Koreanisch bleiben erhalten.",
       "candidateAdvice": "Wenn Sie die Prüfung auf vereinfachtem Chinesisch, Spanisch (Lateinamerika) oder Portugiesisch (Brasilien) ablegen möchten, buchen Sie sie bis zum 31. Dezember 2026; danach werden nur noch die verbleibenden Sprachen angeboten.",
       "dateLabels": [
         "Versionen auf vereinfachtem Chinesisch, Spanisch (Lateinamerika) und Portugiesisch (Brasilien) laufen nach diesem Datum aus"
@@ -1304,7 +1304,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "The exam can be booked now as a beta; candidates who earn it by 15 February 2027 also receive an Early Adopter badge.",
     "source": {
-      "label": "AWS Training and Certification Blog – Introducing AWS Certified AI Business Strategist (1 September 2026)",
+      "label": "AWS Training and Certification Blog: Introducing AWS Certified AI Business Strategist (1 September 2026)",
       "url": "https://aws.amazon.com/blogs/training-and-certification/introducing-aws-certified-ai-business-strategist-built-for-the-people-who-scale-ai/"
     },
     "verified": "2026-10-28",
@@ -1347,7 +1347,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "SY0-701 stays bookable in English until 11 June 2027; SY0-801 is expected to launch on or around 17 November 2026 (English only).",
     "source": {
-      "label": "CompTIA – Security+ V8 (SY0-801) exam details",
+      "label": "CompTIA: Security+ V8 (SY0-801) exam details",
       "url": "https://www.comptia.org/en-us/certifications/security/v8/"
     },
     "verified": "2026-10-28",
@@ -1387,7 +1387,7 @@ export const examChanges: ExamChange[] = [
     "certramp": [],
     "candidateAdvice": "English candidates can take CS0-003 until 22 December 2026; CS0-004 is available now in English, with French, Japanese, Spanish and Portuguese listed as coming soon.",
     "source": {
-      "label": "CompTIA – CySA+ V3 (CS0-003) exam details",
+      "label": "CompTIA: CySA+ V3 (CS0-003) exam details",
       "url": "https://www.comptia.org/en-us/certifications/cybersecurity-analyst/v3/"
     },
     "verified": "2026-10-28",
@@ -1425,7 +1425,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Exams taken on or before 2 February 2027 use the v1.1 exam topics; exams from 3 February 2027 use the v2.0 exam topics.",
     "source": {
-      "label": "Cisco Learning blog – Stay on Track: Get Certified Before the CCNA Refresh (1 July 2026)",
+      "label": "Cisco Learning blog, Stay on Track: Get Certified Before the CCNA Refresh (1 July 2026)",
       "url": "https://blogs.cisco.com/learning/stay-on-track-get-certified-before-the-ccna-refresh"
     },
     "verified": "2026-10-28",
@@ -1460,7 +1460,7 @@ export const examChanges: ExamChange[] = [
     "certramp": [],
     "candidateAdvice": "SCOR is now tested on v2.0 only, and Cisco advises treating it as new content rather than a refresh if you studied v1.1 material.",
     "source": {
-      "label": "Cisco Learning blog – Cisco Security Certification Updates: Your Questions Answered (27 August 2026)",
+      "label": "Cisco Learning blog, Cisco Security Certification Updates: Your Questions Answered (27 August 2026)",
       "url": "https://blogs.cisco.com/learning/cisco-security-certification-updates-your-questions-answered"
     },
     "verified": "2026-10-28",
@@ -1491,7 +1491,7 @@ export const examChanges: ExamChange[] = [
     "certramp": [],
     "candidateAdvice": "SVPN can no longer be booked; CCNP Security candidates need a different concentration exam.",
     "source": {
-      "label": "Cisco Learning blog – Cisco Security Certification Updates: Your Questions Answered (27 August 2026)",
+      "label": "Cisco Learning blog, Cisco Security Certification Updates: Your Questions Answered (27 August 2026)",
       "url": "https://blogs.cisco.com/learning/cisco-security-certification-updates-your-questions-answered"
     },
     "verified": "2026-10-28",
@@ -1516,7 +1516,7 @@ export const examChanges: ExamChange[] = [
         "date": "2026-12-31"
       },
       {
-        "label": "GA exam launch – \"mid-November\" per the English page (no year printed; the Japanese and Chinese pages say GA registration opens 2 November)",
+        "label": "GA exam launch: \"mid-November\" per the English page (no year printed; the Japanese and Chinese pages say GA registration opens 2 November)",
         "date": "2026-11"
       }
     ],
@@ -1527,7 +1527,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Beta registration is closed (per the Japanese page), so new candidates have to wait for GA registration, which Google gives as mid-November (English page) or 2 November (Japanese page).",
     "source": {
-      "label": "Google Cloud – Professional Agentic Architect certification",
+      "label": "Google Cloud: Professional Agentic Architect certification",
       "url": "https://cloud.google.com/learn/certification/agentic-architect"
     },
     "verified": "2026-10-28",
@@ -1536,7 +1536,7 @@ export const examChanges: ExamChange[] = [
       "candidateAdvice": "Die Beta-Anmeldung ist geschlossen (laut japanischer Seite), daher müssen neue Kandidaten auf die GA-Anmeldung warten, die Google mit Mitte November (englische Seite) bzw. 2. November (japanische Seite) angibt.",
       "dateLabels": [
         "Beta-Teilnehmende müssen die erforderlichen Labs abschließen bis",
-        "GA-Prüfungsstart – laut englischer Seite „mid-November“ (ohne Jahresangabe; laut japanischer und chinesischer Seite öffnet die GA-Anmeldung am 2. November)"
+        "GA-Prüfungsstart: laut englischer Seite „mid-November“ (ohne Jahresangabe; laut japanischer und chinesischer Seite öffnet die GA-Anmeldung am 2. November)"
       ]
     }
   },
@@ -1558,7 +1558,7 @@ export const examChanges: ExamChange[] = [
     "certramp": [],
     "candidateAdvice": "Online registration has not opened yet; HashiCorp strongly recommends the Terraform Associate certification first.",
     "source": {
-      "label": "HashiCorp – Terraform Infrastructure Engineer Professional certification",
+      "label": "HashiCorp: Terraform Infrastructure Engineer Professional certification",
       "url": "https://developer.hashicorp.com/certifications/terraform-infrastructure-engineer-professional"
     },
     "verified": "2026-10-28",
@@ -1594,7 +1594,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Exams taken on or after 9 October 2026 use the new outline, which adds topics such as VARIANT, AI functions, ABAC policies and metric views.",
     "source": {
-      "label": "Databricks – Data Engineer Professional exam guide (Oct 2026 transition)",
+      "label": "Databricks: Data Engineer Professional exam guide (Oct 2026 transition)",
       "url": "https://www.databricks.com/sites/default/files/2026-09/databricks-certified-data-engineer-professional-exam-guide-oct-2026.pdf"
     },
     "verified": "2026-10-28",
@@ -1627,7 +1627,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Anyone taking CC now sits the exam on the outline effective 1 September 2026, so study materials should be aligned to that outline.",
     "source": {
-      "label": "ISC2 – CC Certification Exam Outline",
+      "label": "ISC2: CC Certification Exam Outline",
       "url": "https://www.isc2.org/certifications/cc/cc-certification-exam-outline"
     },
     "verified": "2026-10-28",
@@ -1659,7 +1659,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Check that study materials cover the AI/ML objectives (e.g. 1.6 and 2.9) in the ISC2 outline dated 1 August 2026; the page does not state an effective date.",
     "source": {
-      "label": "ISC2 – CCSP Certification Exam Outline",
+      "label": "ISC2: CCSP Certification Exam Outline",
       "url": "https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline"
     },
     "verified": "2026-10-28",
@@ -1695,7 +1695,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Candidates who test on or after 3 November 2026 take the exam on the new outline, and ISACA recommends they use the updated preparation materials.",
     "source": {
-      "label": "ISACA press release – CISM exam content outline update (10 Sept 2026)",
+      "label": "ISACA press release: CISM exam content outline update (10 Sept 2026)",
       "url": "https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-updates-cism-exam-content-outline-factoring-in-todays-technologies-security-responsibilities"
     },
     "verified": "2026-10-28",
@@ -1736,7 +1736,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "The COBIT 2019 Foundation exam can no longer be purchased (last day 26 October 2026); ISACA's notice does not say what happens to exams bought before then, so new candidates should prepare for COBIT 7 Foundations.",
     "source": {
-      "label": "ISACA – COBIT Foundation certificate page (notice)",
+      "label": "ISACA: COBIT Foundation certificate page (notice)",
       "url": "https://www.isaca.org/credentialing/cobit-foundation"
     },
     "verified": "2026-10-28",
@@ -1772,7 +1772,7 @@ export const examChanges: ExamChange[] = [
     "certramp": [],
     "candidateAdvice": "The COBIT 2019 Design and Implementation exam can no longer be purchased (last day 26 October 2026); ISACA gives only \"2027\" for the COBIT 7 version.",
     "source": {
-      "label": "ISACA – COBIT Design and Implementation page (notice)",
+      "label": "ISACA: COBIT Design and Implementation page (notice)",
       "url": "https://www.isaca.org/credentialing/cobit-design-and-implementation"
     },
     "verified": "2026-10-28",
@@ -1803,7 +1803,7 @@ export const examChanges: ExamChange[] = [
     "certramp": [],
     "candidateAdvice": "Until IAPP opens online purchase in early 2027, the only way to take CIPP/AU is the in-person sitting at the IAPP ANZ Summit in Sydney.",
     "source": {
-      "label": "IAPP ANZ Summit 2026 – CIPP/AU certification exam (agenda)",
+      "label": "IAPP ANZ Summit 2026: CIPP/AU certification exam (agenda)",
       "url": "https://www.iapp.org/conference/iapp-anz-summit/agenda/cipp-au-certification-exam"
     },
     "verified": "2026-10-28",
@@ -1824,11 +1824,11 @@ export const examChanges: ExamChange[] = [
     "summary": "CT-AI v2.0 (released April 2026) replaces v1.0, and v1.0 exams and training end in 2027.",
     "dates": [
       {
-        "label": "Last day for CT-AI v1.0 exams incl. retakes – English",
+        "label": "Last day for CT-AI v1.0 exams incl. retakes: English",
         "date": "2027-04-21"
       },
       {
-        "label": "Last day for CT-AI v1.0 exams incl. retakes – non-English",
+        "label": "Last day for CT-AI v1.0 exams incl. retakes: non-English",
         "date": "2027-10-21"
       }
     ],
@@ -1839,16 +1839,16 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "v1.0 can be taken in English until 21 April 2027, but v2.0 has a different syllabus (AI-for-testing content removed, GenAI/LLM testing added) and no bridging exam, so prepare for the version you will actually book.",
     "source": {
-      "label": "ISTQB – CT-AI Version 2.0 FAQ",
+      "label": "ISTQB: CT-AI Version 2.0 FAQ",
       "url": "https://istqb.org/help/ct-ai-v2"
     },
     "verified": "2026-10-28",
     "de": {
       "summary": "CT-AI v2.0 (veröffentlicht im April 2026) ersetzt v1.0; Prüfungen und Schulungen zu v1.0 enden 2027.",
-      "candidateAdvice": "v1.0 kann auf Englisch bis zum 21. April 2027 abgelegt werden, aber v2.0 hat einen anderen Lehrplan (Inhalte zu KI für das Testen entfernt, Testen von GenAI/LLMs hinzugefügt) und es gibt keine Brückenprüfung – bereiten Sie sich daher auf die Version vor, die Sie tatsächlich buchen.",
+      "candidateAdvice": "v1.0 kann auf Englisch bis zum 21. April 2027 abgelegt werden, aber v2.0 hat einen anderen Lehrplan (Inhalte zu KI für das Testen entfernt, Testen von GenAI/LLMs hinzugefügt) und es gibt keine Brückenprüfung: bereiten Sie sich daher auf die Version vor, die Sie tatsächlich buchen.",
       "dateLabels": [
-        "Letzter Prüfungstag für CT-AI v1.0 inkl. Wiederholungsprüfungen – Englisch",
-        "Letzter Prüfungstag für CT-AI v1.0 inkl. Wiederholungsprüfungen – andere Sprachen"
+        "Letzter Prüfungstag für CT-AI v1.0 inkl. Wiederholungsprüfungen: Englisch",
+        "Letzter Prüfungstag für CT-AI v1.0 inkl. Wiederholungsprüfungen: andere Sprachen"
       ]
     }
   },
@@ -1861,11 +1861,11 @@ export const examChanges: ExamChange[] = [
     "summary": "CTAL-TA v3.1 is retired in English and retires in other languages in November 2026, replaced by CTAL-TA v4.0.",
     "dates": [
       {
-        "label": "CTAL-TA v3.1 no longer available – English (\"not available after\")",
+        "label": "CTAL-TA v3.1 no longer available: English (\"not available after\")",
         "date": "2026-05-16"
       },
       {
-        "label": "CTAL-TA v3.1 available until – non-English",
+        "label": "CTAL-TA v3.1 available until: non-English",
         "date": "2026-11-16"
       }
     ],
@@ -1876,7 +1876,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "English-language candidates can only take v4.0; non-English candidates still on v3.1 must sit it by 16 November 2026.",
     "source": {
-      "label": "ISTQB – CTAL-TA v3.1 [Retiring]",
+      "label": "ISTQB: CTAL-TA v3.1 [Retiring]",
       "url": "https://istqb.org/certifications/certified-tester-advanced-level-test-analyst-retiring/"
     },
     "verified": "2026-10-28",
@@ -1884,8 +1884,8 @@ export const examChanges: ExamChange[] = [
       "summary": "CTAL-TA v3.1 ist auf Englisch eingestellt und läuft in anderen Sprachen im November 2026 aus; Nachfolger ist CTAL-TA v4.0.",
       "candidateAdvice": "Englischsprachige Kandidaten können nur noch v4.0 ablegen; Kandidaten in anderen Sprachen, die noch auf v3.1 lernen, müssen die Prüfung bis zum 16. November 2026 ablegen.",
       "dateLabels": [
-        "CTAL-TA v3.1 nicht mehr verfügbar – Englisch („not available after“)",
-        "CTAL-TA v3.1 verfügbar bis – andere Sprachen"
+        "CTAL-TA v3.1 nicht mehr verfügbar: Englisch („not available after“)",
+        "CTAL-TA v3.1 verfügbar bis: andere Sprachen"
       ]
     }
   },
@@ -1898,11 +1898,11 @@ export const examChanges: ExamChange[] = [
     "summary": "ISTQB released the Advanced Level Agile Tester (CTAL-AT v2.0) on 6 May 2026; CTFL-AT and CT-ATT exams and training end in 2027.",
     "dates": [
       {
-        "label": "Last day for CTFL-AT and CT-ATT exams incl. retakes – English",
+        "label": "Last day for CTFL-AT and CT-ATT exams incl. retakes: English",
         "date": "2027-05-06"
       },
       {
-        "label": "Last day for CTFL-AT and CT-ATT exams incl. retakes – non-English",
+        "label": "Last day for CTFL-AT and CT-ATT exams incl. retakes: non-English",
         "date": "2027-11-06"
       }
     ],
@@ -1911,7 +1911,7 @@ export const examChanges: ExamChange[] = [
     "certramp": [],
     "candidateAdvice": "CTFL-AT or CT-ATT can be taken in English until 6 May 2027; CTAL-AT v2.0 requires a CTFL certificate.",
     "source": {
-      "label": "ISTQB – CTAL-AT v2.0 FAQ",
+      "label": "ISTQB: CTAL-AT v2.0 FAQ",
       "url": "https://istqb.org/help/agile-tester/"
     },
     "verified": "2026-10-28",
@@ -1919,8 +1919,8 @@ export const examChanges: ExamChange[] = [
       "summary": "ISTQB hat am 6. Mai 2026 den Advanced Level Agile Tester (CTAL-AT v2.0) veröffentlicht; Prüfungen und Schulungen zu CTFL-AT und CT-ATT enden 2027.",
       "candidateAdvice": "CTFL-AT oder CT-ATT kann auf Englisch bis zum 6. Mai 2027 abgelegt werden; CTAL-AT v2.0 setzt ein CTFL-Zertifikat voraus.",
       "dateLabels": [
-        "Letzter Prüfungstag für CTFL-AT und CT-ATT inkl. Wiederholungsprüfungen – Englisch",
-        "Letzter Prüfungstag für CTFL-AT und CT-ATT inkl. Wiederholungsprüfungen – andere Sprachen"
+        "Letzter Prüfungstag für CTFL-AT und CT-ATT inkl. Wiederholungsprüfungen: Englisch",
+        "Letzter Prüfungstag für CTFL-AT und CT-ATT inkl. Wiederholungsprüfungen: andere Sprachen"
       ]
     }
   },
@@ -1928,7 +1928,7 @@ export const examChanges: ExamChange[] = [
     "id": "ipma-gpm-ipma-level-d",
     "vendor": "IPMA/GPM",
     "exam": "IPMA Level D",
-    "examName": "IPMA Level D – Certified Project Management Associate (PM-ZERT/GPM, Germany)",
+    "examName": "IPMA Level D: Certified Project Management Associate (PM-ZERT/GPM, Germany)",
     "change": "outline-update",
     "summary": "PM-ZERT's Level D certification guide version 24 replaces version 23, with changes to the certificate details and the report template (see PM-ZERT's change table for details).",
     "dates": [
@@ -1944,7 +1944,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Candidates certifying through PM-ZERT in Germany should use guide V24 and its report template; other IPMA member associations have their own rules.",
     "source": {
-      "label": "PM-ZERT – Leitfaden Zertifizierung Level D, V24 (PDF)",
+      "label": "PM-ZERT: Leitfaden Zertifizierung Level D, V24 (PDF)",
       "url": "https://www.pm-zert.de/fileadmin/pm_zert_upload/Zertifizierung/Projektmanagement/Ab_September_2024/Z01D_Leitfaden-Level-D_V24.pdf"
     },
     "verified": "2026-10-28",
@@ -1978,7 +1978,7 @@ export const examChanges: ExamChange[] = [
     "certramp": [],
     "candidateAdvice": "All PMP candidates now take the updated exam; live prep classes taken from 1 December 2026 count toward the 35 hours only if delivered by a PMI Authorized Training Partner, a China REP or an eligible accredited higher-education program.",
     "source": {
-      "label": "PMI – PMP certification page",
+      "label": "PMI: PMP certification page",
       "url": "https://www.pmi.org/certifications/project-management-pmp"
     },
     "verified": "2026-10-28",
@@ -2021,7 +2021,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "Candidates testing in Arabic up to 27 December 2026 are tested on the 2019 syllabus, and from 28 December 2026 on the 2025 syllabus; the English exam is unchanged.",
     "source": {
-      "label": "The IIA – Certified Internal Auditor (CIA)",
+      "label": "The IIA: Certified Internal Auditor (CIA)",
       "url": "https://www.theiia.org/en/certifications/cia/"
     },
     "verified": "2026-10-28",
@@ -2055,7 +2055,7 @@ export const examChanges: ExamChange[] = [
     ],
     "candidateAdvice": "GIAC says to check the Certification Information section of your GIAC account for the format and passing score of your own attempt.",
     "source": {
-      "label": "GIAC – AI Platform Security (GAIPS)",
+      "label": "GIAC: AI Platform Security (GAIPS)",
       "url": "https://www.giac.org/certifications/ai-security-platform-security-gaips"
     },
     "verified": "2026-10-28",

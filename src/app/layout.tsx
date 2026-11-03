@@ -12,7 +12,7 @@ import { organizationSchema, websiteSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} — Progressive Certification Practice Exams`,
+    default: `${siteConfig.name}: Progressive Certification Practice Exams`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,

@@ -7,7 +7,7 @@ import type { ExamGuide } from "@/config/types";
 export const iappCippEGuide: ExamGuide = {
   slug: "iapp-cipp-e",
   summary:
-    "The IAPP CIPP/E (Certified Information Privacy Professional/Europe) tests whether you know European data protection law — above all the GDPR — well enough to apply it to real situations. The exam has 90 multiple-choice questions in 2.5 hours with an optional 15-minute break, you need 300 on the IAPP scale of 100–500 to pass, and it follows body of knowledge 1.3.3, effective 1 September 2025.",
+    "The IAPP CIPP/E (Certified Information Privacy Professional/Europe) tests whether you know European data protection law, above all the GDPR, well enough to apply it to real situations. The exam has 90 multiple-choice questions in 2.5 hours with an optional 15-minute break, you need 300 on the IAPP scale of 100–500 to pass, and it follows body of knowledge 1.3.3, effective 1 September 2025.",
   whoFor: [
     "Privacy, compliance and legal professionals who advise on the GDPR",
     "Data protection officers and privacy team members in organisations that process EU personal data",
@@ -40,7 +40,7 @@ export const iappCippEGuide: ExamGuide = {
         },
         {
           title: "Read the GDPR itself",
-          body: "Read the articles, not only summaries — especially Articles 3–7, 9, 12–22, 24–39, 44–49 and 83. Note the exact time limits, thresholds and exceptions; many questions turn on them.",
+          body: "Read the articles, not only summaries, especially Articles 3–7, 9, 12–22, 24–39, 44–49 and 83. Note the exact time limits, thresholds and exceptions; many questions turn on them.",
         },
         {
           title: "Learn the context around the GDPR",
@@ -52,7 +52,7 @@ export const iappCippEGuide: ExamGuide = {
         },
         {
           title: "Practise under time pressure",
-          body: "Take timed practice exams of 90 questions in 2.5 hours, including scenario questions, and read every explanation — including for the questions you answered correctly.",
+          body: "Take timed practice exams of 90 questions in 2.5 hours, including scenario questions, and read every explanation, including for the questions you answered correctly.",
         },
         {
           title: "Book when your results are stable",

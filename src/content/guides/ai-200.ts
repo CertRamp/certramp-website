@@ -81,7 +81,7 @@ export const ai200Guide: ExamGuide = {
     {
       question: "Does AI-200 replace AZ-204?",
       answer:
-        "AZ-204 and the Azure Developer Associate certification retired on 31 July 2026, and AI-200 leads to the new Azure AI Cloud Developer Associate certification. The outlines overlap — messaging, Functions, Key Vault, containers — but AI-200 adds vector search in Cosmos DB, PostgreSQL and Redis, container orchestration and OpenTelemetry. An AZ-204 certification you already earned stays on your transcript.",
+        "AZ-204 and the Azure Developer Associate certification retired on 31 July 2026, and AI-200 leads to the new Azure AI Cloud Developer Associate certification. The outlines overlap (messaging, Functions, Key Vault, containers), but AI-200 adds vector search in Cosmos DB, PostgreSQL and Redis, container orchestration and OpenTelemetry. An AZ-204 certification you already earned stays on your transcript.",
     },
     {
       question: "How do I renew the Azure AI Cloud Developer Associate certification?",

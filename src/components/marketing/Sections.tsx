@@ -22,7 +22,7 @@ const reasons: { icon: IconName; title: string; body: string }[] = [
   {
     icon: "search",
     title: "Weak areas, exposed early",
-    body: "Test 5 focuses on nuanced and easily confused topics — the gaps that are easy to miss in your own revision.",
+    body: "Test 5 focuses on nuanced and easily confused topics: the gaps that are easy to miss in your own revision.",
   },
   {
     icon: "shield",
@@ -32,7 +32,7 @@ const reasons: { icon: IconName; title: string; body: string }[] = [
   {
     icon: "book",
     title: "Every answer explained",
-    body: "Each question explains why the right answer is right — and why every other option is wrong.",
+    body: "Each question explains why the right answer is right, and why every other option is wrong.",
   },
 ];
 
@@ -56,7 +56,7 @@ const steps: { title: string; body: string }[] = [
   { title: "Choose your certification", body: "Find the practice exams for the certification you are preparing for." },
   { title: "Start with Test 1", body: "The diagnostic shows your baseline across the syllabus before you invest study time." },
   { title: "See where you stand", body: "Review your score and every explanation to find the gaps worth closing." },
-  { title: "Climb the ramp", body: "Work through Tests 2 to 6 — each one harder, the last one beyond exam level." },
+  { title: "Climb the ramp", body: "Work through Tests 2 to 6, each one harder, the last one beyond exam level." },
 ];
 
 export function HowItWorksSteps({ invert }: { invert?: boolean }) {

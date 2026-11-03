@@ -69,7 +69,7 @@ export default async function ResultPage({ params }: { params: Promise<Params> }
             </h2>
             <p className="mt-3 leading-relaxed text-muted">
               The free test shows your starting point. The CertRamp Exam Simulator takes you from foundation to real exam
-              level — and beyond it.
+              level, and beyond it.
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-start">
               <CertCta cert={cert} kind="simulator" location="result_page" />

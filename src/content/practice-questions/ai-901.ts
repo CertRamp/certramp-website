@@ -6,7 +6,7 @@ import type { PracticeQuestionSet } from "@/config/types";
  * not recalled exam content, and not presented as real exam questions.
  */
 const GUIDE = {
-  label: "Microsoft Learn — AI-901 study guide",
+  label: "Microsoft Learn: AI-901 study guide",
   url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901",
 };
 
@@ -19,7 +19,7 @@ export const ai901Questions: PracticeQuestionSet = {
   seo: {
     title: "AI-901 Practice Questions with Answers & Explanations (2026)",
     description:
-      "15 free, original AI-901 practice questions on responsible AI, generative AI, agents, speech, vision and Microsoft Foundry — each with a full explanation.",
+      "15 free, original AI-901 practice questions on responsible AI, generative AI, agents, speech, vision and Microsoft Foundry, each with a full explanation.",
   },
   questions: [
     /* ── Domain 1: Identify AI concepts and capabilities ──────────────────── */
@@ -139,7 +139,7 @@ export const ai901Questions: PracticeQuestionSet = {
       question:
         "A train operator wants written delay notices to be read aloud automatically over station loudspeakers in a natural-sounding voice. Which AI capability is required?",
       options: [
-        { id: "A", text: "Speech recognition", rationale: "Speech recognition converts spoken audio into text — the opposite direction." },
+        { id: "A", text: "Speech recognition", rationale: "Speech recognition converts spoken audio into text: the opposite direction." },
         { id: "B", text: "Image generation", rationale: "Image generation produces pictures, not audio." },
         { id: "C", text: "Entity detection", rationale: "Entity detection analyses text; it does not produce speech." },
         { id: "D", text: "Speech synthesis", rationale: "Correct. Speech synthesis (text to speech) generates spoken audio from text." },

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AuthorSection } from "@/components/marketing/AuthorSection";
 import Link from "@/components/ui/Link";
 import { notFound } from "next/navigation";
 import { UdemyCta } from "@/components/certification/CertCta";
@@ -127,7 +128,7 @@ export default async function DeQuestionsPage({ params }: { params: Promise<Para
             {set.questions.length} Fragen sind nur ein Ausschnitt.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-white/70">
-            Die vollständigen CertRamp-Übungsprüfungen zu {name} auf Deutsch umfassen sechs Tests mit steigendem Schwierigkeitsgrad –
+            Die vollständigen CertRamp-Übungsprüfungen zu {name} auf Deutsch umfassen sechs Tests mit steigendem Schwierigkeitsgrad:
             vom Einstufungstest über Prüfungsniveau bis darüber hinaus, mit einer Erklärung zu jeder Option.
           </p>
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -141,6 +142,8 @@ export default async function DeQuestionsPage({ params }: { params: Promise<Para
           </div>
         </div>
       </Section>
+
+      <AuthorSection lang="de" tone="surface" certSlug={cert.slug} location="de-questions" />
 
       <section aria-label="Hinweis" className="bg-white py-14">
         <div className="container-page">

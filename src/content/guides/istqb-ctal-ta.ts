@@ -20,7 +20,7 @@ export const istqbCtalTaGuide: ExamGuide = {
       heading: "What CTAL-TA v4.0 actually tests",
       paragraphs: [
         "The v4.0 syllabus has five chapters: the tasks of the test analyst in the test process, the tasks of the test analyst in risk-based testing, test analysis and test design, testing quality characteristics, and software defect prevention. ISTQB's exam structure tables give chapter 3 (test analysis and test design) 22 of the 45 questions and 42 of the 78 points, so more than half of your score depends on test techniques.",
-        "Chapter 3 is mostly at K3 (apply): domain testing, combinatorial testing, state transition testing, scenario-based testing, decision table testing, metamorphic testing, test charters for session-based testing and checklists. Expect small specifications where you must derive test cases, count coverage items or spot the missing test. Chapter 2 and chapter 5 each contain K4 (analyse) objectives — scoping regression testing from a change, and analysing test results to improve defect detection — worth 3 points per question.",
+        "Chapter 3 is mostly at K3 (apply): domain testing, combinatorial testing, state transition testing, scenario-based testing, decision table testing, metamorphic testing, test charters for session-based testing and checklists. Expect small specifications where you must derive test cases, count coverage items or spot the missing test. Chapter 2 and chapter 5 each contain K4 (analyse) objectives (scoping regression testing from a change, and analysing test results to improve defect detection) worth 3 points per question.",
       ],
     },
     {
@@ -45,7 +45,7 @@ export const istqbCtalTaGuide: ExamGuide = {
       steps: [
         {
           title: "Download the v4.0 syllabus and sample exam",
-          body: "Get the CTAL-TA v4.0 syllabus, the sample exam and the exam structure tables free from istqb.org. Check that any book or course you use is written for v4.0, not v3.1 — the chapter structure and many learning objectives are different.",
+          body: "Get the CTAL-TA v4.0 syllabus, the sample exam and the exam structure tables free from istqb.org. Check that any book or course you use is written for v4.0, not v3.1: the chapter structure and many learning objectives are different.",
         },
         {
           title: "Refresh the Foundation Level techniques",

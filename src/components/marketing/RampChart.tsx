@@ -7,7 +7,7 @@ import { cn } from "@/lib/cn";
  * for screen readers and needs no chart library.
  */
 function barColor(index: number, dark: boolean): string {
-  if (index === 5) return dark ? "bg-white" : "bg-navy-900"; // CertRamp Challenge — beyond the exam
+  if (index === 5) return dark ? "bg-white" : "bg-navy-900"; // CertRamp Challenge: beyond the exam
   if (index === 4) return "bg-accent-400"; // Advanced
   if (index === 3) return "bg-accent-500 shadow-[var(--shadow-glow)]"; // Exam level
   return dark ? "bg-accent-500/40" : "bg-accent-500/30";
@@ -57,7 +57,7 @@ export function RampChart({
             return (
               <li key={step.number} className="flex h-full flex-col justify-end">
                 <span className="sr-only">
-                  Test {step.number}: {step.name} — {step.goal}
+                  Test {step.number}: {step.name} ({step.goal})
                   {at ? " (real exam level)" : above ? " (above exam level)" : ""}
                 </span>
                 <div
