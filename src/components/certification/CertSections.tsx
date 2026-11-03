@@ -20,6 +20,19 @@ export function hasDirectOffer(cert: ResolvedCertification) {
 /* ─────────────────────────────────────────────────────────────────────────
    HERO
    ───────────────────────────────────────────────────────────────────────── */
+/** "Updated for the … outline" badge, only for certifications whose questions were reviewed. */
+export function OutlineBadge({ cert, lang = "en", className }: { cert: ResolvedCertification; lang?: "en" | "de"; className?: string }) {
+  if (!cert.outlineBadge) return null;
+  return (
+    <span
+      className={`inline-flex items-center gap-1.5 rounded-full border border-success-500/50 bg-success-500/15 px-3 py-1 text-xs font-semibold text-success-50 ${className ?? ""}`}
+    >
+      <Icon name="check" className="size-3.5" />
+      {cert.outlineBadge[lang]}
+    </span>
+  );
+}
+
 export function CertHero({ cert }: { cert: ResolvedCertification }) {
   const direct = hasDirectOffer(cert);
   return (
@@ -42,6 +55,7 @@ export function CertHero({ cert }: { cert: ResolvedCertification }) {
                 {cert.vendorName} · {cert.categoryName}
               </span>
               <StatusBadge status={cert.status} />
+              <OutlineBadge cert={cert} />
             </div>
             <h1 id="cert-title" className="mt-6 text-4xl font-semibold leading-[1.04] tracking-[-0.03em] text-white sm:text-5xl lg:text-6xl">
               {cert.name} Practice Exams

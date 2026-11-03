@@ -113,6 +113,12 @@ export interface CertificationDetails {
   disclaimerNote?: string;
 
   seo?: { title?: string; description?: string };
+  /**
+   * Shown as a badge in the hero when the practice exams themselves have been
+   * reviewed against the current outline, e.g. { en: "Updated for the 28 October 2026 skills outline", de: "…" }.
+   * Only set this after the questions were actually checked.
+   */
+  outlineBadge?: { en: string; de: string };
   /** ISO date of the last content review. */
   lastReviewed?: string;
 }

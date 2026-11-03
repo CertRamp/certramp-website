@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { OutlineBadge } from "@/components/certification/CertSections";
 import { AuthorSection } from "@/components/marketing/AuthorSection";
 import Link from "@/components/ui/Link";
 import { notFound } from "next/navigation";
@@ -61,6 +62,7 @@ export default async function DeGuidePage({ params }: { params: Promise<Params> 
         title={`${name}: Leitfaden zur Prüfung`}
         intro={<p>{guide.summary}</p>}
       >
+        <OutlineBadge cert={cert} lang="de" className="mt-6" />
         <p className="mt-6 max-w-2xl text-sm text-white/70">{de.languageNote}</p>
         <p className="mt-3 text-sm text-white/60">
           Aktualisiert am {formatDate(guide.updated, "de")} · Prüfungsangaben am {formatDate(cert.exam.lastVerified, "de")} anhand

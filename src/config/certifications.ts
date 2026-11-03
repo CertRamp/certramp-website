@@ -1286,6 +1286,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
   },
 
   "sc-300": {
+    outlineBadge: { en: "Updated for the 28 October 2026 skills outline", de: "Aktualisiert für die Gliederung vom 28. Oktober 2026" },
     description:
       "Practice exams for Microsoft SC-300: Identity and Access Administrator, written to the skills measured as of 28 October 2026 (Microsoft Entra user and hybrid identities, authentication and Conditional Access, Global Secure Access, workload identities and identity governance). Check your level before the 100-minute exam.",
     fullName: "Microsoft Identity and Access Administrator",

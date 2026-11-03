@@ -6,6 +6,7 @@ import { UdemyCta } from "@/components/certification/CertCta";
 import { VendorDisclaimer } from "@/components/certification/VendorDisclaimer";
 import { SourceList } from "@/components/content/ExamFactsList";
 import { QuestionCard } from "@/components/content/QuestionCard";
+import { OutlineBadge } from "@/components/certification/CertSections";
 import { PageHero } from "@/components/layout/PageHero";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Icon } from "@/components/ui/Icon";
@@ -55,6 +56,7 @@ export default async function DeQuestionsPage({ params }: { params: Promise<Para
         title={`${name}: Übungsfragen mit Lösungen`}
         intro={<p>{set.intro}</p>}
       >
+        <OutlineBadge cert={cert} lang="de" className="mt-6" />
         <p className="mt-6 text-sm text-white/60">
           Aktualisiert am {formatDate(set.updated, "de")} ·{" "}
           <Link href={questionsPath(de.slug)} hrefLang="en" className="underline underline-offset-2 hover:text-white">

@@ -75,6 +75,7 @@ export interface ResolvedCertification {
   description: string | null;
   /** Editorial content present → indexable. */
   enriched: boolean;
+  outlineBadge: { en: string; de: string } | null;
 
   practiceExamCount: number;
   questionCount: number | null;
@@ -225,6 +226,7 @@ function build(): ResolvedCertification[] {
       categoryName: category.name,
       description: d.description ?? null,
       enriched: Boolean(d.description),
+      outlineBadge: d.outlineBadge ?? null,
       practiceExamCount: d.practiceExamCount ?? 6,
       questionCount,
       questionsPerTest: d.questionsPerTest ?? null,
