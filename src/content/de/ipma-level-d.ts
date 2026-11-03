@@ -133,7 +133,7 @@ export const ipmaLevelDDe: DeContent = {
         steps: [
           {
             title: "Den Pfad früh wählen",
-            body: "Entscheide dich vor der Antragstellung zwischen zwei schriftlichen Prüfungen und Prüfung plus Report, denn die Wahl ist verbindlich. Der Report-Pfad passt zu dir, wenn du ein reales oder geplantes Projekt ausführlich beschreiben kannst; der Pfad mit zwei Prüfungen passt, wenn du lieber alles schriftlich nachweisen.",
+            body: "Entscheide dich vor der Antragstellung zwischen zwei schriftlichen Prüfungen und Prüfung plus Report, denn die Wahl ist verbindlich. Der Report-Pfad passt zu dir, wenn du ein reales oder geplantes Projekt ausführlich beschreiben kannst; der Pfad mit zwei Prüfungen passt, wenn du lieber alles schriftlich nachweisen möchtest.",
           },
           {
             title: "Die 28 Kompetenzelemente lernen",

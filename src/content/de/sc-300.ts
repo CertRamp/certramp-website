@@ -88,7 +88,7 @@ export const sc300De: DeContent = {
   guide: {
     slug: "sc-300",
     summary:
-      "SC-300 (Microsoft Identity and Access Administrator) prüft, ob du Identitäts- und Zugriffsverwaltung mit Microsoft Entra implementieren und betreiben können: Benutzer- und Hybrididentitäten, Authentifizierung und bedingter Zugriff (Conditional Access), Workload-Identitäten und Unternehmensanwendungen sowie Identity Governance. Die Prüfung dauert 100 Minuten, zum Bestehen benötigst du 700 Punkte, und die englische Prüfung wird am 28. Oktober 2026 auf die neue Liste der gemessenen Fähigkeiten umgestellt.",
+      "SC-300 (Microsoft Identity and Access Administrator) prüft, ob du Identitäts- und Zugriffsverwaltung mit Microsoft Entra implementieren und betreiben kannst: Benutzer- und Hybrididentitäten, Authentifizierung und bedingter Zugriff (Conditional Access), Workload-Identitäten und Unternehmensanwendungen sowie Identity Governance. Die Prüfung dauert 100 Minuten, zum Bestehen benötigst du 700 Punkte, und die englische Prüfung wird am 28. Oktober 2026 auf die neue Liste der gemessenen Fähigkeiten umgestellt.",
     whoFor: [
       "Identitäts- und Zugriffsadministratoren, die Microsoft Entra ID im Tagesgeschäft betreuen",
       "Microsoft 365- und Azure-Administratoren, die für Anmeldesicherheit, Conditional Access oder App-Integration zuständig sind",
@@ -133,7 +133,7 @@ export const sc300De: DeContent = {
           },
           {
             title: "Unter Zeitdruck üben",
-            body: "Lege Übungsprüfungen mit 40–60 Fragen in 100 Minuten ab und lies jede Erklärung, auch bei Fragen, die du richtig beantwortet haben.",
+            body: "Lege Übungsprüfungen mit 40–60 Fragen in 100 Minuten ab und lies jede Erklärung, auch bei Fragen, die du richtig beantwortet hast.",
           },
           {
             title: "Buchen, wenn deine Ergebnisse stabil sind",

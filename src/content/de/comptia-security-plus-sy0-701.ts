@@ -146,7 +146,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
           },
           {
             title: "Sammle praktische Erfahrung für die Szenario-Ziele",
-            body: "Nutze ein kleines Lab oder kostenlose Tools, um Logs zu lesen, einen Schwachstellenscan auszuführen, eine Firewall-Regel zu konfigurieren und Zertifikate zu prüfen. Performancebasierte Fragen fallen deutlich leichter, wenn du die echten Artefakte schon einmal gesehen haben.",
+            body: "Nutze ein kleines Lab oder kostenlose Tools, um Logs zu lesen, einen Schwachstellenscan auszuführen, eine Firewall-Regel zu konfigurieren und Zertifikate zu prüfen. Performancebasierte Fragen fallen deutlich leichter, wenn du die echten Artefakte schon einmal gesehen hast.",
           },
           {
             title: "Übe unter Zeitdruck",
