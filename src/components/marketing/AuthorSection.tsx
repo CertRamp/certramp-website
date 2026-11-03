@@ -28,21 +28,19 @@ const copy = {
   },
 } as const;
 
-/** Small stylised cover, so the page needs no copy of the real cover image. */
-function BookCover({ light = false }: { light?: boolean }) {
+function BookCover({ large = false }: { large?: boolean }) {
   return (
-    <div
-      aria-hidden="true"
+    <Image
+      src={about.book.cover}
+      alt={about.book.coverAlt}
+      width={745}
+      height={972}
+      sizes="128px"
       className={cn(
-        "relative flex aspect-[2/3] w-24 shrink-0 flex-col justify-between overflow-hidden rounded-r-md rounded-l-sm p-2.5 shadow-[6px_8px_18px_-6px_rgba(10,20,45,0.45)]",
-        light ? "bg-white" : "bg-navy-900",
+        "h-auto shrink-0 rounded-r-md rounded-l-sm shadow-[6px_8px_18px_-6px_rgba(10,20,45,0.45)]",
+        large ? "w-28 ring-1 ring-white/15" : "w-24",
       )}
-    >
-      <span className="absolute inset-y-0 left-0 w-1.5 bg-black/20" />
-      <span className={cn("pl-1 font-display text-[0.6rem] font-semibold uppercase tracking-wider", light ? "text-accent-600" : "text-accent-300")}>CPRE FL</span>
-      <span className={cn("pl-1 font-display text-[0.7rem] font-semibold leading-tight", light ? "text-ink" : "text-white")}>Prüfungs&shy;vorbereitung 2026</span>
-      <span className={cn("pl-1 text-[0.55rem]", light ? "text-muted" : "text-white/60")}>270 Fragen</span>
-    </div>
+    />
   );
 }
 
@@ -98,6 +96,7 @@ export function AuthorSection({
                 </li>
               ))}
             </ul>
+            <p className="mt-4 text-xs text-muted">{lang === "de" ? f.trademarkNoteDe : f.trademarkNote}</p>
           </div>
 
           {/* Book */}
@@ -109,7 +108,7 @@ export function AuthorSection({
           >
             <p className={cn("eyebrow", prominent && "text-accent-300")}>{t.bookEyebrow}</p>
             <div className="mt-4 flex gap-5">
-              <BookCover light={prominent} />
+              <BookCover large={prominent} />
               <div className="min-w-0">
                 <p lang="de" className={cn("font-display font-semibold leading-snug", prominent ? "text-lg text-white" : "text-ink")}>
                   {book.title}
