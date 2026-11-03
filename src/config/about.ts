@@ -37,6 +37,8 @@ export const about = {
       "ITIL® is a registered trademark of PeopleCert. IREB® is a registered trademark of IREB e.V. SAFe® is a registered trademark of Scaled Agile, Inc. PSM and PSPO are trademarks of Scrum.org.",
     trademarkNoteDe:
       "ITIL® ist eine eingetragene Marke von PeopleCert. IREB® ist eine eingetragene Marke des IREB e.V. SAFe® ist eine eingetragene Marke von Scaled Agile, Inc. PSM und PSPO sind Marken von Scrum.org.",
+    /** Totals from the public Udemy instructor profile. Update with the date when you change them. */
+    udemyStats: { learners: 921, reviews: 61, asOf: "2026-11-03" },
     /** Put the image in /public/images and reference it as "/images/xyz.jpg". */
     photo: "/images/joshua-ravnjak.jpg" as string | null,
     photoAlt: "Joshua Ravnjak, founder of CertRamp Learning",

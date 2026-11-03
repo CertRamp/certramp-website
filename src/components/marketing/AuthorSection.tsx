@@ -4,6 +4,7 @@ import { Icon } from "@/components/ui/Icon";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { about } from "@/config/about";
 import { cn } from "@/lib/cn";
+import { formatDate } from "@/lib/format";
 
 type Lang = "en" | "de";
 
@@ -85,6 +86,11 @@ export function AuthorSection({
                 <p className="font-display text-xl font-semibold text-ink sm:text-2xl">{f.name}</p>
                 <p className="mt-1 font-medium text-accent-600">{position}</p>
                 <p className="text-sm text-muted">{lang === "de" ? f.roleDe : f.role}</p>
+                <p className="mt-1 text-sm text-muted">
+                  {lang === "de"
+                    ? `${f.udemyStats.learners.toLocaleString("de")} Lernende und ${f.udemyStats.reviews} Bewertungen auf Udemy (Stand: ${formatDate(f.udemyStats.asOf, "de")})`
+                    : `${f.udemyStats.learners.toLocaleString("en")} learners and ${f.udemyStats.reviews} reviews on Udemy (as of ${formatDate(f.udemyStats.asOf)})`}
+                </p>
               </div>
             </div>
             <p className="mt-5 leading-relaxed text-body">{bio}</p>
