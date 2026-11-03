@@ -2066,5 +2066,69 @@ export const examChanges: ExamChange[] = [
         "GAIPS-Prüfungsversion veröffentlicht am oder nach (Bestehensgrenze 65 %)"
       ]
     }
+  },
+  {
+    "id": "aws-aif-c01-german",
+    "vendor": "AWS",
+    "exam": "AIF-C01",
+    "examName": "AWS Certified AI Practitioner",
+    "change": "retired",
+    "summary": "AWS retired the German- and Italian-language versions of the AI Practitioner exam after 15 October 2026. The exam itself stays current in English and other languages.",
+    "dates": [
+      {
+        "label": "German and Italian exam retired after",
+        "date": "2026-10-15"
+      }
+    ],
+    "successor": null,
+    "successorName": null,
+    "certramp": [
+      "aws-aif-c01"
+    ],
+    "candidateAdvice": "German speakers now take AIF-C01 in English or another offered language. Studying in German still works, but practise reading the questions in the exam language before you book.",
+    "source": {
+      "label": "AWS Certified AI Practitioner certification page",
+      "url": "https://aws.amazon.com/certification/certified-ai-practitioner/"
+    },
+    "verified": "2026-11-03",
+    "de": {
+      "summary": "AWS hat die deutsche und die italienische Fassung der AI-Practitioner-Prüfung nach dem 15. Oktober 2026 eingestellt. Die Prüfung selbst bleibt auf Englisch und in weiteren Sprachen aktuell.",
+      "candidateAdvice": "Deutschsprachige Kandidaten legen AIF-C01 jetzt auf Englisch oder in einer anderen angebotenen Sprache ab. Auf Deutsch zu lernen funktioniert weiterhin, üben Sie aber vor der Anmeldung, die Fragen in der Prüfungssprache zu lesen.",
+      "dateLabels": [
+        "Deutsche und italienische Prüfung eingestellt nach dem"
+      ]
+    }
+  },
+  {
+    "id": "aws-clf-c02-german",
+    "vendor": "AWS",
+    "exam": "CLF-C02",
+    "examName": "AWS Certified Cloud Practitioner",
+    "change": "retiring",
+    "summary": "AWS retires the German- and Italian-language versions of the Cloud Practitioner exam after 31 December 2026. The exam itself stays current in English and other languages.",
+    "dates": [
+      {
+        "label": "German and Italian exam retire after",
+        "date": "2026-12-31"
+      }
+    ],
+    "successor": null,
+    "successorName": null,
+    "certramp": [
+      "aws-clf-c02"
+    ],
+    "candidateAdvice": "If you want to sit CLF-C02 in German, book it for 31 December 2026 or earlier. After that, plan for English or another offered language.",
+    "source": {
+      "label": "AWS Certified Cloud Practitioner certification page",
+      "url": "https://aws.amazon.com/certification/certified-cloud-practitioner/"
+    },
+    "verified": "2026-11-03",
+    "de": {
+      "summary": "AWS stellt die deutsche und die italienische Fassung der Cloud-Practitioner-Prüfung nach dem 31. Dezember 2026 ein. Die Prüfung selbst bleibt auf Englisch und in weiteren Sprachen aktuell.",
+      "candidateAdvice": "Wer CLF-C02 auf Deutsch ablegen möchte, sollte die Prüfung spätestens für den 31. Dezember 2026 buchen. Danach geht es nur noch auf Englisch oder in einer anderen angebotenen Sprache.",
+      "dateLabels": [
+        "Deutsche und italienische Prüfung eingestellt nach dem"
+      ]
+    }
   }
 ];

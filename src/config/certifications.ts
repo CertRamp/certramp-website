@@ -2264,6 +2264,515 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     },
   },
 
+  /* ── November 2026: top-searched exams, enriched and indexable ───────────────
+   * Facts from official sources only, drafted and then checked independently on 3 Nov 2026. */
+  "aws-saa-c03": {
+    description:
+      "Practice exams for AWS SAA-C03: Certified Solutions Architect - Associate, written to the official exam guide (secure, resilient, high-performing and cost-optimized architectures). Find your gaps before the 130-minute exam.",
+    fullName: "AWS Certified Solutions Architect - Associate",
+    // Verified 2026-11-03 against the AWS certification page, the SAA-C03 exam guide (overview, domain 1-4 pages, revisions v1.1 of 29 Oct 2026).
+    // Status: no successor (SAA-C04) announced on official pages. The Italian-language exam is retired after 31 Dec 2026 (not relevant to English course).
+    // Note: AWS certification page does not list a passing score; 720 is from the exam guide.
+    exam: {
+      officialName: "AWS Certified Solutions Architect - Associate",
+      examCode: "SAA-C03",
+      examVersion: "Exam guide SAA-C03, version 1.1 (29 October 2026)",
+      questionCount: "65 questions (50 scored, 15 unscored)",
+      duration: "130 minutes",
+      format: "Multiple choice and multiple response; pass/fail with a scaled score of 100 to 1,000 (compensatory scoring)",
+      passingScore: "720 (scaled)",
+      questionTypes: "Multiple choice (one correct response and three distractors) and multiple response (two or more correct responses out of five or more options)",
+      languages: ["English", "French (France)", "Italian", "Japanese", "Korean", "Portuguese (Brazil)", "Spanish (Latin America)", "Spanish (Spain)", "Simplified Chinese", "Traditional Chinese"],
+      delivery: "Pearson VUE testing center or online proctored exam",
+      prerequisites: "No formal prerequisites. Recommended: at least 1 year of hands-on experience designing cloud solutions that use AWS services.",
+      status: "current",
+      officialCertificationUrl: "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
+      officialExamUrl: "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html",
+      domains: [
+        { id: "d1", name: "Design Secure Architectures", weight: "30%", objectives: ["Design secure access to AWS resources", "Design secure workloads and applications", "Determine appropriate data security controls"] },
+        { id: "d2", name: "Design Resilient Architectures", weight: "26%", objectives: ["Design scalable and loosely coupled architectures", "Design highly available and/or fault-tolerant architectures"] },
+        { id: "d3", name: "Design High-Performing Architectures", weight: "24%", objectives: ["Determine high-performing and/or scalable storage solutions", "Design high-performing and elastic compute solutions", "Determine high-performing database solutions", "Determine high-performing and/or scalable network architectures", "Determine high-performing data ingestion and transformation solutions"] },
+        { id: "d4", name: "Design Cost-Optimized Architectures", weight: "20%", objectives: ["Design cost-optimized storage solutions", "Design cost-optimized compute solutions", "Design cost-optimized database solutions", "Design cost-optimized network architectures"] },
+      ],
+      sources: [
+        { label: "AWS: Certified Solutions Architect - Associate", url: "https://aws.amazon.com/certification/certified-solutions-architect-associate/" },
+        { label: "AWS: SAA-C03 Exam Guide", url: "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html" },
+        { label: "AWS: SAA-C03 Exam Guide revisions", url: "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/saa-03-revisions.html" },
+      ],
+      lastVerified: "2026-11-03",
+    },
+    seo: {
+      title: "SAA-C03 Practice Exams: AWS Solutions Architect (2026)",
+      description: "SAA-C03 practice exams for AWS Solutions Architect - Associate: secure, resilient, high-performing and cost-optimized architecture questions by domain.",
+    },
+  },
+  "aws-clf-c02": {
+    description:
+      "German-language practice exams for AWS CLF-C02: Certified Cloud Practitioner, written to the official exam guide, to learn the content in German. AWS retires the German-language exam after 31 December 2026 and will keep offering it in English and other languages.",
+    fullName: "AWS Certified Cloud Practitioner",
+    // Verified 2026-11-03 against the AWS certification page, the CLF-C02 exam guide (overview, domain 1-4 pages, revisions v1.3 of 29 Oct 2026).
+    // Status: CLF-C02 is current; no successor announced on official pages.
+    // IMPORTANT: AWS certification page states the Cloud Practitioner exam in Italian and German "will be retired after December 31, 2026" (confirmed 2026-11-03). The course is German only. Languages array below is the certification page list, which still includes German and Italian until retirement.
+    // Note: AWS certification page does not list a passing score; 700 is from the exam guide. Exam guide overview does not list languages or prerequisites (taken from certification page).
+    exam: {
+      officialName: "AWS Certified Cloud Practitioner",
+      examCode: "CLF-C02",
+      examVersion: "Exam guide CLF-C02, version 1.3 (29 October 2026)",
+      questionCount: "65 questions (50 scored, 15 unscored)",
+      duration: "90 minutes",
+      format: "Multiple choice and multiple response; pass/fail with a scaled score of 100 to 1,000 (compensatory scoring)",
+      passingScore: "700 (scaled)",
+      questionTypes: "Multiple choice (one correct response and three distractors) and multiple response (two or more correct responses out of five or more options)",
+      languages: ["Arabic", "English", "French (France)", "German", "Italian", "Japanese", "Korean", "Portuguese (Brazil)", "Spanish (Latin America)", "Spanish (Spain)", "Simplified Chinese", "Traditional Chinese"],
+      delivery: "Pearson VUE testing center or online proctored exam",
+      prerequisites: "No formal prerequisites. Target candidate has up to 6 months of AWS Cloud exposure (not required).",
+      status: "current",
+      officialCertificationUrl: "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+      officialExamUrl: "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html",
+      domains: [
+        { id: "d1", name: "Cloud Concepts", weight: "24%", objectives: ["Define the benefits of the AWS Cloud.", "Identify design principles of the AWS Cloud.", "Understand the benefits of and strategies for migration to the AWS Cloud.", "Understand concepts of cloud economics."] },
+        { id: "d2", name: "Security and Compliance", weight: "30%", objectives: ["Understand the AWS shared responsibility model.", "Understand AWS Cloud security, governance, and compliance concepts.", "Identify AWS access management capabilities.", "Identify components and resources for security."] },
+        { id: "d3", name: "Cloud Technology and Services", weight: "34%", objectives: ["Define methods of deploying and operating in the AWS Cloud.", "Define the AWS global infrastructure.", "Identify AWS compute services.", "Identify AWS database services.", "Identify AWS network services.", "Identify AWS storage services.", "Identify AWS artificial intelligence and machine learning (AI/ML) services and analytics services.", "Identify services from other in-scope AWS service categories."] },
+        { id: "d4", name: "Billing, Pricing, and Support", weight: "12%", objectives: ["Compare AWS pricing models.", "Understand resources for billing, budget, and cost management.", "Identify AWS technical resources and AWS Support options."] },
+      ],
+      sources: [
+        { label: "AWS: Certified Cloud Practitioner", url: "https://aws.amazon.com/certification/certified-cloud-practitioner/" },
+        { label: "AWS: CLF-C02 Exam Guide", url: "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html" },
+        { label: "AWS: CLF-C02 Exam Guide revisions", url: "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/clf-02-revisions.html" },
+      ],
+      lastVerified: "2026-11-03",
+    },
+    seo: {
+      title: "CLF-C02 Practice Exams in German: AWS Cloud Practitioner",
+      description: "German-language CLF-C02 practice exams for AWS Certified Cloud Practitioner: cloud concepts, security, services, billing, pricing and support, by domain.",
+    },
+  },
+  "aws-aif-c01": {
+    description:
+      "German-language practice exams for AWS AIF-C01: Certified AI Practitioner, written to the official exam guide, to learn the content in German. AWS retired the German-language exam after 15 October 2026 and still offers it in English and other languages.",
+    fullName: "AWS Certified AI Practitioner",
+    // Verified 2026-11-03 against the AWS certification page, the AIF-C01 exam guide (overview, domain 1-5 pages, revisions v1.2 of 29 Oct 2026).
+    // Status: AIF-C01 is current; no successor announced on official pages.
+    // IMPORTANT: AWS certification page states the AI Practitioner exam in Italian and German "will be retired after October 15, 2026" (confirmed 2026-11-03; date has passed). The course is German only, so the description says German exam is retired. German and Italian removed from the languages list below.
+    // Note: exam guide overview gives no duration or languages (taken from certification page). Question types per exam guide include ordering and matching.
+    exam: {
+      officialName: "AWS Certified AI Practitioner",
+      examCode: "AIF-C01",
+      examVersion: "Exam guide AIF-C01, version 1.2 (29 October 2026)",
+      questionCount: "65 questions (50 scored, 15 unscored)",
+      duration: "90 minutes",
+      format: "Multiple choice, multiple response, ordering and matching; pass/fail with a scaled score of 100 to 1,000 (compensatory scoring)",
+      passingScore: "700 (scaled)",
+      questionTypes: "Multiple choice, multiple response (two or more correct responses out of five or more options), ordering (3 to 5 responses placed in the correct sequence) and matching (3 to 7 prompts matched to a list of responses)",
+      languages: ["Arabic", "English", "French (France)", "Japanese", "Korean", "Portuguese (Brazil)", "Spanish (Latin America)", "Spanish (Spain)", "Simplified Chinese", "Traditional Chinese"],
+      delivery: "Pearson VUE testing center or online proctored exam",
+      prerequisites: "No formal prerequisites. Target candidate has up to 6 months of exposure to AI/ML on AWS.",
+      status: "current",
+      officialCertificationUrl: "https://aws.amazon.com/certification/certified-ai-practitioner/",
+      officialExamUrl: "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html",
+      domains: [
+        { id: "d1", name: "Fundamentals of AI and ML", weight: "20%", objectives: ["Explain basic AI concepts and terminologies.", "Identify practical use cases for AI.", "Describe the AI/ML development lifecycle."] },
+        { id: "d2", name: "Fundamentals of GenAI", weight: "24%", objectives: ["Explain the basic concepts of generative AI (GenAI).", "Understand the capabilities and limitations of GenAI for solving business problems.", "Describe AWS infrastructure and technologies for building GenAI applications."] },
+        { id: "d3", name: "Applications of Foundation Models", weight: "28%", objectives: ["Describe design considerations for applications that use foundation models (FMs).", "Choose effective prompt engineering techniques.", "Describe the training and fine-tuning process for FMs.", "Describe methods to evaluate FM performance."] },
+        { id: "d4", name: "Guidelines for Responsible AI", weight: "14%", objectives: ["Explain the development of AI systems that are responsible.", "Recognize the importance of transparent and explainable models."] },
+        { id: "d5", name: "Security, Compliance, and Governance for AI Solutions", weight: "14%", objectives: ["Explain methods to secure AI systems.", "Recognize governance and compliance regulations for AI systems."] },
+      ],
+      sources: [
+        { label: "AWS: Certified AI Practitioner", url: "https://aws.amazon.com/certification/certified-ai-practitioner/" },
+        { label: "AWS: AIF-C01 Exam Guide", url: "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html" },
+        { label: "AWS: AIF-C01 Exam Guide revisions", url: "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/aif-01-revisions.html" },
+      ],
+      lastVerified: "2026-11-03",
+    },
+    seo: {
+      title: "AIF-C01 Practice Exams in German: AWS AI Practitioner",
+      description: "German-language AIF-C01 practice exams for AWS Certified AI Practitioner: AI/ML basics, GenAI, foundation models, responsible AI, security and governance.",
+    },
+  },
+  "comptia-a-plus-core-1-220-1201": {
+    description:
+      "German-language practice exams for CompTIA A+ Core 1 (220-1201), organised by the exam domains: mobile devices, networking, hardware, virtualization and cloud computing, and hardware and network troubleshooting. Find your gaps before the 90-minute exam.",
+    fullName: "CompTIA A+ Core 1",
+    // Verified 2026-11-03 against the CompTIA A+ certification page and the A+ Core 1 (V15) exam page on comptia.org.
+    // Objectives PDF not reachable (pages link to none, comptia.org objectives files blocked), so objectives omitted. Delivery not stated on the page, omitted.
+    // CompTIA states retirement only as "usually three years after launch (estimated 2028)"; no firm date announced, so retirementDate omitted.
+    // A+ certification requires passing both Core 1 (220-1201) and Core 2 (220-1202).
+    exam: {
+      officialName: "CompTIA A+ Core 1",
+      examCode: "220-1201",
+      examVersion: "V15",
+      questionCount: "Maximum of 90",
+      duration: "90 minutes",
+      format: "Multiple-choice and performance-based questions",
+      passingScore: "675 (on a scale of 100–900)",
+      questionTypes: "Multiple-choice (single and multiple response), drag-and-drop, and performance-based",
+      languages: ["English", "German", "Japanese"],
+      prerequisites: "None required. CompTIA recommends 12 months of hands-on experience in an IT support specialist role.",
+      status: "current",
+      launchDate: "2025-03-25",
+      officialCertificationUrl: "https://www.comptia.org/en-us/certifications/a/",
+      officialExamUrl: "https://www.comptia.org/en-us/certifications/a/core-1-v15/",
+      domains: [
+        { id: "d1", name: "Mobile devices", weight: "13%" },
+        { id: "d2", name: "Networking", weight: "23%" },
+        { id: "d3", name: "Hardware", weight: "25%" },
+        { id: "d4", name: "Virtualization and cloud computing", weight: "11%" },
+        { id: "d5", name: "Hardware and network troubleshooting", weight: "28%" },
+      ],
+      sources: [
+        { label: "CompTIA: A+ certification", url: "https://www.comptia.org/en-us/certifications/a/" },
+        { label: "CompTIA: A+ Core 1 (V15)", url: "https://www.comptia.org/en-us/certifications/a/core-1-v15/" },
+      ],
+      lastVerified: "2026-11-03",
+    },
+    seo: {
+      title: "CompTIA A+ Core 1 (220-1201) Practice Exams",
+      description: "German-language practice exams for CompTIA A+ Core 1 (220-1201): mobile devices, networking, hardware, virtualization, cloud and troubleshooting.",
+    },
+  },
+  "comptia-a-plus-core-2-220-1202": {
+    description:
+      "German-language practice exams for CompTIA A+ Core 2 (220-1202), organised by the exam domains: operating systems, security, software troubleshooting, and operational procedures. Find your gaps before the 90-minute exam.",
+    fullName: "CompTIA A+ Core 2",
+    // Verified 2026-11-03 against the CompTIA A+ certification page and the A+ Core 2 (V15) exam page on comptia.org.
+    // Objectives PDF not reachable (page links to none), so objectives omitted. Delivery not stated on the page, omitted.
+    // CompTIA states retirement only as "usually three years after launch (estimated 2028)"; no firm date announced, so retirementDate omitted.
+    // A+ certification requires passing both Core 1 (220-1201) and Core 2 (220-1202); both must be from the same version (V15).
+    exam: {
+      officialName: "CompTIA A+ Core 2",
+      examCode: "220-1202",
+      examVersion: "V15",
+      questionCount: "Maximum of 90",
+      duration: "90 minutes",
+      format: "Multiple-choice and performance-based questions",
+      passingScore: "700 (on a scale of 100–900)",
+      questionTypes: "Multiple-choice (single and multiple response), drag-and-drop, and performance-based",
+      languages: ["English", "German", "Japanese"],
+      prerequisites: "None required. CompTIA recommends 12 months of hands-on experience in an IT support specialist role.",
+      status: "current",
+      launchDate: "2025-03-25",
+      officialCertificationUrl: "https://www.comptia.org/en-us/certifications/a/",
+      officialExamUrl: "https://www.comptia.org/en-us/certifications/a/core-2-v15/",
+      domains: [
+        { id: "d1", name: "Operating systems", weight: "28%" },
+        { id: "d2", name: "Security", weight: "28%" },
+        { id: "d3", name: "Software troubleshooting", weight: "23%" },
+        { id: "d4", name: "Operational procedures", weight: "21%" },
+      ],
+      sources: [
+        { label: "CompTIA: A+ certification", url: "https://www.comptia.org/en-us/certifications/a/" },
+        { label: "CompTIA: A+ Core 2 (V15)", url: "https://www.comptia.org/en-us/certifications/a/core-2-v15/" },
+      ],
+      lastVerified: "2026-11-03",
+    },
+    seo: {
+      title: "CompTIA A+ Core 2 (220-1202) Practice Exams",
+      description: "German-language practice exams for CompTIA A+ Core 2 (220-1202): operating systems, security, software troubleshooting and operational procedures.",
+    },
+  },
+  "comptia-network-plus-n10-009": {
+    description:
+      "German-language practice exams for CompTIA Network+ (N10-009), organised by the exam domains: networking concepts, network implementation, network operations, network security, and network troubleshooting. Find your gaps before the 90-minute exam.",
+    fullName: "CompTIA Network+",
+    // Verified 2026-11-03 against the CompTIA Network+ certification page on comptia.org (exam details are on the same page).
+    // Objectives PDF not reachable (page links to none), so objectives omitted. Delivery not stated on the page, omitted.
+    // CompTIA states retirement only as "usually three years after launch (estimated 2027)"; no firm date announced, so retirementDate omitted.
+    // CompTIA lists a DRAFT Network+ V10 objectives document under development (no launch date given); N10-009 remains the current exam on the certification page.
+    // The page gives no longer formal exam title than "Network+".
+    exam: {
+      officialName: "CompTIA Network+",
+      examCode: "N10-009",
+      examVersion: "V9",
+      questionCount: "Maximum of 90",
+      duration: "90 minutes",
+      format: "Multiple-choice and performance-based questions",
+      passingScore: "720 (on a scale of 100–900)",
+      questionTypes: "Multiple-choice and performance-based",
+      languages: ["English", "German", "Japanese", "Portuguese", "Spanish"],
+      prerequisites: "None required. CompTIA recommends A+ and 9–12 months of hands-on experience as a junior network administrator or network support technician.",
+      status: "current",
+      launchDate: "2024-06-20",
+      officialCertificationUrl: "https://www.comptia.org/en-us/certifications/network/",
+      officialExamUrl: "https://www.comptia.org/en-us/certifications/network/",
+      domains: [
+        { id: "d1", name: "Networking concepts", weight: "23%" },
+        { id: "d2", name: "Network implementation", weight: "20%" },
+        { id: "d3", name: "Network operations", weight: "19%" },
+        { id: "d4", name: "Network security", weight: "14%" },
+        { id: "d5", name: "Network troubleshooting", weight: "24%" },
+      ],
+      sources: [
+        { label: "CompTIA: Network+ certification", url: "https://www.comptia.org/en-us/certifications/network/" },
+      ],
+      lastVerified: "2026-11-03",
+    },
+    seo: {
+      title: "CompTIA Network+ (N10-009) Practice Exams",
+      description: "German-language practice exams for CompTIA Network+ (N10-009): concepts, implementation, operations, security and troubleshooting.",
+    },
+  },
+  "isc2-cissp": {
+    description:
+      "Practice exams for ISC2 CISSP, written to the exam outline effective 15 April 2024 (security and risk management, asset security, security architecture and engineering, and the other five domains). Find your gaps before the adaptive exam.",
+    fullName: "ISC2 Certified Information Systems Security Professional",
+    // Verified 2026-11-03 against isc2.org: CISSP certification page, CISSP exam outline page (effective date, domains, subdomains), CISSP exam refresh FAQ, CAT-for-CISSP-in-all-languages article (Feb 2024), CAT format updates article (May 2025), Associate of ISC2 page.
+    // UNVERIFIED and omitted: domain weights (not rendered on the outline page), passing score, question types, delivery, exam code. No new CISSP outline found on isc2.org as of this date (the 15 April 2024 outline is the latest published).
+    // NOTE: the May 2025 CAT article table lists CISSP at 100-150 items / 3 hours, but its text only names CC, SSCP and CCSP as moving to CAT on 1 Oct 2025; the Feb 2024 article confirms CISSP CAT in all languages from April 2024 (as few as 100 items, 3-hour maximum).
+    // Re-verified 2026-11-03: domain weights not readable on any ISC2 page (outline page lists tasks only); the 5-year figure is from the CISSP certification page (eligible domains per experience page meta description), the six-year Associate window from the Associate of ISC2 page. Waiver rules were updated 1 April 2026 (ISC2 article, May 2026), details not readable.
+    exam: {
+      officialName: "Certified Information Systems Security Professional (CISSP)",
+      examVersion: "Exam outline effective 15 April 2024",
+      questionCount: "100–150 items (computerized adaptive testing)",
+      duration: "3 hours (maximum)",
+      format: "Computerized adaptive testing (CAT), used for all CISSP exam languages since April 2024",
+      languages: ["English", "Chinese", "Japanese", "German", "Spanish"],
+      prerequisites:
+        "ISC2 lists 5 years of required work experience in eligible security domains. Candidates who pass without the experience can become an Associate of ISC2 and have up to 6 years to earn it.",
+      status: "current",
+      officialCertificationUrl: "https://www.isc2.org/certifications/cissp",
+      officialExamUrl: "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline",
+      domains: [
+        { id: "d1", name: "Security and Risk Management" },
+        { id: "d2", name: "Asset Security" },
+        { id: "d3", name: "Security Architecture and Engineering" },
+        { id: "d4", name: "Communication and Network Security" },
+        { id: "d5", name: "Identity and Access Management (IAM)" },
+        { id: "d6", name: "Security Assessment and Testing" },
+        { id: "d7", name: "Security Operations" },
+        { id: "d8", name: "Software Development Security" },
+      ],
+      sources: [
+        { label: "ISC2: CISSP certification", url: "https://www.isc2.org/certifications/cissp" },
+        { label: "ISC2: CISSP certification exam outline", url: "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline" },
+        { label: "ISC2: CISSP exam refresh FAQ", url: "https://www.isc2.org/certifications/cissp/cissp-exam-refresh-faq" },
+        { label: "ISC2: Computerized adaptive testing for CISSP in all languages", url: "https://www.isc2.org/Insights/2024/02/Computerized-Adaptive-Testing-CISSP-Examinations-All-Languages" },
+        { label: "ISC2: Computerized adaptive testing exam format updates", url: "https://www.isc2.org/Insights/2025/05/computerized-adaptive-testing-examination-format-updates" },
+        { label: "ISC2: Associate of ISC2", url: "https://www.isc2.org/certifications/associate" },
+      ],
+      lastVerified: "2026-11-03",
+    },
+    seo: {
+      title: "ISC2 CISSP Practice Exams",
+      description:
+        "CISSP practice exams for the April 2024 outline: security and risk management, asset security, IAM, security operations and software development.",
+    },
+  },
+  "isc2-cc": {
+    description:
+      "Practice exams for ISC2 Certified in Cybersecurity (CC), written to the exam outline effective 1 September 2026 (security principles, security governance, IAM concepts, networking and cloud security, and security operations and incident response). The course is available in English and German.",
+    fullName: "ISC2 Certified in Cybersecurity",
+    // Verified 2026-11-03 against isc2.org: CC certification page, CC exam outline page (effective date, domains, subdomains), "What's New for Entry-Level Cybersecurity" (6 Aug 2026, body not readable), ISC2 FAQ, CAT format updates article (May 2025), German CC training page, CC languages article (Feb 2023).
+    // CONFLICT: the ISC2 FAQ still lists the OLD five CC domains (e.g. Business Continuity, Disaster Recovery & Incident Response Concepts) and 100-125 items / 2 hours; the outline page effective 1 Sept 2026 lists the NEW domains used here. Item count and duration come from the FAQ and May 2025 article and are not confirmed for the 2026 outline.
+    // REMOVED after re-check: questionCount and duration (100-125 items / 2 hours appear only on the FAQ and May 2025 article, which still describe the old outline; not stated for the 2026 outline), questionTypes, the 9-month application window and Code of Ethics line (not found on a readable official page). Exam languages (five) come from the ISC2 FAQ, which may predate the 2026 outline. Weights could not be read on any ISC2 page.
+    // UNVERIFIED and omitted: domain weights (not on outline page), passing score (ISC2 does not release scores), exam code, question-type detail beyond "multiple-choice and advanced item types".
+    exam: {
+      officialName: "Certified in Cybersecurity (CC)",
+      examVersion: "Exam outline effective 1 September 2026",
+      format: "Computerized adaptive testing (CAT)",
+      languages: ["English", "Simplified Chinese", "German", "Japanese", "Spanish"],
+      delivery: "In person only at ISC2-authorized Pearson test centers",
+      prerequisites:
+        "No work experience required.",
+      status: "current",
+      officialCertificationUrl: "https://www.isc2.org/certifications/cc",
+      officialExamUrl: "https://www.isc2.org/certifications/cc/cc-certification-exam-outline",
+      domains: [
+        { id: "d1", name: "Security Principles" },
+        { id: "d2", name: "Security Governance" },
+        { id: "d3", name: "Identity And Access Management (IAM) Concepts" },
+        { id: "d4", name: "Networking and Cloud Security Concepts" },
+        { id: "d5", name: "Security Operations and Incident Response" },
+      ],
+      sources: [
+        { label: "ISC2: Certified in Cybersecurity", url: "https://www.isc2.org/certifications/cc" },
+        { label: "ISC2: CC certification exam outline", url: "https://www.isc2.org/certifications/cc/cc-certification-exam-outline" },
+        { label: "ISC2: What's new for entry-level cybersecurity", url: "https://www.isc2.org/Insights/2026/08/inside-the-updated-isc2-cc-exam" },
+        { label: "ISC2: Frequently asked questions", url: "https://www.isc2.org/frequently-asked-questions" },
+        { label: "ISC2: Computerized adaptive testing exam format updates", url: "https://www.isc2.org/Insights/2025/05/computerized-adaptive-testing-examination-format-updates" },
+        { label: "ISC2: CC training and exam in German", url: "https://www.isc2.org/training/online-self-paced/german" },
+      ],
+      lastVerified: "2026-11-03",
+    },
+    seo: {
+      title: "ISC2 CC Practice Exams (English, German)",
+      description:
+        "ISC2 CC practice exams in English and German for the Sept 2026 outline: security principles, governance, IAM, network and cloud security.",
+    },
+  },
+  "az-305": {
+    description:
+      "Practice exams for Microsoft AZ-305: Designing Microsoft Azure Infrastructure Solutions, written to the skills measured as of 17 April 2026 (identity, governance and monitoring, data storage, business continuity, and infrastructure). Find your gaps before the exam for the Azure Solutions Architect Expert certification.",
+    fullName: "Microsoft Azure Solutions Architect Expert",
+    // Verified 2026-11-03 against the Microsoft Learn AZ-305 study guide, AZ-305 exam page, Azure Solutions Architect Expert certification page and Azure Administrator Associate certification page.
+    // Not published on the AZ-305 pages, so omitted: question count, duration, format, question types. (AZ-104 page states 100 minutes, but that is a different exam.)
+    // The certification page says the prerequisite is the Azure Administrator Associate certification (earned via AZ-104, per the Azure Administrator page); it does not name the exam itself.
+    exam: {
+      officialName: "Exam AZ-305: Designing Microsoft Azure Infrastructure Solutions",
+      examCode: "AZ-305",
+      examVersion: "Skills measured as of 17 April 2026",
+      passingScore: "700 or greater (scaled score)",
+      languages: ["English", "Japanese", "Chinese (Simplified)", "Korean", "German", "French", "Spanish", "Portuguese (Brazil)", "Chinese (Traditional)", "Italian"],
+      delivery: "Scheduled through Pearson VUE",
+      prerequisites: "Microsoft Certified: Azure Administrator Associate certification (AZ-104) is required before earning Azure Solutions Architect Expert. The exam page also recommends experience in IT operations, Azure administration, Azure development and DevOps.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/exams/az-305/",
+      domains: [
+        {
+          id: "d1",
+          name: "Design identity, governance, and monitoring solutions",
+          weight: "25–30%",
+          objectives: [
+            "Design solutions for logging and monitoring",
+            "Design authentication and authorization solutions",
+            "Design governance",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Design data storage solutions",
+          weight: "20–25%",
+          objectives: [
+            "Design data storage solutions for relational data",
+            "Design data storage solutions for semi-structured and unstructured data",
+            "Design data integration",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Design business continuity solutions",
+          weight: "15–20%",
+          objectives: [
+            "Design solutions for backup and disaster recovery",
+            "Design for high availability",
+          ],
+        },
+        {
+          id: "d4",
+          name: "Design infrastructure solutions",
+          weight: "30–35%",
+          objectives: [
+            "Design compute solutions",
+            "Design an application architecture",
+            "Design migrations",
+            "Design network solutions",
+          ],
+        },
+      ],
+      sources: [
+        { label: "Microsoft Learn: AZ-305 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305" },
+        { label: "Microsoft Learn: Exam AZ-305", url: "https://learn.microsoft.com/en-us/credentials/certifications/exams/az-305/" },
+        { label: "Microsoft Learn: Azure Solutions Architect Expert certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/" },
+        { label: "Microsoft Learn: Azure Administrator Associate certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/" },
+      ],
+      lastVerified: "2026-11-03",
+    },
+    seo: {
+      title: "AZ-305 Practice Exams: Azure Solutions Architect",
+      description: "AZ-305 practice exams on identity, governance, monitoring, data storage, business continuity and infrastructure design. Skills measured as of April 2026.",
+    },
+  },
+  cka: {
+    description:
+      "Practice exams for the Certified Kubernetes Administrator (CKA) from The Linux Foundation and CNCF, written to the current curriculum for Kubernetes v1.37 (troubleshooting, cluster architecture, services and networking, workloads and scheduling, and storage). These are question-based practice tests to find your gaps before the 2-hour performance-based exam.",
+    fullName: "Certified Kubernetes Administrator",
+    // Verified 2026-11-03 against training.linuxfoundation.org CKA page, docs.linuxfoundation.org CKA/CKAD tips page and CKA/CKAD/CKS FAQ, and github.com/cncf/curriculum (CKA_Curriculum_v1.37.pdf).
+    // Not published on official pages, so omitted: a fixed question count (the tips page says 15 to 20 performance-based tasks).
+    // Name conflict: the LF page says "Services & Networking" and "Cluster Architecture, Installation & Configuration"; the CNCF PDF prints "Servicing and Networking" (apparent typo) and "Installation and Configuration". LF page wording used.
+    // Other official facts (no schema field): one retake included with the exam (LF page; FAQ says retake offered when eligible); Killer.sh simulator, 2 attempts with 36 hours each (LF page and FAQ); certification valid 2 years; exam environment moves to the latest Kubernetes minor roughly 4 to 8 weeks after each release.
+    // The LF CKA page did not list passing score or languages; both come from the LF FAQ (docs.linuxfoundation.org).
+    exam: {
+      officialName: "Certified Kubernetes Administrator (CKA)",
+      examCode: "CKA",
+      examVersion: "Kubernetes v1.37 (CKA curriculum v1.37)",
+      duration: "2 hours",
+      format: "Online, proctored, performance-based exam solved from a command line running Kubernetes",
+      passingScore: "66%",
+      questionTypes: "Performance-based tasks completed on the Linux command line (15 to 20 tasks)",
+      languages: ["English", "Simplified Chinese", "Japanese"],
+      delivery: "Online, remotely proctored (PSI Bridge platform with the PSI Secure Browser)",
+      prerequisites: "None",
+      status: "current",
+      officialCertificationUrl: "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/",
+      officialExamUrl: "https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad",
+      domains: [
+        {
+          id: "d1",
+          name: "Troubleshooting",
+          weight: "30%",
+          objectives: [
+            "Troubleshoot clusters and nodes",
+            "Troubleshoot cluster components",
+            "Monitor cluster and application resource usage",
+            "Manage and evaluate container output streams",
+            "Troubleshoot services and networking",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Cluster Architecture, Installation & Configuration",
+          weight: "25%",
+          objectives: [
+            "Manage role based access control (RBAC)",
+            "Prepare underlying infrastructure for installing a Kubernetes cluster",
+            "Create and manage Kubernetes clusters using kubeadm",
+            "Manage the lifecycle of Kubernetes clusters",
+            "Implement and configure a highly-available control plane",
+            "Use Helm and Kustomize to install cluster components",
+            "Understand extension interfaces (CNI, CSI, CRI, etc.)",
+            "Understand CRDs, install and configure operators",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Services & Networking",
+          weight: "20%",
+          objectives: [
+            "Understand connectivity between Pods",
+            "Define and enforce Network Policies",
+            "Use ClusterIP, NodePort, LoadBalancer service types and endpoints",
+            "Use the Gateway API to manage Ingress traffic",
+            "Know how to use Ingress controllers and Ingress resources",
+            "Understand and use CoreDNS",
+          ],
+        },
+        {
+          id: "d4",
+          name: "Workloads & Scheduling",
+          weight: "15%",
+          objectives: [
+            "Understand application deployments and how to perform rolling update and rollbacks",
+            "Use ConfigMaps and Secrets to configure applications",
+            "Configure workload autoscaling",
+            "Understand the primitives used to create robust, self-healing, application deployments",
+            "Configure Pod admission and scheduling (limits, node affinity, etc.)",
+          ],
+        },
+        {
+          id: "d5",
+          name: "Storage",
+          weight: "10%",
+          objectives: [
+            "Implement storage classes and dynamic volume provisioning",
+            "Configure volume types, access modes and reclaim policies",
+            "Manage persistent volumes and persistent volume claims",
+          ],
+        },
+      ],
+      sources: [
+        { label: "Linux Foundation Training: CKA certification page", url: "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/" },
+        { label: "Linux Foundation docs: CKA and CKAD exam tips and instructions", url: "https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad" },
+        { label: "Linux Foundation docs: CKA, CKAD and CKS FAQ", url: "https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks" },
+        { label: "CNCF curriculum: CKA curriculum v1.37", url: "https://github.com/cncf/curriculum" },
+      ],
+      lastVerified: "2026-11-03",
+    },
+    seo: {
+      title: "CKA Practice Exams: Kubernetes Administrator",
+      description: "CKA practice exams for Kubernetes v1.37: troubleshooting, cluster architecture, services and networking, workloads and scheduling, and storage.",
+    },
+  },
+
 };
 
 /* ───────────────────────────────────────────────────────────────────────────
