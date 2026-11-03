@@ -33,7 +33,7 @@ export const iappAigpDe: DeContent = {
   slug: "iapp-aigp",
   name: "IAPP AIGP",
   languageNote:
-    "Die offizielle Prüfung gibt es nicht auf Deutsch; Sie legen sie auf Englisch ab. Unsere Übungsprüfungen helfen Ihnen, die Inhalte auf Deutsch zu verstehen.",
+    "Die offizielle Prüfung gibt es nicht auf Deutsch; du legst sie auf Englisch ab. Unsere Übungsprüfungen helfen dir, die Inhalte auf Deutsch zu verstehen.",
   facts: [
     { label: "Prüfungsanbieter", value: "IAPP" },
     { label: "Prüfung", value: "Artificial Intelligence Governance Professional (AIGP)" },
@@ -98,7 +98,7 @@ export const iappAigpDe: DeContent = {
   guide: {
     slug: "iapp-aigp",
     summary:
-      "Die IAPP AIGP (Artificial Intelligence Governance Professional) prüft, ob Sie KI über ihren gesamten Lebenszyklus steuern können: Governance-Strukturen und Richtlinien aufbauen, Datenschutzrecht, KI-spezifische und sonstige Gesetze sowie Standards anwenden und sowohl die Entwicklung als auch den Einsatz von KI-Systemen beaufsichtigen. Die Prüfung umfasst 100 Fragen in 2,75 Stunden mit einer optionalen 15-minütigen Pause. Zum Bestehen benötigen Sie 300 Punkte auf der IAPP-Skala von 100–500. Die Prüfung folgt dem Body of Knowledge 2.1, gültig ab 2. Februar 2026.",
+      "Die IAPP AIGP (Artificial Intelligence Governance Professional) prüft, ob du KI über ihren gesamten Lebenszyklus steuern kannst: Governance-Strukturen und Richtlinien aufbauen, Datenschutzrecht, KI-spezifische und sonstige Gesetze sowie Standards anwenden und sowohl die Entwicklung als auch den Einsatz von KI-Systemen beaufsichtigen. Die Prüfung umfasst 100 Fragen in 2,75 Stunden mit einer optionalen 15-minütigen Pause. Zum Bestehen benötigst du 300 Punkte auf der IAPP-Skala von 100–500. Die Prüfung folgt dem Body of Knowledge 2.1, gültig ab 2. Februar 2026.",
     whoFor: [
       "Fachleute aus Datenschutz, Recht und Compliance, die Verantwortung für KI übernehmen",
       "Verantwortliche für Risikomanagement, Governance und Ethik, die ein KI-Governance-Programm aufbauen oder betreiben",
@@ -118,7 +118,7 @@ export const iappAigpDe: DeContent = {
         heading: "Wie Prüfung und Prüfungsplan aufgebaut sind",
         paragraphs: [
           "Version 2.1 des Body of Knowledge und Exam Blueprint gilt seit dem 2. Februar 2026 und ersetzt Version 2.0.1. Jede Domäne ist in Kompetenzen (Competencies) gegliedert, zum Beispiel II.C „Understand the main elements of AI-specific laws“, mit jeweils eigenen Fragenspannen, und zu jeder Kompetenz sind Leistungsindikatoren (Performance Indicators) aufgeführt. Die Kompetenzen mit den meisten Fragen sind IV.C, die Steuerung von Einsatz und Nutzung des KI-Systems (9–11), und III.C, die Steuerung von Freigabe, Überwachung und Wartung des KI-Systems (8–10).",
-          "Sie legen die Prüfung über Pearson VUE ab, im Testzentrum oder online mit OnVUE, und sie wird auf Englisch angeboten. Zur Halbzeit wird Ihnen eine 15-minütige Pause angeboten; ob Sie sie nehmen oder nicht, Sie müssen zuerst die erste Hälfte abschließen und abgeben und können danach nicht mehr zu ihr zurückkehren. IAPP-Prüfungen verwenden Multiple-Choice-Fragen, bei einigen ist mehr als eine Antwort richtig, und möglicherweise sollen Sie ein Szenario lesen und mehrere Fragen dazu beantworten.",
+          "Du legst die Prüfung über Pearson VUE ab, im Testzentrum oder online mit OnVUE, und sie wird auf Englisch angeboten. Zur Halbzeit wird dir eine 15-minütige Pause angeboten; ob du sie nimmst oder nicht, du musst zuerst die erste Hälfte abschließen und abgeben und kannst danach nicht mehr zu ihr zurückkehren. IAPP-Prüfungen verwenden Multiple-Choice-Fragen, bei einigen ist mehr als eine Antwort richtig, und möglicherweise sollst du ein Szenario lesen und mehrere Fragen dazu beantworten.",
         ],
       },
       {
@@ -127,27 +127,27 @@ export const iappAigpDe: DeContent = {
         steps: [
           {
             title: "Den eigenen Stand am Body of Knowledge messen",
-            body: "Laden Sie den BoK 2.1 bei der IAPP herunter und bewerten Sie jeden Leistungsindikator als bekannt, unsicher oder neu. Nutzen Sie die Fragenspannen des Prüfungsplans, um Ihre Zeit zu verteilen: Die beiden Lebenszyklus-Domänen machen zusammen 42–50 Fragen aus.",
+            body: "Lade den BoK 2.1 bei der IAPP herunter und bewerte jeden Leistungsindikator als bekannt, unsicher oder neu. Nutze die Fragenspannen des Prüfungsplans, um deine Zeit zu verteilen: Die beiden Lebenszyklus-Domänen machen zusammen 42–50 Fragen aus.",
           },
           {
             title: "KI-Grundlagen aus Governance-Sicht lernen",
-            body: "Sie müssen keine Modelle bauen, aber Sie müssen die wichtigsten Arten von KI kennen, wissen, wie Machine-Learning-Systeme trainiert, getestet und überwacht werden, und die typischen Risiken und Schäden verstehen: Verzerrung (Bias), Intransparenz, Drift sowie Sicherheits- und Datenschutzmängel.",
+            body: "Du musst keine Modelle bauen, aber du musst die wichtigsten Arten von KI kennen, wissen, wie Machine-Learning-Systeme trainiert, getestet und überwacht werden, und die typischen Risiken und Schäden verstehen: Verzerrung (Bias), Intransparenz, Drift sowie Sicherheits- und Datenschutzmängel.",
           },
           {
             title: "Die zentralen Rechts- und Rahmenwerkstexte lesen",
-            body: "Arbeiten Sie die KI-Verordnung der EU durch (verbotene Praktiken, Einstufung als Hochrisiko-KI-System, Transparenzpflichten, KI-Modelle mit allgemeinem Verwendungszweck sowie die Rollen von Anbieter und Betreiber), außerdem das NIST AI RMF mit seinem Playbook und die OECD-KI-Grundsätze. Halten Sie anschließend fest, wie die DSGVO und andere Datenschutzgesetze auf KI anzuwenden sind.",
+            body: "Arbeite die KI-Verordnung der EU durch (verbotene Praktiken, Einstufung als Hochrisiko-KI-System, Transparenzpflichten, KI-Modelle mit allgemeinem Verwendungszweck sowie die Rollen von Anbieter und Betreiber), außerdem das NIST AI RMF mit seinem Playbook und die OECD-KI-Grundsätze. Halte anschließend fest, wie die DSGVO und andere Datenschutzgesetze auf KI anzuwenden sind.",
           },
           {
             title: "Ein KI-System durch seinen Lebenszyklus begleiten",
-            body: "Nehmen Sie einen Beispiel-Anwendungsfall und verfolgen Sie ihn vom Business Case und der Folgenabschätzung über Data Governance, Tests, Freigabe und Überwachung. Wiederholen Sie das Ganze dann aus Sicht des Betreibers: Due-Diligence-Prüfung des Lieferanten, Vertragsbedingungen, menschliche Aufsicht und Außerbetriebnahme.",
+            body: "Nimm einen Beispiel-Anwendungsfall und verfolge ihn vom Business Case und der Folgenabschätzung über Data Governance, Tests, Freigabe und Überwachung. Wiederhole das Ganze dann aus Sicht des Betreibers: Due-Diligence-Prüfung des Lieferanten, Vertragsbedingungen, menschliche Aufsicht und Außerbetriebnahme.",
           },
           {
             title: "Unter Zeitdruck üben",
-            body: "Legen Sie Übungsprüfungen mit 100 Fragen in 2,75 Stunden ab, einschließlich Szenariofragen, und lesen Sie jede Erklärung, auch bei Fragen, die Sie richtig beantwortet haben.",
+            body: "Lege Übungsprüfungen mit 100 Fragen in 2,75 Stunden ab, einschließlich Szenariofragen, und lies jede Erklärung, auch bei Fragen, die du richtig beantwortet hast.",
           },
           {
-            title: "Buchen, wenn Ihre Ergebnisse stabil sind",
-            body: "Buchen Sie die Prüfung, sobald Sie mehrere Übungsprüfungen mit sicherem Abstand bestehen. Die Prüfung muss innerhalb eines Jahres nach dem Kauf abgelegt werden, und nach der Zertifizierung benötigen Sie 20 Weiterbildungspunkte pro zweijähriger Zertifizierungsperiode.",
+            title: "Buchen, wenn deine Ergebnisse stabil sind",
+            body: "Buche die Prüfung, sobald du mehrere Übungsprüfungen mit sicherem Abstand bestehst. Die Prüfung muss innerhalb eines Jahres nach dem Kauf abgelegt werden, und nach der Zertifizierung benötigst du 20 Weiterbildungspunkte pro zweijähriger Zertifizierungsperiode.",
           },
         ],
       },
@@ -159,7 +159,7 @@ export const iappAigpDe: DeContent = {
           "Die Pflichten von Anbieter und Betreiber verwechseln. Viele Fragen hängen davon ab, welcher Akteur in der KI-Wertschöpfungskette für eine bestimmte Pflicht verantwortlich ist.",
           "Governance als einmalige Freigabe verstehen. Der Body of Knowledge erwartet Überwachung, Wartung, erneutes Training, Vorfallbehandlung und Außerbetriebnahme über den gesamten Lebenszyklus.",
           "Die Beschaffungsseite auslassen. Domäne IV behandelt den Kauf und die Lizenzierung von KI, einschließlich Vertragsbedingungen, Lieferantenrisiken und Folgenabschätzungen für Systeme Dritter.",
-          "Die vier Funktionen des NIST AI RMF durcheinanderbringen. Sie sollten wissen, was Govern, Map, Measure und Manage jeweils abdecken und dass Govern funktionsübergreifend wirkt.",
+          "Die vier Funktionen des NIST AI RMF durcheinanderbringen. Du solltest wissen, was Govern, Map, Measure und Manage jeweils abdecken und dass Govern funktionsübergreifend wirkt.",
         ],
       },
     ],
@@ -167,7 +167,7 @@ export const iappAigpDe: DeContent = {
       {
         question: "Wie lange dauert die AIGP-Prüfung und wie hoch ist die Bestehensgrenze?",
         answer:
-          "Die Prüfung umfasst 100 Fragen bei einer vorgesehenen Zeit von 2,75 Stunden; zur Halbzeit wird eine 15-minütige Pause angeboten. Alle Kernprüfungen der IAPP werden auf einer Skala von 100–500 bewertet, und zum Bestehen benötigen Sie 300 Punkte oder mehr.",
+          "Die Prüfung umfasst 100 Fragen bei einer vorgesehenen Zeit von 2,75 Stunden; zur Halbzeit wird eine 15-minütige Pause angeboten. Alle Kernprüfungen der IAPP werden auf einer Skala von 100–500 bewertet, und zum Bestehen benötigst du 300 Punkte oder mehr.",
       },
       {
         question: "Welche Version des AIGP Body of Knowledge gilt?",
@@ -177,17 +177,17 @@ export const iappAigpDe: DeContent = {
       {
         question: "Wie erhalte ich die AIGP-Zertifizierung aufrecht?",
         answer:
-          "Die Zertifizierungsperiode dauert zwei Jahre und beginnt am Tag nach dem Bestehen. Sie benötigen 20 Weiterbildungspunkte (Continuing Education Credits), die zum AIGP Body of Knowledge passen, sowie die Gebühr für die Aufrechterhaltung der Zertifizierung. Die Gebühr ist in der IAPP-Mitgliedschaft enthalten; ohne Mitgliedschaft führt der IAPP-Store sie mit 250 USD pro zweijähriger Periode.",
+          "Die Zertifizierungsperiode dauert zwei Jahre und beginnt am Tag nach dem Bestehen. Du benötigst 20 Weiterbildungspunkte (Continuing Education Credits), die zum AIGP Body of Knowledge passen, sowie die Gebühr für die Aufrechterhaltung der Zertifizierung. Die Gebühr ist in der IAPP-Mitgliedschaft enthalten; ohne Mitgliedschaft führt der IAPP-Store sie mit 250 USD pro zweijähriger Periode.",
       },
       {
         question: "Brauche ich einen technischen Hintergrund, um die AIGP zu bestehen?",
         answer:
-          "Die IAPP legt keine formalen Voraussetzungen für die Prüfung fest. Der Body of Knowledge konzentriert sich auf Governance (Richtlinien, Gesetze, Risiken und die Aufsicht über den Lebenszyklus), erwartet aber, dass Sie die wichtigsten Arten von KI kennen und verstehen, wie Systeme gebaut, getestet und überwacht werden.",
+          "Die IAPP legt keine formalen Voraussetzungen für die Prüfung fest. Der Body of Knowledge konzentriert sich auf Governance (Richtlinien, Gesetze, Risiken und die Aufsicht über den Lebenszyklus), erwartet aber, dass du die wichtigsten Arten von KI kennst und verstehst, wie Systeme gebaut, getestet und überwacht werden.",
       },
       {
         question: "Gibt es die Prüfung auf Deutsch?",
         answer:
-          "Nein. Die AIGP-Prüfung wird nur auf Englisch angeboten. Unsere Übungsprüfungen helfen Ihnen, die Inhalte auf Deutsch zu verstehen; die offiziellen englischen Domänen- und Kompetenzbezeichnungen behalten wir bei, damit Sie sie in der Prüfung wiedererkennen.",
+          "Nein. Die AIGP-Prüfung wird nur auf Englisch angeboten. Unsere Übungsprüfungen helfen dir, die Inhalte auf Deutsch zu verstehen; die offiziellen englischen Domänen- und Kompetenzbezeichnungen behalten wir bei, damit du sie in der Prüfung wiedererkennst.",
       },
       {
         question: "Sind die CertRamp-Fragen echte Prüfungsfragen?",
@@ -260,7 +260,7 @@ export const iappAigpDe: DeContent = {
         objective: "I.C Establish policies and procedures to apply throughout the AI life cycle",
         difficulty: "intermediate",
         question:
-          "Ein Softwareanbieter fügt einem Dienst, den Ihre Organisation seit Jahren nutzt, eine Funktion mit generativer KI hinzu. Die Funktion wurde per Update aktiviert, ohne Ihre KI-Governance-Prüfung zu durchlaufen. Welche Richtlinienänderung verhindert eine Wiederholung am besten?",
+          "Ein Softwareanbieter fügt einem Dienst, den deine Organisation seit Jahren nutzt, eine Funktion mit generativer KI hinzu. Die Funktion wurde per Update aktiviert, ohne deine KI-Governance-Prüfung zu durchlaufen. Welche Richtlinienänderung verhindert eine Wiederholung am besten?",
         options: [
           { id: "A", text: "Beschaffungs- und Drittparteien-Risikorichtlinien so anpassen, dass neue oder geänderte KI-Funktionen in bestehenden Produkten von Anbietern eine KI-Governance-Prüfung auslösen", rationale: "Richtig. Richtlinien zu Drittparteienrisiken müssen auch KI abdecken, die über Vertragsverlängerungen und Produktupdates hinzukommt, nicht nur über Neuanschaffungen." },
           { id: "B", text: "Alle Anbieterprodukte verbieten, die KI enthalten", rationale: "Ein pauschales Verbot ist selten praktikabel und missachtet den risikobasierten Ansatz, auf dem KI-Governance beruht." },
@@ -446,12 +446,12 @@ export const iappAigpDe: DeContent = {
         objective: "IV.B Perform key activities to assess the AI system",
         difficulty: "intermediate",
         question:
-          "Ihre Organisation verhandelt eine Lizenz für den KI-Schreibassistenten eines Anbieters, den die Beschäftigten mit internen Geschäftsdokumenten nutzen werden. Welche Vertragsbedingung ist aus Sicht der KI-Governance am wichtigsten zu prüfen?",
+          "Deine Organisation verhandelt eine Lizenz für den KI-Schreibassistenten eines Anbieters, den die Beschäftigten mit internen Geschäftsdokumenten nutzen werden. Welche Vertragsbedingung ist aus Sicht der KI-Governance am wichtigsten zu prüfen?",
         options: [
           { id: "A", text: "Die Anzahl der enthaltenen Benutzerlizenzen", rationale: "Das Lizenzvolumen ist eine kommerzielle Bedingung ohne direkten Bezug zum KI-Risiko." },
           { id: "B", text: "Das Farbschema und die Branding-Optionen", rationale: "Branding-Optionen sind für die Governance nicht relevant." },
           { id: "C", text: "Die Bürostandorte des Anbieters", rationale: "Bürostandorte spielen kaum eine Rolle; entscheidend ist, wo Daten verarbeitet und gespeichert werden." },
-          { id: "D", text: "Ob der Anbieter Ihre Eingaben und Ausgaben nutzen darf, um seine Modelle zu trainieren oder zu verbessern", rationale: "Richtig. Die Nutzung von Kundendaten für das Modelltraining berührt Vertraulichkeit, geistiges Eigentum und Datenschutz und muss im Vertrag geregelt werden." },
+          { id: "D", text: "Ob der Anbieter deine Eingaben und Ausgaben nutzen darf, um seine Modelle zu trainieren oder zu verbessern", rationale: "Richtig. Die Nutzung von Kundendaten für das Modelltraining berührt Vertraulichkeit, geistiges Eigentum und Datenschutz und muss im Vertrag geregelt werden." },
         ],
         answer: "D",
         explanation:

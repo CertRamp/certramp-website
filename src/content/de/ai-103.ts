@@ -87,7 +87,7 @@ export const ai103De: DeContent = {
   guide: {
     slug: "ai-103",
     summary:
-      "AI-103 (Developing AI Apps and Agents on Azure) ist die Entwicklerprüfung von Microsoft für generative KI-Apps und Agents, die mit Microsoft Foundry erstellt werden. Sie ist die Nachfolgerin von AI-102, die am 30. Juni 2026 eingestellt wurde. Die Prüfung dauert 120 Minuten, zum Bestehen brauchen Sie 700 Punkte, und allein generative KI und Agents machen 30–35 % der Fähigkeiten aus.",
+      "AI-103 (Developing AI Apps and Agents on Azure) ist die Entwicklerprüfung von Microsoft für generative KI-Apps und Agents, die mit Microsoft Foundry erstellt werden. Sie ist die Nachfolgerin von AI-102, die am 30. Juni 2026 eingestellt wurde. Die Prüfung dauert 120 Minuten, zum Bestehen brauchst du 700 Punkte, und allein generative KI und Agents machen 30–35 % der Fähigkeiten aus.",
     whoFor: [
       "Entwicklerinnen und Entwickler, die mit Python generative KI-Anwendungen und Agents in Azure erstellen",
       "KI-Engineers, die von den klassischen Azure-KI-Diensten auf Foundry-basierte Lösungen umsteigen",
@@ -106,7 +106,7 @@ export const ai103De: DeContent = {
         id: "what-the-exam-tests",
         heading: "Was AI-103 tatsächlich prüft",
         paragraphs: [
-          "Rechnen Sie eher mit Entwurfs- und Implementierungsentscheidungen als mit Definitionen: welches Modell oder welcher Foundry-Dienst zu einer Aufgabe passt, wie Sie Retrieval und Indizierung einrichten, wie Sie Bereitstellungen mit verwalteter Identität (Managed Identity) und privaten Netzwerken absichern, wie Sie einem Agent Tools, Gedächtnis (Memory) und Genehmigungsschritte hinzufügen und wie Sie Qualität, Sicherheit und Kosten überwachen.",
+          "Rechne eher mit Entwurfs- und Implementierungsentscheidungen als mit Definitionen: welches Modell oder welcher Foundry-Dienst zu einer Aufgabe passt, wie du Retrieval und Indizierung einrichtest, wie du Bereitstellungen mit verwalteter Identität (Managed Identity) und privaten Netzwerken absicherst, wie du einem Agent Tools, Gedächtnis (Memory) und Genehmigungsschritte hinzufügst und wie du Qualität, Sicherheit und Kosten überwachst.",
           "Verantwortungsvolle KI zieht sich durch die meisten Bereiche: Inhaltsfilter und Guardrails, Sicherheitsevaluierungen, Tracing und Audit, die Aufsicht über autonome Agents und die Abwehr von Prompt-Injection, auch durch in Bildern verborgenen Text. Microsoft weist darauf hin, dass überwiegend allgemein verfügbare (GA) Funktionen geprüft werden, häufig genutzte Previewfunktionen aber vorkommen können.",
         ],
       },
@@ -116,27 +116,27 @@ export const ai103De: DeContent = {
         steps: [
           {
             title: "Den AI-103-Studienleitfaden Zeile für Zeile lesen",
-            body: "Markieren Sie jeden Punkt als bekannt, unsicher oder neu. Wenn Sie für AI-102 gelernt haben, achten Sie besonders auf Agents, Multi-Agent-Orchestrierung, Evaluierung und Observability: diese Themen sind neu oder deutlich umfangreicher.",
+            body: "Markiere jeden Punkt als bekannt, unsicher oder neu. Wenn du für AI-102 gelernt hast, achte besonders auf Agents, Multi-Agent-Orchestrierung, Evaluierung und Observability: diese Themen sind neu oder deutlich umfangreicher.",
           },
           {
             title: "In Microsoft Foundry praktisch arbeiten",
-            body: "Erstellen Sie ein Foundry-Projekt, stellen Sie ein Chatmodell bereit, bauen Sie eine kleine RAG-App über Ihre eigenen Dokumente und einen Agent mit mindestens einem Tool. Praktische Erfahrung macht die Szenariofragen deutlich leichter.",
+            body: "Erstelle ein Foundry-Projekt, stelle ein Chatmodell bereit, baue eine kleine RAG-App über deine eigenen Dokumente und einen Agent mit mindestens einem Tool. Praktische Erfahrung macht die Szenariofragen deutlich leichter.",
           },
           {
             title: "Sicherheit und Betrieb üben",
-            body: "Konfigurieren Sie schlüssellose Authentifizierung mit verwalteter Identität, sehen Sie sich Kontingente und Ratenlimits an, aktivieren Sie Tracing und führen Sie eine Evaluierung durch. Diese Betriebsthemen werden leicht übersprungen und häufig geprüft.",
+            body: "Konfiguriere schlüssellose Authentifizierung mit verwalteter Identität, sieh dir Kontingente und Ratenlimits an, aktiviere Tracing und führe eine Evaluierung durch. Diese Betriebsthemen werden leicht übersprungen und häufig geprüft.",
           },
           {
             title: "Die kleineren Bereiche abdecken",
-            body: "Nehmen Sie sich gezielt Zeit für die drei kleineren Bereiche: maschinelles Sehen, Textanalyse (einschließlich Sprache und Übersetzung) und Informationsextraktion (einschließlich Content Understanding). Jeder hat 10–15 %, zusammen machen sie also 30–45 % der Prüfung aus.",
+            body: "Nimm dir gezielt Zeit für die drei kleineren Bereiche: maschinelles Sehen, Textanalyse (einschließlich Sprache und Übersetzung) und Informationsextraktion (einschließlich Content Understanding). Jeder hat 10–15 %, zusammen machen sie also 30–45 % der Prüfung aus.",
           },
           {
             title: "Unter Prüfungsbedingungen üben",
-            body: "Absolvieren Sie Übungsprüfungen auf Zeit in 120 Minuten und lesen Sie jede Erklärung. Da die Prüfung Labs enthalten kann, sollten Sie die Arbeit im Portal und mit dem SDK praktisch üben, nicht nur darüber lesen.",
+            body: "Absolviere Übungsprüfungen auf Zeit in 120 Minuten und lies jede Erklärung. Da die Prüfung Labs enthalten kann, solltest du die Arbeit im Portal und mit dem SDK praktisch üben, nicht nur darüber lesen.",
           },
           {
             title: "Buchen und die Verlängerung einplanen",
-            body: "Buchen Sie die Prüfung, wenn Ihre Übungsergebnisse stabil sind. Die Zertifizierung ist 12 Monate gültig und wird über eine kostenlose Onlinebewertung verlängert.",
+            body: "Buche die Prüfung, wenn deine Übungsergebnisse stabil sind. Die Zertifizierung ist 12 Monate gültig und wird über eine kostenlose Onlinebewertung verlängert.",
           },
         ],
       },
@@ -145,7 +145,7 @@ export const ai103De: DeContent = {
         heading: "Häufige Fehler bei der Vorbereitung",
         bullets: [
           "Nur mit AI-102-Material lernen. AI-102 behandelte Agents, Evaluierung und Bildgenerierung nur kurz; AI-103 stellt sie in den Mittelpunkt und ergänzt Observability, gesteuerte autonome Agents, Videogenerierung und Content-Understanding-Pipelines.",
-          "RAG als einen einzigen Schritt betrachten. Kennen Sie Ingestion, Chunking und Anreicherung, Vektor-, semantische und hybride Suche sowie die Anbindung des Retrievals an Agents.",
+          "RAG als einen einzigen Schritt betrachten. Kenne Ingestion, Chunking und Anreicherung, Vektor-, semantische und hybride Suche sowie die Anbindung des Retrievals an Agents.",
           "Kosten und Kontingente ignorieren. Ratenlimits, Skalierung und Tokenverbrauch zu steuern, ist Teil der Gliederung.",
           "Verantwortungsvolle KI überspringen. Sicherheitsfilter, Evaluierungen, Tracing und menschliche Genehmigung für Agents kommen in allen Bereichen vor.",
           "Überall API-Schlüssel verwenden. Die Gliederung betont verwaltete Identitäten und schlüssellose Anmeldeinformationen.",
@@ -161,7 +161,7 @@ export const ai103De: DeContent = {
       {
         question: "Wie lange dauert die AI-103-Prüfung, und wie hoch ist die Bestehensgrenze?",
         answer:
-          "Sie haben 120 Minuten Zeit, und Microsoft verlangt zum Bestehen 700 oder mehr Punkte. Die Prüfung kann Labs enthalten.",
+          "Du hast 120 Minuten Zeit, und Microsoft verlangt zum Bestehen 700 oder mehr Punkte. Die Prüfung kann Labs enthalten.",
       },
       {
         question: "Brauche ich für AI-103 Programmiererfahrung?",
@@ -208,7 +208,7 @@ export const ai103De: DeContent = {
         objective: "Auswählen der geeigneten Foundry-Dienste für generative KI und Agents",
         difficulty: "intermediate",
         question:
-          "Eine App ordnet kurze Kundennachrichten fünf festen Kategorien zu. Sie verarbeitet Millionen Anfragen pro Tag, und Latenz und Kosten sind wichtiger als breite Schlussfolgerungsfähigkeiten. Welche Modellwahl sollten Sie zuerst evaluieren?",
+          "Eine App ordnet kurze Kundennachrichten fünf festen Kategorien zu. Sie verarbeitet Millionen Anfragen pro Tag, und Latenz und Kosten sind wichtiger als breite Schlussfolgerungsfähigkeiten. Welche Modellwahl solltest du zuerst evaluieren?",
         options: [
           { id: "A", text: "Ein kleines Sprachmodell (Small Language Model), evaluiert anhand der Aufgabe", rationale: "Richtig. Kleine Sprachmodelle sind für eng umrissene Klassifizierungsaufgaben oft genau genug und im großen Maßstab deutlich günstiger und schneller." },
           { id: "B", text: "Das größte verfügbare Frontier-LLM", rationale: "Ein sehr großes Modell würde funktionieren, ist aber für eine eng umrissene Aufgabe mit hohem Volumen die teuerste und langsamste Wahl." },
@@ -217,7 +217,7 @@ export const ai103De: DeContent = {
         ],
         answer: "A",
         explanation:
-          "Für jede Aufgabe ein passendes Modell zu wählen, ist die erste Fähigkeit in der Gliederung. Stimmen Sie die Leistungsfähigkeit auf den Bedarf ab und bestätigen Sie die Wahl mit Evaluierungen, statt automatisch das größte Modell zu nehmen.",
+          "Für jede Aufgabe ein passendes Modell zu wählen, ist die erste Fähigkeit in der Gliederung. Stimme die Leistungsfähigkeit auf den Bedarf ab und bestätige die Wahl mit Evaluierungen, statt automatisch das größte Modell zu nehmen.",
         reference: GUIDE,
       },
       {
@@ -226,7 +226,7 @@ export const ai103De: DeContent = {
         objective: "Verwalten, Überwachen und Sichern von KI-Systemen",
         difficulty: "intermediate",
         question:
-          "Eine Web-App in Azure App Service ruft eine Modellbereitstellung in Microsoft Foundry auf. Die Sicherheitsvorgaben verlangen, dass keine API-Schlüssel in Konfiguration oder Code gespeichert werden. Was sollten Sie implementieren?",
+          "Eine Web-App in Azure App Service ruft eine Modellbereitstellung in Microsoft Foundry auf. Die Sicherheitsvorgaben verlangen, dass keine API-Schlüssel in Konfiguration oder Code gespeichert werden. Was solltest du implementieren?",
         options: [
           { id: "A", text: "Den API-Schlüssel in einer Umgebungsvariablen speichern", rationale: "Der Schlüssel befände sich weiterhin in der Konfiguration, was die Anforderung verbietet." },
           { id: "B", text: "Den Schlüssel fest im Quellcode hinterlegen und verschleiern", rationale: "Verschleierung entfernt das Geheimnis nicht und ist nicht sicher." },
@@ -246,14 +246,14 @@ export const ai103De: DeContent = {
         question:
           "Zu Spitzenzeiten schlagen Aufrufe an eine Modellbereitstellung mit HTTP-429-Antworten fehl. Was ist die wahrscheinlichste Ursache, und was ist eine sinnvolle erste Reaktion?",
         options: [
-          { id: "A", text: "Das Modell wurde gelöscht; stellen Sie es erneut bereit", rationale: "Eine gelöschte Bereitstellung würde einen anderen Fehler liefern, keine Drosselung zu Spitzenzeiten." },
+          { id: "A", text: "Das Modell wurde gelöscht; stelle es erneut bereit", rationale: "Eine gelöschte Bereitstellung würde einen anderen Fehler liefern, keine Drosselung zu Spitzenzeiten." },
           { id: "B", text: "Der Inhaltsfilter hat die Prompts blockiert", rationale: "Ein gefilterter Prompt liefert HTTP 400 mit dem Fehlercode content_filter (oder eine Antwort mit finish_reason content_filter), nicht HTTP 429." },
           { id: "C", text: "Die verwaltete Identität ist abgelaufen", rationale: "Authentifizierungsprobleme liefern 401 oder 403, nicht 429." },
-          { id: "D", text: "Die Ratenlimits der Bereitstellung (Token oder Anfragen pro Minute) sind überschritten; implementieren Sie Wiederholungsversuche mit Backoff und prüfen Sie Kontingent und Kapazität", rationale: "Richtig. HTTP 429 bedeutet zu viele Anfragen. Behandeln Sie es mit Retry und Backoff und passen Sie Kontingent, Kapazität oder Lastverteilung an." },
+          { id: "D", text: "Die Ratenlimits der Bereitstellung (Token oder Anfragen pro Minute) sind überschritten; implementiere Wiederholungsversuche mit Backoff und prüfe Kontingent und Kapazität", rationale: "Richtig. HTTP 429 bedeutet zu viele Anfragen. Behandle es mit Retry und Backoff und passe Kontingent, Kapazität oder Lastverteilung an." },
         ],
         answer: "D",
         explanation:
-          "Kontingente, Skalierung, Ratenlimits und Kosten zu steuern, gehört zum ersten Fähigkeitsbereich. Kennen Sie die typischen Statuscodes und die passenden betrieblichen Reaktionen darauf.",
+          "Kontingente, Skalierung, Ratenlimits und Kosten zu steuern, gehört zum ersten Fähigkeitsbereich. Kenne die typischen Statuscodes und die passenden betrieblichen Reaktionen darauf.",
         reference: GUIDE,
       },
       {
@@ -300,7 +300,7 @@ export const ai103De: DeContent = {
         objective: "Erstellen von Agents mithilfe von Foundry",
         difficulty: "intermediate",
         question:
-          "Ein Agent muss den aktuellen Status einer Bestellung in der Bestell-API des Unternehmens abfragen, wenn jemand danach fragt. Wie geben Sie dem Agent diese Fähigkeit?",
+          "Ein Agent muss den aktuellen Status einer Bestellung in der Bestell-API des Unternehmens abfragen, wenn jemand danach fragt. Wie gibst du dem Agent diese Fähigkeit?",
         options: [
           { id: "A", text: "Die gesamte Bestelldatenbank in den Systemprompt einfügen", rationale: "Das ist nicht aktuell, skaliert nicht und legt unnötig viele Daten offen." },
           { id: "B", text: "Ein Tool (eine Funktion) mit einem klaren Schema definieren, das die Bestell-API aufruft, und den Agent entscheiden lassen, wann er es aufruft", rationale: "Richtig. Function Calling mit einem definierten Toolschema ermöglicht es dem Agent, eine Abfrage mit den richtigen Parametern anzufordern und das Ergebnis in seiner Antwort zu verwenden." },
@@ -309,7 +309,7 @@ export const ai103De: DeContent = {
         ],
         answer: "B",
         explanation:
-          "Rollen, Ziele und Toolschemas zu definieren und APIs als Tools einzubinden, sind zentrale Agent-Fähigkeiten in der Gliederung. Bei einem Funktionstool wählt das Modell das Tool und seine Argumente; Ihr Code führt es aus und gibt das Ergebnis zurück. Mit OpenAPI-Tools ruft der Dienst die API direkt auf.",
+          "Rollen, Ziele und Toolschemas zu definieren und APIs als Tools einzubinden, sind zentrale Agent-Fähigkeiten in der Gliederung. Bei einem Funktionstool wählt das Modell das Tool und seine Argumente; Dein Code führt es aus und gibt das Ergebnis zurück. Mit OpenAPI-Tools ruft der Dienst die API direkt auf.",
         reference: GUIDE,
       },
       {
@@ -336,7 +336,7 @@ export const ai103De: DeContent = {
         objective: "Erstellen von generativen Anwendungen mithilfe von Foundry",
         difficulty: "intermediate",
         question:
-          "Bevor Sie eine neue Promptversion einer RAG-App freigeben, möchten Sie systematisch prüfen, ob die Antworten in den abgerufenen Dokumenten verankert (grounded) bleiben und für die Frage relevant sind. Was sollten Sie tun?",
+          "Bevor du eine neue Promptversion einer RAG-App freigibst, möchtest du systematisch prüfen, ob die Antworten in den abgerufenen Dokumenten verankert (grounded) bleiben und für die Frage relevant sind. Was solltest du tun?",
         options: [
           { id: "A", text: "Zwei Kolleginnen oder Kollegen bitten, es fünf Minuten lang auszuprobieren", rationale: "Informelles Testen ist nicht systematisch und übersieht Regressionen." },
           { id: "B", text: "Die Anzahl der abgerufenen Chunks auf das Maximum erhöhen", rationale: "Das ist eine Konfigurationsänderung, keine Qualitätsprüfung, und kann die Qualität sogar verschlechtern." },
@@ -345,7 +345,7 @@ export const ai103De: DeContent = {
         ],
         answer: "D",
         explanation:
-          "Die Gliederung verlangt, Modelle und Apps zu evaluieren, einschließlich der Erkennung von Erfindungen (Halluzinationen), Relevanz, Qualität und Sicherheit. Behandeln Sie Promptänderungen wie Codeänderungen: Testen Sie sie vor der Freigabe.",
+          "Die Gliederung verlangt, Modelle und Apps zu evaluieren, einschließlich der Erkennung von Erfindungen (Halluzinationen), Relevanz, Qualität und Sicherheit. Behandle Promptänderungen wie Codeänderungen: Teste sie vor der Freigabe.",
         reference: GUIDE,
       },
       {
@@ -354,7 +354,7 @@ export const ai103De: DeContent = {
         objective: "Optimieren und Operationalisieren von generativen KI-Systemen",
         difficulty: "intermediate",
         question:
-          "Benutzerinnen und Benutzer melden, dass ein Agent manchmal langsam ist. Sie müssen für jede Anfrage sehen, wie lange Modellaufrufe, Toolaufrufe und Retrieval-Schritte gedauert haben und wie viele Token verbraucht wurden. Was sollten Sie einrichten?",
+          "Benutzerinnen und Benutzer melden, dass ein Agent manchmal langsam ist. Du musst für jede Anfrage sehen, wie lange Modellaufrufe, Toolaufrufe und Retrieval-Schritte gedauert haben und wie viele Token verbraucht wurden. Was solltest du einrichten?",
         options: [
           { id: "A", text: "Eine größere Modellbereitstellung", rationale: "Das könnte die Leistung verändern, zeigt aber nicht, wo die Zeit verloren geht." },
           { id: "B", text: "Einen strengeren Inhaltsfilter", rationale: "Inhaltsfilter liefern keine Zeit- oder Tokenanalysen." },
@@ -401,7 +401,7 @@ export const ai103De: DeContent = {
         ],
         answer: "C",
         explanation:
-          "Indirekte Prompt-Injection über eingebetteten Text in Bildern zu erkennen und abzuwehren, wird in der Gliederung ausdrücklich genannt. Nutzen Sie eine Erkennung im Stil von Prompt Shields, behandeln Sie abgerufene und hochgeladene Inhalte als nicht vertrauenswürdig und begrenzen Sie, was das Modell tun darf.",
+          "Indirekte Prompt-Injection über eingebetteten Text in Bildern zu erkennen und abzuwehren, wird in der Gliederung ausdrücklich genannt. Nutze eine Erkennung im Stil von Prompt Shields, behandle abgerufene und hochgeladene Inhalte als nicht vertrauenswürdig und begrenze, was das Modell tun darf.",
         reference: GUIDE,
       },
 
@@ -430,7 +430,7 @@ export const ai103De: DeContent = {
         objective: "Implementieren von Sprachlösungen",
         difficulty: "foundation",
         question:
-          "Eine Telefonhotline soll von einem Agent betreut werden: Anrufende sprechen, der Agent versteht das Anliegen und antwortet mit gesprochener Stimme. Welche Fähigkeiten kombinieren Sie mit dem Agent?",
+          "Eine Telefonhotline soll von einem Agent betreut werden: Anrufende sprechen, der Agent versteht das Anliegen und antwortet mit gesprochener Stimme. Welche Fähigkeiten kombinierst du mit dem Agent?",
         options: [
           { id: "A", text: "Bildgenerierung und OCR", rationale: "Das sind Vision-Fähigkeiten, keine Sprachfähigkeiten." },
           { id: "B", text: "Nur einen Vektorindex", rationale: "Ein Index hilft beim Retrieval, kann aber weder hören noch sprechen." },
@@ -468,7 +468,7 @@ export const ai103De: DeContent = {
         objective: "Extrahieren von Inhalten aus Dokumenten",
         difficulty: "intermediate",
         question:
-          "Sie erhalten gescannte Lieferantenrechnungen in vielen Layouts und brauchen saubere, strukturierte Felder (Lieferant, Datum, Gesamtbetrag) sowie eine Markdown-Fassung jedes Dokuments für eine RAG-Pipeline. Welcher Ansatz passt am besten zur AI-103-Gliederung?",
+          "Du erhältst gescannte Lieferantenrechnungen in vielen Layouts und brauchst saubere, strukturierte Felder (Lieferant, Datum, Gesamtbetrag) sowie eine Markdown-Fassung jedes Dokuments für eine RAG-Pipeline. Welcher Ansatz passt am besten zur AI-103-Gliederung?",
         options: [
           { id: "A", text: "Text-to-Speech auf jede Rechnung anwenden", rationale: "Damit werden keine Daten extrahiert." },
           { id: "B", text: "Ein Bildgenerierungsmodell", rationale: "Bilder zu generieren, liest keine Rechnungen." },

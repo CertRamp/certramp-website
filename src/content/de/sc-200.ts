@@ -70,7 +70,7 @@ export const sc200De: DeContent = {
   guide: {
     slug: "sc-200",
     summary:
-      "SC-200 (Microsoft Security Operations Analyst) prüft, ob Sie ein Security Operations Center (SOC) mit Microsoft Defender XDR und Microsoft Sentinel betreiben können: Erkennungen und Automatisierung konfigurieren, Vorfälle untersuchen und mit KQL nach Bedrohungen suchen. Die Prüfung dauert 100 Minuten, zum Bestehen benötigen Sie 700 Punkte, und die Gliederung der gemessenen Fähigkeiten wurde zuletzt am 21. Oktober 2026 aktualisiert.",
+      "SC-200 (Microsoft Security Operations Analyst) prüft, ob du ein Security Operations Center (SOC) mit Microsoft Defender XDR und Microsoft Sentinel betreiben kannst: Erkennungen und Automatisierung konfigurieren, Vorfälle untersuchen und mit KQL nach Bedrohungen suchen. Die Prüfung dauert 100 Minuten, zum Bestehen benötigst du 700 Punkte, und die Gliederung der gemessenen Fähigkeiten wurde zuletzt am 21. Oktober 2026 aktualisiert.",
     whoFor: [
       "SOC-Analysten und Incident Responder, die mit Microsoft Defender XDR oder Microsoft Sentinel arbeiten",
       "Security Engineers, die Erkennungen, Automatisierungen und Datenconnectors aufbauen",
@@ -90,7 +90,7 @@ export const sc200De: DeContent = {
         heading: "Was sich mit dem Update vom 21. Oktober 2026 geändert hat",
         paragraphs: [
           "Microsoft stuft die Änderung vom Oktober 2026 als geringfügig ein: Angepasst wurde nur der Bereich „Daten in die Microsoft Sentinel SIEM-Plattform aufnehmen“ (Ingest data into the Microsoft Sentinel SIEM and platform). Die Gliederung als Ganzes spiegelt die aktuelle Sentinel-Plattform wider, einschließlich Data-Lake- und Analyseebene (Analytics Tier), KQL-Jobs im Data Lake, Zusammenfassungsregeln (Summary Rules), Sentinel Graph und Notebooks mit dem Sentinel MCP Server.",
-          "Auch agentische KI kommt im Bereich der Reaktion auf Vorfälle vor: das Untersuchen von Vorfällen mit dem eingebetteten Microsoft Security Copilot. Wenn Ihr Lernmaterial nur den klassischen Log Analytics-Arbeitsbereich und die alten Portalnamen von Microsoft 365 Defender behandelt, gleichen Sie es mit dem aktuellen Studienleitfaden ab. Übersetzte Fassungen der Prüfung werden etwa acht Wochen nach der englischen Version aktualisiert.",
+          "Auch agentische KI kommt im Bereich der Reaktion auf Vorfälle vor: das Untersuchen von Vorfällen mit dem eingebetteten Microsoft Security Copilot. Wenn dein Lernmaterial nur den klassischen Log Analytics-Arbeitsbereich und die alten Portalnamen von Microsoft 365 Defender behandelt, gleiche es mit dem aktuellen Studienleitfaden ab. Übersetzte Fassungen der Prüfung werden etwa acht Wochen nach der englischen Version aktualisiert.",
         ],
       },
       {
@@ -99,27 +99,27 @@ export const sc200De: DeContent = {
         steps: [
           {
             title: "Den eigenen Stand am Studienleitfaden messen",
-            body: "Gehen Sie jeden Punkt der offiziellen SC-200-Liste der gemessenen Fähigkeiten durch und markieren Sie ihn als bekannt, unsicher oder neu. Verteilen Sie Ihre Zeit entsprechend der Gewichtung: allein der erste Bereich macht bis zu 45 % aus.",
+            body: "Gehe jeden Punkt der offiziellen SC-200-Liste der gemessenen Fähigkeiten durch und markiere ihn als bekannt, unsicher oder neu. Verteile deine Zeit entsprechend der Gewichtung: allein der erste Bereich macht bis zu 45 % aus.",
           },
           {
             title: "Eine Laborumgebung aufbauen",
-            body: "Verwenden Sie einen Microsoft 365 E5-Testmandanten (oder eine Entwickler-Sandbox, falls Ihr Visual Studio-Abonnement dafür berechtigt) und ein Azure-Abonnement, um einen Sentinel-Arbeitsbereich anzubinden, ein Testgerät in Defender for Endpoint aufzunehmen (Onboarding) und einige Testwarnungen zu erzeugen. Behalten Sie außerhalb der kostenlosen Testphase die Kosten für die Datenaufnahme in Sentinel im Blick. Wer die Portale einmal gesehen hat, beantwortet Szenariofragen deutlich leichter.",
+            body: "Verwende einen Microsoft 365 E5-Testmandanten (oder eine Entwickler-Sandbox, falls dein Visual Studio-Abonnement dafür berechtigt) und ein Azure-Abonnement, um einen Sentinel-Arbeitsbereich anzubinden, ein Testgerät in Defender for Endpoint aufzunehmen (Onboarding) und einige Testwarnungen zu erzeugen. Behalte außerhalb der kostenlosen Testphase die Kosten für die Datenaufnahme in Sentinel im Blick. Wer die Portale einmal gesehen hat, beantwortet Szenariofragen deutlich leichter.",
           },
           {
             title: "KQL richtig lernen",
-            body: "Üben Sie where, project, summarize, join und Zeitfilter auf den Hunting-Tabellen von Defender (DeviceProcessEvents, DeviceNetworkEvents, EmailEvents, IdentityLogonEvents und weitere). Sie müssen Abfragen schnell lesen und die richtige Tabelle erkennen können.",
+            body: "Übe where, project, summarize, join und Zeitfilter auf den Hunting-Tabellen von Defender (DeviceProcessEvents, DeviceNetworkEvents, EmailEvents, IdentityLogonEvents und weitere). Du musst Abfragen schnell lesen und die richtige Tabelle erkennen können.",
           },
           {
             title: "Die Microsoft-Learn-Lernpfade durcharbeiten",
-            body: "Folgen Sie den kostenlosen SC-200-Lernpfaden zu Defender XDR, Defender for Cloud und Microsoft Sentinel und gleichen Sie jedes Modul mit der aktuellen Gliederung ab.",
+            body: "Folge den kostenlosen SC-200-Lernpfaden zu Defender XDR, Defender for Cloud und Microsoft Sentinel und gleiche jedes Modul mit der aktuellen Gliederung ab.",
           },
           {
             title: "Unter Zeitdruck üben",
-            body: "Legen Sie Übungsprüfungen mit 40–60 Fragen in 100 Minuten ab und lesen Sie jede Erklärung, auch bei Fragen, die Sie richtig beantwortet haben.",
+            body: "Lege Übungsprüfungen mit 40–60 Fragen in 100 Minuten ab und lies jede Erklärung, auch bei Fragen, die du richtig beantwortet hast.",
           },
           {
-            title: "Buchen, wenn Ihre Ergebnisse stabil sind",
-            body: "Buchen Sie die Prüfung, sobald Sie mehrere Übungsprüfungen mit sicherem Abstand bestehen. Planen Sie die kostenlose jährliche Verlängerungsbewertung auf Microsoft Learn gleich mit ein.",
+            title: "Buchen, wenn deine Ergebnisse stabil sind",
+            body: "Buche die Prüfung, sobald du mehrere Übungsprüfungen mit sicherem Abstand bestehst. Plane die kostenlose jährliche Verlängerungsbewertung auf Microsoft Learn gleich mit ein.",
           },
         ],
       },
@@ -129,8 +129,8 @@ export const sc200De: DeContent = {
         bullets: [
           "Die Konfiguration unterschätzen. Im größten Bereich geht es um das Einrichten (Connectors, Aufbewahrung, Rollen, Regeln und Automatisierung), nicht nur um die Reaktion auf Warnungen.",
           "Automatisierungsregeln und Playbooks verwechseln. Automatisierungsregeln behandeln Vorfälle zentral und können Playbooks ausführen; Playbooks sind Logic Apps-Workflows, die Aktionen durchführen.",
-          "KQL nur durch Lesen lernen. Hunting-Fragen erwarten, dass Sie erkennen, was eine Abfrage tut und welche Tabelle Sie verwenden müssen.",
-          "Portale und Produktnamen durcheinanderbringen. Sie sollten wissen, welche Aufgabe im Defender-Portal, welche in Sentinel und welche in Microsoft Purview erledigt wird.",
+          "KQL nur durch Lesen lernen. Hunting-Fragen erwarten, dass du erkennst, was eine Abfrage tut und welche Tabelle du verwenden musst.",
+          "Portale und Produktnamen durcheinanderbringen. Du solltest wissen, welche Aufgabe im Defender-Portal, welche in Sentinel und welche in Microsoft Purview erledigt wird.",
           "Untersuchungen in Microsoft 365 ignorieren. Purview Audit, die eDiscovery-Inhaltssuche und die Microsoft Graph-Aktivitätsprotokolle gehören zur Gliederung.",
         ],
       },
@@ -139,12 +139,12 @@ export const sc200De: DeContent = {
       {
         question: "Wie lange dauert die SC-200-Prüfung und wie hoch ist die Bestehensgrenze?",
         answer:
-          "Sie haben 100 Minuten Zeit. Microsoft verlangt zum Bestehen 700 Punkte oder mehr. Die genaue Fragenzahl für SC-200 veröffentlicht Microsoft nicht; laut Microsoft haben die meisten seiner Zertifizierungsprüfungen zwischen 40 und 60 Fragen.",
+          "Du hast 100 Minuten Zeit. Microsoft verlangt zum Bestehen 700 Punkte oder mehr. Die genaue Fragenzahl für SC-200 veröffentlicht Microsoft nicht; laut Microsoft haben die meisten seiner Zertifizierungsprüfungen zwischen 40 und 60 Fragen.",
       },
       {
         question: "Wie verlängere ich die SC-200-Zertifizierung?",
         answer:
-          "Die Zertifizierung Security Operations Analyst Associate ist 12 Monate gültig. Sie verlängern sie kostenlos, indem Sie innerhalb des sechsmonatigen Verlängerungszeitraums eine Online-Bewertung auf Microsoft Learn bestehen.",
+          "Die Zertifizierung Security Operations Analyst Associate ist 12 Monate gültig. Du verlängerst sie kostenlos, indem du innerhalb des sechsmonatigen Verlängerungszeitraums eine Online-Bewertung auf Microsoft Learn bestehst.",
       },
       {
         question: "Welche Fähigkeiten haben sich am 21. Oktober 2026 geändert?",
@@ -191,7 +191,7 @@ export const sc200De: DeContent = {
         objective: "Konfigurieren der Automatisierung für Microsoft Defender XDR und Microsoft Sentinel",
         difficulty: "intermediate",
         question:
-          "Ihr SOC möchte, dass jeder neue Microsoft Sentinel-Vorfall aus einer bestimmten Analyseregel automatisch der Tier-1-Warteschlange zugewiesen und mit Tags versehen wird, ohne dafür einen Logic Apps-Workflow zu erstellen. Was sollten Sie erstellen?",
+          "Dein SOC möchte, dass jeder neue Microsoft Sentinel-Vorfall aus einer bestimmten Analyseregel automatisch der Tier-1-Warteschlange zugewiesen und mit Tags versehen wird, ohne dafür einen Logic Apps-Workflow zu erstellen. Was solltest du erstellen?",
         options: [
           { id: "A", text: "Ein Playbook", rationale: "Playbooks sind Logic Apps-Workflows. Sie sind das richtige Werkzeug für komplexe Aktionen, aber die Anforderung schließt ausdrücklich aus, einen solchen Workflow zu erstellen." },
           { id: "B", text: "Eine Arbeitsmappe (Workbook)", rationale: "Arbeitsmappen visualisieren Daten; auf Vorfälle wirken sie nicht ein." },
@@ -200,7 +200,7 @@ export const sc200De: DeContent = {
         ],
         answer: "C",
         explanation:
-          "Automatisierungsregeln sind der zentrale, schlanke Weg zur Triage von Vorfällen in Sentinel. Nutzen Sie sie für Zuweisung, Tagging, Statusänderungen und Unterdrückung, und lassen Sie sie Playbooks aufrufen, wenn Sie Workflows benötigen, die andere Systeme einbeziehen.",
+          "Automatisierungsregeln sind der zentrale, schlanke Weg zur Triage von Vorfällen in Sentinel. Nutze sie für Zuweisung, Tagging, Statusänderungen und Unterdrückung, und lass sie Playbooks aufrufen, wenn du Workflows benötigst, die andere Systeme einbeziehen.",
         reference: GUIDE,
       },
       {
@@ -227,7 +227,7 @@ export const sc200De: DeContent = {
         objective: "Daten in die Microsoft Sentinel SIEM-Plattform aufnehmen",
         difficulty: "intermediate",
         question:
-          "Sie müssen von einer Gruppe virtueller Azure-Computer nur ausgewählte Ereignis-IDs der Windows-Sicherheitsereignisse in Microsoft Sentinel sammeln. Was konfigurieren Sie?",
+          "Du musst von einer Gruppe virtueller Azure-Computer nur ausgewählte Ereignis-IDs der Windows-Sicherheitsereignisse in Microsoft Sentinel sammeln. Was konfigurierst du?",
         options: [
           { id: "A", text: "Den Connector „Syslog via AMA“", rationale: "Syslog ist der Protokollierungsmechanismus von Linux und Netzwerkgeräten, nicht von Windows-Sicherheitsereignissen." },
           { id: "B", text: "Eine Sentinel-Arbeitsmappe", rationale: "Arbeitsmappen zeigen bereits aufgenommene Daten an; sie sammeln keine Daten." },
@@ -236,7 +236,7 @@ export const sc200De: DeContent = {
         ],
         answer: "D",
         explanation:
-          "Beim Azure Monitor-Agent legen Sie den Umfang der Sammlung in der Datensammlungsregel fest: welche Computer, welche Ereignissätze oder welche einzelnen Ereignisse. Wer schon beim Sammeln filtert, hält auch die Kosten für die Datenaufnahme niedrig.",
+          "Beim Azure Monitor-Agent legst du den Umfang der Sammlung in der Datensammlungsregel fest: welche Computer, welche Ereignissätze oder welche einzelnen Ereignisse. Wer schon beim Sammeln filtert, hält auch die Kosten für die Datenaufnahme niedrig.",
         reference: GUIDE,
       },
       {
@@ -245,7 +245,7 @@ export const sc200De: DeContent = {
         objective: "Daten in die Microsoft Sentinel SIEM-Plattform aufnehmen",
         difficulty: "advanced",
         question:
-          "Eine Firewall-Appliance kann ihre Protokolle nur im Common Event Format (CEF) über Syslog senden. Wie bringen Sie diese Protokolle in Microsoft Sentinel?",
+          "Eine Firewall-Appliance kann ihre Protokolle nur im Common Event Format (CEF) über Syslog senden. Wie bringst du diese Protokolle in Microsoft Sentinel?",
         options: [
           { id: "A", text: "Den Azure Monitor-Agent direkt auf der Firewall-Appliance installieren", rationale: "Auf Appliances lässt sich der Agent in der Regel nicht ausführen. Sie leiten ihre Protokolle stattdessen an einen separaten Sammelcomputer weiter." },
           { id: "B", text: "Die Protokolle an eine Linux-Protokollweiterleitung mit dem Azure Monitor-Agent senden und den Connector „CEF via AMA“ verwenden", rationale: "Richtig. Die Appliance sendet CEF über Syslog an eine Linux-Weiterleitung; der dortige Azure Monitor-Agent sendet die Daten auf Basis einer Datensammlungsregel an den Arbeitsbereich." },
@@ -263,7 +263,7 @@ export const sc200De: DeContent = {
         objective: "Konfigurieren des Microsoft Sentinel SIEM und der Plattform",
         difficulty: "intermediate",
         question:
-          "Aus Compliance-Gründen müssen Sie umfangreiche Netzwerk-Flow-Protokolle mehrere Jahre lang kostengünstig aufbewahren. Analysten fragen sie selten ab und benötigen sie nicht für Echtzeit-Analyseregeln. Welche Speicheroption passt am besten?",
+          "Aus Compliance-Gründen musst du umfangreiche Netzwerk-Flow-Protokolle mehrere Jahre lang kostengünstig aufbewahren. Analysten fragen sie selten ab und benötigen sie nicht für Echtzeit-Analyseregeln. Welche Speicheroption passt am besten?",
         options: [
           { id: "A", text: "Die Analyseebene (Analytics Tier) mit maximaler interaktiver Aufbewahrung", rationale: "Die Analyseebene ist für Daten gedacht, die für Echtzeiterkennung und häufige Abfragen genutzt werden, und ist bei großen Datenmengen die teuerste Option." },
           { id: "B", text: "Die Data-Lake-Ebene (Data Lake Tier)", rationale: "Richtig. Die Data-Lake-Ebene von Sentinel ist für die langfristige, kostengünstige Speicherung großer Datenmengen gedacht, die seltener abgefragt werden, zum Beispiel mit KQL-Jobs." },
@@ -272,7 +272,7 @@ export const sc200De: DeContent = {
         ],
         answer: "B",
         explanation:
-          "Die Gliederung verlangt, dass Sie die Aufbewahrung über Analyse-, Data-Lake- und XDR-Ebene hinweg verwalten. Faustregel: erkennungsrelevante, häufig abgefragte Daten in die Analyseebene, umfangreiche, selten genutzte Daten in den Data Lake.",
+          "Die Gliederung verlangt, dass du die Aufbewahrung über Analyse-, Data-Lake- und XDR-Ebene hinweg verwaltest. Faustregel: erkennungsrelevante, häufig abgefragte Daten in die Analyseebene, umfangreiche, selten genutzte Daten in den Data Lake.",
         reference: GUIDE,
       },
       {
@@ -281,12 +281,12 @@ export const sc200De: DeContent = {
         objective: "Konfigurieren von Erkennungen",
         difficulty: "foundation",
         question:
-          "Ihre Führungskraft möchte wissen, welche Taktiken und Techniken von Angreifern Ihre aktuellen Microsoft Sentinel-Erkennungen abdecken und wo die Lücken liegen. Welches Feature hilft Ihnen am direktesten, diese Frage zu beantworten?",
+          "Deine Führungskraft möchte wissen, welche Taktiken und Techniken von Angreifern deine aktuellen Microsoft Sentinel-Erkennungen abdecken und wo die Lücken liegen. Welches Feature hilft dir am direktesten, diese Frage zu beantworten?",
         options: [
-          { id: "A", text: "Die Vorfallwarteschlange", rationale: "Die Warteschlange zeigt aufgetretene Vorfälle, nicht die Abdeckung Ihrer Erkennungsregeln." },
+          { id: "A", text: "Die Vorfallwarteschlange", rationale: "Die Warteschlange zeigt aufgetretene Vorfälle, nicht die Abdeckung deiner Erkennungsregeln." },
           { id: "B", text: "Datensammlungsregeln", rationale: "Sie steuern die Datensammlung und sagen nichts darüber aus, welche Techniken erkannt werden." },
           { id: "C", text: "Gerätegruppen in Defender for Endpoint", rationale: "Gerätegruppen ordnen Geräte für Berechtigungen und Automatisierungsstufen, nicht für die Erkennungsabdeckung." },
-          { id: "D", text: "Die MITRE ATT&CK-Ansicht Ihrer Erkennungsabdeckung", rationale: "Richtig. Sentinel ordnet Analyseregeln und Hunting-Abfragen den Taktiken und Techniken von MITRE ATT&CK zu und zeigt so abgedeckte und nicht abgedeckte Bereiche." },
+          { id: "D", text: "Die MITRE ATT&CK-Ansicht deiner Erkennungsabdeckung", rationale: "Richtig. Sentinel ordnet Analyseregeln und Hunting-Abfragen den Taktiken und Techniken von MITRE ATT&CK zu und zeigt so abgedeckte und nicht abgedeckte Bereiche." },
         ],
         answer: "D",
         explanation:
@@ -301,9 +301,9 @@ export const sc200De: DeContent = {
         objective: "Reagieren auf Warnungen und Vorfälle in Microsoft Defender für Endpunkt",
         difficulty: "foundation",
         question:
-          "Ein Laptop zeigt Anzeichen einer aktiven Ransomware-Verschlüsselung. Sie müssen sofort verhindern, dass er mit anderen Geräten kommuniziert, die Verbindung zu Defender for Endpoint für die weitere Untersuchung aber erhalten. Welche Aktion führen Sie aus?",
+          "Ein Laptop zeigt Anzeichen einer aktiven Ransomware-Verschlüsselung. Du musst sofort verhindern, dass er mit anderen Geräten kommuniziert, die Verbindung zu Defender for Endpoint für die weitere Untersuchung aber erhalten. Welche Aktion führst du aus?",
         options: [
-          { id: "A", text: "Das Gerät isolieren", rationale: "Richtig. Die Geräteisolation trennt das Gerät vom Netzwerk, erhält aber seine Verbindung zum Defender-Dienst, sodass Sie weiter untersuchen und es später wieder freigeben können." },
+          { id: "A", text: "Das Gerät isolieren", rationale: "Richtig. Die Geräteisolation trennt das Gerät vom Netzwerk, erhält aber seine Verbindung zum Defender-Dienst, sodass du weiter untersuchen und es später wieder freigeben kannst." },
           { id: "B", text: "Nur eine Antivirenüberprüfung ausführen", rationale: "Eine Überprüfung allein hindert das Gerät nicht daran, den Angriff im Netzwerk zu verbreiten." },
           { id: "C", text: "Nur ein Untersuchungspaket sammeln", rationale: "Das Paket liefert nützliche Beweise, dämmt die Bedrohung aber nicht ein." },
           { id: "D", text: "Das Gerät aus Microsoft Entra ID entfernen", rationale: "Das stoppt den Netzwerkverkehr nicht und erschwert die Untersuchung." },
@@ -319,12 +319,12 @@ export const sc200De: DeContent = {
         objective: "Reagieren auf Warnungen und Vorfälle in Microsoft Defender für Endpunkt",
         difficulty: "intermediate",
         question:
-          "Für eine forensische Prüfung benötigen Sie eine Momentaufnahme der Autostart-Einträge, installierten Programme, Netzwerkverbindungen, geplanten Aufgaben und Ereignisprotokolle eines Geräts, gesammelt über das Defender-Portal. Welche Aktion liefert das?",
+          "Für eine forensische Prüfung benötigst du eine Momentaufnahme der Autostart-Einträge, installierten Programme, Netzwerkverbindungen, geplanten Aufgaben und Ereignisprotokolle eines Geräts, gesammelt über das Defender-Portal. Welche Aktion liefert das?",
         options: [
           { id: "A", text: "App-Ausführung einschränken (Restrict app execution)", rationale: "Diese Aktion blockiert Apps, die nicht von Microsoft signiert sind; Daten sammelt sie nicht." },
           { id: "B", text: "Export der Gerätezeitachse nur für die letzte Stunde", rationale: "Die Zeitachse zeigt Ereignisse, ist aber nicht das beschriebene Paket mit dem Systemzustand." },
           { id: "C", text: "Untersuchungspaket sammeln (Collect investigation package)", rationale: "Richtig. Das Untersuchungspaket fasst forensische Daten wie Autostart-Einträge, installierte Programme, Netzwerkverbindungen, geplante Aufgaben und Protokolle in einer herunterladbaren Datei zusammen." },
-          { id: "D", text: "Das Gerät offboarden", rationale: "Offboarding beendet die Überwachung und würde Ihnen die Sicht auf das Gerät nehmen." },
+          { id: "D", text: "Das Gerät offboarden", rationale: "Offboarding beendet die Überwachung und würde dir die Sicht auf das Gerät nehmen." },
         ],
         answer: "C",
         explanation:
@@ -337,7 +337,7 @@ export const sc200De: DeContent = {
         objective: "Reagieren auf Warnungen und Vorfälle in Microsoft Defender XDR",
         difficulty: "intermediate",
         question:
-          "Microsoft Entra ID Protection stuft einen Benutzer nach Anmeldungen aus einem ungewohnten Land als hoch riskant ein, und Ihre Untersuchung bestätigt, dass das Konto kompromittiert wurde. Was ist die am besten geeignete erste Abhilfemaßnahme?",
+          "Microsoft Entra ID Protection stuft einen Benutzer nach Anmeldungen aus einem ungewohnten Land als hoch riskant ein, und deine Untersuchung bestätigt, dass das Konto kompromittiert wurde. Was ist die am besten geeignete erste Abhilfemaßnahme?",
         options: [
           { id: "A", text: "Das Benutzerrisiko verwerfen", rationale: "Das Verwerfen des Risikos ist für False Positives gedacht; hier ist die Kompromittierung bestätigt." },
           { id: "B", text: "Den Schwellenwert der Anmelderisikorichtlinie für alle Benutzer senken", rationale: "Eine Anpassung der Richtlinie kann später helfen, behebt aber nicht das Problem dieses Kontos." },
@@ -355,7 +355,7 @@ export const sc200De: DeContent = {
         objective: "Untersuchen von Microsoft 365-Aktivitäten zur Identifizierung von Bedrohungen",
         difficulty: "intermediate",
         question:
-          "Sie vermuten, dass ein Angreifer mit einem kompromittierten Konto E-Mails gelesen und eine Weiterleitungsregel für den Posteingang erstellt hat. Mit welchem Werkzeug durchsuchen Sie Benutzer- und Administratoraktivitäten in Microsoft 365 wie Postfachzugriffe und das Erstellen von Regeln?",
+          "Du vermutest, dass ein Angreifer mit einem kompromittierten Konto E-Mails gelesen und eine Weiterleitungsregel für den Posteingang erstellt hat. Mit welchem Werkzeug durchsuchst du Benutzer- und Administratoraktivitäten in Microsoft 365 wie Postfachzugriffe und das Erstellen von Regeln?",
         options: [
           { id: "A", text: "Konformitätsberichte für Geräte in Microsoft Intune", rationale: "Konformitätsberichte zeigen den Gerätezustand, keine Postfachaktivitäten." },
           { id: "B", text: "Gerätezeitachse in Defender for Endpoint", rationale: "Die Zeitachse zeigt Ereignisse auf einem Gerät, keine Aktivitäten innerhalb von Exchange Online." },
@@ -391,16 +391,16 @@ export const sc200De: DeContent = {
         objective: "Reagieren auf Warnungen und Vorfälle in Microsoft Defender XDR",
         difficulty: "advanced",
         question:
-          "Ein Vorfall umfasst eine Phishing-E-Mail, einen verdächtigen Prozess auf einem Gerät und spätere Anmeldungen dieses Benutzers an drei Servern. Wie erfassen Sie den vollen Umfang am besten?",
+          "Ein Vorfall umfasst eine Phishing-E-Mail, einen verdächtigen Prozess auf einem Gerät und spätere Anmeldungen dieses Benutzers an drei Servern. Wie erfasst du den vollen Umfang am besten?",
         options: [
           { id: "A", text: "Jede Warnung einzeln schließen, sobald sie behoben ist", rationale: "Wer Warnungen einzeln schließt, verdeckt ihren Zusammenhang und das tatsächliche Ausmaß des Angriffs." },
-          { id: "B", text: "Den korrelierten Vorfall über E-Mail, Endpunkt und Identität hinweg untersuchen, einschließlich der betroffenen Entitäten und möglicher seitlicher Bewegung (Lateral Movement)", rationale: "Richtig. Defender XDR korreliert Warnungen aus mehreren Bereichen zu einem Vorfall, sodass Sie die Angriffskette vom ersten Zugriff bis zur seitlichen Bewegung verfolgen können." },
+          { id: "B", text: "Den korrelierten Vorfall über E-Mail, Endpunkt und Identität hinweg untersuchen, einschließlich der betroffenen Entitäten und möglicher seitlicher Bewegung (Lateral Movement)", rationale: "Richtig. Defender XDR korreliert Warnungen aus mehreren Bereichen zu einem Vorfall, sodass du die Angriffskette vom ersten Zugriff bis zur seitlichen Bewegung verfolgen kannst." },
           { id: "C", text: "Nur das erste Gerät neu aufsetzen", rationale: "Der Angreifer kann bereits auf den Servern sein; ein Gerät neu aufzusetzen reicht nicht." },
           { id: "D", text: "Alle Benutzer der Organisation deaktivieren", rationale: "Das ist unverhältnismäßig und keine Methode, den Umfang zu bestimmen." },
         ],
         answer: "B",
         explanation:
-          "Mehrstufige, bereichsübergreifende Angriffe werden in der Gliederung ausdrücklich genannt. Arbeiten Sie auf Vorfallebene, erfassen Sie jede Entität (Benutzer, Geräte, Postfächer, IP-Adressen) und prüfen Sie auf seitliche Bewegung, bevor Sie über die Behebung entscheiden.",
+          "Mehrstufige, bereichsübergreifende Angriffe werden in der Gliederung ausdrücklich genannt. Arbeite auf Vorfallebene, erfasse jede Entität (Benutzer, Geräte, Postfächer, IP-Adressen) und prüfe auf seitliche Bewegung, bevor du über die Behebung entscheidest.",
         reference: GUIDE,
       },
 
@@ -411,7 +411,7 @@ export const sc200De: DeContent = {
         objective: "Erkennen von Bedrohungen mithilfe von Microsoft Defender XDR",
         difficulty: "foundation",
         question:
-          "Sie möchten in der erweiterten Bedrohungssuche (Advanced Hunting) alle Geräte finden, auf denen powershell.exe mit einer codierten Befehlszeile gestartet wurde. Welche Tabelle fragen Sie ab?",
+          "Du möchtest in der erweiterten Bedrohungssuche (Advanced Hunting) alle Geräte finden, auf denen powershell.exe mit einer codierten Befehlszeile gestartet wurde. Welche Tabelle fragst du ab?",
         options: [
           { id: "A", text: "DeviceProcessEvents", rationale: "Richtig. DeviceProcessEvents zeichnet das Erstellen von Prozessen auf, einschließlich Dateiname und Befehlszeile." },
           { id: "B", text: "EmailEvents", rationale: "EmailEvents enthält Informationen zur E-Mail-Zustellung, keine Prozesse." },
@@ -456,7 +456,7 @@ export const sc200De: DeContent = {
         ],
         answer: "C",
         explanation:
-          "Die Gliederung verlangt, dass Sie Tabellen für Zusammenfassungsregeln sowie KQL-Jobs im Data Lake erstellen und verwalten. Beides hilft, große Datenmengen effizient zu bearbeiten, statt immer wieder die Rohdaten abzufragen.",
+          "Die Gliederung verlangt, dass du Tabellen für Zusammenfassungsregeln sowie KQL-Jobs im Data Lake erstellst und verwaltest. Beides hilft, große Datenmengen effizient zu bearbeiten, statt immer wieder die Rohdaten abzufragen.",
         reference: GUIDE,
       },
     ],

@@ -71,7 +71,7 @@ export const ab620De: DeContent = {
       name: "Testen und Verwalten von Agents",
       weight: "20–25 %",
       objectives: [
-        "Bewerten Sie die Agentenleistung (Evaluate agent performance)",
+        "Bewerte die Agentenleistung (Evaluate agent performance)",
         "Implementieren der Anwendungslebenszyklusverwaltung (Application Lifecycle Management, ALM) für Agents in Copilot Studio",
       ],
     },
@@ -81,7 +81,7 @@ export const ab620De: DeContent = {
   guide: {
     slug: "ab-620",
     summary:
-      "AB-620 (Designing and Building Integrated AI Agent Solutions in Copilot Studio) führt zur Zertifizierung Microsoft Certified: AI Agent Builder Associate. Geprüft wird, ob Sie Agents für Unternehmen in Microsoft Copilot Studio planen, erstellen, integrieren, testen und bereitstellen können: Agent-Flows, Themen (Topics), MCP- und REST-Tools, Multi-Agent-Lösungen, Azure-Integration, Evaluierung und ALM. Die Prüfung dauert 120 Minuten, und zum Bestehen brauchen Sie 700 Punkte.",
+      "AB-620 (Designing and Building Integrated AI Agent Solutions in Copilot Studio) führt zur Zertifizierung Microsoft Certified: AI Agent Builder Associate. Geprüft wird, ob du Agents für Unternehmen in Microsoft Copilot Studio planen, erstellen, integrieren, testen und bereitstellen kannst: Agent-Flows, Themen (Topics), MCP- und REST-Tools, Multi-Agent-Lösungen, Azure-Integration, Evaluierung und ALM. Die Prüfung dauert 120 Minuten, und zum Bestehen brauchst du 700 Punkte.",
     whoFor: [
       "Professionelle Entwicklerinnen und Entwickler sowie fortgeschrittene Builder, die benutzerdefinierte Agents in Copilot Studio erstellen, erweitern und integrieren",
       "IT-Anwendungsentwickler, Beraterinnen und Berater sowie ISV-Partner, die Agent-Lösungen für Organisationen oder Kunden umsetzen",
@@ -110,27 +110,27 @@ export const ab620De: DeContent = {
         steps: [
           {
             title: "Eigenen Stand am Studienleitfaden messen",
-            body: "Gehen Sie jeden Punkt der offiziellen Liste der gemessenen Fähigkeiten für AB-620 durch und markieren Sie ihn als bekannt, unsicher oder neu. Verwenden Sie die meiste Zeit auf die Integration, die allein bis zu 45 % ausmacht.",
+            body: "Gehe jeden Punkt der offiziellen Liste der gemessenen Fähigkeiten für AB-620 durch und markiere ihn als bekannt, unsicher oder neu. Verwende die meiste Zeit auf die Integration, die allein bis zu 45 % ausmacht.",
           },
           {
             title: "Eine Copilot-Studio-Umgebung einrichten",
-            body: "Nutzen Sie eine Copilot-Studio-Testversion oder eine Entwicklerumgebung sowie ein Azure-Abonnement für Azure AI Search, Foundry und Application Insights. Behalten Sie die Azure-Kosten außerhalb der kostenlosen Tarife im Blick.",
+            body: "Nutze eine Copilot-Studio-Testversion oder eine Entwicklerumgebung sowie ein Azure-Abonnement für Azure AI Search, Foundry und Application Insights. Behalte die Azure-Kosten außerhalb der kostenlosen Tarife im Blick.",
           },
           {
             title: "Einen Agent mit echten Integrationen bauen",
-            body: "Erstellen Sie einen Agent mit generativer Orchestrierung, fügen Sie einen Power-Platform-Connector, ein REST-API-Tool aus einer OpenAPI-Datei und einen MCP-Server hinzu und verankern Sie ihn (Grounding) mit Quellenangaben in einem Azure-AI-Search-Index.",
+            body: "Erstelle einen Agent mit generativer Orchestrierung, füge einen Power-Platform-Connector, ein REST-API-Tool aus einer OpenAPI-Datei und einen MCP-Server hinzu und verankere ihn (Grounding) mit Quellenangaben in einem Azure-AI-Search-Index.",
           },
           {
             title: "Flows, Themen und einen zweiten Agent ergänzen",
-            body: "Bauen Sie einen Agent-Flow mit Genehmigungsschritt und Fehlerbehandlung, ein Thema mit adaptiver Karte und HTTP-Anforderung und verbinden Sie einen zweiten Agent. Notieren Sie, welche Multi-Agent-Optionen noch in der Vorschau sind.",
+            body: "Baue einen Agent-Flow mit Genehmigungsschritt und Fehlerbehandlung, ein Thema mit adaptiver Karte und HTTP-Anforderung und verbinde einen zweiten Agent. Notiere, welche Multi-Agent-Optionen noch in der Vorschau sind.",
           },
           {
             title: "Sauber evaluieren und bereitstellen",
-            body: "Erstellen Sie einen Testsatz, führen Sie mehrere Evaluierungsmethoden aus, legen Sie den Agent in eine Lösung mit Umgebungsvariablen und stellen Sie ihn mit Power-Platform-Pipelines in einer Testumgebung bereit. Verbinden Sie Application Insights und sehen Sie sich die Telemetrie an.",
+            body: "Erstelle einen Testsatz, führe mehrere Evaluierungsmethoden aus, lege den Agent in eine Lösung mit Umgebungsvariablen und stelle ihn mit Power-Platform-Pipelines in einer Testumgebung bereit. Verbinde Application Insights und sieh dir die Telemetrie an.",
           },
           {
             title: "Unter Zeitdruck üben",
-            body: "Absolvieren Sie Übungsprüfungen auf Zeit (120 Minuten), lesen Sie jede Erklärung und nutzen Sie die kostenlose Übungsbewertung (Practice Assessment) von Microsoft. Buchen Sie, wenn Ihre Ergebnisse stabil sind, und planen Sie die kostenlose jährliche Verlängerungsbewertung ein.",
+            body: "Absolviere Übungsprüfungen auf Zeit (120 Minuten), lies jede Erklärung und nutze die kostenlose Übungsbewertung (Practice Assessment) von Microsoft. Buche, wenn deine Ergebnisse stabil sind, und plane die kostenlose jährliche Verlängerungsbewertung ein.",
           },
         ],
       },
@@ -139,7 +139,7 @@ export const ab620De: DeContent = {
         heading: "Häufige Fehler bei der Vorbereitung",
         bullets: [
           "Nur auf Maker-Niveau lernen. AB-620 erwartet Integrationen mit APIs, MCP, Azure und anderen Agents, nicht nur Wissensquellen und einfache Themen.",
-          "Erweiterungsoptionen verwechseln. Sie sollten wissen, wann ein Connector, ein benutzerdefinierter Connector, ein REST-API-Tool, ein MCP-Server, ein HTTP-Anforderungsknoten oder Computerverwendung passt.",
+          "Erweiterungsoptionen verwechseln. Du solltest wissen, wann ein Connector, ein benutzerdefinierter Connector, ein REST-API-Tool, ein MCP-Server, ein HTTP-Anforderungsknoten oder Computerverwendung passt.",
           "Grenzen der Vorschau ignorieren. Mehrere Multi-Agent-Integrationen sind in der Vorschau und haben dokumentierte Einschränkungen, die Designentscheidungen beeinflussen.",
           "Evaluierung als optional ansehen. Testsätze, Evaluierungsmethoden und das Auswerten der Ergebnisse gehören zur Gliederung, und jede Methode braucht die passenden erwarteten Werte.",
           "Außerhalb von Lösungen bauen. ALM-Fragen setzen voraus, dass Agents in Lösungen mit Umgebungsvariablen liegen und über Pipelines bereitgestellt werden.",
@@ -150,7 +150,7 @@ export const ab620De: DeContent = {
       {
         question: "Wie lange dauert die AB-620-Prüfung, und wie hoch ist die Bestehensgrenze?",
         answer:
-          "Sie haben 120 Minuten Zeit. Microsoft verlangt zum Bestehen 700 oder mehr. Die genaue Fragenzahl für AB-620 veröffentlicht Microsoft nicht; laut Microsoft haben die meisten Zertifizierungsprüfungen zwischen 40 und 60 Fragen.",
+          "Du hast 120 Minuten Zeit. Microsoft verlangt zum Bestehen 700 oder mehr. Die genaue Fragenzahl für AB-620 veröffentlicht Microsoft nicht; laut Microsoft haben die meisten Zertifizierungsprüfungen zwischen 40 und 60 Fragen.",
       },
       {
         question: "Wie lauten die offiziellen Namen der AB-620-Prüfung und der Zertifizierung?",
@@ -160,12 +160,12 @@ export const ab620De: DeContent = {
       {
         question: "Wie verlängere ich die Zertifizierung AI Agent Builder Associate?",
         answer:
-          "Microsoft-Associate-Zertifizierungen laufen jährlich ab. Sie verlängern kostenlos, indem Sie innerhalb des sechsmonatigen Verlängerungszeitraums vor Ablauf der Zertifizierung eine Online-Bewertung auf Microsoft Learn bestehen.",
+          "Microsoft-Associate-Zertifizierungen laufen jährlich ab. Du verlängerst kostenlos, indem du innerhalb des sechsmonatigen Verlängerungszeitraums vor Ablauf der Zertifizierung eine Online-Bewertung auf Microsoft Learn bestehst.",
       },
       {
         question: "In welchen Sprachen wird AB-620 angeboten?",
         answer:
-          "Englisch, Arabisch (Saudi-Arabien), Chinesisch (vereinfacht), Chinesisch (traditionell), Französisch, Deutsch, Indonesisch (Indonesien), Italienisch, Japanisch, Koreanisch, Portugiesisch (Brasilien), Russisch und Spanisch. Ist die Prüfung nicht in Ihrer bevorzugten Sprache verfügbar, können Sie 30 zusätzliche Minuten beantragen.",
+          "Englisch, Arabisch (Saudi-Arabien), Chinesisch (vereinfacht), Chinesisch (traditionell), Französisch, Deutsch, Indonesisch (Indonesien), Italienisch, Japanisch, Koreanisch, Portugiesisch (Brasilien), Russisch und Spanisch. Ist die Prüfung nicht in deiner bevorzugten Sprache verfügbar, kannst du 30 zusätzliche Minuten beantragen.",
       },
       {
         question: "Gibt es die Prüfung auf Deutsch?",
@@ -207,16 +207,16 @@ export const ab620De: DeContent = {
         objective: "Planen der Identitätsstrategie",
         difficulty: "foundation",
         question:
-          "Ein interner HR-Agent wird nur über den integrierten Kanal Teams und Microsoft 365 veröffentlicht. Mitarbeitende müssen angemeldet sein, und Sie möchten die Authentifizierung mit Microsoft Entra ID ohne manuelle App-Registrierung einrichten. Welche Authentifizierungsoption sollten Sie wählen?",
+          "Ein interner HR-Agent wird nur über den integrierten Kanal Teams und Microsoft 365 veröffentlicht. Mitarbeitende müssen angemeldet sein, und du möchtest die Authentifizierung mit Microsoft Entra ID ohne manuelle App-Registrierung einrichten. Welche Authentifizierungsoption solltest du wählen?",
         options: [
-          { id: "A", text: "No authentication", rationale: "Jeder mit dem Link könnte den Agent nutzen, und Sie wüssten nicht, wer der Benutzer ist." },
+          { id: "A", text: "No authentication", rationale: "Jeder mit dem Link könnte den Agent nutzen, und du wüsstest nicht, wer der Benutzer ist." },
           { id: "B", text: "Authenticate manually", rationale: "Die manuelle Authentifizierung ist für Kanäle und Identitätsanbieter gedacht, die eine eigene Konfiguration brauchen; sie bedeutet hier mehr Aufwand als nötig." },
           { id: "C", text: "Authenticate with Microsoft", rationale: "Richtig. Microsoft dokumentiert diese Option für den Kanal Teams und Microsoft 365; sie richtet die Entra-ID-Authentifizierung automatisch ein." },
           { id: "D", text: "Ein API-Schlüssel in einer globalen Variable", rationale: "API-Schlüssel authentifizieren Aufrufe an APIs; sie melden Benutzer nicht bei einem Agent an." },
         ],
         answer: "C",
         explanation:
-          "Copilot Studio bietet No authentication, Authenticate with Microsoft und Authenticate manually. Wählen Sie die einfachste Option, die die Anforderungen an Kanal und Identität erfüllt; die manuelle Authentifizierung ist für andere Kanäle oder benutzerdefinierte Identitätsanbieter gedacht.",
+          "Copilot Studio bietet No authentication, Authenticate with Microsoft und Authenticate manually. Wähle die einfachste Option, die die Anforderungen an Kanal und Identität erfüllt; die manuelle Authentifizierung ist für andere Kanäle oder benutzerdefinierte Identitätsanbieter gedacht.",
         reference: { label: "Microsoft Learn: Benutzerauthentifizierung in Copilot Studio konfigurieren", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/configuration-end-user-authentication" },
       },
       {
@@ -243,9 +243,9 @@ export const ab620De: DeContent = {
         objective: "Konfigurieren erweiterter Agent-Antworten mit API- und Senden von HTTP-Anforderungen (Configure advanced agent responses with API and Send HTTP requests)",
         difficulty: "intermediate",
         question:
-          "In einem Thema rufen Sie mit dem Knoten „HTTP-Anforderung senden“ (Send HTTP request) eine externe Bestell-API auf. Spätere Knoten sollen Felder aus der JSON-Antwort mit IntelliSense im Power-Fx-Editor nutzen können. Was sollten Sie tun?",
+          "In einem Thema rufst du mit dem Knoten „HTTP-Anforderung senden“ (Send HTTP request) eine externe Bestell-API auf. Spätere Knoten sollen Felder aus der JSON-Antwort mit IntelliSense im Power-Fx-Editor nutzen können. Was solltest du tun?",
         options: [
-          { id: "A", text: "Den Body auf „Rohinhalt“ (Raw content) setzen", rationale: "Die Body-Einstellung steuert, was Sie senden, nicht wie die Antwort typisiert wird." },
+          { id: "A", text: "Den Body auf „Rohinhalt“ (Raw content) setzen", rationale: "Die Body-Einstellung steuert, was du sendest, nicht wie die Antwort typisiert wird." },
           { id: "B", text: "Die Antwort als Zeichenfolge speichern und mit einem benutzerdefinierten Prompt parsen", rationale: "Das fügt einen unnötigen Modellaufruf hinzu und verliert die typisierte Struktur." },
           { id: "C", text: "Einen Authorization-Header hinzufügen", rationale: "Header können für die Authentifizierung nötig sein, sie typisieren aber nicht die Antwort." },
           { id: "D", text: "Das Antwortschema aus Beispiel-JSON generieren und die Antwort in einer Variable speichern", rationale: "Richtig. „Schema aus Beispiel-JSON abrufen“ (Get schema from sample JSON) erstellt eine typisierte Power-Fx-Variable, die spätere Knoten nutzen können." },
@@ -261,7 +261,7 @@ export const ab620De: DeContent = {
         objective: "Konfigurieren adaptiver Karten",
         difficulty: "foundation",
         question:
-          "Ein Thema soll Reisedatum, Reiseziel und Kostenstelle in einem Schritt mit einer einzigen Submit-Schaltfläche abfragen und jeden Wert für spätere Knoten speichern. Was sollten Sie hinzufügen?",
+          "Ein Thema soll Reisedatum, Reiseziel und Kostenstelle in einem Schritt mit einer einzigen Submit-Schaltfläche abfragen und jeden Wert für spätere Knoten speichern. Was solltest du hinzufügen?",
         options: [
           { id: "A", text: "Drei separate Message-Knoten", rationale: "Message-Knoten zeigen Informationen an; sie fragen keine Eingaben ab." },
           { id: "B", text: "Einen Adaptive-Card-Knoten mit drei Eingabefeldern und einer Submit-Aktion", rationale: "Richtig. Der Adaptive-Card-Knoten zeigt eine interaktive Karte an und erstellt Ausgabevariablen für ihre Eingaben, die beim Absenden durch den Benutzer gefüllt werden." },
@@ -270,7 +270,7 @@ export const ab620De: DeContent = {
         ],
         answer: "B",
         explanation:
-          "Verwenden Sie den Adaptive-Card-Knoten für interaktive Karten, die eine Übermittlung erwarten. Für Karten, die nur Informationen anzeigen, nutzen Sie Message- oder Question-Knoten; prüfen Sie die erzeugten Ausgabevariablen mit Edit Schema.",
+          "Verwende den Adaptive-Card-Knoten für interaktive Karten, die eine Übermittlung erwarten. Für Karten, die nur Informationen anzeigen, nutze Message- oder Question-Knoten; prüfe die erzeugten Ausgabevariablen mit Edit Schema.",
         reference: { label: "Microsoft Learn, Mit adaptiven Karten fragen", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/authoring-ask-with-adaptive-card" },
       },
       {
@@ -299,7 +299,7 @@ export const ab620De: DeContent = {
         objective: "Konfigurieren von MCP-Tools",
         difficulty: "intermediate",
         question:
-          "Ihr Unternehmen betreibt einen MCP-Server, der Tools und Prompt-Vorlagen für sein Ticketsystem bereitstellt. Sie verbinden ihn mit einem Copilot-Studio-Agent. Welche Aussage ist richtig?",
+          "Dein Unternehmen betreibt einen MCP-Server, der Tools und Prompt-Vorlagen für sein Ticketsystem bereitstellt. Du verbindest ihn mit einem Copilot-Studio-Agent. Welche Aussage ist richtig?",
         options: [
           { id: "A", text: "Jedes Tool muss manuell neu importiert werden, sobald der Server ein Tool hinzufügt", rationale: "Vom Server veröffentlichte Tools stehen automatisch zur Verfügung, und Änderungen auf dem Server werden dynamisch übernommen." },
           { id: "B", text: "MCP funktioniert nur mit klassischer Orchestrierung", rationale: "Für MCP muss die generative Orchestrierung aktiviert sein." },
@@ -317,16 +317,16 @@ export const ab620De: DeContent = {
         objective: "Hinzufügen von REST-APIs zu einem Agent",
         difficulty: "intermediate",
         question:
-          "Sie möchten die REST-API eines Partners als Tool zu einem Agent hinzufügen. Der Partner stellt eine OpenAPI-3.0-Spezifikation bereit. Was passiert, wenn Sie sie hochladen?",
+          "Du möchtest die REST-API eines Partners als Tool zu einem Agent hinzufügen. Der Partner stellt eine OpenAPI-3.0-Spezifikation bereit. Was passiert, wenn du sie hochlädst?",
         options: [
-          { id: "A", text: "Der Upload wird abgelehnt; Sie müssen zuerst einen benutzerdefinierten Connector erstellen", rationale: "Für ein REST-API-Tool ist kein benutzerdefinierter Connector nötig, und v3-Spezifikationen werden akzeptiert." },
+          { id: "A", text: "Der Upload wird abgelehnt; du musst zuerst einen benutzerdefinierten Connector erstellen", rationale: "Für ein REST-API-Tool ist kein benutzerdefinierter Connector nötig, und v3-Spezifikationen werden akzeptiert." },
           { id: "B", text: "Copilot Studio übersetzt sie automatisch in eine OpenAPI-v2-Spezifikation", rationale: "Richtig. REST-API-Tools werden aus OpenAPI v2 erstellt; eine v3-Spezifikation wird automatisch übersetzt." },
           { id: "C", text: "Copilot Studio erstellt daraus einen MCP-Server", rationale: "Das Hochladen einer Spezifikation erstellt ein REST-API-Tool, keinen MCP-Server." },
           { id: "D", text: "Es können nur APIs ohne Authentifizierung hinzugefügt werden", rationale: "REST-API-Tools unterstützen die Optionen ohne Authentifizierung, API-Schlüssel und OAuth 2.0." },
         ],
         answer: "B",
         explanation:
-          "Um ein REST-API-Tool hinzuzufügen, brauchen Sie die OpenAPI-Spezifikation und die Authentifizierungsdetails. Die v2-Anforderung ergibt sich daraus, wie Power Platform API-Spezifikationen verarbeitet.",
+          "Um ein REST-API-Tool hinzuzufügen, brauchst du die OpenAPI-Spezifikation und die Authentifizierungsdetails. Die v2-Anforderung ergibt sich daraus, wie Power Platform API-Spezifikationen verarbeitet.",
         reference: { label: "Microsoft Learn: REST-API-Tools zu Agents hinzufügen", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/agent-extend-action-rest-api" },
       },
       {
@@ -335,7 +335,7 @@ export const ab620De: DeContent = {
         objective: "Konfigurieren und Überwachen der Computerverwendung für einen Agent",
         difficulty: "intermediate",
         question:
-          "Ein Agent soll Schadensmeldungen in eine ältere Windows-Desktopanwendung eingeben, die weder API noch Connector hat. Was sollten Sie konfigurieren?",
+          "Ein Agent soll Schadensmeldungen in eine ältere Windows-Desktopanwendung eingeben, die weder API noch Connector hat. Was solltest du konfigurieren?",
         options: [
           { id: "A", text: "Einen Knoten „HTTP-Anforderung senden“ (Send HTTP request), der auf die ausführbare Datei der Anwendung zeigt", rationale: "HTTP-Anforderungen rufen Web-APIs auf; die Anwendung hat keine." },
           { id: "B", text: "Azure AI Search als Wissensquelle", rationale: "Wissensquellen dienen dem Grounding von Antworten; sie können keine Anwendung bedienen." },
@@ -344,7 +344,7 @@ export const ab620De: DeContent = {
         ],
         answer: "C",
         explanation:
-          "Computerverwendung läuft auf einem Windows-Rechner, den Sie einrichten und im Tool auswählen. Beim Testen sehen Sie ein schrittweises Protokoll und eine Vorschau des Rechners; in Unterhaltungen teilt das Tool Begründungsnachrichten und Screenshots.",
+          "Computerverwendung läuft auf einem Windows-Rechner, den du einrichtest und im Tool auswählst. Beim Testen siehst du ein schrittweises Protokoll und eine Vorschau des Rechners; in Unterhaltungen teilt das Tool Begründungsnachrichten und Screenshots.",
         reference: { label: "Microsoft Learn: Computerverwendung in Copilot Studio", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/computer-use" },
       },
       {
@@ -353,7 +353,7 @@ export const ab620De: DeContent = {
         objective: "Herstellen einer Verbindung mit Azure KI-Suche",
         difficulty: "advanced",
         question:
-          "Sie fügen einen Azure-AI-Search-Index als Wissensquelle hinzu und möchten, dass Antworten Quellenangaben mit Links zu den Originaldokumenten zeigen. Was sollte der Index enthalten?",
+          "Du fügst einen Azure-AI-Search-Index als Wissensquelle hinzu und möchtest, dass Antworten Quellenangaben mit Links zu den Originaldokumenten zeigen. Was sollte der Index enthalten?",
         options: [
           { id: "A", text: "Ein Feld mit der vollständigen URL jedes Dokuments, zum Beispiel metadata_storage_path", rationale: "Richtig. Copilot Studio verwendet metadata_storage_path als Quellenangabe, falls vorhanden, andernfalls ein Feld mit einer vollständigen URL." },
           { id: "B", text: "Einen Vektorindex pro Dokumenttyp", rationale: "Es kann nur ein Vektorindex hinzugefügt werden, und mehrere Indizes erzeugen keine Quellenangaben." },
@@ -371,11 +371,11 @@ export const ab620De: DeContent = {
         objective: "Erstellen einer Multi-Agent-Lösung mithilfe des A2A-Protokolls",
         difficulty: "intermediate",
         question:
-          "Ein Logistikpartner stellt einen Agent zur Sendungsverfolgung, der auf einer anderen Plattform gebaut ist, über das Agent2Agent-Protokoll (A2A) bereit. Ihr Copilot-Studio-Agent soll Fragen zur Sendungsverfolgung an ihn delegieren. Was sollten Sie tun?",
+          "Ein Logistikpartner stellt einen Agent zur Sendungsverfolgung, der auf einer anderen Plattform gebaut ist, über das Agent2Agent-Protokoll (A2A) bereit. Dein Copilot-Studio-Agent soll Fragen zur Sendungsverfolgung an ihn delegieren. Was solltest du tun?",
         options: [
-          { id: "A", text: "Den Partner-Agent als untergeordneten Agent (Child Agent) in Ihrem Copilot-Studio-Agent nachbauen", rationale: "Ein Nachbau dupliziert die Arbeit des Partners; der Agent kann direkt verbunden werden." },
+          { id: "A", text: "Den Partner-Agent als untergeordneten Agent (Child Agent) in deinem Copilot-Studio-Agent nachbauen", rationale: "Ein Nachbau dupliziert die Arbeit des Partners; der Agent kann direkt verbunden werden." },
           { id: "B", text: "Die Antworten des Partners in eine Wissensdatei kopieren", rationale: "Statische Dateien können keine Live-Fragen zur Sendungsverfolgung beantworten." },
-          { id: "C", text: "Den Partner bitten, seinen Agent in Ihrem Teams-Mandanten zu veröffentlichen", rationale: "Eine Veröffentlichung in Teams macht ihn für Personen verfügbar, nicht als Ihren verbundenen Agent." },
+          { id: "C", text: "Den Partner bitten, seinen Agent in deinem Teams-Mandanten zu veröffentlichen", rationale: "Eine Veröffentlichung in Teams macht ihn für Personen verfügbar, nicht als deinen verbundenen Agent." },
           { id: "D", text: "Ihn als verbundenen Agent hinzufügen, der über das A2A-Protokoll verfügbar ist", rationale: "Richtig. Copilot Studio kann andere Agents, die über A2A verfügbar sind, zu einer Multi-Agent-Lösung hinzufügen." },
         ],
         answer: "D",
@@ -389,7 +389,7 @@ export const ab620De: DeContent = {
         objective: "Integrieren eines Fabric-Daten-Agents",
         difficulty: "advanced",
         question:
-          "Sie verbinden einen Fabric-Daten-Agent mit Ihrem Haupt-Agent in Copilot Studio, damit Benutzer Vertriebsfragen zu einem Lakehouse stellen können. Welche Einschränkung müssen Sie beim Design einplanen?",
+          "Du verbindest einen Fabric-Daten-Agent mit deinem Haupt-Agent in Copilot Studio, damit Benutzer Vertriebsfragen zu einem Lakehouse stellen können. Welche Einschränkung musst du beim Design einplanen?",
         options: [
           { id: "A", text: "Der Haupt-Agent darf nur klassische Themen verwenden", rationale: "Eine solche Anforderung gibt es in der Dokumentation zu verbundenen Agents nicht." },
           { id: "B", text: "Fabric-Daten-Agents können nicht Ziel des Redirect-Knotens eines Themas sein und funktionieren derzeit nicht, wenn der Haupt-Agent in Microsoft Copilot bereitgestellt ist", rationale: "Richtig. Microsoft dokumentiert beide Einschränkungen für Fabric-Daten-Agents, die in Copilot Studio verbunden sind." },
@@ -398,7 +398,7 @@ export const ab620De: DeContent = {
         ],
         answer: "B",
         explanation:
-          "Das Verbinden von Foundry-, Fabric- und Microsoft-365-Agents-SDK-Agents ist in der öffentlichen Vorschau. Fabric-Daten-Agents können außerdem nicht in Anweisungen referenziert werden; planen Sie Kanäle und Routing daher um diese Grenzen herum.",
+          "Das Verbinden von Foundry-, Fabric- und Microsoft-365-Agents-SDK-Agents ist in der öffentlichen Vorschau. Fabric-Daten-Agents können außerdem nicht in Anweisungen referenziert werden; plane Kanäle und Routing daher um diese Grenzen herum.",
         reference: MULTI_AGENT,
       },
       {
@@ -407,16 +407,16 @@ export const ab620De: DeContent = {
         objective: "Überwachen von Agents mithilfe von Application Insights",
         difficulty: "foundation",
         question:
-          "Ihr Betriebsteam möchte die Unterhaltungstelemetrie aus Copilot Studio in derselben Azure-Application-Insights-Ressource haben, die es bereits für andere Dienste nutzt. Was tun Sie?",
+          "Dein Betriebsteam möchte die Unterhaltungstelemetrie aus Copilot Studio in derselben Azure-Application-Insights-Ressource haben, die es bereits für andere Dienste nutzt. Was tust du?",
         options: [
           { id: "A", text: "Die Transkripttabelle jede Nacht aus Dataverse nach Application Insights exportieren", rationale: "Ein manueller Export ist nicht nötig; Copilot Studio kann Telemetrie direkt senden." },
           { id: "B", text: "Den Azure Monitor Agent auf den Geräten der Benutzer installieren", rationale: "Agents auf Geräten erfassen Geräteprotokolle, keine Copilot-Studio-Unterhaltungen." },
-          { id: "C", text: "Die Verbindungszeichenfolge von Application Insights in den erweiterten Einstellungen des Agents eintragen", rationale: "Richtig. Der Agent protokolliert dann Telemetrie, die Sie im Bereich Logs abfragen, zum Beispiel in der Tabelle customEvents." },
+          { id: "C", text: "Die Verbindungszeichenfolge von Application Insights in den erweiterten Einstellungen des Agents eintragen", rationale: "Richtig. Der Agent protokolliert dann Telemetrie, die du im Bereich Logs abfragst, zum Beispiel in der Tabelle customEvents." },
           { id: "D", text: "Einen MCP-Server für Application Insights hinzufügen", rationale: "MCP erweitert, was der Agent tun kann; so wird keine Telemetrie konfiguriert." },
         ],
         answer: "C",
         explanation:
-          "Unter Settings > Advanced fügen Sie die Verbindungszeichenfolge hinzu und können optional Nachrichtendetails und Ereignisse der Knotenausführung protokollieren. Unterhaltungen im Testbereich sind mit designMode gekennzeichnet, sodass Sie sie herausfiltern können.",
+          "Unter Settings > Advanced fügst du die Verbindungszeichenfolge hinzu und kannst optional Nachrichtendetails und Ereignisse der Knotenausführung protokollieren. Unterhaltungen im Testbereich sind mit designMode gekennzeichnet, sodass du sie herausfiltern kannst.",
         reference: { label: "Microsoft Learn: Telemetrie mit Application Insights erfassen", url: "https://learn.microsoft.com/de-de/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry" },
       },
 
@@ -427,11 +427,11 @@ export const ab620De: DeContent = {
         objective: "Testsatz erstellen (Create a test set)",
         difficulty: "foundation",
         question:
-          "Sie haben 80 echte Benutzerfragen mit den Antworten, die der Fachbereich erwartet, in einer Tabellenkalkulation. Sie möchten Ihren Agent damit evaluieren. Wie erstellen Sie den Testsatz am schnellsten?",
+          "Du hast 80 echte Benutzerfragen mit den Antworten, die der Fachbereich erwartet, in einer Tabellenkalkulation. Du möchtest deinen Agent damit evaluieren. Wie erstellst du den Testsatz am schnellsten?",
         options: [
           { id: "A", text: "Sie als CSV-Datei mit den Überschriften Question und Expected response speichern und importieren", rationale: "Richtig. Importierte Testsätze verwenden eine CSV- oder Textdatei mit diesen Überschriften, mit bis zu 100 Fragen." },
           { id: "B", text: "Jede Frage in den Testchat eingeben und auf Fehler warten", rationale: "Manuelles Chatten ergibt keinen wiederholbaren Testsatz mit erwarteten Antworten." },
-          { id: "C", text: "Fragen aus den Themen des Agents generieren", rationale: "Generierte Fragen wären nicht Ihre 80 echten Fragen mit den erwarteten Antworten." },
+          { id: "C", text: "Fragen aus den Themen des Agents generieren", rationale: "Generierte Fragen wären nicht deine 80 echten Fragen mit den erwarteten Antworten." },
           { id: "D", text: "Die Tabellenkalkulation als Wissensquelle hochladen", rationale: "Damit würden die Inhalte dem Wissen des Agents hinzugefügt, statt ihn zu testen." },
         ],
         answer: "A",
@@ -445,7 +445,7 @@ export const ab620De: DeContent = {
         objective: "Auswählen einer Auswertungsmethode",
         difficulty: "intermediate",
         question:
-          "Die Antworten Ihres Agents dürfen anders formuliert sein als die erwarteten Antworten, solange sie dasselbe aussagen. Welche Testmethode sollten Sie wählen?",
+          "Die Antworten deines Agents dürfen anders formuliert sein als die erwarteten Antworten, solange sie dasselbe aussagen. Welche Testmethode solltest du wählen?",
         options: [
           { id: "A", text: "Exact match", rationale: "Exact match (Genaue Übereinstimmung) lässt jede Antwort durchfallen, die nicht Wort für Wort identisch ist." },
           { id: "B", text: "Keyword match", rationale: "Keyword match (Schlüsselwort-Übereinstimmung) prüft bestimmte Wörter oder Ausdrücke, nicht die Gesamtbedeutung." },
@@ -463,7 +463,7 @@ export const ab620De: DeContent = {
         objective: "Implementieren und Erweitern der Microsoft Power Platform Pipelines",
         difficulty: "advanced",
         question:
-          "Sie verwenden Power-Platform-Pipelines, um eine Lösung mit Ihrem Agent von der Entwicklung in Test und Produktion zu übertragen. Welche Aussage ist richtig?",
+          "Du verwendest Power-Platform-Pipelines, um eine Lösung mit deinem Agent von der Entwicklung in Test und Produktion zu übertragen. Welche Aussage ist richtig?",
         options: [
           { id: "A", text: "Pipelines stellen die Lösung zusammen mit den Daten ihrer Dataverse-Tabellen bereit", rationale: "Pipelines und Lösungen enthalten keine Daten, die in Dataverse-Tabellen gespeichert sind." },
           { id: "B", text: "Die Entwicklungsumgebung muss der Pipelines-Host sein", rationale: "Dieselbe Umgebung als Entwicklungsumgebung und als Host zu verwenden, wird nicht unterstützt." },
@@ -472,7 +472,7 @@ export const ab620De: DeContent = {
         ],
         answer: "C",
         explanation:
-          "Pipelines stellen Lösungen samt Konfiguration wie Verbindungsreferenzen und Umgebungsvariablen bereit. Legen Sie Agents von Anfang an in Lösungen an, damit ALM, Umgebungsvariablen und Pipelines wie vorgesehen funktionieren.",
+          "Pipelines stellen Lösungen samt Konfiguration wie Verbindungsreferenzen und Umgebungsvariablen bereit. Lege Agents von Anfang an in Lösungen an, damit ALM, Umgebungsvariablen und Pipelines wie vorgesehen funktionieren.",
         reference: { label: "Microsoft Learn: Übersicht über Pipelines in Power Platform", url: "https://learn.microsoft.com/de-de/power-platform/alm/pipelines" },
       },
     ],

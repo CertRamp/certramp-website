@@ -103,7 +103,7 @@ export const ipmaLevelDDe: DeContent = {
   guide: {
     slug: "ipma-level-d",
     summary:
-      "IPMA Level D (Certified Project Management Associate) ist die Einstiegszertifizierung der IPMA im Projektmanagement. Sie basiert auf der IPMA Individual Competence Baseline (ICB4) mit ihren drei Kompetenzbereichen Kontext-Kompetenzen, Persönliche und Soziale Kompetenzen sowie Technische Kompetenzen (Perspective, People, Practice). In Deutschland prüft PM-ZERT (GPM) entweder mit zwei 90-minütigen schriftlichen Prüfungen oder mit einer 90-minütigen schriftlichen Prüfung plus Projektreport; Sie bestehen, wenn mindestens 23 Kompetenzelemente als erfüllt bewertet werden. Projektmanagementerfahrung ist nicht erforderlich, und das Zertifikat ist fünf Jahre gültig.",
+      "IPMA Level D (Certified Project Management Associate) ist die Einstiegszertifizierung der IPMA im Projektmanagement. Sie basiert auf der IPMA Individual Competence Baseline (ICB4) mit ihren drei Kompetenzbereichen Kontext-Kompetenzen, Persönliche und Soziale Kompetenzen sowie Technische Kompetenzen (Perspective, People, Practice). In Deutschland prüft PM-ZERT (GPM) entweder mit zwei 90-minütigen schriftlichen Prüfungen oder mit einer 90-minütigen schriftlichen Prüfung plus Projektreport; du bestehst, wenn mindestens 23 Kompetenzelemente als erfüllt bewertet werden. Projektmanagementerfahrung ist nicht erforderlich, und das Zertifikat ist fünf Jahre gültig.",
     whoFor: [
       "Studierende, Auszubildende und Berufseinsteiger, die eine anerkannte Projektmanagement-Qualifikation erwerben möchten",
       "Mitglieder von Projektteams, die fundiertes Projektmanagementwissen nachweisen möchten",
@@ -115,7 +115,7 @@ export const ipmaLevelDDe: DeContent = {
         heading: "Was IPMA Level D tatsächlich prüft",
         paragraphs: [
           "Level D prüft das Wissen zu den Kompetenzelementen der ICB4 für Projektmanagement. Für Projekte definiert die ICB4 28 Kompetenzelemente in drei Bereichen: Kontext-Kompetenzen (5 Elemente, etwa Strategie, Governance sowie Macht und Interessen), Persönliche und Soziale Kompetenzen (10 Elemente, etwa Führung, Teamarbeit sowie Konflikte und Krisen) und Technische Kompetenzen (13 Elemente, etwa Leistungsumfang und Lieferobjekte, Ablauf und Termine, Chancen und Risiken sowie Stakeholder).",
-          "Rechnen Sie mit Fragen, in denen Sie ein Konzept erklären und auf eine Projektsituation anwenden: einen Projektstrukturplan erstellen, einen Terminplan aufstellen, ein Risiko bewerten, Stakeholder analysieren oder einen Konflikt im Team lösen. Die Fragen folgen der Terminologie der ICB4; lernen Sie die Elemente daher unter ihren offiziellen Namen.",
+          "Rechne mit Fragen, in denen du ein Konzept erklärst und auf eine Projektsituation anwendest: einen Projektstrukturplan erstellen, einen Terminplan aufstellen, ein Risiko bewerten, Stakeholder analysieren oder einen Konflikt im Team lösen. Die Fragen folgen der Terminologie der ICB4; lerne die Elemente daher unter ihren offiziellen Namen.",
         ],
       },
       {
@@ -123,7 +123,7 @@ export const ipmaLevelDDe: DeContent = {
         heading: "So funktioniert die Zertifizierung in Deutschland (PM-ZERT)",
         paragraphs: [
           "Die IPMA-Zertifizierung wird von nationalen Zertifizierungsstellen durchgeführt, und das Format unterscheidet sich von Land zu Land. Die Angaben hier stammen von PM-ZERT, der Zertifizierungsstelle der GPM in Deutschland (Leitfaden Level D, Version 24, gültig ab 1. August 2026).",
-          "Sie wählen Ihren Pfad bei der Antragstellung und können später nicht mehr wechseln. Pfad 1 besteht aus einer 90-minütigen schriftlichen Prüfung plus einem Report von bis zu 25 Seiten (plus bis zu 15 Seiten Anhang) über ein Projekt, der mindestens zwei Wochen vor der Prüfung hochgeladen und in einem Feedbackgespräch von bis zu 20 Minuten besprochen wird. Pfad 2 besteht aus zwei schriftlichen Prüfungen von je 90 Minuten. Inhaber des GPM-Basiszertifikats können über eine Höherzertifizierung mit einer einzigen 90-minütigen Prüfung Level D erreichen.",
+          "Du wählst deinen Pfad bei der Antragstellung und kannst später nicht mehr wechseln. Pfad 1 besteht aus einer 90-minütigen schriftlichen Prüfung plus einem Report von bis zu 25 Seiten (plus bis zu 15 Seiten Anhang) über ein Projekt, der mindestens zwei Wochen vor der Prüfung hochgeladen und in einem Feedbackgespräch von bis zu 20 Minuten besprochen wird. Pfad 2 besteht aus zwei schriftlichen Prüfungen von je 90 Minuten. Inhaber des GPM-Basiszertifikats können über eine Höherzertifizierung mit einer einzigen 90-minütigen Prüfung Level D erreichen.",
           "Über alle Prüfungsteile hinweg müssen 23 Kompetenzelemente als erfüllt bewertet werden. Jeder Prüfungsteil kann innerhalb von 12 Monaten einmal wiederholt werden, und das gesamte Verfahren muss innerhalb von 18 Monaten nach der Zulassung abgeschlossen sein. Geprüft wird auf Deutsch oder Englisch, in Präsenz oder online per Videokonferenz.",
         ],
       },
@@ -133,27 +133,27 @@ export const ipmaLevelDDe: DeContent = {
         steps: [
           {
             title: "Den Pfad früh wählen",
-            body: "Entscheiden Sie sich vor der Antragstellung zwischen zwei schriftlichen Prüfungen und Prüfung plus Report, denn die Wahl ist verbindlich. Der Report-Pfad passt zu Ihnen, wenn Sie ein reales oder geplantes Projekt ausführlich beschreiben können; der Pfad mit zwei Prüfungen passt, wenn Sie lieber alles schriftlich nachweisen.",
+            body: "Entscheide dich vor der Antragstellung zwischen zwei schriftlichen Prüfungen und Prüfung plus Report, denn die Wahl ist verbindlich. Der Report-Pfad passt zu dir, wenn du ein reales oder geplantes Projekt ausführlich beschreiben kannst; der Pfad mit zwei Prüfungen passt, wenn du lieber alles schriftlich nachweisen.",
           },
           {
             title: "Die 28 Kompetenzelemente lernen",
-            body: "Erstellen Sie eine einseitige Übersicht aller Elemente der Kontext-Kompetenzen, der Persönlichen und Sozialen Kompetenzen und der Technischen Kompetenzen mit ihren offiziellen ICB4-Namen, und ergänzen Sie zu jedem Element die zentralen Gedanken und Methoden. Viele Fragen gehen von der genauen Bedeutung eines Elements aus.",
+            body: "Erstelle eine einseitige Übersicht aller Elemente der Kontext-Kompetenzen, der Persönlichen und Sozialen Kompetenzen und der Technischen Kompetenzen mit ihren offiziellen ICB4-Namen, und ergänze zu jedem Element die zentralen Gedanken und Methoden. Viele Fragen gehen von der genauen Bedeutung eines Elements aus.",
           },
           {
             title: "Die Methoden der Technischen Kompetenzen üben",
-            body: "Zeichnen Sie einen Projektstrukturplan, einen Netzplan mit kritischem Pfad, eine Stakeholder-Landkarte, ein Risikoregister mit Eintrittswahrscheinlichkeit und Auswirkung sowie einen einfachen Kostenplan. Bearbeiten Sie jede dieser Methoden an einem kleinen Beispielprojekt, bis sie zur Routine wird.",
+            body: "Zeichne einen Projektstrukturplan, einen Netzplan mit kritischem Pfad, eine Stakeholder-Landkarte, ein Risikoregister mit Eintrittswahrscheinlichkeit und Auswirkung sowie einen einfachen Kostenplan. Bearbeite jede dieser Methoden an einem kleinen Beispielprojekt, bis sie zur Routine wird.",
           },
           {
             title: "Persönliche und Soziale Kompetenzen sowie Kontext-Kompetenzen nicht auslassen",
-            body: "Führungsstile, Teamentwicklung, Konflikteskalation, Verhandlung, Kommunikation, Governance und Organisationskultur gehören alle zur ICB4. Notieren Sie zu jedem Element ein kurzes Beispiel aus Ihrer eigenen Erfahrung.",
+            body: "Führungsstile, Teamentwicklung, Konflikteskalation, Verhandlung, Kommunikation, Governance und Organisationskultur gehören alle zur ICB4. Notiere zu jedem Element ein kurzes Beispiel aus deiner eigenen Erfahrung.",
           },
           {
             title: "Den Report früh schreiben (Pfad 1)",
-            body: "Wenn Sie Pfad 1 wählen, halten Sie sich an die von PM-ZERT vorgegebene Gliederung des Reports, bleiben Sie innerhalb der Seitenbegrenzung und laden Sie ihn mindestens zwei Wochen vor der Prüfung hoch. Wenden Sie die Methoden auf Ihr Projekt an, statt Theorie zu erklären.",
+            body: "Wenn du Pfad 1 wählst, halte dich an die von PM-ZERT vorgegebene Gliederung des Reports, bleibe innerhalb der Seitenbegrenzung und lade ihn mindestens zwei Wochen vor der Prüfung hoch. Wende die Methoden auf dein Projekt an, statt Theorie zu erklären.",
           },
           {
             title: "Unter Zeitdruck üben",
-            body: "Beantworten Sie Übungsfragen mit Zeitlimit in 90-Minuten-Blöcken und lesen Sie jede Erklärung, auch bei den Fragen, die Sie richtig beantwortet haben. Melden Sie sich zur Prüfung an bzw. legen Sie sie ab, sobald Ihre Ergebnisse stabil sind.",
+            body: "Beantworte Übungsfragen mit Zeitlimit in 90-Minuten-Blöcken und lies jede Erklärung, auch bei den Fragen, die du richtig beantwortet hast. Melde dich zur Prüfung an bzw. lege sie ab, sobald deine Ergebnisse stabil sind.",
           },
         ],
       },
@@ -165,7 +165,7 @@ export const ipmaLevelDDe: DeContent = {
           "Die Begriffe des eigenen Unternehmens statt der ICB4-Begriffe verwenden. Die Bewertung folgt den ICB4-Elementen und ihrem Wortlaut.",
           "Leistungsumfang mit Anforderungen und Zielen verwechseln. Der Leistungsumfang legt die Lieferobjekte und die Arbeit fest; Anforderungen und Ziele beschreiben, was die Stakeholder brauchen und was das Projekt erreichen muss.",
           "Risiken nur als Bedrohungen betrachten. Die ICB4 nennt das Element „Chancen und Risiken“, und auch positive Unsicherheit muss gesteuert werden.",
-          "Sich auf Regeln aus einem anderen Land verlassen. Prüfungsformat, Pfade und Bestehenskriterien legt die nationale Zertifizierungsstelle fest; prüfen Sie den aktuellen PM-ZERT-Leitfaden, wenn Sie sich in Deutschland zertifizieren lassen.",
+          "Sich auf Regeln aus einem anderen Land verlassen. Prüfungsformat, Pfade und Bestehenskriterien legt die nationale Zertifizierungsstelle fest; prüfe den aktuellen PM-ZERT-Leitfaden, wenn du dich in Deutschland zertifizieren lässt.",
         ],
       },
     ],
@@ -173,7 +173,7 @@ export const ipmaLevelDDe: DeContent = {
       {
         question: "Wie ist die Prüfung zu IPMA Level D in Deutschland aufgebaut?",
         answer:
-          "Bei PM-ZERT (GPM) wählen Sie zwischen zwei schriftlichen Prüfungen von je 90 Minuten oder einer 90-minütigen schriftlichen Prüfung plus einem Report von bis zu 25 Seiten mit einem Feedbackgespräch von bis zu 20 Minuten. Sie bestehen, wenn über alle Prüfungsteile 23 Kompetenzelemente als erfüllt bewertet werden.",
+          "Bei PM-ZERT (GPM) wählst du zwischen zwei schriftlichen Prüfungen von je 90 Minuten oder einer 90-minütigen schriftlichen Prüfung plus einem Report von bis zu 25 Seiten mit einem Feedbackgespräch von bis zu 20 Minuten. Du bestehst, wenn über alle Prüfungsteile 23 Kompetenzelemente als erfüllt bewertet werden.",
       },
       {
         question: "Brauche ich für IPMA Level D Projektmanagementerfahrung?",
@@ -183,12 +183,12 @@ export const ipmaLevelDDe: DeContent = {
       {
         question: "Wie lange ist das Zertifikat IPMA Level D gültig?",
         answer:
-          "Fünf Jahre. Für die Rezertifizierung bei PM-ZERT weisen Sie mindestens 175 Stunden Weiterbildung seit Ihrer letzten Zertifizierung nach und reichen Ihre Unterlagen spätestens sechs Wochen vor Ablauf des Zertifikats über das Zertifizierungsportal ein.",
+          "Fünf Jahre. Für die Rezertifizierung bei PM-ZERT weist du mindestens 175 Stunden Weiterbildung seit deiner letzten Zertifizierung nach und reichst deine Unterlagen spätestens sechs Wochen vor Ablauf des Zertifikats über das Zertifizierungsportal ein.",
       },
       {
         question: "Kann ich IPMA Level D auf Englisch ablegen?",
         answer:
-          "Ja. PM-ZERT führt Zertifizierungen auf Deutsch und Englisch durch, wobei Deutsch der Standard ist; wenn Sie Englisch wünschen, wenden Sie sich vor der Antragstellung per E-Mail an PM-ZERT. Andere IPMA-Mitgliedsverbände legen ihre eigenen Sprachen und Formate fest.",
+          "Ja. PM-ZERT führt Zertifizierungen auf Deutsch und Englisch durch, wobei Deutsch der Standard ist; wenn du Englisch wünschst, wende dich vor der Antragstellung per E-Mail an PM-ZERT. Andere IPMA-Mitgliedsverbände legen ihre eigenen Sprachen und Formate fest.",
       },
       {
         question: "Gibt es die Prüfung auf Deutsch?",
@@ -248,7 +248,7 @@ export const ipmaLevelDDe: DeContent = {
         objective: "4.3.4 Macht und Interessen",
         difficulty: "intermediate",
         question:
-          "Eine Abteilungsleiterin unterstützt Ihr Projekt offiziell, doch Sie bemerken, dass sie die Freistellung ihrer Mitarbeitenden immer wieder hinauszögert, weil das Projekt den Einfluss ihrer Abteilung verringern würde. Welches Kompetenzelement ist am unmittelbarsten gefragt, um dies zu erkennen und damit umzugehen?",
+          "Eine Abteilungsleiterin unterstützt dein Projekt offiziell, doch du bemerkst, dass sie die Freistellung ihrer Mitarbeitenden immer wieder hinauszögert, weil das Projekt den Einfluss ihrer Abteilung verringern würde. Welches Kompetenzelement ist am unmittelbarsten gefragt, um dies zu erkennen und damit umzugehen?",
         options: [
           { id: "A", text: "Macht und Interessen", rationale: "Richtig. Dieses Element umfasst das Verständnis informeller persönlicher und Gruppeninteressen, von Einfluss und Politik und deren Wirkung auf das Projekt." },
           { id: "B", text: "Qualität", rationale: "Qualität betrifft die Eignung der Projektergebnisse und -prozesse, nicht verdeckte Interessen." },
@@ -266,7 +266,7 @@ export const ipmaLevelDDe: DeContent = {
         objective: "4.3.2 Governance, Strukturen und Prozesse",
         difficulty: "intermediate",
         question:
-          "Ihre Organisation hat ein Projektmanagement-Office (PMO), definierte Phasenübergänge (Gates) und die Regel, dass Projekte ab einem bestimmten Budget eine Freigabe durch die Geschäftsleitung benötigen. Welches Kompetenzelement umfasst das Verständnis dieser Regelungen und das Arbeiten innerhalb dieser Regelungen?",
+          "Deine Organisation hat ein Projektmanagement-Office (PMO), definierte Phasenübergänge (Gates) und die Regel, dass Projekte ab einem bestimmten Budget eine Freigabe durch die Geschäftsleitung benötigen. Welches Kompetenzelement umfasst das Verständnis dieser Regelungen und das Arbeiten innerhalb dieser Regelungen?",
         options: [
           { id: "A", text: "Kultur und Werte", rationale: "Kultur und Werte umfassen Normen und ungeschriebene Regeln. Formale Freigabestufen und Phasenübergänge gehören zu Strukturen und Prozessen." },
           { id: "B", text: "Governance, Strukturen und Prozesse", rationale: "Richtig. Dieses Element umfasst, wie die Organisation Projekte steuert: Gremien, Entscheidungsbefugnisse, PMOs, Phasenmodelle und Berichtswege." },
@@ -340,16 +340,16 @@ export const ipmaLevelDDe: DeContent = {
         objective: "4.4.9 Verhandlungen",
         difficulty: "advanced",
         question:
-          "Sie verhandeln mit einem Linienvorgesetzten über zwei Spezialisten. Er besteht darauf, nur einen freizustellen; Sie bestehen auf zwei. Wie kommen Sie am besten zu einer Einigung, die beide Seiten akzeptieren können?",
+          "Du verhandelst mit einem Linienvorgesetzten über zwei Spezialisten. Er besteht darauf, nur einen freizustellen; du bestehst auf zwei. Wie kommst du am besten zu einer Einigung, die beide Seiten akzeptieren können?",
         options: [
-          { id: "A", text: "Die eigene Forderung so lange wiederholen, bis er nachgibt", rationale: "Positionsbezogenes Verhandeln verhärtet die Positionen und schadet der Beziehung, die Sie später noch brauchen." },
+          { id: "A", text: "Die eigene Forderung so lange wiederholen, bis er nachgibt", rationale: "Positionsbezogenes Verhandeln verhärtet die Positionen und schadet der Beziehung, die du später noch brauchst." },
           { id: "B", text: "Sofort einen Spezialisten akzeptieren, um einen Konflikt zu vermeiden", rationale: "Nachzugeben, ohne Optionen auszuloten, kann das Projekt gefährden und geht nicht auf den eigentlichen Bedarf ein." },
           { id: "C", text: "Die Interessen hinter beiden Positionen ergründen und nach Optionen wie einer gestaffelten Freistellung oder Teilzeitverfügbarkeit suchen", rationale: "Richtig. Wer sich auf Interessen statt auf Positionen konzentriert, eröffnet Optionen, die beide Seiten zufriedenstellen können." },
           { id: "D", text: "Noch vor Ende des ersten Gesprächs an den Lenkungsausschuss eskalieren", rationale: "Eine Eskalation kann das letzte Mittel sein, sollte aber einen ehrlichen Verhandlungsversuch nicht ersetzen." },
         ],
         answer: "C",
         explanation:
-          "Gutes Verhandeln trennt Positionen („einer“ oder „zwei“) von Interessen (die Auslastung seiner Abteilung, der Termin Ihres Projekts). Auf Interessen aufgebaute Optionen führen zu tragfähigen Vereinbarungen und schützen die Arbeitsbeziehung.",
+          "Gutes Verhandeln trennt Positionen („einer“ oder „zwei“) von Interessen (die Auslastung seiner Abteilung, der Termin deines Projekts). Auf Interessen aufgebaute Optionen führen zu tragfähigen Vereinbarungen und schützen die Arbeitsbeziehung.",
         reference: ICB4,
       },
       {
@@ -385,7 +385,7 @@ export const ipmaLevelDDe: DeContent = {
         ],
         answer: "A",
         explanation:
-          "Persönliche und Soziale Kompetenzen beginnen bei Ihnen selbst. Die eigenen Reaktionen zu reflektieren, besonders unter Druck, ist die Grundlage dafür, andere wirksam zu führen und mit ihnen zusammenzuarbeiten.",
+          "Persönliche und Soziale Kompetenzen beginnen bei dir selbst. Die eigenen Reaktionen zu reflektieren, besonders unter Druck, ist die Grundlage dafür, andere wirksam zu führen und mit ihnen zusammenzuarbeiten.",
         reference: ICB4,
       },
 
@@ -396,7 +396,7 @@ export const ipmaLevelDDe: DeContent = {
         objective: "4.5.12 Stakeholder",
         difficulty: "foundation",
         question:
-          "In einer Stakeholderanalyse stufen Sie den Betriebsrat mit hohem Einfluss auf das Projekt und einer negativen Haltung dazu ein. Welche Strategie ist am angemessensten?",
+          "In einer Stakeholderanalyse stufst du den Betriebsrat mit hohem Einfluss auf das Projekt und einer negativen Haltung dazu ein. Welche Strategie ist am angemessensten?",
         options: [
           { id: "A", text: "Ihn erst nach Projektabschluss informieren", rationale: "Wer einen einflussreichen kritischen Stakeholder ausschließt, erhöht das Risiko, dass er das Projekt später blockiert." },
           { id: "B", text: "Ihn früh einbinden, seine Bedenken verstehen und ihn aktiv beteiligen", rationale: "Richtig. Stakeholder mit hohem Einfluss und kritischer Haltung brauchen eine enge, frühe Einbindung, damit auf ihre Bedenken eingegangen werden kann." },

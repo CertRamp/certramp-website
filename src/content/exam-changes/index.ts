@@ -72,7 +72,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "AZ-500 wurde samt Zertifizierung und Verlängerungsprüfungen eingestellt; SC-500 (Cloud and AI Security Engineer Associate) ersetzt sie.",
-      "candidateAdvice": "AZ-500 kann weder abgelegt noch verlängert werden; buchen Sie stattdessen SC-500.",
+      "candidateAdvice": "AZ-500 kann weder abgelegt noch verlängert werden; buche stattdessen SC-500.",
       "dateLabels": [
         "AZ-500 eingestellt (Zertifizierung, Prüfung und Verlängerung)",
         "SC-500 verfügbar (laut Microsoft Partner Center)"
@@ -244,7 +244,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "MS-102 und die Zertifizierung Microsoft 365 Administrator Expert werden eingestellt; Microsoft Learn nennt keine Nachfolgeprüfung, allerdings nimmt Microsofts Partnerankündigung vom Oktober 2026 AB-650 in die Partner-Skilling-Anforderungen auf, um der Einstellung Rechnung zu tragen.",
-      "candidateAdvice": "Legen Sie MS-102 bis zum 30. November 2026 ab, wenn Sie diese Zertifizierung erwerben möchten; nach diesem Datum ist auch keine Verlängerung mehr möglich.",
+      "candidateAdvice": "Lege MS-102 bis zum 30. November 2026 ab, wenn du diese Zertifizierung erwerben möchtest; nach diesem Datum ist auch keine Verlängerung mehr möglich.",
       "dateLabels": [
         "Letzter Prüfungstag für MS-102 (läuft um 23:59 Uhr Central Standard Time (CST) aus); danach kann die Zertifizierung weder erworben noch verlängert werden"
       ]
@@ -308,7 +308,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "Prüfungsinhalte von SC-300 aktualisiert: geringfügige Änderungen an den Lernzielen zu Authentifizierung, Global Secure Access und privilegiertem Zugriff.",
-      "candidateAdvice": "Lernen Sie anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
+      "candidateAdvice": "Lerne anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
       "dateLabels": [
         "Skills measured as of (englische Prüfung; andere Sprachen ca. acht Wochen später)"
       ]
@@ -340,7 +340,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "Prüfungsinhalte von SC-401 aktualisiert: geringfügige Änderung an den Lernzielen zu Vertraulichkeitsbezeichnungen (Sensitivity Labels).",
-      "candidateAdvice": "Lernen Sie anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
+      "candidateAdvice": "Lerne anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
       "dateLabels": [
         "Skills measured as of (englische Prüfung; andere Sprachen ca. acht Wochen später)"
       ]
@@ -372,7 +372,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "Prüfungsinhalte von MD-102 aktualisiert: geringfügige Änderungen an mehreren Lernzielen; der Bereich „Manage applications“ wurde in „Manage and secure applications“ umbenannt.",
-      "candidateAdvice": "Lernen Sie anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
+      "candidateAdvice": "Lerne anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
       "dateLabels": [
         "Skills measured as of (englische Prüfung; andere Sprachen ca. acht Wochen später)"
       ]
@@ -404,7 +404,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "Prüfungsinhalte von SC-200 aktualisiert: geringfügige Änderung an den Lernzielen zur Datenerfassung in Sentinel.",
-      "candidateAdvice": "Lernen Sie anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
+      "candidateAdvice": "Lerne anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
       "dateLabels": [
         "Skills measured as of (englische Prüfung; andere Sprachen ca. acht Wochen später)"
       ]
@@ -436,7 +436,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "Prüfungsinhalte von SC-900 aktualisiert: geringfügige Änderungen an den Lernzielen zu Entra ID und Defender XDR.",
-      "candidateAdvice": "Lernen Sie anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
+      "candidateAdvice": "Lerne anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
       "dateLabels": [
         "Skills measured as of (englische Prüfung; andere Sprachen ca. acht Wochen später)"
       ]
@@ -468,7 +468,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "Prüfungsinhalte von SC-100 aktualisiert: geringfügige Änderungen an den Lernzielen zu Security Operations und Microsoft-365-Sicherheit.",
-      "candidateAdvice": "Lernen Sie anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
+      "candidateAdvice": "Lerne anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
       "dateLabels": [
         "Skills measured as of (englische Prüfung; andere Sprachen ca. acht Wochen später)"
       ]
@@ -500,7 +500,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "Prüfungsinhalte von AB-730 aktualisiert: umfassende Überarbeitung (Lernziele zur Agent-Erstellung entfernt, neuer Bereich „Drive business outcomes by using agents“ hinzugefügt).",
-      "candidateAdvice": "Lernen Sie anhand der Prüfungsgliederung vom 20. Oktober 2026; das Lernziel zum Erstellen von Microsoft 365 Copilot-Agents wurde entfernt, Lernziele zur Nutzung vorgefertigter Copilot-Agents und zu Microsoft Copilot Cowork wurden hinzugefügt.",
+      "candidateAdvice": "Lerne anhand der Prüfungsgliederung vom 20. Oktober 2026; das Lernziel zum Erstellen von Microsoft 365 Copilot-Agents wurde entfernt, Lernziele zur Nutzung vorgefertigter Copilot-Agents und zu Microsoft Copilot Cowork wurden hinzugefügt.",
       "dateLabels": [
         "Skills measured as of (englische Prüfung; andere Sprachen ca. acht Wochen später)"
       ]
@@ -532,7 +532,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "Prüfungsinhalte von DP-600 aktualisiert: geringfügige Änderung im Bereich „Query and analyze data“.",
-      "candidateAdvice": "Lernen Sie anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
+      "candidateAdvice": "Lerne anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
       "dateLabels": [
         "Skills measured as of (englische Prüfung; andere Sprachen ca. acht Wochen später)"
       ]
@@ -564,7 +564,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "Prüfungsinhalte von DP-750 aktualisiert: geringfügige Änderungen an den Lernzielen zur Datenmodellierung in Unity Catalog und zum Entwicklungslebenszyklus.",
-      "candidateAdvice": "Lernen Sie anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
+      "candidateAdvice": "Lerne anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
       "dateLabels": [
         "Skills measured as of (englische Prüfung; andere Sprachen ca. acht Wochen später)"
       ]
@@ -596,7 +596,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "Prüfungsinhalte von AB-900 aktualisiert: geringfügige Änderung zu den zentralen Sicherheitsfunktionen von Microsoft 365.",
-      "candidateAdvice": "Lernen Sie anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
+      "candidateAdvice": "Lerne anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
       "dateLabels": [
         "Skills measured as of (englische Prüfung; andere Sprachen ca. acht Wochen später)"
       ]
@@ -628,7 +628,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "Prüfungsinhalte von AI-200 aktualisiert: Der Bereich zu Azure-Datenverwaltungsdiensten macht einen größeren Anteil der Prüfung aus.",
-      "candidateAdvice": "Lernen Sie anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
+      "candidateAdvice": "Lerne anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
       "dateLabels": [
         "Skills measured as of (englische Prüfung; andere Sprachen ca. acht Wochen später)"
       ]
@@ -660,7 +660,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "Prüfungsinhalte von AZ-700 aktualisiert: geringfügige Änderungen an den Lernzielen zu IP-Adressierung, Netzwerküberwachung und NSGs.",
-      "candidateAdvice": "Lernen Sie anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
+      "candidateAdvice": "Lerne anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
       "dateLabels": [
         "Skills measured as of (englische Prüfung; andere Sprachen ca. acht Wochen später)"
       ]
@@ -692,7 +692,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "Prüfungsinhalte von PL-900 aktualisiert: Lernziele zu Power Pages und zum Erstellen von Canvas- und modellgesteuerten Apps entfernt; neuer Bereich zu Copilot Studio-Agents hinzugefügt.",
-      "candidateAdvice": "Lernen Sie anhand der Prüfungsgliederung vom 24. Juli 2026; die Lernziele zu Power Pages sowie zum Erstellen von Canvas- und modellgesteuerten Apps wurden entfernt, ein Bereich zu Copilot Studio-Agents wurde hinzugefügt.",
+      "candidateAdvice": "Lerne anhand der Prüfungsgliederung vom 24. Juli 2026; die Lernziele zu Power Pages sowie zum Erstellen von Canvas- und modellgesteuerten Apps wurden entfernt, ein Bereich zu Copilot Studio-Agents wurde hinzugefügt.",
       "dateLabels": [
         "Skills measured as of (englische Prüfung; andere Sprachen ca. acht Wochen später)"
       ]
@@ -724,7 +724,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "Prüfungsinhalte von AB-731 aktualisiert: geringfügige Änderungen an den Lernzielen zu Foundry Tools und zur KI-Einführung.",
-      "candidateAdvice": "Lernen Sie anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
+      "candidateAdvice": "Lerne anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
       "dateLabels": [
         "Skills measured as of (englische Prüfung; andere Sprachen ca. acht Wochen später)"
       ]
@@ -756,7 +756,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "Prüfungsinhalte von AZ-900 aktualisiert: geringfügige Änderungen an den Lernzielen zu Compute/Networking, Ressourcenverwaltung und Überwachung.",
-      "candidateAdvice": "Lernen Sie anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
+      "candidateAdvice": "Lerne anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
       "dateLabels": [
         "Skills measured as of (englische Prüfung; andere Sprachen ca. acht Wochen später)"
       ]
@@ -788,7 +788,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "Prüfungsinhalte von GH-300 mit geringfügigen Änderungen an den Lernzielen zu IDE-Funktionen, Copilot-Fähigkeiten und Schutzmaßnahmen aktualisiert.",
-      "candidateAdvice": "Lernen Sie anhand der Prüfungsgliederung vom 7. August 2026 im offiziellen GH-300-Studienleitfaden.",
+      "candidateAdvice": "Lerne anhand der Prüfungsgliederung vom 7. August 2026 im offiziellen GH-300-Studienleitfaden.",
       "dateLabels": [
         "Skills measured as of (englische Prüfung; andere Sprachen ca. acht Wochen später)"
       ]
@@ -818,7 +818,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "GH-500 wurde im Juli 2026 erheblich geändert: Lernziele wurden hinzugefügt, entfernt, neu gruppiert und umformuliert.",
-      "candidateAdvice": "Verwenden Sie ausschließlich GH-500-Lernmaterial, das für die Prüfungsgliederung vom Juli 2026 erstellt wurde.",
+      "candidateAdvice": "Verwende ausschließlich GH-500-Lernmaterial, das für die Prüfungsgliederung vom Juli 2026 erstellt wurde.",
       "dateLabels": [
         "Prüfung erheblich geändert (nur Monat; Microsoft nennt keinen Tag)"
       ]
@@ -848,7 +848,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "GH-100 wurde im Juli 2026 erheblich geändert: Lernziele wurden hinzugefügt, entfernt, neu gruppiert und umformuliert.",
-      "candidateAdvice": "Verwenden Sie ausschließlich GH-100-Lernmaterial, das für die Prüfungsgliederung vom Juli 2026 erstellt wurde.",
+      "candidateAdvice": "Verwende ausschließlich GH-100-Lernmaterial, das für die Prüfungsgliederung vom Juli 2026 erstellt wurde.",
       "dateLabels": [
         "Prüfung erheblich geändert (nur Monat; Microsoft nennt keinen Tag)"
       ]
@@ -917,7 +917,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "AI-900 wurde eingestellt und als Prüfung für die Zertifizierung Azure AI Fundamentals durch AI-901 ersetzt.",
-      "candidateAdvice": "Um Azure AI Fundamentals zu erwerben, müssen Sie jetzt AI-901 bestehen.",
+      "candidateAdvice": "Um Azure AI Fundamentals zu erwerben, musst du jetzt AI-901 bestehen.",
       "dateLabels": [
         "AI-900 eingestellt"
       ]
@@ -1014,7 +1014,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "Prüfungsinhalte von DP-700 aktualisiert: Zwei Lernziele wurden geringfügig geändert.",
-      "candidateAdvice": "Lernen Sie anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
+      "candidateAdvice": "Lerne anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
       "dateLabels": [
         "Skills measured as of (englische Prüfung; andere Sprachen ca. acht Wochen später)"
       ]
@@ -1044,7 +1044,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "Prüfungsinhalte von DP-900 aktualisiert: Drei Lernziele wurden geringfügig geändert.",
-      "candidateAdvice": "Lernen Sie anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
+      "candidateAdvice": "Lerne anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
       "dateLabels": [
         "Skills measured as of (englische Prüfung; andere Sprachen ca. acht Wochen später)"
       ]
@@ -1074,7 +1074,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "Prüfungsinhalte von AZ-400 aktualisiert: Vier Lernziele wurden geringfügig geändert.",
-      "candidateAdvice": "Lernen Sie anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
+      "candidateAdvice": "Lerne anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
       "dateLabels": [
         "Skills measured as of (englische Prüfung; andere Sprachen ca. acht Wochen später)"
       ]
@@ -1162,7 +1162,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "SAP-C03 ersetzt SAP-C02 als reguläre Prüfung (keine Beta) in allen derzeit unterstützten Sprachen.",
-      "candidateAdvice": "Prüfungen bis einschließlich 16. November 2026 erfolgen nach SAP-C02, Prüfungen ab dem 17. November 2026 nach SAP-C03: lernen Sie daher für die Version, die zu Ihrem gebuchten Termin passt.",
+      "candidateAdvice": "Prüfungen bis einschließlich 16. November 2026 erfolgen nach SAP-C02, Prüfungen ab dem 17. November 2026 nach SAP-C03: lerne daher für die Version, die zu deinem gebuchten Termin passt.",
       "dateLabels": [
         "Anmeldung für SAP-C03 öffnet",
         "Letzter Prüfungstag für SAP-C02",
@@ -1204,7 +1204,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "DVA-C03 ersetzt DVA-C02 als reguläre Prüfung (keine Beta) in allen derzeit unterstützten Sprachen.",
-      "candidateAdvice": "Prüfungen bis einschließlich 30. November 2026 erfolgen nach DVA-C02, Prüfungen ab dem 1. Dezember 2026 nach DVA-C03: lernen Sie daher für die Version, die zu Ihrem gebuchten Termin passt.",
+      "candidateAdvice": "Prüfungen bis einschließlich 30. November 2026 erfolgen nach DVA-C02, Prüfungen ab dem 1. Dezember 2026 nach DVA-C03: lerne daher für die Version, die zu deinem gebuchten Termin passt.",
       "dateLabels": [
         "Anmeldung für DVA-C03 öffnet",
         "Letzter Prüfungstag für DVA-C02",
@@ -1238,7 +1238,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "Die Prüfung Advanced Networking: Specialty wird ohne benannten Nachfolger eingestellt; bereits erworbene Zertifizierungen bleiben für ihre reguläre Dauer von drei Jahren gültig.",
-      "candidateAdvice": "Sie müssen ANS-C01 bis zum 31. Dezember 2026 bestehen, um diese Zertifizierung zu erwerben; nach der Einstellung stellt AWS keine neuen Advanced Networking: Specialty-Zertifizierungen mehr aus.",
+      "candidateAdvice": "Du musst ANS-C01 bis zum 31. Dezember 2026 bestehen, um diese Zertifizierung zu erwerben; nach der Einstellung stellt AWS keine neuen Advanced Networking: Specialty-Zertifizierungen mehr aus.",
       "dateLabels": [
         "Letzter Prüfungstag"
       ]
@@ -1270,7 +1270,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "Die Sprachversionen vereinfachtes Chinesisch, Spanisch (Lateinamerika) und Portugiesisch (Brasilien) der Prüfung Security: Specialty werden eingestellt; Englisch, Japanisch und Koreanisch bleiben erhalten.",
-      "candidateAdvice": "Wenn Sie die Prüfung auf vereinfachtem Chinesisch, Spanisch (Lateinamerika) oder Portugiesisch (Brasilien) ablegen möchten, buchen Sie sie bis zum 31. Dezember 2026; danach werden nur noch die verbleibenden Sprachen angeboten.",
+      "candidateAdvice": "Wenn du die Prüfung auf vereinfachtem Chinesisch, Spanisch (Lateinamerika) oder Portugiesisch (Brasilien) ablegen möchtest, buche sie bis zum 31. Dezember 2026; danach werden nur noch die verbleibenden Sprachen angeboten.",
       "dateLabels": [
         "Versionen auf vereinfachtem Chinesisch, Spanisch (Lateinamerika) und Portugiesisch (Brasilien) laufen nach diesem Datum aus"
       ]
@@ -1466,7 +1466,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "SCOR v2.0, die erste große Überarbeitung des Blueprints der CCNP-Security-Core-Prüfung, hat SCOR v1.1 abgelöst.",
-      "candidateAdvice": "SCOR wird jetzt nur noch nach v2.0 geprüft; Cisco empfiehlt, die Inhalte als neu und nicht als bloße Auffrischung zu betrachten, wenn Sie mit Material zu v1.1 gelernt haben.",
+      "candidateAdvice": "SCOR wird jetzt nur noch nach v2.0 geprüft; Cisco empfiehlt, die Inhalte als neu und nicht als bloße Auffrischung zu betrachten, wenn du mit Material zu v1.1 gelernt hast.",
       "dateLabels": [
         "Letzter Prüfungstag für die aktuellen Prüfungsversionen (inkl. SCOR v1.1)",
         "Erster Prüfungstag für SCOR v2.0"
@@ -1665,7 +1665,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "ISC2 hat eine neue CCSP-Prüfungsgliederung vom 1. August 2026 veröffentlicht, die die sechs Domänen beibehält und KI/ML-Themen ergänzt (z. B. 1.6 und 2.9).",
-      "candidateAdvice": "Prüfen Sie, ob Ihre Lernmaterialien die KI/ML-Lernziele (z. B. 1.6 und 2.9) der ISC2-Prüfungsgliederung vom 1. August 2026 abdecken; die Seite nennt kein Gültigkeitsdatum.",
+      "candidateAdvice": "Prüfe, ob deine Lernmaterialien die KI/ML-Lernziele (z. B. 1.6 und 2.9) der ISC2-Prüfungsgliederung vom 1. August 2026 abdecken; die Seite nennt kein Gültigkeitsdatum.",
       "dateLabels": [
         "Neue CCSP-Prüfungsgliederung (Datum laut ISC2-Gliederungsseite)"
       ]
@@ -1845,7 +1845,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "CT-AI v2.0 (veröffentlicht im April 2026) ersetzt v1.0; Prüfungen und Schulungen zu v1.0 enden 2027.",
-      "candidateAdvice": "v1.0 kann auf Englisch bis zum 21. April 2027 abgelegt werden, aber v2.0 hat einen anderen Lehrplan (Inhalte zu KI für das Testen entfernt, Testen von GenAI/LLMs hinzugefügt) und es gibt keine Brückenprüfung: bereiten Sie sich daher auf die Version vor, die Sie tatsächlich buchen.",
+      "candidateAdvice": "v1.0 kann auf Englisch bis zum 21. April 2027 abgelegt werden, aber v2.0 hat einen anderen Lehrplan (Inhalte zu KI für das Testen entfernt, Testen von GenAI/LLMs hinzugefügt) und es gibt keine Brückenprüfung: bereite dich daher auf die Version vor, die du tatsächlich buchst.",
       "dateLabels": [
         "Letzter Prüfungstag für CT-AI v1.0 inkl. Wiederholungsprüfungen: Englisch",
         "Letzter Prüfungstag für CT-AI v1.0 inkl. Wiederholungsprüfungen: andere Sprachen"
@@ -2061,7 +2061,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-10-28",
     "de": {
       "summary": "GIAC hat die Bestehensgrenze für GAIPS für die ab dem 25. Juli 2026 veröffentlichte Prüfungsversion auf 65 % festgelegt.",
-      "candidateAdvice": "Laut GIAC sollten Sie im Bereich Certification Information Ihres GIAC-Kontos das Format und die Bestehensgrenze für Ihren eigenen Prüfungsversuch prüfen.",
+      "candidateAdvice": "Laut GIAC solltest du im Bereich Certification Information deines GIAC-Kontos das Format und die Bestehensgrenze für deinen eigenen Prüfungsversuch prüfen.",
       "dateLabels": [
         "GAIPS-Prüfungsversion veröffentlicht am oder nach (Bestehensgrenze 65 %)"
       ]
@@ -2093,7 +2093,7 @@ export const examChanges: ExamChange[] = [
     "verified": "2026-11-03",
     "de": {
       "summary": "AWS hat die deutsche und die italienische Fassung der AI-Practitioner-Prüfung nach dem 15. Oktober 2026 eingestellt. Die Prüfung selbst bleibt auf Englisch und in weiteren Sprachen aktuell.",
-      "candidateAdvice": "Deutschsprachige Kandidaten legen AIF-C01 jetzt auf Englisch oder in einer anderen angebotenen Sprache ab. Auf Deutsch zu lernen funktioniert weiterhin, üben Sie aber vor der Anmeldung, die Fragen in der Prüfungssprache zu lesen.",
+      "candidateAdvice": "Deutschsprachige Kandidaten legen AIF-C01 jetzt auf Englisch oder in einer anderen angebotenen Sprache ab. Auf Deutsch zu lernen funktioniert weiterhin, übe aber vor der Anmeldung, die Fragen in der Prüfungssprache zu lesen.",
       "dateLabels": [
         "Deutsche und italienische Prüfung eingestellt nach dem"
       ]

@@ -40,7 +40,7 @@ export const az900De: DeContent = {
       weight: "25–30 %",
       objectives: [
         "Cloud-Computing beschreiben",
-        "Beschreiben Sie die Vorteile der Verwendung von Cloud-Diensten",
+        "Beschreibe die Vorteile der Verwendung von Cloud-Diensten",
         "Cloud-Diensttypen beschreiben",
       ],
     },
@@ -60,7 +60,7 @@ export const az900De: DeContent = {
       name: "Azure-Verwaltung und -Governance beschreiben",
       weight: "30–35 %",
       objectives: [
-        "Beschreiben Sie die Kostenverwaltung in Azure",
+        "Beschreibe die Kostenverwaltung in Azure",
         "Grundlegendes zu Azure-Features und -Tools für Governance und Compliance",
         "Beschreiben von Features und Tools zum Verwalten und Bereitstellen von Azure-Ressourcen",
         "Beschreiben von Überwachungstools in Azure",
@@ -72,7 +72,7 @@ export const az900De: DeContent = {
   guide: {
     slug: "az-900",
     summary:
-      "AZ-900 (Microsoft Azure Fundamentals) prüft, ob Sie Cloudkonzepte, die grundlegende Azure-Architektur und die wichtigsten Azure-Dienste sowie die Azure-Werkzeuge für Kostenverwaltung, Governance und Überwachung beschreiben können. Die Prüfung dauert 45 Minuten, zum Bestehen brauchen Sie 700 Punkte, und die aktuelle Liste der gemessenen Fähigkeiten gilt ab dem 20. Juli 2026. Die Zertifizierung läuft nicht ab.",
+      "AZ-900 (Microsoft Azure Fundamentals) prüft, ob du Cloudkonzepte, die grundlegende Azure-Architektur und die wichtigsten Azure-Dienste sowie die Azure-Werkzeuge für Kostenverwaltung, Governance und Überwachung beschreiben kannst. Die Prüfung dauert 45 Minuten, zum Bestehen brauchst du 700 Punkte, und die aktuelle Liste der gemessenen Fähigkeiten gilt ab dem 20. Juli 2026. Die Zertifizierung läuft nicht ab.",
     whoFor: [
       "Personen, die eine Laufbahn in der Cloud beginnen oder aus einem anderen IT-Bereich in eine Azure-Rolle wechseln",
       "Technische und nicht technische Mitarbeitende, die an Azure-Projekten beteiligt sind und ein gemeinsames Vokabular brauchen",
@@ -92,7 +92,7 @@ export const az900De: DeContent = {
         heading: "Was sich mit dem Update vom 20. Juli 2026 geändert hat",
         paragraphs: [
           "Microsoft hat die Änderungen vom Juli 2026 als geringfügig eingestuft. Sie betreffen drei Unterbereiche: „Azure-Compute- und Netzwerkdienste beschreiben“ (Describe Azure compute and networking services), „Beschreiben von Features und Tools zum Verwalten und Bereitstellen von Azure-Ressourcen“ (Describe features and tools for managing and deploying Azure resources) und „Beschreiben von Überwachungstools in Azure“ (Describe monitoring tools in Azure). Die Gewichtung der drei Fähigkeitsbereiche hat sich nicht geändert.",
-          "Die Gliederung verwendet aktuelle Produktnamen wie Microsoft Entra ID, Microsoft Entra Domain Services und Microsoft Purview. Wenn Ihr Lernmaterial noch von Azure Active Directory spricht, übertragen Sie die Namen beim Lernen. Übersetzte Fassungen der Prüfung werden etwa acht Wochen nach der englischen Version aktualisiert.",
+          "Die Gliederung verwendet aktuelle Produktnamen wie Microsoft Entra ID, Microsoft Entra Domain Services und Microsoft Purview. Wenn dein Lernmaterial noch von Azure Active Directory spricht, übertrage die Namen beim Lernen. Übersetzte Fassungen der Prüfung werden etwa acht Wochen nach der englischen Version aktualisiert.",
         ],
       },
       {
@@ -100,24 +100,24 @@ export const az900De: DeContent = {
         heading: "Ein Vorbereitungsplan in fünf Schritten",
         steps: [
           {
-            title: "Gleichen Sie Ihren Stand mit dem Studienleitfaden ab",
-            body: "Gehen Sie jeden Punkt der offiziellen AZ-900-Fähigkeitenliste durch und markieren Sie ihn als bekannt, unsicher oder neu. Architektur und Dienste ist der größte Bereich, rechnen Sie dort also mit dem meisten Zeitaufwand.",
+            title: "Gleiche deinen Stand mit dem Studienleitfaden ab",
+            body: "Gehe jeden Punkt der offiziellen AZ-900-Fähigkeitenliste durch und markiere ihn als bekannt, unsicher oder neu. Architektur und Dienste ist der größte Bereich, rechne dort also mit dem meisten Zeitaufwand.",
           },
           {
-            title: "Arbeiten Sie die Lernpfade auf Microsoft Learn durch",
-            body: "Folgen Sie den kostenlosen AZ-900-Lernpfaden auf Microsoft Learn. Sie decken die Gliederung eng ab. Für die praktischen Übungen benötigen Sie ein eigenes Azure-Abonnement, etwa eine kostenlose Testversion, denn Sandboxes auf Microsoft Learn sind nicht mehr verfügbar.",
+            title: "Arbeite die Lernpfade auf Microsoft Learn durch",
+            body: "Folge den kostenlosen AZ-900-Lernpfaden auf Microsoft Learn. Sie decken die Gliederung eng ab. Für die praktischen Übungen benötigst du ein eigenes Azure-Abonnement, etwa eine kostenlose Testversion, denn Sandboxes auf Microsoft Learn sind nicht mehr verfügbar.",
           },
           {
-            title: "Lernen Sie die Vergleiche, nicht nur die Namen",
-            body: "Erstellen Sie kurze Tabellen für die Paare und Gruppen, die die Prüfung gern gegenüberstellt: Cloudmodelle, Diensttypen, VM-Optionen, Speicherebenen und Redundanzoptionen, Azure Policy im Vergleich zu RBAC und Ressourcensperren sowie Advisor im Vergleich zu Service Health und Azure Monitor.",
+            title: "Lerne die Vergleiche, nicht nur die Namen",
+            body: "Erstelle kurze Tabellen für die Paare und Gruppen, die die Prüfung gern gegenüberstellt: Cloudmodelle, Diensttypen, VM-Optionen, Speicherebenen und Redundanzoptionen, Azure Policy im Vergleich zu RBAC und Ressourcensperren sowie Advisor im Vergleich zu Service Health und Azure Monitor.",
           },
           {
-            title: "Üben Sie unter Zeitdruck",
-            body: "Absolvieren Sie zeitlich begrenzte Übungsprüfungen mit 40–60 Fragen in 45 Minuten und lesen Sie jede Erklärung, auch bei den Fragen, die Sie richtig beantwortet haben.",
+            title: "Übe unter Zeitdruck",
+            body: "Absolviere zeitlich begrenzte Übungsprüfungen mit 40–60 Fragen in 45 Minuten und lies jede Erklärung, auch bei den Fragen, die du richtig beantwortet hast.",
           },
           {
-            title: "Buchen Sie, wenn Ihre Ergebnisse stabil sind",
-            body: "Buchen Sie, sobald Sie mehrere Übungsprüfungen mit Abstand bestehen. Studierende und Lehrkräfte können über Certiport buchen, alle anderen über Pearson VUE.",
+            title: "Buche, wenn deine Ergebnisse stabil sind",
+            body: "Buche, sobald du mehrere Übungsprüfungen mit Abstand bestehst. Studierende und Lehrkräfte können über Certiport buchen, alle anderen über Pearson VUE.",
           },
         ],
       },
@@ -128,7 +128,7 @@ export const az900De: DeContent = {
           "Die Prüfung als reine Theorieprüfung behandeln. Viele Fragen beschreiben eine geschäftliche Anforderung und fragen, welcher Azure-Dienst oder welches Feature dazu passt.",
           "Governance-Tools verwechseln. Azure Policy setzt Regeln für Ressourceneigenschaften durch, RBAC steuert, wer was tun darf, und Ressourcensperren verhindern das Löschen oder Ändern selbst für berechtigte Benutzer.",
           "Verfügbarkeitszonen mit Regionen und Regionspaaren verwechseln. Zonen schützen vor dem Ausfall eines Rechenzentrums innerhalb einer Region; Regionspaare helfen bei regionsweiten Ausfällen.",
-          "Speicherebenen ohne ihre Vor- und Nachteile lernen. Sie sollten wissen, welche Ebenen online sind und welche offline ist und dass kältere Ebenen niedrigere Speicherkosten gegen höhere Zugriffskosten tauschen.",
+          "Speicherebenen ohne ihre Vor- und Nachteile lernen. Du solltest wissen, welche Ebenen online sind und welche offline ist und dass kältere Ebenen niedrigere Speicherkosten gegen höhere Zugriffskosten tauschen.",
           "Den Bereich Überwachung vernachlässigen. Azure Advisor, Azure Service Health und Azure Monitor beantworten jeweils eine andere Frage.",
         ],
       },
@@ -137,7 +137,7 @@ export const az900De: DeContent = {
       {
         question: "Wie lange dauert die AZ-900-Prüfung und wie hoch ist die Bestehensgrenze?",
         answer:
-          "Sie haben 45 Minuten Zeit. Microsoft verlangt zum Bestehen 700 Punkte oder mehr. Die genaue Anzahl der Fragen für AZ-900 veröffentlicht Microsoft nicht; laut Microsoft haben die meisten Zertifizierungsprüfungen zwischen 40 und 60 Fragen.",
+          "Du hast 45 Minuten Zeit. Microsoft verlangt zum Bestehen 700 Punkte oder mehr. Die genaue Anzahl der Fragen für AZ-900 veröffentlicht Microsoft nicht; laut Microsoft haben die meisten Zertifizierungsprüfungen zwischen 40 und 60 Fragen.",
       },
       {
         question: "Läuft die Zertifizierung Azure Fundamentals ab?",
@@ -152,12 +152,12 @@ export const az900De: DeContent = {
       {
         question: "Was passiert, wenn ich AZ-900 nicht bestehe?",
         answer:
-          "Nach den Wiederholungsrichtlinien von Microsoft können Sie die Prüfung nach 24 Stunden wiederholen. Für weitere Versuche gilt eine Wartezeit von 14 Tagen, und Sie können dieselbe Prüfung innerhalb von 12 Monaten ab Ihrem ersten Versuch höchstens fünfmal ablegen.",
+          "Nach den Wiederholungsrichtlinien von Microsoft kannst du die Prüfung nach 24 Stunden wiederholen. Für weitere Versuche gilt eine Wartezeit von 14 Tagen, und du kannst dieselbe Prüfung innerhalb von 12 Monaten ab deinem ersten Versuch höchstens fünfmal ablegen.",
       },
       {
         question: "Gibt es die Prüfung auf Deutsch?",
         answer:
-          "Ja. Microsoft bietet AZ-900 unter anderem auf Deutsch an. Übersetzte Fassungen werden etwa acht Wochen nach der englischen Version aktualisiert; prüfen Sie daher kurz nach einem Update den Studienleitfaden.",
+          "Ja. Microsoft bietet AZ-900 unter anderem auf Deutsch an. Übersetzte Fassungen werden etwa acht Wochen nach der englischen Version aktualisiert; prüfe daher kurz nach einem Update den Studienleitfaden.",
       },
       {
         question: "Sind die CertRamp-Fragen echte Prüfungsfragen?",
@@ -191,10 +191,10 @@ export const az900De: DeContent = {
       {
         id: "az900-d1-shared-responsibility",
         domain: "d1",
-        objective: "Beschreiben Sie das Modell der geteilten Verantwortung",
+        objective: "Beschreibe das Modell der geteilten Verantwortung",
         difficulty: "foundation",
         question:
-          "Ihr Unternehmen verlagert seine E-Mail in ein SaaS-Angebot (Software as a Service). Welche Verantwortung bleibt nach dem Modell der geteilten Verantwortung bei Ihrem Unternehmen?",
+          "Dein Unternehmen verlagert seine E-Mail in ein SaaS-Angebot (Software as a Service). Welche Verantwortung bleibt nach dem Modell der geteilten Verantwortung bei deinem Unternehmen?",
         options: [
           { id: "A", text: "Das Patchen des Betriebssystems der Mailserver", rationale: "Bei SaaS betreibt und patcht der Anbieter die zugrunde liegenden Server und Betriebssysteme." },
           { id: "B", text: "Die physische Sicherheit des Rechenzentrums", rationale: "Die physische Sicherheit liegt immer in der Verantwortung des Cloudanbieters." },
@@ -203,25 +203,25 @@ export const az900De: DeContent = {
         ],
         answer: "C",
         explanation:
-          "Je weiter Sie sich von IaaS in Richtung SaaS bewegen, desto mehr übernimmt der Anbieter. Daten, Geräte, Konten und Identitäten gehen nie auf den Anbieter über und bleiben daher auch bei SaaS Aufgabe des Kunden.",
+          "Je weiter du dich von IaaS in Richtung SaaS bewegst, desto mehr übernimmt der Anbieter. Daten, Geräte, Konten und Identitäten gehen nie auf den Anbieter über und bleiben daher auch bei SaaS Aufgabe des Kunden.",
         reference: GUIDE,
       },
       {
         id: "az900-d1-consumption",
         domain: "d1",
-        objective: "Beschreiben Sie das verbrauchsbasierte Modell",
+        objective: "Beschreibe das verbrauchsbasierte Modell",
         difficulty: "foundation",
         question:
           "Ein Start-up möchte keine Server im Voraus kaufen und nur für die Rechenleistung bezahlen, die es jeden Monat tatsächlich nutzt. Welches Merkmal des Cloud-Computings wird hier beschrieben?",
         options: [
-          { id: "A", text: "Das verbrauchsbasierte Modell", rationale: "Richtig. Im verbrauchsbasierten Modell bezahlen Sie für die Ressourcen, die Sie nutzen, ohne Vorabkosten für Infrastruktur. Dadurch werden Investitionsausgaben (CapEx) zu Betriebsausgaben (OpEx)." },
-          { id: "B", text: "Hochverfügbarkeit", rationale: "Bei Hochverfügbarkeit geht es darum, Dienste am Laufen zu halten, nicht darum, wie Sie bezahlen." },
+          { id: "A", text: "Das verbrauchsbasierte Modell", rationale: "Richtig. Im verbrauchsbasierten Modell bezahlst du für die Ressourcen, die du nutzt, ohne Vorabkosten für Infrastruktur. Dadurch werden Investitionsausgaben (CapEx) zu Betriebsausgaben (OpEx)." },
+          { id: "B", text: "Hochverfügbarkeit", rationale: "Bei Hochverfügbarkeit geht es darum, Dienste am Laufen zu halten, nicht darum, wie du bezahlst." },
           { id: "C", text: "Das Modell der geteilten Verantwortung", rationale: "Dieses Modell teilt Sicherheits- und Verwaltungsaufgaben auf; es beschreibt nicht die Abrechnung." },
           { id: "D", text: "Eine private Cloud", rationale: "Eine private Cloud gehört in der Regel einer einzelnen Organisation oder ist ihr fest zugeordnet und erfordert oft genau die Vorabinvestition, die das Start-up vermeiden möchte." },
         ],
         answer: "A",
         explanation:
-          "Die nutzungsbasierte Abrechnung (Pay-as-you-go) ist der Kern des verbrauchsbasierten Modells. Sie vermeidet Vorabkosten für Hardware, und Sie zahlen nicht mehr, sobald Sie Ressourcen nicht mehr nutzen.",
+          "Die nutzungsbasierte Abrechnung (Pay-as-you-go) ist der Kern des verbrauchsbasierten Modells. Sie vermeidet Vorabkosten für Hardware, und du zahlst nicht mehr, sobald du Ressourcen nicht mehr nutzt.",
         reference: GUIDE,
       },
       {
@@ -239,7 +239,7 @@ export const az900De: DeContent = {
         ],
         answer: "B",
         explanation:
-          "Hybrid ist immer dann die Antwort, wenn einige Workloads lokal oder in einer privaten Cloud bleiben müssen, während andere in der öffentlichen Cloud laufen. Verwechseln Sie Cloudmodelle (öffentlich, privat, hybrid) nicht mit Diensttypen (IaaS, PaaS, SaaS).",
+          "Hybrid ist immer dann die Antwort, wenn einige Workloads lokal oder in einer privaten Cloud bleiben müssen, während andere in der öffentlichen Cloud laufen. Verwechsle Cloudmodelle (öffentlich, privat, hybrid) nicht mit Diensttypen (IaaS, PaaS, SaaS).",
         reference: GUIDE,
       },
       {
@@ -257,7 +257,7 @@ export const az900De: DeContent = {
         ],
         answer: "D",
         explanation:
-          "PaaS ist der Mittelweg: Sie bringen die Anwendung mit, der Anbieter betreibt die Plattform. Azure App Service ist ein typisches PaaS-Beispiel für Web-Apps.",
+          "PaaS ist der Mittelweg: du bringst die Anwendung mit, der Anbieter betreibt die Plattform. Azure App Service ist ein typisches PaaS-Beispiel für Web-Apps.",
         reference: GUIDE,
       },
 
@@ -268,7 +268,7 @@ export const az900De: DeContent = {
         objective: "Beschreiben von Verfügbarkeitszonen",
         difficulty: "foundation",
         question:
-          "Eine Anwendung soll weiterlaufen, wenn ein Rechenzentrum in einer Azure-Region ausfällt, ohne dass Sie in einer zweiten Region bereitstellen. Was sollten Sie verwenden?",
+          "Eine Anwendung soll weiterlaufen, wenn ein Rechenzentrum in einer Azure-Region ausfällt, ohne dass du in einer zweiten Region bereitstellst. Was solltest du verwenden?",
         options: [
           { id: "A", text: "Eine zweite Ressourcengruppe", rationale: "Ressourcengruppen sind logische Container; sie verteilen Ressourcen nicht auf getrennte Rechenzentren." },
           { id: "B", text: "Verfügbarkeitszonen", rationale: "Richtig. Verfügbarkeitszonen sind physisch getrennte Rechenzentrumsstandorte innerhalb einer Azure-Region, jeweils mit unabhängiger Stromversorgung, Kühlung und Netzwerkanbindung." },
@@ -277,7 +277,7 @@ export const az900De: DeContent = {
         ],
         answer: "B",
         explanation:
-          "Die Verteilung von Ressourcen auf Verfügbarkeitszonen schützt vor dem Verlust eines Rechenzentrums innerhalb einer Region. Für den Schutz vor dem Ausfall einer ganzen Region brauchen Sie eine zweite Region, zum Beispiel das Regionspaar.",
+          "Die Verteilung von Ressourcen auf Verfügbarkeitszonen schützt vor dem Verlust eines Rechenzentrums innerhalb einer Region. Für den Schutz vor dem Ausfall einer ganzen Region brauchst du eine zweite Region, zum Beispiel das Regionspaar.",
         reference: GUIDE,
       },
       {
@@ -286,7 +286,7 @@ export const az900De: DeContent = {
         objective: "Beschreiben der Hierarchie von Ressourcengruppen, Abonnements und Verwaltungsgruppen",
         difficulty: "intermediate",
         question:
-          "Ihre Organisation hat 12 Abonnements und möchte eine Azure Policy-Zuweisung auf alle gleichzeitig anwenden. Auf welcher Ebene sollten Sie sie zuweisen?",
+          "Deine Organisation hat 12 Abonnements und möchte eine Azure Policy-Zuweisung auf alle gleichzeitig anwenden. Auf welcher Ebene solltest du sie zuweisen?",
         options: [
           { id: "A", text: "Auf einer Verwaltungsgruppe, die die Abonnements enthält", rationale: "Richtig. Verwaltungsgruppen stehen über den Abonnements, und dort zugewiesene Richtlinien und Zugriffsrechte werden von jedem enthaltenen Abonnement geerbt." },
           { id: "B", text: "Auf jeder Ressourcengruppe einzeln", rationale: "Das funktioniert grundsätzlich, bedeutet aber viele einzelne Zuweisungen: genau das möchte die Organisation vermeiden." },
@@ -322,7 +322,7 @@ export const az900De: DeContent = {
         objective: "Speicherebenen beschreiben",
         difficulty: "intermediate",
         question:
-          "Sie müssen eingescannte Verträge zehn Jahre lang zu den niedrigsten Speicherkosten aufbewahren. Sie werden fast nie gelesen, und eine Abrufverzögerung von mehreren Stunden ist akzeptabel. Welche Blob-Zugriffsebene passt am besten?",
+          "Du musst eingescannte Verträge zehn Jahre lang zu den niedrigsten Speicherkosten aufbewahren. Sie werden fast nie gelesen, und eine Abrufverzögerung von mehreren Stunden ist akzeptabel. Welche Blob-Zugriffsebene passt am besten?",
         options: [
           { id: "A", text: "Hot", rationale: "Die Zugriffsebene Hot hat die höchsten Speicherkosten und ist für Daten mit häufigem Zugriff gedacht." },
           { id: "B", text: "Cool", rationale: "Die Zugriffsebene Cool ist günstiger als Hot, aber weiterhin eine Onlineebene mit Preisen für Daten, die gelegentlich gelesen werden." },
@@ -378,7 +378,7 @@ export const az900De: DeContent = {
         objective: "Den Zweck von Ressourcensperren beschreiben",
         difficulty: "foundation",
         question:
-          "Administratoren müssen die Einstellungen einer Produktionsdatenbank weiterhin ändern können, aber niemand, auch kein Besitzer, soll sie versehentlich löschen können. Was sollten Sie anwenden?",
+          "Administratoren müssen die Einstellungen einer Produktionsdatenbank weiterhin ändern können, aber niemand, auch kein Besitzer, soll sie versehentlich löschen können. Was solltest du anwenden?",
         options: [
           { id: "A", text: "Eine ReadOnly-Sperre", rationale: "Eine ReadOnly-Sperre würde auch die erforderlichen Änderungen an den Einstellungen blockieren." },
           { id: "B", text: "Eine CanNotDelete-Sperre (Delete)", rationale: "Richtig. Eine CanNotDelete-Sperre erlaubt berechtigten Benutzern, die Ressource zu lesen und zu ändern, verhindert aber das Löschen, bis die Sperre entfernt wird." },
@@ -396,7 +396,7 @@ export const az900De: DeContent = {
         objective: "Beschreiben des Zwecks von Azure Policy",
         difficulty: "intermediate",
         question:
-          "Aus Gründen der Datenresidenz möchte Ihr Unternehmen sicherstellen, dass neue Ressourcen nur in zwei bestimmten Azure-Regionen erstellt werden können. Welcher Dienst setzt das durch?",
+          "Aus Gründen der Datenresidenz möchte dein Unternehmen sicherstellen, dass neue Ressourcen nur in zwei bestimmten Azure-Regionen erstellt werden können. Welcher Dienst setzt das durch?",
         options: [
           { id: "A", text: "Azure Advisor", rationale: "Advisor gibt Empfehlungen; er verhindert nicht, dass Ressourcen erstellt werden." },
           { id: "B", text: "Rollenbasierte Zugriffssteuerung in Azure (Azure RBAC)", rationale: "RBAC steuert, wer Ressourcen erstellen darf, nicht welche Eigenschaften wie den Standort sie haben dürfen." },
@@ -405,7 +405,7 @@ export const az900De: DeContent = {
         ],
         answer: "D",
         explanation:
-          "Stellen Sie sich RBAC als „wer darf handeln“ und Azure Policy als „was darf existieren“ vor. Regionen, SKUs oder Pflicht-Tags einzuschränken ist eine typische Aufgabe für Azure Policy.",
+          "Stell dir RBAC als „wer darf handeln“ und Azure Policy als „was darf existieren“ vor. Regionen, SKUs oder Pflicht-Tags einzuschränken ist eine typische Aufgabe für Azure Policy.",
         reference: GUIDE,
       },
       {
@@ -416,7 +416,7 @@ export const az900De: DeContent = {
         question:
           "Die Finanzabteilung möchte die Azure-Kosten pro Abteilung sehen, obwohl Ressourcen mehrerer Abteilungen sich dieselben Ressourcengruppen teilen. Wie lässt sich das am einfachsten ermöglichen?",
         options: [
-          { id: "A", text: "Jeder Ressource ein Abteilungs-Tag hinzufügen und die Kosten nach diesem Tag gruppieren", rationale: "Richtig. Tags sind Name/Wert-Paare an Ressourcen, mit denen Sie Ressourcen organisieren und Kosten filtern und gruppieren können." },
+          { id: "A", text: "Jeder Ressource ein Abteilungs-Tag hinzufügen und die Kosten nach diesem Tag gruppieren", rationale: "Richtig. Tags sind Name/Wert-Paare an Ressourcen, mit denen du Ressourcen organisieren und Kosten filtern und gruppieren kannst." },
           { id: "B", text: "Eine ReadOnly-Sperre auf jede Ressourcengruppe anwenden", rationale: "Sperren verhindern Änderungen; sie helfen nicht bei der Kostenzuordnung." },
           { id: "C", text: "Für jede Abteilung einen eigenen Microsoft Entra-Mandanten erstellen", rationale: "Das ist eine große organisatorische Änderung und für die Kostenauswertung nicht nötig." },
           { id: "D", text: "Den Preisrechner verwenden", rationale: "Der Preisrechner schätzt die Kosten geplanter Ressourcen; er zeigt keine tatsächlichen Ausgaben pro Abteilung." },
@@ -432,16 +432,16 @@ export const az900De: DeContent = {
         objective: "Beschreiben von Überwachungstools in Azure",
         difficulty: "intermediate",
         question:
-          "Ihr Team möchte personalisierte Empfehlungen, um Zuverlässigkeit, Sicherheit, Leistung und Kosten seiner vorhandenen Azure-Ressourcen zu verbessern. Welches Tool liefert das?",
+          "Dein Team möchte personalisierte Empfehlungen, um Zuverlässigkeit, Sicherheit, Leistung und Kosten seiner vorhandenen Azure-Ressourcen zu verbessern. Welches Tool liefert das?",
         options: [
-          { id: "A", text: "Azure Service Health", rationale: "Service Health informiert Sie über Azure-Dienstvorfälle, geplante Wartungen und Integritätshinweise, die Sie betreffen, nicht über die Optimierung Ihrer eigenen Ressourcen." },
-          { id: "B", text: "Azure Monitor-Warnungen", rationale: "Warnungen benachrichtigen Sie, wenn eine Bedingung in Ihren Überwachungsdaten erfüllt ist; Best-Practice-Empfehlungen geben sie nicht." },
-          { id: "C", text: "Azure Advisor", rationale: "Richtig. Azure Advisor analysiert die Konfiguration und Nutzung Ihrer Ressourcen und gibt personalisierte Best-Practice-Empfehlungen." },
+          { id: "A", text: "Azure Service Health", rationale: "Service Health informiert dich über Azure-Dienstvorfälle, geplante Wartungen und Integritätshinweise, die dich betreffen, nicht über die Optimierung deiner eigenen Ressourcen." },
+          { id: "B", text: "Azure Monitor-Warnungen", rationale: "Warnungen benachrichtigen dich, wenn eine Bedingung in deinen Überwachungsdaten erfüllt ist; Best-Practice-Empfehlungen geben sie nicht." },
+          { id: "C", text: "Azure Advisor", rationale: "Richtig. Azure Advisor analysiert die Konfiguration und Nutzung deiner Ressourcen und gibt personalisierte Best-Practice-Empfehlungen." },
           { id: "D", text: "Der Preisrechner", rationale: "Der Preisrechner schätzt Kosten vor der Bereitstellung; er analysiert keine vorhandenen Ressourcen." },
         ],
         answer: "C",
         explanation:
-          "Merken Sie sich die drei Überwachungstools über ihre Frage: Advisor fragt „Wie kann ich meine Ressourcen verbessern?“, Service Health „Hat Azure selbst ein Problem, das mich betrifft?“ und Azure Monitor „Was machen meine Ressourcen und Anwendungen?“.",
+          "Merke dir die drei Überwachungstools über ihre Frage: Advisor fragt „Wie kann ich meine Ressourcen verbessern?“, Service Health „Hat Azure selbst ein Problem, das mich betrifft?“ und Azure Monitor „Was machen meine Ressourcen und Anwendungen?“.",
         reference: GUIDE,
       },
       {

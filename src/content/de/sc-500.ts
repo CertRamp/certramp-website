@@ -87,7 +87,7 @@ export const sc500De: DeContent = {
   guide: {
     slug: "sc-500",
     summary:
-      "SC-500 (Implementing End-to-End Security Controls for Cloud and AI Workloads) ist die Prüfung für die Zertifizierung Microsoft Certified: Cloud and AI Security Engineer Associate, die Microsoft im Mai 2026 vor der Einstellung von AZ-500 am 31. August 2026 eingeführt hat. Sie prüft, ob Sie Identitäten, Daten, Netzwerke, Compute- und KI-Workloads in Azure absichern und den Sicherheitsstatus mit Defender for Cloud, Microsoft Sentinel und Security Copilot überwachen können. Sie haben 120 Minuten Zeit und benötigen zum Bestehen 700 Punkte.",
+      "SC-500 (Implementing End-to-End Security Controls for Cloud and AI Workloads) ist die Prüfung für die Zertifizierung Microsoft Certified: Cloud and AI Security Engineer Associate, die Microsoft im Mai 2026 vor der Einstellung von AZ-500 am 31. August 2026 eingeführt hat. Sie prüft, ob du Identitäten, Daten, Netzwerke, Compute- und KI-Workloads in Azure absichern und den Sicherheitsstatus mit Defender for Cloud, Microsoft Sentinel und Security Copilot überwachen kannst. Du hast 120 Minuten Zeit und benötigst zum Bestehen 700 Punkte.",
     whoFor: [
       "Azure Security Engineers, die AZ-500 besaßen oder sich darauf vorbereitet haben und die aktuelle Zertifizierung benötigen",
       "Cloudadministratoren und -Engineers, die für die Absicherung von Azure-, Hybrid- und Multicloud-Umgebungen verantwortlich sind",
@@ -99,7 +99,7 @@ export const sc500De: DeContent = {
         heading: "Was SC-500 tatsächlich prüft",
         paragraphs: [
           "SC-500 umfasst vier Fähigkeitsbereiche. Am stärksten gewichtet ist die Absicherung von Speicher, Datenbanken und Netzwerk (25–30 %): Speicherfirewalls und Zugriffsrichtlinien, Sicherheit und Überwachung von Azure SQL, NSGs und Anwendungssicherheitsgruppen, Azure Virtual Network Manager, Virtual WAN, VPNs, Microsoft Entra Private Access, private Endpunkte, Private Link und Azure Firewall. Identität, Zugriff und Governance, die Absicherung von Compute-Ressourcen (einschließlich KI; offiziell „Sichere Berechnung“) und die Überwachung des Sicherheitsstatus machen jeweils 20–25 % aus.",
-          "Die Lernziele sind mit „Implementieren“ und „Konfigurieren“ formuliert. Rechnen Sie daher eher mit Szenariofragen nach der richtigen Einstellung, dem richtigen Dienst oder dem nächsten Schritt als mit Definitionen. Typische Entscheidungen: PIM oder dauerhafte Rollenzuweisung, Azure RBAC-Rolle oder Key Vault-Zugriffsrichtlinie, privater Endpunkt oder Dienstendpunkt, welche Ressourcensperre, welcher Defender for Cloud-Plan und welcher Sentinel-Connector oder welche Sentinel-Rolle.",
+          "Die Lernziele sind mit „Implementieren“ und „Konfigurieren“ formuliert. Rechne daher eher mit Szenariofragen nach der richtigen Einstellung, dem richtigen Dienst oder dem nächsten Schritt als mit Definitionen. Typische Entscheidungen: PIM oder dauerhafte Rollenzuweisung, Azure RBAC-Rolle oder Key Vault-Zugriffsrichtlinie, privater Endpunkt oder Dienstendpunkt, welche Ressourcensperre, welcher Defender for Cloud-Plan und welcher Sentinel-Connector oder welche Sentinel-Rolle.",
         ],
       },
       {
@@ -107,7 +107,7 @@ export const sc500De: DeContent = {
         heading: "Wie SC-500 mit AZ-500 zusammenhängt",
         paragraphs: [
           "Microsoft hat die Zertifizierung Azure Security Engineer Associate, die Prüfung AZ-500 und die zugehörigen Verlängerungsbewertungen am 31. August 2026 eingestellt; sie kann weder neu erworben noch verlängert werden. In seiner Partnerankündigung vom 6. Mai 2026 hat Microsoft die Zertifizierung Cloud and AI Security Engineer Associate (SC-500) im Rahmen des Übergangs vorgestellt und beschrieben, dass sie die Rolle des Security Engineers um den Schutz von Cloud-Umgebungen und KI-Modellen erweitert. Die Betaversion von SC-500 startete im Mai 2026; Training und Prüfung wurden laut Microsoft für Juli 2026 erwartet.",
-          "Der deutlichste neue Bereich ist „Implementieren von Sicherheit für KI“ (Implement security for AI): übermäßige Freigabe von Daten (Oversharing) in SharePoint, Microsoft Purview Data Security Posture Management für Copilot und KI-Apps, Echtzeitschutz für Copilot Studio-Agents, Microsoft Entra Agent ID, AI Gateway in Azure API Management für Microsoft Foundry, Defender for AI Services, Guardrails in Foundry und das Data and AI security dashboard in Defender for Cloud. Auch Arbeitsbereiche, Rollen, Plug-ins und Agents von Microsoft Security Copilot gehören zur Gliederung. Wenn Ihr Lernmaterial nur AZ-500 abdeckt, gleichen Sie es Zeile für Zeile mit dem SC-500-Studienleitfaden ab.",
+          "Der deutlichste neue Bereich ist „Implementieren von Sicherheit für KI“ (Implement security for AI): übermäßige Freigabe von Daten (Oversharing) in SharePoint, Microsoft Purview Data Security Posture Management für Copilot und KI-Apps, Echtzeitschutz für Copilot Studio-Agents, Microsoft Entra Agent ID, AI Gateway in Azure API Management für Microsoft Foundry, Defender for AI Services, Guardrails in Foundry und das Data and AI security dashboard in Defender for Cloud. Auch Arbeitsbereiche, Rollen, Plug-ins und Agents von Microsoft Security Copilot gehören zur Gliederung. Wenn dein Lernmaterial nur AZ-500 abdeckt, gleiche es Zeile für Zeile mit dem SC-500-Studienleitfaden ab.",
         ],
       },
       {
@@ -116,27 +116,27 @@ export const sc500De: DeContent = {
         steps: [
           {
             title: "Den eigenen Stand am Studienleitfaden messen",
-            body: "Gehen Sie jeden Punkt der offiziellen SC-500-Liste der gemessenen Fähigkeiten durch und markieren Sie ihn als bekannt, unsicher oder neu. Erfahrung mit AZ-500 deckt einen Großteil der Inhalte zu Identität, Netzwerk und Defender for Cloud ab, die Lernziele zu KI und Security Copilot dürften aber neu sein.",
+            body: "Gehe jeden Punkt der offiziellen SC-500-Liste der gemessenen Fähigkeiten durch und markiere ihn als bekannt, unsicher oder neu. Erfahrung mit AZ-500 deckt einen Großteil der Inhalte zu Identität, Netzwerk und Defender for Cloud ab, die Lernziele zu KI und Security Copilot dürften aber neu sein.",
           },
           {
             title: "Eine Laborumgebung aufbauen",
-            body: "Stellen Sie mit einem Azure-Abonnement und einem Microsoft 365-Testmandanten einen Key Vault, ein Speicherkonto mit privatem Endpunkt, eine VM hinter Azure Bastion und Defender for Cloud-Pläne bereit. Schalten Sie kostenpflichtige Ressourcen nach jeder Sitzung ab oder löschen Sie sie; Defender-Pläne, Firewall und Bastion werden abgerechnet, solange sie laufen.",
+            body: "Stelle mit einem Azure-Abonnement und einem Microsoft 365-Testmandanten einen Key Vault, ein Speicherkonto mit privatem Endpunkt, eine VM hinter Azure Bastion und Defender for Cloud-Pläne bereit. Schalte kostenpflichtige Ressourcen nach jeder Sitzung ab oder lösche sie; Defender-Pläne, Firewall und Bastion werden abgerechnet, solange sie laufen.",
           },
           {
             title: "Die Netzwerkentscheidungen üben",
-            body: "Netzwerk ist der größte Bereich. Sie sollten den Unterschied zwischen NSGs, Anwendungssicherheitsgruppen und Azure Firewall kennen, ebenso zwischen privaten Endpunkten und Private Link-Diensten, und wissen, wie Network Watcher zeigt, welche Regel Datenverkehr zulässt oder blockiert.",
+            body: "Netzwerk ist der größte Bereich. Du solltest den Unterschied zwischen NSGs, Anwendungssicherheitsgruppen und Azure Firewall kennen, ebenso zwischen privaten Endpunkten und Private Link-Diensten, und wissen, wie Network Watcher zeigt, welche Regel Datenverkehr zulässt oder blockiert.",
           },
           {
             title: "Die Lernziele zur KI-Sicherheit abdecken",
-            body: "Arbeiten Sie die Microsoft-Learn-Inhalte zu Purview DSPM, Defender for AI Services, Entra Agent ID und Foundry-Guardrails durch. Notieren Sie zu jedem Thema, welches Risiko es adressiert und wo Sie es konfigurieren.",
+            body: "Arbeite die Microsoft-Learn-Inhalte zu Purview DSPM, Defender for AI Services, Entra Agent ID und Foundry-Guardrails durch. Notiere zu jedem Thema, welches Risiko es adressiert und wo du es konfigurierst.",
           },
           {
             title: "Unter Zeitdruck üben",
-            body: "Legen Sie Übungsprüfungen in 120 Minuten ab und lesen Sie jede Erklärung, auch bei Fragen, die Sie richtig beantwortet haben. Laut Zertifizierungsseite kann die Prüfung interaktive Komponenten enthalten; machen Sie sich daher auch mit der Prüfungssandbox vertraut.",
+            body: "Lege Übungsprüfungen in 120 Minuten ab und lies jede Erklärung, auch bei Fragen, die du richtig beantwortet hast. Laut Zertifizierungsseite kann die Prüfung interaktive Komponenten enthalten; mache dich daher auch mit der Prüfungssandbox vertraut.",
           },
           {
-            title: "Buchen, wenn Ihre Ergebnisse stabil sind",
-            body: "Buchen Sie die Prüfung, sobald Sie mehrere Übungsprüfungen mit sicherem Abstand bestehen. Planen Sie die kostenlose jährliche Verlängerungsbewertung auf Microsoft Learn gleich mit ein.",
+            title: "Buchen, wenn deine Ergebnisse stabil sind",
+            body: "Buche die Prüfung, sobald du mehrere Übungsprüfungen mit sicherem Abstand bestehst. Plane die kostenlose jährliche Verlängerungsbewertung auf Microsoft Learn gleich mit ein.",
           },
         ],
       },
@@ -145,9 +145,9 @@ export const sc500De: DeContent = {
         heading: "Häufige Fehler bei der Vorbereitung",
         bullets: [
           "Nur mit AZ-500-Material lernen. Die Lernziele zu KI, Security Copilot und Entra Private Access werden von älteren Kursen nicht abgedeckt.",
-          "Private Endpunkte und Dienstendpunkte verwechseln. Ein privater Endpunkt gibt der PaaS-Ressource eine private IP-Adresse in Ihrem virtuellen Netzwerk; ein Dienstendpunkt nicht.",
+          "Private Endpunkte und Dienstendpunkte verwechseln. Ein privater Endpunkt gibt der PaaS-Ressource eine private IP-Adresse in deinem virtuellen Netzwerk; ein Dienstendpunkt nicht.",
           "Azure RBAC und Microsoft Entra-Rollen durcheinanderbringen. Azure-Rollen steuern Azure-Ressourcen, Entra-Rollen steuern Verzeichnisobjekte und -einstellungen. Die Gliederung verlangt benutzerdefinierte Rollen beider Art.",
-          "Defender for Cloud als einen einzigen Schalter behandeln. Sie sollten wissen, was das grundlegende (kostenlose) CSPM, Defender CSPM und die einzelnen Workload-Schutzpläne (Servers, Storage, Databases, Containers, Key Vault, AI Services) jeweils hinzufügen.",
+          "Defender for Cloud als einen einzigen Schalter behandeln. Du solltest wissen, was das grundlegende (kostenlose) CSPM, Defender CSPM und die einzelnen Workload-Schutzpläne (Servers, Storage, Databases, Containers, Key Vault, AI Services) jeweils hinzufügen.",
           "Die Einrichtung von Sentinel übersehen. Arbeitsbereiche, Rollen, Content Hub, Connectors, benutzerdefinierte Protokolltabellen, Automatisierung und Aufbewahrung kommen alle im Bereich Sicherheitsstatus vor.",
         ],
       },
@@ -156,7 +156,7 @@ export const sc500De: DeContent = {
       {
         question: "Wie lange dauert die SC-500-Prüfung und wie hoch ist die Bestehensgrenze?",
         answer:
-          "Sie haben 120 Minuten Zeit. Microsoft verlangt zum Bestehen 700 Punkte oder mehr. Die genaue Fragenzahl für SC-500 veröffentlicht Microsoft nicht; laut Microsoft haben die meisten seiner Zertifizierungsprüfungen zwischen 40 und 60 Fragen.",
+          "Du hast 120 Minuten Zeit. Microsoft verlangt zum Bestehen 700 Punkte oder mehr. Die genaue Fragenzahl für SC-500 veröffentlicht Microsoft nicht; laut Microsoft haben die meisten seiner Zertifizierungsprüfungen zwischen 40 und 60 Fragen.",
       },
       {
         question: "Ist SC-500 der Ersatz für AZ-500?",
@@ -166,7 +166,7 @@ export const sc500De: DeContent = {
       {
         question: "Wie verlängere ich die Zertifizierung Cloud and AI Security Engineer Associate?",
         answer:
-          "Wie bei anderen rollenbasierten Microsoft-Zertifizierungen verlängern Sie sie jährlich kostenlos, indem Sie innerhalb des sechsmonatigen Zeitraums vor dem Ablauf eine Online-Bewertung auf Microsoft Learn bestehen.",
+          "Wie bei anderen rollenbasierten Microsoft-Zertifizierungen verlängerst du sie jährlich kostenlos, indem du innerhalb des sechsmonatigen Zeitraums vor dem Ablauf eine Online-Bewertung auf Microsoft Learn bestehst.",
       },
       {
         question: "Brauche ich für SC-500 eine Zertifizierung als Voraussetzung?",
@@ -213,7 +213,7 @@ export const sc500De: DeContent = {
         objective: "Sicherer Zugriff auf Ressourcen mithilfe von Microsoft Entra ID",
         difficulty: "intermediate",
         question:
-          "Drei Engineers benötigen gelegentlich die Rolle „Besitzer“ (Owner) für ein Produktionsabonnement. Die Rolle darf nicht dauerhaft aktiv sein, jede Aktivierung muss eine Genehmigung und eine Begründung erfordern, und der Zugriff muss nach einigen Stunden automatisch enden. Was sollten Sie konfigurieren?",
+          "Drei Engineers benötigen gelegentlich die Rolle „Besitzer“ (Owner) für ein Produktionsabonnement. Die Rolle darf nicht dauerhaft aktiv sein, jede Aktivierung muss eine Genehmigung und eine Begründung erfordern, und der Zugriff muss nach einigen Stunden automatisch enden. Was solltest du konfigurieren?",
         options: [
           { id: "A", text: "Eine dauerhafte (aktive) Owner-Zuweisung mit einer Conditional-Access-Richtlinie, die MFA verlangt", rationale: "MFA stärkt die Anmeldung, aber die Rolle wäre weiterhin ständig aktiv, was die Anforderung ausschließt." },
           { id: "B", text: "Eine benutzerdefinierte Azure-Rolle mit weniger Berechtigungen als Owner", rationale: "Minimale Berechtigungen sind gute Praxis, aber auch eine dauerhaft zugewiesene benutzerdefinierte Rolle bietet keine zeitlich begrenzte Aktivierung mit Genehmigung." },
@@ -231,7 +231,7 @@ export const sc500De: DeContent = {
         objective: "Schützen von Geheimnissen und Schlüsseln mit Azure Key Vault",
         difficulty: "intermediate",
         question:
-          "Ein Key Vault verwendet das Azure RBAC-Berechtigungsmodell. Die verwaltete Identität einer Anwendung soll die Werte von Geheimnissen lesen können, sie aber nicht erstellen, ändern oder löschen dürfen. Welche integrierte Rolle sollten Sie im Bereich des Key Vault zuweisen?",
+          "Ein Key Vault verwendet das Azure RBAC-Berechtigungsmodell. Die verwaltete Identität einer Anwendung soll die Werte von Geheimnissen lesen können, sie aber nicht erstellen, ändern oder löschen dürfen. Welche integrierte Rolle solltest du im Bereich des Key Vault zuweisen?",
         options: [
           { id: "A", text: "Key Vault Secrets User", rationale: "Richtig. Key Vault Secrets User erlaubt das Lesen von Geheimnisinhalten und nichts darüber hinaus und erfüllt damit das Prinzip der minimalen Berechtigungen." },
           { id: "B", text: "Key Vault Reader", rationale: "Key Vault Reader kann Metadaten des Tresors und seiner Objekte lesen, aber nicht die Geheimniswerte, die die Anwendung benötigt." },
@@ -249,7 +249,7 @@ export const sc500De: DeContent = {
         objective: "Implementieren von Governance zur Durchsetzung der Sicherheit und Einhaltung gesetzlicher Vorschriften",
         difficulty: "foundation",
         question:
-          "Administratoren sollen die Konfiguration eines virtuellen Produktionsnetzwerks weiterhin ändern können, aber niemand, nicht einmal ein Owner, soll es versehentlich löschen können, ohne zuvor einen Schutz zu entfernen. Was sollten Sie anwenden?",
+          "Administratoren sollen die Konfiguration eines virtuellen Produktionsnetzwerks weiterhin ändern können, aber niemand, nicht einmal ein Owner, soll es versehentlich löschen können, ohne zuvor einen Schutz zu entfernen. Was solltest du anwenden?",
         options: [
           { id: "A", text: "Eine ReadOnly-Ressourcensperre", rationale: "ReadOnly verhindert das Löschen, blockiert aber auch Konfigurationsänderungen, die Administratoren weiterhin vornehmen müssen." },
           { id: "B", text: "Eine Azure Policy-Zuweisung mit der Auswirkung „Audit“", rationale: "Audit meldet nur Nichtkonformität; verhindert wird dadurch nichts." },
@@ -267,7 +267,7 @@ export const sc500De: DeContent = {
         objective: "Implementieren von Governance zur Durchsetzung der Sicherheit und Einhaltung gesetzlicher Vorschriften",
         difficulty: "intermediate",
         question:
-          "Ihre Sicherheitsstandards verlangen, dass kein Speicherkonto in Ihren Abonnements mit aktiviertem öffentlichem Netzwerkzugriff erstellt oder aktualisiert werden kann. Nicht konforme Bereitstellungen sollen fehlschlagen. Was sollten Sie implementieren?",
+          "Deine Sicherheitsstandards verlangen, dass kein Speicherkonto in deinen Abonnements mit aktiviertem öffentlichem Netzwerkzugriff erstellt oder aktualisiert werden kann. Nicht konforme Bereitstellungen sollen fehlschlagen. Was solltest du implementieren?",
         options: [
           { id: "A", text: "Eine Defender for Cloud-Empfehlung", rationale: "Empfehlungen zeigen nicht konforme Ressourcen an und helfen bei der Behebung, blockieren für sich allein aber keine Bereitstellungen." },
           { id: "B", text: "Eine Azure Policy-Zuweisung mit der Auswirkung „Deny“ für Speicherkonten mit aktiviertem öffentlichem Netzwerkzugriff", rationale: "Richtig. Eine Richtlinie mit der Auswirkung „Deny“ wird bei Erstellungs- und Aktualisierungsanforderungen ausgewertet und lehnt Ressourcen ab, die die Regel nicht erfüllen." },
@@ -276,7 +276,7 @@ export const sc500De: DeContent = {
         ],
         answer: "B",
         explanation:
-          "Azure Policy setzt Regeln zum Zeitpunkt der Bereitstellung durch. Verwenden Sie Deny, um nicht konforme Konfigurationen zu verhindern, Audit, um sie zu melden, und Korrekturauswirkungen wie Modify oder DeployIfNotExists, um sie zu beheben.",
+          "Azure Policy setzt Regeln zum Zeitpunkt der Bereitstellung durch. Verwende Deny, um nicht konforme Konfigurationen zu verhindern, Audit, um sie zu melden, und Korrekturauswirkungen wie Modify oder DeployIfNotExists, um sie zu beheben.",
         reference: GUIDE,
       },
 
@@ -287,16 +287,16 @@ export const sc500De: DeContent = {
         objective: "Implementieren der Sicherheit für Azure Netzwerkdienste",
         difficulty: "intermediate",
         question:
-          "Anwendungen in einem virtuellen Netzwerk sollen eine Azure SQL-Datenbank über eine private IP-Adresse in diesem virtuellen Netzwerk erreichen, und die Datenbank darf über ihren öffentlichen Endpunkt nicht erreichbar sein. Was sollten Sie konfigurieren?",
+          "Anwendungen in einem virtuellen Netzwerk sollen eine Azure SQL-Datenbank über eine private IP-Adresse in diesem virtuellen Netzwerk erreichen, und die Datenbank darf über ihren öffentlichen Endpunkt nicht erreichbar sein. Was solltest du konfigurieren?",
         options: [
-          { id: "A", text: "Einen VNet-Dienstendpunkt für Microsoft.Sql", rationale: "Dienstendpunkte leiten den Datenverkehr über das Azure-Backbone, aber die Datenbank behält ihren öffentlichen Endpunkt und erhält keine private IP-Adresse in Ihrem virtuellen Netzwerk." },
-          { id: "B", text: "Einen privaten Endpunkt für den logischen Server, und den öffentlichen Netzwerkzugriff deaktivieren", rationale: "Richtig. Ein privater Endpunkt gibt der PaaS-Ressource eine private IP-Adresse in Ihrem virtuellen Netzwerk; das Deaktivieren des öffentlichen Netzwerkzugriffs schließt den öffentlichen Endpunkt." },
+          { id: "A", text: "Einen VNet-Dienstendpunkt für Microsoft.Sql", rationale: "Dienstendpunkte leiten den Datenverkehr über das Azure-Backbone, aber die Datenbank behält ihren öffentlichen Endpunkt und erhält keine private IP-Adresse in deinem virtuellen Netzwerk." },
+          { id: "B", text: "Einen privaten Endpunkt für den logischen Server, und den öffentlichen Netzwerkzugriff deaktivieren", rationale: "Richtig. Ein privater Endpunkt gibt der PaaS-Ressource eine private IP-Adresse in deinem virtuellen Netzwerk; das Deaktivieren des öffentlichen Netzwerkzugriffs schließt den öffentlichen Endpunkt." },
           { id: "C", text: "Eine Netzwerksicherheitsgruppe auf der Datenbank", rationale: "NSGs werden auf Subnetze und Netzwerkschnittstellen angewendet, nicht auf den Dienst Azure SQL-Datenbank selbst." },
           { id: "D", text: "Azure Bastion", rationale: "Bastion bietet RDP- und SSH-Zugriff auf virtuelle Computer; private Konnektivität zu PaaS-Diensten bietet es nicht." },
         ],
         answer: "B",
         explanation:
-          "Private Endpunkte holen eine PaaS-Ressource über Azure Private Link in Ihr virtuelles Netzwerk. Kombinieren Sie sie mit privatem DNS, damit der Dienstname auf die private IP-Adresse aufgelöst wird.",
+          "Private Endpunkte holen eine PaaS-Ressource über Azure Private Link in dein virtuelles Netzwerk. Kombiniere sie mit privatem DNS, damit der Dienstname auf die private IP-Adresse aufgelöst wird.",
         reference: GUIDE,
       },
       {
@@ -305,16 +305,16 @@ export const sc500De: DeContent = {
         objective: "Implementieren der Sicherheit für Azure Netzwerkdienste",
         difficulty: "intermediate",
         question:
-          "Webserver und Datenbankserver teilen sich ein Subnetz, und VMs werden häufig hinzugefügt und entfernt. Sie möchten NSG-Regeln wie „TCP 1433 von Webservern zu Datenbankservern zulassen“, ohne Listen von IP-Adressen zu pflegen. Was sollten Sie verwenden?",
+          "Webserver und Datenbankserver teilen sich ein Subnetz, und VMs werden häufig hinzugefügt und entfernt. Du möchtest NSG-Regeln wie „TCP 1433 von Webservern zu Datenbankservern zulassen“, ohne Listen von IP-Adressen zu pflegen. Was solltest du verwenden?",
         options: [
           { id: "A", text: "Anwendungssicherheitsgruppen als Quelle und Ziel in der NSG-Regel", rationale: "Richtig. Anwendungssicherheitsgruppen fassen die Netzwerkschnittstellen von VMs nach ihrer Rolle zusammen, und NSG-Regeln können statt auf IP-Adressen auf sie verweisen." },
-          { id: "B", text: "Diensttags", rationale: "Diensttags stehen für Azure-Dienste wie Storage oder Sql, nicht für Ihre eigenen Gruppen von VMs." },
+          { id: "B", text: "Diensttags", rationale: "Diensttags stehen für Azure-Dienste wie Storage oder Sql, nicht für deine eigenen Gruppen von VMs." },
           { id: "C", text: "Eine eigene Routingtabelle für jede VM", rationale: "Routingtabellen steuern, wohin Datenverkehr gesendet wird; nach Workload-Rolle zulassen oder verweigern können sie ihn nicht." },
           { id: "D", text: "Azure DDoS Protection", rationale: "DDoS Protection wehrt volumetrische Angriffe ab; Regeln für den Datenverkehr zwischen VMs definiert es nicht." },
         ],
         answer: "A",
         explanation:
-          "Mit Anwendungssicherheitsgruppen formulieren Sie Netzwerkrichtlinien in Begriffen von Workloads. Wird die Netzwerkschnittstelle einer neuen VM der richtigen Gruppe hinzugefügt, gelten die vorhandenen NSG-Regeln automatisch.",
+          "Mit Anwendungssicherheitsgruppen formulierst du Netzwerkrichtlinien in Begriffen von Workloads. Wird die Netzwerkschnittstelle einer neuen VM der richtigen Gruppe hinzugefügt, gelten die vorhandenen NSG-Regeln automatisch.",
         reference: GUIDE,
       },
       {
@@ -323,7 +323,7 @@ export const sc500De: DeContent = {
         objective: "Implementieren von Sicherheit für Speicherkonten",
         difficulty: "advanced",
         question:
-          "Ein Partner erhält Dienst-SAS-Token, um Blobs in einem Container zu lesen. Falls ein Token offengelegt wird, müssen Sie es schnell widerrufen können, ohne die Speicherkontoschlüssel zu rotieren, die von anderen Anwendungen genutzt werden. Was sollten Sie beim Ausstellen der Token tun?",
+          "Ein Partner erhält Dienst-SAS-Token, um Blobs in einem Container zu lesen. Falls ein Token offengelegt wird, musst du es schnell widerrufen können, ohne die Speicherkontoschlüssel zu rotieren, die von anderen Anwendungen genutzt werden. Was solltest du beim Ausstellen der Token tun?",
         options: [
           { id: "A", text: "Konto-SAS-Token mit sehr langer Gültigkeit ausstellen", rationale: "Eine Konto-SAS ist weiter gefasst als nötig, und eine lange Gültigkeit verschlimmert ein Leck. Ad-hoc-Token lassen sich nur durch Rotieren des Signaturschlüssels widerrufen." },
           { id: "B", text: "Den Container öffentlich machen, statt SAS zu verwenden", rationale: "Anonymer öffentlicher Zugriff nimmt jede Kontrolle darüber, wer die Daten liest." },
@@ -341,9 +341,9 @@ export const sc500De: DeContent = {
         objective: "Implementieren der Sicherheit für Azure Netzwerkdienste",
         difficulty: "intermediate",
         question:
-          "Eine VM erreicht einen Back-End-Server über TCP 443 nicht. Mehrere NSGs sind auf Subnetz- und Netzwerkschnittstellenebene angewendet, und Sie müssen schnell herausfinden, ob der Datenverkehr zugelassen oder verweigert wird und welche Regel darüber entscheidet. Welches Werkzeug sollten Sie verwenden?",
+          "Eine VM erreicht einen Back-End-Server über TCP 443 nicht. Mehrere NSGs sind auf Subnetz- und Netzwerkschnittstellenebene angewendet, und du musst schnell herausfinden, ob der Datenverkehr zugelassen oder verweigert wird und welche Regel darüber entscheidet. Welches Werkzeug solltest du verwenden?",
         options: [
-          { id: "A", text: "Metrikwarnungen in Azure Monitor", rationale: "Metrikwarnungen benachrichtigen Sie bei Schwellenwerten; NSG-Regeln für einen bestimmten Datenfluss werten sie nicht aus." },
+          { id: "A", text: "Metrikwarnungen in Azure Monitor", rationale: "Metrikwarnungen benachrichtigen dich bei Schwellenwerten; NSG-Regeln für einen bestimmten Datenfluss werten sie nicht aus." },
           { id: "B", text: "Microsoft Defender External Attack Surface Management", rationale: "EASM ermittelt aus dem Internet erreichbare Ressourcen; Datenverkehr zwischen zwei VMs diagnostiziert es nicht." },
           { id: "C", text: "IP-Flussüberprüfung (IP flow verify) in Azure Network Watcher", rationale: "Richtig. Die IP-Flussüberprüfung prüft, ob ein Paket von oder zu einer VM zugelassen oder verweigert wird, und nennt die Sicherheitsregel, die die Entscheidung getroffen hat." },
           { id: "D", text: "Kostenempfehlungen von Azure Advisor", rationale: "Kostenempfehlungen haben nichts mit der Auswertung von Netzwerksicherheitsregeln zu tun." },
@@ -361,7 +361,7 @@ export const sc500De: DeContent = {
         objective: "Implementieren von Sicherheit für Server und virtuelle Computer (VMs)",
         difficulty: "foundation",
         question:
-          "Verwaltungsports (RDP und SSH) Ihrer Azure-VMs sollen standardmäßig geschlossen sein und nur für einen genehmigten Benutzer, von dessen IP-Adresse aus und für begrenzte Zeit geöffnet werden. Welches Feature bietet das?",
+          "Verwaltungsports (RDP und SSH) deiner Azure-VMs sollen standardmäßig geschlossen sein und nur für einen genehmigten Benutzer, von dessen IP-Adresse aus und für begrenzte Zeit geöffnet werden. Welches Feature bietet das?",
         options: [
           { id: "A", text: "Azure Disk Encryption", rationale: "Die Datenträgerverschlüsselung schützt ruhende Daten; den Netzwerkzugriff auf Verwaltungsports steuert sie nicht." },
           { id: "B", text: "Azure Machine Configuration", rationale: "Machine Configuration überwacht und erzwingt Einstellungen innerhalb des Betriebssystems; Ports auf Anforderung öffnet sie nicht." },
@@ -370,7 +370,7 @@ export const sc500De: DeContent = {
         ],
         answer: "C",
         explanation:
-          "JIT-VM-Zugriff verringert die Angriffsfläche für Brute-Force-Angriffe auf Verwaltungsports. Azure Bastion ist die ergänzende Option, wenn Sie diese Ports gar nicht mehr öffentlich erreichbar machen möchten.",
+          "JIT-VM-Zugriff verringert die Angriffsfläche für Brute-Force-Angriffe auf Verwaltungsports. Azure Bastion ist die ergänzende Option, wenn du diese Ports gar nicht mehr öffentlich erreichbar machen möchtest.",
         reference: GUIDE,
       },
       {
@@ -379,7 +379,7 @@ export const sc500De: DeContent = {
         objective: "Implementieren von Sicherheit für KI",
         difficulty: "intermediate",
         question:
-          "Ihr Unternehmen betreibt generative KI-Anwendungen auf Basis von Microsoft Foundry. Das Sicherheitsteam möchte in Defender for Cloud Warnungen zu Bedrohungen wie Jailbreak-Versuchen und dem Abfluss sensibler Daten in diesen KI-Workloads erhalten. Was sollten Sie aktivieren?",
+          "Dein Unternehmen betreibt generative KI-Anwendungen auf Basis von Microsoft Foundry. Das Sicherheitsteam möchte in Defender for Cloud Warnungen zu Bedrohungen wie Jailbreak-Versuchen und dem Abfluss sensibler Daten in diesen KI-Workloads erhalten. Was solltest du aktivieren?",
         options: [
           { id: "A", text: "Den Plan Defender for AI Services in Defender for Cloud", rationale: "Richtig. Defender for AI Services bietet Bedrohungsschutz für KI-Workloads und löst in Defender for Cloud Sicherheitswarnungen aus, etwa bei Jailbreak-Versuchen und Datenabfluss." },
           { id: "B", text: "Defender for Storage", rationale: "Defender for Storage schützt Speicherkonten vor Bedrohungen wie hochgeladener Schadsoftware; Interaktionen mit KI-Modellen überwacht es nicht." },
@@ -415,7 +415,7 @@ export const sc500De: DeContent = {
         objective: "Implementieren von Sicherheit für Server und virtuelle Computer (VMs)",
         difficulty: "intermediate",
         question:
-          "Neue Azure-VMs sollen gegen Bootkits und Rootkits geschützt sein, mit sicherem Start (Secure Boot), einem virtuellen TPM und Überwachung der Startintegrität. Welche Einstellung sollten Sie beim Erstellen der VMs wählen?",
+          "Neue Azure-VMs sollen gegen Bootkits und Rootkits geschützt sein, mit sicherem Start (Secure Boot), einem virtuellen TPM und Überwachung der Startintegrität. Welche Einstellung solltest du beim Erstellen der VMs wählen?",
         options: [
           { id: "A", text: "Sicherheitstyp „Standard“ mit Azure Disk Encryption", rationale: "Die Datenträgerverschlüsselung schützt ruhende Daten; der Sicherheitstyp „Standard“ bietet weder sicheren Start noch vTPM." },
           { id: "B", text: "Sicherheitstyp „Vertrauenswürdiger Start“ (Trusted launch)", rationale: "Richtig. Der vertrauenswürdige Start aktiviert auf VMs der Generation 2 sicheren Start, ein virtuelles TPM und die Überwachung der Startintegrität." },
@@ -462,7 +462,7 @@ export const sc500De: DeContent = {
         ],
         answer: "C",
         explanation:
-          "Die integrierten Sentinel-Rollen bauen aufeinander auf: Reader zeigt an, Responder verwaltet zusätzlich Vorfälle, Contributor erstellt und bearbeitet zusätzlich Inhalte. Weisen Sie Rollen im engsten Bereich zu, der funktioniert, meist im Arbeitsbereich oder in der Ressourcengruppe.",
+          "Die integrierten Sentinel-Rollen bauen aufeinander auf: Reader zeigt an, Responder verwaltet zusätzlich Vorfälle, Contributor erstellt und bearbeitet zusätzlich Inhalte. Weise Rollen im engsten Bereich zu, der funktioniert, meist im Arbeitsbereich oder in der Ressourcengruppe.",
         reference: GUIDE,
       },
       {
@@ -471,7 +471,7 @@ export const sc500De: DeContent = {
         objective: "Verwalten des Sicherheitsstatus mithilfe von Defender for Cloud",
         difficulty: "foundation",
         question:
-          "Ihre Organisation betreibt auch Workloads in Amazon Web Services. Deren Sicherheitsstatus und Empfehlungen sollen in Defender for Cloud neben Ihren Azure-Ressourcen erscheinen. Was sollten Sie tun?",
+          "Deine Organisation betreibt auch Workloads in Amazon Web Services. Deren Sicherheitsstatus und Empfehlungen sollen in Defender for Cloud neben deinen Azure-Ressourcen erscheinen. Was solltest du tun?",
         options: [
           { id: "A", text: "Azure Bastion im AWS-Konto bereitstellen", rationale: "Bastion ist ein Azure-Dienst für den VM-Zugriff; er lässt sich nicht in AWS bereitstellen und liefert keine Statusdaten." },
           { id: "B", text: "In den Umgebungseinstellungen von Defender for Cloud einen AWS-Connector für das Konto hinzufügen", rationale: "Richtig. Defender for Cloud bindet AWS-Konten (und GCP-Projekte) über native Connectors an, bewertet sie und zeigt Empfehlungen neben den Azure-Ressourcen an." },
