@@ -2774,6 +2774,1249 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     },
   },
 
+
+  /* ── November 2026, batch 2: enriched and indexable ─────────────────────────
+   * Facts from official sources only, drafted and then checked independently on 4 Nov 2026.
+   * aws-sap-c02 deliberately left out: SAP-C02 retires 16 Nov 2026 (SAP-C03 from 17 Nov). */
+  "pmp": {
+    description:
+      "Practice exams for the PMI Project Management Professional (PMP), written to the July 2026 exam content outline: people, process and business environment across predictive, agile and hybrid approaches. Check your level before the 180-question, 240-minute exam.",
+    fullName: "Project Management Professional (PMP)",
+    // Verified 2026-11-04 against pmi.org: PMP certification page, "What's new in the updated PMP exam" page (new-exam), and the PMP Examination Content Outline PDF (cover "July 2026 PMP Certification Exam Update", footer "revised 11 August 2026").
+    // Status: the updated exam launched in July 2026 (PMI states "In July 2026, we updated the PMP exam"); no specific launch day is published. No newer version announced.
+    // Note: exam languages are not stated on any PMI page fetched (the 2021-era handbook PDF is outdated), so languages are omitted. No passing score is published by PMI.
+    // Note: eligibility taken from the August 2026 ECO (10-year experience window, 24 to 60 months). The PMP certification page as fetched still showed the older 36/60 months within 8 years; the ECO and the new-exam page (10-year window) were used.
+    // Other official facts (no schema field): about 40% predictive and 60% adaptive/agile or hybrid content; from late Q4 2026 (ECO: effective 1 December 2026) live training counts toward the 35 hours only from PMI Authorized Training Partners, China Registered Education Providers or eligible accredited academic programs. Fees on the PMP page: US$405 members, US$555 non-members.
+    exam: {
+      officialName: "Project Management Professional (PMP)",
+      examVersion: "PMP Examination Content Outline, July 2026 exam update (revised 11 August 2026)",
+      questionCount: "180 questions (170 scored, 10 unscored pretest questions)",
+      duration: "240 minutes, with two 10-minute breaks",
+      questionTypes:
+        "Multiple choice (single response), multiple response, case or scenario, and graphic-based items in all modalities; enhanced matching, point and click, matching and pull-down list items in computer-based testing only",
+      delivery: "Test center or online proctored; Mainland China via paper-based testing only",
+      prerequisites:
+        "35 hours of project management education (waived for active CAPM holders) plus experience leading projects within the last 10 years: 60 months with a secondary diploma, 48 months with an associate-level degree, 36 months with a bachelor's degree or higher, or 24 months with a degree from a PMI GAC-accredited program.",
+      status: "current",
+      launchDate: "July 2026",
+      officialCertificationUrl: "https://www.pmi.org/certifications/project-management-pmp",
+      officialExamUrl: "https://www.pmi.org/certifications/project-management-pmp/new-exam",
+      domains: [
+        {
+          id: "d1",
+          name: "People",
+          weight: "33%",
+          objectives: [
+            "Develop a common vision",
+            "Manage conflicts",
+            "Lead the project team",
+            "Engage stakeholders",
+            "Align stakeholder expectations",
+            "Manage stakeholder expectations",
+            "Help ensure knowledge transfer",
+            "Plan and manage communication",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Process",
+          weight: "41%",
+          objectives: [
+            "Develop an integrated project management plan and plan delivery",
+            "Develop and manage project scope",
+            "Help ensure value-based delivery",
+            "Plan and manage resources",
+            "Plan and manage procurement",
+            "Plan and manage finance",
+            "Plan and optimize quality of products/deliverables",
+            "Plan and manage schedule",
+            "Evaluate project status",
+            "Manage project closure",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Business Environment",
+          weight: "26%",
+          objectives: [
+            "Define and establish project governance",
+            "Plan and manage project compliance",
+            "Manage and control changes",
+            "Remove impediments and manage issues",
+            "Plan and manage risk",
+            "Continuous improvement",
+            "Support organizational change",
+            "Evaluate external business environment changes",
+          ],
+        },
+      ],
+      sources: [
+        { label: "PMI: Project Management Professional (PMP)", url: "https://www.pmi.org/certifications/project-management-pmp" },
+        { label: "PMI: What's new in the updated PMP exam", url: "https://www.pmi.org/certifications/project-management-pmp/new-exam" },
+        { label: "PMI: PMP Examination Content Outline (July 2026 exam update)", url: "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/pmp/pmp-examination-content-outline.pdf" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "PMP Practice Exams for the July 2026 Exam",
+      description:
+        "PMP practice exams for the July 2026 content outline: people, process and business environment across predictive, agile and hybrid approaches.",
+    },
+  },
+  "pmi-acp": {
+    description:
+      "Practice exams for the PMI Agile Certified Practitioner (PMI-ACP), written to PMI's Examination Content Outline (November 2024, revised March 2026): mindset, leadership, product and delivery. Find your gaps before the 120-question, 3-hour exam.",
+    fullName: "PMI Agile Certified Practitioner (PMI-ACP)",
+    // Verified 2026-11-04 against pmi.org: PMI-ACP certification page and the PMI-ACP Examination Content Outline PDF (cover dated November 2024, running header "Examination Content Outline - March 2026").
+    // Status: current; no newer PMI-ACP exam announced on official pages. The ECO does not state the launch date of the current exam (cover date November 2024).
+    // Note: the PMI-ACP certification page as fetched still showed older eligibility (12 months general plus 8 months agile experience) and a shorter language list (English, Arabic, Japanese, Korean, Portuguese, Spanish). The March 2026 ECO was used for eligibility and languages (English, plus the listed translations the ECO says were to be offered by March 2025, Korean by June).
+    // Not published, so omitted: passing score, exam code.
+    // Other official facts (no schema field): fees on the PMI-ACP page US$435 members, US$495 non-members; renewal with 30 PDUs every 3 years (ECO).
+    exam: {
+      officialName: "PMI Agile Certified Practitioner (PMI-ACP)",
+      examVersion: "PMI-ACP Examination Content Outline, November 2024 (revised March 2026)",
+      questionCount: "120 questions (100 scored, 20 unscored pretest questions)",
+      duration: "3 hours, with one 10-minute break after question 60",
+      questionTypes: "Multiple choice, multiple response, drag-and-drop style items and exhibits",
+      // Note: languages omitted; the ECO (rev. March 2026) lists translations planned by March 2025, while the certification page lists English, Arabic, Japanese, Korean, Portuguese, Spanish.
+      delivery: "Test center or online proctored (OnVUE)",
+      prerequisites:
+        "Secondary diploma and 21 hours of training in agile practices, plus one of: 2 years of agile experience within the past 5 years; 1 year of agile experience with a degree from a PMI GAC-accredited program; 1 year of agile experience with an active third-party agile certification held for more than a year; or an active PMP.",
+      status: "current",
+      officialCertificationUrl: "https://www.pmi.org/certifications/agile-acp",
+      officialExamUrl: "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/agile-certified-exam-outline.pdf",
+      domains: [
+        {
+          id: "d1",
+          name: "Mindset",
+          weight: "28%",
+          objectives: [
+            "Experiment early",
+            "Embrace agile mindset",
+            "Promote collaborative team environment",
+            "Build transparency",
+            "Foster psychological safety",
+            "Shorten feedback loops",
+            "Embrace change",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Leadership",
+          weight: "25%",
+          objectives: [
+            "Empower teams",
+            "Facilitate problem resolution",
+            "Promote knowledge sharing",
+            "Promote agile mindset principles and practices",
+            "Promote shared vision and purpose",
+            "Facilitate conflict management",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Product",
+          weight: "19%",
+          objectives: ["Refine product backlog", "Manage increments", "Visualize work", "Manage value delivery"],
+        },
+        {
+          id: "d4",
+          name: "Delivery",
+          weight: "28%",
+          objectives: [
+            "Seek early feedback",
+            "Manage agile metrics",
+            "Manage impediments and risk",
+            "Recognize and eliminate waste",
+            "Perform continuous improvements",
+            "Actively engage customers",
+            "Optimize flow",
+          ],
+        },
+      ],
+      sources: [
+        { label: "PMI: PMI Agile Certified Practitioner (PMI-ACP)", url: "https://www.pmi.org/certifications/agile-acp" },
+        { label: "PMI: PMI-ACP Examination Content Outline", url: "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/agile-certified-exam-outline.pdf" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "PMI-ACP Practice Exams: Agile Certified Practitioner",
+      description:
+        "PMI-ACP practice exams for the current content outline: agile mindset, leadership, product and delivery, across all four exam domains.",
+    },
+  },
+  "cism": {
+    description:
+      "Practice exams for ISACA CISM: Certified Information Security Manager, covering the four job practice domains: governance, risk management, security program and incident management. ISACA's updated exam content outline applies to exams from 3 November 2026.",
+    fullName: "ISACA Certified Information Security Manager (CISM)",
+    // Verified 2026-11-04 against isaca.org: CISM credential page, Get CISM certified page, CISM exam content outline page, and the ISACA press release of 10 September 2026 on the updated CISM exam content outline.
+    // Status: the updated CISM exam has been available since 3 November 2026 (one day before this check). Domains unchanged, weights shifted to 18/20/33/29; ISACA adds content on enterprise architecture and information security architecture. The outline page now shows the new weights.
+    // DOUBT: the description does not claim the Udemy course was written to the 3 November 2026 outline; confirm the questions were reviewed against it before adding an outlineBadge or stronger wording.
+    // UNVERIFIED and omitted: duration, passing score, exam languages and question types. They are in the ISACA Exam Candidate Guide PDF (version 1.26), which could not be fetched (robots disallowed / proxy blocked); support.isaca.org did not render.
+    // Other official facts (no schema field): exam fee US$575 members, US$760 non-members; US$50 application processing fee; apply within 5 years of passing; 120 CPE hours per 3-year cycle, at least 20 per year.
+    exam: {
+      officialName: "Certified Information Security Manager (CISM)",
+      examVersion: "CISM exam content outline, updated exam available from 3 November 2026",
+      questionCount: "150 questions",
+      delivery: "Computer-based, at authorized PSI testing centers or remotely proctored",
+      prerequisites:
+        "None to sit the exam. For certification: at least 5 years of information security management work experience across at least three of the four CISM domains, gained within the 10 years before the application, and an application within 5 years of passing.",
+      status: "current",
+      launchDate: "3 November 2026 (updated exam content outline)",
+      officialCertificationUrl: "https://www.isaca.org/credentialing/cism",
+      officialExamUrl: "https://www.isaca.org/credentialing/cism/cism-exam-content-outline",
+      domains: [
+        { id: "d1", name: "Information Security Governance", weight: "18%", objectives: ["Enterprise Governance", "Information Security Strategy"] },
+        { id: "d2", name: "Information Security Risk Management", weight: "20%", objectives: ["Information Security Risk Identification and Assessment", "Information Security Risk Response"] },
+        { id: "d3", name: "Information Security Program", weight: "33%", objectives: ["Information Security Program Development", "Information Security Program Management"] },
+        { id: "d4", name: "Incident Management", weight: "29%", objectives: ["Incident Management Readiness", "Incident Management Operations"] },
+      ],
+      sources: [
+        { label: "ISACA: CISM certification", url: "https://www.isaca.org/credentialing/cism" },
+        { label: "ISACA: Get CISM certified", url: "https://www.isaca.org/credentialing/cism/get-cism-certified" },
+        { label: "ISACA: CISM exam content outline", url: "https://www.isaca.org/credentialing/cism/cism-exam-content-outline" },
+        {
+          label: "ISACA press release: updated CISM exam content outline (10 September 2026)",
+          url: "https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-updates-cism-exam-content-outline-factoring-in-todays-technologies-security-responsibilities",
+        },
+        { label: "ISACA: Exam candidate guides", url: "https://www.isaca.org/credentialing/exam-candidate-guides" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "ISACA CISM Practice Exams",
+      description:
+        "CISM practice exams across the four ISACA domains: security governance, risk management, security program and incident management.",
+    },
+  },
+  "cisa": {
+    description:
+      "Practice exams for ISACA CISA: Certified Information Systems Auditor, written to the exam content outline in effect since 1 August 2024: audit process, IT governance, acquisition and development, operations and resilience, and protection of information assets.",
+    fullName: "ISACA Certified Information Systems Auditor (CISA)",
+    // Verified 2026-11-04 against isaca.org: CISA credential page, Get CISA certified page, CISA exam content outline page, and the ISACA press release of 1 May 2024 (updated CISA exam available 1 August 2024).
+    // Status: current. No newer CISA outline announced on isaca.org as of this date.
+    // UNVERIFIED and omitted: duration, passing score, exam languages and question types. They are in the ISACA Exam Candidate Guide PDF (version 1.26), which could not be fetched (robots disallowed / proxy blocked); support.isaca.org did not render.
+    // Other official facts (no schema field): exam fee US$575 members, US$760 non-members; US$50 application processing fee; apply within 5 years of passing; 120 CPE hours per 3-year cycle, at least 20 per year. The Get CISA certified page mentions no experience waivers.
+    exam: {
+      officialName: "Certified Information Systems Auditor (CISA)",
+      examVersion: "CISA exam content outline, updated exam available from 1 August 2024",
+      questionCount: "150 questions",
+      delivery: "Computer-based, at authorized PSI testing centers or remotely proctored",
+      prerequisites:
+        "None to sit the exam. For certification: at least 5 years of professional information systems auditing, control or security work experience in the CISA job practice areas, gained within the 10 years before the application, and an application within 5 years of passing.",
+      status: "current",
+      launchDate: "1 August 2024 (current exam content outline)",
+      officialCertificationUrl: "https://www.isaca.org/credentialing/cisa",
+      officialExamUrl: "https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline",
+      domains: [
+        { id: "d1", name: "Information Systems Auditing Process", weight: "18%", objectives: ["Planning", "Execution"] },
+        { id: "d2", name: "Governance and Management of IT", weight: "18%", objectives: ["IT Governance", "IT Management"] },
+        { id: "d3", name: "Information Systems Acquisition, Development and Implementation", weight: "12%", objectives: ["Information Systems Acquisition and Development", "Information Systems Implementation"] },
+        { id: "d4", name: "Information Systems Operations and Business Resilience", weight: "26%", objectives: ["Information Systems Operations", "Business Resilience"] },
+        { id: "d5", name: "Protection of Information Assets", weight: "26%", objectives: ["Information Asset Security and Control", "Security Event Management"] },
+      ],
+      sources: [
+        { label: "ISACA: CISA certification", url: "https://www.isaca.org/credentialing/cisa" },
+        { label: "ISACA: Get CISA certified", url: "https://www.isaca.org/credentialing/cisa/get-cisa-certified" },
+        { label: "ISACA: CISA exam content outline", url: "https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline" },
+        {
+          label: "ISACA press release: updated CISA exam (1 May 2024)",
+          url: "https://www.isaca.org/about-us/newsroom/press-releases/2024/isacas-cisa-exam-updated-to-reflect-innovations-and-evolving-technologies-impacting-it-audit",
+        },
+        { label: "ISACA: Exam candidate guides", url: "https://www.isaca.org/credentialing/exam-candidate-guides" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "ISACA CISA Practice Exams",
+      description:
+        "CISA practice exams for the current ISACA outline: audit process, IT governance, acquisition, operations and resilience, and asset protection.",
+    },
+  },
+  "crisc": {
+    description:
+      "Practice exams for ISACA CRISC: Certified in Risk and Information Systems Control, written to the exam content outline in effect since 3 November 2025: governance, risk assessment, risk response and reporting, and technology and security.",
+    fullName: "ISACA Certified in Risk and Information Systems Control (CRISC)",
+    // Verified 2026-11-04 against isaca.org: CRISC credential page, Get CRISC certified page, CRISC exam content outline page, and the ISACA press release of 7 April 2025 (updated CRISC exam available 3 November 2025; domains unchanged, Risk Assessment 22%, Technology and Security 20%).
+    // Status: current. No newer CRISC outline announced on isaca.org as of this date.
+    // Note: the outline page prints the first Domain 4 heading as "A - Technology and Security" (same as the domain name); used as published.
+    // UNVERIFIED and omitted: duration, passing score, exam languages and question types. They are in the ISACA Exam Candidate Guide PDF (version 1.26), which could not be fetched (robots disallowed / proxy blocked); support.isaca.org did not render.
+    // Other official facts (no schema field): exam fee US$575 members, US$760 non-members; US$50 application processing fee; apply within 5 years of passing; 120 CPE hours per 3-year cycle, at least 20 per year. The Get CRISC certified page mentions no experience waivers.
+    exam: {
+      officialName: "Certified in Risk and Information Systems Control (CRISC)",
+      examVersion: "CRISC exam content outline, updated exam available from 3 November 2025",
+      questionCount: "150 questions",
+      delivery: "Computer-based, at authorized PSI testing centers or remotely proctored",
+      prerequisites:
+        "None to sit the exam. For certification: at least 3 years of CRISC professional work experience across at least two of the four CRISC domains, gained within the 10 years before the application and verified by a supervisor or manager, and an application within 5 years of passing.",
+      status: "current",
+      launchDate: "3 November 2025 (current exam content outline)",
+      officialCertificationUrl: "https://www.isaca.org/credentialing/crisc",
+      officialExamUrl: "https://www.isaca.org/credentialing/crisc/crisc-exam-content-outline",
+      domains: [
+        { id: "d1", name: "Governance", weight: "26%", objectives: ["Organizational Governance", "Risk Governance"] },
+        { id: "d2", name: "Risk Assessment", weight: "22%", objectives: ["Risk Identification", "Risk Analysis"] },
+        { id: "d3", name: "Risk Response and Reporting", weight: "32%", objectives: ["Risk Response", "Control Design and Implementation", "Risk Monitoring and Reporting"] },
+        { id: "d4", name: "Technology and Security", weight: "20%", objectives: ["Technology and Security", "Information Security Principles"] },
+      ],
+      sources: [
+        { label: "ISACA: CRISC certification", url: "https://www.isaca.org/credentialing/crisc" },
+        { label: "ISACA: Get CRISC certified", url: "https://www.isaca.org/credentialing/crisc/get-crisc-certified" },
+        { label: "ISACA: CRISC exam content outline", url: "https://www.isaca.org/credentialing/crisc/crisc-exam-content-outline" },
+        {
+          label: "ISACA press release: updated CDPSE and CRISC exams (7 April 2025)",
+          url: "https://www.isaca.org/about-us/newsroom/press-releases/2025/isaca-updates-cdpse-and-crisc-exams-to-reflect-latest-risk-and-privacy-priorities",
+        },
+        { label: "ISACA: Exam candidate guides", url: "https://www.isaca.org/credentialing/exam-candidate-guides" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "ISACA CRISC Practice Exams",
+      description:
+        "CRISC practice exams for the November 2025 ISACA outline: governance, risk assessment, risk response and reporting, technology and security.",
+    },
+  },
+  "sc-100": {
+    description:
+      "English and German practice exams for Microsoft SC-100 (Cybersecurity Architect), covering best practices, security operations, identity, compliance, infrastructure, apps and data. The English exam had minor updates on 21 October 2026; German follows about eight weeks later.",
+    fullName: "Microsoft Certified: Cybersecurity Architect Expert",
+    // Verified 2026-11-04 against the Microsoft Learn SC-100 study guide, SC-100 exam page and Cybersecurity Architect Expert certification page.
+    // Status: exam page shows "Retirement date: none" and no successor. English version updated 21 Oct 2026 (change log: minor changes to "Design solutions for security operations" and "Evaluate solutions for securing Microsoft 365"); localized versions (incl. German) are updated approximately eight weeks later, so the German exam may still follow the previous skills outline until about mid-December 2026.
+    // Not published on the SC-100 pages, so omitted: question count, duration, format, question types.
+    // Note: the study guide gives the passing score; the exam page also states "Passing score: 700".
+    exam: {
+      officialName: "Exam SC-100: Microsoft Cybersecurity Architect",
+      examCode: "SC-100",
+      examVersion: "Skills measured as of 21 October 2026",
+      passingScore: "700 or greater (scaled score)",
+      languages: ["English", "Japanese", "Chinese (Simplified)", "Korean", "German", "French", "Spanish", "Portuguese (Brazil)", "Chinese (Traditional)", "Italian"],
+      delivery: "Scheduled through Pearson VUE",
+      prerequisites: "To earn Cybersecurity Architect Expert you must also hold at least one of: Microsoft Certified: Identity and Access Administrator Associate, Security Operations Analyst Associate, or Cloud and AI Security Engineer Associate. Renewal every 12 months via a free online assessment on Microsoft Learn.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-architect-expert/",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-100/",
+      domains: [
+        {
+          id: "d1",
+          name: "Design solutions that align with security best practices and priorities",
+          weight: "20–25%",
+          objectives: [
+            "Design a resiliency strategy for ransomware and other attacks based on Microsoft Security Best Practices",
+            "Design solutions that align with the Microsoft Cybersecurity Reference Architectures (MCRA) and Microsoft Cloud Security Benchmark (MCSB)",
+            "Design solutions that align with the Microsoft Cloud Adoption Framework for Azure (CAF) and the Azure Well-Architected Framework",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Design security operations, identity, and compliance capabilities",
+          weight: "25–30%",
+          objectives: [
+            "Design solutions for security operations",
+            "Design solutions for identity and access management",
+            "Design solutions for securing privileged access",
+            "Design solutions for regulatory compliance",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Design security solutions for infrastructure",
+          weight: "25–30%",
+          objectives: [
+            "Design solutions for security posture management in hybrid and multicloud environments",
+            "Specify requirements for securing server and client endpoints",
+            "Specify requirements for securing SaaS, PaaS, and IaaS services",
+            "Evaluate solutions for network security and Security Service Edge (SSE)",
+          ],
+        },
+        {
+          id: "d4",
+          name: "Design security solutions for applications and data",
+          weight: "20–25%",
+          objectives: [
+            "Evaluate solutions for securing Microsoft 365",
+            "Design solutions for securing applications",
+            "Design solutions for securing an organization's data",
+          ],
+        },
+      ],
+      sources: [
+        { label: "Microsoft Learn: SC-100 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-100" },
+        { label: "Microsoft Learn: Exam SC-100", url: "https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-100/" },
+        { label: "Microsoft Learn: Cybersecurity Architect Expert certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-architect-expert/" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "SC-100 Practice Exams: Cybersecurity Architect",
+      description: "SC-100 practice exams in English and German: security best practices, SecOps, identity, compliance, infrastructure, apps and data by domain.",
+    },
+  },
+  "sc-401": {
+    description:
+      "Practice exams for Microsoft SC-401: Administering Information Security in Microsoft 365, covering Purview labels, DLP, retention, insider risk and AI data protection. Microsoft made a minor update to the sensitivity label objectives on 28 October 2026.",
+    fullName: "Microsoft Certified: Information Security Administrator Associate",
+    // Verified 2026-11-04 against the Microsoft Learn SC-401 study guide, SC-401 exam page and Information Security Administrator Associate certification page.
+    // Status: no retirement or replacement notice on the official pages. English version updated 28 Oct 2026 (change log: minor change to "Implement and manage sensitivity labels in Purview").
+    // Note: the course title says "ex SC-400"; the official SC-401 pages fetched do not mention SC-400, so the predecessor is not stated here.
+    // Not published on the SC-401 pages, so omitted: question count, format, question types. Passing score is from the study guide (the exam page does not state it).
+    exam: {
+      officialName: "Exam SC-401: Administering Information Security in Microsoft 365",
+      examCode: "SC-401",
+      examVersion: "Skills measured as of 28 October 2026",
+      duration: "100 minutes",
+      passingScore: "700 or greater (scaled score)",
+      languages: ["English", "Portuguese (Brazil)", "French", "German", "Japanese", "Chinese (Simplified)", "Spanish"],
+      delivery: "Proctored exam scheduled through Pearson VUE; may include interactive components",
+      prerequisites: "No formal prerequisites. Microsoft expects familiarity with all Microsoft 365 services, PowerShell, Microsoft Entra, the Microsoft Defender portal and Microsoft Defender for Cloud Apps. Renewal every 12 months via a free online assessment on Microsoft Learn.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-401/",
+      domains: [
+        {
+          id: "d1",
+          name: "Implement information protection",
+          weight: "30–35%",
+          objectives: [
+            "Implement and manage data classification",
+            "Implement and manage sensitivity labels in Microsoft Purview",
+            "Implement information protection for Windows, file shares, and Exchange",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Implement data loss prevention and retention",
+          weight: "30–35%",
+          objectives: [
+            "Create and configure data loss prevention policies",
+            "Implement and monitor Microsoft Purview Endpoint DLP",
+            "Implement and manage retention",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Manage risks, alerts, and activities",
+          weight: "30–35%",
+          objectives: [
+            "Implement and manage Microsoft Purview Insider Risk Management",
+            "Manage information security alerts and activities",
+            "Protect data used by AI services",
+          ],
+        },
+      ],
+      sources: [
+        { label: "Microsoft Learn: SC-401 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401" },
+        { label: "Microsoft Learn: Exam SC-401", url: "https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-401/" },
+        { label: "Microsoft Learn: Information Security Administrator Associate certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "SC-401 Practice Exams: Information Security Admin",
+      description: "SC-401 practice exams covering Purview sensitivity labels, DLP, retention, insider risk, alerts and AI data protection in Microsoft 365.",
+    },
+  },
+  "az-700": {
+    description:
+      "Practice exams for Microsoft AZ-700: Azure Networking Solutions, written to the skills measured as of 27 July 2026 (core networking, hybrid connectivity, application delivery, private access and network security).",
+    fullName: "Microsoft Certified: Azure Network Engineer Associate",
+    // Verified 2026-11-04 against the Microsoft Learn AZ-700 study guide, AZ-700 exam page and Azure Network Engineer Associate certification page.
+    // Status: no retirement or replacement notice on the official pages. English version updated 27 Jul 2026 (change log: minor changes to IP addressing, Monitor networks, and network security groups).
+    // Not published on the AZ-700 pages, so omitted: question count, format, question types. Passing score is from the study guide (exam and certification pages do not state it).
+    exam: {
+      officialName: "Exam AZ-700: Designing and Implementing Microsoft Azure Networking Solutions",
+      examCode: "AZ-700",
+      examVersion: "Skills measured as of 27 July 2026",
+      duration: "100 minutes",
+      passingScore: "700 or greater (scaled score)",
+      languages: ["English", "German", "Spanish", "French", "Italian", "Japanese", "Korean", "Portuguese (Brazil)", "Chinese (Simplified)", "Chinese (Traditional)"],
+      delivery: "Proctored exam scheduled through Pearson VUE; may include interactive components",
+      prerequisites: "No formal prerequisites. Microsoft expects experience creating and managing compute, storage and networking resources in Azure, and an understanding of name resolution, network protocols and network address management. Renewal every 12 months via a free online assessment on Microsoft Learn.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/exams/az-700/",
+      domains: [
+        {
+          id: "d1",
+          name: "Design and implement core networking infrastructure",
+          weight: "25–30%",
+          objectives: [
+            "Design and implement IP addressing for Azure resources",
+            "Design and implement name resolution",
+            "Design and implement VNet connectivity and routing",
+            "Monitor networks",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Design, implement, and manage connectivity services",
+          weight: "20–25%",
+          objectives: [
+            "Design, implement, and manage a site-to-site VPN connection",
+            "Design, implement, and manage a point-to-site VPN connection",
+            "Design, implement, and manage Azure ExpressRoute",
+            "Design and implement an Azure Virtual WAN architecture",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Design and implement application delivery services",
+          weight: "15–20%",
+          objectives: [
+            "Design and implement Azure Load Balancer and Azure Traffic Manager",
+            "Design and implement Azure Application Gateway",
+            "Design and implement Azure Front Door",
+          ],
+        },
+        {
+          id: "d4",
+          name: "Design and implement private access to Azure services",
+          weight: "10–15%",
+          objectives: [
+            "Design and implement Azure Private Link service and Azure private endpoints",
+            "Design and implement service endpoints",
+          ],
+        },
+        {
+          id: "d5",
+          name: "Design and implement Azure network security services",
+          weight: "15–20%",
+          objectives: [
+            "Implement and manage network security groups",
+            "Design and implement Azure Firewall and Azure Firewall Manager",
+            "Design and implement a Web Application Firewall (WAF) deployment",
+          ],
+        },
+      ],
+      sources: [
+        { label: "Microsoft Learn: AZ-700 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700" },
+        { label: "Microsoft Learn: Exam AZ-700", url: "https://learn.microsoft.com/en-us/credentials/certifications/exams/az-700/" },
+        { label: "Microsoft Learn: Azure Network Engineer Associate certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "AZ-700 Practice Exams: Azure Network Engineer",
+      description: "AZ-700 practice exams for the July 2026 skills outline: VNets, routing, DNS, VPN, ExpressRoute, Virtual WAN, load balancing, Private Link and firewalls.",
+    },
+  },
+  "ab-900": {
+    description:
+      "German-language practice exams for Microsoft AB-900 (Copilot and Agent Administration Fundamentals): Microsoft 365 basics, Purview, and Copilot and agent admin. The English exam had a minor update on 14 October 2026; German follows about eight weeks later.",
+    fullName: "Microsoft 365 Certified: Copilot and Agent Administration Fundamentals",
+    // Verified 2026-11-04 against the Microsoft Learn AB-900 study guide, AB-900 exam page and Copilot and Agent Administration Fundamentals certification page.
+    // Status: no retirement or replacement notice on the official pages. English version updated 14 Oct 2026 (change log: minor change to "Identify the core security features of Microsoft 365 services"). Localized versions (incl. German) are updated approximately eight weeks after the English version, so the German exam may follow the previous outline until about early December 2026.
+    // Not published on the AB-900 pages, so omitted: question count, format, question types, renewal (Fundamentals certifications are not listed as expiring). Passing score is from the study guide (exam and certification pages do not state it).
+    // Note: the official pages do not say whether AB-900 replaces MS-900, so no predecessor is stated.
+    exam: {
+      officialName: "Exam AB-900: Microsoft 365 Copilot and Agent Administration Fundamentals",
+      examCode: "AB-900",
+      examVersion: "Skills measured as of 14 October 2026",
+      duration: "45 minutes",
+      passingScore: "700 or greater (scaled score)",
+      languages: ["English", "Arabic (Saudi Arabia)", "Japanese", "Chinese (Simplified)", "Chinese (Traditional)", "Korean", "German", "French", "Indonesian (Indonesia)", "Italian", "Portuguese (Brazil)", "Russian", "Spanish"],
+      delivery: "Proctored exam scheduled through Pearson VUE, or through Certiport for students and educators; may include interactive components",
+      prerequisites: "No formal prerequisites. Microsoft expects familiarity with Microsoft 365 core services, security, identity and access, data protection and governance, Microsoft 365 Copilot and agents, and the admin centers for Exchange Online, SharePoint, Teams, Microsoft Entra and Microsoft Purview.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals/",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-900/",
+      domains: [
+        {
+          id: "d1",
+          name: "Identify the core features and objects of Microsoft 365 services",
+          weight: "30–35%",
+          objectives: [
+            "Identify the core objects of Microsoft 365 services",
+            "Understand the Microsoft 365 security principles",
+            "Identify the core security features of Microsoft 365 services",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Understand data protection and governance tasks for Microsoft 365 and Copilot",
+          weight: "35–40%",
+          objectives: [
+            "Understand Microsoft Purview",
+            "Understand data security implications of Copilot",
+            "Identify data protection and governance risks for Microsoft 365 and Copilot",
+            "Identify and monitor oversharing in SharePoint in Microsoft 365",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Perform basic administrative tasks for Copilot and agents",
+          weight: "25–30%",
+          objectives: [
+            "Understand features and capabilities of Copilot and agents",
+            "Perform basic administrative tasks for Copilot",
+            "Perform basic administrative tasks for agents",
+          ],
+        },
+      ],
+      sources: [
+        { label: "Microsoft Learn: AB-900 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900" },
+        { label: "Microsoft Learn: Exam AB-900", url: "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-900/" },
+        { label: "Microsoft Learn: Copilot and Agent Administration Fundamentals certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals/" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "AB-900 Practice Exams (German): Copilot Admin",
+      description: "German-language AB-900 practice exams: Microsoft 365 core features, Purview data protection, oversharing, and Copilot and agent administration.",
+    },
+  },
+  "github-copilot-gh-300": {
+    description:
+      "Practice exams for GH-300: GitHub Copilot, written to the skills measured as of 7 August 2026 (responsible AI, IDE and CLI features, data and architecture, prompt engineering, productivity and privacy).",
+    fullName: "GitHub Copilot Certification",
+    // Verified 2026-11-04 against the Microsoft Learn GH-300 study guide and the GitHub Copilot certification page on Microsoft Learn. The exam page /exams/gh-300/ could not be retrieved (site error).
+    // Status: no retirement or replacement notice. English version updated 7 Aug 2026 (change log: minor changes to Copilot in the IDE, features and capabilities, and safeguards). The certification page says GitHub is moving to Microsoft's recertification process.
+    // Note: the study guide's "Skills at a glance" list also contains a duplicate item "GitHub Copilot features (25–30%)" with no objectives; it is omitted here (the six domains below have objectives and match the "Skills measured" section).
+    // Not published on the official pages, so omitted: question count, format, question types. Passing score is from the study guide (the certification page does not state it).
+    exam: {
+      officialName: "Exam GH-300: GitHub Copilot",
+      examCode: "GH-300",
+      examVersion: "Skills measured as of 7 August 2026",
+      duration: "100 minutes",
+      passingScore: "700 or greater (scaled score)",
+      languages: ["English", "Spanish", "Portuguese (Brazil)", "Korean", "Japanese"],
+      delivery: "Proctored exam; may include interactive components",
+      prerequisites: "No formal prerequisites. GitHub expects familiarity with GitHub fundamentals and experience with one or more programming languages. GitHub certifications are valid for 2 years.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/github-copilot/",
+      domains: [
+        {
+          id: "d1",
+          name: "Use GitHub Copilot responsibly",
+          weight: "15–20%",
+          objectives: [
+            "Understand responsible AI principles",
+            "Validate and operate AI tools",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Use GitHub Copilot features",
+          weight: "25–30%",
+          objectives: [
+            "Use GitHub Copilot in the IDE",
+            "Use GitHub Copilot CLI",
+            "Use GitHub Copilot features and capabilities",
+            "Manage organization-wide settings and policies",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Understand GitHub Copilot data and architecture",
+          weight: "10–15%",
+          objectives: [
+            "Describe data handling and flow",
+            "Understand lifecycle and limitations",
+          ],
+        },
+        {
+          id: "d4",
+          name: "Apply prompt engineering and context crafting",
+          weight: "10–15%",
+          objectives: [
+            "Craft effective prompts",
+            "Engineer prompts for performance",
+          ],
+        },
+        {
+          id: "d5",
+          name: "Improve developer productivity with GitHub Copilot",
+          weight: "10–15%",
+          objectives: [
+            "Enhance productivity and code quality",
+            "Support testing and security",
+          ],
+        },
+        {
+          id: "d6",
+          name: "Configure privacy, content exclusions, and safeguards",
+          weight: "10–15%",
+          objectives: [
+            "Manage privacy settings and exclusions",
+            "Apply safeguards and troubleshoot",
+          ],
+        },
+      ],
+      sources: [
+        { label: "Microsoft Learn: GH-300 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300" },
+        { label: "Microsoft Learn: GitHub Copilot certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/github-copilot/" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "GH-300 Practice Exams: GitHub Copilot Certification",
+      description: "GH-300 practice exams for the Aug 2026 skills outline: responsible AI, Copilot in the IDE and CLI, agent mode, prompts, privacy and content exclusions.",
+    },
+  },
+  "aws-dva-c03": {
+    description:
+      "Practice exams for AWS DVA-C03: Certified Developer - Associate, written to the new exam guide, including AI-assisted development and AI service security. DVA-C03 replaces DVA-C02 on 1 December 2026; the last day to take DVA-C02 is 30 November 2026.",
+    fullName: "AWS Certified Developer - Associate",
+    // Verified 2026-11-04 against the AWS certification page, the AWS exam guides index, the DVA-C03 exam guide (overview, domain 1-4 pages, DVA-C02 vs DVA-C03 comparison, PDF).
+    // Status: exam guides index lists DVA-C02 "being updated", last day to take 30 Nov 2026, and DVA-C03 "registration opens December 1, 2026". Comparison page: DVA-C02 "in use until November 30, 2026", DVA-C03 "in use beginning December 1, 2026".
+    // Domain changes vs DVA-C02: D1 32% to 30%, D2 26% unchanged, D3 renamed "Deployment" to "Testing and Deployment" 24% to 22%, D4 18% to 22%; new Task 2.3 on AI service security.
+    // Note: exam guide version number/date not stated (revisions page did not render), so examVersion gives only the code. AWS certification page does not list a passing score; 720 is from the exam guide.
+    // Note: languages are the certification page list; AWS does not state separately whether every language is available for DVA-C03 from day one.
+    exam: {
+      officialName: "AWS Certified Developer - Associate",
+      examCode: "DVA-C03",
+      examVersion: "Exam guide DVA-C03 (replaces DVA-C02)",
+      questionCount: "65 questions (50 scored, 15 unscored)",
+      duration: "130 minutes",
+      format: "Multiple choice and multiple response; pass/fail with a scaled score of 100 to 1,000 (compensatory scoring)",
+      passingScore: "720 (scaled)",
+      questionTypes: "Multiple choice (one correct response and three distractors) and multiple response (two or more correct responses out of five or more options)",
+      languages: ["English", "Japanese", "Korean", "Portuguese (Brazil)", "Simplified Chinese", "Spanish (Latin America)"],
+      delivery: "Pearson VUE testing center or online proctored exam",
+      prerequisites: "No formal prerequisites. Recommended: 1 or more years of hands-on experience developing and maintaining applications by using AWS services.",
+      status: "upcoming",
+      launchDate: "2026-12-01",
+      officialCertificationUrl: "https://aws.amazon.com/certification/certified-developer-associate/",
+      officialExamUrl: "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-03/developer-associate-03.html",
+      domains: [
+        { id: "d1", name: "Development with AWS Services", weight: "30%", objectives: ["Develop code for applications that are hosted on AWS.", "Develop code for AWS Lambda.", "Use data stores during application development."] },
+        { id: "d2", name: "Security", weight: "26%", objectives: ["Implement authentication and authorization mechanisms for applications and AWS services.", "Implement encryption and manage sensitive data by using AWS services.", "Identify and mitigate security risks associated with using and integrating AI services into application development."] },
+        { id: "d3", name: "Testing and Deployment", weight: "22%", objectives: ["Prepare application artifacts to be deployed to AWS.", "Implement and automate application testing in AWS environments.", "Deploy code by using AWS continuous integration and continuous delivery (CI/CD) services."] },
+        { id: "d4", name: "Troubleshooting and Optimization", weight: "22%", objectives: ["Assist in a root cause analysis.", "Apply logging, monitoring, and observability best practices.", "Optimize applications by using AWS services and features."] },
+      ],
+      sources: [
+        { label: "AWS: Certified Developer - Associate", url: "https://aws.amazon.com/certification/certified-developer-associate/" },
+        { label: "AWS: Certification exam guides (DVA-C02 last day, DVA-C03 registration)", url: "https://docs.aws.amazon.com/aws-certification/latest/examguides/aws-certification-exam-guides.html" },
+        { label: "AWS: DVA-C03 Exam Guide", url: "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-03/developer-associate-03.html" },
+        { label: "AWS: Comparison of DVA-C02 and DVA-C03", url: "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-03/dva-03-comparison.html" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "DVA-C03 Practice Exams: AWS Developer Associate (2026)",
+      description: "DVA-C03 practice exams for AWS Developer - Associate: development, security, testing and deployment, troubleshooting. Replaces DVA-C02 on 1 Dec 2026.",
+    },
+  },
+  "aws-soa-c03": {
+    description:
+      "Practice exams for AWS SOA-C03: Certified CloudOps Engineer - Associate (formerly SysOps Administrator), written to the official exam guide: monitoring, reliability, deployment and automation, security, and networking. Check your level before the exam.",
+    fullName: "AWS Certified CloudOps Engineer - Associate",
+    // Verified 2026-11-04 against the AWS certification page, the AWS exam guides index, the SOA-C03 exam guide (overview, domain 1-5 pages, SOA-C02 vs SOA-C03 comparison, revisions v1.2 of 29 Oct 2026).
+    // Status: SOA-C03 is current. Comparison page: SOA-C02 "in use until September 29, 2025", SOA-C03 "in use beginning September 30, 2025". Exam guides index has no update note for SOA-C03.
+    // Rename: certification page says the SysOps Administrator - Associate name changed to CloudOps Engineer - Associate with the latest exam update; existing SysOps holders stay certified for 3 years from the date earned.
+    // IMPORTANT: AWS certification page: the exam "in Simplified Chinese and Korean will be retired after November 19, 2026" (not relevant to the English course). Languages array is the page list, which still includes both until then.
+    // Note: AWS certification page does not list a passing score; 720 is from the exam guide.
+    exam: {
+      officialName: "AWS Certified CloudOps Engineer - Associate",
+      examCode: "SOA-C03",
+      examVersion: "Exam guide SOA-C03, version 1.2 (29 October 2026)",
+      questionCount: "65 questions (50 scored, 15 unscored)",
+      duration: "130 minutes",
+      format: "Multiple choice and multiple response; pass/fail with a scaled score of 100 to 1,000 (compensatory scoring)",
+      passingScore: "720 (scaled)",
+      questionTypes: "Multiple choice (one correct response and three distractors) and multiple response (two or more correct responses out of five or more options)",
+      languages: ["English", "Japanese", "Korean (until 19 November 2026)", "Simplified Chinese (until 19 November 2026)"],
+      delivery: "Pearson VUE testing center or online proctored exam",
+      prerequisites: "No formal prerequisites. Recommended: about 1 year of experience deploying, managing, and operating workloads on AWS, plus at least 1 year in a related operations role.",
+      status: "current",
+      launchDate: "2025-09-30",
+      officialCertificationUrl: "https://aws.amazon.com/certification/certified-cloudops-engineer-associate/",
+      officialExamUrl: "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03.html",
+      domains: [
+        { id: "d1", name: "Monitoring, Logging, Analysis, Remediation, and Performance Optimization", weight: "22%", objectives: ["Implement metrics, alarms, and filters by using AWS monitoring and logging services.", "Identify and remediate issues by using monitoring and availability metrics.", "Implement performance optimization strategies for compute, storage, and database resources."] },
+        { id: "d2", name: "Reliability and Business Continuity", weight: "22%", objectives: ["Implement scalability and elasticity.", "Implement highly available and resilient environments.", "Implement backup and restore strategies."] },
+        { id: "d3", name: "Deployment, Provisioning, and Automation", weight: "22%", objectives: ["Provision and maintain cloud resources.", "Automate the management of existing resources."] },
+        { id: "d4", name: "Security and Compliance", weight: "16%", objectives: ["Implement and manage security and compliance tools and policies.", "Implement strategies to protect data and infrastructure."] },
+        { id: "d5", name: "Networking and Content Delivery", weight: "18%", objectives: ["Implement and optimize networking features and connectivity.", "Configure domains, DNS services, and content delivery.", "Troubleshoot network connectivity issues."] },
+      ],
+      sources: [
+        { label: "AWS: Certified CloudOps Engineer - Associate", url: "https://aws.amazon.com/certification/certified-cloudops-engineer-associate/" },
+        { label: "AWS: SOA-C03 Exam Guide", url: "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03.html" },
+        { label: "AWS: Comparison of SOA-C02 and SOA-C03", url: "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-comparison.html" },
+        { label: "AWS: SOA-C03 Exam Guide revisions", url: "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/soa-03-revisions.html" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "SOA-C03 Practice Exams: AWS CloudOps Engineer (2026)",
+      description: "SOA-C03 practice exams for AWS CloudOps Engineer - Associate (ex SysOps): monitoring, reliability, automation, security and networking, by domain.",
+    },
+  },
+  "terraform-associate-004": {
+    description:
+      "Practice exams for HashiCorp Certified: Terraform Associate (004), written to the official exam objectives for Terraform 1.12: IaC concepts, core workflow, configuration, modules, state and HCP Terraform. Check your level before the one-hour exam.",
+    fullName: "HashiCorp Certified: Terraform Associate (004)",
+    // Verified 2026-11-04 against the HashiCorp Terraform Associate (004) certification page, the HashiCorp certifications overview, and the 004 study and review tutorials on developer.hashicorp.com.
+    // Status: 004 is the only version on the official certification page; the 003 review tutorial calls 004 "the new version". 004 adds objectives 4f, 4g, 4h (ephemeral values, write-only arguments) and 8c and tests Terraform 1.12.
+    // UNVERIFIED and omitted: launch date of 004 / last day of 003. No official HashiCorp page I could fetch states it; third-party sources (e.g. dev.to) say 004 replaced 003 on 8 January 2026.
+    // UNVERIFIED and omitted: question count and passing score (not published on the official pages). Format is "multiple choice" only; no further question-type detail.
+    // Objectives below are the official domain headings only; sub-objectives (1a, 1b, ...) are not copied.
+    exam: {
+      officialName: "HashiCorp Certified: Terraform Associate (004)",
+      examCode: "Terraform Associate (004)",
+      examVersion: "004 (tests Terraform 1.12, includes HCP Terraform content)",
+      duration: "1 hour",
+      format: "Multiple choice, online proctored",
+      questionTypes: "Multiple choice",
+      languages: ["English"],
+      delivery: "Online proctored",
+      prerequisites: "None required. Recommended: basic terminal skills and an understanding of on-premises and cloud architecture; professional experience recommended, or practice of the objectives in a personal demo environment.",
+      status: "current",
+      officialCertificationUrl: "https://developer.hashicorp.com/certifications/terraform-associate",
+      officialExamUrl: "https://developer.hashicorp.com/certifications/terraform-associate",
+      domains: [
+        { id: "d1", name: "Infrastructure as Code (IaC) with Terraform" },
+        { id: "d2", name: "Terraform fundamentals" },
+        { id: "d3", name: "Core Terraform workflow" },
+        { id: "d4", name: "Terraform configuration" },
+        { id: "d5", name: "Terraform modules" },
+        { id: "d6", name: "Terraform state management" },
+        { id: "d7", name: "Maintain infrastructure with Terraform" },
+        { id: "d8", name: "HCP Terraform" },
+      ],
+      sources: [
+        { label: "HashiCorp: Terraform Associate (004) certification", url: "https://developer.hashicorp.com/certifications/terraform-associate" },
+        { label: "HashiCorp: Infrastructure automation certifications", url: "https://developer.hashicorp.com/certifications/infrastructure-automation" },
+        { label: "HashiCorp: Terraform Associate (004) study guide", url: "https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004" },
+        { label: "HashiCorp: Terraform Associate 004 exam content list", url: "https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-review-004" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "Terraform Associate 004 Practice Exams (2026)",
+      description: "Terraform Associate (004) practice exams for Terraform 1.12: IaC, core workflow, configuration, modules, state management and HCP Terraform.",
+    },
+  },
+  "comptia-security-plus-sy0-801": {
+    description:
+      "Practice exams for CompTIA Security+ SY0-801 (V8), written to the official V8 exam objectives, including AI-related threats. V8 launches on or around 17 November 2026 in English; SY0-701 stays available until 11 June 2027 in English.",
+    fullName: "CompTIA Security+ (SY0-801)",
+    // Verified 2026-11-04 against the CompTIA Security+ V8 page, the Security+ certification page, the SY0-801 exam objectives PDF (document version 2.0) and the Security+ V7 page.
+    // Status: V8 page gives launch "November 17, 2026" and "on or around November 17, 2026"; certification page says V8 is "expected to launch on or around November 17, 2026". V8 retirement "estimated 3 years after launch".
+    // Predecessor: V7 page states SY0-701 retirement English: 11 June 2027; Japanese, Portuguese, Spanish and Thai: 13 August 2027.
+    // Note: V8 page lists English only and gives no date for other languages. Delivery method and price not stated on the V8 page, omitted.
+    // Domain names changed vs V7: domain 2 is now "Threats, Vulnerabilities, and Attacks"; new objective 2.6 on AI usage.
+    exam: {
+      officialName: "CompTIA Security+",
+      examCode: "SY0-801",
+      examVersion: "Security+ V8 (exam objectives document version 2.0)",
+      questionCount: "Maximum of 90",
+      duration: "90 minutes",
+      format: "Multiple-choice and performance-based questions",
+      passingScore: "750 (on a scale of 100 to 900)",
+      questionTypes: "Multiple-choice and performance-based",
+      languages: ["English"],
+      prerequisites: "None required. Recommended experience: security administrator with two years of hands-on experience.",
+      status: "upcoming",
+      launchDate: "2026-11-17",
+      officialCertificationUrl: "https://www.comptia.org/en-us/certifications/security/",
+      officialExamUrl: "https://www.comptia.org/en-us/certifications/security/v8/",
+      domains: [
+        { id: "d1", name: "General Security Concepts", weight: "16%", objectives: ["1.1 Explain security concepts and controls.", "1.2 Given a scenario, demonstrate the impact of change management processes on security.", "1.3 Explain the importance of using appropriate cryptographic solutions."] },
+        { id: "d2", name: "Threats, Vulnerabilities, and Attacks", weight: "24%", objectives: ["2.1 Explain characteristics of threats and vulnerabilities.", "2.2 Describe common threat actors and motivations.", "2.3 Describe threat vectors and sources.", "2.4 Explain types of vulnerabilities and attack surfaces.", "2.5 Given a scenario, analyze indicators of malicious activity.", "2.6 Summarize threats and vulnerabilities associated with artificial intelligence (AI) usage."] },
+        { id: "d3", name: "Security Architecture", weight: "19%", objectives: ["3.1 Compare and contrast security implications of different architecture models.", "3.2 Given a scenario, manage the security architecture to best protect the infrastructure.", "3.3 Summarize concepts and strategies used to protect data.", "3.4 Explain the importance of resilience and recovery in security architecture."] },
+        { id: "d4", name: "Security Operations", weight: "27%", objectives: ["4.1 Given a scenario, apply mitigating controls, techniques, and solutions to secure the environment.", "4.2 Explain the security implications of proper hardware, software, and data asset management.", "4.3 Given a scenario, perform tasks associated with vulnerability management.", "4.4 Explain security alerting and monitoring concepts and tools.", "4.5 Given a scenario, apply concepts related to identity and access management.", "4.6 Given a scenario, apply automation and orchestration solutions to secure operations.", "4.7 Summarize concepts associated with incident response activities.", "4.8 Given a scenario, use data, artifacts and sources to support a security investigation."] },
+        { id: "d5", name: "Security Program Management and Oversight", weight: "14%", objectives: ["5.1 Explain the importance of governance, risk, and compliance artifacts.", "5.2 Explain the impact of risk management processes on the security of the organization.", "5.3 Explain the assessment and management processes associated with third-party risk.", "5.4 Summarize elements of effective security compliance.", "5.5 Explain concepts associated with audit and assessment activities.", "5.6 Given a scenario, apply security awareness concepts to improve organizational security."] },
+      ],
+      sources: [
+        { label: "CompTIA: Security+ V8 (SY0-801) exam details", url: "https://www.comptia.org/en-us/certifications/security/v8/" },
+        { label: "CompTIA: Security+ SY0-801 V8 Exam Objectives (PDF)", url: "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928" },
+        { label: "CompTIA: Security+ certification", url: "https://www.comptia.org/en-us/certifications/security/" },
+        { label: "CompTIA: Security+ V7 (SY0-701) retirement dates", url: "https://www.comptia.org/en-us/certifications/security/v7/" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "CompTIA Security+ SY0-801 (V8) Practice Exams",
+      description: "CompTIA Security+ SY0-801 (V8) practice exams, launch on or around 17 Nov 2026: security concepts, threats incl. AI, architecture, operations, governance.",
+    },
+  },
+  "ckad": {
+    description:
+      "Practice tests for the Certified Kubernetes Application Developer (CKAD) from The Linux Foundation and CNCF, written to the Kubernetes v1.37 curriculum. Question-based tests on all five domains to find your gaps before the 2-hour performance-based exam.",
+    fullName: "Certified Kubernetes Application Developer",
+    // Verified 2026-11-04 against training.linuxfoundation.org CKAD page, docs.linuxfoundation.org CKA/CKAD tips page and CKA/CKAD/CKS FAQ, and github.com/cncf/curriculum (CKAD_Curriculum_v1.37.pdf). Objective wording from the CNCF PDF.
+    // Not published as a fixed number, so omitted: question count (the tips page says the exams consist of 15 to 20 performance-based tasks).
+    // CONFLICT on the LF CKAD page: the "CKAD includes" list says "Two exam attempts" while the "Includes" section says "One Retake". The FAQ says a retake is offered "when eligible". Not put in a field.
+    // Other official facts (no schema field): Killer.sh simulator, 2 attempts with 36 hours each; 12 months to schedule; certification valid 2 years; exam environment moves to the latest Kubernetes minor roughly 4 to 8 weeks after each release.
+    // Objective "Understand API depreciations" is spelled that way in the CNCF PDF (sic); written here as "deprecations".
+    exam: {
+      officialName: "Certified Kubernetes Application Developer (CKAD)",
+      examCode: "CKAD",
+      examVersion: "Kubernetes v1.37 (CKAD curriculum v1.37)",
+      duration: "2 hours",
+      format: "Online, proctored, performance-based exam solved from a command line running Kubernetes",
+      passingScore: "66%",
+      questionTypes: "Performance-based tasks completed on the command line (15 to 20 tasks)",
+      languages: ["English", "Simplified Chinese", "Japanese"],
+      delivery: "Online, remotely proctored (PSI Bridge platform with the PSI Secure Browser)",
+      prerequisites: "None",
+      status: "current",
+      officialCertificationUrl: "https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/",
+      officialExamUrl: "https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad",
+      domains: [
+        {
+          id: "d1",
+          name: "Application Design and Build",
+          weight: "20%",
+          objectives: [
+            "Define, build and modify container images",
+            "Choose and use the right workload resource (Deployment, DaemonSet, CronJob, etc.)",
+            "Understand multi-container Pod design patterns (e.g. sidecar, init and others)",
+            "Utilize persistent and ephemeral volumes",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Application Deployment",
+          weight: "20%",
+          objectives: [
+            "Use Kubernetes primitives to implement common deployment strategies (e.g. blue/green or canary)",
+            "Understand Deployments and how to perform rolling updates",
+            "Use the Helm package manager to deploy existing packages",
+            "Kustomize",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Application Observability and Maintenance",
+          weight: "15%",
+          objectives: [
+            "Understand API deprecations",
+            "Implement probes and health checks",
+            "Use built-in CLI tools to monitor Kubernetes applications",
+            "Utilize container logs",
+            "Debugging in Kubernetes",
+          ],
+        },
+        {
+          id: "d4",
+          name: "Application Environment, Configuration and Security",
+          weight: "25%",
+          objectives: [
+            "Discover and use resources that extend Kubernetes (CRD, Operators)",
+            "Understand authentication, authorization and admission control",
+            "Understand requests, limits, quotas",
+            "Define resource requirements",
+            "Understand ConfigMaps",
+            "Create and consume Secrets",
+            "Understand ServiceAccounts",
+            "Understand Application Security (SecurityContexts, Capabilities, etc.)",
+          ],
+        },
+        {
+          id: "d5",
+          name: "Services and Networking",
+          weight: "20%",
+          objectives: [
+            "Demonstrate basic understanding of NetworkPolicies",
+            "Provide and troubleshoot access to applications via services",
+            "Use Ingress rules to expose applications",
+          ],
+        },
+      ],
+      sources: [
+        { label: "Linux Foundation Training: CKAD certification page", url: "https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/" },
+        { label: "Linux Foundation docs: CKA and CKAD exam tips and instructions", url: "https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad" },
+        { label: "Linux Foundation docs: CKA, CKAD and CKS FAQ", url: "https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks" },
+        { label: "CNCF curriculum: CKAD curriculum v1.37", url: "https://github.com/cncf/curriculum" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "CKAD Practice Tests: Kubernetes App Developer",
+      description: "CKAD practice tests for Kubernetes v1.37: application design and build, deployment, observability, configuration and security, services and networking.",
+    },
+  },
+  "cks": {
+    description:
+      "Practice tests for the Certified Kubernetes Security Specialist (CKS) from The Linux Foundation and CNCF, covering all six domains from cluster setup and hardening to supply chain and runtime security. Find gaps before the 2-hour performance-based exam.",
+    fullName: "Certified Kubernetes Security Specialist",
+    // Verified 2026-11-04 against training.linuxfoundation.org CKS page, docs.linuxfoundation.org CKS important instructions page and CKA/CKAD/CKS FAQ, and github.com/cncf/curriculum ("CKS_Curriculum v1.37.pdf"). Objective wording from the CNCF PDF.
+    // CONFLICT on Kubernetes version: the LF CKS page and the CNCF curriculum file say v1.37; the CKS instructions page ("currently running Kubernetes v1.35") and the FAQ say the exam environment runs v1.35. examVersion states both; the description avoids naming a version.
+    // Not published as a fixed number, so omitted: question count (the instructions page says 15 to 20 performance-based tasks).
+    // Prerequisite: LF page and FAQ say candidates must have taken and passed the CKA exam; neither page says whether the CKA must still be active, so that is not claimed.
+    // Other official facts (no schema field): one retake included (LF page); Killer.sh simulator, 2 attempts with 36 hours each; 12 months to schedule; certification valid 2 years.
+    exam: {
+      officialName: "Certified Kubernetes Security Specialist (CKS)",
+      examCode: "CKS",
+      examVersion: "CKS curriculum v1.37 (LF docs state the exam environment currently runs Kubernetes v1.35)",
+      duration: "2 hours",
+      format: "Online, proctored, performance-based exam solved from a command line running Kubernetes",
+      passingScore: "67%",
+      questionTypes: "Performance-based tasks completed on the command line (15 to 20 tasks)",
+      languages: ["English", "Simplified Chinese", "Japanese"],
+      delivery: "Online, remotely proctored (PSI Bridge platform with the PSI Secure Browser)",
+      prerequisites: "Candidates must have taken and passed the Certified Kubernetes Administrator (CKA) exam before attempting the CKS exam.",
+      status: "current",
+      officialCertificationUrl: "https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/",
+      officialExamUrl: "https://docs.linuxfoundation.org/tc-docs/certification/important-instructions-cks",
+      domains: [
+        {
+          id: "d1",
+          name: "Cluster Setup",
+          weight: "15%",
+          objectives: [
+            "Use network security policies to restrict cluster level access",
+            "Use CIS benchmark to review the security configuration of Kubernetes components (etcd, kubelet, kubedns, kubeapi)",
+            "Properly set up Ingress objects with TLS",
+            "Protect node metadata and endpoints",
+            "Verify platform binaries before deploying",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Cluster Hardening",
+          weight: "15%",
+          objectives: [
+            "Use Role Based Access Controls to minimize exposure",
+            "Exercise caution in using service accounts e.g. disable defaults, minimize permissions on newly created ones",
+            "Restrict access to Kubernetes API",
+            "Upgrade Kubernetes to avoid vulnerabilities",
+          ],
+        },
+        {
+          id: "d3",
+          name: "System Hardening",
+          weight: "10%",
+          objectives: [
+            "Minimize host OS footprint (reduce attack surface)",
+            "Using least-privilege identity and access management",
+            "Minimize external access to the network",
+            "Appropriately use kernel hardening tools such as AppArmor, seccomp",
+          ],
+        },
+        {
+          id: "d4",
+          name: "Minimize Microservice Vulnerabilities",
+          weight: "20%",
+          objectives: [
+            "Use appropriate pod security standards",
+            "Manage Kubernetes secrets",
+            "Understand and implement isolation techniques (multi-tenancy, sandboxed containers, etc.)",
+            "Implement Pod-to-Pod encryption (Cilium, Istio)",
+          ],
+        },
+        {
+          id: "d5",
+          name: "Supply Chain Security",
+          weight: "20%",
+          objectives: [
+            "Minimize base image footprint",
+            "Understand your supply chain (e.g. SBOM, CI/CD, artifact repositories)",
+            "Secure your supply chain (permitted registries, sign and validate artifacts, etc.)",
+            "Perform static analysis of user workloads and container images (e.g. Kubesec, KubeLinter)",
+          ],
+        },
+        {
+          id: "d6",
+          name: "Monitoring, Logging and Runtime Security",
+          weight: "20%",
+          objectives: [
+            "Perform behavioral analytics to detect malicious activities",
+            "Detect threats within physical infrastructure, apps, networks, data, users and workloads",
+            "Investigate and identify phases of attack and bad actors within the environment",
+            "Ensure immutability of containers at runtime",
+            "Use Kubernetes audit logs to monitor access",
+          ],
+        },
+      ],
+      sources: [
+        { label: "Linux Foundation Training: CKS certification page", url: "https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/" },
+        { label: "Linux Foundation docs: CKS important instructions", url: "https://docs.linuxfoundation.org/tc-docs/certification/important-instructions-cks" },
+        { label: "Linux Foundation docs: CKA, CKAD and CKS FAQ", url: "https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks" },
+        { label: "CNCF curriculum: CKS curriculum v1.37", url: "https://github.com/cncf/curriculum" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "CKS Practice Tests: Kubernetes Security Specialist",
+      description: "CKS practice tests for all six domains: cluster setup and hardening, system hardening, microservice vulnerabilities, supply chain and runtime security.",
+    },
+  },
+  "istqb-ctfl-4": {
+    description:
+      "German- and Portuguese-language practice exams for the ISTQB Certified Tester Foundation Level (CTFL) v4.0, written to syllabus v4.0.1. Practise all six chapters, from testing fundamentals to test techniques and management, before the 40-question, 60-minute exam.",
+    fullName: "ISTQB Certified Tester Foundation Level",
+    // Verified 2026-11-04 against istqb.org: CTFL v4.0 certification page (exam structure), CTFL Syllabus v4.0.1 (revision history: released 15.09.2024) and Exam Structure and Rules Tables v1.20 (dated 25 Oct 2026).
+    // Chapter question counts and K-levels from the Exam Structure and Rules Tables v1.20; objectives are the syllabus section headings.
+    // Not stated on the official pages read, so omitted: exam languages, delivery details (the page only links to "Find exam provider"), certificate validity, and any entry requirement. No newer CTFL version or v4.0 retirement was announced on the pages read.
+    exam: {
+      officialName: "ISTQB Certified Tester Foundation Level (CTFL) v4.0",
+      examCode: "CTFL",
+      examVersion: "Syllabus v4.0.1 (released 15 September 2024)",
+      questionCount: "40",
+      duration: "60 minutes (plus 25% if the exam is not in your native language)",
+      format: "40 multiple-choice questions, 1 point each (40 points in total)",
+      passingScore: "26 of 40 points (65%)",
+      questionTypes: "Multiple choice; 8 K1, 24 K2 and 8 K3 questions",
+      status: "current",
+      officialCertificationUrl: "https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/",
+      domains: [
+        {
+          id: "d1",
+          name: "Fundamentals of Testing",
+          weight: "8 questions",
+          objectives: [
+            "1.1 What is Testing?",
+            "1.2 Why is Testing Necessary?",
+            "1.3 Testing Principles",
+            "1.4 Test Activities, Testware and Test Roles",
+            "1.5 Essential Skills and Good Practices in Testing",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Testing Throughout the Software Development Lifecycle",
+          weight: "6 questions",
+          objectives: [
+            "2.1 Testing in the Context of a Software Development Lifecycle (SDLC)",
+            "2.2 Test Levels and Test Types",
+            "2.3 Maintenance Testing",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Static Testing",
+          weight: "4 questions",
+          objectives: [
+            "3.1 Static Testing Basics",
+            "3.2 Feedback and Review Process",
+          ],
+        },
+        {
+          id: "d4",
+          name: "Test Analysis and Design",
+          weight: "11 questions",
+          objectives: [
+            "4.1 Test Techniques Overview",
+            "4.2 Black-Box Test Techniques",
+            "4.3 White-Box Test Techniques",
+            "4.4 Experience-based Test Techniques",
+            "4.5 Collaboration-based Test Approaches",
+          ],
+        },
+        {
+          id: "d5",
+          name: "Managing the Test Activities",
+          weight: "9 questions",
+          objectives: [
+            "5.1 Test Planning",
+            "5.2 Risk Management",
+            "5.3 Test Monitoring, Test Control and Test Completion",
+            "5.4 Configuration Management",
+            "5.5 Defect Management",
+          ],
+        },
+        {
+          id: "d6",
+          name: "Test Tools",
+          weight: "2 questions",
+          objectives: [
+            "6.1 Tool Support for Testing",
+            "6.2 Benefits and Risks of Test Automation",
+          ],
+        },
+      ],
+      sources: [
+        { label: "ISTQB: Certified Tester Foundation Level (CTFL) v4.0", url: "https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/" },
+        { label: "ISTQB: CTFL Syllabus v4.0.1", url: "https://istqb.org/?sdm_process_download=1&download_id=3345" },
+        { label: "ISTQB: Exam Structure and Rules Tables v1.20", url: "https://istqb.org/?sdm_process_download=1&download_id=3832" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "ISTQB CTFL 4.0 Practice Exams (German, Portuguese)",
+      description: "ISTQB CTFL v4.0 practice exams in German and Portuguese for syllabus v4.0.1: all six chapters, matching the 40-question, 60-minute exam format.",
+    },
+  },
+  "togaf-10-foundation-ogea-101": {
+    description:
+      "Practice exams for the TOGAF Enterprise Architecture Part 1 exam (OGEA-101) from The Open Group, based on the TOGAF Standard, 10th Edition. Practise concepts, the ADM, ADM techniques, governance and architecture content before the 40-question exam.",
+    fullName: "TOGAF Enterprise Architecture Foundation (OGEA-101)",
+    // Verified 2026-11-04 against certification.opengroup.org: TOGAF Enterprise Architecture Part 1 Exam page (node/712), TOGAF Examinations page (node/14), and The Open Group help article on the OGEA-101 exam plan.
+    // Domains are the exam plan sections; "weight" gives the official number of questions per section (8 + 14 + 6 + 4 + 3 + 5 = 40). No objectives listed under each section on the pages read, so none given.
+    // Languages: the exam page lists OGEA-101 as English; the Examinations page lists other language versions of Part 1 under separate codes, OGEA-F101 (French) and OGEA-C101 (Simplified Chinese). Only English is put in the field because it is the OGEA-101 code itself.
+    // Other official facts (no schema field): passing Part 1 gives TOGAF Enterprise Architecture Foundation and partial credit toward TOGAF Enterprise Architecture Practitioner; extra time may be given to non-native English speakers.
+    // No withdrawal or new version announced on the pages read.
+    exam: {
+      officialName: "TOGAF Enterprise Architecture Part 1 Exam",
+      examCode: "OGEA-101",
+      examVersion: "TOGAF Standard, 10th Edition",
+      questionCount: "40",
+      duration: "60 minutes (additional time may be provided for non-native English speakers)",
+      format: "Multiple choice, supervised, closed book",
+      passingScore: "60% (24 of 40 questions)",
+      languages: ["English"],
+      delivery: "Authorized examination provider test centers and OnVUE online proctoring",
+      prerequisites: "None",
+      status: "current",
+      officialCertificationUrl: "https://certification.opengroup.org/node/14",
+      officialExamUrl: "https://certification.opengroup.org/node/712",
+      domains: [
+        { id: "d1", name: "Concepts", weight: "8 questions" },
+        { id: "d2", name: "Introduction to the ADM", weight: "14 questions" },
+        { id: "d3", name: "Introduction to the ADM Techniques", weight: "6 questions" },
+        { id: "d4", name: "Introduction to Applying the ADM", weight: "4 questions" },
+        { id: "d5", name: "Introduction to Architecture Governance", weight: "3 questions" },
+        { id: "d6", name: "Architecture Content", weight: "5 questions" },
+      ],
+      sources: [
+        { label: "The Open Group: TOGAF Enterprise Architecture Part 1 Exam", url: "https://certification.opengroup.org/node/712" },
+        { label: "The Open Group: TOGAF Examinations", url: "https://certification.opengroup.org/node/14" },
+        { label: "The Open Group help: OGEA-101 exam plan", url: "https://help.opengroup.org/hc/en-us/articles/32158230604050-What-Is-the-Exam-Plan-for-the-OGEA-101-TOGAF-Enterprise-Architecture-Part-1-Exam" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "OGEA-101 Practice Exams: TOGAF 10 Foundation",
+      description: "OGEA-101 practice exams for TOGAF Enterprise Architecture Part 1 (TOGAF Standard, 10th Edition): concepts, the ADM, techniques, governance and content.",
+    },
+  },
+  "itsm-foundation-v4": {
+    description:
+      "French-, Spanish- and Portuguese-language practice exams for the version 4 IT service management Foundation exam from PeopleCert. PeopleCert currently plans to sunset all version 4 modules on 31 December 2027, with the version 5 Foundation now available alongside it.",
+    fullName: "IT Service Management Foundation (Version 4)",
+    // Verified 2026-11-04 against peoplecert.org: Foundation (Version 4) product page and the certification FAQ page.
+    // Status: the PeopleCert FAQ says "The current plan is to sunset all ITIL 4 modules on 31 December 2027"; no separate date is given for Foundation and voucher validity dates are still to be announced. ITIL 4 and ITIL (Version 5) run in parallel for a period. Hence status "retiring".
+    // Domains are the learning outcomes listed on the PeopleCert product page (wording as published, e.g. "Continuous improvement"). PeopleCert does not publish weights there, so none given.
+    // Not stated on the pages read, so omitted: exam code, delivery mode (the page shows proctored time-slot booking and a "Web Based Exam Driver" link, but does not say online or test centre), and any language withdrawal.
+    // Naming: PeopleCert trademark rule (README): no framework mark in names, headings, meta or copy.
+    // Other official facts (no schema field): certification renewal every 3 years (60 CPD points or another course in the same product suite); ITIL 4 holders can renew by passing any ITIL (Version 5) certification; optional Foundation Bridge (Version 5) for ITIL 4 Foundation holders, scheduled to retire 31 December 2027.
+    exam: {
+      officialName: "IT Service Management Foundation (Version 4)",
+      questionCount: "40",
+      duration: "60 minutes",
+      format: "Multiple choice, closed book",
+      passingScore: "65%",
+      languages: ["English", "Chinese", "Dutch", "French", "German", "Hungarian", "Italian", "Japanese", "Polish", "Portuguese (Brazil)", "Spanish", "Thai"],
+      prerequisites: "None stated",
+      status: "retiring",
+      retirementDate: "31 December 2027 (current PeopleCert plan to sunset all version 4 modules)",
+      officialCertificationUrl: "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-foundation-2565",
+      domains: [
+        { id: "d1", name: "Service management concepts" },
+        { id: "d2", name: "Service value system" },
+        { id: "d3", name: "Four dimensions of service management" },
+        { id: "d4", name: "Guiding principles" },
+        { id: "d5", name: "Service Value Chain" },
+        { id: "d6", name: "Management practices" },
+        { id: "d7", name: "Continuous improvement" },
+        { id: "d8", name: "Service Level Agreements" },
+        { id: "d9", name: "Key metrics and performance indicators" },
+      ],
+      sources: [
+        { label: "PeopleCert: Foundation (Version 4) exam page", url: "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-foundation-2565" },
+        { label: "PeopleCert: certification FAQ", url: "https://www.peoplecert.org/help-and-support/faq-itil" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "ITSM Foundation V4 Practice Exams (FR, ES, PT)",
+      description: "Version 4 IT service management Foundation practice exams in French, Spanish and Portuguese for the 40-question, 60-minute exam. Sunset planned 31 Dec 2027.",
+    },
+  },
 };
 
 /* ───────────────────────────────────────────────────────────────────────────
