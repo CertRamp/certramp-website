@@ -4017,6 +4017,1790 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       description: "Version 4 IT service management Foundation practice exams in French, Spanish and Portuguese for the 40-question, 60-minute exam. Sunset planned 31 Dec 2027.",
     },
   },
+
+  /* ── November 2026, batch 3: enriched and indexable ─────────────────────────
+   * Facts from official sources only, drafted and then checked independently on 4 Nov 2026.
+   * Kept noindex (official pages unreachable, too thin): databricks-data-engineer-professional, databricks-generative-ai-engineer-associate, mongodb-associate-dba, salesforce-plat-arch-202, servicenow-csa. */
+  "ab-400": {
+    description:
+      "Practice exams for Microsoft AB-400: Extending Microsoft Power Platform Solutions with Code and AI, which replaced PL-400 in October 2026. Covers ALM, client scripting, PCF and code apps, plug-ins, APIs, Azure Functions, Foundry agents and connectors.",
+    fullName: "Microsoft Certified: Power Platform Developer Associate",
+    // Verified 2026-11-04 against Microsoft Learn (AB-400 study guide, AB-400 exam page, Power Platform Developer Associate certification page, retired certification exams list).
+    // Certification page: "PL-400 is transitioning to AB-400"; PL-400 registration closed 16 Oct 2026, PL-400 could be taken through 30 Oct 2026 (retired-exams list: PL-400 retired 30 Oct 2026).
+    // The study guide shows no "skills measured as of" date and no change log (page last updated 30 Oct 2026), so no examVersion is given.
+    // Not published on the pages fetched, so omitted: duration, question count, question types.
+    exam: {
+      officialName: "Exam AB-400: Extending Microsoft Power Platform Solutions with Code and AI",
+      examCode: "AB-400",
+      passingScore: "700 or greater",
+      languages: ["English"],
+      prerequisites: "No formal prerequisites. Microsoft expects development experience with Power Platform, JavaScript, JSON, TypeScript, Power Fx, C#, Python, HTML, YAML, RESTful Web APIs, Azure, Microsoft Foundry and Copilot Studio. Renewal via a free online assessment on Microsoft Learn.",
+      status: "current",
+      launchDate: "16 October 2026 (updated AB-400 exam available)",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-400/",
+      domains: [
+        { id: "d1", name: "Build Microsoft Power Platform solutions", weight: "15–20%", objectives: ["Design the technical architecture", "Design solution components", "Implement application lifecycle management (ALM)"] },
+        { id: "d2", name: "Extend the user experience", weight: "25–30%", objectives: ["Apply business logic in model-driven apps by using client scripting", "Create PCF code components", "Build Power Apps code apps", "Deploy and manage Power Apps code apps"] },
+        { id: "d3", name: "Extend Microsoft Power Platform", weight: "35–40%", objectives: ["Create a Dataverse plug-in", "Perform operations by using platform APIs", "Process workloads by using Microsoft Azure Functions", "Configure Power Automate cloud flows and Copilot Studio workflows", "Build Microsoft Foundry agents by using code that integrates with the Microsoft Power Platform"] },
+        { id: "d4", name: "Develop integrations", weight: "10–15%", objectives: ["Publish and consume Dataverse events", "Implement synchronization for Dataverse data", "Create custom connectors"] },
+      ],
+      sources: [
+        { label: "Microsoft Learn: AB-400 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400" },
+        { label: "Microsoft Learn: Exam AB-400", url: "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-400/" },
+        { label: "Microsoft Learn: Power Platform Developer Associate certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/" },
+        { label: "Microsoft Learn: Retired certification exams (PL-400: 30 October 2026)", url: "https://learn.microsoft.com/en-us/credentials/retired-certification-exams" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "AB-400 Practice Exams: Power Platform Developer",
+      description: "AB-400 practice exams, the successor to PL-400: ALM, client scripting, PCF and code apps, plug-ins, APIs, Azure Functions, Foundry agents, connectors.",
+    },
+  },
+  "ab-650": {
+    description:
+      "Practice exams for Microsoft AB-650: Administering Microsoft 365 and AI Services, currently in beta. Covers tenants and workloads, Entra identity and access, Defender and Purview, and managing Microsoft 365 Copilot and agents with Agent 365.",
+    fullName: "Microsoft 365 Certified: Microsoft 365 and AI Services Administrator Associate",
+    // Verified 2026-11-04 against Microsoft Learn (AB-650 study guide, AB-650 exam page, certification page, MS-102 / Administrator Expert page, retired certification exams list).
+    // Status: exam page and certification page both still show "(beta)" (certification page updated 4 Sep 2026). A Microsoft Tech Community post (Skills Hub blog) said general availability of the certification was expected in October 2026; no GA notice found on Learn.
+    // 30 November 2026: NOT confirmed as an AB-650 outline change on any official page fetched. The study guide (last updated 27 Jul 2026) says "We have included two versions of the Skills Measured objectives depending on when you are taking the exam" but shows only one version and no dates or change log. The only official 30 Nov 2026 date found is the retirement of MS-102 / Microsoft 365 Certified: Administrator Expert (Administrator Expert page and retired-exams list). No official page fetched names AB-650 as the MS-102 replacement. Re-check the study guide for a second skills version before adding examVersion.
+    // Not published on the pages fetched, so omitted: examVersion, duration, question count, question types.
+    exam: {
+      officialName: "Exam AB-650: Administering Microsoft 365 and AI Services (beta)",
+      examCode: "AB-650",
+      passingScore: "700 (beta exams are not scored immediately)",
+      languages: ["English"],
+      prerequisites: "No formal prerequisites. Microsoft expects experience with Microsoft 365 workloads and Microsoft Entra ID, an understanding of Defender XDR capabilities and familiarity with Microsoft Graph PowerShell.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-650/",
+      domains: [
+        { id: "d1", name: "Configure and manage Microsoft 365 tenants and workloads", weight: "20–25%", objectives: ["Configure and manage a Microsoft 365 tenant", "Manage Microsoft 365 workloads"] },
+        { id: "d2", name: "Govern and secure Microsoft 365 tenants and workloads", weight: "40–45%", objectives: ["Manage identities in Microsoft Entra", "Implement and manage authentication and access in Microsoft Entra", "Secure Microsoft 365 workloads", "Protect data in Microsoft 365 by using Microsoft Purview"] },
+        { id: "d3", name: "Manage and secure AI services in Microsoft 365", weight: "35–40%", objectives: ["Enable and manage Microsoft 365 Copilot", "Implement and manage agents in Microsoft 365 and Agent 365", "Secure and govern agents by using Agent 365", "Monitor AI services in Microsoft 365"] },
+      ],
+      sources: [
+        { label: "Microsoft Learn: AB-650 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650" },
+        { label: "Microsoft Learn: Exam AB-650", url: "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-650/" },
+        { label: "Microsoft Learn: Microsoft 365 and AI Services Administrator Associate certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/" },
+        { label: "Microsoft Learn: Microsoft 365 Administrator Expert (MS-102 retires 30 November 2026)", url: "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "AB-650 Practice Exams: Microsoft 365 AI Services Admin",
+      description: "AB-650 (beta) practice exams: Microsoft 365 tenants, Entra identity and access, Defender and Purview, Copilot and agent management with Agent 365.",
+    },
+  },
+  "ab-730": {
+    description:
+      "German-language practice exams for Microsoft AB-730: AI Business Professional: generative AI fundamentals, Microsoft 365 Copilot prompts, chats, content and meetings, and agents. Microsoft updated the English exam on 20 October 2026; localized versions follow about eight weeks later.",
+    fullName: "Microsoft Certified: AI Business Professional",
+    // Verified 2026-11-04 against Microsoft Learn (AB-730 study guide, AI Business Professional certification page).
+    // The study guide change log (skills measured as of 20 Oct 2026) removed "Create and manage Microsoft 365 Copilot agents" and added the new area "Drive business outcomes by using agents" (prebuilt agents, Copilot Cowork).
+    // Localized exams (including German) are updated about eight weeks after the English version, per the study guide, so the German exam may still follow the pre-20 Oct 2026 outline until about mid-December 2026.
+    // Note: the /exams/ab-730/ page still showed the old skill names and listed only English; the certification page (updated 20 Oct 2026) lists 13 languages and the new skills. The certification page is used here.
+    // Not published on the pages fetched, so omitted: question count, question types, renewal/expiry.
+    exam: {
+      officialName: "Exam AB-730: AI Business Professional",
+      examCode: "AB-730",
+      examVersion: "Skills measured as of 20 October 2026",
+      duration: "45 minutes",
+      passingScore: "700 or greater",
+      languages: ["English", "Arabic (Saudi Arabia)", "Chinese (Simplified)", "Chinese (Traditional)", "French", "German", "Indonesian (Indonesia)", "Italian", "Korean", "Japanese", "Portuguese (Brazil)", "Russian", "Spanish"],
+      delivery: "Proctored exam scheduled through Pearson VUE; may include interactive components",
+      prerequisites: "No formal prerequisites. Microsoft expects experience with Microsoft 365 Copilot, Copilot Cowork and prebuilt agents, generative AI basics (prompt and context engineering, large language models) and the Microsoft 365 core apps. No coding required.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional/",
+      domains: [
+        { id: "d1", name: "Understand generative AI fundamentals", weight: "25–30%", objectives: ["Understand generative AI capabilities across Microsoft 365 experiences", "Identify responsible AI and data protection practices"] },
+        { id: "d2", name: "Manage prompts and chats by using Microsoft 365 Copilot", weight: "20–25%", objectives: ["Create and manage prompts in Microsoft 365 Copilot", "Manage chats in Microsoft 365 Copilot"] },
+        { id: "d3", name: "Manage business content and collaboration by using Microsoft 365 Copilot", weight: "20–25%", objectives: ["Draft and analyze business content by using Microsoft 365 Copilot", "Manage meetings and collaboration by using Microsoft 365 Copilot"] },
+        { id: "d4", name: "Drive business outcomes by using agents", weight: "20–25%", objectives: ["Select and apply prebuilt Microsoft 365 Copilot agents", "Perform business tasks by using Microsoft Copilot Cowork"] },
+      ],
+      sources: [
+        { label: "Microsoft Learn: AB-730 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-730" },
+        { label: "Microsoft Learn: AI Business Professional certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional/" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "AB-730 Practice Exams (German): AI Business Professional",
+      description: "German-language AB-730 practice exams: generative AI basics, Microsoft 365 Copilot prompts, chats, business content, meetings and agents.",
+    },
+  },
+  "ab-731": {
+    description:
+      "Practice exams for Microsoft AB-731: AI Transformation Leader, based on the skills measured as of 22 July 2026: business value of generative AI, Microsoft 365 Copilot and Foundry Tools, and responsible AI and adoption. The exam takes 45 minutes.",
+    fullName: "Microsoft Certified: AI Transformation Leader",
+    // Verified 2026-11-04 against Microsoft Learn (AB-731 study guide, AI Transformation Leader certification page).
+    // Not published on the pages fetched, so omitted: question count, question types, renewal/expiry.
+    exam: {
+      officialName: "Exam AB-731: AI Transformation Leader",
+      examCode: "AB-731",
+      examVersion: "Skills measured as of 22 July 2026",
+      duration: "45 minutes",
+      passingScore: "700 or greater",
+      languages: ["English", "Arabic (Saudi Arabia)", "Chinese (Simplified)", "Chinese (Traditional)", "French", "German", "Indonesian (Indonesia)", "Italian", "Korean", "Japanese", "Portuguese (Brazil)", "Russian", "Spanish"],
+      delivery: "Proctored exam; may include interactive components",
+      prerequisites: "No formal prerequisites. Aimed at business decision-makers; Microsoft expects experience leading adoption or change management and familiarity with Microsoft 365 services, Microsoft Foundry and general AI capabilities. No coding required.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/ai-transformation-leader/",
+      domains: [
+        { id: "d1", name: "Identify the business value of generative AI solutions", weight: "35–40%", objectives: ["Identify the foundational concepts of generative AI", "Identify benefits and capabilities of generative AI solutions"] },
+        { id: "d2", name: "Identify benefits, capabilities, and opportunities for Microsoft's AI apps and services", weight: "35–40%", objectives: ["Identify benefits and capabilities of Microsoft 365 Copilot and Microsoft Copilot", "Identify benefits and capabilities of Foundry Tools"] },
+        { id: "d3", name: "Identify an implementation and adoption strategy for Microsoft's AI apps and services", weight: "20–25%", objectives: ["Align an AI strategy with Microsoft responsible AI policies", "Plan for AI adoption across the organization"] },
+      ],
+      sources: [
+        { label: "Microsoft Learn: AB-731 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-731" },
+        { label: "Microsoft Learn: AI Transformation Leader certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/ai-transformation-leader/" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "AB-731 Practice Exams: AI Transformation Leader",
+      description: "AB-731 practice exams for the July 2026 skills: business value of generative AI, Microsoft 365 Copilot, Foundry Tools, responsible AI and adoption.",
+    },
+  },
+  // Agile variant of the process-based project management method (Version 2). Trademarked method names are not used on this
+  // website (PeopleCert request, October 2026). Keep all copy neutral; links to official PeopleCert pages are fine.
+  "agile-project-management-foundation-v2": {
+    description:
+      "Practice exams for the Version 2 Foundation exam that blends agile ways of working with the widely used process-based project management method: agile mindset, roles, risk and change, progress tracking and scaling. Check your level before the 40-question exam.",
+    fullName: "Project Management Agile Foundation (Version 2)",
+    // Verified 2026-11-04 against the PeopleCert exam page for the agile Foundation exam (Version 2).
+    // Status: current; the page shows no retirement notice and no newer version. Launch date not given, omitted.
+    // Not stated on the page, so omitted: delivery mode (the page shows exam time slots and proctor language selection, but does not say online or classroom), exam code.
+    // Prerequisites: none listed on the page (described as suitable for "any career stage"), so written as "None listed".
+    // Domains below are the page's learning outcome headings (no weights published). Heading 2 names the trademarked method and is reworded neutrally here.
+    exam: {
+      officialName: "Agile Foundation (Version 2)",
+      examVersion: "Version 2",
+      questionCount: "40",
+      duration: "60 minutes",
+      format: "Multiple choice, closed book",
+      passingScore: "60%",
+      questionTypes: "Multiple choice",
+      languages: ["English", "Chinese", "Dutch", "French", "German", "Italian", "Japanese", "Polish", "Portuguese (Brazil)", "Spanish"],
+      prerequisites: "None listed",
+      status: "current",
+      officialCertificationUrl: "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-Agile-28/prince2-agile-foundation-4074",
+      officialExamUrl: "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-Agile-28/prince2-agile-foundation-4074",
+      domains: [
+        { id: "d1", name: "The agile mindset" },
+        { id: "d2", name: "Blending agile with the process-based project management method" },
+        { id: "d3", name: "Stakeholder engagement" },
+        { id: "d4", name: "Agile leadership basics" },
+        { id: "d5", name: "Risk and change control" },
+        { id: "d6", name: "Progress tracking" },
+        { id: "d7", name: "Agile roles and duties" },
+        { id: "d8", name: "Scalable agility" },
+        { id: "d9", name: "Value-driven thinking" },
+      ],
+      sources: [
+        { label: "PeopleCert: agile Foundation (Version 2) exam page", url: "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-Agile-28/prince2-agile-foundation-4074" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "PM Agile Foundation (Version 2) Practice Exams",
+      description: "Practice exams for the Version 2 agile Foundation exam of the process-based project management method: agile mindset, roles, risk, progress and scaling.",
+    },
+  },
+  "ai-300": {
+    description:
+      "Practice exams for Microsoft AI-300: Operationalizing Machine Learning and Generative AI Solutions. Covers MLOps in Azure Machine Learning and GenAIOps in Microsoft Foundry: IaC, training, deployment, monitoring, evaluation, RAG and fine-tuning.",
+    fullName: "Microsoft Certified: Machine Learning Operations Engineer Associate",
+    // Verified 2026-11-04 against Microsoft Learn (AI-300 study guide, AI-300 exam/certification page, retired certification exams list, Azure Data Scientist Associate page).
+    // The study guide shows no "skills measured as of" date and no change log (page last updated 15 Oct 2026), so no examVersion is given.
+    // DP-100 (Azure Data Scientist Associate) retired on 1 June 2026 per the retired-exams list. No official page fetched names AI-300 as its direct replacement, so that is not stated here.
+    // Not published on the pages fetched, so omitted: question count, question types.
+    exam: {
+      officialName: "Exam AI-300: Operationalizing Machine Learning and Generative AI Solutions",
+      examCode: "AI-300",
+      duration: "120 minutes",
+      passingScore: "700 or greater",
+      languages: ["English"],
+      delivery: "Proctored exam; may include interactive components",
+      prerequisites: "No formal prerequisites. Microsoft expects a data science background with Python, entry-level DevOps (GitHub Actions, CLIs), and experience with Azure Machine Learning, Microsoft Foundry and infrastructure as code with Bicep and Azure CLI.",
+      status: "current",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-300/",
+      domains: [
+        { id: "d1", name: "Design and implement an MLOps infrastructure", weight: "15–20%", objectives: ["Create and manage resources in a Machine Learning workspace", "Create and manage assets in a Machine Learning workspace", "Implement IaC for Machine Learning"] },
+        { id: "d2", name: "Implement machine learning model lifecycle and operations", weight: "25–30%", objectives: ["Orchestrate model training", "Implement model registration and versioning", "Deploy machine learning models for production environments", "Monitor and maintain machine learning models in production"] },
+        { id: "d3", name: "Design and implement a GenAIOps infrastructure", weight: "20–25%", objectives: ["Implement Foundry environments and platform configuration", "Deploy and manage foundation models for production workloads", "Implement prompt versioning and management with source control"] },
+        { id: "d4", name: "Implement generative AI quality assurance and observability", weight: "10–15%", objectives: ["Configure evaluation and validation for generative AI applications and agents", "Implement observability for generative AI applications and agents"] },
+        { id: "d5", name: "Optimize generative AI systems and model performance", weight: "10–15%", objectives: ["Optimize retrieval-augmented generation (RAG) performance and accuracy", "Implement advanced fine-tuning and model customization"] },
+      ],
+      sources: [
+        { label: "Microsoft Learn: AI-300 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300" },
+        { label: "Microsoft Learn: Exam AI-300", url: "https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-300/" },
+        { label: "Microsoft Learn: Retired certification exams (DP-100: 1 June 2026)", url: "https://learn.microsoft.com/en-us/credentials/retired-certification-exams" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "AI-300 Practice Exams: MLOps Engineer Associate",
+      description: "AI-300 practice exams: Azure Machine Learning workspaces, IaC, training, deployment and monitoring, plus GenAIOps in Foundry, evaluation, RAG and fine-tuning.",
+    },
+  },
+  "aws-ans-c01": {
+    description:
+      "Practice exams for AWS ANS-C01: Certified Advanced Networking - Specialty, written to the official exam guide: network design, implementation, management and security. AWS is retiring this exam; the last day to take it is 31 December 2026.",
+    fullName: "AWS Certified Advanced Networking - Specialty",
+    // Verified 2026-11-04 against the AWS certification page, the AWS exam guides index and the ANS-C01 exam guide (overview, domain 1-4 pages).
+    // IMPORTANT: AWS certification page: "This exam is being retired. The last day to take the exam is December 31, 2026." Certifications earned before retirement stay active for the standard three-year period; no new certifications are issued after retirement. No successor exam is named.
+    // Note: the exam guides index has no retirement note for ANS-C01 (only the certification page states it).
+    // Note: the exam guide lists only two question types (multiple response and matching); the certification page says "multiple choice or multiple response". questionTypes follows the exam guide. No revisions page or version date published. Passing score 750 is from the exam guide.
+    exam: {
+      officialName: "AWS Certified Advanced Networking - Specialty",
+      examCode: "ANS-C01",
+      questionCount: "65 questions (50 scored, 15 unscored)",
+      duration: "170 minutes",
+      format: "Pass/fail with a scaled score of 100 to 1,000 (compensatory scoring)",
+      passingScore: "750 (scaled)",
+      questionTypes: "Exam guide: multiple response (two or more correct responses out of five or more options) and matching (3 to 7 prompts matched to a list of responses). Certification page: multiple choice or multiple response.",
+      languages: ["English", "Japanese", "Korean", "Simplified Chinese"],
+      delivery: "Pearson VUE testing center or online proctored exam",
+      prerequisites: "No formal prerequisites. Recommended: 5 or more years of networking experience with 2 or more years of cloud and hybrid networking experience.",
+      status: "retiring",
+      retirementDate: "2026-12-31",
+      officialCertificationUrl: "https://aws.amazon.com/certification/certified-advanced-networking-specialty/",
+      officialExamUrl: "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html",
+      domains: [
+        { id: "d1", name: "Network Design", weight: "30%", objectives: ["Design a solution that incorporates edge network services to optimize user performance and traffic management for global architectures", "Design DNS solutions that meet public, private, and hybrid requirements", "Design solutions that integrate load balancing to meet high availability, scalability, and security requirements", "Define logging and monitoring requirements across AWS and hybrid networks", "Design a routing strategy and connectivity architecture between on-premises networks and the AWS Cloud", "Design a routing strategy and connectivity architecture that include multiple AWS accounts, AWS Regions, and VPCs to support different connectivity patterns"] },
+        { id: "d2", name: "Network Implementation", weight: "26%", objectives: ["Implement routing and connectivity between on-premises networks and the AWS Cloud", "Implement routing and connectivity across multiple AWS accounts, Regions, and VPCs to support different connectivity patterns", "Implement complex hybrid and multi-account DNS architectures", "Automate and configure network infrastructure"] },
+        { id: "d3", name: "Network Management and Operation", weight: "20%", objectives: ["Maintain routing and connectivity on AWS and hybrid networks", "Monitor and analyze network traffic to troubleshoot and optimize connectivity patterns", "Optimize AWS networks for performance, reliability, and cost-effectiveness"] },
+        { id: "d4", name: "Network Security, Compliance, and Governance", weight: "24%", objectives: ["Implement and maintain network features to meet security and compliance needs and requirements", "Validate and audit security by using network monitoring and logging services", "Implement and maintain confidentiality of data and communications of the network"] },
+      ],
+      sources: [
+        { label: "AWS: Certified Advanced Networking - Specialty (retirement notice)", url: "https://aws.amazon.com/certification/certified-advanced-networking-specialty/" },
+        { label: "AWS: ANS-C01 Exam Guide", url: "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html" },
+        { label: "AWS: Certification exam guides", url: "https://docs.aws.amazon.com/aws-certification/latest/examguides/aws-certification-exam-guides.html" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "ANS-C01 Practice Exams: AWS Advanced Networking",
+      description: "ANS-C01 practice exams for AWS Advanced Networking - Specialty: design, implementation, operations and security. Exam retires after 31 December 2026.",
+    },
+  },
+  "aws-dea-c01": {
+    description:
+      "Practice exams for AWS DEA-C01: Certified Data Engineer - Associate, written to the official exam guide: ingestion and transformation, data store management, data operations and support, and security and governance. Check your level before the 130-minute exam.",
+    fullName: "AWS Certified Data Engineer - Associate",
+    // Verified 2026-11-04 against the AWS certification page, the AWS exam guides index, the DEA-C01 exam guide (overview, domain 1-4 pages, revisions v1.1 of 12 Dec 2025).
+    // Status: DEA-C01 is current. Exam guides index has no update note; certification page lists no new version, retirement or language retirement. No DEA-C02 announced on official pages.
+    // Note: AWS certification page does not list a passing score; 720 is from the exam guide.
+    exam: {
+      officialName: "AWS Certified Data Engineer - Associate",
+      examCode: "DEA-C01",
+      examVersion: "Exam guide DEA-C01, version 1.1 (12 December 2025)",
+      questionCount: "65 questions (50 scored, 15 unscored)",
+      duration: "130 minutes",
+      format: "Multiple choice and multiple response; pass/fail with a scaled score of 100 to 1,000 (compensatory scoring)",
+      passingScore: "720 (scaled)",
+      questionTypes: "Multiple choice (one correct response and three distractors) and multiple response (two or more correct responses out of five or more options)",
+      languages: ["English", "Japanese", "Korean", "Simplified Chinese"],
+      delivery: "Pearson VUE testing center or online proctored exam",
+      prerequisites: "No formal prerequisites. Recommended: the equivalent of 2 to 3 years of experience in data engineering and at least 1 to 2 years of hands-on experience with AWS services.",
+      status: "current",
+      officialCertificationUrl: "https://aws.amazon.com/certification/certified-data-engineer-associate/",
+      officialExamUrl: "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01.html",
+      domains: [
+        { id: "d1", name: "Data Ingestion and Transformation", weight: "34%", objectives: ["Perform data ingestion", "Transform and process data", "Orchestrate data pipelines", "Apply programming concepts"] },
+        { id: "d2", name: "Data Store Management", weight: "26%", objectives: ["Choose a data store", "Understand data cataloging systems", "Manage the lifecycle of data", "Design data models and schema evolution"] },
+        { id: "d3", name: "Data Operations and Support", weight: "22%", objectives: ["Automate data processing by using AWS services", "Analyze data by using AWS services", "Maintain and monitor data pipelines", "Ensure data quality"] },
+        { id: "d4", name: "Data Security and Governance", weight: "18%", objectives: ["Apply authentication mechanisms", "Apply authorization mechanisms", "Ensure data encryption and masking", "Prepare logs for audit", "Understand data privacy and governance"] },
+      ],
+      sources: [
+        { label: "AWS: Certified Data Engineer - Associate", url: "https://aws.amazon.com/certification/certified-data-engineer-associate/" },
+        { label: "AWS: DEA-C01 Exam Guide", url: "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01.html" },
+        { label: "AWS: DEA-C01 Exam Guide revisions", url: "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/dea-01-revisions.html" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "DEA-C01 Practice Exams: AWS Data Engineer Associate",
+      description: "DEA-C01 practice exams for AWS Data Engineer - Associate: ingestion and transformation, data stores, operations and support, security and governance.",
+    },
+  },
+  "aws-dop-c02": {
+    description:
+      "Practice exams for AWS DOP-C02: Certified DevOps Engineer - Professional, written to the official exam guide: SDLC automation, configuration management and IaC, resilience, monitoring, incident response and security. Check your level before the 180-minute exam.",
+    fullName: "AWS Certified DevOps Engineer - Professional",
+    // Verified 2026-11-04 against the AWS certification page, the AWS exam guides index and the DOP-C02 exam guide (overview, domain 1-6 pages).
+    // Status: DOP-C02 is current. Exam guides index has no update note; no DOP-C03 announced on official pages.
+    // IMPORTANT: AWS certification page: "The AWS Certified DevOps Engineer - Professional exam in Korean will be retired after December 31, 2026." (not relevant to the English course). Languages array is the page list, which still includes Korean until then.
+    // Note: no revisions page or version date published for the DOP-C02 guide, and no launch date stated, so examVersion and launchDate are omitted. AWS certification page does not list a passing score; 750 is from the exam guide.
+    exam: {
+      officialName: "AWS Certified DevOps Engineer - Professional",
+      examCode: "DOP-C02",
+      questionCount: "75 questions (65 scored, 10 unscored)",
+      duration: "180 minutes",
+      format: "Multiple choice and multiple response; pass/fail with a scaled score of 100 to 1,000 (compensatory scoring)",
+      passingScore: "750 (scaled)",
+      questionTypes: "Multiple choice (one correct response and three distractors) and multiple response (two or more correct responses out of five or more options)",
+      languages: ["English", "Japanese", "Korean (until 31 December 2026)", "Simplified Chinese"],
+      delivery: "Pearson VUE testing center or online proctored exam",
+      prerequisites: "No formal prerequisites. Recommended: 2 or more years of experience provisioning, operating, and managing AWS environments, plus experience with the software development lifecycle and programming and/or scripting.",
+      status: "current",
+      officialCertificationUrl: "https://aws.amazon.com/certification/certified-devops-engineer-professional/",
+      officialExamUrl: "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02.html",
+      domains: [
+        { id: "d1", name: "SDLC Automation", weight: "22%", objectives: ["Implement CI/CD pipelines.", "Integrate automated testing into CI/CD pipelines.", "Build and manage artifacts.", "Implement deployment strategies for instance, container, and serverless environments."] },
+        { id: "d2", name: "Configuration Management and IaC", weight: "17%", objectives: ["Define cloud infrastructure and reusable components to provision and manage systems throughout their lifecycle.", "Deploy automation to create, onboard, and secure AWS accounts in a multi-account or multi-Region environment.", "Design and build automated solutions for complex tasks and large-scale environments."] },
+        { id: "d3", name: "Resilient Cloud Solutions", weight: "15%", objectives: ["Implement highly available solutions to meet resilience and business requirements.", "Implement solutions that are scalable to meet business requirements.", "Implement automated recovery processes to meet RTO and RPO requirements."] },
+        { id: "d4", name: "Monitoring and Logging", weight: "15%", objectives: ["Configure the collection, aggregation, and storage of logs and metrics.", "Audit, monitor, and analyze logs and metrics to detect issues.", "Automate monitoring and event management of complex environments."] },
+        { id: "d5", name: "Incident and Event Response", weight: "14%", objectives: ["Manage event sources to process, notify, and take action in response to events.", "Implement configuration changes in response to events.", "Troubleshoot system and application failures."] },
+        { id: "d6", name: "Security and Compliance", weight: "17%", objectives: ["Implement techniques for identity and access management at scale.", "Apply automation for security controls and data protection.", "Implement security monitoring and auditing solutions."] },
+      ],
+      sources: [
+        { label: "AWS: Certified DevOps Engineer - Professional", url: "https://aws.amazon.com/certification/certified-devops-engineer-professional/" },
+        { label: "AWS: DOP-C02 Exam Guide", url: "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02.html" },
+        { label: "AWS: Certification exam guides", url: "https://docs.aws.amazon.com/aws-certification/latest/examguides/aws-certification-exam-guides.html" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "DOP-C02 Practice Exams: AWS DevOps Engineer Pro (2026)",
+      description: "DOP-C02 practice exams for AWS DevOps Engineer - Professional: SDLC automation, IaC, resilience, monitoring, incident response and security.",
+    },
+  },
+  "aws-sap-c03": {
+    description:
+      "Practice exams for AWS SAP-C03: Certified Solutions Architect - Professional, covering the five domains of the new exam guide, including AI/ML integration, security and governance. SAP-C03 replaces SAP-C02 on 17 November 2026; the last day to take SAP-C02 is 16 November 2026.",
+    fullName: "AWS Certified Solutions Architect - Professional",
+    // Verified 2026-11-04 against the AWS certification page, the AWS exam guides index, the SAP-C03 exam guide (overview, domain 1-5 pages, SAP-C02 vs SAP-C03 comparison).
+    // Status: exam guides index: "Registration for the updated version (SAP-C03) opens on October 27, 2026. The last day to take the current exam (SAP-C02) is November 16, 2026." Comparison page: SAP-C02 "in use until November 16, 2026", SAP-C03 "in use beginning November 17, 2026".
+    // Domain changes vs SAP-C02: four domains (26/29/25/20%) replaced by five (25/25/15/15/20%). New content per comparison page includes Amazon Bedrock and GenAI/RAG/agent architectures, VPC Lattice, IPv6 migration, post-quantum cryptography, data residency.
+    // Question count: exam guide gives 65 scored + 10 unscored; certification page gives 75 questions and 180 minutes.
+    // Note: no revisions page or version date for the SAP-C03 guide, so examVersion gives only the code. AWS certification page does not list a passing score; 720 is from the exam guide.
+    // Note: languages are the certification page list; AWS does not state separately whether every language is available for SAP-C03 from day one.
+    exam: {
+      officialName: "AWS Certified Solutions Architect - Professional",
+      examCode: "SAP-C03",
+      examVersion: "Exam guide SAP-C03 (replaces SAP-C02)",
+      questionCount: "75 questions (65 scored, 10 unscored)",
+      duration: "180 minutes",
+      format: "Multiple choice and multiple response; pass/fail with a scaled score of 100 to 1,000 (compensatory scoring)",
+      passingScore: "720 (scaled)",
+      questionTypes: "Multiple choice (one correct response and three distractors) and multiple response (two or more correct responses out of five or more options)",
+      languages: ["English", "Japanese", "Korean", "Portuguese (Brazil)", "Simplified Chinese", "Spanish (Latin America)"],
+      delivery: "Pearson VUE testing center or online proctored exam",
+      prerequisites: "No formal prerequisites. Recommended: 2 or more years of experience using AWS services to design and implement cloud solutions.",
+      status: "upcoming",
+      launchDate: "2026-11-17",
+      officialCertificationUrl: "https://aws.amazon.com/certification/certified-solutions-architect-professional/",
+      officialExamUrl: "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-03/solutions-architect-professional-03.html",
+      domains: [
+        { id: "d1", name: "Architecture Design and Implementation Built for the Cloud", weight: "25%", objectives: ["Design architectures built for the cloud.", "Integrate AI and ML services into architectures.", "Design hybrid cloud integration patterns.", "Design network architectures.", "Design data, storage, and database architectures."] },
+        { id: "d2", name: "Security, Compliance, and Governance", weight: "25%", objectives: ["Design identity security architectures.", "Design solutions to implement encryption and key management strategies.", "Design multi-account governance and compliance solutions.", "Design architectures to meet compliance requirements.", "Design security and responsible AI controls."] },
+        { id: "d3", name: "Cost-Optimized Architecture Design", weight: "15%", objectives: ["Design architectures based on AWS pricing models.", "Optimize data transfer and network costs.", "Design cost allocation and visibility solutions.", "Optimize storage and database costs."] },
+        { id: "d4", name: "Resilience, Migration, and Business Continuity", weight: "15%", objectives: ["Design migration strategies by using AWS frameworks.", "Design disaster recovery architectures.", "Design solutions to meet business continuity and resiliency requirements."] },
+        { id: "d5", name: "Operational Excellence and Automation", weight: "20%", objectives: ["Design infrastructure as code.", "Design CI/CD and DevSecOps pipelines.", "Design observability and monitoring solutions.", "Design operational automation and resilient systems."] },
+      ],
+      sources: [
+        { label: "AWS: Certified Solutions Architect - Professional", url: "https://aws.amazon.com/certification/certified-solutions-architect-professional/" },
+        { label: "AWS: Certification exam guides (SAP-C02 last day, SAP-C03 registration)", url: "https://docs.aws.amazon.com/aws-certification/latest/examguides/aws-certification-exam-guides.html" },
+        { label: "AWS: SAP-C03 Exam Guide", url: "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-03/solutions-architect-professional-03.html" },
+        { label: "AWS: Comparison of SAP-C02 and SAP-C03", url: "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-03/sap-03-comparison.html" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "SAP-C03 Practice Exams: AWS Solutions Architect Pro",
+      description: "SAP-C03 practice exams for AWS Solutions Architect - Professional: cloud and AI design, security, cost, resilience, automation. Replaces SAP-C02 17 Nov 2026.",
+    },
+  },
+  "aws-scs-c03": {
+    description:
+      "Practice exams for AWS SCS-C03: Certified Security - Specialty, written to the current exam guide that replaced SCS-C02: detection, incident response, infrastructure security, IAM, data protection and governance. Check your level before the 170-minute exam.",
+    fullName: "AWS Certified Security - Specialty",
+    // Verified 2026-11-04 against the AWS certification page, the AWS exam guides index, the SCS-C03 exam guide (overview, domain 1-6 pages, SCS-C02 vs SCS-C03 comparison appendix, revisions v1.0 of 26 Mar 2026).
+    // Status: SCS-C03 is current. Comparison appendix: SCS-C02 "in use until December 1, 2025", SCS-C03 "in use beginning December 2, 2025". Exam guides index has no update note for SCS-C03; no successor announced.
+    // IMPORTANT: AWS certification page: the Simplified Chinese, Spanish (Latin America) and Portuguese (Brazil) versions retire after December 31, 2026 (not relevant to the English course).
+    // Note: the certification page says "multiple choice or multiple response"; the exam guide also lists ordering and matching question types, so questionTypes follows the exam guide. AWS certification page does not list a passing score; 750 is from the exam guide.
+    exam: {
+      officialName: "AWS Certified Security - Specialty",
+      examCode: "SCS-C03",
+      examVersion: "Exam guide SCS-C03, version 1.0 (26 March 2026)",
+      questionCount: "65 questions (50 scored, 15 unscored)",
+      duration: "170 minutes",
+      format: "Multiple choice, multiple response, ordering and matching; pass/fail with a scaled score of 100 to 1,000 (compensatory scoring)",
+      passingScore: "750 (scaled)",
+      questionTypes: "Multiple choice, multiple response (two or more correct responses out of five or more options), ordering (3 to 5 responses placed in the correct order) and matching (3 to 7 prompts matched to a list of responses)",
+      languages: ["English", "Japanese", "Korean", "Portuguese (Brazil) (until 31 December 2026)", "Simplified Chinese (until 31 December 2026)", "Spanish (Latin America) (until 31 December 2026)"],
+      delivery: "Pearson VUE testing center or online proctored exam",
+      prerequisites: "No formal prerequisites. Exam guide: the equivalent of 3 to 5 years of experience securing cloud solutions. Certification page: 5 years of IT security experience and 2 or more years of hands-on experience securing AWS workloads.",
+      status: "current",
+      launchDate: "2025-12-02",
+      officialCertificationUrl: "https://aws.amazon.com/certification/certified-security-specialty/",
+      officialExamUrl: "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html",
+      domains: [
+        { id: "d1", name: "Detection", weight: "16%", objectives: ["Design and implement monitoring and alerting solutions for an AWS account or organization", "Design and implement logging solutions", "Troubleshoot security monitoring, logging, and alerting solutions"] },
+        { id: "d2", name: "Incident Response", weight: "14%", objectives: ["Design and test an incident response plan", "Respond to security events"] },
+        { id: "d3", name: "Infrastructure Security", weight: "18%", objectives: ["Design, implement, and troubleshoot security controls for network edge services", "Design, implement, and troubleshoot security controls for compute workloads", "Design and troubleshoot network security controls"] },
+        { id: "d4", name: "Identity and Access Management", weight: "20%", objectives: ["Design, implement, and troubleshoot authentication strategies", "Design, implement, and troubleshoot authorization strategies"] },
+        { id: "d5", name: "Data Protection", weight: "18%", objectives: ["Design and implement controls for data in transit", "Design and implement controls for data at rest", "Design and implement controls to protect confidential data, credentials, secrets, and cryptographic key materials"] },
+        { id: "d6", name: "Security Foundations and Governance", weight: "14%", objectives: ["Develop a strategy to centrally deploy and manage AWS accounts", "Implement a secure and consistent deployment strategy for cloud resources", "Evaluate the compliance of AWS resources"] },
+      ],
+      sources: [
+        { label: "AWS: Certified Security - Specialty", url: "https://aws.amazon.com/certification/certified-security-specialty/" },
+        { label: "AWS: SCS-C03 Exam Guide", url: "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html" },
+        { label: "AWS: Comparison of SCS-C02 and SCS-C03", url: "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-appendix-b.html" },
+        { label: "AWS: SCS-C03 Exam Guide revisions", url: "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/scs03-revisions.html" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "SCS-C03 Practice Exams: AWS Security Specialty (2026)",
+      description: "SCS-C03 practice exams for AWS Security - Specialty: detection, incident response, infrastructure security, IAM, data protection and governance.",
+    },
+  },
+  "az-802": {
+    description:
+      "Practice exams for Microsoft AZ-802: Administering Windows Server, the replacement exam after AZ-800 and AZ-801 retired on 30 September 2026. Covers AD DS, hybrid management, Hyper-V, networking, storage, security and troubleshooting.",
+    fullName: "Microsoft Certified: Windows Server Administrator Associate",
+    // Verified 2026-11-04 against Microsoft Learn (AZ-802 study guide, AZ-802 exam page, Windows Server Administrator Associate certification page, retired certification exams list).
+    // Certification page: "Exam AZ-800 and Exam AZ-801 were retired on September 30, 2026. You can view the replacement exam, AZ-802."
+    // The study guide shows no "skills measured as of" date and no change log (page last updated 19 Oct 2026), so no examVersion is given.
+    // Not published on the pages fetched, so omitted: question count, question types.
+    exam: {
+      officialName: "Exam AZ-802: Administering Windows Server",
+      examCode: "AZ-802",
+      duration: "120 minutes",
+      passingScore: "700 or greater",
+      languages: ["English"],
+      delivery: "Proctored exam; may include interactive components",
+      prerequisites: "No formal prerequisites. Microsoft expects experience administering Windows Server with Windows Admin Center, Hyper-V, PowerShell, Azure Arc, Azure Monitor, Azure Update Manager and Microsoft Defender for Cloud, and familiarity with AD DS.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/exams/az-802/",
+      domains: [
+        { id: "d1", name: "Deploy and manage AD DS", weight: "20–25%", objectives: ["Deploy and manage AD DS domain controllers", "Configure and manage multi-site, multi-domain, and multi-forest environments", "Create and manage AD DS security principals", "Manage Windows Server by using domain-based Group Policies"] },
+        { id: "d2", name: "Manage Windows Server instances and workloads in a hybrid environment", weight: "10–15%", objectives: ["Configure remote management for Windows Server instances in a hybrid environment", "Manage Windows Server instances and workloads by using Azure services in a hybrid environment"] },
+        { id: "d3", name: "Manage virtual machines", weight: "10–15%", objectives: ["Manage Hyper-V and guest VM", "Manage Windows Server VMs in Azure"] },
+        { id: "d4", name: "Implement and manage an on-premises and hybrid networking infrastructure", weight: "10–15%", objectives: ["Implement on-premises and hybrid name resolution", "Manage IP addressing in on-premises and hybrid scenarios"] },
+        { id: "d5", name: "Manage storage and file services", weight: "15–20%", objectives: ["Configure and manage Azure Files", "Configure and manage Windows Server file shares", "Configure Windows Server storage"] },
+        { id: "d6", name: "Secure Windows Server infrastructure", weight: "10–15%", objectives: ["Secure Windows Server operating system", "Secure AD DS"] },
+        { id: "d7", name: "Monitor and troubleshoot Windows Server environments", weight: "15–20%", objectives: ["Monitor by using Windows Server tools and Azure services", "Troubleshoot Windows Server issues", "Troubleshoot Active Directory"] },
+      ],
+      sources: [
+        { label: "Microsoft Learn: AZ-802 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802" },
+        { label: "Microsoft Learn: Exam AZ-802", url: "https://learn.microsoft.com/en-us/credentials/certifications/exams/az-802/" },
+        { label: "Microsoft Learn: Windows Server Administrator Associate certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/" },
+        { label: "Microsoft Learn: Retired certification exams (AZ-800 and AZ-801: 30 September 2026)", url: "https://learn.microsoft.com/en-us/credentials/retired-certification-exams" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "AZ-802 Practice Exams: Windows Server Administrator",
+      description: "AZ-802 practice exams, the replacement for AZ-800 and AZ-801: AD DS, hybrid management, Hyper-V, networking, storage, security and troubleshooting.",
+    },
+  },
+  "ccat": {
+    description:
+      "Practice tests for the Criteria Cognitive Aptitude Test (CCAT), the 15-minute, 50-question pre-employment test from Criteria Corp that measures spatial reasoning, verbal ability, and math and logic.",
+    fullName: "Criteria Cognitive Aptitude Test (CCAT)",
+    // Verified 2026-11-04 against Criteria Corp sources: candidate CCAT prep page (criteriacorp.com/candidates/ccat-prep), Criteria help center CCAT article (criteriacorp.helpdocs.io, last modified 2 Nov 2026) and the Criteria InfoBrief CCAT PDF.
+    // The CCAT is a pre-employment aptitude test, not a certification: there is no passing score. Employers see a raw score (out of 50) and a percentile, and may compare it with suggested score ranges for a role.
+    // Not published on the official pages, so omitted: available languages, a version or form number, a fixed passing score.
+    // Delivery: the InfoBrief says the CCAT can be taken remotely over the internet under unsupervised conditions on any device; candidates take it via the employer's invite. Calculator not allowed (candidate prep page).
+    // Other official facts (no schema field): no penalty for wrong answers; Criteria says fewer than 1% of candidates answer all 50 questions (candidate prep page).
+    // Domains: Criteria names three ability areas but publishes no weights.
+    exam: {
+      officialName: "Criteria Cognitive Aptitude Test (CCAT)",
+      examCode: "CCAT",
+      questionCount: "50",
+      duration: "15 minutes",
+      format: "Timed online multiple-choice aptitude test; results reported as a raw score and a percentile",
+      questionTypes: "Multiple choice (verbal, math and logic, spatial reasoning)",
+      delivery: "Online on any device via the employer's invitation; may be taken remotely and unsupervised. No calculators allowed",
+      prerequisites: "None (taken at an employer's invitation)",
+      status: "current",
+      officialExamUrl: "https://www.criteriacorp.com/candidates/ccat-prep",
+      domains: [
+        {
+          id: "d1",
+          name: "Spatial Reasoning",
+          objectives: ["Visualizing objects in space and making spatial judgments"],
+        },
+        {
+          id: "d2",
+          name: "Verbal Ability",
+          objectives: ["Reading comprehension, word reasoning and attention to detail"],
+        },
+        {
+          id: "d3",
+          name: "Math and Logic",
+          objectives: ["Reasoning with numbers and analytical thinking"],
+        },
+      ],
+      sources: [
+        { label: "Criteria Corp: CCAT prep for candidates", url: "https://www.criteriacorp.com/candidates/ccat-prep" },
+        { label: "Criteria help center: Criteria Cognitive Aptitude Test (CCAT)", url: "https://criteriacorp.helpdocs.io/article/7zc8hihlvi-criteria-cognitive-aptitude-test-ccat" },
+        { label: "Criteria Corp: InfoBrief CCAT (PDF)", url: "https://www.criteriacorp.com/files/Criteria-InfoBrief-CCAT.pdf" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "CCAT Practice Tests: Criteria Cognitive Aptitude Test",
+      description: "CCAT practice tests: 50 questions in 15 minutes covering spatial reasoning, verbal ability, and math and logic, scored as raw score and percentile.",
+    },
+  },
+  "claude-certified-architect-ccar-f": {
+    description:
+      "Practice exams for Anthropic's Claude Certified Architect: Foundations exam (CCAR-F), written to the official exam guide: agentic architecture, tool design and MCP, Claude Code, prompt engineering and context management.",
+    fullName: "Claude Certified Architect: Foundations",
+    // Verified 2026-11-04 against the official CCAR-F Exam Guide (v1.0, effective July 2026, linked from the Anthropic Partner Academy exam page), the Partner Academy exam page, the Partner Academy "Who can take an exam" and Certification FAQ pages, and the claude.com article on the four role-based certifications.
+    // Status: current and purchasable (USD 125 per the exam page and FAQ, raised from USD 99 on 30 June 2026; partner-tier discounts apply). A separate, more advanced "Claude Certified Architect: Professional" exam exists; it does not replace CCAR-F.
+    // Eligibility: exams are only open to people at Claude Partner Network organizations (partner company email, 18+, government ID); customers and non-partners are currently not eligible (FAQ).
+    // Note: the Udemy course title says "CCA-F"; Anthropic's exam guide uses the code CCAR-F. Exam guide overview lists "Number of items 60"; it does not mention scored vs unscored items. Credential valid 12 months (exam guide, FAQ); renewal via a free non-proctored assessment.
+    exam: {
+      officialName: "Claude Certified Architect: Foundations",
+      examCode: "CCAR-F",
+      examVersion: "Exam guide version 1.0 (effective July 2026)",
+      questionCount: "60 items",
+      duration: "120 minutes",
+      format: "Scenario-based: 4 scenarios drawn at random from a bank of 6; closed book; pass/fail with a scaled score of 100 to 1,000 and percent correct per domain",
+      passingScore: "720 (scaled)",
+      questionTypes: "Multiple choice and multiple response (each item states how many responses to select)",
+      languages: ["English", "Japanese"],
+      delivery: "Pearson VUE: online proctored (OnVUE) or at a Pearson test center",
+      prerequisites: "No formal prerequisites. Open only to staff of Claude Partner Network organizations. Target candidate: solution architect with typically 6+ months of hands-on experience with the Claude APIs, Agent SDK, Claude Code and MCP.",
+      status: "current",
+      officialCertificationUrl: "https://anthropic-partners.skilljar.com/claude-certified-architect-foundations-certification",
+      officialExamUrl: "https://everpath-course-content.s3-accelerate.amazonaws.com/instructor/6nizmqk8tpzpfjvt6qmmav7rh/public/1783542750/Claude+Certified+Architect+%E2%80%93+Foundations+Exam+Guide.pdf",
+      domains: [
+        { id: "d1", name: "Agentic Architecture & Orchestration", weight: "27%", objectives: ["Design and implement agentic loops for autonomous task execution", "Orchestrate multi-agent systems with coordinator-subagent patterns", "Configure subagent invocation, context passing, and spawning", "Implement multi-step workflows with enforcement and handoff patterns", "Apply Agent SDK hooks for tool call interception and data normalization", "Design task decomposition strategies for complex workflows", "Manage session state, resumption, and forking"] },
+        { id: "d2", name: "Tool Design & MCP Integration", weight: "18%", objectives: ["Design effective tool interfaces with clear descriptions and boundaries", "Implement structured error responses for MCP tools", "Distribute tools appropriately across agents and configure tool choice", "Integrate MCP servers into Claude Code and agent workflows", "Select and apply built-in tools (Read, Write, Edit, Bash, Grep, Glob) effectively"] },
+        { id: "d3", name: "Claude Code Configuration & Workflows", weight: "20%", objectives: ["Configure CLAUDE.md files with appropriate hierarchy, scoping, and modular organization", "Create and configure custom slash commands and skills", "Apply path-specific rules for conditional convention loading", "Determine when to use plan mode vs direct execution", "Apply iterative refinement techniques for progressive improvement", "Integrate Claude Code into CI/CD pipelines"] },
+        { id: "d4", name: "Prompt Engineering & Structured Output", weight: "20%", objectives: ["Design prompts with explicit criteria to improve precision and reduce false positives", "Apply few-shot prompting to improve output consistency and quality", "Enforce structured output using tool use and JSON schemas", "Implement validation, retry, and feedback loops for extraction quality", "Design efficient batch processing strategies", "Design multi-instance and multi-pass review architectures"] },
+        { id: "d5", name: "Context Management & Reliability", weight: "15%", objectives: ["Manage conversation context to preserve critical information across long interactions", "Design effective escalation and ambiguity resolution patterns", "Implement error propagation strategies across multi-agent systems", "Manage context effectively in large codebase exploration", "Design human review workflows and confidence calibration", "Preserve information provenance and handle uncertainty in multi-source synthesis"] },
+      ],
+      sources: [
+        { label: "Anthropic Partner Academy: Claude Certified Architect: Foundations exam", url: "https://anthropic-partners.skilljar.com/claude-certified-architect-foundations-certification" },
+        { label: "Anthropic: Claude Certified Architect: Foundations Exam Guide (PDF)", url: "https://everpath-course-content.s3-accelerate.amazonaws.com/instructor/6nizmqk8tpzpfjvt6qmmav7rh/public/1783542750/Claude+Certified+Architect+%E2%80%93+Foundations+Exam+Guide.pdf" },
+        { label: "Anthropic Partner Academy: Certification FAQ", url: "https://anthropic-partners.skilljar.com/page/faq-certifications" },
+        { label: "Anthropic Partner Academy: Who can take an exam", url: "https://anthropic-partners.skilljar.com/page/certification-eligibility" },
+        { label: "Claude: Four role-based Claude certifications", url: "https://claude.com/resources/articles/four-role-based-claude-certifications" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "CCAR-F Practice Exams: Claude Certified Architect",
+      description: "CCAR-F practice exams for Claude Certified Architect: Foundations: agentic architecture, MCP tools, Claude Code, prompting and context management.",
+    },
+  },
+  "claude-certified-associate-ccao-f": {
+    description:
+      "Practice exams for Anthropic's Claude Certified Associate: Foundations exam (CCAO-F), written to the official exam guide: prompting, output validation, product and model choice, workflows, configuration, governance and troubleshooting.",
+    fullName: "Claude Certified Associate: Foundations",
+    // Verified 2026-11-04 against the official CCAO-F Exam Guide (v1.0, effective July 2026), the Anthropic Partner Academy exam page (purchasable, USD 99), the Partner Academy "Who can take an exam" and Certification FAQ pages, and the claude.com article on the four role-based certifications.
+    // Status: current; announced as new in the claude.com article. No successor announced.
+    // Eligibility: only staff of Claude Partner Network organizations (partner company email, 18+, government ID); customers and non-partners currently not eligible. Per the FAQ, the Associate does not count toward Claude Partner Network tier criteria.
+    // Note: credential valid 12 months (exam guide, FAQ).
+    exam: {
+      officialName: "Claude Certified Associate: Foundations",
+      examCode: "CCAO-F",
+      examVersion: "Exam guide version 1.0 (effective July 2026)",
+      questionCount: "60 items",
+      duration: "120 minutes",
+      format: "Closed book; pass/fail with a scaled score of 100 to 1,000 and percent correct per domain",
+      passingScore: "720 (scaled)",
+      questionTypes: "Multiple choice and multiple response (each item states how many responses to select)",
+      languages: ["English", "Japanese"],
+      delivery: "Pearson VUE: online proctored (OnVUE) or at a Pearson test center",
+      prerequisites: "No mandatory prerequisites or required courses; no software development or API experience needed. Open only to staff of Claude Partner Network organizations. Target candidate uses Claude as a core productivity tool.",
+      status: "current",
+      officialCertificationUrl: "https://anthropic-partners.skilljar.com/claude-certified-associate-foundations-certification",
+      officialExamUrl: "https://everpath-course-content.s3-accelerate.amazonaws.com/instructor/6nizmqk8tpzpfjvt6qmmav7rh/public/1783542847/Claude+Certified+Associate+%E2%80%93+Foundations+Exam+Guide.pdf",
+      domains: [
+        { id: "d1", name: "Prompting and Task Execution", weight: "14%", objectives: ["Create effective prompts for business and technical tasks", "Apply task decomposition techniques to structure complex requests", "Iterate prompts to improve output quality", "Adapt prompting strategies based on task type (analysis, research, drafting, brainstorming)"] },
+        { id: "d2", name: "Output Evaluation and Validation", weight: "21%", objectives: ["Evaluate Claude-generated outputs for accuracy and completeness", "Identify hallucinations, inconsistencies, and biases in responses", "Apply fact-checking and validation techniques", "Determine when human review or additional verification is required", "Edit, adapt, refine, and compare outputs for the intended audience", "Organize and curate information and select appropriate output formats (artifacts, inline, structured data)"] },
+        { id: "d3", name: "Product and Model Selection", weight: "12%", objectives: ["Select appropriate Claude product features (Projects, research mode, chat, artifacts)", "Differentiate between Claude model types (Haiku, Sonnet, Opus)", "Align model selection with task requirements (cost, speed, quality)", "Understand and manage context limitations and memory considerations (when to restart, summarize, or persist)"] },
+        { id: "d4", name: "Workflow Integration and Solution Design", weight: "16%", objectives: ["Apply Claude to analyze requirements and use cases", "Leverage Claude for research, planning, and process optimization", "Use Claude to support solution design, development, and iteration", "Integrate Claude into existing workflows to augment or redesign them", "Communicate Claude's value and limitations to stakeholders"] },
+        { id: "d5", name: "Configuration and Knowledge Management", weight: "12%", objectives: ["Configure Claude Projects with instructions and knowledge sources", "Manage uploaded knowledge and connectors (e.g., Google Drive, Gmail)", "Create effective system-level instructions", "Inform, maintain, and update Claude configurations, knowledge sources, and instructions"] },
+        { id: "d6", name: "Governance, Risk, and Responsible Use", weight: "15%", objectives: ["Identify appropriate and inappropriate use cases", "Apply data sensitivity, regulatory, and privacy considerations", "Follow organizational AI policies and governance standards", "Understand the ethical implications of AI usage"] },
+        { id: "d7", name: "Troubleshooting and Optimization", weight: "10%", objectives: ["Identify, diagnose, and resolve issues with underperforming prompts or poor outputs", "Adjust approach based on feedback and results", "Optimize workflows for efficiency and effectiveness"] },
+      ],
+      sources: [
+        { label: "Anthropic Partner Academy: Claude Certified Associate: Foundations exam", url: "https://anthropic-partners.skilljar.com/claude-certified-associate-foundations-certification" },
+        { label: "Anthropic: Claude Certified Associate: Foundations Exam Guide (PDF)", url: "https://everpath-course-content.s3-accelerate.amazonaws.com/instructor/6nizmqk8tpzpfjvt6qmmav7rh/public/1783542847/Claude+Certified+Associate+%E2%80%93+Foundations+Exam+Guide.pdf" },
+        { label: "Anthropic Partner Academy: Certification FAQ", url: "https://anthropic-partners.skilljar.com/page/faq-certifications" },
+        { label: "Anthropic Partner Academy: Who can take an exam", url: "https://anthropic-partners.skilljar.com/page/certification-eligibility" },
+        { label: "Claude: Four role-based Claude certifications", url: "https://claude.com/resources/articles/four-role-based-claude-certifications" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "CCAO-F Practice Exams: Claude Certified Associate",
+      description: "CCAO-F practice exams for Claude Certified Associate: Foundations: prompting, output validation, model choice, Projects, governance and troubleshooting.",
+    },
+  },
+  "claude-certified-developer-ccdv-f": {
+    description:
+      "Practice tests for Anthropic's Claude Certified Developer: Foundations exam (CCDV-F), written to the official exam guide: agents, Claude API applications, model selection, prompt and context engineering, security, tools and MCP.",
+    fullName: "Claude Certified Developer: Foundations",
+    // Verified 2026-11-04 against the official CCDV-F Exam Guide (v1.0, effective July 2026), the Anthropic Partner Academy exam page (purchasable, USD 125), the Partner Academy "Who can take an exam" and Certification FAQ pages, and the claude.com article on the four role-based certifications.
+    // Status: current; announced as new in the claude.com article. No successor announced.
+    // Eligibility: only staff of Claude Partner Network organizations (partner company email, 18+, government ID); customers and non-partners currently not eligible.
+    // Note: domain weights are the exam guide's own decimal figures (they sum to 100%); objectives below are the guide's skill headings with their weights. Credential valid 12 months.
+    exam: {
+      officialName: "Claude Certified Developer: Foundations",
+      examCode: "CCDV-F",
+      examVersion: "Exam guide version 1.0 (effective July 2026)",
+      questionCount: "53 items",
+      duration: "120 minutes",
+      format: "Closed book; pass/fail with a scaled score of 100 to 1,000 and percent correct per domain",
+      passingScore: "720 (scaled)",
+      questionTypes: "Multiple choice and multiple response (each item states how many responses to select)",
+      languages: ["English", "Japanese"],
+      delivery: "Pearson VUE: online proctored (OnVUE) or at a Pearson test center",
+      prerequisites: "No mandatory prerequisites or required courses. Open only to staff of Claude Partner Network organizations. Target candidate: 1 to 5 years in software engineering, at least 6 months hands-on with Claude or comparable LLM systems, Python and/or TypeScript.",
+      status: "current",
+      officialCertificationUrl: "https://anthropic-partners.skilljar.com/claude-certified-developer-foundations-certification",
+      officialExamUrl: "https://everpath-course-content.s3-accelerate.amazonaws.com/instructor/6nizmqk8tpzpfjvt6qmmav7rh/public/1783542875/Claude+Certified+Developer+%E2%80%93+Foundations+Exam+Guide.pdf",
+      domains: [
+        { id: "d1", name: "Agents and Workflows", weight: "14.7%", objectives: ["Agent Architecture (4.5%)", "Agent Construction with Claude (5.3%)", "Agent Patterns and Frameworks (4.9%)"] },
+        { id: "d2", name: "Applications and Integration", weight: "33.1%", objectives: ["Understanding Requirements (3.4%)", "Systems Life Cycle (2.8%)", "Claude API Mechanics (6.8%)", "Software Engineering Foundations (7.4%)", "Claude Application Design (8.6%)", "Configuration Management (4.1%)"] },
+        { id: "d3", name: "Claude Code", weight: "3.1%", objectives: ["Claude Code Operation (3.1%)"] },
+        { id: "d4", name: "Eval, Testing, and Debugging", weight: "2.6%", objectives: ["Debugging and Error Handling (2.6%)"] },
+        { id: "d5", name: "Model Selection and Optimization", weight: "16.8%", objectives: ["LLM Fundamentals (5.2%)", "Technical Fundamentals (6.1%)", "Model Selection and Tradeoffs (2.7%)", "Cost and Token Management (2.8%)"] },
+        { id: "d6", name: "Prompt and Context Engineering", weight: "11.0%", objectives: ["Context Engineering (3.8%)", "Prompt Engineering (4.6%)", "Output Handling (2.6%)"] },
+        { id: "d7", name: "Security and Safety", weight: "8.1%", objectives: ["AI Application Security (3.2%)", "Guardrails and Safe Deployment (2.3%)", "Claude Hooks (1.0%)", "Identity, Secrets, and Key Management (1.6%)"] },
+        { id: "d8", name: "Tools and MCPs", weight: "10.6%", objectives: ["Tool Implementation (4.4%)", "MCP Server Development (2.1%)", "Agentic Customization (4.1%)"] },
+      ],
+      sources: [
+        { label: "Anthropic Partner Academy: Claude Certified Developer: Foundations exam", url: "https://anthropic-partners.skilljar.com/claude-certified-developer-foundations-certification" },
+        { label: "Anthropic: Claude Certified Developer: Foundations Exam Guide (PDF)", url: "https://everpath-course-content.s3-accelerate.amazonaws.com/instructor/6nizmqk8tpzpfjvt6qmmav7rh/public/1783542875/Claude+Certified+Developer+%E2%80%93+Foundations+Exam+Guide.pdf" },
+        { label: "Anthropic Partner Academy: Certification FAQ", url: "https://anthropic-partners.skilljar.com/page/faq-certifications" },
+        { label: "Anthropic Partner Academy: Who can take an exam", url: "https://anthropic-partners.skilljar.com/page/certification-eligibility" },
+        { label: "Claude: Four role-based Claude certifications", url: "https://claude.com/resources/articles/four-role-based-claude-certifications" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "CCDV-F Practice Tests: Claude Certified Developer",
+      description: "CCDV-F practice tests for Claude Certified Developer: Foundations: agents, Claude API apps, model choice, prompting, security, tools and MCP.",
+    },
+  },
+  "cobit-2019-foundation": {
+    description:
+      "Practice exams for the ISACA COBIT 2019 Foundation Certificate, covering all eight exam domains. ISACA replaces this certificate with the COBIT 7 Foundation Certificate on 19 November 2026; the last day to purchase the COBIT 2019 exam is 30 June 2027.",
+    fullName: "ISACA COBIT 2019 Foundation Certificate",
+    // Verified 2026-11-04 against the ISACA COBIT Foundation page (isaca.org). Certification body: ISACA (course descriptor "ISACA COBIT 2019 Foundation").
+    // STATUS: ISACA states the COBIT 2019 Foundations Certificate program "will be replaced by the COBIT 7 Foundation Certificate" on 19 November 2026 and sunset; last day to purchase the current exam or exam prep is 30 June 2027. ISACA gives no last date to sit the exam.
+    // DOUBT: the exam facts (75 questions, 2 hours, 65%, weights) are on the COBIT Foundation page without naming a version; they are taken as the current COBIT 2019 exam. Recheck after 19 November 2026, when the page may switch to COBIT 7.
+    // Languages: not stated on the page, omitted. No COBIT-specific exam guide PDF is linked.
+    exam: {
+      officialName: "COBIT 2019 Foundation Certificate",
+      questionCount: "75",
+      duration: "2 hours",
+      format: "Multiple choice; computer-based, online, remotely proctored",
+      passingScore: "65%",
+      delivery: "Online, remotely proctored",
+      prerequisites: "None",
+      status: "retiring",
+      retirementDate: "Replaced by the COBIT 7 Foundation Certificate on 19 November 2026; last day to purchase the COBIT 2019 exam: 30 June 2027",
+      officialCertificationUrl: "https://www.isaca.org/credentialing/cobit/cobit-foundation",
+      officialExamUrl: "https://www.isaca.org/credentialing/cobit/cobit-foundation",
+      domains: [
+        { id: "d1", name: "Framework Introduction", weight: "12%" },
+        { id: "d2", name: "Principles", weight: "13%" },
+        { id: "d3", name: "Governance System and Components", weight: "30%" },
+        { id: "d4", name: "Governance and Management Objectives", weight: "23%" },
+        { id: "d5", name: "Performance Management", weight: "4%" },
+        { id: "d6", name: "Designing a Tailored Governance System", weight: "7%" },
+        { id: "d7", name: "Business Case", weight: "3%" },
+        { id: "d8", name: "Implementation", weight: "8%" },
+      ],
+      sources: [
+        { label: "ISACA: COBIT Foundation Certificate", url: "https://www.isaca.org/credentialing/cobit/cobit-foundation" },
+        { label: "ISACA: Exam candidate guides", url: "https://www.isaca.org/credentialing/exam-candidate-guides" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "COBIT 2019 Foundation Practice Exams (450 Qs)",
+      description:
+        "COBIT 2019 Foundation practice exams covering all eight ISACA exam domains. ISACA moves to the COBIT 7 Foundation Certificate on 19 Nov 2026.",
+    },
+  },
+  "comptia-cloud-plus-cv0-004": {
+    description:
+      "Practice exams for CompTIA Cloud+ (CV0-004), written to the official exam objectives: cloud architecture, deployment, operations, security, DevOps fundamentals and troubleshooting. Find your gaps before the 90-minute exam.",
+    fullName: "CompTIA Cloud+",
+    // Verified 2026-11-04 against the CompTIA Cloud+ certification page on comptia.org (exam details on the same page) and the CV0-004 exam objectives PDF version 1.2 (hosted by CompTIA Japan, comptia.jp).
+    // Status: CV0-004 (V4) is current. CompTIA states retirement only as "usually three years after launch (estimated 2027)"; no firm date and no successor exam announced, so retirementDate omitted.
+    // Not stated on the certification page, so omitted: delivery (test center / online). The objectives PDF leaves question count, length and passing score blank; those come from the certification page.
+    // Domain names: certification page uses sentence case ("Cloud architecture"); objectives PDF title case. PDF wording used with the objective headings.
+    exam: {
+      officialName: "CompTIA Cloud+",
+      examCode: "CV0-004",
+      examVersion: "V4 (exam objectives version 1.2)",
+      questionCount: "Maximum of 90",
+      duration: "90 minutes",
+      format: "Multiple-choice and performance-based questions",
+      passingScore: "750 (on a scale of 100–900)",
+      questionTypes: "Multiple-choice and performance-based",
+      languages: ["English", "Japanese"],
+      prerequisites: "None required. CompTIA recommends 2–3 years of hands-on experience as a systems administrator or cloud engineer; the objectives also recommend Network+ and Server+ or equivalent knowledge.",
+      status: "current",
+      launchDate: "2024-09-24",
+      officialCertificationUrl: "https://www.comptia.org/en-us/certifications/cloud/",
+      officialExamUrl: "https://www.comptia.jp/pdf/CompTIA%20Cloud%2B%20CV0-004%20Exam%20Objectives%20%281.2%29.pdf",
+      domains: [
+        {
+          id: "d1",
+          name: "Cloud Architecture",
+          weight: "23%",
+          objectives: [
+            "1.1 Given a scenario, use the appropriate cloud service model.",
+            "1.2 Explain concepts related to service availability.",
+            "1.3 Explain cloud networking concepts.",
+            "1.4 Compare and contrast storage resources and technologies.",
+            "1.5 Explain the purpose of cloud-native design concepts.",
+            "1.6 Compare and contrast containerization concepts.",
+            "1.7 Compare and contrast virtualization concepts.",
+            "1.8 Summarize cost considerations related to cloud usage.",
+            "1.9 Explain the importance of database concepts.",
+            "1.10 Compare and contrast methods for optimizing workloads using cloud resources.",
+            "1.11 Identify evolving technologies in the cloud.",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Deployment",
+          weight: "19%",
+          objectives: [
+            "2.1 Compare and contrast cloud deployment models.",
+            "2.2 Given a scenario, implement appropriate deployment strategies.",
+            "2.3 Summarize aspects of cloud migration.",
+            "2.4 Given a scenario, use code to deploy and configure cloud resources.",
+            "2.5 Given a set of requirements, provision the appropriate cloud resources.",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Operations",
+          weight: "17%",
+          objectives: [
+            "3.1 Given a scenario, configure appropriate resources to achieve observability.",
+            "3.2 Given a scenario, configure appropriate scaling approaches.",
+            "3.3 Given a scenario, use appropriate backup and recovery methods.",
+            "3.4 Given a scenario, manage the life cycle of cloud resources.",
+          ],
+        },
+        {
+          id: "d4",
+          name: "Security",
+          weight: "19%",
+          objectives: [
+            "4.1 Explain vulnerability management concepts.",
+            "4.2 Compare and contrast aspects of compliance and regulation.",
+            "4.3 Given a scenario, implement identity and access management.",
+            "4.4 Given a scenario, apply security best practices.",
+            "4.5 Given a scenario, apply security controls in the cloud.",
+            "4.6 Given a scenario, monitor suspicious activities to identify common attacks.",
+          ],
+        },
+        {
+          id: "d5",
+          name: "DevOps Fundamentals",
+          weight: "10%",
+          objectives: [
+            "5.1 Explain source control concepts.",
+            "5.2 Explain concepts related to continuous integration/continuous deployment (CI/CD) pipelines.",
+            "5.3 Explain concepts related to integration of systems.",
+            "5.4 Explain the importance of tools used in DevOps environments.",
+          ],
+        },
+        {
+          id: "d6",
+          name: "Troubleshooting",
+          weight: "12%",
+          objectives: [
+            "6.1 Given a scenario, troubleshoot deployment issues.",
+            "6.2 Given a scenario, troubleshoot network issues.",
+            "6.3 Given a scenario, troubleshoot security issues.",
+          ],
+        },
+      ],
+      sources: [
+        { label: "CompTIA: Cloud+ certification", url: "https://www.comptia.org/en-us/certifications/cloud/" },
+        { label: "CompTIA Japan: Cloud+ CV0-004 exam objectives 1.2 (PDF)", url: "https://www.comptia.jp/pdf/CompTIA%20Cloud%2B%20CV0-004%20Exam%20Objectives%20%281.2%29.pdf" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "CompTIA Cloud+ (CV0-004) Practice Exams",
+      description: "Practice exams for CompTIA Cloud+ (CV0-004): cloud architecture, deployment, operations, security, DevOps fundamentals and troubleshooting.",
+    },
+  },
+  "comptia-secai-plus-cy0-001": {
+    description:
+      "Practice exams for CompTIA SecAI+ (CY0-001), organised by the four exam domains: basic AI concepts related to cybersecurity, securing AI systems, AI-assisted security, and AI governance, risk and compliance. The course is available in English and German.",
+    fullName: "CompTIA SecAI+",
+    // Verified 2026-11-04 against the CompTIA SecAI+ certification page on comptia.org (exam details on the same page).
+    // The page links no objectives PDF, only an objectives summary, so objectives are omitted. Delivery (test center / online) not stated on the page, omitted.
+    // Retirement only stated as "3 years after launch" (estimated); no date announced, so retirementDate omitted. No successor version announced.
+    // Note: exam languages are English and Japanese only; the German course is practice material, the exam itself is not offered in German.
+    exam: {
+      officialName: "CompTIA SecAI+",
+      examCode: "CY0-001",
+      examVersion: "V1",
+      questionCount: "Maximum of 60",
+      duration: "60 minutes",
+      format: "Multiple-choice and performance-based questions",
+      passingScore: "600 (on a scale of 100–900)",
+      questionTypes: "Multiple-choice and performance-based",
+      languages: ["English", "Japanese"],
+      prerequisites:
+        "None required. CompTIA recommends 3–4 years in IT and 2+ years of hands-on cybersecurity experience; Security+, CySA+, PenTest+ or equivalent recommended.",
+      status: "current",
+      launchDate: "2026-02-17",
+      officialCertificationUrl: "https://www.comptia.org/en-us/certifications/secai/",
+      officialExamUrl: "https://www.comptia.org/en-us/certifications/secai/",
+      domains: [
+        { id: "d1", name: "Basic AI concepts related to cybersecurity", weight: "17%" },
+        { id: "d2", name: "Securing AI systems", weight: "40%" },
+        { id: "d3", name: "AI-assisted security", weight: "24%" },
+        { id: "d4", name: "AI governance, risk, and compliance", weight: "19%" },
+      ],
+      sources: [
+        { label: "CompTIA: SecAI+ certification", url: "https://www.comptia.org/en-us/certifications/secai/" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "CompTIA SecAI+ (CY0-001) Practice Exams",
+      description:
+        "CompTIA SecAI+ (CY0-001) practice exams in English and German: AI concepts, securing AI systems, AI-assisted security and AI governance.",
+    },
+  },
+  "dp-750": {
+    description:
+      "Practice exams for Microsoft DP-750: Implementing Data Engineering Solutions Using Azure Databricks, written to the skills measured as of 11 March 2026: compute, Unity Catalog security and governance, data processing and Lakeflow Jobs.",
+    fullName: "Microsoft Certified: Azure Databricks Data Engineer Associate",
+    // Verified 2026-11-04 against Microsoft Learn (DP-750 study guide, Azure Databricks Data Engineer Associate certification page).
+    // The exam page /exams/dp-750/ could not be retrieved; duration and languages come from the certification page.
+    // Not published on the pages fetched, so omitted: question count, question types.
+    exam: {
+      officialName: "Exam DP-750: Implementing Data Engineering Solutions Using Azure Databricks",
+      examCode: "DP-750",
+      examVersion: "Skills measured as of 11 March 2026",
+      duration: "120 minutes",
+      passingScore: "700 or greater",
+      languages: ["English", "Japanese", "Chinese (Simplified)", "Chinese (Traditional)", "Korean", "German", "French", "Italian", "Portuguese (Brazil)", "Spanish"],
+      delivery: "Proctored exam; may include interactive components",
+      prerequisites: "No formal prerequisites. Microsoft expects expertise in integrating and modeling data, building and deploying pipelines, and maintaining workloads in Azure Databricks, plus data quality and governance in Unity Catalog.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks/",
+      domains: [
+        { id: "d1", name: "Set up and configure an Azure Databricks environment", weight: "15–20%", objectives: ["Select and configure compute in a workspace", "Create and organize objects in Unity Catalog"] },
+        { id: "d2", name: "Secure and govern Unity Catalog objects", weight: "15–20%", objectives: ["Secure Unity Catalog objects", "Govern Unity Catalog objects"] },
+        { id: "d3", name: "Prepare and process data", weight: "30–35%", objectives: ["Design and implement data modeling in Unity Catalog", "Ingest data into Unity Catalog", "Cleanse, transform, and load data into Unity Catalog", "Implement and manage data quality constraints in Unity Catalog"] },
+        { id: "d4", name: "Deploy and maintain data pipelines and workloads", weight: "30–35%", objectives: ["Design and implement data pipelines", "Implement Lakeflow Jobs", "Implement development lifecycle processes in Azure Databricks", "Monitor, troubleshoot, and optimize workloads in Azure Databricks"] },
+      ],
+      sources: [
+        { label: "Microsoft Learn: DP-750 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750" },
+        { label: "Microsoft Learn: Azure Databricks Data Engineer Associate certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks/" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "DP-750 Practice Exams: Azure Databricks Data Engineer",
+      description: "DP-750 practice exams for the March 2026 skills: Databricks compute, Unity Catalog security and governance, ingestion, transformation, Lakeflow Jobs.",
+    },
+  },
+  "google-cloud-professional-cloud-architect": {
+    description:
+      "Practice exams for the Google Cloud Professional Cloud Architect, organised by the six exam guide sections: solution design and planning, provisioning, security and compliance, process analysis, implementation and operations excellence.",
+    fullName: "Google Cloud Professional Cloud Architect",
+    // Verified 2026-11-04 against the Google Cloud certification page (cloud.google.com) and the official exam guide PDF (services.google.com), which carries no version or date.
+    // Status: current. The certification page says only "This exam was updated to reflect recent branding changes. Refer to the exam guide to review product names used on the exam." (no date). No new exam version or beta announced. No exam code exists.
+    // Not published by Google, so omitted: passing score.
+    // Other official facts (no schema field): each exam includes 2 case studies, and case study questions make up 20-30% of the exam. The exam guide lists 4 case studies: Altostrat Media, Cymbal Retail, EHR Healthcare and KnightMotives Automotive. Fee US$200 (plus tax). Certification valid 2 years; a 1-hour, 25-question renewal exam (US$100) is offered.
+    exam: {
+      officialName: "Professional Cloud Architect",
+      questionCount: "50–60",
+      duration: "2 hours",
+      format: "Multiple choice and multiple select, including case study questions (20–30% of the exam)",
+      questionTypes: "Multiple choice and multiple select",
+      languages: ["English", "Japanese"],
+      delivery: "Online-proctored from a remote location, or onsite-proctored at a testing center",
+      prerequisites:
+        "None. Recommended: 3+ years of industry experience, including 1+ years designing and managing solutions using Google Cloud.",
+      status: "current",
+      officialCertificationUrl: "https://cloud.google.com/learn/certification/cloud-architect",
+      officialExamUrl: "https://services.google.com/fh/files/misc/professional_cloud_architect_exam_guide_english.pdf",
+      domains: [
+        {
+          id: "d1",
+          name: "Designing and planning a cloud solution architecture",
+          weight: "~25%",
+          objectives: [
+            "1.1 Designing a cloud solution infrastructure that meets business requirements",
+            "1.2 Designing a cloud solution infrastructure that meets technical requirements",
+            "1.3 Designing network, storage, and compute resources",
+            "1.4 Creating a migration plan (i.e., documents and architectural diagrams)",
+            "1.5 Envisioning future solution improvements",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Managing and provisioning a cloud solution infrastructure",
+          weight: "~17.5%",
+          objectives: [
+            "2.1 Configuring network topologies",
+            "2.2 Configuring individual storage systems",
+            "2.3 Configuring compute systems",
+            "2.4 Leveraging Gemini Enterprise Agent Platform for end-to-end ML workflows",
+            "2.5 Configuring prebuilt solutions or APIs with Agent Platform",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Designing for security and compliance",
+          weight: "~17.5%",
+          objectives: ["3.1 Designing for security", "3.2 Designing for compliance"],
+        },
+        {
+          id: "d4",
+          name: "Analyzing and optimizing technical and business processes",
+          weight: "~15%",
+          objectives: ["4.1 Analyzing and defining technical processes", "4.2 Analyzing and defining business processes"],
+        },
+        {
+          id: "d5",
+          name: "Managing implementation",
+          weight: "~12.5%",
+          objectives: [
+            "5.1 Advising development and operation teams to ensure the successful deployment of the solution",
+            "5.2 Interacting with Google Cloud programmatically",
+          ],
+        },
+        {
+          id: "d6",
+          name: "Ensuring solution and operations excellence",
+          weight: "~12.5%",
+          objectives: [
+            "6.1 Understanding the principles and recommendations of the operational excellence pillar of the Google Cloud Well-Architected Framework",
+            "6.2 Familiarity with Google Cloud Observability solutions",
+            "6.3 Deployment and release management",
+            "6.4 Assisting with the support of deployed solutions",
+            "6.5 Evaluating quality control measures",
+            "6.6 Ensuring the reliability of solutions in production (e.g., chaos engineering, penetration testing, and load testing)",
+          ],
+        },
+      ],
+      sources: [
+        { label: "Google Cloud: Professional Cloud Architect", url: "https://cloud.google.com/learn/certification/cloud-architect" },
+        { label: "Google Cloud: Professional Cloud Architect exam guide (PDF)", url: "https://services.google.com/fh/files/misc/professional_cloud_architect_exam_guide_english.pdf" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "Google Professional Cloud Architect Practice Exams",
+      description:
+        "Practice exams for Google Cloud Professional Cloud Architect: solution design, provisioning, security, processes, implementation and operations.",
+    },
+  },
+  "google-cloud-professional-cloud-security-engineer": {
+    description:
+      "Practice exams for the Google Cloud Professional Cloud Security Engineer, organised by the five exam guide sections: configuring access, securing communications and boundary protection, data protection (including securing AI workloads), operations, and compliance.",
+    fullName: "Google Cloud Professional Cloud Security Engineer",
+    // Verified 2026-11-04 against the Google Cloud certification page (cloud.google.com) and the official exam guide PDF (services.google.com), which carries no version or date.
+    // The certification page mentions no new version, beta or updated exam guide. Passing score not published by Google, omitted. No exam code exists.
+    exam: {
+      officialName: "Professional Cloud Security Engineer",
+      questionCount: "50–60",
+      duration: "2 hours",
+      format: "Multiple choice",
+      languages: ["English", "Japanese"],
+      delivery: "Online-proctored from a remote location, or onsite-proctored at a testing center",
+      prerequisites:
+        "None. Recommended: 3+ years of industry experience, including more than 1 year designing and managing solutions using Google Cloud.",
+      status: "current",
+      officialCertificationUrl: "https://cloud.google.com/learn/certification/cloud-security-engineer",
+      officialExamUrl: "https://services.google.com/fh/files/misc/professional_cloud_security_engineer_exam_guide_english.pdf",
+      domains: [
+        {
+          id: "d1",
+          name: "Configuring access",
+          weight: "~25%",
+          objectives: [
+            "1.1 Managing Cloud Identity",
+            "1.2 Managing service accounts",
+            "1.3 Managing authentication",
+            "1.4 Managing and implementing authorization controls",
+            "1.5 Defining the resource hierarchy",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Securing communications and establishing boundary protection",
+          weight: "~22%",
+          objectives: [
+            "2.1 Designing and configuring perimeter security",
+            "2.2 Configuring boundary segmentation",
+            "2.3 Establishing private connectivity",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Ensuring data protection",
+          weight: "~23%",
+          objectives: [
+            "3.1 Protecting sensitive data and preventing data loss",
+            "3.2 Managing encryption at rest, in transit, and in use",
+            "3.3 Securing AI workloads",
+          ],
+        },
+        {
+          id: "d4",
+          name: "Managing operations",
+          weight: "~19%",
+          objectives: [
+            "4.1 Automating infrastructure and application security",
+            "4.2 Configuring logging, monitoring, and detection",
+          ],
+        },
+        {
+          id: "d5",
+          name: "Supporting compliance requirements",
+          weight: "~11%",
+          objectives: [
+            "5.1 Adhering to regulatory and industry standards requirements for the cloud",
+          ],
+        },
+      ],
+      sources: [
+        { label: "Google Cloud: Professional Cloud Security Engineer", url: "https://cloud.google.com/learn/certification/cloud-security-engineer" },
+        { label: "Google Cloud: Professional Cloud Security Engineer exam guide (PDF)", url: "https://services.google.com/fh/files/misc/professional_cloud_security_engineer_exam_guide_english.pdf" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "Google Cloud Security Engineer Practice Exams",
+      description:
+        "Practice exams for Google Cloud Professional Cloud Security Engineer: access, boundary protection, data protection, operations and compliance.",
+    },
+  },
+  "isaca-aair": {
+    description:
+      "Practice exams for ISACA Advanced in AI Risk (AAIR), written to the official exam content outline: AI risk governance and framework integration, AI life cycle risk management, and AI risk program management.",
+    fullName: "ISACA Advanced in AI Risk (AAIR)",
+    // Verified 2026-11-04 against the ISACA AAIR certification page and the AAIR Exam Content Outline page on isaca.org.
+    // Status: current; ISACA states registration and prep materials are available. No successor or retirement announced.
+    // NAMING: the AAIR certification page lists the areas as "AI Enterprise Governance", "AI Life Cycle Risk Management" and "AI Risk Program Management"; the exam content outline (used below, with weights) names domain 1 "AI Risk Governance and Framework Integration".
+    // UNVERIFIED and omitted: exam duration, passing score/scale and exam languages (not on the certification page or outline page; the AAIR Exam Candidate Guide PDF and ISACA general candidate guide could not be fetched, robots-blocked). Outline effective date not stated.
+    // Note: exam fee USD 459 (member) / USD 599 (non-member); USD 50 application fee after passing; apply within 5 years of passing (certification page).
+    exam: {
+      officialName: "Advanced in AI Risk (AAIR)",
+      examCode: "AAIR",
+      questionCount: "90 questions",
+      format: "Computer-based exam",
+      delivery: "PSI testing center or remote proctoring (testing center required in India, Mainland China and Hong Kong)",
+      prerequisites: "Hold an eligible certification or designation, such as CISA, CISM, CRISC, CGEIT, CDPSE, CISSP, CIA, CGRC or PMI-RMP (full list on the ISACA page), plus proven experience in IT risk or advisory roles.",
+      status: "current",
+      officialCertificationUrl: "https://www.isaca.org/credentialing/aair",
+      officialExamUrl: "https://www.isaca.org/credentialing/aair/aair-exam-content-outline",
+      domains: [
+        { id: "d1", name: "AI Risk Governance and Framework Integration", weight: "37%", objectives: ["1A AI Models, Frameworks, Strategies, and Use Cases", "1B AI Organizational Processes and Alignment", "1C AI Ownership, Oversight, and Accountability", "1D AI Policies, Procedures, and Organizational Training", "1E AI Regulatory Compliance and Legal Considerations", "1F AI Trustworthiness, Ethical and Societal Implications (e.g., ESG)"] },
+        { id: "d2", name: "AI Life Cycle Risk Management", weight: "21%", objectives: ["2A AI Design, Development/Procurement, and Documentation", "2B AI Model Training, Testing, and Validation", "2C AI Implementation, Maintenance, and Decommissioning", "2D AI Data and Asset Management"] },
+        { id: "d3", name: "AI Risk Program Management", weight: "42%", objectives: ["3A AI Risk Scenario Identification and Assessment (e.g., threats, vulnerabilities, and attacks)", "3B AI Risk Treatment Strategies", "3C AI Controls Management (e.g., Evaluation, Selection, Validation)", "3D AI Risk Metrics, Monitoring, and Reporting", "3E AI Supply Chain Risk Management (e.g., third party resources)", "3F AI Incident Response, BIA, Business Continuity, and Disaster Recovery"] },
+      ],
+      sources: [
+        { label: "ISACA: AAIR Certification", url: "https://www.isaca.org/credentialing/aair" },
+        { label: "ISACA: AAIR Exam Content Outline", url: "https://www.isaca.org/credentialing/aair/aair-exam-content-outline" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "AAIR Practice Exams: ISACA Advanced in AI Risk",
+      description: "AAIR practice exams for ISACA Advanced in AI Risk: AI risk governance, AI life cycle risk management and AI risk program management, by domain.",
+    },
+  },
+  "iso-27001-lead-implementer": {
+    description:
+      "Practice exams for the PECB ISO/IEC 27001 Lead Implementer exam, covering the seven competency domains, from ISMS concepts and requirements to implementation, monitoring, improvement and audit readiness. Available in English and German.",
+    fullName: "PECB Certified ISO/IEC 27001 Lead Implementer",
+    // Verified 2026-11-04 against pecb.com: ISO/IEC 27001 Lead Implementer course page, Candidate Handbook (multiple-choice, version 1.5, ©2026), ISO/IEC 27001 certification scheme (version 4.7, dated 2025-12-17).
+    // Certification body: PECB (both Udemy course titles name PECB).
+    // Duration (3 hours) comes from the certification scheme PDF; the course page and handbook do not state it.
+    // Exam languages: not stated on the pages read. PECB's "List of PECB Exams" (help.pecb.com) could not be fetched, so languages are omitted.
+    // The handbook does not name the edition, but the scheme references ISO/IEC 27001:2022 (93 Annex A controls in the handbook match it).
+    // Domain names as on the PECB course page (Lead Implementer competency domains). Domain weights are derived from the handbook's question count per domain (e.g. 15 of 80 = 18.75%).
+    exam: {
+      officialName: "PECB Certified ISO/IEC 27001 Lead Implementer",
+      examVersion: "Candidate Handbook version 1.5; certification scheme version 4.7 (ISO/IEC 27001:2022)",
+      questionCount: "80",
+      duration: "3 hours",
+      format: "Multiple choice, open book (hard copy of ISO/IEC 27001, training course materials and personal notes allowed)",
+      passingScore: "70%",
+      questionTypes: "Multiple-choice questions with three options; standalone and scenario-based (five questions per scenario)",
+      delivery: "Online via the PECB Exams application (remotely invigilated), or paper-based at a session with a PECB-approved invigilator",
+      prerequisites:
+        "None to take the exam. The Lead Implementer credential requires 5 years of professional experience (2 in information security management), 300 hours of ISMS project activity and signing the PECB Code of Ethics; candidates with less experience can hold the Provisional Implementer or Implementer credential.",
+      status: "current",
+      officialCertificationUrl: "https://pecb.com/en/education-and-certification-for-individuals/iso-iec-27001/iso-iec-27001-lead-implementer",
+      officialExamUrl: "https://pecb.com/pdf/candidate-handbooks/pecb-candidate-handbook-iso-27001-lead-implementer-mc.pdf",
+      domains: [
+        { id: "d1", name: "Fundamental principles and concepts of an information security management system", weight: "18.75%" },
+        { id: "d2", name: "Information security management system requirements", weight: "15%" },
+        { id: "d3", name: "Planning of an ISMS implementation based on ISO/IEC 27001", weight: "22.5%" },
+        { id: "d4", name: "Implementation of an ISMS based on ISO/IEC 27001", weight: "17.5%" },
+        { id: "d5", name: "Monitoring and measurement of an ISMS based on ISO/IEC 27001", weight: "12.5%" },
+        { id: "d6", name: "Continual improvement of an ISMS based on ISO/IEC 27001", weight: "7.5%" },
+        { id: "d7", name: "Preparation for an ISMS certification audit", weight: "6.25%" },
+      ],
+      sources: [
+        { label: "PECB: ISO/IEC 27001 Lead Implementer", url: "https://pecb.com/en/education-and-certification-for-individuals/iso-iec-27001/iso-iec-27001-lead-implementer" },
+        { label: "PECB: ISO/IEC 27001 Lead Implementer Candidate Handbook (PDF)", url: "https://pecb.com/pdf/candidate-handbooks/pecb-candidate-handbook-iso-27001-lead-implementer-mc.pdf" },
+        { label: "PECB: ISO/IEC 27001 certification scheme (PDF)", url: "https://pecb.com/pdf/brochures/isoiec-27001-certification-scheme.pdf" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "PECB ISO 27001 Lead Implementer Practice Exams",
+      description:
+        "PECB ISO/IEC 27001 Lead Implementer practice exams in English and German, covering all seven competency domains of the 80-question exam.",
+    },
+  },
+  "iso-iec-42001-foundation": {
+    description:
+      "Practice exams for the PECB ISO/IEC 42001 Foundation exam, covering the fundamental principles and concepts of an artificial intelligence management system (AIMS) and the AIMS requirements of ISO/IEC 42001.",
+    fullName: "PECB ISO/IEC 42001 Foundation (AI Management Systems)",
+    // Verified 2026-11-04 against the PECB ISO/IEC 42001 Foundation course page, the PECB one-page brochure (exam duration, domains), the PECB eLearning brochure (online exam via PECB Exams) and PECB Exam Rules and Policies (Foundation exams are multiple choice, closed book).
+    // Status: current; no successor or retirement noted by PECB.
+    // Question count (40, three options each), passing score (70%) and per-domain question counts (15 and 25, giving 37.5% and 62.5%) are from the PECB ISO/IEC 42001 Foundation Candidate Handbook.
+    // UNVERIFIED and omitted: exam languages (PECB points to its "List of PECB Exams" page, which could not be fetched). The course page lists English sessions and some French sessions, but that is training language, not a stated exam language list.
+    // Note: credential is "PECB Certificate Holder in ISO/IEC 42001 Foundation" (pass the exam and sign the PECB Code of Ethics). One free retake within 12 months for course participants. Course is 2 days, 14 CPD credits.
+    exam: {
+      officialName: "PECB Certificate Holder in ISO/IEC 42001 Foundation",
+      questionCount: "40",
+      duration: "1 hour",
+      format: "Multiple choice, closed book",
+      passingScore: "70%",
+      questionTypes: "Multiple-choice questions with three options",
+      delivery: "Online via the PECB Exams application with remote invigilation, or at the end of PECB classroom or live online training",
+      prerequisites: "None. No professional, audit or project experience required.",
+      status: "current",
+      officialCertificationUrl: "https://pecb.com/en/education-and-certification-for-individuals/iso-iec-42001/iso-iec-42001-foundation",
+      officialExamUrl: "https://pecb.com/pdf/candidate-handbooks/pecb-candidate-handbook-iso-iec-42001-foundation.pdf",
+      domains: [
+        { id: "d1", name: "Fundamental principles and concepts of an artificial intelligence management system (AIMS)", weight: "37.5%" },
+        { id: "d2", name: "Artificial intelligence management system (AIMS)", weight: "62.5%" },
+      ],
+      sources: [
+        { label: "PECB: ISO/IEC 42001 Foundation", url: "https://pecb.com/en/education-and-certification-for-individuals/iso-iec-42001/iso-iec-42001-foundation" },
+        { label: "PECB: ISO/IEC 42001 Foundation Candidate Handbook (PDF)", url: "https://pecb.com/pdf/candidate-handbooks/pecb-candidate-handbook-iso-iec-42001-foundation.pdf" },
+        { label: "PECB: ISO/IEC 42001 Foundation brochure (PDF)", url: "https://pecb.com/pdf/brochures/1/iso-iec-42001-foundation_1p.pdf" },
+        { label: "PECB: ISO/IEC 42001 Foundation eLearning brochure (PDF)", url: "https://pecb.com/pdf/brochures/iso-iec-42001-foundation-elearning.pdf" },
+        { label: "PECB: Exam Rules and Policies", url: "https://pecb.com/en/exam-rules-and-policies" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "ISO/IEC 42001 Foundation Practice Exams (PECB AIMS)",
+      description: "Six ISO/IEC 42001 Foundation practice exams for the PECB AIMS exam: AI management system principles, concepts and ISO/IEC 42001 requirements.",
+    },
+  },
+  "istqb-ct-ai": {
+    description:
+      "English and German practice exams for the ISTQB Certified Tester AI Testing (CT-AI) v2.0 syllabus, covering AI quality characteristics, machine learning, testing generative AI and LLMs, input data testing and model testing for ML systems.",
+    fullName: "ISTQB Certified Tester AI Testing (CT-AI) v2.0",
+    // Verified 2026-11-04 against istqb.org: CT-AI certification page, CT-AI v2.0 FAQ (istqb.org/help/ct-ai-v2/), CT-AI v2.0 syllabus PDF (Version 2.0, "Release for GA" 2026/04/17), ISTQB news (CT-AI v2.0 released 21 April 2026) and Exam Structures and Rules v1.2 (2 May 2025).
+    // Status: v2.0 is the current version. CT-AI v1.0 is retiring: English training and exams (including retakes) until 21 April 2027, other languages until 21 October 2027. v1.0 certificates remain valid; there is no bridging exam.
+    // Not published on the official pages, so omitted: list of exam languages, per-chapter exam weights, delivery method (exams are run by ISTQB Member Boards and Exam Providers).
+    // Domain weights omitted. For reference only, the syllabus gives minimum training time per chapter: Ch1 120 min, Ch2 45, Ch3 375, Ch4 195, Ch5 180, Ch6 225, Ch7 30 (these are not exam weights).
+    // Pass mark: certification page says 29 of 44 points; FAQ says 65%. Points value used.
+    // Hands-on exercise headings in the syllabus (3.1.3, 3.2.2, 3.3.2, 3.3.3, 3.4.2, 4.2.3, 5.1.7, 6.1.6) left out of the objectives lists.
+    exam: {
+      officialName: "ISTQB Certified Tester AI Testing (CT-AI) v2.0",
+      examCode: "CT-AI",
+      examVersion: "Syllabus v2.0 (released for GA 17 April 2026)",
+      questionCount: "40",
+      duration: "60 minutes (plus 25% for candidates taking the exam in a non-native language)",
+      format: "Multiple-choice exam",
+      passingScore: "29 of 44 points (65%)",
+      questionTypes: "Multiple choice",
+      delivery: "Through ISTQB Member Boards and accredited Exam Providers",
+      prerequisites: "ISTQB Certified Tester Foundation Level (CTFL)",
+      status: "current",
+      officialCertificationUrl: "https://istqb.org/certifications/certified-tester-ai-testing-ct-ai/",
+      officialExamUrl: "https://istqb.org/help/ct-ai-v2/",
+      domains: [
+        {
+          id: "d1",
+          name: "Introduction to Artificial Intelligence",
+          objectives: [
+            "1.1.1 AI-Based and Conventional Systems",
+            "1.1.2 Narrow AI, General AI, and Super AI",
+            "1.1.3 Different Types of AI Technologies",
+            "1.1.4 Generative AI",
+            "1.1.5 Hardware for Machine Learning Systems",
+            "1.1.6 Development and Hosting of AI Models",
+            "1.1.7 Machine Learning Development Frameworks",
+            "1.1.8 Regulations and Standards for AI",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Quality Characteristics for AI-Based Systems",
+          objectives: [
+            "2.1.1 AI-Specific Quality Characteristics",
+            "2.1.2 AI and Safety",
+            "2.2.1 Acceptance Criteria for AI-Based Systems",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Machine Learning",
+          objectives: [
+            "3.1.1 Different Forms of Machine Learning",
+            "3.1.2 Machine Learning Workflow",
+            "3.1.4 Pretrained Models, Fine-Tuning, and Retrieval-Augmented Generation",
+            "3.2.1 Activities in Data Preparation",
+            "3.2.3 Training, Validation, and Test Datasets",
+            "3.3.1 Calculation of Machine Learning Functional Performance Metrics",
+            "3.4.1 Structure and Working of a Deep Neural Network",
+            "3.4.3 Coverage Measures for Neural Networks",
+          ],
+        },
+        {
+          id: "d4",
+          name: "Testing AI-Based Systems",
+          objectives: [
+            "4.1.1 Locked and Adaptive AI-Based Systems",
+            "4.1.2 Rationale for a Statistical Approach to Testing AI-Based Systems",
+            "4.1.3 Test Oracles for AI-Based Systems",
+            "4.2.1 Testing Generative AI",
+            "4.2.2 Red Teaming",
+            "4.3.1 Test Levels for Machine Learning Systems",
+            "4.3.2 Risk-Based Testing of Machine Learning Systems",
+          ],
+        },
+        {
+          id: "d5",
+          name: "Input Data Testing for Machine Learning Systems",
+          objectives: [
+            "5.1.1 Input Data Risks and Mitigations",
+            "5.1.2 Testing for Bias",
+            "5.1.3 Data Pipeline Testing",
+            "5.1.4 Testing for Data Representativeness",
+            "5.1.5 Dataset Constraint Testing",
+            "5.1.6 Label Correctness Testing",
+          ],
+        },
+        {
+          id: "d6",
+          name: "Model Testing for Machine Learning Systems",
+          objectives: [
+            "6.1.1 Machine Learning Model Risks and Mitigations",
+            "6.1.2 Machine Learning Model Documentation and Review",
+            "6.1.3 ML Functional Performance Testing of Probabilistic Machine Learning Systems",
+            "6.1.4 Adversarial Testing of Machine Learning Systems",
+            "6.1.5 Metamorphic Testing",
+            "6.1.7 Drift Testing",
+            "6.1.8 Testing for Overfitting and Underfitting",
+            "6.1.9 A/B Testing",
+            "6.1.10 Back-to-Back Testing",
+          ],
+        },
+        {
+          id: "d7",
+          name: "Machine Learning Development Testing",
+          objectives: [
+            "7.1.1 Machine Learning Development Risks and Mitigations",
+            "7.1.2 Machine Learning System Deployment Testing",
+          ],
+        },
+      ],
+      sources: [
+        { label: "ISTQB: Certified Tester AI Testing (CT-AI) certification page", url: "https://istqb.org/certifications/certified-tester-ai-testing-ct-ai/" },
+        { label: "ISTQB: CT-AI v2.0 FAQ", url: "https://istqb.org/help/ct-ai-v2/" },
+        { label: "ISTQB: CT-AI Syllabus v2.0 (PDF)", url: "https://istqb.org/?sdm_process_download=1&download_id=9558" },
+        { label: "ISTQB: Exam Structures and Rules v1.2 (PDF)", url: "https://istqb.org/?sdm_process_download=1&download_id=3829" },
+        { label: "ISTQB News: CT-AI Syllabus Version 2.0 released (21 April 2026)", url: "https://istqb.org/news/" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "ISTQB CT-AI v2.0 Practice Exams: AI Testing",
+      description: "English and German practice exams for ISTQB CT-AI v2.0: AI quality, machine learning, generative AI and LLM testing, data and model testing.",
+    },
+  },
+  "istqb-ctal-tm": {
+    description:
+      "Practice exams for the ISTQB Certified Tester Advanced Level Test Management (CTAL-TM) v3.0 syllabus, covering test process and context, risk-based testing, test strategy, metrics, estimation, defect management and the test team.",
+    fullName: "ISTQB Certified Tester Advanced Level Test Management (CTAL-TM) v3.0",
+    // Verified 2026-11-04 against istqb.org: CTAL-TM v3.0 certification page, CTAL-TM v3.0 syllabus PDF (V3.0, released by the ISTQB General Assembly on 3 May 2024), Exam Structures and Rules v1.2 (2 May 2025) and the ISTQB news page.
+    // Status: v3.0 is current. No successor version or retirement is announced on istqb.org as of 4 Nov 2026 (latest Advanced Level release news is CTAL-AT v2.0 on 6 May 2026, not Test Management).
+    // Not published on the official pages, so omitted: exam languages, chapter exam weights, K-level distribution (in the separate Exam Structures & Rules Tables), delivery method (run by Member Boards and Exam Providers).
+    // For reference only, the syllabus gives training time per chapter: Ch1 750 min, Ch2 390 min, Ch3 225 min (not exam weights).
+    // Other official facts (no schema field): certificate valid for life, no renewal; two official sample exams (A and B).
+    exam: {
+      officialName: "ISTQB Certified Tester Advanced Level Test Management (CTAL-TM) v3.0",
+      examCode: "CTAL-TM",
+      examVersion: "Syllabus v3.0 (released 3 May 2024)",
+      questionCount: "50",
+      duration: "120 minutes (plus 25% for candidates taking the exam in a non-native language)",
+      format: "Multiple-choice exam",
+      passingScore: "58 of 88 points",
+      questionTypes: "Multiple choice",
+      delivery: "Through ISTQB Member Boards and accredited Exam Providers",
+      prerequisites: "ISTQB Certified Tester Foundation Level (v4.0 or an earlier version) and sufficient practical experience, as defined by the Member Board or Exam Provider",
+      status: "current",
+      officialCertificationUrl: "https://istqb.org/certifications/certified-tester-advanced-level-test-management-ctal-tm-v3-0/",
+      domains: [
+        {
+          id: "d1",
+          name: "Managing the Test Activities",
+          objectives: [
+            "1.1 The Test Process",
+            "1.2 The Context of Testing",
+            "1.3 Risk-Based Testing",
+            "1.4 The Project Test Strategy",
+            "1.5 Improving the Test Process",
+            "1.6 Test Tools",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Managing the Product",
+          objectives: [
+            "2.1 Test Metrics",
+            "2.2 Test Estimation",
+            "2.3 Defect Management",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Managing the Team",
+          objectives: [
+            "3.1 The Test Team",
+            "3.2 Stakeholder Relationships",
+          ],
+        },
+      ],
+      sources: [
+        { label: "ISTQB: CTAL-TM v3.0 certification page", url: "https://istqb.org/certifications/certified-tester-advanced-level-test-management-ctal-tm-v3-0/" },
+        { label: "ISTQB: CTAL-TM Syllabus v3.0 (PDF)", url: "https://istqb.org/?sdm_process_download=1&download_id=3445" },
+        { label: "ISTQB: Exam Structures and Rules v1.2 (PDF)", url: "https://istqb.org/?sdm_process_download=1&download_id=3829" },
+        { label: "ISTQB News", url: "https://istqb.org/news/" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "ISTQB CTAL-TM v3.0 Practice Exams: Test Management",
+      description: "Practice exams for ISTQB CTAL-TM v3.0: test process, risk-based testing, test strategy, metrics, estimation, defect management and the test team.",
+    },
+  },
+  "mo-200": {
+    description:
+      "Practice exams for Microsoft Office Specialist MO-200: Microsoft Excel (Office 2019): worksheets and workbooks, cells and ranges, tables, formulas and functions, and charts. Certiport lists Office 2019 as a previous MOS version.",
+    fullName: "Microsoft Office Specialist: Excel Associate (Office 2019)",
+    // Verified 2026-11-04 against Microsoft Learn (MO-200 exam page, MOS Excel Associate (Office 2019) certification page) and Certiport (Office 2019 MOS page).
+    // Status: Microsoft Learn shows "Retirement date: none"; Certiport calls Office 2019 "a previous version" of the MOS program and points to Microsoft 365 Apps as current. No retirement date found.
+    // Weights come from the Microsoft Learn exam page (the certification page lists the areas without weights).
+    // Languages: the certification page lists Vietnamese (Vietnam) in addition to the exam page list; the certification page is used.
+    // Blocked/not readable: the MO-200 skills outline PDF (arch-center.azureedge.net) and Certiport objective domain and exam-languages pages, so no sub-objectives are given.
+    // Not published on the pages fetched, so omitted: passing score, question count.
+    exam: {
+      officialName: "Exam MO-200: Microsoft Excel (Office 2019)",
+      examCode: "MO-200",
+      duration: "50 minutes",
+      format: "Live-in-the-Application (LITA) testing (Certiport)",
+      languages: ["English", "English (Malaysia)", "Dutch", "French", "German", "Indonesian (Indonesia)", "Korean", "Portuguese (Brazil)", "Spanish", "Italian", "Russian", "Japanese", "Polish", "Greek (Greece)", "Chinese (Simplified)", "Chinese (Traditional)", "Arabic (Saudi Arabia)", "Vietnamese (Vietnam)"],
+      delivery: "Proctored; scheduled through Certiport (Pearson VUE)",
+      prerequisites: "No formal prerequisites. Certification renewal frequency: 60 months.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-2019/",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/exams/mo-200/",
+      domains: [
+        { id: "d1", name: "Manage worksheets and workbooks", weight: "10–15%" },
+        { id: "d2", name: "Manage data cells and ranges", weight: "20–25%" },
+        { id: "d3", name: "Manage tables and table data", weight: "15–20%" },
+        { id: "d4", name: "Perform operations by using formulas and functions", weight: "20–25%" },
+        { id: "d5", name: "Manage charts", weight: "20–25%" },
+      ],
+      sources: [
+        { label: "Microsoft Learn: Exam MO-200", url: "https://learn.microsoft.com/en-us/credentials/certifications/exams/mo-200/" },
+        { label: "Microsoft Learn: MOS Excel Associate (Office 2019)", url: "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-2019/" },
+        { label: "Certiport: Microsoft Office Specialist Office 2019", url: "https://certiport.pearsonvue.com/Certifications/Microsoft/MOS/Certify/Office-2019.aspx" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "MO-200 Practice Exams: MOS Excel Associate (2019)",
+      description: "MO-200 practice exams for MOS Excel Associate (Office 2019): worksheets and workbooks, cells and ranges, tables, formulas and functions, charts.",
+    },
+  },
+  "mo-210": {
+    description:
+      "Practice exams for Microsoft Office Specialist MO-210: Excel Associate (Microsoft 365 Apps): worksheets and workbooks, cells and ranges, tables, formulas and functions, and charts. The exam takes 50 minutes and is delivered through Certiport.",
+    fullName: "Microsoft Office Specialist: Excel Associate (Microsoft 365 Apps)",
+    // Verified 2026-11-04 against Microsoft Learn (MOS Excel Associate (Microsoft 365 Apps) certification page, MO-210 exam page) and Certiport (Microsoft 365 Apps MOS page).
+    // Status: no retirement notice on Microsoft Learn or Certiport; Certiport presents Microsoft 365 Apps as the current MOS version.
+    // Microsoft Learn lists the five skill areas without weights. The "Exam MO-210 skills outline" link on Learn points to an unrelated PDF (security operations analyst), and the Certiport objective domain page could not be fetched, so no weights or sub-objectives are given.
+    // Not published on the pages fetched, so omitted: passing score, question count.
+    exam: {
+      officialName: "Microsoft Office Specialist: Excel Associate (Microsoft 365 Apps)",
+      examCode: "MO-210",
+      duration: "50 minutes",
+      format: "Live-in-the-Application (LITA) testing (Certiport)",
+      languages: ["English", "Arabic (Saudi Arabia)", "Chinese (Simplified)", "Chinese (Traditional)", "German", "Greek (Greece)", "Spanish", "French", "Italian", "Japanese", "Polish", "Dutch", "Portuguese (Brazil)", "Russian", "Vietnamese (Vietnam)"],
+      delivery: "Proctored; scheduled through Certiport (Pearson VUE)",
+      prerequisites: "No formal prerequisites. Certification renewal frequency: 60 months.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps/",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/exams/mo-210/",
+      domains: [
+        { id: "d1", name: "Manage worksheets and workbooks" },
+        { id: "d2", name: "Manage data cells and ranges" },
+        { id: "d3", name: "Manage tables and table data" },
+        { id: "d4", name: "Perform operations by using formulas and functions" },
+        { id: "d5", name: "Manage charts" },
+      ],
+      sources: [
+        { label: "Microsoft Learn: MOS Excel Associate (Microsoft 365 Apps)", url: "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps/" },
+        { label: "Microsoft Learn: Exam MO-210", url: "https://learn.microsoft.com/en-us/credentials/certifications/exams/mo-210/" },
+        { label: "Certiport: Microsoft Office Specialist Microsoft 365 Apps", url: "https://certiport.pearsonvue.com/Certifications/Microsoft/MOS/Certify/365-Apps.aspx" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "MO-210 Practice Exams: MOS Excel Associate (365 Apps)",
+      description: "MO-210 practice exams for MOS Excel Associate (Microsoft 365 Apps): worksheets, cells and ranges, tables, formulas and functions, and charts.",
+    },
+  },
+  "nppe": {
+    description:
+      "Practice exams for the National Professional Practice Examination (NPPE), the professionalism, law and ethics exam used by Canadian engineering and geoscience regulators: 6 full tests with 660 multiple-choice questions.",
+    fullName: "National Professional Practice Examination (NPPE)",
+    // Verified 2026-11-04 against regulator sources: APEGA NPPE pages (apega.ca/apply/professional-member/nppe/ and apega.ca/apply/exams/nppe), APEGNB "National Professional Practice Exam: Application to Write" (May 2025) and the NPPE Candidate Guide V12 (draft 19 June 2023) hosted by PEO.
+    // Status: current. APEGA lists 2027 sessions (11-13 Jan, 22-24 Mar, 7-9 Jun, 23-25 Aug, 1-3 Nov 2027); five sessions a year, each over three days.
+    // Count of regulators: APEGA now says fourteen; the 2023 candidate guide says thirteen. The newer APEGA figure is used.
+    // Not verified, so omitted: exam languages (no official source fetched states them), blueprint subject areas and weights (published only on nppexam.ca, which could not be fetched; the candidate guide says there are six subject areas), and the essay variant used by some regulators (2023 guide mentions EGBC; not confirmed as current).
+    // Other official facts (no schema field): maximum four attempts at most regulators (PEO allows three per the 2023 guide); APEGA fee $250 plus GST; failing candidates get a Mastery Report by subject area; accommodations available.
+    exam: {
+      officialName: "National Professional Practice Examination (NPPE)",
+      examCode: "NPPE",
+      questionCount: "110",
+      duration: "2.5 hours",
+      format: "Computer-based multiple-choice exam on professionalism, law and ethics; pass/fail result",
+      passingScore: "Equated (scaled) score of 65; this is not 65% correct",
+      questionTypes: "Multiple choice, four options with one correct answer; no penalty for wrong answers",
+      delivery: "Meazure Learning; remote proctoring is the main method, test centres in limited cases",
+      prerequisites: "Application for professional membership with a participating Canadian engineering or geoscience regulator",
+      status: "current",
+      officialExamUrl: "https://www.apega.ca/apply/professional-member/nppe/",
+      sources: [
+        { label: "APEGA: National Professional Practice Examination", url: "https://www.apega.ca/apply/professional-member/nppe/" },
+        { label: "APEGA: NPPE exam dates", url: "https://www.apega.ca/apply/exams/nppe" },
+        { label: "APEGNB: National Professional Practice Exam, Application to Write (May 2025, PDF)", url: "https://www.apegnb.com/wp-content/uploads/NPPE-MAY2025_EN.pdf" },
+        { label: "NPPE Candidate Guide V12 (2023, PDF, hosted by PEO)", url: "https://www.peo.on.ca/sites/default/files/2024-03/NPPECandidateGuide.pdf" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "NPPE Practice Exams: Professional Practice Exam",
+      description: "NPPE practice exams for Canadian engineers and geoscientists: 6 full tests, 660 questions on professionalism, law and ethics.",
+    },
+  },
+  "nvidia-nca-aiio": {
+    description:
+      "Practice tests for NVIDIA-Certified Associate: AI Infrastructure and Operations (NCA-AIIO), written to the official exam topics: essential AI knowledge, AI infrastructure and AI operations. The exam has 50 questions in 60 minutes.",
+    fullName: "NVIDIA-Certified Associate: AI Infrastructure and Operations",
+    // Verified 2026-11-04 against the NVIDIA NCA-AIIO certification page (HTML and .md version; page dated 3 Nov 2026).
+    // Status: current; no new version or retirement notice on the page.
+    // UNVERIFIED and omitted: passing score (not published on the page), exam version date. The NVIDIA exam study guide PDF (dam-cdn.nvd.orangelogic.com) could not be fetched.
+    // Note: price USD 125; certification valid 2 years, recertify by retaking the exam.
+    exam: {
+      officialName: "NVIDIA-Certified Associate: AI Infrastructure and Operations",
+      examCode: "NCA-AIIO",
+      questionCount: "50 questions",
+      duration: "60 minutes",
+      languages: ["English"],
+      delivery: "Online, remotely proctored (Certiverse account required)",
+      prerequisites: "A basic understanding of data center infrastructure.",
+      status: "current",
+      officialCertificationUrl: "https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/",
+      domains: [
+        { id: "d1", name: "Essential AI Knowledge", weight: "38%", objectives: ["Describe the NVIDIA software stack used in an AI environment.", "Compare and contrast training and inference architecture requirements and considerations.", "Differentiate the concepts of AI, machine learning, and deep learning.", "Explain the factors contributing to recent rapid improvements and adoption of AI.", "Explain the key AI use cases and industries.", "Explain the purpose and use case of various NVIDIA solutions.", "Describe the software components related to the life cycle of AI development and deployment.", "Compare and contrast GPU and CPU architectures."] },
+        { id: "d2", name: "AI Infrastructure", weight: "40%", objectives: ["Identify hardware requirements for specific AI training task use cases.", "Scale a GPU infrastructure for different use cases.", "Identify key concepts and high-level specifications related to power and cooling requirements within a data center.", "Articulate the key advantages, challenges, and considerations related to on-prem vs cloud infrastructures.", "Identify key components and considerations of a cluster of an accelerated infrastructure.", "Identify facility requirements.", "Determine networking requirements for AI workloads.", "Identify and describe data center networking protocols and key concepts.", "Identify high-speed data center network options and their use cases.", "Explain the purpose and benefits of a DPU in a data center."] },
+        { id: "d3", name: "AI Operations", weight: "22%", objectives: ["Describe AI data center management and monitoring essentials.", "Describe AI cluster orchestration and job scheduling essentials.", "Articulate the key measures and criteria related to monitoring GPUs.", "Identify the key considerations for virtualizing accelerated infrastructure."] },
+      ],
+      sources: [
+        { label: "NVIDIA: AI Infrastructure and Operations Associate (NCA-AIIO)", url: "https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "NCA-AIIO Practice Tests: NVIDIA AI Infrastructure",
+      description: "NCA-AIIO practice tests for NVIDIA-Certified Associate: AI Infrastructure and Operations: AI basics, GPU infrastructure, networking and AI operations.",
+    },
+  },
+  "palo-alto-netsec-analyst": {
+    description:
+      "Practice tests for the Palo Alto Networks Certified Network Security Analyst exam, organised by the four datasheet domains: object configuration, policy creation, management and operations with Strata Cloud Manager, and troubleshooting.",
+    fullName: "Palo Alto Networks Certified Network Security Analyst",
+    // Verified 2026-11-04 against paloaltonetworks.com: certification portfolio page, Network Security Analyst page, exam datasheet (August 2025), Certification Program FAQs (September 2026).
+    // NOT stated on any page read: exam code, number of questions, duration, passing score, question types. These are omitted.
+    // The Certification Handbook PDF (panw-certification-handbook.pdf) and Pearson VUE page could not be fetched in this session.
+    exam: {
+      officialName: "Palo Alto Networks Certified Network Security Analyst",
+      examVersion: "Exam datasheet dated August 2025",
+      languages: ["English"],
+      delivery: "Registration through Pearson VUE",
+      prerequisites:
+        "None stated. Palo Alto Networks recommends reviewing the datasheet topics and completing the digital learning path.",
+      status: "current",
+      officialCertificationUrl: "https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-analyst",
+      officialExamUrl: "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-analyst-datasheet.pdf",
+      domains: [
+        {
+          id: "d1",
+          name: "Object Configuration Creation and Application",
+          weight: "30%",
+          objectives: [
+            "1.1 Create and apply security profiles and security profile groups",
+            "1.2 Create and apply decryption profiles",
+            "1.3 Create and apply external dynamic lists",
+            "1.4 Create and apply custom objects (e.g., URL categories, signatures, data patterns)",
+            "1.5 Create and apply Log Forwarding profile",
+            "1.6 Create and apply data security profiles",
+            "1.7 Create and apply internet of things (IoT) security profiles",
+            "1.8 Create and apply DoS protection profiles",
+            "1.9 Create and apply SD-WAN profiles and templates",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Policy Creation and Application",
+          weight: "30%",
+          objectives: [
+            "2.1 Create and apply Security policies (i.e., App-ID, User-ID, Content-ID)",
+            "2.2 Create and apply NAT policies",
+            "2.3 Create and apply decryption policies",
+            "2.4 Create and apply application override policies",
+            "2.5 Create and apply Policy Based Forwarding (PBF) policies",
+            "2.6 Create and apply SD-WAN routing and service-level agreement (SLA) policies",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Management and Operations",
+          weight: "26%",
+          objectives: [
+            "3.1 Use centralized management system",
+            "3.2 Use Command Center, Activity Insights, and Policy Optimizer to improve security posture",
+            "3.3 Use Log Viewer and the Incidents and Alerts page to remediate incidents and alerts",
+          ],
+        },
+        {
+          id: "d4",
+          name: "Troubleshooting",
+          weight: "14%",
+          objectives: [
+            "4.1 Troubleshoot misconfigurations across all management and on-box options",
+            "4.2 Troubleshoot runtime and commit / push errors",
+            "4.3 Troubleshoot device usage and health",
+          ],
+        },
+      ],
+      sources: [
+        { label: "Palo Alto Networks: Network Security Analyst", url: "https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-analyst" },
+        { label: "Palo Alto Networks: Network Security Analyst datasheet (PDF)", url: "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-analyst-datasheet.pdf" },
+        { label: "Palo Alto Networks: Certification Program FAQs (PDF)", url: "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/certification-faq.pdf" },
+        { label: "Palo Alto Networks: Certification portfolio", url: "https://www.paloaltonetworks.com/services/education/certification" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "Palo Alto NetSec Analyst Practice Tests",
+      description:
+        "Practice tests for Palo Alto Networks Certified Network Security Analyst: objects, policies, Strata Cloud Manager operations and troubleshooting.",
+    },
+  },
+  "palo-alto-netsec-pro": {
+    description:
+      "Practice tests for the Palo Alto Networks Certified Network Security Professional exam, organised by the six datasheet domains, from network security fundamentals and NGFW and SASE functionality to Cloud-Delivered Security Services, connectivity and security.",
+    fullName: "Palo Alto Networks Certified Network Security Professional",
+    // Verified 2026-11-04 against paloaltonetworks.com: certification portfolio page, Network Security Professional page, exam datasheet (June 2026), Certification Program FAQs (September 2026).
+    // NOT stated on any page read: exam code, number of questions, duration, passing score, question types. These are omitted.
+    // NOT verified: that this certification was formerly "Network Security Generalist" (the course title says "ex Generalist"). No official page read states the rename; "Network Security Generalist" appears only in the page's meta keywords. Kept out of the copy.
+    // The Certification Handbook PDF could not be fetched in this session.
+    // Objective headings with long parentheticals are shortened to the main clause.
+    exam: {
+      officialName: "Palo Alto Networks Certified Network Security Professional",
+      examVersion: "Exam datasheet dated June 2026",
+      languages: ["English"],
+      delivery: "Registration through Pearson VUE",
+      prerequisites:
+        "None stated. Recommended: basic network security knowledge, configuring Strata and Prisma SASE products, and using Panorama and Strata Cloud Manager.",
+      status: "current",
+      officialCertificationUrl: "https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-professional",
+      officialExamUrl: "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-professional-datasheet.pdf",
+      domains: [
+        {
+          id: "d1",
+          name: "Network Security Fundamentals",
+          weight: "17%",
+          objectives: [
+            "1.1 Explain Application Layer inspection for Strata and SASE products",
+            "1.2 Explain the functionality of slow path and fast path for packet inspection",
+            "1.3 Explain the use of decryption on Strata and SASE products",
+            "1.4 Explain the application of network hardening methods for enhanced security on Strata and SASE products",
+          ],
+        },
+        {
+          id: "d2",
+          name: "NGFW and SASE Solution Functionality",
+          weight: "13%",
+          objectives: [
+            "2.1 Explain the function of Cloud NGFWs, PA-Series, CN-Series, and VM-Series firewalls",
+            "2.2 Explain the function of Prisma SD-WAN",
+            "2.3 Explain the function of Prisma Access",
+            "2.4 Explain the functionality of Panorama and Strata Cloud Manager (SCM) for managing Strata and SASE solutions",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Platform Solutions, Services, and Tools",
+          weight: "30%",
+          objectives: [
+            "3.1 Explain the security efficacy of Palo Alto Networks NGFW and Prisma SASE products",
+            "3.2 Explain the functionality of Cloud-Delivered Security Services (CDSS) components",
+            "3.3 Explain the alignment of AIOps to Palo Alto Networks best practices",
+            "3.4 Explain how Next-Generation Trust Security (NGTS) supports identity governance and trust relationships",
+            "3.5 Identify and describe quantum security risks",
+            "3.6 Identify and describe AI-related security risks and mitigation techniques",
+          ],
+        },
+        {
+          id: "d4",
+          name: "NGFW and SASE Solution Maintenance and Configuration",
+          weight: "10%",
+          objectives: [
+            "4.1 Explain the configuration and maintenance of Palo Alto Networks hardware firewalls and VM-Series firewalls",
+            "4.2 Explain the configuration and maintenance of Prisma Access",
+          ],
+        },
+        {
+          id: "d5",
+          name: "Infrastructure Management and CDSS",
+          weight: "17%",
+          objectives: [
+            "5.1 Explain the function of Security policies, profiles, and updates in the configuration and maintenance of CDSS",
+            "5.2 Explain the function of Security policies, Device-IDs, and monitoring and logging in the configuration and maintenance of IoT security",
+            "5.3 Explain the function of data encryption, access control, and monitoring and logging in the configuration and maintenance of Enterprise DLP and Enterprise SaaS Security",
+            "5.4 Explain the function of supported products, new device addition, reporting, and configuration management in SCM and Panorama in network security environments",
+          ],
+        },
+        {
+          id: "d6",
+          name: "Connectivity and Security",
+          weight: "13%",
+          objectives: [
+            "6.1 Explain the configuration and maintenance of network security for on-premises, cloud, and hybrid networks",
+            "6.2 Identify and describe the components used to maintain connectivity and security of remote users",
+          ],
+        },
+      ],
+      sources: [
+        { label: "Palo Alto Networks: Network Security Professional", url: "https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-professional" },
+        { label: "Palo Alto Networks: Network Security Professional datasheet (PDF)", url: "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-professional-datasheet.pdf" },
+        { label: "Palo Alto Networks: Certification Program FAQs (PDF)", url: "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/certification-faq.pdf" },
+        { label: "Palo Alto Networks: Certification portfolio", url: "https://www.paloaltonetworks.com/services/education/certification" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "Palo Alto NetSec Professional Practice Tests",
+      description:
+        "Practice tests for Palo Alto Networks Certified Network Security Professional: NGFW, SASE, CDSS, platform tools, connectivity and security.",
+    },
+  },
+  "palo-alto-ngfw-engineer": {
+    description:
+      "Practice tests for the Palo Alto Networks Certified Next-Generation Firewall Engineer exam, organised by the three datasheet domains: PAN-OS networking configuration, PAN-OS device setting configuration, and integration and automation, including Panorama.",
+    fullName: "Palo Alto Networks Certified Next-Generation Firewall Engineer",
+    // Verified 2026-11-04 against paloaltonetworks.com: certification portfolio page, Next-Generation Firewall Engineer page, exam datasheet (November 2025), Certification Program FAQs (September 2026).
+    // NOT stated on any page read: exam code, number of questions, duration, passing score, question types. These are omitted.
+    // NOT verified: that this certification replaces PCNSE (the course title says "ex PCNSE"). No official page read states it; the community article "What Is Replacing the PCNSE?" on live.paloaltonetworks.com could not be fetched. Kept out of the copy.
+    // The Certification Handbook PDF could not be fetched in this session.
+    // Datasheet tasks are unnumbered; listed as given (top-level tasks only).
+    exam: {
+      officialName: "Palo Alto Networks Certified Next-Generation Firewall Engineer",
+      examVersion: "Exam datasheet dated November 2025",
+      languages: ["English"],
+      delivery: "Registration through Pearson VUE",
+      prerequisites:
+        "None stated. Recommended: 2 to 3 years in IT security, including 2 years with Palo Alto Networks NGFW solutions; Network Security Professional and Network Security Analyst certifications recommended.",
+      status: "current",
+      officialCertificationUrl: "https://www.paloaltonetworks.com/services/education/palo-alto-networks-ngfw-engineer",
+      officialExamUrl: "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/ngfw-engineer-datasheet.pdf",
+      domains: [
+        {
+          id: "d1",
+          name: "PAN-OS Networking Configuration",
+          weight: "40%",
+          objectives: [
+            "Configure interface",
+            "Configure zones",
+            "Configure high availability (HA)",
+            "Configure routing",
+            "Configure GlobalProtect",
+            "Configure tunnels",
+          ],
+        },
+        {
+          id: "d2",
+          name: "PAN-OS Device Setting Configuration",
+          weight: "40%",
+          objectives: [
+            "Implement authentication roles, profiles, and sequences",
+            "Configure virtual systems (VSYS)",
+            "Configure logging",
+            "Implement PAN-OS software updates",
+            "Configure certificates",
+            "Configure on-premises and Cloud Identity Engine User-ID",
+            "Configure web proxy on PAN-OS",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Integration and Automation",
+          weight: "20%",
+          objectives: [
+            "Install the selected deployment option",
+            "Use APIs to automate deployment",
+            "Manage third-party services to deploy NGFWs (e.g., Kubernetes, hypervisors, CSPs, Terraform, Ansible)",
+            "Use on-premises centralized management",
+            "Build Application Command Center (ACC) dashboards and custom reports",
+          ],
+        },
+      ],
+      sources: [
+        { label: "Palo Alto Networks: Next-Generation Firewall Engineer", url: "https://www.paloaltonetworks.com/services/education/palo-alto-networks-ngfw-engineer" },
+        { label: "Palo Alto Networks: Next-Generation Firewall Engineer datasheet (PDF)", url: "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/ngfw-engineer-datasheet.pdf" },
+        { label: "Palo Alto Networks: Certification Program FAQs (PDF)", url: "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/certification-faq.pdf" },
+        { label: "Palo Alto Networks: Certification portfolio", url: "https://www.paloaltonetworks.com/services/education/certification" },
+      ],
+      lastVerified: "2026-11-04",
+    },
+    seo: {
+      title: "Palo Alto NGFW Engineer Practice Tests",
+      description:
+        "Practice tests for Palo Alto Networks Certified Next-Generation Firewall Engineer: PAN-OS networking, device settings, integration and automation.",
+    },
+  },
 };
 
 /* ───────────────────────────────────────────────────────────────────────────
