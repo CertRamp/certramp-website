@@ -237,7 +237,7 @@ Recommended before launch: test ClassMarker embeds in Safari/iOS (third-party co
 
 ## Trademark note (PeopleCert)
 
-PeopleCert has asked CertRamp not to use its trademarks (e.g. the names of its project management and IT service management frameworks) in course names. The website follows the same rule: those certification pages use neutral names (`PM Foundation (7th Edition)`, `ITSM Foundation V5`, …). Do not reintroduce these marks in names, headings, slugs, meta data or copy. Links to official PeopleCert pages are fine.
+Rule (owner decision, 5 Nov 2026): on the website, course titles are always shown exactly as they are on Udemy (they come from `data/udemy-courses.csv`). Certification page names, headings, slugs and meta data stay neutral (`PM Foundation (7th Edition)`, `ITSM Foundation V5`, …) unless the matching main course on Udemy carries the framework name, for example the project management course once it is renamed under the owner's agreement with PeopleCert. Then the page follows the Udemy name. Links to official PeopleCert pages are fine.
 
 ## Placeholders in production
 
