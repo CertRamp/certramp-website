@@ -5801,6 +5801,355 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         "Practice tests for Palo Alto Networks Certified Next-Generation Firewall Engineer: PAN-OS networking, device settings, integration and automation.",
     },
   },
+
+  /* ── November 2026, new courses (5 Nov): enriched and indexable ─────────────
+   * Facts from official sources only, checked independently on 5 Nov 2026.
+   * salesforce-ai-201 kept noindex until duration, outline and pass mark are confirmed on Trailhead. */
+  "az-140": {
+    description:
+      "Practice exams for Microsoft AZ-140: Configuring and Operating Microsoft Azure Virtual Desktop, written to the skills measured as of 20 July 2026 (host pools, identity and security, FSLogix and apps, monitoring). Find your gaps before the Azure Virtual Desktop Specialty exam.",
+    fullName: "Microsoft Azure Virtual Desktop Specialty",
+    // Verified 2026-11-05 against the Microsoft Learn AZ-140 study guide (skills measured as of 20 July 2026, page last updated 2026-06-19), the AZ-140 exam page and the Azure Virtual Desktop Specialty certification page (both last updated 07/20/2026).
+    // Status: current. No retirement notice on the exam, certification or study guide pages. (The only AVD retirement found is the Azure Virtual Desktop (classic) service on 30 September 2026, a product change, not the exam.)
+    // Note: the study guide says "We have included two versions of the Skills Measured objectives" but shows only one section (as of 20 July 2026) and no future date; no upcoming update found.
+    // Not published on the AZ-140 pages, so omitted: question count, question types, format. Passing score is from the study guide; duration (100 minutes) and languages from the exam page.
+    // Not stated: formal prerequisites (none listed; the pages give a candidate profile only).
+    exam: {
+      officialName: "Exam AZ-140: Configuring and Operating Microsoft Azure Virtual Desktop",
+      examCode: "AZ-140",
+      examVersion: "Skills measured as of 20 July 2026",
+      duration: "100 minutes",
+      passingScore: "700 or greater (scaled score)",
+      languages: ["English", "German", "Spanish", "French", "Japanese", "Portuguese (Brazil)", "Chinese (Simplified)"],
+      delivery: "Proctored exam, scheduled through Pearson VUE",
+      prerequisites: "No formal prerequisites listed. Microsoft describes the candidate as a server or desktop administrator with subject matter expertise in designing, implementing, managing and maintaining Azure Virtual Desktop experiences and remote apps, with experience in compute, networking, identity, storage and resiliency. The certification must be renewed every 12 months (free online assessment).",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/exams/az-140/",
+      domains: [
+        {
+          id: "d1",
+          name: "Plan and implement an Azure Virtual Desktop infrastructure",
+          weight: "40–45%",
+          objectives: [
+            "Plan, implement, and manage networking for Azure Virtual Desktop",
+            "Plan and implement storage for Azure Virtual Desktop user data",
+            "Plan host pools and session hosts",
+            "Implement host pools and session hosts",
+            "Create and manage session host images",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Plan and implement identity and security",
+          weight: "15–20%",
+          objectives: [
+            "Plan and implement identity integration",
+            "Plan and implement security",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Plan and implement user environments and apps",
+          weight: "20–25%",
+          objectives: [
+            "Plan and implement FSLogix",
+            "Plan and implement user experience and client settings",
+            "Install and configure apps on a session host",
+          ],
+        },
+        {
+          id: "d4",
+          name: "Monitor and maintain an Azure Virtual Desktop infrastructure",
+          weight: "10–15%",
+          objectives: [
+            "Monitor and manage Azure Virtual Desktop services",
+            "Plan and implement updates, backups, and disaster recovery",
+          ],
+        },
+      ],
+      sources: [
+        { label: "Microsoft Learn: AZ-140 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140" },
+        { label: "Microsoft Learn: Exam AZ-140", url: "https://learn.microsoft.com/en-us/credentials/certifications/exams/az-140/" },
+        { label: "Microsoft Learn: Azure Virtual Desktop Specialty certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/" },
+      ],
+      lastVerified: "2026-11-05",
+    },
+    seo: {
+      title: "AZ-140 Practice Exams: Azure Virtual Desktop",
+      description: "AZ-140 practice exams on AVD infrastructure, host pools, identity and security, FSLogix, apps, monitoring and maintenance. Skills measured as of July 2026.",
+    },
+  },
+  "dp-800": {
+    description:
+      "Practice exams for Microsoft DP-800: Developing AI-Enabled Database Solutions, written to the skills measured as of 19 October 2026 (T-SQL and database design, security, performance, CI/CD, embeddings and RAG). Find your gaps before the exam.",
+    fullName: "Microsoft SQL AI Developer Associate",
+    // Verified 2026-11-05 against the Microsoft Learn DP-800 study guide (skills measured as of 19 October 2026, page last updated 2026-09-18) and the SQL AI Developer Associate certification page (at a glance: last updated 10/19/2026).
+    // The DP-800 exam page (learn.microsoft.com/.../exams/dp-800/) could not be fetched (site error), so exam-page-only facts were taken from the certification page instead.
+    // Status: current. The certification page does not mention beta; no retirement notice. Change log vs. the previous outline: minor changes only.
+    // Not published on the pages fetched, so omitted: question count, question types, format, formal prerequisites, renewal frequency (the page only says certifications expire unless renewed via a free online assessment).
+    // Note: the study guide titles domain 3 "Implement AI capabilities in database solutions"; the certification page lists it as "Implement AI capabilities in SQL solutions". The study guide wording is used.
+    exam: {
+      officialName: "Exam DP-800: Developing AI-Enabled Database Solutions",
+      examCode: "DP-800",
+      examVersion: "Skills measured as of 19 October 2026",
+      duration: "120 minutes",
+      passingScore: "700 or greater (scaled score)",
+      languages: ["English", "Japanese", "Chinese (Simplified)", "Chinese (Traditional)", "Korean", "German", "French", "Italian", "Portuguese (Brazil)", "Spanish"],
+      delivery: "Proctored exam, scheduled through Pearson VUE",
+      prerequisites: "No formal prerequisites stated. Microsoft describes the candidate as having expertise in designing and developing AI-enabled database solutions on SQL Server, Azure SQL and SQL databases in Microsoft Fabric, experience writing T-SQL, and familiarity with CI/CD in GitHub, AI-assisted development tools and AI concepts such as embeddings, vectors and models.",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/developing-ai-enabled-database-solutions/",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-800/",
+      domains: [
+        {
+          id: "d1",
+          name: "Design and develop database solutions",
+          weight: "35–40%",
+          objectives: [
+            "Design and implement database objects",
+            "Implement programmability objects",
+            "Write advanced T-SQL code",
+            "Design and implement SQL solutions by using AI-assisted tools",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Secure, optimize, and deploy database solutions",
+          weight: "35–40%",
+          objectives: [
+            "Implement data security and compliance",
+            "Optimize database performance",
+            "Implement CI/CD by using SQL Database Projects",
+            "Integrate SQL solutions with Azure services",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Implement AI capabilities in database solutions",
+          weight: "25–30%",
+          objectives: [
+            "Design and implement models and embeddings",
+            "Design and implement intelligent search",
+            "Design and implement retrieval-augmented generation (RAG)",
+          ],
+        },
+      ],
+      sources: [
+        { label: "Microsoft Learn: DP-800 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800" },
+        { label: "Microsoft Learn: SQL AI Developer Associate certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/developing-ai-enabled-database-solutions/" },
+      ],
+      lastVerified: "2026-11-05",
+    },
+    seo: {
+      title: "DP-800 Practice Exams: SQL AI Developer Associate",
+      description: "DP-800 practice exams on T-SQL and database design, security, performance, CI/CD, embeddings, vector search and RAG. Skills measured as of October 2026.",
+    },
+  },
+  "aws-aip-c01": {
+    description:
+      "Practice exams for AWS AIP-C01: Certified Generative AI Developer - Professional, covering the five exam guide domains: FM integration and RAG, agentic AI and deployment, AI safety and governance, optimization, and testing.",
+    fullName: "AWS Certified Generative AI Developer - Professional",
+    // Verified 2026-11-05 against the AWS certification page and the AIP-C01 exam guide (overview and domain 1-5 pages).
+    // Status: current. No beta, retirement, successor or language-retirement notice on the official pages.
+    // Note: the exam guide gives no version number or revision date (no revisions page linked), so examVersion is omitted.
+    // Duration, cost (300 USD), languages and delivery are from the certification page; question count, scoring and question types from the exam guide (65 scored + 10 unscored = 75, matching the certification page).
+    exam: {
+      officialName: "AWS Certified Generative AI Developer - Professional",
+      examCode: "AIP-C01",
+      questionCount: "75 questions (65 scored, 10 unscored)",
+      duration: "180 minutes",
+      format: "Multiple choice and multiple response; pass/fail with a scaled score of 100 to 1,000 (compensatory scoring)",
+      passingScore: "750 (scaled)",
+      questionTypes: "Multiple choice (one correct response out of four) and multiple response (two or more correct responses out of five or more options)",
+      languages: ["English", "Japanese", "Korean", "Simplified Chinese"],
+      delivery: "Pearson VUE testing center or online proctored exam",
+      prerequisites: "No formal prerequisites. AWS recommends 2 or more years building production-grade applications on AWS or with open-source technologies, general AI/ML or data engineering experience, and 1 year of hands-on experience implementing GenAI solutions.",
+      status: "current",
+      officialCertificationUrl: "https://aws.amazon.com/certification/certified-generative-ai-developer-professional/",
+      officialExamUrl: "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01.html",
+      domains: [
+        { id: "d1", name: "Foundation Model Integration, Data Management, and Compliance", weight: "31%", objectives: ["Analyze requirements and design GenAI solutions.", "Select and configure FMs.", "Implement data validation and processing pipelines for FM consumption.", "Design and implement vector store solutions.", "Design retrieval mechanisms for FM augmentation.", "Implement prompt engineering strategies and governance for FM interactions."] },
+        { id: "d2", name: "Implementation and Integration", weight: "26%", objectives: ["Implement agentic AI solutions and tool integrations.", "Implement model deployment strategies.", "Design and implement enterprise integration architectures.", "Implement FM API integrations.", "Implement application integration patterns and development tools."] },
+        { id: "d3", name: "AI Safety, Security, and Governance", weight: "20%", objectives: ["Implement input and output safety controls.", "Implement data security and privacy controls.", "Implement AI governance and compliance mechanisms.", "Implement responsible AI principles."] },
+        { id: "d4", name: "Operational Efficiency and Optimization for GenAI Applications", weight: "12%", objectives: ["Implement cost optimization and resource efficiency strategies.", "Optimize application performance.", "Implement monitoring systems for GenAI applications."] },
+        { id: "d5", name: "Testing, Validation, and Troubleshooting", weight: "11%", objectives: ["Implement evaluation systems for GenAI.", "Troubleshoot GenAI applications."] },
+      ],
+      sources: [
+        { label: "AWS: Certified Generative AI Developer - Professional", url: "https://aws.amazon.com/certification/certified-generative-ai-developer-professional/" },
+        { label: "AWS: AIP-C01 Exam Guide", url: "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01.html" },
+      ],
+      lastVerified: "2026-11-05",
+    },
+    seo: {
+      title: "AIP-C01 Practice Exams: AWS Generative AI Developer",
+      description: "AIP-C01 practice exams for AWS Certified Generative AI Developer - Professional: FM integration, RAG, agentic AI, safety, governance, optimization, testing.",
+    },
+  },
+  "pmi-rmp": {
+    description:
+      "Practice exams for the PMI Risk Management Professional (PMI-RMP) certification, covering the five domains of the current exam: risk strategy and planning, risk identification, risk analysis, risk response, and monitoring and closing risks.",
+    fullName: "PMI Risk Management Professional",
+    // Verified 2026-11-05 against pmi.org: PMI-RMP certification page (questions, duration, languages, delivery, eligibility, domain weights, maintenance), PMI-RMP exam updates page (current exam released April 2022, multiple-select questions, predictive/agile/hybrid approaches) and PMI-RMP exam prep page.
+    // Not published on the fetched official pages, so omitted: exam fee (paid after application approval), passing score, scored vs unscored split, exam code, domain tasks/objectives (these are in the PMI-RMP Exam Content Outline PDF, which could not be retrieved from pmi.org).
+    // Name conflict: the certification page says "Monitor and Close Risk"; the exam updates page says "Monitor and Close Risks". Certification page wording used.
+    // Languages: the certification page lists English, Arabic and Chinese (Simplified); the older exam updates page (2021/2022) listed English and Arabic only. Certification page used.
+    // No notice of a new PMI-RMP exam or new Exam Content Outline found on pmi.org as of this date.
+    // Other official facts (no schema field): up to three attempts within one year; 30 PDUs per 3-year cycle to maintain the certification.
+    exam: {
+      officialName: "PMI Risk Management Professional (PMI-RMP)",
+      examVersion: "Current exam released April 2022",
+      questionCount: "115 questions",
+      duration: "150 minutes",
+      questionTypes: "Includes multiple-select questions; predictive, agile and hybrid approaches appear across all domains",
+      languages: ["English", "Arabic", "Chinese (Simplified)"],
+      delivery: "Pearson VUE test center or online proctored",
+      prerequisites:
+        "One of three eligibility sets: secondary diploma, 36 months of project risk management experience in the last 5 years and 40 hours of risk management education; or a bachelor's degree, 24 months of experience and 30 hours of education; or a bachelor's degree from a GAC-accredited program, 12 months of experience and 30 hours of education.",
+      status: "current",
+      officialCertificationUrl: "https://www.pmi.org/certifications/risk-management-rmp",
+      officialExamUrl: "https://www.pmi.org/certifications/risk-management-rmp/exam-prep",
+      domains: [
+        { id: "d1", name: "Risk Strategy and Planning", weight: "22%" },
+        { id: "d2", name: "Risk Identification", weight: "23%" },
+        { id: "d3", name: "Risk Analysis", weight: "23%" },
+        { id: "d4", name: "Risk Response", weight: "13%" },
+        { id: "d5", name: "Monitor and Close Risk", weight: "19%" },
+      ],
+      sources: [
+        { label: "PMI: PMI Risk Management Professional (PMI-RMP) certification", url: "https://www.pmi.org/certifications/risk-management-rmp" },
+        { label: "PMI: PMI-RMP exam updates", url: "https://www.pmi.org/certifications/risk-management-rmp/rmp-exam-updates" },
+        { label: "PMI: PMI-RMP exam prep", url: "https://www.pmi.org/certifications/risk-management-rmp/exam-prep" },
+      ],
+      lastVerified: "2026-11-05",
+    },
+    seo: {
+      title: "PMI-RMP Practice Exams: Risk Management",
+      description:
+        "PMI-RMP practice exams for the 115-question exam: risk strategy and planning, identification, analysis, response, and monitoring and closing risks.",
+    },
+  },
+  "terraform-professional-002": {
+    description:
+      "Practice exams for HashiCorp Certified: Terraform Infrastructure Engineer Professional (002), written to its seven objective areas on Terraform 1.15, from scalable configuration design and state operations to CI/CD, security, modules and HCP Terraform.",
+    fullName: "HashiCorp Certified: Terraform Infrastructure Engineer Professional (002)",
+    // Verified 2026-11-05 against developer.hashicorp.com: Terraform Infrastructure Engineer Professional certification page (name, version, format, duration, language, prerequisites, objectives), Infrastructure Automation certifications page (marked "New!" and "now available for registration") and the Professional Prep (002) tutorials page.
+    // Name: the official name is "Terraform Infrastructure Engineer Professional (002)"; the CSV descriptor "HashiCorp Certified: Terraform Professional" is a short form.
+    // Context: the earlier lab-based "Terraform Authoring and Operations Professional" moves to the Advanced level ("Terraform Authoring and Operations Advanced", Terraform 1.6) in Fall 2026 per HashiCorp's announcement; this 002 exam is the new multiple-choice Professional exam.
+    // Not published on the fetched official pages, so omitted: question count, passing score, launch date, domain weights.
+    // Other official facts (no schema field): price USD 200 plus taxes, free retake not included; credential valid 2 years.
+    exam: {
+      officialName: "HashiCorp Certified: Terraform Infrastructure Engineer Professional (002)",
+      examCode: "002",
+      examVersion: "Product version tested: Terraform 1.15",
+      duration: "90 minutes",
+      format: "Online proctored, multiple choice",
+      questionTypes: "Multiple choice",
+      languages: ["English"],
+      delivery: "Online proctored",
+      prerequisites:
+        "None required. HashiCorp lists basic terminal skills, understanding of on-premises and cloud architecture, production experience with Terraform, and the Terraform Associate certification (strongly recommended) or equivalent experience.",
+      status: "current",
+      officialCertificationUrl: "https://developer.hashicorp.com/certifications/terraform-infrastructure-engineer-professional",
+      officialExamUrl: "https://developer.hashicorp.com/terraform/tutorials/certification-infra-professional",
+      domains: [
+        {
+          id: "d1",
+          name: "Scalable Terraform Configuration Design",
+          objectives: [
+            "1a Translate business requirements into infrastructure code",
+            "1b Predictable and secure Terraform configuration",
+            "1c Trace input variables, local values, and outputs to identify the source of a configuration issue",
+            "1d Trace dynamic resources created with for_each",
+            "1e Predict the value of an expression that uses a Terraform function",
+            "1f Implement advanced configurations",
+            "1g Configure Terraform providers",
+            "1h Use the Terraform MCP server to enhance development with AI coding agents",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Terraform State and Backend Operations",
+          objectives: [
+            "2a Create and manage Remote Backend and Remote State Configuration",
+            "2b Manage state and remediate drift",
+            "2c Identify dependency chains before upgrades",
+            "2d Upgrade Terraform versions across environments",
+            "2e Inspect Terraform state",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Infrastructure Lifecycle and Operations",
+          objectives: [
+            "3a Manage and scale infrastructure projects",
+            "3b Plan changes to infrastructure",
+            "3c Apply changes to infrastructure",
+            "3d Import existing infrastructure to an infrastructure project",
+            "3e Manage infrastructure lifecycle",
+            "3f Manage multiple infrastructure environments",
+            "3g Troubleshoot deployment issues",
+            "3h Input and output data from infrastructure projects",
+            "3i Manage provider and module versions",
+          ],
+        },
+        {
+          id: "d4",
+          name: "CI/CD and Automation Workflows",
+          objectives: [
+            "4a Manage CI/CD pipeline functionality",
+            "4b Understand deployment strategies",
+            "4c Manage multiple sets of dynamic provider credentials across teams, projects, and workspaces",
+            "4d Overwrite Terraform variables using auto.tfvars / .tfvars",
+          ],
+        },
+        {
+          id: "d5",
+          name: "Terraform Security and Governance",
+          objectives: [
+            "5a Identify best practices for secrets",
+            "5b Use secret rotation and integration with secrets management tools",
+            "5c Secure CI/CD pipeline identities and access",
+            "5d Establish core compliance/policy rules along with Team/Project specific policies",
+            "5e Identify and mitigate risky infrastructure changes",
+          ],
+        },
+        {
+          id: "d6",
+          name: "Advanced Module Usage and Registry Practices",
+          objectives: [
+            "6a Understand when to refactor a Terraform configuration into a module",
+            "6b Understand the contract of a Terraform module",
+            "6c Use the Terraform registry to build or update a configuration",
+            "6d Validate modules with Terraform unit tests",
+          ],
+        },
+        {
+          id: "d7",
+          name: "HCP Terraform / Enterprise Operations",
+          objectives: [
+            "7a Understand how to operate HCP Terraform",
+            "7b Track resource usage and cost",
+            "7c Implement multi-environment configuration",
+            "7d Upgrade Terraform versions across workspaces",
+            "7e Define Policy as Code in a CI/CD pipeline",
+          ],
+        },
+      ],
+      sources: [
+        { label: "HashiCorp: Terraform Infrastructure Engineer Professional certification", url: "https://developer.hashicorp.com/certifications/terraform-infrastructure-engineer-professional" },
+        { label: "HashiCorp: Infrastructure Automation certifications", url: "https://developer.hashicorp.com/certifications/infrastructure-automation" },
+        { label: "HashiCorp: Prepare for the Terraform Infrastructure Engineer Professional 002 exam", url: "https://developer.hashicorp.com/terraform/tutorials/certification-infra-professional" },
+        { label: "HashiCorp: Announcement, Terraform Authoring and Operations Advanced", url: "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-update" },
+      ],
+      lastVerified: "2026-11-05",
+    },
+    seo: {
+      title: "Terraform Professional (002) Practice Exams",
+      description:
+        "Practice exams for HashiCorp Terraform Infrastructure Engineer Professional (002) on Terraform 1.15: state, lifecycle, CI/CD, security, modules, HCP Terraform.",
+    },
+  },
 };
 
 /* ───────────────────────────────────────────────────────────────────────────

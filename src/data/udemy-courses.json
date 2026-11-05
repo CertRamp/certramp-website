@@ -2555,7 +2555,7 @@
   "certification": "HashiCorp Terraform Professional (002)",
   "slug": "terraform-professional-002",
   "name": "Terraform Professional (002)",
-  "descriptor": "HashiCorp Certified: Terraform Professional",
+  "descriptor": "HashiCorp Certified: Terraform Infrastructure Engineer Professional (002)",
   "provider": "HashiCorp",
   "category": "Cloud",
   "language": "English",
