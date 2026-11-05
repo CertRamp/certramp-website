@@ -6150,6 +6150,50 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         "Practice exams for HashiCorp Terraform Infrastructure Engineer Professional (002) on Terraform 1.15: state, lifecycle, CI/CD, security, modules, HCP Terraform.",
     },
   },
+  "salesforce-ai-201": {
+    description:
+      "Practice exams for the Salesforce Certified Agentforce Specialist exam (AI-201), covering AI agents, prompt engineering, Data Cloud for Agentforce, the deployment lifecycle and multi-agent interoperability, matched to the current exam outline weights.",
+    fullName: "Salesforce Certified Agentforce Specialist",
+    // Verified 2026-11-05 against trailhead.salesforce.com: Agentforce Specialist credential page (name; its exam link is trailheadacademy.salesforce.com/certificate/exam-agentforce-specialist---AI-201), the former AI Specialist credential URL (/credentials/aispecialist, now canonical to /credentials/agentforcespecialist), the Trailhead module "Cert Prep: Agentforce Specialist" (question count, passing score, retake fee, delivery, outline weights).
+    // Trailhead Academy exam page (read 2026-11-05 in the browser): exam code AI-201, 60 multiple-choice + up to 5 unscored questions, 105 minutes, registration USD 200 / JPY 30,000, retake USD 100, prerequisite none, languages English, Japanese, French, Spanish.
+    // Predecessor: the former Salesforce Certified AI Specialist credential URL now resolves to Agentforce Specialist. The rename date (3 March 2025) comes from a third-party report (Salesforce Ben), not an official page that could be fetched.
+    // Duration: the Trailhead Academy exam page says 105 minutes (the older Salesforce blog figure of 90 minutes is outdated).
+    // Passing score 73% and outline weights come from the Trailhead Cert Prep unit; the exam page does not list them.
+    // Data Cloud was rebranded Data 360 on 14 October 2025 (Trailhead unit); the outline still names the section "Data Cloud for Agentforce".
+    // Other official facts (no schema field): retake fee USD 100; up to five unscored questions in addition to the 60 scored.
+    exam: {
+      officialName: "Salesforce Certified Agentforce Specialist",
+      examCode: "AI-201",
+      questionCount: "60 multiple-choice questions, plus up to 5 unscored questions",
+      duration: "105 minutes",
+      languages: ["English", "Japanese", "French", "Spanish"],
+      passingScore: "73%",
+      questionTypes: "Multiple choice",
+      delivery: "Online proctored or at a test center",
+      prerequisites: "None",
+      status: "current",
+      officialCertificationUrl: "https://trailhead.salesforce.com/credentials/agentforcespecialist",
+      officialExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-agentforce-specialist---AI-201",
+      domains: [
+        { id: "d1", name: "AI Agents", weight: "35%" },
+        { id: "d2", name: "Prompt Engineering", weight: "20%" },
+        { id: "d3", name: "Data Cloud for Agentforce", weight: "20%" },
+        { id: "d4", name: "Deployment Lifecycle", weight: "20%" },
+        { id: "d5", name: "Multi-Agent Interoperability", weight: "5%" },
+      ],
+      sources: [
+        { label: "Trailhead: Salesforce Certified Agentforce Specialist", url: "https://trailhead.salesforce.com/credentials/agentforcespecialist" },
+        { label: "Trailhead: Cert Prep: Agentforce Specialist (get started unit)", url: "https://trailhead.salesforce.com/content/learn/modules/cert-prep-agentforce-specialist/get-started-with-salesforce-agentforce-specialist-certification-prep" },
+        { label: "Trailhead Academy: Agentforce Specialist exam (AI-201)", url: "https://trailheadacademy.salesforce.com/certificate/exam-agentforce-specialist---AI-201" },
+      ],
+      lastVerified: "2026-11-05",
+    },
+    seo: {
+      title: "Agentforce Specialist (AI-201) Practice Exams",
+      description:
+        "Salesforce Agentforce Specialist (AI-201) practice exams: AI agents, prompt engineering, Data Cloud for Agentforce, deployment lifecycle, multi-agent.",
+    },
+  },
 };
 
 /* ───────────────────────────────────────────────────────────────────────────
