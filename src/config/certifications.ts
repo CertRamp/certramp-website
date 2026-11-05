@@ -6194,6 +6194,174 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         "Salesforce Agentforce Specialist (AI-201) practice exams: AI agents, prompt engineering, Data Cloud for Agentforce, deployment lifecycle, multi-agent.",
     },
   },
+  "servicenow-csa": {
+    description:
+      "Practice exams for the ServiceNow Certified System Administrator (CSA), across the six domains of the January 2026 blueprint: platform navigation, instance configuration, applications, self-service and automation, database management and security, and data migration.",
+    fullName: "ServiceNow Certified System Administrator",
+    // Verified 2026-11-05 in the browser against ServiceNow University KB0011554 "Certified System Administrator (CSA) Mainline Exam Blueprint" (page states "Updated January 2026"): 60 questions, 90 minutes, multiple choice and multiple select, Pearson test center or OnVUE online, domains and weights.
+    // Passing score: the blueprint says the cut score is not publicly shared, so it is omitted.
+    // Prerequisite: the blueprint lists recommended training (Welcome to ServiceNow, ServiceNow Administration Fundamentals) and recommended experience, not a formal prerequisite.
+    // Other official facts (no schema field): annual maintenance (delta) exams and a yearly Certification Maintenance Program fee; 90 days to schedule after registration.
+    exam: {
+      officialName: "ServiceNow Certified System Administrator (CSA)",
+      examVersion: "Mainline exam blueprint, updated January 2026",
+      questionCount: "60 questions",
+      duration: "90 minutes",
+      questionTypes: "Multiple choice (single answer) and multiple select",
+      delivery: "Pearson VUE test center or online proctored (OnVUE)",
+      prerequisites: "None stated. Recommended: Welcome to ServiceNow and ServiceNow Administration Fundamentals, plus 3 to 6 months of instance experience.",
+      status: "current",
+      officialExamUrl: "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554",
+      domains: [
+        { id: "d1", name: "Platform Overview and Navigation", weight: "7%", objectives: ["ServiceNow Platform overview", "Platform capabilities and services", "The ServiceNow Instance", "Next Experience Unified Navigation"] },
+        { id: "d2", name: "Instance Configuration", weight: "10%", objectives: ["Installing applications and plugins", "Personalizing/customizing the instance", "Common user interfaces in the Platform"] },
+        { id: "d3", name: "Configuring Applications for Collaboration", weight: "20%", objectives: ["Lists, Filters, and Tags", "List and Form anatomy", "Form Configuration", "Form templates and saving options", "Advanced Form Configuration", "Task Management", "Visual Task Boards (VTBs)", "Visualizations, Dashboards, and Platform Analytics", "Notifications"] },
+        { id: "d4", name: "Self Service & Automation", weight: "20%", objectives: ["Knowledge Management", "Service Catalog", "Workflow Studio", "Virtual Agent"] },
+        { id: "d5", name: "Database Management and Platform Security", weight: "30%", objectives: ["Data Schema", "Application/Access Control", "Importing Data", "CMDB and CSDM", "Security Center", "Shared Responsibility Model"] },
+        { id: "d6", name: "Data Migration and Integration", weight: "13%", objectives: ["UI Policies", "Business Rules", "System update sets", "Scripting in ServiceNow"] },
+      ],
+      sources: [
+        { label: "ServiceNow University: CSA Mainline Exam Blueprint (KB0011554)", url: "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554" },
+        { label: "Credly: ServiceNow Certified System Administrator (CSA) badge", url: "https://www.credly.com/org/servicenow-new/badge/certified-system-administrator" },
+      ],
+      lastVerified: "2026-11-05",
+    },
+    seo: {
+      title: "ServiceNow CSA Practice Exams: System Administrator",
+      description: "ServiceNow CSA practice exams for the January 2026 blueprint: 60 questions, 90 minutes, six domains from navigation to data migration.",
+    },
+  },
+  "mongodb-associate-dba": {
+    description:
+      "Practice exams for the MongoDB Associate Database Administrator certification, for administrators of MongoDB deployments. Use them to find your gaps and review the explanations before you book the exam with MongoDB University.",
+    fullName: "MongoDB Associate Database Administrator",
+    // Verified 2026-11-05 in the browser against learn.mongodb.com/pages/mongodb-database-administrator-exam (the Associate DBA exam page; /pages/mongodb-associate-database-administrator-exam redirects there and its registration link is associate-dba-exam-v3): 75 multiple-choice questions, online proctored, 90 minutes, no prerequisites, USD 150, English.
+    // Exam objectives sit behind the "DBA Exam Study Guide" download and could not be read, so domains are omitted. Passing score is not stated on the page.
+    // Other official facts (no schema field): price USD 150, 50% off after completing a learning path; extra time on request for candidates with English as a second language.
+    exam: {
+      officialName: "MongoDB Associate Database Administrator",
+      questionCount: "75 questions",
+      duration: "90 minutes",
+      questionTypes: "Multiple choice",
+      languages: ["English"],
+      delivery: "Online proctored",
+      prerequisites: "None",
+      status: "current",
+      officialExamUrl: "https://learn.mongodb.com/pages/mongodb-database-administrator-exam",
+      sources: [
+        { label: "MongoDB University: Database Administrator exam", url: "https://learn.mongodb.com/pages/mongodb-database-administrator-exam" },
+        { label: "MongoDB University: DBA Exam Study Guide", url: "https://learn.mongodb.com/courses/mongodb-associate-dba-exam-study-guide" },
+      ],
+      lastVerified: "2026-11-05",
+    },
+    seo: {
+      title: "MongoDB Associate DBA Practice Exams",
+      description: "Practice exams for the MongoDB Associate Database Administrator exam (75 questions, 90 minutes, online proctored), with explanations.",
+    },
+  },
+  "salesforce-plat-arch-202": {
+    description:
+      "Practice exams for the Salesforce Certified Platform Development Lifecycle and Deployment Architect (Plat-Arch-202), on DevOps, application lifecycle management and governance on the Salesforce Platform. Find your gaps before the exam.",
+    fullName: "Salesforce Certified Platform Development Lifecycle and Deployment Architect",
+    // Verified 2026-11-05 in the browser against the Trailhead Academy exam page (exam-dev-lifecycle---Plat-Arch-202): 60 multiple-choice/multiple-select questions, 105 minutes, registration USD 400 / JPY 60,000, retake USD 200, prerequisite none, languages English and Japanese. Name from the Trailhead credential page.
+    // Exam guide (weights, passing score) is behind "Prüfungsleitfaden abrufen" and was not read, so domains and passing score are omitted.
+    exam: {
+      officialName: "Salesforce Certified Platform Development Lifecycle and Deployment Architect",
+      examCode: "Plat-Arch-202",
+      questionCount: "60 questions",
+      duration: "105 minutes",
+      questionTypes: "Multiple choice and multiple select",
+      languages: ["English", "Japanese"],
+      prerequisites: "None",
+      status: "current",
+      officialCertificationUrl: "https://trailhead.salesforce.com/en/credentials/platformdevelopmentlifecycledeploymentarchitect",
+      officialExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-dev-lifecycle---Plat-Arch-202",
+      sources: [
+        { label: "Trailhead Academy: Plat-Arch-202 exam", url: "https://trailheadacademy.salesforce.com/certificate/exam-dev-lifecycle---Plat-Arch-202" },
+        { label: "Trailhead: Platform Development Lifecycle and Deployment Architect", url: "https://trailhead.salesforce.com/en/credentials/platformdevelopmentlifecycledeploymentarchitect" },
+      ],
+      lastVerified: "2026-11-05",
+    },
+    seo: {
+      title: "Plat-Arch-202 Practice Exams: Deployment Architect",
+      description: "Practice exams for Salesforce Plat-Arch-202 (60 questions, 105 minutes): DevOps, application lifecycle management and governance.",
+    },
+  },
+  "databricks-generative-ai-engineer-associate": {
+    description:
+      "Practice exams for the Databricks Certified Generative AI Engineer Associate, covering design, data preparation, application development, deployment, governance and evaluation of RAG apps and LLM chains on Databricks.",
+    fullName: "Databricks Certified Generative AI Engineer Associate",
+    // Verified 2026-11-05 in the browser against databricks.com/learn/certification/genai-engineer-associate: 45 scored questions, 90 minutes, multiple choice, USD 200, English, Japanese, Portuguese (BR), Korean, online or test center, prerequisite none, section weights.
+    // Passing score is not stated on the page, so it is omitted.
+    // Other official facts (no schema field): validity 2 years, recertification by taking the current exam; unscored items may be added; ML code in Python, other code possibly SQL.
+    exam: {
+      officialName: "Databricks Certified Generative AI Engineer Associate",
+      questionCount: "45 scored questions (unscored items may be added)",
+      duration: "90 minutes",
+      questionTypes: "Multiple choice",
+      languages: ["English", "Japanese", "Portuguese (Brazil)", "Korean"],
+      delivery: "Online proctored or at a test center",
+      prerequisites: "None. Related training and 6+ months of hands-on experience recommended.",
+      status: "current",
+      officialCertificationUrl: "https://www.databricks.com/learn/certification/genai-engineer-associate",
+      domains: [
+        { id: "d1", name: "Design Applications", weight: "14%" },
+        { id: "d2", name: "Data Preparation", weight: "14%" },
+        { id: "d3", name: "Application Development", weight: "30%" },
+        { id: "d4", name: "Assembling and Deploying Apps", weight: "22%" },
+        { id: "d5", name: "Governance", weight: "8%" },
+        { id: "d6", name: "Evaluation and Monitoring", weight: "12%" },
+      ],
+      sources: [
+        { label: "Databricks: Generative AI Engineer Associate", url: "https://www.databricks.com/learn/certification/genai-engineer-associate" },
+        { label: "Databricks: Certification overview", url: "https://www.databricks.com/learn/training/certification" },
+      ],
+      lastVerified: "2026-11-05",
+    },
+    seo: {
+      title: "Databricks GenAI Engineer Associate Practice Exams",
+      description: "Databricks Generative AI Engineer Associate practice exams: 45 questions, 90 minutes, RAG, LLM chains, Model Serving, MLflow, Unity Catalog.",
+    },
+  },
+  "databricks-data-engineer-professional": {
+    description:
+      "Practice exams for the Databricks Certified Data Engineer Professional: production lakehouse ETL with Delta Lake, Unity Catalog, Auto Loader, Lakeflow, streaming, cost and performance tuning, security and CI/CD on Databricks.",
+    fullName: "Databricks Certified Data Engineer Professional",
+    // Verified 2026-11-05 in the browser against databricks.com/learn/certification/data-engineer-professional: 59 scored questions, 120 minutes, multiple choice, USD 200, English, Japanese, Portuguese (BR), Korean, online or test center, prerequisite none, ten section weights.
+    // Passing score is not stated on the page, so it is omitted.
+    // Other official facts (no schema field): validity 2 years, recertification by taking the current exam; unscored items may be added; code mainly Python and SQL.
+    exam: {
+      officialName: "Databricks Certified Data Engineer Professional",
+      questionCount: "59 scored questions (unscored items may be added)",
+      duration: "120 minutes",
+      questionTypes: "Multiple choice",
+      languages: ["English", "Japanese", "Portuguese (Brazil)", "Korean"],
+      delivery: "Online proctored or at a test center",
+      prerequisites: "None. Related training and hands-on experience recommended.",
+      status: "current",
+      officialCertificationUrl: "https://www.databricks.com/learn/certification/data-engineer-professional",
+      domains: [
+        { id: "d1", name: "Developing Code for Data Processing using Python and SQL", weight: "22%" },
+        { id: "d2", name: "Data Ingestion & Acquisition", weight: "7%" },
+        { id: "d3", name: "Data Transformation, Cleansing, and Quality", weight: "10%" },
+        { id: "d4", name: "Data Sharing and Federation", weight: "5%" },
+        { id: "d5", name: "Monitoring and Alerting", weight: "10%" },
+        { id: "d6", name: "Cost & Performance Optimisation", weight: "13%" },
+        { id: "d7", name: "Ensuring Data Security and Compliance", weight: "10%" },
+        { id: "d8", name: "Data Governance", weight: "7%" },
+        { id: "d9", name: "Debugging and Deploying", weight: "10%" },
+        { id: "d10", name: "Data Modelling", weight: "6%" },
+      ],
+      sources: [
+        { label: "Databricks: Data Engineer Professional", url: "https://www.databricks.com/learn/certification/data-engineer-professional" },
+      ],
+      lastVerified: "2026-11-05",
+    },
+    seo: {
+      title: "Databricks Data Engineer Professional Practice Exams",
+      description: "Databricks Data Engineer Professional practice exams: 59 questions, 120 minutes, Delta Lake, Unity Catalog, Lakeflow, streaming and CI/CD.",
+    },
+  },
 };
 
 /* ───────────────────────────────────────────────────────────────────────────
