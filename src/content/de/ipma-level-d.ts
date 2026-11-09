@@ -214,13 +214,13 @@ export const ipmaLevelDDe: DeContent = {
   questions: {
     slug: "ipma-level-d",
     intro:
-      "15 eigene Übungsfragen zu IPMA Level D aus allen drei ICB4-Kompetenzbereichen: Kontext-Kompetenzen, Persönliche und Soziale Kompetenzen sowie Technische Kompetenzen. Zu jeder Frage gibt es die Lösung, eine kurze Erklärung und die Begründung, warum jede andere Option falsch ist.",
+      "30 eigene Übungsfragen zu IPMA Level D aus allen drei ICB4-Kompetenzbereichen: Kontext-Kompetenzen, Persönliche und Soziale Kompetenzen sowie Technische Kompetenzen. Zu jeder Frage gibt es die Lösung, eine kurze Erklärung und die Begründung, warum jede andere Option falsch ist.",
     published: "2026-10-28",
-    updated: "2026-10-28",
+    updated: "2026-11-09",
     seo: {
       title: "IPMA Level D Prüfungsfragen üben: mit Lösungen (ICB4)",
       description:
-        "15 kostenlose IPMA Level D Übungsfragen zur ICB4 (Stakeholder, Risiken, Planung, Führung, Konflikte und Governance) jeweils mit ausführlicher Erklärung.",
+        "30 kostenlose IPMA Level D Übungsfragen zur ICB4 (Stakeholder, Risiken, Planung, Führung, Konflikte und Governance) jeweils mit ausführlicher Erklärung.",
     },
     questions: [
       /* ── Bereich 1: Kontext-Kompetenzen ───────────────────────────────── */
@@ -276,6 +276,60 @@ export const ipmaLevelDDe: DeContent = {
         answer: "B",
         explanation:
           "Kontext-Kompetenzen beschreiben das Umfeld, in dem ein Projekt stattfindet. Wer weiß, wer was entscheidet, wann eine Freigabe nötig ist und welche Standardprozesse gelten, kann als Projektleiter innerhalb der Governance der Organisation handeln.",
+        reference: ICB4,
+      },
+      {
+        id: "ipmad-d1-compliance-data-protection",
+        domain: "d1",
+        objective: "4.3.3 Compliance, Standards und Regularien",
+        difficulty: "foundation",
+        question:
+          "Dein Team möchte ein neues Kundenportal mit einer Kopie der echten Kundendatenbank testen, weil realistische Daten das Testen beschleunigen. Was solltest du als Projektleiter zuerst tun?",
+        options: [
+          { id: "A", text: "Zustimmen, weil die Daten das Firmennetz nie verlassen", rationale: "Dass die Daten im Netz bleiben, macht die Nutzung personenbezogener Daten nicht rechtmäßig; der Datenschutz gilt trotzdem." },
+          { id: "B", text: "Die rechtlichen Anforderungen klären, den Datenschutzbeauftragten einbinden und bei Bedarf anonymisierte Daten verwenden", rationale: "Richtig. Das Element Compliance erwartet, dass du die für das Projekt geltenden Gesetze und Regeln erkennst und sicherstellst, dass das Projekt sie einhält." },
+          { id: "C", text: "Jeden Tester selbst entscheiden lassen, wie sorgfältig er mit den Daten umgeht", rationale: "Compliance lässt sich nicht dem Ermessen Einzelner überlassen; das Projekt muss sicherstellen, dass die Regeln eingehalten werden." },
+          { id: "D", text: "Die Frage verschieben, bis das Portal live ist und das Audit beginnt", rationale: "Rechtliche Anforderungen spät zu behandeln erzeugt Risiken und teure Nacharbeit; sie gehören in die Planung." },
+        ],
+        answer: "B",
+        explanation:
+          "Projekte müssen sich an Gesetze, Vorschriften und interne Standards halten. Wer früh erkennt, dass personenbezogene Daten betroffen sind, und die richtigen Fachleute einbindet, schützt Organisation und Projekt vor rechtlichem Schaden und Imageschaden.",
+        reference: ICB4,
+      },
+      {
+        id: "ipmad-d1-culture-international",
+        domain: "d1",
+        objective: "4.3.5 Kultur und Werte",
+        difficulty: "intermediate",
+        question:
+          "In deinem internationalen Projekt äußern die Kolleginnen und Kollegen eines Standorts in der wöchentlichen Besprechung nie Bedenken, obwohl sich später zeigt, dass ihnen Probleme bekannt waren. In ihrer Organisation ist es unüblich, einer Führungskraft offen zu widersprechen. Wie reagierst du am angemessensten?",
+        options: [
+          { id: "A", text: "Ihnen sagen, dass hier offene Kritik erwartet wird, und es dabei belassen", rationale: "Eine bloße Anweisung übergeht tief verankerte Normen und wird das Verhalten kaum ändern." },
+          { id: "B", text: "Den Standort beim Lenkungsausschuss melden, weil er Informationen zurückhält", rationale: "Einen kulturellen Unterschied als Fehlverhalten zu behandeln, zerstört Vertrauen und löst das Problem nicht." },
+          { id: "C", text: "Sie nicht mehr nach ihrer Meinung fragen, da sie ohnehin nichts beitragen", rationale: "Sie auszuschließen, verschenkt wertvolles Wissen und vergrößert die Informationslücke." },
+          { id: "D", text: "Den kulturellen Unterschied erkennen und andere Wege anbieten, etwa Einzelgespräche oder schriftliche Beiträge vor der Besprechung", rationale: "Richtig. Das Element Kultur und Werte erwartet, dass du unterschiedliche Normen verstehst und die Arbeitsweise im Projekt so anpasst, dass sich alle einbringen können." },
+        ],
+        answer: "D",
+        explanation:
+          "Organisationen und Länder haben unterschiedliche Normen zu Hierarchie und Offenheit. Wer diese Unterschiede erkennt, kann die Kommunikationsformate anpassen, statt Schweigen fälschlich als Zustimmung zu deuten.",
+        reference: ICB4,
+      },
+      {
+        id: "ipmad-d1-programme-portfolio",
+        domain: "d1",
+        objective: "4.3.2 Governance, Strukturen und Prozesse",
+        difficulty: "foundation",
+        question:
+          "Um einen neuen Markt zu erschließen, startet ein Unternehmen mehrere zusammenhängende Projekte (ein neues Produkt, eine Vertriebsorganisation und eine IT-Plattform), die gemeinsam gesteuert werden, um ein strategisches Ziel zu erreichen. Wie nennt man diese Gruppe von Projekten?",
+        options: [
+          { id: "A", text: "Ein Programm", rationale: "Richtig. Ein Programm ist eine Gruppe zusammenhängender Projekte und Aktivitäten, die gemeinsam gesteuert werden, um ein gemeinsames strategisches Ziel oder eine Veränderung zu erreichen." },
+          { id: "B", text: "Ein Portfolio", rationale: "Ein Portfolio ist eine Sammlung von Projekten und Programmen, die gemeinsam gesteuert werden, um Ressourcen und strategischen Beitrag zu optimieren; sie müssen kein gemeinsames Ziel verfolgen." },
+          { id: "C", text: "Ein Projektmanagement-Office", rationale: "Ein PMO ist eine unterstützende Organisationseinheit, keine Gruppe von Projekten." },
+          { id: "D", text: "Ein Projektstrukturplan", rationale: "Ein PSP gliedert den Leistungsumfang eines einzelnen Projekts in Arbeitspakete." },
+        ],
+        answer: "A",
+        explanation:
+          "Organisationen steuern zeitlich begrenzte Vorhaben auf verschiedenen Ebenen: Projekte, Programme und Portfolios. Wer den Unterschied kennt, versteht, wo das eigene Projekt eingeordnet ist und wer welche Entscheidungen trifft.",
         reference: ICB4,
       },
 
@@ -388,6 +442,96 @@ export const ipmaLevelDDe: DeContent = {
           "Persönliche und Soziale Kompetenzen beginnen bei dir selbst. Die eigenen Reaktionen zu reflektieren, besonders unter Druck, ist die Grundlage dafür, andere wirksam zu führen und mit ihnen zusammenzuarbeiten.",
         reference: ICB4,
       },
+      {
+        id: "ipmad-d2-integrity-status-report",
+        domain: "d2",
+        objective: "4.4.2 Persönliche Integrität und Verlässlichkeit",
+        difficulty: "intermediate",
+        question:
+          "Vor einer Sitzung der Geschäftsleitung bittet dich dein Auftraggeber, den Projektstatus als grün darzustellen, obwohl du weißt, dass ein wichtiger Meilenstein um drei Wochen verfehlt wird. Wie verhältst du dich angemessen?",
+        options: [
+          { id: "A", text: "Den Status wie gewünscht als grün darstellen, da der Auftraggeber für den Bericht verantwortlich ist", rationale: "Einen Status zu berichten, von dem du weißt, dass er falsch ist, verletzt deine Integrität, egal wer darum gebeten hat." },
+          { id: "B", text: "Den Status als grün darstellen und den Rückstand still aufholen, bevor es jemand merkt", rationale: "So wird das Problem vor denjenigen verborgen, die darüber entscheiden müssen, und du setzt auf Hoffnung statt auf Fakten." },
+          { id: "C", text: "Dem Auftraggeber erklären, warum du den tatsächlichen Status berichtest, und Gegenmaßnahmen vorschlagen, die du zusammen mit dem Status vorstellst", rationale: "Richtig. Integrität heißt, im Einklang mit ethischen Werten zu handeln und ehrlich zu berichten und den Auftraggeber dabei mit einem konstruktiven Weg nach vorn zu unterstützen." },
+          { id: "D", text: "Dem Konflikt ausweichen, indem du nicht an der Sitzung teilnimmst", rationale: "Fernbleiben korrigiert das falsche Bild nicht und untergräbt deine Verlässlichkeit." },
+        ],
+        answer: "C",
+        explanation:
+          "Persönliche Integrität und Verlässlichkeit sind die Grundlage für Vertrauen in den Projektleiter. Ehrliche Statusberichte, verbunden mit Lösungen, ermöglichen den Entscheidern rechtzeitiges Handeln und schützen deine Glaubwürdigkeit.",
+        reference: ICB4,
+      },
+      {
+        id: "ipmad-d2-relations-remote",
+        domain: "d2",
+        objective: "4.4.4 Beziehungen und Engagement",
+        difficulty: "foundation",
+        question:
+          "Ein Spezialist eines Partnerunternehmens arbeitet remote in deinem Team mit. Nach einigen Wochen sagt er in Videocalls kaum noch etwas und erledigt nur das Nötigste. Was ist der beste erste Schritt?",
+        options: [
+          { id: "A", text: "Dir Zeit für ein persönliches Gespräch nehmen, echtes Interesse an seiner Situation zeigen und zuhören, was er braucht", rationale: "Richtig. Bei Beziehungen und Engagement geht es darum, durch persönlichen Kontakt, Zuhören und Interesse an anderen Vertrauen aufzubauen." },
+          { id: "B", text: "Ihm eine schriftliche Erinnerung an seine vertraglichen Pflichten schicken", rationale: "Eine formale Erinnerung kann später nötig sein, baut aber keine Beziehung auf und deckt die Ursache nicht auf." },
+          { id: "C", text: "Ihn so schnell wie möglich durch jemanden aus deinem eigenen Unternehmen ersetzen", rationale: "Ihn zu ersetzen, bevor die Ursache bekannt ist, kostet Know-how und übergeht die Beziehungsebene." },
+          { id: "D", text: "Abwarten, bis er sich von selbst stärker engagiert", rationale: "Remote arbeitende Teammitglieder können leicht den Anschluss verlieren; Abwarten vergrößert die Distanz." },
+        ],
+        answer: "A",
+        explanation:
+          "Menschen engagieren sich für ein Projekt, wenn sie sich wahrgenommen und verbunden fühlen. Gerade in Remote-Situationen muss der Projektleiter Beziehungen aktiv aufbauen, statt sich auf Verträge oder zufällige Begegnungen zu verlassen.",
+        reference: ICB4,
+      },
+      {
+        id: "ipmad-d2-resourcefulness-creativity",
+        domain: "d2",
+        objective: "4.4.8 Vielseitigkeit",
+        difficulty: "intermediate",
+        question:
+          "Dein Team kommt seit Tagen bei einem technischen Problem nicht weiter, und die üblichen Lösungen haben versagt. Du organisierst ein Brainstorming. Welche Regel ist in der Phase der Ideensammlung am wichtigsten?",
+        options: [
+          { id: "A", text: "Nur erfahrene Teammitglieder dürfen Ideen vorschlagen", rationale: "Eine eingeschränkte Teilnahme verringert die Vielfalt der Perspektiven, die das Brainstorming gerade einbringen soll." },
+          { id: "B", text: "Jede Idee wird sofort bewertet, damit keine Zeit verloren geht", rationale: "Eine sofortige Bewertung hemmt ungewöhnliche Ideen; die Bewertung folgt in einem späteren Schritt." },
+          { id: "C", text: "Es dürfen nur Ideen genannt werden, die ins aktuelle Budget passen", rationale: "Ideen zu früh einzuschränken, blockiert kreative Lösungen, die sich später noch anpassen ließen." },
+          { id: "D", text: "Kritik wird zurückgestellt, und die Menge der Ideen geht vor ihrer Qualität", rationale: "Richtig. Wer die Bewertung zurückstellt, ermutigt alle, auch ungewöhnliche Ideen zu teilen, und genau das ist der Zweck von Kreativitätstechniken." },
+        ],
+        answer: "D",
+        explanation:
+          "Zur Vielseitigkeit gehört, Techniken einzusetzen, die beim Umdenken helfen, wenn Standardansätze scheitern. Die Trennung von Ideensammlung und Bewertung ist das zentrale Prinzip des Brainstormings.",
+        reference: ICB4,
+      },
+      {
+        id: "ipmad-d2-results-orientation",
+        domain: "d2",
+        objective: "4.4.10 Ergebnisorientierung",
+        difficulty: "advanced",
+        question:
+          "Dein Team verwendet viel Zeit darauf, eine Funktion zu perfektionieren, die der Kunde als „nice to have“ eingestuft hat, während ein zentrales Lieferobjekt für den nächsten Meilenstein in Rückstand gerät. Was verlangt Ergebnisorientierung von dir?",
+        options: [
+          { id: "A", text: "Das Team weitermachen lassen, weil hohe Qualität bei jeder Funktion motiviert", rationale: "Motivation ist wichtig, aber Aufwand für wenig wertvolle Arbeit auf Kosten der vereinbarten Ergebnisse dient dem Projekt nicht." },
+          { id: "B", text: "Das Team wieder auf die Lieferobjekte ausrichten, die am meisten zu den vereinbarten Zielen beitragen, und gemeinsam Prioritäten setzen", rationale: "Richtig. Ergebnisorientierung heißt, den eigenen Einsatz und den des Teams auf die Ergebnisse zu konzentrieren, die für die Stakeholder am wichtigsten sind." },
+          { id: "C", text: "Den Meilenstein verschieben, damit beides in hoher Qualität fertig wird", rationale: "Den Meilenstein ohne Not zu verschieben, nimmt ein schlechteres Gesamtergebnis in Kauf, statt Prioritäten zu setzen." },
+          { id: "D", text: "Das zentrale Lieferobjekt selbst übernehmen, damit das Team nicht gestört wird", rationale: "Die Arbeit selbst zu erledigen, umgeht das Team und lässt das eigentliche Priorisierungsproblem ungelöst." },
+        ],
+        answer: "B",
+        explanation:
+          "Beschäftigt zu sein ist nicht dasselbe, wie Ergebnisse zu liefern. Der Projektleiter hält das Team auf die Ergebnisse fokussiert, die Nutzen stiften, und macht Prioritäten ausdrücklich, wenn die Zeit knapp ist.",
+        reference: ICB4,
+      },
+      {
+        id: "ipmad-d2-crisis-go-live",
+        domain: "d2",
+        objective: "4.4.7 Konflikte und Krisen",
+        difficulty: "advanced",
+        question:
+          "Zwei Tage vor dem Go-live fällt beim Kunden der zentrale Server aus, und der Start ist ernsthaft gefährdet. Was sollte der Projektleiter zuerst tun?",
+        options: [
+          { id: "A", text: "Herausfinden, wer den Ausfall verursacht hat, bevor weitere Schritte erfolgen", rationale: "Die Suche nach dem Verantwortlichen kostet Zeit; die Ursachenanalyse gehört in die Phase, nachdem die Lage unter Kontrolle ist." },
+          { id: "B", text: "Mit der Information warten, bis die vollständige Analyse vorliegt", rationale: "Verzögerte Information hindert Auftraggeber und Stakeholder am Handeln und schadet dem Vertrauen." },
+          { id: "C", text: "Die Lage schnell einschätzen, den Auftraggeber informieren und ein kleines Krisenteam einberufen, das über Sofortmaßnahmen entscheidet", rationale: "Richtig. In einer Krise muss der Projektleiter schnell handeln, die richtigen Personen informieren und Entscheidungen organisieren, um die Lage zu stabilisieren." },
+          { id: "D", text: "Am Go-live-Plan festhalten und hoffen, dass der Server rechtzeitig repariert wird", rationale: "Wer eine Krise ignoriert, macht eine gesteuerte Reaktion unmöglich und vergrößert den Schaden." },
+        ],
+        answer: "C",
+        explanation:
+          "Eine Krise erfordert schnelles, strukturiertes Handeln statt des langsameren Vorgehens bei Konflikten. Sobald die Lage stabil ist, können die Ursachen analysiert und Lessons Learned festgehalten werden.",
+        reference: ICB4,
+      },
 
       /* ── Bereich 3: Technische Kompetenzen ────────────────────────────── */
       {
@@ -494,6 +638,132 @@ export const ipmaLevelDDe: DeContent = {
         answer: "C",
         explanation:
           "Zu Planung und Steuerung gehört das Management von Änderungen gegenüber einer vereinbarten Baseline. Eine Auswirkungsanalyse mit anschließender formaler Entscheidung hält Leistungsumfang, Kosten und Termine konsistent und für alle Stakeholder transparent.",
+        reference: ICB4,
+      },
+      {
+        id: "ipmad-d3-project-design-approach",
+        domain: "d3",
+        objective: "4.5.1 Projektdesign",
+        difficulty: "intermediate",
+        question:
+          "Zu Projektbeginn kann der Kunde die Anforderungen nur grob beschreiben und erwartet, dass sie sich ändern, ist aber bereit, alle zwei Wochen Feedback zu geben. Welches Vorgehen passt beim Projektdesign am besten?",
+        options: [
+          { id: "A", text: "Ein iteratives, agiles Vorgehen, das in kurzen Zyklen liefert und sich am Feedback ausrichtet", rationale: "Richtig. Projektdesign heißt, ein Vorgehen zu wählen, das zum Kontext des Projekts passt; unsichere, sich ändernde Anforderungen und regelmäßiges Feedback sprechen für iteratives Liefern." },
+          { id: "B", text: "Ein streng sequenzielles Vorgehen, das alle Anforderungen vor Arbeitsbeginn im Detail festlegt", rationale: "Anforderungen im Detail festzulegen, ist schwierig, solange sie unklar sind und sich ändern werden, und führt zu häufiger Nacharbeit." },
+          { id: "C", text: "Ohne vereinbartes Vorgehen starten, damit das Team flexibel bleibt", rationale: "Auch Flexibilität braucht ein bewusst gewähltes Vorgehen, Rollen und Regeln; ohne sie entsteht Chaos." },
+          { id: "D", text: "Dasselbe Vorgehen wie im letzten Projekt verwenden, um Zeit bei Entscheidungen zu sparen", rationale: "Das Vorgehen sollte für den aktuellen Kontext gewählt und nicht von einem Projekt mit anderen Bedingungen übernommen werden." },
+        ],
+        answer: "A",
+        explanation:
+          "Beim Projektdesign wird das Projekt auf seinen Kontext zugeschnitten, einschließlich Vorgehen, Erfolgskriterien und wichtiger Weichenstellungen zu Beginn. Sind die Anforderungen unsicher, verringern kurze Zyklen mit regelmäßigem Feedback das Risiko, das Falsche zu bauen.",
+        reference: ICB4,
+      },
+      {
+        id: "ipmad-d3-responsibility-matrix",
+        domain: "d3",
+        objective: "4.5.5 Organisation, Information und Dokumentation",
+        difficulty: "foundation",
+        question:
+          "In deinem Projekt gibt es immer wieder Unklarheit darüber, wer ein Lieferobjekt freigeben muss, wer konsultiert werden soll und wer nur informiert werden muss. Welches Werkzeug hilft am meisten, das zu klären?",
+        options: [
+          { id: "A", text: "Ein Balkenplan (Gantt-Diagramm)", rationale: "Ein Balkenplan zeigt Vorgänge im Zeitverlauf, nicht, wer welche Rolle dabei hat." },
+          { id: "B", text: "Ein Risikoregister", rationale: "Ein Risikoregister erfasst Risiken und Maßnahmen, keine Verantwortlichkeiten für Lieferobjekte." },
+          { id: "C", text: "Eine Kostenbaseline", rationale: "Eine Kostenbaseline zeigt geplante Kosten im Zeitverlauf, keine Rollen und Entscheidungsbefugnisse." },
+          { id: "D", text: "Eine Verantwortlichkeitsmatrix, etwa eine RACI-Matrix", rationale: "Richtig. Eine Verantwortlichkeitsmatrix ordnet für jede Aufgabe oder jedes Lieferobjekt Rollen wie durchführend (Responsible), verantwortlich (Accountable), konsultiert (Consulted) und informiert (Informed) zu." },
+        ],
+        answer: "D",
+        explanation:
+          "Das Element Organisation, Information und Dokumentation umfasst Projektrollen, Verantwortlichkeiten und den Informationsfluss. Eine Verantwortlichkeitsmatrix macht diese Rollen ausdrücklich und verhindert Lücken und Überschneidungen.",
+        reference: ICB4,
+      },
+      {
+        id: "ipmad-d3-quality-prevention",
+        domain: "d3",
+        objective: "4.5.6 Qualität",
+        difficulty: "intermediate",
+        question:
+          "In deinem Projekt werden viele Fehler erst beim abschließenden Abnahmetest entdeckt, was zu teurer Nacharbeit führt. Welcher Ansatz setzt am besten an der Ursache an?",
+        options: [
+          { id: "A", text: "Am Projektende einen zweiten, längeren Abnahmetest ergänzen", rationale: "Mehr Tests am Ende finden Fehler weiterhin spät und verhindern sie nicht; die Nacharbeit bleibt teuer." },
+          { id: "B", text: "Qualität durch vereinbarte Standards, Reviews und frühe Tests in die Arbeit einbauen", rationale: "Richtig. Fehler durch Qualitätssicherung während des Projekts zu vermeiden, ist günstiger und wirksamer, als sie am Ende zu finden." },
+          { id: "C", text: "Die Abnahmekriterien senken, damit weniger Fehler gezählt werden", rationale: "Gesenkte Kriterien verdecken das Problem und gefährden die Zufriedenheit des Kunden." },
+          { id: "D", text: "Den Kunden bitten, die Fehler zu akzeptieren und nach der Übergabe zu beheben", rationale: "Das verlagert das Problem auf den Kunden und verbessert die Arbeitsweise nicht." },
+        ],
+        answer: "B",
+        explanation:
+          "Qualitätsmanagement umfasst sowohl die Qualität der Ergebnisse als auch die der Prozesse, die sie hervorbringen. Je später ein Fehler gefunden wird, desto teurer ist er; deshalb ist Vorbeugen während der Arbeit besser als Prüfen am Ende.",
+        reference: ICB4,
+      },
+      {
+        id: "ipmad-d3-earned-value",
+        domain: "d3",
+        objective: "4.5.7 Kosten und Finanzierung",
+        difficulty: "advanced",
+        question:
+          "Zum Berichtsstichtag beträgt der Planwert (PV) 100.000 EUR, der Fertigstellungswert (EV) 80.000 EUR und die Ist-Kosten (AC) 100.000 EUR. Wie ist der Projektstatus zu beurteilen?",
+        options: [
+          { id: "A", text: "Im Budget und im Plan, weil die Ist-Kosten dem Planwert entsprechen", rationale: "Der Vergleich von AC mit PV vermischt Kosten und Termine; maßgeblich ist der Wert der tatsächlich erledigten Arbeit (EV)." },
+          { id: "B", text: "Unter Budget und im Terminverzug", rationale: "Die Terminaussage stimmt, aber AC ist höher als EV, das Projekt liegt also über Budget." },
+          { id: "C", text: "Über Budget und im Terminverzug", rationale: "Richtig. CPI = EV / AC = 0,8, es wurde also mehr ausgegeben, als die Arbeit wert ist; SPI = EV / PV = 0,8, es wurde also weniger Arbeit erledigt als geplant." },
+          { id: "D", text: "Über Budget, aber dem Plan voraus", rationale: "EV ist niedriger als PV, es wurde also weniger Arbeit erledigt als geplant, nicht mehr." },
+        ],
+        answer: "C",
+        explanation:
+          "Die Earned-Value-Analyse vergleicht Planwert, Fertigstellungswert und Ist-Kosten. Nur wenn du den Wert der erledigten Arbeit misst, erkennst du, ob ein Projekt über Budget, im Terminverzug oder beides ist.",
+        reference: ICB4,
+      },
+      {
+        id: "ipmad-d3-resource-levelling",
+        domain: "d3",
+        objective: "4.5.8 Ressourcen",
+        difficulty: "intermediate",
+        question:
+          "Der Ressourcenplan zeigt, dass eine Datenbankspezialistin in Woche 12 mit 150 % ihrer Kapazität eingeplant ist. Einige ihrer Vorgänge in dieser Woche liegen nicht auf dem kritischen Pfad und haben Puffer. Was ist der beste erste Schritt?",
+        options: [
+          { id: "A", text: "Ihre nicht kritischen Vorgänge innerhalb ihres Puffers verschieben, um die Auslastung auszugleichen", rationale: "Richtig. Beim Kapazitätsabgleich innerhalb der vorhandenen Puffer (Resource Smoothing) verschwindet die Überlastung, ohne dass sich der Projektendtermin verschiebt." },
+          { id: "B", text: "Sie bitten, so lange wie nötig Überstunden zu machen", rationale: "Dauerhafte Überstunden sind eine kurzfristige Notlösung, die das Risiko von Fehlern und Erschöpfung erhöht." },
+          { id: "C", text: "Den Projektendtermin sofort um eine Woche verschieben", rationale: "Den Endtermin zu verschieben ist unnötig, solange der Puffer die Überlastung auffangen kann." },
+          { id: "D", text: "Den Plan unverändert lassen, weil sich Überlastungen meist von selbst erledigen", rationale: "Eine ungelöste Überlastung macht den Plan unrealistisch und führt zu Verzögerungen." },
+        ],
+        answer: "A",
+        explanation:
+          "Die Ressourcenplanung stellt den Bedarf an Ressourcen ihrer Verfügbarkeit gegenüber. Wer Puffer nutzt, um Spitzen auszugleichen, löst Überlastungen, ohne den kritischen Pfad und den Endtermin zu verändern.",
+        reference: ICB4,
+      },
+      {
+        id: "ipmad-d3-contract-type",
+        domain: "d3",
+        objective: "4.5.9 Beschaffung",
+        difficulty: "advanced",
+        question:
+          "Du musst ein klar spezifiziertes Softwaremodul bei einem externen Lieferanten einkaufen. Der Leistungsumfang ist stabil, und deine Organisation möchte ihr eigenes Kostenrisiko möglichst gering halten. Welche Vertragsart passt am besten?",
+        options: [
+          { id: "A", text: "Ein Vertrag nach Aufwand (Time and Materials)", rationale: "Bei Abrechnung nach Aufwand zahlt der Auftraggeber den tatsächlich angefallenen Aufwand, das Kostenrisiko bleibt also bei ihm." },
+          { id: "B", text: "Ein Festpreisvertrag", rationale: "Richtig. Beim Festpreis trägt der Lieferant den größten Teil des Kostenrisikos; das funktioniert gut, wenn der Leistungsumfang klar definiert und stabil ist." },
+          { id: "C", text: "Ein Selbstkostenerstattungsvertrag mit prozentualem Aufschlag", rationale: "Der Auftraggeber erstattet alle Kosten plus einen Aufschlag, das Kostenrisiko liegt also überwiegend bei ihm." },
+          { id: "D", text: "Eine formlose mündliche Absprache", rationale: "Ohne schriftlichen Vertrag lassen sich Leistungsumfang, Preis und Verantwortlichkeiten kaum nachweisen und durchsetzen, was das Risiko erhöht." },
+        ],
+        answer: "B",
+        explanation:
+          "Die Wahl der Vertragsart entscheidet darüber, wer das Kostenrisiko trägt. Festpreisverträge passen zu einem stabilen, klar definierten Leistungsumfang, Verträge nach Aufwand zu Arbeiten, deren Umfang noch unklar ist.",
+        reference: ICB4,
+      },
+      {
+        id: "ipmad-d3-change-adoption",
+        domain: "d3",
+        objective: "4.5.13 Change und Transformation",
+        difficulty: "foundation",
+        question:
+          "Dein Projekt hat eine neue Planungssoftware termingerecht und im Budget eingeführt. Drei Monate später nutzen die meisten Mitarbeitenden immer noch ihre alten Tabellen. Was hätte mehr Aufmerksamkeit verdient?",
+        options: [
+          { id: "A", text: "Eine detailliertere technische Spezifikation der Software", rationale: "Die Software funktioniert; das Problem ist, dass die Menschen sie nicht nutzen, und das ist keine technische Frage." },
+          { id: "B", text: "Die neue Software ab dem ersten Tag per Anordnung der Geschäftsleitung verpflichtend machen", rationale: "Eine Anordnung ohne Erklärung und Unterstützung verstärkt oft den Widerstand, statt die Nutzung zu fördern." },
+          { id: "C", text: "Die menschliche Seite der Veränderung: das Warum erklären, die Nutzer einbinden, schulen und beim Übergang unterstützen", rationale: "Richtig. Beim Element Change und Transformation geht es darum, Menschen und Organisation dabei zu helfen, die Veränderung anzunehmen, damit der beabsichtigte Nutzen entsteht." },
+          { id: "D", text: "Ein schnellerer Projektabschluss, damit das Team zum nächsten Projekt wechseln kann", rationale: "Ein schnellerer Abschluss hätte den Mitarbeitenden nicht geholfen, die neue Arbeitsweise anzunehmen." },
+        ],
+        answer: "C",
+        explanation:
+          "Ein Ergebnis zu liefern ist nicht dasselbe, wie die Veränderung zu erreichen. Nutzen entsteht erst, wenn die Menschen die neue Arbeitsweise tatsächlich übernehmen; deshalb gehören Kommunikation, Einbindung und Unterstützung zur Aufgabe des Projekts.",
         reference: ICB4,
       },
     ],

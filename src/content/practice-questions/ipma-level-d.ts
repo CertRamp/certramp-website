@@ -14,13 +14,13 @@ const ICB4 = {
 export const ipmaLevelDQuestions: PracticeQuestionSet = {
   slug: "ipma-level-d",
   intro:
-    "15 original IPMA Level D practice questions across the three ICB4 competence areas (Perspective, People and Practice) covering all three areas. Each one comes with the answer, a short explanation and the reason every other option is wrong.",
+    "30 original IPMA Level D practice questions across the three ICB4 competence areas (Perspective, People and Practice) covering all three areas. Each one comes with the answer, a short explanation and the reason every other option is wrong.",
   published: "2026-10-27",
-  updated: "2026-10-27",
+  updated: "2026-11-09",
   seo: {
     title: "IPMA Level D Practice Questions with Answers (ICB4)",
     description:
-      "15 free, original IPMA Level D practice questions on ICB4 (stakeholders, risk, planning, leadership, conflict and governance) each with a full explanation.",
+      "30 free, original IPMA Level D practice questions on ICB4 (stakeholders, risk, planning, leadership, conflict and governance) each with a full explanation.",
   },
   questions: [
     /* ── Area 1: Perspective competences ──────────────────────────────────── */
@@ -76,6 +76,60 @@ export const ipmaLevelDQuestions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "Perspective competences describe the environment a project lives in. Knowing who decides what, when approval is needed and which standard processes apply helps the project manager act within the organisation's governance.",
+      reference: ICB4,
+    },
+    {
+      id: "ipmad-d1-compliance-data-protection",
+      domain: "d1",
+      objective: "4.3.3 Compliance, standards and regulations",
+      difficulty: "foundation",
+      question:
+        "Your team wants to test a new customer portal with a copy of the real customer database, because realistic data makes testing faster. What should you do first as project manager?",
+      options: [
+        { id: "A", text: "Approve it, because the data never leaves the company network", rationale: "Staying inside the network does not make the use of personal data lawful; data protection rules still apply." },
+        { id: "B", text: "Clarify the legal requirements, involve the data protection officer and use anonymised data if needed", rationale: "Correct. The compliance element expects you to identify the laws and rules that apply to the project and make sure the project follows them." },
+        { id: "C", text: "Let each tester decide individually how carefully to handle the data", rationale: "Compliance cannot be left to individual judgement; the project must make sure the rules are followed." },
+        { id: "D", text: "Postpone the question until the portal is live and the audit starts", rationale: "Dealing with legal requirements late creates risk and costly rework; they belong in planning." },
+      ],
+      answer: "B",
+      explanation:
+        "Projects must operate within laws, regulations and internal standards. Recognising early that personal data is involved and involving the right experts protects both the organisation and the project from legal and reputational damage.",
+      reference: ICB4,
+    },
+    {
+      id: "ipmad-d1-culture-international",
+      domain: "d1",
+      objective: "4.3.5 Culture and values",
+      difficulty: "intermediate",
+      question:
+        "In your international project, colleagues from one location never raise concerns in the weekly meeting, although problems later turn out to have been known to them. In their organisation, openly contradicting a manager is uncommon. What is the most appropriate response?",
+      options: [
+        { id: "A", text: "Tell them that open criticism is expected here and leave it at that", rationale: "A simple instruction ignores deeply rooted norms and is unlikely to change behaviour." },
+        { id: "B", text: "Report the location to the steering committee for withholding information", rationale: "Treating a cultural difference as misconduct damages trust and does not solve the problem." },
+        { id: "C", text: "Stop asking for their input, since they do not contribute anyway", rationale: "Excluding them loses valuable knowledge and makes the information gap worse." },
+        { id: "D", text: "Recognise the cultural difference and offer other channels, such as one-to-one talks or written input before meetings", rationale: "Correct. The culture and values element expects you to understand different norms and adapt how the project works so that everyone can contribute." },
+      ],
+      answer: "D",
+      explanation:
+        "Organisations and countries have different norms about hierarchy and openness. A project manager who recognises these differences can adapt communication formats instead of misreading silence as agreement.",
+      reference: ICB4,
+    },
+    {
+      id: "ipmad-d1-programme-portfolio",
+      domain: "d1",
+      objective: "4.3.2 Governance, structures and processes",
+      difficulty: "foundation",
+      question:
+        "To enter a new market, a company sets up several related projects (a new product, a sales organisation and an IT platform) that are coordinated jointly to achieve one strategic goal. What is this group of projects called?",
+      options: [
+        { id: "A", text: "A programme", rationale: "Correct. A programme is a set of related projects and activities managed together to achieve a common strategic goal or change." },
+        { id: "B", text: "A portfolio", rationale: "A portfolio is a collection of projects and programmes that are managed together to optimise resources and strategic contribution, and they do not need to share one goal." },
+        { id: "C", text: "A project management office", rationale: "A PMO is a supporting organisational unit, not a group of projects." },
+        { id: "D", text: "A work breakdown structure", rationale: "A WBS breaks down the scope of a single project into work packages." },
+      ],
+      answer: "A",
+      explanation:
+        "Organisations steer temporary initiatives at different levels: projects, programmes and portfolios. Knowing the difference helps the project manager understand where the project sits and who makes which decisions.",
       reference: ICB4,
     },
 
@@ -188,6 +242,96 @@ export const ipmaLevelDQuestions: PracticeQuestionSet = {
         "People competences start with yourself. Reflecting on your reactions, especially under pressure, is the basis for leading and working with others effectively.",
       reference: ICB4,
     },
+    {
+      id: "ipmad-d2-integrity-status-report",
+      domain: "d2",
+      objective: "4.4.2 Personal integrity and reliability",
+      difficulty: "intermediate",
+      question:
+        "Before a board meeting, your sponsor asks you to show the project status as green, although you know that an important milestone will be missed by three weeks. What is the appropriate behaviour?",
+      options: [
+        { id: "A", text: "Show the status as green as requested, since the sponsor is responsible for the report", rationale: "Reporting a status you know to be false breaks your integrity, whoever asked for it." },
+        { id: "B", text: "Show the status as green but plan to catch up quietly before anyone notices", rationale: "This hides the problem from the people who need to decide on it and relies on hope rather than facts." },
+        { id: "C", text: "Explain to the sponsor why you will report the real status and propose recovery measures to present with it", rationale: "Correct. Integrity means acting in line with ethical values and reporting honestly, while still supporting the sponsor with a constructive way forward." },
+        { id: "D", text: "Avoid the conflict by not attending the board meeting", rationale: "Staying away does not correct the false picture and undermines your reliability." },
+      ],
+      answer: "C",
+      explanation:
+        "Personal integrity and reliability are the basis for trust in the project manager. Honest status reporting, combined with solutions, lets decision makers act in time and protects your credibility.",
+      reference: ICB4,
+    },
+    {
+      id: "ipmad-d2-relations-remote",
+      domain: "d2",
+      objective: "4.4.4 Relations and engagement",
+      difficulty: "foundation",
+      question:
+        "A specialist from a partner company joins your team remotely. After a few weeks he rarely speaks in video calls and only does the minimum. What is the best first step?",
+      options: [
+        { id: "A", text: "Take time for a personal conversation, show genuine interest in his situation and listen to what he needs", rationale: "Correct. Relations and engagement are about building trust through personal contact, listening and showing interest in others." },
+        { id: "B", text: "Send him a written reminder of his contractual obligations", rationale: "A formal reminder may be needed later, but it does not build the relationship or reveal the cause." },
+        { id: "C", text: "Replace him with someone from your own company as soon as possible", rationale: "Replacing him before understanding the cause loses know-how and ignores the relationship side." },
+        { id: "D", text: "Wait until he becomes more engaged on his own", rationale: "Remote team members can easily drift away; waiting lets the distance grow." },
+      ],
+      answer: "A",
+      explanation:
+        "People commit to a project when they feel noticed and connected. Especially in remote settings, the project manager has to actively build relationships instead of relying on contracts or chance encounters.",
+      reference: ICB4,
+    },
+    {
+      id: "ipmad-d2-resourcefulness-creativity",
+      domain: "d2",
+      objective: "4.4.8 Resourcefulness",
+      difficulty: "intermediate",
+      question:
+        "Your team has been stuck on a technical problem for days and the usual solutions have failed. You organise a brainstorming session. Which rule is most important during the idea generation phase?",
+      options: [
+        { id: "A", text: "Only experienced team members may suggest ideas", rationale: "Limiting participation reduces the range of perspectives that brainstorming is meant to bring in." },
+        { id: "B", text: "Each idea is evaluated immediately so that time is not wasted", rationale: "Immediate evaluation discourages unusual ideas; assessment comes in a later step." },
+        { id: "C", text: "Only ideas that fit the current budget may be named", rationale: "Restricting ideas too early blocks creative solutions that could later be adapted." },
+        { id: "D", text: "Criticism is postponed, and quantity of ideas comes before quality", rationale: "Correct. Deferring judgement encourages people to share unusual ideas, which is the purpose of creativity techniques." },
+      ],
+      answer: "D",
+      explanation:
+        "Resourcefulness includes using techniques that help people think differently when standard approaches fail. Separating idea generation from evaluation is the key principle of brainstorming.",
+      reference: ICB4,
+    },
+    {
+      id: "ipmad-d2-results-orientation",
+      domain: "d2",
+      objective: "4.4.10 Results orientation",
+      difficulty: "advanced",
+      question:
+        "Your team spends a lot of time perfecting a feature that the customer rated as \"nice to have\", while a core deliverable needed for the next milestone is falling behind. What does results orientation require from you?",
+      options: [
+        { id: "A", text: "Let the team continue, because high quality on every feature motivates people", rationale: "Motivation matters, but effort on low-value work at the expense of agreed results does not serve the project." },
+        { id: "B", text: "Refocus the team on the deliverables that contribute most to the agreed objectives and set priorities with them", rationale: "Correct. Results orientation means focusing your own and the team's effort on the results that matter most to stakeholders." },
+        { id: "C", text: "Postpone the milestone so that both items can be finished to a high standard", rationale: "Moving the milestone without need accepts a worse overall result instead of setting priorities." },
+        { id: "D", text: "Take over the core deliverable yourself so the team is not disturbed", rationale: "Doing the work yourself bypasses the team and leaves the underlying prioritisation problem unsolved." },
+      ],
+      answer: "B",
+      explanation:
+        "Being busy is not the same as delivering results. The project manager keeps the team focused on the outcomes that create value and makes priorities explicit when time is limited.",
+      reference: ICB4,
+    },
+    {
+      id: "ipmad-d2-crisis-go-live",
+      domain: "d2",
+      objective: "4.4.7 Conflict and crisis",
+      difficulty: "advanced",
+      question:
+        "Two days before go-live, the central server at the customer site fails and the launch is at serious risk. What should the project manager do first?",
+      options: [
+        { id: "A", text: "Find out who caused the failure before taking any further action", rationale: "Looking for the person responsible costs time; analysing causes belongs after the situation is under control." },
+        { id: "B", text: "Wait until the full analysis is complete before informing anyone", rationale: "Delaying information prevents the sponsor and stakeholders from acting and damages trust." },
+        { id: "C", text: "Assess the situation quickly, inform the sponsor and set up a small crisis team to decide on immediate measures", rationale: "Correct. In a crisis, the project manager has to act quickly, inform the right people and organise decisions to stabilise the situation." },
+        { id: "D", text: "Continue with the go-live plan and hope the server is repaired in time", rationale: "Ignoring a crisis makes a controlled response impossible and increases the damage." },
+      ],
+      answer: "C",
+      explanation:
+        "A crisis requires fast, structured action rather than the slower approach used for conflicts. Once the situation is stable, the causes can be analysed and lessons learned recorded.",
+      reference: ICB4,
+    },
 
     /* ── Area 3: Practice competences ─────────────────────────────────────── */
     {
@@ -296,6 +440,132 @@ export const ipmaLevelDQuestions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "Planning and control include managing changes against an agreed baseline. Impact analysis followed by a formal decision keeps scope, cost and schedule consistent and transparent for all stakeholders.",
+      reference: ICB4,
+    },
+    {
+      id: "ipmad-d3-project-design-approach",
+      domain: "d3",
+      objective: "4.5.1 Project design",
+      difficulty: "intermediate",
+      question:
+        "At the start of a project the customer can only describe the requirements roughly and expects them to change, but is willing to give feedback every two weeks. Which approach fits best when designing the project?",
+      options: [
+        { id: "A", text: "An iterative, agile approach that delivers in short cycles and adjusts based on feedback", rationale: "Correct. Project design means choosing an approach that fits the project's context; uncertain, changing requirements and regular feedback favour iterative delivery." },
+        { id: "B", text: "A strictly sequential approach that fixes all requirements in detail before work starts", rationale: "Fixing requirements in detail is hard when they are still unclear and expected to change, and leads to frequent rework." },
+        { id: "C", text: "Starting work without any agreed approach so the team stays flexible", rationale: "Flexibility still needs a deliberate approach, roles and rules; working without one leads to chaos." },
+        { id: "D", text: "Using the same approach as the last project to save time on decisions", rationale: "The approach should be chosen for the current context, not copied from a project with different conditions." },
+      ],
+      answer: "A",
+      explanation:
+        "Project design is about shaping the project to its context, including the approach, success criteria and key choices at the start. When requirements are uncertain, short cycles with regular feedback reduce the risk of building the wrong thing.",
+      reference: ICB4,
+    },
+    {
+      id: "ipmad-d3-responsibility-matrix",
+      domain: "d3",
+      objective: "4.5.5 Organisation and information",
+      difficulty: "foundation",
+      question:
+        "In your project there is repeated confusion about who has to approve a deliverable, who should be consulted and who only needs to be informed. Which tool helps most to clarify this?",
+      options: [
+        { id: "A", text: "A Gantt chart", rationale: "A Gantt chart shows activities over time, not who carries which role for them." },
+        { id: "B", text: "A risk register", rationale: "A risk register records risks and responses, not responsibilities for deliverables." },
+        { id: "C", text: "A cost baseline", rationale: "A cost baseline shows planned costs over time, not roles and decision rights." },
+        { id: "D", text: "A responsibility matrix such as a RACI chart", rationale: "Correct. A responsibility matrix assigns roles such as responsible, accountable, consulted and informed for each task or deliverable." },
+      ],
+      answer: "D",
+      explanation:
+        "The organisation and information element covers project roles, responsibilities and the flow of information. A responsibility matrix makes these roles explicit and prevents gaps and overlaps.",
+      reference: ICB4,
+    },
+    {
+      id: "ipmad-d3-quality-prevention",
+      domain: "d3",
+      objective: "4.5.6 Quality",
+      difficulty: "intermediate",
+      question:
+        "In your project, many defects are only discovered during the final acceptance test, which leads to expensive rework. Which approach best addresses the cause?",
+      options: [
+        { id: "A", text: "Add a second, longer acceptance test at the end of the project", rationale: "More testing at the end still finds defects late and does not prevent them; the rework stays expensive." },
+        { id: "B", text: "Build quality into the work through agreed standards, reviews and early tests", rationale: "Correct. Preventing defects through quality assurance during the project is cheaper and more effective than finding them at the end." },
+        { id: "C", text: "Lower the acceptance criteria so that fewer defects are counted", rationale: "Lowering criteria hides the problem and puts the customer's satisfaction at risk." },
+        { id: "D", text: "Ask the customer to accept the defects and fix them after handover", rationale: "This shifts the problem to the customer and does not improve how the work is done." },
+      ],
+      answer: "B",
+      explanation:
+        "Quality management covers both the quality of the outputs and of the processes that produce them. The later a defect is found, the more it costs, so prevention during the work is better than inspection at the end.",
+      reference: ICB4,
+    },
+    {
+      id: "ipmad-d3-earned-value",
+      domain: "d3",
+      objective: "4.5.7 Finance",
+      difficulty: "advanced",
+      question:
+        "At the reporting date, the planned value (PV) is EUR 100,000, the earned value (EV) is EUR 80,000 and the actual cost (AC) is EUR 100,000. How should you interpret the project's status?",
+      options: [
+        { id: "A", text: "On budget and on schedule, because actual cost equals planned value", rationale: "Comparing AC with PV mixes cost and schedule; the value of the work actually done (EV) must be used." },
+        { id: "B", text: "Under budget and behind schedule", rationale: "The schedule assessment is right, but AC is higher than EV, so the project is over budget." },
+        { id: "C", text: "Over budget and behind schedule", rationale: "Correct. CPI = EV / AC = 0.8, so more was spent than the work is worth; SPI = EV / PV = 0.8, so less work was done than planned." },
+        { id: "D", text: "Over budget but ahead of schedule", rationale: "EV is lower than PV, so less work was completed than planned, not more." },
+      ],
+      answer: "C",
+      explanation:
+        "Earned value analysis compares planned value, earned value and actual cost. Only by measuring the value of the work done can you tell whether a project is over budget, behind schedule or both.",
+      reference: ICB4,
+    },
+    {
+      id: "ipmad-d3-resource-levelling",
+      domain: "d3",
+      objective: "4.5.8 Resources",
+      difficulty: "intermediate",
+      question:
+        "The resource plan shows that a database specialist is scheduled at 150% of her capacity in week 12. Some of her activities in that week are not on the critical path and have float. What is the best first step?",
+      options: [
+        { id: "A", text: "Move her non-critical activities within their float to even out the workload", rationale: "Correct. Levelling the workload within the available float (resource smoothing) removes the overload without moving the project end date." },
+        { id: "B", text: "Ask her to work overtime for as long as necessary", rationale: "Permanent overtime is a short-term fix that increases the risk of errors and exhaustion." },
+        { id: "C", text: "Move the project end date by one week straight away", rationale: "Moving the end date is unnecessary while float can absorb the overload." },
+        { id: "D", text: "Leave the plan unchanged, since overloads usually sort themselves out", rationale: "An unresolved overload makes the plan unrealistic and leads to delays." },
+      ],
+      answer: "A",
+      explanation:
+        "Resource planning compares the demand for resources with their availability. Using float to level peaks resolves overloads while keeping the critical path and end date unchanged.",
+      reference: ICB4,
+    },
+    {
+      id: "ipmad-d3-contract-type",
+      domain: "d3",
+      objective: "4.5.9 Procurement",
+      difficulty: "advanced",
+      question:
+        "You need to buy a clearly specified software module from an external supplier. The scope is stable and your organisation wants to keep its own cost risk as low as possible. Which type of contract fits best?",
+      options: [
+        { id: "A", text: "A time and materials contract", rationale: "With time and materials the buyer pays for the effort actually used, so the cost risk stays with the buyer." },
+        { id: "B", text: "A fixed-price contract", rationale: "Correct. With a fixed price the supplier carries most of the cost risk, which works well when the scope is clearly defined and stable." },
+        { id: "C", text: "A cost-plus contract with a percentage fee", rationale: "The buyer reimburses all costs plus a fee, so the cost risk lies mainly with the buyer." },
+        { id: "D", text: "An informal verbal agreement", rationale: "Without a written contract, scope, price and responsibilities are hard to prove and enforce, which increases risk." },
+      ],
+      answer: "B",
+      explanation:
+        "The choice of contract type decides who carries the cost risk. Fixed-price contracts suit stable, well-defined scope, while time and materials contracts suit work whose scope is still unclear.",
+      reference: ICB4,
+    },
+    {
+      id: "ipmad-d3-change-adoption",
+      domain: "d3",
+      objective: "4.5.13 Change and transformation",
+      difficulty: "foundation",
+      question:
+        "Your project has installed a new planning software on time and within budget. Three months later most employees still use their old spreadsheets. What should have received more attention?",
+      options: [
+        { id: "A", text: "A more detailed technical specification of the software", rationale: "The software works; the problem is that people do not use it, which is not a technical issue." },
+        { id: "B", text: "Making the new software mandatory by management order on day one", rationale: "An order without explanation or support often increases resistance rather than adoption." },
+        { id: "C", text: "The people side of the change: explaining why, involving users, training and support during the transition", rationale: "Correct. The change and transformation element is about helping people and the organisation adopt the change so that the intended benefits are achieved." },
+        { id: "D", text: "A faster project closure so the team could move on to the next project", rationale: "Closing faster would not have helped employees adopt the new way of working." },
+      ],
+      answer: "C",
+      explanation:
+        "Delivering an output is not the same as achieving the change. Benefits only arise when people actually adopt the new way of working, so communication, involvement and support are part of the project's job.",
       reference: ICB4,
     },
   ],
