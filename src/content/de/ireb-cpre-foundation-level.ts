@@ -159,13 +159,13 @@ export const irebCpreDe: DeContent = {
   questions: {
     slug: "ireb-cpre-foundation-level",
     intro:
-      "15 eigene Übungsfragen zum CPRE Foundation Level aus allen sieben Kapiteln des IREB-Lehrplans 3.3.0, mit mehr Fragen zu den umfangreicheren Kapiteln 3, 4 und 6. Zu jeder Frage gibt es die Lösung, eine kurze Erklärung und die Begründung, warum jede andere Option falsch ist.",
+      "30 eigene Übungsfragen zum CPRE Foundation Level aus allen sieben Kapiteln des IREB-Lehrplans 3.3.0, mit mehr Fragen zu den umfangreicheren Kapiteln 3, 4 und 6. Zu jeder Frage gibt es die Lösung, eine kurze Erklärung und die Begründung, warum jede andere Option falsch ist.",
     published: "2026-10-28",
-    updated: "2026-10-28",
+    updated: "2026-11-09",
     seo: {
       title: "CPRE Foundation Level Übungsfragen mit Lösungen (3.3.0)",
       description:
-        "15 kostenlose IREB CPRE Foundation Level Übungsfragen (Lehrplan 3.3.0): Prinzipien, Schablonen, Ermittlung, Validierung, Verfolgbarkeit, mit Erklärung.",
+        "30 kostenlose IREB CPRE Foundation Level Übungsfragen (Lehrplan 3.3.0): Prinzipien, Schablonen, Ermittlung, Validierung, Verfolgbarkeit, mit Erklärung.",
     },
     questions: [
       /* ── Kapitel 1: Einführung und Überblick ──────────────────────────── */
@@ -205,6 +205,24 @@ export const irebCpreDe: DeContent = {
           "Ermittlung, Dokumentation, Validierung und Verwaltung (Management) sind die Hauptaufgaben des RE. Der Lehrplan betont, dass es nicht den einen RE-Prozess gibt: Er muss auf den Kontext zugeschnitten werden.",
         reference: SYLLABUS,
       },
+      {
+        id: "cpre-c1-symptoms",
+        domain: "d1",
+        objective: "LZ 1.2.2 Aufzählung der Symptome für unzureichendes RE",
+        difficulty: "foundation",
+        question:
+          "In einer Projektretrospektive sammelt das Team mehrere Beobachtungen. Welche davon ist laut CPRE-Lehrplan ein typisches Symptom für unzureichendes Requirements Engineering und keine Ursache?",
+        options: [
+          { id: "A", text: "Das Team hat sofort mit der Umsetzung begonnen, um den Termin zu halten.", rationale: "Die übereilte Umsetzung wird als Ursache für unzureichendes RE genannt, nicht als Symptom." },
+          { id: "B", text: "Niemand im Team hatte eine RE-Schulung erhalten.", rationale: "Unzureichende RE-Ausbildung und -Fähigkeiten sind eine Ursache für schlechtes RE, kein Symptom." },
+          { id: "C", text: "Nach der Implementierung zeigte sich, dass Anforderungen fehlten, unklar oder falsch waren.", rationale: "Richtig. Fehlende, unklare und falsche Anforderungen sind die typischen Symptome für unzureichendes RE." },
+          { id: "D", text: "Alle gingen davon aus, dass die Anforderungen selbstverständlich seien.", rationale: "Die Annahme, Anforderungen seien selbstverständlich, ist eine Ursache für unzureichendes RE, kein Symptom." },
+        ],
+        answer: "C",
+        explanation:
+          "Der Lehrplan nennt fehlende, unklare und falsche Anforderungen als typische Symptome für unzureichendes RE. Typische Ursachen sind eine übereilte Umsetzung, Kommunikationsprobleme, die Annahme, die Anforderungen seien selbstverständlich, sowie unzureichende RE-Ausbildung und -Fähigkeiten.",
+        reference: SYLLABUS,
+      },
 
       /* ── Kapitel 2: Grundlegende Prinzipien ───────────────────────────── */
       {
@@ -240,6 +258,42 @@ export const irebCpreDe: DeContent = {
         answer: "B",
         explanation:
           "Die Systemgrenze trennt das System von seinem Kontext; die Kontextgrenze trennt den RE-relevanten Teil der Umgebung vom Rest der Welt. Externe Systeme, mit denen das System interagiert, liegen zwischen beiden Grenzen.",
+        reference: SYLLABUS,
+      },
+      {
+        id: "cpre-c2-problem-solution",
+        domain: "d2",
+        objective: "LZ 2.2.2 Erklären der Prinzipien und der Gründe, warum sie wichtig sind",
+        difficulty: "intermediate",
+        question:
+          "Im ersten Termin sagt die Vertriebsleiterin: „Wir brauchen eine mobile App für unseren Außendienst.“ Was sollte der Requirements Engineer nach dem Prinzip, dass Problem, Anforderung und Lösung miteinander verflochten sind, als Erstes tun?",
+        options: [
+          { id: "A", text: "Herausfinden, welches Problem die App lösen soll, zum Beispiel, was der Außendienst heute nicht tun kann", rationale: "Richtig. Stakeholder formulieren ihre Wünsche oft als Lösungen. Wer das zugrunde liegende Problem und die eigentlichen Anforderungen aufdeckt, lässt außerdem Raum für bessere Lösungen." },
+          { id: "B", text: "„Mobile App“ als Randbedingung dokumentieren und mit der Spezifikation der Bildschirme beginnen", rationale: "Damit wird die vorgeschlagene Lösung als gegeben hingenommen, ohne das Problem dahinter zu verstehen." },
+          { id: "C", text: "Die Anfrage ablehnen, weil im RE niemals über Lösungen gesprochen werden darf", rationale: "Lösungen sind im RE nicht verboten. Das Prinzip besagt, dass sich Probleme, Anforderungen und Lösungen nicht vollständig trennen lassen." },
+          { id: "D", text: "Die Entwickler fragen, welches App-Framework sie bevorzugen", rationale: "Die Wahl einer Technologie ist eine Entwurfsentscheidung und hilft nicht, das Problem zu verstehen." },
+        ],
+        answer: "A",
+        explanation:
+          "Prinzip 5 besagt, dass Problem, Anforderung und Lösung ein unausweichlich ineinandergreifendes Tripel bilden. Nennt ein Stakeholder eine Lösung, arbeitet sich der Requirements Engineer zum Problem und zu den Anforderungen dahinter zurück, bevor er sich auf diese Lösung festlegt.",
+        reference: SYLLABUS,
+      },
+      {
+        id: "cpre-c2-innovation",
+        domain: "d2",
+        objective: "LZ 2.2.2 Erklären der Prinzipien und der Gründe, warum sie wichtig sind",
+        difficulty: "intermediate",
+        question:
+          "Eine Teamleiterin sagt: „Unsere Aufgabe im RE ist es, genau das aufzuschreiben, was die Stakeholder verlangen, und nicht mehr.“ Welches Prinzip des RE vernachlässigt diese Haltung am meisten?",
+        options: [
+          { id: "A", text: "Validierung", rationale: "Die Validierung prüft, ob Anforderungen die Bedürfnisse der Stakeholder erfüllen. Die Aussage spricht nicht gegen das Validieren." },
+          { id: "B", text: "Systematische und disziplinierte Arbeit", rationale: "Dieses Prinzip betrifft den Einsatz geeigneter Prozesse und Praktiken. Die Aussage betrifft den Umfang dessen, was RE liefert, nicht die Methode." },
+          { id: "C", text: "Kontext", rationale: "Das Kontextprinzip besagt, dass Anforderungen nicht isoliert verstanden werden können. Die Aussage bestreitet den Kontext nicht." },
+          { id: "D", text: "Innovation", rationale: "Richtig. Das Innovationsprinzip besagt, dass mehr vom Gleichen nicht genügt: Gutes RE sucht auch nach neuen Ideen, die Stakeholder begeistern können, nicht nur nach ihren ausdrücklichen Wünschen." },
+        ],
+        answer: "D",
+        explanation:
+          "Prinzip 8 (Innovation) erinnert dich daran, dass Systeme selten herausragend werden, wenn Stakeholder nur bekommen, was sie verlangen. RE sollte auch nach innovativen Ideen streben; deshalb gehören Entwurfs- und Ideenfindungstechniken zum Werkzeugkasten der Ermittlung.",
         reference: SYLLABUS,
       },
 
@@ -298,6 +352,59 @@ export const irebCpreDe: DeContent = {
           "Wähle das Modell passend zum Aspekt: Struktur und Daten → Klassendiagramm; Funktion und Ablauf → Aktivitäts- oder Prozessmodell; Zustand und Verhalten → Zustandsmaschine; Kontext → Kontextdiagramm.",
         reference: SYLLABUS,
       },
+      {
+        id: "cpre-c3-nl-rules",
+        domain: "d3",
+        objective: "LZ 3.2.2 Regeln für das Schreiben guter natürlichsprachiger Anforderungen erklären",
+        difficulty: "intermediate",
+        question: "„Die Bestellung wird geprüft und freigegeben.“ Gegen welche Regel für natürlichsprachige Anforderungen verstößt diese Aussage hauptsächlich?",
+        options: [
+          { id: "A", text: "Universalquantoren wie „alle“ oder „nie“ mit Vorsicht verwenden", rationale: "Die Aussage enthält keinen Universalquantor." },
+          { id: "B", text: "Passive Formulierungen mit Vorsicht verwenden", rationale: "Richtig. Die passive Formulierung verschleiert, wer die Handlung ausführt: Es bleibt offen, ob das System, ein Sachbearbeiter oder eine Vorgesetzte die Bestellung prüft und freigibt." },
+          { id: "C", text: "Kurze Sätze schreiben", rationale: "Der Satz ist bereits kurz." },
+          { id: "D", text: "Nominalisierungen mit Vorsicht verwenden", rationale: "Der Satz verwendet Verben, keine Nominalisierungen wie „die Prüfung“. Sein Hauptproblem ist der fehlende Akteur." },
+        ],
+        answer: "B",
+        explanation:
+          "Der Lehrplan verlangt kurze, gut strukturierte Sätze und definierte Begriffe, das Vermeiden vager Formulierungen und unvollständiger Beschreibungen sowie den vorsichtigen Einsatz von passiven Formulierungen, Universalquantoren und Nominalisierungen. Eine Umformulierung im Aktiv, etwa „Das System muss … prüfen“, macht den Akteur explizit.",
+        reference: SYLLABUS,
+      },
+      {
+        id: "cpre-c3-glossary",
+        domain: "d3",
+        objective: "LZ 3.5.1 Den Zweck von Glossaren und wie man ein Glossar erstellt erklären",
+        difficulty: "intermediate",
+        question:
+          "In einem Projekt bedeutet „Kunde“ für den Vertrieb einen Vertragspartner, für die IT dagegen jeden registrierten App-Nutzer. Wie solltest du damit umgehen?",
+        options: [
+          { id: "A", text: "Den Begriff nicht ins Glossar aufnehmen, weil jeder das Wort kennt", rationale: "Alltagswörter mit kontextabhängiger Bedeutung sind genau das, was ein Glossar klären muss." },
+          { id: "B", text: "Jedes Team führt ein eigenes Glossar mit eigener Definition", rationale: "Getrennte Glossare halten das Missverständnis am Leben. Ein Glossar sollte für das ganze Projekt zentral verwaltet werden." },
+          { id: "C", text: "Die Definitionen mit den Stakeholdern abstimmen, das Homonym auflösen, zum Beispiel durch getrennte Begriffe, und das Glossar verbindlich machen", rationale: "Richtig. Das Glossar schafft ein gemeinsames Verständnis, wenn Begriffe mit den Stakeholdern abgestimmt, Homonyme vermieden oder gekennzeichnet werden und seine Nutzung verbindlich ist." },
+          { id: "D", text: "Den Begriff nur in Kommentaren im Quellcode definieren", rationale: "Code-Kommentare sind nicht für alle Stakeholder zugänglich und kein Glossar." },
+        ],
+        answer: "C",
+        explanation:
+          "Ein Glossar definiert die Begriffe der Domäne, damit alle Stakeholder sie gleich verstehen. Verwalte es zentral mit klarer Zuständigkeit, stimme die Begriffe mit den Stakeholdern ab, mache es zugänglich und verbindlich, kennzeichne Synonyme und vermeide oder kennzeichne Homonyme.",
+        reference: SYLLABUS,
+      },
+      {
+        id: "cpre-c3-prototype",
+        domain: "d3",
+        objective: "LZ 3.7.1 Verschiedene Arten von Prototypen kennen und wissen, wozu sie dienen",
+        difficulty: "foundation",
+        question:
+          "Früh im Projekt möchtest du das grobe Bildschirmlayout einer neuen App in einem Workshop mit Nutzern besprechen, anhand schneller Skizzen, die danach weggeworfen werden. Welche Art von Prototyp passt am besten?",
+        options: [
+          { id: "A", text: "Wireframe (explorativer Low-Fidelity-Prototyp)", rationale: "Richtig. Wireframes sind schnelle Low-Fidelity-Skizzen, mit denen Ideen erkundet und besprochen werden; nach Gebrauch werden sie verworfen." },
+          { id: "B", text: "Nativer Prototyp", rationale: "Native Prototypen sind High-Fidelity-Prototypen auf der Zieltechnologie und für die Diskussion grober Layoutideen viel zu aufwendig." },
+          { id: "C", text: "Evolutionärer Prototyp", rationale: "Ein evolutionärer Prototyp wird zum endgültigen System weiterentwickelt; er wird nicht weggeworfen." },
+          { id: "D", text: "Pilotsystem", rationale: "Ein Pilotsystem ist ein evolutionärer Prototyp, der den Kern des echten Systems bildet, keine schnelle Skizze." },
+        ],
+        answer: "A",
+        explanation:
+          "Explorative Prototypen werden nach Gebrauch verworfen und kommen als Wireframes (Low Fidelity), Mock-Ups (Medium Fidelity) oder native Prototypen (High Fidelity) vor. Evolutionäre Prototypen, also Pilotsysteme, wachsen zum endgültigen System heran.",
+        reference: SYLLABUS,
+      },
 
       /* ── Kapitel 4: Erarbeitung von Anforderungen ─────────────────────── */
       {
@@ -353,6 +460,78 @@ export const irebCpreDe: DeContent = {
           "Die vier Aspekte sind: Beteiligung der richtigen Stakeholder, Trennung von Fehlererkennung und Fehlerkorrektur, Validierung aus unterschiedlichen Sichten und wiederholte Validierung.",
         reference: SYLLABUS,
       },
+      {
+        id: "cpre-c4-sources",
+        domain: "d4",
+        objective: "LZ 4.1.2 Sich an die relevanten Quellen für das zu erstellende System erinnern",
+        difficulty: "foundation",
+        question:
+          "Ein Team löst ein altes Schadensbearbeitungssystem ab. Welches Vorgehen nutzt alle drei Arten von Anforderungsquellen, die der CPRE-Lehrplan nennt?",
+        options: [
+          { id: "A", text: "Möglichst viele Schadensbearbeiter interviewen", rationale: "Das nutzt nur eine Art von Quelle: Stakeholder." },
+          { id: "B", text: "Die relevanten Vorschriften und Prozessbeschreibungen lesen", rationale: "Das nutzt nur Dokumente als Quelle." },
+          { id: "C", text: "Die Bildschirme und Funktionen des Altsystems analysieren", rationale: "Das nutzt nur Systeme als Quelle." },
+          { id: "D", text: "Stakeholder, Dokumente wie Vorschriften und vorhandene Systeme wie das Altsystem kombinieren", rationale: "Richtig. Stakeholder, Dokumente und Systeme sind die drei Arten von Anforderungsquellen." },
+        ],
+        answer: "D",
+        explanation:
+          "Der Lehrplan nennt drei Arten von Anforderungsquellen: Stakeholder, Dokumente und Systeme. Gesetze, Normen und Prozessdokumente sowie bestehende oder Altsysteme fördern oft Anforderungen zutage, die Stakeholder zu erwähnen vergessen.",
+        reference: SYLLABUS,
+      },
+      {
+        id: "cpre-c4-design-techniques",
+        domain: "d4",
+        objective: "LZ 4.2.2 Den Unterschied zwischen Erhebungs-, Entwurfs- und Ideenfindungstechniken verstehen",
+        difficulty: "intermediate",
+        question:
+          "Ein Produktteam sucht neue Ideen für Funktionen, die die Nutzer einer Fitness-App begeistern könnten. Welche dieser Techniken ist eine Entwurfs- und Ideenfindungstechnik und keine Erhebungstechnik?",
+        options: [
+          { id: "A", text: "Ein strukturiertes Interview mit bestehenden Nutzern", rationale: "Interviews sind Fragetechniken und gehören zu den Erhebungstechniken." },
+          { id: "B", text: "Die Analogietechnik, die Ideen aus einer anderen Domäne wie Gaming überträgt", rationale: "Richtig. Analogien erzeugen neue Ideen, indem sie Konzepte aus einer anderen Domäne übertragen; das ist typisch für Entwurfs- und Ideenfindungstechniken." },
+          { id: "C", text: "Feldbeobachtung der Nutzer im Fitnessstudio", rationale: "Feldbeobachtung ist eine Beobachtungstechnik und gehört zu den Erhebungstechniken." },
+          { id: "D", text: "Analyse bestehender App-Store-Bewertungen", rationale: "Die Analyse vorhandener Dokumente ist eine artefaktbasierte Technik und gehört zu den Erhebungstechniken." },
+        ],
+        answer: "B",
+        explanation:
+          "Erhebungstechniken (Frage-, Kollaborations-, Beobachtungs- und artefaktbasierte Techniken) sammeln, was Stakeholder wissen oder tun. Entwurfs- und Ideenfindungstechniken wie Brainstorming, Analogien, Prototyping, Szenarien und Storyboards erzeugen neue Ideen und führen oft zu Begeisterungsfaktoren.",
+        reference: SYLLABUS,
+      },
+      {
+        id: "cpre-c4-conflict-type",
+        domain: "d4",
+        objective: "LZ 4.3.1 Sich an die verschiedenen Arten von Konflikten erinnern",
+        difficulty: "intermediate",
+        question:
+          "Zwei Abteilungsleiter sind sich über die erforderliche Kapazität eines neuen Buchungssystems uneinig. Der eine nennt 2.000 Buchungen pro Tag aus dem Bericht des Vorjahres, der andere 5.000 aus einer Marktprognose. Um welche Art von Konflikt handelt es sich vor allem?",
+        options: [
+          { id: "A", text: "Wertekonflikt", rationale: "Wertekonflikte entstehen aus unterschiedlichen Überzeugungen oder Grundsätzen, etwa Datenschutz gegen Transparenz. Hier geht es um Zahlen." },
+          { id: "B", text: "Beziehungskonflikt", rationale: "Beziehungskonflikte entstehen aus persönlichen Spannungen oder negativen Erfahrungen zwischen Menschen, die hier nicht beschrieben sind." },
+          { id: "C", text: "Datenkonflikt", rationale: "Richtig. Die Beteiligten stützen sich auf unterschiedliche Informationen und Quellen; das ist typisch für einen Datenkonflikt." },
+          { id: "D", text: "Strukturkonflikt", rationale: "Strukturkonflikte werden durch Strukturen verursacht, etwa Hierarchien, Zuständigkeiten oder die Verteilung von Ressourcen und Macht." },
+        ],
+        answer: "C",
+        explanation:
+          "Der Lehrplan unterscheidet Sach-, Daten-, Interessen-, Werte-, Beziehungs- und Strukturkonflikte. Die Art des Konflikts hilft dir bei der Wahl der Lösung: Datenkonflikte lassen sich oft lösen, indem die Fakten geklärt und eine verlässliche Quelle vereinbart wird.",
+        reference: SYLLABUS,
+      },
+      {
+        id: "cpre-c4-conflict-resolution",
+        domain: "d4",
+        objective: "LZ 4.3.3 Verstehen, wie geeignete Konfliktlösungstechniken angewendet werden",
+        difficulty: "advanced",
+        question:
+          "Die Buchhaltung möchte, dass die Rechnungsmaske alle Details zeigt, der Außendienst dagegen eine minimale Ansicht auf dem Smartphone. Beide Bedürfnisse sind berechtigt, und das Budget erlaubt, beides umzusetzen. Welche Konfliktlösungstechnik passt am besten?",
+        options: [
+          { id: "A", text: "Variantenbildung", rationale: "Richtig. Beide Bedürfnisse können nebeneinander bestehen, zum Beispiel als rollenspezifische Ansichten, und der Aufwand ist vertretbar." },
+          { id: "B", text: "Ober-sticht-Unter", rationale: "Eine Entscheidung durch eine höhere Instanz ist hier unnötig und würde eine Gruppe unzufrieden zurücklassen." },
+          { id: "C", text: "Abstimmung", rationale: "Eine Abstimmung lässt die Minderheit unzufrieden zurück, obwohl beide Bedürfnisse erfüllt werden könnten." },
+          { id: "D", text: "Kompromiss", rationale: "Eine Maske in der Mitte würde keine Gruppe ganz zufriedenstellen, obwohl beide vollständig zufriedengestellt werden können." },
+        ],
+        answer: "A",
+        explanation:
+          "Die wichtigsten Konfliktlösungstechniken sind Einigung, Kompromiss, Abstimmung, Ober-sticht-Unter und Variantenbildung, unterstützt durch Consider-All-Facts, Plus-Minus-Interesting und die Entscheidungsmatrix. Varianten eignen sich, wenn unterschiedliche Bedürfnisse zu vertretbaren Kosten nebeneinander bestehen können.",
+        reference: SYLLABUS,
+      },
 
       /* ── Kapitel 5: Prozess und Arbeitsstruktur ───────────────────────── */
       {
@@ -372,6 +551,41 @@ export const irebCpreDe: DeContent = {
         answer: "D",
         explanation:
           "Die Facetten Zeit (linear/iterativ), Zweck (präskriptiv/explorativ) und Ziel (kundenspezifisch/marktorientiert) führen zu typischen Konfigurationen: partizipativ, vertraglich reguliert und produktorientiert.",
+        reference: SYLLABUS,
+      },
+      {
+        id: "cpre-c5-factors",
+        domain: "d5",
+        objective: "LZ 5.1.2 Verstehen, wie und warum diese Faktoren Einfluss haben",
+        difficulty: "intermediate",
+        question:
+          "Ein Team spezifiziert die Software für eine Infusionspumpe, ein sicherheitskritisches Medizinprodukt, das von einer Behörde zugelassen werden muss. Wie wirken sich diese Einflussfaktoren am ehesten auf den RE-Prozess aus?",
+        options: [
+          { id: "A", text: "RE kann entfallen, weil die Behörde alle Anforderungen vorgibt", rationale: "Vorschriften fügen Randbedingungen hinzu, legen aber nicht alle Anforderungen an das System fest." },
+          { id: "B", text: "Anforderungen sollten nur mündlich besprochen werden, um flexibel zu bleiben", rationale: "Hohe Kritikalität und die Zulassung verlangen dokumentierte, prüfbare Anforderungen, nicht nur Gespräche." },
+          { id: "C", text: "Die Kritikalität hat keinen Einfluss; nur Zeit und Budget zählen", rationale: "Kritikalität des Systems und Randbedingungen gehören zu den wichtigen Faktoren, die einen RE-Prozess beeinflussen." },
+          { id: "D", text: "Anforderungen müssen expliziter formuliert und gründlicher dokumentiert und validiert werden", rationale: "Richtig. Hohe Kritikalität und regulatorische Randbedingungen erfordern einen stärker präskriptiven Prozess mit sorgfältig dokumentierten und validierten Anforderungen." },
+        ],
+        answer: "D",
+        explanation:
+          "Zu den Faktoren, die einen RE-Prozess beeinflussen, gehören der übergeordnete Entwicklungsprozess, der Entwicklungskontext, Fähigkeiten und Verfügbarkeit der Stakeholder, gemeinsames Verständnis, Komplexität und Kritikalität, Randbedingungen, Zeit und Budget, Volatilität und Erfahrung. Sicherheitskritische, regulierte Systeme lenken den Prozess in Richtung expliziter, präskriptiver Dokumentation.",
+        reference: SYLLABUS,
+      },
+      {
+        id: "cpre-c5-config-steps",
+        domain: "d5",
+        objective: "LZ 5.3.2 Verstehen der Schritte zur Konfiguration eines RE-Prozesses",
+        difficulty: "foundation",
+        question: "Du konfigurierst den RE-Prozess für ein neues Projekt. Was ist laut CPRE-Lehrplan der erste Schritt?",
+        options: [
+          { id: "A", text: "Geeignete Praktiken auswählen", rationale: "Die Auswahl der Praktiken ist der letzte Schritt, sobald Konfiguration und Arbeitsprodukte feststehen." },
+          { id: "B", text: "Die Einflussfaktoren analysieren", rationale: "Richtig. Die Einflussfaktoren kommen zuerst, weil sie bestimmen, wie die Facetten bewertet werden." },
+          { id: "C", text: "Die Arbeitsprodukte festlegen", rationale: "Die Arbeitsprodukte werden festgelegt, nachdem der Prozess konfiguriert wurde." },
+          { id: "D", text: "Die Kriterien der Facetten bewerten", rationale: "Die Bewertung der Facetten ist der zweite Schritt und baut auf den Einflussfaktoren auf." },
+        ],
+        answer: "B",
+        explanation:
+          "Die Schritte sind: Einflussfaktoren analysieren, Kriterien der Facetten bewerten (Zeit, Zweck, Ziel), den Prozess konfigurieren, die Arbeitsprodukte festlegen und geeignete Praktiken auswählen.",
         reference: SYLLABUS,
       },
 
@@ -429,6 +643,42 @@ export const irebCpreDe: DeContent = {
           "Der Lehrplan stellt den Umgang mit Änderungen gegenüber: Change Control Boards mit festgelegten Verfahren in linearen Vorgehensweisen und Backlog-Management durch den Product Owner in agilen Vorgehensweisen.",
         reference: SYLLABUS,
       },
+      {
+        id: "cpre-c6-prioritization",
+        domain: "d6",
+        objective: "Lehrplan 3.3.0, Abschnitt 6.8 Priorisierung (LZ 6.8.2)",
+        difficulty: "intermediate",
+        question:
+          "Ein Product Owner möchte 60 Backlog-Einträge für das nächste Release in eine Rangfolge bringen und lässt das Team sofort darüber abstimmen. Welcher Schritt der Priorisierung wurde übersprungen?",
+        options: [
+          { id: "A", text: "Alle Anforderungen mit niedriger Priorität archivieren", rationale: "Archivieren ist kein Schritt der Priorisierung." },
+          { id: "B", text: "Eine Basislinie aller 60 Einträge erstellen", rationale: "Eine Basislinie ist eine stabile Konfiguration für die Planung, kein Schritt der Priorisierung." },
+          { id: "C", text: "Die Bewertungskriterien festlegen, etwa Geschäftswert, Dringlichkeit, Aufwand oder Abhängigkeiten", rationale: "Richtig. Ohne abgestimmte Kriterien spiegelt die Rangfolge persönliche Vorlieben wider statt der Ziele des Projekts." },
+          { id: "D", text: "Testfälle für alle Einträge schreiben", rationale: "Das Schreiben von Testfällen gehört nicht zur Priorisierung." },
+        ],
+        answer: "C",
+        explanation:
+          "Die Schritte sind: Ziele und Randbedingungen festlegen, Bewertungskriterien festlegen, die beteiligten Stakeholder und die zu priorisierenden Anforderungen bestimmen, eine Technik auswählen und die Priorisierung durchführen. Priorisierungstechniken lassen sich in Ad-hoc-Techniken und analytische Techniken einteilen.",
+        reference: SYLLABUS,
+      },
+      {
+        id: "cpre-c6-views",
+        domain: "d6",
+        objective: "Lehrplan 3.3.0, Abschnitt 6.5 Attribute und Sichten (LZ 6.5.3)",
+        difficulty: "intermediate",
+        question:
+          "Ein Tester möchte nur die Anforderungen sehen, die dem Release 2.1 zugeordnet sind und den Status „freigegeben“ haben. Alle Attribute dürfen sichtbar bleiben. Um welche Art von Sicht handelt es sich?",
+        options: [
+          { id: "A", text: "Selektive Sicht", rationale: "Richtig. Eine selektive Sicht zeigt nur die Anforderungen, die bestimmte Kriterien erfüllen, hier Release und Status." },
+          { id: "B", text: "Projektive Sicht", rationale: "Eine projektive Sicht zeigt nur bestimmte Attribute oder Informationen der Anforderungen; hier bleiben alle Attribute sichtbar." },
+          { id: "C", text: "Aggregierende Sicht", rationale: "Eine aggregierende Sicht verdichtet Informationen, zum Beispiel die Anzahl der Anforderungen pro Status." },
+          { id: "D", text: "Basislinie", rationale: "Eine Basislinie ist eine stabile, änderungskontrollierte Konfiguration, keine Sicht." },
+        ],
+        answer: "A",
+        explanation:
+          "Sichten zeigen die Teile der Anforderungen, die ein bestimmter Leser braucht. Selektive Sichten filtern Anforderungen, projektive Sichten zeigen nur ausgewählte Attribute, und aggregierende Sichten fassen zusammen; die meisten Berichte kombinieren diese Arten.",
+        reference: SYLLABUS,
+      },
 
       /* ── Kapitel 7: Werkzeugunterstützung ─────────────────────────────── */
       {
@@ -446,6 +696,24 @@ export const irebCpreDe: DeContent = {
         answer: "A",
         explanation:
           "Bei der Einführung von RE-Werkzeugen solltest du an den Prozess denken, den das Werkzeug unterstützen soll, an die Gesamtkosten, an Schulungen, an eine schrittweise Einführung und an die Erprobung des Werkzeugs in der Praxis.",
+        reference: SYLLABUS,
+      },
+      {
+        id: "cpre-c7-tool-types",
+        domain: "d7",
+        objective: "Lehrplan 3.3.0, Abschnitt 7.1 Werkzeuge im Requirements Engineering (LZ 7.1.1)",
+        difficulty: "foundation",
+        question:
+          "Ein Team braucht ein Werkzeug, um Attribute, Versionen und Konfigurationen von Anforderungen, Verfolgbarkeitsbeziehungen und Änderungsanträge zu verwalten. Welche Art von RE-Werkzeug deckt diese Aufgaben ab?",
+        options: [
+          { id: "A", text: "Ein Werkzeug zur Steuerung des RE-Prozesses, etwa zum Messen und Berichten der Prozessqualität", rationale: "Werkzeuge für das Management des RE-Prozesses unterstützen Arbeitsabläufe und die Messung des Prozesses, nicht die Anforderungen selbst." },
+          { id: "B", text: "Ein Requirements-Management-Werkzeug", rationale: "Richtig. Requirements-Management-Werkzeuge unterstützen Attribute, Priorisierung, Versionen und Konfigurationen, Verfolgbarkeit und Änderungsmanagement." },
+          { id: "C", text: "Ein Framework für Testautomatisierung", rationale: "Testautomatisierung unterstützt das Testen, nicht die Verwaltung von Anforderungen." },
+          { id: "D", text: "Ein Werkzeug zur Dokumentation von Anforderungswissen, etwa ein Modellierungs- oder Kollaborationswerkzeug", rationale: "Diese Werkzeuge unterstützen das Dokumentieren von Anforderungen und das gemeinsame Verständnis, nicht die Verwaltung von Attributen, Versionen und Verfolgbarkeitsbeziehungen." },
+        ],
+        answer: "B",
+        explanation:
+          "Der Lehrplan unterscheidet Werkzeuge für das Management von Anforderungen, für das Management des RE-Prozesses und für die Dokumentation von Wissen über Anforderungen. Werkzeuge unterstützen die RE-Arbeit, ersetzen aber keinen definierten Prozess.",
         reference: SYLLABUS,
       },
     ],
