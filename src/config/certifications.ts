@@ -2947,12 +2947,15 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     },
   },
   "cism": {
+    outlineBadge: { en: "Updated for the 3 November 2026 exam content outline", de: "Aktualisiert für den Prüfungsplan vom 3. November 2026" },
+    lastReviewed: "2026-11-09",
     description:
-      "Practice exams for ISACA CISM: Certified Information Security Manager, covering the four job practice domains: governance, risk management, security program and incident management. ISACA's updated exam content outline applies to exams from 3 November 2026.",
+      "Practice exams for ISACA CISM: Certified Information Security Manager, reviewed against the exam content outline in effect since 3 November 2026: governance, risk management, security program and incident management, including the new enterprise and information security architecture areas.",
     fullName: "ISACA Certified Information Security Manager (CISM)",
     // Verified 2026-11-04 against isaca.org: CISM credential page, Get CISM certified page, CISM exam content outline page, and the ISACA press release of 10 September 2026 on the updated CISM exam content outline.
     // Status: the updated CISM exam has been available since 3 November 2026 (one day before this check). Domains unchanged, weights shifted to 18/20/33/29; ISACA adds content on enterprise architecture and information security architecture. The outline page now shows the new weights.
-    // DOUBT: the description does not claim the Udemy course was written to the 3 November 2026 outline; confirm the questions were reviewed against it before adding an outlineBadge or stronger wording.
+    // Course reviewed 2026-11-09: all 900 questions checked against the 3 November 2026 outline (weights per test 27/30/49/44, architecture areas covered), corrections published on Udemy.
+    // Subtopics read 2026-11-09 from the outline page (new outline now shown there).
     // UNVERIFIED and omitted: duration, passing score, exam languages and question types. They are in the ISACA Exam Candidate Guide PDF (version 1.26), which could not be fetched (robots disallowed / proxy blocked); support.isaca.org did not render.
     // Other official facts (no schema field): exam fee US$575 members, US$760 non-members; US$50 application processing fee; apply within 5 years of passing; 120 CPE hours per 3-year cycle, at least 20 per year.
     exam: {
@@ -2967,10 +2970,10 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       officialCertificationUrl: "https://www.isaca.org/credentialing/cism",
       officialExamUrl: "https://www.isaca.org/credentialing/cism/cism-exam-content-outline",
       domains: [
-        { id: "d1", name: "Information Security Governance", weight: "18%", objectives: ["Enterprise Governance", "Information Security Strategy"] },
-        { id: "d2", name: "Information Security Risk Management", weight: "20%", objectives: ["Information Security Risk Identification and Assessment", "Information Security Risk Response"] },
-        { id: "d3", name: "Information Security Program", weight: "33%", objectives: ["Information Security Program Development", "Information Security Program Management"] },
-        { id: "d4", name: "Incident Management", weight: "29%", objectives: ["Incident Management Readiness", "Incident Management Operations"] },
+        { id: "d1", name: "Information Security Governance", weight: "18%", objectives: ["Organizational Purpose and Culture", "Legal, Regulatory, and Contractual Requirements", "Organizational Structures, Roles, and Responsibilities", "Information Security Strategy Development", "Enterprise Architecture", "Information Governance Frameworks and Standards", "Strategic Planning (e.g., budgets, resources, business case)"] },
+        { id: "d2", name: "Information Security Risk Management", weight: "20%", objectives: ["Emerging Risk and Threat Landscape", "Vulnerability and Control Deficiency Analysis", "Risk Assessment and Analysis", "Risk Treatment/Risk Response Options", "Risk and Control Ownership", "Risk Monitoring and Reporting"] },
+        { id: "d3", name: "Information Security Program", weight: "33%", objectives: ["Information Security Architecture", "Information Security Program Resources (e.g., people, process, technologies)", "Information Security Industry Standards and Frameworks", "Information Security Policies, Standards, Procedures, and Guidelines", "Information Asset Identification and Classification", "Information Security Control Design and Selection", "Information Security Program Metrics Development", "Information Security Control Implementation and Integrations", "Information Security Control Testing and Evaluation", "Information Security Awareness and Training", "Management of External Services (e.g., suppliers, third parties, nth parties)", "Information Security Program Metrics, Communications, and Reporting"] },
+        { id: "d4", name: "Incident Management", weight: "29%", objectives: ["Incident Response Plan", "Business Impact Analysis (BIA)", "Business Continuity Plan (BCP)", "Disaster Recovery Plan (DRP)", "Incident Classification/Categorization", "Incident Management Training, Testing, and Evaluation", "Incident Management Tools and Techniques", "Incident Investigation and Evaluation", "Incident Containment Methods", "Incident Response Communications (e.g., reporting, notification, escalation)", "Incident Eradication and Recovery", "Post-incident Review Practices"] },
       ],
       sources: [
         { label: "ISACA: CISM certification", url: "https://www.isaca.org/credentialing/cism" },
@@ -2981,13 +2984,14 @@ export const certificationDetails: Record<string, CertificationDetails> = {
           url: "https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-updates-cism-exam-content-outline-factoring-in-todays-technologies-security-responsibilities",
         },
         { label: "ISACA: Exam candidate guides", url: "https://www.isaca.org/credentialing/exam-candidate-guides" },
+        { label: "ISACA Support: CISM Job Practice Update 2026", url: "https://support.isaca.org/s/article/Certification-CISM-Job-Practice-Update-2026" },
       ],
-      lastVerified: "2026-11-04",
+      lastVerified: "2026-11-09",
     },
     seo: {
       title: "ISACA CISM Practice Exams",
       description:
-        "CISM practice exams across the four ISACA domains: security governance, risk management, security program and incident management.",
+        "CISM practice exams for the 3 November 2026 outline: governance, risk, security program and incident management, incl. architecture.",
     },
   },
   "cisa": {
