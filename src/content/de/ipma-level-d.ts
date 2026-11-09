@@ -202,7 +202,7 @@ export const ipmaLevelDDe: DeContent = {
       },
     ],
     seo: {
-      title: "IPMA Level D Prüfungsvorbereitung 2026: ICB4 & Ablauf",
+      title: "IPMA Level D Prüfung 2026: Ablauf, ICB4 & Lernplan",
       description:
         "IPMA Level D Prüfungsvorbereitung: ICB4-Kompetenzbereiche, PM-ZERT-Pfade (Prüfungen oder Report), 23-Elemente-Regel, Rezertifizierung und Lernplan.",
     },
@@ -218,7 +218,7 @@ export const ipmaLevelDDe: DeContent = {
     published: "2026-10-28",
     updated: "2026-10-28",
     seo: {
-      title: "IPMA Level D Übungsfragen mit Lösungen (ICB4)",
+      title: "IPMA Level D Prüfungsfragen üben: mit Lösungen (ICB4)",
       description:
         "15 kostenlose IPMA Level D Übungsfragen zur ICB4 (Stakeholder, Risiken, Planung, Führung, Konflikte und Governance) jeweils mit ausführlicher Erklärung.",
     },

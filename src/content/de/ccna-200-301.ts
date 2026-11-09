@@ -205,9 +205,9 @@ export const ccna200301De: DeContent = {
       },
     ],
     seo: {
-      title: "CCNA 200-301 Prüfungsvorbereitung: v1.1 vs. v2.0 (2027)",
+      title: "CCNA 200-301 auf Deutsch: Prüfungsvorbereitung v1.1 & v2.0",
       description:
-        "CCNA 200-301 Leitfaden: v1.1 bis 2. Feb. 2027, v2.0 ab 3. Feb. 2027. Domänen und Gewichtung, Änderungen, 120-Minuten-Format und sechsstufiger Lernplan.",
+        "CCNA 200-301 Leitfaden auf Deutsch: v1.1 bis 2. Feb. 2027, v2.0 ab 3. Feb. 2027. Domänen, Änderungen, Prüfungsablauf, Lernplan und kostenlose Übungsfragen.",
     },
     published: "2026-10-28",
     updated: "2026-10-28",
@@ -220,7 +220,7 @@ export const ccna200301De: DeContent = {
     published: "2026-10-28",
     updated: "2026-10-28",
     seo: {
-      title: "CCNA 200-301 Übungsfragen mit Lösungen (v1.1 & v2.0)",
+      title: "CCNA 200-301 Prüfungsfragen üben: auf Deutsch mit Lösungen",
       description:
         "15 kostenlose, eigene CCNA-200-301-Übungsfragen zu Subnetting, IPv6, VLANs, STP, OSPF, NAT, ACLs und Layer-2-Sicherheit: passend für v1.1 und v2.0.",
     },
