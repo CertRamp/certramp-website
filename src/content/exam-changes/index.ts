@@ -1324,10 +1324,10 @@ export const examChanges: ExamChange[] = [
     "exam": "SY0-701",
     "examName": "CompTIA Security+",
     "change": "new-version",
-    "summary": "Security+ V8 (SY0-801) is expected to launch in November 2026; Security+ V7 (SY0-701) stays available until mid-2027.",
+    "summary": "Security+ V8 (SY0-801) launches on 17 November 2026; Security+ V7 (SY0-701) stays available until mid-2027.",
     "dates": [
       {
-        "label": "SY0-801 expected launch (\"on or around\"; English)",
+        "label": "SY0-801 launch (English)",
         "date": "2026-11-17"
       },
       {
@@ -1345,17 +1345,17 @@ export const examChanges: ExamChange[] = [
       "comptia-security-plus-sy0-701",
       "comptia-security-plus-sy0-801"
     ],
-    "candidateAdvice": "SY0-701 stays bookable in English until 11 June 2027; SY0-801 is expected to launch on or around 17 November 2026 (English only).",
+    "candidateAdvice": "SY0-701 stays bookable in English until 11 June 2027; SY0-801 launches on 17 November 2026 (English only).",
     "source": {
       "label": "CompTIA: Security+ V8 (SY0-801) exam details",
       "url": "https://www.comptia.org/en-us/certifications/security/v8/"
     },
-    "verified": "2026-10-28",
+    "verified": "2026-11-09",
     "de": {
-      "summary": "Security+ V8 (SY0-801) soll voraussichtlich im November 2026 erscheinen; Security+ V7 (SY0-701) bleibt bis Mitte 2027 verfügbar.",
-      "candidateAdvice": "SY0-701 bleibt auf Englisch bis zum 11. Juni 2027 buchbar; SY0-801 erscheint voraussichtlich am oder um den 17. November 2026 (nur Englisch).",
+      "summary": "Security+ V8 (SY0-801) startet am 17. November 2026; Security+ V7 (SY0-701) bleibt bis Mitte 2027 verfügbar.",
+      "candidateAdvice": "SY0-701 bleibt auf Englisch bis zum 11. Juni 2027 buchbar; SY0-801 startet am 17. November 2026 (nur Englisch).",
       "dateLabels": [
-        "Voraussichtlicher Start von SY0-801 („on or around“; Englisch)",
+        "Start von SY0-801 (Englisch)",
         "SY0-701 läuft aus (Englisch)",
         "SY0-701 läuft aus (Japanisch, Portugiesisch, Spanisch und Thai)"
       ]
@@ -1549,24 +1549,26 @@ export const examChanges: ExamChange[] = [
     "summary": "HashiCorp is launching a new 90-minute multiple-choice Terraform Infrastructure Engineer Professional exam that tests Terraform 1.15.",
     "dates": [
       {
-        "label": "Launch at IBM TechXchange 2026, Atlanta (month only; online registration \"opens soon\")",
+        "label": "Launch at IBM TechXchange 2026, Atlanta (month only); online registration now open",
         "date": "2026-10"
       }
     ],
     "successor": null,
     "successorName": null,
-    "certramp": [],
-    "candidateAdvice": "Online registration has not opened yet; HashiCorp strongly recommends the Terraform Associate certification first.",
+    "certramp": [
+      "terraform-professional-002"
+    ],
+    "candidateAdvice": "Registration is now open; HashiCorp strongly recommends the Terraform Associate certification first.",
     "source": {
       "label": "HashiCorp: Terraform Infrastructure Engineer Professional certification",
       "url": "https://developer.hashicorp.com/certifications/terraform-infrastructure-engineer-professional"
     },
-    "verified": "2026-10-28",
+    "verified": "2026-11-09",
     "de": {
       "summary": "HashiCorp führt die neue 90-minütige Multiple-Choice-Prüfung Terraform Infrastructure Engineer Professional ein, die Terraform 1.15 abprüft.",
-      "candidateAdvice": "Die Online-Anmeldung ist noch nicht geöffnet; HashiCorp empfiehlt dringend, zuerst die Zertifizierung Terraform Associate zu erwerben.",
+      "candidateAdvice": "Die Anmeldung ist jetzt geöffnet; HashiCorp empfiehlt dringend, zuerst die Zertifizierung Terraform Associate zu erwerben.",
       "dateLabels": [
-        "Start auf der IBM TechXchange 2026 in Atlanta (nur Monat; Online-Anmeldung öffnet „soon“)"
+        "Start auf der IBM TechXchange 2026 in Atlanta (nur Monat); Online-Anmeldung jetzt geöffnet"
       ]
     }
   },
@@ -1714,39 +1716,34 @@ export const examChanges: ExamChange[] = [
     "exam": "COBIT 2019 Foundation",
     "examName": "COBIT 2019 Foundations Certificate",
     "change": "replaced",
-    "summary": "ISACA replaces the COBIT 2019 Foundations Certificate with the COBIT 7 Foundations Certificate and sunsets the COBIT 2019 programme.",
+    "summary": "ISACA replaces the COBIT 2019 Foundations Certificate with the COBIT 7 Foundation Certificate on 19 November 2026; the COBIT 2019 exam stays on sale until 30 June 2027.",
     "dates": [
       {
+        "label": "COBIT 7 Foundation Certificate replaces COBIT 2019 Foundations",
+        "date": "2026-11-19"
+      },
+      {
         "label": "Last day to purchase the COBIT 2019 Foundation exam or exam prep",
-        "date": "2026-10-26"
-      },
-      {
-        "label": "COBIT 7 Foundations Certificate replaces COBIT 2019 Foundations",
-        "date": "2026-10-27"
-      },
-      {
-        "label": "COBIT 2019 Foundations Certificate program sunset",
-        "date": "2027-04-26"
+        "date": "2027-06-30"
       }
     ],
     "successor": "COBIT 7 Foundation",
-    "successorName": "COBIT 7 Foundations Certificate",
+    "successorName": "COBIT 7 Foundation Certificate",
     "certramp": [
       "cobit-2019-foundation"
     ],
-    "candidateAdvice": "The COBIT 2019 Foundation exam can no longer be purchased (last day 26 October 2026); ISACA's notice does not say what happens to exams bought before then, so new candidates should prepare for COBIT 7 Foundations.",
+    "candidateAdvice": "You can still buy the COBIT 2019 Foundation exam until 30 June 2027; if you are starting from scratch, check whether COBIT 7 Foundation suits you better.",
     "source": {
       "label": "ISACA: COBIT Foundation certificate page (notice)",
       "url": "https://www.isaca.org/credentialing/cobit-foundation"
     },
-    "verified": "2026-10-28",
+    "verified": "2026-11-09",
     "de": {
-      "summary": "ISACA ersetzt das COBIT 2019 Foundations Certificate durch das COBIT 7 Foundations Certificate und stellt das COBIT-2019-Programm ein.",
-      "candidateAdvice": "Die Prüfung COBIT 2019 Foundation kann nicht mehr gekauft werden (letzter Tag: 26. Oktober 2026); ISACAs Mitteilung sagt nicht, was mit vorher gekauften Prüfungen geschieht, daher sollten sich neue Kandidaten auf COBIT 7 Foundations vorbereiten.",
+      "summary": "ISACA ersetzt das COBIT 2019 Foundations Certificate am 19. November 2026 durch das COBIT 7 Foundation Certificate; die COBIT-2019-Prüfung bleibt bis zum 30. Juni 2027 erhältlich.",
+      "candidateAdvice": "Du kannst die Prüfung COBIT 2019 Foundation noch bis zum 30. Juni 2027 kaufen; wenn du gerade erst anfängst, prüf, ob COBIT 7 Foundation für dich besser passt.",
       "dateLabels": [
-        "Letzter Tag für den Kauf der Prüfung oder Prüfungsvorbereitung zu COBIT 2019 Foundation",
-        "COBIT 7 Foundations Certificate ersetzt COBIT 2019 Foundations",
-        "Programm COBIT 2019 Foundations Certificate wird eingestellt"
+        "COBIT 7 Foundation Certificate ersetzt COBIT 2019 Foundations",
+        "Letzter Tag für den Kauf der Prüfung oder Prüfungsvorbereitung zu COBIT 2019 Foundation"
       ]
     }
   },
@@ -1791,27 +1788,27 @@ export const examChanges: ExamChange[] = [
     "exam": "CIPP/AU",
     "examName": "Certified Information Privacy Professional/Australia",
     "change": "new-exam",
-    "summary": "IAPP launches the new CIPP/AU certification on Australian privacy regulation, first offered as an in-person exam at the IAPP ANZ Summit, with online purchase planned for early 2027.",
+    "summary": "IAPP launches the new CIPP/AU certification on Australian privacy regulation, first offered as an in-person, paper-based exam at the IAPP ANZ Summit.",
     "dates": [
       {
-        "label": "In-person CIPP/AU exam sitting at IAPP ANZ Summit 2026, Sydney (18:00–21:00 AEDT); online purchase stated as \"early in 2027\" with no exact date",
+        "label": "In-person, paper-based CIPP/AU exam sitting at IAPP ANZ Summit 2026, Sydney (18:00 to 21:00 AEDT)",
         "date": "2026-12-04"
       }
     ],
     "successor": null,
     "successorName": null,
     "certramp": [],
-    "candidateAdvice": "Until IAPP opens online purchase in early 2027, the only way to take CIPP/AU is the in-person sitting at the IAPP ANZ Summit in Sydney.",
+    "candidateAdvice": "The first way to take CIPP/AU is the in-person sitting at the IAPP ANZ Summit in Sydney; IAPP has not yet published a date for online booking.",
     "source": {
       "label": "IAPP ANZ Summit 2026: CIPP/AU certification exam (agenda)",
       "url": "https://www.iapp.org/conference/iapp-anz-summit/agenda/cipp-au-certification-exam"
     },
-    "verified": "2026-10-28",
+    "verified": "2026-11-09",
     "de": {
-      "summary": "IAPP führt die neue Zertifizierung CIPP/AU zum australischen Datenschutzrecht ein; sie wird zunächst als Präsenzprüfung auf dem IAPP ANZ Summit angeboten, der Online-Kauf ist für Anfang 2027 geplant.",
-      "candidateAdvice": "Bis IAPP Anfang 2027 den Online-Kauf freischaltet, kann CIPP/AU nur beim Präsenztermin auf dem IAPP ANZ Summit in Sydney abgelegt werden.",
+      "summary": "IAPP führt die neue Zertifizierung CIPP/AU zum australischen Datenschutzrecht ein; sie wird zunächst als Präsenzprüfung auf Papier beim IAPP ANZ Summit angeboten.",
+      "candidateAdvice": "Ablegen kannst du CIPP/AU zunächst beim Präsenztermin auf dem IAPP ANZ Summit in Sydney; einen Termin für die Online-Buchung hat IAPP noch nicht veröffentlicht.",
       "dateLabels": [
-        "Präsenzprüfung CIPP/AU auf dem IAPP ANZ Summit 2026, Sydney (18:00–21:00 Uhr AEDT); Online-Kauf laut Angabe „early in 2027“ ohne genaues Datum"
+        "Präsenzprüfung CIPP/AU auf Papier beim IAPP ANZ Summit 2026, Sydney (18:00 bis 21:00 Uhr AEDT)"
       ]
     }
   },
@@ -1975,13 +1972,15 @@ export const examChanges: ExamChange[] = [
     ],
     "successor": null,
     "successorName": null,
-    "certramp": [],
+    "certramp": [
+      "pmp"
+    ],
     "candidateAdvice": "All PMP candidates now take the updated exam; live prep classes taken from 1 December 2026 count toward the 35 hours only if delivered by a PMI Authorized Training Partner, a China REP or an eligible accredited higher-education program.",
     "source": {
-      "label": "PMI: PMP certification page",
-      "url": "https://www.pmi.org/certifications/project-management-pmp"
+      "label": "PMI blog: PMP 35-hour training requirement (25 September 2026)",
+      "url": "https://www.pmi.org/blog/pmp-35-hour-training-requirement"
     },
-    "verified": "2026-10-28",
+    "verified": "2026-11-09",
     "de": {
       "summary": "PMI hat eine aktualisierte PMP-Prüfung mit neu gewichteten Domänen eingeführt (People 33 %, Process 41 %, Business Environment 26 %); ab dem 1. Dezember 2026 zählen Live-Schulungen nur noch, wenn sie von zugelassenen Anbietern durchgeführt werden.",
       "candidateAdvice": "Alle PMP-Kandidaten legen jetzt die aktualisierte Prüfung ab; Live-Vorbereitungskurse ab dem 1. Dezember 2026 werden nur dann auf die 35 Stunden angerechnet, wenn sie von einem PMI Authorized Training Partner, einem China REP oder einem berechtigten akkreditierten Hochschulprogramm durchgeführt werden.",
@@ -2128,6 +2127,472 @@ export const examChanges: ExamChange[] = [
       "candidateAdvice": "Wer CLF-C02 auf Deutsch ablegen möchte, sollte die Prüfung spätestens für den 31. Dezember 2026 buchen. Danach geht es nur noch auf Englisch oder in einer anderen angebotenen Sprache.",
       "dateLabels": [
         "Deutsche und italienische Prüfung eingestellt nach dem"
+      ]
+    }
+  },
+  {
+    "id": "microsoft-az-140",
+    "vendor": "Microsoft",
+    "exam": "AZ-140",
+    "examName": "Configuring and Operating Microsoft Azure Virtual Desktop",
+    "change": "outline-update",
+    "summary": "AZ-140 skills outline updated: minor changes to identity integration, security, FSLogix, user experience and session host app objectives.",
+    "dates": [
+      {
+        "label": "Skills measured as of (English exam; other languages approx. eight weeks later)",
+        "date": "2026-07-20"
+      }
+    ],
+    "successor": null,
+    "successorName": null,
+    "certramp": [
+      "az-140"
+    ],
+    "candidateAdvice": "Study the 'skills measured as of' version in the official study guide; localized versions are updated about eight weeks after the English exam.",
+    "source": {
+      "label": "Microsoft Learn: AZ-140 study guide (change log)",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140"
+    },
+    "verified": "2026-11-09",
+    "de": {
+      "summary": "Prüfungsinhalte von AZ-140 aktualisiert: geringfügige Änderungen an den Lernzielen zu Identitätsintegration, Sicherheit, FSLogix, Benutzererfahrung und Apps auf Sitzungshosts.",
+      "candidateAdvice": "Lerne anhand der Version „Skills measured as of“ im offiziellen Studienleitfaden; lokalisierte Versionen werden etwa acht Wochen nach der englischen Prüfung aktualisiert.",
+      "dateLabels": [
+        "Skills measured as of (englische Prüfung; andere Sprachen ca. acht Wochen später)"
+      ]
+    }
+  },
+  {
+    "id": "microsoft-ab-650",
+    "vendor": "Microsoft",
+    "exam": "AB-650",
+    "examName": "Administering Microsoft 365 and AI Services (Microsoft 365 and AI Services Administrator Associate)",
+    "change": "new-exam",
+    "summary": "Microsoft launched AB-650 for the new Microsoft 365 and AI Services Administrator Associate certification and uses it in its partner program to address the MS-102 retirement.",
+    "dates": [
+      {
+        "label": "AB-650 launched (per Microsoft Partner Center)",
+        "date": "2026-10-30"
+      },
+      {
+        "label": "MS-102 retires (11:59 PM Central Standard Time)",
+        "date": "2026-11-30"
+      }
+    ],
+    "successor": null,
+    "successorName": null,
+    "certramp": [
+      "ab-650"
+    ],
+    "candidateAdvice": "AB-650 can be booked now in English only; no practice assessment is available yet, and Microsoft Learn does not formally name it as the MS-102 successor.",
+    "source": {
+      "label": "Microsoft Partner Center: October 2026 announcements (AB-650 skilling update)",
+      "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october"
+    },
+    "verified": "2026-11-09",
+    "de": {
+      "summary": "Microsoft hat AB-650 für die neue Zertifizierung Microsoft 365 and AI Services Administrator Associate eingeführt und nutzt sie im Partnerprogramm als Antwort auf die Einstellung von MS-102.",
+      "candidateAdvice": "AB-650 kann jetzt gebucht werden, allerdings nur auf Englisch; ein Practice Assessment gibt es noch nicht, und Microsoft Learn nennt sie nicht offiziell als Nachfolger von MS-102.",
+      "dateLabels": [
+        "AB-650 eingeführt (laut Microsoft Partner Center)",
+        "MS-102 wird eingestellt (23:59 Uhr Central Standard Time (CST))"
+      ]
+    }
+  },
+  {
+    "id": "aws-soa-c03-languages",
+    "vendor": "AWS",
+    "exam": "SOA-C03",
+    "examName": "AWS Certified CloudOps Engineer - Associate",
+    "change": "retiring",
+    "summary": "AWS retires the Simplified Chinese and Korean versions of the CloudOps Engineer Associate exam after 19 November 2026; the exam itself stays current in English and other languages.",
+    "dates": [
+      {
+        "label": "Simplified Chinese and Korean exam retire after",
+        "date": "2026-11-19"
+      }
+    ],
+    "successor": null,
+    "successorName": null,
+    "certramp": [
+      "aws-soa-c03"
+    ],
+    "candidateAdvice": "If you planned to take SOA-C03 in Simplified Chinese or Korean, book it by 19 November 2026; otherwise choose another available language such as English.",
+    "source": {
+      "label": "AWS Certification: AWS Certified CloudOps Engineer - Associate",
+      "url": "https://aws.amazon.com/certification/certified-cloudops-engineer-associate/"
+    },
+    "verified": "2026-11-09",
+    "de": {
+      "summary": "AWS stellt die vereinfacht-chinesische und die koreanische Version der Prüfung CloudOps Engineer Associate nach dem 19. November 2026 ein; die Prüfung selbst bleibt auf Englisch und in anderen Sprachen aktuell.",
+      "candidateAdvice": "Wenn du SOA-C03 auf vereinfachtem Chinesisch oder Koreanisch ablegen wolltest, buche sie bis zum 19. November 2026; ansonsten wähle eine andere verfügbare Sprache wie Englisch.",
+      "dateLabels": [
+        "Vereinfacht-chinesische und koreanische Prüfung eingestellt nach"
+      ]
+    }
+  },
+  {
+    "id": "aws-saa-c03-italian",
+    "vendor": "AWS",
+    "exam": "SAA-C03",
+    "examName": "AWS Certified Solutions Architect - Associate",
+    "change": "retiring",
+    "summary": "AWS retires the Italian-language version of the Solutions Architect Associate exam after 31 December 2026; the exam itself stays current in English and other languages.",
+    "dates": [
+      {
+        "label": "Italian exam retires after",
+        "date": "2026-12-31"
+      }
+    ],
+    "successor": null,
+    "successorName": null,
+    "certramp": [
+      "aws-saa-c03"
+    ],
+    "candidateAdvice": "Nothing changes for the exam content; only candidates who want to sit SAA-C03 in Italian need to do so by 31 December 2026.",
+    "source": {
+      "label": "AWS Certification: AWS Certified Solutions Architect - Associate",
+      "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/"
+    },
+    "verified": "2026-11-09",
+    "de": {
+      "summary": "AWS stellt die italienische Version der Prüfung Solutions Architect Associate nach dem 31. Dezember 2026 ein; die Prüfung selbst bleibt auf Englisch und in anderen Sprachen aktuell.",
+      "candidateAdvice": "An den Prüfungsinhalten ändert sich nichts; nur wer SAA-C03 auf Italienisch ablegen möchte, muss das bis zum 31. Dezember 2026 tun.",
+      "dateLabels": [
+        "Italienische Prüfung eingestellt nach"
+      ]
+    }
+  },
+  {
+    "id": "aws-dop-c02-korean",
+    "vendor": "AWS",
+    "exam": "DOP-C02",
+    "examName": "AWS Certified DevOps Engineer - Professional",
+    "change": "retiring",
+    "summary": "AWS retires the Korean-language version of the DevOps Engineer Professional exam after 31 December 2026; the exam itself stays current in English and other languages.",
+    "dates": [
+      {
+        "label": "Korean exam retires after",
+        "date": "2026-12-31"
+      }
+    ],
+    "successor": null,
+    "successorName": null,
+    "certramp": [
+      "aws-dop-c02"
+    ],
+    "candidateAdvice": "Nothing changes for the exam content; only candidates who want to sit DOP-C02 in Korean need to do so by 31 December 2026.",
+    "source": {
+      "label": "AWS Certification: AWS Certified DevOps Engineer - Professional",
+      "url": "https://aws.amazon.com/certification/certified-devops-engineer-professional/"
+    },
+    "verified": "2026-11-09",
+    "de": {
+      "summary": "AWS stellt die koreanische Version der Prüfung DevOps Engineer Professional nach dem 31. Dezember 2026 ein; die Prüfung selbst bleibt auf Englisch und in anderen Sprachen aktuell.",
+      "candidateAdvice": "An den Prüfungsinhalten ändert sich nichts; nur wer DOP-C02 auf Koreanisch ablegen möchte, muss das bis zum 31. Dezember 2026 tun.",
+      "dateLabels": [
+        "Koreanische Prüfung eingestellt nach"
+      ]
+    }
+  },
+  {
+    "id": "aws-aip-c01",
+    "vendor": "AWS",
+    "exam": "AIP-C01",
+    "examName": "AWS Certified Generative AI Developer - Professional",
+    "change": "new-exam",
+    "summary": "The new Generative AI Developer Professional exam left beta and is now offered as a standard exam, refreshed to cover AWS service changes such as Amazon Bedrock AgentCore.",
+    "dates": [
+      {
+        "label": "Last day to take the beta exam; standard exam registration open (per AWS blog of 24 March 2026)",
+        "date": "2026-03-31"
+      }
+    ],
+    "successor": null,
+    "successorName": null,
+    "certramp": [
+      "aws-aip-c01"
+    ],
+    "candidateAdvice": "Study for the standard AIP-C01 exam and make sure your material covers Amazon Bedrock AgentCore.",
+    "source": {
+      "label": "AWS Training and Certification Blog: Certification updates, March 2026",
+      "url": "https://aws.amazon.com/blogs/training-and-certification/march-2026-new-offerings"
+    },
+    "verified": "2026-11-09",
+    "de": {
+      "summary": "Die neue Prüfung Generative AI Developer Professional hat die Betaphase verlassen und wird jetzt als reguläre Prüfung angeboten, aktualisiert um AWS-Serviceänderungen wie Amazon Bedrock AgentCore.",
+      "candidateAdvice": "Bereite dich auf die reguläre AIP-C01-Prüfung vor und achte darauf, dass dein Lernmaterial Amazon Bedrock AgentCore abdeckt.",
+      "dateLabels": [
+        "Letzter Tag der Betaprüfung; Anmeldung zur regulären Prüfung geöffnet (laut AWS-Blog vom 24. März 2026)"
+      ]
+    }
+  },
+  {
+    "id": "comptia-cy0-001",
+    "vendor": "CompTIA",
+    "exam": "CY0-001",
+    "examName": "CompTIA SecAI+",
+    "change": "new-exam",
+    "summary": "CompTIA launched SecAI+ (CY0-001), a new certification on securing AI systems, in English.",
+    "dates": [
+      {
+        "label": "CY0-001 launch",
+        "date": "2026-02-17"
+      }
+    ],
+    "successor": null,
+    "successorName": null,
+    "certramp": [
+      "comptia-secai-plus-cy0-001"
+    ],
+    "candidateAdvice": "SecAI+ V1 is the only version, offered in English only; CompTIA expects it to retire about three years after launch.",
+    "source": {
+      "label": "CompTIA: SecAI+ certification",
+      "url": "https://www.comptia.org/en-us/certifications/secai/"
+    },
+    "verified": "2026-11-09",
+    "de": {
+      "summary": "CompTIA hat SecAI+ (CY0-001) eingeführt, eine neue Zertifizierung zur Absicherung von KI-Systemen, auf Englisch.",
+      "candidateAdvice": "SecAI+ V1 ist die einzige Version und wird nur auf Englisch angeboten; CompTIA rechnet mit einer Einstellung etwa drei Jahre nach dem Start.",
+      "dateLabels": [
+        "Start von CY0-001"
+      ]
+    }
+  },
+  {
+    "id": "anthropic-ccao-f-ccdv-f",
+    "vendor": "Anthropic",
+    "exam": "CCAO-F, CCDV-F",
+    "examName": "Claude Certified Associate: Foundations / Claude Certified Developer: Foundations",
+    "change": "new-exam",
+    "summary": "Anthropic added three role-based certifications (Claude Certified Associate: Foundations, Claude Certified Developer: Foundations and Claude Certified Architect: Professional) alongside the existing Architect: Foundations exam.",
+    "dates": [
+      {
+        "label": "New certifications announced",
+        "date": "2026-07-23"
+      }
+    ],
+    "successor": null,
+    "successorName": null,
+    "certramp": [
+      "claude-certified-associate-ccao-f",
+      "claude-certified-developer-ccdv-f"
+    ],
+    "candidateAdvice": "The exams are open to Claude Partner Network members and delivered as proctored exams by Pearson; start with a Foundations exam, as each path leads up to the Professional level.",
+    "source": {
+      "label": "Claude: Four role-based certifications for the people who put Claude to work for customers (23 July 2026)",
+      "url": "https://claude.com/resources/articles/four-role-based-claude-certifications"
+    },
+    "verified": "2026-11-09",
+    "de": {
+      "summary": "Anthropic hat neben der bestehenden Prüfung Architect: Foundations drei rollenbasierte Zertifizierungen eingeführt: Claude Certified Associate: Foundations, Claude Certified Developer: Foundations und Claude Certified Architect: Professional.",
+      "candidateAdvice": "Die Prüfungen stehen Mitgliedern des Claude Partner Network offen und werden von Pearson beaufsichtigt durchgeführt; beginne mit einer Foundations-Prüfung, da jeder Pfad zur Professional-Stufe führt.",
+      "dateLabels": [
+        "Neue Zertifizierungen angekündigt"
+      ]
+    }
+  },
+  {
+    "id": "iapp-aigp",
+    "vendor": "IAPP",
+    "exam": "AIGP",
+    "examName": "Artificial Intelligence Governance Professional",
+    "change": "outline-update",
+    "summary": "IAPP's AIGP Body of Knowledge version 2.1 replaced version 2.0.1 for the exam, with four domains covering AI governance foundations, laws and frameworks, governing AI development and governing AI deployment and use.",
+    "dates": [
+      {
+        "label": "AIGP Body of Knowledge v2.1 effective",
+        "date": "2026-02-02"
+      }
+    ],
+    "successor": null,
+    "successorName": null,
+    "certramp": [
+      "iapp-aigp"
+    ],
+    "candidateAdvice": "The exam has been based on BoK v2.1 since 2 February 2026, so check that your study materials follow v2.1 and not v2.0.1.",
+    "source": {
+      "label": "IAPP: AIGP Body of Knowledge v2.1 (PDF)",
+      "url": "https://iapp.org/certify/body-of-knowledge-aigp"
+    },
+    "verified": "2026-11-09",
+    "de": {
+      "summary": "Der AIGP Body of Knowledge Version 2.1 hat Version 2.0.1 für die Prüfung abgelöst; die vier Domänen behandeln Grundlagen der KI-Governance, Gesetze und Rahmenwerke, die Steuerung der KI-Entwicklung sowie die Steuerung von KI-Einsatz und -Nutzung.",
+      "candidateAdvice": "Die Prüfung basiert seit dem 2. Februar 2026 auf BoK v2.1; prüfe also, ob deine Lernmaterialien v2.1 abdecken und nicht v2.0.1.",
+      "dateLabels": [
+        "AIGP Body of Knowledge v2.1 gültig"
+      ]
+    }
+  },
+  {
+    "id": "isaca-aair",
+    "vendor": "ISACA",
+    "exam": "AAIR",
+    "examName": "Advanced in AI Risk",
+    "change": "new-exam",
+    "summary": "ISACA launched the Advanced in AI Risk (AAIR) certification for holders of a qualifying risk, audit or security credential, covering AI enterprise governance, AI life cycle risk management and AI risk program management.",
+    "dates": [
+      {
+        "label": "ISACA announces the launch of AAIR (press release)",
+        "date": "2026-04-15"
+      }
+    ],
+    "successor": null,
+    "successorName": null,
+    "certramp": [
+      "isaca-aair"
+    ],
+    "candidateAdvice": "AAIR exam registration is open continuously, but you need a qualifying credential such as CRISC, CISA, CISM or CISSP to become certified, so check eligibility before you book.",
+    "source": {
+      "label": "ISACA press release: ISACA launches Advanced in AI Risk (AAIR) certification (15 April 2026)",
+      "url": "https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-launches-advanced-in-ai-risk-aair-certification-to-equip-it-risk-professionals"
+    },
+    "verified": "2026-11-09",
+    "de": {
+      "summary": "ISACA hat die Zertifizierung Advanced in AI Risk (AAIR) für Inhaber eines anerkannten Risiko-, Audit- oder Sicherheitszertifikats eingeführt; sie deckt KI-Governance im Unternehmen, Risikomanagement im KI-Lebenszyklus und KI-Risikoprogramme ab.",
+      "candidateAdvice": "Die Anmeldung zur AAIR-Prüfung ist jederzeit möglich, für die Zertifizierung brauchst du aber ein anerkanntes Zertifikat wie CRISC, CISA, CISM oder CISSP; prüfe deine Berechtigung also vor der Buchung.",
+      "dateLabels": [
+        "ISACA kündigt den Start von AAIR an (Pressemitteilung)"
+      ]
+    }
+  },
+  {
+    "id": "istqb-ct-genai-v1-1",
+    "vendor": "ISTQB",
+    "exam": "CT-GenAI v1.1",
+    "examName": "Certified Tester Testing with Generative AI v1.1",
+    "change": "outline-update",
+    "summary": "ISTQB released CT-GenAI syllabus v1.1, a minor update to v1.0 with corrections, terminology updates and added context on LLM-powered agents, without changing structure, learning objectives or scope.",
+    "dates": [
+      {
+        "label": "ISTQB announces CT-GenAI v1.1",
+        "date": "2026-04-27"
+      }
+    ],
+    "successor": null,
+    "successorName": null,
+    "certramp": [
+      "istqb-ct-genai"
+    ],
+    "candidateAdvice": "The learning objectives are unchanged, so v1.0 material still covers the exam, but read the v1.1 syllabus for the corrected terms and the new notes on LLM agents.",
+    "source": {
+      "label": "ISTQB: Minor update to CT-GenAI (27 April 2026)",
+      "url": "https://istqb.org/istqb-announces-minor-update-to-certified-tester-testing-with-generative-ai-ct-genai/"
+    },
+    "verified": "2026-11-09",
+    "de": {
+      "summary": "ISTQB hat den CT-GenAI-Lehrplan v1.1 veröffentlicht, ein kleines Update von v1.0 mit Korrekturen, aktualisierten Begriffen und zusätzlichem Kontext zu LLM-basierten Agenten, ohne Aufbau, Lernziele oder Umfang zu ändern.",
+      "candidateAdvice": "Die Lernziele bleiben gleich, Material zu v1.0 deckt die Prüfung also weiter ab; lies aber den Lehrplan v1.1 für die korrigierten Begriffe und die neuen Hinweise zu LLM-Agenten.",
+      "dateLabels": [
+        "ISTQB kündigt CT-GenAI v1.1 an"
+      ]
+    }
+  },
+  {
+    "id": "acfe-cfe",
+    "vendor": "ACFE",
+    "exam": "CFE",
+    "examName": "Certified Fraud Examiner",
+    "change": "new-version",
+    "summary": "The ACFE replaced the four-section CFE exam with a three-section exam (Fraud Schemes and Financial Crimes; Fraud Investigations and Legal Issues; Fraud Prevention and Deterrence), and the old version is retired.",
+    "dates": [
+      {
+        "label": "New three-section CFE exam launched",
+        "date": "2026-06-02"
+      }
+    ],
+    "successor": null,
+    "successorName": null,
+    "certramp": [
+      "cfe"
+    ],
+    "candidateAdvice": "All remaining sections must now be taken in the new format; sections you already passed carry over to the matching new section, and the ACFE advises against using study materials made for the old exam.",
+    "source": {
+      "label": "ACFE: 2026 CFE Exam Update",
+      "url": "https://www.acfe.com/cfe-credential/about-the-cfe-exam/2026-cfe-exam-update"
+    },
+    "verified": "2026-11-09",
+    "de": {
+      "summary": "Die ACFE hat die vierteilige CFE-Prüfung durch eine dreiteilige Prüfung ersetzt (Fraud Schemes and Financial Crimes; Fraud Investigations and Legal Issues; Fraud Prevention and Deterrence); die alte Version ist eingestellt.",
+      "candidateAdvice": "Alle noch offenen Teile legst du jetzt im neuen Format ab; bereits bestandene Teile werden auf den passenden neuen Teil angerechnet, und die ACFE rät von Lernmaterial für die alte Prüfung ab.",
+      "dateLabels": [
+        "Neue dreiteilige CFE-Prüfung gestartet"
+      ]
+    }
+  },
+  {
+    "id": "peoplecert-itsm-foundation-v4",
+    "vendor": "PeopleCert",
+    "exam": "ITSM Foundation (Version 4)",
+    "examName": "IT Service Management Foundation (Version 4)",
+    "change": "retiring",
+    "summary": "PeopleCert plans to sunset all version 4 IT service management modules, including the Foundation exam, and the Foundation Bridge (Version 5) upgrade exam on 31 December 2027, with the version 5 Foundation available alongside until then.",
+    "dates": [
+      {
+        "label": "Planned sunset of all version 4 modules (voucher validity dates still to be announced)",
+        "date": "2027-12-31"
+      },
+      {
+        "label": "Final retirement of the Foundation Bridge (Version 5) exam",
+        "date": "2027-12-31"
+      }
+    ],
+    "successor": "ITSM Foundation (Version 5)",
+    "successorName": "IT Service Management Foundation (Version 5)",
+    "certramp": [
+      "itsm-foundation-v4",
+      "itsm-foundation-v5",
+      "itsm-foundation-bridge-v5"
+    ],
+    "candidateAdvice": "Version 4 Foundation can still be taken until the planned 2027 sunset, but newcomers should consider the version 5 Foundation, and version 4 holders who want the Bridge exam need to pass it by 31 December 2027.",
+    "source": {
+      "label": "PeopleCert: certification FAQ",
+      "url": "https://www.peoplecert.org/help-and-support/faq-itil"
+    },
+    "verified": "2026-11-09",
+    "de": {
+      "summary": "PeopleCert plant, alle Module der Version 4 im IT-Service-Management, darunter die Foundation-Prüfung, sowie die Upgrade-Prüfung Foundation Bridge (Version 5) am 31. Dezember 2027 einzustellen; bis dahin ist die Foundation der Version 5 parallel verfügbar.",
+      "candidateAdvice": "Die Foundation der Version 4 kannst du bis zur geplanten Einstellung 2027 noch ablegen, als Neueinsteiger solltest du aber die Foundation der Version 5 in Betracht ziehen; wenn du Version 4 hast und die Bridge-Prüfung willst, musst du sie bis zum 31. Dezember 2027 bestehen.",
+      "dateLabels": [
+        "Geplante Einstellung aller Module der Version 4 (Gültigkeit der Voucher wird noch bekanntgegeben)",
+        "Endgültige Einstellung der Prüfung Foundation Bridge (Version 5)"
+      ]
+    }
+  },
+  {
+    "id": "peoplecert-agile-project-management-v1",
+    "vendor": "PeopleCert",
+    "exam": "Agile PM Foundation and Practitioner (Version 1)",
+    "examName": "Agile Project Management Foundation and Practitioner (Version 1)",
+    "change": "retiring",
+    "summary": "PeopleCert retires the Version 1 Foundation and Practitioner exams of its agile project management method; vouchers were sold until 30 June 2026 and the last exam day is 31 December 2026.",
+    "dates": [
+      {
+        "label": "Last day to buy a Version 1 voucher",
+        "date": "2026-06-30"
+      },
+      {
+        "label": "Last day to take a Version 1 exam",
+        "date": "2026-12-31"
+      }
+    ],
+    "successor": "Agile PM Foundation (Version 2)",
+    "successorName": "Agile Project Management Foundation (Version 2)",
+    "certramp": [
+      "agile-project-management-foundation-v2"
+    ],
+    "candidateAdvice": "Only candidates who already hold a Version 1 voucher can still sit that exam, and only until 31 December 2026; everyone else should prepare for Version 2.",
+    "source": {
+      "label": "PeopleCert: Certification Retirements Update",
+      "url": "https://www.peoplecert.org/news-and-announcements/2025/certification-retirements-update"
+    },
+    "verified": "2026-11-09",
+    "de": {
+      "summary": "PeopleCert stellt die Foundation- und Practitioner-Prüfungen der Version 1 seiner agilen Projektmanagement-Methode ein; Voucher wurden bis zum 30. Juni 2026 verkauft, letzter Prüfungstag ist der 31. Dezember 2026.",
+      "candidateAdvice": "Nur wer schon einen Voucher für Version 1 hat, kann diese Prüfung noch ablegen, und zwar nur bis zum 31. Dezember 2026; alle anderen bereiten sich auf Version 2 vor.",
+      "dateLabels": [
+        "Letzter Tag zum Kauf eines Vouchers für Version 1",
+        "Letzter Prüfungstag für Version 1"
       ]
     }
   }
