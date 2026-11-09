@@ -85,3 +85,11 @@ export function lastVerified(): string {
     .sort()
     .at(-1)!;
 }
+
+/** Changes that concern a catalogue slug: upcoming first, then those that took effect in the last 120 days. */
+export function getChangesForSlug(slug: string): ResolvedExamChange[] {
+  const cutoff = Date.now() - 120 * 24 * 3600 * 1000;
+  return [...getUpcomingChanges(), ...getRecentChanges().filter((c) => toTime(c.keyDate) >= cutoff)].filter((c) =>
+    c.certramp.includes(slug),
+  );
+}

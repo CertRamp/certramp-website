@@ -9,6 +9,7 @@ import {
   MobileStickyCta,
   QuestionMethodology,
 } from "@/components/certification/CertSections";
+import { ExamChangeNotice } from "@/components/certification/ExamChangeNotice";
 import { VendorDisclaimer } from "@/components/certification/VendorDisclaimer";
 import { StudyResources } from "@/components/content/StudyResources";
 import { CertificationCard } from "@/components/marketing/CertificationCard";
@@ -87,6 +88,7 @@ export default async function CertificationPage({ params }: { params: Promise<Pa
       )}
 
       <CertHero cert={cert} />
+      <ExamChangeNotice slug={cert.slug} />
 
       {/* Exam overview */}
       <Section labelledBy="overview-title">
