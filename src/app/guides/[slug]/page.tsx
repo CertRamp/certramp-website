@@ -98,6 +98,18 @@ export default async function GuidePage({ params }: { params: Promise<Params> })
                   </li>
                 ))}
               </ol>
+              {(cert.cta.simulator.href || cert.primaryCourse) && (
+                <div className="mt-8 rounded-[var(--radius-card)] border border-line bg-surface p-5">
+                  <p className="font-display font-semibold">Ready for exam conditions?</p>
+                  <p className="mt-2 text-sm leading-relaxed text-muted">
+                    Full-length, timed {cert.name} practice exams with an explanation for every option.
+                  </p>
+                  <div className="mt-4">
+                    <CertCta cert={cert} kind="simulator" size="md" location="guide-sidebar" label="Full practice exams" className="w-full" />
+                    {!cert.cta.simulator.href && <UdemyCta cert={cert} variant="primary" size="md" location="guide-sidebar" label="Full practice exams" className="w-full" />}
+                  </div>
+                </div>
+              )}
             </nav>
           </div>
 

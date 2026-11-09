@@ -6,6 +6,7 @@ import { guides, questionSets } from "@/content";
 import type { ExamDomain, ExamGuide, PracticeQuestionSet } from "@/config/types";
 import { getCertification, type ResolvedCertification } from "./certifications";
 
+export const guidesHubPath = "/guides";
 export const guidePath = (slug: string) => `/guides/${slug}`;
 export const questionsPath = (slug: string) => `/practice-questions/${slug}`;
 

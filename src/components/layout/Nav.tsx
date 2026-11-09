@@ -25,7 +25,7 @@ export function DesktopNav() {
               href={item.href}
               aria-current={active ? "page" : undefined}
               className={cn(
-                "rounded-full px-4 py-2 text-[0.9375rem] font-medium transition-colors",
+                "whitespace-nowrap rounded-full px-2.5 py-2 text-[0.9375rem] font-medium transition-colors xl:px-4",
                 active ? "bg-surface text-ink" : "text-muted hover:bg-surface hover:text-ink",
               )}
             >
