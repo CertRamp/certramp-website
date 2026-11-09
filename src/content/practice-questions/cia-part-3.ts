@@ -100,22 +100,22 @@ export const ciaPart3Questions: PracticeQuestionSet = {
       reference: STANDARDS,
     },
     {
-      id: "cia3-d1-charter",
+      id: "cia3-d1-external-provider",
       domain: "d1",
-      objective: "A.4 Recognize the chief audit executive's responsibilities for building relationships and communicating with senior management and the board about various matters",
-      difficulty: "foundation",
+      objective: "A.1 Describe methodologies for the planning, organizing, directing, and monitoring of internal audit operations",
+      difficulty: "intermediate",
       question:
-        "The chief audit executive has drafted an updated internal audit charter that reflects a broader internal audit mandate. Who should approve the charter?",
+        "A small internal audit function has signed a three-year contract with an external firm to perform all of its IT audit engagements. How should the chief audit executive manage this arrangement?",
       options: [
-        { id: "A", text: "The board, after the chief audit executive has discussed the draft with the board and senior management", rationale: "Correct. The chief audit executive develops and discusses the charter, and the board approves it, which confirms the mandate and the function's position in the organisation." },
-        { id: "B", text: "The chief executive alone, because the chief audit executive reports to her administratively", rationale: "Administrative reporting covers day-to-day matters; approval of the charter is a board responsibility." },
-        { id: "C", text: "The external auditor, because it relies on the work of internal audit each year", rationale: "The external auditor may be interested in the charter but has no role in approving it." },
-        { id: "D", text: "Nobody, because the chief audit executive owns the charter and only needs to sign it", rationale: "A charter without board approval lacks the authority the function needs to perform its mandate." },
+        { id: "A", text: "Keep responsibility for the work and oversee the firm's planning, fieldwork and reporting against the function's methodology", rationale: "Correct. Using an external provider does not transfer accountability; the chief audit executive directs and reviews the work so it meets the Standards and the function's methodology." },
+        { id: "B", text: "Transfer responsibility for the IT engagements to the firm, because the contract sets out its obligations", rationale: "A contract defines what the firm must deliver, but the chief audit executive stays accountable for all internal audit work." },
+        { id: "C", text: "Accept the firm's reports without review, because an external firm is independent of the organisation", rationale: "The firm's independence does not remove the need to review whether its work is sufficient and of acceptable quality." },
+        { id: "D", text: "Let senior management select and supervise the firm, because the contract is a procurement matter", rationale: "Management control over who performs internal audit work and how could impair the function's independence." },
       ],
       answer: "A",
       explanation:
-        "The internal audit charter documents the mandate, the organisational position and reporting relationships, and the scope of internal audit services. Standard 6.2 places drafting with the chief audit executive and approval with the board, and the charter should be reviewed when circumstances change.",
-      reference: STANDARDS,
+        "External providers can supply skills or capacity the function lacks, but their work remains internal audit work. The chief audit executive should agree the scope and expectations, supervise and review the work, evaluate the provider's performance and keep the board informed of the arrangement.",
+      reference: SYLLABUS,
     },
     {
       id: "cia3-d1-competencies",
