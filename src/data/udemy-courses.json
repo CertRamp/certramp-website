@@ -2599,5 +2599,22 @@
   "rating": null,
   "ratingCount": null,
   "ratingDate": null
+ },
+ {
+  "id": "159",
+  "title": "AB-730 Practice Tests 2026: New Outline, Agents & Cowork",
+  "certification": "Microsoft AB-730",
+  "slug": "ab-730",
+  "name": "AB-730",
+  "descriptor": "Microsoft AI Business Professional",
+  "provider": "Microsoft",
+  "category": "AI & Machine Learning",
+  "language": "English",
+  "questions": 360,
+  "udemyUrl": "https://www.udemy.com/course/ab-730-practice-tests-new-outline-agents-cowork/",
+  "referralUrl": "https://www.udemy.com/course/ab-730-practice-tests-new-outline-agents-cowork/?referralCode=809F24C39937B4A5B170",
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  }
 ]

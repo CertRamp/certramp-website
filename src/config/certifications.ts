@@ -4098,9 +4098,12 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     },
   },
   "ab-730": {
+    outlineBadge: { en: "Updated for the 20 October 2026 skills outline", de: "Aktualisiert für die Gliederung vom 20. Oktober 2026" },
+    lastReviewed: "2026-11-09",
     description:
-      "German-language practice exams for Microsoft AB-730: AI Business Professional: generative AI fundamentals, Microsoft 365 Copilot prompts, chats, content and meetings, and agents. Microsoft updated the English exam on 20 October 2026; localized versions follow about eight weeks later.",
+      "Practice exams for Microsoft AB-730: AI Business Professional, in English and German, reviewed against the skills measured as of 20 October 2026: generative AI fundamentals, Microsoft 365 Copilot prompts, chats and content, prebuilt agents and Copilot Cowork.",
     fullName: "Microsoft Certified: AI Business Professional",
+    // Courses reviewed 2026-11-09: English course (built for the 20 Oct 2026 outline) corrected; German course migrated to the 20 Oct 2026 outline (new Cowork and prebuilt-agent questions, removed custom-agent content). Both published on Udemy.
     // Verified 2026-11-04 against Microsoft Learn (AB-730 study guide, AI Business Professional certification page).
     // The study guide change log (skills measured as of 20 Oct 2026) removed "Create and manage Microsoft 365 Copilot agents" and added the new area "Drive business outcomes by using agents" (prebuilt agents, Copilot Cowork).
     // Localized exams (including German) are updated about eight weeks after the English version, per the study guide, so the German exam may still follow the pre-20 Oct 2026 outline until about mid-December 2026.
@@ -4127,11 +4130,11 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { label: "Microsoft Learn: AB-730 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-730" },
         { label: "Microsoft Learn: AI Business Professional certification", url: "https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional/" },
       ],
-      lastVerified: "2026-11-04",
+      lastVerified: "2026-11-09",
     },
     seo: {
-      title: "AB-730 Practice Exams (German): AI Business Professional",
-      description: "German-language AB-730 practice exams: generative AI basics, Microsoft 365 Copilot prompts, chats, business content, meetings and agents.",
+      title: "AB-730 Practice Exams: AI Business Professional (2026)",
+      description: "AB-730 practice exams in English and German for the 20 October 2026 outline: Copilot prompts, content, prebuilt agents and Cowork.",
     },
   },
   "ab-731": {
