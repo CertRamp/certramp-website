@@ -44,7 +44,7 @@ export const githubCopilotGh300Questions: PracticeQuestionSet = {
       "15 free, original GH-300 practice questions on responsible AI, Copilot CLI, agent and plan modes, code review, prompting, testing and content exclusions, each explained.",
   },
   questions: [
-    /* ── d1: Use GitHub Copilot responsibly (15–20%) ──────────────────────── */
+    /* ── d1: Use GitHub Copilot responsibly (15 to 20%) ──────────────────────── */
     {
       id: "gh300-d1-accountability-principle",
       domain: "d1",
@@ -100,7 +100,7 @@ export const githubCopilotGh300Questions: PracticeQuestionSet = {
       reference: CLI_ABOUT,
     },
 
-    /* ── d2: Use GitHub Copilot features (25–30%) ─────────────────────────── */
+    /* ── d2: Use GitHub Copilot features (25 to 30%) ─────────────────────────── */
     {
       id: "gh300-d2-cli-install",
       domain: "d2",
@@ -174,7 +174,7 @@ export const githubCopilotGh300Questions: PracticeQuestionSet = {
       reference: { label: "GitHub Docs: REST API endpoints for Copilot user management", url: "https://docs.github.com/en/rest/copilot/copilot-user-management" },
     },
 
-    /* ── d3: Understand GitHub Copilot data and architecture (10–15%) ─────── */
+    /* ── d3: Understand GitHub Copilot data and architecture (10 to 15%) ─────── */
     {
       id: "gh300-d3-proxy-filter",
       domain: "d3",
@@ -212,7 +212,7 @@ export const githubCopilotGh300Questions: PracticeQuestionSet = {
       reference: CODE_REFERENCING,
     },
 
-    /* ── d4: Apply prompt engineering and context crafting (10–15%) ───────── */
+    /* ── d4: Apply prompt engineering and context crafting (10 to 15%) ───────── */
     {
       id: "gh300-d4-context-open-tabs",
       domain: "d4",
@@ -250,7 +250,7 @@ export const githubCopilotGh300Questions: PracticeQuestionSet = {
       reference: PROMPT_ENGINEERING,
     },
 
-    /* ── d5: Improve developer productivity with GitHub Copilot (10–15%) ──── */
+    /* ── d5: Improve developer productivity with GitHub Copilot (10 to 15%) ──── */
     {
       id: "gh300-d5-edge-case-tests",
       domain: "d5",
@@ -288,7 +288,7 @@ export const githubCopilotGh300Questions: PracticeQuestionSet = {
       reference: UNIT_TESTS,
     },
 
-    /* ── d6: Configure privacy, content exclusions, and safeguards (10–15%) ─ */
+    /* ── d6: Configure privacy, content exclusions, and safeguards (10 to 15%) ─ */
     {
       id: "gh300-d6-exclusion-delay",
       domain: "d6",
