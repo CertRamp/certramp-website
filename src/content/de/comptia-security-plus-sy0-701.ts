@@ -214,13 +214,13 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
   questions: {
     slug: "comptia-security-plus-sy0-701",
     intro:
-      "15 eigene Übungsfragen zu CompTIA Security+ SY0-701 aus allen fünf Domänen der offiziellen Prüfungsziele (V7), ungefähr so gewichtet wie die echte Prüfung. Zu jeder Frage gibt es die Lösung, eine kurze Erklärung und die Begründung, warum jede andere Option falsch ist.",
+      "30 eigene Übungsfragen zu CompTIA Security+ SY0-701 aus allen fünf Domänen der offiziellen Prüfungsziele (V7), ungefähr so gewichtet wie die echte Prüfung. Zu jeder Frage gibt es die Lösung, eine kurze Erklärung und die Begründung, warum jede andere Option falsch ist.",
     published: "2026-10-28",
-    updated: "2026-10-28",
+    updated: "2026-11-11",
     seo: {
       title: "Security+ SY0-701 Übungsfragen mit Lösungen (2026)",
       description:
-        "15 kostenlose, eigene Übungsfragen zu Security+ SY0-701: Sicherheitskontrollen, Bedrohungen, Architektur, Betrieb und Governance (jeweils mit Erklärung).",
+        "30 kostenlose, eigene Übungsfragen zu Security+ SY0-701: Sicherheitskontrollen, Bedrohungen, Architektur, Betrieb und Governance (jeweils mit Erklärung).",
     },
     questions: [
       /* ── Domäne 1: General Security Concepts (12 %) ─────────────────────── */
@@ -258,6 +258,43 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
         answer: "D",
         explanation:
           "Tokenisierung entfernt den sensiblen Wert vollständig aus den Systemen der Anwendung, weil sich das Token mathematisch nicht zurückrechnen lässt. Nur der Token-Vault kann es wieder zuordnen: dadurch sinkt die Zahl der Systeme, die Kartendaten enthalten.",
+        reference: OBJECTIVES,
+      },
+
+      {
+        id: "secplus701-d1-zero-trust-pep",
+        domain: "d1",
+        objective: "1.2 Summarize fundamental security concepts.",
+        difficulty: "advanced",
+        question:
+          "Ein Unternehmen baut eine Zero-Trust-Architektur mit einer Control Plane und einer Data Plane auf. Fordert ein Benutzer eine interne Anwendung an, entscheidet eine Komponente, ob der Zugriff gewährt wird, und eine andere Komponente in der Data Plane lässt die Verbindung tatsächlich zu, überwacht sie und beendet sie. Um welche Komponente handelt es sich bei der zweiten?",
+        options: [
+          { id: "A", text: "Policy Engine", rationale: "Die Policy Engine trifft die Entscheidung über Gewähren oder Verweigern anhand von Richtlinien und Signalen. Sie gehört zur Control Plane und führt die Verbindung nicht selbst." },
+          { id: "B", text: "Policy Administrator", rationale: "Der Policy Administrator setzt die Entscheidung in Befehle um, die den Pfad öffnen oder schließen. Auch er ist eine Komponente der Control Plane, nicht der Punkt im Datenpfad." },
+          { id: "C", text: "Policy Enforcement Point", rationale: "Richtig. Der Policy Enforcement Point liegt in der Data Plane zwischen Subjekt und Ressource und baut die Sitzung gemäß den Anweisungen auf, überwacht sie und beendet sie." },
+          { id: "D", text: "Implizite Vertrauenszone (Implicit Trust Zone)", rationale: "Eine implizite Vertrauenszone ist der Bereich hinter dem Enforcement Point, in dem Entitäten vertraut wird. Sie ist eine Zone, keine Komponente, die Entscheidungen durchsetzt." },
+        ],
+        answer: "C",
+        explanation:
+          "Im Zero-Trust-Modell entscheidet die Policy Engine, der Policy Administrator gibt die Entscheidung weiter, und der Policy Enforcement Point setzt sie in der Data Plane um. Jede Anfrage läuft über den Enforcement Point, statt aufgrund ihres Netzwerkstandorts als vertrauenswürdig zu gelten.",
+        reference: OBJECTIVES,
+      },
+      {
+        id: "secplus701-d1-backout-plan",
+        domain: "d1",
+        objective: "1.3 Explain the importance of change management processes and the impact to security.",
+        difficulty: "foundation",
+        question:
+          "Ein Change Advisory Board prüft einen Antrag, die Firmware der zentralen Firewall im Wartungsfenster am Samstagabend zu aktualisieren. Vor der Genehmigung fragt das Board, wie das Team die Firewall in ihren vorherigen funktionierenden Zustand zurückversetzen wird, falls das Update einen Ausfall verursacht. Welcher Teil des Change-Antrags beantwortet diese Frage?",
+        options: [
+          { id: "A", text: "Auswirkungsanalyse (Impact Analysis)", rationale: "Die Auswirkungsanalyse bewertet, welche Systeme und Benutzer von der Änderung betroffen sein können und wie riskant sie ist. Sie legt nicht die Schritte für das Zurücksetzen fest." },
+          { id: "B", text: "Backout-Plan", rationale: "Richtig. Ein Backout-Plan dokumentiert, wie die Änderung zurückgenommen und der vorherige Zustand wiederhergestellt wird, wenn sie fehlschlägt." },
+          { id: "C", text: "Wartungsfenster (Maintenance Window)", rationale: "Das Wartungsfenster legt fest, wann die Änderung durchgeführt wird, nicht wie sie rückgängig gemacht wird." },
+          { id: "D", text: "Standardarbeitsanweisung (Standard Operating Procedure)", rationale: "Eine SOP beschreibt die routinemäßige Durchführung einer Aufgabe. Sie ist nicht der änderungsspezifische Plan, um ein fehlgeschlagenes Update zurückzusetzen." },
+        ],
+        answer: "B",
+        explanation:
+          "Die Prüfungsziele nennen Genehmigung, Auswirkungsanalyse, Testergebnisse, Backout-Plan, Wartungsfenster und SOPs als Bestandteile des Change Managements. Ein getesteter Backout-Plan hält die Ausfallzeit kurz, wenn eine Änderung schiefgeht.",
         reference: OBJECTIVES,
       },
 
@@ -317,6 +354,79 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
         reference: OBJECTIVES,
       },
 
+      {
+        id: "secplus701-d2-hacktivist",
+        domain: "d2",
+        objective: "2.1 Compare and contrast common threat actors and motivations.",
+        difficulty: "foundation",
+        question:
+          "Kurz nachdem ein Chemieunternehmen ein neues Pipelineprojekt angekündigt hat, wird seine öffentliche Website mit einer Botschaft verunstaltet, die die Umweltauswirkungen des Projekts kritisiert, und eine Gruppe bekennt sich in den sozialen Medien zu dem Angriff. Es wurden keine Daten gestohlen und kein Lösegeld gefordert. Welcher Bedrohungsakteur ist am wahrscheinlichsten verantwortlich?",
+        options: [
+          { id: "A", text: "Organisierte Kriminalität (Organized Crime)", rationale: "Organisierte Kriminalität ist auf finanziellen Gewinn aus. Ohne Lösegeld und ohne Datendiebstahl bringt dieser Angriff kein Geld ein." },
+          { id: "B", text: "Staatlicher Akteur (Nation-State)", rationale: "Staatliche Akteure verfügen über große Ressourcen und verfolgen meist unauffällig Spionage- oder strategische Ziele. Eine öffentliche Verunstaltung wegen eines Umweltthemas passt nicht dazu." },
+          { id: "C", text: "Insider-Bedrohung (Insider Threat)", rationale: "Nichts deutet auf einen Mitarbeitenden oder Auftragnehmer hin. Die Angreifer sind eine externe Gruppe, die sich öffentlich zu dem Angriff bekennt." },
+          { id: "D", text: "Hacktivist", rationale: "Richtig. Hacktivisten handeln aus weltanschaulichen oder politischen Überzeugungen, und eine Verunstaltung mit öffentlichem Bekenntnis ist eine typische Taktik." },
+        ],
+        answer: "D",
+        explanation:
+          "Die Motivation ist der Schlüssel zur Einordnung eines Bedrohungsakteurs: Finanzieller Gewinn deutet auf organisierte Kriminalität, Spionage auf staatliche Akteure und weltanschauliche oder politische Überzeugungen auf Hacktivisten. Das Verunstalten einer Website und die öffentliche Bekanntgabe dienen der Botschaft, nicht dem Profit.",
+        reference: OBJECTIVES,
+      },
+      {
+        id: "secplus701-d2-race-condition",
+        domain: "d2",
+        objective: "2.3 Explain various types of vulnerabilities.",
+        difficulty: "intermediate",
+        question:
+          "Ein Programm, das mit erhöhten Rechten läuft, prüft, ob eine temporäre Datei dem aufrufenden Benutzer gehört, und öffnet die Datei dann einige Millisekunden später, um in sie zu schreiben. In der Lücke zwischen Prüfung und Schreibvorgang ersetzt ein Angreifer die Datei durch einen Link auf eine Systemkonfigurationsdatei. Welche Art von Schwachstelle wird ausgenutzt?",
+        options: [
+          { id: "A", text: "Race Condition (Time-of-Check to Time-of-Use)", rationale: "Richtig. Der Zustand der Datei ändert sich zwischen dem Zeitpunkt der Prüfung und dem Zeitpunkt der Verwendung: das ist eine TOC/TOU-Race-Condition." },
+          { id: "B", text: "Pufferüberlauf (Buffer Overflow)", rationale: "Ein Pufferüberlauf schreibt Daten über die Grenzen des zugewiesenen Speichers hinaus. Das Problem ist hier das Timing, nicht die Speichergröße." },
+          { id: "C", text: "Speicherinjektion (Memory Injection)", rationale: "Bei einer Speicherinjektion wird bösartiger Code in den Speicher eines laufenden Prozesses eingebracht. Der Angreifer tauscht hier eine Datei auf dem Datenträger aus." },
+          { id: "D", text: "Directory Traversal", rationale: "Directory Traversal nutzt Zeichenfolgen wie ../ in Eingaben, um Dateien außerhalb des vorgesehenen Ordners zu erreichen. Der Angreifer manipuliert keinen Pfad in den Eingaben des Programms." },
+        ],
+        answer: "A",
+        explanation:
+          "Eine Time-of-Check-to-Time-of-Use-Schwachstelle entsteht immer dann, wenn ein Programm einer Prüfung vertraut, die beim eigentlichen Zugriff nicht mehr zutreffen muss. Abhilfe schafft es, Prüfung und Verwendung zu einer einzigen atomaren Operation zu machen, etwa indem die Datei einmal geöffnet und das geöffnete Handle geprüft wird.",
+        reference: OBJECTIVES,
+      },
+      {
+        id: "secplus701-d2-impossible-travel",
+        domain: "d2",
+        objective: "2.4 Given a scenario, analyze indicators of malicious activity.",
+        difficulty: "intermediate",
+        question:
+          "Ein SIEM zeigt, dass sich ein Benutzer um 08:55 Uhr aus Hamburg beim Firmen-VPN angemeldet und um 09:05 Uhr wieder abgemeldet hat. Um 09:30 Uhr meldete sich dasselbe Konto erfolgreich von einer IP-Adresse in São Paulo an. Der Benutzer gibt an, den ganzen Vormittag an seinem Arbeitsplatz in Hamburg gewesen zu sein. Welcher Indikator beschreibt diese Aktivität am besten?",
+        options: [
+          { id: "A", text: "Gleichzeitige Sitzungen (Concurrent Session Usage)", rationale: "Gleichzeitige Sitzungen bedeuten, dass das Konto zur selben Zeit in zwei Sitzungen aktiv ist. Die Hamburger Sitzung war bereits beendet." },
+          { id: "B", text: "Unmögliche Reise (Impossible Travel)", rationale: "Richtig. Niemand kann in 25 Minuten von Hamburg nach São Paulo reisen, daher nutzt die zweite Anmeldung sehr wahrscheinlich gestohlene Zugangsdaten." },
+          { id: "C", text: "Kontosperre (Account Lockout)", rationale: "Es wurde kein Konto gesperrt; beide Anmeldungen waren erfolgreich." },
+          { id: "D", text: "Protokollierung außerhalb des Zyklus (Out-of-Cycle Logging)", rationale: "Out-of-Cycle Logging bezeichnet Protokolleinträge, die zu ungewöhnlichen Zeiten oder außerhalb des normalen Ablaufs entstehen. Der Zeitpunkt der Protokollierung ist hier unauffällig." },
+        ],
+        answer: "B",
+        explanation:
+          "Impossible Travel vergleicht Orte und Zeitpunkte aufeinanderfolgender Anmeldungen und meldet Entfernungen, die in der Zeit dazwischen nicht zurückgelegt werden können. Die übliche Reaktion besteht darin, Sitzungen zu widerrufen, die Zugangsdaten zurückzusetzen und den MFA-Schutz des Kontos zu überprüfen.",
+        reference: OBJECTIVES,
+      },
+      {
+        id: "secplus701-d2-watering-hole",
+        domain: "d2",
+        objective: "2.2 Explain common threat vectors and attack surfaces.",
+        difficulty: "intermediate",
+        question:
+          "Angreifer wollen die Ingenieure eines kleinen Luftfahrtzulieferers kompromittieren, doch dessen E-Mail-Filterung ist stark. Stattdessen platzieren sie bösartigen Code in einem Branchenforum, das die Ingenieure regelmäßig besuchen, sodass er ausgeführt wird, wenn die Ingenieure die Website aufrufen. Um welche Technik handelt es sich?",
+        options: [
+          { id: "A", text: "Pretexting", rationale: "Pretexting nutzt ein erfundenes Szenario, um eine Person zu manipulieren, meist über direkten Kontakt. Hier wird niemand kontaktiert." },
+          { id: "B", text: "Business Email Compromise", rationale: "Business Email Compromise missbraucht kompromittierte oder imitierte E-Mail-Konten. Die Angreifer haben E-Mail bewusst gemieden." },
+          { id: "C", text: "Markenimitation (Brand Impersonation)", rationale: "Bei der Markenimitation wird eine bekannte Marke nachgeahmt. Das echte Forum wird kompromittiert, nicht nachgeahmt." },
+          { id: "D", text: "Watering Hole", rationale: "Richtig. Ein Watering-Hole-Angriff kompromittiert eine Website, der die Zielgruppe bereits vertraut und die sie besucht, und wartet darauf, dass die Opfer kommen." },
+        ],
+        answer: "D",
+        explanation:
+          "Watering-Hole-Angriffe umgehen E-Mail-Schutzmaßnahmen, indem sie das Vertrauen in eine legitime Website eines Dritten ausnutzen. Gepatchte Browser, Webfilterung und Browserisolation verringern das Risiko.",
+        reference: OBJECTIVES,
+      },
+
       /* ── Domäne 3: Security Architecture (18 %) ─────────────────────────── */
       {
         id: "secplus701-d3-warm-site",
@@ -370,6 +480,43 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
         answer: "C",
         explanation:
           "Datensouveränität beeinflusst das Design von Cloud- und Backup-Lösungen, denn Replikate in einer anderen Region könnten gegen die Vorschrift verstoßen. Geografische Beschränkungen und geolokationsbasierte Kontrollen sind die üblichen technischen Antworten.",
+        reference: OBJECTIVES,
+      },
+
+      {
+        id: "secplus701-d3-iaas-responsibility",
+        domain: "d3",
+        objective: "3.1 Compare and contrast security implications of different architecture models.",
+        difficulty: "foundation",
+        question:
+          "Ein Unternehmen betreibt seine Webanwendung auf virtuellen Maschinen, die es bei einem Infrastructure-as-a-Service-Anbieter (IaaS) mietet. Welche Aufgabe bleibt laut Cloud-Verantwortlichkeitsmatrix (Responsibility Matrix) in der Verantwortung des Unternehmens?",
+        options: [
+          { id: "A", text: "Patchen des Hypervisors", rationale: "Bei IaaS betreibt und patcht der Anbieter die Virtualisierungsschicht, auf der die virtuellen Maschinen der Kunden laufen." },
+          { id: "B", text: "Physische Sicherheit des Rechenzentrums", rationale: "Räumlichkeiten, Zutrittskontrolle und Umgebungsschutz liegen in jedem Cloud-Modell in der Verantwortung des Anbieters." },
+          { id: "C", text: "Patchen des Gastbetriebssystems", rationale: "Richtig. Bei IaaS verwaltet der Kunde alles ab dem Gastbetriebssystem aufwärts, einschließlich dessen Patches." },
+          { id: "D", text: "Austausch defekter Speicherhardware", rationale: "Der Anbieter besitzt und wartet die physische Hardware, einschließlich Festplatten und Speichersystemen." },
+        ],
+        answer: "C",
+        explanation:
+          "Die Verantwortlichkeitsmatrix zeigt, wo die Pflichten des Anbieters enden und die des Kunden beginnen. Bei IaaS deckt der Anbieter Räumlichkeiten, Hardware und Hypervisor ab, der Kunde Betriebssystem, Anwendungen, Daten und Konfiguration; bei PaaS und SaaS verschiebt sich die Grenze weiter nach oben.",
+        reference: OBJECTIVES,
+      },
+      {
+        id: "secplus701-d3-802-1x",
+        domain: "d3",
+        objective: "3.2 Given a scenario, apply security principles to secure enterprise infrastructure.",
+        difficulty: "intermediate",
+        question:
+          "Ein Unternehmen möchte, dass sich jedes Gerät, das in den Büros an eine Netzwerkdose angeschlossen wird, authentifiziert, bevor es überhaupt Netzwerkzugang erhält. Die Switches sollen die Anmeldedaten per EAP an einen zentralen RADIUS-Server weiterleiten und den Port gesperrt halten, bis die Authentifizierung erfolgreich ist. Was sollte das Unternehmen einführen?",
+        options: [
+          { id: "A", text: "Portbasierte Netzwerkzugangskontrolle mit IEEE 802.1X", rationale: "Richtig. 802.1X hält den Switch-Port geschlossen, bis sich das Gerät per EAP bei einem Authentifizierungsserver wie RADIUS authentifiziert hat." },
+          { id: "B", text: "MAC-Adressfilterung auf den Switches", rationale: "MAC-Filterung lässt nur gelistete Hardwareadressen zu. Sie verwendet weder Anmeldedaten noch einen RADIUS-Austausch, und MAC-Adressen lassen sich leicht fälschen." },
+          { id: "C", text: "Ein Jump-Server pro Büro", rationale: "Ein Jump-Server bietet einen kontrollierten Weg für administrativen Zugriff. Er steuert nicht, welche Geräte dem Netzwerk beitreten dürfen." },
+          { id: "D", text: "Port-Mirroring zu einem Intrusion Detection System", rationale: "Port-Mirroring kopiert Datenverkehr zur Überwachung. Es authentifiziert keine Geräte und sperrt keine Ports." },
+        ],
+        answer: "A",
+        explanation:
+          "802.1X definiert drei Rollen: den Supplicant (das Gerät), den Authenticator (den Switch) und den Authentifizierungsserver (meist RADIUS). Die Prüfungsziele führen 802.1X und EAP unter Port Security auf.",
         reference: OBJECTIVES,
       },
 
@@ -447,6 +594,79 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
         reference: OBJECTIVES,
       },
 
+      {
+        id: "secplus701-d4-wpa3-sae",
+        domain: "d4",
+        objective: "4.1 Given a scenario, apply common security techniques to computing resources.",
+        difficulty: "intermediate",
+        question:
+          "Ein kleines Büro ersetzt sein WLAN. Es gibt keinen RADIUS-Server, und die Mitarbeitenden sollen sich mit einer gemeinsamen Passphrase verbinden. Das bisherige Netzwerk wurde angegriffen, indem der Handshake mitgeschnitten und offline einem Wörterbuchangriff unterzogen wurde. Welche Konfiguration erfüllt die Anforderungen am besten?",
+        options: [
+          { id: "A", text: "WPA2-Personal mit einem längeren Pre-Shared Key", rationale: "Ein längerer Schlüssel erschwert das Erraten, doch ein mitgeschnittener WPA2-PSK-Handshake kann weiterhin offline angegriffen werden." },
+          { id: "B", text: "WPA3-Personal mit SAE", rationale: "Richtig. Simultaneous Authentication of Equals behält die gemeinsame Passphrase bei, widersteht aber Offline-Wörterbuchangriffen auf mitgeschnittene Handshakes." },
+          { id: "C", text: "WPA2-Enterprise mit PEAP", rationale: "Der Enterprise-Modus authentifiziert Benutzer einzeln über einen RADIUS-Server, den das Büro nicht hat." },
+          { id: "D", text: "Versteckte SSID in Kombination mit MAC-Filterung", rationale: "Das Verstecken der SSID und das Filtern von MAC-Adressen lassen sich leicht umgehen und schützen den Handshake in keiner Weise." },
+        ],
+        answer: "B",
+        explanation:
+          "WPA3 ersetzt den Pre-Shared-Key-Austausch von WPA2 durch SAE, sodass ein mitgeschnittener Handshake einem Angreifer kein Material mehr für Offline-Rateversuche liefert. Enterprise-Authentifizierung ist noch stärker, erfordert aber eine AAA-Infrastruktur wie RADIUS.",
+        reference: OBJECTIVES,
+      },
+      {
+        id: "secplus701-d4-dns-logs",
+        domain: "d4",
+        objective: "4.9 Given a scenario, use data sources to support an investigation.",
+        difficulty: "advanced",
+        question:
+          "Threat Intelligence meldet, dass eine Malware-Familie eine Command-and-Control-Domain kontaktiert, deren IP-Adressen sich alle paar Minuten ändern. Ein Analyst muss herausfinden, welche internen Hosts in der vergangenen Woche versucht haben, diese Domain zu erreichen. Welche Datenquelle ist am nützlichsten?",
+        options: [
+          { id: "A", text: "Firewall-Protokolle", rationale: "Firewall-Protokolle erfassen IP-Adressen und Ports, keine Domainnamen. Bei ständig wechselnden Adressen ist die Zuordnung zur Domain unzuverlässig." },
+          { id: "B", text: "Ergebnisse eines Schwachstellenscans", rationale: "Scanergebnisse zeigen Schwachstellen auf Systemen, nicht, welche Hosts in der Vergangenheit mit einem Ziel kommuniziert haben." },
+          { id: "C", text: "Anwendungsprotokolle auf dem Webserver des Unternehmens", rationale: "Diese erfassen Ereignisse der Webanwendung selbst, nicht ausgehende Namensauflösungen interner Arbeitsplatzrechner." },
+          { id: "D", text: "Abfrageprotokolle des DNS-Servers", rationale: "Richtig. DNS-Protokolle zeigen, welcher Client wann welchen Namen auflösen wollte, unabhängig von der zurückgegebenen IP-Adresse." },
+        ],
+        answer: "D",
+        explanation:
+          "Gewählt wird die Datenquelle, die den tatsächlich vorliegenden Indikator erfasst. Ist der Indikator ein Domainname, dessen Adressen sich ständig ändern, verknüpfen DNS-Abfrageprotokolle den Namen direkt mit den anfragenden Hosts.",
+        reference: OBJECTIVES,
+      },
+      {
+        id: "secplus701-d4-just-in-time",
+        domain: "d4",
+        objective: "4.6 Given a scenario, implement and maintain identity and access management.",
+        difficulty: "intermediate",
+        question:
+          "Eine Organisation möchte, dass Administratoren keine dauerhaften Administratorrechte besitzen. Benötigen Administratoren erhöhte Rechte, beantragen sie diese für eine bestimmte Aufgabe; die Rechte werden für begrenzte Zeit gewährt und danach automatisch entzogen. Welche Funktion des Privileged Access Management wird beschrieben?",
+        options: [
+          { id: "A", text: "Just-in-Time-Berechtigungen", rationale: "Richtig. Just-in-Time-Berechtigungen gewähren erhöhte Rechte nur bei Bedarf und nur für einen begrenzten Zeitraum." },
+          { id: "B", text: "Password Vaulting", rationale: "Password Vaulting speichert privilegierte Zugangsdaten und steuert den Zugriff darauf. Das privilegierte Konto selbst behält aber seine dauerhaften Rechte." },
+          { id: "C", text: "Rollenbasierte Zugriffskontrolle (RBAC)", rationale: "RBAC vergibt Berechtigungen anhand der Rolle im Unternehmen. Die Berechtigungen bestehen, solange die Rollenzuweisung besteht, ohne zeitliche Begrenzung pro Aufgabe." },
+          { id: "D", text: "Single Sign-on", rationale: "SSO ermöglicht es Benutzern, sich einmal für viele Anwendungen zu authentifizieren. Es steuert nicht, wie lange Berechtigungen bestehen." },
+        ],
+        answer: "A",
+        explanation:
+          "Die Prüfungsziele nennen Just-in-Time-Berechtigungen, Password Vaulting und kurzlebige Zugangsdaten (Ephemeral Credentials) als Werkzeuge des Privileged Access Management. Der Verzicht auf dauerhafte Rechte verkürzt das Zeitfenster, in dem ein kompromittiertes Administratorkonto missbraucht werden kann.",
+        reference: OBJECTIVES,
+      },
+      {
+        id: "secplus701-d4-sanitization",
+        domain: "d4",
+        objective: "4.2 Explain the security implications of proper hardware, software, and data asset management.",
+        difficulty: "foundation",
+        question:
+          "Ein Unternehmen will 200 ausgemusterte Laptops an einen Wiederaufbereiter verkaufen. Die Laufwerke müssen für den Käufer nutzbar bleiben, aber es dürfen keine Unternehmensdaten wiederherstellbar sein. Welches Entsorgungsverfahren passt?",
+        options: [
+          { id: "A", text: "Vernichtung (Destruction)", rationale: "Vernichtung (Schreddern, Entmagnetisieren, Verbrennen) macht die Datenträger unbrauchbar, der Käufer benötigt aber funktionierende Laufwerke." },
+          { id: "B", text: "Datenaufbewahrung (Data Retention)", rationale: "Die Datenaufbewahrung legt fest, wie lange Daten aufbewahrt werden müssen. Sie entfernt keine Daten von Geräten, die das Unternehmen verlassen." },
+          { id: "C", text: "Bereinigung (Sanitization)", rationale: "Richtig. Bereinigung, etwa sicheres Überschreiben oder kryptografisches Löschen, entfernt die Daten und lässt das Laufwerk nutzbar." },
+          { id: "D", text: "Zertifizierung (Certification)", rationale: "Die Zertifizierung dokumentiert, dass die Entsorgung durchgeführt wurde. Sie belegt die Arbeit, entfernt die Daten aber nicht selbst." },
+        ],
+        answer: "C",
+        explanation:
+          "Die Wahl des Entsorgungsverfahrens hängt davon ab, was mit der Hardware als Nächstes geschieht: Datenträger, die wiederverwendet oder verkauft werden, werden bereinigt, alle anderen vernichtet. In beiden Fällen liefert ein Zertifikat den Nachweis für Audits.",
+        reference: OBJECTIVES,
+      },
+
       /* ── Domäne 5: Security Program Management and Oversight (20 %) ─────── */
       {
         id: "secplus701-d5-ale",
@@ -500,6 +720,60 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
         answer: "B",
         explanation:
           "Penetrationstests werden danach eingeteilt, was die Tester vorab wissen: bekannte, teilweise bekannte oder unbekannte Umgebung. Tests in unbekannter Umgebung sind für einen externen Angreifer am realistischsten, decken in der verfügbaren Zeit aber möglicherweise weniger von der Infrastruktur ab.",
+        reference: OBJECTIVES,
+      },
+      {
+        id: "secplus701-d5-data-custodian",
+        domain: "d5",
+        objective: "5.1 Summarize elements of effective security governance.",
+        difficulty: "intermediate",
+        question:
+          "In einem Unternehmen entscheidet die Personalleitung, wie Personaldaten klassifiziert werden und wer darauf zugreifen darf. Die Datenbankadministratoren führen tägliche Backups durch, setzen die von der Personalabteilung genehmigten Zugriffsrechte um und pflegen die Sicherheitskontrollen der Datenbank. Welche Rolle haben die Datenbankadministratoren für diese Daten?",
+        options: [
+          { id: "A", text: "Dateneigentümer (Data Owner)", rationale: "Der Eigentümer ist für die Daten verantwortlich und entscheidet über Klassifizierung und Zugriff. Das ist hier die Personalleitung." },
+          { id: "B", text: "Betroffene Person (Data Subject)", rationale: "Betroffene Personen sind die Mitarbeitenden, die in den Datensätzen beschrieben werden, nicht die Personen, die die Datenbank verwalten." },
+          { id: "C", text: "Auftragsverarbeiter (Data Processor)", rationale: "Ein Auftragsverarbeiter ist eine eigenständige Partei, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet, etwa ein externer Lohnabrechnungsdienstleister. Die Administratoren sind interne Beschäftigte, die technische Schutzmaßnahmen umsetzen." },
+          { id: "D", text: "Datenverwalter (Data Custodian)", rationale: "Richtig. Datenverwalter kümmern sich um den täglichen Schutz der Daten, etwa Backups und die Umsetzung von Kontrollen, gemäß den Entscheidungen des Eigentümers." },
+        ],
+        answer: "D",
+        explanation:
+          "Eigentümer entscheiden und tragen die Verantwortung; Datenverwalter setzen den Schutz um und erhalten ihn aufrecht. Die Trennung beider Rollen macht klar, wer die Regeln festlegt und wer sie umsetzt.",
+        reference: OBJECTIVES,
+      },
+      {
+        id: "secplus701-d5-rpo",
+        domain: "d5",
+        objective: "5.2 Explain elements of the risk management process.",
+        difficulty: "foundation",
+        question:
+          "Im Rahmen einer Business-Impact-Analyse erklärt die Finanzabteilung, dass sie bei einem Ausfall des Buchhaltungssystems höchstens den Verlust der zuletzt erfassten vier Stunden an Buchungen hinnehmen kann. Welche Kennzahl wird damit festgelegt?",
+        options: [
+          { id: "A", text: "Recovery Time Objective (RTO)", rationale: "Die RTO ist die maximal zulässige Zeit bis zur Wiederherstellung des Systems, nicht die Datenmenge, die verloren gehen darf." },
+          { id: "B", text: "Recovery Point Objective (RPO)", rationale: "Richtig. Die RPO ist der maximal akzeptable Datenverlust, gemessen als Zeitspanne vom Ausfall zurück bis zur letzten verwendbaren Kopie." },
+          { id: "C", text: "Mean Time to Repair (MTTR)", rationale: "Die MTTR ist die durchschnittliche Zeit, die zur Reparatur einer ausgefallenen Komponente benötigt wird. Sie beschreibt die Reparaturgeschwindigkeit, nicht den tolerierbaren Datenverlust." },
+          { id: "D", text: "Mean Time Between Failures (MTBF)", rationale: "Die MTBF misst die Zuverlässigkeit als durchschnittliche Betriebszeit zwischen zwei Ausfällen." },
+        ],
+        answer: "B",
+        explanation:
+          "Die RPO bestimmt, wie häufig gesichert oder repliziert werden muss: Eine RPO von vier Stunden erfordert mindestens alle vier Stunden eine verwendbare Kopie. Die RTO bestimmt dagegen, wie schnell die Wiederherstellung erfolgen muss, und damit die Wahl von Ausweichstandort und Wiederherstellungsprozess.",
+        reference: OBJECTIVES,
+      },
+      {
+        id: "secplus701-d5-right-to-be-forgotten",
+        domain: "d5",
+        objective: "5.4 Summarize elements of effective security compliance.",
+        difficulty: "foundation",
+        question:
+          "Ein ehemaliger Kunde in der Europäischen Union fordert einen Onlineshop auf, alle über ihn gespeicherten personenbezogenen Daten zu löschen. Welches Datenschutzkonzept nimmt der Kunde in Anspruch?",
+        options: [
+          { id: "A", text: "Datenaufbewahrung (Data Retention)", rationale: "Die Datenaufbewahrung legt fest, wie lange Daten aufbewahrt werden. Gesetzliche Aufbewahrungsfristen können einschränken, was gelöscht werden darf, sind aber nicht das Anliegen des Kunden." },
+          { id: "B", text: "Datensouveränität (Data Sovereignty)", rationale: "Datensouveränität bedeutet, dass Daten den Gesetzen des Landes unterliegen, in dem sie gespeichert werden. Sie gibt einer Einzelperson kein Recht auf Löschung." },
+          { id: "C", text: "Recht auf Vergessenwerden (Right to Be Forgotten)", rationale: "Richtig. Das Recht auf Vergessenwerden erlaubt es einer betroffenen Person, eine Organisation zur Löschung ihrer personenbezogenen Daten aufzufordern." },
+          { id: "D", text: "Bestätigung und Kenntnisnahme (Attestation and Acknowledgement)", rationale: "Mit Bestätigung und Kenntnisnahme wird festgehalten, dass Personen Richtlinien gelesen und akzeptiert haben; es handelt sich um eine Maßnahme der Compliance-Überwachung." },
+        ],
+        answer: "C",
+        explanation:
+          "Die Prüfungsziele führen das Recht auf Vergessenwerden unter Datenschutz auf. Um es umzusetzen, ist ein Dateninventar nötig, das jeden Speicherort der Daten der Person zeigt, während gesetzliche Aufbewahrungspflichten bei manchen Datensätzen Vorrang vor der Löschung haben können.",
         reference: OBJECTIVES,
       },
     ],

@@ -10,13 +10,13 @@ import type { PracticeQuestionSet } from "@/config/types";
 export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
   slug: "google-cloud-agentic-architect",
   intro:
-    "15 original Google Cloud Professional Agentic Architect practice questions across the five sections of the official exam guide, weighted roughly like the real exam and using the current Gemini Enterprise Agent Platform product names. Each one comes with the answer, a short explanation and the reason every other option is wrong.",
+    "30 original Google Cloud Professional Agentic Architect practice questions across the five sections of the official exam guide, weighted roughly like the real exam and using the current Gemini Enterprise Agent Platform product names. Each one comes with the answer, a short explanation and the reason every other option is wrong.",
   published: "2026-10-27",
-  updated: "2026-10-27",
+  updated: "2026-11-11",
   seo: {
     title: "Google Agentic Architect Practice Questions & Answers (2026)",
     description:
-      "15 free, original Professional Agentic Architect practice questions on ADK, RAG, coding agents, evaluation, Agent Runtime and agent security, with explanations.",
+      "30 free, original Professional Agentic Architect practice questions on ADK, RAG, coding agents, evaluation, Agent Runtime and agent security, with explanations.",
   },
   questions: [
     /* ── Section 1: Building agents using low-code tools (~13%) ───────────── */
