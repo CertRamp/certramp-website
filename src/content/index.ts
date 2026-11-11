@@ -79,6 +79,22 @@ import { az104Guide } from "./guides/az-104";
 import { az104Questions } from "./practice-questions/az-104";
 import { nvidiaNcaGenlGuide } from "./guides/nvidia-nca-genl";
 import { nvidiaNcaGenlQuestions } from "./practice-questions/nvidia-nca-genl";
+import { claudeCertifiedDeveloperCcdvFGuide } from "./guides/claude-certified-developer-ccdv-f";
+import { claudeCertifiedDeveloperCcdvFQuestions } from "./practice-questions/claude-certified-developer-ccdv-f";
+import { claudeCertifiedAssociateCcaoFGuide } from "./guides/claude-certified-associate-ccao-f";
+import { claudeCertifiedAssociateCcaoFQuestions } from "./practice-questions/claude-certified-associate-ccao-f";
+import { nvidiaNcaAiioGuide } from "./guides/nvidia-nca-aiio";
+import { nvidiaNcaAiioQuestions } from "./practice-questions/nvidia-nca-aiio";
+import { githubCopilotGh300Guide } from "./guides/github-copilot-gh-300";
+import { githubCopilotGh300Questions } from "./practice-questions/github-copilot-gh-300";
+import { isacaAairGuide } from "./guides/isaca-aair";
+import { isacaAairQuestions } from "./practice-questions/isaca-aair";
+import { comptiaSecaiPlusCy0001Guide } from "./guides/comptia-secai-plus-cy0-001";
+import { comptiaSecaiPlusCy0001Questions } from "./practice-questions/comptia-secai-plus-cy0-001";
+import { isoIec42001FoundationGuide } from "./guides/iso-iec-42001-foundation";
+import { isoIec42001FoundationQuestions } from "./practice-questions/iso-iec-42001-foundation";
+import { databricksGenerativeAiEngineerAssociateGuide } from "./guides/databricks-generative-ai-engineer-associate";
+import { databricksGenerativeAiEngineerAssociateQuestions } from "./practice-questions/databricks-generative-ai-engineer-associate";
 
 export const guides: ExamGuide[] = [
   ai200Guide,
@@ -116,6 +132,14 @@ export const guides: ExamGuide[] = [
   ai901Guide,
   az104Guide,
   nvidiaNcaGenlGuide,
+  claudeCertifiedDeveloperCcdvFGuide,
+  claudeCertifiedAssociateCcaoFGuide,
+  nvidiaNcaAiioGuide,
+  githubCopilotGh300Guide,
+  isacaAairGuide,
+  comptiaSecaiPlusCy0001Guide,
+  isoIec42001FoundationGuide,
+  databricksGenerativeAiEngineerAssociateGuide,
 ];
 
 export const questionSets: PracticeQuestionSet[] = [
@@ -154,4 +178,12 @@ export const questionSets: PracticeQuestionSet[] = [
   ai901Questions,
   az104Questions,
   nvidiaNcaGenlQuestions,
+  claudeCertifiedDeveloperCcdvFQuestions,
+  claudeCertifiedAssociateCcaoFQuestions,
+  nvidiaNcaAiioQuestions,
+  githubCopilotGh300Questions,
+  isacaAairQuestions,
+  comptiaSecaiPlusCy0001Questions,
+  isoIec42001FoundationQuestions,
+  databricksGenerativeAiEngineerAssociateQuestions,
 ];
