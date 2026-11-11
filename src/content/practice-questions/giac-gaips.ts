@@ -1,7 +1,7 @@
 import type { PracticeQuestionSet } from "@/config/types";
 
 /**
- * Free GIAC GAIPS sample questions — ORIGINAL questions written by CertRamp
+ * Free GIAC GAIPS sample questions: ORIGINAL questions written by CertRamp
  * against GIAC's published exam certification objectives (verified 27 October
  * 2026). Not taken from the paid practice exams, not recalled exam content,
  * and not presented as real exam questions.
@@ -42,9 +42,9 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
       question:
         "An MCP server sits in front of a third-party API. To keep the design simple, it accepts the access token sent by the MCP client and forwards it unchanged to the downstream API, without checking who the token was issued to. What should the security review conclude?",
       options: [
-        { id: "A", text: "The design is acceptable as long as the tokens are sent over TLS", rationale: "TLS protects the token in transit, but does nothing about the server accepting tokens that were never issued to it." },
+        { id: "A", text: "The design is acceptable as long as the tokens are only ever sent over TLS between components", rationale: "TLS protects the token in transit, but does nothing about the server accepting tokens that were never issued to it." },
         { id: "B", text: "The design is acceptable if the downstream API enforces rate limiting", rationale: "Downstream controls that depend on the token audience are exactly what token passthrough can circumvent; it also breaks accountability at the MCP server." },
-        { id: "C", text: "This is token passthrough, which the MCP specification forbids: the server must not accept tokens that were not explicitly issued for it", rationale: "Correct. The MCP security best practices call token passthrough an anti-pattern and state that MCP servers MUST NOT accept tokens not explicitly issued for the MCP server." },
+        { id: "C", text: "Reject it as token passthrough: MCP servers must not accept tokens not issued for them", rationale: "Correct. The MCP security best practices call token passthrough an anti-pattern and state that MCP servers MUST NOT accept tokens not explicitly issued for the MCP server." },
         { id: "D", text: "The server should store the client's token in the system prompt so the agent can reuse it", rationale: "Credentials should never be placed in prompts; this adds a leakage risk without addressing the audience problem." },
       ],
       answer: "C",
@@ -134,8 +134,8 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
       question:
         "According to the NIST adversarial machine learning taxonomy (NIST AI 100-2 E2025), what distinguishes an evasion attack from a poisoning attack?",
       options: [
-        { id: "A", text: "Evasion targets generative models only; poisoning targets classifiers only", rationale: "Both attack classes are described across machine learning types; this is not the distinguishing factor." },
-        { id: "B", text: "Evasion modifies inputs at deployment time to create adversarial examples; poisoning happens during the training stage", rationale: "Correct. NIST describes evasion as modifying test samples against an already trained model, and poisoning as attacks during the training stage." },
+        { id: "A", text: "Evasion targets generative models only, while poisoning targets predictive classifiers only", rationale: "Both attack classes are described across machine learning types; this is not the distinguishing factor." },
+        { id: "B", text: "Evasion alters inputs to a deployed model; poisoning corrupts the training stage", rationale: "Correct. NIST describes evasion as modifying test samples against an already trained model, and poisoning as attacks during the training stage." },
         { id: "C", text: "Evasion requires white-box access; poisoning always requires black-box access", rationale: "Attacker knowledge is a separate dimension of the taxonomy; neither class is defined by it." },
         { id: "D", text: "Evasion extracts the model's weights; poisoning extracts its training data", rationale: "Extracting model information or training data is a privacy attack in the NIST taxonomy, not evasion or poisoning." },
       ],
@@ -190,9 +190,9 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
       question:
         "A reporting feature asks an LLM to turn natural-language questions into SQL, then runs the generated statement directly against the production database. Which control most directly addresses the resulting risk?",
       options: [
-        { id: "A", text: "Ask the model in the system prompt to produce only safe SELECT statements", rationale: "Prompt instructions can be bypassed; they are not a reliable control over what reaches the database." },
+        { id: "A", text: "Ask the model in the system prompt to produce only safe, read-only SELECT statements", rationale: "Prompt instructions can be bypassed; they are not a reliable control over what reaches the database." },
         { id: "B", text: "Increase the model's temperature to make outputs less predictable", rationale: "Randomness does nothing to make generated SQL safe." },
-        { id: "C", text: "Treat model output as untrusted: use parameterised queries and a least-privilege database account", rationale: "Correct. OWASP recommends a zero-trust approach to model output and parameterised queries or prepared statements for database operations; a least-privilege database account further limits the impact." },
+        { id: "C", text: "Treat output as untrusted: parameterised queries and a least-privilege DB account", rationale: "Correct. OWASP recommends a zero-trust approach to model output and parameterised queries or prepared statements for database operations; a least-privilege database account further limits the impact." },
         { id: "D", text: "Cache the model's responses so the same query is not generated twice", rationale: "Caching affects cost and latency, not injection risk." },
       ],
       answer: "C",
@@ -208,10 +208,10 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
       question:
         "A developer puts the database connection string and the rule \"only managers may see salary data\" into the system prompt of a chatbot. What is the main design flaw?",
       options: [
-        { id: "A", text: "The system prompt is too long and will reduce response quality", rationale: "Length is not the security problem here." },
-        { id: "B", text: "The system prompt should be encrypted at rest", rationale: "Encryption at rest does not help once the model can be induced to reveal its prompt." },
-        { id: "C", text: "The rules should be moved into the user prompt instead", rationale: "That makes the problem worse: the user then controls the rules." },
-        { id: "D", text: "Secrets and access rules do not belong in the system prompt; credentials must be kept out of the model's reach and authorisation enforced outside the LLM", rationale: "Correct. OWASP states that the system prompt should not be treated as a secret or used as a security control." },
+        { id: "A", text: "The system prompt is too long and will reduce the quality of the model's responses", rationale: "Length is not the security problem here." },
+        { id: "B", text: "The system prompt should be encrypted at rest in the application's configuration store", rationale: "Encryption at rest does not help once the model can be induced to reveal its prompt." },
+        { id: "C", text: "The rules should be moved into the user prompt, where they are closer to each request", rationale: "That makes the problem worse: the user then controls the rules, and they are still only instructions to the model." },
+        { id: "D", text: "Keep secrets out of the model's reach and enforce authorisation in application code", rationale: "Correct. OWASP states that the system prompt should not be treated as a secret or used as a security control, that credentials and connection strings do not belong in it, and that authorisation checks must not be delegated to the LLM." },
       ],
       answer: "D",
       explanation:
@@ -251,7 +251,7 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
       ],
       answer: "D",
       explanation:
-        "OWASP lists Markdown image data exfiltration, triggered by prompt injection in summarised content, as an example of improper output handling. The renderer must decide what model output may do in the browser, for example by not loading images from arbitrary external origins.",
+        "OWASP describes a summariser that is prompt-injected into sending sensitive data to an attacker-controlled server, and cites Markdown image exfiltration in its references. The renderer must decide what model output may do in the browser, for example by not loading images from arbitrary external origins.",
       reference: OWASP("LLM05:2025", "Improper Output Handling", "llm052025-improper-output-handling"),
     },
 
@@ -283,7 +283,7 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
         "A company exposes its proprietary model through an API that returns full token log-probabilities and allows unlimited queries. Which threat does this configuration most increase?",
       options: [
         { id: "A", text: "Training data poisoning", rationale: "Poisoning requires influence over training data; query access and logprobs do not provide that." },
-        { id: "B", text: "Model extraction, where an attacker uses query outputs to replicate the model", rationale: "Correct. Detailed probabilities and unlimited queries help an attacker build a functional copy. OWASP recommends restricting logit_bias and logprobs exposure and rate limiting." },
+        { id: "B", text: "Model extraction", rationale: "Correct. In model extraction, an attacker uses query outputs to replicate the model; detailed probabilities and unlimited queries help build a functional copy. OWASP recommends restricting logit_bias and logprobs exposure and rate limiting." },
         { id: "C", text: "System prompt leakage", rationale: "Logprobs do not by themselves reveal the system prompt; this is a different risk." },
         { id: "D", text: "Vector and embedding weaknesses", rationale: "This risk concerns RAG stores and embeddings, not the model API's output detail." },
       ],
@@ -346,7 +346,7 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "MAESTRO was published by the Cloud Security Alliance to address threats that traditional methods miss in agentic systems. Its layers cover foundation models, data operations, agent frameworks, deployment and infrastructure, evaluation and observability, security and compliance, and the agent ecosystem.",
-      reference: { label: "Cloud Security Alliance (Agentic AI Threat Modeling Framework: MAESTRO)", url: "https://cloudsecurityalliance.org/blog/2025/02/06/agentic-ai-threat-modeling-framework-maestro" },
+      reference: { label: "Cloud Security Alliance: Threat Modeling OpenAI's Responses API with the MAESTRO Framework", url: "https://cloudsecurityalliance.org/blog/2025/03/24/threat-modeling-openai-s-responses-api-with-the-maestro-framework" },
     },
     {
       id: "gaips-d5-ai-rmf",
@@ -413,14 +413,14 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
         "A data scientist wants to load a pickle-based PyTorch checkpoint downloaded from an unknown account on a public model hub into the training cluster. What is the primary risk?",
       options: [
         { id: "A", text: "The model may use too much GPU memory", rationale: "A resource concern, but not the primary security risk." },
-        { id: "B", text: "The weights may be quantised and therefore less accurate", rationale: "An accuracy concern, not a security one." },
+        { id: "B", text: "The weights may be quantised and therefore noticeably less accurate", rationale: "An accuracy concern, not a security one." },
         { id: "C", text: "The licence may not allow commercial use", rationale: "Licensing matters for supply chain governance, but the immediate danger is code execution." },
-        { id: "D", text: "Deserialising the pickle file can execute arbitrary code on the cluster", rationale: "Correct. Pickle can run Python code at deserialisation time, so untrusted files should not be unpickled; safer formats such as safetensors, scanning and source verification reduce the risk." },
+        { id: "D", text: "Arbitrary code execution when the pickle is deserialised", rationale: "Correct. The Python documentation warns that malicious pickle data can execute arbitrary code during unpickling, and that data from an untrusted source should never be unpickled." },
       ],
       answer: "D",
       explanation:
         "Model files are code-adjacent artefacts. Load models only from trusted sources, prefer serialisation formats that do not execute code, verify integrity with signatures or hashes, and scan files before they enter the pipeline.",
-      reference: { label: "Hugging Face: Pickle Scanning", url: "https://huggingface.co/docs/hub/security-pickle" },
+      reference: { label: "Python documentation: pickle (security warning)", url: "https://docs.python.org/3/library/pickle.html" },
     },
     {
       id: "gaips-d6-data-provenance",
@@ -431,7 +431,7 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
         "After a fine-tuned model starts producing biased output, your team cannot tell which training records changed between the last two pipeline runs. Which practice would best have helped detect and trace data manipulation?",
       options: [
         { id: "A", text: "Increasing the number of training epochs", rationale: "More epochs change model fit; they give no visibility into data changes." },
-        { id: "B", text: "Data version control and provenance tracking for the training datasets", rationale: "Correct. OWASP recommends tracking data origins and transformations (for example with CycloneDX or an ML-BOM) and using data version control to detect manipulation." },
+        { id: "B", text: "Data version control and provenance tracking", rationale: "Correct. OWASP recommends tracking data origins and transformations (for example with CycloneDX or an ML-BOM) and using data version control to detect manipulation." },
         { id: "C", text: "Switching the model endpoint to a private subnet", rationale: "Network isolation of the endpoint does not protect or track the training data." },
         { id: "D", text: "Adding a content filter on the model's output", rationale: "An output filter may hide symptoms but cannot identify which data was poisoned." },
       ],
@@ -448,7 +448,7 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
       question:
         "A critical vulnerability is announced in a widely used model serving library. The security team must find out within hours which of its 40 deployed models and training pipelines include the affected version. Which practice would make this fastest?",
       options: [
-        { id: "A", text: "A current, signed SBOM or AI BOM for each model and pipeline, for example in CycloneDX format", rationale: "Correct. OWASP recommends an up-to-date, signed inventory of components to prevent tampering and to detect new vulnerabilities quickly, and points to CycloneDX as a starting point." },
+        { id: "A", text: "A current, signed SBOM or AI BOM per model and pipeline", rationale: "Correct. OWASP recommends an up-to-date, accurate and signed inventory of components to prevent tampering and to detect new vulnerabilities quickly, and points to OWASP CycloneDX as a starting point for an AI BOM." },
         { id: "B", text: "A model card for every model in the registry", rationale: "Model cards describe a model's purpose and behaviour; they are not a dependency inventory and give no guarantee of origin." },
         { id: "C", text: "Re-running the standard benchmark suite against every model", rationale: "Benchmarks measure task performance; they reveal nothing about which libraries a deployment contains." },
         { id: "D", text: "An annual penetration test of the ML platform", rationale: "A point-in-time test cannot answer a new, urgent question about component versions across all deployments." },
@@ -467,7 +467,7 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
         "To save time, an ML team uploads vendor models to a free public online service that merges adapters and converts formats, then pushes the results straight into the internal model registry. What should the pipeline review require?",
       options: [
         { id: "A", text: "Nothing extra, because the original models came from a trusted vendor", rationale: "Trust in the original vendor does not extend to a third-party service that can alter the model after it leaves the vendor." },
-        { id: "B", text: "Using the service only for safetensors output, because that format cannot carry malicious behaviour", rationale: "safetensors avoids code execution when loading, but the weights themselves can still be manipulated, for example to embed a backdoor." },
+        { id: "B", text: "Use the service only for safetensors output, because safetensors files cannot be tampered with", rationale: "safetensors stores tensors without executable code, so loading it does not run code; it does not stop a service from altering the weights themselves, for example to embed a backdoor." },
         { id: "C", text: "Run merges and conversions in-house and verify hashes or signatures before registry upload", rationale: "Correct. OWASP cites attacks that use model merge or format conversion services to inject malware into models, and recommends verifiable sources, signing and file hashes." },
         { id: "D", text: "Re-run the benchmark suite after conversion and accept the model if scores are unchanged", rationale: "Tampered or backdoored models can pass benchmarks while hiding targeted triggers." },
       ],
@@ -488,7 +488,7 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
       options: [
         { id: "A", text: "Use a larger embedding model to improve retrieval precision", rationale: "Better relevance does not enforce who may retrieve which documents." },
         { id: "B", text: "Ask the model to ignore documents that belong to other customers", rationale: "The model cannot reliably enforce access control, and the data has already been retrieved." },
-        { id: "C", text: "Permission-aware retrieval with access controls and logical partitioning per tenant", rationale: "Correct. OWASP recommends fine-grained, permission-aware vector stores with strict logical and access partitioning between groups." },
+        { id: "C", text: "Permission-aware retrieval with per-tenant partitioning", rationale: "Correct. OWASP recommends fine-grained, permission-aware vector stores with strict logical and access partitioning between groups." },
         { id: "D", text: "Lower the similarity threshold so fewer documents are returned", rationale: "Fewer results reduce the chance but do not prevent cross-tenant retrieval." },
       ],
       answer: "C",
@@ -504,9 +504,9 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
       question:
         "A RAG-based recruitment tool ingests uploaded CVs. An applicant embeds white-on-white text telling the system to rate the candidate as highly qualified. Which ingestion control is most effective against this?",
       options: [
-        { id: "A", text: "Extract text in a way that ignores formatting and detects hidden content, and validate documents before they enter the knowledge base", rationale: "Correct. OWASP recommends text extraction tools that ignore formatting and detect hidden content, plus validation of knowledge sources before ingestion." },
-        { id: "B", text: "Store embeddings in an encrypted database", rationale: "Encryption protects the data at rest; it does not stop malicious content from being retrieved and acted on." },
-        { id: "C", text: "Re-index the vector database every night", rationale: "Re-indexing simply re-ingests the same poisoned content." },
+        { id: "A", text: "Hidden-content-aware text extraction plus validation before ingestion", rationale: "Correct. OWASP recommends text extraction tools that ignore formatting and detect hidden content, plus validation of knowledge sources before ingestion." },
+        { id: "B", text: "Store all embeddings in an encrypted vector database", rationale: "Encryption protects the data at rest; it does not stop malicious content from being retrieved and acted on." },
+        { id: "C", text: "Re-index the whole vector database every night so content stays fresh", rationale: "Re-indexing simply re-ingests the same poisoned content." },
         { id: "D", text: "Reduce the chunk size used for embeddings", rationale: "Chunking strategy does not remove the hidden instructions." },
       ],
       answer: "A",
@@ -542,10 +542,10 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
       question:
         "Your team downloads a third-party LoRA adapter to fine-tune an approved base model. It passes your standard benchmark suite. Why is that alone not enough assurance?",
       options: [
-        { id: "A", text: "LoRA adapters cannot be evaluated with benchmarks at all", rationale: "Adapters can be benchmarked; the issue is what benchmarks may fail to reveal." },
-        { id: "B", text: "LoRA adapters always replace the full base model weights", rationale: "LoRA adapters are small add-on weights applied to a base model; they do not replace it." },
-        { id: "C", text: "Benchmarks only measure speed, not output quality", rationale: "Benchmarks typically measure task performance; this is not the reason." },
-        { id: "D", text: "A malicious adapter can carry a backdoor that behaves normally until a specific trigger appears, so you also need provenance and integrity checks", rationale: "Correct. OWASP warns that a malicious LoRA adapter compromises the integrity of the base model, and that fine-tuned models can pass safety benchmarks while hiding very targeted triggers." },
+        { id: "A", text: "LoRA adapters cannot be evaluated with benchmarks because they are not full models", rationale: "Adapters can be benchmarked; the issue is what benchmarks may fail to reveal." },
+        { id: "B", text: "LoRA adapters always overwrite the full base model weights when they are applied", rationale: "LoRA adapters are small add-on weights applied to a base model; they do not replace it." },
+        { id: "C", text: "Benchmarks only measure inference speed and memory footprint, never the quality of the outputs", rationale: "Benchmarks typically measure task performance; this is not the reason." },
+        { id: "D", text: "A backdoor may stay dormant until a trigger appears, so provenance checks are also needed", rationale: "Correct. OWASP warns that a malicious LoRA adapter compromises the integrity of the base model, and that fine-tuned models can pass safety benchmarks while hiding very targeted triggers." },
       ],
       answer: "D",
       explanation:
@@ -560,7 +560,7 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
       question:
         "A team plans to fine-tune a model on five years of customer support transcripts that contain names, addresses and account numbers. Which step should come before training?",
       options: [
-        { id: "A", text: "Scrub or mask the sensitive data (for example with tokenisation and redaction) so it never enters the training set", rationale: "Correct. OWASP recommends data sanitisation so user data does not enter the training model, with tokenisation, redaction and privacy techniques such as differential privacy." },
+        { id: "A", text: "Scrub or mask the sensitive data, for example by tokenisation or redaction", rationale: "Correct. OWASP recommends data sanitisation so user data does not enter the training model, with tokenisation, redaction and privacy techniques such as differential privacy." },
         { id: "B", text: "Add a system prompt rule telling the fine-tuned model never to reveal account numbers", rationale: "The data would already be in the model's weights, and a prompt rule is not a security control that injection cannot bypass." },
         { id: "C", text: "Train on the raw data and rely on an output filter to catch any leaked account numbers", rationale: "Output filtering is a useful extra layer, but pattern filters miss variants and paraphrases; the sensitive data should not be learned in the first place." },
         { id: "D", text: "Encrypt the transcript dataset at rest before training", rationale: "Encryption protects the stored files, but the training job decrypts them and the model still learns their content." },

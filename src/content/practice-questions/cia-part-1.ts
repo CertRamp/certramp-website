@@ -76,13 +76,13 @@ export const ciaPart1Questions: PracticeQuestionSet = {
         "Which arrangement is most likely to impair the independence of the internal audit function?",
       options: [
         { id: "A", text: "The chief audit executive meets the audit committee in private sessions without management present", rationale: "Private sessions with the board strengthen independence rather than impair it." },
-        { id: "B", text: "The chief audit executive reports administratively to the chief executive officer and functionally to the board", rationale: "This dual reporting line is the arrangement the Standards favour." },
+        { id: "B", text: "The chief audit executive reports administratively to the chief executive officer and functionally to the board", rationale: "A direct reporting relationship with the board, with an administrative line to senior management, supports independence rather than impairing it." },
         { id: "C", text: "Internal audit has unrestricted access to records, personnel and property", rationale: "Unrestricted access supports independence." },
-        { id: "D", text: "The chief financial officer approves the internal audit plan and decides the chief audit executive's pay and appointment", rationale: "Correct. When management whose activities are audited controls the plan, the appointment and the remuneration of the chief audit executive, internal audit's freedom from interference is impaired." },
+        { id: "D", text: "The chief financial officer approves the audit plan and decides the chief audit executive's pay and appointment", rationale: "Correct. When management whose activities are audited controls the plan, the appointment and the remuneration of the chief audit executive, internal audit's freedom from interference is impaired." },
       ],
       answer: "D",
       explanation:
-        "Independence is about the function's position: a direct reporting relationship with the board and freedom from management interference in its plan, resources and conclusions. Board involvement in the plan, appointment and pay of the chief audit executive is a key safeguard.",
+        "Independence is about the function's position: a direct reporting relationship with the board and freedom from management interference in its plan, resources and conclusions. Under the Standards the board approves the plan, authorises the appointment and removal of the chief audit executive and provides input on remuneration.",
       reference: SYLLABUS,
     },
     {
@@ -94,8 +94,8 @@ export const ciaPart1Questions: PracticeQuestionSet = {
         "Under The IIA's Three Lines Model, which role is most appropriate for internal audit in relation to the organisation's risk management?",
       options: [
         { id: "A", text: "Setting the organisation's risk appetite", rationale: "Risk appetite is set by the governing body and senior management, not internal audit." },
-        { id: "B", text: "Providing independent and objective assurance and advice on the adequacy and effectiveness of governance and risk management", rationale: "Correct. In the Three Lines Model, internal audit's third-line role is independent assurance and advice; ownership of risk stays with management." },
-        { id: "C", text: "Taking ownership of key operational risks and their responses", rationale: "Owning risks is a first-line management responsibility." },
+        { id: "B", text: "Providing independent assurance and advice on governance and risk management", rationale: "Correct. In the Three Lines Model, internal audit's third-line role is independent assurance and advice; ownership of risk stays with management." },
+        { id: "C", text: "Taking ownership of key operational risks and designing the responses to them", rationale: "Owning risks is a first-line management responsibility." },
         { id: "D", text: "Implementing risk responses on management's behalf", rationale: "Implementing responses would make internal audit responsible for activities it may later audit." },
       ],
       answer: "B",
@@ -130,7 +130,7 @@ export const ciaPart1Questions: PracticeQuestionSet = {
         "While preparing the annual internal audit plan, the chief audit executive concludes that a high-risk cybersecurity area cannot be covered with the current budget and staff. What should the chief audit executive do?",
       options: [
         { id: "A", text: "Leave the area out of the plan and revisit it next year if the budget allows", rationale: "Omitting a high-risk area without telling the board hides the gap from the body that approves the plan and resources." },
-        { id: "B", text: "Communicate the resource limitation and the reason for omitting the high-risk assurance to the board and senior management", rationale: "Correct. The Standards require the chief audit executive to communicate resource limitations and the reasons for omitting high-risk assurance, so the board can approve the plan and help remedy the shortfall." },
+        { id: "B", text: "Tell the board and senior management about the resource limitation and why the high-risk area is not covered", rationale: "Correct. Standard 8.2 requires the chief audit executive to inform the board about the impact of insufficient resources, and Standard 9.4 requires communicating the rationale for not including assurance on a high-risk area in the plan." },
         { id: "C", text: "Ask the IT department to complete a self-assessment and report it as internal audit assurance", rationale: "A management self-assessment can be useful information, but presenting it as internal audit assurance would be misleading." },
         { id: "D", text: "Reduce the scope of every other engagement in the plan equally so that the cybersecurity area can still be squeezed in", rationale: "Cutting all engagements without board discussion changes the risk coverage the board approved and may leave other high risks under-audited." },
       ],
@@ -185,8 +185,8 @@ export const ciaPart1Questions: PracticeQuestionSet = {
       options: [
         { id: "A", text: "Decline the role, because the Standards prohibit a chief audit executive from holding any responsibility beyond internal auditing", rationale: "The Standards do not prohibit nonaudit roles; they require safeguards when such roles could impair independence." },
         { id: "B", text: "Accept the role and continue auditing compliance with the internal audit team, since the board has approved the arrangement", rationale: "Board approval does not remove the impairment; internal audit cannot give objective assurance over work its own leader is responsible for." },
-        { id: "C", text: "Document the responsibilities and safeguards in the charter and establish an alternative way to obtain assurance over compliance, such as an objective external provider reporting to the board", rationale: "Correct. For ongoing nonaudit roles, the charter must document the responsibilities, the nature of the work and the safeguards, and alternative assurance processes must be set up for areas subject to internal auditing." },
-        { id: "D", text: "Accept the role and disclose it only in the next external quality assessment", rationale: "Impairments and safeguards must be discussed with the board when the role is assigned and confirmed at least annually, not left for a periodic external review." },
+        { id: "C", text: "Document the role and safeguards in the charter and set up another way to obtain assurance over compliance", rationale: "Correct. Standard 7.1 requires the responsibilities, nature of work and safeguards of ongoing roles to be documented in the charter, and alternative processes to obtain assurance must be established for areas subject to internal auditing, for example an objective external provider." },
+        { id: "D", text: "Accept the role and disclose it only in the next external quality assessment", rationale: "Roles that could impair independence, and the safeguards for them, must be discussed with the board and senior management when they are proposed, not left for a periodic external review." },
       ],
       answer: "C",
       explanation:
@@ -260,7 +260,7 @@ export const ciaPart1Questions: PracticeQuestionSet = {
         { id: "A", text: "Remove the engagement from the plan without telling anyone", rationale: "Dropping a planned engagement silently hides a resource gap from the board." },
         { id: "B", text: "Perform the engagement with the existing team and note the limitation in the workpapers only", rationale: "Proceeding without the necessary competence breaches the requirement to perform work competently." },
         { id: "C", text: "Ask the trading desk manager to audit the system", rationale: "The manager is responsible for the activity and is not objective." },
-        { id: "D", text: "Obtain the competence, for example through training, a guest auditor or an external specialist, before performing the engagement", rationale: "Correct. The syllabus explicitly covers competencies that are developed or procured; the function must obtain the skills it lacks." },
+        { id: "D", text: "Obtain the needed competence through training, a guest auditor or an external specialist", rationale: "Correct. The syllabus explicitly covers competencies that are developed or procured; the function must obtain the skills it lacks." },
       ],
       answer: "D",
       explanation:
@@ -286,21 +286,21 @@ export const ciaPart1Questions: PracticeQuestionSet = {
       reference: STANDARDS_TEXT,
     },
     {
-      id: "cia1-d2-rotation-familiarity",
+      id: "cia1-d2-impairment-options",
       domain: "d2",
       objective: "B.3 Analyze policies that promote objectivity and potential options to mitigate impairments",
       difficulty: "intermediate",
       question:
-        "The same senior auditor has led the annual audit of the procurement department for six years and has become close friends with the procurement director. Which policy would best mitigate the threat to objectivity?",
+        "Internal audit is a team of three. The only auditor with procurement expertise is a close personal friend of the procurement director. The board wants a procurement assurance engagement completed before a major contract is renewed next month, so it cannot be postponed. Which option best manages the impairment?",
       options: [
-        { id: "A", text: "Requiring the auditor to sign an annual conflict of interest declaration", rationale: "Declarations help identify impairments, but on their own they do not reduce a familiarity threat that is already known." },
-        { id: "B", text: "Allowing the procurement director to comment on the draft work programme", rationale: "Auditee input on scope is normal, but it does nothing to address the auditor's closeness to the auditee." },
-        { id: "C", text: "Periodically rotating auditors' engagement assignments", rationale: "Correct. Rotation limits the familiarity that builds up when the same auditor reviews the same area and people year after year." },
-        { id: "D", text: "Increasing the sample sizes used in the procurement engagement", rationale: "Larger samples address detection risk, not the auditor's objectivity in evaluating the results." },
+        { id: "A", text: "Keep the auditor on the engagement after she signs a conflict of interest declaration", rationale: "A declaration helps identify an impairment, but on its own it does not remove a known one." },
+        { id: "B", text: "Let the procurement director review the draft work programme to confirm its scope", rationale: "Auditee input on scope is normal, but it does nothing to address the auditor's relationship with the auditee." },
+        { id: "C", text: "Outsource the performance or supervision of the engagement", rationale: "Correct. Standard 2.3 lists outsourcing the performance or supervision of an engagement among the options for managing an impairment, alongside reassigning, rescheduling and adjusting scope, which are not workable here." },
+        { id: "D", text: "Keep the auditor on the engagement but increase the sample sizes she tests", rationale: "Larger samples address detection risk, not the auditor's objectivity in evaluating the results." },
       ],
       answer: "C",
       explanation:
-        "Internal auditors must recognise and avoid or mitigate actual, potential and perceived impairments. Staff rotation, supervisory review and disclosure to the chief audit executive are common safeguards; rotation targets familiarity directly.",
+        "The Standards note that close personal relationships outside work may be or appear to be conflicts of interest. When an impairment cannot be avoided, the chief audit executive may reassign auditors, reschedule the engagement, adjust its scope, or outsource its performance or supervision.",
       reference: STANDARDS_TEXT,
     },
     {
@@ -311,8 +311,8 @@ export const ciaPart1Questions: PracticeQuestionSet = {
       question:
         "An auditor has limited time for an engagement covering both high-value international wire transfers and a small petty cash fund. Which approach best demonstrates due professional care?",
       options: [
-        { id: "A", text: "Focus the extent of testing on the wire transfers, considering their complexity, materiality, probability of significant errors or fraud, and the cost of the work relative to its benefit", rationale: "Correct. The Standards list these factors as considerations for due professional care, which calls for reasonable, risk-based effort rather than equal coverage." },
-        { id: "B", text: "Test 100% of transactions in both areas, so that no error can be missed", rationale: "Due professional care does not require complete testing or infallibility; the cost of the work should be weighed against its benefit." },
+        { id: "A", text: "Concentrate testing on the wire transfers, given their risk and the cost versus benefit", rationale: "Correct. Standard 4.2 lists factors such as the complexity, materiality or significance of risks, the probability of significant errors or fraud, and cost relative to potential benefits; due professional care calls for reasonable, risk-based effort rather than equal coverage." },
+        { id: "B", text: "Test 100% of transactions in both areas, so that no error or irregularity in either area can be missed", rationale: "Due professional care does not require complete testing or infallibility; the cost of the work should be weighed against its benefit." },
         { id: "C", text: "Split the available hours equally between the two areas", rationale: "Equal allocation ignores the large difference in significance and risk between the two areas." },
         { id: "D", text: "Test petty cash first because it can be completed quickly", rationale: "Convenience is not a basis for allocating effort; the more significant risks would be under-tested." },
       ],
@@ -385,8 +385,8 @@ export const ciaPart1Questions: PracticeQuestionSet = {
       options: [
         { id: "A", text: "The board runs day-to-day operations and designs internal controls", rationale: "Day-to-day operations and control design are management's responsibilities." },
         { id: "B", text: "The board delegates all oversight to internal audit", rationale: "Internal audit supports oversight but cannot take over the board's accountability." },
-        { id: "C", text: "The board's role is limited to approving the annual financial statements", rationale: "This is far too narrow; governance covers strategy, risk and oversight more broadly." },
-        { id: "D", text: "The board provides oversight, direction and accountability, while management carries out the strategy and manages risk", rationale: "Correct. Governance divides responsibilities: the board oversees and holds management to account; management executes." },
+        { id: "C", text: "The board's role is limited to approving the annual financial statements and the auditor's fee", rationale: "This is far too narrow; governance covers strategy, risk and oversight more broadly." },
+        { id: "D", text: "The board oversees and directs; management executes strategy and manages risk", rationale: "Correct. Governance divides responsibilities: the board oversees and holds management to account; management executes." },
       ],
       answer: "D",
       explanation:
@@ -401,10 +401,10 @@ export const ciaPart1Questions: PracticeQuestionSet = {
       question:
         "An auditor finds that every purchase order, including stationery orders under £50, requires three separate approvals, and that orders are delayed by up to two weeks. Testing shows the approvals are always performed. What is the most appropriate conclusion?",
       options: [
-        { id: "A", text: "The control is effective but may not be efficient, because its cost and delay appear out of proportion to the risk", rationale: "Correct. The control operates as designed, but efficiency asks whether its cost is justified by the risk it addresses." },
-        { id: "B", text: "The control is ineffective because approvals are performed", rationale: "Consistent performance shows the control is operating, not that it is ineffective." },
-        { id: "C", text: "The control is poorly designed because there are no approvals", rationale: "The facts state there are three approvals." },
-        { id: "D", text: "No observation is needed, because more approvals always reduce risk", rationale: "Excessive controls create costs and delays; internal audit should consider efficiency as well as effectiveness." },
+        { id: "A", text: "Effective, but possibly inefficient: cost and delay seem out of proportion to the risk", rationale: "Correct. The control operates as designed, but efficiency asks whether its cost is justified by the risk it addresses." },
+        { id: "B", text: "Ineffective, because the approvals are performed", rationale: "Consistent performance shows the control is operating, not that it is ineffective." },
+        { id: "C", text: "Poorly designed, because there are no approvals", rationale: "The facts state there are three approvals." },
+        { id: "D", text: "No observation is needed, because adding approvals always reduces risk and the control operates as designed", rationale: "Excessive controls create costs and delays; internal audit should consider efficiency as well as effectiveness." },
       ],
       answer: "A",
       explanation:
@@ -473,8 +473,8 @@ export const ciaPart1Questions: PracticeQuestionSet = {
       question:
         "A company outsources its payroll processing to a specialist service provider. Which statement best describes how the related risks should be managed?",
       options: [
-        { id: "A", text: "The company remains accountable and should manage the risks through the contract, ongoing performance monitoring and independent assurance on the provider's controls", rationale: "Correct. Outsourcing moves the activity, not the accountability; the organisation must still oversee the risks through its third-party risk management." },
-        { id: "B", text: "The service provider becomes accountable for the risks, so the company no longer needs payroll controls", rationale: "The company still needs controls, for example over the data it sends and the results it receives." },
+        { id: "A", text: "The company stays accountable and oversees the provider via the contract, monitoring and assurance reports", rationale: "Correct. Outsourcing moves the activity, not the accountability; the organisation must still oversee the risks through its third-party risk management." },
+        { id: "B", text: "The service provider becomes accountable for the risks, so the company no longer needs any payroll controls of its own", rationale: "The company still needs controls, for example over the data it sends and the results it receives." },
         { id: "C", text: "The risks are managed once the provider signs a confidentiality agreement", rationale: "A confidentiality clause addresses only one risk and says nothing about processing accuracy, availability or ongoing performance." },
         { id: "D", text: "Internal audit should take over monitoring of the provider so that management can focus on other priorities", rationale: "Monitoring third parties is a management responsibility; internal audit provides assurance on how well it is done." },
       ],
@@ -493,7 +493,7 @@ export const ciaPart1Questions: PracticeQuestionSet = {
       question:
         "An employee with large personal debts realises that nobody reviews the expense claims he approves for his own team. In fraud risk terms, what does the lack of review represent?",
       options: [
-        { id: "A", text: "Pressure", rationale: "The personal debts are the pressure (or incentive), not the lack of review." },
+        { id: "A", text: "Pressure (motivation)", rationale: "The personal debts are the pressure (or incentive), not the lack of review." },
         { id: "B", text: "Rationalisation", rationale: "Rationalisation is the justification a person uses to excuse the act, such as \"I will pay it back\"." },
         { id: "C", text: "Opportunity", rationale: "Correct. A weakness in controls, such as missing review, gives the employee the opportunity to commit and conceal fraud." },
         { id: "D", text: "Detection", rationale: "Detection is a control objective, not one of the conditions that make fraud possible." },
@@ -512,8 +512,8 @@ export const ciaPart1Questions: PracticeQuestionSet = {
         "During a routine engagement an auditor finds indicators that a warehouse manager may be stealing inventory. What should the auditor do first?",
       options: [
         { id: "A", text: "Confront the warehouse manager to obtain a confession", rationale: "Confronting a suspect prematurely can compromise evidence, alert other parties and create legal risk." },
-        { id: "B", text: "Inform the appropriate level of management and the chief audit executive in line with the organisation's procedures, and consider whether investigation expertise is needed", rationale: "Correct. Suspected fraud must be escalated to the right people, and the investigation should be carried out by people with the necessary skills and authority." },
-        { id: "C", text: "Ignore the indicators because detecting fraud is solely management's responsibility", rationale: "Internal auditors must be alert to fraud indicators and act on them, even though they are not expected to have the expertise of a fraud investigator." },
+        { id: "B", text: "Escalate to the chief audit executive and appropriate management under the organisation's procedures", rationale: "Correct. Suspected fraud must be escalated to the right people, and the investigation should be carried out by people with the necessary skills and authority." },
+        { id: "C", text: "Ignore the indicators, because detecting and investigating fraud is solely management's responsibility", rationale: "Internal auditors must be alert to fraud indicators and act on them, even though they are not expected to have the expertise of a fraud investigator." },
         { id: "D", text: "Report the manager directly to the police", rationale: "External reporting is a decision for the organisation, usually involving legal counsel, not for an individual auditor acting alone." },
       ],
       answer: "B",
@@ -532,7 +532,7 @@ export const ciaPart1Questions: PracticeQuestionSet = {
         { id: "A", text: "They should be ignored, because the engagement is an assurance engagement and not a fraud investigation", rationale: "Auditors must consider fraud risks in every engagement risk assessment, not only in investigations." },
         { id: "B", text: "The auditor should interview the supervisor at the start of fieldwork about his personal finances", rationale: "Questioning a possible suspect about personal matters at the planning stage is premature and could compromise any later investigation." },
         { id: "C", text: "The engagement should be cancelled until the police have been informed", rationale: "There is not yet evidence of fraud, and decisions on external reporting belong to the organisation under its procedures." },
-        { id: "D", text: "The auditor should include these fraud risks in the engagement risk assessment and design procedures that respond to them, applying professional skepticism", rationale: "Correct. The Standards require auditors to consider specific risks related to fraud when assessing engagement risks; these indicators justify targeted work on write-offs." },
+        { id: "D", text: "The auditor should add these fraud risks to the engagement risk assessment and target procedures at them", rationale: "Correct. Standard 13.2 requires internal auditors to consider specific risks related to fraud when assessing engagement risks; these indicators justify targeted work on write-offs, carried out with professional skepticism." },
       ],
       answer: "D",
       explanation:
@@ -547,10 +547,10 @@ export const ciaPart1Questions: PracticeQuestionSet = {
       question:
         "When evaluating how an organisation manages fraud risk, which observation provides the strongest evidence of an effective approach?",
       options: [
-        { id: "A", text: "Management performs a periodic fraud risk assessment that identifies likely schemes and links each one to the controls that prevent or detect it", rationale: "Correct. A structured, regularly updated fraud risk assessment shows that management understands how fraud could occur and has matched controls to those schemes." },
-        { id: "B", text: "No fraud cases have been reported in the past five years", rationale: "An absence of reported cases may reflect weak detection or a reporting channel nobody trusts, not an absence of fraud." },
+        { id: "A", text: "A periodic fraud risk assessment that maps likely schemes to the controls that prevent or detect them", rationale: "Correct. A structured, regularly updated fraud risk assessment shows that management understands how fraud could occur and has matched controls to those schemes." },
+        { id: "B", text: "No fraud cases have been reported through any channel in the past five years", rationale: "An absence of reported cases may reflect weak detection or a reporting channel nobody trusts, not an absence of fraud." },
         { id: "C", text: "All employees signed the code of conduct when they were hired", rationale: "A one-time signature at hiring is a weak directive control and says little about how fraud risk is managed today." },
-        { id: "D", text: "The external auditor issued an unmodified opinion on the financial statements", rationale: "An external audit opinion concerns material misstatement of the financial statements and is not designed to evaluate the organisation's overall fraud risk management." },
+        { id: "D", text: "The external auditor issued an unmodified opinion on the financial statements for the last three years", rationale: "An external audit opinion concerns material misstatement of the financial statements and is not designed to evaluate the organisation's overall fraud risk management." },
       ],
       answer: "A",
       explanation:
