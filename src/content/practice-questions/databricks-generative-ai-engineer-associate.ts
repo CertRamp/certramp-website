@@ -113,7 +113,7 @@ export const databricksGenerativeAiEngineerAssociateQuestions: PracticeQuestionS
       question:
         "A public-facing assistant occasionally produces unsafe content when users try to manipulate it. The team has already added rules to the system prompt. What should they add next?",
       options: [
-        { id: "A", text: "Input and output guardrails at the serving layer", rationale: "Correct. Guardrails applied to inputs and outputs, for example through AI Gateway policies, still work when a user talks the model out of its system prompt." },
+        { id: "A", text: "Input and output guardrails at the serving layer", rationale: "Correct. Guardrails applied to inputs and outputs, for example through gateway service policies, still work when a user talks the model out of its system prompt." },
         { id: "B", text: "A longer system prompt that repeats the rules several times and warns the model about manipulation", rationale: "More prompt text can still be overridden by manipulation; it is not an independent control." },
         { id: "C", text: "A larger model, since bigger models never produce unsafe content", rationale: "Model size does not guarantee safe output." },
         { id: "D", text: "A higher rate limit so users can retry blocked requests", rationale: "Rate limits manage capacity and cost; raising them does nothing for content safety." },
@@ -144,7 +144,7 @@ export const databricksGenerativeAiEngineerAssociateQuestions: PracticeQuestionS
     {
       id: "dbx-genai-d3-evaluation-vs-monitoring",
       domain: "d3",
-      objective: "Compare the evaluation and monitoring phases of the GenAI application life cycle",
+      objective: "Compare the evaluation and monitoring phases of the Gen AI application life cycle",
       difficulty: "foundation",
       question:
         "Which statement correctly contrasts evaluation and monitoring of a generative AI application?",
@@ -156,13 +156,13 @@ export const databricksGenerativeAiEngineerAssociateQuestions: PracticeQuestionS
       ],
       answer: "D",
       explanation:
-        "Both phases matter: evaluation tells you whether a version is good enough to ship, monitoring tells you whether it stays that way. Judges that do not need ground truth, such as Safety or RelevanceToQuery, can run on production traces.",
-      reference: JUDGES,
+        "Both phases matter: evaluation tells you whether a version is good enough to ship, monitoring tells you whether it stays that way. Databricks recommends running the same scorers on a sample of production traffic, which works for judges that do not need ground truth, such as Safety or RelevanceToQuery.",
+      reference: DOCS("Evaluation and monitoring concepts", "mlflow3/genai/eval-monitor/concepts"),
     },
     {
       id: "dbx-genai-d3-format-chunking",
       domain: "d3",
-      objective: "Select a chunking strategy based on model and retrieval evaluation",
+      objective: "Select chunking strategy based on model & retrieval evaluation",
       difficulty: "advanced",
       question:
         "A knowledge base consists of well-structured Markdown pages with headings. Fixed-size 300-token chunks score poorly in retrieval evaluation because answers are split across chunks mid-section. Which strategy should the team try next?",
@@ -180,10 +180,10 @@ export const databricksGenerativeAiEngineerAssociateQuestions: PracticeQuestionS
     {
       id: "dbx-genai-d3-responses-agent",
       domain: "d3",
-      objective: "Utilize MLflow and Agent Framework to develop agentic systems",
+      objective: "Utilize MLflow and Agent Framework for developing agentic systems",
       difficulty: "intermediate",
       question:
-        "A team has built an agent in a third-party framework and wants it to work with AI Playground, Agent Evaluation, Agent Monitoring and Databricks serving. What does Databricks recommend?",
+        "A team has built an agent in a third-party framework and wants to log, evaluate, deploy and monitor it with MLflow on Databricks. Which approach does the Databricks documentation recommend for authoring it?",
       options: [
         { id: "A", text: "Wrap the agent in the MLflow ResponsesAgent interface", rationale: "Correct. Databricks recommends ResponsesAgent: agents from any framework can be wrapped, MLflow infers a compatible signature, and streaming and tracing are supported." },
         { id: "B", text: "Rewrite the agent as a single SQL query using ai_query()", rationale: "ai_query() is for applying models to table data, not for hosting a multi-step agent." },
@@ -206,7 +206,7 @@ export const databricksGenerativeAiEngineerAssociateQuestions: PracticeQuestionS
         "Every night, two million new product reviews land in a Delta table and each needs a sentiment label from an LLM. Which approach does Databricks recommend for this workload?",
       options: [
         { id: "A", text: "A Python loop that calls a real-time serving endpoint once per row", rationale: "Row-by-row calls to a real-time endpoint are slow to orchestrate and require you to handle parallelism and retries yourself." },
-        { id: "B", text: "Provisioned throughput sized for the peak of the batch run", rationale: "Databricks recommends provisionless, Databricks-hosted foundation models for batch inference rather than provisioned throughput." },
+        { id: "B", text: "Provisioned throughput sized for the peak of the batch run", rationale: "Capacity sizing is not the recommended pattern here: Databricks says its provisionless, Databricks-hosted model endpoints work best for batch processing with ai_query()." },
         { id: "C", text: "ai_query() in a scheduled SQL or Lakeflow job, submitting the full data set in one query", rationale: "Correct. AI Functions handle parallelization, retries and scaling, and Databricks recommends submitting the whole data set in one query." },
         { id: "D", text: "Send the reviews to an interactive chatbot built with Databricks Apps", rationale: "A user-facing app is meant for interactive use, not scheduled bulk processing." },
       ],
@@ -256,7 +256,7 @@ export const databricksGenerativeAiEngineerAssociateQuestions: PracticeQuestionS
     {
       id: "dbx-genai-d5-ai-mask",
       domain: "d5",
-      objective: "Use masking techniques as guardrails to meet a performance objective",
+      objective: "Use masking techniques as guard rails to meet a performance objective",
       difficulty: "intermediate",
       question:
         "Support tickets contain customer names and email addresses. Before the text is chunked and indexed for a RAG app, these values must be replaced, while the rest of the text stays usable. Which Databricks SQL function fits?",
@@ -294,7 +294,7 @@ export const databricksGenerativeAiEngineerAssociateQuestions: PracticeQuestionS
     {
       id: "dbx-genai-d6-gateway-monitoring",
       domain: "d6",
-      objective: "Use AI Gateway features (inference tables, usage tables, rate limiting) to track deployed LLMs and agents",
+      objective: "Use AI Gateway (Inference Tables, Usage Tables, and rate limiting) to track an LLM or agent deployed via Agent Framework",
       difficulty: "intermediate",
       question:
         "A platform team needs to cap how much one department can consume from a shared LLM endpoint and keep an auditable record of request and response payloads. Which combination of features meets both needs?",

@@ -48,7 +48,7 @@ export const nvidiaNcaAiioQuestions: PracticeQuestionSet = {
         "A manager asks why the team wants GPUs rather than more CPU servers for deep learning training. Which statement matches how NVIDIA's CUDA documentation describes the two architectures?",
       options: [
         { id: "A", text: "GPUs have much higher single-thread performance than CPUs, so each individual operation finishes sooner", rationale: "The opposite is true: a GPU accepts lower single-thread performance in exchange for higher total throughput." },
-        { id: "B", text: "A GPU is built to run thousands of threads in parallel and spends more of its transistors on data processing, trading single-thread speed for total throughput", rationale: "Correct. The CUDA guide describes the CPU as optimised to run a serial thread as fast as possible and the GPU as optimised for thousands of parallel threads and much greater total throughput." },
+        { id: "B", text: "A GPU runs thousands of threads in parallel, trading single-thread speed for much greater total throughput", rationale: "Correct. The CUDA guide describes the CPU as optimised to run a serial thread as fast as possible and the GPU as optimised for thousands of parallel threads and much greater total throughput." },
         { id: "C", text: "CPUs cannot perform the floating-point matrix operations that neural networks need", rationale: "CPUs can perform these operations; they simply run far fewer of them in parallel." },
         { id: "D", text: "GPUs dedicate more transistors to data caching and flow control, which is why they hide memory latency so well", rationale: "Dedicating more transistors to caching and flow control is how the CUDA guide characterises CPUs, not GPUs." },
       ],
@@ -66,9 +66,9 @@ export const nvidiaNcaAiioQuestions: PracticeQuestionSet = {
         "Which statement best contrasts the infrastructure considerations for training a large model with those for serving it in production?",
       options: [
         { id: "A", text: "Inference always needs more total compute than training because the model runs continuously", rationale: "Training a large model is the heavier workload; NVIDIA cites around 3.8 x 10^25 operations to train Llama 3.1 405B. Inference demand varies with usage." },
-        { id: "B", text: "Training is mainly judged on per-user response time, while inference is an offline batch process", rationale: "This reverses the two. Responsiveness to each user is an inference concern; training is a long-running compute job." },
+        { id: "B", text: "Training is mainly judged on per-user response time, while inference runs as an offline batch process", rationale: "This reverses the two. Responsiveness to each user is an inference concern; training is a long-running compute job." },
         { id: "C", text: "Inference runs only on CPUs, so GPU capacity is needed for training alone", rationale: "Inference is commonly GPU-accelerated, especially for large language models." },
-        { id: "D", text: "Training is extremely compute-intensive, while inference has to balance real-time responsiveness for each user against throughput for many users", rationale: "Correct. NVIDIA describes training as enormously compute-hungry and inference as a trade-off between per-user latency and serving many users at once." },
+        { id: "D", text: "Training is very compute-intensive; inference balances per-user responsiveness with serving many users", rationale: "Correct. NVIDIA describes training as enormously compute-hungry and inference as a trade-off between per-user latency and serving many users at once." },
       ],
       answer: "D",
       explanation:
@@ -90,7 +90,7 @@ export const nvidiaNcaAiioQuestions: PracticeQuestionSet = {
       ],
       answer: "A",
       explanation:
-        "Prefill processes the whole prompt at once and is computationally heavy; decode generates one token at a time. Because the phases stress hardware differently, disaggregated serving gives each its own GPUs so both can be tuned independently.",
+        "Prefill processes the whole prompt at once and is computationally heavy; decode generates one token at a time. Because the phases stress hardware differently, disaggregated serving gives prefill its own set of GPUs, separate from the GPUs that run decode.",
       reference: TRAINING_INFERENCE,
     },
     {
@@ -101,10 +101,10 @@ export const nvidiaNcaAiioQuestions: PracticeQuestionSet = {
       question:
         "A platform team wants a trusted source for GPU-optimised framework containers, pretrained models and Kubernetes Helm charts. Which part of the NVIDIA software stack provides this?",
       options: [
-        { id: "A", text: "Slurm, which queues and launches multi-node batch jobs", rationale: "Slurm is a workload manager for scheduling jobs; it does not distribute containers or models." },
-        { id: "B", text: "The baseboard management controller on each DGX system", rationale: "The BMC is for out-of-band hardware management, not for publishing software." },
-        { id: "C", text: "The NGC catalog, a curated set of GPU-optimised containers, pretrained models, Helm charts and resources", rationale: "Correct. NVIDIA describes the NGC catalog as curated GPU-optimised software for AI, HPC and visualisation, with every image security scanned and performance tested on GPUs." },
-        { id: "D", text: "The NVIDIA License System used by vGPU clients", rationale: "The NVIDIA License System licenses vGPU software; it is not a software catalogue." },
+        { id: "A", text: "Slurm, the workload manager that queues, schedules and launches multi-node batch jobs", rationale: "Slurm is a workload manager for scheduling jobs; it does not distribute containers or models." },
+        { id: "B", text: "The baseboard management controller (BMC) built into each DGX system", rationale: "The BMC is for out-of-band hardware management, not for publishing software." },
+        { id: "C", text: "The NGC catalog of GPU-optimised containers, pretrained models and Helm charts", rationale: "Correct. NVIDIA describes the NGC catalog as curated GPU-optimised software for AI, HPC and visualisation, with every image security scanned and performance tested on GPUs." },
+        { id: "D", text: "The NVIDIA License System that serves licenses to vGPU client VMs", rationale: "The NVIDIA License System licenses vGPU software; it is not a software catalogue." },
       ],
       answer: "C",
       explanation:
@@ -157,10 +157,10 @@ export const nvidiaNcaAiioQuestions: PracticeQuestionSet = {
       question:
         "An architect proposes adding NVIDIA BlueField DPUs to GPU servers. What is the main benefit she is after?",
       options: [
-        { id: "A", text: "Extra Tensor Cores that speed up model training", rationale: "A DPU does not add GPU compute; training throughput still comes from the GPUs." },
-        { id: "B", text: "Replacing the GPUs for inference workloads at lower cost", rationale: "A DPU is an infrastructure processor, not a substitute for GPUs running models." },
-        { id: "C", text: "High-bandwidth GPU-to-GPU links inside a single server", rationale: "GPU-to-GPU connectivity inside a DGX system comes from NVLink and NVSwitch, not a DPU." },
-        { id: "D", text: "Offloading, accelerating and isolating networking, storage, security and management functions from the host CPU", rationale: "Correct. NVIDIA describes BlueField-3 as offloading, accelerating and isolating software-defined networking, storage, security and management, running its own software on Arm cores." },
+        { id: "A", text: "Additional Tensor Cores on the server that speed up model training and fine-tuning", rationale: "A DPU does not add GPU compute; training throughput still comes from the GPUs." },
+        { id: "B", text: "Replacing the GPUs for inference workloads at a lower cost per served request", rationale: "A DPU is an infrastructure processor, not a substitute for GPUs running models." },
+        { id: "C", text: "High-bandwidth GPU-to-GPU links between the GPUs inside a single server", rationale: "GPU-to-GPU connectivity inside a DGX system comes from NVLink and NVSwitch, not a DPU." },
+        { id: "D", text: "Offloading networking, storage, security and management work from the host CPU", rationale: "Correct. NVIDIA describes BlueField-3 as offloading, accelerating and isolating software-defined networking, storage, security and management, running its own software on Arm cores." },
       ],
       answer: "D",
       explanation:
@@ -193,7 +193,7 @@ export const nvidiaNcaAiioQuestions: PracticeQuestionSet = {
       question:
         "In the DGX SuperPOD reference architecture for DGX H100, which network carries the GPU traffic between nodes during a multi-node training job?",
       options: [
-        { id: "A", text: "The InfiniBand compute fabric, which is rail-aligned in groups of nodes", rationale: "Correct. The compute fabric connects the GPU nodes over InfiniBand; traffic between nodes or between rails traverses the spine layer." },
+        { id: "A", text: "The rail-aligned InfiniBand compute fabric", rationale: "Correct. The compute fabric connects the GPU nodes over InfiniBand; traffic between nodes or between rails traverses the spine layer." },
         { id: "B", text: "The in-band management Ethernet network", rationale: "The in-band Ethernet network serves cluster management services, home file systems and access to external services such as the NGC registry." },
         { id: "C", text: "The out-of-band management Ethernet network", rationale: "The out-of-band network connects management ports of systems, switches and PDUs; it does not carry workload traffic." },
         { id: "D", text: "NVLink and NVSwitch inside each DGX system", rationale: "NVLink and NVSwitch connect the eight GPUs within one DGX H100. Traffic between nodes needs the compute fabric." },
@@ -231,7 +231,7 @@ export const nvidiaNcaAiioQuestions: PracticeQuestionSet = {
       options: [
         { id: "A", text: "Give each service its own full GPU so that nothing is shared", rationale: "This isolates the services but leaves most of each GPU idle, which is the utilisation problem MIG is designed to solve." },
         { id: "B", text: "Run all services as ordinary processes on one GPU without partitioning", rationale: "Unpartitioned sharing lets one workload thrash caches or saturate memory bandwidth for the others, so latency is not predictable." },
-        { id: "C", text: "Partition the GPU with Multi-Instance GPU (MIG) into isolated instances", rationale: "Correct. MIG splits supported GPUs into up to seven instances with separate paths through the memory system, a defined quality of service and fault isolation." },
+        { id: "C", text: "Partition the GPU into isolated Multi-Instance GPU (MIG) instances", rationale: "Correct. MIG splits supported GPUs into up to seven instances with separate paths through the memory system, a defined quality of service and fault isolation." },
         { id: "D", text: "Add a BlueField DPU to the server", rationale: "A DPU offloads infrastructure functions; it does not partition GPU compute or memory between workloads." },
       ],
       answer: "C",
@@ -247,14 +247,14 @@ export const nvidiaNcaAiioQuestions: PracticeQuestionSet = {
       question:
         "The DGX H100 user guide lists six 3.3 kW power supplies in a 4+2 redundant configuration. What does the 4+2 configuration mean?",
       options: [
-        { id: "A", text: "All six supplies must be working for the system to start", rationale: "A redundant configuration exists precisely so that the system does not depend on every supply." },
-        { id: "B", text: "Four supplies carry the load and two are redundant, so the system can tolerate the loss of up to two supplies", rationale: "Correct. In a 4+2 design four supplies are sufficient for operation and the remaining two provide redundancy." },
-        { id: "C", text: "The whole system draws at most 3.3 kW", rationale: "3.3 kW is the rating of each supply; the system is specified for considerably more, up to 10.2 kW." },
-        { id: "D", text: "Four supplies power the GPUs and two power the CPUs", rationale: "The notation describes redundancy, not a split of supplies between components." },
+        { id: "A", text: "All six supplies must be installed and working before the system is able to power on", rationale: "A redundant configuration exists precisely so that the system does not depend on every supply." },
+        { id: "B", text: "Four supplies carry the load and up to two can fail without stopping the system", rationale: "Correct. In a 4+2 design four supplies are sufficient for operation and the remaining two provide redundancy." },
+        { id: "C", text: "The complete system draws at most 3.3 kW at full load", rationale: "3.3 kW is the rating of each supply; the system is specified for considerably more, up to 10.2 kW." },
+        { id: "D", text: "Four supplies power the GPUs and two supplies power the CPUs and motherboard", rationale: "The notation describes redundancy, not a split of supplies between components." },
       ],
       answer: "B",
       explanation:
-        "Power redundancy notation tells facility planners how many supplies are needed and how many can fail. With a single DGX H100 rated at up to 10.2 kW, rack power and cooling must be planned for far higher density than typical CPU servers.",
+        "Power redundancy notation tells facility planners how many supplies are needed and how many can fail. With the DGX H100 user guide listing a maximum of 10.2 kW for a single system, rack power and cooling must be planned for far higher density than typical CPU servers.",
       reference: { label: "NVIDIA DGX H100 User Guide: Introduction to the DGX H100 System", url: "https://docs.nvidia.com/dgx/dgxh100-user-guide/introduction-to-dgxh100.html" },
     },
 

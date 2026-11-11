@@ -300,8 +300,8 @@ export const isacaAairQuestions: PracticeQuestionSet = {
       options: [
         { id: "A", text: "A larger model with better instruction following", rationale: "A different model might reduce errors, but it does not give the team a way to stop the harm now." },
         { id: "B", text: "Monthly accuracy reporting to the steering committee", rationale: "Periodic reporting is useful oversight, but it does not provide an immediate response mechanism." },
-        { id: "C", text: "A defined mechanism to deactivate or disengage the system, with assigned responsibility and a manual fallback process", rationale: "Correct. The NIST AI RMF (MANAGE 2.4) calls for mechanisms, with assigned responsibilities, to supersede, disengage or deactivate AI systems whose performance is inconsistent with intended use." },
-        { id: "D", text: "A disclaimer on the website that chatbot answers are not binding", rationale: "A disclaimer may limit legal exposure, but it does not stop the system or restore the service safely." },
+        { id: "C", text: "A defined way to deactivate the system, with an assigned owner and a manual fallback", rationale: "Correct. The NIST AI RMF (MANAGE 2.4) calls for mechanisms, with assigned responsibilities, to supersede, disengage or deactivate AI systems whose performance is inconsistent with intended use." },
+        { id: "D", text: "A disclaimer on the website stating that chatbot answers are not legally binding commitments", rationale: "A disclaimer may limit legal exposure, but it does not stop the system or restore the service safely." },
       ],
       answer: "C",
       explanation:

@@ -33,7 +33,7 @@ export const claudeCertifiedDeveloperCcdvFGuide: ExamGuide = {
       paragraphs: [
         "CCDV-F has 53 items in 120 minutes, which leaves a little over two minutes per item. Items are multiple choice or multiple response, and every item states how many responses to select. The exam is closed book, and the Partner Academy FAQ states that AI assistants and browser translation tools are not permitted. It is offered in English and Japanese and delivered by Pearson VUE, either online proctored (OnVUE) or at a Pearson test center.",
         "Scoring is criterion referenced rather than curved. You receive a pass or fail result, a scaled score from 100 to 1,000 (720 to pass) and your percent correct per domain; those domain percentages help you plan a retake but do not decide the result. Scores appear on screen at the end of the exam.",
-        "There are no mandatory prerequisites or required courses. Exams are currently open only to people at Claude Partner Network organizations who register with a partner company email, are at least 18 and show a government-issued ID. The credential is valid for 12 months. On-time renewal is free and consists of reviewing what has changed and completing a non-proctored assessment on Partner Academy; a lapsed credential requires a full retake. After a failed attempt the waiting periods are 14, 30 and 90 days, with at most four attempts per exam in a rolling 12 months.",
+        "There are no mandatory prerequisites or required courses. Exams are currently open only to people at Claude Partner Network organizations who register with a partner company email, are at least 18 and show a government-issued ID. The credential is valid for 12 months. On-time renewal is free and consists of a non-proctored assessment on Partner Academy; a lapsed credential requires retaking the full exam at the full fee. After a failed attempt the waiting periods are 14, 30 and 90 days, with at most four attempts per exam in a rolling 12 months.",
       ],
     },
     {
@@ -97,7 +97,7 @@ export const claudeCertifiedDeveloperCcdvFGuide: ExamGuide = {
     {
       question: "How long is the credential valid?",
       answer:
-        "12 months from the date it is awarded. Renewing on time is free and involves reviewing recent changes and completing a non-proctored assessment on Partner Academy. If the credential lapses, you have to retake the full exam.",
+        "12 months from the date it is awarded. Renewing on time is free and involves a non-proctored assessment on Partner Academy. If the credential lapses, you have to retake the full exam.",
     },
     {
       question: "Are CertRamp's CCDV-F questions real exam questions?",

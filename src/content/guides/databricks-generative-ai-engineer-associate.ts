@@ -39,7 +39,7 @@ export const databricksGenerativeAiEngineerAssociateGuide: ExamGuide = {
       id: "naming-note",
       heading: "A note on product names",
       paragraphs: [
-        "Databricks renames generative AI features often. The exam guide uses names such as Mosaic AI Vector Search, AI Gateway and Agent Bricks Knowledge Assistant, while parts of the current documentation describe Vector Search as Databricks AI Search and gateway features under Unity Gateway, and mark Knowledge Assistant as a legacy offering. Learn the concepts behind the features (index types, sync, filtering, reranking, inference tables, rate limits) so a different label does not throw you, and use the names in the exam guide as your reference for the exam.",
+        "Databricks renames generative AI features often. The exam guide uses names such as Mosaic AI Vector Search, AI Gateway and Agent Bricks Knowledge Assistant, while parts of the current documentation describe Vector Search as Databricks AI Search and gateway features under Unity Gateway, and list Knowledge Assistant, custom agents on Model Serving and AI Playground among legacy agent offerings. Learn the concepts behind the features (index types, sync, filtering, reranking, inference tables, rate limits) so a different label does not throw you, and use the names in the exam guide as your reference for the exam.",
       ],
     },
     {

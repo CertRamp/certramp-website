@@ -261,7 +261,7 @@ export const comptiaSecaiPlusCy0001Questions: PracticeQuestionSet = {
       options: [
         { id: "A", text: "Allow the use to continue because the chatbot provider is large and well known", rationale: "A provider's reputation does not make unsanctioned processing of confidential data compliant with company policy." },
         { id: "B", text: "Block the chatbot and ban all AI use permanently", rationale: "A blanket ban without an alternative tends to push use to personal devices, creating more shadow AI." },
-        { id: "C", text: "Set a sanctioned-use policy, offer an approved private model and govern data", rationale: "Correct. The SecAI+ objectives list sanctioned versus unsanctioned use, private versus public models and sensitive data governance as corporate policy topics." },
+        { id: "C", text: "Set a sanctioned-use policy, offer an approved private model and govern data", rationale: "Correct. The SecAI+ objectives (4.3) list sanctioned versus unsanctioned use, private versus public models and sensitive data governance as corporate policy topics." },
         { id: "D", text: "Ask the chatbot provider to delete all past conversations", rationale: "Deletion requests may help clean up, but they do not prevent the behaviour from continuing." },
       ],
       answer: "C",

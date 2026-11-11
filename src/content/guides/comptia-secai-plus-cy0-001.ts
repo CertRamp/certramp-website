@@ -20,7 +20,7 @@ export const comptiaSecaiPlusCy0001Guide: ExamGuide = {
       heading: "What SecAI+ actually tests",
       paragraphs: [
         "SecAI+ has four domains: Basic AI concepts related to cybersecurity (17%), Securing AI systems (40%), AI-assisted security (24%) and AI governance, risk, and compliance (19%). Two thirds of the exam is about protecting AI systems and using AI for defence, so it is a hands-on security exam rather than a data science exam.",
-        "The CompTIA exam objectives break the domains into 16 objectives. Domain 1 covers AI types and training techniques (from machine learning and transformers to LLMs, SLMs, fine-tuning, pruning and quantization), prompt engineering, data security for AI including RAG and embeddings, and security across the AI life cycle with human-in-the-loop oversight. Domain 2 is the heart of the exam: using threat-modeling resources (OWASP LLM and ML Security Top 10, MITRE ATLAS, the MIT AI Risk Repository), implementing model and gateway controls, access controls for models, data, agents and APIs, data security controls, monitoring and auditing, and analysing evidence of attacks to suggest compensating controls.",
+        "The CompTIA exam objectives break the domains into 15 objectives. Domain 1 covers AI types and training techniques (from machine learning and transformers to LLMs, SLMs, fine-tuning, pruning and quantization), prompt engineering, data security for AI including RAG and embeddings, and security across the AI life cycle with human-in-the-loop oversight. Domain 2 is the heart of the exam: using threat-modeling resources (OWASP LLM and ML Security Top 10, MITRE ATLAS, the MIT AI Risk Repository), implementing security controls such as gateway controls (prompt firewalls, rate, token and input limits), access controls for models, data, agents and APIs, data security controls, monitoring and auditing, and analysing evidence of attacks to suggest compensating controls.",
         "Domain 3 covers AI-enabled security tools (IDE, browser and CLI plug-ins, chatbots, MCP servers), how AI enhances attacks such as deepfakes and automated attack generation, and automating security tasks with AI agents, low-code scripting and CI/CD testing. Domain 4 covers governance structures and roles, responsible AI and AI risks including shadow AI, and the impact of compliance frameworks such as the EU AI Act, OECD standards, ISO AI standards and the NIST AI RMF.",
       ],
     },
@@ -39,7 +39,7 @@ export const comptiaSecaiPlusCy0001Guide: ExamGuide = {
       steps: [
         {
           title: "Download the exam objectives",
-          body: "Work from the official CompTIA SecAI+ CY0-001 exam objectives and list all 16 objectives with their sub-bullets. Mark each as known, unsure or new, and give domain 2 (40%) the largest share of your time.",
+          body: "Work from the official CompTIA SecAI+ CY0-001 exam objectives and list all 15 objectives with their sub-bullets. Mark each as known, unsure or new, and give domain 2 (40%) the largest share of your time.",
         },
         {
           title: "Learn the AI vocabulary",

@@ -39,7 +39,7 @@ export const isoIec42001FoundationQuestions: PracticeQuestionSet = {
       question:
         "A 40-person logistics company does not build AI, but it uses a purchased AI route-planning service in daily operations. Can it implement an AIMS based on ISO/IEC 42001?",
       options: [
-        { id: "A", text: "Yes. It applies to any organization that provides or uses AI", rationale: "Correct. ISO states that ISO/IEC 42001 is intended for organizations providing or utilizing AI-based products or services, across industries and organization sizes." },
+        { id: "A", text: "Yes. It applies to any organization that provides or uses AI", rationale: "Correct. ISO states that ISO/IEC 42001 applies to organizations of any size involved in developing, providing or using AI-based products or services." },
         { id: "B", text: "No. Only organizations that develop and train their own AI models are in scope", rationale: "Using AI is explicitly covered, not only developing it." },
         { id: "C", text: "Only if it already holds an ISO/IEC 27001 certificate for its information security management system", rationale: "ISO/IEC 42001 can be implemented on its own; an existing ISO/IEC 27001 system helps integration but is not a precondition." },
         { id: "D", text: "No. The standard is intended for large enterprises and public authorities", rationale: "ISO describes the standard as applicable regardless of organization size." },
@@ -83,7 +83,7 @@ export const isoIec42001FoundationQuestions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "Supervised learning uses labelled training data, which is typical for classification and regression tasks such as credit scoring. The quality and representativeness of those labels is also where many AI risks, such as bias, start.",
-      reference: { label: "ISO/IEC 22989:2022 Artificial intelligence concepts and terminology", url: "https://committee.iso.org/standard/74296.html" },
+      reference: HANDBOOK,
     },
     {
       id: "iso42001-d1-deep-learning",
@@ -229,7 +229,7 @@ export const isoIec42001FoundationQuestions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "The sequence is identify, analyse, evaluate, then treat, with monitoring and review throughout. Defined AI risk criteria are what make evaluation consistent and repeatable.",
-      reference: { label: "ISO/IEC 23894:2023 Guidance on risk management", url: "https://committee.iso.org/standard/77304.html" },
+      reference: HANDBOOK,
     },
     {
       id: "iso42001-d2-third-parties",
@@ -242,7 +242,7 @@ export const isoIec42001FoundationQuestions: PracticeQuestionSet = {
         { id: "A", text: "The assistant is out of scope, because the company does not own the model", rationale: "AI systems that rely on third-party components remain in scope when the organization provides or uses them." },
         { id: "B", text: "The company may only use suppliers that are certified to ISO/IEC 42001", rationale: "The standard does not require suppliers to hold ISO/IEC 42001 certification." },
         { id: "C", text: "Signing a contract transfers all accountability for the assistant's outcomes to the supplier", rationale: "Contracts can allocate tasks and responsibilities, but the organization remains accountable for its own AIMS and AI use." },
-        { id: "D", text: "Allocate life cycle responsibilities and manage the supplier against its responsible AI approach", rationale: "Correct. Third-party and customer relationships are part of the AIMS: responsibilities are allocated and suppliers are managed in line with the organization's requirements." },
+        { id: "D", text: "Allocate responsibilities and manage the supplier in line with its own AI requirements", rationale: "Correct. Third-party and customer relationships are part of the AIMS: responsibilities are allocated and suppliers are managed in line with the organization's requirements." },
       ],
       answer: "D",
       explanation:

@@ -22,7 +22,7 @@ const PROJECTS = {
   url: "https://support.claude.com/en/articles/9517075-what-are-projects",
 };
 
-const PROMPTING = PLATFORM("Be clear and direct (prompting best practices)", "build-with-claude/prompt-engineering/be-clear-and-direct");
+const PROMPTING = PLATFORM("Prompting best practices", "build-with-claude/prompt-engineering/claude-prompting-best-practices");
 const HALLUCINATIONS = PLATFORM("Reduce hallucinations", "test-and-evaluate/strengthen-guardrails/reduce-hallucinations");
 
 export const claudeCertifiedAssociateCcaoFQuestions: PracticeQuestionSet = {
@@ -71,8 +71,8 @@ export const claudeCertifiedAssociateCcaoFQuestions: PracticeQuestionSet = {
       ],
       answer: "A",
       explanation:
-        "Chaining a task into separate steps is useful when you need to inspect intermediate outputs or enforce a fixed sequence. A common pattern is draft, review against criteria, then refine.",
-      reference: PLATFORM("Chain complex prompts (prompting best practices)", "build-with-claude/prompt-engineering/chain-prompts"),
+        "Anthropic notes that explicit prompt chaining is still useful when you need to inspect intermediate outputs or enforce a specific pipeline structure. The most common pattern is draft, review against criteria, then refine.",
+      reference: PROMPTING,
     },
 
     /* ── d2: Output Evaluation and Validation (21%) ───────────────────────── */
@@ -279,7 +279,7 @@ export const claudeCertifiedAssociateCcaoFQuestions: PracticeQuestionSet = {
       ],
       answer: "D",
       explanation:
-        "Anthropic's Usage Policy names high-risk areas such as legal, healthcare, insurance, finance, employment, housing and academic testing. For these, a qualified person with authority to change the recommendation must review it, and the people affected must be told AI was used.",
+        "Anthropic's Usage Policy names high-risk areas such as legal, medical, finance, insurance, employment, housing, and education and credentials. For these, a qualified person with authority to change the recommendation must review it, and the people affected must be told AI was used.",
       reference: { label: "Anthropic Usage Policy", url: "https://www.anthropic.com/legal/aup" },
     },
 

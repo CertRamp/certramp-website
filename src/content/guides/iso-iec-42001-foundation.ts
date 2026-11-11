@@ -39,7 +39,7 @@ export const isoIec42001FoundationGuide: ExamGuide = {
       id: "how-the-exam-works",
       heading: "How the exam is structured",
       paragraphs: [
-        "The exam has 40 multiple-choice questions, each with three options and one correct answer, and lasts 1 hour. It is closed book: no training material, standards or notes are allowed. The passing score is 70%, which means at least 28 correct answers. If you request it on exam day, PECB gives Foundation candidates 10 extra minutes when they sit a paper-based exam in a language that is not their native language.",
+        "The exam has 40 multiple-choice questions, each with three options and one correct answer, and lasts 1 hour. It is closed book: no training material, standards or notes are allowed. The passing score is 70%, which means at least 28 correct answers. If you take the exam in a language that is not your native language, you can request 10 extra minutes on the day of the exam.",
         "You take the exam either online through the PECB Exams application, supervised by a remote PECB invigilator through your camera, or on paper at the end of a classroom or live online course run by a PECB partner. For online multiple-choice exams the result is shown immediately; paper-based results arrive by email within two to four weeks. If you fail, the email lists the domains where you performed poorly.",
         "The PECB training course lasts two days (Day 1: Introduction to AIMS and ISO/IEC 42001; Day 2: AIMS and certificate exam) and earns 14 CPD credits. There are no prerequisites. Course participants who fail can retake the exam once for free within 12 months of the initial exam date; PECB requires a 15-day wait after a failed first attempt.",
       ],
