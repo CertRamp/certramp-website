@@ -153,7 +153,7 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
         "An attacker repeatedly queries a model trained on hospital records to determine whether one specific patient's record was part of the training set. How does the NIST adversarial machine learning taxonomy (NIST AI 100-2 E2025) classify this?",
       options: [
         { id: "A", text: "Membership inference, a privacy attack", rationale: "Correct. NIST lists membership inference under the privacy compromise objective and describes it as inferring the presence of data in the training set." },
-        { id: "B", text: "Property inference, a privacy attack", rationale: "Property inference is also a privacy attack, but it targets properties of the training data distribution, not whether an individual record was used." },
+        { id: "B", text: "Property inference, also a privacy attack", rationale: "Property inference is also a privacy attack, but it targets properties of the training data distribution, not whether an individual record was used." },
         { id: "C", text: "Evasion, an integrity attack", rationale: "Evasion crafts adversarial inputs to change a deployed model's output; it does not try to learn about the training data." },
         { id: "D", text: "Availability poisoning", rationale: "Poisoning requires influence over the training stage and aims to degrade the model, not to reveal who is in the data." },
       ],
@@ -320,7 +320,7 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
       options: [
         { id: "A", text: "Publish a detailed model card describing the model's training and intended use", rationale: "Model cards document a model but, as OWASP notes, offer no guarantees on its origin." },
         { id: "B", text: "Add rate limiting to the backend API", rationale: "On-device inference does not pass through the backend, so server-side rate limits do not see or stop it." },
-        { id: "C", text: "Encrypt the on-device model, check its integrity, and use vendor attestation APIs to block tampered apps or models", rationale: "Correct. These are the controls OWASP lists for protecting models deployed to edge devices." },
+        { id: "C", text: "Encrypt the model, verify its integrity and use vendor attestation APIs", rationale: "Correct. These are the controls OWASP lists for protecting models deployed to edge devices." },
         { id: "D", text: "Quantise the model so it is smaller and harder to read", rationale: "Quantisation reduces size and compute needs; it is not a tamper protection." },
       ],
       answer: "C",
