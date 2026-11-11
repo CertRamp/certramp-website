@@ -61,9 +61,9 @@ export const isacaAairQuestions: PracticeQuestionSet = {
         "Several business units submit AI use cases for approval. The AI risk committee notices that each team rates its residual risk as acceptable, but the teams use very different reasoning. What should the committee establish FIRST?",
       options: [
         { id: "A", text: "A single approved AI vendor list for all business units", rationale: "A vendor list may help procurement, but it does not tell teams what level of risk the organisation is willing to accept." },
-        { id: "B", text: "A requirement that every use case be red-teamed before approval", rationale: "Testing produces risk information, but without a defined tolerance the results still cannot be judged consistently." },
+        { id: "B", text: "A requirement that every use case be red-teamed by an external firm before approval", rationale: "Testing produces risk information, but without a defined tolerance the results still cannot be judged consistently." },
         { id: "C", text: "A central inventory of all AI models in production", rationale: "An inventory is an important governance control, but it records what exists rather than setting the threshold for acceptance." },
-        { id: "D", text: "Documented organisational risk tolerances for AI that all assessments are measured against", rationale: "Correct. Acceptability is only meaningful against an agreed tolerance. The NIST AI RMF (MAP 1.5) calls for organisational risk tolerances to be determined and documented." },
+        { id: "D", text: "Documented AI risk tolerances that every assessment is measured against", rationale: "Correct. Acceptability is only meaningful against an agreed tolerance. The NIST AI RMF (MAP 1.5) calls for organisational risk tolerances to be determined and documented." },
       ],
       answer: "D",
       explanation:
@@ -96,8 +96,8 @@ export const isacaAairQuestions: PracticeQuestionSet = {
       question:
         "A review finds that employees in several departments paste customer data into free public generative AI chatbots to draft emails. There is no AI policy. What is the BEST first step for the AI risk practitioner to recommend?",
       options: [
-        { id: "A", text: "Block all AI websites at the proxy and close the issue", rationale: "Blocking without a policy or approved alternative tends to push use to personal devices and does not set expectations for future tools." },
-        { id: "B", text: "Issue an AI acceptable use policy that defines approved tools and permitted data, supported by staff training", rationale: "Correct. A policy sets the rules for sanctioned use and data handling, and training makes staff aware of them. Technical controls can then enforce the policy." },
+        { id: "A", text: "Block all AI websites at the web proxy for every user and consider the issue closed", rationale: "Blocking without a policy or approved alternative tends to push use to personal devices and does not set expectations for future tools." },
+        { id: "B", text: "Issue an AI acceptable use policy, backed by staff training", rationale: "Correct. A policy sets the rules for sanctioned use and data handling, and training makes staff aware of them. Technical controls can then enforce the policy." },
         { id: "C", text: "Deploy data loss prevention rules for AI sites as the only control", rationale: "DLP is a useful enforcing control, but on its own it lacks the policy basis that defines what is allowed and why." },
         { id: "D", text: "Start disciplinary proceedings against the employees involved", rationale: "Without a policy in place, staff had no defined rule to break; this treats a governance gap as individual misconduct." },
       ],
@@ -114,9 +114,9 @@ export const isacaAairQuestions: PracticeQuestionSet = {
       question:
         "An EU-based company plans to use an AI tool that sorts and ranks CVs for job openings. Under the risk-based approach of the EU AI Act, how is this use case MOST likely classified?",
       options: [
-        { id: "A", text: "High risk, with obligations such as risk management, data quality, logging, documentation and human oversight", rationale: "Correct. The European Commission lists CV-sorting software for recruitment as an example of a high-risk use case, which carries requirements such as risk mitigation, high-quality datasets, logging, documentation and human oversight." },
+        { id: "A", text: "High risk, with duties such as risk management, logging and human oversight", rationale: "Correct. The European Commission lists CV-sorting software for recruitment as an example of a high-risk use case, which carries requirements such as risk mitigation, high-quality datasets, logging, documentation and human oversight." },
         { id: "B", text: "Unacceptable risk, so the tool is prohibited", rationale: "Prohibited practices include social scoring and emotion recognition in the workplace. CV sorting is regulated as high risk, not banned." },
-        { id: "C", text: "Transparency risk only, so the company just needs to disclose that AI is used", rationale: "Transparency obligations apply to systems such as chatbots and generated content. Employment use cases carry the heavier high-risk obligations." },
+        { id: "C", text: "Transparency risk only, so the company just needs to disclose to applicants that AI is used", rationale: "Transparency obligations apply to systems such as chatbots and generated content. Employment use cases carry the heavier high-risk obligations." },
         { id: "D", text: "Minimal risk, with no specific obligations", rationale: "Minimal-risk examples are spam filters and AI in video games. A tool that affects access to employment is treated as high risk." },
       ],
       answer: "A",
@@ -152,10 +152,10 @@ export const isacaAairQuestions: PracticeQuestionSet = {
       question:
         "Before go-live, a model team reports 98% accuracy for a new claims classification model. During review, the risk practitioner learns the accuracy was measured on the same records used for training. What is the PRIMARY concern?",
       options: [
-        { id: "A", text: "The model may be overfitted, so performance must be evaluated on separate data that represents production conditions", rationale: "Correct. Scoring a model on its own training data hides overfitting. Validation needs held-out data that reflects the intended deployment setting." },
+        { id: "A", text: "Possible overfitting; it must be evaluated on separate, representative data", rationale: "Correct. Scoring a model on its own training data hides overfitting. Validation needs held-out data that reflects the intended deployment setting." },
         { id: "B", text: "Accuracy is an unacceptable metric for any classification model", rationale: "Accuracy can be misleading on imbalanced data, but it is not banned; the core problem here is the test data, not the metric." },
         { id: "C", text: "The model should be retrained with more epochs to reach 100%", rationale: "More training on the same data would increase the risk of overfitting, not prove that the model generalises." },
-        { id: "D", text: "The training data must be deleted before deployment to protect privacy", rationale: "Data retention is a separate question; deleting training data would also remove the ability to retest and audit the model." },
+        { id: "D", text: "The training data must be deleted before deployment to protect the privacy of claimants", rationale: "Data retention is a separate question; deleting training data would also remove the ability to retest and audit the model." },
       ],
       answer: "A",
       explanation:
@@ -188,9 +188,9 @@ export const isacaAairQuestions: PracticeQuestionSet = {
       question:
         "A team fine-tunes a language model on data aggregated from internal documents, a purchased dataset and public web sources. Which control BEST reduces the risk that poisoned data goes undetected?",
       options: [
-        { id: "A", text: "Increasing the size of the dataset so poisoned records are diluted", rationale: "Targeted poisoning and backdoors can work with a small number of records, so more data does not reliably neutralise them." },
+        { id: "A", text: "Increasing the size of the dataset so that any poisoned records are diluted by clean ones", rationale: "Targeted poisoning and backdoors can work with a small number of records, so more data does not reliably neutralise them." },
         { id: "B", text: "Encrypting the training dataset at rest", rationale: "Encryption protects confidentiality in storage, but it does not reveal whether the data was manipulated before it was stored." },
-        { id: "C", text: "Tracking data provenance and changes, for example with an ML-BOM and dataset version control, and vetting data suppliers", rationale: "Correct. OWASP recommends tracking data origins and transformations (for example with CycloneDX or an ML-BOM), using version control such as DVC to detect manipulation, and vetting data vendors." },
+        { id: "C", text: "Tracking data provenance and versions (for example ML-BOM, DVC) and vetting suppliers", rationale: "Correct. OWASP recommends tracking data origins and transformations (for example with CycloneDX or an ML-BOM), using version control such as DVC to detect manipulation, and vetting data vendors." },
         { id: "D", text: "Restricting the model to answer only in a fixed output format", rationale: "Output format checks address other risks, such as improper output handling, but not the integrity of the training data." },
       ],
       answer: "C",
@@ -280,9 +280,9 @@ export const isacaAairQuestions: PracticeQuestionSet = {
       question:
         "A company uses a third-party generative AI service in a customer-facing process. The contract allows the provider to change the underlying model at any time without notice. Which contract change BEST addresses this risk?",
       options: [
-        { id: "A", text: "Advance notification of material model changes, with the right to test before the change affects production and to exit if needed", rationale: "Correct. Notice and a test window let the company re-validate the service, and an exit right gives a remedy if the new model is not acceptable." },
+        { id: "A", text: "Advance notice of material model changes, a test window and an exit right", rationale: "Correct. Notice and a test window let the company re-validate the service, and an exit right gives a remedy if the new model is not acceptable." },
         { id: "B", text: "A discount on the subscription fee if the service is unavailable", rationale: "Service credits address availability, not unannounced changes in model behaviour." },
-        { id: "C", text: "A clause that the provider's model will never produce inaccurate output", rationale: "No provider can guarantee this, and such a clause would not give the company practical control over changes." },
+        { id: "C", text: "A clause stating that the provider's model will never produce inaccurate or harmful output", rationale: "No provider can guarantee this, and such a clause would not give the company practical control over changes." },
         { id: "D", text: "Moving all prompts to a private network connection", rationale: "Private connectivity protects data in transit, but the provider could still change the model without notice." },
       ],
       answer: "A",
