@@ -16,16 +16,21 @@ const NIST_AML = {
   url: "https://csrc.nist.gov/pubs/ai/100/2/e2025/final",
 };
 
+const MCP_SECURITY = {
+  label: "Model Context Protocol: Security Best Practices",
+  url: "https://modelcontextprotocol.io/specification/2025-11-25/basic/security_best_practices",
+};
+
 export const giacGaipsQuestions: PracticeQuestionSet = {
   slug: "giac-gaips",
   intro:
-    "15 original GIAC GAIPS practice questions across all eight exam certification objectives published by GIAC. GIAC does not publish weightings, so the questions are spread across all eight objectives (two each, one for Model Customization and Alignment). Each one comes with the answer, a short explanation and the reason every other option is wrong.",
+    "30 original GIAC GAIPS practice questions across all eight exam certification objectives published by GIAC. GIAC does not publish weightings, so the questions are spread across all eight objectives (four each, three each for Knowledge Augmentation and Retrieval and for Model Customization and Alignment). Each one comes with the answer, a short explanation and the reason every other option is wrong.",
   published: "2026-10-27",
-  updated: "2026-10-27",
+  updated: "2026-11-11",
   seo: {
     title: "GIAC GAIPS Practice Questions with Answers (2026)",
     description:
-      "15 free, original GIAC GAIPS practice questions on agentic AI, prompt injection, RAG, MLSecOps and AI risk management, each with a full explanation.",
+      "30 free, original GIAC GAIPS practice questions on agentic AI, prompt injection, RAG, MLSecOps and AI risk management, each with a full explanation.",
   },
   questions: [
     /* ── d1: Agentic Systems and AI Integrations ──────────────────────────── */
@@ -64,6 +69,42 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
       explanation:
         "OWASP LLM06:2025 traces excessive agency to excessive functionality, excessive permissions and excessive autonomy. Minimising the extension's functions and running it with the user's least privilege removes the dangerous capability instead of hoping the model will not use it.",
       reference: OWASP("LLM06:2025", "Excessive Agency", "llm062025-excessive-agency"),
+    },
+    {
+      id: "gaips-d1-mcp-session-hijack",
+      domain: "d1",
+      objective: "Agentic Systems and AI Integrations",
+      difficulty: "advanced",
+      question:
+        "A remote MCP server runs on several stateful HTTP instances. After the first login it identifies callers only by their session ID, and session IDs are issued as sequential numbers. A penetration tester calls tools as another user by guessing a neighbouring session ID. Which remediation matches the MCP security best practices?",
+      options: [
+        { id: "A", text: "Keep session-based authentication but require remote clients to switch to the stdio transport", rationale: "stdio is a local transport that limits access to the MCP client on the same machine; it is not a fix for a remote server that authenticates by session." },
+        { id: "B", text: "Verify every inbound request, stop using sessions for authentication, and use secure random session IDs bound to the authenticated user's ID", rationale: "Correct. The specification says servers MUST verify all inbound requests, MUST NOT use sessions for authentication and MUST use non-deterministic session IDs, and SHOULD bind them to user-specific information such as <user_id>:<session_id>." },
+        { id: "C", text: "Keep the sequential IDs but make sure they are only ever sent over TLS", rationale: "TLS protects the ID in transit, but a guessable ID can still be produced by the attacker without intercepting anything." },
+        { id: "D", text: "Extend the session lifetime so that users authenticate less often and fewer IDs are issued", rationale: "Longer-lived sessions widen the window in which a stolen or guessed ID is useful; the guidance suggests rotating or expiring IDs instead." },
+      ],
+      answer: "B",
+      explanation:
+        "Session hijacking lets an attacker who knows or guesses a session ID impersonate a client or inject events into a shared queue. Binding the session to a user ID derived from the user's token means a guessed session ID alone is worthless, and authorising each request removes the reliance on the session.",
+      reference: MCP_SECURITY,
+    },
+    {
+      id: "gaips-d1-mcp-scope-minimization",
+      domain: "d1",
+      objective: "Agentic Systems and AI Integrations",
+      difficulty: "intermediate",
+      question:
+        "To avoid repeated consent prompts, an MCP server lists every scope it supports (files:*, db:*, admin:*) and the client requests all of them on first connection. Which design does the MCP guidance on scope minimisation recommend instead?",
+      options: [
+        { id: "A", text: "Keep the broad scopes but shorten the access token lifetime to a few minutes", rationale: "Short lifetimes help, but a stolen token still carries every privilege for as long as it is valid; the blast radius stays the same." },
+        { id: "B", text: "Collapse the scopes into a single full-access scope so the audit log is easier to read", rationale: "Wildcard or omnibus scopes are listed as a common mistake: they mask user intent per operation and make audit harder, not easier." },
+        { id: "C", text: "Grant whatever scopes the token claims and skip further authorisation logic on the server", rationale: "Treating claimed scopes as sufficient without server-side authorisation logic is explicitly named as a common mistake." },
+        { id: "D", text: "Start with a minimal low-risk scope set and request elevation through targeted scope challenges when a privileged operation is first attempted", rationale: "Correct. The guidance describes a progressive, least-privilege model: baseline scopes first, then incremental elevation via WWW-Authenticate scope challenges." },
+      ],
+      answer: "D",
+      explanation:
+        "Broad up-front scopes turn a single leaked token into access to unrelated tools and data and make revocation disruptive. Progressive scope elevation limits what a compromised token can do and leaves a clearer audit trail of which privileges were requested and granted.",
+      reference: MCP_SECURITY,
     },
 
     /* ── d2: AI and LLM Foundations ───────────────────────────────────────── */

@@ -56,6 +56,42 @@ export const googleCloudAgenticArchitectQuestions: PracticeQuestionSet = {
         "Low-code and code-first tools are meant to work together. Prototype quickly in a visual tool, then export the generated code when the agent needs custom logic, testing and a normal development workflow.",
       reference: { label: "Agent Platform: Design agents in Agent Studio", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/agent-studio/design-agents" },
     },
+    {
+      id: "gcpaa-d1-cx-flow-verification",
+      domain: "d1",
+      objective: "1.1 Configuring agentic workflows and behavior using low-code tools",
+      difficulty: "advanced",
+      question:
+        "A customer service agent in CX Agent Studio handles open-ended questions well. Compliance now requires that identity verification always collects the account number first, validates it, and only then asks for the PIN, with no deviation. The rest of the conversation should stay flexible. What is the recommended design?",
+      options: [
+        { id: "A", text: "Describe the verification order in the agent's instructions and add few-shot examples", rationale: "Better instructions make the order more likely, but an LLM following instructions is not deterministic, which the compliance rule requires." },
+        { id: "B", text: "Move all routing into a Dialogflow CX flow that classifies every user intent", rationale: "The guidance is to let the LLM-based agent handle intent classification and routing, and to use flows only for self-contained deterministic logic." },
+        { id: "C", text: "Use a flow-based agent for the greeting and other canned responses", rationale: "Canned responses are better handled with agent callbacks; this leaves the verification order unenforced." },
+        { id: "D", text: "Import a flow-based agent for verification, called by the CX Agent Studio agent, with input and output variable mappings", rationale: "Correct. Flow-based agents suit highly deterministic logic such as sequential data collection, validation and authentication, while the CX Agent Studio agent stays the routing layer." },
+      ],
+      answer: "D",
+      explanation:
+        "Combine generative and state-based behaviour: the agent routes and converses, and a flow runs a strict sequence until it ends and hands control back. Treat the flow as a black box and pass data in and out through explicit variable mappings, because session parameters are global by default.",
+      reference: { label: "CX Agent Studio: Flow-based agents", url: "https://docs.cloud.google.com/gemini-enterprise-cx/cx-agent-studio/flow" },
+    },
+    {
+      id: "gcpaa-d1-federated-connector",
+      domain: "d1",
+      objective: "1.2 Connecting enterprise data to Gemini Enterprise",
+      difficulty: "intermediate",
+      question:
+        "Employees should be able to search a third-party document system from Gemini Enterprise. The data owner does not allow the content to be copied into the Gemini Enterprise index, and the team accepts that search quality may be somewhat lower as a result. The connector supports both methods. Which one should you choose?",
+      options: [
+        { id: "A", text: "Data ingestion with a daily full sync", rationale: "Ingestion copies the data into the Gemini Enterprise index, which the data owner does not allow." },
+        { id: "B", text: "Federated search, which retrieves results directly from the source at query time", rationale: "Correct. Federation does not copy data into the index, so there is no storage to plan for, at the cost of possibly lower search quality." },
+        { id: "C", text: "Export the documents to Cloud Storage and ingest them into a data store", rationale: "This still copies the content into Google Cloud and into the index, so it breaks the same rule." },
+        { id: "D", text: "Store the documents in Agent Platform Memory Bank", rationale: "Memory Bank keeps facts extracted from user conversations; it is not a connector to enterprise content." },
+      ],
+      answer: "B",
+      explanation:
+        "Gemini Enterprise connectors either ingest (index) data, which usually improves search quality but uses storage and sync time, or federate queries to the source. With federation, the query string is sent to the enabled third-party backends, which is worth noting in a privacy review.",
+      reference: { label: "Gemini Enterprise: Introduction to connectors and data stores", url: "https://docs.cloud.google.com/gemini/enterprise/docs/introduction-to-connectors-and-data-stores" },
+    },
 
     /* ── Section 2: Using coding agents for application development (~17%) ── */
     {
