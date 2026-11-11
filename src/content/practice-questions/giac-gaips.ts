@@ -78,8 +78,8 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
       question:
         "A remote MCP server runs on several stateful HTTP instances. After the first login it identifies callers only by their session ID, and session IDs are issued as sequential numbers. A penetration tester calls tools as another user by guessing a neighbouring session ID. Which remediation matches the MCP security best practices?",
       options: [
-        { id: "A", text: "Keep session-based authentication but require remote clients to switch to the stdio transport", rationale: "stdio is a local transport that limits access to the MCP client on the same machine; it is not a fix for a remote server that authenticates by session." },
-        { id: "B", text: "Verify every inbound request, stop using sessions for authentication, and use secure random session IDs bound to the authenticated user's ID", rationale: "Correct. The specification says servers MUST verify all inbound requests, MUST NOT use sessions for authentication and MUST use non-deterministic session IDs, and SHOULD bind them to user-specific information such as <user_id>:<session_id>." },
+        { id: "A", text: "Keep session-based authentication but require all remote clients to move to the stdio transport instead", rationale: "stdio is a local transport that limits access to the MCP client on the same machine; it is not a fix for a remote server that authenticates by session." },
+        { id: "B", text: "Authorise every request instead of the session, and bind random session IDs to the user ID", rationale: "Correct. The specification says servers MUST verify all inbound requests, MUST NOT use sessions for authentication and MUST use non-deterministic session IDs, and SHOULD bind them to user-specific information such as <user_id>:<session_id>." },
         { id: "C", text: "Keep the sequential IDs but make sure they are only ever sent over TLS", rationale: "TLS protects the ID in transit, but a guessable ID can still be produced by the attacker without intercepting anything." },
         { id: "D", text: "Extend the session lifetime so that users authenticate less often and fewer IDs are issued", rationale: "Longer-lived sessions widen the window in which a stolen or guessed ID is useful; the guidance suggests rotating or expiring IDs instead." },
       ],
@@ -99,7 +99,7 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
         { id: "A", text: "Keep the broad scopes but shorten the access token lifetime to a few minutes", rationale: "Short lifetimes help, but a stolen token still carries every privilege for as long as it is valid; the blast radius stays the same." },
         { id: "B", text: "Collapse the scopes into a single full-access scope so the audit log is easier to read", rationale: "Wildcard or omnibus scopes are listed as a common mistake: they mask user intent per operation and make audit harder, not easier." },
         { id: "C", text: "Grant whatever scopes the token claims and skip further authorisation logic on the server", rationale: "Treating claimed scopes as sufficient without server-side authorisation logic is explicitly named as a common mistake." },
-        { id: "D", text: "Start with a minimal low-risk scope set and request elevation through targeted scope challenges when a privileged operation is first attempted", rationale: "Correct. The guidance describes a progressive, least-privilege model: baseline scopes first, then incremental elevation via WWW-Authenticate scope challenges." },
+        { id: "D", text: "Begin with minimal scopes and elevate through targeted scope challenges when needed", rationale: "Correct. The guidance describes a progressive, least-privilege model: baseline scopes first, then incremental elevation via WWW-Authenticate scope challenges." },
       ],
       answer: "D",
       explanation:
@@ -144,6 +144,42 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
         "NIST classifies attacks partly by the lifecycle stage in which they occur. Evasion attacks craft adversarial examples against a deployed model, while poisoning attacks, including backdoor poisoning, corrupt the training stage.",
       reference: NIST_AML,
     },
+    {
+      id: "gaips-d2-membership-inference",
+      domain: "d2",
+      objective: "AI and LLM Foundations",
+      difficulty: "intermediate",
+      question:
+        "An attacker repeatedly queries a model trained on hospital records to determine whether one specific patient's record was part of the training set. How does the NIST adversarial machine learning taxonomy (NIST AI 100-2 E2025) classify this?",
+      options: [
+        { id: "A", text: "Membership inference, a privacy attack", rationale: "Correct. NIST lists membership inference under the privacy compromise objective and describes it as inferring the presence of data in the training set." },
+        { id: "B", text: "Property inference, a privacy attack", rationale: "Property inference is also a privacy attack, but it targets properties of the training data distribution, not whether an individual record was used." },
+        { id: "C", text: "Evasion, an integrity attack", rationale: "Evasion crafts adversarial inputs to change a deployed model's output; it does not try to learn about the training data." },
+        { id: "D", text: "Availability poisoning", rationale: "Poisoning requires influence over the training stage and aims to degrade the model, not to reveal who is in the data." },
+      ],
+      answer: "A",
+      explanation:
+        "NIST groups data reconstruction, membership inference and property inference under privacy compromise, because the attacker seeks information about the training data. For sensitive data such as health records, even confirming that a person is in the dataset can be a breach.",
+      reference: NIST_AML,
+    },
+    {
+      id: "gaips-d2-multimodal-injection",
+      domain: "d2",
+      objective: "AI and LLM Foundations",
+      difficulty: "intermediate",
+      question:
+        "A vision-enabled assistant accepts uploaded images. Its prompt injection filter scans only the text that users type. An attacker uploads an image with instructions rendered inside it, together with a harmless question, and the model follows the hidden instructions. What is the key lesson?",
+      options: [
+        { id: "A", text: "This is training data poisoning, because the malicious content arrived as a file", rationale: "Poisoning targets data used to train or fine-tune the model; this content was processed at inference time." },
+        { id: "B", text: "Images cannot carry instructions, so the system prompt must have been leaked first", rationale: "Images can carry instructions; OWASP explicitly describes hiding instructions in images that accompany benign text." },
+        { id: "C", text: "Every input modality is attack surface, so text-only filtering is not enough", rationale: "Correct. OWASP notes that multimodal systems let attackers exploit interactions between data types, and that these cross-modal attacks are hard to detect." },
+        { id: "D", text: "Downscaling every uploaded image is a proven way to remove injected instructions", rationale: "No such guarantee exists; OWASP states that robust defences for multimodal systems still need further research." },
+      ],
+      answer: "C",
+      explanation:
+        "Every input modality the model processes is part of its attack surface. Because no single filter reliably catches cross-modal injection, the impact has to be limited by other layers too, such as least privilege and human approval for high-risk actions.",
+      reference: OWASP("LLM01:2025", "Prompt Injection", "llm01-prompt-injection"),
+    },
 
     /* ── d3: AI Application Architecture and Development Frameworks ───────── */
     {
@@ -181,6 +217,42 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
       explanation:
         "System prompts can leak, so credentials and connection strings must live in systems the model cannot read. Permission checks such as who may see salary data belong in deterministic code, not in instructions the model is asked to follow.",
       reference: OWASP("LLM07:2025", "System Prompt Leakage", "llm072025-system-prompt-leakage"),
+    },
+    {
+      id: "gaips-d3-package-hallucination",
+      domain: "d3",
+      objective: "AI Application Architecture and Development Frameworks",
+      difficulty: "intermediate",
+      question:
+        "A coding assistant tells a developer to install a helper package. The install succeeds, but the package was registered only recently by an unknown publisher. Which supply chain risk does this illustrate, and what is the right control?",
+      options: [
+        { id: "A", text: "No risk: a successful install proves the package is the one the model meant", rationale: "Attackers can register exactly the names that models tend to invent, so a successful install proves nothing about legitimacy." },
+        { id: "B", text: "Package hallucination: verify suggested dependencies before installing them", rationale: "Correct. OWASP describes attackers finding frequently hallucinated package names and publishing malicious packages under them, and recommends verification and secure coding practices." },
+        { id: "C", text: "Model drift; ask the assistant to confirm the package exists before installing it", rationale: "The same model can confirm a non-existent or malicious package just as confidently; that is not independent verification." },
+        { id: "D", text: "Version drift; pin the package to the exact version the assistant suggested", rationale: "Pinning makes builds reproducible, but pinning a malicious package simply installs the malicious code every time." },
+      ],
+      answer: "B",
+      explanation:
+        "LLMs can suggest code libraries that do not exist, and attackers can turn those names into real, malicious packages. Treat model suggestions as unverified: check publisher, age and reputation, or restrict installs to an approved internal registry.",
+      reference: OWASP("LLM09:2025", "Misinformation", "llm092025-misinformation"),
+    },
+    {
+      id: "gaips-d3-markdown-exfiltration",
+      domain: "d3",
+      objective: "AI Application Architecture and Development Frameworks",
+      difficulty: "advanced",
+      question:
+        "A chat interface renders model output as Markdown, including images. After a user asks it to summarise an attacker's web page, the reply contains an image whose URL points to the attacker's domain, with parts of the conversation in the query string. The browser loads the image automatically. Which control addresses this at the application layer?",
+      options: [
+        { id: "A", text: "Instruct the model in the system prompt never to output image links", rationale: "Prompt instructions can be overridden by the injected content; they do not control what the browser renders." },
+        { id: "B", text: "Use parameterised queries for every operation that involves model output", rationale: "Parameterised queries protect database operations; this output is rendered in a browser, which needs encoding for that context." },
+        { id: "C", text: "Limit the conversation history passed to the model to only the last few turns", rationale: "Less context may reduce what leaks, but the exfiltration channel stays open." },
+        { id: "D", text: "Sanitise or encode output for the rendering context and enforce a strict CSP", rationale: "Correct. OWASP recommends encoding model output to prevent unwanted execution through JavaScript or Markdown, context-aware output encoding and strict CSPs." },
+      ],
+      answer: "D",
+      explanation:
+        "OWASP lists Markdown image data exfiltration, triggered by prompt injection in summarised content, as an example of improper output handling. The renderer must decide what model output may do in the browser, for example by not loading images from arbitrary external origins.",
+      reference: OWASP("LLM05:2025", "Improper Output Handling", "llm052025-improper-output-handling"),
     },
 
     /* ── d4: AI Infrastructure and Deployment Security ────────────────────── */
@@ -220,6 +292,42 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
         "NIST AI 100-2 classes model extraction as a privacy attack against deployed models, and OWASP lists functional model replication under unbounded consumption. Expose only the output detail the use case needs and limit query volume.",
       reference: OWASP("LLM10:2025", "Unbounded Consumption", "llm102025-unbounded-consumption"),
     },
+    {
+      id: "gaips-d4-mcp-client-ssrf",
+      domain: "d4",
+      objective: "AI Infrastructure and Deployment Security",
+      difficulty: "advanced",
+      question:
+        "An agent platform runs an MCP client on a cloud VM and lets users connect it to any remote MCP server. During OAuth discovery, a malicious server returns a resource_metadata URL pointing to http://169.254.169.254/. Which set of controls best fits the MCP security guidance?",
+      options: [
+        { id: "A", text: "Enforce HTTPS, block private and link-local ranges on every hop, use an egress proxy", rationale: "Correct. The guidance recommends enforcing HTTPS, blocking private and reserved ranges including 169.254.0.0/16, validating redirect targets and using egress proxies for server-side clients." },
+        { id: "B", text: "Allow any URL whose hostname resolves to a public IP address at validation time", rationale: "A domain can resolve to a safe IP during the check and to an internal IP at use (DNS rebinding); a one-time check is not enough on its own." },
+        { id: "C", text: "Write a custom string filter that rejects URLs containing \"169.254\"", rationale: "The guidance warns against hand-written IP validation because encoding tricks such as octal, hex or IPv4-mapped IPv6 bypass it." },
+        { id: "D", text: "Validate the first URL carefully, then let the HTTP client follow any redirects automatically", rationale: "Redirect chains are a named SSRF pattern; each hop needs the same validation." },
+      ],
+      answer: "A",
+      explanation:
+        "A server-side MCP client that fetches URLs supplied by an untrusted server can be turned into a proxy into the internal network, and cloud metadata endpoints often expose credentials. Network-level egress controls combined with careful URL validation give defence in depth.",
+      reference: MCP_SECURITY,
+    },
+    {
+      id: "gaips-d4-on-device-model",
+      domain: "d4",
+      objective: "AI Infrastructure and Deployment Security",
+      difficulty: "intermediate",
+      question:
+        "A company ships a mobile app that runs a small LLM on the device. The threat model includes attackers who reverse-engineer the app, swap in a tampered model and redistribute it. Which controls address this most directly?",
+      options: [
+        { id: "A", text: "Publish a detailed model card describing the model's training and intended use", rationale: "Model cards document a model but, as OWASP notes, offer no guarantees on its origin." },
+        { id: "B", text: "Add rate limiting to the backend API", rationale: "On-device inference does not pass through the backend, so server-side rate limits do not see or stop it." },
+        { id: "C", text: "Encrypt the on-device model, check its integrity, and use vendor attestation APIs to block tampered apps or models", rationale: "Correct. These are the controls OWASP lists for protecting models deployed to edge devices." },
+        { id: "D", text: "Quantise the model so it is smaller and harder to read", rationale: "Quantisation reduces size and compute needs; it is not a tamper protection." },
+      ],
+      answer: "C",
+      explanation:
+        "Edge deployment puts the model on hardware the attacker controls, so integrity has to be checked where the model runs. OWASP describes a real pattern of reverse-engineered mobile apps with replaced models that steer users to scam sites.",
+      reference: OWASP("LLM03:2025", "Supply Chain", "llm032025-supply-chain"),
+    },
 
     /* ── d5: AI Risk Management and Strategic Application ─────────────────── */
     {
@@ -257,6 +365,42 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
       explanation:
         "The NIST AI RMF 1.0 (January 2023) defines Govern, Map, Measure and Manage. NIST also published a Generative AI Profile (NIST AI 600-1) in July 2024 that applies the framework to generative AI risks.",
       reference: { label: "NIST: AI Risk Management Framework", url: "https://www.nist.gov/itl/ai-risk-management-framework" },
+    },
+    {
+      id: "gaips-d5-mitre-atlas",
+      domain: "d5",
+      objective: "AI Risk Management and Strategic Application",
+      difficulty: "foundation",
+      question:
+        "A red team planning an exercise against an ML-based fraud detection system wants a living knowledge base of adversary tactics and techniques against AI systems, modelled after MITRE ATT&CK and based on real-world attack observations and case studies. Which resource fits?",
+      options: [
+        { id: "A", text: "The OWASP Top 10 for LLM Applications", rationale: "A ranked list of critical risks for LLM applications, not a tactics and techniques knowledge base with case studies." },
+        { id: "B", text: "MITRE ATLAS", rationale: "Correct. MITRE describes ATLAS as a globally accessible, living knowledge base of adversary tactics and techniques, modelled after ATT&CK and drawing on real-world observations." },
+        { id: "C", text: "The NIST AI Risk Management Framework", rationale: "A voluntary framework for managing AI risk through Govern, Map, Measure and Manage, not a catalogue of attacker techniques." },
+        { id: "D", text: "The MITRE ATT&CK Enterprise matrix on its own", rationale: "ATT&CK covers adversary behaviour against enterprise IT; ATLAS adds the AI-specific techniques that complement it." },
+      ],
+      answer: "B",
+      explanation:
+        "ATLAS gives threat modellers and red teams a shared vocabulary for attacks on AI systems, and its techniques are designed to complement those in ATT&CK. Its case studies help ground threat scenarios in attacks that have actually been observed or demonstrated.",
+      reference: { label: "MITRE ATLAS Fact Sheet", url: "https://atlas.mitre.org/pdf-files/MITRE_ATLAS_Fact_Sheet.pdf" },
+    },
+    {
+      id: "gaips-d5-confabulation",
+      domain: "d5",
+      objective: "AI Risk Management and Strategic Application",
+      difficulty: "intermediate",
+      question:
+        "A risk team uses the NIST Generative AI Profile (NIST AI 600-1) to classify issues. A legal research assistant confidently cites court decisions that do not exist. Which of the profile's risk categories describes this most precisely?",
+      options: [
+        { id: "A", text: "Information Integrity", rationale: "A related category, but it concerns the wider information ecosystem, such as content used for large-scale disinformation; the defining feature here is the system confidently presenting false content in reply to a prompt." },
+        { id: "B", text: "Data Privacy", rationale: "Data Privacy concerns leakage or misuse of personal or sensitive data, not invented citations." },
+        { id: "C", text: "Value Chain and Component Integration", rationale: "This category covers risks from third-party components such as data and models, not false output in itself." },
+        { id: "D", text: "Confabulation", rationale: "Correct. NIST AI 600-1 uses confabulation for GAI systems that generate and confidently present erroneous or false content in response to prompts." },
+      ],
+      answer: "D",
+      explanation:
+        "NIST AI 600-1, published in July 2024 as a companion to the AI RMF, names 12 risks that are unique to or exacerbated by generative AI. Mapping an issue to the right category helps choose the matching actions, here verification of outputs and human review before reliance.",
+      reference: { label: "NIST AI 600-1: Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile", url: "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf" },
     },
 
     /* ── d6: Development Pipelines and MLOps Security ─────────────────────── */
@@ -296,6 +440,42 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
         "Data and model poisoning can target pre-training, fine-tuning and embedding data. Versioned, provenance-tracked datasets let you compare runs, spot unexpected changes and roll back.",
       reference: OWASP("LLM04:2025", "Data and Model Poisoning", "llm042025-data-and-model-poisoning"),
     },
+    {
+      id: "gaips-d6-ai-bom",
+      domain: "d6",
+      objective: "Development Pipelines and MLOps Security",
+      difficulty: "intermediate",
+      question:
+        "A critical vulnerability is announced in a widely used model serving library. The security team must find out within hours which of its 40 deployed models and training pipelines include the affected version. Which practice would make this fastest?",
+      options: [
+        { id: "A", text: "A current, signed SBOM or AI BOM for each model and pipeline, for example in CycloneDX format", rationale: "Correct. OWASP recommends an up-to-date, signed inventory of components to prevent tampering and to detect new vulnerabilities quickly, and points to CycloneDX as a starting point." },
+        { id: "B", text: "A model card for every model in the registry", rationale: "Model cards describe a model's purpose and behaviour; they are not a dependency inventory and give no guarantee of origin." },
+        { id: "C", text: "Re-running the standard benchmark suite against every model", rationale: "Benchmarks measure task performance; they reveal nothing about which libraries a deployment contains." },
+        { id: "D", text: "An annual penetration test of the ML platform", rationale: "A point-in-time test cannot answer a new, urgent question about component versions across all deployments." },
+      ],
+      answer: "A",
+      explanation:
+        "AI systems combine models, datasets and many software libraries, and each can carry vulnerabilities. A maintained bill of materials turns a new advisory into a lookup instead of a manual hunt, and also supports licence management.",
+      reference: OWASP("LLM03:2025", "Supply Chain", "llm032025-supply-chain"),
+    },
+    {
+      id: "gaips-d6-conversion-service",
+      domain: "d6",
+      objective: "Development Pipelines and MLOps Security",
+      difficulty: "advanced",
+      question:
+        "To save time, an ML team uploads vendor models to a free public online service that merges adapters and converts formats, then pushes the results straight into the internal model registry. What should the pipeline review require?",
+      options: [
+        { id: "A", text: "Nothing extra, because the original models came from a trusted vendor", rationale: "Trust in the original vendor does not extend to a third-party service that can alter the model after it leaves the vendor." },
+        { id: "B", text: "Using the service only for safetensors output, because that format cannot carry malicious behaviour", rationale: "safetensors avoids code execution when loading, but the weights themselves can still be manipulated, for example to embed a backdoor." },
+        { id: "C", text: "Run merges and conversions in-house and verify hashes or signatures before registry upload", rationale: "Correct. OWASP cites attacks that use model merge or format conversion services to inject malware into models, and recommends verifiable sources, signing and file hashes." },
+        { id: "D", text: "Re-run the benchmark suite after conversion and accept the model if scores are unchanged", rationale: "Tampered or backdoored models can pass benchmarks while hiding targeted triggers." },
+      ],
+      answer: "C",
+      explanation:
+        "Every service that touches a model artefact is part of the supply chain. Keeping transformations inside controlled infrastructure and verifying integrity at each hand-off prevents an untrusted step from silently replacing what enters production.",
+      reference: OWASP("LLM03:2025", "Supply Chain", "llm032025-supply-chain"),
+    },
 
     /* ── d7: Knowledge Augmentation and Retrieval ─────────────────────────── */
     {
@@ -334,6 +514,24 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
         "OWASP uses a CV with hidden text as an example of data poisoning in a RAG system. Treat every document as untrusted, inspect what is actually extracted, and keep a human in the loop for consequential decisions such as hiring.",
       reference: OWASP("LLM08:2025", "Vector and Embedding Weaknesses", "llm082025-vector-and-embedding-weaknesses"),
     },
+    {
+      id: "gaips-d7-embedding-inversion",
+      domain: "d7",
+      objective: "Knowledge Augmentation and Retrieval",
+      difficulty: "intermediate",
+      question:
+        "For an HR assistant, an architect proposes storing only the embeddings of confidential personnel documents in a third-party hosted vector database and deleting the source text there, arguing that vectors are anonymous numbers. How should the security review respond?",
+      options: [
+        { id: "A", text: "Accept it: embeddings work like one-way hashes, so the original text can never be recovered from them", rationale: "Embeddings are not cryptographic hashes; they are designed to preserve meaning, and that is what makes recovery possible." },
+        { id: "B", text: "Reject it: inversion attacks can recover source content, so protect vectors like the documents", rationale: "Correct. OWASP names embedding inversion as a risk that can recover significant amounts of source information and compromise confidentiality." },
+        { id: "C", text: "Accept it as long as the embedding model produces vectors with more than 1,000 dimensions", rationale: "Dimensionality is not a privacy control; richer vectors may even carry more information." },
+        { id: "D", text: "Accept it unless the vector database is shared between several tenants", rationale: "Cross-tenant leakage is a separate risk; inversion applies to anyone who can read the vectors, shared database or not." },
+      ],
+      answer: "B",
+      explanation:
+        "Embeddings derived from confidential text should be classified like that text. That means access control on the vector store, vetting of the hosting provider and immutable logs of retrieval activity.",
+      reference: OWASP("LLM08:2025", "Vector and Embedding Weaknesses", "llm082025-vector-and-embedding-weaknesses"),
+    },
 
     /* ── d8: Model Customization and Alignment ────────────────────────────── */
     {
@@ -353,6 +551,42 @@ export const giacGaipsQuestions: PracticeQuestionSet = {
       explanation:
         "Backdoored models behave normally on ordinary inputs, which makes them hard to detect with standard tests. Treat adapters as supply chain components: verify their source, check signatures or hashes, record them in an inventory and include adversarial testing.",
       reference: OWASP("LLM03:2025", "Supply Chain", "llm032025-supply-chain"),
+    },
+    {
+      id: "gaips-d8-finetune-pii",
+      domain: "d8",
+      objective: "Model Customization and Alignment",
+      difficulty: "intermediate",
+      question:
+        "A team plans to fine-tune a model on five years of customer support transcripts that contain names, addresses and account numbers. Which step should come before training?",
+      options: [
+        { id: "A", text: "Scrub or mask the sensitive data (for example with tokenisation and redaction) so it never enters the training set", rationale: "Correct. OWASP recommends data sanitisation so user data does not enter the training model, with tokenisation, redaction and privacy techniques such as differential privacy." },
+        { id: "B", text: "Add a system prompt rule telling the fine-tuned model never to reveal account numbers", rationale: "The data would already be in the model's weights, and a prompt rule is not a security control that injection cannot bypass." },
+        { id: "C", text: "Train on the raw data and rely on an output filter to catch any leaked account numbers", rationale: "Output filtering is a useful extra layer, but pattern filters miss variants and paraphrases; the sensitive data should not be learned in the first place." },
+        { id: "D", text: "Encrypt the transcript dataset at rest before training", rationale: "Encryption protects the stored files, but the training job decrypts them and the model still learns their content." },
+      ],
+      answer: "A",
+      explanation:
+        "OWASP lists careless inclusion of sensitive data in training as a cause of sensitive information disclosure. Sanitising data before fine-tuning, and telling users how their data is used with an option to opt out, prevents the model from memorising what it should never repeat.",
+      reference: OWASP("LLM02:2025", "Sensitive Information Disclosure", "llm022025-sensitive-information-disclosure"),
+    },
+    {
+      id: "gaips-d8-finetune-not-enough",
+      domain: "d8",
+      objective: "Model Customization and Alignment",
+      difficulty: "intermediate",
+      question:
+        "After a prompt injection incident, a product owner proposes fine-tuning the model on thousands of injection attempts paired with refusals, then removing the input and output filters and the human approval step to cut latency. What is the best assessment?",
+      options: [
+        { id: "A", text: "Sound: once the model has learned to recognise attacks, the filters and approval step are redundant", rationale: "Attackers keep finding new phrasings; a model trained on known attempts cannot be assumed to refuse all future ones." },
+        { id: "B", text: "Fine-tuning will not help, but switching to RAG would fully prevent prompt injection", rationale: "OWASP says research shows that RAG, like fine-tuning, does not fully mitigate prompt injection; retrieved content can itself carry injections." },
+        { id: "C", text: "Fine-tuning cannot change model behaviour, so only the system prompt matters", rationale: "Fine-tuning does change model behaviour; the problem is that it is not a complete defence." },
+        { id: "D", text: "Keep the layered controls: fine-tuning helps but does not fully mitigate prompt injection", rationale: "Correct. OWASP states that RAG and fine-tuning do not fully mitigate prompt injection and lists filtering, least privilege and human approval as mitigations." },
+      ],
+      answer: "D",
+      explanation:
+        "Alignment through fine-tuning is probabilistic, so it belongs alongside deterministic controls rather than replacing them. Moderation filters, privilege limits and human approval reduce the impact when a crafted input gets past the model.",
+      reference: OWASP("LLM01:2025", "Prompt Injection", "llm01-prompt-injection"),
     },
   ],
 };
