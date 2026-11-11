@@ -1,7 +1,7 @@
 import type { PracticeQuestionSet } from "@/config/types";
 
 /**
- * Free CompTIA Security+ SY0-701 sample questions — ORIGINAL questions written by
+ * Free CompTIA Security+ SY0-701 sample questions, ORIGINAL questions written by
  * CertRamp against the SY0-701 exam objectives (V7). Not taken from the paid
  * practice exams, not recalled exam content, and not presented as real exam questions.
  */
@@ -419,7 +419,7 @@ export const comptiaSecurityPlusSy0701Questions: PracticeQuestionSet = {
       question:
         "Threat intelligence reports that a malware family contacts a command-and-control domain whose IP addresses change every few minutes. An analyst needs to find which internal hosts tried to reach that domain during the last week. Which data source is most useful?",
       options: [
-        { id: "A", text: "Firewall logs", rationale: "Firewall logs record IP addresses and ports, not domain names. With constantly rotating addresses, matching them to the domain is unreliable." },
+        { id: "A", text: "Firewall logs", rationale: "Firewall logs normally record IP addresses and ports rather than the domain names that were looked up. With constantly rotating addresses, matching them to the domain is unreliable." },
         { id: "B", text: "Vulnerability scan output", rationale: "Scan output shows weaknesses on systems, not which hosts communicated with a destination in the past." },
         { id: "C", text: "Application logs on the company web server", rationale: "These record events of the web application itself, not outbound lookups made by internal workstations." },
         { id: "D", text: "DNS server query logs", rationale: "Correct. DNS logs show which client asked to resolve which name and when, regardless of the IP address returned." },
