@@ -16,7 +16,7 @@
       window.dispatchEvent(new CustomEvent("certramp:analytics", { detail: Object.assign({ event: event }, props) }));
       if (window.umami && typeof window.umami.track === "function") window.umami.track(event, props);
       else queue.push([event, props]);
-    } catch (e) {
+    } catch {
       /* Analytics must never break navigation. */
     }
   }
@@ -24,12 +24,12 @@
     if (!(window.umami && typeof window.umami.track === "function")) return false;
     while (queue.length) {
       var item = queue.shift();
-      try { window.umami.track(item[0], item[1]); } catch (e) { /* ignore */ }
+      try { window.umami.track(item[0], item[1]); } catch { /* ignore */ }
     }
     return true;
   }
   function props(el) {
-    try { return JSON.parse(el.getAttribute("data-track-props") || "{}"); } catch (e) { return {}; }
+    try { return JSON.parse(el.getAttribute("data-track-props") || "{}"); } catch { return {}; }
   }
 
   document.addEventListener("click", function (e) {
