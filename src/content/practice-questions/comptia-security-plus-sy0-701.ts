@@ -1,7 +1,7 @@
 import type { PracticeQuestionSet } from "@/config/types";
 
 /**
- * Free CompTIA Security+ SY0-701 sample questions — ORIGINAL questions written by
+ * Free CompTIA Security+ SY0-701 sample questions, ORIGINAL questions written by
  * CertRamp against the SY0-701 exam objectives (V7). Not taken from the paid
  * practice exams, not recalled exam content, and not presented as real exam questions.
  */
@@ -13,13 +13,13 @@ const OBJECTIVES = {
 export const comptiaSecurityPlusSy0701Questions: PracticeQuestionSet = {
   slug: "comptia-security-plus-sy0-701",
   intro:
-    "15 original CompTIA Security+ SY0-701 practice questions across the five domains of the official exam objectives (V7), weighted roughly like the real exam. Each one comes with the answer, a short explanation and the reason every other option is wrong.",
+    "30 original CompTIA Security+ SY0-701 practice questions across the five domains of the official exam objectives (V7), weighted roughly like the real exam. Each one comes with the answer, a short explanation and the reason every other option is wrong.",
   published: "2026-10-27",
-  updated: "2026-10-27",
+  updated: "2026-11-11",
   seo: {
     title: "Security+ SY0-701 Practice Questions with Answers (2026)",
     description:
-      "15 free, original Security+ SY0-701 practice questions on security controls, threats, architecture, operations and governance, each with a full explanation.",
+      "30 free, original Security+ SY0-701 practice questions on security controls, threats, architecture, operations and governance, each with a full explanation.",
   },
   questions: [
     /* ── Domain 1: General Security Concepts (12%) ───────────────────────── */
@@ -57,6 +57,43 @@ export const comptiaSecurityPlusSy0701Questions: PracticeQuestionSet = {
       answer: "D",
       explanation:
         "Tokenisation removes the sensitive value from the application's systems entirely, because the token cannot be reversed mathematically. Only the token vault can map it back, which narrows the scope of systems that hold card data.",
+      reference: OBJECTIVES,
+    },
+
+    {
+      id: "secplus701-d1-zero-trust-pep",
+      domain: "d1",
+      objective: "1.2 Summarize fundamental security concepts.",
+      difficulty: "advanced",
+      question:
+        "A company is building a zero trust architecture with a control plane and a data plane. When a user requests an internal application, one component decides whether to grant access, and another component in the data plane actually allows, monitors and terminates the connection. Which component is the second one?",
+      options: [
+        { id: "A", text: "Policy engine", rationale: "The policy engine makes the grant or deny decision from policy and signals. It sits in the control plane and does not carry the connection." },
+        { id: "B", text: "Policy administrator", rationale: "The policy administrator turns the decision into commands that open or close the path. It is also a control plane component, not the point in the data path." },
+        { id: "C", text: "Policy enforcement point", rationale: "Correct. The policy enforcement point sits in the data plane between subject and resource and enables, monitors and ends the session as instructed." },
+        { id: "D", text: "Implicit trust zone", rationale: "An implicit trust zone is the area behind the enforcement point where entities are trusted. It is a zone, not a component that enforces decisions." },
+      ],
+      answer: "C",
+      explanation:
+        "In the zero trust model the policy engine decides, the policy administrator relays the decision, and the policy enforcement point applies it in the data plane. Every request passes through the enforcement point instead of being trusted because of its network location.",
+      reference: OBJECTIVES,
+    },
+    {
+      id: "secplus701-d1-backout-plan",
+      domain: "d1",
+      objective: "1.3 Explain the importance of change management processes and the impact to security.",
+      difficulty: "foundation",
+      question:
+        "A change advisory board is reviewing a request to upgrade the firmware on the core firewall during Saturday night's maintenance window. Before approving it, the board asks how the team will return the firewall to its previous working state if the upgrade causes an outage. Which part of the change request answers this?",
+      options: [
+        { id: "A", text: "Impact analysis", rationale: "Impact analysis assesses which systems and users the change could affect and how risky it is. It does not define the steps for reverting." },
+        { id: "B", text: "Backout plan", rationale: "Correct. A backout plan documents how to roll the change back and restore the previous state if it fails." },
+        { id: "C", text: "Maintenance window", rationale: "The maintenance window defines when the change is carried out, not how to undo it." },
+        { id: "D", text: "Standard operating procedure", rationale: "An SOP documents the routine way to perform a task. It is not the change-specific plan for reverting a failed upgrade." },
+      ],
+      answer: "B",
+      explanation:
+        "The objectives list approval, impact analysis, test results, backout plan, maintenance window and SOPs as parts of change management. A tested backout plan keeps downtime short when a change goes wrong.",
       reference: OBJECTIVES,
     },
 
@@ -116,6 +153,79 @@ export const comptiaSecurityPlusSy0701Questions: PracticeQuestionSet = {
       reference: OBJECTIVES,
     },
 
+    {
+      id: "secplus701-d2-hacktivist",
+      domain: "d2",
+      objective: "2.1 Compare and contrast common threat actors and motivations.",
+      difficulty: "foundation",
+      question:
+        "Shortly after a chemical company announces a new pipeline project, its public website is defaced with a message criticising the project's environmental impact, and a group claims responsibility on social media. No data was stolen and no ransom was demanded. Which threat actor is most likely responsible?",
+      options: [
+        { id: "A", text: "Organized crime", rationale: "Organized crime is driven by financial gain. With no ransom and no data theft, there is no money in this attack." },
+        { id: "B", text: "Nation-state", rationale: "Nation-state actors are well resourced and usually pursue espionage or strategic goals quietly. A public defacement over an environmental issue does not fit." },
+        { id: "C", text: "Insider threat", rationale: "Nothing points to an employee or contractor. The attackers are an outside group claiming the attack publicly." },
+        { id: "D", text: "Hacktivist", rationale: "Correct. Hacktivists act on philosophical or political beliefs, and defacement with a public claim of responsibility is a typical tactic." },
+      ],
+      answer: "D",
+      explanation:
+        "Motivation is the key to identifying a threat actor: financial gain points to organized crime, espionage to nation-states, and philosophical or political beliefs to hacktivists. Defacing a website and announcing it publicly serves the message, not profit.",
+      reference: OBJECTIVES,
+    },
+    {
+      id: "secplus701-d2-race-condition",
+      domain: "d2",
+      objective: "2.3 Explain various types of vulnerabilities.",
+      difficulty: "intermediate",
+      question:
+        "A program running with elevated privileges checks that a temporary file belongs to the calling user and then, a few milliseconds later, opens the file and writes to it. In the gap between the check and the write, an attacker replaces the file with a link to a system configuration file. Which type of vulnerability is being exploited?",
+      options: [
+        { id: "A", text: "Race condition (time-of-check to time-of-use)", rationale: "Correct. The state of the file changes between the moment it is checked and the moment it is used, which is a TOC/TOU race condition." },
+        { id: "B", text: "Buffer overflow", rationale: "A buffer overflow writes data beyond the bounds of allocated memory. The problem here is timing, not memory size." },
+        { id: "C", text: "Memory injection", rationale: "Memory injection places malicious code into the memory of a running process. The attacker here swaps a file on disk." },
+        { id: "D", text: "Directory traversal", rationale: "Directory traversal uses sequences such as ../ in input to reach files outside the intended folder. The attacker does not manipulate a path in the program's input." },
+      ],
+      answer: "A",
+      explanation:
+        "A time-of-check to time-of-use flaw exists whenever a program trusts a check that may no longer be true when it acts. The fix is to make check and use a single atomic operation, for example by opening the file once and verifying the opened handle.",
+      reference: OBJECTIVES,
+    },
+    {
+      id: "secplus701-d2-impossible-travel",
+      domain: "d2",
+      objective: "2.4 Given a scenario, analyze indicators of malicious activity.",
+      difficulty: "intermediate",
+      question:
+        "A SIEM shows that a user signed in to the company VPN from Hamburg at 08:55 and signed out at 09:05. At 09:30 the same account signed in successfully from an IP address in São Paulo. The user says they have been at their desk in Hamburg all morning. Which indicator best describes this activity?",
+      options: [
+        { id: "A", text: "Concurrent session usage", rationale: "Concurrent session usage means the account is active in two sessions at the same time. The Hamburg session had already ended." },
+        { id: "B", text: "Impossible travel", rationale: "Correct. Nobody can travel from Hamburg to São Paulo in 25 minutes, so the second sign-in very likely uses stolen credentials." },
+        { id: "C", text: "Account lockout", rationale: "No account was locked; both sign-ins succeeded." },
+        { id: "D", text: "Out-of-cycle logging", rationale: "Out-of-cycle logging refers to log entries generated at unusual times or outside normal schedules. The log timing itself is unremarkable here." },
+      ],
+      answer: "B",
+      explanation:
+        "Impossible travel compares the locations and times of successive sign-ins and flags distances that could not be covered in the time between them. The usual response is to revoke sessions, reset the credentials and review how the account is protected by MFA.",
+      reference: OBJECTIVES,
+    },
+    {
+      id: "secplus701-d2-watering-hole",
+      domain: "d2",
+      objective: "2.2 Explain common threat vectors and attack surfaces.",
+      difficulty: "intermediate",
+      question:
+        "Attackers want to compromise the engineers of a small aerospace supplier, but the supplier's email filtering is strong. Instead, they plant malicious code on an industry forum the engineers visit regularly, so that it runs when the engineers browse the site. Which technique is this?",
+      options: [
+        { id: "A", text: "Pretexting", rationale: "Pretexting uses an invented scenario to manipulate a person, usually through direct contact. Nobody is contacted here." },
+        { id: "B", text: "Business email compromise", rationale: "Business email compromise abuses compromised or impersonated email accounts. The attackers deliberately avoided email." },
+        { id: "C", text: "Brand impersonation", rationale: "Brand impersonation imitates a well-known brand. The real forum is compromised, not imitated." },
+        { id: "D", text: "Watering hole", rationale: "Correct. A watering hole attack compromises a site the target group already trusts and visits, and waits for the victims to arrive." },
+      ],
+      answer: "D",
+      explanation:
+        "Watering hole attacks bypass email defences by exploiting trust in a legitimate third-party site. Patched browsers, web filtering and browser isolation reduce the risk.",
+      reference: OBJECTIVES,
+    },
+
     /* ── Domain 3: Security Architecture (18%) ───────────────────────────── */
     {
       id: "secplus701-d3-warm-site",
@@ -169,6 +279,43 @@ export const comptiaSecurityPlusSy0701Questions: PracticeQuestionSet = {
       answer: "C",
       explanation:
         "Data sovereignty affects cloud and backup design, because replicas in another region could break the rule. Geographic restrictions and geolocation-based controls are the usual technical answers.",
+      reference: OBJECTIVES,
+    },
+
+    {
+      id: "secplus701-d3-iaas-responsibility",
+      domain: "d3",
+      objective: "3.1 Compare and contrast security implications of different architecture models.",
+      difficulty: "foundation",
+      question:
+        "A company runs its web application on virtual machines rented from an infrastructure as a service (IaaS) provider. According to the cloud responsibility matrix, which task remains the company's responsibility?",
+      options: [
+        { id: "A", text: "Patching the hypervisor", rationale: "In IaaS the provider operates and patches the virtualization layer that hosts the customers' virtual machines." },
+        { id: "B", text: "Physical security of the data center", rationale: "Physical facilities, access control and environmental protection are the provider's responsibility in every cloud model." },
+        { id: "C", text: "Patching the guest operating system", rationale: "Correct. In IaaS the customer manages everything from the guest operating system upward, including its patches." },
+        { id: "D", text: "Replacing failed storage hardware", rationale: "The provider owns and maintains the physical hardware, including disks and storage arrays." },
+      ],
+      answer: "C",
+      explanation:
+        "The responsibility matrix shows where the provider's duties end and the customer's begin. In IaaS the provider covers facilities, hardware and the hypervisor, while the customer covers the operating system, applications, data and configuration; in PaaS and SaaS the line moves further up.",
+      reference: OBJECTIVES,
+    },
+    {
+      id: "secplus701-d3-802-1x",
+      domain: "d3",
+      objective: "3.2 Given a scenario, apply security principles to secure enterprise infrastructure.",
+      difficulty: "intermediate",
+      question:
+        "A company wants every device plugged into a wall port in its offices to authenticate before it receives any network access. The switches should pass the credentials to a central RADIUS server using EAP and keep the port blocked until authentication succeeds. What should the company implement?",
+      options: [
+        { id: "A", text: "Port-based network access control with IEEE 802.1X", rationale: "Correct. 802.1X keeps the switch port closed until the device authenticates through EAP against an authentication server such as RADIUS." },
+        { id: "B", text: "MAC address filtering on the switches", rationale: "MAC filtering only allows listed hardware addresses. It uses no credentials or RADIUS exchange, and MAC addresses are easy to spoof." },
+        { id: "C", text: "A jump server for each office", rationale: "A jump server provides a controlled path for administrative access. It does not control which devices may join the network." },
+        { id: "D", text: "Port mirroring to an intrusion detection system", rationale: "Port mirroring copies traffic for monitoring. It does not authenticate devices or block ports." },
+      ],
+      answer: "A",
+      explanation:
+        "802.1X defines three roles: the supplicant (the device), the authenticator (the switch) and the authentication server (usually RADIUS). The objectives list 802.1X and EAP under port security.",
       reference: OBJECTIVES,
     },
 
@@ -246,6 +393,79 @@ export const comptiaSecurityPlusSy0701Questions: PracticeQuestionSet = {
       reference: OBJECTIVES,
     },
 
+    {
+      id: "secplus701-d4-wpa3-sae",
+      domain: "d4",
+      objective: "4.1 Given a scenario, apply common security techniques to computing resources.",
+      difficulty: "intermediate",
+      question:
+        "A small office is replacing its wireless network. It has no RADIUS server and wants staff to join with a shared passphrase. The previous network was attacked by capturing the handshake and running an offline dictionary attack against it. Which configuration best meets the requirements?",
+      options: [
+        { id: "A", text: "WPA2-Personal with a longer pre-shared key", rationale: "A longer key makes guessing harder, but a captured WPA2-PSK handshake can still be attacked offline." },
+        { id: "B", text: "WPA3-Personal using SAE", rationale: "Correct. Simultaneous Authentication of Equals keeps the shared passphrase but resists offline dictionary attacks on captured handshakes." },
+        { id: "C", text: "WPA2-Enterprise with PEAP", rationale: "Enterprise mode authenticates users individually through a RADIUS server, which the office does not have." },
+        { id: "D", text: "A hidden SSID combined with MAC filtering", rationale: "Hiding the SSID and filtering MAC addresses are easily bypassed and do nothing to protect the handshake." },
+      ],
+      answer: "B",
+      explanation:
+        "WPA3 replaces the WPA2 pre-shared key exchange with SAE, so capturing the handshake no longer gives an attacker material for offline guessing. Enterprise authentication is stronger still, but it needs AAA infrastructure such as RADIUS.",
+      reference: OBJECTIVES,
+    },
+    {
+      id: "secplus701-d4-dns-logs",
+      domain: "d4",
+      objective: "4.9 Given a scenario, use data sources to support an investigation.",
+      difficulty: "advanced",
+      question:
+        "Threat intelligence reports that a malware family contacts a command-and-control domain whose IP addresses change every few minutes. An analyst needs to find which internal hosts tried to reach that domain during the last week. Which data source is most useful?",
+      options: [
+        { id: "A", text: "Firewall logs", rationale: "Firewall logs normally record IP addresses and ports rather than the domain names that were looked up. With constantly rotating addresses, matching them to the domain is unreliable." },
+        { id: "B", text: "Vulnerability scan output", rationale: "Scan output shows weaknesses on systems, not which hosts communicated with a destination in the past." },
+        { id: "C", text: "Application logs on the company web server", rationale: "These record events of the web application itself, not outbound lookups made by internal workstations." },
+        { id: "D", text: "DNS server query logs", rationale: "Correct. DNS logs show which client asked to resolve which name and when, regardless of the IP address returned." },
+      ],
+      answer: "D",
+      explanation:
+        "Choose the data source that records the indicator you actually have. When the indicator is a domain name and its addresses keep changing, DNS query logs tie the name directly to the requesting hosts.",
+      reference: OBJECTIVES,
+    },
+    {
+      id: "secplus701-d4-just-in-time",
+      domain: "d4",
+      objective: "4.6 Given a scenario, implement and maintain identity and access management.",
+      difficulty: "intermediate",
+      question:
+        "An organisation wants administrators to hold no standing administrative rights. When administrators need elevated access, they request it for a specific task, and the rights are granted for a limited time and removed automatically afterward. Which privileged access management capability is described?",
+      options: [
+        { id: "A", text: "Just-in-time permissions", rationale: "Correct. Just-in-time permissions grant elevated rights only when needed and only for a limited period." },
+        { id: "B", text: "Password vaulting", rationale: "Password vaulting stores and controls access to privileged credentials. The privileged account itself still keeps its standing rights." },
+        { id: "C", text: "Role-based access control", rationale: "RBAC assigns permissions based on job role. The permissions persist as long as the role assignment does, without time limits per task." },
+        { id: "D", text: "Single sign-on", rationale: "SSO lets users authenticate once for many applications. It does not control how long privileges last." },
+      ],
+      answer: "A",
+      explanation:
+        "The objectives list just-in-time permissions, password vaulting and ephemeral credentials as privileged access management tools. Removing standing privileges shrinks the window in which a compromised admin account can be abused.",
+      reference: OBJECTIVES,
+    },
+    {
+      id: "secplus701-d4-sanitization",
+      domain: "d4",
+      objective: "4.2 Explain the security implications of proper hardware, software, and data asset management.",
+      difficulty: "foundation",
+      question:
+        "A company plans to sell 200 retired laptops to a refurbisher. The drives must remain usable for the buyer, but no company data may be recoverable from them. Which disposal approach fits?",
+      options: [
+        { id: "A", text: "Destruction", rationale: "Destruction (shredding, degaussing, incineration) makes the media unusable, but the buyer needs working drives." },
+        { id: "B", text: "Data retention", rationale: "Data retention defines how long data must be kept. It does not remove data from devices leaving the company." },
+        { id: "C", text: "Sanitization", rationale: "Correct. Sanitization, such as secure overwriting or cryptographic erasure, removes the data while leaving the drive usable." },
+        { id: "D", text: "Certification", rationale: "Certification documents that disposal was carried out. It proves the work but does not itself remove the data." },
+      ],
+      answer: "C",
+      explanation:
+        "Disposal choices depend on what happens to the hardware next: sanitize media that will be reused or resold, destroy media that will not. In both cases a certificate provides evidence for audits.",
+      reference: OBJECTIVES,
+    },
+
     /* ── Domain 5: Security Program Management and Oversight (20%) ───────── */
     {
       id: "secplus701-d5-ale",
@@ -299,6 +519,60 @@ export const comptiaSecurityPlusSy0701Questions: PracticeQuestionSet = {
       answer: "B",
       explanation:
         "Penetration tests are classified by what the testers know in advance: known, partially known or unknown environment. Unknown-environment tests are the most realistic for an outside attacker but may cover less of the estate in the time available.",
+      reference: OBJECTIVES,
+    },
+    {
+      id: "secplus701-d5-data-custodian",
+      domain: "d5",
+      objective: "5.1 Summarize elements of effective security governance.",
+      difficulty: "intermediate",
+      question:
+        "In a company, the head of HR decides how employee records are classified and who may access them. The database administrators run daily backups, apply the access permissions HR has approved and maintain the database's security controls. Which role do the database administrators hold for this data?",
+      options: [
+        { id: "A", text: "Data owner", rationale: "The owner is accountable for the data and decides on classification and access. Here that is the head of HR." },
+        { id: "B", text: "Data subject", rationale: "The data subjects are the employees the records describe, not the people who manage the database." },
+        { id: "C", text: "Data processor", rationale: "A processor is a separate party that processes personal data on behalf of the controller, such as an outsourced payroll provider. The administrators are internal staff carrying out technical safeguards." },
+        { id: "D", text: "Data custodian", rationale: "Correct. Custodians handle the day-to-day protection of data, such as backups and applying controls, according to the owner's decisions." },
+      ],
+      answer: "D",
+      explanation:
+        "Owners decide and are accountable; custodians implement and maintain the protection. Separating the two makes it clear who sets the rules and who operates them.",
+      reference: OBJECTIVES,
+    },
+    {
+      id: "secplus701-d5-rpo",
+      domain: "d5",
+      objective: "5.2 Explain elements of the risk management process.",
+      difficulty: "foundation",
+      question:
+        "During a business impact analysis, the finance department states that if the accounting system fails, it can accept losing at most the last four hours of entered transactions. Which metric does this define?",
+      options: [
+        { id: "A", text: "Recovery time objective (RTO)", rationale: "RTO is the maximum time allowed to restore the system, not the amount of data that may be lost." },
+        { id: "B", text: "Recovery point objective (RPO)", rationale: "Correct. RPO is the maximum acceptable data loss, measured as time back from the failure to the last usable copy." },
+        { id: "C", text: "Mean time to repair (MTTR)", rationale: "MTTR is the average time needed to fix a failed component. It describes repair speed, not tolerable data loss." },
+        { id: "D", text: "Mean time between failures (MTBF)", rationale: "MTBF measures reliability as the average operating time between failures." },
+      ],
+      answer: "B",
+      explanation:
+        "RPO drives backup and replication frequency: a four-hour RPO needs a usable copy at least every four hours. RTO, by contrast, drives how quickly recovery must happen and therefore the choice of recovery site and process.",
+      reference: OBJECTIVES,
+    },
+    {
+      id: "secplus701-d5-right-to-be-forgotten",
+      domain: "d5",
+      objective: "5.4 Summarize elements of effective security compliance.",
+      difficulty: "foundation",
+      question:
+        "A former customer in the European Union asks an online shop to delete all personal data it holds about them. Which privacy concept is the customer exercising?",
+      options: [
+        { id: "A", text: "Data retention", rationale: "Data retention defines how long data is kept. Legal retention periods can limit what may be deleted, but they are not the customer's request." },
+        { id: "B", text: "Data sovereignty", rationale: "Data sovereignty means data is subject to the laws of the country where it is stored. It does not give an individual a right to deletion." },
+        { id: "C", text: "Right to be forgotten", rationale: "Correct. The right to be forgotten lets a data subject ask an organisation to erase their personal data." },
+        { id: "D", text: "Attestation and acknowledgement", rationale: "Attestation and acknowledgement confirm that people have read and accepted policies, a compliance monitoring activity." },
+      ],
+      answer: "C",
+      explanation:
+        "The objectives list the right to be forgotten under privacy. Honouring it requires a data inventory that shows every place the person's data is stored, while legal retention duties can override erasure for some records.",
       reference: OBJECTIVES,
     },
   ],

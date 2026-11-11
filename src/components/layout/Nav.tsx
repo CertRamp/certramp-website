@@ -75,10 +75,14 @@ export function MobileNav() {
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
         aria-controls="mobile-menu"
-        className="grid size-11 place-items-center rounded-full text-ink hover:bg-surface"
+        data-mobile-menu-toggle=""
+        className="group grid size-11 place-items-center rounded-full text-ink hover:bg-surface"
       >
-        <Icon name={open ? "close" : "menu"} className="size-6" />
-        <span className="sr-only">{open ? "Close menu" : "Open menu"}</span>
+        {/* Both icons are rendered and swapped via aria-expanded, so the static-page
+            script (public/site.js) can toggle the menu without React. */}
+        <Icon name="menu" className="size-6 group-aria-expanded:hidden" />
+        <Icon name="close" className="hidden size-6 group-aria-expanded:block" />
+        <span className="sr-only" data-open-label="Open menu" data-close-label="Close menu">{open ? "Close menu" : "Open menu"}</span>
       </button>
 
       <div

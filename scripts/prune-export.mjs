@@ -35,6 +35,72 @@ function walk(dir) {
 
 walk(out);
 
+/*
+ * 3. Serves content pages as plain static HTML. Most pages have no interactive
+ *    React component: the only client behaviour is the mobile menu and analytics
+ *    events. For those pages the React runtime scripts and the inline RSC
+ *    payload (self.__next_f, about 60% of each HTML file) are removed and
+ *    public/site.js, which reproduces both behaviours, is added instead, plus a
+ *    plain Umami tag (next/script would need the runtime). Pages with interactive
+ *    components (catalogue search, exam-changes filter, readiness result) keep
+ *    hydration.
+ */
+const hydrated = [
+  /^practice-exams\/index\.html$/,
+  /^practice-exams\/[^/]+\/result\/index\.html$/,
+  /^exam-changes\/index\.html$/,
+  /^de\/pruefungsaenderungen\/index\.html$/,
+];
+const env = Object.fromEntries(
+  readFileSync(new URL("../.env.production", import.meta.url), "utf8")
+    .split("\n")
+    .map((l) => l.trim())
+    .filter((l) => l && !l.startsWith("#") && l.includes("="))
+    .map((l) => [l.slice(0, l.indexOf("=")), l.slice(l.indexOf("=") + 1)]),
+);
+const umamiId = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID ?? env.NEXT_PUBLIC_UMAMI_WEBSITE_ID ?? "";
+const umamiSrc = process.env.NEXT_PUBLIC_UMAMI_SCRIPT_URL ?? env.NEXT_PUBLIC_UMAMI_SCRIPT_URL ?? "https://cloud.umami.is/script.js";
+const provider = process.env.NEXT_PUBLIC_ANALYTICS_PROVIDER ?? env.NEXT_PUBLIC_ANALYTICS_PROVIDER ?? "none";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? env.NEXT_PUBLIC_SITE_URL ?? "https://certramplearning.com";
+const umamiTag =
+  provider === "umami" && umamiId
+    ? `<script defer src="${umamiSrc}" data-website-id="${umamiId}" data-domains="${new URL(siteUrl).hostname}" data-do-not-track="true"></script>`
+    : "";
+const staticStats = { pages: 0, before: 0, after: 0 };
+
+function staticize(dir, rel = "") {
+  for (const name of readdirSync(dir)) {
+    const p = join(dir, name);
+    const r = rel ? `${rel}/${name}` : name;
+    if (statSync(p).isDirectory()) {
+      if (name !== "_next") staticize(p, r);
+      continue;
+    }
+    if (!name.endsWith(".html") || hydrated.some((re) => re.test(r))) continue;
+    const html = readFileSync(p, "utf8");
+    let next = html
+      // React runtime and chunk scripts (async or noModule)
+      .replace(/<script src="\/_next\/[^"]*"[^>]*><\/script>/g, "")
+      // inline RSC payload and runtime bootstrap scripts (never JSON-LD)
+      .replace(/<script>(?:\(self\.__next_[a-z]=|self\.__next_[a-z]\.push)[\s\S]*?<\/script>/g, "")
+      // preloads for scripts that no longer load
+      .replace(/<link rel="preload" as="script"[^>]*\/?>/g, "")
+      .replace(/<link rel="preload" href="[^"]*" as="script"\/?>/g, "")
+      .replace(/<link rel="modulepreload"[^>]*\/?>/g, "");
+    if (next.includes("self.__next_")) {
+      console.warn(`! ${r}: unknown Next.js inline script left in place, page not staticized`);
+      continue;
+    }
+    next = next.replace("</body>", `<script defer src="/site.js"></script>${umamiTag}</body>`);
+    staticStats.pages++;
+    staticStats.before += Buffer.byteLength(html);
+    staticStats.after += Buffer.byteLength(next);
+    writeFileSync(p, next);
+  }
+}
+
+staticize(out);
+
 for (const p of ogFiles) {
   const input = readFileSync(p);
   // Only touch real PNGs; leave anything unexpected alone.
@@ -51,3 +117,6 @@ for (const p of ogFiles) {
 const mb = (b) => (b / 1e6).toFixed(1);
 console.log(`✓ pruned ${stats.full} unused RSC navigation files (index.txt, __next.*.txt) (${mb(stats.fullBytes)} MB) from out/`);
 console.log(`✓ compressed ${stats.og} Open Graph images (${mb(stats.ogBefore)} MB → ${mb(stats.ogAfter)} MB)`);
+console.log(
+  `✓ served ${staticStats.pages} pages as static HTML without React runtime (${mb(staticStats.before)} MB → ${mb(staticStats.after)} MB)`,
+);

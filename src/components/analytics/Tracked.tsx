@@ -28,17 +28,20 @@ export function TrackedLink({
   hrefLang?: string;
 }) {
   const onClick = () => track(event, { destination: href, ...eventProps });
+  // Data attributes let the static-page script (public/site.js) fire the same
+  // event on pages that are served without React hydration.
+  const data = { "data-track": event, "data-track-props": JSON.stringify({ destination: href, ...eventProps }) };
 
   if (external) {
     return (
-      <a href={href} hrefLang={hrefLang} onClick={onClick} className={className} target="_blank" rel="noopener" aria-label={ariaLabel}>
+      <a href={href} hrefLang={hrefLang} onClick={onClick} {...data} className={className} target="_blank" rel="noopener" aria-label={ariaLabel}>
         {children}
         <span className="sr-only"> (opens in a new tab)</span>
       </a>
     );
   }
   return (
-    <Link href={href} onClick={onClick} className={className} aria-label={ariaLabel}>
+    <Link href={href} onClick={onClick} {...data} className={className} aria-label={ariaLabel}>
       {children}
     </Link>
   );
@@ -50,5 +53,5 @@ export function TrackOnView({ event, eventProps }: { event: AnalyticsEvent; even
   useEffect(() => {
     track(event, JSON.parse(key) as AnalyticsProps);
   }, [event, key]);
-  return null;
+  return <span hidden data-track-view={event} data-track-props={key} />;
 }
