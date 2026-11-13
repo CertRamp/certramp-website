@@ -57,6 +57,8 @@ export interface Blueprint {
   examVersion: Localized;
   /** Date the counts were taken from the live course. */
   counted: string;
+  /** Which course edition was counted, when the certification has several (e.g. "the German course"). */
+  courseNote?: Localized;
 }
 
 /* ── Baustein 3: course changelog ────────────────────────────────────────── */

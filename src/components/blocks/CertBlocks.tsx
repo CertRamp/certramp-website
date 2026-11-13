@@ -155,8 +155,8 @@ export function BlueprintSection({ cert, data, tone = "surface" }: { cert: Resol
         <div className="overflow-x-auto lg:col-span-7">
           <table className="w-full min-w-[34rem] border-collapse text-left text-[0.9375rem]">
             <caption className="mb-3 text-left text-sm text-muted">
-              Questions per domain in Test 1–6. Exam version: {t(bp.examVersion, "en")}. Counted from the live course on{" "}
-              {formatIsoDate(bp.counted, "en")}.
+              Questions per domain in Test 1–6. Exam version: {t(bp.examVersion, "en")}. Counted from the live course
+              {bp.courseNote ? ` (${t(bp.courseNote, "en")})` : ""} on {formatIsoDate(bp.counted, "en")}.
             </caption>
             <thead>
               <tr className="border-b border-line-strong text-sm text-muted">
