@@ -5,7 +5,7 @@
  * entries from localStorage, validates them and renders the assessment into
  * #rc-out. The evaluation logic is shared with the server (src/lib/readiness.ts).
  */
-import { bandTone, readinessCopy, type ReadinessCopy } from "@/components/blocks/readiness-copy";
+import { bandTone, fieldClass, readinessCopy, type ReadinessCopy } from "@/components/blocks/readiness-copy";
 import type { ReadinessClientConfig } from "@/components/blocks/ReadinessTool";
 import {
   TESTS,
@@ -66,6 +66,17 @@ function init() {
   const l: ReadinessCopy = readinessCopy[cfg.locale];
   const th = cfg.thresholds;
   const key = `certramp:readiness:${cfg.slug}`;
+  // Domain fields are built here rather than on the server: they only work with this script anyway.
+  document.querySelectorAll<HTMLElement>("[data-rc-domain-fields]").forEach((box) => {
+    const n = Number(box.dataset.rcDomainFields);
+    box.innerHTML = cfg.domains
+      .map((d) => {
+        const id = `rc-t${n}-${d.id}`;
+        const total = d.perTest?.[n - 1];
+        return `<div><label for="${id}" class="block text-sm text-body" lang="en">${esc(d.name)}${total ? `<span class="text-muted"> (/${total})</span>` : ""}</label><input id="${id}" data-rc="domain" data-test="${n}" data-domain="${esc(d.id)}" autocomplete="off" class="${fieldClass} mt-1" placeholder="${total ? `${Math.round(total * 0.75)}/${total}` : "15/20"}"><p id="${id}-err" hidden class="mt-1 text-xs text-warn-600"></p></div>`;
+      })
+      .join("");
+  });
   const inputs = Array.from(document.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>("[data-rc]"));
   const storageEl = document.querySelector("[data-rc-storage]");
   const statusEl = document.querySelector("[data-rc-status]");
@@ -251,10 +262,21 @@ function init() {
     if (statusEl) statusEl.textContent = l.resetConfirm;
   });
   document.querySelector("[data-rc-print]")?.addEventListener("click", () => window.print());
-  document.querySelector<HTMLSelectElement>("[data-rc-nav]")?.addEventListener("change", (e) => {
-    const href = (e.target as HTMLSelectElement).value;
-    if (href.startsWith("/")) window.location.href = href;
-  });
+  const nav = document.querySelector<HTMLSelectElement>("[data-rc-nav]");
+  if (nav) {
+    const base = cfg.locale === "de" ? "/de/tools/readiness-check/" : "/tools/readiness-check/";
+    fetch("/tools/readiness-check/certifications.json")
+      .then((r) => r.json() as Promise<{ s: string; n: string }[]>)
+      .then((list) => {
+        nav.innerHTML = list.map((c) => `<option value="${esc(c.s)}"${c.s === cfg.slug ? " selected" : ""}>${esc(c.n)}</option>`).join("");
+      })
+      .catch(() => {
+        /* keep the current certification only */
+      });
+    nav.addEventListener("change", () => {
+      if (/^[a-z0-9-]+$/.test(nav.value) && nav.value !== cfg.slug) window.location.href = `${base}${nav.value}/`;
+    });
+  }
 
   fill();
   render();

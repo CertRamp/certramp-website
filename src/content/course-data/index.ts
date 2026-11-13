@@ -1,4 +1,5 @@
 import { aair, aaism, ccaoF, ccdvF, securityPlus701, securityPlus801 } from "./batch-2026-11-13";
+import { batch2 } from "./batch-2026-11-13b";
 import { ciaPart1 } from "./cia-part-1";
 import { giacGaips } from "./giac-gaips";
 import { paa } from "./google-cloud-agentic-architect";
@@ -19,6 +20,7 @@ export const courseData: CourseData[] = [
   ccaoF,
   aair,
   aaism,
+  ...batch2,
 ];
 
 const time = (d: string) => Date.parse(d.length === 7 ? `${d}-01T00:00:00Z` : `${d}T00:00:00Z`);

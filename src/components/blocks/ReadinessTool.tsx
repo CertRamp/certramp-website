@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import type { TestThreshold } from "@/content/course-data/types";
 import { TESTS, type DomainInfo, type TestNo } from "@/lib/readiness";
-import { readinessCopy } from "./readiness-copy";
+import { fieldClass, readinessCopy } from "./readiness-copy";
 
 export interface ToolDomain extends DomainInfo {
   weightLabel: string;
@@ -23,8 +23,6 @@ export interface ReadinessClientConfig {
   thresholds: Record<TestNo, TestThreshold>;
 }
 
-export const fieldClass =
-  "w-full rounded-lg border border-line-strong bg-white px-3 py-2 text-base outline-none focus:border-accent-500 focus:ring-2 focus:ring-accent-500/20";
 
 /**
  * Readiness check (Baustein 6). Server-rendered form; public/readiness.js
@@ -66,12 +64,9 @@ export function ReadinessTool({
           <p className="mt-4">
             <label className="text-sm font-semibold text-ink">
               {locale === "de" ? "Zertifizierung" : "Certification"}{" "}
-              <select className={`${field} mt-1`} defaultValue={otherCerts.find((c) => c.slug === slug)?.href} data-rc-nav>
-                {otherCerts.map((c) => (
-                  <option key={c.slug} value={c.href}>
-                    {c.name}
-                  </option>
-                ))}
+              {/* Only the current option is rendered; public/readiness.js adds the others from certifications.json. */}
+              <select className={`${field} mt-1`} defaultValue={slug} data-rc-nav>
+                <option value={slug}>{certName}</option>
               </select>
             </label>
           </p>
@@ -106,30 +101,7 @@ export function ReadinessTool({
                 <details className="mt-3" data-rc-domains={n}>
                   <summary className="cursor-pointer text-sm font-semibold text-accent-600">{l.domainToggle}</summary>
                   <p className="mt-2 text-sm text-muted">{l.domainHelp}</p>
-                  <div className="mt-3 grid gap-3 sm:grid-cols-2">
-                    {domains.map((d) => {
-                      const did = `${id}-${d.id}`;
-                      const total = d.perTest?.[n - 1];
-                      return (
-                        <div key={d.id}>
-                          <label htmlFor={did} className="block text-sm text-body" lang="en">
-                            {d.name}
-                            {total ? <span className="text-muted"> (/{total})</span> : null}
-                          </label>
-                          <input
-                            id={did}
-                            data-rc="domain"
-                            data-test={n}
-                            data-domain={d.id}
-                            autoComplete="off"
-                            className={`${field} mt-1`}
-                            placeholder={total ? `${Math.round(total * 0.75)}/${total}` : "15/20"}
-                          />
-                          <p id={`${did}-err`} hidden className="mt-1 text-xs text-warn-600" />
-                        </div>
-                      );
-                    })}
-                  </div>
+                  <div className="mt-3 grid gap-3 sm:grid-cols-2" data-rc-domain-fields={n} />
                 </details>
                 <label htmlFor={`${id}-notes`} className="mt-4 block text-sm font-semibold text-ink">
                   {l.notes}

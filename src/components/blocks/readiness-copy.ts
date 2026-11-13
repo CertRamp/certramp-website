@@ -153,3 +153,7 @@ export const bandTone: Record<Band, string> = {
   building: "bg-warn-100 text-warn-600 ring-warn-600/20",
 };
 
+
+/** Shared input style (server shell and the fields the browser script adds). */
+export const fieldClass =
+  "w-full rounded-lg border border-line-strong bg-white px-3 py-2 text-base outline-none focus:border-accent-500 focus:ring-2 focus:ring-accent-500/20";
