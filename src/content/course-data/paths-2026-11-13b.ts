@@ -2,6 +2,7 @@ import { awsPaths } from "./paths-aws";
 import { microsoftPaths } from "./paths-microsoft";
 import { morePaths } from "./paths-more";
 import { restPaths } from "./paths-rest";
+import { az104Glossary, saaGlossary } from "./glossary-cloud";
 import { cisspGlossary, md102Glossary } from "./glossary-md-cissp";
 import { pmpGlossary } from "./glossary-pmp";
 import { sc200Glossary } from "./glossary-sc-200";
@@ -310,6 +311,8 @@ export const extraGlossaries: Record<string, Glossary> = {
   pmp: pmpGlossary,
   "md-102": md102Glossary,
   "isc2-cissp": cisspGlossary,
+  "az-104": az104Glossary,
+  "aws-saa-c03": saaGlossary,
 };
 
 /** Courses without counted data (no blueprint yet) that still get a path. */
