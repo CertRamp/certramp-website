@@ -1,3 +1,5 @@
+import { awsPaths } from "./paths-aws";
+import { pmpGlossary } from "./glossary-pmp";
 import { sc200Glossary } from "./glossary-sc-200";
 import type { CertPath, CourseData, Glossary, PathItem } from "./types";
 
@@ -280,6 +282,7 @@ export const cloudPlusPath: CertPath = {
 
 /** slug → path, merged into the batch course data in ./index.ts. */
 export const extraPaths: Record<string, CertPath> = {
+  ...awsPaths,
   "sc-200": sc200Path,
   "sc-300": sc300Path,
   "sc-500": sc500Path,
@@ -297,6 +300,7 @@ export const extraPaths: Record<string, CertPath> = {
 /** slug → glossary for the batch courses. */
 export const extraGlossaries: Record<string, Glossary> = {
   "sc-200": sc200Glossary,
+  pmp: pmpGlossary,
 };
 
 export function withExtraPaths(list: CourseData[]): CourseData[] {
