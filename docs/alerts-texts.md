@@ -1,6 +1,6 @@
 # Exam change alert: consent and privacy texts (draft)
 
-**Status: draft for legal review. Do not publish before a lawyer has checked these texts.**
+**Status: published on 13 Nov 2026 at the owner's request (privacy policy sections 6/7 and the alert form). Still recommended: legal review. Provider: Brevo (Brevo GmbH, Köpenicker Str. 126, 10179 Berlin; parent Brevo SAS, Paris). Check Annex 2 of the Brevo terms for the contracting entity for German customers.**
 Prepared 13 Nov 2026. Placeholders in square brackets: [Provider], [Provider address], [date].
 The sign-up form stays hidden until a provider is set in `src/config/alerts.ts`.
 

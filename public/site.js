@@ -63,7 +63,32 @@
     });
   }
 
-  function init() { initMenu(); initViews(); }
+  /* ── Exam change alert forms (Brevo double opt-in) ── */
+  function initAlerts() {
+    var forms = document.querySelectorAll("form[data-alert-form]");
+    for (var i = 0; i < forms.length; i++) {
+      forms[i].addEventListener("submit", function (e) {
+        var form = e.currentTarget;
+        if (!window.fetch || !window.FormData) return; // plain POST in a new tab
+        e.preventDefault();
+        var status = form.querySelector("[data-alert-status]");
+        var btn = form.querySelector("button[type=submit]");
+        if (btn) btn.disabled = true;
+        var url = form.action + (form.action.indexOf("?") < 0 ? "?" : "&") + "isAjax=1";
+        fetch(url, { method: "POST", body: new FormData(form), mode: "cors" })
+          .then(function (r) { return r.json(); })
+          .then(function (j) {
+            var ok = j && j.success;
+            if (status) status.textContent = form.getAttribute(ok ? "data-ok" : "data-err");
+            if (ok) { form.reset(); send("exam_alert_signup", { location: location.pathname }); }
+          })
+          .catch(function () { form.submit(); })
+          .then(function () { if (btn) btn.disabled = false; });
+      });
+    }
+  }
+
+  function init() { initMenu(); initViews(); initAlerts(); }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
   else init();
 })();

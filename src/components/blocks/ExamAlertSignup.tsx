@@ -11,6 +11,8 @@ const copy = {
     privacy: "privacy policy",
     submit: "Subscribe",
     doi: "You will receive an email to confirm your address. No confirmation, no emails.",
+    ok: "Almost done: please click the confirmation link we just sent you.",
+    err: "That did not work. Please check the address and try again.",
   },
   de: {
     title: "Benachrichtige mich bei Änderungen an dieser Prüfung",
@@ -21,6 +23,8 @@ const copy = {
     privacy: "Datenschutzerklärung",
     submit: "Anmelden",
     doi: "Du erhältst eine E-Mail, um deine Adresse zu bestätigen. Ohne Bestätigung keine E-Mails.",
+    ok: "Fast geschafft: Bitte klick auf den Bestätigungslink, den wir dir gerade geschickt haben.",
+    err: "Das hat nicht geklappt. Bitte prüf die Adresse und versuch es erneut.",
   },
 } as const;
 
@@ -34,7 +38,7 @@ export function ExamAlertSignup({ slug, exam, locale = "en", className }: { slug
   const l = copy[locale];
   const id = `alert-${slug}`;
   return (
-    <form action={action} method="post" target="_blank" rel="noopener" className={className ?? "rounded-[var(--radius-card)] border border-line bg-white p-6"}>
+    <form action={action} method="post" target="_blank" rel="noopener" data-alert-form data-ok={l.ok} data-err={l.err} className={className ?? "rounded-[var(--radius-card)] border border-line bg-white p-6"}>
       <p className="font-display text-lg font-semibold text-ink">{l.title}</p>
       <p className="mt-1 text-sm text-muted">{l.body}</p>
       {/* Brevo form fields: honeypot must stay empty; locale sets the language of Brevo's own pages. */}
@@ -58,6 +62,7 @@ export function ExamAlertSignup({ slug, exam, locale = "en", className }: { slug
         {l.submit}
       </button>
       <p className="mt-2 text-xs text-muted">{l.doi}</p>
+      <p data-alert-status role="status" aria-live="polite" className="mt-2 text-sm font-semibold text-ink" />
     </form>
   );
 }

@@ -11,8 +11,8 @@
  * for NCA-AIIO, form "Exam change alert EN" with double opt-in, bilingual DOI email
  * and bilingual form messages.
  *
- * `live` stays false until the sender address in Brevo is hello@certramplearning.com
- * with an authenticated domain (no private address as sender).
+ * Live since 13 Nov 2026: sender hello@certramplearning.com, domain authenticated in Brevo
+ * (DKIM via IONOS Domain Connect), privacy policy sections added.
  */
 export const alertsConfig: {
   provider: null | "brevo";
@@ -21,7 +21,7 @@ export const alertsConfig: {
   forms: Record<string, string>;
 } = {
   provider: "brevo",
-  live: false,
+  live: true,
   forms: {
     "nvidia-nca-aiio":
       "https://11007e05.sibforms.com/serve/MUIFAIq8yEEC59ks-ZDMBm3OE3GtOVp466kT-m0pTDqkU783iC9HXEdqkrMWZVHLbve6nyghrAh7KXWU_534mcR38tlSBjnlq5tNo6Owm8lejc7OW4Ktx5efFkB8x-su3aYbFV1JrfM3OYRQVsUmCIYRxK4KcmkXdWoLy6vebRjX-3sZIanbmV9D5Op1-Mz1VP_L167iV2gBw9tbtw==",

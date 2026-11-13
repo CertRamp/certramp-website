@@ -43,7 +43,7 @@ export const legalEntity = {
   vatId: "DE295182475",
 };
 
-const UPDATED = umamiEnabled ? "2026-10-27" : "2026-10-01";
+const UPDATED = "2026-11-13";
 
 const imprintHtml = `
 <h2>Information pursuant to § 5 DDG (German Digital Services Act)</h2>
@@ -80,8 +80,8 @@ const analyticsSection = umamiEnabled
 `;
 const n = umamiEnabled ? 1 : 0; // section numbers shift by one when the Umami section is shown
 const recipients = umamiEnabled
-  ? `<p>We do not sell personal data. Data is only passed to our processors: IONOS (hosting, visitor statistics and email, see section 2) and Umami Software, Inc. (web analytics, see section 4). Analytics data is stored in the EU; access from the USA by Umami Software, Inc. cannot be ruled out (see section 4).</p>`
-  : `<p>We do not sell personal data. Data is only passed to our hosting and email provider IONOS (see section 2) as a processor (hosting, visitor statistics and email). Personal data from your visit is not transferred to countries outside the EU/EEA.</p>`;
+  ? `<p>We do not sell personal data. Data is only passed to our processors: IONOS (hosting, visitor statistics and email, see section 2), Umami Software, Inc. (web analytics, see section 4) and Brevo (exam change alerts, see section 7). Analytics data is stored in the EU; access from the USA by Umami Software, Inc. cannot be ruled out (see section 4).</p>`
+  : `<p>We do not sell personal data. Data is only passed to our processors IONOS (hosting, visitor statistics and email, see section 2) and Brevo (exam change alerts, see section 6). Personal data is not transferred to countries outside the EU/EEA.</p>`;
 
 const privacyHtml = `
 <p>This privacy policy explains what personal data is processed when you visit this website and when you contact us. We keep data processing to the minimum needed to run the website.</p>
@@ -101,20 +101,28 @@ ${analyticsSection}
 <h2>${5+n}. Contact by email</h2>
 <p>If you contact us by email, we process the data you send us (usually your email address, your name and the content of your message) to answer your enquiry. The legal basis is Art. 6(1)(b) GDPR where your enquiry relates to a contract or pre-contractual measures, and Art. 6(1)(f) GDPR otherwise; our legitimate interest is responding to enquiries. We delete the data once your enquiry has been dealt with, unless statutory retention obligations (for example under German commercial or tax law) require us to keep it longer.</p>
 
-<h2>${6+n}. Links to Udemy and other websites</h2>
+<h2>${6+n}. Exam change alerts (email)</h2>
+<p>On some practice exam pages you can subscribe to an email alert for one certification exam. If you subscribe, we process your email address, the certification you chose, the page language, the time of sign-up and confirmation, and the IP address used for confirmation. Purpose: to email you when the official exam you chose changes (for example a new exam version, a new outline or a retirement), and to be able to prove your consent. The legal basis is your consent (Art. 6(1)(a) GDPR).</p>
+<p>We use a double opt-in procedure: you only receive alerts after you confirm your address with the link in our confirmation email. You can withdraw your consent at any time with the unsubscribe link in every email or by writing to <a href="mailto:hello@certramplearning.com">hello@certramplearning.com</a>; this does not affect the lawfulness of processing before the withdrawal. We delete your data when you unsubscribe and keep a record of the consent and the withdrawal for up to three years to be able to prove that we acted lawfully.</p>
+<p>We send the emails with Brevo (Brevo GmbH, Köpenicker Str. 126, 10179 Berlin, Germany, part of Brevo SAS, Paris, France), which processes the data on our behalf under a data processing agreement pursuant to Art. 28 GDPR. The data is stored on servers in the European Union.</p>
+
+<h2>${7+n}. Readiness check (storage in your browser)</h2>
+<p>The readiness check on our tool pages saves your entries and notes only in your own browser (local storage), so they are still there when you come back. This data is not transmitted to us or to anyone else. Storing it is necessary to provide the function you use (§ 25(2) no. 2 TDDDG). You can delete the data at any time with the "Clear my entries" button or by clearing your browser data.</p>
+
+<h2>${8+n}. Links to Udemy and other websites</h2>
 <p>This website contains links to our courses on Udemy and to other external websites, such as official certification bodies. These are plain links: no data is transmitted to these providers until you click a link. After you follow a link, the privacy policy of the respective provider applies, for Udemy, see <a href="https://www.udemy.com/terms/privacy/" rel="noopener nofollow">udemy.com/terms/privacy</a>.</p>
 
-<h2>${7+n}. Recipients and transfers to third countries</h2>
+<h2>${9+n}. Recipients and transfers to third countries</h2>
 ${recipients}
 
-<h2>${8+n}. Your rights</h2>
+<h2>${10+n}. Your rights</h2>
 <p>You have the right to access your personal data (Art. 15 GDPR), to rectification (Art. 16), to erasure (Art. 17), to restriction of processing (Art. 18), to data portability (Art. 20) and to object to processing based on legitimate interests (Art. 21). To exercise these rights, send an email to <a href="mailto:hello@certramplearning.com">hello@certramplearning.com</a>.</p>
 <p>You also have the right to lodge a complaint with a data protection supervisory authority. The authority responsible for us is the Bavarian Data Protection Authority (Bayerisches Landesamt für Datenschutzaufsicht, BayLDA), Promenade 18, 91522 Ansbach, Germany.</p>
 
-<h2>${9+n}. No automated decision-making</h2>
+<h2>${11+n}. No automated decision-making</h2>
 <p>We do not use automated decision-making or profiling within the meaning of Art. 22 GDPR.</p>
 
-<h2>${10+n}. Changes to this policy</h2>
+<h2>${12+n}. Changes to this policy</h2>
 <p>We update this privacy policy when the website or the legal requirements change. The current version is always available on this page.</p>
 `;
 
@@ -126,6 +134,7 @@ ${
     ? `<p>We do not use advertising or social media tools. For visitor statistics we use our host's server log statistics and the cookieless web analytics service Umami, which stores nothing on your device: see sections 3 and 4 of our <a href="/legal/privacy/">privacy policy</a>. Fonts are served from our own server.</p>`
     : `<p>We do not use advertising, social media tools or analytics tools that run in your browser. Our host creates anonymous visitor statistics from the server log files without cookies: see section 3 of our <a href="/legal/privacy/">privacy policy</a>. Fonts are served from our own server.</p>`
 }
+<p>The readiness check stores your entries and notes in your browser's local storage so they are still there next time. This is necessary for the function you use, nothing is sent to us, and you can delete it with "Clear my entries": see our <a href="/legal/privacy/">privacy policy</a>.</p>
 <p>If you follow a link to another website, such as Udemy, that website may use cookies under its own cookie and privacy policy.</p>
 <p>Should we introduce cookies or similar technologies in the future, we will update this page and ask for your consent where the law requires it. More details: <a href="/legal/privacy/">privacy policy</a>.</p>
 `;
