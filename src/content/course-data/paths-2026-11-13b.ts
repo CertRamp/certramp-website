@@ -4,6 +4,7 @@ import { morePaths } from "./paths-more";
 import { restPaths } from "./paths-rest";
 import { az104Glossary, saaGlossary } from "./glossary-cloud";
 import { cisspGlossary, md102Glossary } from "./glossary-md-cissp";
+import { az900Glossary, ccnaGlossary, sc300Glossary } from "./glossary-more";
 import { pmpGlossary } from "./glossary-pmp";
 import { sc200Glossary } from "./glossary-sc-200";
 import type { CertPath, CourseData, Glossary, PathItem } from "./types";
@@ -313,6 +314,9 @@ export const extraGlossaries: Record<string, Glossary> = {
   "isc2-cissp": cisspGlossary,
   "az-104": az104Glossary,
   "aws-saa-c03": saaGlossary,
+  "az-900": az900Glossary,
+  "sc-300": sc300Glossary,
+  "ccna-200-301": ccnaGlossary,
 };
 
 /** Courses without counted data (no blueprint yet) that still get a path. */
