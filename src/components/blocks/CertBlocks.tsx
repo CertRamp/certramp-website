@@ -137,13 +137,19 @@ export function BlueprintSection({ cert, data, tone = "surface" }: { cert: Resol
   });
   const grand = rows.reduce((a, r) => a + r.total, 0);
   const weightNum = (w: string) => Number(w.match(/\d+/)?.[0] ?? 0);
+  const hasWeights = rows.every((r) => r.weight !== "–");
+  const sameMix = rows.every((r) => r.perTest.every((n) => n === r.perTest[0]));
   return (
     <Section tone={tone} labelledBy="blueprint-title" className="!py-16 sm:!py-20">
       <SectionHeader
         id="blueprint-title"
         eyebrow="Blueprint coverage"
-        title="How the questions follow the official exam weights"
-        intro={`Every practice test mirrors the official ${cert.name} domain weights, so each result tells you something about the whole exam, not just one topic.`}
+        title={hasWeights ? "How the questions follow the official exam weights" : "How the questions cover the official exam domains"}
+        intro={
+          hasWeights
+            ? `Every practice test mirrors the official ${cert.name} domain weights, so each result tells you something about the whole exam, not just one topic.`
+            : `${cert.vendorName} does not publish weights for the ${cert.name} domains, so every practice test spreads its questions evenly across all of them.`
+        }
       />
       <div className="mt-10 grid gap-10 lg:grid-cols-12">
         <div className="overflow-x-auto lg:col-span-7">
@@ -181,16 +187,18 @@ export function BlueprintSection({ cert, data, tone = "surface" }: { cert: Resol
           </table>
         </div>
         <figure className="lg:col-span-5">
-          <figcaption className="text-sm font-semibold text-ink">Official weight vs. share of our questions</figcaption>
+          <figcaption className="text-sm font-semibold text-ink">{hasWeights ? "Official weight vs. share of our questions" : "Share of our questions per domain"}</figcaption>
           <ul className="mt-4 space-y-5" aria-hidden="true">
             {rows.map((r) => (
               <li key={r.domain}>
                 <p className="text-sm text-body">{r.name}</p>
                 <div className="mt-1.5 space-y-1">
-                  <div className="flex items-center gap-2">
-                    <span className="h-3 rounded-sm bg-navy-900" style={{ width: `${weightNum(r.weight) * 2}%` }} />
-                    <span className="text-xs text-muted">{r.weight} official</span>
-                  </div>
+                  {hasWeights && (
+                    <div className="flex items-center gap-2">
+                      <span className="h-3 rounded-sm bg-navy-900" style={{ width: `${weightNum(r.weight) * 2}%` }} />
+                      <span className="text-xs text-muted">{r.weight} official</span>
+                    </div>
+                  )}
                   <div className="flex items-center gap-2">
                     <span className="h-3 rounded-sm bg-accent-500" style={{ width: `${(r.total / grand) * 200}%` }} />
                     <span className="text-xs text-muted">{Math.round((r.total / grand) * 100)}% of our questions</span>
@@ -200,11 +208,13 @@ export function BlueprintSection({ cert, data, tone = "surface" }: { cert: Resol
             ))}
           </ul>
           <p className="sr-only">
-            {rows.map((r) => `${r.name}: official weight ${r.weight}, ${Math.round((r.total / grand) * 100)} percent of our questions.`).join(" ")}
+            {rows
+              .map((r) => `${r.name}: ${hasWeights ? `official weight ${r.weight}, ` : ""}${Math.round((r.total / grand) * 100)} percent of our questions.`)
+              .join(" ")}
           </p>
           <p className="mt-6 text-sm leading-relaxed text-muted">
-            Each test has the same domain mix, so you can compare your domain results from test to test. The difficulty rises
-            from Test 1 to Test 6; the weighting stays the same.
+            {sameMix ? "Each test has the same domain mix" : "Each test has almost the same domain mix (within a question or two)"}, so you can
+            compare your domain results from test to test. The difficulty rises from Test 1 to Test 6; the weighting stays the same.
           </p>
         </figure>
       </div>
@@ -319,7 +329,11 @@ export function CertPathSection({ cert, data, tone = "surface" }: { cert: Resolv
           <h3 className="text-lg font-semibold">Before</h3>
           {p.before.length ? <PathList items={p.before} locale="en" /> : <p className="mt-4 text-[0.9375rem] text-muted">No earlier {cert.vendorName} certification is required.</p>}
           <h3 className="mt-8 text-lg font-semibold">After, at {cert.vendorName}</h3>
-          <PathList items={p.after} locale="en" />
+          {p.after.length ? (
+            <PathList items={p.after} locale="en" />
+          ) : (
+            <p className="mt-4 text-[0.9375rem] text-muted">{cert.vendorName} defines no follow-on certification for {cert.name}.</p>
+          )}
         </div>
         <div>
           <h3 className="text-lg font-semibold">Similar certifications</h3>

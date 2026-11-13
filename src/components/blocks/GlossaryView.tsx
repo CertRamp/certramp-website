@@ -26,7 +26,7 @@ export const glossaryCopy = {
     intro: (n: string) =>
       `The terms you meet in the ${n} exam, with a short definition. The exam is in English: the German equivalent helps if you study in German. Portuguese, Spanish and French will follow.`,
     search: "Search the glossary",
-    placeholder: "e.g. InfiniBand, MIG, inference",
+    placeholder: (ex: string) => `e.g. ${ex}`,
     empty: "No term matches your search.",
     count: "{n} terms match.",
     jump: "Jump to letter",
@@ -50,7 +50,7 @@ export const glossaryCopy = {
     intro: (n: string) =>
       `Die Begriffe, die dir in der ${n}-Prüfung begegnen, mit kurzer Erklärung auf Deutsch. Die Prüfung findet auf Englisch statt: Lern den englischen Begriff mit, so wie er in der Prüfung steht.`,
     search: "Glossar durchsuchen",
-    placeholder: "z. B. InfiniBand, MIG, Inferenz",
+    placeholder: (ex: string) => `z. B. ${ex}`,
     empty: "Kein Begriff passt zu deiner Suche.",
     count: "{n} Begriffe gefunden.",
     jump: "Zum Buchstaben springen",
@@ -103,7 +103,7 @@ export function GlossaryView({ cert, data, locale }: { cert: ResolvedCertificati
       </PageHero>
 
       <Section className="!pt-12">
-        <GlossarySearch label={l.search} placeholder={l.placeholder} empty={l.empty} countLabel={l.count} />
+        <GlossarySearch label={l.search} placeholder={l.placeholder(g.terms.slice(0, 3).map((x) => x.abbr ?? x.term).join(", "))} empty={l.empty} countLabel={l.count} />
         <nav aria-label={l.jump} className="mt-6 flex flex-wrap gap-1.5">
           {letters.map((c) => (
             <a key={c} href={`#letter-${c}`} className="grid size-9 place-items-center rounded-lg bg-surface font-semibold text-ink ring-1 ring-inset ring-line hover:ring-line-strong">

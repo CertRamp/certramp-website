@@ -1,8 +1,12 @@
+import { ciaPart1 } from "./cia-part-1";
+import { giacGaips } from "./giac-gaips";
+import { paa } from "./google-cloud-agentic-architect";
 import { ncaAiio } from "./nvidia-nca-aiio";
+import { netsecPro } from "./palo-alto-netsec-pro";
 import type { CourseData } from "./types";
 
-/** Register every certification's course data here (pilot: NCA-AIIO). */
-export const courseData: CourseData[] = [ncaAiio];
+/** Register every certification's course data here (pilot NCA-AIIO, then the best-selling niche exams). */
+export const courseData: CourseData[] = [ncaAiio, giacGaips, ciaPart1, paa, netsecPro];
 
 const time = (d: string) => Date.parse(d.length === 7 ? `${d}-01T00:00:00Z` : `${d}T00:00:00Z`);
 

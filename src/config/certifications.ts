@@ -1471,18 +1471,18 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "google-cloud-agentic-architect": {
     description:
-      "Practice exams for the Google Cloud Professional Agentic Architect certification, written against the five sections of the official exam guide and the current Gemini Enterprise Agent Platform product names: low-code agents, coding agents, custom agents with ADK, evaluation and deployment, and agent security. Check your level before the 3-hour multiple-choice exam (beta format, about 80 questions).",
+      "Practice exams for the Google Cloud Professional Agentic Architect certification, written against the five sections of the official exam guide and the current Gemini Enterprise Agent Platform product names: low-code agents, coding agents, custom agents with ADK, evaluation and deployment, and agent security. Check your level before the 2-hour multiple-choice exam (50 to 60 questions; hands-on labs follow once you pass).",
     fullName: "Google Cloud Certified Professional Agentic Architect",
     exam: {
       officialName: "Professional Agentic Architect",
-      examVersion: "Beta exam; Google states the GA exam launches in mid-November 2026",
-      questionCount: "About 80 (beta exam)",
-      duration: "3 hours (beta exam)",
+      examVersion: "Generally available exam (beta closed; GA registration opened 2 November 2026)",
+      questionCount: "50–60",
+      duration: "2 hours",
       format: "Part 1: proctored multiple-choice exam. Part 2: PAA hands-on labs in Google Skills, unlocked after passing Part 1",
       questionTypes: "Multiple choice",
       languages: ["English"],
       delivery: "Part 1 delivered by Pearson, online-proctored or onsite-proctored; Part 2 labs in Google Skills",
-      prerequisites: "None. Recommended: 3+ years of hands-on experience building, testing, deploying and managing cloud solutions, including 1+ years building agentic solutions using Google Cloud. Certification valid for 1 year.",
+      prerequisites: "None. Recommended: 3+ years of hands-on experience building, testing, deploying and managing cloud solutions, including 1+ years building agentic solutions using Google Cloud. Certification valid for 1 year. After passing the exam you have 2 months to complete the required labs.",
       status: "current",
       officialCertificationUrl: "https://cloud.google.com/learn/certification/agentic-architect",
       domains: [
@@ -1495,9 +1495,10 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       sources: [
         { label: "Google Cloud: Professional Agentic Architect certification", url: "https://cloud.google.com/learn/certification/agentic-architect" },
         { label: "Google Cloud: Professional Agentic Architect exam guide (PDF)", url: "https://services.google.com/fh/files/misc/professional_agentic_architect_exam_guide_english.pdf" },
+        { label: "Google Cloud Certification Help: Professional Agentic Architect FAQ", url: "https://support.google.com/cloud-certification/answer/18080541" },
         { label: "Google Cloud: Gemini Enterprise Agent Platform name changes", url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/vertex-ai-name-changes" },
       ],
-      lastVerified: "2026-10-27",
+      lastVerified: "2026-11-13",
     },
     seo: {
       title: "Google Cloud Agentic Architect Practice Exams (PAA 2026)",

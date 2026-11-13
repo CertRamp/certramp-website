@@ -81,6 +81,7 @@ const copy = {
     notTaken: "not taken",
     weakTitle: "Weakest domains",
     weakIntro: "Ranked by how much exam weight your gap is worth: (100 % − your score) × official domain weight.",
+    weakIntroEqual: "The vendor publishes no domain weights, so domains are ranked by your score, lowest first.",
     weakNone: "Add domain results to a test to see your weakest domains.",
     weakRow: (acc: number, c: number, t: number, w: string) => `${acc}% correct (${c}/${t}) · official weight ${w}`,
     nextTitle: "Recommended next step",
@@ -149,6 +150,7 @@ const copy = {
     notTaken: "nicht gemacht",
     weakTitle: "Schwächste Domains",
     weakIntro: "Sortiert danach, wie viel Prüfungsgewicht deine Lücke ausmacht: (100 % − dein Ergebnis) × offizielle Gewichtung.",
+    weakIntroEqual: "Der Anbieter veröffentlicht keine Gewichtung, daher sind die Domains nach deinem Ergebnis sortiert, das schwächste zuerst.",
     weakNone: "Ergänz bei einem Test die Ergebnisse je Domain, um deine schwächsten Domains zu sehen.",
     weakRow: (acc: number, c: number, t: number, w: string) => `${acc} % richtig (${c}/${t}) · offizielle Gewichtung ${w}`,
     nextTitle: "Empfohlener nächster Schritt",
@@ -511,7 +513,7 @@ export function ReadinessTool({
                     <p className="mt-2 text-sm text-muted">{l.weakNone}</p>
                   ) : (
                     <>
-                      <p className="mt-1 text-sm text-muted">{l.weakIntro}</p>
+                      <p className="mt-1 text-sm text-muted">{domains.every((d) => d.weight === null) ? l.weakIntroEqual : l.weakIntro}</p>
                       <ol className="mt-3 space-y-2">
                         {weak.map((w, i) => (
                           <li key={w.id} className={i === 0 ? "font-semibold text-ink" : "text-body"}>

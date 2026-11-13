@@ -8,7 +8,7 @@ import type { ExamGuide } from "@/config/types";
 export const googleCloudAgenticArchitectGuide: ExamGuide = {
   slug: "google-cloud-agentic-architect",
   summary:
-    "The Google Cloud Professional Agentic Architect certification tests whether you can design, build, evaluate, deploy and secure AI agents on Google Cloud, from low-code tools and coding agents to custom agents built with the Agent Development Kit. The beta exam has about 80 multiple-choice questions in 3 hours, delivered by Pearson, online-proctored or onsite-proctored,, and passing candidates must then complete hands-on labs in Google Skills. Google says the GA exam launches in mid-November 2026.",
+    "The Google Cloud Professional Agentic Architect certification tests whether you can design, build, evaluate, deploy and secure AI agents on Google Cloud, from low-code tools and coding agents to custom agents built with the Agent Development Kit. The exam is now generally available: 50 to 60 multiple-choice questions in 2 hours, delivered by Pearson, online-proctored or onsite-proctored, and passing candidates then have 2 months to complete hands-on labs in Google Skills.",
   whoFor: [
     "Developers and architects who build agentic solutions on Google Cloud",
     "Engineers moving from classic generative AI apps to multi-agent systems with ADK and Agent Runtime",
@@ -28,7 +28,7 @@ export const googleCloudAgenticArchitectGuide: ExamGuide = {
       id: "how-it-is-structured",
       heading: "How the certification is structured",
       paragraphs: [
-        "Certification has two parts. Part 1 is a proctored multiple-choice exam delivered by Pearson that assesses conceptual knowledge, system design choices and architectural standards. If you pass it, you receive instructions in CM Connect to take the separate PAA hands-on labs in Google Skills, which validate your execution and coding ability. For the beta, Google says passing candidates must complete the labs by 31 December 2026.",
+        "Certification has two parts. Part 1 is a proctored multiple-choice exam delivered by Pearson that assesses conceptual knowledge, system design choices and architectural standards. If you pass it, you receive instructions in CM Connect to take the separate PAA hands-on labs in Google Skills, which validate your execution and coding ability. Candidates who pass the GA exam have 2 months to complete the labs; beta candidates have until 31 December 2026.",
         "Google has renamed much of the platform, and the exam guide mostly uses the new names (one exception: it still says Agent Designer for what the docs now call Workflow Builder). Vertex AI is now Gemini Enterprise Agent Platform (Agent Platform for short), Vertex AI Agent Engine is now Agent Runtime, Vertex AI Studio is now Agent Studio, and Agent Engine Sessions and Memory Bank are now Agent Platform Sessions and Memory Bank. Older courses and blog posts still use the Vertex AI names, so map them as you study.",
       ],
     },
@@ -79,12 +79,12 @@ export const googleCloudAgenticArchitectGuide: ExamGuide = {
     {
       question: "How long is the Professional Agentic Architect exam and how many questions does it have?",
       answer:
-        "Google states that the beta exam lasts 3 hours and has about 80 multiple-choice questions. Google has not published separate figures for the GA exam on the certification page, so check it again when GA registration opens in mid-November 2026.",
+        "The generally available exam lasts 2 hours and has 50 to 60 multiple-choice questions. The beta exam, which closed in September 2026, had up to 80 questions in 3 hours.",
     },
     {
       question: "How much does the exam cost?",
       answer:
-        "Google lists a beta registration fee of USD 120, a 40% discount on the retail price of USD 200, plus tax where applicable. Vouchers are accepted for beta attempts, and beta attempts do not count towards the total number of allowed exam attempts.",
+        "Google lists a registration fee of USD 200, plus tax where applicable. The discounted beta price of USD 120 no longer applies because beta registration has closed.",
     },
     {
       question: "Is the exam delivered by Kryterion?",
@@ -105,8 +105,8 @@ export const googleCloudAgenticArchitectGuide: ExamGuide = {
   seo: {
     title: "Google Cloud Agentic Architect Exam Guide 2026 (PAA)",
     description:
-      "Professional Agentic Architect guide: ~80 questions in 3 hours (beta), Pearson delivery, hands-on labs, five weighted sections and a six-step study plan.",
+      "Professional Agentic Architect guide: 50–60 questions in 2 hours, Pearson delivery, hands-on labs, five weighted sections and a six-step study plan.",
   },
   published: "2026-10-27",
-  updated: "2026-10-27",
+  updated: "2026-11-13",
 };

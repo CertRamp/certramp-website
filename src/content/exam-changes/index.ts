@@ -1509,15 +1509,15 @@ export const examChanges: ExamChange[] = [
     "exam": "Professional Agentic Architect",
     "examName": "Google Cloud Professional Agentic Architect",
     "change": "new-exam",
-    "summary": "Google Cloud's new Professional Agentic Architect certification moves from beta to general availability; it consists of a proctored exam plus hands-on labs.",
+    "summary": "Google Cloud's Professional Agentic Architect certification is now generally available: a 2-hour proctored exam with 50 to 60 multiple-choice questions (the beta had up to 80 questions in 3 hours), followed by hands-on labs.",
     "dates": [
       {
         "label": "Beta participants must complete the required labs by",
         "date": "2026-12-31"
       },
       {
-        "label": "GA exam launch: \"mid-November\" per the English page (no year printed; the Japanese and Chinese pages say GA registration opens 2 November)",
-        "date": "2026-11"
+        "label": "GA registration opened (per the Japanese certification page)",
+        "date": "2026-11-02"
       }
     ],
     "successor": null,
@@ -1525,18 +1525,18 @@ export const examChanges: ExamChange[] = [
     "certramp": [
       "google-cloud-agentic-architect"
     ],
-    "candidateAdvice": "Beta registration is closed (per the Japanese page), so new candidates have to wait for GA registration, which Google gives as mid-November (English page) or 2 November (Japanese page).",
+    "candidateAdvice": "Book the GA exam now: 2 hours, 50 to 60 questions, USD 200. After you pass, you have 2 months to complete the required labs; the certification is valid for 1 year.",
     "source": {
       "label": "Google Cloud: Professional Agentic Architect certification",
       "url": "https://cloud.google.com/learn/certification/agentic-architect"
     },
-    "verified": "2026-10-28",
+    "verified": "2026-11-13",
     "de": {
-      "summary": "Die neue Google Cloud-Zertifizierung Professional Agentic Architect wechselt von der Beta in die allgemeine Verfügbarkeit (GA); sie besteht aus einer beaufsichtigten Prüfung und praktischen Labs.",
-      "candidateAdvice": "Die Beta-Anmeldung ist geschlossen (laut japanischer Seite), daher müssen neue Kandidaten auf die GA-Anmeldung warten, die Google mit Mitte November (englische Seite) bzw. 2. November (japanische Seite) angibt.",
+      "summary": "Die Google Cloud-Zertifizierung Professional Agentic Architect ist jetzt allgemein verfügbar (GA): eine beaufsichtigte Prüfung von 2 Stunden mit 50 bis 60 Multiple-Choice-Fragen (die Beta hatte bis zu 80 Fragen in 3 Stunden), danach praktische Labs.",
+      "candidateAdvice": "Die GA-Prüfung kann jetzt gebucht werden: 2 Stunden, 50 bis 60 Fragen, 200 USD. Nach dem Bestehen hast du 2 Monate Zeit für die Labs; die Zertifizierung gilt 1 Jahr.",
       "dateLabels": [
         "Beta-Teilnehmende müssen die erforderlichen Labs abschließen bis",
-        "GA-Prüfungsstart: laut englischer Seite „mid-November“ (ohne Jahresangabe; laut japanischer und chinesischer Seite öffnet die GA-Anmeldung am 2. November)"
+        "GA-Anmeldung geöffnet (laut japanischer Zertifizierungsseite)"
       ]
     }
   },

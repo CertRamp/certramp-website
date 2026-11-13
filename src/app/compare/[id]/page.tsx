@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   });
 }
 
-const row = (label: string, a: string | undefined, b: string | undefined) => ({ label, a: a ?? "Not published", b: b ?? "Not published" });
+const row = (label: string, a: string | undefined, b: string | undefined) => ({ label, a: a ?? "See the official page", b: b ?? "See the official page" });
 const domains = (x: ResolvedCertification) => x.exam?.domains?.map((d) => `${d.name}${d.weight ? ` (${d.weight})` : ""}`).join("; ");
 
 export default async function ComparePage({ params }: { params: Promise<Params> }) {
