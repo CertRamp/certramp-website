@@ -1,4 +1,4 @@
-import { alertsConfig, alertsEnabled } from "@/config/alerts";
+import { alertFormFor } from "@/config/alerts";
 import Link from "@/components/ui/Link";
 
 const copy = {
@@ -29,19 +29,21 @@ const copy = {
  * until a provider is configured in src/config/alerts.ts.
  */
 export function ExamAlertSignup({ slug, exam, locale = "en", className }: { slug: string; exam: string; locale?: "en" | "de"; className?: string }) {
-  if (!alertsEnabled()) return null;
+  const action = alertFormFor(slug);
+  if (!action) return null;
   const l = copy[locale];
   const id = `alert-${slug}`;
   return (
-    <form action={alertsConfig.formAction} method="post" target="_blank" className={className ?? "rounded-[var(--radius-card)] border border-line bg-white p-6"}>
+    <form action={action} method="post" target="_blank" rel="noopener" className={className ?? "rounded-[var(--radius-card)] border border-line bg-white p-6"}>
       <p className="font-display text-lg font-semibold text-ink">{l.title}</p>
       <p className="mt-1 text-sm text-muted">{l.body}</p>
-      <input type="hidden" name={alertsConfig.fields.certification} value={slug} />
-      <input type="hidden" name={alertsConfig.fields.locale} value={locale} />
+      {/* Brevo form fields: honeypot must stay empty; locale sets the language of Brevo's own pages. */}
+      <input type="text" name="email_address_check" defaultValue="" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
+      <input type="hidden" name="locale" value={locale} />
       <label htmlFor={`${id}-email`} className="mt-4 block text-sm font-semibold text-ink">
         {l.email}
       </label>
-      <input id={`${id}-email`} name={alertsConfig.fields.email} type="email" required autoComplete="email" className="mt-1 w-full rounded-lg border border-line px-3 py-2" />
+      <input id={`${id}-email`} name="EMAIL" type="email" required autoComplete="email" className="mt-1 w-full rounded-lg border border-line px-3 py-2" />
       <label className="mt-3 flex items-start gap-2 text-sm text-body">
         <input type="checkbox" required className="mt-1" />
         <span>
