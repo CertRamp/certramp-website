@@ -1,3 +1,4 @@
+import { securityPlusGlossary, securityPlusPath } from "./security-plus";
 import type { CourseData } from "./types";
 
 /**
@@ -21,6 +22,8 @@ export const securityPlus701: CourseData = {
     counted,
     courseNote: { en: "German edition; the French and Spanish editions follow the same objectives", de: "deutsche Ausgabe; die französische und spanische Ausgabe folgen denselben Prüfungszielen" },
   },
+  glossary: securityPlusGlossary,
+  path: securityPlusPath("701"),
   readiness: {},
 };
 
@@ -37,6 +40,8 @@ export const securityPlus801: CourseData = {
     examVersion: { en: "Security+ V8 (SY0-801) exam objectives, version 2.0", de: "Prüfungsziele Security+ V8 (SY0-801), Version 2.0" },
     counted,
   },
+  glossary: securityPlusGlossary,
+  path: securityPlusPath("801"),
   readiness: {},
 };
 

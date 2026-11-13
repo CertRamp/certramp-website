@@ -123,7 +123,8 @@ export function GlossaryView({ cert, data, locale }: { cert: ResolvedCertificati
                   .filter((x) => letterOf(x) === c)
                   .map((x) => {
                     const local = t(x.translations, locale);
-                    const search = [x.term, x.abbr, ...Object.values(x.translations), t(x.definition, locale)].filter(Boolean).join(" ").toLowerCase();
+                    // Names only; public/site.js also searches the visible text (definition), so it is not repeated here.
+                    const search = [...new Set([x.term, x.abbr, ...Object.values(x.translations)].filter(Boolean))].join(" ").toLowerCase();
                     const dom = domains.find((d) => d.id === x.domain);
                     return (
                       <div key={x.id} id={x.id} data-glossary-text={search} className="scroll-mt-24 rounded-[var(--radius-card)] border border-line bg-white p-5">

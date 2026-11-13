@@ -328,7 +328,7 @@ export function CertPathSection({ cert, data, tone = "surface" }: { cert: Resolv
         <div>
           <h3 className="text-lg font-semibold">Before</h3>
           {p.before.length ? <PathList items={p.before} locale="en" /> : <p className="mt-4 text-[0.9375rem] text-muted">No earlier {cert.vendorName} certification is required.</p>}
-          <h3 className="mt-8 text-lg font-semibold">After, at {cert.vendorName}</h3>
+          <h3 className="mt-8 text-lg font-semibold">After</h3>
           {p.after.length ? (
             <PathList items={p.after} locale="en" />
           ) : (

@@ -101,7 +101,8 @@
       var shown = 0;
       var items = root.querySelectorAll("[data-glossary-text]");
       for (var i = 0; i < items.length; i++) {
-        var hit = !needle || (items[i].getAttribute("data-glossary-text") || "").indexOf(needle) >= 0;
+        var hay = ((items[i].getAttribute("data-glossary-text") || "") + " " + items[i].textContent).toLowerCase();
+        var hit = !needle || hay.indexOf(needle) >= 0;
         items[i].hidden = !hit;
         if (hit) shown++;
       }
