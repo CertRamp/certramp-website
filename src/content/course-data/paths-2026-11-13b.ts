@@ -1,4 +1,5 @@
-import type { CertPath, CourseData, PathItem } from "./types";
+import { sc200Glossary } from "./glossary-sc-200";
+import type { CertPath, CourseData, Glossary, PathItem } from "./types";
 
 /**
  * Certification paths for Microsoft security, ISTQB, PMI and CompTIA Cloud+
@@ -293,6 +294,15 @@ export const extraPaths: Record<string, CertPath> = {
   "comptia-cloud-plus-cv0-004": cloudPlusPath,
 };
 
+/** slug → glossary for the batch courses. */
+export const extraGlossaries: Record<string, Glossary> = {
+  "sc-200": sc200Glossary,
+};
+
 export function withExtraPaths(list: CourseData[]): CourseData[] {
-  return list.map((d) => (extraPaths[d.slug] && !d.path ? { ...d, path: extraPaths[d.slug] } : d));
+  return list.map((d) => ({
+    ...d,
+    ...(extraPaths[d.slug] && !d.path ? { path: extraPaths[d.slug] } : {}),
+    ...(extraGlossaries[d.slug] && !d.glossary ? { glossary: extraGlossaries[d.slug] } : {}),
+  }));
 }
