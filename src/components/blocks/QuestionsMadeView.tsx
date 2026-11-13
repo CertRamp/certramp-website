@@ -28,6 +28,10 @@ export const questionsMadeCopy = {
     title: "How our questions are made",
     intro:
       "Every question in a CertRamp practice test is written for CertRamp from the official exam objectives. None comes from exam dumps, recalled exam content or other providers' question banks.",
+    personalTitle: "Every question has my name on it",
+    personal:
+      "I stand behind every question personally: I revise, check and approve every single question myself, compare it with the official vendor documentation and correct reported mistakes myself. No question comes from exam dumps.",
+    signature: "Joshua Ravnjak, founder of CertRamp Learning",
     noDumpsTitle: "No exam dumps. Ever.",
     noDumps: [
       "We never use leaked, recalled or memorised content from real exams, and we never buy or copy question banks.",
@@ -68,6 +72,10 @@ export const questionsMadeCopy = {
     title: "Wie unsere Fragen entstehen",
     intro:
       "Jede Frage in einem CertRamp-Übungstest wird für CertRamp aus den offiziellen Prüfungszielen geschrieben. Keine stammt aus Prüfungs-Dumps, erinnerten Prüfungsinhalten oder Fragensammlungen anderer Anbieter.",
+    personalTitle: "Hinter jeder Frage stehe ich persönlich",
+    personal:
+      "Hinter jeder Frage stehe ich persönlich: Ich überarbeite, prüfe und gebe jede einzelne Frage selbst frei, gleiche sie mit der offiziellen Herstellerdokumentation ab und korrigiere gemeldete Fehler selbst. Keine Frage stammt aus Prüfungs-Dumps.",
+    signature: "Joshua Ravnjak, Gründer von CertRamp Learning",
     noDumpsTitle: "Keine Prüfungs-Dumps. Niemals.",
     noDumps: [
       "Wir verwenden nie geleakte, erinnerte oder auswendig gelernte Inhalte echter Prüfungen und kaufen oder kopieren keine Fragensammlungen.",
@@ -119,6 +127,16 @@ export function QuestionsMadeView({ locale }: { locale: "en" | "de" }) {
           </Link>
         </p>
       </PageHero>
+
+      <Section labelledBy="personal-title" className="!pb-0">
+        <figure className="mx-auto max-w-3xl rounded-[1.5rem] border border-line bg-surface p-8 sm:p-10">
+          <h2 id="personal-title" className="text-2xl font-semibold sm:text-3xl">
+            {l.personalTitle}
+          </h2>
+          <blockquote className="mt-4 text-lg leading-relaxed text-body">{l.personal}</blockquote>
+          <figcaption className="mt-4 text-sm font-semibold text-ink">{l.signature}</figcaption>
+        </figure>
+      </Section>
 
       <Section labelledBy="nodumps-title">
         <div className="grid gap-12 lg:grid-cols-12">
