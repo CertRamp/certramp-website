@@ -42,17 +42,15 @@ walk(out);
  *    payload (self.__next_f, about 60% of each HTML file) are removed and
  *    public/site.js, which reproduces both behaviours, is added instead, plus a
  *    plain Umami tag (next/script would need the runtime). Pages with interactive
- *    components (catalogue search, exam-changes filter, readiness result) keep
- *    hydration.
+ *    components (catalogue search, exam-changes filter, quiz result) keep
+ *    hydration. The readiness check and glossary search run as plain scripts
+ *    (public/readiness.js, public/site.js) and are staticized too.
  */
 const hydrated = [
   /^practice-exams\/index\.html$/,
   /^practice-exams\/[^/]+\/result\/index\.html$/,
   /^exam-changes\/index\.html$/,
   /^de\/pruefungsaenderungen\/index\.html$/,
-  /^(de\/)?tools\/readiness-check\/[^/]+\/index\.html$/,
-  /^glossary\/[^/]+\/index\.html$/,
-  /^de\/glossar\/[^/]+\/index\.html$/,
 ];
 const env = Object.fromEntries(
   readFileSync(new URL("../.env.production", import.meta.url), "utf8")

@@ -4,8 +4,8 @@
   "private": true,
   "description": "CertRamp Learning — marketing and discovery website for progressive certification practice exams.",
   "scripts": {
-    "dev": "node scripts/import-courses.mjs && next dev",
-    "prebuild": "node scripts/import-courses.mjs",
+    "dev": "node scripts/import-courses.mjs && node scripts/build-client.mjs && next dev",
+    "prebuild": "node scripts/import-courses.mjs && node scripts/build-client.mjs",
     "build": "next build",
     "postbuild": "node scripts/prune-export.mjs",
     "start": "next start",
@@ -26,6 +26,7 @@
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "esbuild": "0.27.0",
     "eslint": "^9",
     "eslint-config-next": "16.3.7",
     "sharp": "0.35.5",

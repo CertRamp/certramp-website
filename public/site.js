@@ -88,7 +88,32 @@
     }
   }
 
-  function init() { initMenu(); initViews(); initAlerts(); }
+  /* ── Glossary search (src/components/blocks/GlossarySearch.tsx) ── */
+  function initGlossary() {
+    var box = document.querySelector("[data-glossary-search]");
+    var root = document.getElementById("glossary-list");
+    if (!box || !root) return;
+    var input = box.querySelector("input");
+    var status = box.querySelector("[data-glossary-status]");
+    box.hidden = false;
+    function filter() {
+      var needle = input.value.trim().toLowerCase();
+      var shown = 0;
+      var items = root.querySelectorAll("[data-glossary-text]");
+      for (var i = 0; i < items.length; i++) {
+        var hit = !needle || (items[i].getAttribute("data-glossary-text") || "").indexOf(needle) >= 0;
+        items[i].hidden = !hit;
+        if (hit) shown++;
+      }
+      var groups = root.querySelectorAll("[data-letter-group]");
+      for (var g = 0; g < groups.length; g++) groups[g].hidden = !groups[g].querySelector("[data-glossary-text]:not([hidden])");
+      status.textContent = !needle ? "" : shown === 0 ? box.getAttribute("data-empty") : box.getAttribute("data-count").replace("{n}", String(shown));
+    }
+    input.addEventListener("input", filter);
+    if (input.value) filter();
+  }
+
+  function init() { initMenu(); initViews(); initAlerts(); initGlossary(); }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
   else init();
 })();
