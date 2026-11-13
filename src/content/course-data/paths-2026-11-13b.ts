@@ -2,6 +2,7 @@ import { awsPaths } from "./paths-aws";
 import { microsoftPaths } from "./paths-microsoft";
 import { morePaths } from "./paths-more";
 import { restPaths } from "./paths-rest";
+import { cisspGlossary, md102Glossary } from "./glossary-md-cissp";
 import { pmpGlossary } from "./glossary-pmp";
 import { sc200Glossary } from "./glossary-sc-200";
 import type { CertPath, CourseData, Glossary, PathItem } from "./types";
@@ -307,6 +308,8 @@ export const extraPaths: Record<string, CertPath> = {
 export const extraGlossaries: Record<string, Glossary> = {
   "sc-200": sc200Glossary,
   pmp: pmpGlossary,
+  "md-102": md102Glossary,
+  "isc2-cissp": cisspGlossary,
 };
 
 /** Courses without counted data (no blueprint yet) that still get a path. */
