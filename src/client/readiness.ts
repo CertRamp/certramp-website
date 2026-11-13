@@ -274,6 +274,7 @@ function init() {
         /* keep the current certification only */
       });
     nav.addEventListener("change", () => {
+      // eslint-disable-next-line @next/next/no-location-assign-relative-destination -- plain script, no Next.js router on this page
       if (/^[a-z0-9-]+$/.test(nav.value) && nav.value !== cfg.slug) window.location.href = `${base}${nav.value}/`;
     });
   }

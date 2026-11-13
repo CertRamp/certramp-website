@@ -76,6 +76,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ...(d.readiness ? (["en", "de"] as const).map((l) => ({ url: absoluteUrl(readinessPath(d.slug, l)), changeFrequency: "monthly" as const, priority: 0.7 })) : []),
     ]),
     ...getAllComparisons().map((c) => ({ url: absoluteUrl(comparePath(c.id)), lastModified: c.checked, changeFrequency: "monthly" as const, priority: 0.6 })),
+    ...getAllComparisons().map((c) => ({ url: absoluteUrl(`/de/vergleich/${c.id}`), lastModified: c.checked, changeFrequency: "monthly" as const, priority: 0.5 })),
   ];
 
   return [...staticPages, ...certPages, ...guides, ...questions, ...german, ...blocks, ...legal];
