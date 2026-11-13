@@ -1,3 +1,4 @@
+import { aairPath, aaismPath, ccaoPath, ccdvPath } from "./paths-2026-11-13";
 import { securityPlusGlossary, securityPlusPath } from "./security-plus";
 import type { CourseData } from "./types";
 
@@ -61,6 +62,7 @@ export const ccdvF: CourseData = {
     examVersion: { en: "Exam guide version 1.0 (effective July 2026)", de: "Prüfungsleitfaden Version 1.0 (gültig ab Juli 2026)" },
     counted,
   },
+  path: ccdvPath,
   readiness: {},
 };
 
@@ -79,6 +81,7 @@ export const ccaoF: CourseData = {
     examVersion: { en: "Exam guide version 1.0 (effective July 2026)", de: "Prüfungsleitfaden Version 1.0 (gültig ab Juli 2026)" },
     counted,
   },
+  path: ccaoPath,
   readiness: {},
 };
 
@@ -93,6 +96,7 @@ export const aair: CourseData = {
     examVersion: { en: "ISACA AAIR exam content outline", de: "ISACA-AAIR-Prüfungsgliederung" },
     counted,
   },
+  path: aairPath,
   readiness: {},
 };
 
@@ -108,5 +112,6 @@ export const aaism: CourseData = {
     counted,
     courseNote: { en: "English edition", de: "englische Ausgabe" },
   },
+  path: aaismPath,
   readiness: {},
 };

@@ -336,8 +336,12 @@ export function CertPathSection({ cert, data, tone = "surface" }: { cert: Resolv
           )}
         </div>
         <div>
-          <h3 className="text-lg font-semibold">Similar certifications</h3>
-          <PathList items={p.similar} locale="en" />
+          {p.similar.length > 0 && (
+            <>
+              <h3 className="text-lg font-semibold">Similar certifications</h3>
+              <PathList items={p.similar} locale="en" />
+            </>
+          )}
           {compares.length > 0 && (
             <>
               <h3 className="mt-8 text-lg font-semibold">Side-by-side comparisons</h3>

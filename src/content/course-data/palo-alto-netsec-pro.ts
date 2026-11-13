@@ -1,3 +1,4 @@
+import { netsecProPath } from "./paths-2026-11-13";
 import type { CourseData } from "./types";
 
 /**
@@ -35,5 +36,6 @@ export const netsecPro: CourseData = {
     counted: "2026-11-13",
   },
 
+  path: netsecProPath,
   readiness: {},
 };
