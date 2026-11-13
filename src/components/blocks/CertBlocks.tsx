@@ -332,7 +332,7 @@ export function CertPathSection({ cert, data, tone = "surface" }: { cert: Resolv
           {p.after.length ? (
             <PathList items={p.after} locale="en" />
           ) : (
-            <p className="mt-4 text-[0.9375rem] text-muted">{cert.vendorName} defines no follow-on certification for {cert.name}.</p>
+            <p className="mt-4 text-[0.9375rem] text-muted">No direct follow-on certification listed here. The source below shows the vendor’s full certification portfolio.</p>
           )}
         </div>
         <div>

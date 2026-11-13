@@ -1,6 +1,7 @@
 import { awsPaths } from "./paths-aws";
 import { microsoftPaths } from "./paths-microsoft";
 import { morePaths } from "./paths-more";
+import { restPaths } from "./paths-rest";
 import { pmpGlossary } from "./glossary-pmp";
 import { sc200Glossary } from "./glossary-sc-200";
 import type { CertPath, CourseData, Glossary, PathItem } from "./types";
@@ -287,6 +288,7 @@ export const extraPaths: Record<string, CertPath> = {
   ...awsPaths,
   ...microsoftPaths,
   ...morePaths,
+  ...restPaths,
   "sc-200": sc200Path,
   "sc-300": sc300Path,
   "sc-500": sc500Path,
@@ -306,6 +308,14 @@ export const extraGlossaries: Record<string, Glossary> = {
   "sc-200": sc200Glossary,
   pmp: pmpGlossary,
 };
+
+/** Courses without counted data (no blueprint yet) that still get a path. */
+export function extraOnly(existing: string[]): CourseData[] {
+  const have = new Set(existing);
+  return Object.keys(extraPaths)
+    .filter((slug) => !have.has(slug))
+    .map((slug) => ({ slug, path: extraPaths[slug] }));
+}
 
 export function withExtraPaths(list: CourseData[]): CourseData[] {
   return list.map((d) => ({
