@@ -31,6 +31,11 @@ export const globalFaq: { group: string; items: FaqItem[] }[] = [
     group: "The practice exams",
     items: [
       {
+        question: "Are your questions taken from exam dumps?",
+        answer:
+          "No. Every CertRamp question is written for CertRamp from the official exam objectives and checked against the vendor's documentation. We never use leaked or recalled exam content. Our page \"How our questions are made\" explains the quality process and how to report a mistake; each practice exam page shows a public change log.",
+      },
+      {
         question: "How do the practice exams work?",
         answer:
           "Each certification has six practice tests that grow with you. Test 1 is a diagnostic that shows your starting point. Tests 2 and 3 build and strengthen your knowledge. Test 4 is set at real exam level. Tests 5 and 6 go further: targeting weak areas and finally going beyond exam difficulty. Take them in order, review your results, and repeat.",

@@ -13,6 +13,7 @@ import {
   getExamChanges,
   getRecentChanges,
   getUpcomingChanges,
+  examChangesFeedPath,
   lastVerified,
 } from "@/lib/exam-changes";
 
@@ -30,8 +31,18 @@ export const examChangesCopy = {
     upcomingIntro: "Changes with a date still ahead, soonest first.",
     recent: "Recently changed",
     recentIntro: "Changes already in effect in 2026, most recent first.",
-    filter: "Filter by vendor",
+    filter: "Vendor",
     all: "All vendors",
+    period: "Period",
+    periods: [
+      { id: "all", label: "All dates" },
+      { id: "next-90", label: "Next 90 days" },
+      { id: "last-90", label: "Last 90 days" },
+      { id: "2027", label: "2027" },
+      { id: "2026", label: "2026" },
+    ],
+    empty: "No changes match this filter.",
+    rss: "RSS feed",
     note: "Vendors change dates and outlines at short notice. Always confirm the date on the official page before you book an exam. Spotted a change we missed? Email",
     other: "Auf Deutsch",
     otherPath: deExamChangesPath,
@@ -51,8 +62,18 @@ export const examChangesCopy = {
     upcomingIntro: "Änderungen mit einem Datum in der Zukunft, das nächste zuerst.",
     recent: "Kürzlich geändert",
     recentIntro: "Änderungen, die 2026 bereits in Kraft getreten sind, die neueste zuerst.",
-    filter: "Nach Anbieter filtern",
+    filter: "Anbieter",
     all: "Alle Anbieter",
+    period: "Zeitraum",
+    periods: [
+      { id: "all", label: "Alle Termine" },
+      { id: "next-90", label: "Nächste 90 Tage" },
+      { id: "last-90", label: "Letzte 90 Tage" },
+      { id: "2027", label: "2027" },
+      { id: "2026", label: "2026" },
+    ],
+    empty: "Keine Änderungen für diesen Filter.",
+    rss: "RSS-Feed",
     note: "Anbieter ändern Termine und Gliederungen oft kurzfristig. Prüf das Datum vor der Buchung immer auf der offiziellen Seite. Haben wir eine Änderung übersehen? Schreib an",
     other: "In English",
     otherPath: examChangesPath,
@@ -89,6 +110,10 @@ export function ExamChangesView({ locale }: { locale: "en" | "de" }) {
       <PageHero home={l.home} crumbs={[{ name: l.crumb, path }]} eyebrow={l.eyebrow} title={l.title} intro={<p>{l.intro}</p>}>
         <p className="mt-6 text-sm text-white/60">
           {l.checked}: {formatChangeDate(verified, locale)} ·{" "}
+          <a href={examChangesFeedPath} className="underline underline-offset-2 hover:text-white">
+            {l.rss}
+          </a>{" "}
+          ·{" "}
           <Link href={l.otherPath} hrefLang={locale === "de" ? "en" : "de"} className="underline underline-offset-2 hover:text-white">
             {l.other}
           </Link>
@@ -96,7 +121,16 @@ export function ExamChangesView({ locale }: { locale: "en" | "de" }) {
       </PageHero>
 
       <Section>
-        <VendorFilter vendors={vendors} allLabel={l.all} label={l.filter} />
+        <VendorFilter
+          vendors={vendors}
+          allLabel={l.all}
+          label={l.filter}
+          periodLabel={l.period}
+          periods={l.periods.map((p) => ({ id: p.id, label: p.label }))}
+        />
+        <p id="exam-changes-empty" hidden className="mt-10 rounded-xl bg-surface p-5 text-muted">
+          {l.empty}
+        </p>
         <div id="exam-changes" className="mt-10">
           {group("upcoming", l.upcoming, l.upcomingIntro, upcoming)}
           {group("recent", l.recent, l.recentIntro, recent)}

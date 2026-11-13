@@ -48,7 +48,7 @@ export function ExamChangeCard({ c, locale = "en" }: { c: ResolvedExamChange; lo
   const summary = locale === "de" ? c.de.summary : c.summary;
   const advice = locale === "de" ? c.de.candidateAdvice : c.candidateAdvice;
   return (
-    <li id={`change-${c.id}`} data-vendor={c.vendor} className="scroll-mt-24 rounded-[var(--radius-card)] border border-line bg-white p-6">
+    <li id={`change-${c.id}`} data-vendor={c.vendor} data-keydate={c.keyDate} className="scroll-mt-24 rounded-[var(--radius-card)] border border-line bg-white p-6">
       <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
         <span className="text-sm text-muted">{c.vendor}</span>
         <span className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${kindTone[c.change]}`}>{l.kinds[c.change]}</span>

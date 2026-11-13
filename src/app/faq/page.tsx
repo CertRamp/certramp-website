@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { questionsMadePath } from "@/lib/course-data";
+import Link from "@/components/ui/Link";
 import { PageHero } from "@/components/layout/PageHero";
 import { FinalCta } from "@/components/marketing/Sections";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -55,6 +57,12 @@ export default function FaqPage() {
               <FaqList items={g.items} className="mt-6" />
             </section>
           ))}
+          <p className="rounded-xl bg-surface p-5 text-body">
+            Where do our questions come from?{" "}
+            <Link href={questionsMadePath("en")} className="font-semibold text-accent-600 hover:underline">
+              How our questions are made, and how to report a mistake
+            </Link>
+          </p>
         </div>
       </Section>
 

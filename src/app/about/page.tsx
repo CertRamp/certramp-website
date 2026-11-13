@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { questionsMadePath } from "@/lib/course-data";
+import Link from "@/components/ui/Link";
 import { PageHero } from "@/components/layout/PageHero";
 import { AuthorSection } from "@/components/marketing/AuthorSection";
 import { FinalCta } from "@/components/marketing/Sections";
@@ -99,6 +101,7 @@ export default function AboutPage() {
               "We are not affiliated with, endorsed by or sponsored by any certification vendor.",
               "Our practice exams are not official exams and are not official exam questions.",
               "We do not guarantee that you will pass your exam. We help you find out whether you are ready.",
+              "We do not use exam dumps or recalled exam content. Every question is written for CertRamp from the official exam objectives.",
             ].map((t) => (
               <li key={t} className="flex items-start gap-3 rounded-2xl border border-line bg-white p-5">
                 <span className="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-surface text-muted">
@@ -108,6 +111,11 @@ export default function AboutPage() {
               </li>
             ))}
           </ul>
+          <p className="lg:col-span-7 lg:col-start-6">
+            <Link href={questionsMadePath("en")} className="font-semibold text-accent-600 hover:underline">
+              How our questions are made, and how to report a mistake
+            </Link>
+          </p>
         </div>
       </Section>
 

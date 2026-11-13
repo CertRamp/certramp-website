@@ -10,6 +10,14 @@ import {
   QuestionMethodology,
 } from "@/components/certification/CertSections";
 import { ExamChangeNotice } from "@/components/certification/ExamChangeNotice";
+import {
+  BlueprintSection,
+  CertPathSection,
+  CourseChangelogSection,
+  ExamWatchSection,
+  StudyToolsSection,
+} from "@/components/blocks/CertBlocks";
+import { getCourseData } from "@/lib/course-data";
 import { VendorDisclaimer } from "@/components/certification/VendorDisclaimer";
 import { StudyResources } from "@/components/content/StudyResources";
 import { CertificationCard } from "@/components/marketing/CertificationCard";
@@ -64,6 +72,7 @@ export default async function CertificationPage({ params }: { params: Promise<Pa
   const productLd = certificationProductSchema(cert);
   const credentialLd = credentialSchema(cert);
   const resources = getResources(cert.slug);
+  const data = getCourseData(cert.slug);
   const hasResources = Boolean(resources.guide || resources.questions);
   const related = getAllCertifications()
     .filter((c) => c.categoryId === cert.categoryId && c.slug !== cert.slug)
@@ -132,6 +141,11 @@ export default async function CertificationPage({ params }: { params: Promise<Pa
           </dl>
         </div>
       </Section>
+
+      <ExamWatchSection cert={cert} tone="surface" />
+
+      {data && <BlueprintSection cert={cert} data={data} tone="white" />}
+      {data && <StudyToolsSection cert={cert} data={data} tone="surface" />}
 
       {/* Free study resources — only when a guide or question set exists */}
       {hasResources && (
@@ -206,6 +220,9 @@ export default async function CertificationPage({ params }: { params: Promise<Pa
           <QuestionMethodology cert={cert} />
         </div>
       </Section>
+
+      {data && <CourseChangelogSection cert={cert} data={data} tone={cert.topics.length > 0 ? "surface" : "white"} />}
+      {data && <CertPathSection cert={cert} data={data} tone={cert.topics.length > 0 ? "white" : "surface"} />}
 
       {/* FAQ */}
       <Section tone={cert.topics.length > 0 ? "surface" : "white"} labelledBy="cert-faq-title">
