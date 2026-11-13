@@ -1,5 +1,6 @@
 import { awsPaths } from "./paths-aws";
 import { microsoftPaths } from "./paths-microsoft";
+import { morePaths } from "./paths-more";
 import { pmpGlossary } from "./glossary-pmp";
 import { sc200Glossary } from "./glossary-sc-200";
 import type { CertPath, CourseData, Glossary, PathItem } from "./types";
@@ -285,6 +286,7 @@ export const cloudPlusPath: CertPath = {
 export const extraPaths: Record<string, CertPath> = {
   ...awsPaths,
   ...microsoftPaths,
+  ...morePaths,
   "sc-200": sc200Path,
   "sc-300": sc300Path,
   "sc-500": sc500Path,
