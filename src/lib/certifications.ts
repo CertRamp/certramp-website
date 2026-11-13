@@ -6,6 +6,7 @@
  *
  * Server-side only (reads non-public env vars).
  */
+import { lastUpdatedFor } from "@/content/course-data";
 import courses from "@/data/udemy-courses.json";
 import { categoryList, getCategoryByCsvName } from "@/config/categories";
 import { certificationDetails } from "@/config/certifications";
@@ -311,6 +312,8 @@ export interface CertificationCardData {
   practiceExamCount: number;
   questionCount: number | null;
   languages: { code: string; label: string }[];
+  /** Date of the latest course update (course changelog), when recorded. */
+  lastUpdated?: string | null;
 }
 
 export function toCardData(c: ResolvedCertification): CertificationCardData {
@@ -325,5 +328,6 @@ export function toCardData(c: ResolvedCertification): CertificationCardData {
     practiceExamCount: c.practiceExamCount,
     questionCount: c.questionCount,
     languages: c.languages,
+    lastUpdated: lastUpdatedFor(c.slug),
   };
 }

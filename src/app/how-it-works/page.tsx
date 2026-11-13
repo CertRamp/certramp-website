@@ -8,6 +8,9 @@ import { Section, SectionHeader } from "@/components/ui/Section";
 import { methodology } from "@/config/methodology";
 import { cn } from "@/lib/cn";
 import { buildMetadata } from "@/lib/seo";
+import Link from "@/components/ui/Link";
+import { getCertification } from "@/lib/certifications";
+import { getAllCourseData, readinessPath } from "@/lib/course-data";
 
 export const metadata: Metadata = buildMetadata({
   title: "How It Works: Six Tests That Grow With You",
@@ -24,6 +27,10 @@ const loop: { icon: IconName; word: string; body: string }[] = [
 ];
 
 export default function HowItWorksPage() {
+  const readinessTools = getAllCourseData()
+    .filter((d) => d.readiness)
+    .map((d) => getCertification(d.slug)!)
+    .filter(Boolean);
   return (
     <>
       <PageHero
@@ -141,6 +148,33 @@ export default function HowItWorksPage() {
           <HowItWorksSteps invert />
         </div>
       </Section>
+
+      {readinessTools.length > 0 && (
+        <Section labelledBy="tool-title">
+          <div className="grid gap-12 lg:grid-cols-12">
+            <SectionHeader
+              id="tool-title"
+              eyebrow="Free tool"
+              title="Readiness check and study planner"
+              intro="Enter your practice test results: the check reads them along the ramp, ranks your weakest domains by official exam weight and builds a plan to your exam date. Everything stays in your browser."
+              className="lg:col-span-6"
+            />
+            <ul className="space-y-3 self-end lg:col-span-6">
+              {readinessTools.map((c) => (
+                <li key={c.slug}>
+                  <Link href={readinessPath(c.slug)} className="font-semibold text-accent-600 hover:underline">
+                    {c.name} readiness check
+                  </Link>
+                  <span className="text-muted"> · </span>
+                  <Link href={readinessPath(c.slug, "de")} hrefLang="de" className="text-muted underline underline-offset-2 hover:text-ink">
+                    auf Deutsch
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </Section>
+      )}
 
       <FinalCta
         title="Find your starting point"

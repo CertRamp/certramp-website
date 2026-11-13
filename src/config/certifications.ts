@@ -5525,6 +5525,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       "Practice tests for NVIDIA-Certified Associate: AI Infrastructure and Operations (NCA-AIIO), written to the official exam topics: essential AI knowledge, AI infrastructure and AI operations. The exam has 50 questions in 60 minutes.",
     fullName: "NVIDIA-Certified Associate: AI Infrastructure and Operations",
     // Verified 2026-11-04 against the NVIDIA NCA-AIIO certification page (HTML and .md version; page dated 3 Nov 2026).
+    // Re-checked 2026-11-13: same facts, page still dated 3 Nov 2026, no change announced.
     // Status: current; no new version or retirement notice on the page.
     // UNVERIFIED and omitted: passing score (not published on the page), exam version date. The NVIDIA exam study guide PDF (dam-cdn.nvd.orangelogic.com) could not be fetched.
     // Note: price USD 125; certification valid 2 years, recertify by retaking the exam.
@@ -5546,7 +5547,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       sources: [
         { label: "NVIDIA: AI Infrastructure and Operations Associate (NCA-AIIO)", url: "https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/" },
       ],
-      lastVerified: "2026-11-04",
+      lastVerified: "2026-11-13",
     },
     seo: {
       title: "NCA-AIIO Practice Tests: NVIDIA AI Infrastructure",

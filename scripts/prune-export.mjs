@@ -50,6 +50,9 @@ const hydrated = [
   /^practice-exams\/[^/]+\/result\/index\.html$/,
   /^exam-changes\/index\.html$/,
   /^de\/pruefungsaenderungen\/index\.html$/,
+  /^(de\/)?tools\/readiness-check\/[^/]+\/index\.html$/,
+  /^glossary\/[^/]+\/index\.html$/,
+  /^de\/glossar\/[^/]+\/index\.html$/,
 ];
 const env = Object.fromEntries(
   readFileSync(new URL("../.env.production", import.meta.url), "utf8")

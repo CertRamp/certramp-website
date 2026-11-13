@@ -4,6 +4,7 @@ import type { CertificationCardData } from "@/lib/certifications";
 import { cn } from "@/lib/cn";
 import { Icon } from "@/components/ui/Icon";
 import { Badge } from "@/components/ui/Section";
+import { formatIsoDate } from "@/lib/date";
 
 /** Six mini bars — the difficulty progression of a certification's tests. */
 function ProgressionBars({ count }: { count: number }) {
@@ -91,6 +92,12 @@ export function CertificationCard({ cert, headingLevel = "h3" }: { cert: Certifi
           </dd>
         </div>
       </dl>
+
+      {cert.lastUpdated && (
+        <p className="mt-3 text-xs text-muted">
+          Last updated <time dateTime={cert.lastUpdated}>{formatIsoDate(cert.lastUpdated, "en")}</time>
+        </p>
+      )}
 
       <span className="mt-5 inline-flex items-center gap-1.5 font-display text-[0.9375rem] font-semibold text-accent-600" aria-hidden="true">
         View Practice Exams

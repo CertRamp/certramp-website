@@ -6,6 +6,7 @@ import { getResources } from "@/lib/content";
 
 export const examChangesPath = "/exam-changes";
 export const deExamChangesPath = "/de/pruefungsaenderungen";
+export const examChangesFeedPath = "/exam-changes/feed.xml";
 
 /** "2026-07" (month only) compares as the first day of that month. */
 function toTime(date: string): number {

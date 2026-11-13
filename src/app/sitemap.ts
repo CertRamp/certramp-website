@@ -5,6 +5,8 @@ import { getAllCertifications, isIndexable } from "@/lib/certifications";
 import { getAllGuides, getAllQuestionSets, guidePath, guidesHubPath, questionsPath } from "@/lib/content";
 import { deGuidePath, deHubPath, deQuestionsPath, getAllDe } from "@/lib/content-de";
 import { deExamChangesPath, examChangesPath, lastVerified } from "@/lib/exam-changes";
+import { comparePath } from "@/content/compare";
+import { getAllComparisons, getAllCourseData, glossaryPath, questionsMadePath, readinessPath } from "@/lib/course-data";
 
 /**
  * sitemap.xml — generated from the certification catalogue.
@@ -64,7 +66,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ]
     : [];
 
-  return [...staticPages, ...certPages, ...guides, ...questions, ...german, ...legal];
+  const blocks: MetadataRoute.Sitemap = [
+    { url: absoluteUrl(questionsMadePath("en")), changeFrequency: "yearly", priority: 0.5 },
+    { url: absoluteUrl(questionsMadePath("de")), changeFrequency: "yearly", priority: 0.4 },
+    ...getAllCourseData().flatMap((d) => [
+      ...(d.glossary
+        ? (["en", "de"] as const).map((l) => ({ url: absoluteUrl(glossaryPath(d.slug, l)), lastModified: d.glossary!.reviewed, changeFrequency: "monthly" as const, priority: 0.6 }))
+        : []),
+      ...(d.readiness ? (["en", "de"] as const).map((l) => ({ url: absoluteUrl(readinessPath(d.slug, l)), changeFrequency: "monthly" as const, priority: 0.7 })) : []),
+    ]),
+    ...getAllComparisons().map((c) => ({ url: absoluteUrl(comparePath(c.id)), lastModified: c.checked, changeFrequency: "monthly" as const, priority: 0.6 })),
+  ];
+
+  return [...staticPages, ...certPages, ...guides, ...questions, ...german, ...blocks, ...legal];
 }
 
 /** Generated once at build time (static export). */
