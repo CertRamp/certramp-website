@@ -3985,7 +3985,8 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     fullName: "IT Service Management Foundation (Version 4)",
     // Verified 2026-11-04 against peoplecert.org: Foundation (Version 4) product page and the certification FAQ page.
     // Status: the PeopleCert FAQ says "The current plan is to sunset all ITIL 4 modules on 31 December 2027"; no separate date is given for Foundation and voucher validity dates are still to be announced. ITIL 4 and ITIL (Version 5) run in parallel for a period. Hence status "retiring".
-    // Domains are the learning outcomes listed on the PeopleCert product page (wording as published, e.g. "Continuous improvement"). PeopleCert does not publish weights there, so none given.
+    // Domains updated 2026-11-16 to the seven learning outcome areas of the Foundation (Version 4) candidate syllabus, which the courses follow;
+    // the earlier list was the marketing headings of the product page. No weights given, because no official syllabus PDF could be fetched.
     // Not stated on the pages read, so omitted: exam code, delivery mode (the page shows proctored time-slot booking and a "Web Based Exam Driver" link, but does not say online or test centre), and any language withdrawal.
     // Naming: PeopleCert trademark rule (README): no framework mark in names, headings, meta or copy.
     // Other official facts (no schema field): certification renewal every 3 years (60 CPD points or another course in the same product suite); ITIL 4 holders can renew by passing any ITIL (Version 5) certification; optional Foundation Bridge (Version 5) for ITIL 4 Foundation holders, scheduled to retire 31 December 2027.
@@ -4001,15 +4002,13 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       retirementDate: "31 December 2027 (current PeopleCert plan to sunset all version 4 modules)",
       officialCertificationUrl: "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-foundation-2565",
       domains: [
-        { id: "d1", name: "Service management concepts" },
-        { id: "d2", name: "Service value system" },
-        { id: "d3", name: "Four dimensions of service management" },
-        { id: "d4", name: "Guiding principles" },
-        { id: "d5", name: "Service Value Chain" },
-        { id: "d6", name: "Management practices" },
-        { id: "d7", name: "Continuous improvement" },
-        { id: "d8", name: "Service Level Agreements" },
-        { id: "d9", name: "Key metrics and performance indicators" },
+        { id: "d1", name: "Key concepts of service management" },
+        { id: "d2", name: "Guiding principles" },
+        { id: "d3", name: "The four dimensions of service management" },
+        { id: "d4", name: "The service value system" },
+        { id: "d5", name: "The service value chain" },
+        { id: "d6", name: "Purpose and key terms of 15 practices" },
+        { id: "d7", name: "Seven practices in detail" },
       ],
       sources: [
         { label: "PeopleCert: Foundation (Version 4) exam page", url: "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-foundation-2565" },
@@ -4181,7 +4180,8 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     // Status: current; the page shows no retirement notice and no newer version. Launch date not given, omitted.
     // Not stated on the page, so omitted: delivery mode (the page shows exam time slots and proctor language selection, but does not say online or classroom), exam code.
     // Prerequisites: none listed on the page (described as suitable for "any career stage"), so written as "None listed".
-    // Domains below are the page's learning outcome headings (no weights published). Heading 2 names the trademarked method and is reworded neutrally here.
+    // Domains updated 2026-11-16 to the four learning outcomes and weights of the exam specification in the Foundation (Version 2) syllabus (April 2025),
+    // reworded without the trademarked method name; the earlier list was the marketing headings of the product page.
     exam: {
       officialName: "Agile Foundation (Version 2)",
       examVersion: "Version 2",
@@ -4196,15 +4196,10 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       officialCertificationUrl: "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-Agile-28/prince2-agile-foundation-4074",
       officialExamUrl: "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-Agile-28/prince2-agile-foundation-4074",
       domains: [
-        { id: "d1", name: "The agile mindset" },
-        { id: "d2", name: "Blending agile with the process-based project management method" },
-        { id: "d3", name: "Stakeholder engagement" },
-        { id: "d4", name: "Agile leadership basics" },
-        { id: "d5", name: "Risk and change control" },
-        { id: "d6", name: "Progress tracking" },
-        { id: "d7", name: "Agile roles and duties" },
-        { id: "d8", name: "Scalable agility" },
-        { id: "d9", name: "Value-driven thinking" },
+        { id: "d1", name: "Key concepts: agile mindset, project management and organizational change management", weight: "30% (about 12 questions)" },
+        { id: "d2", name: "Principles, practices and artifacts of the method in an agile context", weight: "40% (about 16 questions)" },
+        { id: "d3", name: "Processes and agile workshops, and their application", weight: "25% (about 10 questions)" },
+        { id: "d4", name: "Integration of the method in the wider context", weight: "5% (about 2 questions)" },
       ],
       sources: [
         { label: "PeopleCert: agile Foundation (Version 2) exam page", url: "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-Agile-28/prince2-agile-foundation-4074" },
@@ -6161,7 +6156,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
   },
   "salesforce-ai-201": {
     description:
-      "Practice exams for the Salesforce Certified Agentforce Specialist exam (AI-201), covering AI agents, prompt engineering, Data Cloud for Agentforce, the deployment lifecycle and multi-agent interoperability, matched to the current exam outline weights.",
+      "Practice exams for the Salesforce Certified Agentforce Specialist exam (AI-201), covering AI agents, prompt engineering, Data 360, testing and deployment, governance and observability and multi-agent orchestration, matched to the current exam outline weights.",
     fullName: "Salesforce Certified Agentforce Specialist",
     // Verified 2026-11-05 against trailhead.salesforce.com: Agentforce Specialist credential page (name; its exam link is trailheadacademy.salesforce.com/certificate/exam-agentforce-specialist---AI-201), the former AI Specialist credential URL (/credentials/aispecialist, now canonical to /credentials/agentforcespecialist), the Trailhead module "Cert Prep: Agentforce Specialist" (question count, passing score, retake fee, delivery, outline weights).
     // Trailhead Academy exam page (read 2026-11-05 in the browser): exam code AI-201, 60 multiple-choice + up to 5 unscored questions, 105 minutes, registration USD 200 / JPY 30,000, retake USD 100, prerequisite none, languages English, Japanese, French, Spanish.
@@ -6170,13 +6165,15 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     // Passing score 73% and outline weights come from the Trailhead Cert Prep unit; the exam page does not list them.
     // Data Cloud was rebranded Data 360 on 14 October 2025 (Trailhead unit); the outline still names the section "Data Cloud for Agentforce".
     // Other official facts (no schema field): retake fee USD 100; up to five unscored questions in addition to the 60 scored.
+    // Updated 2026-11-16 in the browser against the Salesforce Help exam guide (article 005298924, questions align to the Spring '26 release):
+    // six outline sections with new names and weights, and passing score 72%.
     exam: {
       officialName: "Salesforce Certified Agentforce Specialist",
       examCode: "AI-201",
       questionCount: "60 multiple-choice questions, plus up to 5 unscored questions",
       duration: "105 minutes",
       languages: ["English", "Japanese", "French", "Spanish"],
-      passingScore: "73%",
+      passingScore: "72%",
       questionTypes: "Multiple choice",
       delivery: "Online proctored or at a test center",
       prerequisites: "None",
@@ -6186,21 +6183,23 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       domains: [
         { id: "d1", name: "AI Agents", weight: "35%" },
         { id: "d2", name: "Prompt Engineering", weight: "20%" },
-        { id: "d3", name: "Data Cloud for Agentforce", weight: "20%" },
-        { id: "d4", name: "Deployment Lifecycle", weight: "20%" },
-        { id: "d5", name: "Multi-Agent Interoperability", weight: "5%" },
+        { id: "d3", name: "Data 360 Fundamentals", weight: "20%" },
+        { id: "d4", name: "Testing, Deployment, and Maintenance", weight: "10%" },
+        { id: "d5", name: "Governance and Observability", weight: "10%" },
+        { id: "d6", name: "Multi-Agent Orchestration", weight: "5%" },
       ],
       sources: [
         { label: "Trailhead: Salesforce Certified Agentforce Specialist", url: "https://trailhead.salesforce.com/credentials/agentforcespecialist" },
         { label: "Trailhead: Cert Prep: Agentforce Specialist (get started unit)", url: "https://trailhead.salesforce.com/content/learn/modules/cert-prep-agentforce-specialist/get-started-with-salesforce-agentforce-specialist-certification-prep" },
         { label: "Trailhead Academy: Agentforce Specialist exam (AI-201)", url: "https://trailheadacademy.salesforce.com/certificate/exam-agentforce-specialist---AI-201" },
+        { label: "Salesforce Help: Agentforce Specialist exam guide", url: "https://help.salesforce.com/s/articleView?id=005298924&type=1" },
       ],
-      lastVerified: "2026-11-05",
+      lastVerified: "2026-11-16",
     },
     seo: {
       title: "Agentforce Specialist (AI-201) Practice Exams",
       description:
-        "Salesforce Agentforce Specialist (AI-201) practice exams: AI agents, prompt engineering, Data Cloud for Agentforce, deployment lifecycle, multi-agent.",
+        "Salesforce Agentforce Specialist (AI-201) practice exams: AI agents, prompt engineering, Data 360, testing, governance, multi-agent.",
     },
   },
   "servicenow-csa": {
@@ -6337,11 +6336,12 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       "Practice exams for the Databricks Certified Data Engineer Professional: production lakehouse ETL with Delta Lake, Unity Catalog, Auto Loader, Lakeflow, streaming, cost and performance tuning, security and CI/CD on Databricks.",
     fullName: "Databricks Certified Data Engineer Professional",
     // Verified 2026-11-05 in the browser against databricks.com/learn/certification/data-engineer-professional: 59 scored questions, 120 minutes, multiple choice, USD 200, English, Japanese, Portuguese (BR), Korean, online or test center, prerequisite none, ten section weights.
+    // Updated 2026-11-16 against the official exam guide PDF: the new exam (live 9 Oct 2026) has 60 scored questions in 9 sections (weights above).
     // Passing score is not stated on the page, so it is omitted.
     // Other official facts (no schema field): validity 2 years, recertification by taking the current exam; unscored items may be added; code mainly Python and SQL.
     exam: {
       officialName: "Databricks Certified Data Engineer Professional",
-      questionCount: "59 scored questions (unscored items may be added)",
+      questionCount: "60 scored questions (unscored items may be added)",
       duration: "120 minutes",
       questionTypes: "Multiple choice",
       languages: ["English", "Japanese", "Portuguese (Brazil)", "Korean"],
@@ -6350,25 +6350,25 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       status: "current",
       officialCertificationUrl: "https://www.databricks.com/learn/certification/data-engineer-professional",
       domains: [
-        { id: "d1", name: "Developing Code for Data Processing using Python and SQL", weight: "22%" },
-        { id: "d2", name: "Data Ingestion & Acquisition", weight: "7%" },
-        { id: "d3", name: "Data Transformation, Cleansing, and Quality", weight: "10%" },
-        { id: "d4", name: "Data Sharing and Federation", weight: "5%" },
-        { id: "d5", name: "Monitoring and Alerting", weight: "10%" },
-        { id: "d6", name: "Cost & Performance Optimisation", weight: "13%" },
-        { id: "d7", name: "Ensuring Data Security and Compliance", weight: "10%" },
-        { id: "d8", name: "Data Governance", weight: "7%" },
-        { id: "d9", name: "Debugging and Deploying", weight: "10%" },
-        { id: "d10", name: "Data Modelling", weight: "6%" },
+        { id: "d1", name: "Developing Code for Data Processing using Python and SQL", weight: "23%" },
+        { id: "d2", name: "Data Ingestion & Acquisition", weight: "12%" },
+        { id: "d3", name: "Data Manipulation", weight: "12%" },
+        { id: "d4", name: "Monitoring and Alerting", weight: "10%" },
+        { id: "d5", name: "Cost & Performance Optimization", weight: "15%" },
+        { id: "d6", name: "Ensuring Data Security and Compliance", weight: "8%" },
+        { id: "d7", name: "Data Governance", weight: "5%" },
+        { id: "d8", name: "Debugging and Deploying", weight: "10%" },
+        { id: "d9", name: "Data Modeling", weight: "5%" },
       ],
       sources: [
         { label: "Databricks: Data Engineer Professional", url: "https://www.databricks.com/learn/certification/data-engineer-professional" },
+        { label: "Databricks: Data Engineer Professional exam guide (new exam from 9 Oct 2026)", url: "https://www.databricks.com/sites/default/files/2026-09/databricks-certified-data-engineer-professional-exam-guide-oct-2026.pdf" },
       ],
-      lastVerified: "2026-11-05",
+      lastVerified: "2026-11-16",
     },
     seo: {
       title: "Databricks Data Engineer Professional Practice Exams",
-      description: "Databricks Data Engineer Professional practice exams: 59 questions, 120 minutes, Delta Lake, Unity Catalog, Lakeflow, streaming and CI/CD.",
+      description: "Databricks Data Engineer Professional practice exams: 60 questions, 120 minutes, Delta Lake, Unity Catalog, Lakeflow, streaming and CI/CD.",
     },
   },
 };

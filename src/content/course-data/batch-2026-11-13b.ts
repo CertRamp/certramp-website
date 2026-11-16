@@ -4,11 +4,11 @@ import type { CourseData } from "./types";
  * Blueprint coverage and readiness check for 90 further courses, counted from the
  * live Udemy courses on 13 Nov 2026 (questions per Udemy knowledge area per
  * practice test, mapped to the exam domains in certifications.ts). Generated:
- * re-count rather than edit by hand. Not included: salesforce-ai-201,
- * agile-project-management-foundation-v2 and itsm-foundation-v4 (the course
- * knowledge areas differ from the listed domains) and istqb-ctal-ta (knowledge
- * areas need fixing in Udemy). databricks-data-engineer-professional is left out
- * because one domain (Data Sharing and Federation) has no questions yet.
+ * re-count rather than edit by hand. Added on 16 Nov 2026 (counted that day, see the
+ * wrapper below): istqb-ctal-ta after Practice Tests 1-4 and 6 were rebuilt for
+ * syllabus v4.0, and salesforce-ai-201, agile-project-management-foundation-v2,
+ * itsm-foundation-v4 and databricks-data-engineer-professional after their exam
+ * domains on this site were corrected to the current official outlines.
  */
 const counted = "2026-11-13";
 const examVersion = { en: "Official exam domains as listed on this page", de: "Offizielle Prüfungsdomains wie auf dieser Seite aufgeführt" };
@@ -111,3 +111,33 @@ export const batch2: CourseData[] = [
   bp("ccat", [["d1", [16,17,17,16,16,17]], ["d2", [17,16,16,17,17,16]], ["d3", [17,17,17,17,17,17]]]),
   bp("togaf-10-foundation-ogea-101", [["d1", [8,8,8,8,8,8]], ["d2", [14,14,14,14,14,14]], ["d3", [6,6,6,6,6,6]], ["d4", [4,4,4,4,4,4]], ["d5", [3,3,3,3,3,3]], ["d6", [5,5,5,5,5,5]]]),
 ];
+
+const recount = (d: CourseData): CourseData => ({ ...d, blueprint: d.blueprint && { ...d.blueprint, counted: "2026-11-16" } });
+const sixTimes = (n: number) => [n, n, n, n, n, n];
+const multiLang = { en: "Spanish edition; the French and Portuguese editions follow the same exam domains", de: "spanische Ausgabe; die französische und portugiesische Ausgabe folgen denselben Prüfungsdomains" };
+
+batch2.push(
+  ...[
+    bp("istqb-ctal-ta", [["d1", sixTimes(8)], ["d2", sixTimes(3)], ["d3", sixTimes(22)], ["d4", sixTimes(4)], ["d5", sixTimes(8)]]),
+    bp("salesforce-ai-201", [["d1", sixTimes(21)], ["d2", sixTimes(12)], ["d3", sixTimes(12)], ["d4", sixTimes(6)], ["d5", sixTimes(6)], ["d6", sixTimes(3)]]),
+    bp("agile-project-management-foundation-v2", [["d1", sixTimes(12)], ["d2", sixTimes(16)], ["d3", sixTimes(10)], ["d4", sixTimes(2)]]),
+    bp("itsm-foundation-v4", [["d1", sixTimes(5)], ["d2", sixTimes(6)], ["d3", sixTimes(2)], ["d4", sixTimes(1)], ["d5", sixTimes(2)], ["d6", sixTimes(7)], ["d7", sixTimes(17)]], multiLang),
+    bp("databricks-data-engineer-professional", [["d1", [14,14,14,14,14,13]], ["d2", [7,7,7,7,7,8]], ["d3", [7,7,7,7,7,8]], ["d4", sixTimes(6)], ["d5", sixTimes(9)], ["d6", [5,5,5,5,5,4]], ["d7", sixTimes(3)], ["d8", sixTimes(6)], ["d9", sixTimes(3)]]),
+  ].map(recount),
+);
+
+const ctalTa = batch2.find((d) => d.slug === "istqb-ctal-ta");
+if (ctalTa) {
+  ctalTa.changelog = [
+    {
+      date: "2026-11-16",
+      kind: "new-questions",
+      tests: [1, 2, 3, 4, 6],
+      questions: 225,
+      note: {
+        en: "Tests 1 to 4 and 6 rebuilt with 45 new questions each, following the v4.0 exam structure per chapter and learning objective, with an explanation for every option.",
+        de: "Test 1 bis 4 und 6 mit je 45 neuen Fragen neu aufgebaut, nach der Prüfungsstruktur v4.0 pro Kapitel und Lernziel, mit Erklärung zu jeder Antwortoption.",
+      },
+    },
+  ];
+}
