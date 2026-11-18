@@ -218,9 +218,9 @@ export const ipmaLevelDDe: DeContent = {
     published: "2026-10-28",
     updated: "2026-11-09",
     seo: {
-      title: "IPMA Level D Prüfungsfragen üben: mit Lösungen (ICB4)",
+      title: "IPMA Level D Prüfungsfragen: 30 Übungsfragen mit Lösung",
       description:
-        "30 kostenlose IPMA Level D Übungsfragen zur ICB4 (Stakeholder, Risiken, Planung, Führung, Konflikte und Governance) jeweils mit ausführlicher Erklärung.",
+        "30 kostenlose IPMA Level D Prüfungsfragen zur ICB4 mit Lösung und Erklärung: Stakeholder, Risiken, Planung, Führung, Konflikte, Governance. Für die Prüfungsvorbereitung im Selbststudium.",
     },
     questions: [
       /* ── Bereich 1: Kontext-Kompetenzen ───────────────────────────────── */

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Link from "@/components/ui/Link";
 import { PageHero } from "@/components/layout/PageHero";
+import { guidesHubPath } from "@/lib/content";
 import { CatalogueBrowser } from "@/components/marketing/CatalogueBrowser";
 import { FinalCta } from "@/components/marketing/Sections";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -48,6 +50,12 @@ export default function PracticeExamsPage() {
             </a>
           ))}
         </nav>
+        <p className="mt-6 text-sm text-white/70">
+          Want the exam format, domains and a study plan first?{" "}
+          <Link href={guidesHubPath} className="font-semibold text-white underline underline-offset-2">
+            Free exam guides
+          </Link>
+        </p>
       </PageHero>
 
       <div id="choose" className="bg-white pb-20 sm:pb-24">

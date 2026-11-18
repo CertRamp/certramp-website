@@ -3,6 +3,7 @@ import Link from "@/components/ui/Link";
 import { TrackedLink } from "@/components/analytics/Tracked";
 import { MethodologyGrid } from "@/components/marketing/Methodology";
 import { CategoryGrid } from "@/components/marketing/CategoryGrid";
+import { CertDirectory } from "@/components/marketing/CertDirectory";
 import { CertificationCard } from "@/components/marketing/CertificationCard";
 import { RampChart } from "@/components/marketing/RampChart";
 import { AuthorSection } from "@/components/marketing/AuthorSection";
@@ -159,6 +160,19 @@ export default function HomePage() {
             </li>
           ))}
         </ul>
+      </Section>
+
+      {/* ── Directory ────────────────────────────────────────────────────── */}
+      <Section labelledBy="directory-title">
+        <SectionHeader
+          id="directory-title"
+          eyebrow="A to Z"
+          title="Every practice exam and free guide"
+          intro="The full catalogue on one page: jump straight to the practice exams or the free exam guide for your certification."
+        />
+        <div className="mt-12">
+          <CertDirectory />
+        </div>
       </Section>
 
       {/* ── Methodology ──────────────────────────────────────────────────── */}

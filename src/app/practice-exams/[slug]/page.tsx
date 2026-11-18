@@ -74,10 +74,18 @@ export default async function CertificationPage({ params }: { params: Promise<Pa
   const resources = getResources(cert.slug);
   const data = getCourseData(cert.slug);
   const hasResources = Boolean(resources.guide || resources.questions);
-  const related = getAllCertifications()
-    .filter((c) => c.categoryId === cert.categoryId && c.slug !== cert.slug)
-    .sort((a, b) => Number(b.vendorKey === cert.vendorKey) - Number(a.vendorKey === cert.vendorKey))
-    .slice(0, 3);
+  // Rotate through the category (the next certs after this one, wrapping around) so every exam page
+  // receives "related" links, not only the first few in config order. Same-vendor neighbours come first.
+  const sameCategory = getAllCertifications().filter((c) => c.categoryId === cert.categoryId && isIndexable(c));
+  const ownIndex = sameCategory.findIndex((c) => c.slug === cert.slug);
+  const rotated = [...sameCategory.slice(ownIndex + 1), ...sameCategory.slice(0, Math.max(ownIndex, 0))].filter(
+    (c) => c.slug !== cert.slug,
+  );
+  const related = [
+    ...rotated.filter((c) => c.vendorKey === cert.vendorKey).slice(0, 1),
+    ...rotated.filter((c) => c.vendorKey !== cert.vendorKey),
+    ...rotated.filter((c) => c.vendorKey === cert.vendorKey).slice(1),
+  ].slice(0, 3);
 
   const facts =
     cert.examOverview.length > 0

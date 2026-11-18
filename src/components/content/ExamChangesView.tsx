@@ -20,9 +20,9 @@ import {
 export const examChangesCopy = {
   en: {
     title: "IT Certification Exam Changes 2026–2027",
-    seoTitle: "IT Certification Exam Changes 2026–2027: Retirements & New Versions",
+    seoTitle: "IT Exam Retirement Dates 2026/2027: Every Change Tracked",
     description:
-      "Which IT certification exams retire, get replaced or get a new outline in 2026 and 2027: Microsoft, AWS, CompTIA, Cisco, ISC2, ISACA and more, with official sources.",
+      "Retirement dates, successor exams and new outlines for 2026 and 2027: Security+ SY0-801 (live), CCNA v2.0, Microsoft, AWS, ISC2, ISACA and more, each with an official source.",
     eyebrow: "Exam change tracker",
     intro:
       "Retirements, replacements, new exam versions and outline updates for Microsoft, AWS, CompTIA, Cisco, Google Cloud, ISC2, ISACA, IAPP, ISTQB and more. Every entry links to the official vendor source and says what the change means if you are studying now.",

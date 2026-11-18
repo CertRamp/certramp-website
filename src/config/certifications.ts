@@ -1151,7 +1151,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
 
   "comptia-security-plus-sy0-701": {
     description:
-      "Practice exams for CompTIA Security+ SY0-701 (V7), written to the official exam objectives (V7): security controls, threats and mitigations, architecture, security operations and governance. SY0-701 retires on 11 June 2027 in English and 13 August 2027 in the other languages; its successor SY0-801 (V8) is expected to launch on or around 17 November 2026.",
+      "Practice exams for CompTIA Security+ SY0-701 (V7), written to the official exam objectives (V7): security controls, threats and mitigations, architecture, security operations and governance. SY0-701 retires on 11 June 2027 in English and 13 August 2027 in the other languages; its successor SY0-801 (V8) launched on 17 November 2026 in English.",
     fullName: "CompTIA Security+ (SY0-701)",
     exam: {
       officialName: "CompTIA Security+",
@@ -1236,7 +1236,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       sources: [
         { label: "CompTIA: Security+ V7 (SY0-701) exam details", url: "https://www.comptia.org/en-us/certifications/security/v7/" },
         { label: "CompTIA: Security+ SY0-701 V7 Exam Objectives (PDF)", url: "https://lecbyo.files.cmp.optimizely.com/download/cf25ec24b8a511ef9ecbb69c0f9687be" },
-        { label: "CompTIA: Security+ V8 (SY0-801), expected on or around 17 November 2026", url: "https://www.comptia.org/en-us/certifications/security/v8/" },
+        { label: "CompTIA: Security+ V8 (SY0-801), launched 17 November 2026", url: "https://www.comptia.org/en-us/certifications/security/v8/" },
         { label: "CompTIA: How long does the Security+ certification last?", url: "https://www.comptia.org/en-us/blog/how-long-does-the-comptia-security-certification-last/" },
         { label: "CompTIA: CE renewal cycle", url: "https://www.comptia.org/en-us/resources/ce/learn/how-to-renew/ce-renewal-cycle/" },
       ],
@@ -3595,7 +3595,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
   },
   "comptia-security-plus-sy0-801": {
     description:
-      "Practice exams for CompTIA Security+ SY0-801 (V8), written to the official V8 exam objectives, including AI-related threats. V8 launches on or around 17 November 2026 in English; SY0-701 stays available until 11 June 2027 in English.",
+      "Practice exams for CompTIA Security+ SY0-801 (V8), written to the official V8 exam objectives, including AI-related threats. V8 launched on 17 November 2026 in English; SY0-701 stays available until 11 June 2027 in English.",
     fullName: "CompTIA Security+ (SY0-801)",
     // Verified 2026-11-04 against the CompTIA Security+ V8 page, the Security+ certification page, the SY0-801 exam objectives PDF (document version 2.0) and the Security+ V7 page.
     // Status: V8 page gives launch "November 17, 2026" and "on or around November 17, 2026"; certification page says V8 is "expected to launch on or around November 17, 2026". V8 retirement "estimated 3 years after launch".

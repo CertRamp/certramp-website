@@ -1324,10 +1324,10 @@ export const examChanges: ExamChange[] = [
     "exam": "SY0-701",
     "examName": "CompTIA Security+",
     "change": "new-version",
-    "summary": "Security+ V8 (SY0-801) launches on 17 November 2026; Security+ V7 (SY0-701) stays available until mid-2027.",
+    "summary": "Security+ V8 (SY0-801) launched on 17 November 2026 in English; Security+ V7 (SY0-701) stays available until mid-2027.",
     "dates": [
       {
-        "label": "SY0-801 launch (English)",
+        "label": "SY0-801 launched (English)",
         "date": "2026-11-17"
       },
       {
@@ -1345,17 +1345,17 @@ export const examChanges: ExamChange[] = [
       "comptia-security-plus-sy0-701",
       "comptia-security-plus-sy0-801"
     ],
-    "candidateAdvice": "SY0-701 stays bookable in English until 11 June 2027; SY0-801 launches on 17 November 2026 (English only).",
+    "candidateAdvice": "Both versions can now be booked in English: SY0-801 since 17 November 2026, SY0-701 until 11 June 2027. Pick the version your study material covers; new starters should prepare for SY0-801.",
     "source": {
       "label": "CompTIA: Security+ V8 (SY0-801) exam details",
       "url": "https://www.comptia.org/en-us/certifications/security/v8/"
     },
-    "verified": "2026-11-09",
+    "verified": "2026-11-18",
     "de": {
-      "summary": "Security+ V8 (SY0-801) startet am 17. November 2026; Security+ V7 (SY0-701) bleibt bis Mitte 2027 verfügbar.",
-      "candidateAdvice": "SY0-701 bleibt auf Englisch bis zum 11. Juni 2027 buchbar; SY0-801 startet am 17. November 2026 (nur Englisch).",
+      "summary": "Security+ V8 (SY0-801) ist am 17. November 2026 auf Englisch gestartet; Security+ V7 (SY0-701) bleibt bis Mitte 2027 verfügbar.",
+      "candidateAdvice": "Auf Englisch sind jetzt beide Versionen buchbar: SY0-801 seit dem 17. November 2026, SY0-701 bis zum 11. Juni 2027. Wähle die Version, zu der dein Lernmaterial passt; wer neu anfängt, bereitet sich auf SY0-801 vor.",
       "dateLabels": [
-        "Start von SY0-801 (Englisch)",
+        "SY0-801 gestartet (Englisch)",
         "SY0-701 läuft aus (Englisch)",
         "SY0-701 läuft aus (Japanisch, Portugiesisch, Spanisch und Thai)"
       ]

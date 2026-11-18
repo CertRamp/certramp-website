@@ -100,9 +100,9 @@ export const ciaPart3Guide: ExamGuide = {
     },
   ],
   seo: {
-    title: "CIA Part 3 Exam Guide 2026: Syllabus, Format & Study Plan",
+    title: "CIA Part 3 Syllabus 2026: Domains, Weights & Exam Format",
     description:
-      "CIA Part 3 Internal Audit Function guide for the 2025 syllabus: 100 questions, 120 minutes, pass mark 600, domain weights and a six-step study plan.",
+      "CIA Part 3 syllabus 2026: four domains with weights (Engagement Results 45%), 100 questions in 120 minutes, pass mark 600, a six-step study plan and free practice questions.",
   },
   published: "2026-10-27",
   updated: "2026-10-27",

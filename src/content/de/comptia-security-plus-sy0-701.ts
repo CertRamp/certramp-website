@@ -105,7 +105,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
   guide: {
     slug: "comptia-security-plus-sy0-701",
     summary:
-      "CompTIA Security+ SY0-701 (Security+ V7) prüft grundlegende Sicherheitskompetenzen in fünf Domänen, von Sicherheitskontrollen und Bedrohungen bis zu Security Operations und Governance. Du erhältst maximal 90 Multiple-Choice- und performancebasierte Fragen in 90 Minuten und benötigst 750 Punkte auf einer Skala von 100 bis 900. Die Nachfolgeprüfung SY0-801 (V8) erscheint voraussichtlich um den 17. November 2026; SY0-701 läuft am 11. Juni 2027 auf Englisch und am 13. August 2027 auf Japanisch, Portugiesisch, Spanisch und Thai aus.",
+      "CompTIA Security+ SY0-701 (Security+ V7) prüft grundlegende Sicherheitskompetenzen in fünf Domänen, von Sicherheitskontrollen und Bedrohungen bis zu Security Operations und Governance. Du erhältst maximal 90 Multiple-Choice- und performancebasierte Fragen in 90 Minuten und benötigst 750 Punkte auf einer Skala von 100 bis 900. Die Nachfolgeprüfung SY0-801 (V8) ist am 17. November 2026 gestartet; SY0-701 läuft am 11. Juni 2027 auf Englisch und am 13. August 2027 auf Japanisch, Portugiesisch, Spanisch und Thai aus.",
     whoFor: [
       "System- und Netzwerkadministratorinnen und -administratoren, die in eine Security-Rolle wechseln",
       "Junior-Security-Analystinnen und -Analysten sowie SOC-Mitarbeiterinnen und -Mitarbeiter, die ein breites, herstellerneutrales Fundament suchen",
@@ -124,7 +124,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
         id: "sy0-701-vs-sy0-801",
         heading: "SY0-701 oder SY0-801: Welche Version solltest du ablegen?",
         paragraphs: [
-          "CompTIA ersetzt Security+ V7 (SY0-701, gestartet am 7. November 2023) durch Security+ V8 (SY0-801), die voraussichtlich um den 17. November 2026 erscheint. SY0-701 bleibt bis zum Auslaufen verfügbar: bis 11. Juni 2027 für die englische Prüfung und bis 13. August 2027 für die japanische, portugiesische, spanische und thailändische Prüfung. Beide Versionen behalten dasselbe Format: maximal 90 Fragen, 90 Minuten und eine Bestehensgrenze von 750 auf einer Skala von 100 bis 900.",
+          "CompTIA ersetzt Security+ V7 (SY0-701, gestartet am 7. November 2023) durch Security+ V8 (SY0-801), die am 17. November 2026 gestartet ist. SY0-701 bleibt bis zum Auslaufen verfügbar: bis 11. Juni 2027 für die englische Prüfung und bis 13. August 2027 für die japanische, portugiesische, spanische und thailändische Prüfung. Beide Versionen behalten dasselbe Format: maximal 90 Fragen, 90 Minuten und eine Bestehensgrenze von 750 auf einer Skala von 100 bis 900.",
           "Die Prüfungsziele von V8 verwenden dieselbe Struktur mit fünf Domänen, aber andere Gewichtungen (16 %, 24 %, 19 %, 27 % und 14 %), und Domäne 2 heißt nun „Threats, Vulnerabilities, and Attacks“. Zum Start führt CompTIA SY0-801 nur auf Englisch. Wenn du in der Vorbereitung auf SY0-701 schon weit bist und die Prüfung vor dem Auslaufdatum ablegen kannst, ist es sinnvoll, bei SY0-701 zu bleiben. Wenn du gerade erst anfängst und die Prüfung spät in der Übergangsphase auf Englisch ablegen willst, bereite dich stattdessen auf SY0-801 vor (CertRamp hat eine eigene Seite zu SY0-801).",
         ],
       },
@@ -179,7 +179,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
       {
         question: "Wann läuft SY0-701 aus und was ersetzt die Prüfung?",
         answer:
-          "Die englische Prüfung SY0-701 läuft am 11. Juni 2027 aus; die japanische, portugiesische, spanische und thailändische Version am 13. August 2027. Die Nachfolgeprüfung Security+ V8 (SY0-801) erscheint voraussichtlich um den 17. November 2026 und wird zum Start nur auf Englisch angeboten.",
+          "Die englische Prüfung SY0-701 läuft am 11. Juni 2027 aus; die japanische, portugiesische, spanische und thailändische Version am 13. August 2027. Die Nachfolgeprüfung Security+ V8 (SY0-801) ist am 17. November 2026 gestartet und wird bisher nur auf Englisch angeboten.",
       },
       {
         question: "In welchen Sprachen ist SY0-701 verfügbar?",
@@ -208,7 +208,7 @@ export const comptiaSecurityPlusSy0701De: DeContent = {
         "Security+ SY0-701 Leitfaden: 90 Fragen, 90 Minuten, Bestehensgrenze 750, fünf Domänen, Auslaufen am 11. Juni 2027, Vergleich mit SY0-801 und Lernplan.",
     },
     published: "2026-10-28",
-    updated: "2026-10-28",
+    updated: "2026-11-18",
   },
 
   questions: {

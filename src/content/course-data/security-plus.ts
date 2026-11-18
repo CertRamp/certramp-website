@@ -242,8 +242,8 @@ export function securityPlusPath(version: "701" | "801"): CertPath {
         relation:
           version === "701"
             ? {
-                en: "The new Security+ version (V8), expected to launch on or around 17 November 2026. Same five domain names, updated objectives (for example AI threats).",
-                de: "Die neue Security+-Version (V8), Start laut CompTIA um den 17. November 2026. Gleiche fünf Domainnamen, überarbeitete Prüfungsziele (zum Beispiel KI-Bedrohungen).",
+                en: "The new Security+ version (V8), launched on 17 November 2026 (English). Same five domain names, updated objectives (for example AI threats).",
+                de: "Die neue Security+-Version (V8), gestartet am 17. November 2026 (Englisch). Gleiche fünf Domainnamen, überarbeitete Prüfungsziele (zum Beispiel KI-Bedrohungen).",
               }
             : {
                 en: "The previous Security+ version (V7). It stays available until 11 June 2027 in English and 13 August 2027 in other languages.",
