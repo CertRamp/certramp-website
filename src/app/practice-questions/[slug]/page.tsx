@@ -3,6 +3,7 @@ import { AuthorSection } from "@/components/marketing/AuthorSection";
 import Link from "@/components/ui/Link";
 import { notFound } from "next/navigation";
 import { CertCta, UdemyCta } from "@/components/certification/CertCta";
+import { CourseNudge } from "@/components/certification/CourseNudge";
 import { VendorDisclaimer } from "@/components/certification/VendorDisclaimer";
 import { QuestionCard } from "@/components/content/QuestionCard";
 import { SourceList } from "@/components/content/ExamFactsList";
@@ -77,6 +78,15 @@ export default async function PracticeQuestionsPage({ params }: { params: Promis
             </>
           )}
         </p>
+        {cert.primaryCourse && (
+          <div className="mt-7 flex flex-wrap items-center gap-x-4 gap-y-2">
+            <UdemyCta cert={cert} variant="inverse" size="md" location="questions-hero" label="Full practice exams on Udemy" />
+            <span className="text-sm text-white/60">
+              {cert.questionCount ? `${cert.questionCount} questions in ` : ""}
+              {cert.practiceExamCount} tests, from diagnostic to beyond exam level
+            </span>
+          </div>
+        )}
       </PageHero>
 
       <Section>
@@ -102,6 +112,9 @@ export default async function PracticeQuestionsPage({ params }: { params: Promis
                   .
                 </p>
               )}
+              <div className="mt-8 hidden lg:block">
+                <UdemyCta cert={cert} variant="secondary" size="md" location="questions-sidebar" label="Full exams on Udemy" />
+              </div>
             </nav>
           </div>
 
@@ -115,7 +128,7 @@ export default async function PracticeQuestionsPage({ params }: { params: Promis
               </p>
             </div>
 
-            {domains.map((d) => {
+            {domains.map((d, i) => {
               const index = (exam.domains ?? []).findIndex((x) => x.id === d.id) + 1;
               return (
                 <section key={d.id} id={`domain-${d.id}`} aria-labelledby={`domain-${d.id}-title`} className="mt-14 scroll-mt-24">
@@ -130,6 +143,7 @@ export default async function PracticeQuestionsPage({ params }: { params: Promis
                         <QuestionCard key={q.id} q={q} number={++n} domainName={d.name} />
                       ))}
                   </div>
+                  {i < domains.length - 1 && <CourseNudge cert={cert} location="questions-inline" className="mt-8" />}
                 </section>
               );
             })}
