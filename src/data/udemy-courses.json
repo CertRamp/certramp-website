@@ -1853,23 +1853,6 @@
   "ratingDate": null
  },
  {
-  "id": "115",
-  "title": "SAP-C02 Practice Exams 2026: AWS Solutions Architect Pro",
-  "certification": "AWS SAP-C02",
-  "slug": "aws-sap-c02",
-  "name": "AWS SAP-C02",
-  "descriptor": "AWS Solutions Architect Professional",
-  "provider": "AWS",
-  "category": "Cloud",
-  "language": "English",
-  "questions": null,
-  "udemyUrl": "https://www.udemy.com/course/sap-c02-practice-exams-aws-solutions-architect-pro/",
-  "referralUrl": "https://www.udemy.com/course/sap-c02-practice-exams-aws-solutions-architect-pro/?referralCode=07506EAD5C7440F8DDC9",
-  "rating": null,
-  "ratingCount": null,
-  "ratingDate": null
- },
- {
   "id": "116",
   "title": "AI-200 Praxistests Deutsch 2026 (ex AZ-204): Azure Developer",
   "certification": "Microsoft AI-200",

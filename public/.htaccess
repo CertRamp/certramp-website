@@ -13,6 +13,9 @@ Options -Indexes
   RewriteEngine On
   RewriteCond %{HTTP_HOST} ^www\.certramplearning\.com$ [NC]
   RewriteRule ^ https://certramplearning.com%{REQUEST_URI} [L,R=301]
+
+  # Retired exams: the Udemy course was unpublished, send visitors to the successor.
+  RewriteRule ^practice-exams/aws-sap-c02/?$ /practice-exams/aws-sap-c03/ [L,R=301]
 </IfModule>
 
 # Open Graph images are written without a file extension.

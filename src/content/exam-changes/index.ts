@@ -1151,7 +1151,6 @@ export const examChanges: ExamChange[] = [
     "successor": "SAP-C03",
     "successorName": "AWS Certified Solutions Architect: Professional",
     "certramp": [
-      "aws-sap-c02",
       "aws-sap-c03"
     ],
     "candidateAdvice": "Exams taken on or before 16 November 2026 use SAP-C02; exams from 17 November 2026 use SAP-C03, so study the version that matches your booked date.",
