@@ -14,6 +14,7 @@ import { Icon } from "@/components/ui/Icon";
 import { Section } from "@/components/ui/Section";
 import { deGuidePath, deHubPath, deQuestionsPath, getAllDe, getDe } from "@/lib/content-de";
 import { questionsPath } from "@/lib/content";
+import { getCourseData, readinessPath } from "@/lib/course-data";
 import { formatDate } from "@/lib/format";
 import { quizSchema } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
@@ -46,6 +47,7 @@ export default async function DeQuestionsPage({ params }: { params: Promise<Para
   const set = de.questions;
   const path = deQuestionsPath(de.slug);
   const domains = de.domains.filter((d) => set.questions.some((q) => q.domain === d.id));
+  const readiness = getCourseData(cert.slug)?.readiness ? readinessPath(cert.slug, "de") : null;
   let n = 0;
 
   return (
@@ -131,6 +133,17 @@ export default async function DeQuestionsPage({ params }: { params: Promise<Para
                 </section>
               );
             })}
+
+            {readiness && (
+              <p className="mt-10 rounded-[var(--radius-card)] border border-line bg-surface p-5 text-[0.9375rem] leading-relaxed text-body">
+                <span className="font-semibold text-ink">Unsicher, ob du bereit bist? </span>
+                Trag deine Testergebnisse in den kostenlosen{" "}
+                <Link href={readiness} className="font-semibold text-accent-600 hover:underline">
+                  {name}-Readiness-Check
+                </Link>{" "}
+                ein und erhalte deine schwächsten Bereiche und einen Lernplan bis zur Prüfung.
+              </p>
+            )}
 
             <SourceList sources={cert.exam.sources} lastVerified={cert.exam.lastVerified} className="mt-14" locale="de" />
           </div>
