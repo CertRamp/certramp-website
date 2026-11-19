@@ -3,6 +3,7 @@ import { AuthorSection } from "@/components/marketing/AuthorSection";
 import Link from "@/components/ui/Link";
 import { notFound } from "next/navigation";
 import { CertCta, UdemyCta } from "@/components/certification/CertCta";
+import { CourseNudge } from "@/components/certification/CourseNudge";
 import { VendorDisclaimer } from "@/components/certification/VendorDisclaimer";
 import { QuestionCard } from "@/components/content/QuestionCard";
 import { SourceList } from "@/components/content/ExamFactsList";
@@ -14,6 +15,7 @@ import { Section, SectionHeader } from "@/components/ui/Section";
 import { getAllQuestionSets, getQuestionSet, getResources, questionsPath } from "@/lib/content";
 import { getDeLinks } from "@/lib/content-de";
 import { getCertification } from "@/lib/certifications";
+import { getCourseData, readinessPath } from "@/lib/course-data";
 import { formatDate } from "@/lib/format";
 import { quizSchema } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
@@ -51,6 +53,7 @@ export default async function PracticeQuestionsPage({ params }: { params: Promis
   const path = questionsPath(cert.slug);
   const resources = getResources(cert.slug);
   const domains = (exam.domains ?? []).filter((d) => set.questions.some((q) => q.domain === d.id));
+  const readiness = getCourseData(cert.slug)?.readiness ? readinessPath(cert.slug) : null;
   let n = 0;
 
   return (
@@ -77,6 +80,15 @@ export default async function PracticeQuestionsPage({ params }: { params: Promis
             </>
           )}
         </p>
+        {cert.primaryCourse && (
+          <div className="mt-7 flex flex-wrap items-center gap-x-4 gap-y-2">
+            <UdemyCta cert={cert} variant="inverse" size="md" location="questions-hero" label="Full practice exams on Udemy" />
+            <span className="text-sm text-white/60">
+              {cert.questionCount ? `${cert.questionCount} questions in ` : ""}
+              {cert.practiceExamCount} tests, from diagnostic to beyond exam level
+            </span>
+          </div>
+        )}
       </PageHero>
 
       <Section>
@@ -102,6 +114,9 @@ export default async function PracticeQuestionsPage({ params }: { params: Promis
                   .
                 </p>
               )}
+              <div className="mt-8 hidden lg:block">
+                <UdemyCta cert={cert} variant="secondary" size="md" location="questions-sidebar" label="Full exams on Udemy" />
+              </div>
             </nav>
           </div>
 
@@ -115,7 +130,7 @@ export default async function PracticeQuestionsPage({ params }: { params: Promis
               </p>
             </div>
 
-            {domains.map((d) => {
+            {domains.map((d, i) => {
               const index = (exam.domains ?? []).findIndex((x) => x.id === d.id) + 1;
               return (
                 <section key={d.id} id={`domain-${d.id}`} aria-labelledby={`domain-${d.id}-title`} className="mt-14 scroll-mt-24">
@@ -130,9 +145,21 @@ export default async function PracticeQuestionsPage({ params }: { params: Promis
                         <QuestionCard key={q.id} q={q} number={++n} domainName={d.name} />
                       ))}
                   </div>
+                  {i < domains.length - 1 && <CourseNudge cert={cert} location="questions-inline" className="mt-8" />}
                 </section>
               );
             })}
+
+            {readiness && (
+              <p className="mt-10 rounded-[var(--radius-card)] border border-line bg-surface p-5 text-[0.9375rem] leading-relaxed text-body">
+                <span className="font-semibold text-ink">Not sure if you are ready? </span>
+                Enter your practice test scores in the free{" "}
+                <Link href={readiness} className="font-semibold text-accent-600 hover:underline">
+                  {cert.name} readiness check
+                </Link>{" "}
+                and get your weakest domains and a study plan to exam day.
+              </p>
+            )}
 
             <SourceList sources={exam.sources} lastVerified={exam.lastVerified} className="mt-14" />
           </div>

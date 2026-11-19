@@ -3,6 +3,7 @@ import { AuthorSection } from "@/components/marketing/AuthorSection";
 import Link from "@/components/ui/Link";
 import { notFound } from "next/navigation";
 import { UdemyCta } from "@/components/certification/CertCta";
+import { CourseNudge } from "@/components/certification/CourseNudge";
 import { VendorDisclaimer } from "@/components/certification/VendorDisclaimer";
 import { SourceList } from "@/components/content/ExamFactsList";
 import { QuestionCard } from "@/components/content/QuestionCard";
@@ -13,6 +14,7 @@ import { Icon } from "@/components/ui/Icon";
 import { Section } from "@/components/ui/Section";
 import { deGuidePath, deHubPath, deQuestionsPath, getAllDe, getDe } from "@/lib/content-de";
 import { questionsPath } from "@/lib/content";
+import { getCourseData, readinessPath } from "@/lib/course-data";
 import { formatDate } from "@/lib/format";
 import { quizSchema } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
@@ -45,6 +47,7 @@ export default async function DeQuestionsPage({ params }: { params: Promise<Para
   const set = de.questions;
   const path = deQuestionsPath(de.slug);
   const domains = de.domains.filter((d) => set.questions.some((q) => q.domain === d.id));
+  const readiness = getCourseData(cert.slug)?.readiness ? readinessPath(cert.slug, "de") : null;
   let n = 0;
 
   return (
@@ -63,6 +66,13 @@ export default async function DeQuestionsPage({ params }: { params: Promise<Para
             English version
           </Link>
         </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-4 gap-y-2">
+          <UdemyCta cert={cert} course={germanCourse} variant="inverse" size="md" location="de-questions-hero" label="Vollständige Übungsprüfungen auf Udemy" />
+          <span className="text-sm text-white/60">
+            {germanCourse.questions ? `${germanCourse.questions} Fragen in ` : ""}
+            {cert.practiceExamCount} Tests, vom Einstufungstest bis über Prüfungsniveau
+          </span>
+        </div>
       </PageHero>
 
       <Section>
@@ -86,6 +96,9 @@ export default async function DeQuestionsPage({ params }: { params: Promise<Para
                 </Link>
                 .
               </p>
+              <div className="mt-8 hidden lg:block">
+                <UdemyCta cert={cert} course={germanCourse} variant="secondary" size="md" location="de-questions-sidebar" label="Zum Kurs auf Udemy" />
+              </div>
             </nav>
           </div>
 
@@ -99,7 +112,7 @@ export default async function DeQuestionsPage({ params }: { params: Promise<Para
               </p>
             </div>
 
-            {domains.map((d) => {
+            {domains.map((d, i) => {
               const index = de.domains.findIndex((x) => x.id === d.id) + 1;
               return (
                 <section key={d.id} id={`bereich-${d.id}`} aria-labelledby={`bereich-${d.id}-titel`} className="mt-14 scroll-mt-24">
@@ -114,9 +127,23 @@ export default async function DeQuestionsPage({ params }: { params: Promise<Para
                         <QuestionCard key={q.id} q={q} number={++n} domainName={d.name} locale="de" />
                       ))}
                   </div>
+                  {i < domains.length - 1 && (
+                    <CourseNudge cert={cert} course={germanCourse} locale="de" location="de-questions-inline" className="mt-8" />
+                  )}
                 </section>
               );
             })}
+
+            {readiness && (
+              <p className="mt-10 rounded-[var(--radius-card)] border border-line bg-surface p-5 text-[0.9375rem] leading-relaxed text-body">
+                <span className="font-semibold text-ink">Unsicher, ob du bereit bist? </span>
+                Trag deine Testergebnisse in den kostenlosen{" "}
+                <Link href={readiness} className="font-semibold text-accent-600 hover:underline">
+                  {name}-Readiness-Check
+                </Link>{" "}
+                ein und erhalte deine schwächsten Bereiche und einen Lernplan bis zur Prüfung.
+              </p>
+            )}
 
             <SourceList sources={cert.exam.sources} lastVerified={cert.exam.lastVerified} className="mt-14" locale="de" />
           </div>

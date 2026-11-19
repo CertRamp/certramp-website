@@ -1,5 +1,18 @@
+import { UdemyCta } from "@/components/certification/CertCta";
 import Link from "@/components/ui/Link";
+import { getCertification } from "@/lib/certifications";
 import { formatChangeDate, type ResolvedExamChange } from "@/lib/exam-changes";
+
+/** The CertRamp course that matches this change (German course on German pages when one exists). */
+function courseFor(c: ResolvedExamChange, locale: "en" | "de") {
+  for (const slug of c.certramp) {
+    const cert = getCertification(slug);
+    if (!cert?.primaryCourse) continue;
+    const course = (locale === "de" && cert.courses.find((x) => x.language === "German")) || cert.primaryCourse;
+    return { cert, course };
+  }
+  return null;
+}
 
 const t = {
   en: {
@@ -16,6 +29,7 @@ const t = {
     source: "Official source",
     checked: "checked",
     newTab: "opens in a new tab",
+    practice: "Practice exams on Udemy",
   },
   de: {
     kinds: {
@@ -31,6 +45,7 @@ const t = {
     source: "Offizielle Quelle",
     checked: "geprüft am",
     newTab: "öffnet in neuem Tab",
+    practice: "Übungsprüfungen auf Udemy",
   },
 } as const;
 
@@ -47,6 +62,7 @@ export function ExamChangeCard({ c, locale = "en" }: { c: ResolvedExamChange; lo
   const l = t[locale];
   const summary = locale === "de" ? c.de.summary : c.summary;
   const advice = locale === "de" ? c.de.candidateAdvice : c.candidateAdvice;
+  const match = courseFor(c, locale);
   return (
     <li id={`change-${c.id}`} data-vendor={c.vendor} data-keydate={c.keyDate} className="scroll-mt-24 rounded-[var(--radius-card)] border border-line bg-white p-6">
       <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
@@ -81,6 +97,17 @@ export function ExamChangeCard({ c, locale = "en" }: { c: ResolvedExamChange; lo
         <span className="font-semibold text-ink">{l.meaning}: </span>
         {advice}
       </p>
+      {match && (
+        <UdemyCta
+          cert={match.cert}
+          course={match.course}
+          variant="secondary"
+          size="md"
+          location={locale === "de" ? "de-exam-changes" : "exam-changes"}
+          label={l.practice}
+          className="mt-4"
+        />
+      )}
       <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm">
         {c.links.map((k) => (
           <Link key={k.href} href={k.href} className="font-semibold text-accent-600 hover:underline">
