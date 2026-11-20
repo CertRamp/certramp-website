@@ -4692,7 +4692,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
   },
   "cobit-2019-foundation": {
     description:
-      "Practice exams for the ISACA COBIT 2019 Foundation Certificate, covering all eight exam domains. ISACA replaces this certificate with the COBIT 7 Foundation Certificate on 19 November 2026; the last day to purchase the COBIT 2019 exam is 30 June 2027.",
+      "Practice exams for the ISACA COBIT 2019 Foundation Certificate, covering all eight exam domains. ISACA replaced this certificate with the COBIT 7 Foundation Certificate on 19 November 2026; the last day to purchase the COBIT 2019 exam is 30 June 2027.",
     fullName: "ISACA COBIT 2019 Foundation Certificate",
     // Verified 2026-11-04 against the ISACA COBIT Foundation page (isaca.org). Certification body: ISACA (course descriptor "ISACA COBIT 2019 Foundation").
     // STATUS: ISACA states the COBIT 2019 Foundations Certificate program "will be replaced by the COBIT 7 Foundation Certificate" on 19 November 2026 and sunset; last day to purchase the current exam or exam prep is 30 June 2027. ISACA gives no last date to sit the exam.
@@ -4729,7 +4729,49 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     seo: {
       title: "COBIT 2019 Foundation Practice Exams (450 Qs)",
       description:
-        "COBIT 2019 Foundation practice exams covering all eight ISACA exam domains. ISACA moves to the COBIT 7 Foundation Certificate on 19 Nov 2026.",
+        "COBIT 2019 Foundation practice exams covering all eight ISACA exam domains. Exam on sale until 30 Jun 2027; COBIT 7 Foundation replaced it on 19 Nov 2026.",
+    },
+  },
+  "cobit-7-foundation": {
+    description:
+      "Practice exams for the ISACA COBIT 7 Foundation Certificate, which replaced the COBIT 2019 Foundations Certificate on 19 November 2026. Six full exams with 75 questions each, written to the eight COBIT 7 exam domains and their official weighting.",
+    fullName: "ISACA COBIT 7 Foundation Certificate",
+    // Verified 2026-11-20 against the ISACA COBIT 7 Foundation Certificate page (isaca.org/credentialing/cobit-7-foundation) and the COBIT Foundation page (notice that COBIT 7 Foundation replaces COBIT 2019 Foundations on 19 November 2026).
+    // NOTE: the weights as published by ISACA add up to 98%, not 100%. Taken as shown; recheck when ISACA corrects the page.
+    // Not stated on the COBIT 7 page, so omitted: languages, price. No COBIT 7-specific exam guide PDF is linked (only the general exam candidate guides).
+    exam: {
+      officialName: "COBIT 7 Foundation Certificate",
+      questionCount: "75",
+      duration: "2 hours",
+      format: "Multiple choice; online, remotely proctored",
+      passingScore: "65%",
+      delivery: "Online, remotely proctored",
+      prerequisites: "None",
+      status: "current",
+      launchDate: "2026-11-19",
+      officialCertificationUrl: "https://www.isaca.org/credentialing/cobit-7-foundation",
+      officialExamUrl: "https://www.isaca.org/credentialing/cobit-7-foundation/plan-and-register",
+      domains: [
+        { id: "d1", name: "Framework Introduction", weight: "10%" },
+        { id: "d2", name: "Principles", weight: "8%" },
+        { id: "d3", name: "Governance System and Components", weight: "31%" },
+        { id: "d4", name: "Governance and Management Objectives", weight: "25%" },
+        { id: "d5", name: "Performance Management", weight: "10%" },
+        { id: "d6", name: "Designing a Tailored Governance System", weight: "5%" },
+        { id: "d7", name: "Business Case", weight: "1%" },
+        { id: "d8", name: "Implementation", weight: "8%" },
+      ],
+      sources: [
+        { label: "ISACA: COBIT 7 Foundation Certificate", url: "https://www.isaca.org/credentialing/cobit-7-foundation" },
+        { label: "ISACA: COBIT Foundation Certificate (replacement notice)", url: "https://www.isaca.org/credentialing/cobit-foundation" },
+        { label: "ISACA: Exam candidate guides", url: "https://www.isaca.org/credentialing/exam-candidate-guides" },
+      ],
+      lastVerified: "2026-11-20",
+    },
+    seo: {
+      title: "COBIT 7 Foundation Practice Exams (450 Qs)",
+      description:
+        "ISACA COBIT 7 Foundation practice exams: 6 x 75 questions on all eight exam domains, 2 hours each, explained answers. Replaces COBIT 2019 since 19 Nov 2026.",
     },
   },
   "comptia-cloud-plus-cv0-004": {

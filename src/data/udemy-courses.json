@@ -2599,5 +2599,22 @@
   "rating": null,
   "ratingCount": null,
   "ratingDate": null
+ },
+ {
+  "id": "160",
+  "title": "ISACA COBIT 7 Foundation Practice Exams 2026 (ex COBIT 2019)",
+  "certification": "COBIT 7 Foundation",
+  "slug": "cobit-7-foundation",
+  "name": "COBIT 7 Foundation",
+  "descriptor": "ISACA COBIT 7 Foundation",
+  "provider": "ISACA",
+  "category": "Audit, Risk & Governance",
+  "language": "English",
+  "questions": 450,
+  "udemyUrl": "https://www.udemy.com/course/isaca-cobit-7-foundation-practice-exams-ex-cobit-2019/",
+  "referralUrl": "https://www.udemy.com/course/isaca-cobit-7-foundation-practice-exams-ex-cobit-2019/?referralCode=32F868B31D99F246D6F7",
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  }
 ]

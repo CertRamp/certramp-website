@@ -1715,7 +1715,7 @@ export const examChanges: ExamChange[] = [
     "exam": "COBIT 2019 Foundation",
     "examName": "COBIT 2019 Foundations Certificate",
     "change": "replaced",
-    "summary": "ISACA replaces the COBIT 2019 Foundations Certificate with the COBIT 7 Foundation Certificate on 19 November 2026; the COBIT 2019 exam stays on sale until 30 June 2027.",
+    "summary": "ISACA replaced the COBIT 2019 Foundations Certificate with the COBIT 7 Foundation Certificate on 19 November 2026; the COBIT 2019 exam stays on sale until 30 June 2027.",
     "dates": [
       {
         "label": "COBIT 7 Foundation Certificate replaces COBIT 2019 Foundations",
@@ -1729,17 +1729,18 @@ export const examChanges: ExamChange[] = [
     "successor": "COBIT 7 Foundation",
     "successorName": "COBIT 7 Foundation Certificate",
     "certramp": [
+      "cobit-7-foundation",
       "cobit-2019-foundation"
     ],
-    "candidateAdvice": "You can still buy the COBIT 2019 Foundation exam until 30 June 2027; if you are starting from scratch, check whether COBIT 7 Foundation suits you better.",
+    "candidateAdvice": "COBIT 7 Foundation can be booked since 19 November 2026. You can still buy the COBIT 2019 Foundation exam until 30 June 2027; new starters should prepare for COBIT 7 Foundation.",
     "source": {
       "label": "ISACA: COBIT Foundation certificate page (notice)",
       "url": "https://www.isaca.org/credentialing/cobit-foundation"
     },
-    "verified": "2026-11-09",
+    "verified": "2026-11-20",
     "de": {
-      "summary": "ISACA ersetzt das COBIT 2019 Foundations Certificate am 19. November 2026 durch das COBIT 7 Foundation Certificate; die COBIT-2019-Prüfung bleibt bis zum 30. Juni 2027 erhältlich.",
-      "candidateAdvice": "Du kannst die Prüfung COBIT 2019 Foundation noch bis zum 30. Juni 2027 kaufen; wenn du gerade erst anfängst, prüf, ob COBIT 7 Foundation für dich besser passt.",
+      "summary": "ISACA hat das COBIT 2019 Foundations Certificate am 19. November 2026 durch das COBIT 7 Foundation Certificate ersetzt; die COBIT-2019-Prüfung bleibt bis zum 30. Juni 2027 erhältlich.",
+      "candidateAdvice": "COBIT 7 Foundation ist seit dem 19. November 2026 buchbar. Die Prüfung COBIT 2019 Foundation kannst du noch bis zum 30. Juni 2027 kaufen; wer neu anfängt, bereitet sich auf COBIT 7 Foundation vor.",
       "dateLabels": [
         "COBIT 7 Foundation Certificate ersetzt COBIT 2019 Foundations",
         "Letzter Tag für den Kauf der Prüfung oder Prüfungsvorbereitung zu COBIT 2019 Foundation"
