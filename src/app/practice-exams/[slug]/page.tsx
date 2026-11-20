@@ -32,6 +32,7 @@ import { certificationFaqTemplate } from "@/config/faq";
 import { getAllCertifications, getCertification, isIndexable, toCardData } from "@/lib/certifications";
 import { fill, formatDate } from "@/lib/format";
 import { getResources } from "@/lib/content";
+import { getExamChanges } from "@/lib/exam-changes";
 import { certificationProductSchema, credentialSchema, faqSchema } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
 
@@ -81,10 +82,15 @@ export default async function CertificationPage({ params }: { params: Promise<Pa
   const rotated = [...sameCategory.slice(ownIndex + 1), ...sameCategory.slice(0, Math.max(ownIndex, 0))].filter(
     (c) => c.slug !== cert.slug,
   );
+  // Predecessor or successor exams (listed together on one exam-change entry) always come first,
+  // e.g. COBIT 2019 Foundation <-> COBIT 7 Foundation.
+  const versionSlugs = new Set(getExamChanges().filter((c) => c.certramp.includes(cert.slug)).flatMap((c) => c.certramp));
+  const versions = sameCategory.filter((c) => c.slug !== cert.slug && versionSlugs.has(c.slug));
   const related = [
-    ...rotated.filter((c) => c.vendorKey === cert.vendorKey).slice(0, 1),
-    ...rotated.filter((c) => c.vendorKey !== cert.vendorKey),
-    ...rotated.filter((c) => c.vendorKey === cert.vendorKey).slice(1),
+    ...versions,
+    ...rotated.filter((c) => !versionSlugs.has(c.slug) && c.vendorKey === cert.vendorKey).slice(0, 1),
+    ...rotated.filter((c) => !versionSlugs.has(c.slug) && c.vendorKey !== cert.vendorKey),
+    ...rotated.filter((c) => !versionSlugs.has(c.slug) && c.vendorKey === cert.vendorKey).slice(1),
   ].slice(0, 3);
 
   const facts =
