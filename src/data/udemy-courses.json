@@ -2616,5 +2616,22 @@
   "rating": null,
   "ratingCount": null,
   "ratingDate": null
+ },
+ {
+  "id": "161",
+  "title": "CS0-004 Practice Exams 2026: CompTIA CySA+ V4 (ex CS0-003)",
+  "certification": "CompTIA CySA+ CS0-004",
+  "slug": "comptia-cysa-plus-cs0-004",
+  "name": "CompTIA CySA+ CS0-004",
+  "descriptor": "CompTIA CySA+ (V4)",
+  "provider": "CompTIA",
+  "category": "Security & Privacy",
+  "language": "English",
+  "questions": 510,
+  "udemyUrl": "https://www.udemy.com/course/cs0-004-practice-exams-comptia-cysa-v4-ex-cs0-003/",
+  "referralUrl": "https://www.udemy.com/course/cs0-004-practice-exams-comptia-cysa-v4-ex-cs0-003/?referralCode=AB9E00C4364F882E9C4D",
+  "rating": null,
+  "ratingCount": null,
+  "ratingDate": null
  }
 ]

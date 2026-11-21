@@ -3593,6 +3593,46 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       description: "Terraform Associate (004) practice exams for Terraform 1.12: IaC, core workflow, configuration, modules, state management and HCP Terraform.",
     },
   },
+  "comptia-cysa-plus-cs0-004": {
+    description:
+      "Practice exams for CompTIA CySA+ V4 (CS0-004), which launched on 23 June 2026 and replaces CS0-003. Six full exams with 85 questions each, written to the four CS0-004 domains and their official weighting, from a baseline test up to above exam level.",
+    fullName: "CompTIA Cybersecurity Analyst (CySA+) V4",
+    // Verified 2026-11-21 against the CompTIA CySA+ V4 page (comptia.org/en-us/certifications/cybersecurity-analyst/v4/); domains and weights match the CS0-004 exam objectives (document version 2.0) checked on 2026-11-20.
+    // Predecessor: CS0-003 retires 22 December 2026 (English) and 23 March 2027 (Japanese, Portuguese, Spanish), see exam-changes entry comptia-cs0-003.
+    // Question types are not stated on the V4 page; multiple choice and performance-based questions are named in the exam objectives. Price omitted.
+    exam: {
+      officialName: "CompTIA Cybersecurity Analyst (CySA+)",
+      examCode: "CS0-004",
+      examVersion: "CySA+ V4 (exam objectives document version 2.0)",
+      questionCount: "Maximum of 85",
+      duration: "165 minutes",
+      format: "Multiple-choice and performance-based questions",
+      passingScore: "750 (on a scale of 100 to 900)",
+      questionTypes: "Multiple-choice and performance-based",
+      languages: ["English"],
+      prerequisites: "None required. Recommended experience: about four years in a SOC analyst or vulnerability analyst role.",
+      status: "current",
+      launchDate: "2026-06-23",
+      officialCertificationUrl: "https://www.comptia.org/en-us/certifications/cybersecurity-analyst/",
+      officialExamUrl: "https://www.comptia.org/en-us/certifications/cybersecurity-analyst/v4/",
+      domains: [
+        { id: "d1", name: "Security Operations", weight: "34%" },
+        { id: "d2", name: "Vulnerability Management", weight: "26%" },
+        { id: "d3", name: "Incident Response and Management", weight: "24%" },
+        { id: "d4", name: "Reporting and Communication", weight: "16%" },
+      ],
+      sources: [
+        { label: "CompTIA: CySA+ V4 (CS0-004) exam details", url: "https://www.comptia.org/en-us/certifications/cybersecurity-analyst/v4/" },
+        { label: "CompTIA: CySA+ V3 (CS0-003) retirement dates", url: "https://www.comptia.org/en-us/certifications/cybersecurity-analyst/v3/" },
+      ],
+      lastVerified: "2026-11-21",
+    },
+    seo: {
+      title: "CompTIA CySA+ CS0-004 (V4) Practice Exams (510 Qs)",
+      description:
+        "CompTIA CySA+ CS0-004 practice exams: 6 x 85 questions, 165 minutes each, on all four V4 domains with explained answers. Replaces CS0-003, retiring 22 Dec 2026.",
+    },
+  },
   "comptia-security-plus-sy0-801": {
     description:
       "Practice exams for CompTIA Security+ SY0-801 (V8), written to the official V8 exam objectives, including AI-related threats. V8 launched on 17 November 2026 in English; SY0-701 stays available until 11 June 2027 in English.",
