@@ -1168,9 +1168,9 @@
   "questions": 360,
   "udemyUrl": "https://www.udemy.com/course/project-management-foundation-mock-exams-2026-7th-edition/",
   "referralUrl": "https://www.udemy.com/course/project-management-foundation-mock-exams-2026-7th-edition/?referralCode=8969B3E0FB0E4B9D1C73",
-  "rating": 4.7,
-  "ratingCount": 21,
-  "ratingDate": "2026-11-03"
+  "rating": 4.6,
+  "ratingCount": 24,
+  "ratingDate": "2026-11-21"
  },
  {
   "id": "80",
@@ -1542,9 +1542,9 @@
   "questions": 360,
   "udemyUrl": "https://www.udemy.com/course/sc-200-practice-tests-2026-security-operations-analyst/",
   "referralUrl": "https://www.udemy.com/course/sc-200-practice-tests-2026-security-operations-analyst/?referralCode=CDD09A426F1E70B1CB48",
-  "rating": 4.9,
-  "ratingCount": 7,
-  "ratingDate": "2026-11-03"
+  "rating": 4.2,
+  "ratingCount": 10,
+  "ratingDate": "2026-11-21"
  },
  {
   "id": "66",
@@ -2619,7 +2619,7 @@
  },
  {
   "id": "161",
-  "title": "CS0-004 Practice Exams 2026: CompTIA CySA+ V4 (ex CS0-003)",
+  "title": "CompTIA CySA+ CS0-004 Practice Exams 2026 (V4, ex CS0-003)",
   "certification": "CompTIA CySA+ CS0-004",
   "slug": "comptia-cysa-plus-cs0-004",
   "name": "CompTIA CySA+ CS0-004",
