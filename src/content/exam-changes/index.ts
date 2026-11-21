@@ -1383,7 +1383,9 @@ export const examChanges: ExamChange[] = [
     ],
     "successor": "CS0-004",
     "successorName": "CompTIA CySA+ V4",
-    "certramp": [],
+    "certramp": [
+      "comptia-cysa-plus-cs0-004"
+    ],
     "candidateAdvice": "English candidates can take CS0-003 until 22 December 2026; CS0-004 is available now in English, with French, Japanese, Spanish and Portuguese listed as coming soon.",
     "source": {
       "label": "CompTIA: CySA+ V3 (CS0-003) exam details",
