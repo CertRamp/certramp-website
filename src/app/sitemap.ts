@@ -4,7 +4,8 @@ import { absoluteUrl } from "@/config/site";
 import { getAllCertifications, isIndexable } from "@/lib/certifications";
 import { getAllGuides, getAllQuestionSets, guidePath, guidesHubPath, questionsPath } from "@/lib/content";
 import { deGuidePath, deHubPath, deQuestionsPath, getAllDe } from "@/lib/content-de";
-import { deExamChangesPath, examChangesPath, lastVerified } from "@/lib/exam-changes";
+import { deExamChangesPath, examChangesPath, getExamChanges, lastVerified } from "@/lib/exam-changes";
+import { examChangeDetailPages, examChangeDetailPath } from "@/content/exam-changes/detail-pages";
 import { comparePath } from "@/content/compare";
 import { getAllComparisons, getAllCourseData, glossaryPath, questionsMadePath, readinessPath } from "@/lib/course-data";
 
@@ -26,6 +27,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: absoluteUrl(guidesHubPath), changeFrequency: "weekly", priority: 0.8 },
     { url: absoluteUrl(examChangesPath), changeFrequency: "weekly", priority: 0.9, lastModified: lastVerified() },
     { url: absoluteUrl(deExamChangesPath), changeFrequency: "weekly", priority: 0.8, lastModified: lastVerified() },
+    ...examChangeDetailPages.map((p) => ({
+      url: absoluteUrl(examChangeDetailPath(p.slug)),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+      lastModified: getExamChanges().find((c) => c.id === p.changeId)?.verified,
+    })),
     { url: absoluteUrl("/how-it-works"), changeFrequency: "monthly", priority: 0.6 },
     { url: absoluteUrl("/about"), changeFrequency: "yearly", priority: 0.4 },
     { url: absoluteUrl("/faq"), changeFrequency: "monthly", priority: 0.5 },

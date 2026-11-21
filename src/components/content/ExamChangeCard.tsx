@@ -1,6 +1,7 @@
 import { UdemyCta } from "@/components/certification/CertCta";
 import Link from "@/components/ui/Link";
 import { getCertification } from "@/lib/certifications";
+import { examChangeDetailPath, getDetailPageForChange } from "@/content/exam-changes/detail-pages";
 import { formatChangeDate, type ResolvedExamChange } from "@/lib/exam-changes";
 
 /** The CertRamp course that matches this change (German course on German pages when one exists). */
@@ -58,11 +59,12 @@ const kindTone: Record<ResolvedExamChange["change"], string> = {
   "outline-update": "bg-surface text-ink ring-1 ring-inset ring-line",
 };
 
-export function ExamChangeCard({ c, locale = "en" }: { c: ResolvedExamChange; locale?: "en" | "de" }) {
+export function ExamChangeCard({ c, locale = "en", showDetailLink = true }: { c: ResolvedExamChange; locale?: "en" | "de"; showDetailLink?: boolean }) {
   const l = t[locale];
   const summary = locale === "de" ? c.de.summary : c.summary;
   const advice = locale === "de" ? c.de.candidateAdvice : c.candidateAdvice;
   const match = courseFor(c, locale);
+  const detail = getDetailPageForChange(c.id);
   return (
     <li id={`change-${c.id}`} data-vendor={c.vendor} data-keydate={c.keyDate} className="scroll-mt-24 rounded-[var(--radius-card)] border border-line bg-white p-6">
       <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
@@ -109,6 +111,11 @@ export function ExamChangeCard({ c, locale = "en" }: { c: ResolvedExamChange; lo
         />
       )}
       <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+        {detail && showDetailLink && locale === "en" && (
+          <Link href={examChangeDetailPath(detail.slug)} className="font-semibold text-accent-600 hover:underline">
+            {c.exam} retirement: dates and what next
+          </Link>
+        )}
         {c.links.map((k) => (
           <Link key={k.href} href={k.href} className="font-semibold text-accent-600 hover:underline">
             {k.label[locale]}
