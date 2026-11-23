@@ -239,6 +239,8 @@ Recommended before launch: test ClassMarker embeds in Safari/iOS (third-party co
 
 Rule (owner decision, 5 Nov 2026): on the website, course titles are always shown exactly as they are on Udemy (they come from `data/udemy-courses.csv`). Certification page names, headings, slugs and meta data stay neutral (`PM Foundation (7th Edition)`, `ITSM Foundation V5`, …) unless the matching main course on Udemy carries the framework name, for example the project management course once it is renamed under the owner's agreement with PeopleCert. Then the page follows the Udemy name. Links to official PeopleCert pages are fine.
 
+Update 23 Nov 2026: PRINCE2 7 Foundation is cleared. The page is `/practice-exams/prince2-7-foundation/` (old slug redirects with 301 in `public/.htaccess`), names carry PRINCE2®, and the page shows its own trademark notice (`trademarkNotice` in `certifications.ts`). Practitioner and Agile stay neutral.
+
 ## Placeholders in production
 
 `NEXT_PUBLIC_SHOW_PLACEHOLDERS=false` (set in `.env.production`) hides every element whose content is still a `P("…")` placeholder — FAQ answers, review cards, methodology tiles, About blocks. Locally (`npm run dev`) they are shown as amber badges so you can see what is missing. `npm run check:launch` lists them.

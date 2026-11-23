@@ -16,6 +16,9 @@ Options -Indexes
 
   # Retired exams: the Udemy course was unpublished, send visitors to the successor.
   RewriteRule ^practice-exams/aws-sap-c02/?$ /practice-exams/aws-sap-c03/ [L,R=301]
+
+  # PRINCE2 7 Foundation uses the trademark again (PeopleCert permission, Nov 2026).
+  RewriteRule ^practice-exams/project-management-foundation-7th-edition(/.*)?$ /practice-exams/prince2-7-foundation$1 [L,R=301]
 </IfModule>
 
 # Open Graph images are written without a file extension.

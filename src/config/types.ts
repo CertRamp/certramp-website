@@ -80,6 +80,8 @@ export interface CertificationDetails {
   description?: string;
   /** Overrides the descriptor from the CSV (e.g. the full official certification name). */
   fullName?: string;
+  /** Overrides the vendor's trademark notice in the disclaimer on this certification's pages. */
+  trademarkNotice?: string;
 
   practiceExamCount?: number;
   /** Overrides the question count derived from the CSV. */

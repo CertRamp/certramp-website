@@ -225,7 +225,7 @@ export const alertsConfig: {
       "https://11007e05.sibforms.com/serve/MUIFAHG_ygkeHuznJF3nRuArBKl8Ah9d0cqNvnLPncfeaiQIKUR1Bjw7hhxzJwcDxANvpVOoAFLI2OgajvJ_Tv877iUL5t6Nh9qQQAHZichBtAYWp8s7IAcUhMVQohGE-wT6FO-ieI1R1HYYiT0x6P18TwGoFJIqxHFO766b5upeGNxhgjzzTEw7w-X02x_rltTXCll9gm2XIWT5rg==",
     "pmp":
       "https://11007e05.sibforms.com/serve/MUIFAMsbVrorpiST5BDq3Ct_k-9QIm0P7wB29jPThrXWQfpzknCnTDrp0_dkcBs-atQTE-IrzlxKw2-bINoFHNuVEnmJWN_ai6JvO61AO4dwjuhrJIIlFBtn-vDTfX_PLNlH5-AYGslps4v0mp4tcLOKf7jChCmftFlKOToFhTdEH_vrxOVzenSLhawf2o7lqy5LbSsgD6hzsQkmXA==",
-    "project-management-foundation-7th-edition":
+    "prince2-7-foundation":
       "https://11007e05.sibforms.com/serve/MUIFAL3jow-HyXRLTJWfO-Cvz_VC-ervn3tjJABXRDxeEz6a7AHiq9c20NuUwdyR6n7zE3Td3crcU-2YyARTHWLjJz05Zhlhs5I1VJwDP6nATKbFJwHP_o6nuTlwaS4-hivI9XS0soC_Xrp2H7lIvukT-WQ3-FfQIiLaUieRM6dxudCFpduku9gtwht4UyrspAl7WoF19uMqW82how==",
     "project-management-practitioner-7th-edition":
       "https://11007e05.sibforms.com/serve/MUIFAM5fG9rnkFoAdQ_vRCML-Om-PTyFN47a-7FHLCn8Poe82HQIGiw2c6pyDghfxpUvf4JiFnWxh13iZl5m6b_-t5uiz-A3vAWQ6C1FDoddBBKu46UGhbpnm3KEuxjzNmIuXhVkGR30yNHnjujlXYGjgXkyU8KRpdy4DQwGaz81axrtzlBp8lfpP6HCdLjKwqLqG6OedfWrrD9t2w==",

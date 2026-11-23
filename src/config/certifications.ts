@@ -26,12 +26,15 @@ export const certificationDetails: Record<string, CertificationDetails> = {
    * Exam facts: official sources only, checked 30 Sep 2026. Facts that could
    * only be found on third-party sites are deliberately left out.            */
 
-  // Project management method (7th edition). Trademarked method names are not used on this
-  // website — see the request from PeopleCert (October 2026). Keep all copy neutral.
-  "project-management-foundation-7th-edition": {
+  // PRINCE2 7 Foundation: the trademark may be used again under the owner's permission from
+  // PeopleCert (November 2026); old slug project-management-foundation-7th-edition redirects (public/.htaccess).
+  // Practitioner and Agile pages below stay neutral until they are cleared too.
+  "prince2-7-foundation": {
     featured: true,
     description:
-      "360 practice questions in six timed mock exams for the 7th edition Foundation exam of the widely used process-based project management method. Test 1 shows where you stand, Test 4 matches the real 60-question exam, and Tests 5 and 6 push beyond it, with an explanation for every answer option.",
+      "360 practice questions in six timed mock exams for the PRINCE2® 7 Foundation exam. Test 1 shows where you stand, Test 4 matches the real 60-question exam, and Tests 5 and 6 push beyond it, with an explanation for every answer option.",
+    trademarkNotice:
+      "PRINCE2® is a registered trademark of the PeopleCert group. Used under licence. CertRamp Learning is not affiliated with or endorsed by PeopleCert.",
     examOverview: [
       { label: "Exam provider", value: "PeopleCert" },
       { label: "Format", value: "60 multiple-choice questions, closed book" },
@@ -42,7 +45,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     ],
     sources: [
       {
-        label: "PeopleCert: Foundation exam page (7th edition)",
+        label: "PeopleCert: PRINCE2 7 Foundation exam page",
         url: "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-2/PRINCE2-7-foundation-3579",
       },
       { label: "Official examination format", url: "https://www.prince2.com/usa/prince2-examination-format" },
@@ -56,13 +59,13 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     faq: [
       {
         question: "Are these practice exams for the 7th edition?",
-        answer: "Yes. The questions are written for the 7th edition Foundation exam, not the earlier 6th edition.",
+        answer: "Yes. The questions are written for the PRINCE2 7 Foundation exam, not the earlier 6th edition.",
       },
     ],
     seo: {
-      title: "PM Foundation (7th Edition) Practice Exams",
+      title: "PRINCE2 7 Foundation Practice Exams (7th Edition)",
       description:
-        "360 practice questions in six timed mock exams for the 7th edition project management Foundation exam, from a diagnostic start to beyond exam level.",
+        "360 practice questions in six timed mock exams for the PRINCE2 7 Foundation exam, from a diagnostic start to beyond exam level.",
     },
     lastReviewed: CHECKED,
   },
