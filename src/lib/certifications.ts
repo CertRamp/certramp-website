@@ -222,7 +222,7 @@ function build(): ResolvedCertification[] {
       fullName,
       vendorName: vendor.name,
       vendorKey: first.provider,
-      trademarkNotice: vendor.trademarkNotice ?? null,
+      trademarkNotice: d.trademarkNotice ?? vendor.trademarkNotice ?? null,
       categoryId: category.id,
       categoryName: category.name,
       description: d.description ?? null,
