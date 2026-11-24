@@ -20,6 +20,7 @@ import { ipmaLevelDDe } from "./ipma-level-d";
 import { irebCpreDe } from "./ireb-cpre-foundation-level";
 import { awsClfC02De } from "./aws-clf-c02";
 import { isc2CcDe } from "./isc2-cc";
+import { iso27001LeadImplementerDe } from "./iso-27001-lead-implementer";
 import { istqbCtfl4De } from "./istqb-ctfl-4";
 import { sc200De } from "./sc-200";
 import { sc300De } from "./sc-300";
@@ -43,6 +44,7 @@ export const deContents: DeContent[] = [
   comptiaAPlusCore1De,
   comptiaAPlusCore2De,
   isc2CcDe,
+  iso27001LeadImplementerDe,
   sc200De,
   sc300De,
   sc500De,
