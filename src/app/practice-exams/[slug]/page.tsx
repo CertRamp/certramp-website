@@ -32,6 +32,7 @@ import { certificationFaqTemplate } from "@/config/faq";
 import { getAllCertifications, getCertification, isIndexable, toCardData } from "@/lib/certifications";
 import { fill, formatDate } from "@/lib/format";
 import { getResources } from "@/lib/content";
+import { getDe } from "@/lib/content-de";
 import { getExamChanges } from "@/lib/exam-changes";
 import { certificationProductSchema, credentialSchema, faqSchema } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
@@ -74,7 +75,7 @@ export default async function CertificationPage({ params }: { params: Promise<Pa
   const credentialLd = credentialSchema(cert);
   const resources = getResources(cert.slug);
   const data = getCourseData(cert.slug);
-  const hasResources = Boolean(resources.guide || resources.questions);
+  const hasResources = Boolean(resources.guide || resources.questions || getDe(cert.slug));
   // Rotate through the category (the next certs after this one, wrapping around) so every exam page
   // receives "related" links, not only the first few in config order. Same-vendor neighbours come first.
   const sameCategory = getAllCertifications().filter((c) => c.categoryId === cert.categoryId && isIndexable(c));

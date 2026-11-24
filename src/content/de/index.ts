@@ -16,6 +16,7 @@ import { comptiaSecurityPlusSy0701De } from "./comptia-security-plus-sy0-701";
 import { iappAigpDe } from "./iapp-aigp";
 import { ipmaLevelDDe } from "./ipma-level-d";
 import { irebCpreDe } from "./ireb-cpre-foundation-level";
+import { istqbCtfl4De } from "./istqb-ctfl-4";
 import { sc200De } from "./sc-200";
 import { sc300De } from "./sc-300";
 import { sc500De } from "./sc-500";
@@ -33,6 +34,7 @@ export const deContents: DeContent[] = [
   comptiaSecurityPlusSy0701De,
   iappAigpDe,
   irebCpreDe,
+  istqbCtfl4De,
   sc200De,
   sc300De,
   sc500De,
