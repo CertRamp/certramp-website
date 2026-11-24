@@ -182,6 +182,13 @@ export default async function DeGuidePage({ params }: { params: Promise<Params> 
                 </Link>
                 <UdemyCta cert={cert} course={germanCourse} variant="inverse-outline" location="de-guide" label="Komplette Übungsprüfungen auf Udemy" />
               </div>
+              <p className="mt-4 text-sm text-white/70">
+                Aufbau und Schwierigkeit aller {cert.practiceExamCount} Tests:{" "}
+                <Link href={cert.path} hrefLang="en" className="font-semibold text-white underline underline-offset-2 hover:text-accent-50">
+                  {name} Übungsprüfungen im Überblick
+                </Link>{" "}
+                (Seite auf Englisch)
+              </p>
             </section>
 
             <section aria-labelledby="faq" className="scroll-mt-24">

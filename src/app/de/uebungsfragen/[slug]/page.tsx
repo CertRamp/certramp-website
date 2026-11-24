@@ -95,6 +95,11 @@ export default async function DeQuestionsPage({ params }: { params: Promise<Para
                   Zum {name}-Leitfaden
                 </Link>
                 .
+                {" "}Alle Tests im Überblick:{" "}
+                <Link href={cert.path} hrefLang="en" className="font-semibold text-accent-600 hover:underline">
+                  {name} Übungsprüfungen
+                </Link>{" "}
+                (Seite auf Englisch).
               </p>
               <div className="mt-8 hidden lg:block">
                 <UdemyCta cert={cert} course={germanCourse} variant="secondary" size="md" location="de-questions-sidebar" label="Zum Kurs auf Udemy" />
