@@ -28,7 +28,7 @@ export const istqbCtfl4De: DeContent = {
   ],
   domains: [
     { id: "d1", name: "Grundlagen des Testens", weight: "8 Fragen" },
-    { id: "d2", name: "Testen im Kontext eines Softwareentwicklungslebenszyklus", weight: "6 Fragen" },
+    { id: "d2", name: "Testen während des Softwareentwicklungslebenszyklus", weight: "6 Fragen" },
     { id: "d3", name: "Statischer Test", weight: "4 Fragen" },
     { id: "d4", name: "Testanalyse und -entwurf", weight: "11 Fragen" },
     { id: "d5", name: "Management der Testaktivitäten", weight: "9 Fragen" },
@@ -251,7 +251,7 @@ export const istqbCtfl4De: DeContent = {
       {
         id: "ctfl-c1-independence",
         domain: "d1",
-        objective: "Lehrplan 4.0.1, Abschnitt 1.5 Wesentliche Kompetenzen und bewährte Praktiken beim Testen",
+        objective: "Lehrplan 4.0.1, Abschnitt 1.5.3 Unabhängigkeit des Testens",
         difficulty: "intermediate",
         question:
           "Ein Unternehmen lässt das Testen vollständig von einem externen, räumlich getrennten Testteam durchführen. Welcher Nachteil ist dabei laut Lehrplan typisch?",
@@ -267,7 +267,7 @@ export const istqbCtfl4De: DeContent = {
         reference: SYLLABUS,
       },
 
-      /* ── Kapitel 2: Testen im Softwareentwicklungslebenszyklus ─────────── */
+      /* ── Kapitel 2: Testen während des Softwareentwicklungslebenszyklus ── */
       {
         id: "ctfl-c2-shift-left",
         domain: "d2",
@@ -341,19 +341,19 @@ export const istqbCtfl4De: DeContent = {
       {
         id: "ctfl-c2-atdd",
         domain: "d2",
-        objective: "Lehrplan 4.0.1, Abschnitt 2.1 Testen im Kontext eines Softwareentwicklungslebenszyklus",
+        objective: "Lehrplan 4.0.1, Abschnitt 2.1.3 Testen als Treiber für die Softwareentwicklung",
         difficulty: "intermediate",
         question:
-          "Vor der Umsetzung einer User Story formulieren Product Owner, Entwickler und Tester gemeinsam Tests aus den Akzeptanzkriterien, die anschließend als Grundlage für die Implementierung dienen. Welcher Ansatz ist das?",
+          "Vor der Umsetzung einer User Story formulieren Product Owner, Entwickler und Tester gemeinsam Tests aus den Abnahmekriterien, die anschließend als Grundlage für die Implementierung dienen. Welcher Ansatz ist das?",
         options: [
-          { id: "A", text: "Testgetriebene Entwicklung (TDD)", rationale: "TDD steuert das Codieren über Komponententests, die der Entwickler vor dem Code schreibt, nicht über gemeinsam formulierte Akzeptanztests." },
-          { id: "B", text: "Abnahmetestgetriebene Entwicklung (ATDD)", rationale: "Richtig. Bei ATDD leiten die Beteiligten Tests aus Akzeptanzkriterien ab, bevor die Story umgesetzt wird." },
-          { id: "C", text: "Explorativer Test", rationale: "Explorative Tests werden während der Durchführung entworfen, nicht vorab aus Akzeptanzkriterien." },
+          { id: "A", text: "Testgetriebene Entwicklung (TDD)", rationale: "TDD steuert das Codieren über Komponententests, die der Entwickler vor dem Code schreibt, nicht über gemeinsam formulierte Abnahmetests." },
+          { id: "B", text: "Abnahmetestgetriebene Entwicklung (ATDD)", rationale: "Richtig. Bei ATDD leiten die Beteiligten Tests aus Abnahmekriterien ab, bevor die Story umgesetzt wird." },
+          { id: "C", text: "Explorativer Test", rationale: "Explorative Tests werden während der Durchführung entworfen, nicht vorab aus Abnahmekriterien." },
           { id: "D", text: "Wartungstest", rationale: "Wartungstests betreffen Änderungen an Systemen im Betrieb." },
         ],
         answer: "B",
         explanation:
-          "TDD, ATDD und BDD sind testgetriebene Ansätze: Tests werden vor dem Code definiert. TDD arbeitet mit Komponententests, ATDD mit Akzeptanztests aus den Akzeptanzkriterien, BDD mit Beispielen im Format Given/When/Then.",
+          "TDD, ATDD und BDD sind testgetriebene Ansätze: Tests werden vor dem Code definiert. TDD arbeitet mit Komponententests, ATDD mit Abnahmetests aus den Abnahmekriterien, BDD mit Beispielen im Format Given/When/Then.",
         reference: SYLLABUS,
       },
 
@@ -390,7 +390,7 @@ export const istqbCtfl4De: DeContent = {
         ],
         answer: "D",
         explanation:
-          "Die Rollen bei Reviews sind Manager, Autor, Moderator, Protokollant, Gutachter und Review-Leiter. Der Review-Leiter trägt die Gesamtverantwortung für das Review; der Moderator kümmert sich um den Ablauf der Sitzungen.",
+          "Die Rollen bei Reviews sind Manager, Autor, Moderator, Protokollant, Gutachter und Reviewleiter. Der Reviewleiter trägt die Gesamtverantwortung für das Review; der Moderator kümmert sich um den Ablauf der Sitzungen.",
         reference: SYLLABUS,
       },
       {
@@ -408,7 +408,7 @@ export const istqbCtfl4De: DeContent = {
         ],
         answer: "A",
         explanation:
-          "Der Lehrplan nennt informelles Review, Walkthrough, technisches Review und Inspektion. Die Inspektion ist am formalsten: Sie folgt dem vollständigen generischen Prozess, sammelt Metriken und schließt aus, dass der Autor als Review-Leiter oder Protokollant auftritt.",
+          "Der Lehrplan nennt informelles Review, Walkthrough, technisches Review und Inspektion. Die Inspektion ist am formalsten: Sie folgt dem vollständigen generischen Prozess, sammelt Metriken und schließt aus, dass der Autor als Reviewleiter oder Protokollant auftritt.",
         reference: SYLLABUS,
       },
 
@@ -488,7 +488,7 @@ export const istqbCtfl4De: DeContent = {
       {
         id: "ctfl-c4-branch-statement",
         domain: "d4",
-        objective: "Lehrplan 4.0.1, Abschnitt 4.3 White-Box-Testverfahren",
+        objective: "Lehrplan 4.0.1, Abschnitt 4.3 White-Box-Test",
         difficulty: "intermediate",
         question: "Ein Testsatz erreicht 100 % Zweigüberdeckung. Was folgt daraus für die Anweisungsüberdeckung?",
         options: [
@@ -505,7 +505,7 @@ export const istqbCtfl4De: DeContent = {
       {
         id: "ctfl-c4-statement-count",
         domain: "d4",
-        objective: "Lehrplan 4.0.1, Abschnitt 4.3 White-Box-Testverfahren",
+        objective: "Lehrplan 4.0.1, Abschnitt 4.3 White-Box-Test",
         difficulty: "advanced",
         question:
           "Gegeben ist folgender Ablauf: Wenn der Warenkorb leer ist, wird eine Meldung angezeigt. Andernfalls wird der Gesamtpreis berechnet, und wenn der Gesamtpreis über 100 Euro liegt, wird zusätzlich ein Rabatt abgezogen. Wie viele Testfälle braucht man mindestens für 100 % Anweisungsüberdeckung?",
@@ -523,7 +523,7 @@ export const istqbCtfl4De: DeContent = {
       {
         id: "ctfl-c4-experience",
         domain: "d4",
-        objective: "Lehrplan 4.0.1, Abschnitt 4.4 Erfahrungsbasierte Testverfahren",
+        objective: "Lehrplan 4.0.1, Abschnitt 4.4 Erfahrungsbasierter Test",
         difficulty: "intermediate",
         question:
           "Die Spezifikation einer neuen App ist lückenhaft, und die Zeit ist knapp. Eine erfahrene Testerin entwirft, führt aus und bewertet Tests gleichzeitig und lernt dabei laufend über das Testobjekt hinzu, gesteuert durch eine zeitlich begrenzte Test-Charta. Welches Verfahren wendet sie an?",
@@ -541,18 +541,18 @@ export const istqbCtfl4De: DeContent = {
       {
         id: "ctfl-c4-acceptance-criteria",
         domain: "d4",
-        objective: "Lehrplan 4.0.1, Abschnitt 4.5 Auf Zusammenarbeit basierende Testansätze",
+        objective: "Lehrplan 4.0.1, Abschnitt 4.5.2 Abnahmekriterien",
         difficulty: "intermediate",
-        question: "Welches Format eignet sich laut Lehrplan zum Schreiben von Akzeptanzkriterien für eine User Story?",
+        question: "Welches Format eignet sich laut Lehrplan zum Schreiben von Abnahmekriterien für eine User Story?",
         options: [
-          { id: "A", text: "Ein Kontrollflussgraph des Codes", rationale: "Kontrollflussgraphen dienen dem White-Box-Test, nicht dem Formulieren von Akzeptanzkriterien." },
+          { id: "A", text: "Ein Kontrollflussgraph des Codes", rationale: "Kontrollflussgraphen dienen dem White-Box-Test, nicht dem Formulieren von Abnahmekriterien." },
           { id: "B", text: "Eine Liste der Teststufen", rationale: "Teststufen beschreiben, wo getestet wird, nicht, wann eine Story erfüllt ist." },
           { id: "C", text: "Szenarioorientiert im Format Given/When/Then", rationale: "Richtig. Neben regelorientierten Formaten wie Aufzählungen oder Ein-/Ausgabetabellen sind szenarioorientierte Formate wie Given/When/Then üblich." },
-          { id: "D", text: "Ein Fehlerbericht", rationale: "Ein Fehlerbericht dokumentiert Anomalien, keine Akzeptanzkriterien." },
+          { id: "D", text: "Ein Fehlerbericht", rationale: "Ein Fehlerbericht dokumentiert Anomalien, keine Abnahmekriterien." },
         ],
         answer: "C",
         explanation:
-          "Akzeptanzkriterien legen fest, wann eine User Story aus Sicht der Stakeholder erfüllt ist. Der Lehrplan nennt szenarioorientierte Formate wie Given/When/Then und regelorientierte Formate wie Aufzählungen oder Tabellen mit Ein- und Ausgaben.",
+          "Abnahmekriterien legen fest, wann eine User Story aus Sicht der Stakeholder erfüllt ist. Der Lehrplan nennt szenarioorientierte Formate wie Given/When/Then und regelorientierte Formate wie Aufzählungen oder Tabellen mit Ein- und Ausgaben.",
         reference: SYLLABUS,
       },
 
@@ -667,7 +667,7 @@ export const istqbCtfl4De: DeContent = {
       {
         id: "ctfl-c6-automation-risk",
         domain: "d6",
-        objective: "Lehrplan 4.0.1, Abschnitt 6.2 Nutzen und Risiken der Testautomatisierung",
+        objective: "Lehrplan 4.0.1, Abschnitt 6.2 Nutzen und Risiken von Testautomatisierung",
         difficulty: "foundation",
         question: "Welches der folgenden Risiken wird im Zusammenhang mit Testautomatisierung typischerweise genannt?",
         options: [
