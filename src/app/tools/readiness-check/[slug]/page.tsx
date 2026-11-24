@@ -24,6 +24,9 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     title: l.seoTitle(cert.name),
     description: l.description(cert.name),
     path: readinessPath(slug, locale),
+    // The check pages share ~98% of their text across certifications; keep them out of the
+    // index so they do not dilute the site (Search Console: crawled, not indexed). Links stay followed.
+    noindex: true,
     locale,
     languages: { en: readinessPath(slug, "en"), de: readinessPath(slug, "de") },
   });

@@ -99,9 +99,9 @@ export const irebCpreGuide: ExamGuide = {
     },
   ],
   seo: {
-    title: "IREB CPRE Foundation Level Exam 2026: Syllabus 3.3 & Format",
+    title: "IREB CPRE Foundation Level 2026: Syllabus 3.3, Exam & Training",
     description:
-      "IREB CPRE Foundation Level explained: syllabus 3.3.0 chapter by chapter, 45 questions in 75 minutes, 70% to pass, a six-step study plan and 30 free practice questions.",
+      "Prepare for the IREB CPRE Foundation Level exam: syllabus 3.3.0 chapter by chapter, 45 questions in 75 minutes, 70% to pass, a six-step training plan and 30 free practice questions.",
   },
   published: "2026-10-27",
   updated: "2026-10-27",

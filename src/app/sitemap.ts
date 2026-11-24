@@ -7,7 +7,7 @@ import { deGuidePath, deHubPath, deQuestionsPath, getAllDe } from "@/lib/content
 import { deExamChangesPath, examChangesPath, getExamChanges, lastVerified } from "@/lib/exam-changes";
 import { examChangeDetailPages, examChangeDetailPath } from "@/content/exam-changes/detail-pages";
 import { comparePath } from "@/content/compare";
-import { getAllComparisons, getAllCourseData, glossaryPath, questionsMadePath, readinessPath } from "@/lib/course-data";
+import { getAllComparisons, getAllCourseData, glossaryPath, questionsMadePath } from "@/lib/course-data";
 
 /**
  * sitemap.xml — generated from the certification catalogue.
@@ -80,7 +80,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ...(d.glossary
         ? (["en", "de"] as const).map((l) => ({ url: absoluteUrl(glossaryPath(d.slug, l)), lastModified: d.glossary!.reviewed, changeFrequency: "monthly" as const, priority: 0.6 }))
         : []),
-      ...(d.readiness ? (["en", "de"] as const).map((l) => ({ url: absoluteUrl(readinessPath(d.slug, l)), changeFrequency: "monthly" as const, priority: 0.7 })) : []),
+      // Readiness checks are noindex (near-identical across certifications), so they stay out of the sitemap.
     ]),
     ...getAllComparisons().map((c) => ({ url: absoluteUrl(comparePath(c.id)), lastModified: c.checked, changeFrequency: "monthly" as const, priority: 0.6 })),
     ...getAllComparisons().map((c) => ({ url: absoluteUrl(`/de/vergleich/${c.id}`), lastModified: c.checked, changeFrequency: "monthly" as const, priority: 0.5 })),
