@@ -205,7 +205,7 @@ export const ccna200301De: DeContent = {
       },
     ],
     seo: {
-      title: "CCNA 200-301 Prüfung auf Deutsch: Ablauf, Themen & v2.0",
+      title: "CCNA 200-301 auf Deutsch: Prüfung, Vorbereitung & v2.0 2027",
       description:
         "CCNA 200-301 auf Deutsch vorbereiten: 120 Minuten Prüfungsablauf, alle Domänen mit Gewichtung, was sich mit v2.0 ab 3. Feb. 2027 ändert, Lernplan und 30 kostenlose Übungsfragen.",
     },
