@@ -13,6 +13,8 @@ import { az104De } from "./az-104";
 import { az900De } from "./az-900";
 import { ccna200301De } from "./ccna-200-301";
 import { comptiaSecurityPlusSy0701De } from "./comptia-security-plus-sy0-701";
+import { comptiaAPlusCore1De } from "./comptia-a-plus-core-1-220-1201";
+import { comptiaAPlusCore2De } from "./comptia-a-plus-core-2-220-1202";
 import { iappAigpDe } from "./iapp-aigp";
 import { ipmaLevelDDe } from "./ipma-level-d";
 import { irebCpreDe } from "./ireb-cpre-foundation-level";
@@ -37,6 +39,8 @@ export const deContents: DeContent[] = [
   irebCpreDe,
   istqbCtfl4De,
   awsClfC02De,
+  comptiaAPlusCore1De,
+  comptiaAPlusCore2De,
   sc200De,
   sc300De,
   sc500De,
