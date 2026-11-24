@@ -50,6 +50,40 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       },
       { label: "Official examination format", url: "https://www.prince2.com/usa/prince2-examination-format" },
     ],
+    // Verified 2026-11-24 against the PeopleCert PRINCE2 Project Management Foundation (Version 7) page:
+    // 60 questions, multiple choice, 60 minutes, closed book, 60% to pass, 14 exam languages (listed), renewal every 3 years / 60 CPD points.
+    // PeopleCert publishes no domain weights; the domains below group the learning areas listed on that page
+    // (principles; roles, people management and communication; practices; processes; tailoring and project context).
+    exam: {
+      officialName: "PRINCE2® Project Management Foundation (Version 7)",
+      examVersion: "Version 7",
+      questionCount: "60",
+      duration: "60 minutes",
+      format: "Multiple choice, closed book",
+      passingScore: "60%",
+      languages: [
+        "English", "Chinese", "Czech", "Danish", "Dutch", "French", "German",
+        "Italian", "Japanese", "Norwegian", "Polish", "Portuguese (Brazil)", "Slovak", "Spanish",
+      ],
+      prerequisites: "None. Certification is renewed every 3 years (60 CPD points via PeopleCert Plus, or another exam from the same product suite).",
+      status: "current",
+      officialCertificationUrl: "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-2/PRINCE2-7-foundation-3579",
+      officialExamUrl: "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-2/PRINCE2-7-foundation-3579",
+      domains: [
+        { id: "d1", name: "Principles" },
+        { id: "d2", name: "People: roles, people management and communication" },
+        { id: "d3", name: "Practices" },
+        { id: "d4", name: "Processes" },
+        { id: "d5", name: "Tailoring and project context" },
+      ],
+      sources: [
+        {
+          label: "PeopleCert: PRINCE2 Project Management Foundation (Version 7)",
+          url: "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-2/PRINCE2-7-foundation-3579",
+        },
+      ],
+      lastVerified: "2026-11-24",
+    },
     topics: [
       { title: "Principles", description: "The seven principles every project under the method must follow." },
       { title: "Practices", description: "Business case, organizing, plans, quality, risk, issues and progress." },
