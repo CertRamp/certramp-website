@@ -2566,14 +2566,18 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     description:
       "Practice exams for ISC2 Certified in Cybersecurity (CC), written to the exam outline effective 1 September 2026 (security principles, security governance, IAM concepts, networking and cloud security, and security operations and incident response). The course is available in English and German.",
     fullName: "ISC2 Certified in Cybersecurity",
+    // Re-checked 2026-11-24: the CC exam outline page now lists exam length (2 hours), items (100-125), item format, passing grade (700/1000) and the domain weights; added from there.
     // Verified 2026-11-03 against isc2.org: CC certification page, CC exam outline page (effective date, domains, subdomains), "What's New for Entry-Level Cybersecurity" (6 Aug 2026, body not readable), ISC2 FAQ, CAT format updates article (May 2025), German CC training page, CC languages article (Feb 2023).
-    // CONFLICT: the ISC2 FAQ still lists the OLD five CC domains (e.g. Business Continuity, Disaster Recovery & Incident Response Concepts) and 100-125 items / 2 hours; the outline page effective 1 Sept 2026 lists the NEW domains used here. Item count and duration come from the FAQ and May 2025 article and are not confirmed for the 2026 outline.
-    // REMOVED after re-check: questionCount and duration (100-125 items / 2 hours appear only on the FAQ and May 2025 article, which still describe the old outline; not stated for the 2026 outline), questionTypes, the 9-month application window and Code of Ethics line (not found on a readable official page). Exam languages (five) come from the ISC2 FAQ, which may predate the 2026 outline. Weights could not be read on any ISC2 page.
-    // UNVERIFIED and omitted: domain weights (not on outline page), passing score (ISC2 does not release scores), exam code, question-type detail beyond "multiple-choice and advanced item types".
+    // Note: the ISC2 FAQ and the "topics" list at the top of the outline page still name the OLD domains; the weights table and domain list on the outline page (effective 1 Sept 2026) give the NEW domains used here.
+    // Still omitted: exam code; the 9-month application window and Code of Ethics line (not found on a readable official page).
     exam: {
       officialName: "Certified in Cybersecurity (CC)",
       examVersion: "Exam outline effective 1 September 2026",
+      questionCount: "100-125",
+      duration: "2 hours",
       format: "Computerized adaptive testing (CAT)",
+      passingScore: "700 out of 1000",
+      questionTypes: "Multiple choice and advanced item types",
       languages: ["English", "Simplified Chinese", "German", "Japanese", "Spanish"],
       delivery: "In person only at ISC2-authorized Pearson test centers",
       prerequisites:
@@ -2582,11 +2586,11 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       officialCertificationUrl: "https://www.isc2.org/certifications/cc",
       officialExamUrl: "https://www.isc2.org/certifications/cc/cc-certification-exam-outline",
       domains: [
-        { id: "d1", name: "Security Principles" },
-        { id: "d2", name: "Security Governance" },
-        { id: "d3", name: "Identity And Access Management (IAM) Concepts" },
-        { id: "d4", name: "Networking and Cloud Security Concepts" },
-        { id: "d5", name: "Security Operations and Incident Response" },
+        { id: "d1", name: "Security Principles", weight: "24%" },
+        { id: "d2", name: "Security Governance", weight: "17.3%" },
+        { id: "d3", name: "Identity And Access Management (IAM) Concepts", weight: "20%" },
+        { id: "d4", name: "Networking and Cloud Security Concepts", weight: "21.3%" },
+        { id: "d5", name: "Security Operations and Incident Response", weight: "17.3%" },
       ],
       sources: [
         { label: "ISC2: Certified in Cybersecurity", url: "https://www.isc2.org/certifications/cc" },
@@ -2596,7 +2600,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
         { label: "ISC2: Computerized adaptive testing exam format updates", url: "https://www.isc2.org/Insights/2025/05/computerized-adaptive-testing-examination-format-updates" },
         { label: "ISC2: CC training and exam in German", url: "https://www.isc2.org/training/online-self-paced/german" },
       ],
-      lastVerified: "2026-11-03",
+      lastVerified: "2026-11-24",
     },
     seo: {
       title: "ISC2 CC Practice Exams (English, German)",
