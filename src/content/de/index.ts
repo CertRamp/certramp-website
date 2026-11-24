@@ -15,6 +15,7 @@ import { ccna200301De } from "./ccna-200-301";
 import { comptiaSecurityPlusSy0701De } from "./comptia-security-plus-sy0-701";
 import { comptiaAPlusCore1De } from "./comptia-a-plus-core-1-220-1201";
 import { comptiaAPlusCore2De } from "./comptia-a-plus-core-2-220-1202";
+import { comptiaNetworkPlusDe } from "./comptia-network-plus-n10-009";
 import { iappAigpDe } from "./iapp-aigp";
 import { ipmaLevelDDe } from "./ipma-level-d";
 import { irebCpreDe } from "./ireb-cpre-foundation-level";
@@ -22,6 +23,7 @@ import { awsClfC02De } from "./aws-clf-c02";
 import { isc2CcDe } from "./isc2-cc";
 import { iso27001LeadImplementerDe } from "./iso-27001-lead-implementer";
 import { istqbCtfl4De } from "./istqb-ctfl-4";
+import { prince27FoundationDe } from "./prince2-7-foundation";
 import { sc200De } from "./sc-200";
 import { sc300De } from "./sc-300";
 import { sc500De } from "./sc-500";
@@ -45,6 +47,8 @@ export const deContents: DeContent[] = [
   comptiaAPlusCore2De,
   isc2CcDe,
   iso27001LeadImplementerDe,
+  comptiaNetworkPlusDe,
+  prince27FoundationDe,
   sc200De,
   sc300De,
   sc500De,
