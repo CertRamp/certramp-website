@@ -2,6 +2,7 @@ import Link from "@/components/ui/Link";
 import { Icon, type IconName } from "@/components/ui/Icon";
 import type { ResolvedCertification } from "@/lib/certifications";
 import { getResources } from "@/lib/content";
+import { deGuidePath, deQuestionsPath, getDe } from "@/lib/content-de";
 import { cn } from "@/lib/cn";
 
 type Current = "exam" | "guide" | "questions";
@@ -53,35 +54,60 @@ export function StudyResources({
     body: `${cert.practiceExamCount} full practice exams with rising difficulty, from a diagnostic to beyond exam level.`,
   });
 
+  // On the practice-exam page, also point to the German guide and questions when they exist.
+  const de = current === "exam" ? getDe(cert.slug) : undefined;
+
   return (
-    <ul className={cn("grid gap-4 md:grid-cols-3", className)}>
-      {items
-        .filter((i) => i.key !== current)
-        .map((i) => (
-          <li key={i.key}>
-            <Link
-              href={i.href}
-              className="group flex h-full flex-col rounded-[var(--radius-card)] border border-line bg-white p-6 transition-shadow hover:shadow-[var(--shadow-card)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-500"
-            >
-              <span className="flex size-10 items-center justify-center rounded-xl bg-accent-50 text-accent-600">
-                <Icon name={i.icon} className="size-5" />
-              </span>
-              <span className="mt-4 font-display text-lg font-semibold text-ink">
-                {i.title}
-              </span>
-              <span className="mt-2 flex-1 text-[0.9375rem] leading-relaxed text-muted">
-                {i.body}
-              </span>
-              <span className="mt-4 inline-flex items-center gap-1.5 font-display text-sm font-semibold text-accent-600">
-                Open
-                <Icon
-                  name="arrow-right"
-                  className="size-4 transition-transform group-hover:translate-x-0.5"
-                />
-              </span>
-            </Link>
-          </li>
-        ))}
-    </ul>
+    <div className={className}>
+      <ul className="grid gap-4 md:grid-cols-3">
+        {items
+          .filter((i) => i.key !== current)
+          .map((i) => (
+            <li key={i.key}>
+              <Link
+                href={i.href}
+                className="group flex h-full flex-col rounded-[var(--radius-card)] border border-line bg-white p-6 transition-shadow hover:shadow-[var(--shadow-card)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-500"
+              >
+                <span className="flex size-10 items-center justify-center rounded-xl bg-accent-50 text-accent-600">
+                  <Icon name={i.icon} className="size-5" />
+                </span>
+                <span className="mt-4 font-display text-lg font-semibold text-ink">
+                  {i.title}
+                </span>
+                <span className="mt-2 flex-1 text-[0.9375rem] leading-relaxed text-muted">
+                  {i.body}
+                </span>
+                <span className="mt-4 inline-flex items-center gap-1.5 font-display text-sm font-semibold text-accent-600">
+                  Open
+                  <Icon
+                    name="arrow-right"
+                    className="size-4 transition-transform group-hover:translate-x-0.5"
+                  />
+                </span>
+              </Link>
+            </li>
+          ))}
+      </ul>
+      {de && (
+        <p className="mt-6 text-[0.9375rem] text-muted" lang="de">
+          Auf Deutsch:{" "}
+          <Link
+            href={deGuidePath(cert.slug)}
+            hrefLang="de"
+            className="font-semibold text-accent-600 hover:underline"
+          >
+            {cert.name}-Leitfaden
+          </Link>
+          {" · "}
+          <Link
+            href={deQuestionsPath(cert.slug)}
+            hrefLang="de"
+            className="font-semibold text-accent-600 hover:underline"
+          >
+            {cert.name} Übungsfragen mit Lösungen
+          </Link>
+        </p>
+      )}
+    </div>
   );
 }
