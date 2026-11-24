@@ -22,9 +22,10 @@ export function StudyResources({
   className?: string;
 }) {
   const r = getResources(cert.slug);
-  if (!r.guide && !r.questions) return null;
+  const hasDe = current === "exam" && Boolean(getDe(cert.slug));
+  if (!r.guide && !r.questions && !hasDe) return null;
   const items: {
-    key: Current;
+    key: Current | "de-guide" | "de-questions";
     href: string;
     icon: IconName;
     title: string;
@@ -55,7 +56,27 @@ export function StudyResources({
   });
 
   // On the practice-exam page, also point to the German guide and questions when they exist.
+  // Without English resources the German pages are shown as the cards themselves.
   const de = current === "exam" ? getDe(cert.slug) : undefined;
+  const deAsCards = Boolean(de) && !r.guide && !r.questions;
+  if (de && deAsCards) {
+    items.unshift(
+      {
+        key: "de-guide",
+        href: deGuidePath(cert.slug),
+        icon: "book",
+        title: `${cert.name}: Leitfaden auf Deutsch`,
+        body: "Prüfungsablauf, Kapitel mit Gewichtung, ein Lernplan in sechs Schritten und typische Fehler.",
+      },
+      {
+        key: "de-questions",
+        href: deQuestionsPath(cert.slug),
+        icon: "list",
+        title: `${de.de.questions.questions.length} kostenlose Übungsfragen auf Deutsch`,
+        body: "Eigene Fragen aus allen Kapiteln, jede mit Lösung und einer Erklärung zu jeder Antwortoption.",
+      },
+    );
+  }
 
   return (
     <div className={className}>
@@ -88,7 +109,7 @@ export function StudyResources({
             </li>
           ))}
       </ul>
-      {de && (
+      {de && !deAsCards && (
         <p className="mt-6 text-[0.9375rem] text-muted" lang="de">
           Auf Deutsch:{" "}
           <Link

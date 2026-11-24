@@ -10,8 +10,14 @@ import { PageHero } from "@/components/layout/PageHero";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { FaqList } from "@/components/ui/FaqList";
 import { Section } from "@/components/ui/Section";
-import { deGuidePath, deHubPath, deQuestionsPath, getAllDe, getDe } from "@/lib/content-de";
-import { guidePath } from "@/lib/content";
+import {
+  deGuidePath,
+  deHubPath,
+  deQuestionsPath,
+  getAllDe,
+  getDe,
+} from "@/lib/content-de";
+import { getResources, guidePath } from "@/lib/content";
 import { formatDate } from "@/lib/format";
 import { faqSchema, guideArticleSchema } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
@@ -24,7 +30,11 @@ export function generateStaticParams(): Params[] {
 }
 export const dynamicParams = false;
 
-export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<Params>;
+}): Promise<Metadata> {
   const r = getDe((await params).slug);
   if (!r) return {};
   const { de, name } = r;
@@ -34,18 +44,27 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     path: deGuidePath(de.slug),
     ogType: "article",
     locale: "de",
-    languages: { en: guidePath(de.slug), de: deGuidePath(de.slug) },
+    // Only point to an English counterpart when one exists (some certifications have German content only).
+    languages: getResources(de.slug).guide
+      ? { en: guidePath(de.slug), de: deGuidePath(de.slug) }
+      : { de: deGuidePath(de.slug) },
   });
 }
 
-export default async function DeGuidePage({ params }: { params: Promise<Params> }) {
+export default async function DeGuidePage({
+  params,
+}: {
+  params: Promise<Params>;
+}) {
   const r = getDe((await params).slug);
   if (!r) notFound();
   const { de, cert, name, germanCourse } = r;
   const { guide } = de;
   const path = deGuidePath(de.slug);
   const toc = [
-    ...(guide.whoFor ? [{ id: "fuer-wen", heading: `Für wen ist ${name}?` }] : []),
+    ...(guide.whoFor
+      ? [{ id: "fuer-wen", heading: `Für wen ist ${name}?` }]
+      : []),
     { id: "pruefungsfakten", heading: "Prüfungsfakten" },
     { id: "bereiche", heading: "Prüfungsbereiche" },
     ...guide.sections.map((s) => ({ id: s.id, heading: s.heading })),
@@ -63,13 +82,26 @@ export default async function DeGuidePage({ params }: { params: Promise<Params> 
         intro={<p>{guide.summary}</p>}
       >
         <OutlineBadge cert={cert} lang="de" className="mt-6" />
-        <p className="mt-6 max-w-2xl text-sm text-white/70">{de.languageNote}</p>
+        <p className="mt-6 max-w-2xl text-sm text-white/70">
+          {de.languageNote}
+        </p>
         <p className="mt-3 text-sm text-white/60">
-          Aktualisiert am {formatDate(guide.updated, "de")} · Prüfungsangaben am {formatDate(cert.exam.lastVerified, "de")} anhand
-          offizieller Quellen von {cert.vendorName} geprüft ·{" "}
-          <Link href={guidePath(de.slug)} hrefLang="en" className="underline underline-offset-2 hover:text-white">
-            English version
-          </Link>
+          Aktualisiert am {formatDate(guide.updated, "de")} · Prüfungsangaben am{" "}
+          {formatDate(cert.exam.lastVerified, "de")} anhand offizieller Quellen
+          von {cert.vendorName} geprüft
+          {getResources(de.slug).guide && (
+            <>
+              {" "}
+              ·{" "}
+              <Link
+                href={guidePath(de.slug)}
+                hrefLang="en"
+                className="underline underline-offset-2 hover:text-white"
+              >
+                English version
+              </Link>
+            </>
+          )}
         </p>
       </PageHero>
 
@@ -81,7 +113,10 @@ export default async function DeGuidePage({ params }: { params: Promise<Params> 
               <ol className="mt-4 space-y-2 text-[0.9375rem]">
                 {toc.map((t) => (
                   <li key={t.id}>
-                    <a href={`#${t.id}`} className="text-muted hover:text-ink hover:underline">
+                    <a
+                      href={`#${t.id}`}
+                      className="text-muted hover:text-ink hover:underline"
+                    >
                       {t.heading}
                     </a>
                   </li>
@@ -93,7 +128,12 @@ export default async function DeGuidePage({ params }: { params: Promise<Params> 
           <div className="min-w-0 space-y-16 lg:col-span-9">
             {guide.whoFor && (
               <section aria-labelledby="fuer-wen" className="scroll-mt-24">
-                <h2 id="fuer-wen" className="text-2xl font-semibold sm:text-3xl">Für wen ist {name}?</h2>
+                <h2
+                  id="fuer-wen"
+                  className="text-2xl font-semibold sm:text-3xl"
+                >
+                  Für wen ist {name}?
+                </h2>
                 <ul className="mt-5 list-disc space-y-2 pl-5 leading-relaxed text-body marker:text-accent-500">
                   {guide.whoFor.map((w) => (
                     <li key={w}>{w}</li>
@@ -103,26 +143,55 @@ export default async function DeGuidePage({ params }: { params: Promise<Params> 
             )}
 
             <section aria-labelledby="pruefungsfakten" className="scroll-mt-24">
-              <h2 id="pruefungsfakten" className="text-2xl font-semibold sm:text-3xl">{name}: Prüfungsfakten</h2>
-              {cert.exam.officialName && <p className="mt-3 text-muted">{cert.exam.officialName} ({cert.vendorName})</p>}
+              <h2
+                id="pruefungsfakten"
+                className="text-2xl font-semibold sm:text-3xl"
+              >
+                {name}: Prüfungsfakten
+              </h2>
+              {cert.exam.officialName && (
+                <p className="mt-3 text-muted">
+                  {cert.exam.officialName} ({cert.vendorName})
+                </p>
+              )}
               <div className="mt-6">
-                <ExamFactsList facts={de.facts} sources={cert.exam.sources} lastVerified={cert.exam.lastVerified} locale="de" />
+                <ExamFactsList
+                  facts={de.facts}
+                  sources={cert.exam.sources}
+                  lastVerified={cert.exam.lastVerified}
+                  locale="de"
+                />
               </div>
             </section>
 
             <section aria-labelledby="bereiche" className="scroll-mt-24">
-              <h2 id="bereiche" className="text-2xl font-semibold sm:text-3xl">Die {de.domains.length} Prüfungsbereiche</h2>
+              <h2 id="bereiche" className="text-2xl font-semibold sm:text-3xl">
+                Die {de.domains.length} Prüfungsbereiche
+              </h2>
               <p className="mt-3 leading-relaxed text-muted">
-                Bereiche nach der offiziellen Prüfungsgliederung von {cert.vendorName}
-                {de.domains.some((d) => d.weight) ? ", mit offizieller Gewichtung" : ""}.
+                Bereiche nach der offiziellen Prüfungsgliederung von{" "}
+                {cert.vendorName}
+                {de.domains.some((d) => d.weight)
+                  ? ", mit offizieller Gewichtung"
+                  : ""}
+                .
               </p>
               <ol className="mt-6 space-y-4">
                 {de.domains.map((d, i) => (
-                  <li key={d.id} className="rounded-[var(--radius-card)] border border-line bg-white p-6">
+                  <li
+                    key={d.id}
+                    className="rounded-[var(--radius-card)] border border-line bg-white p-6"
+                  >
                     <h3 className="flex flex-wrap items-baseline gap-x-3 text-lg font-semibold">
-                      <span className="font-display text-sm text-accent-600">Bereich {i + 1}</span>
+                      <span className="font-display text-sm text-accent-600">
+                        Bereich {i + 1}
+                      </span>
                       {d.name}
-                      {d.weight && <span className="text-sm font-medium text-muted">{d.weight}</span>}
+                      {d.weight && (
+                        <span className="text-sm font-medium text-muted">
+                          {d.weight}
+                        </span>
+                      )}
                     </h3>
                     {d.objectives && (
                       <ul className="mt-3 grid gap-1.5 text-[0.9375rem] leading-relaxed text-body">
@@ -137,8 +206,14 @@ export default async function DeGuidePage({ params }: { params: Promise<Params> 
             </section>
 
             {guide.sections.map((s) => (
-              <section key={s.id} aria-labelledby={s.id} className="scroll-mt-24">
-                <h2 id={s.id} className="text-2xl font-semibold sm:text-3xl">{s.heading}</h2>
+              <section
+                key={s.id}
+                aria-labelledby={s.id}
+                className="scroll-mt-24"
+              >
+                <h2 id={s.id} className="text-2xl font-semibold sm:text-3xl">
+                  {s.heading}
+                </h2>
                 {s.paragraphs?.map((p) => (
                   <p key={p} className="mt-4 leading-relaxed text-body">
                     {p}
@@ -154,10 +229,19 @@ export default async function DeGuidePage({ params }: { params: Promise<Params> 
                 {s.steps && (
                   <ol className="mt-6 grid gap-4 sm:grid-cols-2">
                     {s.steps.map((st, i) => (
-                      <li key={st.title} className="rounded-[var(--radius-card)] border border-line bg-white p-6">
-                        <span className="font-display text-sm font-semibold text-accent-600">Schritt {i + 1}</span>
-                        <h3 className="mt-2 text-lg font-semibold">{st.title}</h3>
-                        <p className="mt-2 text-[0.9375rem] leading-relaxed text-muted">{st.body}</p>
+                      <li
+                        key={st.title}
+                        className="rounded-[var(--radius-card)] border border-line bg-white p-6"
+                      >
+                        <span className="font-display text-sm font-semibold text-accent-600">
+                          Schritt {i + 1}
+                        </span>
+                        <h3 className="mt-2 text-lg font-semibold">
+                          {st.title}
+                        </h3>
+                        <p className="mt-2 text-[0.9375rem] leading-relaxed text-muted">
+                          {st.body}
+                        </p>
                       </li>
                     ))}
                   </ol>
@@ -165,13 +249,20 @@ export default async function DeGuidePage({ params }: { params: Promise<Params> 
               </section>
             ))}
 
-            <section aria-labelledby="jetzt-testen" className="rounded-[1.5rem] bg-navy-900 p-8 text-white sm:p-10">
-              <h2 id="jetzt-testen" className="text-2xl font-semibold text-white sm:text-3xl">
+            <section
+              aria-labelledby="jetzt-testen"
+              className="rounded-[1.5rem] bg-navy-900 p-8 text-white sm:p-10"
+            >
+              <h2
+                id="jetzt-testen"
+                className="text-2xl font-semibold text-white sm:text-3xl"
+              >
                 Jetzt testen
               </h2>
               <p className="mt-3 max-w-2xl leading-relaxed text-white/70">
-                {de.questions.questions.length} kostenlose, eigene Übungsfragen zu {name}, jede mit Lösung und einer Erklärung zu
-                jeder Antwortoption.
+                {de.questions.questions.length} kostenlose, eigene Übungsfragen
+                zu {name}, jede mit Lösung und einer Erklärung zu jeder
+                Antwortoption.
               </p>
               <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                 <Link
@@ -180,11 +271,21 @@ export default async function DeGuidePage({ params }: { params: Promise<Params> 
                 >
                   Kostenlose Übungsfragen
                 </Link>
-                <UdemyCta cert={cert} course={germanCourse} variant="inverse-outline" location="de-guide" label="Komplette Übungsprüfungen auf Udemy" />
+                <UdemyCta
+                  cert={cert}
+                  course={germanCourse}
+                  variant="inverse-outline"
+                  location="de-guide"
+                  label="Komplette Übungsprüfungen auf Udemy"
+                />
               </div>
               <p className="mt-4 text-sm text-white/70">
                 Aufbau und Schwierigkeit aller {cert.practiceExamCount} Tests:{" "}
-                <Link href={cert.path} hrefLang="en" className="font-semibold text-white underline underline-offset-2 hover:text-accent-50">
+                <Link
+                  href={cert.path}
+                  hrefLang="en"
+                  className="font-semibold text-white underline underline-offset-2 hover:text-accent-50"
+                >
                   {name} Übungsprüfungen im Überblick
                 </Link>{" "}
                 (Seite auf Englisch)
@@ -192,7 +293,9 @@ export default async function DeGuidePage({ params }: { params: Promise<Params> 
             </section>
 
             <section aria-labelledby="faq" className="scroll-mt-24">
-              <h2 id="faq" className="text-2xl font-semibold sm:text-3xl">Häufige Fragen zur {name}-Prüfung</h2>
+              <h2 id="faq" className="text-2xl font-semibold sm:text-3xl">
+                Häufige Fragen zur {name}-Prüfung
+              </h2>
               <div className="mt-6">
                 <FaqList items={guide.faq} />
               </div>
@@ -201,7 +304,12 @@ export default async function DeGuidePage({ params }: { params: Promise<Params> 
         </div>
       </Section>
 
-      <AuthorSection lang="de" tone="surface" certSlug={cert.slug} location="de-guide" />
+      <AuthorSection
+        lang="de"
+        tone="surface"
+        certSlug={cert.slug}
+        location="de-guide"
+      />
 
       <section aria-label="Hinweis" className="bg-white py-14">
         <div className="container-page">
