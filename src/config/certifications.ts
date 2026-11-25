@@ -4220,9 +4220,34 @@ export const certificationDetails: Record<string, CertificationDetails> = {
   },
   "snowpro-core-cof-c03": {
     description:
-      "600 practice questions in six practice tests for Snowflake SnowPro Core (COF-C03), the successor of COF-C02, covering Snowflake architecture, account access and security, data loading and transformation, performance and cost, and data sharing. Find your gaps before the real exam, with an explanation for every answer option.",
+      "600 practice questions in six practice tests for Snowflake SnowPro Core (COF-C03), the successor of COF-C02, covering all five domains: features and architecture, account management and governance, data loading and connectivity, performance and transformation, and data collaboration. Find your gaps before the real exam, with an explanation for every answer option.",
     fullName: "Snowflake SnowPro Core Certification (COF-C03)",
-    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    // Added 2026-11-25 for a newly published Udemy course. Exam facts verified 2026-11-25 against the Snowflake SnowPro Core (COF-C03) certification page on learn.snowflake.com (Exam Details tab).
+    exam: {
+      officialName: "SnowPro Core Certification",
+      examCode: "COF-C03",
+      examVersion: "COF-C03 (replaced COF-C02; English launch 16 February 2026)",
+      questionCount: "100",
+      duration: "115 minutes",
+      passingScore: "750 (scaled score 0-1000)",
+      questionTypes: "Multiple choice and multiple select; may include unscored items",
+      languages: ["English", "Japanese", "Korean", "French", "Spanish"],
+      delivery: "Online proctoring or onsite testing centers",
+      prerequisites: "No prerequisites. Snowflake describes the candidate as having 6 or more months of experience using Snowflake.",
+      status: "current",
+      officialCertificationUrl: "https://learn.snowflake.com/en/certifications/snowpro-core-c03/",
+      domains: [
+        { id: "d1", name: "Snowflake AI Data Cloud Features & Architecture", weight: "31%" },
+        { id: "d2", name: "Account Management and Data Governance", weight: "20%" },
+        { id: "d3", name: "Data Loading, Unloading, and Connectivity", weight: "18%" },
+        { id: "d4", name: "Performance Optimization, Querying, and Transformation", weight: "21%" },
+        { id: "d5", name: "Data Collaboration", weight: "10%" },
+      ],
+      sources: [
+        { label: "Snowflake: SnowPro Core Certification (COF-C03)", url: "https://learn.snowflake.com/en/certifications/snowpro-core-c03/" },
+      ],
+      lastVerified: "2026-11-25",
+    },
     seo: {
       title: "COF-C03 Practice Exams: SnowPro Core",
       description: "600 practice questions in six timed tests for Snowflake SnowPro Core (COF-C03), with an explanation for every answer option.",
@@ -4322,7 +4347,29 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     description:
       "360 practice questions in six practice tests for Microsoft AZ-401, the agentic DevOps successor of AZ-400, covering DevOps processes, source control, pipelines, security and compliance, and AI agents in the delivery workflow. Find your gaps before the real exam, with an explanation for every answer option.",
     fullName: "Microsoft AZ-401: Agentic DevOps",
-    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    // Added 2026-11-25 for a newly published Udemy course. Exam facts verified 2026-11-25 against the Microsoft Learn AZ-401 study guide and the Microsoft Skills Hub blog (15 Oct 2026, updated 16 Oct).
+    // AZ-401 was in beta at the time of reading; the blog announces general availability in December 2026. Duration and question count not stated, so omitted.
+    exam: {
+      officialName: "Exam AZ-401: Designing and Implementing Microsoft Agentic DevOps Solutions",
+      examCode: "AZ-401",
+      examVersion: "Beta exam (general availability announced for December 2026)",
+      passingScore: "700 or greater",
+      prerequisites: "For Microsoft Certified: Agentic DevOps Engineer Expert you must also pass Exam GH-300 (GitHub Copilot) or Exam AZ-104 (Microsoft Azure Administrator).",
+      status: "current",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401",
+      domains: [
+        { id: "d1", name: "Design and implement processes and communications", weight: "15–20%" },
+        { id: "d2", name: "Design and implement a source control strategy", weight: "10–15%" },
+        { id: "d3", name: "Design and implement build and release pipelines", weight: "35–40%" },
+        { id: "d4", name: "Design and implement a security and compliance plan", weight: "15–20%" },
+        { id: "d5", name: "Implement an instrumentation strategy", weight: "15–20%" },
+      ],
+      sources: [
+        { label: "Microsoft Learn: AZ-401 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401" },
+        { label: "Microsoft Skills Hub blog: Agentic DevOps Engineer Expert (AZ-401)", url: "https://techcommunity.microsoft.com/blog/skills-hub-blog/new-microsoft-certified-agentic-devops-engineer-expert/4528356" },
+      ],
+      lastVerified: "2026-11-25",
+    },
     seo: {
       title: "AZ-401 Practice Exams: Agentic DevOps",
       description: "360 practice questions in six timed tests for Microsoft AZ-401 (Agentic DevOps, ex AZ-400), with an explanation for every answer option.",
@@ -4332,7 +4379,32 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     description:
       "360 practice questions in six practice tests for Microsoft AZ-400 (DevOps Engineer Expert), covering processes and communication, source control, build and release pipelines, security and compliance, and instrumentation. Find your gaps before the real exam, with an explanation for every answer option.",
     fullName: "Microsoft Certified: DevOps Engineer Expert (AZ-400)",
-    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    // Added 2026-11-25 for a newly published Udemy course. Exam facts verified 2026-11-25 against the Microsoft Learn AZ-400 study guide and exam page and the Microsoft Skills Hub blog (15 Oct 2026).
+    // Retirement: the study guide and the blog say the exam, the DevOps Engineer Expert certification and renewals retire on 1 February 2027 (successor AZ-401); the exam page still shows "Retirement date: none".
+    // Duration and question count are not stated on the pages read, so omitted.
+    exam: {
+      officialName: "Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions",
+      examCode: "AZ-400",
+      examVersion: "Skills measured as of 27 July 2026",
+      passingScore: "700 or greater",
+      languages: ["English", "Japanese", "Chinese (Simplified)", "Korean", "German", "French", "Spanish", "Portuguese (Brazil)", "Chinese (Traditional)", "Italian"],
+      status: "retiring",
+      retirementDate: "2027-02-01",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/exams/az-400/",
+      domains: [
+        { id: "d1", name: "Design and implement processes and communications", weight: "10–15%" },
+        { id: "d2", name: "Design and implement a source control strategy", weight: "10–15%" },
+        { id: "d3", name: "Design and implement build and release pipelines", weight: "50–55%" },
+        { id: "d4", name: "Develop a security and compliance plan", weight: "10–15%" },
+        { id: "d5", name: "Implement an instrumentation strategy", weight: "5–10%" },
+      ],
+      sources: [
+        { label: "Microsoft Learn: AZ-400 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400" },
+        { label: "Microsoft Learn: Exam AZ-400", url: "https://learn.microsoft.com/en-us/credentials/certifications/exams/az-400/" },
+        { label: "Microsoft Skills Hub blog: Agentic DevOps Engineer Expert (AZ-401)", url: "https://techcommunity.microsoft.com/blog/skills-hub-blog/new-microsoft-certified-agentic-devops-engineer-expert/4528356" },
+      ],
+      lastVerified: "2026-11-25",
+    },
     seo: {
       title: "AZ-400 Practice Exams: DevOps Engineer Expert",
       description: "360 practice questions in six timed tests for Microsoft AZ-400 (DevOps Engineer Expert), with an explanation for every answer option.",
@@ -4382,7 +4454,18 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     description:
       "720 practice questions in six practice tests for the PMI-CPMAI exam, covering running AI projects with the CPMAI methodology, from business understanding and data to model evaluation and operationalisation. Find your gaps before the real exam, with an explanation for every answer option.",
     fullName: "PMI Certified Professional in Managing AI (PMI-CPMAI)",
-    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    // Added 2026-11-25 for a newly published Udemy course. Exam length and time verified 2026-11-25 on the PMI-CPMAI product page on pmi.org. Domains and weights are in the Exam Content Outline PDF, which was not downloaded, so omitted.
+    exam: {
+      officialName: "PMI Certified Professional in Managing AI (PMI-CPMAI)",
+      questionCount: "120",
+      duration: "160 minutes",
+      status: "current",
+      officialCertificationUrl: "https://www.pmi.org/shop/p-/digital-product/cognitive-project-management-in-ai-(cpmai)-v7---training-,-a-,-certification/cpmai-b-01",
+      sources: [
+        { label: "PMI: PMI-CPMAI certification and exam", url: "https://www.pmi.org/shop/p-/digital-product/cognitive-project-management-in-ai-(cpmai)-v7---training-,-a-,-certification/cpmai-b-01" },
+      ],
+      lastVerified: "2026-11-25",
+    },
     seo: {
       title: "PMI-CPMAI Practice Exams",
       description: "720 practice questions in six timed tests for the PMI-CPMAI exam, with an explanation for every answer option.",
@@ -4402,7 +4485,25 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     description:
       "360 practice questions in six practice tests for Microsoft DP-700 (Fabric Data Engineer Associate), the successor of DP-203, covering implementing and managing analytics solutions, ingesting and transforming data, and monitoring and optimising Microsoft Fabric. Find your gaps before the real exam, with an explanation for every answer option.",
     fullName: "Microsoft Certified: Fabric Data Engineer Associate (DP-700)",
-    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    // Added 2026-11-25 for a newly published Udemy course. Exam facts verified 2026-11-25 against the Microsoft Learn DP-700 study guide and exam page (100 minutes). Languages and question count not read, so omitted.
+    exam: {
+      officialName: "Exam DP-700: Implementing Data Engineering Solutions Using Microsoft Fabric",
+      examCode: "DP-700",
+      duration: "100 minutes",
+      passingScore: "700 or greater",
+      status: "current",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-700/",
+      domains: [
+        { id: "d1", name: "Implement and manage an analytics solution", weight: "30–35%" },
+        { id: "d2", name: "Ingest and transform data", weight: "30–35%" },
+        { id: "d3", name: "Monitor and optimize an analytics solution", weight: "30–35%" },
+      ],
+      sources: [
+        { label: "Microsoft Learn: DP-700 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700" },
+        { label: "Microsoft Learn: Exam DP-700", url: "https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-700/" },
+      ],
+      lastVerified: "2026-11-25",
+    },
     seo: {
       title: "DP-700 Practice Tests: Fabric Data Engineer",
       description: "360 practice questions in six timed tests for Microsoft DP-700 (Fabric Data Engineer Associate), with an explanation for every answer option.",
