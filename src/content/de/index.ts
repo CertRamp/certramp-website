@@ -25,6 +25,7 @@ import { iso27001LeadImplementerDe } from "./iso-27001-lead-implementer";
 import { istqbCtfl4De } from "./istqb-ctfl-4";
 import { prince27FoundationDe } from "./prince2-7-foundation";
 import { comptiaSecAiPlusDe } from "./comptia-secai-plus-cy0-001";
+import { istqbCtAiDe } from "./istqb-ct-ai";
 import { ab730De } from "./ab-730";
 import { ab900De } from "./ab-900";
 import { awsAifC01De } from "./aws-aif-c01";
@@ -59,6 +60,7 @@ export const deContents: DeContent[] = [
   ab900De,
   ab730De,
   comptiaSecAiPlusDe,
+  istqbCtAiDe,
   sc200De,
   sc300De,
   sc500De,
