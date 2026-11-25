@@ -4307,7 +4307,20 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     description:
       "900 practice questions in six practice tests for the ASCM Certified Supply Chain Professional (CSCP) exam, covering supply chain design, planning and execution, and supply chain improvement. Find your gaps before the real exam, with an explanation for every answer option.",
     fullName: "ASCM Certified Supply Chain Professional (CSCP)",
-    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    // Added 2026-11-25 for a newly published Udemy course. Exam facts verified 2026-11-25 against ascm.org (CSCP page and Exam Details page).
+    exam: {
+      officialName: "APICS Certified Supply Chain Professional (CSCP)",
+      questionCount: "150 (130 operational, 20 pretest)",
+      duration: "3.5 hours",
+      passingScore: "300 or above (score range 200-350)",
+      status: "current",
+      officialCertificationUrl: "https://www.ascm.org/cscp",
+      sources: [
+        { label: "ASCM: Certified Supply Chain Professional (CSCP)", url: "https://ascm.org/cscp" },
+        { label: "ASCM: Exam details and scoring", url: "https://www.ascm.org/learning-development/certifications-credentials/exam-details" },
+      ],
+      lastVerified: "2026-11-25",
+    },
     seo: {
       title: "CSCP Practice Exams (ASCM)",
       description: "900 practice questions in six timed tests for the ASCM Certified Supply Chain Professional (CSCP) exam, with an explanation for every answer option.",
@@ -4317,7 +4330,24 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     description:
       "240 practice questions in six practice tests for the iSAQB CPSA-F exam, in English and German, covering software architecture basics, design and development, describing and communicating architectures, and quality and evaluation. Find your gaps before the real exam, with an explanation for every answer option.",
     fullName: "iSAQB Certified Professional for Software Architecture, Foundation Level (CPSA-F)",
-    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    // Added 2026-11-25 for a newly published Udemy course. Exam facts verified 2026-11-25 against isaqb.org (Foundation Level exam page and FAQ) and the iSAQB CPSA-F Examination Guide (public.isaqb.org).
+    exam: {
+      officialName: "iSAQB Certified Professional for Software Architecture, Foundation Level (CPSA-F)",
+      questionCount: "About 40 (randomly drawn; questions are worth 1 or 2 points)",
+      duration: "75 minutes (plus 15 minutes if taken in a foreign language)",
+      format: "Multiple-choice exam",
+      passingScore: "At least 60% of the achievable points",
+      delivery: "Through independent certification bodies licensed by iSAQB",
+      prerequisites: "None formally; an accredited training is recommended but not required. The certification is valid for life.",
+      status: "current",
+      officialCertificationUrl: "https://isaqb.org/certifications/cpsa-foundation-level-examinations",
+      sources: [
+        { label: "iSAQB: Foundation Level exam", url: "https://isaqb.org/certifications/cpsa-foundation-level-examinations" },
+        { label: "iSAQB: How the CPSA-F exam works (FAQ)", url: "https://isaqb.org/faq-articles/20-how-does-the-certification-examination-for-cpsa-f-foundation-level-work" },
+        { label: "iSAQB: CPSA-F Examination Guide (PDF)", url: "https://public.isaqb.org/examination-foundation/examination_guide/Examination-Guide-EN.pdf" },
+      ],
+      lastVerified: "2026-11-25",
+    },
     seo: {
       title: "CPSA-F Practice Exams: iSAQB Software Architecture",
       description: "240 practice questions in six timed tests for the iSAQB CPSA-F exam, with an explanation for every answer option.",
@@ -4414,7 +4444,23 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     description:
       "360 practice questions in six practice tests for the Google Cloud Professional Machine Learning Engineer exam, covering designing, building, deploying and monitoring ML and generative AI solutions on Google Cloud. Find your gaps before the real exam, with an explanation for every answer option.",
     fullName: "Google Cloud Professional Machine Learning Engineer",
-    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    // Added 2026-11-25 for a newly published Udemy course. Exam facts verified 2026-11-25 against the Google Cloud certification page (English). Domains and weights are in the exam guide, which was not read, so omitted.
+    // Google notes the exam was updated for the move from Vertex AI to Gemini Enterprise Agent Platform and changes to the data and analytics stack.
+    exam: {
+      officialName: "Professional Machine Learning Engineer",
+      questionCount: "50-60",
+      duration: "2 hours",
+      format: "Multiple choice",
+      languages: ["English", "Japanese"],
+      delivery: "Online-proctored from a remote location or onsite-proctored at a testing center",
+      prerequisites: "None. Google recommends 3+ years of industry experience including 1 or more years designing and managing solutions using Google Cloud. Certification valid for 2 years.",
+      status: "current",
+      officialCertificationUrl: "https://cloud.google.com/learn/certification/machine-learning-engineer",
+      sources: [
+        { label: "Google Cloud: Professional Machine Learning Engineer certification", url: "https://cloud.google.com/learn/certification/machine-learning-engineer" },
+      ],
+      lastVerified: "2026-11-25",
+    },
     seo: {
       title: "Google Cloud PMLE Practice Exams",
       description: "360 practice questions in six timed tests for the Google Cloud Professional Machine Learning Engineer exam, with an explanation for every answer option.",
@@ -4444,7 +4490,23 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     description:
       "360 practice questions in six practice tests for the Google Cloud Professional Cloud DevOps Engineer exam, covering site reliability engineering, CI/CD pipelines, observability and optimising service performance on Google Cloud. Find your gaps before the real exam, with an explanation for every answer option.",
     fullName: "Google Cloud Professional Cloud DevOps Engineer",
-    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    // Added 2026-11-25 for a newly published Udemy course. Exam facts verified 2026-11-25 against the Google Cloud certification page (English). Domains and weights are in the exam guide, which was not read, so omitted.
+    // Google notes an updated exam from 23 November 2026 (AI-assisted practices, agent operations, current infrastructure and CI/CD tooling) with a new exam guide.
+    exam: {
+      officialName: "Professional Cloud DevOps Engineer",
+      questionCount: "50-60",
+      duration: "2 hours",
+      format: "Multiple choice",
+      languages: ["English", "Japanese"],
+      delivery: "Online-proctored from a remote location or onsite-proctored at a testing center",
+      prerequisites: "None. Google recommends 3+ years of industry experience including 1+ years designing and managing production systems using Google Cloud. Certification valid for 2 years.",
+      status: "current",
+      officialCertificationUrl: "https://cloud.google.com/learn/certification/cloud-devops-engineer",
+      sources: [
+        { label: "Google Cloud: Professional Cloud DevOps Engineer certification", url: "https://cloud.google.com/learn/certification/cloud-devops-engineer" },
+      ],
+      lastVerified: "2026-11-25",
+    },
     seo: {
       title: "Google Cloud DevOps Engineer Practice Exams",
       description: "360 practice questions in six timed tests for the Google Cloud Professional Cloud DevOps Engineer exam, with an explanation for every answer option.",
@@ -4475,7 +4537,28 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     description:
       "360 practice questions in six practice tests for Microsoft DP-300 (Azure Database Administrator Associate), covering planning, securing, monitoring, optimising and automating Azure SQL databases, and high availability and disaster recovery. Find your gaps before the real exam, with an explanation for every answer option.",
     fullName: "Microsoft Certified: Azure Database Administrator Associate (DP-300)",
-    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    // Added 2026-11-25 for a newly published Udemy course. Exam facts verified 2026-11-25 against the Microsoft Learn DP-300 study guide and exam/certification page (100 minutes). Languages not read, so omitted.
+    exam: {
+      officialName: "Exam DP-300: Administering Microsoft Azure SQL Solutions",
+      examCode: "DP-300",
+      examVersion: "Skills measured as of 27 October 2026",
+      duration: "100 minutes",
+      passingScore: "700 or greater",
+      status: "current",
+      officialCertificationUrl: "https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/",
+      domains: [
+        { id: "d1", name: "Plan and implement data platform resources", weight: "15–20%" },
+        { id: "d2", name: "Implement a secure environment", weight: "20–25%" },
+        { id: "d3", name: "Monitor, configure, and optimize database resources", weight: "20–25%" },
+        { id: "d4", name: "Configure and manage automation of tasks", weight: "15–20%" },
+        { id: "d5", name: "Plan and configure a high availability and disaster recovery (HA/DR) environment", weight: "20–25%" },
+      ],
+      sources: [
+        { label: "Microsoft Learn: DP-300 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300" },
+        { label: "Microsoft Learn: Azure Database Administrator Associate", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/" },
+      ],
+      lastVerified: "2026-11-25",
+    },
     seo: {
       title: "DP-300 Practice Tests: Azure Database Administrator",
       description: "360 practice questions in six timed tests for Microsoft DP-300 (Azure Database Administrator Associate), with an explanation for every answer option.",
