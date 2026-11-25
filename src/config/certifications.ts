@@ -3349,7 +3349,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
   },
   "ab-900": {
     description:
-      "German-language practice exams for Microsoft AB-900 (Copilot and Agent Administration Fundamentals): Microsoft 365 basics, Purview, and Copilot and agent admin. The English exam had a minor update on 14 October 2026; German follows about eight weeks later.",
+      "English and German practice exams for Microsoft AB-900 (Copilot and Agent Administration Fundamentals): Microsoft 365 basics, Purview, and Copilot and agent admin. The English exam had a minor update on 14 October 2026; German follows about eight weeks later.",
     fullName: "Microsoft 365 Certified: Copilot and Agent Administration Fundamentals",
     // Verified 2026-11-04 against the Microsoft Learn AB-900 study guide, AB-900 exam page and Copilot and Agent Administration Fundamentals certification page.
     // Status: no retirement or replacement notice on the official pages. English version updated 14 Oct 2026 (change log: minor change to "Identify the core security features of Microsoft 365 services"). Localized versions (incl. German) are updated approximately eight weeks after the English version, so the German exam may follow the previous outline until about early December 2026.
@@ -3408,8 +3408,8 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       lastVerified: "2026-11-04",
     },
     seo: {
-      title: "AB-900 Practice Exams (German): Copilot Admin",
-      description: "German-language AB-900 practice exams: Microsoft 365 core features, Purview data protection, oversharing, and Copilot and agent administration.",
+      title: "AB-900 Practice Exams: Copilot and Agent Admin",
+      description: "AB-900 practice exams in English and German: Microsoft 365 core features, Purview data protection, oversharing, and Copilot and agent administration.",
     },
   },
   "github-copilot-gh-300": {
@@ -4216,6 +4216,196 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     seo: {
       title: "AB-730 Practice Exams: AI Business Professional (2026)",
       description: "AB-730 practice exams in English and German for the 20 October 2026 outline: Copilot prompts, content, prebuilt agents and Cowork.",
+    },
+  },
+  "snowpro-core-cof-c03": {
+    description:
+      "600 practice questions in six practice tests for Snowflake SnowPro Core (COF-C03), the successor of COF-C02, covering Snowflake architecture, account access and security, data loading and transformation, performance and cost, and data sharing. Find your gaps before the real exam, with an explanation for every answer option.",
+    fullName: "Snowflake SnowPro Core Certification (COF-C03)",
+    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    seo: {
+      title: "COF-C03 Practice Exams: SnowPro Core",
+      description: "600 practice questions in six timed tests for Snowflake SnowPro Core (COF-C03), with an explanation for every answer option.",
+    },
+  },
+  "iso-9001-2026-transition": {
+    description:
+      "240 practice questions in six practice tests for the PECB ISO 9001:2026 Transition exam, covering the changes from ISO 9001:2015 to the 2026 edition of the quality management system standard and how to carry them into an existing QMS. Find your gaps before the real exam, with an explanation for every answer option.",
+    fullName: "PECB ISO 9001:2026 Transition",
+    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    seo: {
+      title: "ISO 9001:2026 Transition Mock Exams (PECB)",
+      description: "240 practice questions in six timed tests for the PECB ISO 9001:2026 Transition exam, with an explanation for every answer option.",
+    },
+  },
+  "iatf-16949-auditor": {
+    description:
+      "198 practice questions in six practice tests for IATF 16949 internal and supplier auditor training exams, covering automotive quality management requirements, core tools and audit practice for internal and supplier audits. Find your gaps before the real exam, with an explanation for every answer option.",
+    fullName: "IATF 16949 Internal and Supplier Auditor",
+    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    seo: {
+      title: "IATF 16949 Auditor Practice Exams",
+      description: "198 practice questions in six timed tests for IATF 16949 internal and supplier auditor training exams, with an explanation for every answer option.",
+    },
+  },
+  "togaf-10-practitioner-ogea-102": {
+    description:
+      "48 practice questions in six practice tests for the TOGAF Enterprise Architecture Part 2 exam (OGEA-102) from The Open Group, covering scenario-based questions on applying the TOGAF Standard, 10th Edition. Find your gaps before the real exam, with an explanation for every answer option.",
+    fullName: "TOGAF Enterprise Architecture Practitioner (OGEA-102)",
+    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    seo: {
+      title: "OGEA-102 Practice Exams: TOGAF 10 Practitioner",
+      description: "48 practice questions in six timed tests for the TOGAF Enterprise Architecture Part 2 exam (OGEA-102) from The Open Group.",
+    },
+  },
+  "iso-14001-lead-auditor": {
+    description:
+      "480 practice questions in six practice tests for ISO 14001 lead auditor exams, updated for the 2026 edition of the standard, covering environmental management system requirements and how to plan, conduct and report an EMS audit. Find your gaps before the real exam, with an explanation for every answer option.",
+    fullName: "ISO 14001 Lead Auditor",
+    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    seo: {
+      title: "ISO 14001 Lead Auditor Mock Exams",
+      description: "480 practice questions in six timed tests for ISO 14001 lead auditor exams, with an explanation for every answer option.",
+    },
+  },
+  "iso-13485-lead-auditor": {
+    description:
+      "480 practice questions in six practice tests for ISO 13485 lead auditor exams for medical device quality management systems, covering ISO 13485 requirements, risk-based thinking for medical devices and the audit process from planning to reporting. Find your gaps before the real exam, with an explanation for every answer option.",
+    fullName: "ISO 13485 Lead Auditor",
+    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    seo: {
+      title: "ISO 13485 Lead Auditor Practice Exams",
+      description: "480 practice questions in six timed tests for ISO 13485 lead auditor exams for medical device quality management systems.",
+    },
+  },
+  "ascm-cscp": {
+    description:
+      "900 practice questions in six practice tests for the ASCM Certified Supply Chain Professional (CSCP) exam, covering supply chain design, planning and execution, and supply chain improvement. Find your gaps before the real exam, with an explanation for every answer option.",
+    fullName: "ASCM Certified Supply Chain Professional (CSCP)",
+    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    seo: {
+      title: "CSCP Practice Exams (ASCM)",
+      description: "900 practice questions in six timed tests for the ASCM Certified Supply Chain Professional (CSCP) exam, with an explanation for every answer option.",
+    },
+  },
+  "isaqb-cpsa-f": {
+    description:
+      "240 practice questions in six practice tests for the iSAQB CPSA-F exam, in English and German, covering software architecture basics, design and development, describing and communicating architectures, and quality and evaluation. Find your gaps before the real exam, with an explanation for every answer option.",
+    fullName: "iSAQB Certified Professional for Software Architecture, Foundation Level (CPSA-F)",
+    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    seo: {
+      title: "CPSA-F Practice Exams: iSAQB Software Architecture",
+      description: "240 practice questions in six timed tests for the iSAQB CPSA-F exam, with an explanation for every answer option.",
+    },
+  },
+  "iso-9001-lead-auditor": {
+    description:
+      "480 practice questions in six practice tests for ISO 9001 lead auditor exams, updated for the 2026 edition of the standard, covering quality management system requirements and how to plan, conduct and report a QMS audit. Find your gaps before the real exam, with an explanation for every answer option.",
+    fullName: "ISO 9001 Lead Auditor",
+    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    seo: {
+      title: "ISO 9001 Lead Auditor Practice Exams",
+      description: "480 practice questions in six timed tests for ISO 9001 lead auditor exams, with an explanation for every answer option.",
+    },
+  },
+  "claude-certified-architect-ccar-p": {
+    description:
+      "420 practice questions in six practice tests for the Claude Certified Architect: Professional exam (CCAR-P), covering designing, building and operating production systems with Claude. Find your gaps before the real exam, with an explanation for every answer option.",
+    fullName: "Claude Certified Architect: Professional (CCAR-P)",
+    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    seo: {
+      title: "CCAR-P Practice Exams: Claude Architect Professional",
+      description: "420 practice questions in six timed tests for the Claude Certified Architect: Professional exam (CCAR-P), with an explanation for every answer option.",
+    },
+  },
+  "az-401": {
+    description:
+      "360 practice questions in six practice tests for Microsoft AZ-401, the agentic DevOps successor of AZ-400, covering DevOps processes, source control, pipelines, security and compliance, and AI agents in the delivery workflow. Find your gaps before the real exam, with an explanation for every answer option.",
+    fullName: "Microsoft AZ-401: Agentic DevOps",
+    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    seo: {
+      title: "AZ-401 Practice Exams: Agentic DevOps",
+      description: "360 practice questions in six timed tests for Microsoft AZ-401 (Agentic DevOps, ex AZ-400), with an explanation for every answer option.",
+    },
+  },
+  "az-400": {
+    description:
+      "360 practice questions in six practice tests for Microsoft AZ-400 (DevOps Engineer Expert), covering processes and communication, source control, build and release pipelines, security and compliance, and instrumentation. Find your gaps before the real exam, with an explanation for every answer option.",
+    fullName: "Microsoft Certified: DevOps Engineer Expert (AZ-400)",
+    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    seo: {
+      title: "AZ-400 Practice Exams: DevOps Engineer Expert",
+      description: "360 practice questions in six timed tests for Microsoft AZ-400 (DevOps Engineer Expert), with an explanation for every answer option.",
+    },
+  },
+  "google-cloud-professional-machine-learning-engineer": {
+    description:
+      "360 practice questions in six practice tests for the Google Cloud Professional Machine Learning Engineer exam, covering designing, building, deploying and monitoring ML and generative AI solutions on Google Cloud. Find your gaps before the real exam, with an explanation for every answer option.",
+    fullName: "Google Cloud Professional Machine Learning Engineer",
+    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    seo: {
+      title: "Google Cloud PMLE Practice Exams",
+      description: "360 practice questions in six timed tests for the Google Cloud Professional Machine Learning Engineer exam, with an explanation for every answer option.",
+    },
+  },
+  "salesforce-data-con-101": {
+    description:
+      "360 practice questions in six practice tests for the Salesforce Data-Con-101 exam for Data 360 (formerly Data Cloud), covering data ingestion and modeling, identity resolution, segmentation and activation, and Data 360 administration. Find your gaps before the real exam, with an explanation for every answer option.",
+    fullName: "Salesforce Data 360 Consultant (Data-Con-101)",
+    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    seo: {
+      title: "Salesforce Data 360 (Data-Con-101) Practice Exams",
+      description: "360 practice questions in six timed tests for the Salesforce Data-Con-101 exam for Data 360 (formerly Data Cloud).",
+    },
+  },
+  "ab-410": {
+    description:
+      "360 practice questions in six practice tests for Microsoft AB-410, the successor of PL-200, covering building and configuring Power Platform solutions with AI and agents for business processes. Find your gaps before the real exam, with an explanation for every answer option.",
+    fullName: "Microsoft AB-410: Power Platform Intelligent Applications Builder",
+    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    seo: {
+      title: "AB-410 Practice Tests (ex PL-200)",
+      description: "360 practice questions in six timed tests for Microsoft AB-410, with an explanation for every answer option.",
+    },
+  },
+  "google-cloud-professional-cloud-devops-engineer": {
+    description:
+      "360 practice questions in six practice tests for the Google Cloud Professional Cloud DevOps Engineer exam, covering site reliability engineering, CI/CD pipelines, observability and optimising service performance on Google Cloud. Find your gaps before the real exam, with an explanation for every answer option.",
+    fullName: "Google Cloud Professional Cloud DevOps Engineer",
+    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    seo: {
+      title: "Google Cloud DevOps Engineer Practice Exams",
+      description: "360 practice questions in six timed tests for the Google Cloud Professional Cloud DevOps Engineer exam, with an explanation for every answer option.",
+    },
+  },
+  "pmi-cpmai": {
+    description:
+      "720 practice questions in six practice tests for the PMI-CPMAI exam, covering running AI projects with the CPMAI methodology, from business understanding and data to model evaluation and operationalisation. Find your gaps before the real exam, with an explanation for every answer option.",
+    fullName: "PMI Certified Professional in Managing AI (PMI-CPMAI)",
+    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    seo: {
+      title: "PMI-CPMAI Practice Exams",
+      description: "720 practice questions in six timed tests for the PMI-CPMAI exam, with an explanation for every answer option.",
+    },
+  },
+  "dp-300": {
+    description:
+      "360 practice questions in six practice tests for Microsoft DP-300 (Azure Database Administrator Associate), covering planning, securing, monitoring, optimising and automating Azure SQL databases, and high availability and disaster recovery. Find your gaps before the real exam, with an explanation for every answer option.",
+    fullName: "Microsoft Certified: Azure Database Administrator Associate (DP-300)",
+    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    seo: {
+      title: "DP-300 Practice Tests: Azure Database Administrator",
+      description: "360 practice questions in six timed tests for Microsoft DP-300 (Azure Database Administrator Associate), with an explanation for every answer option.",
+    },
+  },
+  "dp-700": {
+    description:
+      "360 practice questions in six practice tests for Microsoft DP-700 (Fabric Data Engineer Associate), the successor of DP-203, covering implementing and managing analytics solutions, ingesting and transforming data, and monitoring and optimising Microsoft Fabric. Find your gaps before the real exam, with an explanation for every answer option.",
+    fullName: "Microsoft Certified: Fabric Data Engineer Associate (DP-700)",
+    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    seo: {
+      title: "DP-700 Practice Tests: Fabric Data Engineer",
+      description: "360 practice questions in six timed tests for Microsoft DP-700 (Fabric Data Engineer Associate), with an explanation for every answer option.",
     },
   },
   "ab-731": {
