@@ -4277,7 +4277,28 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     description:
       "48 practice questions in six practice tests for the TOGAF Enterprise Architecture Part 2 exam (OGEA-102) from The Open Group, covering scenario-based questions on applying the TOGAF Standard, 10th Edition. Find your gaps before the real exam, with an explanation for every answer option.",
     fullName: "TOGAF Enterprise Architecture Practitioner (OGEA-102)",
-    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+    // Added 2026-11-25 for a newly published Udemy course. Exam facts verified 2026-11-25 against certification.opengroup.org (Part 2 exam page node/713, TOGAF Examinations page node/14, Combined exam page node/714) and The Open Group help article on the OGEA-102 exam plan.
+    // Other language versions use separate codes (OGEA-F102 French, OGEA-C102 Simplified Chinese), so only English is listed for OGEA-102.
+    exam: {
+      officialName: "TOGAF Enterprise Architecture Part 2 Exam",
+      examCode: "OGEA-102",
+      examVersion: "TOGAF Standard, 10th Edition",
+      questionCount: "8 complex scenario questions with gradient scoring",
+      duration: "90 minutes",
+      format: "Open book, scenario-based complex multiple choice",
+      passingScore: "60% (24 or more points out of 40)",
+      languages: ["English"],
+      delivery: "Authorized Examination Provider test centers or online proctored",
+      prerequisites: "TOGAF Enterprise Architecture Foundation, or a pass of the Part 1 exam on the same day at the same test center. Passing gives TOGAF Enterprise Architecture Practitioner.",
+      status: "current",
+      officialExamUrl: "https://certification.opengroup.org/node/713",
+      sources: [
+        { label: "The Open Group: TOGAF Enterprise Architecture Part 2 Exam", url: "https://certification.opengroup.org/node/713" },
+        { label: "The Open Group: TOGAF Examinations", url: "https://certification.opengroup.org/node/14" },
+        { label: "The Open Group: OGEA-102 exam plan", url: "https://help.opengroup.org/hc/en-us/articles/32158246401042-What-Is-the-Exam-Plan-for-the-OGEA-102-TOGAF-Enterprise-Architecture-Part-2-Exam" },
+      ],
+      lastVerified: "2026-11-25",
+    },
     seo: {
       title: "OGEA-102 Practice Exams: TOGAF 10 Practitioner",
       description: "48 practice questions in six timed tests for the TOGAF Enterprise Architecture Part 2 exam (OGEA-102) from The Open Group.",
@@ -4478,9 +4499,27 @@ export const certificationDetails: Record<string, CertificationDetails> = {
   },
   "ab-410": {
     description:
-      "360 practice questions in six practice tests for Microsoft AB-410, the successor of PL-200, covering building and configuring Power Platform solutions with AI and agents for business processes. Find your gaps before the real exam, with an explanation for every answer option.",
-    fullName: "Microsoft AB-410: Power Platform Intelligent Applications Builder",
-    // Added 2026-11-25 for a newly published Udemy course. Course facts only (question count from Udemy); exam facts not yet verified, so no exam record.
+      "360 practice questions in six practice tests for Microsoft AB-410 (Building Intelligent Applications), the successor of PL-200, covering the foundation for intelligent applications, building intelligent apps, and business logic and automation. Find your gaps before the real exam, with an explanation for every answer option.",
+    fullName: "Microsoft Certified: Intelligent Applications Builder Associate (AB-410)",
+    // Added 2026-11-25 for a newly published Udemy course. Exam facts verified 2026-11-25 against the Microsoft Learn AB-410 study guide (the exam page URL returned 404).
+    // The study guide shows the skills measured as of 18 December 2026; its change log lists only minor changes and no percentage changes. Duration and languages not read, so omitted.
+    exam: {
+      officialName: "Exam AB-410: Building Intelligent Applications",
+      examCode: "AB-410",
+      examVersion: "Skills measured as of 18 December 2026 (minor update, weights unchanged)",
+      passingScore: "700 or greater",
+      status: "current",
+      officialExamUrl: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410",
+      domains: [
+        { id: "d1", name: "Create a foundation for intelligent applications", weight: "25–30%" },
+        { id: "d2", name: "Create intelligent applications", weight: "25–30%" },
+        { id: "d3", name: "Build business application logic and automation", weight: "40–45%" },
+      ],
+      sources: [
+        { label: "Microsoft Learn: AB-410 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410" },
+      ],
+      lastVerified: "2026-11-25",
+    },
     seo: {
       title: "AB-410 Practice Tests (ex PL-200)",
       description: "360 practice questions in six timed tests for Microsoft AB-410, with an explanation for every answer option.",
