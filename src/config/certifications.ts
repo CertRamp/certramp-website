@@ -308,6 +308,38 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       { label: "PeopleCert: Foundation (Version 5) exam page", url: "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-5-foundation-version-50-4154" },
       { label: "PeopleCert: certification FAQ", url: "https://www.peoplecert.org/help-and-support/faq-itil" },
     ],
+    // Verified 2026-11-25 against the PeopleCert Foundation (Version 5) exam page: 40 questions, multiple choice, 60 minutes,
+    // closed book, 65% to pass, 9 exam languages (listed), no prerequisites stated, renewal every 3 years (60 CPD points or another
+    // exam from the same product suite). Domains are the nine syllabus topics listed on that page; no weights are published.
+    // Site naming stays neutral (no framework trademark in names shown on the site).
+    exam: {
+      officialName: "IT Service Management Foundation (Version 5)",
+      examVersion: "Version 5",
+      questionCount: "40",
+      duration: "60 minutes",
+      format: "Multiple choice, closed book",
+      passingScore: "65%",
+      languages: ["English", "Chinese", "French", "German", "Italian", "Japanese", "Polish", "Portuguese (Brazil)", "Spanish"],
+      prerequisites: "None stated. Certification is renewed every 3 years (60 CPD points, or another exam from the same product suite).",
+      status: "current",
+      officialCertificationUrl: "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-5-foundation-version-50-4154",
+      officialExamUrl: "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-5-foundation-version-50-4154",
+      domains: [
+        { id: "d1", name: "Digital product and service management concepts" },
+        { id: "d2", name: "Value co-creation" },
+        { id: "d3", name: "Dimensions of product and service management" },
+        { id: "d4", name: "The value system" },
+        { id: "d5", name: "Guiding principles" },
+        { id: "d6", name: "Product and service lifecycle" },
+        { id: "d7", name: "Management practices" },
+        { id: "d8", name: "Continual improvement" },
+        { id: "d9", name: "Value stream mapping and management" },
+      ],
+      sources: [
+        { label: "PeopleCert: Foundation (Version 5) exam page", url: "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-5-foundation-version-50-4154" },
+      ],
+      lastVerified: "2026-11-25",
+    },
     topics: [
       { title: "Product and service management concepts" },
       { title: "Value co-creation and the value system" },
