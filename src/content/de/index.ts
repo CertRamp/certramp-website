@@ -26,6 +26,7 @@ import { istqbCtfl4De } from "./istqb-ctfl-4";
 import { prince27FoundationDe } from "./prince2-7-foundation";
 import { comptiaSecAiPlusDe } from "./comptia-secai-plus-cy0-001";
 import { istqbCtAiDe } from "./istqb-ct-ai";
+import { isaqbCpsaFDe } from "./isaqb-cpsa-f";
 import { ab730De } from "./ab-730";
 import { ab900De } from "./ab-900";
 import { awsAifC01De } from "./aws-aif-c01";
@@ -61,6 +62,7 @@ export const deContents: DeContent[] = [
   ab730De,
   comptiaSecAiPlusDe,
   istqbCtAiDe,
+  isaqbCpsaFDe,
   sc200De,
   sc300De,
   sc500De,

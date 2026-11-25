@@ -4362,7 +4362,70 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       prerequisites: "None formally; an accredited training is recommended but not required. The certification is valid for life.",
       status: "current",
       officialCertificationUrl: "https://isaqb.org/certifications/cpsa-foundation-level-examinations",
+      // Chapters and learning goals from the CPSA-F curriculum 2025.1-rev2-EN (public.isaqb.org, read 2026-11-25). R1 goals are examined, R2 may be, R3 are not; chapter 6 (examples) is not exam-relevant and is left out. No exam weights are published. R3-only goals omitted below.
+      domains: [
+        {
+          id: "d1",
+          name: "Basic Concepts of Software Architecture",
+          objectives: [
+            "LG 01-01 Understand definitions of software architecture",
+            "LG 01-02 Understand and explain the goals and benefits of software architecture",
+            "LG 01-04 Understand the tasks and responsibilities of software architects",
+            "LG 01-06 Relate the role of software architects to other stakeholders",
+            "LG 01-07 Importance of data and data models",
+          ],
+        },
+        {
+          id: "d2",
+          name: "Requirements and Constraints",
+          objectives: [
+            "LG 02-01 Understand stakeholder concerns",
+            "LG 02-02 Clarify and consider requirements and constraints",
+            "LG 02-03 Understand and explain qualities of a software system",
+            "LG 02-04 Formulate requirements on qualities",
+            "LG 02-05 Prefer explicit statements over implicit assumptions",
+          ],
+        },
+        {
+          id: "d3",
+          name: "Design and Development of Software Architectures",
+          objectives: [
+            "LG 03-01 Fulfilling requirements through architecture",
+            "LG 03-02 Design software architectures",
+            "LG 03-03 Select and use approaches and heuristics for architecture development",
+            "LG 03-04 Explain and use design principles",
+            "LG 03-05 Correlation between feedback loops and risks",
+            "LG 03-06 Manage dependencies between building blocks",
+            "LG 03-07 Design and define interfaces",
+            "LG 03-08 Describe, explain and apply important architectural patterns",
+            "LG 03-10 Identify, design and implement cross-cutting concerns",
+          ],
+        },
+        {
+          id: "d4",
+          name: "Specification and Communication of Software Architectures",
+          objectives: [
+            "LG 04-01 Explain and consider the requirements of technical documentation",
+            "LG 04-02 Describe and communicate software architectures",
+            "LG 04-03 Explain and apply notations and models to describe software architecture",
+            "LG 04-05 Explain and use architectural views",
+            "LG 04-06 Document interfaces",
+            "LG 04-07 Document and communicate cross-cutting concerns",
+            "LG 04-08 Explain and document architectural decisions",
+          ],
+        },
+        {
+          id: "d5",
+          name: "Analysis and Assessment of Software Architectures",
+          objectives: [
+            "LG 05-01 Know reasons for architecture analysis",
+            "LG 05-02 Analyze the qualities of a software system",
+            "LG 05-03 Evaluate conformance to architectural decisions",
+          ],
+        },
+      ],
       sources: [
+        { label: "iSAQB: CPSA-F curriculum 2025.1", url: "https://public.isaqb.org/curriculum-foundation/curriculum-foundation-en.html" },
         { label: "iSAQB: Foundation Level exam", url: "https://isaqb.org/certifications/cpsa-foundation-level-examinations" },
         { label: "iSAQB: How the CPSA-F exam works (FAQ)", url: "https://isaqb.org/faq-articles/20-how-does-the-certification-examination-for-cpsa-f-foundation-level-work" },
         { label: "iSAQB: CPSA-F Examination Guide (PDF)", url: "https://public.isaqb.org/examination-foundation/examination_guide/Examination-Guide-EN.pdf" },
