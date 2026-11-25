@@ -1,0 +1,665 @@
+import type { DeContent } from "@/config/types";
+
+/**
+ * German guide and free practice questions for the IT service management Foundation exam, Version 5.
+ * Exam facts follow the verified record in src/config/certifications.ts (PeopleCert exam page,
+ * checked 2026-11-25). Domains are the nine syllabus topics on that page; no weights are published,
+ * so the question split is roughly even with extra weight on principles, dimensions and practices.
+ * Site naming stays neutral: no framework trademark in names or text.
+ * ORIGINAL CertRamp questions, not real exam questions.
+ */
+const EXAM = {
+  label: "PeopleCert: Foundation (Version 5), Prüfungsseite",
+  url: "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-5-foundation-version-50-4154",
+};
+
+export const itsmFoundationV5De: DeContent = {
+  slug: "itsm-foundation-v5",
+  name: "ITSM Foundation V5: IT-Service-Management, Version 5",
+  languageNote:
+    "PeopleCert bietet die Foundation-Prüfung der Version 5 auch auf Deutsch an, neben Englisch und sieben weiteren Sprachen.",
+  facts: [
+    { label: "Prüfungsanbieter", value: "PeopleCert" },
+    { label: "Version", value: "Version 5" },
+    { label: "Fragen", value: "40 Multiple-Choice-Fragen" },
+    { label: "Dauer", value: "60 Minuten" },
+    { label: "Bestehensgrenze", value: "65 %" },
+    { label: "Hilfsmittel", value: "Keine (Closed Book)" },
+    {
+      label: "Prüfungssprachen",
+      value: "Englisch, Deutsch, Chinesisch, Französisch, Italienisch, Japanisch, Polnisch, Portugiesisch (Brasilien), Spanisch",
+    },
+    { label: "Voraussetzungen", value: "Keine angegeben" },
+    { label: "Erneuerung", value: "Alle 3 Jahre mit 60 CPD-Punkten oder einer weiteren Prüfung derselben Produktreihe" },
+  ],
+  domains: [
+    { id: "d1", name: "Konzepte des digitalen Produkt- und Servicemanagements" },
+    { id: "d2", name: "Gemeinsame Wertschöpfung (Value Co-Creation)" },
+    { id: "d3", name: "Dimensionen des Produkt- und Servicemanagements" },
+    { id: "d4", name: "Das Wertsystem" },
+    { id: "d5", name: "Leitprinzipien" },
+    { id: "d6", name: "Produkt- und Servicelebenszyklus" },
+    { id: "d7", name: "Managementpraktiken" },
+    { id: "d8", name: "Kontinuierliche Verbesserung" },
+    { id: "d9", name: "Wertstromanalyse und -management" },
+  ],
+
+  /* ── Leitfaden ─────────────────────────────────────────────────────────── */
+  guide: {
+    slug: "itsm-foundation-v5",
+    summary:
+      "Die Foundation-Prüfung der Version 5 im IT-Service-Management prüft Grundbegriffe des digitalen Produkt- und Servicemanagements: Wertschöpfung, die vier Dimensionen, das Wertsystem, die sieben Leitprinzipien, den Lebenszyklus, die Managementpraktiken und die kontinuierliche Verbesserung. Die Prüfung hat 40 Fragen in 60 Minuten ohne Hilfsmittel; bestanden ist ab 65 %, also 26 richtigen Antworten.",
+    whoFor: [
+      "Einsteiger im IT-Service-Management, die ein anerkanntes Grundlagenzertifikat suchen",
+      "Mitarbeitende in Service Desk, Betrieb und Entwicklung, die ein gemeinsames Vokabular brauchen",
+      "Produktverantwortliche, die digitale Produkte und Services über den gesamten Lebenszyklus steuern",
+    ],
+    sections: [
+      {
+        id: "exam-format",
+        heading: "So läuft die Prüfung ab",
+        paragraphs: [
+          "Die Prüfung umfasst 40 Multiple-Choice-Fragen in 60 Minuten. Hilfsmittel sind nicht erlaubt. Bestanden ist ab 65 %, also ab 26 richtigen Antworten. Die Prüfung wird mit Aufsicht abgelegt und ist unter anderem auf Deutsch verfügbar.",
+          "Voraussetzungen nennt PeopleCert nicht. Das Zertifikat muss alle drei Jahre erneuert werden, entweder mit 60 CPD-Punkten oder mit einer weiteren Prüfung derselben Produktreihe. Wer bereits ein Foundation-Zertifikat der Version 4 hat, kann stattdessen die kürzere Bridge-Prüfung ablegen.",
+        ],
+      },
+      {
+        id: "where-to-focus",
+        heading: "Worauf du dich konzentrieren solltest",
+        paragraphs: [
+          "PeopleCert nennt neun Themen ohne Gewichtung: Konzepte des digitalen Produkt- und Servicemanagements, gemeinsame Wertschöpfung, die vier Dimensionen, das Wertsystem, die Leitprinzipien, den Produkt- und Servicelebenszyklus, die Managementpraktiken, kontinuierliche Verbesserung sowie Wertstromanalyse und -management.",
+          "Gegenüber Version 4 erweitert Version 5 den Blick vom IT-Service-Management auf das digitale Produkt- und Servicemanagement. Die sieben Leitprinzipien und die vier Dimensionen bleiben erhalten. Neu im Mittelpunkt steht ein Produkt- und Servicelebenszyklus mit acht Aktivitäten. Lerne außerdem die Definitionen der wichtigsten Begriffe wie Incident, Problem, Change und Service Request sehr genau, denn viele Fragen hängen an Feinheiten der Definition.",
+        ],
+      },
+      {
+        id: "study-plan",
+        heading: "Ein Vorbereitungsplan in sechs Schritten",
+        steps: [
+          {
+            title: "Die Grundbegriffe lernen",
+            body: "Lerne Wert, Ergebnis (Outcome), Leistung (Output), Kosten, Risiken, Nutzen (Utility) und Gewährleistung (Warranty) mit ihren genauen Bedeutungen. Darauf bauen alle anderen Themen auf.",
+          },
+          {
+            title: "Die sieben Leitprinzipien verinnerlichen",
+            body: "Ordne jedem Prinzip ein Praxisbeispiel zu. Viele Fragen beschreiben eine Situation und fragen, welches Prinzip angewendet wird.",
+          },
+          {
+            title: "Dimensionen und Wertsystem verstehen",
+            body: "Lerne die vier Dimensionen und die fünf Bestandteile des Wertsystems: Leitprinzipien, Governance, Wertkette, Managementpraktiken und kontinuierliche Verbesserung.",
+          },
+          {
+            title: "Die Praktiken nach Zweck lernen",
+            body: "Konzentriere dich auf den Zweck und die Schlüsselbegriffe der häufig geprüften Praktiken, etwa Incident-, Problem- und Change-Management, Service Desk und Service-Level-Management.",
+          },
+          {
+            title: "Mit Zeitlimit üben",
+            body: "Bearbeite vollständige Übungsprüfungen mit 40 Fragen in 60 Minuten und schlage jede falsche Antwort nach.",
+          },
+          {
+            title: "Mit Puffer buchen",
+            body: "Buche die Prüfung, wenn du in mehreren Übungsprüfungen sicher über 80 % liegst, also deutlich über der Bestehensgrenze von 65 %.",
+          },
+        ],
+      },
+      {
+        id: "common-mistakes",
+        heading: "Typische Fehler bei der Vorbereitung",
+        bullets: [
+          "Incident und Problem verwechseln: Ein Incident ist eine ungeplante Unterbrechung oder Qualitätsminderung, ein Problem die Ursache oder mögliche Ursache eines oder mehrerer Incidents.",
+          "Ergebnis (Outcome) und Leistung (Output) verwechseln: Der Output ist das, was geliefert wird, das Outcome das, was der Kunde damit erreicht.",
+          "Mit veraltetem Material der Version 4 lernen, ohne den neuen Lebenszyklus zu kennen.",
+          "Die Leitprinzipien nur auswendig lernen, statt sie auf Situationen anzuwenden.",
+          "Fragen mit Wörtern wie „immer“ oder „nur“ zu schnell beantworten. Absolute Aussagen sind selten richtig.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Wie viele Fragen hat die Prüfung?",
+        answer: "40 Multiple-Choice-Fragen in 60 Minuten.",
+      },
+      {
+        question: "Wie viele richtige Antworten brauche ich?",
+        answer: "Bestanden ist ab 65 %, also ab 26 von 40 Fragen.",
+      },
+      {
+        question: "Gibt es die Prüfung auf Deutsch?",
+        answer: "Ja. PeopleCert bietet sie in neun Sprachen an, darunter Deutsch.",
+      },
+      {
+        question: "Muss ich das Zertifikat erneuern?",
+        answer: "Ja, alle drei Jahre, entweder mit 60 CPD-Punkten oder mit einer weiteren Prüfung derselben Produktreihe.",
+      },
+      {
+        question: "Ich habe schon das Foundation-Zertifikat der Version 4. Was nun?",
+        answer:
+          "Für dich gibt es eine kürzere Bridge-Prüfung zur Version 5. Die Details und Ausnahmen findest du bei PeopleCert.",
+      },
+      {
+        question: "Sind die CertRamp-Fragen echte Prüfungsfragen?",
+        answer:
+          "Nein. Alle CertRamp-Fragen sind eigene Übungsfragen, die nach den von PeopleCert genannten Prüfungsthemen erstellt wurden. Sie stammen nicht aus der echten Prüfung.",
+      },
+    ],
+    seo: {
+      title: "ITSM Foundation V5 auf Deutsch: Prüfung & Lernplan",
+      description:
+        "ITSM Foundation Version 5 auf Deutsch vorbereiten: 40 Fragen, 60 Minuten, 65 % zum Bestehen, Leitprinzipien, vier Dimensionen, Wertsystem, Lebenszyklus und Praktiken.",
+    },
+    published: "2026-11-25",
+    updated: "2026-11-25",
+  },
+
+  /* ── Übungsfragen ──────────────────────────────────────────────────────── */
+  questions: {
+    slug: "itsm-foundation-v5",
+    intro:
+      "30 eigene Übungsfragen zur ITSM Foundation der Version 5 aus allen neun Prüfungsthemen. Zu jeder Frage gibt es die Lösung, eine kurze Erklärung und die Begründung, warum jede andere Option falsch ist.",
+    published: "2026-11-25",
+    updated: "2026-11-25",
+    seo: {
+      title: "ITSM Foundation V5 Übungsfragen mit Lösungen (Deutsch)",
+      description:
+        "30 kostenlose Übungsfragen zur ITSM Foundation Version 5 auf Deutsch: Leitprinzipien, Incident und Problem, Change, Wertschöpfung und Lebenszyklus, mit Erklärung zu jeder Option.",
+    },
+    questions: [
+      /* ── Thema 1: Konzepte ─────────────────────────────────────────────── */
+      {
+        id: "itsm5-d1-service",
+        domain: "d1",
+        objective: "Konzepte des digitalen Produkt- und Servicemanagements",
+        difficulty: "foundation",
+        question: "Was ist ein Service im Sinne des Service-Managements?",
+        options: [
+          { id: "A", text: "Ein Hardwaregerät, das an Kunden verkauft wird", rationale: "Ein Gerät kann Teil eines Angebots sein, ist aber selbst kein Service." },
+          { id: "B", text: "Ein Mittel, um Wertschöpfung zu ermöglichen, indem Ergebnisse erleichtert werden, die Kunden erreichen wollen, ohne dass sie bestimmte Kosten und Risiken selbst tragen müssen", rationale: "Richtig. Der Service unterstützt die Ergebnisse des Kunden und nimmt ihm bestimmte Kosten und Risiken ab." },
+          { id: "C", text: "Ein Dokument, das alle Prozesse eines Unternehmens beschreibt", rationale: "Das wäre eine Prozessdokumentation." },
+          { id: "D", text: "Eine einmalige Projektleistung ohne Kundenbezug", rationale: "Services sind auf Kundenergebnisse ausgerichtet." },
+        ],
+        answer: "B",
+        explanation: "Ein Service ermöglicht gemeinsame Wertschöpfung. Kunden tragen dabei andere Kosten und Risiken, etwa für die Nutzung des Services.",
+        reference: EXAM,
+      },
+      {
+        id: "itsm5-d1-output-outcome",
+        domain: "d1",
+        objective: "Konzepte des digitalen Produkt- und Servicemanagements",
+        difficulty: "foundation",
+        question: "Ein IT-Dienstleister richtet einem Vertriebsteam einen Laptop ein. Das Team kann dadurch Angebote unterwegs erstellen. Was ist hier das Ergebnis (Outcome)?",
+        options: [
+          { id: "A", text: "Der eingerichtete Laptop", rationale: "Der Laptop ist der Output, also das, was geliefert wird." },
+          { id: "B", text: "Die Rechnung des Dienstleisters", rationale: "Die Rechnung ist ein Kostenaspekt." },
+          { id: "C", text: "Das Vertriebsteam kann Angebote unterwegs erstellen", rationale: "Richtig. Das Outcome ist das, was der Kunde mit dem Output erreicht." },
+          { id: "D", text: "Die Arbeitszeit des Technikers", rationale: "Das ist ein Aufwand, kein Ergebnis für den Kunden." },
+        ],
+        answer: "C",
+        explanation: "Output ist ein greifbarer oder immaterieller Liefergegenstand einer Aktivität. Outcome ist ein Ergebnis für einen Stakeholder, das durch Outputs ermöglicht wird.",
+        reference: EXAM,
+      },
+      {
+        id: "itsm5-d1-utility-warranty",
+        domain: "d1",
+        objective: "Konzepte des digitalen Produkt- und Servicemanagements",
+        difficulty: "intermediate",
+        question: "Ein Online-Buchungsservice bietet alle gewünschten Funktionen, ist aber häufig nicht erreichbar. Was fehlt dem Service?",
+        options: [
+          { id: "A", text: "Ausreichende Gewährleistung (Warranty), also die Zusicherung, dass er die vereinbarten Anforderungen etwa an Verfügbarkeit erfüllt", rationale: "Richtig. Die Funktionen (Utility) passen, aber die Zusicherung der Leistungsfähigkeit fehlt." },
+          { id: "B", text: "Nutzen (Utility)", rationale: "Die Funktionen sind vorhanden, der Nutzen ist also gegeben." },
+          { id: "C", text: "Ein Output", rationale: "Der Service liefert durchaus Outputs, nur nicht zuverlässig." },
+          { id: "D", text: "Ein Sponsor", rationale: "Der Sponsor genehmigt das Budget und hat mit der Verfügbarkeit nichts zu tun." },
+        ],
+        answer: "A",
+        explanation: "Utility beschreibt, was ein Service tut (fit for purpose), Warranty, wie gut er es tut (fit for use), etwa Verfügbarkeit, Kapazität, Sicherheit und Kontinuität.",
+        reference: EXAM,
+      },
+      {
+        id: "itsm5-d1-roles",
+        domain: "d1",
+        objective: "Konzepte des digitalen Produkt- und Servicemanagements",
+        difficulty: "foundation",
+        question: "Welche Rolle genehmigt das Budget für den Bezug eines Services?",
+        options: [
+          { id: "A", text: "Der Nutzer", rationale: "Der Nutzer verwendet den Service." },
+          { id: "B", text: "Der Kunde", rationale: "Der Kunde legt die Anforderungen fest und verantwortet die Ergebnisse." },
+          { id: "C", text: "Der Lieferant", rationale: "Der Lieferant stellt Leistungen bereit, er bezieht sie nicht." },
+          { id: "D", text: "Der Sponsor", rationale: "Richtig. Der Sponsor genehmigt das Budget für den Servicebezug." },
+        ],
+        answer: "D",
+        explanation: "Auf Seite des Servicekonsumenten unterscheidet man Kunde, Nutzer und Sponsor. Eine Person kann mehrere Rollen haben.",
+        reference: EXAM,
+      },
+
+      /* ── Thema 2: Wertschöpfung ────────────────────────────────────────── */
+      {
+        id: "itsm5-d2-value",
+        domain: "d2",
+        objective: "Gemeinsame Wertschöpfung",
+        difficulty: "foundation",
+        question: "Wie wird Wert im Service-Management verstanden?",
+        options: [
+          { id: "A", text: "Als der wahrgenommene Nutzen, die Nützlichkeit und die Bedeutung von etwas", rationale: "Richtig. Wert hängt von der Wahrnehmung der Stakeholder ab." },
+          { id: "B", text: "Ausschließlich als der Preis eines Services", rationale: "Der Preis ist nur ein Aspekt." },
+          { id: "C", text: "Als etwas, das der Anbieter allein festlegt", rationale: "Wert entsteht gemeinsam mit dem Konsumenten." },
+          { id: "D", text: "Als die Anzahl der gelieferten Outputs", rationale: "Viele Outputs bedeuten nicht automatisch Wert." },
+        ],
+        answer: "A",
+        explanation: "Wert ist subjektiv und wird gemeinsam von Anbieter und Konsument geschaffen (Co-Creation).",
+        reference: EXAM,
+      },
+      {
+        id: "itsm5-d2-cocreation",
+        domain: "d2",
+        objective: "Gemeinsame Wertschöpfung",
+        difficulty: "intermediate",
+        question: "Was bedeutet gemeinsame Wertschöpfung (Value Co-Creation)?",
+        options: [
+          { id: "A", text: "Der Anbieter liefert Wert, der Konsument nimmt ihn passiv entgegen", rationale: "Dieses Bild hat die gemeinsame Wertschöpfung gerade abgelöst." },
+          { id: "B", text: "Wert entsteht durch die aktive Zusammenarbeit von Anbieter, Konsument und weiteren Beteiligten", rationale: "Richtig. Alle Beteiligten tragen zur Wertschöpfung bei." },
+          { id: "C", text: "Zwei Anbieter teilen sich die Einnahmen", rationale: "Das beschreibt eine Geschäftsbeziehung, nicht die Wertschöpfung." },
+          { id: "D", text: "Der Konsument entwickelt den Service allein", rationale: "Der Anbieter bleibt wesentlich beteiligt." },
+        ],
+        answer: "B",
+        explanation: "Servicebeziehungen umfassen Servicebereitstellung, Servicenutzung und das Management der Servicebeziehung.",
+        reference: EXAM,
+      },
+      {
+        id: "itsm5-d2-risk",
+        domain: "d2",
+        objective: "Gemeinsame Wertschöpfung",
+        difficulty: "intermediate",
+        question: "Ein Unternehmen lagert seine E-Mail-Infrastruktur an einen Cloud-Anbieter aus. Welche Aussage zu Risiken trifft zu?",
+        options: [
+          { id: "A", text: "Alle Risiken gehen auf den Anbieter über", rationale: "Der Konsument behält eigene Risiken." },
+          { id: "B", text: "Es entstehen keinerlei neue Risiken", rationale: "Neue Risiken entstehen etwa durch Abhängigkeit vom Anbieter." },
+          { id: "C", text: "Der Service nimmt dem Konsumenten bestimmte Risiken ab, etwa den Serverbetrieb, kann aber neue mit sich bringen, etwa die Abhängigkeit vom Anbieter", rationale: "Richtig. Services entfernen manche Risiken und fügen andere hinzu." },
+          { id: "D", text: "Risiken spielen bei Services keine Rolle", rationale: "Risiken sind ein Bestandteil der Wertbetrachtung." },
+        ],
+        answer: "C",
+        explanation: "Bei der Bewertung eines Services werden Ergebnisse, Kosten und Risiken gemeinsam betrachtet.",
+        reference: EXAM,
+      },
+
+      /* ── Thema 3: Dimensionen ──────────────────────────────────────────── */
+      {
+        id: "itsm5-d3-four",
+        domain: "d3",
+        objective: "Dimensionen des Produkt- und Servicemanagements",
+        difficulty: "foundation",
+        question: "Welche Liste nennt die vier Dimensionen des Produkt- und Servicemanagements?",
+        options: [
+          { id: "A", text: "Planung, Entwicklung, Test, Betrieb", rationale: "Das sind Phasen, keine Dimensionen." },
+          { id: "B", text: "Kosten, Zeit, Qualität, Umfang", rationale: "Das sind klassische Projektgrößen." },
+          { id: "C", text: "Strategie, Design, Transition, Betrieb", rationale: "Das sind Lebenszyklusphasen älterer Modelle." },
+          { id: "D", text: "Organisationen und Menschen, Wertströme und Prozesse, Information und Technologie, Partner und Lieferanten", rationale: "Richtig. Alle vier Dimensionen müssen ausgewogen berücksichtigt werden." },
+        ],
+        answer: "D",
+        explanation: "Die Dimensionen werden von externen Faktoren beeinflusst, die man etwa mit dem PESTLE-Modell betrachtet.",
+        reference: EXAM,
+      },
+      {
+        id: "itsm5-d3-partners",
+        domain: "d3",
+        objective: "Dimensionen des Produkt- und Servicemanagements",
+        difficulty: "intermediate",
+        question: "Ein Unternehmen prüft, ob es seinen Service Desk selbst betreibt oder an einen externen Dienstleister vergibt. Welche Dimension steht im Vordergrund?",
+        options: [
+          { id: "A", text: "Partner und Lieferanten", rationale: "Richtig. Diese Dimension betrifft Beziehungen zu anderen Organisationen und Sourcing-Entscheidungen." },
+          { id: "B", text: "Information und Technologie", rationale: "Technik spielt eine Rolle, die Kernfrage ist aber die Zusammenarbeit mit externen Partnern." },
+          { id: "C", text: "Wertströme und Prozesse", rationale: "Prozesse sind betroffen, die Entscheidung betrifft aber vor allem die Partnerstrategie." },
+          { id: "D", text: "Keine der Dimensionen", rationale: "Sourcing-Entscheidungen sind ein Kernthema der Dimensionen." },
+        ],
+        answer: "A",
+        explanation: "Faktoren für Sourcing-Entscheidungen sind etwa Strategie, Kernkompetenzen, Kosten, Kapazitäten und Unternehmenskultur.",
+        reference: EXAM,
+      },
+      {
+        id: "itsm5-d3-people",
+        domain: "d3",
+        objective: "Dimensionen des Produkt- und Servicemanagements",
+        difficulty: "foundation",
+        question: "Zu welcher Dimension gehören Unternehmenskultur, Rollen, Kompetenzen und Organisationsstruktur?",
+        options: [
+          { id: "A", text: "Information und Technologie", rationale: "Diese Dimension betrifft Daten, Wissen und Technologie." },
+          { id: "B", text: "Partner und Lieferanten", rationale: "Diese Dimension betrifft externe Beziehungen." },
+          { id: "C", text: "Organisationen und Menschen", rationale: "Richtig. Kultur, Rollen, Kompetenzen und Strukturen gehören zu dieser Dimension." },
+          { id: "D", text: "Wertströme und Prozesse", rationale: "Diese Dimension betrifft Abläufe und Aktivitäten." },
+        ],
+        answer: "C",
+        explanation: "Eine passende Kultur und klare Verantwortlichkeiten sind Voraussetzung dafür, dass Prozesse und Technik wirken.",
+        reference: EXAM,
+      },
+      {
+        id: "itsm5-d3-balance",
+        domain: "d3",
+        objective: "Dimensionen des Produkt- und Servicemanagements",
+        difficulty: "intermediate",
+        question: "Ein Unternehmen führt ein neues Ticket-Tool ein, schult aber niemanden und passt keine Abläufe an. Was ist die wahrscheinliche Folge?",
+        options: [
+          { id: "A", text: "Das Tool löst alle Probleme automatisch", rationale: "Technik allein reicht selten aus." },
+          { id: "B", text: "Weil nur eine Dimension betrachtet wurde, bleibt der erhoffte Nutzen wahrscheinlich aus", rationale: "Richtig. Ohne Menschen und Prozesse entfaltet Technologie kaum Wirkung." },
+          { id: "C", text: "Die Partner und Lieferanten übernehmen automatisch die Schulung", rationale: "Das passiert nicht von selbst." },
+          { id: "D", text: "Es hat keinerlei Auswirkungen", rationale: "Eine unvorbereitete Einführung hat oft negative Auswirkungen." },
+        ],
+        answer: "B",
+        explanation: "Alle vier Dimensionen müssen bei Änderungen ausgewogen berücksichtigt werden.",
+        reference: EXAM,
+      },
+
+      /* ── Thema 4: Wertsystem ───────────────────────────────────────────── */
+      {
+        id: "itsm5-d4-components",
+        domain: "d4",
+        objective: "Das Wertsystem",
+        difficulty: "foundation",
+        question: "Welche Bestandteile bringt das Wertsystem zusammen?",
+        options: [
+          { id: "A", text: "Budget, Personal, Gebäude, Fahrzeuge, Verträge", rationale: "Das sind Ressourcen, keine Bestandteile des Wertsystems." },
+          { id: "B", text: "Leitprinzipien, Governance, Wertkettenaktivitäten, Managementpraktiken und kontinuierliche Verbesserung", rationale: "Richtig. Diese fünf Bestandteile wirken im Wertsystem zusammen." },
+          { id: "C", text: "Nur die Managementpraktiken", rationale: "Die Praktiken sind nur ein Bestandteil." },
+          { id: "D", text: "Strategie, Design, Transition, Betrieb, Verbesserung", rationale: "Das ist ein älteres Lebenszyklusmodell." },
+        ],
+        answer: "B",
+        explanation: "Das Wertsystem beschreibt, wie die Bestandteile einer Organisation zusammenwirken, um aus Chancen und Nachfrage Wert zu schaffen.",
+        reference: EXAM,
+      },
+      {
+        id: "itsm5-d4-inputs",
+        domain: "d4",
+        objective: "Das Wertsystem",
+        difficulty: "intermediate",
+        question: "Was sind die Eingaben und das Ergebnis des Wertsystems?",
+        options: [
+          { id: "A", text: "Eingaben sind Tickets, Ergebnis ist ein Bericht", rationale: "Das ist zu eng und beschreibt einzelne Abläufe." },
+          { id: "B", text: "Eingaben sind Verträge, Ergebnis sind Rechnungen", rationale: "Das beschreibt kaufmännische Abläufe." },
+          { id: "C", text: "Eingaben sind Server, Ergebnis ist Software", rationale: "Das sind technische Ressourcen und Outputs." },
+          { id: "D", text: "Eingaben sind Chancen und Nachfrage, Ergebnis ist Wert", rationale: "Richtig. Das Wertsystem wandelt Chancen und Nachfrage in Wert für die Stakeholder um." },
+        ],
+        answer: "D",
+        explanation: "Chancen sind Möglichkeiten, Wert zu schaffen oder die Organisation zu verbessern; Nachfrage ist der Bedarf interner und externer Konsumenten.",
+        reference: EXAM,
+      },
+      {
+        id: "itsm5-d4-governance",
+        domain: "d4",
+        objective: "Das Wertsystem",
+        difficulty: "intermediate",
+        question: "Welche Aufgabe hat Governance im Wertsystem?",
+        options: [
+          { id: "A", text: "Die Organisation zu lenken und zu kontrollieren, also Richtung vorzugeben und die Leistung zu überwachen", rationale: "Richtig. Governance stellt sicher, dass die Organisation ihre Ziele verfolgt." },
+          { id: "B", text: "Tickets am Service Desk zu bearbeiten", rationale: "Das ist eine operative Tätigkeit." },
+          { id: "C", text: "Server zu installieren", rationale: "Das ist eine technische Aufgabe." },
+          { id: "D", text: "Die Kantine zu organisieren", rationale: "Das hat keinen Bezug zur Governance des Wertsystems." },
+        ],
+        answer: "A",
+        explanation: "Governance umfasst typischerweise das Bewerten, Lenken und Überwachen der Organisation.",
+        reference: EXAM,
+      },
+
+      /* ── Thema 5: Leitprinzipien ───────────────────────────────────────── */
+      {
+        id: "itsm5-d5-start-where",
+        domain: "d5",
+        objective: "Leitprinzipien",
+        difficulty: "foundation",
+        question: "Ein neues IT-Leitungsteam möchte alle bestehenden Prozesse verwerfen und komplett neu beginnen. Welches Leitprinzip spricht dagegen?",
+        options: [
+          { id: "A", text: "Optimieren und automatisieren", rationale: "Dieses Prinzip betrifft Effizienz, nicht den Umgang mit Bestehendem." },
+          { id: "B", text: "Ganzheitlich denken und arbeiten", rationale: "Dieses Prinzip betrifft das Zusammenspiel aller Teile." },
+          { id: "C", text: "Dort beginnen, wo man steht", rationale: "Richtig. Bestehende Services, Prozesse und Werkzeuge sollten zuerst bewertet und wo möglich genutzt werden." },
+          { id: "D", text: "Fokus auf Wert", rationale: "Dieses Prinzip ist wichtig, spricht aber nicht direkt gegen einen Neuanfang." },
+        ],
+        answer: "C",
+        explanation: "Ein kompletter Neuanfang verschwendet oft Vorhandenes. Die aktuelle Situation sollte direkt beobachtet und gemessen werden.",
+        reference: EXAM,
+      },
+      {
+        id: "itsm5-d5-iterative",
+        domain: "d5",
+        objective: "Leitprinzipien",
+        difficulty: "foundation",
+        question: "Ein Team teilt eine große Verbesserungsinitiative in kleine Schritte auf und holt nach jedem Schritt Rückmeldung ein. Welches Leitprinzip wird angewendet?",
+        options: [
+          { id: "A", text: "Iterativ mit Feedback vorankommen", rationale: "Richtig. Kleine, überschaubare Schritte mit Feedback ermöglichen schnelle Anpassungen." },
+          { id: "B", text: "Einfach und praktisch halten", rationale: "Dieses Prinzip betrifft das Vermeiden unnötiger Komplexität." },
+          { id: "C", text: "Dort beginnen, wo man steht", rationale: "Dieses Prinzip betrifft die Ausgangslage." },
+          { id: "D", text: "Optimieren und automatisieren", rationale: "Dieses Prinzip betrifft Effizienz und Automatisierung." },
+        ],
+        answer: "A",
+        explanation: "Auch große Initiativen sollten iterativ umgesetzt werden. Feedback zeigt, ob man noch auf dem richtigen Weg ist.",
+        reference: EXAM,
+      },
+      {
+        id: "itsm5-d5-visibility",
+        domain: "d5",
+        objective: "Leitprinzipien",
+        difficulty: "intermediate",
+        question: "Ein Team macht den Arbeitsstand für alle sichtbar und bindet Fachbereiche früh in Entscheidungen ein. Welches Leitprinzip steht im Vordergrund?",
+        options: [
+          { id: "A", text: "Fokus auf Wert", rationale: "Wert ist wichtig, das Kernmerkmal hier ist aber Zusammenarbeit und Transparenz." },
+          { id: "B", text: "Optimieren und automatisieren", rationale: "Das betrifft Effizienz." },
+          { id: "C", text: "Einfach und praktisch halten", rationale: "Das betrifft unnötige Komplexität." },
+          { id: "D", text: "Zusammenarbeiten und Transparenz fördern", rationale: "Richtig. Zusammenarbeit über Grenzen hinweg und sichtbare Arbeit verbessern Akzeptanz und Entscheidungen." },
+        ],
+        answer: "D",
+        explanation: "Unzureichende Transparenz führt zu schlechten Entscheidungen und Widerstand. Sichtbare Arbeit zeigt Engpässe und Verschwendung.",
+        reference: EXAM,
+      },
+      {
+        id: "itsm5-d5-simple",
+        domain: "d5",
+        objective: "Leitprinzipien",
+        difficulty: "intermediate",
+        question: "Ein Prozess enthält zahlreiche Genehmigungsschritte, die nichts zum Ergebnis beitragen. Welches Leitprinzip empfiehlt, sie zu entfernen?",
+        options: [
+          { id: "A", text: "Dort beginnen, wo man steht", rationale: "Das betrifft die Bewertung der Ausgangslage." },
+          { id: "B", text: "Einfach und praktisch halten", rationale: "Richtig. Schritte, die keinen Wert liefern, sollten entfallen; der Prozess sollte so einfach wie möglich sein." },
+          { id: "C", text: "Ganzheitlich denken und arbeiten", rationale: "Das betrifft das Zusammenspiel aller Teile." },
+          { id: "D", text: "Iterativ mit Feedback vorankommen", rationale: "Das betrifft das Vorgehen in Schritten." },
+        ],
+        answer: "B",
+        explanation: "Optimieren und Automatisieren kommt nach dem Vereinfachen: Erst Überflüssiges entfernen, dann automatisieren.",
+        reference: EXAM,
+      },
+      {
+        id: "itsm5-d5-count",
+        domain: "d5",
+        objective: "Leitprinzipien",
+        difficulty: "foundation",
+        question: "Welche Aussage zu den Leitprinzipien ist richtig?",
+        options: [
+          { id: "A", text: "Es gibt sieben Leitprinzipien, die universell gelten und zusammen betrachtet werden sollten", rationale: "Richtig. Die Prinzipien wirken zusammen und gelten für jede Initiative." },
+          { id: "B", text: "Man darf immer nur ein Leitprinzip gleichzeitig anwenden", rationale: "Die Prinzipien sollen gemeinsam berücksichtigt werden." },
+          { id: "C", text: "Die Leitprinzipien gelten nur für den Service Desk", rationale: "Sie gelten für die gesamte Organisation." },
+          { id: "D", text: "Die Leitprinzipien sind verbindliche Prozessschritte", rationale: "Sie sind Empfehlungen zur Orientierung, keine Prozessschritte." },
+        ],
+        answer: "A",
+        explanation: "Die sieben Prinzipien sind: Fokus auf Wert, dort beginnen, wo man steht, iterativ mit Feedback vorankommen, zusammenarbeiten und Transparenz fördern, ganzheitlich denken und arbeiten, einfach und praktisch halten sowie optimieren und automatisieren.",
+        reference: EXAM,
+      },
+
+      /* ── Thema 6: Lebenszyklus ─────────────────────────────────────────── */
+      {
+        id: "itsm5-d6-purpose",
+        domain: "d6",
+        objective: "Produkt- und Servicelebenszyklus",
+        difficulty: "foundation",
+        question: "Wozu dient der Produkt- und Servicelebenszyklus?",
+        options: [
+          { id: "A", text: "Er legt eine starre Reihenfolge fest, die jedes Vorhaben genau einmal durchläuft", rationale: "Die Aktivitäten werden je nach Bedarf kombiniert und wiederholt." },
+          { id: "B", text: "Er ersetzt die Leitprinzipien", rationale: "Die Leitprinzipien bleiben ein eigener Bestandteil." },
+          { id: "C", text: "Er beschreibt die Aktivitäten, mit denen Produkte und Services von der Idee bis zum Betrieb und zur Unterstützung Wert schaffen", rationale: "Richtig. Er macht das Zusammenwirken der Aktivitäten über den ganzen Lebenszyklus sichtbar." },
+          { id: "D", text: "Er betrifft nur die Softwareentwicklung", rationale: "Er umfasst auch Beschaffung, Betrieb, Bereitstellung und Unterstützung." },
+        ],
+        answer: "C",
+        explanation: "In Version 5 umfasst der Lebenszyklus acht Aktivitäten: Discover, Design, Acquire, Build, Transition, Operate, Deliver und Support.",
+        reference: EXAM,
+      },
+      {
+        id: "itsm5-d6-acquire",
+        domain: "d6",
+        objective: "Produkt- und Servicelebenszyklus",
+        difficulty: "intermediate",
+        question: "Ein Unternehmen beschafft eine fertige Software-as-a-Service-Lösung, statt selbst zu entwickeln. Welche Lebenszyklusaktivität steht dabei im Mittelpunkt?",
+        options: [
+          { id: "A", text: "Acquire (Beschaffen)", rationale: "Richtig. Diese Aktivität betrifft den Bezug von Komponenten, Produkten oder Services von Partnern." },
+          { id: "B", text: "Support (Unterstützen)", rationale: "Support betrifft die Hilfe für Nutzer im Betrieb." },
+          { id: "C", text: "Operate (Betreiben)", rationale: "Operate betrifft den laufenden Betrieb, nicht die Beschaffung." },
+          { id: "D", text: "Discover (Entdecken)", rationale: "Discover betrifft das Erkennen von Chancen und Bedürfnissen." },
+        ],
+        answer: "A",
+        explanation: "Der Lebenszyklus berücksichtigt ausdrücklich, dass Organisationen nicht alles selbst bauen, sondern auch beschaffen.",
+        reference: EXAM,
+      },
+      {
+        id: "itsm5-d6-discover",
+        domain: "d6",
+        objective: "Produkt- und Servicelebenszyklus",
+        difficulty: "intermediate",
+        question: "Ein Team untersucht, welche Bedürfnisse Kunden haben und ob sich daraus ein neues digitales Produkt ergibt. Welche Lebenszyklusaktivität ist das?",
+        options: [
+          { id: "A", text: "Transition", rationale: "Transition betrifft den Übergang neuer oder geänderter Produkte in den Betrieb." },
+          { id: "B", text: "Discover", rationale: "Richtig. Hier werden Chancen, Bedürfnisse und Ideen erkundet." },
+          { id: "C", text: "Deliver", rationale: "Deliver betrifft die Bereitstellung an Konsumenten." },
+          { id: "D", text: "Build", rationale: "Build betrifft das Erstellen der Lösung." },
+        ],
+        answer: "B",
+        explanation: "Discover steht am Anfang, aber auch im Betrieb werden laufend neue Chancen und Verbesserungen entdeckt.",
+        reference: EXAM,
+      },
+      {
+        id: "itsm5-d6-value-chain",
+        domain: "d6",
+        objective: "Produkt- und Servicelebenszyklus",
+        difficulty: "intermediate",
+        question: "Welche Aussage zum Verhältnis von Lebenszyklusaktivitäten und Wertströmen ist richtig?",
+        options: [
+          { id: "A", text: "Jeder Wertstrom muss alle Aktivitäten in derselben Reihenfolge durchlaufen", rationale: "Wertströme kombinieren nur die Aktivitäten, die sie brauchen." },
+          { id: "B", text: "Wertströme und Lebenszyklus haben nichts miteinander zu tun", rationale: "Wertströme nutzen die Lebenszyklusaktivitäten." },
+          { id: "C", text: "Ein Wertstrom besteht immer aus genau einer Aktivität", rationale: "Wertströme verbinden mehrere Aktivitäten." },
+          { id: "D", text: "Ein Wertstrom kombiniert die benötigten Aktivitäten in der Reihenfolge, die für ein bestimmtes Szenario sinnvoll ist", rationale: "Richtig. Dadurch passt sich das Modell an unterschiedliche Situationen an." },
+        ],
+        answer: "D",
+        explanation: "Der Lebenszyklus ist kein starres Wasserfallmodell. Aktivitäten werden flexibel kombiniert und wiederholt.",
+        reference: EXAM,
+      },
+
+      /* ── Thema 7: Praktiken ────────────────────────────────────────────── */
+      {
+        id: "itsm5-d7-incident",
+        domain: "d7",
+        objective: "Managementpraktiken",
+        difficulty: "foundation",
+        question: "Was ist das Ziel des Incident-Managements?",
+        options: [
+          { id: "A", text: "Die Ursachen aller Störungen dauerhaft zu beseitigen", rationale: "Das ist Aufgabe des Problem-Managements." },
+          { id: "B", text: "Neue Services zu entwerfen", rationale: "Das gehört zum Servicedesign." },
+          { id: "C", text: "Die negativen Auswirkungen von Incidents zu minimieren, indem der normale Servicebetrieb so schnell wie möglich wiederhergestellt wird", rationale: "Richtig. Im Vordergrund steht die schnelle Wiederherstellung." },
+          { id: "D", text: "Änderungen zu genehmigen", rationale: "Das gehört zur Praktik Change Enablement." },
+        ],
+        answer: "C",
+        explanation: "Ein Incident ist eine ungeplante Unterbrechung eines Services oder eine Minderung seiner Qualität.",
+        reference: EXAM,
+      },
+      {
+        id: "itsm5-d7-problem",
+        domain: "d7",
+        objective: "Managementpraktiken",
+        difficulty: "intermediate",
+        question: "Die Ursache einer wiederkehrenden Störung ist analysiert, aber noch nicht behoben. Es gibt eine Umgehungslösung. Wie nennt man diesen Zustand?",
+        options: [
+          { id: "A", text: "Service Request", rationale: "Ein Service Request ist eine Anfrage nach einer vereinbarten Leistung." },
+          { id: "B", text: "Bekannter Fehler (Known Error)", rationale: "Richtig. Ein Known Error ist ein Problem, das analysiert, aber noch nicht gelöst wurde." },
+          { id: "C", text: "Event", rationale: "Ein Event ist eine relevante Zustandsänderung." },
+          { id: "D", text: "Standard Change", rationale: "Ein Standard Change ist eine vorab genehmigte Änderung mit geringem Risiko." },
+        ],
+        answer: "B",
+        explanation: "Ein Problem ist die Ursache oder mögliche Ursache eines oder mehrerer Incidents. Ein Workaround verringert die Auswirkung, ohne die Ursache zu beseitigen.",
+        reference: EXAM,
+      },
+      {
+        id: "itsm5-d7-change",
+        domain: "d7",
+        objective: "Managementpraktiken",
+        difficulty: "intermediate",
+        question: "Das Zurücksetzen eines Passworts nach einem festgelegten, risikoarmen Verfahren muss nicht jedes Mal einzeln bewertet werden. Wie wird eine solche wiederkehrende, vorab genehmigte Änderung bezeichnet?",
+        options: [
+          { id: "A", text: "Notfall-Change (Emergency Change)", rationale: "Emergency Changes müssen so schnell wie möglich umgesetzt werden, etwa zur Behebung eines Incidents." },
+          { id: "B", text: "Normaler Change", rationale: "Normale Changes werden nach einem Prozess geplant, bewertet und genehmigt." },
+          { id: "C", text: "Problem", rationale: "Ein Problem ist die Ursache von Incidents, keine Änderung." },
+          { id: "D", text: "Standard-Change", rationale: "Richtig. Standard-Changes sind risikoarm, gut verstanden und vorab genehmigt." },
+        ],
+        answer: "D",
+        explanation: "Viele Standard-Changes werden als Service Request ausgelöst. Die Genehmigung erfolgt einmal bei der Festlegung des Verfahrens.",
+        reference: EXAM,
+      },
+      {
+        id: "itsm5-d7-service-desk",
+        domain: "d7",
+        objective: "Managementpraktiken",
+        difficulty: "foundation",
+        question: "Welche Praktik ist der zentrale Kontaktpunkt zwischen dem Serviceanbieter und allen Nutzern?",
+        options: [
+          { id: "A", text: "Service Desk", rationale: "Richtig. Der Service Desk nimmt Incidents und Service Requests entgegen und ist der Einstiegspunkt für Nutzer." },
+          { id: "B", text: "Problem-Management", rationale: "Es arbeitet im Hintergrund an Ursachen." },
+          { id: "C", text: "Lieferantenmanagement", rationale: "Es steuert Lieferanten, nicht Nutzerkontakte." },
+          { id: "D", text: "Release-Management", rationale: "Es macht neue oder geänderte Services verfügbar." },
+        ],
+        answer: "A",
+        explanation: "Ein guter Service Desk braucht neben Werkzeugen vor allem Empathie, Kommunikationsfähigkeit und Verständnis für das Geschäft.",
+        reference: EXAM,
+      },
+
+      /* ── Thema 8: Kontinuierliche Verbesserung ─────────────────────────── */
+      {
+        id: "itsm5-d8-where-now",
+        domain: "d8",
+        objective: "Kontinuierliche Verbesserung",
+        difficulty: "foundation",
+        question: "Ein Team hat die Vision für eine Verbesserung festgelegt. Welche Frage sollte im Modell der kontinuierlichen Verbesserung als Nächstes beantwortet werden?",
+        options: [
+          { id: "A", text: "Haben wir es geschafft?", rationale: "Diese Frage kommt erst nach der Umsetzung." },
+          { id: "B", text: "Wie halten wir die Dynamik aufrecht?", rationale: "Diese Frage steht am Ende des Modells." },
+          { id: "C", text: "Wo stehen wir jetzt?", rationale: "Richtig. Nach der Vision wird die aktuelle Ausgangslage objektiv erfasst." },
+          { id: "D", text: "Wie kommen wir dorthin?", rationale: "Dafür muss zuerst klar sein, wo man steht und wo man hin will." },
+        ],
+        answer: "C",
+        explanation: "Das Modell folgt den Fragen: Was ist die Vision? Wo stehen wir jetzt? Wo wollen wir hin? Wie kommen wir dorthin? Handeln. Haben wir es geschafft? Wie halten wir die Dynamik aufrecht?",
+        reference: EXAM,
+      },
+      {
+        id: "itsm5-d8-responsibility",
+        domain: "d8",
+        objective: "Kontinuierliche Verbesserung",
+        difficulty: "intermediate",
+        question: "Wer ist für kontinuierliche Verbesserung verantwortlich?",
+        options: [
+          { id: "A", text: "Ausschließlich ein spezielles Verbesserungsteam", rationale: "Ein solches Team kann koordinieren, die Verantwortung liegt aber bei allen." },
+          { id: "B", text: "Alle in der Organisation, auch wenn ein Team die Verbesserung koordinieren kann", rationale: "Richtig. Verbesserung ist Aufgabe aller Beteiligten." },
+          { id: "C", text: "Nur externe Berater", rationale: "Berater können unterstützen, ersetzen aber nicht die eigene Verantwortung." },
+          { id: "D", text: "Niemand, Verbesserung geschieht von selbst", rationale: "Verbesserung muss aktiv gesteuert werden." },
+        ],
+        answer: "B",
+        explanation: "Ein Verbesserungsregister (Continual Improvement Register) hilft, Ideen zu erfassen, zu priorisieren und nachzuverfolgen.",
+        reference: EXAM,
+      },
+
+      /* ── Thema 9: Wertströme ───────────────────────────────────────────── */
+      {
+        id: "itsm5-d9-mapping",
+        domain: "d9",
+        objective: "Wertstromanalyse und -management",
+        difficulty: "intermediate",
+        question: "Ein Team zeichnet alle Schritte von der Anfrage eines Nutzers bis zur Bereitstellung eines neuen Arbeitsplatzes auf, einschließlich der Wartezeiten zwischen den Schritten. Wozu dient das vor allem?",
+        options: [
+          { id: "A", text: "Um die Anzahl der Mitarbeitenden zu erhöhen", rationale: "Das ist nicht das Ziel einer Wertstromanalyse." },
+          { id: "B", text: "Um die Rechnung des Lieferanten zu prüfen", rationale: "Das ist eine kaufmännische Aufgabe." },
+          { id: "C", text: "Um die Hardware zu inventarisieren", rationale: "Das gehört zum Asset-Management." },
+          { id: "D", text: "Um Engpässe, Wartezeiten und Verschwendung im Wertstrom sichtbar zu machen und gezielt zu verbessern", rationale: "Richtig. Die Wertstromanalyse zeigt, wo Zeit und Aufwand verloren gehen." },
+        ],
+        answer: "D",
+        explanation: "Ein Wertstrom ist eine Abfolge von Schritten, mit der eine Organisation Produkte und Services für Konsumenten schafft und bereitstellt.",
+        reference: EXAM,
+      },
+    ],
+  },
+};
