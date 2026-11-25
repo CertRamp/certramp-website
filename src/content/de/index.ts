@@ -28,6 +28,7 @@ import { comptiaSecAiPlusDe } from "./comptia-secai-plus-cy0-001";
 import { istqbCtAiDe } from "./istqb-ct-ai";
 import { isaqbCpsaFDe } from "./isaqb-cpsa-f";
 import { itsmFoundationV5De } from "./itsm-foundation-v5";
+import { itsmFoundationBridgeV5De } from "./itsm-foundation-bridge-v5";
 import { ab730De } from "./ab-730";
 import { ab900De } from "./ab-900";
 import { awsAifC01De } from "./aws-aif-c01";
@@ -65,6 +66,7 @@ export const deContents: DeContent[] = [
   istqbCtAiDe,
   isaqbCpsaFDe,
   itsmFoundationV5De,
+  itsmFoundationBridgeV5De,
   sc200De,
   sc300De,
   sc500De,

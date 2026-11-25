@@ -286,6 +286,34 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       { label: "PeopleCert: Foundation Bridge (Version 5) exam page", url: "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-foundation-bridge-version-5-4158" },
       { label: "PeopleCert: certification FAQ", url: "https://www.peoplecert.org/help-and-support/faq-itil" },
     ],
+    // Verified 2026-11-25 against the PeopleCert Foundation Bridge (Version 5) exam page: 20 questions, multiple choice, 30 minutes,
+    // closed book, 65% to pass, covers only the Version 5 updates, 9 exam languages (listed), prerequisite any version 4 certification
+    // except two specialist modules, renewal every 3 years. Domains are the five syllabus topics on that page; no weights are published.
+    // The withdrawal date shown in examOverview is not on that page as of this check. Site naming stays neutral.
+    exam: {
+      officialName: "IT Service Management Foundation Bridge (Version 5)",
+      examVersion: "Version 5",
+      questionCount: "20",
+      duration: "30 minutes",
+      format: "Multiple choice, closed book",
+      passingScore: "65%",
+      languages: ["English", "Chinese", "French", "German", "Italian", "Japanese", "Polish", "Portuguese (Brazil)", "Spanish"],
+      prerequisites: "Any version 4 certification of the framework, except the specialist modules Acquiring and Managing Cloud Services and Sustainability in Digital and IT. Certification is renewed every 3 years.",
+      status: "current",
+      officialCertificationUrl: "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-foundation-bridge-version-5-4158",
+      officialExamUrl: "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-foundation-bridge-version-5-4158",
+      domains: [
+        { id: "d1", name: "Key enhancements in Version 5" },
+        { id: "d2", name: "Digital product and service management evolution" },
+        { id: "d3", name: "Updated language and core concepts" },
+        { id: "d4", name: "Enhanced value creation approach" },
+        { id: "d5", name: "Applying Version 5 in practice" },
+      ],
+      sources: [
+        { label: "PeopleCert: Foundation Bridge (Version 5) exam page", url: "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-foundation-bridge-version-5-4158" },
+      ],
+      lastVerified: "2026-11-25",
+    },
     seo: {
       title: "Foundation Bridge V5 Practice Exams",
       description:
