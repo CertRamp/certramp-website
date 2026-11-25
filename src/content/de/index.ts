@@ -24,6 +24,8 @@ import { isc2CcDe } from "./isc2-cc";
 import { iso27001LeadImplementerDe } from "./iso-27001-lead-implementer";
 import { istqbCtfl4De } from "./istqb-ctfl-4";
 import { prince27FoundationDe } from "./prince2-7-foundation";
+import { awsAifC01De } from "./aws-aif-c01";
+import { sc100De } from "./sc-100";
 import { sc200De } from "./sc-200";
 import { sc300De } from "./sc-300";
 import { sc500De } from "./sc-500";
@@ -49,6 +51,8 @@ export const deContents: DeContent[] = [
   iso27001LeadImplementerDe,
   comptiaNetworkPlusDe,
   prince27FoundationDe,
+  awsAifC01De,
+  sc100De,
   sc200De,
   sc300De,
   sc500De,
