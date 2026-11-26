@@ -14,6 +14,16 @@ import { comptiaSecurityPlusSy0801Guide } from "./guides/comptia-security-plus-s
 import { cismGuide } from "./guides/cism";
 import { criscGuide } from "./guides/crisc";
 import { ckaGuide } from "./guides/cka";
+import { az400Guide } from "./guides/az-400";
+import { az401Guide } from "./guides/az-401";
+import { dp700Guide } from "./guides/dp-700";
+import { ckadGuide } from "./guides/ckad";
+import { togaf10FoundationGuide } from "./guides/togaf-10-foundation-ogea-101";
+import { isaqbCpsaFGuide } from "./guides/isaqb-cpsa-f";
+import { istqbCtfl4Guide } from "./guides/istqb-ctfl-4";
+import { isc2CcGuide } from "./guides/isc2-cc";
+import { awsDvaC03Guide } from "./guides/aws-dva-c03";
+import { terraformAssociate004Guide } from "./guides/terraform-associate-004";
 import { isc2CisspGuide } from "./guides/isc2-cissp";
 import { awsSaaC03Guide } from "./guides/aws-saa-c03";
 import { pmpGuide } from "./guides/pmp";
@@ -107,6 +117,16 @@ import { databricksGenerativeAiEngineerAssociateGuide } from "./guides/databrick
 import { databricksGenerativeAiEngineerAssociateQuestions } from "./practice-questions/databricks-generative-ai-engineer-associate";
 
 export const guides: ExamGuide[] = [
+  az400Guide,
+  az401Guide,
+  dp700Guide,
+  ckadGuide,
+  togaf10FoundationGuide,
+  isaqbCpsaFGuide,
+  istqbCtfl4Guide,
+  isc2CcGuide,
+  awsDvaC03Guide,
+  terraformAssociate004Guide,
   awsClfC02Guide,
   comptiaSecurityPlusSy0801Guide,
   cismGuide,
