@@ -4,6 +4,7 @@ import { PageHero } from "@/components/layout/PageHero";
 import { Section } from "@/components/ui/Section";
 import { buttonClasses } from "@/components/ui/Button";
 import { TrackedLink } from "@/components/analytics/Tracked";
+import { FreeCodesSignup } from "@/components/blocks/FreeCodesSignup";
 import { getAllCertifications } from "@/lib/certifications";
 import { formatDate } from "@/lib/format";
 import { buildMetadata } from "@/lib/seo";
@@ -87,6 +88,7 @@ export default function FreeAccessCodesPage() {
             </Link>
           </p>
         )}
+        <FreeCodesSignup className="mt-10 max-w-2xl rounded-[var(--radius-card)] border border-line bg-white p-6" />
         <p className="mt-10 max-w-3xl text-sm leading-relaxed text-muted">
           If a code no longer works, its redemptions are used up or it has expired; Udemy then shows the regular price. After you have
           worked through the tests, an honest rating on Udemy helps other candidates decide. CertRamp questions are original practice

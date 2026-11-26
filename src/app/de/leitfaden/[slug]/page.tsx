@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { UdemyCta } from "@/components/certification/CertCta";
 import { VendorDisclaimer } from "@/components/certification/VendorDisclaimer";
 import { ExamFactsList } from "@/components/content/ExamFactsList";
+import { ExamAlertSignup } from "@/components/blocks/ExamAlertSignup";
 import { PageHero } from "@/components/layout/PageHero";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { FaqList } from "@/components/ui/FaqList";
@@ -300,6 +301,8 @@ export default async function DeGuidePage({
                 <FaqList items={guide.faq} />
               </div>
             </section>
+
+            <ExamAlertSignup slug={cert.slug} exam={name} locale="de" />
           </div>
         </div>
       </Section>

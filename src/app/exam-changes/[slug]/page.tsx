@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ExamChangeCard } from "@/components/content/ExamChangeCard";
+import { ExamAlertSignup } from "@/components/blocks/ExamAlertSignup";
+import { alertFormFor } from "@/config/alerts";
+import { getCertification } from "@/lib/certifications";
 import { PageHero } from "@/components/layout/PageHero";
 import { JsonLd } from "@/components/seo/JsonLd";
 import Link from "@/components/ui/Link";
@@ -41,6 +44,9 @@ export default async function ExamChangeDetail({ params }: { params: Promise<Par
   if (!data) notFound();
   const { page, change } = data;
   const path = examChangeDetailPath(page.slug);
+  // Alert sign-up for the exam candidates should study now: the last linked course with a live form (the successor comes last).
+  const alertSlug = [...change.certramp].reverse().find((s) => alertFormFor(s));
+  const alertCert = alertSlug ? getCertification(alertSlug) : undefined;
   return (
     <div lang="en">
       <PageHero
@@ -66,6 +72,7 @@ export default async function ExamChangeDetail({ params }: { params: Promise<Par
               </div>
             ))}
           </dl>
+          {alertCert && <ExamAlertSignup slug={alertCert.slug} exam={alertCert.name} className="mt-12 rounded-[var(--radius-card)] border border-line bg-white p-6" />}
           <p className="mt-12 text-sm text-muted">
             More retirements and new exam versions:{" "}
             <Link href={examChangesPath} className="font-semibold text-accent-600 hover:underline">
