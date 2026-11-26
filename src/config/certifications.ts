@@ -5047,7 +5047,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       languages: ["English", "Japanese", "Korean", "Portuguese (Brazil)", "Simplified Chinese", "Spanish (Latin America)"],
       delivery: "Pearson VUE testing center or online proctored exam",
       prerequisites: "No formal prerequisites. Recommended: 2 or more years of experience using AWS services to design and implement cloud solutions.",
-      status: "upcoming",
+      status: "current",
       launchDate: "2026-11-17",
       officialCertificationUrl: "https://aws.amazon.com/certification/certified-solutions-architect-professional/",
       officialExamUrl: "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-03/solutions-architect-professional-03.html",

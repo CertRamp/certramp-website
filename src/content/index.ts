@@ -24,6 +24,16 @@ import { istqbCtfl4Guide } from "./guides/istqb-ctfl-4";
 import { isc2CcGuide } from "./guides/isc2-cc";
 import { awsDvaC03Guide } from "./guides/aws-dva-c03";
 import { terraformAssociate004Guide } from "./guides/terraform-associate-004";
+import { awsSapC03Guide } from "./guides/aws-sap-c03";
+import { awsSoaC03Guide } from "./guides/aws-soa-c03";
+import { az802Guide } from "./guides/az-802";
+import { ai300Guide } from "./guides/ai-300";
+import { sc100Guide } from "./guides/sc-100";
+import { comptiaNetworkPlusN10009Guide } from "./guides/comptia-network-plus-n10-009";
+import { comptiaAPlusCore1Guide } from "./guides/comptia-a-plus-core-1-220-1201";
+import { comptiaAPlusCore2Guide } from "./guides/comptia-a-plus-core-2-220-1202";
+import { pmiAcpGuide } from "./guides/pmi-acp";
+import { prince27FoundationGuide } from "./guides/prince2-7-foundation";
 import { isc2CisspGuide } from "./guides/isc2-cissp";
 import { awsSaaC03Guide } from "./guides/aws-saa-c03";
 import { pmpGuide } from "./guides/pmp";
@@ -117,6 +127,16 @@ import { databricksGenerativeAiEngineerAssociateGuide } from "./guides/databrick
 import { databricksGenerativeAiEngineerAssociateQuestions } from "./practice-questions/databricks-generative-ai-engineer-associate";
 
 export const guides: ExamGuide[] = [
+  awsSapC03Guide,
+  awsSoaC03Guide,
+  az802Guide,
+  ai300Guide,
+  sc100Guide,
+  comptiaNetworkPlusN10009Guide,
+  comptiaAPlusCore1Guide,
+  comptiaAPlusCore2Guide,
+  pmiAcpGuide,
+  prince27FoundationGuide,
   az400Guide,
   az401Guide,
   dp700Guide,
