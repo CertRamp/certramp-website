@@ -11,6 +11,8 @@ import courses from "@/data/udemy-courses.json";
 import { categoryList, getCategoryByCsvName } from "@/config/categories";
 import { certificationDetails } from "@/config/certifications";
 import { getVendor } from "@/config/vendors";
+import { coupons, type CourseCoupon } from "@/config/coupons";
+
 import type {
   CertificationStatus,
   DeliveryMode,
@@ -22,6 +24,23 @@ import type {
   Topic,
   UdemyCourse,
 } from "@/config/types";
+
+const BUILD_TIME = Date.now();
+
+/** Applies an active coupon (src/config/coupons.ts) to a Udemy course URL. */
+function withCoupon(url: string): { url: string; coupon: CourseCoupon | null } {
+  if (!url) return { url, coupon: null };
+  let parsed: URL;
+  try {
+    parsed = new URL(url);
+  } catch {
+    return { url, coupon: null };
+  }
+  const coupon = coupons.find((k) => parsed.pathname === k.coursePath && Date.parse(k.endsAt) > BUILD_TIME) ?? null;
+  if (!coupon) return { url, coupon: null };
+  parsed.searchParams.set("couponCode", coupon.code);
+  return { url: parsed.toString(), coupon };
+}
 
 /* ── Languages ─────────────────────────────────────────────────────────── */
 
@@ -49,6 +68,8 @@ export interface ResolvedCourse {
   url: string;
   /** Udemy rating — only when rating, count and date are all known. */
   udemyRating: { value: number; count: number; asOf: string } | null;
+  /** Active coupon at build time (already applied to `url`). */
+  coupon: CourseCoupon | null;
 }
 
 export interface ResolvedCta {
@@ -194,7 +215,7 @@ function build(): ResolvedCertification[] {
           languageCode: lang.code,
           languageLabel: lang.label,
           questions: c.questions,
-          url: safeUrl(c.referralUrl) ?? safeUrl(c.udemyUrl) ?? "",
+          ...withCoupon(safeUrl(c.referralUrl) ?? safeUrl(c.udemyUrl) ?? ""),
           udemyRating:
             c.rating && c.ratingCount && c.ratingDate ? { value: c.rating, count: c.ratingCount, asOf: c.ratingDate } : null,
         };

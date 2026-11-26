@@ -187,6 +187,15 @@ export function CertOffer({ cert }: { cert: ResolvedCertification }) {
                       </span>
                     </p>
                   )}
+                  {c.coupon && (
+                    <p className="mt-2 inline-flex flex-wrap items-center gap-x-1.5 rounded-full bg-[#e8f5ec] px-3 py-1 text-sm font-medium text-[#1d6b3a]">
+                      <span>{c.coupon.kind === "free" ? "Free access code" : "Discount code"}</span>
+                      <code className="font-semibold">{c.coupon.code}</code>
+                      <span className="font-normal">
+                        {c.coupon.maxUses ? `· first ${c.coupon.maxUses} learners ` : "· "}until {formatDate(c.coupon.lastDay)}, applied automatically
+                      </span>
+                    </p>
+                  )}
                 </div>
                 <UdemyCta
                   cert={cert}
