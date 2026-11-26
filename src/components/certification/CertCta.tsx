@@ -71,7 +71,8 @@ export function UdemyCta({
   label?: string;
 }) {
   if (!course) return null;
-  const text = label ?? (course.language === "English" ? "View on Udemy" : `View on Udemy (${course.languageLabel})`);
+  const base = course.language === "English" ? "View on Udemy" : `View on Udemy (${course.languageLabel})`;
+  const text = label ?? (course.coupon?.kind === "free" ? `${base}: free code active` : base);
   return (
     <TrackedLink
       href={course.url}

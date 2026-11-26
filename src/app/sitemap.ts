@@ -36,6 +36,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: absoluteUrl("/how-it-works"), changeFrequency: "monthly", priority: 0.6 },
     { url: absoluteUrl("/about"), changeFrequency: "yearly", priority: 0.4 },
     { url: absoluteUrl("/faq"), changeFrequency: "monthly", priority: 0.5 },
+    ...(getAllCertifications().some((c) => c.courses.some((k) => k.coupon))
+      ? [{ url: absoluteUrl("/free-access-codes"), changeFrequency: "weekly" as const, priority: 0.7 }]
+      : []),
   ];
 
   const certPages: MetadataRoute.Sitemap = certs.map((c) => ({

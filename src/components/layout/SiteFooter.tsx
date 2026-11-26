@@ -36,6 +36,11 @@ export function SiteFooter() {
                 All practice exams
               </Link>
             </li>
+            <li>
+              <Link className="hover:text-white" href="/free-access-codes">
+                Free access codes
+              </Link>
+            </li>
             {categoryList.map((c) => (
               <li key={c.id}>
                 <Link className="hover:text-white" href={`/practice-exams#${c.id}`}>
