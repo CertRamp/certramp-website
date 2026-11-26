@@ -44,6 +44,16 @@ import { ab900Guide } from "./guides/ab-900";
 import { cksGuide } from "./guides/cks";
 import { cobit7FoundationGuide } from "./guides/cobit-7-foundation";
 import { itsmFoundationV5Guide } from "./guides/itsm-foundation-v5";
+import { comptiaCysaPlusCs0004Guide } from "./guides/comptia-cysa-plus-cs0-004";
+import { awsScsC03Guide } from "./guides/aws-scs-c03";
+import { pmiRmpGuide } from "./guides/pmi-rmp";
+import { pmPractitioner7Guide } from "./guides/project-management-practitioner-7th-edition";
+import { istqbCtalTmGuide } from "./guides/istqb-ctal-tm";
+import { istqbCtAiGuide } from "./guides/istqb-ct-ai";
+import { iso27001LeadImplementerGuide } from "./guides/iso-27001-lead-implementer";
+import { dp300Guide } from "./guides/dp-300";
+import { az140Guide } from "./guides/az-140";
+import { awsAipC01Guide } from "./guides/aws-aip-c01";
 import { isc2CisspGuide } from "./guides/isc2-cissp";
 import { awsSaaC03Guide } from "./guides/aws-saa-c03";
 import { pmpGuide } from "./guides/pmp";
@@ -137,6 +147,16 @@ import { databricksGenerativeAiEngineerAssociateGuide } from "./guides/databrick
 import { databricksGenerativeAiEngineerAssociateQuestions } from "./practice-questions/databricks-generative-ai-engineer-associate";
 
 export const guides: ExamGuide[] = [
+  comptiaCysaPlusCs0004Guide,
+  awsScsC03Guide,
+  pmiRmpGuide,
+  pmPractitioner7Guide,
+  istqbCtalTmGuide,
+  istqbCtAiGuide,
+  iso27001LeadImplementerGuide,
+  dp300Guide,
+  az140Guide,
+  awsAipC01Guide,
   awsDopC02Guide,
   awsDeaC01Guide,
   awsAifC01Guide,
