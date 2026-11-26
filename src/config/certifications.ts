@@ -127,6 +127,38 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       },
       { label: "Official examination format", url: "https://www.prince2.com/usa/prince2-examination-format" },
     ],
+    // Verified 2026-11-26 against the PeopleCert Practitioner (7th edition) exam page: 56 questions and sub-questions worth 70 marks,
+    // objective testing, 150 minutes, 60% to pass, open book, 14 exam languages (listed), qualifying prerequisite certifications,
+    // renewal with 60 CPD points. No weights are published; the domains group the learning areas listed on that page
+    // (principles; roles, people management and communication; practices; processes; tailoring incl. sustainability and digital/data).
+    // Naming stays neutral: no method trademark on this page.
+    exam: {
+      officialName: "Project Management Practitioner (7th Edition)",
+      examVersion: "7th edition",
+      questionCount: "56 questions and sub-questions worth 70 marks",
+      duration: "150 minutes",
+      format: "Scenario-based objective testing, open book",
+      passingScore: "60%",
+      languages: [
+        "English", "Chinese", "Czech", "Danish", "Dutch", "French", "German",
+        "Italian", "Japanese", "Norwegian", "Polish", "Portuguese (Brazil)", "Slovak", "Spanish",
+      ],
+      prerequisites: "The 7th edition Foundation or another qualifying certification (see PeopleCert for the full list). Certification is renewed with 60 CPD points or another exam from the same product suite.",
+      status: "current",
+      officialCertificationUrl: "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-2/PRINCE2-7-practitioner-3581",
+      officialExamUrl: "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-2/PRINCE2-7-practitioner-3581",
+      domains: [
+        { id: "d1", name: "Principles" },
+        { id: "d2", name: "People: roles, people management and communication" },
+        { id: "d3", name: "Practices" },
+        { id: "d4", name: "Processes" },
+        { id: "d5", name: "Tailoring and project context" },
+      ],
+      sources: [
+        { label: "PeopleCert: Practitioner exam page (7th edition)", url: "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-2/PRINCE2-7-practitioner-3581" },
+      ],
+      lastVerified: "2026-11-26",
+    },
     seo: {
       title: "PM Practitioner (7th Edition) Practice Exams",
       description:
