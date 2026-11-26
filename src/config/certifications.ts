@@ -2643,6 +2643,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     },
   },
   "isc2-cissp": {
+    featured: true,
     description:
       "Practice exams for ISC2 CISSP, written to the exam outline effective 15 April 2024 (security and risk management, asset security, security architecture and engineering, and the other five domains). Find your gaps before the adaptive exam.",
     fullName: "ISC2 Certified Information Systems Security Professional",
@@ -3129,6 +3130,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     },
   },
   "cisa": {
+    featured: true,
     description:
       "Practice exams for ISACA CISA: Certified Information Systems Auditor, written to the exam content outline in effect since 1 August 2024: audit process, IT governance, acquisition and development, operations and resilience, and protection of information assets.",
     fullName: "ISACA Certified Information Systems Auditor (CISA)",
@@ -4110,6 +4112,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     },
   },
   "togaf-10-foundation-ogea-101": {
+    featured: true,
     description:
       "Practice exams for the TOGAF Enterprise Architecture Part 1 exam (OGEA-101) from The Open Group, based on the TOGAF Standard, 10th Edition. Practise concepts, the ADM, ADM techniques, governance and architecture content before the 40-question exam.",
     fullName: "TOGAF Enterprise Architecture Foundation (OGEA-101)",
@@ -4707,6 +4710,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     },
   },
   "pmi-cpmai": {
+    featured: true,
     description:
       "720 practice questions in six practice tests for the PMI-CPMAI exam, covering running AI projects with the CPMAI methodology, from business understanding and data to model evaluation and operationalisation. Find your gaps before the real exam, with an explanation for every answer option.",
     fullName: "PMI Certified Professional in Managing AI (PMI-CPMAI)",
@@ -5021,6 +5025,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     },
   },
   "aws-sap-c03": {
+    featured: true,
     description:
       "Practice exams for AWS SAP-C03: Certified Solutions Architect - Professional, covering the five domains of the new exam guide, including AI/ML integration, security and governance. SAP-C03 replaces SAP-C02 on 17 November 2026; the last day to take SAP-C02 is 16 November 2026.",
     fullName: "AWS Certified Solutions Architect - Professional",
@@ -5866,6 +5871,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
     },
   },
   "iso-iec-42001-foundation": {
+    featured: true,
     description:
       "Practice exams for the PECB ISO/IEC 42001 Foundation exam, covering the fundamental principles and concepts of an artificial intelligence management system (AIMS) and the AIMS requirements of ISO/IEC 42001.",
     fullName: "PECB ISO/IEC 42001 Foundation (AI Management Systems)",
