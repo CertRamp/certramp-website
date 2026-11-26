@@ -80,8 +80,8 @@ const analyticsSection = umamiEnabled
 `;
 const n = umamiEnabled ? 1 : 0; // section numbers shift by one when the Umami section is shown
 const recipients = umamiEnabled
-  ? `<p>We do not sell personal data. Data is only passed to our processors: IONOS (hosting, visitor statistics and email, see section 2), Umami Software, Inc. (web analytics, see section 4) and Brevo (exam change alerts, see section 7). Analytics data is stored in the EU; access from the USA by Umami Software, Inc. cannot be ruled out (see section 4).</p>`
-  : `<p>We do not sell personal data. Data is only passed to our processors IONOS (hosting, visitor statistics and email, see section 2) and Brevo (exam change alerts, see section 6). Personal data is not transferred to countries outside the EU/EEA.</p>`;
+  ? `<p>We do not sell personal data. Data is only passed to our processors: IONOS (hosting, visitor statistics and email, see section 2), Umami Software, Inc. (web analytics, see section 4) and Brevo (email alerts, see section 7). Analytics data is stored in the EU; access from the USA by Umami Software, Inc. cannot be ruled out (see section 4).</p>`
+  : `<p>We do not sell personal data. Data is only passed to our processors IONOS (hosting, visitor statistics and email, see section 2) and Brevo (email alerts, see section 6). Personal data is not transferred to countries outside the EU/EEA.</p>`;
 
 const privacyHtml = `
 <p>This privacy policy explains what personal data is processed when you visit this website and when you contact us. We keep data processing to the minimum needed to run the website.</p>
@@ -101,9 +101,10 @@ ${analyticsSection}
 <h2>${5+n}. Contact by email</h2>
 <p>If you contact us by email, we process the data you send us (usually your email address, your name and the content of your message) to answer your enquiry. The legal basis is Art. 6(1)(b) GDPR where your enquiry relates to a contract or pre-contractual measures, and Art. 6(1)(f) GDPR otherwise; our legitimate interest is responding to enquiries. We delete the data once your enquiry has been dealt with, unless statutory retention obligations (for example under German commercial or tax law) require us to keep it longer.</p>
 
-<h2>${6+n}. Exam change alerts (email)</h2>
+<h2>${6+n}. Exam change alerts and free code alerts (email)</h2>
 <p>On some practice exam pages you can subscribe to an email alert for one certification exam. If you subscribe, we process your email address, the certification you chose, the page language, the time of sign-up and confirmation, and the IP address used for confirmation. Purpose: to email you when the official exam you chose changes (for example a new exam version, a new outline or a retirement), and to be able to prove your consent. The legal basis is your consent (Art. 6(1)(a) GDPR).</p>
 <p>We use a double opt-in procedure: you only receive alerts after you confirm your address with the link in our confirmation email. You can withdraw your consent at any time with the unsubscribe link in every email or by writing to <a href="mailto:hello@certramplearning.com">hello@certramplearning.com</a>; this does not affect the lawfulness of processing before the withdrawal. We delete your data when you unsubscribe and keep a record of the consent and the withdrawal for up to three years to be able to prove that we acted lawfully.</p>
+<p>On our free access codes page you can also subscribe, separately, to an email when a new round of free access codes for CertRamp practice exams is available. We process the same data for this purpose, on the same legal basis (consent, Art. 6(1)(a) GDPR), with the same double opt-in procedure, withdrawal options and deletion rules as described above. The two subscriptions are independent: withdrawing one does not affect the other.</p>
 <p>We send the emails with Brevo (Brevo GmbH, Köpenicker Str. 126, 10179 Berlin, Germany, part of Brevo SAS, Paris, France), which processes the data on our behalf under a data processing agreement pursuant to Art. 28 GDPR. The data is stored on servers in the European Union.</p>
 
 <h2>${7+n}. Readiness check (storage in your browser)</h2>

@@ -15,6 +15,10 @@
  * except CCAT and the retired SAP-C02 ("Exam change alert <exam>" /
  * "Exam Change Alerts <exam> (Double Opt-in)").
  *
+ * 26 Nov 2026: forms and lists added for the 21 newer courses, plus a separate
+ * "Free access codes alert" form (list "Free Access Codes (Double Opt-in)")
+ * used on /free-access-codes/ (see freeCodesAlertForm below).
+ *
  * Live since 13 Nov 2026: sender hello@certramplearning.com, domain authenticated in Brevo
  * (DKIM via IONOS Domain Connect), privacy policy sections added.
  */
@@ -253,6 +257,49 @@ export const alertsConfig: {
       "https://11007e05.sibforms.com/serve/MUIFALYqMe0s9Z4vYSoJfFYZyOWPeSfesbJTrQ22HTqCkN9_G91fXIDJcJXHyZhNC0GGrhaIrCFX50RIbRR1XMsYcEk_LhpWJmXjOO6svvZ-j5nAwFLT_QDLUWQYm9HF0FdHgyXLEZi8Juxe534CYRKQ5mi0IqmizGivO8U2iyDHbUA2N0KIiH2lVsReuBH7xnsNOE-1X4-wp9DTrQ==",
     "togaf-10-foundation-ogea-101":
       "https://11007e05.sibforms.com/serve/MUIFANYdID4CFxauf8xZWIHZH4MPxyXIb1EprE6DaeFSUa3ZoNU9jP4wsH1pDKthrO8DThmVdw23uaEdeeYbfGR1AYSbrhGnJXIGLkTsEhLP1ojpIdgLsBbRbo2QyafdUBRLghyJPpa-ojQi2O0zAjXyNiC25xok5QYlk6I4Xt-UHcfh-qosRE3JdHZBxM9O_0PmsoHU1FnSBupbsQ==",
+    // 26 Nov 2026: forms + lists for the 21 courses added after 13 Nov (CCAT stays excluded).
+    "az-401":
+      "https://11007e05.sibforms.com/serve/MUIFAJWs7EA_NEDtL254dXUIfMLnWfVq8AiZ4x--YAiL7DeIyXtho6ei1J24gNbdOJ1i-IAKip-mPE3waFDz2VaeHLNsAyzlxtPqzFqL-CLqdaXZ5-5Ry5Y3QE5tFI560zrgOXjWvVshLed2OdcCm3VctpMtnxgNQTeqexlFXEGwsZrIje8h33viK4SDXM_U0513Vto_Vpw3ME3yJw==",
+    "az-400":
+      "https://11007e05.sibforms.com/serve/MUIFAHmEWBIcNDfCjEeg1-mQQBGyYn0jpxaJa3gPf4df03_H4b3mQJHIxzUEueQp3YbsJB4QH0A7KE625USYaoi8HTA0mlpOcFdH12QAvrdEXj03V5-EugziCJgyXTSnaBgl5buK2oCsitpZLL0mOg6vo_ZoaM4P6csCvtoT6J1WHzU67DRwxcjDleX60pyil69rGYr7aZL-bGjuSw==",
+    "claude-certified-architect-ccar-p":
+      "https://11007e05.sibforms.com/serve/MUIFAE8AyxOhgR_bXDX_nLhCLWQYGEcXcUtS47UaI4WW19krJMgcmQg068qi0XDqzBHrBiohleECoKK_DTLOrtMvir9dzmPW0McvrUVjGEY1cX86xHY1jHf_G5uRxqas2c__maUVHDLKxcgBhNAFioalMvILsMtEeCZjmtPRY9eHv5UwN-Ls8ewWdUR1Y2OkwbC2LZhUNYeJ7OcY-A==",
+    "google-cloud-professional-machine-learning-engineer":
+      "https://11007e05.sibforms.com/serve/MUIFAO4Lh0SSL5EqAkxA8vacdHhpP2NRhnmTwn7QVLVm-gdMxOqrDzH4_rh7gQkUna3fnQ-eNLXf8feF2vQgXvuFSj8Ydf_vFwfZ0FZOw-bpn_wuWjuinFaDi29nM5C9w82XFT6Q9lU1Avbr1njyWik1lcgw_X_tMrami23Y9e1L17Y_KHQ2ZIz_MIlqqiz7THdjyPOn8SuMcaIsZg==",
+    "comptia-cysa-plus-cs0-004":
+      "https://11007e05.sibforms.com/serve/MUIFALuEBRJFrDJ_vz_IG4tfOcvLAXR-6tY-eDlJNSMDGDudvpq2Wu-shpfxZ3JVFvGgFDUvJRYJC_B1L__XNhDSA2_op4K51cBNRVX0cIGi9mTZWUBrxi4UIkjxwry1p4uBN3EYu84PmjhxOY9JuOYBDi51LYhntoHTI-ROGBEj-BgMPZjXfXVf05sjxDCgxu5vgUDcZcSa4T69jg==",
+    "cobit-7-foundation":
+      "https://11007e05.sibforms.com/serve/MUIFAB0hIUy8WEof5VqlqSUzSafQ746Pycc0h-tqCA-1oNLItlTh3_mRifuumxXfAxZ4DwIkDE08Ow-ksm3yjhSBjZzquqP3ku1HCjHNPtmPOccRMVd7Zh5xjfiwISMkxPcKjrQAQ56CsXTzFnl15Vy4XKTXtuEaDMsBQndv5hLqq7h4xSZyiC5SWcVSIFFTUrthhb_YSH6pNkGb0Q==",
+    "iatf-16949-auditor":
+      "https://11007e05.sibforms.com/serve/MUIFADFN7DprXXdU27t52lZZ-3GE3qTpuzq3_nOz1eQGM5At5jWOoVKh8Wi2gFDTN38MYqDkSk_X8-UiGFdMIosT1l1U_bA2sde3aOZEN2xJG5ct8p1kXCtCZJ8JnLP8Z8mBj2Kpy7QXHseUxph7C88sI-FXaoonhVT-Je6A1k0KQQ1S_JDYWxeVSY447UU7BPOTkoiYNMrLiE7iIw==",
+    "iso-9001-lead-auditor":
+      "https://11007e05.sibforms.com/serve/MUIFACqKRuwnx2BNt17Ycc5sMOQsdOABc4uUEkwcWQbRr-vhk2onwzTNSPngltcyPUlT-wzJq21mRsaPCz6S3EivCglhUEMYZhWZQlYeYKRqSYinEQAZ435rKB9734K1Oo4k-GlWyzaucCdt7cIHpkt4YsMLNVcPH52u1aMZB01AwwxmR31otX8vKhnuUMl1ssy6AfC2z_Nbr5ZGhA==",
+    "iso-9001-2026-transition":
+      "https://11007e05.sibforms.com/serve/MUIFADOq9VwJ83DsYK6Bzydc2WdBM-lAiEnPuBkXFPHDq33WiMMcGponsLxB4mMi1AL03dT4NLTPL2JAMbN1ZyKBM7LdgMRcSk76Be1aPut5br62qQQpfeVhEeJn1xNexeWrej7E3EQPqaZ_thV2tq2dhz87xEuTA_Lzaa6ABT1kEljRPFeWAzJc3OkTSO0FoVSonI7a2FiUMvIyMw==",
+    "iso-13485-lead-auditor":
+      "https://11007e05.sibforms.com/serve/MUIFAB5LOKOOTwoRg5ag11I1vI7R1IANhv3kLJ35RpYkE8JDyO5rrwRDe_QKsWBRI2OQMr1MUxdyqWsUtaOWvin6qeVBOoDSe7seGrFCDAYFKFhThqrNDUOriSDUW56UCt2_7Oryrqzb_bu04wqIc0T3kJx3I4vyjH0WtiPjumYZ3YStEYY8XNKlwqlxmcJobOd341fDKUZny10p6w==",
+    "iso-14001-lead-auditor":
+      "https://11007e05.sibforms.com/serve/MUIFAIYGtOSK3PvIxS5CirbY4g9uK1CWDSQmsZOwIKeIv9EYIwFb_Vk5FhM6H5w1Yxwoqs2sTMSpUDZeH-yh8VJ40sKjWK-kdT1Qk3w6UBsDnTVfNABDldwd5q2I6dbpJB5wSbc8tB3rAwa_UlDZ79l2uB-Y5DWaQtp80Mo14TcGsUgFkU9IJco_m-XQ_ZhbBQIP-1ZkuZFMik4Pgg==",
+    "pmi-cpmai":
+      "https://11007e05.sibforms.com/serve/MUIFAGOdlDhvwp2G_WJz_qoIOIsDjS7zZ25BiYqmujJ6J0MlXn8DnU4yeX9qxbG46glwsI0HdmwbEKnB69sLTu6WDvmYOQH320qyQNSW6L18UYcnDjojuYdNnSM4iSVXMCURDvSaZNB8jprfyBV9wPECr5Fy3BcktVoboH_bjIrqL75hhPjvBjMp42lb3LIoPRP3FOj10kswMdr0Sw==",
+    "salesforce-data-con-101":
+      "https://11007e05.sibforms.com/serve/MUIFAOfJ1VBQ7ZwkjT5BWLPbr9SmIAwVWHclPa1dxEpY3QV-SQK-zJBoGbrw38hO5kiBW-YPBAWOSX4KxImdrVp8RUyh1-HeEhdV5QCEugKL1Ya1jXNba7EWFrcKySHo8SqT3VYyVlSIQ_hFUJ4QgyDpAyP3ukibIUN19vq_9Pcp6WWdibTFMAXdYcHUA1nCdy2XaKuqoN0UARzy1g==",
+    "dp-300":
+      "https://11007e05.sibforms.com/serve/MUIFABuIBfTDa4JuMkn1GwK91-WQyAsv9rzkvvYadHpxTn-GuP9wwqGJXT7dU4AlCFothWQnGWUpSNY7lq144Wway0ct1ZXExU23DPg8QF6xf9jUkrxPk0UqUSa4PU9pzc6tjypF5PO08jumr0cHnETNR7uaKUWO0DDJe6BAV-GNPEIr4wokBqteKD9LQKD9sZbEqVSdkQ9RK6qrAA==",
+    "dp-700":
+      "https://11007e05.sibforms.com/serve/MUIFAHKbsEvBGoYvMq_VyNX4cNsleH1GsR-AvpeojdxDLHoy27zU575YbFK_Bv2eyBuhRh3neQhbI8-qaa2HmpxlwBXLxdowXrVJnTaP24qKHcKnPpCvNwfL9TvwsNC4CGbjhV1_s39CQBSkHLgRcmw5_eJjyR_2F3Edhk4fGjkwL92fikLP0YQAIv6Lz2BgRNPrHtNPaq0f2Vlsvg==",
+    "google-cloud-professional-cloud-devops-engineer":
+      "https://11007e05.sibforms.com/serve/MUIFAAV5n02RvAFkFoOJ5aEftzZ6mW84DoiApF923z6x11b3RJKhMPMvmI-3UDVnMOpr93qTlVenW3CzglMCOHnxbtb9jbk3kySTq4bycWj3Tv2l6Mi_DE9_XZugCPJYJVog-LbBbWkvjDPrgR7KqJX30C3vyhzQBK1E_K3mIMvH18HFuZNUI7JjbZee6CAFUHheIB-Vesixtj9eyA==",
+    "snowpro-core-cof-c03":
+      "https://11007e05.sibforms.com/serve/MUIFABxn4PLqts0UfNX_eYqtcMi0Nz-PFhQqU8u0ClK7QaATXjlFiucs9-9LdyepCHmoYSUVwUVuD70TVlaUGCkL9tuvNQix8IUD4KyMRLdlydpF4fDKSkwEoVysOd_4RrY6CxsjcGNy1FROzoPfr310qZUjfhjppaOlbH0ROLd9PWJ2KoEWLpOKLZTydOCdxJSLywi8hS1HV27M9A==",
+    "isaqb-cpsa-f":
+      "https://11007e05.sibforms.com/serve/MUIFALzI4KziPvqceK3TlU5DOr-VoXdmciGwQq6mkGYzkaVpYNsus7oOGnMBexrePWls1iF_fKrScmPBVvVajzewg_6K616ndevo9sbDi7AU06lj6h5FUl1e5CuN7N5laQ8cCjPjGcen_s31A7yqCblONyR7YXnOIt1T5eKVhFz7PKVioDD3uUM7TqkYgPfr7qkGrvFC1qrXZ_5K0w==",
+    "ab-410":
+      "https://11007e05.sibforms.com/serve/MUIFAIiUX33WKQLLgKUmowmSqokbDl5WYa6rGLLFajaAydwZRhgwRxgX4JxWOAZ7vaQaagkIBuVCQqhu4I5nQ8ps8u28hL4tlToZmNpRg8BHFlelY_znv1PsPJuttSscUBF7JsHchnbwxIg1oOK_DjRpqY8MZcXc4gQKPMOonuCJ9TiGgAbA6RpC4sii4jDH40pJ_avCRiBgX303XQ==",
+    "ascm-cscp":
+      "https://11007e05.sibforms.com/serve/MUIFADQhxfvgviwWLFVhSZmnNDBzm2_bmWMmLZlrxd3dn5xBLCl9eOHB_6fmshanbiVXSKf-N6uMAa1FO49i8SseE1pf1Zgq-Q2wkc2CoXPZ5jQFrUUQlTjf7MH-pDCXHl4k9WJvXZOqrkSnyrC3ca9oadU_9xR7c_7Mb3UL2jYIK949bE66q1yFZ3Q9E-Uhp5dp7GAmYK_lbNmTKw==",
+    "togaf-10-practitioner-ogea-102":
+      "https://11007e05.sibforms.com/serve/MUIFAGPiLZscIZulQ8V9NORuyZ6D-pX-twktOccpWSe5pARTsN58IeUs3xPOheifEQD3jFqq4dhjbNKH8HUEMgqzHwbZu_P6Js7z2Jy5q8-xcE74b7Qf1RjYtT22tq-nOZdmRu-WvPVuHzMmKqZd5vjckCNb1IQkGM86R-JkdYtGpeyrfAVbA6zUQ-zG_UJdAyktxsEsU5qOqUG2gg==",
   },
 };
 
@@ -262,3 +309,10 @@ export function alertFormFor(slug: string): string | null {
   const url = alertsConfig.forms[slug];
   return url && /^https:\/\//.test(url) ? url : null;
 }
+
+/**
+ * Separate consent and list for "new free access codes" emails (/free-access-codes/).
+ * Brevo form "Free access codes alert", list "Free Access Codes (Double Opt-in)".
+ */
+export const freeCodesAlertForm: string | null =
+  "https://11007e05.sibforms.com/serve/MUIFAO24-I8NgRRV-_-lP3WZN-t1DNlRNPyHnuD62PBWU5iYRiVhaxYUlt4TEvvWPPd9GJysRwS6Sz89vuVaGpo6DhaETZ-hWIPpAVhL0FVK2tquLKdvTC6gTpWmogM7blskba5nEDzMcupb0kP-XXuGah8jHDSN2YN_FYTLslybupzEu01JOC1hHiZQKrwEMvZ3LruKzC5hXlA4lw==";

@@ -9,6 +9,46 @@
  * Pages, sitemap entries, internal links and structured data follow automatically.
  */
 import type { ExamGuide, PracticeQuestionSet } from "@/config/types";
+import { awsClfC02Guide } from "./guides/aws-clf-c02";
+import { comptiaSecurityPlusSy0801Guide } from "./guides/comptia-security-plus-sy0-801";
+import { cismGuide } from "./guides/cism";
+import { criscGuide } from "./guides/crisc";
+import { ckaGuide } from "./guides/cka";
+import { az400Guide } from "./guides/az-400";
+import { az401Guide } from "./guides/az-401";
+import { dp700Guide } from "./guides/dp-700";
+import { ckadGuide } from "./guides/ckad";
+import { togaf10FoundationGuide } from "./guides/togaf-10-foundation-ogea-101";
+import { isaqbCpsaFGuide } from "./guides/isaqb-cpsa-f";
+import { istqbCtfl4Guide } from "./guides/istqb-ctfl-4";
+import { isc2CcGuide } from "./guides/isc2-cc";
+import { awsDvaC03Guide } from "./guides/aws-dva-c03";
+import { terraformAssociate004Guide } from "./guides/terraform-associate-004";
+import { awsSapC03Guide } from "./guides/aws-sap-c03";
+import { awsSoaC03Guide } from "./guides/aws-soa-c03";
+import { az802Guide } from "./guides/az-802";
+import { ai300Guide } from "./guides/ai-300";
+import { sc100Guide } from "./guides/sc-100";
+import { comptiaNetworkPlusN10009Guide } from "./guides/comptia-network-plus-n10-009";
+import { comptiaAPlusCore1Guide } from "./guides/comptia-a-plus-core-1-220-1201";
+import { comptiaAPlusCore2Guide } from "./guides/comptia-a-plus-core-2-220-1202";
+import { pmiAcpGuide } from "./guides/pmi-acp";
+import { prince27FoundationGuide } from "./guides/prince2-7-foundation";
+import { awsDopC02Guide } from "./guides/aws-dop-c02";
+import { awsDeaC01Guide } from "./guides/aws-dea-c01";
+import { awsAifC01Guide } from "./guides/aws-aif-c01";
+import { gcpProfessionalCloudArchitectGuide } from "./guides/google-cloud-professional-cloud-architect";
+import { sc401Guide } from "./guides/sc-401";
+import { az700Guide } from "./guides/az-700";
+import { ab900Guide } from "./guides/ab-900";
+import { cksGuide } from "./guides/cks";
+import { cobit7FoundationGuide } from "./guides/cobit-7-foundation";
+import { itsmFoundationV5Guide } from "./guides/itsm-foundation-v5";
+import { isc2CisspGuide } from "./guides/isc2-cissp";
+import { awsSaaC03Guide } from "./guides/aws-saa-c03";
+import { pmpGuide } from "./guides/pmp";
+import { az305Guide } from "./guides/az-305";
+import { cisaGuide } from "./guides/cisa";
 import { ai200Guide } from "./guides/ai-200";
 import { ai200Questions } from "./practice-questions/ai-200";
 import { dp600Guide } from "./guides/dp-600";
@@ -97,6 +137,46 @@ import { databricksGenerativeAiEngineerAssociateGuide } from "./guides/databrick
 import { databricksGenerativeAiEngineerAssociateQuestions } from "./practice-questions/databricks-generative-ai-engineer-associate";
 
 export const guides: ExamGuide[] = [
+  awsDopC02Guide,
+  awsDeaC01Guide,
+  awsAifC01Guide,
+  gcpProfessionalCloudArchitectGuide,
+  sc401Guide,
+  az700Guide,
+  ab900Guide,
+  cksGuide,
+  cobit7FoundationGuide,
+  itsmFoundationV5Guide,
+  awsSapC03Guide,
+  awsSoaC03Guide,
+  az802Guide,
+  ai300Guide,
+  sc100Guide,
+  comptiaNetworkPlusN10009Guide,
+  comptiaAPlusCore1Guide,
+  comptiaAPlusCore2Guide,
+  pmiAcpGuide,
+  prince27FoundationGuide,
+  az400Guide,
+  az401Guide,
+  dp700Guide,
+  ckadGuide,
+  togaf10FoundationGuide,
+  isaqbCpsaFGuide,
+  istqbCtfl4Guide,
+  isc2CcGuide,
+  awsDvaC03Guide,
+  terraformAssociate004Guide,
+  awsClfC02Guide,
+  comptiaSecurityPlusSy0801Guide,
+  cismGuide,
+  criscGuide,
+  ckaGuide,
+  isc2CisspGuide,
+  awsSaaC03Guide,
+  pmpGuide,
+  az305Guide,
+  cisaGuide,
   ai200Guide,
   dp600Guide,
   ab620Guide,

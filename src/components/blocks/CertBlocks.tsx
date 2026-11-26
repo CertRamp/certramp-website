@@ -1,3 +1,4 @@
+import { alertFormFor } from "@/config/alerts";
 import { ExamAlertSignup } from "@/components/blocks/ExamAlertSignup";
 import Link from "@/components/ui/Link";
 import { Section, SectionHeader } from "@/components/ui/Section";
@@ -44,7 +45,17 @@ const domainName = (cert: ResolvedCertification, id: string) => cert.exam?.domai
 
 export function ExamWatchSection({ cert, tone = "white" }: { cert: ResolvedCertification; tone?: "white" | "surface" }) {
   const w = getExamWatch(cert);
-  if (!w.lastChecked && w.entries.length === 0) return null;
+  if (!w.lastChecked && w.entries.length === 0) {
+    // No change log yet for this exam: still offer the alert sign-up on its own.
+    if (!alertFormFor(cert.slug)) return null;
+    return (
+      <Section tone={tone} className="!py-16 sm:!py-20">
+        <div className="max-w-2xl">
+          <ExamAlertSignup slug={cert.slug} exam={cert.name} />
+        </div>
+      </Section>
+    );
+  }
   return (
     <Section tone={tone} labelledBy="watch-title" className="!py-16 sm:!py-20">
       <div className="grid gap-10 lg:grid-cols-12">

@@ -3,6 +3,7 @@ import { AuthorSection } from "@/components/marketing/AuthorSection";
 import Link from "@/components/ui/Link";
 import { notFound } from "next/navigation";
 import { ExamFactsList } from "@/components/content/ExamFactsList";
+import { ExamAlertSignup } from "@/components/blocks/ExamAlertSignup";
 import { StudyResources } from "@/components/content/StudyResources";
 import { UdemyCta, CertCta } from "@/components/certification/CertCta";
 import { VendorDisclaimer } from "@/components/certification/VendorDisclaimer";
@@ -218,6 +219,8 @@ export default async function GuidePage({ params }: { params: Promise<Params> })
                 <FaqList items={guide.faq} />
               </div>
             </section>
+
+            <ExamAlertSignup slug={cert.slug} exam={cert.name} />
           </div>
         </div>
       </Section>

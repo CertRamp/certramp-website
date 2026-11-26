@@ -98,7 +98,9 @@ export const examChanges: ExamChange[] = [
     ],
     "successor": "AB-410",
     "successorName": "Microsoft Certified: Intelligent Applications Builder Associate",
-    "certramp": [],
+    "certramp": [
+      "ab-410"
+    ],
     "candidateAdvice": "PL-200 can no longer be taken; candidates for this role should prepare for AB-410.",
     "source": {
       "label": "Microsoft Partner Center: August 2026 announcements (FY27 August skilling updates)",
@@ -1005,7 +1007,9 @@ export const examChanges: ExamChange[] = [
     ],
     "successor": null,
     "successorName": null,
-    "certramp": [],
+    "certramp": [
+      "dp-700"
+    ],
     "candidateAdvice": "Study the 'skills measured as of' version in the official study guide; localized versions are updated about eight weeks after the English exam.",
     "source": {
       "label": "Microsoft Learn: DP-700 study guide (change log)",
@@ -1065,7 +1069,9 @@ export const examChanges: ExamChange[] = [
     ],
     "successor": null,
     "successorName": null,
-    "certramp": [],
+    "certramp": [
+      "az-400"
+    ],
     "candidateAdvice": "Study the 'skills measured as of' version in the official study guide; localized versions are updated about eight weeks after the English exam.",
     "source": {
       "label": "Microsoft Learn: AZ-400 study guide (change log)",
