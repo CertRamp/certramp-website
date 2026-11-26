@@ -9,6 +9,16 @@
  * Pages, sitemap entries, internal links and structured data follow automatically.
  */
 import type { ExamGuide, PracticeQuestionSet } from "@/config/types";
+import { awsClfC02Guide } from "./guides/aws-clf-c02";
+import { comptiaSecurityPlusSy0801Guide } from "./guides/comptia-security-plus-sy0-801";
+import { cismGuide } from "./guides/cism";
+import { criscGuide } from "./guides/crisc";
+import { ckaGuide } from "./guides/cka";
+import { isc2CisspGuide } from "./guides/isc2-cissp";
+import { awsSaaC03Guide } from "./guides/aws-saa-c03";
+import { pmpGuide } from "./guides/pmp";
+import { az305Guide } from "./guides/az-305";
+import { cisaGuide } from "./guides/cisa";
 import { ai200Guide } from "./guides/ai-200";
 import { ai200Questions } from "./practice-questions/ai-200";
 import { dp600Guide } from "./guides/dp-600";
@@ -97,6 +107,16 @@ import { databricksGenerativeAiEngineerAssociateGuide } from "./guides/databrick
 import { databricksGenerativeAiEngineerAssociateQuestions } from "./practice-questions/databricks-generative-ai-engineer-associate";
 
 export const guides: ExamGuide[] = [
+  awsClfC02Guide,
+  comptiaSecurityPlusSy0801Guide,
+  cismGuide,
+  criscGuide,
+  ckaGuide,
+  isc2CisspGuide,
+  awsSaaC03Guide,
+  pmpGuide,
+  az305Guide,
+  cisaGuide,
   ai200Guide,
   dp600Guide,
   ab620Guide,

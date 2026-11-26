@@ -3788,7 +3788,7 @@ export const certificationDetails: Record<string, CertificationDetails> = {
       questionTypes: "Multiple-choice and performance-based",
       languages: ["English"],
       prerequisites: "None required. Recommended experience: security administrator with two years of hands-on experience.",
-      status: "upcoming",
+      status: "current",
       launchDate: "2026-11-17",
       officialCertificationUrl: "https://www.comptia.org/en-us/certifications/security/",
       officialExamUrl: "https://www.comptia.org/en-us/certifications/security/v8/",
